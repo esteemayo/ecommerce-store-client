@@ -6,6 +6,7 @@ import { useState } from 'react';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Image from 'next/image';
 
 const Navbar = () => {
   const [isHover, setIsHover] = useState(false);
@@ -13,7 +14,9 @@ const Navbar = () => {
   return (
     <Container>
       <Wrapper>
-        <LogoBox>Logo</LogoBox>
+        <LogoBox>
+          <Image src='/img/logo.png' width={120} height={100} alt='' />
+        </LogoBox>
         <ToggleButton>
           <FontAwesomeIcon icon={faBars} />
         </ToggleButton>
