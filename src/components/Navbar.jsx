@@ -122,6 +122,10 @@ const LoginButton = styled.button`
       text-decoration: none;
       color: currentColor;
     }
+
+    svg {
+      font-size: 1.4rem;
+    }
   }
 
   &:hover {
