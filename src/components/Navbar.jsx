@@ -3,7 +3,9 @@ import styled from 'styled-components';
 
 const Navbar = () => {
   return (
-    <Container>Navbar</Container>
+    <Container>
+      <Wrapper>Navbar</Wrapper>
+    </Container>
   );
 }
 
