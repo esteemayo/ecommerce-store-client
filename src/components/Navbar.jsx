@@ -6,7 +6,6 @@ import { useState } from 'react';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 const Navbar = () => {
   const [isHover, setIsHover] = useState(false);
