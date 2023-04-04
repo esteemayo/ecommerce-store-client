@@ -98,6 +98,7 @@ const Button = styled.button`
 
 const LoginButton = styled.button`
   border: none;
+  display: inline-block;
 `;
 
 export default Navbar;
