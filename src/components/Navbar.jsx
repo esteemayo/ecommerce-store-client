@@ -9,7 +9,12 @@ const Navbar = () => {
         <ToggleButton>###</ToggleButton>
         <ListContainer>
           <ListItem>
-            <Button type='button' className='link-btn'>products</Button>
+            <Button
+              type='button'
+              className='link-btn'
+            >
+              products
+            </Button>
           </ListItem>
         </ListContainer>
       </Wrapper>
