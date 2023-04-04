@@ -86,10 +86,12 @@ const ToggleButton = styled.button`
   width: 4rem;
   height: 4rem;
   background-color: transparent;
+  color: #fff;
 
   svg {
     width: 3rem;
     height: 3rem;
+    color: inherit;
   }
 
   @media only screen and (min-width:50em){
