@@ -63,6 +63,8 @@ const ListItem = styled.li`
 const Button = styled.button`
   border: none;
   display: inline-block;
+  font-family: inherit;
+  font-size: 1.5rem;
 `;
 
 export default Navbar
