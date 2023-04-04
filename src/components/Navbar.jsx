@@ -105,6 +105,7 @@ const LoginButton = styled.button`
   padding: 1rem 2rem;
   background-color: #f626fd;
   color: #fff;
+  border-radius: 0.5rem;
 `;
 
 export default Navbar;
