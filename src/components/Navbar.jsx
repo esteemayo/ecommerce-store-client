@@ -113,39 +113,39 @@ const Button = styled.button`
 `;
 
 const LoginButton = styled.button`
-  border: none;
-  display: inline-block;
-  font-weight: 600;
-  font-size: 1.5rem;
-  padding: 0.75rem 2rem;
-  background-color: #f626fd;
-  color: #fff;
-  border-radius: 10rem;
-  cursor: pointer;
-  transition: all 0.2s ease;
+    border: none;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: 0.75rem 2rem;
+    background-color: #f626fd;
+    color: #fff;
+    border-radius: 10rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    
+    a {
+      &:link,
+      &:visited {
+        display: inline-block;
+        text-decoration: none;
+        color: currentColor;
+        position: relative;
+      }
   
-  a {
-    &:link,
-    &:visited {
-      display: inline-block;
-      text-decoration: none;
-      color: currentColor;
-      position: relative;
+      svg {
+        position: absolute;
+        top: 3px;
+        right: -1rem;
+        font-size: 1.25rem;
+        transition: 150ms cubic-bezier(0.22, 0.61, 0.36, 1);
+      }
     }
-
-    svg {
-      position: absolute;
-      top: 3px;
-      right: -1rem;
-      font-size: 1.25rem;
-      transition: 150ms cubic-bezier(0.22, 0.61, 0.36, 1);
-    }
-  }
-
-  &:hover {
-    background-color: #f887fc;
-    background-color: hsla(0, 0%, 100%, 0.4);
-    opacity: 1;
+  
+    &:hover {
+      background-color: #f887fc;
+      background-color: hsla(0, 0%, 100%, 0.4);
+      opacity: 1;
   }
 `;
 
