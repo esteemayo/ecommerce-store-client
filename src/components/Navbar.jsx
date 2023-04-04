@@ -100,4 +100,4 @@ const LoginButton = styled.button`
   
 `;
 
-export default Navbar
+export default Navbar;
