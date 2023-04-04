@@ -112,6 +112,7 @@ const LoginButton = styled.button`
     &:link,
     &:visited {
       text-decoration: none;
+      color: currentColor;
     }
   }
 `;
