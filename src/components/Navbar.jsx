@@ -10,7 +10,7 @@ const Navbar = () => {
 }
 
 const Container = styled.nav`
-  color: red;
+  
 `;
 
 const Wrapper = styled.div`
