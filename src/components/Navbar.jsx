@@ -100,6 +100,7 @@ const LoginButton = styled.button`
   border: none;
   display: inline-block;
   padding: 1rem 2rem;
+  background-color: #f626fd;
 `;
 
 export default Navbar;
