@@ -128,6 +128,7 @@ const LoginButton = styled.button`
       gap: 1rem;
       text-decoration: none;
       color: currentColor;
+      position: relative;
     }
 
     svg {
