@@ -1,6 +1,7 @@
 'use client';
 import Link from 'next/link';
 import styled from 'styled-components';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 const Navbar = () => {
   return (
