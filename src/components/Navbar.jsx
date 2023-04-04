@@ -68,6 +68,7 @@ const Button = styled.button`
   text-transform: capitalize;
   background-color: transparent;
   color: #fff;
+  cursor: default;
 `;
 
 export default Navbar
