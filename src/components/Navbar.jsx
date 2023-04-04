@@ -107,6 +107,13 @@ const LoginButton = styled.button`
   color: #fff;
   border-radius: 0.5rem;
   cursor: pointer;
+  
+  a {
+    &:link,
+    &:visited {
+      text-decoration: none;
+    }
+  }
 `;
 
 export default Navbar;
