@@ -11,4 +11,8 @@ const Container = styled.nav`
   color: red;
 `;
 
+const Wrapper = styled.div`
+  
+`;
+
 export default Navbar
