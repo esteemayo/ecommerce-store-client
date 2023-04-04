@@ -61,7 +61,7 @@ const ListItem = styled.li`
 `;
 
 const Button = styled.button`
-  
+  display: inline-block;
 `;
 
 export default Navbar
