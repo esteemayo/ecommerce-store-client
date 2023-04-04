@@ -34,7 +34,9 @@ const Navbar = () => {
             </Button>
           </ListItem>
         </ListContainer>
-        <LoginButton>Log in</LoginButton>
+        <LoginButton>
+          <Link href='/login' passHref>Log in</Link>
+        </LoginButton>
       </Wrapper>
     </Container>
   );
