@@ -9,6 +9,6 @@ const Navbar = () => {
 
 const Container = styled.nav`
   color: red;
-`
+`;
 
 export default Navbar
