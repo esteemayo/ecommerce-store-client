@@ -81,6 +81,8 @@ const LogoBox = styled.div`
 `;
 
 const ToggleButton = styled.button`
+  display: inline-block;
+
   @media only screen and (min-width:50em){
     display: none;
   }
