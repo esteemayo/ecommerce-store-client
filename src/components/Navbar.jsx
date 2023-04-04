@@ -95,6 +95,7 @@ const ToggleButton = styled.button`
   height: 4rem;
   background-color: transparent;
   color: #fff;
+  margin-right: 2rem;
   transition: all 0.5s ease;
 
   &:hover {
