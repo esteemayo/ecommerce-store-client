@@ -65,6 +65,7 @@ const Button = styled.button`
   display: inline-block;
   font-family: inherit;
   font-size: 1.5rem;
+  text-transform: capitalize;
 `;
 
 export default Navbar
