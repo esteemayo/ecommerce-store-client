@@ -88,6 +88,11 @@ const ToggleButton = styled.button`
   background-color: transparent;
   color: #fff;
 
+  &:hover {
+    transform: rotate(90deg);
+    background: red;
+  }
+
   svg {
     width: 3rem;
     height: 3rem;
