@@ -14,6 +14,8 @@ const Container = styled.nav`
   height: 5rem;
   background-color: #e4b2e6;
   color: #fff;
+  display: flex;
+  align-items: center;
 `;
 
 const Wrapper = styled.div`
