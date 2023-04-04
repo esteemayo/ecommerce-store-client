@@ -113,6 +113,9 @@ const Button = styled.button`
 `;
 
 const LoginButton = styled.button`
+  display: none;
+
+  @media only screen and (min-width: 50em){
     border: none;
     display: inline-block;
     font-weight: 600;
@@ -146,6 +149,7 @@ const LoginButton = styled.button`
       background-color: #f887fc;
       background-color: hsla(0, 0%, 100%, 0.4);
       opacity: 1;
+    }
   }
 `;
 
