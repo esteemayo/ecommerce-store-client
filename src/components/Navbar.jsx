@@ -105,7 +105,7 @@ const LoginButton = styled.button`
   padding: 1rem 2rem;
   background-color: #f626fd;
   color: #fff;
-  border-radius: 0.5rem;
+  border-radius: 10rem;
   cursor: pointer;
   transition: all 0.2s ease;
   
