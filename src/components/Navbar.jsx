@@ -33,6 +33,7 @@ const Navbar = () => {
             </Button>
           </ListItem>
         </ListContainer>
+        <LoginButton>Log in</LoginButton>
       </Wrapper>
     </Container>
   );
