@@ -46,7 +46,7 @@ const ToggleButton = styled.button`
 `;
 
 const ListContainer = styled.ul`
-  
+  display: none;
 `;
 
 const ListItem = styled.li`
