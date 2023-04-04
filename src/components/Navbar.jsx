@@ -39,7 +39,7 @@ const Navbar = () => {
             </Button>
           </ListItem>
         </ListContainer>
-        <LoginButton>
+        <LoginButton onMouseOver={() => setIsHover(true)}>
           <Link href='/login' passHref>
             Log in
             <ArrowForwardIosIcon />
