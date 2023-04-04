@@ -14,7 +14,9 @@ const Navbar = () => {
     <Container>
       <Wrapper>
         <LogoBox>Logo</LogoBox>
-        <ToggleButton>###</ToggleButton>
+        <ToggleButton>
+          <FontAwesomeIcon icon={faBars} />
+        </ToggleButton>
         <ListContainer>
           <ListItem>
             <Button
