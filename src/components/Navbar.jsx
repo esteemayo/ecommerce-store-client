@@ -123,9 +123,7 @@ const LoginButton = styled.button`
   a {
     &:link,
     &:visited {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
+      display: inline-block;
       text-decoration: none;
       color: currentColor;
       position: relative;
