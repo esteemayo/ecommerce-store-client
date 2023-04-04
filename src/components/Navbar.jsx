@@ -140,6 +140,8 @@ const LoginButton = styled.button`
 
   &:hover {
     background-color: #f887fc;
+    background-color: hsla(0, 0%, 100%, 0.4);
+    opacity: 1;
   }
 `;
 
