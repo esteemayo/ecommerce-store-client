@@ -37,7 +37,10 @@ const Navbar = () => {
           </ListItem>
         </ListContainer>
         <LoginButton>
-          <Link href='/login' passHref>Log in</Link>
+          <Link href='/login' passHref>
+            Log in
+            <ArrowForwardIosIcon />
+          </Link>
         </LoginButton>
       </Wrapper>
     </Container>
