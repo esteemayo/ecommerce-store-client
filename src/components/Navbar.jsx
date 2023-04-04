@@ -45,6 +45,7 @@ const Navbar = () => {
         >
           <Link href='/login' passHref>
             Sign in
+            &nbsp;
             {isHover ? <ArrowForwardIcon /> : <ArrowForwardIosIcon />}
           </Link>
         </LoginButton>
