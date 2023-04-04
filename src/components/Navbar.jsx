@@ -6,6 +6,8 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { useState } from 'react';
 
 const Navbar = () => {
+  const [isHover, setIsHover] = useState(false);
+
   return (
     <Container>
       <Wrapper>
