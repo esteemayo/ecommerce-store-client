@@ -107,6 +107,7 @@ const LoginButton = styled.button`
   color: #fff;
   border-radius: 0.5rem;
   cursor: pointer;
+  transition: all 0.2s ease;
   
   a {
     &:link,
