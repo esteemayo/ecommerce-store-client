@@ -66,6 +66,8 @@ const Button = styled.button`
   font-family: inherit;
   font-size: 1.5rem;
   text-transform: capitalize;
+  background-color: transparent;
+  color: #fff;
 `;
 
 export default Navbar
