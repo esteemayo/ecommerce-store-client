@@ -110,7 +110,6 @@ const Button = styled.button`
 const LoginButton = styled.button`
   border: none;
   display: inline-block;
-  text-transform: capitalize;
   font-weight: 600;
   font-size: 1.5rem;
   padding: 1rem 2rem;
