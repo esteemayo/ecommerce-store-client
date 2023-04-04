@@ -40,7 +40,9 @@ const LogoBox = styled.div`
 `;
 
 const ToggleButton = styled.button`
-  
+  @media only screen and (min-width:50em){
+    display: none;
+  }
 `;
 
 const ListContainer = styled.ul`
