@@ -15,7 +15,12 @@ const Navbar = () => {
     <Container>
       <Wrapper>
         <LogoBox>
-          <Image src='/img/logo.png' width={120} height={100} alt='' />
+          <Image
+            src='/img/logo.png'
+            width={120}
+            height={100}
+            alt=''
+          />
         </LogoBox>
         <ToggleButton>
           <FontAwesomeIcon icon={faBars} />
