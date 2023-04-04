@@ -3,6 +3,7 @@ import Link from 'next/link';
 import styled from 'styled-components';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import { useState } from 'react';
 
 const Navbar = () => {
   return (
