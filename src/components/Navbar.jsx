@@ -131,6 +131,7 @@ const LoginButton = styled.button`
 
     svg {
       font-size: 1.25rem;
+      transition: 150ms cubic-bezier(0.22, 0.61, 0.36, 1);
     }
   }
 
