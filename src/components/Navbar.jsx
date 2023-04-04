@@ -7,6 +7,7 @@ const Navbar = () => {
       <Wrapper>
         <LogoBox>Logo</LogoBox>
         <ToggleButton>###</ToggleButton>
+        <ListContainer></ListContainer>
       </Wrapper>
     </Container>
   );
