@@ -87,6 +87,7 @@ const ToggleButton = styled.button`
   height: 4rem;
   background-color: transparent;
   color: #fff;
+  transition: all 0.5s ease;
 
   &:hover {
     transform: rotate(90deg);
