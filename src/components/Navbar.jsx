@@ -44,7 +44,7 @@ const Navbar = () => {
           onMouseLeave={() => setIsHover(false)}
         >
           <Link href='/login' passHref>
-            Log in
+            Sign in
             {isHover ? <ArrowForwardIcon /> : <ArrowForwardIosIcon />}
           </Link>
         </LoginButton>
