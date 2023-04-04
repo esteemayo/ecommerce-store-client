@@ -47,6 +47,13 @@ const ToggleButton = styled.button`
 
 const ListContainer = styled.ul`
   display: none;
+
+  @media only screen and (min-width:50em){
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+  }
 `;
 
 const ListItem = styled.li`
