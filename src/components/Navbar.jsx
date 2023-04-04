@@ -11,6 +11,7 @@ const Navbar = () => {
 
 const Container = styled.nav`
   width: 100vw;
+  height: 5rem;
   background-color: #e4b2e6;
   color: #fff;
 `;
