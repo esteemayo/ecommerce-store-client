@@ -16,6 +16,22 @@ const Navbar = () => {
               products
             </Button>
           </ListItem>
+          <ListItem>
+            <Button
+              type='button'
+              className='link-btn'
+            >
+              products
+            </Button>
+          </ListItem>
+          <ListItem>
+            <Button
+              type='button'
+              className='link-btn'
+            >
+              products
+            </Button>
+          </ListItem>
         </ListContainer>
       </Wrapper>
     </Container>
