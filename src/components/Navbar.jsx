@@ -4,6 +4,7 @@ import Link from 'next/link';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import { useState } from 'react';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Navbar = () => {
   const [isHover, setIsHover] = useState(false);
