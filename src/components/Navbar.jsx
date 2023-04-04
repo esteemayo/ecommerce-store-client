@@ -8,7 +8,9 @@ const Navbar = () => {
         <LogoBox>Logo</LogoBox>
         <ToggleButton>###</ToggleButton>
         <ListContainer>
-          <ListItem></ListItem>
+          <ListItem>
+            <Button></Button>
+          </ListItem>
         </ListContainer>
       </Wrapper>
     </Container>
