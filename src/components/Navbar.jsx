@@ -115,6 +115,10 @@ const LoginButton = styled.button`
       color: currentColor;
     }
   }
+
+  &:hover {
+    background-color: #f887fc;
+  }
 `;
 
 export default Navbar;
