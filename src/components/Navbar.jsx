@@ -92,4 +92,8 @@ const Button = styled.button`
   cursor: default;
 `;
 
+const LoginButton = styled.button`
+  
+`;
+
 export default Navbar
