@@ -125,6 +125,14 @@ const ListItem = styled.li`
     align-items: center;
     gap: 1rem;
   }
+
+  a {
+    &:link,
+    &:visited {
+      text-transform: capitalize;
+      color: hsl(209, 61%, 16%);
+    }
+  }
 `;
 
 export default Sidebar;
