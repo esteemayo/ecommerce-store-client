@@ -133,6 +133,10 @@ const ListItem = styled.li`
       text-transform: capitalize;
       color: hsl(209, 61%, 16%);
     }
+
+    &:hover {
+      color: #264868;
+    }
   }
 `;
 
