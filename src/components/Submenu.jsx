@@ -38,7 +38,6 @@ const Submenu = () => {
           return (
             <ListItem key={index}>
               <Link href={url} passHref>
-                {/* <FontAwesomeIcon icon={faCartShopping} /> */}
                 {icon}
                 &nbsp;
                 {label}
