@@ -52,7 +52,7 @@ export const sublinks = [
     links: [
       {
         url: '/manage',
-        icon: '',
+        icon: <FontAwesomeIcon icon={faPeopleRoof} />,
         label: 'manage complexity',
       },
       {
