@@ -107,7 +107,7 @@ export const sublinks = [
     links: [
       {
         url: '/support-center',
-        icon: '',
+        icon: <FontAwesomeIcon icon={faPhone} />,
         label: 'support center',
       },
       {
