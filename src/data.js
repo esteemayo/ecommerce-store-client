@@ -42,7 +42,7 @@ export const sublinks = [
       },
       {
         url: '/international-ecommerce',
-        icon: '',
+        icon: <FontAwesomeIcon icon={faDisplay} />,
         label: 'international ecommerce',
       },
     ],
