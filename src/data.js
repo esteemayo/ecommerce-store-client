@@ -117,7 +117,7 @@ export const sublinks = [
       },
       {
         url: '/support-plans',
-        icon: '',
+        icon: <FontAwesomeIcon icon={faSitemap} />,
         label: 'support plans',
       },
       {
