@@ -3,7 +3,9 @@ import styled from 'styled-components';
 const Sidebar = () => {
   return (
     <Container>
-      <Wrapper></Wrapper>
+      <Wrapper>
+        <CloseButton></CloseButton>
+      </Wrapper>
     </Container>
   );
 }
