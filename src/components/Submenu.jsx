@@ -8,6 +8,7 @@ const Submenu = () => {
 }
 
 const Container = styled.aside`
+  padding: 2rem;
   background-color: #f4d4f5;
 `
 
