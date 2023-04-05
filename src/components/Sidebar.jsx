@@ -40,7 +40,7 @@ const Sidebar = () => {
               </LinksContainer>
             );
           })}
-        </LinksWrapper>
+        </LinksContainer>
       </Wrapper>
     </Container>
   );
