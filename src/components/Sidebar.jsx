@@ -6,7 +6,6 @@ import Link from 'next/link';
 
 import { sublinks } from '@/data';
 import { closeSidebar } from '@/features/submenu/submenuSlice';
-import { sublinks } from '@/data';
 
 const Sidebar = () => {
   const dispatch = useDispatch();
