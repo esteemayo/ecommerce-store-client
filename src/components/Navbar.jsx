@@ -36,6 +36,7 @@ const Navbar = () => {
             <Button
               type='button'
               className='link-btn'
+              onMouseOver={displaySubmenu}
             >
               products
             </Button>
