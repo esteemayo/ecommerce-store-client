@@ -61,7 +61,7 @@ export const sublinks = [
         label: 'point of sale',
       },
       {
-        url: '/international-ecommerce',
+        url: '/ecommerce',
         icon: <FontAwesomeIcon icon={faDisplay} />,
         label: 'international ecommerce',
       },
