@@ -66,6 +66,10 @@ const CloseButton = styled.button`
   background-color: transparent;
   color: hsl(210, 22%, 49%);
   cursor: pointer;
+
+  svg {
+    color: currentColor;
+  }
 `;
 
 const LinksContainer = styled.div`
