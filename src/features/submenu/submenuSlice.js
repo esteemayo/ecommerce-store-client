@@ -1,4 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
+import { sublinks } from '@/data';
 
 const initialState = {
   isSidebarOpen: false,
