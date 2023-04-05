@@ -16,7 +16,7 @@ const Sidebar = () => {
           <FontAwesomeIcon icon={faXmark} />
         </CloseButton>
         <LinksContainer>
-
+          <Title>products</Title>
         </LinksContainer>
       </Wrapper>
     </Container>
@@ -73,6 +73,10 @@ const CloseButton = styled.button`
 `;
 
 const LinksContainer = styled.div`
+  
+`;
+
+const Title = styled.h4`
   
 `;
 
