@@ -62,7 +62,7 @@ export const sublinks = [
       },
       {
         url: '/shipping',
-        icon: '',
+        icon: <FontAwesomeIcon icon={faTruckFast} />,
         label: 'shipping',
       },
       {
