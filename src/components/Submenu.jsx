@@ -6,6 +6,8 @@ import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
 
 const Submenu = () => {
+  const [columns, setColumns] = useState('col-2');
+
   return (
     <Container type='show'>
       <Title>products</Title>
