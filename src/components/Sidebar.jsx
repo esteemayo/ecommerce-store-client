@@ -18,7 +18,7 @@ const Sidebar = () => {
         <LinksContainer>
           <Title>products</Title>
           <ListsContainer>
-
+            <ListItem></ListItem>
           </ListsContainer>
         </LinksContainer>
       </Wrapper>
@@ -84,6 +84,10 @@ const Title = styled.h4`
 `;
 
 const ListsContainer = styled.ul`
+  
+`;
+
+const ListItem = styled.li`
   
 `;
 
