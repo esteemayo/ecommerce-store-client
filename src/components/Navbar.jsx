@@ -43,12 +43,14 @@ const Navbar = () => {
     <Container onMouseOver={handleSubmenu}>
       <Wrapper>
         <LogoBox>
-          <Image
-            src='/img/logo.png'
-            width={120}
-            height={100}
-            alt=''
-          />
+          <Link href='/' passHref>
+            <Image
+              src='/img/logo.png'
+              width={120}
+              height={100}
+              alt=''
+            />
+          </Link>
         </LogoBox>
         <ToggleButton>
           <FontAwesomeIcon icon={faBars} />
