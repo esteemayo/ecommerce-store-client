@@ -21,7 +21,7 @@ export const subMenuSlice = createSlice({
       state.isSidebarOpen = false;
     },
     openSubmenu: (state, { payload }) => {
-      console.log(payload);
+      console.log('payload', payload);
       state.isSubmenuOpen = true;
     },
     closeSubmenu: (state) => {
