@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 
 import { closeSidebar } from '@/features/submenu/submenuSlice';
+import { sublinks } from '@/data';
 
 const Sidebar = () => {
   const dispatch = useDispatch();
