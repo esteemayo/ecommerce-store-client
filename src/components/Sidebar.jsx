@@ -111,7 +111,10 @@ const Title = styled.h4`
 `;
 
 const ListsContainer = styled.ul`
-
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 0.25rem;
 `;
 
 const ListItem = styled.li`
