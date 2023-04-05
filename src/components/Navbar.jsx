@@ -12,8 +12,6 @@ const Navbar = () => {
   const [isHover, setIsHover] = useState(false);
 
   const displaySubmenu = (e) => {
-    e.preventDefault();
-
     const page = e.target.textContent;
   };
 
