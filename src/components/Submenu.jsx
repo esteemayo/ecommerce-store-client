@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const Submenu = () => {
   return (
-    <Container>Submenu</Container>
+    <Container type='show'>Submenu</Container>
   );
 }
 
