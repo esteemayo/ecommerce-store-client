@@ -5,7 +5,9 @@ import { useEffect, useState, useRef } from 'react';
 import { useSelector } from 'react-redux';
 
 const Submenu = () => {
-  const { isSubmenuOpen, location, page: { page, links } } = useSelector((state) => ({ ...state.submenu }));
+  const { isSubmenuOpen, location, page: { page, links } } = useSelector(
+    (state) => ({ ...state.submenu })
+  );
 
   const containerRef = useRef();
   const [columns, setColumns] = useState('col-2');
