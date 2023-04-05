@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from 'next/image';
 import { useDispatch } from 'react-redux';
 
-import { openSubmenu } from '@/features/submenu/submenuSlice';
+import { closeSubmenu, openSubmenu } from '@/features/submenu/submenuSlice';
 
 const Navbar = () => {
   const dispatch = useDispatch();
@@ -31,6 +31,12 @@ const Navbar = () => {
     };
 
     dispatch(openSubmenu(submenu));
+  };
+
+  const handleSubmenu = (e) => {
+    if (!e.target.classList.contains('link-btn')) {
+      dispatch(closeSubmenu());
+    }
   };
 
   return (
