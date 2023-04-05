@@ -9,6 +9,8 @@ const Submenu = () => {
 
 const Container = styled.aside`
   padding: 2rem;
+  width: 50rem;
+  height: 40rem;
   background-color: #f4d4f5;
 `
 
