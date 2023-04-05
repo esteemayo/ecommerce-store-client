@@ -17,6 +17,9 @@ const Sidebar = () => {
         </CloseButton>
         <LinksContainer>
           <Title>products</Title>
+          <ListsContainer>
+
+          </ListsContainer>
         </LinksContainer>
       </Wrapper>
     </Container>
@@ -77,6 +80,10 @@ const LinksContainer = styled.div`
 `;
 
 const Title = styled.h4`
+  
+`;
+
+const ListsContainer = styled.ul`
   
 `;
 
