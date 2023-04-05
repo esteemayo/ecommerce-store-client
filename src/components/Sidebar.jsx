@@ -15,7 +15,8 @@ const Sidebar = () => {
 }
 
 const Container = styled.aside`
-  
+  width: 100%;
+  height: 100%;
 `;
 
 const Wrapper = styled.div`
