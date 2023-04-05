@@ -1,4 +1,4 @@
-import Navbar from '@/components/Navbar'
+import Navbar from '@/components/Navbar';
 import Submenu from '@/components/Submenu';
 import './globals.css'
 
