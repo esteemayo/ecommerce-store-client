@@ -94,7 +94,7 @@ const ListContainer = styled.ul`
 const ListItem = styled.li`
   font-size: 1.5rem;
   text-transform: capitalize;
-  color: #c7c4c4;
+  color: #555353;
 
   a {
     &:link,
@@ -105,7 +105,7 @@ const ListItem = styled.li`
     }
 
     &:hover {
-      color: #f5f5f5;
+      color: #777;
     }
 
     svg {
