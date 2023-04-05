@@ -1,3 +1,4 @@
+import { faBagShopping, faCreditCard, faDisplay, faShirt, faShop, faStore } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export const sublinks = [
