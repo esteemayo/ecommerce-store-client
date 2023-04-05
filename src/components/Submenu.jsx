@@ -16,6 +16,7 @@ const Container = styled.aside`
   position: absolute;
   left: 50%;
   top: 5rem;
+  transform: translateX(-50%);
 `
 
 export default Submenu;
