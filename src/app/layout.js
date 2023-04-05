@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
       */}
       <head />
       <body>
-        <div>
+        <div className='container'>
           <Navbar />
           <Submenu />
           {children}
