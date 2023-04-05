@@ -23,6 +23,8 @@ export const subMenuSlice = createSlice({
     },
     openSubmenu: (state, { payload }) => {
       console.log('payload', payload);
+      state.page = sublinks.find((link) => link.page === payload.page);
+      state.location = payload.coordinates;
       state.isSubmenuOpen = true;
     },
     closeSubmenu: (state) => {
