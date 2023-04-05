@@ -54,6 +54,7 @@ const Navbar = () => {
             <Button
               type='button'
               className='link-btn'
+              onMouseOver={displaySubmenu}
             >
               manage
             </Button>
