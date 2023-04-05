@@ -40,27 +40,6 @@ const Submenu = () => {
             products
           </Link>
         </ListItem>
-        <ListItem>
-          <Link href='/' passHref>
-            <FontAwesomeIcon icon={faCartShopping} />
-            &nbsp;
-            products
-          </Link>
-        </ListItem>
-        <ListItem>
-          <Link href='/' passHref>
-            <FontAwesomeIcon icon={faCartShopping} />
-            &nbsp;
-            products
-          </Link>
-        </ListItem>
-        <ListItem>
-          <Link href='/' passHref>
-            <FontAwesomeIcon icon={faCartShopping} />
-            &nbsp;
-            products
-          </Link>
-        </ListItem>
       </ListContainer>
     </Container>
   );
