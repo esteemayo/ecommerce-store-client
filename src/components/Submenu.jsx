@@ -43,6 +43,7 @@ const Title = styled.h4`
   text-transform: capitalize;
   font-weight: 600;
   font-size: 1.6rem;
+  margin-bottom: 1.5rem;
 `;
 
 const ListContainer = styled.ul`
