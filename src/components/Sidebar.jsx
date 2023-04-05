@@ -118,7 +118,7 @@ const ListsContainer = styled.ul`
 `;
 
 const ListItem = styled.li`
-  
+  font-size: 1.5rem;
 `;
 
 export default Sidebar;
