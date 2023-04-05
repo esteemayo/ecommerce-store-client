@@ -4,6 +4,7 @@ import { Provider } from 'react-redux';
 import Navbar from '@/components/Navbar';
 import Submenu from '@/components/Submenu';
 import store from '@/store/store';
+import Sidebar from '@/components/Sidebar';
 import './globals.css';
 
 export default function RootLayout({ children }) {
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
           <div className='container'>
             <Navbar />
             <Submenu />
+            <Sidebar />
             {children}
           </div>
         </Provider>
