@@ -47,7 +47,7 @@ const Navbar = () => {
               type='button'
               className='link-btn'
             >
-              products
+              manage
             </Button>
           </ListItem>
         </ListContainer>
