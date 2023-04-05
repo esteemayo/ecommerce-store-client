@@ -8,7 +8,7 @@ const Submenu = () => {
 }
 
 const Container = styled.aside`
-
+  background-color: #f4d4f5;
 `
 
 export default Submenu;
