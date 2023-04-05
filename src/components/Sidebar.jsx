@@ -7,7 +7,7 @@ const Sidebar = () => {
   const { isSidebarOpen } = useSelector((state) => ({ ...state.submenu }));
 
   return (
-    <Container type={isSidebarOpen}>
+    <Container type={isSidebarOpen ? 'show' : ''}>
       <Wrapper>
         <CloseButton>
           <FontAwesomeIcon icon={faXmark} />
