@@ -1,7 +1,7 @@
 export const sublinks = [
   {
     page: 'products',
-    sublinks: [
+    links: [
       {
         url: '/featured',
         icon: '',
@@ -21,7 +21,7 @@ export const sublinks = [
   },
   {
     page: 'sell',
-    sublinks: [
+    links: [
       {
         url: '/sell',
         icon: '',
@@ -46,7 +46,7 @@ export const sublinks = [
   },
   {
     page: 'manage',
-    sublinks: [
+    links: [
       {
         url: '/manage',
         icon: '',
@@ -76,7 +76,7 @@ export const sublinks = [
   },
   {
     page: 'integrate',
-    sublinks: [
+    links: [
       {
         url: '/integrate',
         icon: '',
@@ -101,7 +101,7 @@ export const sublinks = [
   },
   {
     page: 'resources',
-    sublinks: [
+    links: [
       {
         url: '/support-center',
         icon: '',
