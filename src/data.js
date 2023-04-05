@@ -92,7 +92,7 @@ export const sublinks = [
       },
       {
         url: '/headless-commerce',
-        icon: '',
+        icon: <FontAwesomeIcon icon={faCartShopping} />,
         label: 'headless commerce',
       },
       {
