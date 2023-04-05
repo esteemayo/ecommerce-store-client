@@ -96,7 +96,7 @@ const CloseButton = styled.button`
 `;
 
 const LinksContainer = styled.div`
-  margin-top: 1.5rem;
+  margin-top: 3rem;
 `;
 
 const LinksWrapper = styled.article`
