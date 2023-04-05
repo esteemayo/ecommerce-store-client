@@ -123,7 +123,7 @@ const ListItem = styled.li`
   & > * {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 0.5rem;
   }
 
   a {
