@@ -11,6 +11,12 @@ import Image from 'next/image';
 const Navbar = () => {
   const [isHover, setIsHover] = useState(false);
 
+  const displaySubmenu = (e) => {
+    e.preventDefault();
+
+    const page = e.target.textContent;
+  };
+
   return (
     <Container>
       <Wrapper>
