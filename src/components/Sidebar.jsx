@@ -16,4 +16,8 @@ const Wrapper = styled.div`
   
 `;
 
+const CloseButton = styled.button`
+  
+`;
+
 export default Sidebar;
