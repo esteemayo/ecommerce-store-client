@@ -1,3 +1,5 @@
+import { Provider } from 'react-redux';
+
 import Navbar from '@/components/Navbar';
 import Submenu from '@/components/Submenu';
 import './globals.css'
