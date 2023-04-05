@@ -103,6 +103,10 @@ const ListItem = styled.li`
       font-weight: 500;
       color: currentColor;
     }
+
+    &:hover {
+      color: #f5f5f5;
+    }
   }
 `;
 
