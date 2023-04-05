@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from 'next/image';
 import { useDispatch } from 'react-redux';
 
-import { closeSubmenu, openSubmenu } from '@/features/submenu/submenuSlice';
+import { closeSubmenu, openSidebar, openSubmenu } from '@/features/submenu/submenuSlice';
 
 const Navbar = () => {
   const dispatch = useDispatch();
@@ -52,7 +52,7 @@ const Navbar = () => {
             />
           </Link>
         </LogoBox>
-        <ToggleButton>
+        <ToggleButton onClick={() => dispatch(openSidebar())}>
           <FontAwesomeIcon icon={faBars} />
         </ToggleButton>
         <ListContainer>
