@@ -129,6 +129,7 @@ const ListItem = styled.li`
   a {
     &:link,
     &:visited {
+      text-decoration: none;
       text-transform: capitalize;
       color: hsl(209, 61%, 16%);
     }
