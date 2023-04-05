@@ -28,6 +28,10 @@ const Container = styled.aside`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media only screen and (min-width: 50em) {
+    display: none;
+  }
 `;
 
 const Wrapper = styled.div`
