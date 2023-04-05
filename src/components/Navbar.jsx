@@ -40,7 +40,7 @@ const Navbar = () => {
   };
 
   return (
-    <Container>
+    <Container onMouseOver={handleSubmenu}>
       <Wrapper>
         <LogoBox>
           <Image
