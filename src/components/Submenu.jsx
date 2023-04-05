@@ -107,6 +107,11 @@ const ListItem = styled.li`
     &:hover {
       color: #f5f5f5;
     }
+
+    svg {
+      font-size: 2rem;
+      color: #153a5c;
+    }
   }
 `;
 
