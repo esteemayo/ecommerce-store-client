@@ -31,15 +31,21 @@ const Submenu = () => {
 
   return (
     <Container type={isSubmenuOpen ? 'show' : ''} ref={containerRef}>
-      <Title>products</Title>
+      <Title>{page}</Title>
       <ListContainer columns={columns}>
-        <ListItem>
-          <Link href='/' passHref>
-            <FontAwesomeIcon icon={faCartShopping} />
-            &nbsp;
-            products
-          </Link>
-        </ListItem>
+        {links.map((link, index) => {
+          const { url, icon, label } = link;
+          return (
+            <ListItem key={index}>
+              <Link href={url} passHref>
+                {/* <FontAwesomeIcon icon={faCartShopping} /> */}
+                {icon}
+                &nbsp;
+                {label}
+              </Link>
+            </ListItem>
+          );
+        })}
       </ListContainer>
     </Container>
   );
