@@ -101,7 +101,7 @@ const LinksContainer = styled.div`
 
 const LinksWrapper = styled.article`
   margin-bottom: 2rem;
-  `;
+`;
 
 const Title = styled.h4`
   display: inline-block;
