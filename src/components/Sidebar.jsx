@@ -96,7 +96,7 @@ const CloseButton = styled.button`
 `;
 
 const ListsContainer = styled.ul`
-  
+  margin-top: 1.5rem;
 `;
 
 const LinksContainer = styled.div`
