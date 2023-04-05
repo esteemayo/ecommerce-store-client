@@ -1,4 +1,4 @@
-export const links = [
+export const sublinks = [
   {
     page: 'products',
     sublinks: [
