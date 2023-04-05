@@ -27,7 +27,7 @@ export const sublinks = [
     links: [
       {
         url: '/sell',
-        icon: '',
+        icon: <FontAwesomeIcon icon={faShop} />,
         label: 'sell everywhere',
       },
       {
