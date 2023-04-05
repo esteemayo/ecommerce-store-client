@@ -136,7 +136,7 @@ const ListContainer = styled.ul`
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 5rem;
+    gap: 3rem;
   }
 `;
 
