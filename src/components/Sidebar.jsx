@@ -62,6 +62,7 @@ const CloseButton = styled.button`
   border: none;
   display: inline-block;
   font-size: 3rem;
+  padding: 0 1rem;
   background-color: transparent;
   color: hsl(210, 22%, 49%);
   cursor: pointer;
