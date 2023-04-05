@@ -12,7 +12,22 @@ const Submenu = () => {
   const containerRef = useRef();
   const [columns, setColumns] = useState('col-2');
 
-  useEffect(() => { })
+  useEffect(() => {
+    setColumns('col-2');
+    const submenu = containerRef.current;
+    const { center, bottom } = location;
+
+    submenu.style.left = `${center}px`;
+    submenu.style.top = `${bottom}px`;
+
+    if (links.length === 3) {
+      setColumns('col-3');
+    }
+
+    if (links.length > 3) {
+      setColumns('col-4');
+    }
+  }, [links, location]);
 
   return (
     <Container type={isSubmenuOpen ? 'show' : ''} ref={containerRef}>
