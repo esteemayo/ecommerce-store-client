@@ -37,7 +37,7 @@ export const sublinks = [
       },
       {
         url: '/retail-and-point-of-sale',
-        icon: '',
+        icon: <FontAwesomeIcon icon={faCreditCard} />,
         label: 'retail and point of sale',
       },
       {
