@@ -1,4 +1,4 @@
-import { faBagShopping, faCreditCard, faDisplay, faShirt, faShop, faStore } from '@fortawesome/free-solid-svg-icons';
+import { faBagShopping, faBlog, faBolt, faBook, faBookOpen, faCartShopping, faCreditCard, faDisplay, faHandshake, faLaptop, faLayerGroup, faMoneyBills, faPeopleRoof, faPhone, faShirt, faShop, faSitemap, faStore, faTruckFast } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export const sublinks = [
