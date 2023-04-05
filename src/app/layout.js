@@ -1,5 +1,5 @@
 import Navbar from '@/components/Navbar'
-import Submenu from '@/components/Submenu'
+import Submenu from '@/components/Submenu';
 import './globals.css'
 
 export default function RootLayout({ children }) {
