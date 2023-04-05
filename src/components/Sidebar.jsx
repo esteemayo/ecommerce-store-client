@@ -100,7 +100,7 @@ const ListsContainer = styled.ul`
 `;
 
 const LinksContainer = styled.div`
-  
+  margin-top: 1.5rem;
 `;
 
 const Title = styled.h4`
