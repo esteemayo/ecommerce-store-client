@@ -36,7 +36,7 @@ const Container = styled.aside`
 
 const Wrapper = styled.div`
   width: 90vw;
-  height: 90vh;
+  height: 97vh;
   max-width: 62rem;
   padding: 4rem 2rem;
   background-color: #fff;
