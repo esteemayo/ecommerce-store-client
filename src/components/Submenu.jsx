@@ -39,7 +39,7 @@ const Container = styled.aside`
 `;
 
 const Title = styled.h4`
-
+  display: inline-block;
 `;
 
 const ListContainer = styled.ul`
