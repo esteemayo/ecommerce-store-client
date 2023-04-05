@@ -3,7 +3,9 @@ import styled from 'styled-components';
 
 const Submenu = () => {
   return (
-    <Container type='show'>Submenu</Container>
+    <Container type='show'>
+      <Title>products</Title>
+    </Container>
   );
 }
 
@@ -20,6 +22,10 @@ const Container = styled.aside`
   display: ${({ type }) => type === 'show' ? 'block' : 'none'};
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   z-index: 3000;
+`;
+
+const Title = styled.h4`
+
 `;
 
 export default Submenu;
