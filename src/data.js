@@ -82,7 +82,7 @@ export const sublinks = [
     links: [
       {
         url: '/integrate',
-        icon: '',
+        icon: <FontAwesomeIcon icon={faLaptop} />,
         label: 'integrate systems',
       },
       {
