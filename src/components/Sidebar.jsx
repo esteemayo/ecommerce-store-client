@@ -12,4 +12,8 @@ const Container = styled.aside`
   
 `;
 
+const Wrapper = styled.div`
+  
+`;
+
 export default Sidebar;
