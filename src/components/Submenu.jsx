@@ -1,3 +1,5 @@
+'use client';
+
 const Submenu = () => {
   return (
     <div>Submenu</div>
