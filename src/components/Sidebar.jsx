@@ -104,7 +104,10 @@ const LinksContainer = styled.div`
 `;
 
 const Title = styled.h4`
-  
+  display: inline-block;
+  text-transform: capitalize;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
 `;
 
 const LinksWrapper = styled.article`
