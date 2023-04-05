@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import Navbar from '@/components/Navbar';
 import Submenu from '@/components/Submenu';
 import store from '@/features/store';
-import './globals.css'
+import './globals.css';
 
 export default function RootLayout({ children }) {
   return (
