@@ -119,6 +119,12 @@ const ListsContainer = styled.ul`
 
 const ListItem = styled.li`
   font-size: 1.5rem;
+
+  & > * {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
 `;
 
 export default Sidebar;
