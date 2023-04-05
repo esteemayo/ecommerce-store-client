@@ -8,7 +8,7 @@ const Submenu = () => {
   return (
     <Container type='show'>
       <Title>products</Title>
-      <ListContainer>
+      <ListContainer columns='col-2'>
         <ListItem>
           <Link href='/' passHref>
             <FontAwesomeIcon icon={faCartShopping} />
