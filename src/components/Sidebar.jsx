@@ -9,6 +9,9 @@ const Sidebar = () => {
         <CloseButton>
           <FontAwesomeIcon icon={faXmark} />
         </CloseButton>
+        <LinksContainer>
+
+        </LinksContainer>
       </Wrapper>
     </Container>
   );
@@ -29,6 +32,10 @@ const Wrapper = styled.div`
 
 const CloseButton = styled.button`
 
+`;
+
+const LinksContainer = styled.div`
+  
 `;
 
 export default Sidebar;
