@@ -5,6 +5,7 @@ import { faXmark } from '@fortawesome/free-solid-svg-icons';
 
 import { closeSidebar } from '@/features/submenu/submenuSlice';
 import { sublinks } from '@/data';
+import Link from 'next/link';
 
 const Sidebar = () => {
   const dispatch = useDispatch();
