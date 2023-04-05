@@ -27,7 +27,9 @@ const Container = styled.aside`
 `;
 
 const Wrapper = styled.div`
-  
+  width: 90vw;
+  height: 90vh;
+  max-width: 62rem;
 `;
 
 const CloseButton = styled.button`
