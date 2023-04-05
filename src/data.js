@@ -7,7 +7,7 @@ export const sublinks = [
     links: [
       {
         url: '/featured',
-        icon: '',
+        icon: <FontAwesomeIcon icon={faLayerGroup} />,
         label: 'featured',
       },
       {
