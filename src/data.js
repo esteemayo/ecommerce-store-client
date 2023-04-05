@@ -87,7 +87,7 @@ export const sublinks = [
       },
       {
         url: '/ecommerce-automation',
-        icon: '',
+        icon: <FontAwesomeIcon icon={faStore} />,
         label: 'automation',
       },
       {
