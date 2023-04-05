@@ -99,6 +99,7 @@ const ListItem = styled.li`
     &:link,
     &:visited {
       text-decoration: none;
+      font-weight: 500;
     }
   }
 `;
