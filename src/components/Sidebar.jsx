@@ -59,6 +59,8 @@ const CloseButton = styled.button`
   position: absolute;
   top: 1rem;
   right: 1rem;
+  border: none;
+  display: inline-block;
 `;
 
 const LinksContainer = styled.div`
