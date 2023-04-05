@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 
 const Sidebar = () => {
+  const dispatch = useDispatch();
   const { isSidebarOpen } = useSelector((state) => ({ ...state.submenu }));
 
   return (
