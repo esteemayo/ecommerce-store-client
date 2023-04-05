@@ -3,8 +3,12 @@ import styled from 'styled-components';
 
 const Submenu = () => {
   return (
-    <div>Submenu</div>
+    <Container>Submenu</Container>
   );
 }
+
+const Container = styled.aside`
+
+`
 
 export default Submenu;
