@@ -8,6 +8,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from 'next/image';
 import { useDispatch } from 'react-redux';
+
 import { openSubmenu } from '@/features/submenu/submenuSlice';
 
 const Navbar = () => {
