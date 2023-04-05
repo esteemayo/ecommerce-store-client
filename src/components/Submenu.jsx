@@ -94,6 +94,13 @@ const ListContainer = styled.ul`
 const ListItem = styled.li`
   font-size: 1.5rem;
   text-transform: capitalize;
+
+  a {
+    &:link,
+    &:visited {
+      text-decoration: none;
+    }
+  }
 `;
 
 export default Submenu;
