@@ -1,5 +1,25 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBagShopping, faBlog, faBolt, faBook, faBookOpen, faCartShopping, faCreditCard, faDisplay, faHandshake, faLaptop, faLayerGroup, faMoneyBills, faPeopleRoof, faPhone, faShirt, faShop, faSitemap, faStore, faTruckFast } from '@fortawesome/free-solid-svg-icons';
+import {
+  faBagShopping,
+  faBlog,
+  faBolt,
+  faBook,
+  faBookOpen,
+  faCartShopping,
+  faCreditCard,
+  faDisplay,
+  faHandshake,
+  faLaptop,
+  faLayerGroup,
+  faMoneyBills,
+  faPeopleRoof,
+  faPhone,
+  faShirt,
+  faShop,
+  faSitemap,
+  faStore,
+  faTruckFast,
+} from '@fortawesome/free-solid-svg-icons';
 
 export const sublinks = [
   {
