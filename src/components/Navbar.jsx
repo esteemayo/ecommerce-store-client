@@ -22,7 +22,15 @@ const Navbar = () => {
     const center = (tempBtn.left + tempBtn.right) / 2;
     const bottom = tempBtn.bottom - 3;
 
-    dispatch(openSubmenu(page, { center, bottom }));
+    const submenu = {
+      page,
+      coordinates: {
+        center,
+        bottom,
+      },
+    };
+
+    dispatch(openSubmenu(submenu));
   };
 
   return (
