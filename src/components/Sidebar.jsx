@@ -61,6 +61,8 @@ const CloseButton = styled.button`
   right: 1rem;
   border: none;
   display: inline-block;
+  font-size: 3rem;
+  background-color: transparent;
 `;
 
 const LinksContainer = styled.div`
