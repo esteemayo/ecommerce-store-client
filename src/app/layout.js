@@ -2,6 +2,7 @@ import { Provider } from 'react-redux';
 
 import Navbar from '@/components/Navbar';
 import Submenu from '@/components/Submenu';
+import store from '@/features/store';
 import './globals.css'
 
 export default function RootLayout({ children }) {
@@ -13,11 +14,13 @@ export default function RootLayout({ children }) {
       */}
       <head />
       <body>
-        <div className='container'>
-          <Navbar />
-          <Submenu />
-          {children}
-        </div>
+        <Provider store={store}>
+          <div className='container'>
+            <Navbar />
+            <Submenu />
+            {children}
+          </div>
+        </Provider>
       </body>
     </html>
   )
