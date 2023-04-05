@@ -17,12 +17,30 @@ const Sidebar = () => {
         <CloseButton onClick={() => dispatch(closeSidebar())}>
           <FontAwesomeIcon icon={faXmark} />
         </CloseButton>
-        <LinksContainer>
-          <Title>products</Title>
-          <ListsContainer>
-            <ListItem></ListItem>
-          </ListsContainer>
-        </LinksContainer>
+        <LinksWrapper>
+          {sublinks.map((item, index) => {
+            const { page, links } = item;
+            return (
+              <LinksContainer key={index}>
+                <Title>{page}</Title>
+                <ListsContainer>
+                  {links.map((link, index) => {
+                    const { url, icon, label } = link;
+                    return (
+                      <ListItem key={index}>
+                        <Link href={url} passHref>
+                          {icon}
+                          &nbsp;
+                          {label}
+                        </Link>
+                      </ListItem>
+                    );
+                  })}
+                </ListsContainer>
+              </LinksContainer>
+            );
+          })}
+        </LinksWrapper>
       </Wrapper>
     </Container>
   );
