@@ -8,6 +8,36 @@ const Submenu = () => {
   return (
     <Container type='show'>
       <Title>products</Title>
+      <ListContainer>
+        <ListItem>
+          <Link href='/' passHref>
+            <FontAwesomeIcon icon={faCartShopping} />
+            &nbsp;
+            products
+          </Link>
+        </ListItem>
+        <ListItem>
+          <Link href='/' passHref>
+            <FontAwesomeIcon icon={faCartShopping} />
+            &nbsp;
+            products
+          </Link>
+        </ListItem>
+        <ListItem>
+          <Link href='/' passHref>
+            <FontAwesomeIcon icon={faCartShopping} />
+            &nbsp;
+            products
+          </Link>
+        </ListItem>
+        <ListItem>
+          <Link href='/' passHref>
+            <FontAwesomeIcon icon={faCartShopping} />
+            &nbsp;
+            products
+          </Link>
+        </ListItem>
+      </ListContainer>
     </Container>
   );
 }
