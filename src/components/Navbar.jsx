@@ -153,6 +153,10 @@ const Button = styled.button`
   background-color: transparent;
   color: #fff;
   cursor: default;
+
+  &:hover {
+    opacity: 0.5;
+  }
 `;
 
 const LoginButton = styled.button`
