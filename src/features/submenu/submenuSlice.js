@@ -2,7 +2,7 @@ import { createSlice } from '@reduxjs/toolkit';
 import { sublinks } from '@/data';
 
 const initialState = {
-  isSidebarOpen: false,
+  isSidebarOpen: true,
   isSubmenuOpen: false,
   location: {},
   page: {
