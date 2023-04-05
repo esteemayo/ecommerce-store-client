@@ -72,7 +72,7 @@ export const sublinks = [
       },
       {
         url: '/notebooks',
-        icon: '',
+        icon: <FontAwesomeIcon icon={faBook} />,
         label: 'notebooks',
       },
     ],
