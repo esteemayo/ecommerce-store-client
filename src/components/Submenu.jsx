@@ -15,7 +15,7 @@ const Submenu = () => {
   useEffect(() => { })
 
   return (
-    <Container type='show'>
+    <Container type={isSubmenuOpen ? 'show' : ''}>
       <Title>products</Title>
       <ListContainer columns='col-4'>
         <ListItem>
