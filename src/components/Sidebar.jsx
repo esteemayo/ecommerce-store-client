@@ -71,7 +71,7 @@ const Wrapper = styled.div`
   width: 90vw;
   height: 97vh;
   max-width: 62rem;
-  padding: 4rem 2rem;
+  padding: 2rem 1.5rem;
   background-color: #fff;
   border-radius: 0.5rem;
   box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
