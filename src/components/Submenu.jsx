@@ -12,6 +12,7 @@ const Container = styled.aside`
   width: 50rem;
   height: 40rem;
   background-color: #f4d4f5;
+  border-radius: 1rem;
 `
 
 export default Submenu;
