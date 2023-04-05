@@ -17,7 +17,7 @@ const Submenu = () => {
   return (
     <Container type={isSubmenuOpen ? 'show' : ''} ref={containerRef}>
       <Title>products</Title>
-      <ListContainer columns='col-4' ref={containerRef}>
+      <ListContainer columns={columns}>
         <ListItem>
           <Link href='/' passHref>
             <FontAwesomeIcon icon={faCartShopping} />
