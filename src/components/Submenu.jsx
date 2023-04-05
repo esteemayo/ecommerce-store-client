@@ -26,6 +26,8 @@ const Container = styled.aside`
   &::before {
     content: '';
     display: block;
+    width: 0;
+    height: 0;
   }
 `;
 
