@@ -136,7 +136,12 @@ const Wrapper = styled.div`
 `;
 
 const LogoBox = styled.div`
-  
+  a {
+    &:link,
+    &:visited {
+      text-decoration: none;
+    }
+  }
 `;
 
 const ToggleButton = styled.button`
