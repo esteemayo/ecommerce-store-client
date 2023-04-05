@@ -112,7 +112,7 @@ export const sublinks = [
       },
       {
         url: '/blog',
-        icon: '',
+        icon: <FontAwesomeIcon icon={faBlog} />,
         label: 'blog',
       },
       {
