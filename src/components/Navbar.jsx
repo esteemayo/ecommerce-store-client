@@ -148,6 +148,7 @@ const Button = styled.button`
   border: none;
   display: inline-block;
   font-family: inherit;
+  font-weight: 600;
   font-size: 1.5rem;
   text-transform: capitalize;
   background-color: transparent;
