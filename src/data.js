@@ -97,7 +97,7 @@ export const sublinks = [
       },
       {
         url: '/partners',
-        icon: '',
+        icon: <FontAwesomeIcon icon={faHandshake} />,
         label: 'partners',
       },
     ],
