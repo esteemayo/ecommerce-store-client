@@ -28,6 +28,9 @@ const Container = styled.aside`
     display: block;
     width: 0;
     height: 0;
+    border-left: 0.5rem solid transparent;
+    border-right: 0.5rem solid transparent;
+    border-bottom: 0.5rem solid #f4d4f5;
   }
 `;
 
