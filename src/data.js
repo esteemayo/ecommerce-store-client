@@ -57,7 +57,7 @@ export const sublinks = [
       },
       {
         url: '/automation',
-        icon: '',
+        icon: <FontAwesomeIcon icon={faBolt} />,
         label: 'automation',
       },
       {
