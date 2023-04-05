@@ -88,7 +88,7 @@ const ListContainer = styled.ul`
   gap: 0.25rem 2rem;
   width: ${({ columns }) => columns === 'col-2' && '20rem'};
   width: ${({ columns }) => columns === 'col-3' && '30rem'};
-  width: ${({ columns }) => columns === 'col-4' && '40rem'};
+  width: ${({ columns }) => columns === 'col-4' && '50rem'};
 `;
 
 const ListItem = styled.li`
