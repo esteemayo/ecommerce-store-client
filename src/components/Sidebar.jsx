@@ -76,6 +76,10 @@ const CloseButton = styled.button`
   }
 `;
 
+const LinksWrapper = styled.article`
+  
+`;
+
 const LinksContainer = styled.div`
   
 `;
