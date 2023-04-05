@@ -101,6 +101,7 @@ const ListItem = styled.li`
     &:visited {
       text-decoration: none;
       font-weight: 500;
+      color: currentColor;
     }
   }
 `;
