@@ -58,6 +58,14 @@ const Navbar = () => {
               integrate
             </Button>
           </ListItem>
+          <ListItem>
+            <Button
+              type='button'
+              className='link-btn'
+            >
+              resources
+            </Button>
+          </ListItem>
         </ListContainer>
         <LoginButton
           onMouseOver={() => setIsHover(true)}
