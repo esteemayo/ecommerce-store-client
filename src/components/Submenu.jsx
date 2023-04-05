@@ -24,8 +24,12 @@ const Submenu = () => {
       setColumns('col-3');
     }
 
-    if (links.length > 3) {
+    if (links.length === 4) {
       setColumns('col-4');
+    }
+
+    if (links.length > 4) {
+      setColumns('col-3');
     }
   }, [links, location]);
 
