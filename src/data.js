@@ -122,7 +122,7 @@ export const sublinks = [
       },
       {
         url: '/stories',
-        icon: '',
+        icon: <FontAwesomeIcon icon={faBookOpen} />,
         label: 'customer stories',
       },
     ],
