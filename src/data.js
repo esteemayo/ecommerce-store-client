@@ -32,7 +32,7 @@ export const sublinks = [
       },
       {
         url: '/online-store',
-        icon: '',
+        icon: <FontAwesomeIcon icon={faStore} />,
         label: 'online store',
       },
       {
