@@ -21,7 +21,7 @@ const Sidebar = () => {
           {sublinks.map((item, index) => {
             const { page, links } = item;
             return (
-              <LinksContainer key={index}>
+              <LinksWrapper key={index}>
                 <Title>{page}</Title>
                 <ListsContainer>
                   {links.map((link, index) => {
