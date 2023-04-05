@@ -37,7 +37,7 @@ const Sidebar = () => {
                     );
                   })}
                 </ListsContainer>
-              </LinksContainer>
+              </LinksWrapper>
             );
           })}
         </LinksContainer>
