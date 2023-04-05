@@ -63,6 +63,8 @@ const CloseButton = styled.button`
   display: inline-block;
   font-size: 3rem;
   background-color: transparent;
+  color: hsl(210, 22%, 49%);
+  cursor: pointer;
 `;
 
 const LinksContainer = styled.div`
