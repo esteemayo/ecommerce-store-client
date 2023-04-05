@@ -81,6 +81,10 @@ const Title = styled.h4`
 
 const ListContainer = styled.ul`
   list-style: none;
+  padding: 2rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem 2rem;
 `;
 
 const ListItem = styled.li`
