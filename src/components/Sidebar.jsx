@@ -132,6 +132,7 @@ const ListItem = styled.li`
       text-decoration: none;
       text-transform: capitalize;
       color: hsl(209, 61%, 16%);
+      outline-color: #777;
       transition: all 0.2s ease;
     }
 
