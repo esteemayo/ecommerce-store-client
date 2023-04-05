@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import { useDispatch, useSelector } from 'react-redux';
+
 import { closeSidebar } from '@/features/submenu/submenuSlice';
 
 const Sidebar = () => {
