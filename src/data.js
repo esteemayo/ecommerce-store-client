@@ -67,7 +67,7 @@ export const sublinks = [
       },
       {
         url: '/payments',
-        icon: '',
+        icon: <FontAwesomeIcon icon={faMoneyBills} />,
         label: 'payments',
       },
       {
