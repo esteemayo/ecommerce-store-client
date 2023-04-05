@@ -95,20 +95,20 @@ const CloseButton = styled.button`
   }
 `;
 
-const LinksWrapper = styled.article`
-  margin-bottom: 2rem;
+const ListsContainer = styled.ul`
+  
 `;
 
 const LinksContainer = styled.div`
   
-`;
+  `;
 
 const Title = styled.h4`
   
-`;
+  `;
 
-const ListsContainer = styled.ul`
-  
+const LinksWrapper = styled.article`
+  margin-bottom: 2rem;
 `;
 
 const ListItem = styled.li`
