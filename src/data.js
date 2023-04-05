@@ -63,7 +63,7 @@ export const sublinks = [
       {
         url: '/ecommerce',
         icon: <FontAwesomeIcon icon={faDisplay} />,
-        label: 'international ecommerce',
+        label: 'ecommerce',
       },
     ],
   },
