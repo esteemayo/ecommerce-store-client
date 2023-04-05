@@ -83,8 +83,12 @@ const ListContainer = styled.ul`
   list-style: none;
   padding: 2rem 0;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 0.25rem 2rem;
+  width: ${({ columns }) => columns === 'col-2' && '20rem'};
+  width: ${({ columns }) => columns === 'col-3' && '30rem'};
+  width: ${({ columns }) => columns === 'col-4' && '40rem'};
 `;
 
 const ListItem = styled.li`
