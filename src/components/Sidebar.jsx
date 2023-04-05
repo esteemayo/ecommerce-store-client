@@ -83,6 +83,7 @@ const CloseButton = styled.button`
   top: 1rem;
   right: 1rem;
   border: none;
+  outline: none;
   display: inline-block;
   font-size: 3rem;
   padding: 0 1rem;
