@@ -17,7 +17,7 @@ export const sublinks = [
       },
       {
         url: '/accessories',
-        icon: '',
+        icon: <FontAwesomeIcon icon={faBagShopping} />,
         label: 'accessories',
       },
     ],
