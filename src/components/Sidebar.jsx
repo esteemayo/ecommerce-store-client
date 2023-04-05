@@ -99,15 +99,15 @@ const LinksContainer = styled.div`
   margin-top: 1.5rem;
 `;
 
+const LinksWrapper = styled.article`
+  margin-bottom: 2rem;
+  `;
+
 const Title = styled.h4`
   display: inline-block;
   text-transform: capitalize;
   font-size: 1.6rem;
   margin-bottom: 1rem;
-`;
-
-const LinksWrapper = styled.article`
-  margin-bottom: 2rem;
 `;
 
 const ListsContainer = styled.ul`
