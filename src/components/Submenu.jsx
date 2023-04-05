@@ -32,4 +32,8 @@ const ListContainer = styled.ul`
 
 `;
 
+const ListItem = styled.li`
+
+`;
+
 export default Submenu;
