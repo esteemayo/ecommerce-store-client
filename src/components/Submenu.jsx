@@ -17,6 +17,8 @@ const Container = styled.aside`
   left: 50%;
   top: 5rem;
   transform: translateX(-50%);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  z-index: 3000;
 `
 
 export default Submenu;
