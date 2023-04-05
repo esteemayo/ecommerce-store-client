@@ -43,7 +43,7 @@ export const sublinks = [
     ],
   },
   {
-    page: 'sell',
+    page: 'sells',
     links: [
       {
         url: '/sell',
