@@ -12,7 +12,7 @@ export const sublinks = [
       },
       {
         url: '/clothing',
-        icon: '',
+        icon: <FontAwesomeIcon icon={faShirt} />,
         label: 'clothing',
       },
       {
