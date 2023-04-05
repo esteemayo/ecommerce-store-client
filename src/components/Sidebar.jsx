@@ -106,7 +106,7 @@ const LinksWrapper = styled.article`
 const Title = styled.h4`
   display: inline-block;
   text-transform: capitalize;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
 `;
 
