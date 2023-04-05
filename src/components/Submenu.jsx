@@ -94,7 +94,7 @@ const ListContainer = styled.ul`
 const ListItem = styled.li`
   font-size: 1.5rem;
   text-transform: capitalize;
-  color: #fff;
+  color: #c7c4c4;
 
   a {
     &:link,
