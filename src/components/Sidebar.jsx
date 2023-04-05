@@ -99,10 +99,6 @@ const LinksContainer = styled.div`
   margin-top: 1.5rem;
 `;
 
-const ListsContainer = styled.ul`
-
-`
-
 const Title = styled.h4`
   display: inline-block;
   text-transform: capitalize;
@@ -112,6 +108,10 @@ const Title = styled.h4`
 
 const LinksWrapper = styled.article`
   margin-bottom: 2rem;
+`;
+
+const ListsContainer = styled.ul`
+
 `;
 
 const ListItem = styled.li`
