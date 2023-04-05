@@ -40,6 +40,9 @@ const Container = styled.aside`
 
 const Title = styled.h4`
   display: inline-block;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 1.6rem;
 `;
 
 const ListContainer = styled.ul`
