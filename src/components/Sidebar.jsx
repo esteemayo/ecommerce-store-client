@@ -118,7 +118,7 @@ const ListsContainer = styled.ul`
 `;
 
 const ListItem = styled.li`
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 
   & > * {
     display: flex;
