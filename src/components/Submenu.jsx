@@ -22,6 +22,11 @@ const Container = styled.aside`
   display: ${({ type }) => type === 'show' ? 'block' : 'none'};
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   z-index: 3000;
+
+  &::before {
+    content: '';
+    display: block;
+  }
 `;
 
 const Title = styled.h4`
