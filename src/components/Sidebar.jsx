@@ -17,7 +17,7 @@ const Sidebar = () => {
         <CloseButton onClick={() => dispatch(closeSidebar())}>
           <FontAwesomeIcon icon={faXmark} />
         </CloseButton>
-        <LinksWrapper>
+        <LinksContainer>
           {sublinks.map((item, index) => {
             const { page, links } = item;
             return (
