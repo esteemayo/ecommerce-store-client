@@ -3,7 +3,9 @@ import Slider from '@/components/Slider';
 
 const Home = () => {
   return (
-    <Container>Hello</Container>
+    <Container>
+      <Slider />
+    </Container>
   );
 }
 
