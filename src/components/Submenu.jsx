@@ -74,7 +74,7 @@ const Container = styled.aside`
     height: 0;
     border-left: 0.5rem solid transparent;
     border-right: 0.5rem solid transparent;
-    border-bottom: 0.5rem solid #f4d4f5;
+    border-bottom: 0.5rem solid #f5f5f5;
     position: absolute;
     top: -0.5rem;
     left: 50%;
