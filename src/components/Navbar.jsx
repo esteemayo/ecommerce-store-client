@@ -209,7 +209,7 @@ const LoginButton = styled.button`
     font-weight: 600;
     font-size: 1.5rem;
     padding: 0.75rem 2rem;
-    background-color: #f626fd;
+    background-color: #136dd4;
     color: #fff;
     border-radius: 10rem;
     cursor: pointer;
