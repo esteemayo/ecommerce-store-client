@@ -5,6 +5,7 @@ import Navbar from '@/components/Navbar';
 import Submenu from '@/components/Submenu';
 import store from '@/store/store';
 import Sidebar from '@/components/Sidebar';
+import 'bootstrap/dist/css/bootstrap.min.css'
 import './globals.css';
 
 export default function RootLayout({ children }) {
