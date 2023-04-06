@@ -56,7 +56,7 @@ const Submenu = () => {
 
 const Container = styled.aside`
   padding: 2rem;
-  background-color: #f4d4f5;
+  background-color: #f5f5f5;
   border-radius: 1rem;
   position: absolute;
   left: 50%;
