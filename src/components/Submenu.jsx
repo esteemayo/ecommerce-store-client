@@ -64,6 +64,7 @@ const Container = styled.aside`
   transform: translateX(-50%);
   display: ${({ type }) => type === 'show' ? 'block' : 'none'};
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.09);
   z-index: 3000;
 
   &::before {
