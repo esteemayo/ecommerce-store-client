@@ -117,7 +117,7 @@ const ListItem = styled.li`
     }
 
     &:hover {
-      color: #777;
+      color: #686767;
     }
 
     svg {
