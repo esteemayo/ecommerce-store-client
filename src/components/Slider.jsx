@@ -44,6 +44,8 @@ const Container = styled.div`
 const ImageWrapper = styled.div`
   & > img {
     display: inline-block;
+    width: 100vw;
+    height: 100vh;
     object-fit: center;
   }
 `;
