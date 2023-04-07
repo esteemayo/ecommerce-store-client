@@ -36,7 +36,7 @@ export const {
   closeSidebar,
   closeSubmenu,
   openSidebar,
-  openSubmenu
+  openSubmenu,
 } = subMenuSlice.actions;
 
 export default subMenuSlice.reducer;
