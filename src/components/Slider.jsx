@@ -1,49 +1,40 @@
 import Image from 'next/image';
 import { useState } from 'react';
-import Carousel from 'react-bootstrap/Carousel';
+import styled from 'styled-components';
+import { Carousel } from 'react-responsive-carousel';
 
 const Slider = () => {
   return (
-    <Carousel activeIndex={index} onSelect={handleSelect}>
-      <Carousel.Item>
-        <Image
-          className="d-block w-100"
-          src="holder.js/800x400?text=First slide&bg=373940"
-          alt="First slide"
-        />
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <Image
-          className="d-block w-100"
-          src="holder.js/800x400?text=Second slide&bg=282c34"
-          alt="Second slide"
-        />
-
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <Image
-          className="d-block w-100"
-          src="holder.js/800x400?text=Third slide&bg=20232a"
-          alt="Third slide"
-        />
-
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel>
+    <Container>
+      <Carousel>
+        <ImageWrapper>
+          <Image width={1024} height={600} src="https://images.pexels.com/photos/4049990/pexels-photo-4049990.jpeg?auto=compress&cs=tinysrgb&w=600" alt='' />
+          <p className="legend">Legend 1</p>
+        </ImageWrapper>
+        <ImageWrapper>
+          <Image width={1024} height={600} src="https://images.pexels.com/photos/3784391/pexels-photo-3784391.jpeg?auto=compress&cs=tinysrgb&w=600" alt='' />
+          <p className="legend">Legend 2</p>
+        </ImageWrapper>
+        <ImageWrapper>
+          <Image width={1024} height={600} src="https://images.pexels.com/photos/4968390/pexels-photo-4968390.jpeg?auto=compress&cs=tinysrgb&w=600" alt='' />
+          <p className="legend">Legend 3</p>
+        </ImageWrapper>
+      </Carousel>
+    </Container>
   );
 }
+
+const Container = styled.div`
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+`;
+
+const ImageWrapper = styled.div`
+  img {
+    display: inline-block;
+    object-fit: center;
+  }
+`;
 
 export default Slider;
