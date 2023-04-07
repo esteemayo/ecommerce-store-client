@@ -23,7 +23,12 @@ const Slider = () => {
           />
         </ImageWrapper>
         <ImageWrapper>
-          <Image width={1024} height={600} src="https://images.pexels.com/photos/4968390/pexels-photo-4968390.jpeg?auto=compress&cs=tinysrgb&w=600" alt='' />
+          <Image
+            width={1024}
+            height={600}
+            src="https://images.pexels.com/photos/4968390/pexels-photo-4968390.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt=''
+          />
         </ImageWrapper>
       </Carousel>
     </Container>
