@@ -3,7 +3,7 @@ import { Provider } from 'react-redux';
 
 import store from '@/store/store';
 import Submenu from '@/components/Submenu';
-import store from '@/store/store';
+import Navbar from '@/components/Navbar';
 import Sidebar from '@/components/Sidebar';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import './globals.css';
