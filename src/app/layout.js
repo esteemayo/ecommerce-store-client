@@ -1,7 +1,7 @@
 'use client';
 import { Provider } from 'react-redux';
 
-import Navbar from '@/components/Navbar';
+import store from '@/store/store';
 import Submenu from '@/components/Submenu';
 import store from '@/store/store';
 import Sidebar from '@/components/Sidebar';
