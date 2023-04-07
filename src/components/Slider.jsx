@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import styled from 'styled-components';
+import Image from 'next/image';
 import { Carousel } from 'react-responsive-carousel';
 
 const Slider = () => {
