@@ -32,6 +32,11 @@ export const subMenuSlice = createSlice({
   },
 });
 
-export const { closeSidebar, closeSubmenu, openSidebar, openSubmenu } = subMenuSlice.actions;
+export const {
+  closeSidebar,
+  closeSubmenu,
+  openSidebar,
+  openSubmenu
+} = subMenuSlice.actions;
 
 export default subMenuSlice.reducer;
