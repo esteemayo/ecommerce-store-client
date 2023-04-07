@@ -42,7 +42,7 @@ const Container = styled.div`
 `;
 
 const ImageWrapper = styled.div`
-  img {
+  & > img {
     display: inline-block;
     object-fit: center;
   }
