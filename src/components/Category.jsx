@@ -28,4 +28,8 @@ const Container = styled.article`
   -moz-box-shadow: -1px -1px 35px 3px rgba(0, 0, 0, 0.17);
 `;
 
+const Heading = styled.h2`
+  
+`;
+
 export default Category;
