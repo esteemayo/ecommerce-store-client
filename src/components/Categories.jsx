@@ -12,7 +12,7 @@ const Container = styled.section`
   width: 100%;
   max-width: 102.4rem;
   margin: 0 auto;
-  padding: 15rem 0;
+  padding: 10rem 0;
 `;
 
 const Heading = styled.h1`
