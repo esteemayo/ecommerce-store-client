@@ -6,4 +6,8 @@ const Category = () => {
   );
 }
 
+const Container = styled.article`
+  
+`;
+
 export default Category;
