@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const Categories = () => {
   return (
     <Container>
-      Categories
+      <Heading>Shop by category</Heading>
     </Container>
   );
 }
