@@ -23,6 +23,7 @@ const Heading = styled.h1`
   font-weight: 600;
   font-size: 2.7rem;
   color: #1658a3;
+  margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
 
