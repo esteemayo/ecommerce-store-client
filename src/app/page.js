@@ -7,6 +7,7 @@ const Home = () => {
   return (
     <Container>
       <Slider />
+      <Categories />
     </Container>
   );
 }
