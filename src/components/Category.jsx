@@ -18,8 +18,10 @@ const Category = () => {
         height={100}
         alt=''
       />
-      <MainHeading>Jeans</MainHeading>
-      <SubHeading>100</SubHeading>
+      <Wrapper>
+        <MainHeading>Jeans</MainHeading>
+        <SubHeading>100</SubHeading>
+      </Wrapper>
     </Container>
   );
 }
