@@ -30,6 +30,7 @@ const Heading = styled.h1`
     width: 4rem;
     height: 3px;
     background-color: #1658a3;
+    border-radius: 3px;
   }
 `;
 
