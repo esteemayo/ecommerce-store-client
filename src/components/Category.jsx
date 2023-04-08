@@ -18,7 +18,7 @@ const Category = () => {
         height={100}
         alt=''
       />
-      <Heading>Jeans</Heading>
+      <MainHeading>Jeans</MainHeading>
       <SubHeading>100</SubHeading>
     </Container>
   );
@@ -30,7 +30,7 @@ const Container = styled.article`
   -moz-box-shadow: -1px -1px 35px 3px rgba(0, 0, 0, 0.17);
 `;
 
-const Heading = styled.h2`
+const MainHeading = styled.h2`
   
 `;
 
