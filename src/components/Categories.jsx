@@ -14,4 +14,8 @@ const Container = styled.section`
   margin: 0 auto;
 `;
 
+const Heading = styled.h1`
+  
+`;
+
 export default Categories;
