@@ -19,6 +19,7 @@ const Category = () => {
         alt=''
       />
       <Heading>Jeans</Heading>
+      <SubHeading>100</SubHeading>
     </Container>
   );
 }
