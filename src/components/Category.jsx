@@ -33,4 +33,8 @@ const Heading = styled.h2`
   
 `;
 
+const SubHeading = styled.h3`
+  
+`;
+
 export default Category;
