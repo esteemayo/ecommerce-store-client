@@ -79,7 +79,7 @@ const Category = () => {
 const Container = styled.article`
   display: flex;
   align-items: center;
-  `;
+`;
 
 const Wrapper = styled.div`
   box-shadow: -1px -1px 35px 3px rgba(0 ,0, 0, 0.17);
