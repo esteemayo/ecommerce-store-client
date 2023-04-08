@@ -45,7 +45,7 @@ const ImageWrapper = styled.div`
   & > img {
     display: inline-block;
     width: 100%;
-    height: 75vh;
+    height: 100%;
     object-fit: center;
   }
 `;
