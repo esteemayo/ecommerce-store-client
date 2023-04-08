@@ -18,7 +18,7 @@ const Slider = () => {
           <Image
             width={1024}
             height={600}
-            src="https://images.pexels.com/photos/3784391/pexels-photo-3784391.jpeg?auto=compress&cs=tinysrgb&w=600"
+            src='https://images.pexels.com/photos/3784391/pexels-photo-3784391.jpeg?auto=compress&cs=tinysrgb&w=600'
             alt=''
           />
         </ImageWrapper>
