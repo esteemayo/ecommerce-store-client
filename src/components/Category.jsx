@@ -88,6 +88,12 @@ const Wrapper = styled.div`
   box-shadow: -1px -1px 35px 3px rgba(0 ,0, 0, 0.17);
   -webkit-box-shadow: -1px -1px 35px 3px rgba(0, 0, 0, 0.17);
   -moz-box-shadow: -1px -1px 35px 3px rgba(0, 0, 0, 0.17);
+
+  & > img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+  }
 `;
 
 const HeadingWrapper = styled.div`
