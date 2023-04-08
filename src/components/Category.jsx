@@ -18,10 +18,10 @@ const Category = () => {
         height={100}
         alt=''
       />
-      <Wrapper>
+      <HeadingWrapper>
         <MainHeading>Jeans</MainHeading>
         <SubHeading>100</SubHeading>
-      </Wrapper>
+      </HeadingWrapper>
     </Container>
   );
 }
@@ -33,6 +33,10 @@ const Container = styled.article`
 `;
 
 const Wrapper = styled.div`
+  
+`;
+
+const HeadingWrapper = styled.div`
   
 `;
 
