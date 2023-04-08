@@ -6,4 +6,8 @@ const Categories = () => {
   );
 }
 
+const Container = styled.section`
+  
+`;
+
 export default Categories;
