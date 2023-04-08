@@ -37,7 +37,7 @@ const Slider = () => {
 
 const Container = styled.div`
   width: 100vw;
-  height: 100vh;
+  height: 75vh;
   overflow: hidden;
 `;
 
