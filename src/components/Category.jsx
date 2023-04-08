@@ -18,6 +18,7 @@ const Category = () => {
         height={100}
         alt=''
       />
+      <Heading>Jeans</Heading>
     </Container>
   );
 }
