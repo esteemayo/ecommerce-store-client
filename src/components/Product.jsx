@@ -73,4 +73,8 @@ const Discount = styled.span`
   
 `;
 
+const Button = styled.button`
+  
+`;
+
 export default Product;
