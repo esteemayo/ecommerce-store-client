@@ -18,6 +18,12 @@ const Product = () => {
             <StarRating value={5} />
             <Reviews>(6 reviews)</Reviews>
           </ReviewContainer>
+          <PriceContainer>
+            <Prices>
+              <Discount>297</Discount>
+              <Price>235</Price>
+            </Prices>
+          </PriceContainer>
         </InfoContainer>
       </Wrapper>
     </Container>
@@ -48,6 +54,22 @@ const ReviewContainer = styled.div`
 `;
 
 const Reviews = styled.span`
+  
+`;
+
+const PriceContainer = styled.div`
+  
+`;
+
+const Prices = styled.div`
+  
+`;
+
+const Price = styled.span`
+  
+`;
+
+const Discount = styled.span`
   
 `;
 
