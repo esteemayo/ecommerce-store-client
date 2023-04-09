@@ -103,6 +103,12 @@ const Wrapper = styled.div`
     display: block;
     object-fit: cover;
   }
+
+  & > img:hover ${Button} {
+    display: inline-block;
+    visibility: visible;
+    opacity: 1;
+  }
 `;
 
 const HeadingWrapper = styled.div`
