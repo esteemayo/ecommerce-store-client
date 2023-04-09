@@ -11,6 +11,7 @@ const Product = () => {
           height={200}
           alt=''
         />
+        <ProductName>iPhone 14</ProductName>
       </Wrapper>
     </Container>
   );
