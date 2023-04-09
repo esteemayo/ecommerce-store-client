@@ -68,6 +68,11 @@ const Button = styled.button`
   left: 0;
   transition: all 0.5s ease;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
   a {
     &:link,
     &:visited {
