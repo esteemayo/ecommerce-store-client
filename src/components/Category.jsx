@@ -66,7 +66,7 @@ const Wrapper = styled.div`
   -webkit-box-shadow: -1px -1px 35px 3px rgba(0, 0, 0, 0.17);
   -moz-box-shadow: -1px -1px 35px 3px rgba(0, 0, 0, 0.17);
   position: relative;
-
+  
   & > img {
     width: 100%;
     height: 15rem;
