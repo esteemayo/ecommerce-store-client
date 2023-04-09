@@ -9,7 +9,7 @@ const Product = () => {
 }
 
 const Container = styled.article`
-  width: 25%;
+  width: 100%;
   display: flex;
   align-items: center;
   gap: 5rem;
