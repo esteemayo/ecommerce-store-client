@@ -118,7 +118,7 @@ const MainHeading = styled.h2`
 
 const SubHeading = styled.h3`
   font-weight: 300;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   color: inherit;
 `;
 
