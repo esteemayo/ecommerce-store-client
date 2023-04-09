@@ -91,6 +91,7 @@ const Wrapper = styled.div`
 
   & > img {
     width: 100%;
+    height: 15rem;
     display: block;
     object-fit: cover;
   }
