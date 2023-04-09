@@ -98,6 +98,15 @@ const Button = styled.button`
   left: 0;
 `;
 
+const Container = styled.article`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 3rem;
+`;
+
 const Wrapper = styled.div`
   width: 20%;
   box-shadow: -1px -1px 35px 3px rgba(0 ,0, 0, 0.17);
