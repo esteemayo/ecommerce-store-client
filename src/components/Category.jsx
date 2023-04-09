@@ -53,7 +53,6 @@ const Container = styled.article`
 
 const Button = styled.button`
   border: none;
-  display: inline-block;
   padding: 1rem 2rem;
   width: 100%;
   background-color: rgba(56, 122, 197, 0.5);
