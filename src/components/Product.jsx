@@ -101,8 +101,9 @@ const Product = () => {
 const Container = styled.article`
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 5rem;
+  gap: 6rem;
 `;
 
 const Wrapper = styled.div`
