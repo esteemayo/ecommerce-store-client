@@ -27,6 +27,12 @@ const Product = () => {
             </Prices>
           </PriceContainer>
           <Button>add to cart</Button>
+          <FavWrapper>
+            <WishlistButton>add to wishlist</WishlistButton>
+            <LikeButton>
+              <FontAwesomeIcon icon={faStar} />
+            </LikeButton>
+          </FavWrapper>
         </InfoContainer>
       </Wrapper>
     </Container>
@@ -77,6 +83,18 @@ const Discount = styled.span`
 `;
 
 const Button = styled.button`
+  
+`;
+
+const FavWrapper = styled.div`
+  
+`;
+
+const WishlistButton = styled.button`
+  
+`;
+
+const LikeButton = styled.button`
   
 `;
 
