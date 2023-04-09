@@ -2,8 +2,14 @@ import styled from 'styled-components';
 
 const Product = () => {
   return (
-    <div>Product</div>
+    <Container>
+      Product
+    </Container>
   );
 }
+
+const Container = styled.article`
+  
+`;
 
 export default Product;
