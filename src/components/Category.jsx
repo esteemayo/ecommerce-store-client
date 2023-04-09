@@ -121,7 +121,7 @@ const Wrapper = styled.div`
     object-fit: cover;
   }
 
-  & > img:hover ${Button} {
+  &:hover ${Button} {
     visibility: visible;
     opacity: 1;
   }
