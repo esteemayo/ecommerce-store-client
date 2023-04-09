@@ -126,7 +126,9 @@ const SubHeading = styled.h3`
 `;
 
 const Button = styled.button`
-  
+  border: none;
+  display: inline-block;
+  padding: 1rem 2rem;
 `;
 
 export default Category;
