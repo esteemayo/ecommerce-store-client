@@ -11,6 +11,8 @@ const FeaturedProducts = () => {
 }
 
 const Container = styled.section`
+  width: 100vw;
+  padding: 15rem 0;
   background-color: #f9f9f9;
 `;
 
