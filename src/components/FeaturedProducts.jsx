@@ -1,10 +1,12 @@
 import styled from 'styled-components';
+import Product from './Product';
 
 const FeaturedProducts = () => {
   return (
     <Container>
       <Wrapper>
         <Heading>Featured products</Heading>
+        <Product />
       </Wrapper>
     </Container>
   );
