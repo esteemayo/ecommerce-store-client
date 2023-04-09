@@ -130,6 +130,8 @@ const Button = styled.button`
   display: inline-block;
   padding: 1rem 2rem;
   width: 100%;
+  background-color: #1658a3;
+  color: #fff;
 `;
 
 export default Category;
