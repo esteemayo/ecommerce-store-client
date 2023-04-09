@@ -125,7 +125,7 @@ const Wrapper = styled.div`
 
 const InfoContainer = styled.div`
   padding: 2rem;
-  background-color: currentColor;
+  background-color: inherit;
 `;
 
 const ProductName = styled.h3`
