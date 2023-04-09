@@ -120,4 +120,8 @@ const SubHeading = styled.h3`
   color: inherit;
 `;
 
+const Button = styled.button`
+  
+`;
+
 export default Category;
