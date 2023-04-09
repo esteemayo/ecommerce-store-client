@@ -127,13 +127,15 @@ const SubHeading = styled.h3`
 
 const Button = styled.button`
   border: none;
-  display: inline-block;
+  display: none;
   padding: 1rem 2rem;
   width: 100%;
   background-color: #1658a3;
   color: #fff;
   outline-color: #043369;
   cursor: pointer;
+  visibility: none;
+  opacity: 0;
 `;
 
 export default Category;
