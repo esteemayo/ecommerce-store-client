@@ -9,7 +9,9 @@ const FeaturedProducts = () => {
 }
 
 const Container = styled.section`
-  
+  width: 100%;
+  max-width: 102.4rem;
+  margin: 0 auto;
 `;
 
 export default FeaturedProducts;
