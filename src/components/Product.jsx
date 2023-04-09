@@ -108,7 +108,7 @@ const Container = styled.article`
 
 const Wrapper = styled.div`
   width: 30%;
-  background-color: transparent;
+  background-color: #fff;
   border-radius: 0.5rem;
   box-shadow: 1px 3px 17px 1px rgba(156,156,156,0.8);
   -webkit-box-shadow: 1px 3px 17px 1px rgba(156,156,156,0.8);
@@ -125,6 +125,7 @@ const Wrapper = styled.div`
 
 const InfoContainer = styled.div`
   padding: 2rem;
+  background-color: currentColor;
 `;
 
 const ProductName = styled.h3`
