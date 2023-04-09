@@ -14,6 +14,10 @@ const Product = () => {
         />
         <InfoContainer>
           <ProductName>iPhone 14</ProductName>
+          <ReviewContainer>
+            <StarRating value={5} />
+            <Reviews>(6 reviews)</Reviews>
+          </ReviewContainer>
         </InfoContainer>
       </Wrapper>
     </Container>
@@ -36,6 +40,14 @@ const InfoContainer = styled.div`
 `;
 
 const ProductName = styled.h3`
+  
+`;
+
+const ReviewContainer = styled.div`
+  
+`;
+
+const Reviews = styled.span`
   
 `;
 
