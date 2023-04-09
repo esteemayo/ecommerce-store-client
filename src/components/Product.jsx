@@ -5,7 +5,12 @@ const Product = () => {
   return (
     <Container>
       <Wrapper>
-        <Image src='https://images.pexels.com/photos/63690/pexels-photo-63690.jpeg?auto=compress&cs=tinysrgb&w=600' width={200} height={200} alt='' />
+        <Image
+          src='https://images.pexels.com/photos/63690/pexels-photo-63690.jpeg?auto=compress&cs=tinysrgb&w=600'
+          width={200}
+          height={200}
+          alt=''
+        />
       </Wrapper>
     </Container>
   );
