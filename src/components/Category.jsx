@@ -105,6 +105,7 @@ const Button = styled.button`
   position: absolute;
   bottom: 0;
   left: 0;
+  transition: all 0.5s ease;
 `;
 
 const Wrapper = styled.div`
