@@ -119,11 +119,6 @@ const Wrapper = styled.div`
     height: 15rem;
     display: block;
     object-fit: cover;
-
-    &:hover ${Button} {
-      visibility: visible;
-      opacity: 1;
-    }
   }
 `;
 
