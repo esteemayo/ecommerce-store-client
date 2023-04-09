@@ -36,6 +36,64 @@ const Product = () => {
           </FavWrapper>
         </InfoContainer>
       </Wrapper>
+      <Wrapper>
+        <Image
+          src='https://images.pexels.com/photos/63690/pexels-photo-63690.jpeg?auto=compress&cs=tinysrgb&w=600'
+          width={300}
+          height={200}
+          alt=''
+        />
+        <InfoContainer>
+          <ProductName>iPhone 14</ProductName>
+          <ReviewContainer>
+            <StarRating value={5} />
+            <Reviews>(6 reviews)</Reviews>
+          </ReviewContainer>
+          <PriceContainer>
+            <Prices>
+              <Discount>297</Discount>
+              <Price>235</Price>
+            </Prices>
+          </PriceContainer>
+          <Button>add to cart</Button>
+          <FavWrapper>
+            <WishlistButton>add to wishlist</WishlistButton>
+            <LikeButton>
+              <FontAwesomeIcon icon={faStar} />
+              Add to favorites
+            </LikeButton>
+          </FavWrapper>
+        </InfoContainer>
+      </Wrapper>
+      <Wrapper>
+        <Image
+          src='https://images.pexels.com/photos/63690/pexels-photo-63690.jpeg?auto=compress&cs=tinysrgb&w=600'
+          width={300}
+          height={200}
+          alt=''
+        />
+        <InfoContainer>
+          <ProductName>iPhone 14</ProductName>
+          <ReviewContainer>
+            <StarRating value={5} />
+            <Reviews>(6 reviews)</Reviews>
+          </ReviewContainer>
+          <PriceContainer>
+            <Prices>
+              <Discount>297</Discount>
+              <Price>235</Price>
+            </Prices>
+          </PriceContainer>
+          <Button>add to cart</Button>
+          <FavWrapper>
+            <WishlistButton>add to wishlist</WishlistButton>
+            <LikeButton>
+              <FontAwesomeIcon icon={faStar} />
+              Add to favorites
+            </LikeButton>
+          </FavWrapper>
+        </InfoContainer>
+      </Wrapper>
     </Container>
   );
 }
