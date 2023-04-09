@@ -23,6 +23,7 @@ const Category = () => {
           <MainHeading>Jeans</MainHeading>
           <SubHeading>100</SubHeading>
         </HeadingWrapper>
+        <Button>Click</Button>
       </Wrapper>
       <Wrapper>
         <Image
@@ -35,6 +36,7 @@ const Category = () => {
           <MainHeading>Jeans</MainHeading>
           <SubHeading>100</SubHeading>
         </HeadingWrapper>
+        <Button>Click</Button>
       </Wrapper>
       <Wrapper>
         <Image
@@ -47,6 +49,7 @@ const Category = () => {
           <MainHeading>Jeans</MainHeading>
           <SubHeading>100</SubHeading>
         </HeadingWrapper>
+        <Button>Click</Button>
       </Wrapper>
       <Wrapper>
         <Image
@@ -59,6 +62,7 @@ const Category = () => {
           <MainHeading>Jeans</MainHeading>
           <SubHeading>100</SubHeading>
         </HeadingWrapper>
+        <Button>Click</Button>
       </Wrapper>
       <Wrapper>
         <Image
@@ -71,6 +75,7 @@ const Category = () => {
           <MainHeading>Jeans</MainHeading>
           <SubHeading>100</SubHeading>
         </HeadingWrapper>
+        <Button>Click</Button>
       </Wrapper>
     </Container>
   );
