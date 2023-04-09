@@ -132,6 +132,8 @@ const Button = styled.button`
   width: 100%;
   background-color: #1658a3;
   color: #fff;
+  outline-color: #043369;
+  cursor: pointer;
 `;
 
 export default Category;
