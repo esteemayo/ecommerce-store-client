@@ -90,6 +90,23 @@ const Container = styled.article`
   margin-top: 3rem;
 `;
 
+const Button = styled.button`
+  border: none;
+  display: inline-block;
+  padding: 1rem 2rem;
+  width: 100%;
+  background-color: rgba(56, 122, 197, 0.5);
+  color: #fff;
+  outline-color: #043369;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+`;
+
 const Wrapper = styled.div`
   width: 20%;
   box-shadow: -1px -1px 35px 3px rgba(0 ,0, 0, 0.17);
