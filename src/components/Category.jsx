@@ -67,6 +67,14 @@ const Button = styled.button`
   bottom: 0;
   left: 0;
   transition: all 0.5s ease;
+
+  a {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
 `;
 
 const Wrapper = styled.div`
