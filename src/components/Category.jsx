@@ -104,11 +104,11 @@ const Wrapper = styled.div`
     object-fit: cover;
   }
 
-  & > img:hover ${Button} {
+  /* & > img:hover ${Button} {
     display: inline-block;
     visibility: visible;
     opacity: 1;
-  }
+  } */
 `;
 
 const HeadingWrapper = styled.div`
@@ -133,15 +133,15 @@ const SubHeading = styled.h3`
 
 const Button = styled.button`
   border: none;
-  display: none;
+  /* display: none; */
   padding: 1rem 2rem;
   width: 100%;
   background-color: #1658a3;
   color: #fff;
   outline-color: #043369;
   cursor: pointer;
-  visibility: hidden;
-  opacity: 0;
+  /* visibility: hidden;
+  opacity: 0; */
 `;
 
 export default Category;
