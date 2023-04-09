@@ -27,4 +27,8 @@ const Wrapper = styled.div`
   
 `;
 
+const ProductName = styled.h3`
+  
+`;
+
 export default Product;
