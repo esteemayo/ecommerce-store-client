@@ -131,21 +131,4 @@ const SubHeading = styled.h3`
   color: inherit;
 `;
 
-const Button = styled.button`
-  border: none;
-  display: inline-block;
-  padding: 1rem 2rem;
-  width: 100%;
-  background-color: rgba(56, 122, 197, 0.5);
-  color: #fff;
-  outline-color: #043369;
-  cursor: pointer;
-  visibility: hidden;
-  opacity: 0;
-
-  position: absolute;
-  bottom: 0;
-  left: 0;
-`;
-
 export default Category;
