@@ -83,9 +83,9 @@ const Button = styled.button`
 
 const Wrapper = styled.div`
   width: 20%;
-  box-shadow: -1px -1px 35px 3px rgba(0 ,0, 0, 0.17);
-  -webkit-box-shadow: -1px -1px 35px 3px rgba(0, 0, 0, 0.17);
-  -moz-box-shadow: -1px -1px 35px 3px rgba(0, 0, 0, 0.17);
+  box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+  -webkit-box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+  -moz-box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
   position: relative;
   
   & > img {
