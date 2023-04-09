@@ -6,4 +6,8 @@ const FeaturedProducts = () => {
   );
 }
 
+const Container = styled.section`
+  
+`;
+
 export default FeaturedProducts;
