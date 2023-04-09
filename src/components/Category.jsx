@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import styled from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Category = () => {
   const images = [
@@ -26,7 +27,11 @@ const Category = () => {
               <MainHeading>Jeans</MainHeading>
               <SubHeading>100</SubHeading>
             </HeadingWrapper>
-            <Button>Click</Button>
+            <Button>
+              <Link href='/' passHref>
+                Click
+              </Link>
+            </Button>
           </Wrapper>
         );
       })}
