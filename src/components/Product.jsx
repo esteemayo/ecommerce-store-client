@@ -9,7 +9,10 @@ const Product = () => {
 }
 
 const Container = styled.article`
-  
+  width: 25%;
+  display: flex;
+  align-items: center;
+  gap: 5rem;
 `;
 
 export default Product;
