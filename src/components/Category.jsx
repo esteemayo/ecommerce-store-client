@@ -80,6 +80,8 @@ const Container = styled.article`
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
 `;
 
 const Wrapper = styled.div`
