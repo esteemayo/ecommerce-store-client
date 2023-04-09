@@ -136,7 +136,7 @@ const Button = styled.button`
   /* display: none; */
   padding: 1rem 2rem;
   width: 100%;
-  background-color: #1658a3;
+  background-color: rgba(56, 122, 197, 0.5);
   color: #fff;
   outline-color: #043369;
   cursor: pointer;
