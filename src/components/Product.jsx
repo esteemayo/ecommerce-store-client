@@ -11,7 +11,9 @@ const Product = () => {
           height={200}
           alt=''
         />
-        <ProductName>iPhone 14</ProductName>
+        <InfoContainer>
+          <ProductName>iPhone 14</ProductName>
+        </InfoContainer>
       </Wrapper>
     </Container>
   );
@@ -25,6 +27,10 @@ const Container = styled.article`
 `;
 
 const Wrapper = styled.div`
+  
+`;
+
+const InfoContainer = styled.div`
   
 `;
 
