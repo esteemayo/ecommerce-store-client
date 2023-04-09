@@ -142,6 +142,10 @@ const Button = styled.button`
   cursor: pointer;
   /* visibility: hidden;
   opacity: 0; */
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
 `;
 
 export default Category;
