@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Link from 'next/link';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const Category = () => {
