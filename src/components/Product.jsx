@@ -31,6 +31,7 @@ const Product = () => {
             <WishlistButton>add to wishlist</WishlistButton>
             <LikeButton>
               <FontAwesomeIcon icon={faStar} />
+              Add to favorites
             </LikeButton>
           </FavWrapper>
         </InfoContainer>
