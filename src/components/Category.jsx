@@ -81,15 +81,6 @@ const Category = () => {
   );
 }
 
-const Container = styled.article`
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
-  margin-top: 3rem;
-`;
-
 const Button = styled.button`
   border: none;
   display: inline-block;
