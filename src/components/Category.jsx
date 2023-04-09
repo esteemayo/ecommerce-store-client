@@ -62,6 +62,7 @@ const Button = styled.button`
 
 const Wrapper = styled.div`
   width: 20%;
+  border-radius: 0.5rem;
   box-shadow: -1px -1px 35px 3px rgba(0 ,0, 0, 0.17);
   -webkit-box-shadow: -1px -1px 35px 3px rgba(0, 0, 0, 0.17);
   -moz-box-shadow: -1px -1px 35px 3px rgba(0, 0, 0, 0.17);
