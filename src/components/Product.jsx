@@ -24,6 +24,7 @@ const Product = () => {
               <Price>235</Price>
             </Prices>
           </PriceContainer>
+          <Button>add to cart</Button>
         </InfoContainer>
       </Wrapper>
     </Container>
