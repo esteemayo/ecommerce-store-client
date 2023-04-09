@@ -88,6 +88,7 @@ const Wrapper = styled.div`
   box-shadow: -1px -1px 35px 3px rgba(0 ,0, 0, 0.17);
   -webkit-box-shadow: -1px -1px 35px 3px rgba(0, 0, 0, 0.17);
   -moz-box-shadow: -1px -1px 35px 3px rgba(0, 0, 0, 0.17);
+  position: relative;
 
   & > img {
     width: 100%;
@@ -98,7 +99,9 @@ const Wrapper = styled.div`
 `;
 
 const HeadingWrapper = styled.div`
-  
+  position: absolute;
+  top: 7rem;
+  right: 2rem;
 `;
 
 const MainHeading = styled.h2`
