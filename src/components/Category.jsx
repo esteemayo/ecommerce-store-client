@@ -102,14 +102,15 @@ const HeadingWrapper = styled.div`
   position: absolute;
   top: 7rem;
   right: 2rem;
+  color: #fff;
 `;
 
 const MainHeading = styled.h2`
-  
+  color: inherit;
 `;
 
 const SubHeading = styled.h3`
-  
+  color: inherit;
 `;
 
 export default Category;
