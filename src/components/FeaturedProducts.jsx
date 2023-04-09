@@ -4,7 +4,7 @@ const FeaturedProducts = () => {
   return (
     <Container>
       <Wrapper>
-        FeaturedProducts
+        <Heading>Featured products</Heading>
       </Wrapper>
     </Container>
   );
