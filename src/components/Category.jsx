@@ -72,6 +72,7 @@ const Wrapper = styled.div`
     height: 15rem;
     display: block;
     object-fit: cover;
+    border-radius: 3px;
   }
 
   &:hover ${Button} {
