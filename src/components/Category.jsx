@@ -31,6 +31,8 @@ const Category = () => {
             <Button>
               <Link href='/' passHref>
                 Click
+                &nbsp;
+                <FontAwesomeIcon icon={faArrowRight} />
               </Link>
             </Button>
           </Wrapper>
