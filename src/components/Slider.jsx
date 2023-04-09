@@ -46,7 +46,7 @@ const ImageWrapper = styled.div`
     display: inline-block;
     width: 100%;
     height: 100%;
-    object-fit: center;
+    object-fit: cover;
   }
 `;
 
