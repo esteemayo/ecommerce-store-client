@@ -134,7 +134,7 @@ const Button = styled.button`
   color: #fff;
   outline-color: #043369;
   cursor: pointer;
-  visibility: none;
+  visibility: hidden;
   opacity: 0;
 `;
 
