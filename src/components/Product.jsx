@@ -48,7 +48,11 @@ const Container = styled.article`
 `;
 
 const Wrapper = styled.div`
-  
+  background-color: transparent;
+  border-radius: 0.5rem;
+  box-shadow: 1px 3px 17px 1px rgba(156,156,156,0.8);
+  -webkit-box-shadow: 1px 3px 17px 1px rgba(156,156,156,0.8);
+  -moz-box-shadow: 1px 3px 17px 1px rgba(156,156,156,0.8);
 `;
 
 const InfoContainer = styled.div`
