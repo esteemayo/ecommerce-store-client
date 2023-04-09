@@ -82,6 +82,7 @@ const Container = styled.article`
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
+  margin-top: 3rem;
 `;
 
 const Wrapper = styled.div`
