@@ -163,7 +163,9 @@ const Prices = styled.div`
 `;
 
 const Price = styled.span`
-  
+  font-weight: 600;
+  font-size: 1.85rem;
+  color: #333;
 `;
 
 const Discount = styled.span`
@@ -173,7 +175,7 @@ const Discount = styled.span`
 `;
 
 const Button = styled.button`
-  
+
 `;
 
 const FavWrapper = styled.div`
