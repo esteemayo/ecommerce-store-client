@@ -201,6 +201,8 @@ const Button = styled.button`
   background-color: #1658a3;
   color: #fff;
   outline-color: #04203f;
+  border-radius: 0.5rem;
+  cursor: pointer;
 `;
 
 const FavWrapper = styled.div`
