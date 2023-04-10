@@ -135,7 +135,8 @@ const ProductName = styled.h3`
 `;
 
 const ReviewContainer = styled.div`
-  
+  display: flex;
+  align-items: center;
 `;
 
 const Reviews = styled.span`
