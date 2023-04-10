@@ -217,7 +217,6 @@ const WishlistButton = styled.button`
   display: inline-block;
   text-transform: capitalize;
   font-size: 1.4rem;
-  background-color: transparent;
 `;
 
 const LikeButton = styled.button`
