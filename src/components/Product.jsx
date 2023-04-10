@@ -139,6 +139,10 @@ const ReviewContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 1rem;
+
+  svg {
+    font-size: 2.3rem;
+  }
 `;
 
 const Reviews = styled.div`
