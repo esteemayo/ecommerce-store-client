@@ -80,8 +80,8 @@ const Product = () => {
           </ReviewContainer>
           <PriceContainer>
             <Prices>
-              <Discount>297</Discount>
-              <Price>235</Price>
+              <Discount>$297</Discount>
+              <Price>$235</Price>
             </Prices>
           </PriceContainer>
           <Button>add to cart</Button>
