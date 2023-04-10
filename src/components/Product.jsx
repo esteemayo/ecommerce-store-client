@@ -26,7 +26,11 @@ const Product = () => {
               <Price>$235</Price>
             </Prices>
           </PriceContainer>
-          <Button>add to cart</Button>
+          <Button>
+            <FontAwesomeIcon icon={faShoppingCart} />
+            &nbsp;
+            add to cart
+          </Button>
           <FavWrapper>
             <WishlistButton>add to wishlist</WishlistButton>
             <LikeButton>
