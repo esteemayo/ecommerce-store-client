@@ -142,7 +142,9 @@ const ReviewContainer = styled.div`
 `;
 
 const Reviews = styled.div`
-  
+  span {
+    color: #1658a3;
+  }
 `;
 
 const PriceContainer = styled.div`
