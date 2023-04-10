@@ -140,6 +140,7 @@ const ReviewContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 1rem;
+  margin-bottom: 0.5rem;
 
   svg {
     font-size: 2.3rem;
