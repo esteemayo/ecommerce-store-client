@@ -100,7 +100,7 @@ const Product = () => {
             add to cart
           </Button>
           <FavWrapper>
-            <WishlistButton>add to wishlist</WishlistButton>
+            <WishlistButton>Add to Wishlist</WishlistButton>
             <LikeButton>
               <FontAwesomeIcon icon={faStar} />
               Add to favorites
