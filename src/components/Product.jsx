@@ -215,6 +215,9 @@ const FavWrapper = styled.div`
 const WishlistButton = styled.button`
   border: none;
   display: inline-block;
+  text-transform: capitalize;
+  font-size: 1.4rem;
+  background-color: transparent;
 `;
 
 const LikeButton = styled.button`
