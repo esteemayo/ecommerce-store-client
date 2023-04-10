@@ -227,6 +227,10 @@ const LikeButton = styled.button`
   border: none;
   font-weight: 500;
   font-size: 1.4rem;
+  background-color: transparent;
+  color: #858585;
+  outline-color: #b8b6b6;
+  cursor: pointer;
 `;
 
 export default Product;
