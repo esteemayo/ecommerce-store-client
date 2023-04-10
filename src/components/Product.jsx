@@ -133,6 +133,7 @@ const ProductName = styled.h3`
   font-weight: 500;
   font-size: 1.8rem;
   color: #979797;
+  margin-bottom: 0.5rem;
 `;
 
 const ReviewContainer = styled.div`
