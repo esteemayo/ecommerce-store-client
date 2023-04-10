@@ -66,7 +66,7 @@ const Product = () => {
           </Button>
           <FavWrapper>
             <WishlistButton>
-              add to wishlist
+              Add to Wishlist
             </WishlistButton>
             <LikeButton>
               <FontAwesomeIcon icon={faStar} />
