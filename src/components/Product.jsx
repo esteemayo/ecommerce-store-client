@@ -132,6 +132,7 @@ const ProductName = styled.h3`
   text-transform: capitalize;
   font-weight: 500;
   font-size: 1.8rem;
+  color: #979797;
 `;
 
 const ReviewContainer = styled.div`
