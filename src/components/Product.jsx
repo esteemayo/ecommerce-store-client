@@ -18,7 +18,7 @@ const Product = () => {
           <ProductName>iPhone 14</ProductName>
           <ReviewContainer>
             <StarRating value={5} />
-            <Reviews>(6 reviews)</Reviews>
+            <Reviews>(<span><span>6 reviews</span></span>)</Reviews>
           </ReviewContainer>
           <PriceContainer>
             <Prices>
