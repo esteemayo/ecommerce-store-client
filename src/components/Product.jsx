@@ -129,7 +129,8 @@ const InfoContainer = styled.div`
 `;
 
 const ProductName = styled.h3`
-  
+  text-transform: capitalize;
+  font-weight: 600;
 `;
 
 const ReviewContainer = styled.div`
