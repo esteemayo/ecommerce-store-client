@@ -198,7 +198,7 @@ const Button = styled.button`
   padding: 1.5rem 1rem;
   font-size: 1.5rem;
   text-transform: uppercase;
-  background-color: #1658a3;
+  background-color: #2d75c7;
   color: #fff;
   outline-color: #04203f;
   border-radius: 0.5rem;
