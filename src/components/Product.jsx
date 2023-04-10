@@ -215,7 +215,7 @@ const FavWrapper = styled.div`
 const WishlistButton = styled.button`
   border: none;
   display: inline-block;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1.4rem;
   background-color: transparent;
   color: #858585;
