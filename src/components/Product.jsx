@@ -196,6 +196,9 @@ const Button = styled.button`
   justify-content: center;
   width: 100%;
   padding: 1.5rem 1rem;
+  text-transform: uppercase;
+  background-color: #1658a3;
+  color: #fff;
 `;
 
 const FavWrapper = styled.div`
