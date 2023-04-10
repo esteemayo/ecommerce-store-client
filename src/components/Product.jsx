@@ -219,6 +219,8 @@ const WishlistButton = styled.button`
   font-size: 1.4rem;
   background-color: transparent;
   color: #858585;
+  outline-color: #b8b6b6;
+  cursor: pointer;
 `;
 
 const LikeButton = styled.button`
