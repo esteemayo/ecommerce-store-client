@@ -176,7 +176,11 @@ const Discount = styled.span`
 `;
 
 const Button = styled.button`
-
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 `;
 
 const FavWrapper = styled.div`
