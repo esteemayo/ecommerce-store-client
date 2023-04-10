@@ -138,9 +138,10 @@ const ProductName = styled.h3`
 const ReviewContainer = styled.div`
   display: flex;
   align-items: center;
+  gap: 1rem;
 `;
 
-const Reviews = styled.span`
+const Reviews = styled.div`
   
 `;
 
