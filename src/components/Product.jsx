@@ -231,7 +231,7 @@ const Button = styled.button`
     #5e9de4 50%
   );
   background-size: 220%;
-  outline-color: #04203f;
+  outline-color: #4489fe;
   border-radius: 0.5rem;
   cursor: pointer;
   transition: all 0.3s ease;
