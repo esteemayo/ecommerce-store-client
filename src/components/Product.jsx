@@ -100,7 +100,7 @@ const Product = () => {
             </Link>
           </ProductName>
           <ReviewContainer>
-            <StarRating value={5} />
+            <StarRating value={4} />
             <Reviews>(<span>6 reviews</span>)</Reviews>
           </ReviewContainer>
           <PriceContainer>
