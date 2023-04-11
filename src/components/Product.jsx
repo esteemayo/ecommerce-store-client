@@ -206,8 +206,8 @@ const InStock = styled.div`
   &::before {
     content: '';
     display: block;
-    width: 0.5rem;
-    height: 0.5rem;
+    width: 1rem;
+    height: 1rem;
     background-color: #00e774;
     border-radius: 50%;
   }
