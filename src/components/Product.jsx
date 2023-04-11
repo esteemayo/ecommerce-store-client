@@ -18,7 +18,7 @@ const Product = () => {
         <InfoContainer>
           <ProductName>
             <Link href='/' passHref>
-              JavaScript for beginners - learn JavaScript from scratch
+              iPhone 14
             </Link>
           </ProductName>
           <ReviewContainer>
