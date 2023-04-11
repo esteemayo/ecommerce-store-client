@@ -9,14 +9,12 @@ const Product = () => {
   return (
     <Container>
       <Wrapper>
-        <Link href='/' passHref>
-          <Image
-            src='https://images.pexels.com/photos/63690/pexels-photo-63690.jpeg?auto=compress&cs=tinysrgb&w=600'
-            width={300}
-            height={200}
-            alt=''
-          />
-        </Link>
+        <Image
+          src='https://images.pexels.com/photos/63690/pexels-photo-63690.jpeg?auto=compress&cs=tinysrgb&w=600'
+          width={300}
+          height={200}
+          alt=''
+        />
         <InfoContainer>
           <ProductName>iPhone 14</ProductName>
           <ReviewContainer>
@@ -45,14 +43,12 @@ const Product = () => {
         </InfoContainer>
       </Wrapper>
       <Wrapper>
-        <Link href='/' passHref>
-          <Image
-            src='https://images.pexels.com/photos/63690/pexels-photo-63690.jpeg?auto=compress&cs=tinysrgb&w=600'
-            width={300}
-            height={200}
-            alt=''
-          />
-        </Link>
+        <Image
+          src='https://images.pexels.com/photos/63690/pexels-photo-63690.jpeg?auto=compress&cs=tinysrgb&w=600'
+          width={300}
+          height={200}
+          alt=''
+        />
         <InfoContainer>
           <ProductName>iPhone 14</ProductName>
           <ReviewContainer>
@@ -83,14 +79,12 @@ const Product = () => {
         </InfoContainer>
       </Wrapper>
       <Wrapper>
-        <Link href='/' passHref>
-          <Image
-            src='https://images.pexels.com/photos/63690/pexels-photo-63690.jpeg?auto=compress&cs=tinysrgb&w=600'
-            width={300}
-            height={200}
-            alt=''
-          />
-        </Link>
+        <Image
+          src='https://images.pexels.com/photos/63690/pexels-photo-63690.jpeg?auto=compress&cs=tinysrgb&w=600'
+          width={300}
+          height={200}
+          alt=''
+        />
         <InfoContainer>
           <ProductName>iPhone 14</ProductName>
           <ReviewContainer>
