@@ -199,6 +199,9 @@ const Discount = styled.span`
 const InStock = styled.div`
   color: #00e774;
   font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 2px;
 
   &::before {
     content: '';
