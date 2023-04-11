@@ -5,7 +5,6 @@ import { faShoppingCart, faStar } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
 
 import StarRating from './StarRating';
-import Link from 'next/link';
 
 const Product = () => {
   return (
