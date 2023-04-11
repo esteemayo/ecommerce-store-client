@@ -171,6 +171,7 @@ const ProductName = styled.h3`
     &:visited {
       display: inline-block;
       text-decoration: none;
+      color: inherit;
     }
   }
 `;
