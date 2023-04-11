@@ -9,7 +9,8 @@ const TopReviews = () => {
 }
 
 const Container = styled.section`
-  
+  width: 100%;
+  padding: 10rem 0;
 `;
 
 export default TopReviews;
