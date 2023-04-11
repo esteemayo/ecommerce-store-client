@@ -165,6 +165,14 @@ const ProductName = styled.h3`
   font-size: 1.8rem;
   color: #979797;
   margin-bottom: 0.5rem;
+
+  a {
+    &:link,
+    &:visited {
+      display: inline-block;
+      text-decoration: none;
+    }
+  }
 `;
 
 const ReviewContainer = styled.div`
