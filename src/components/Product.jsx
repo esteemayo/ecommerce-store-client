@@ -199,6 +199,14 @@ const Discount = styled.span`
 const InStock = styled.div`
   color: #00e774;
   font-size: 1.5rem;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #00e774;
+  }
 `;
 
 const Button = styled.button`
