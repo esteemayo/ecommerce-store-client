@@ -190,6 +190,10 @@ const Discount = styled.span`
   color: #adacac;
 `;
 
+const InStock = styled.div`
+  
+`;
+
 const Button = styled.button`
   border: none;
   display: flex;
