@@ -16,7 +16,11 @@ const Product = () => {
           alt=''
         />
         <InfoContainer>
-          <ProductName>iPhone 14</ProductName>
+          <ProductName>
+            <Link href='/' passHref>
+              iPhone 14
+            </Link>
+          </ProductName>
           <ReviewContainer>
             <StarRating value={5} />
             <Reviews>(<span><span>6 reviews</span></span>)</Reviews>
