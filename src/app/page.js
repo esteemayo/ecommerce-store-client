@@ -11,6 +11,7 @@ const Home = () => {
       <Slider />
       <Categories />
       <FeaturedProducts />
+      <TopReviews />
     </Container>
   );
 }
