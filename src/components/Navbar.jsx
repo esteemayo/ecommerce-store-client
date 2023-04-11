@@ -150,7 +150,7 @@ const ToggleButton = styled.button`
   width: 4rem;
   height: 4rem;
   background-color: transparent;
-  color: #fff;
+  color: var(--clr-white);
   margin-right: 2rem;
   transition: all 0.5s ease;
 
