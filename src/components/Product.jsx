@@ -173,6 +173,11 @@ const ProductName = styled.h3`
       text-decoration: none;
       color: inherit;
     }
+
+    &:hover,
+    &:active {
+      text-decoration: underline;
+    }
   }
 `;
 
