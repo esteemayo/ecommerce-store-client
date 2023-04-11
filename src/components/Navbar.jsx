@@ -192,7 +192,7 @@ const Button = styled.button`
   font-size: 1.5rem;
   text-transform: capitalize;
   background-color: transparent;
-  color: #fff;
+  color: var(--clr-white);
   cursor: default;
 
   &:hover {
