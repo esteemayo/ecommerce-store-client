@@ -195,7 +195,7 @@ const ReviewContainer = styled.div`
 
 const Reviews = styled.div`
   span {
-    color: #1658a3;
+    color: #3a7ecc;
   }
 `;
 
