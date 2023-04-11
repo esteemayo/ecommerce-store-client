@@ -200,6 +200,12 @@ const Button = styled.button`
   text-transform: uppercase;
   background-color: #2d75c7;
   color: #fff;
+  background-image: linear-gradient(
+    120deg,
+    transparent 0%,
+    transparent 50%,
+    var(--color-gray-dark-2) 50%
+  );
   outline-color: #04203f;
   border-radius: 0.5rem;
   cursor: pointer;
