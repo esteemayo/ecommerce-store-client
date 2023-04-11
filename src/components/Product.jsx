@@ -209,6 +209,7 @@ const InStock = styled.div`
     width: 0.5rem;
     height: 0.5rem;
     background-color: #00e774;
+    border-radius: 50%;
   }
 `;
 
