@@ -6,4 +6,8 @@ const TopReviews = () => {
   );
 }
 
+const Container = styled.section`
+  
+`;
+
 export default TopReviews;
