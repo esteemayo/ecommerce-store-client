@@ -59,6 +59,7 @@ const Product = () => {
               <Discount>$297</Discount>
               <Price>$235</Price>
             </Prices>
+            <InStock>In stock</InStock>
           </PriceContainer>
           <Button>
             <FontAwesomeIcon icon={faShoppingCart} />
