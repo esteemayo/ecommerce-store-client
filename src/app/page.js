@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Slider from '@/components/Slider';
 import Categories from '@/components/Categories';
 import FeaturedProducts from '@/components/FeaturedProducts';
+import TopReviews from '@/components/TopReviews';
 
 const Home = () => {
   return (
