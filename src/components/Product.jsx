@@ -204,11 +204,12 @@ const Button = styled.button`
     120deg,
     transparent 0%,
     transparent 50%,
-    var(--color-gray-dark-2) 50%
+    #5e9de4 50%
   );
   outline-color: #04203f;
   border-radius: 0.5rem;
   cursor: pointer;
+  transition: all 0.3s;
 
   &:hover {
     color: #fff;
