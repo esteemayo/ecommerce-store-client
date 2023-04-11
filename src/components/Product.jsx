@@ -223,7 +223,7 @@ const Button = styled.button`
   font-size: 1.5rem;
   text-transform: uppercase;
   background-color: #2d75c7;
-  color: #fff;
+  color: var(--clr-white);
   background-image: linear-gradient(
     120deg,
     transparent 0%,
