@@ -106,7 +106,7 @@ const HeadingWrapper = styled.div`
   position: absolute;
   top: 7rem;
   right: 2rem;
-  color: #fff;
+  color: var(--clr-white);
 `;
 
 const MainHeading = styled.h2`
