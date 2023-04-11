@@ -239,6 +239,10 @@ const LikeButton = styled.button`
   &:hover {
     transform: scale(1);
   }
+
+  svg {
+    font-size: 1.7rem;
+  }
 `;
 
 export default Product;
