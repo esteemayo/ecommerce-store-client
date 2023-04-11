@@ -235,6 +235,10 @@ const LikeButton = styled.button`
   display: flex;
   align-items: center;
   gap: 0.5rem;
+
+  &:hover {
+    transform: scale(1);
+  }
 `;
 
 export default Product;
