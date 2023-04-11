@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Image from 'next/image';
 import { faShoppingCart, faStar } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import StarRating from './StarRating';
 
