@@ -209,6 +209,11 @@ const Button = styled.button`
   outline-color: #04203f;
   border-radius: 0.5rem;
   cursor: pointer;
+
+  &:hover {
+    color: #fff;
+    background-position: 100%;
+  }
 `;
 
 const FavWrapper = styled.div`
