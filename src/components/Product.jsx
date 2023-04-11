@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart, faStar } from '@fortawesome/free-solid-svg-icons';
 import StarRating from './StarRating';
+import Link from 'next/link';
 
 const Product = () => {
   return (
