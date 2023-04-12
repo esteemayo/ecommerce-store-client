@@ -85,6 +85,9 @@ const Button = styled.button`
   color: #000;
   cursor: pointer;
 
+  display: flex;
+  flex-direction: column;
+
   &::after {
     content: '';
     display: inline-block;
