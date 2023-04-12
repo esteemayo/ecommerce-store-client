@@ -72,6 +72,7 @@ const Review = styled.p`
   width: 80%;
   font-weight: 500;
   font-size: 1.8rem;
+  color: #000;
 `;
 
 const Reviewer = styled.span`
