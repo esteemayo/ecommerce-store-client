@@ -92,6 +92,7 @@ const Button = styled.button`
   background-color: transparent;
   color: #000;
   cursor: pointer;
+  transition: all 0.3s ease;
 
   display: flex;
   flex-direction: column;
