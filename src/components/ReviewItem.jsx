@@ -78,6 +78,7 @@ const Reviewer = styled.span`
 const Button = styled.button`
   border: none;
   display: inline-block;
+  text-align: left;
   background-color: transparent;
   color: #000;
 `;
