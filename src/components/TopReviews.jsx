@@ -46,6 +46,8 @@ const Heading = styled.h1`
   &::after {
     content: '';
     display: inline-block;
+    width: 4rem;
+    height: 3px;
   }
 `;
 
