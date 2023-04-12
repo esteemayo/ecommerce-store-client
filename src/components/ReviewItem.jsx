@@ -51,6 +51,10 @@ const RatingContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 1rem;
+
+  svg {
+    color: #89a8a0;
+  }
 `;
 
 const ReviewCount = styled.span`
