@@ -11,7 +11,7 @@ const TopReviews = () => {
         <ReviewContainer>
           <ReviewItem />
         </ReviewContainer>
-        <FontAwesomeIcon icon={faArrowRight} />
+        <FontAwesomeIcon icon={faArrowRight} className='arrow right' />
       </Wrapper>
     </Container>
   );
