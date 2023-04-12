@@ -30,7 +30,7 @@ const Category = () => {
             </HeadingWrapper>
             <Button>
               <Link href='/' passHref>
-                Click
+                Shop now
                 &nbsp;
                 <FontAwesomeIcon icon={faArrowRight} />
               </Link>
