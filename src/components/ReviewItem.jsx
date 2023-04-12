@@ -11,7 +11,9 @@ const ReviewItem = () => {
             <ReviewCount>Based on 61 reviews</ReviewCount>
           </RatingContainer>
           <ReviewContainer>
-            <Review>Exactly what I wanted - slightly elevated but still warm. Fits like adream with nice big pockets with zippers. Great addition!</Review>
+            <Review>
+              Exactly what I wanted - slightly elevated but still warm. Fits like adream with nice big pockets with zippers. Great addition!
+            </Review>
             <Reviewer>Sarah P.</Reviewer>
           </ReviewContainer>
           <Button>Shop now</Button>
