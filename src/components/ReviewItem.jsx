@@ -19,7 +19,9 @@ const ReviewItem = () => {
           </ReviewContainer>
           <Button>Shop now</Button>
         </Left>
-        <Right>Right</Right>
+        <Right>
+          <Image src='./reviewer-1.webp' width={100} height={100} alt='' />
+        </Right>
       </Wrapper>
     </Container>
   );
