@@ -6,4 +6,8 @@ const ReviewItem = () => {
   );
 }
 
+const Container = styled.article`
+  
+`;
+
 export default ReviewItem;
