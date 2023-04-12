@@ -61,7 +61,8 @@ const RatingContainer = styled.div`
 
 const ReviewCount = styled.span`
   font-size: 1.2rem;
-  letter-spacing: 1px;
+  color: #666;
+  letter-spacing: 0.5px;
 `;
 
 const ReviewContainer = styled.div`
