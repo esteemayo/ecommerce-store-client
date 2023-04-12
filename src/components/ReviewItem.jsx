@@ -96,6 +96,10 @@ const Button = styled.button`
   display: flex;
   flex-direction: column;
 
+  &:hover {
+    opacity: 0.7;
+  }
+
   &::after {
     content: '';
     display: inline-block;
