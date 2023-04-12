@@ -18,7 +18,11 @@ const ReviewItem = () => {
             </Review>
             <Reviewer>Sarah P.</Reviewer>
           </ReviewContainer>
-          <Button>Shop now</Button>
+          <Button>
+            <Link href='/' passHref>
+              Shop now
+            </Link>
+          </Button>
         </Left>
         <Right>
           <Image
