@@ -125,7 +125,7 @@ const Button = styled.button`
 const Right = styled.div`
   flex: 1;
   width: 100%;
-  height: 100%;
+  height: 102.5%;
   background-color: #f8d3da;
 
   & > img {
