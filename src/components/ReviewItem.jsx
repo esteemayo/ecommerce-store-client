@@ -19,7 +19,8 @@ const Container = styled.article`
 `;
 
 const Wrapper = styled.div`
-  
+  display: flex;
+  align-items: center;
 `;
 
 const Left = styled.div`
