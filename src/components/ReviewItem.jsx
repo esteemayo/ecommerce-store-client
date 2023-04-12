@@ -5,6 +5,7 @@ const ReviewItem = () => {
     <Container>
       <Wrapper>
         <Left>Left</Left>
+        <Right>Right</Right>
       </Wrapper>
     </Container>
   );
