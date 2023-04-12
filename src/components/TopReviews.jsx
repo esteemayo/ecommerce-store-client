@@ -7,7 +7,7 @@ const TopReviews = () => {
   return (
     <Container>
       <Wrapper>
-        <FontAwesomeIcon icon={faArrowLeft} />
+        <FontAwesomeIcon icon={faArrowLeft} className='arrow left' />
         <ReviewContainer>
           <ReviewItem />
         </ReviewContainer>
