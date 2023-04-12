@@ -86,7 +86,7 @@ const Button = styled.button`
   display: inline-block;
   text-align: left;
   font-weight: 600;
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   background-color: transparent;
   color: #000;
   cursor: pointer;
@@ -99,7 +99,7 @@ const Button = styled.button`
     display: inline-block;
     width: 8rem;
     height: 1px;
-    background-color: #ccc;
+    background-color: #89a8a0;
   }
 `;
 
