@@ -53,7 +53,9 @@ const RatingContainer = styled.div`
   gap: 1rem;
 
   svg {
+    font-size: 2rem;
     color: #89a8a0;
+    margin-right: 0.5rem;
   }
 `;
 
