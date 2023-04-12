@@ -124,6 +124,14 @@ const Button = styled.button`
     height: 1px;
     background-color: #89a8a0;
   }
+
+  a {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
 `;
 
 const Right = styled.div`
