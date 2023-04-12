@@ -30,6 +30,7 @@ const TopReviews = () => {
 const Container = styled.section`
   width: 100%;
   padding: 10rem 0;
+  background-color: #f4f8f7;
 `;
 
 const Wrapper = styled.div`
