@@ -45,6 +45,10 @@ const ReviewContainer = styled.div`
   .left {
     left: 0;
   }
+
+  .right {
+    right: 0;
+  }
 `;
 
 export default TopReviews;
