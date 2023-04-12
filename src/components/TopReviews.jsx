@@ -27,7 +27,7 @@ const Wrapper = styled.div`
 `;
 
 const ReviewContainer = styled.div`
-  
+  position: relative;
 `;
 
 export default TopReviews;
