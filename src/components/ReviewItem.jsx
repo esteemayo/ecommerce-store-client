@@ -75,7 +75,9 @@ const ReviewCount = styled.span`
 `;
 
 const ReviewContainer = styled.div`
-  
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 `;
 
 const Review = styled.p`
