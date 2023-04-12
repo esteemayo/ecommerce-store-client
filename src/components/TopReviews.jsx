@@ -21,4 +21,8 @@ const Wrapper = styled.div`
   
 `;
 
+const ListContainer = styled.div`
+  
+`;
+
 export default TopReviews;
