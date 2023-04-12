@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import StarRating from './StarRating';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const ReviewItem = () => {
   return (
