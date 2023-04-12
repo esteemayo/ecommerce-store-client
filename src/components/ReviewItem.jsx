@@ -22,8 +22,8 @@ const ReviewItem = () => {
         <Right>
           <Image
             src='/img/reviewer-1.webp'
-            width={100}
-            height={100}
+            width={1200}
+            height={1200}
             alt=''
           />
         </Right>
