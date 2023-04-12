@@ -28,6 +28,13 @@ const Wrapper = styled.div`
 
 const ReviewContainer = styled.div`
   position: relative;
+
+  .arrow {
+    width: 1rem;
+    height: 100%;
+    background-color: rgba(22, 22, 22, 0.5);
+    color: var(--color-white);
+  }
 `;
 
 export default TopReviews;
