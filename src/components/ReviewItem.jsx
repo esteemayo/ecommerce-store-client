@@ -77,8 +77,9 @@ const Review = styled.p`
 const Reviewer = styled.span`
   display: inline-block;
   font-weight: 300;
-  font-weight: 1.5rem;
+  font-weight: 1.6rem;
   padding: 1rem 0;
+  color: #66667f;
 `;
 
 const Button = styled.button`
