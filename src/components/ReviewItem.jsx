@@ -20,7 +20,7 @@ const ReviewItem = () => {
           <Button>Shop now</Button>
         </Left>
         <Right>
-          <Image src='./reviewer-1.webp' width={100} height={100} alt='' />
+          <Image src='/reviewer-1.webp' width={100} height={100} alt='' />
         </Right>
       </Wrapper>
     </Container>
