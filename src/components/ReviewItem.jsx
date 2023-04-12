@@ -49,6 +49,10 @@ const ReviewContainer = styled.div`
   
 `;
 
+const Review = styled.p`
+  
+`;
+
 const Right = styled.div`
   flex: 1;
   background-color: crimson;
