@@ -29,7 +29,7 @@ const Wrapper = styled.div`
     width: 1rem;
     height: 100%;
     background-color: rgba(22, 22, 22, 0.5);
-    color: var(--color-white);
+    color: var(--clr-white);
     position: absolute;
     top: 0;
     bottom: 0;
