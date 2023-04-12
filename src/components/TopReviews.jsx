@@ -10,6 +10,7 @@ const TopReviews = () => {
         <ListContainer>
 
         </ListContainer>
+        <FontAwesomeIcon icon={faArrowRight} />
       </Wrapper>
     </Container>
   );
