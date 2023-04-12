@@ -78,6 +78,8 @@ const Reviewer = styled.span`
 const Button = styled.button`
   border: none;
   display: inline-block;
+  background-color: transparent;
+  color: #000;
 `;
 
 const Right = styled.div`
