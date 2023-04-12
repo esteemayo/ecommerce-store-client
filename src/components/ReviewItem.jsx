@@ -58,6 +58,10 @@ const Reviewer = styled.span`
   
 `;
 
+const Button = styled.button`
+  
+`;
+
 const Right = styled.div`
   flex: 1;
   background-color: crimson;
