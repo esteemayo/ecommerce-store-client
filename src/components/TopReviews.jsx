@@ -39,6 +39,9 @@ const Heading = styled.h1`
   display: inline-block;
   font-family: inherit;
   font-weight: 600;
+  font-size: 2.7rem;
+  color: #1658a3;
+  margin-bottom: 2rem;
 `;
 
 const Wrapper = styled.div`
