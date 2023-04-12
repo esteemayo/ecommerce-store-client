@@ -25,10 +25,12 @@ const Wrapper = styled.div`
 
 const Left = styled.div`
   flex: 1;
+  background-color: greenyellow;
 `;
 
 const Right = styled.div`
   flex: 1;
+  background-color: crimson;
 `;
 
 export default ReviewItem;
