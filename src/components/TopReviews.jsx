@@ -7,6 +7,7 @@ import ReviewItem from './ReviewItem';
 const TopReviews = () => {
   return (
     <Container>
+      <Heading>You didn&apos;t hear it from us</Heading>
       <Wrapper>
         <FontAwesomeIcon
           icon={faArrowLeft}
