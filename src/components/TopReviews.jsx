@@ -6,7 +6,7 @@ const TopReviews = () => {
   return (
     <Container>
       <Wrapper>
-
+        <FontAwesomeIcon icon={faArrowLeft} />
       </Wrapper>
     </Container>
   );
