@@ -42,6 +42,8 @@ const Heading = styled.h1`
   font-size: 2.7rem;
   color: #1658a3;
   margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
 
   &::after {
     content: '';
