@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import StarRating from './StarRating';
 
 const ReviewItem = () => {
   return (
