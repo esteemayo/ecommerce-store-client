@@ -91,7 +91,7 @@ const Button = styled.button`
   &::after {
     content: '';
     display: inline-block;
-    width: 4rem;
+    width: 8rem;
     height: 1px;
     background-color: #ccc;
   }
