@@ -42,6 +42,10 @@ const ReviewCount = styled.span`
   
 `;
 
+const ReviewContainer = styled.div`
+  
+`;
+
 const Right = styled.div`
   flex: 1;
   background-color: crimson;
