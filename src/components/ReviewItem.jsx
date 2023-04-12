@@ -53,6 +53,10 @@ const Review = styled.p`
   
 `;
 
+const Reviewer = styled.span`
+  
+`;
+
 const Right = styled.div`
   flex: 1;
   background-color: crimson;
