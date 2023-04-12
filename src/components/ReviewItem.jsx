@@ -84,6 +84,11 @@ const Button = styled.button`
   background-color: transparent;
   color: #000;
   cursor: pointer;
+
+  &::after {
+    content: '';
+    display: inline-block;
+  }
 `;
 
 const Right = styled.div`
