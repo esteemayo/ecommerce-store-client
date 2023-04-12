@@ -46,7 +46,9 @@ const Left = styled.div`
 `;
 
 const RatingContainer = styled.div`
-  
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 `;
 
 const ReviewCount = styled.span`
