@@ -106,6 +106,7 @@ const Button = styled.button`
   text-align: left;
   font-weight: 600;
   font-size: 1.8rem;
+  width: 10rem;
   background-color: transparent;
   color: #000;
   cursor: pointer;
