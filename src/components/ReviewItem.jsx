@@ -11,7 +11,7 @@ const ReviewItem = () => {
 const Container = styled.article`
   background-color: yellowgreen;
   width: 700px;
-  height: 30rem;
+  height: 50rem;
   margin-right: 5px;
 `;
 
