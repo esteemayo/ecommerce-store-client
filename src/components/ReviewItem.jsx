@@ -88,6 +88,9 @@ const Button = styled.button`
   &::after {
     content: '';
     display: inline-block;
+    width: 4rem;
+    height: 1px;
+    background-color: #ccc;
   }
 `;
 
