@@ -41,6 +41,10 @@ const ReviewContainer = styled.div`
     cursor: pointer;
     z-index: 1000;
   }
+
+  .left {
+    left: 0;
+  }
 `;
 
 export default TopReviews;
