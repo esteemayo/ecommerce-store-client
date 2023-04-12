@@ -28,6 +28,10 @@ const Left = styled.div`
   background-color: greenyellow;
 `;
 
+const RatingContainer = styled.div`
+  
+`;
+
 const Right = styled.div`
   flex: 1;
   background-color: crimson;
