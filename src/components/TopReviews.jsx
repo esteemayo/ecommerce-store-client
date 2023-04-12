@@ -36,7 +36,9 @@ const Container = styled.section`
 `;
 
 const Heading = styled.h1`
-  
+  display: inline-block;
+  font-family: inherit;
+  font-weight: 600;
 `;
 
 const Wrapper = styled.div`
