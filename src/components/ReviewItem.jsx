@@ -44,6 +44,7 @@ const Left = styled.div`
   flex-direction: column;
   gap: 5rem;
   padding: 10rem 4rem;
+  background-color: tomato;
 `;
 
 const RatingContainer = styled.div`
@@ -62,7 +63,8 @@ const ReviewContainer = styled.div`
 `;
 
 const Review = styled.p`
-  
+  width: 80%;
+  font-size: 1.8rem;
 `;
 
 const Reviewer = styled.span`
