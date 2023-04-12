@@ -7,7 +7,7 @@ const ReviewItem = () => {
       <Wrapper>
         <Left>
           <RatingContainer>
-
+            <StarRating value={5} />
           </RatingContainer>
         </Left>
         <Right>Right</Right>
