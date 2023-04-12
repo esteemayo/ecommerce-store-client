@@ -15,4 +15,8 @@ const Container = styled.article`
   margin-right: 5px;
 `;
 
+const Wrapper = styled.div`
+  
+`;
+
 export default ReviewItem;
