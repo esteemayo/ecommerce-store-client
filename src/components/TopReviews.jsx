@@ -50,6 +50,8 @@ const Wrapper = styled.div`
 const ReviewContainer = styled.div`
   margin-left: 5rem;
   margin-top: 1rem;
+  display: flex;
+  width: max-content;
 `;
 
 export default TopReviews;
