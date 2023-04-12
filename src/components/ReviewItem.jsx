@@ -109,6 +109,7 @@ const Button = styled.button`
   width: 10rem;
   background-color: transparent;
   color: #000;
+  outline-color: #ccc;
   cursor: pointer;
   transition: all 0.3s ease;
 
