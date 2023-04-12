@@ -36,6 +36,9 @@ const Container = styled.section`
 `;
 
 const Heading = styled.h1`
+  width: 100%;
+  max-width: 102.4rem;
+  margin: 0 auto;
   display: inline-block;
   font-family: inherit;
   font-weight: 600;
