@@ -79,6 +79,7 @@ const Button = styled.button`
   border: none;
   display: inline-block;
   text-align: left;
+  font-size: 1.7rem;
   background-color: transparent;
   color: #000;
 `;
