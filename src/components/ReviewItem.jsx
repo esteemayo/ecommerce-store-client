@@ -38,6 +38,9 @@ const Wrapper = styled.div`
 
 const Left = styled.div`
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
   background-color: greenyellow;
 `;
 
