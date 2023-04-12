@@ -25,7 +25,7 @@ const ReviewItem = () => {
 }
 
 const Container = styled.article`
-  background-color: #f5f5f5;
+  background-color: #fffdfd;
   width: 700px;
   height: 50rem;
   margin-right: 5px;
@@ -44,7 +44,6 @@ const Left = styled.div`
   flex-direction: column;
   gap: 5rem;
   padding: 10rem 4rem;
-  background-color: greenyellow;
 `;
 
 const RatingContainer = styled.div`
