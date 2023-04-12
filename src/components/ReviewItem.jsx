@@ -76,7 +76,8 @@ const Reviewer = styled.span`
 `;
 
 const Button = styled.button`
-  
+  border: none;
+  display: inline-block;
 `;
 
 const Right = styled.div`
