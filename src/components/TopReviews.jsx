@@ -3,7 +3,9 @@ import styled from 'styled-components';
 const TopReviews = () => {
   return (
     <Container>
-      TopReviews
+      <Wrapper>
+
+      </Wrapper>
     </Container>
   );
 }
