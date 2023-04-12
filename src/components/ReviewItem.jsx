@@ -131,6 +131,7 @@ const Button = styled.button`
   a {
     &:link,
     &:visited {
+      width: 9rem;
       text-decoration: none;
       color: inherit;
       outline-color: #ccc;
