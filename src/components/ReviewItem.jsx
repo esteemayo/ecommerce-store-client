@@ -34,6 +34,8 @@ const Container = styled.article`
 const Wrapper = styled.div`
   display: flex;
   align-items: center;
+  width: 100%;
+  height: 100%;
 `;
 
 const Left = styled.div`
