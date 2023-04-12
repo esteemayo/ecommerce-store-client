@@ -82,6 +82,7 @@ const Button = styled.button`
   font-size: 1.7rem;
   background-color: transparent;
   color: #000;
+  cursor: pointer;
 `;
 
 const Right = styled.div`
