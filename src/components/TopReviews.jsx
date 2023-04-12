@@ -23,10 +23,6 @@ const Container = styled.section`
 `;
 
 const Wrapper = styled.div`
-  
-`;
-
-const ReviewContainer = styled.div`
   position: relative;
 
   .arrow {
@@ -49,6 +45,10 @@ const ReviewContainer = styled.div`
   .right {
     right: 0;
   }
+`;
+
+const ReviewContainer = styled.div`
+
 `;
 
 export default TopReviews;
