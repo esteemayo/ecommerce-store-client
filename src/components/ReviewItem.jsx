@@ -10,6 +10,9 @@ const ReviewItem = () => {
             <StarRating value={5} />
             <ReviewCount>Based on 61 reviews</ReviewCount>
           </RatingContainer>
+          <ReviewContainer>
+
+          </ReviewContainer>
         </Left>
         <Right>Right</Right>
       </Wrapper>
