@@ -36,7 +36,7 @@ const Container = styled.article`
   background-color: #fffdfd;
   width: 700px;
   height: 50rem;
-  margin-right: 5px;
+  margin-right: 30px;
 `;
 
 const Wrapper = styled.div`
