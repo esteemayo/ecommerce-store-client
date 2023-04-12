@@ -4,7 +4,11 @@ const ReviewItem = () => {
   return (
     <Container>
       <Wrapper>
-        <Left>Left</Left>
+        <Left>
+          <RatingContainer>
+
+          </RatingContainer>
+        </Left>
         <Right>Right</Right>
       </Wrapper>
     </Container>
