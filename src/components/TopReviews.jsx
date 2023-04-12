@@ -25,7 +25,7 @@ const Wrapper = styled.div`
   
 `;
 
-const ListContainer = styled.div`
+const ReviewContainer = styled.div`
   
 `;
 
