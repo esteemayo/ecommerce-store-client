@@ -37,6 +37,9 @@ const ReviewContainer = styled.div`
     position: absolute;
     top: 0;
     bottom: 0;
+    margin: auto;
+    cursor: pointer;
+    z-index: 1000;
   }
 `;
 
