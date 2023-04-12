@@ -126,7 +126,7 @@ const Right = styled.div`
   flex: 1;
   width: 100%;
   height: 100%;
-  background-color: crimson;
+  background-color: #f8d3da;
 
   & > img {
     width: 100%;
