@@ -44,7 +44,7 @@ const Left = styled.div`
   flex-direction: column;
   gap: 5rem;
   padding: 10rem 4rem;
-  background-color: tomato;
+  background-color: var(--clr-white);
 `;
 
 const RatingContainer = styled.div`
