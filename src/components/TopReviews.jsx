@@ -34,6 +34,9 @@ const ReviewContainer = styled.div`
     height: 100%;
     background-color: rgba(22, 22, 22, 0.5);
     color: var(--color-white);
+    position: absolute;
+    top: 0;
+    bottom: 0;
   }
 `;
 
