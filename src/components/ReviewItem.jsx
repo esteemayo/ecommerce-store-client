@@ -69,7 +69,9 @@ const Review = styled.p`
 `;
 
 const Reviewer = styled.span`
-  
+  display: inline-block;
+  font-weight: 300;
+  font-weight: 1.65rem;
 `;
 
 const Button = styled.button`
