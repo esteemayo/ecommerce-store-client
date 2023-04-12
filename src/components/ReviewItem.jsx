@@ -4,7 +4,7 @@ const ReviewItem = () => {
   return (
     <Container>
       <Wrapper>
-
+        <Left>Left</Left>
       </Wrapper>
     </Container>
   );
