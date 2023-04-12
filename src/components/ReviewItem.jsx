@@ -3,7 +3,9 @@ import styled from 'styled-components';
 const ReviewItem = () => {
   return (
     <Container>
-      ReviewItem
+      <Wrapper>
+
+      </Wrapper>
     </Container>
   );
 }
