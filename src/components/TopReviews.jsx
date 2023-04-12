@@ -13,6 +13,10 @@ const TopReviews = () => {
         />
         <ReviewContainer>
           <ReviewItem />
+          <ReviewItem />
+          <ReviewItem />
+          <ReviewItem />
+          <ReviewItem />
         </ReviewContainer>
         <FontAwesomeIcon
           icon={faArrowRight}
