@@ -50,10 +50,7 @@ const TopReviews = () => {
           direction='right'
           onClick={() => handleClick('right')}
         >
-          <FontAwesomeIcon
-            icon={faArrowRight}
-            className='arrow right'
-          />
+          <FontAwesomeIcon icon={faArrowRight} />
         </IconButton>
       </Wrapper>
     </Container>
