@@ -157,6 +157,8 @@ const ListItem = styled.li`
       font-size: 1.4rem;
       color: inherit;
       line-height: 1.3em;
+      transition: all 0.2s ease;
+      backface-visibility: hidden;
     }
 
     &:hover {
