@@ -125,6 +125,7 @@ const IconButton = styled.button`
   top: 0;
   bottom: 0;
   left: ${({ direction }) => direction === 'left' && 0};
+  right: ${({ direction }) => direction === 'right' && 0};
 `;
 
 const ReviewContainer = styled.div`
