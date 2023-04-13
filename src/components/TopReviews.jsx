@@ -46,7 +46,10 @@ const TopReviews = () => {
           <ReviewItem />
           <ReviewItem />
         </ReviewContainer>
-        <IconButton direction='right'>
+        <IconButton
+          direction='right'
+          onClick={() => handleClick('right')}
+        >
           <FontAwesomeIcon
             icon={faArrowRight}
             className='arrow right'
