@@ -9,6 +9,7 @@ const Footer = () => {
             <Heading>About the store</Heading>
             <ListContainer>
               <ListItem>Home</ListItem>
+              <ListItem>Become a customer</ListItem>
             </ListContainer>
           </Left>
           <Center>Center</Center>
