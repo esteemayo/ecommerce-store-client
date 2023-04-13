@@ -152,7 +152,10 @@ const ListItem = styled.li`
   a {
     &:link,
     &:visited {
+      display: inline-block;
       text-decoration: none;
+      font-size: 1.4rem;
+      color: inherit;
     }
   }
 `;
