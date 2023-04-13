@@ -271,10 +271,12 @@ const SocialIcon = styled.div`
   color: inherit;
   border-radius: 50%;
   cursor: pointer;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
   svg {
     font-size: 2rem;
