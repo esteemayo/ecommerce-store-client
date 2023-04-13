@@ -213,6 +213,7 @@ const SearchContainer = styled.div`
   width: 100%;
   padding: 1rem 0;
   background-color: var(--clr-white);
+  border-radius: 0.5rem;
 `;
 
 const SearchInput = styled.input`
