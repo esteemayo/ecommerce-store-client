@@ -50,7 +50,7 @@ const Footer = () => {
             </ListContainer>
           </Center>
           <Right>
-            <Heading>Company</Heading>
+            <Heading>Customer care</Heading>
             <ListContainer>
               <ListItem>
                 <Link href='#' passHref>Sustainability</Link>
