@@ -29,7 +29,11 @@ const TopReviews = () => {
     <Container>
       <Heading>You didn&apos;t hear it from us</Heading>
       <Wrapper>
-        <IconButton direction='left'>
+        <IconButton
+          direction='left'
+          onClick={() => handleClick('left')}
+          style={{ display: (!isMoved || currentSlide === 0) && 'none' }}
+        >
           <FontAwesomeIcon
             icon={faArrowLeft}
             className='arrow left'
