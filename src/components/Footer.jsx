@@ -273,9 +273,12 @@ const SocialIcon = styled.div`
   cursor: pointer;
   
   a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    &:link,
+    &:visited {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 
   svg {
