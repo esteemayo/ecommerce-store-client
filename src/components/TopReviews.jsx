@@ -11,7 +11,18 @@ const TopReviews = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const handleClick = (direction) => {
-    console.log(direction);
+    setIsMoved(true);
+    const distance = reviewRef.current.getBoundingClientRect().x - 50;
+
+    if (direction === 'left') {
+      setCurrentSlide(currentSlide - 1);
+      reviewRef.current.style.transform = `translateX(${730 + distance}px)`;
+    }
+
+    if (direction === 'right') {
+      setCurrentSlide(currentSlide + 1);
+      reviewRef.current.style.transform = `translateX(${-730 + distance}px)`;
+    }
   };
 
   return (
