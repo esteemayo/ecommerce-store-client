@@ -3,7 +3,7 @@ import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import ReviewItem from './ReviewItem';
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 
 const TopReviews = () => {
   const [isMoved, setIsMoved] = useState(false);
