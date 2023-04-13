@@ -3,7 +3,9 @@ import styled from 'styled-components';
 const Footer = () => {
   return (
     <Container>
-      Footer
+      <Wrapper>
+        Footer
+      </Wrapper>
     </Container>
   );
 }
