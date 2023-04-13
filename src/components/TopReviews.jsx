@@ -12,7 +12,7 @@ const TopReviews = () => {
 
   const handleClick = (direction) => {
     setIsMoved(true);
-    const distance = reviewRef.current.getBoundingClientRect().x - 54;
+    const distance = reviewRef.current.getBoundingClientRect().x - 50;
 
     if (direction === 'left') {
       setCurrentSlide(currentSlide - 1);
