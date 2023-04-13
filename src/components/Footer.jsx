@@ -16,9 +16,6 @@ const Footer = () => {
                 <Link href='#' passHref>Become a customer</Link>
               </ListItem>
               <ListItem>
-                <Link href='#' passHref>About us</Link>
-              </ListItem>
-              <ListItem>
                 <Link href='#' passHref>FAQ</Link>
               </ListItem>
               <ListItem>
