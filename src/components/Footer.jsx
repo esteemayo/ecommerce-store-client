@@ -198,10 +198,11 @@ const Right = styled.div``;
 
 const FooterRight = styled.div`
   flex: 1;
+  background-color: crimson;
 `;
 
 const FooterContainer = styled.div`
-
+  
 `;
 
 const SearchContainer = styled.div`
