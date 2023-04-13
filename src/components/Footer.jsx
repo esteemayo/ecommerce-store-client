@@ -7,6 +7,9 @@ const Footer = () => {
         <LinkContainer>
           <Left>
             <Heading>About the store</Heading>
+            <ListContainer>
+
+            </ListContainer>
           </Left>
           <Center>Center</Center>
           <Right>Right</Right>
