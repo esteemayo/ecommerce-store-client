@@ -158,6 +158,16 @@ const ListItem = styled.li`
       color: inherit;
       line-height: 1.3em;
     }
+
+    &:hover {
+      &::after {
+        content: '';
+        display: inline-block;
+        width: 5rem;
+        height: 1px;
+        background-color: var(--clr-white);
+      }
+    }
   }
 `;
 
