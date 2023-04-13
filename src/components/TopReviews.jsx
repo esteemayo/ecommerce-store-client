@@ -119,6 +119,8 @@ const IconButton = styled.button`
   color: #777;
   border-radius: 50%;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  outline-color: #777;
+  cursor: pointer;
 `;
 
 const ReviewContainer = styled.div`
