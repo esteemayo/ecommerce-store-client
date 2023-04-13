@@ -6,4 +6,8 @@ const Footer = () => {
   );
 }
 
+const Container = styled.footer`
+  
+`;
+
 export default Footer;
