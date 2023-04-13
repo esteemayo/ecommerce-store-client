@@ -113,7 +113,7 @@ const Footer = () => {
               <SocialIcon color='55acee'>
                 <TwitterIcon />
               </SocialIcon>
-              <SocialIcon>
+              <SocialIcon color='e4405f'>
                 <InstagramIcon />
               </SocialIcon>
               <SocialIcon>
