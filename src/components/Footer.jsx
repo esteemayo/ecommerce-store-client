@@ -14,4 +14,8 @@ const Container = styled.footer`
   background-color: #1e3161;
 `;
 
+const Wrapper = styled.div`
+  
+`;
+
 export default Footer;
