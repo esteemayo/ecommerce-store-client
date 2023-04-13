@@ -67,6 +67,9 @@ const Footer = () => {
               <ListItem>
                 <Link href='#' passHref>Refund Policy</Link>
               </ListItem>
+              <ListItem>
+                <Link href='#' passHref>Privacy Policy</Link>
+              </ListItem>
             </ListContainer>
           </Right>
         </LinkContainer>
