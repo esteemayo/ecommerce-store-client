@@ -5,6 +5,7 @@ import store from '@/store/store';
 import Submenu from '@/components/Submenu';
 import Navbar from '@/components/Navbar';
 import Sidebar from '@/components/Sidebar';
+import Footer from '@/components/Footer';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import './globals.css';
 import Footer from '@/components/Footer';
