@@ -220,6 +220,8 @@ const SearchInput = styled.input`
   display: inline-block;
   border: none;
   outline: none;
+  font-family: inherit;
+  font-size: 1.5rem;
   width: 100%;
   padding: 0 1rem;
   caret-color: #1658a3;
