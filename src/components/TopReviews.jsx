@@ -29,7 +29,7 @@ const TopReviews = () => {
     <Container>
       <Heading>You didn&apos;t hear it from us</Heading>
       <Wrapper>
-        <IconButton>
+        <IconButton direction='left'>
           <FontAwesomeIcon
             icon={faArrowLeft}
             className='arrow left'
