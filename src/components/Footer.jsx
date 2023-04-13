@@ -30,6 +30,9 @@ const Footer = () => {
               <ListItem>
                 <Link href='#' passHref>Status</Link>
               </ListItem>
+              <ListItem>
+                <Link href='#' passHref>Pricing</Link>
+              </ListItem>
             </ListContainer>
           </Left>
           <Center>Center</Center>
