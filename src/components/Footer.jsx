@@ -13,6 +13,7 @@ const Footer = () => {
               <ListItem>About us</ListItem>
               <ListItem>FAQ</ListItem>
               <ListItem>Return policy</ListItem>
+              <ListItem>Contact us</ListItem>
             </ListContainer>
           </Left>
           <Center>Center</Center>
