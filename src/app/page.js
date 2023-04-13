@@ -17,6 +17,6 @@ const Home = () => {
   );
 }
 
-const Container = styled.div``;
+const Container = styled.main``;
 
 export default Home;
