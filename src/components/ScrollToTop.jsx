@@ -5,7 +5,7 @@ const ScrollToTop = () => {
   return (
     <Container>
       <Wrapper>
-
+        <KeyboardDoubleArrowUpIcon />
       </Wrapper>
     </Container>
   );
