@@ -37,4 +37,8 @@ const Center = styled.div`
   
 `;
 
+const Right = styled.div`
+  
+`;
+
 export default Footer;
