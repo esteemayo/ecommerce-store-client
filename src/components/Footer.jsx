@@ -260,6 +260,10 @@ const SocialIcon = styled.div`
   border-radius: 50%;
   cursor: pointer;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   svg {
     font-size: 2.5rem;
     color: inherit;
