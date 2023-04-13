@@ -96,7 +96,11 @@ const Footer = () => {
             </Right>
           </LinkContainer>
         </FooterLeft>
-        <FooterRight>Right</FooterRight>
+        <FooterRight>
+          <FooterContainer>
+
+          </FooterContainer>
+        </FooterRight>
       </Wrapper>
     </Container>
   );
