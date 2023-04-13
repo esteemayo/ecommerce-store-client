@@ -49,6 +49,10 @@ const ListContainer = styled.ul`
   
 `;
 
+const ListItem = styled.li`
+
+`;
+
 const Center = styled.div`
   
 `;
