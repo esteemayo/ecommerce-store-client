@@ -12,7 +12,9 @@ const Footer = () => {
               <ListItem>
                 <Link href='/' passHref>Home</Link>
               </ListItem>
-              <ListItem>Become a customer</ListItem>
+              <ListItem>
+                <Link href='#' passHref>Become a customer</Link>
+              </ListItem>
               <ListItem>About us</ListItem>
               <ListItem>FAQ</ListItem>
               <ListItem>Return policy</ListItem>
