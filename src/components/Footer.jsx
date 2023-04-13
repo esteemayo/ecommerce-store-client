@@ -103,7 +103,7 @@ const Footer = () => {
               <SearchInput type='search' placeholder='Search' />
             </SearchContainer>
             <SocialContainer>
-
+              <FacebookIcon />
             </SocialContainer>
           </FooterContainer>
         </FooterRight>
