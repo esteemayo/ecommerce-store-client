@@ -29,12 +29,14 @@ const TopReviews = () => {
     <Container>
       <Heading>You didn&apos;t hear it from us</Heading>
       <Wrapper>
-        <FontAwesomeIcon
-          icon={faArrowLeft}
-          className='arrow left'
-          onClick={() => handleClick('left')}
-          style={{ display: (!isMoved || currentSlide === 0) && 'none' }}
-        />
+        <IconButton>
+          <FontAwesomeIcon
+            icon={faArrowLeft}
+            className='arrow left'
+            onClick={() => handleClick('left')}
+            style={{ display: (!isMoved || currentSlide === 0) && 'none' }}
+          />
+        </IconButton>
         <ReviewContainer ref={reviewRef}>
           <ReviewItem />
           <ReviewItem />
