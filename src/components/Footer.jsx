@@ -10,6 +10,7 @@ const Footer = () => {
             <ListContainer>
               <ListItem>Home</ListItem>
               <ListItem>Become a customer</ListItem>
+              <ListItem>About us</ListItem>
             </ListContainer>
           </Left>
           <Center>Center</Center>
