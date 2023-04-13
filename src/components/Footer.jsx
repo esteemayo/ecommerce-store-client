@@ -53,6 +53,9 @@ const Footer = () => {
               <ListItem>
                 <Link href='#' passHref>Work with us</Link>
               </ListItem>
+              <ListItem>
+                <Link href='#' passHref>Our Stores</Link>
+              </ListItem>
             </ListContainer>
           </Center>
           <Right>
