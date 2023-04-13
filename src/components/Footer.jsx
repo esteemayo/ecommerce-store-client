@@ -182,4 +182,8 @@ const FooterRight = styled.div`
   flex: 1;
 `;
 
+const FooterContainer = styled.div`
+
+`;
+
 export default Footer;
