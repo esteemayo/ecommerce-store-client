@@ -25,6 +25,7 @@ const Container = styled.div`
   position: absolute;
   right: 1rem;
   bottom: 1rem;
+  z-index: 3000;
 `;
 
 const Wrapper = styled.div`
