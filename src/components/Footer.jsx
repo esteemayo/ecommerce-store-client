@@ -227,6 +227,11 @@ const SearchInput = styled.input`
   background-color: transparent;
   color: #999;
   caret-color: #1658a3;
+
+  &::placeholder {
+    font-size: 1.4rem;
+    color: #aaa;
+  }
 `;
 
 const SocialContainer = styled.div`
