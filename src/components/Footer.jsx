@@ -137,7 +137,7 @@ const Heading = styled.h1`
 `;
 
 const ListContainer = styled.ul`
-  
+  list-style: none;
 `;
 
 const ListItem = styled.li`
