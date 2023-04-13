@@ -19,7 +19,7 @@ const TopReviews = () => {
       reviewRef.current.style.transform = `translateX(${730 + distance}px)`;
     }
 
-    if (direction === 'right') {
+    if (direction === 'right' && currentSlide < 8) {
       setCurrentSlide(currentSlide + 1);
       reviewRef.current.style.transform = `translateX(${-730 + distance}px)`;
     }
