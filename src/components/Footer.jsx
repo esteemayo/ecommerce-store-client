@@ -190,4 +190,8 @@ const FooterContainer = styled.div`
 
 `;
 
+const SearchContainer = styled.div`
+  
+`;
+
 export default Footer;
