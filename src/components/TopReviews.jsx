@@ -60,7 +60,7 @@ const TopReviews = () => {
 }
 
 const Container = styled.section`
-  width: 100%;
+  width: 100vw;
   padding: 10rem 0;
   background-color: #f4f8f7;
 `;
