@@ -4,7 +4,6 @@ import { useRef, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import ReviewItem from './ReviewItem';
-import { useRef, useState } from 'react';
 
 const TopReviews = () => {
   const reviewRef = useRef();
