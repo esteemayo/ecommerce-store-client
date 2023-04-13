@@ -265,7 +265,7 @@ const SocialIcon = styled.div`
   justify-content: center;
 
   svg {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: inherit;
   }
 `;
