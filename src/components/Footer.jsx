@@ -217,7 +217,10 @@ const SearchContainer = styled.div`
 `;
 
 const SearchInput = styled.input`
-  
+  display: inline-block;
+  border: none;
+  outline: none;
+  width: 100%;
 `;
 
 const SocialContainer = styled.div`
