@@ -28,4 +28,8 @@ const LinkContainer = styled.div`
   
 `;
 
+const Left = styled.div`
+  
+`;
+
 export default Footer;
