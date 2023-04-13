@@ -133,7 +133,7 @@ const Left = styled.div`
   
 `;
 
-const Heading = styled.h1`
+const Heading = styled.h4`
   font-weight: 500;
   font-size: 1.8rem;
   line-height: 1em;
