@@ -29,7 +29,9 @@ const Wrapper = styled.div`
 `;
 
 const LinkContainer = styled.div`
-  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 `;
 
 const Left = styled.div`
