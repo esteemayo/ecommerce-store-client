@@ -202,7 +202,9 @@ const FooterRight = styled.div`
 `;
 
 const FooterContainer = styled.div`
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 `;
 
 const SearchContainer = styled.div`
