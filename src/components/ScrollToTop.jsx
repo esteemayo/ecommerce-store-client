@@ -43,6 +43,10 @@ const Wrapper = styled.div`
   justify-content: center;
   transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   cursor: pointer;
+
+  &:hover {
+    background-color: #f5f5f5;
+  }
 `;
 
 export default ScrollToTop;
