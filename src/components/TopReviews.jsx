@@ -111,7 +111,7 @@ const Wrapper = styled.div`
 `;
 
 const IconButton = styled.button`
-  
+  border: none;
 `;
 
 const ReviewContainer = styled.div`
