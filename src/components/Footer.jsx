@@ -166,7 +166,7 @@ const ListItem = styled.li`
       &::after {
         content: '';
         display: inline-block;
-        width: 5rem;
+        width: 3rem;
         height: 1px;
         background-color: var(--clr-white);
       }
