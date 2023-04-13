@@ -235,7 +235,7 @@ const SearchInput = styled.input`
 `;
 
 const SocialContainer = styled.div`
-  
+  margin-top: 3rem;
 `;
 
 export default Footer;
