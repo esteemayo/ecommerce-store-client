@@ -55,6 +55,9 @@ const Footer = () => {
               <ListItem>
                 <Link href='#' passHref>Sustainability</Link>
               </ListItem>
+              <ListItem>
+                <Link href='#' passHref>Terms of Service</Link>
+              </ListItem>
             </ListContainer>
           </Right>
         </LinkContainer>
