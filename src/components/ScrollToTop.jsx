@@ -34,7 +34,7 @@ const Wrapper = styled.div`
   height: 4rem;
   background-color: var(--clr-white);
   background-color: var(--clr-black);
-  color: #777;
+  color: #1658a3;
   border-radius: 50%;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
   box-shadow: rgb(0, 0, 0, 0.25) 0 0.4rem 2rem;
@@ -46,6 +46,10 @@ const Wrapper = styled.div`
 
   &:hover {
     background-color: #f5f5f5;
+  }
+
+  svg {
+    font-size: 1.5rem;
   }
 `;
 
