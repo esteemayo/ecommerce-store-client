@@ -5,6 +5,10 @@ import Image from 'next/image';
 import StarRating from './StarRating';
 
 const ReviewItem = () => {
+  const handleClick = (direction) => {
+    console.log(direction);
+  };
+
   return (
     <Container>
       <Wrapper>
