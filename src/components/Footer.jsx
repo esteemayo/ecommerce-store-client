@@ -33,7 +33,7 @@ const Footer = () => {
             </ListContainer>
           </Left>
           <Center>
-            <Heading>Resources</Heading>
+            <Heading>Discover</Heading>
             <ListContainer>
               <ListItem>
                 <Link href='#' passHref>Developer API</Link>
@@ -42,7 +42,7 @@ const Footer = () => {
                 <Link href='#' passHref>Tools</Link>
               </ListItem>
               <ListItem>
-                <Link href='#' passHref>Tools</Link>
+                <Link href='#' passHref>Gift cards</Link>
               </ListItem>
             </ListContainer>
           </Center>
