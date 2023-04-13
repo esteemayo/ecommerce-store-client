@@ -108,7 +108,9 @@ const Footer = () => {
             </SearchContainer>
             <SocialContainer>
               <SocialIcon color='3b5999'>
-                <FacebookIcon />
+                <Link href='#' passHref>
+                  <FacebookIcon />
+                </Link>
               </SocialIcon>
               <SocialIcon color='55acee'>
                 <TwitterIcon />
