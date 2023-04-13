@@ -118,7 +118,9 @@ const Footer = () => {
                 </Link>
               </SocialIcon>
               <SocialIcon color='e4405f'>
-                <InstagramIcon />
+                <Link href='#' passHref>
+                  <InstagramIcon />
+                </Link>
               </SocialIcon>
               <SocialIcon color='0a66c2'>
                 <LinkedInIcon />
