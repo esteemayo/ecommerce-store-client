@@ -5,6 +5,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import ReviewItem from './ReviewItem';
 
 const TopReviews = () => {
+  const handleClick = (direction) => {
+    console.log(direction);
+  };
+
   return (
     <Container>
       <Heading>You didn&apos;t hear it from us</Heading>
