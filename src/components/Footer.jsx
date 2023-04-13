@@ -248,13 +248,10 @@ const SocialContainer = styled.div`
   margin-top: 3rem;
 `;
 
+const SocialIcon = styled.div`
   svg {
     font-size: 2.5rem;
   }
-`;
-
-const SocialIcon = styled.div`
-
 `;
 
 export default Footer;
