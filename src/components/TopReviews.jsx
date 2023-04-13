@@ -6,6 +6,7 @@ import ReviewItem from './ReviewItem';
 import { useState } from 'react';
 
 const TopReviews = () => {
+  const [isMoved, setIsMoved] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const handleClick = (direction) => {
