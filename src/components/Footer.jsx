@@ -116,7 +116,9 @@ const Footer = () => {
               <SocialIcon>
                 <InstagramIcon />
               </SocialIcon>
-              <LinkedInIcon />
+              <SocialIcon>
+                <LinkedInIcon />
+              </SocialIcon>
               <PinterestIcon />
             </SocialContainer>
           </FooterContainer>
