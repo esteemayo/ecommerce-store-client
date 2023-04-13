@@ -4,7 +4,9 @@ const Footer = () => {
   return (
     <Container>
       <Wrapper>
-        Footer
+        <LinkContainer>
+
+        </LinkContainer>
       </Wrapper>
     </Container>
   );
