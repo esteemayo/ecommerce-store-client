@@ -49,7 +49,9 @@ const Footer = () => {
               </ListItem>
             </ListContainer>
           </Center>
-          <Right>Right</Right>
+          <Right>
+            <Heading>Company</Heading>
+          </Right>
         </LinkContainer>
       </Wrapper>
     </Container>
