@@ -111,6 +111,8 @@ const ReviewContainer = styled.div`
   margin-top: 1rem;
   display: flex;
   width: max-content;
+  transition: all 0.3s ease;
+  animation-timing-function: cubic-bezier(0.04, 1.72, 0.51, 0.15);
 `;
 
 export default TopReviews;
