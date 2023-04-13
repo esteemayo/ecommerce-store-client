@@ -9,7 +9,9 @@ const Footer = () => {
           <Left>
             <Heading>About the store</Heading>
             <ListContainer>
-              <ListItem>Home</ListItem>
+              <ListItem>
+                <Link href='/' passHref>Home</Link>
+              </ListItem>
               <ListItem>Become a customer</ListItem>
               <ListItem>About us</ListItem>
               <ListItem>FAQ</ListItem>
