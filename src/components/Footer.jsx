@@ -224,6 +224,8 @@ const SearchInput = styled.input`
   font-size: 1.5rem;
   width: 100%;
   padding: 0 1rem;
+  background-color: transparent;
+  color: #999;
   caret-color: #1658a3;
 `;
 
