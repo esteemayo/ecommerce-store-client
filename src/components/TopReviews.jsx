@@ -122,7 +122,8 @@ const IconButton = styled.button`
   outline-color: #777;
   cursor: pointer;
   position: absolute;
-  top: 0;
+  top: 50%;
+  transform: translate(-50%);
   bottom: 0;
   left: ${({ direction }) => direction === 'left' && 0};
   right: ${({ direction }) => direction === 'right' && 0};
