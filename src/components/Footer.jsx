@@ -211,7 +211,7 @@ const FooterContainer = styled.div`
 
 const SearchContainer = styled.div`
   width: 100%;
-  padding: 1rem 2rem;
+  padding: 1rem 0;
   background-color: var(--clr-white);
 `;
 
