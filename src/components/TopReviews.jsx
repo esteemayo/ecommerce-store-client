@@ -44,11 +44,13 @@ const TopReviews = () => {
           <ReviewItem />
           <ReviewItem />
         </ReviewContainer>
-        <FontAwesomeIcon
-          icon={faArrowRight}
-          className='arrow right'
-          onClick={() => handleClick('right')}
-        />
+        <IconButton>
+          <FontAwesomeIcon
+            icon={faArrowRight}
+            className='arrow right'
+            onClick={() => handleClick('right')}
+          />
+        </IconButton>
       </Wrapper>
     </Container>
   );
