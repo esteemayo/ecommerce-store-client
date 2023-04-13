@@ -111,6 +111,14 @@ const Wrapper = styled.div`
   margin: 0 auto;
 `;
 
+const FooterLeft = styled.div`
+  
+`;
+
+const FooterRight = styled.div`
+  
+`;
+
 const LinkContainer = styled.div`
   display: flex;
   align-items: start;
