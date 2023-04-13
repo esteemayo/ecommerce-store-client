@@ -98,7 +98,9 @@ const Footer = () => {
         </FooterLeft>
         <FooterRight>
           <FooterContainer>
+            <SearchContainer>
 
+            </SearchContainer>
           </FooterContainer>
         </FooterRight>
       </Wrapper>
