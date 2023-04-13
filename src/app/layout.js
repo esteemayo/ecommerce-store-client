@@ -9,6 +9,7 @@ import Footer from '@/components/Footer';
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import './globals.css';
+import ScrollToTop from '@/components/ScrollToTop';
 
 export default function RootLayout({ children }) {
   return (
