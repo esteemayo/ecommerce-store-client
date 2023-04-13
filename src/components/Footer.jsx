@@ -99,7 +99,7 @@ const Footer = () => {
         <FooterRight>
           <FooterContainer>
             <SearchContainer>
-
+              <SearchInput type='search' placeholder='Search' />
             </SearchContainer>
           </FooterContainer>
         </FooterRight>
