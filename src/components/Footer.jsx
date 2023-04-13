@@ -115,14 +115,15 @@ const Wrapper = styled.div`
 
   display: flex;
   align-items: start;
+  gap: 5rem;
 `;
 
 const FooterLeft = styled.div`
-  
+  flex: 3;
 `;
 
 const FooterRight = styled.div`
-  
+  flex: 1;
 `;
 
 const LinkContainer = styled.div`
