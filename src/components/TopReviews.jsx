@@ -6,6 +6,8 @@ import ReviewItem from './ReviewItem';
 import { useState } from 'react';
 
 const TopReviews = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
   const handleClick = (direction) => {
     console.log(direction);
   };
