@@ -19,9 +19,6 @@ const Footer = () => {
                 <Link href='#' passHref>Become a customer</Link>
               </ListItem>
               <ListItem>
-                <Link href='#' passHref>FAQ</Link>
-              </ListItem>
-              <ListItem>
                 <Link href='#' passHref>Return policy</Link>
               </ListItem>
               <ListItem>
@@ -53,19 +50,22 @@ const Footer = () => {
             <Heading>Customer care</Heading>
             <ListContainer>
               <ListItem>
-                <Link href='#' passHref>Sustainability</Link>
+                <Link href='#' passHref>Shipping Information</Link>
               </ListItem>
               <ListItem>
-                <Link href='#' passHref>Terms of Service</Link>
+                <Link href='#' passHref>Returns & Exchange</Link>
               </ListItem>
               <ListItem>
-                <Link href='#' passHref>Privacy</Link>
+                <Link href='#' passHref>Coupon codes</Link>
               </ListItem>
               <ListItem>
-                <Link href='#' passHref>Compression</Link>
+                <Link href='#' passHref>F.A.Q.</Link>
               </ListItem>
               <ListItem>
-                <Link href='#' passHref>Format</Link>
+                <Link href='#' passHref>Terms & condition</Link>
+              </ListItem>
+              <ListItem>
+                <Link href='#' passHref>Refund Policy</Link>
               </ListItem>
             </ListContainer>
           </Right>
