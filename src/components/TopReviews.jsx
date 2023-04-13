@@ -44,7 +44,7 @@ const TopReviews = () => {
           <ReviewItem />
           <ReviewItem />
         </ReviewContainer>
-        <IconButton>
+        <IconButton direction='right'>
           <FontAwesomeIcon
             icon={faArrowRight}
             className='arrow right'
