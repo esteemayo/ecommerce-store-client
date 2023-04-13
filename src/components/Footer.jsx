@@ -221,6 +221,7 @@ const SearchInput = styled.input`
   border: none;
   outline: none;
   width: 100%;
+  padding: 0 1rem;
 `;
 
 const SocialContainer = styled.div`
