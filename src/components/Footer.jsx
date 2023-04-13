@@ -24,7 +24,9 @@ const Footer = () => {
               <ListItem>
                 <Link href='#' passHref>Return policy</Link>
               </ListItem>
-              <ListItem>Contact us</ListItem>
+              <ListItem>
+                <Link href='#' passHref>Contact us</Link>
+              </ListItem>
             </ListContainer>
           </Left>
           <Center>Center</Center>
