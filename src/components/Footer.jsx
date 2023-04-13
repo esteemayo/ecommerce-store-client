@@ -70,6 +70,9 @@ const Footer = () => {
               <ListItem>
                 <Link href='#' passHref>Privacy Policy</Link>
               </ListItem>
+              <ListItem>
+                <Link href='#' passHref>Accessibility statement</Link>
+              </ListItem>
             </ListContainer>
           </Right>
         </LinkContainer>
