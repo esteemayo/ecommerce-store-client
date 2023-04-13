@@ -28,6 +28,7 @@ const TopReviews = () => {
         <FontAwesomeIcon
           icon={faArrowRight}
           className='arrow right'
+          onClick={() => handleClick('right')}
         />
       </Wrapper>
     </Container>
