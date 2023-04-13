@@ -26,6 +26,7 @@ const Container = styled.div`
   right: 1rem;
   bottom: 1rem;
   z-index: 3000;
+  animation: fadeIn 700ms ease-in-out 1s both;
 
   @keyframes fadeIn {
     from {
