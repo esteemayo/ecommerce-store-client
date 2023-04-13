@@ -23,7 +23,7 @@ const TopReviews = () => {
           className='arrow left'
           onClick={() => handleClick('left')}
         />
-        <ReviewContainer>
+        <ReviewContainer ref={reviewRef}>
           <ReviewItem />
           <ReviewItem />
           <ReviewItem />
