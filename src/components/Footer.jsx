@@ -64,6 +64,9 @@ const Footer = () => {
               <ListItem>
                 <Link href='#' passHref>Compression</Link>
               </ListItem>
+              <ListItem>
+                <Link href='#' passHref>Format</Link>
+              </ListItem>
             </ListContainer>
           </Right>
         </LinkContainer>
