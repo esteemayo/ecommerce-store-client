@@ -176,9 +176,7 @@ const ListItem = styled.li`
   }
 `;
 
-const Center = styled.div`
-  
-`;
+const Center = styled.div``;
 
 const Right = styled.div`
   
