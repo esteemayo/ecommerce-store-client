@@ -61,6 +61,9 @@ const Footer = () => {
               <ListItem>
                 <Link href='#' passHref>Privacy</Link>
               </ListItem>
+              <ListItem>
+                <Link href='#' passHref>Compression</Link>
+              </ListItem>
             </ListContainer>
           </Right>
         </LinkContainer>
