@@ -257,6 +257,8 @@ const SocialIcon = styled.div`
   height: 4rem;
   background-color: #${({ color }) => color};
   color: inherit;
+  border-radius: 50%;
+  cursor: pointer;
 
   svg {
     font-size: 2.5rem;
