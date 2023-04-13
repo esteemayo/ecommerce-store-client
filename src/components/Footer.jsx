@@ -106,6 +106,7 @@ const Container = styled.footer`
   width: 100vw;
   padding: 15rem 0;
   background-color: #1e3161;
+  color: var(--clr-white);
 `;
 
 const Wrapper = styled.div`
