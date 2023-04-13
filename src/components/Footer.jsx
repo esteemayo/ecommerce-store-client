@@ -128,7 +128,9 @@ const Footer = () => {
                 </Link>
               </SocialIcon>
               <SocialIcon color='e60023'>
-                <PinterestIcon />
+                <Link href='#' passHref>
+                  <PinterestIcon />
+                </Link>
               </SocialIcon>
             </SocialContainer>
           </FooterContainer>
