@@ -3,6 +3,8 @@ import KeyboardDoubleArrowUpIcon from '@mui/icons-material/KeyboardDoubleArrowUp
 import { useState } from 'react';
 
 const ScrollToTop = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
   return (
     <Container>
       <Wrapper>
