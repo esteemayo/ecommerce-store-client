@@ -22,6 +22,9 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
 `;
 
 const Wrapper = styled.div`
