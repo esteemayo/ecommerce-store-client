@@ -282,6 +282,8 @@ const SocialIcon = styled.div`
       display: flex;
       align-items: center;
       justify-content: center;
+      text-decoration: none;
+      color: inherit;
     }
   }
 
