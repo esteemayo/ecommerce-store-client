@@ -16,6 +16,7 @@ const TopReviews = () => {
         <FontAwesomeIcon
           icon={faArrowLeft}
           className='arrow left'
+          onClick={() => handleClick('left')}
         />
         <ReviewContainer>
           <ReviewItem />
