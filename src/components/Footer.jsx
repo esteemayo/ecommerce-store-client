@@ -11,6 +11,7 @@ const Footer = () => {
               <ListItem>Home</ListItem>
               <ListItem>Become a customer</ListItem>
               <ListItem>About us</ListItem>
+              <ListItem>FAQ</ListItem>
             </ListContainer>
           </Left>
           <Center>Center</Center>
