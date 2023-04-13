@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { useRef, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Inter } from '@next/font/google';
 
 import ReviewItem from './ReviewItem';
 
