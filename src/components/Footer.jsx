@@ -129,9 +129,7 @@ const LinkContainer = styled.div`
   justify-content: space-between;
 `;
 
-const Left = styled.div`
-  
-`;
+const Left = styled.div``;
 
 const Heading = styled.h4`
   font-weight: 500;
