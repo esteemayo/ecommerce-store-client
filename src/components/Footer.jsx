@@ -152,7 +152,7 @@ const ListItem = styled.li`
   a {
     &:link,
     &:visited {
-      
+      text-decoration: none;
     }
   }
 `;
