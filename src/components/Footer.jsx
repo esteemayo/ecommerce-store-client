@@ -222,6 +222,7 @@ const SearchInput = styled.input`
   outline: none;
   width: 100%;
   padding: 0 1rem;
+  caret-color: #1658a3;
 `;
 
 const SocialContainer = styled.div`
