@@ -47,6 +47,9 @@ const Footer = () => {
               <ListItem>
                 <Link href='#' passHref>Rewards</Link>
               </ListItem>
+              <ListItem>
+                <Link href='#' passHref>Affiliate</Link>
+              </ListItem>
             </ListContainer>
           </Center>
           <Right>
