@@ -246,6 +246,9 @@ const SearchInput = styled.input`
 
 const SocialContainer = styled.div`
   margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 `;
 
 const SocialIcon = styled.div`
