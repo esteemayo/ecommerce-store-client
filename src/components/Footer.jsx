@@ -171,6 +171,8 @@ const ListContainer = styled.ul`
 `;
 
 const ListItem = styled.li`
+  outline-color: #1658a3;
+
   &:not(:last-of-type) {
     margin-bottom: 1.6rem;
   }
@@ -185,6 +187,7 @@ const ListItem = styled.li`
       line-height: 1.3em;
       transition: all 0.2s ease;
       backface-visibility: hidden;
+      outline-color: #1658a3;
     }
 
     &:hover {
