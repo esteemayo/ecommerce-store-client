@@ -133,7 +133,7 @@ const Wrapper = styled.div`
   margin: 0 auto;
 
   display: flex;
-  align-items: start;
+  align-items: center;
   gap: 5rem;
 `;
 
