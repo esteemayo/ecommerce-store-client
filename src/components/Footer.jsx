@@ -42,6 +42,10 @@ const Heading = styled.h1`
 
 `;
 
+const ListContainer = styled.ul`
+  
+`;
+
 const Center = styled.div`
   
 `;
