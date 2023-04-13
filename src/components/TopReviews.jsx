@@ -87,27 +87,6 @@ const Heading = styled.h1`
 
 const Wrapper = styled.div`
   position: relative;
-
-  .arrow {
-    /* width: 5rem;
-    height: 100%;
-    background-color: rgba(22, 22, 22, 0.5);
-    color: var(--clr-white);
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    cursor: pointer;
-    z-index: 1000; */
-  }
-
-  .left {
-    left: 0;
-  }
-
-  .right {
-    right: 0;
-  }
 `;
 
 const IconButton = styled.button`
