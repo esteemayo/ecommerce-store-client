@@ -121,6 +121,12 @@ const IconButton = styled.button`
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
   outline-color: #777;
   cursor: pointer;
+
+  .arrow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+  }
 `;
 
 const ReviewContainer = styled.div`
