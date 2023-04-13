@@ -24,6 +24,7 @@ export default function RootLayout({ children }) {
             <Submenu />
             <Sidebar />
             {children}
+            <Footer />
           </div>
         </Provider>
       </body>
