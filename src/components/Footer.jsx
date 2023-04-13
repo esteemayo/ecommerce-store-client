@@ -122,10 +122,6 @@ const FooterLeft = styled.div`
   flex: 3;
 `;
 
-const FooterRight = styled.div`
-  flex: 1;
-`;
-
 const LinkContainer = styled.div`
   display: flex;
   align-items: start;
@@ -154,6 +150,10 @@ const Center = styled.div`
 
 const Right = styled.div`
   
+`;
+
+const FooterRight = styled.div`
+  flex: 1;
 `;
 
 export default Footer;
