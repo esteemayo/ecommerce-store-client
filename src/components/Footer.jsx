@@ -37,6 +37,11 @@ const Footer = () => {
           </Left>
           <Center>
             <Heading>Resources</Heading>
+            <ListContainer>
+              <ListItem>
+                <Link href='#' passHref>Developer API</Link>
+              </ListItem>
+            </ListContainer>
           </Center>
           <Right>Right</Right>
         </LinkContainer>
