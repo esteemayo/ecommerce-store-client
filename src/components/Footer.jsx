@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import styled from 'styled-components';
+import FacebookIcon from '@mui/icons-material/Facebook';
 
 const Footer = () => {
   return (
