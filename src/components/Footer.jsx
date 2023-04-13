@@ -178,9 +178,7 @@ const ListItem = styled.li`
 
 const Center = styled.div``;
 
-const Right = styled.div`
-  
-`;
+const Right = styled.div``;
 
 const FooterRight = styled.div`
   flex: 1;
