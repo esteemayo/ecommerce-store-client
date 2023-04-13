@@ -148,6 +148,13 @@ const ListItem = styled.li`
   &:not(:last-of-type) {
     margin-bottom: 1.6rem;
   }
+
+  a {
+    &:link,
+    &:visited {
+      
+    }
+  }
 `;
 
 const Center = styled.div`
