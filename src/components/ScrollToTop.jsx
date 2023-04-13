@@ -21,8 +21,7 @@ const Container = styled.div`
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
   display: flex;
   align-items: center;
-  jsutify-content: center;
-  text-align: center;
+  justify-content: center;
 `;
 
 const Wrapper = styled.div`
