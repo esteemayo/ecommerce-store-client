@@ -255,6 +255,8 @@ const SocialContainer = styled.div`
 const SocialIcon = styled.div`
   width: 4rem;
   height: 4rem;
+  background-color: ${({ color }) => color}
+  color: inherit;
 
   svg {
     font-size: 2.5rem;
