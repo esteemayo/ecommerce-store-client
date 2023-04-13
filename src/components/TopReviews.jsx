@@ -37,8 +37,6 @@ const TopReviews = () => {
           <FontAwesomeIcon
             icon={faArrowLeft}
             className='arrow left'
-            onClick={() => handleClick('left')}
-            style={{ display: (!isMoved || currentSlide === 0) && 'none' }}
           />
         </IconButton>
         <ReviewContainer ref={reviewRef}>
