@@ -50,9 +50,6 @@ const Footer = () => {
             <Heading>Company</Heading>
             <ListContainer>
               <ListItem>
-                <Link href='#' passHref>About us</Link>
-              </ListItem>
-              <ListItem>
                 <Link href='#' passHref>Sustainability</Link>
               </ListItem>
               <ListItem>
