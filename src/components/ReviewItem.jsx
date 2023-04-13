@@ -108,7 +108,7 @@ const Button = styled.button`
   font-size: 1.8rem;
   width: 9rem;
   background-color: transparent;
-  color: #000;
+  color: var(--clr-black);
   outline-color: #ccc;
   cursor: pointer;
   transition: all 0.3s ease;
