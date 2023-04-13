@@ -33,6 +33,7 @@ const TopReviews = () => {
           icon={faArrowLeft}
           className='arrow left'
           onClick={() => handleClick('left')}
+          style={{ display: (!isMoved || currentSlide === 0) && 'none' }}
         />
         <ReviewContainer ref={reviewRef}>
           <ReviewItem />
