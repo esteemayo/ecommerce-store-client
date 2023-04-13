@@ -48,6 +48,11 @@ const Footer = () => {
           </Center>
           <Right>
             <Heading>Company</Heading>
+            <ListContainer>
+              <ListItem>
+                <Link href='#' passHref>About us</Link>
+              </ListItem>
+            </ListContainer>
           </Right>
         </LinkContainer>
       </Wrapper>
