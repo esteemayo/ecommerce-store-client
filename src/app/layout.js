@@ -8,7 +8,6 @@ import Sidebar from '@/components/Sidebar';
 import Footer from '@/components/Footer';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import './globals.css';
-import Footer from '@/components/Footer';
 
 export default function RootLayout({ children }) {
   return (
