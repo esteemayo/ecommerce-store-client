@@ -196,4 +196,8 @@ const SearchContainer = styled.div`
   
 `;
 
+const SearchInput = styled.input`
+  
+`;
+
 export default Footer;
