@@ -90,7 +90,7 @@ const Review = styled.p`
   width: 70%;
   font-weight: 600;
   font-size: 1.8rem;
-  color: #000;
+  color: var(--clr-black);
 `;
 
 const Reviewer = styled.span`
