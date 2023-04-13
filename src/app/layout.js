@@ -27,6 +27,7 @@ export default function RootLayout({ children }) {
             <Sidebar />
             {children}
             <Footer />
+            <ScrollToTop />
           </div>
         </Provider>
       </body>
