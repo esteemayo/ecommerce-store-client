@@ -34,6 +34,10 @@ const Left = styled.div`
   
 `;
 
+const Heading = styled.h1`
+
+`;
+
 const Center = styled.div`
   
 `;
