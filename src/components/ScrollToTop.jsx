@@ -26,6 +26,16 @@ const Container = styled.div`
   right: 1rem;
   bottom: 1rem;
   z-index: 3000;
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
 `;
 
 const Wrapper = styled.div`
