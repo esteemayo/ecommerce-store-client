@@ -94,7 +94,6 @@ const Wrapper = styled.div`
 
 const IconButton = styled.button`
   border: none;
-  display: inline-block;
   width: 4rem;
   height: 4rem;
   background-color: var(--clr-white);
