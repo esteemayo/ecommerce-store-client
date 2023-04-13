@@ -145,7 +145,9 @@ const ListContainer = styled.ul`
 `;
 
 const ListItem = styled.li`
-
+  &:not(:last-of-type) {
+    margin-bottom: 1.6rem;
+  }
 `;
 
 const Center = styled.div`
