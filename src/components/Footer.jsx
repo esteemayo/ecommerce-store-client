@@ -8,7 +8,7 @@ const Footer = () => {
           <Left>
             <Heading>About the store</Heading>
             <ListContainer>
-
+              <ListItem>Home</ListItem>
             </ListContainer>
           </Left>
           <Center>Center</Center>
