@@ -101,6 +101,9 @@ const Footer = () => {
             <SearchContainer>
               <SearchInput type='search' placeholder='Search' />
             </SearchContainer>
+            <SocialContainer>
+
+            </SocialContainer>
           </FooterContainer>
         </FooterRight>
       </Wrapper>
