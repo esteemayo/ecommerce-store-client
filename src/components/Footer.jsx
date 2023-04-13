@@ -123,7 +123,9 @@ const Footer = () => {
                 </Link>
               </SocialIcon>
               <SocialIcon color='0a66c2'>
-                <LinkedInIcon />
+                <Link href='#' passHref>
+                  <LinkedInIcon />
+                </Link>
               </SocialIcon>
               <SocialIcon color='e60023'>
                 <PinterestIcon />
