@@ -126,6 +126,7 @@ const IconButton = styled.button`
   transform: translate(-50%);
   left: ${({ direction }) => direction === 'left' && 0};
   right: ${({ direction }) => direction === 'right' && 0};
+  transform: translate(-50%);
   z-index: 1000;
 `;
 
