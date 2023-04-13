@@ -107,6 +107,7 @@ const Footer = () => {
             <SocialContainer>
               <FacebookIcon />
               <TwitterIcon />
+              <InstagramIcon />
             </SocialContainer>
           </FooterContainer>
         </FooterRight>
