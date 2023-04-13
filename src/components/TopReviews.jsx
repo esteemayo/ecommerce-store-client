@@ -115,6 +115,8 @@ const IconButton = styled.button`
   display: inline-block;
   width: 4rem;
   height: 4rem;
+  background-color: var(--clr-white);
+  color: #777;
 `;
 
 const ReviewContainer = styled.div`
