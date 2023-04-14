@@ -4,10 +4,7 @@ import Spinner from "@/components/Spinner";
 
 const login = () => {
   return (
-    <div>
-      login
-      <Spinner size='sm' />
-    </div>
+    <div>login</div>
   );
 }
 
