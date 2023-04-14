@@ -234,3 +234,46 @@ export const discoverLinks = [
     text: 'Our Stores',
   },
 ];
+
+export const customerLinks = [
+  {
+    id: 1,
+    url: '#',
+    text: 'Shipping Information',
+  },
+  {
+    id: 2,
+    url: '#',
+    text: 'Returns & Exchange',
+  },
+  {
+    id: 3,
+    url: '#',
+    text: 'Coupon codes',
+  },
+  {
+    id: 4,
+    url: '#',
+    text: 'F.A.Q.',
+  },
+  {
+    id: 5,
+    url: '#',
+    text: 'Terms & condition',
+  },
+  {
+    id: 6,
+    url: '#',
+    text: 'Refund Policy',
+  },
+  {
+    id: 7,
+    url: '#',
+    text: 'Privacy Policy',
+  },
+  {
+    id: 8,
+    url: '#',
+    text: 'Accessibility statement',
+  },
+];
