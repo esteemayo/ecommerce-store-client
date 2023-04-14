@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Spinner = ({ size }) => {
   return (
-    <Container>&nbsp;</Container>
+    <Container size={size}>&nbsp;</Container>
   );
 }
 
