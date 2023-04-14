@@ -23,9 +23,11 @@ const ScrollToTop = () => {
 
   return (
     <Container>
-      <Wrapper>
-        <KeyboardDoubleArrowUpIcon />
-      </Wrapper>
+      {isVisible && (
+        <Wrapper>
+          <KeyboardDoubleArrowUpIcon />
+        </Wrapper>
+      )}
     </Container>
   );
 }
