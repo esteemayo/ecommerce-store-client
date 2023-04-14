@@ -69,6 +69,7 @@ const Wrapper = styled.div`
     background-color: #f9f9f9;
     box-shadow: rgb(0, 0, 0, 0.25) 0 0.4rem 2rem;
     -webkit-box-shadow: rgb(0, 0, 0, 0.25) 0 0.4rem 2rem;
+    -moz-box-shadow: rgb(0, 0, 0, 0.25) 0 0.4rem 2rem;
   }
 
   svg {
