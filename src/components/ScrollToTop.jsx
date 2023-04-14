@@ -9,6 +9,13 @@ const ScrollToTop = () => {
     setIsVisible(window.pageYOffset > 500 ? true : false);
   };
 
+  const scrollHandler = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <Container>
       <Wrapper>
