@@ -33,7 +33,7 @@ const ScrollToTop = () => {
 }
 
 const Container = styled.div`
-  position: absolute;
+  position: fixed;
   right: 1rem;
   bottom: 1rem;
   z-index: 3000;
