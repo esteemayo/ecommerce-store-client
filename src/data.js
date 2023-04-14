@@ -298,6 +298,7 @@ export const social = [
   },
   {
     id: 3,
+    url: '#',
     icon: <InstagramIcon />,
     color: 'e4405f',
   },
