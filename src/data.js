@@ -191,3 +191,46 @@ export const storeLinks = [
     text: 'Partners and factories',
   },
 ];
+
+export const discoverLinks = [
+  {
+    id: 1,
+    url: '#',
+    text: 'Developer API',
+  },
+  {
+    id: 2,
+    url: '#',
+    text: 'Tools',
+  },
+  {
+    id: 3,
+    url: '#',
+    text: 'Blog',
+  },
+  {
+    id: 4,
+    url: '#',
+    text: 'Gift cards',
+  },
+  {
+    id: 5,
+    url: '#',
+    text: 'Rewards',
+  },
+  {
+    id: 6,
+    url: '#',
+    text: 'Affiliate',
+  },
+  {
+    id: 7,
+    url: '#',
+    text: 'Work with us',
+  },
+  {
+    id: 8,
+    url: '#',
+    text: 'Our Stores',
+  },
+];
