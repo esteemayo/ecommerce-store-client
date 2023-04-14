@@ -27,4 +27,8 @@ const Container = styled.div`
   }
 `;
 
+Spinner.defaultProps = {
+  size: 'sm',
+};
+
 export default Spinner;
