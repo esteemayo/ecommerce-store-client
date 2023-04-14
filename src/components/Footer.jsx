@@ -29,9 +29,14 @@ const Footer = () => {
             <Center>
               <Heading>Discover</Heading>
               <ListContainer>
-                <ListItem>
-                  <Link href='#' passHref>Developer API</Link>
-                </ListItem>
+                {discoverLinks.map((link) => {
+                  const { id, url, text } = link;
+                  return (
+                    <ListItem key={id}>
+                      <Link href={url} passHref>{text}</Link>
+                    </ListItem>
+                  );
+                })}
               </ListContainer>
             </Center>
             <Right>
