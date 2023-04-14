@@ -6,4 +6,8 @@ const Loader = () => {
   );
 }
 
+const Container = styled.div`
+  
+`;
+
 export default Loader;
