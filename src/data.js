@@ -148,3 +148,46 @@ export const sublinks = [
     ],
   },
 ];
+
+export const storeLinks = [
+  {
+    id: 1,
+    url: '/',
+    text: 'Home',
+  },
+  {
+    id: 2,
+    url: '#',
+    text: 'About us',
+  },
+  {
+    id: 3,
+    url: '#',
+    text: 'Become a customer',
+  },
+  {
+    id: 4,
+    url: '#',
+    text: 'Return policy',
+  },
+  {
+    id: 5,
+    url: '#',
+    text: 'Contact us',
+  },
+  {
+    id: 6,
+    url: '#',
+    text: 'Status',
+  },
+  {
+    id: 7,
+    url: '#',
+    text: 'Pricing',
+  },
+  {
+    id: 8,
+    url: '#',
+    text: 'Partners and factories',
+  },
+];
