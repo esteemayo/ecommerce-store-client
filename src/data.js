@@ -310,6 +310,7 @@ export const social = [
   },
   {
     id: 5,
+    url: '#',
     icon: <PinterestIcon />,
     color: 'e60023',
   },
