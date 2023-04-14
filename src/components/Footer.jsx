@@ -45,27 +45,6 @@ const Footer = () => {
                 <ListItem>
                   <Link href='#' passHref>Shipping Information</Link>
                 </ListItem>
-                <ListItem>
-                  <Link href='#' passHref>Returns & Exchange</Link>
-                </ListItem>
-                <ListItem>
-                  <Link href='#' passHref>Coupon codes</Link>
-                </ListItem>
-                <ListItem>
-                  <Link href='#' passHref>F.A.Q.</Link>
-                </ListItem>
-                <ListItem>
-                  <Link href='#' passHref>Terms & condition</Link>
-                </ListItem>
-                <ListItem>
-                  <Link href='#' passHref>Refund Policy</Link>
-                </ListItem>
-                <ListItem>
-                  <Link href='#' passHref>Privacy Policy</Link>
-                </ListItem>
-                <ListItem>
-                  <Link href='#' passHref>Accessibility statement</Link>
-                </ListItem>
               </ListContainer>
             </Right>
           </LinkContainer>
