@@ -18,27 +18,6 @@ const Footer = () => {
                 <ListItem>
                   <Link href='/' passHref>Home</Link>
                 </ListItem>
-                <ListItem>
-                  <Link href='#' passHref>About us</Link>
-                </ListItem>
-                <ListItem>
-                  <Link href='#' passHref>Become a customer</Link>
-                </ListItem>
-                <ListItem>
-                  <Link href='#' passHref>Return policy</Link>
-                </ListItem>
-                <ListItem>
-                  <Link href='#' passHref>Contact us</Link>
-                </ListItem>
-                <ListItem>
-                  <Link href='#' passHref>Status</Link>
-                </ListItem>
-                <ListItem>
-                  <Link href='#' passHref>Pricing</Link>
-                </ListItem>
-                <ListItem>
-                  <Link href='#' passHref>Partners and factories</Link>
-                </ListItem>
               </ListContainer>
             </Left>
             <Center>
