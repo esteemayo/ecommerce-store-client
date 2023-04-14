@@ -24,7 +24,7 @@ const ScrollToTop = () => {
   return (
     <Container>
       {isVisible && (
-        <Wrapper>
+        <Wrapper onClick={scrollHandler}>
           <KeyboardDoubleArrowUpIcon />
         </Wrapper>
       )}
