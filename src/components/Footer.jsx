@@ -61,11 +61,16 @@ const Footer = () => {
               <SearchInput type='search' placeholder='Search' />
             </SearchContainer>
             <SocialContainer>
-              <SocialIcon color='3b5999'>
-                <Link href='#' passHref>
-                  <FacebookIcon />
-                </Link>
-              </SocialIcon>
+              {social.map((item) => {
+                const { id, url, icon, color } = item;
+                return (
+                  <SocialIcon key={id} color={color}>
+                    <Link href={url} passHref>
+                      {icon}
+                    </Link>
+                  </SocialIcon>
+                )
+              })}
             </SocialContainer>
           </FooterContainer>
         </FooterRight>
