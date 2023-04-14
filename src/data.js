@@ -292,6 +292,7 @@ export const social = [
   },
   {
     id: 2,
+    url: '#',
     icon: <TwitterIcon />,
     color: '55acee',
   },
