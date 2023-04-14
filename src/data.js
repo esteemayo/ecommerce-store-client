@@ -304,6 +304,7 @@ export const social = [
   },
   {
     id: 4,
+    url: '#',
     icon: <LinkedInIcon />,
     color: '0a66c2',
   },
