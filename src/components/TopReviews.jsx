@@ -99,9 +99,9 @@ const IconButton = styled.button`
   background-color: var(--clr-white);
   color: #777;
   border-radius: 50%;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
-  -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
-  -moz-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.04);
+  -webkit-box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.04);
+  -moz-box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.04);
   outline-color: #777;
   cursor: pointer;
   position: absolute;
