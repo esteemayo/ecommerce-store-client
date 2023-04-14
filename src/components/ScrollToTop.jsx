@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import KeyboardDoubleArrowUpIcon from '@mui/icons-material/KeyboardDoubleArrowUp';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -15,6 +15,8 @@ const ScrollToTop = () => {
       behavior: 'smooth',
     });
   };
+
+  useEffect(() => { })
 
   return (
     <Container>
