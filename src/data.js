@@ -20,6 +20,7 @@ import {
   faStore,
   faTruckFast,
 } from '@fortawesome/free-solid-svg-icons';
+import FacebookIcon from '@mui/icons-material/Facebook';
 
 export const sublinks = [
   {
