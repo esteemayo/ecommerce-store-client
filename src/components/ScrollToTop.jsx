@@ -5,6 +5,10 @@ import { useState } from 'react';
 const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
 
+  const toggleVisibility = () => {
+    setIsVisible(window.pageYOffset > 500 ? true : false);
+  };
+
   return (
     <Container>
       <Wrapper>
