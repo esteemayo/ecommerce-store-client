@@ -286,6 +286,7 @@ export const customerLinks = [
 export const social = [
   {
     id: 1,
+    url: '#',
     icon: <FacebookIcon />,
     color: '3b5999',
   },
