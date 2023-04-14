@@ -282,3 +282,31 @@ export const customerLinks = [
     text: 'Accessibility statement',
   },
 ];
+
+export const social = [
+  {
+    id: 1,
+    icon: <FacebookIcon />,
+    color: '3b5999',
+  },
+  {
+    id: 2,
+    icon: <TwitterIcon />,
+    color: '55acee',
+  },
+  {
+    id: 3,
+    icon: <InstagramIcon />,
+    color: 'e4405f',
+  },
+  {
+    id: 4,
+    icon: <LinkedInIcon />,
+    color: '0a66c2',
+  },
+  {
+    id: 5,
+    icon: <PinterestIcon />,
+    color: 'e60023',
+  },
+];
