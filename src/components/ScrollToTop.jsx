@@ -54,7 +54,6 @@ const Wrapper = styled.div`
   width: 4rem;
   height: 4rem;
   background-color: var(--clr-white);
-  background-color: var(--clr-black);
   color: #1658a3;
   border-radius: 50%;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
