@@ -42,9 +42,14 @@ const Footer = () => {
             <Right>
               <Heading>Customer care</Heading>
               <ListContainer>
-                <ListItem>
-                  <Link href='#' passHref>Shipping Information</Link>
-                </ListItem>
+                {customerLinks.map((link) => {
+                  const { id, url, text } = link;
+                  return (
+                    <ListItem key={id}>
+                      <Link href={url} passHref>{text}</Link>
+                    </ListItem>
+                  );
+                })}
               </ListContainer>
             </Right>
           </LinkContainer>
