@@ -16,9 +16,14 @@ const Footer = () => {
             <Left>
               <Heading>About the store</Heading>
               <ListContainer>
-                <ListItem>
-                  <Link href='/' passHref>Home</Link>
-                </ListItem>
+                {storeLinks.map((link) => {
+                  const { id, url, text } = link;
+                  return (
+                    <ListItem key={id}>
+                      <Link href={url} passHref>{text}</Link>
+                    </ListItem>
+                  );
+                })}
               </ListContainer>
             </Left>
             <Center>
