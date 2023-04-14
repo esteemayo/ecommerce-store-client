@@ -32,27 +32,6 @@ const Footer = () => {
                 <ListItem>
                   <Link href='#' passHref>Developer API</Link>
                 </ListItem>
-                <ListItem>
-                  <Link href='#' passHref>Tools</Link>
-                </ListItem>
-                <ListItem>
-                  <Link href='#' passHref>Blog</Link>
-                </ListItem>
-                <ListItem>
-                  <Link href='#' passHref>Gift cards</Link>
-                </ListItem>
-                <ListItem>
-                  <Link href='#' passHref>Rewards</Link>
-                </ListItem>
-                <ListItem>
-                  <Link href='#' passHref>Affiliate</Link>
-                </ListItem>
-                <ListItem>
-                  <Link href='#' passHref>Work with us</Link>
-                </ListItem>
-                <ListItem>
-                  <Link href='#' passHref>Our Stores</Link>
-                </ListItem>
               </ListContainer>
             </Center>
             <Right>
