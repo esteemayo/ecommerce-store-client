@@ -66,26 +66,6 @@ const Footer = () => {
                   <FacebookIcon />
                 </Link>
               </SocialIcon>
-              <SocialIcon color='55acee'>
-                <Link href='#' passHref>
-                  <TwitterIcon />
-                </Link>
-              </SocialIcon>
-              <SocialIcon color='e4405f'>
-                <Link href='#' passHref>
-                  <InstagramIcon />
-                </Link>
-              </SocialIcon>
-              <SocialIcon color='0a66c2'>
-                <Link href='#' passHref>
-                  <LinkedInIcon />
-                </Link>
-              </SocialIcon>
-              <SocialIcon color='e60023'>
-                <Link href='#' passHref>
-                  <PinterestIcon />
-                </Link>
-              </SocialIcon>
             </SocialContainer>
           </FooterContainer>
         </FooterRight>
