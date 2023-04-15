@@ -192,7 +192,6 @@ const SearchInput = styled.input`
 `;
 
 const SocialContainer = styled.div`
-  margin-top: 3rem;
   display: flex;
   align-items: center;
   justify-content: center;
