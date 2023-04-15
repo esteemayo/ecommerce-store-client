@@ -138,14 +138,6 @@ const ListItem = styled.li`
     &:hover {
       display: flex;
       flex-direction: column;
-
-      &::after {
-        content: '';
-        display: inline-block;
-        width: 3rem;
-        height: 1px;
-        background-color: var(--clr-white);
-      }
     }
   }
 `;
