@@ -117,6 +117,8 @@ const ListContainer = styled.ul`
 
 const ListItem = styled.li`
   outline-color: #1658a3;
+  display: flex;
+  flex-direction: column;
 
   &:not(:last-of-type) {
     margin-bottom: 1.6rem;
