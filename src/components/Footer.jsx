@@ -57,6 +57,7 @@ const Footer = () => {
             </SearchContainer>
             <SocialContainer>
               <Header>Follow us</Header>
+            <SocialContainer>
               {social.map((item) => {
                 const { id, url, icon, color } = item;
                 return (
