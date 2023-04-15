@@ -201,7 +201,8 @@ const SocialContainer = styled.div`
 `;
 
 const Header = styled.h4`
-  
+  font-weight: 300;
+  font-size: 1.4rem;
 `;
 
 const SocialIcon = styled.div`
