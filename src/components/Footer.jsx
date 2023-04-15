@@ -55,7 +55,6 @@ const Footer = () => {
             <SearchContainer>
               <SearchInput type='search' placeholder='Search store...' />
             </SearchContainer>
-            <SocialContainer>
             <Header>Follow us</Header>
             <SocialContainer>
               {social.map((item) => {
