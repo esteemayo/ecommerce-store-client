@@ -6,7 +6,7 @@ import Loader from "@/components/Loader";
 const Login = () => {
   return (
     <Container>
-      <Loader size='md' />
+      Login
     </Container>
   );
 }
