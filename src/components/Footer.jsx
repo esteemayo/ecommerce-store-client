@@ -197,6 +197,7 @@ const SocialContainer = styled.div`
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  margin-top: 1rem;
 `;
 
 const Header = styled.h4`
