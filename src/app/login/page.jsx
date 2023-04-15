@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import Loader from "@/components/Loader";
 
-const login = () => {
+const Login = () => {
   return (
     <Container>
       <Loader size='md' />
@@ -15,4 +15,4 @@ const Container = styled.section`
   
 `;
 
-export default login;
+export default Login;
