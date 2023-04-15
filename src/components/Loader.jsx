@@ -23,7 +23,8 @@ const Container = styled.div`
 `;
 
 const Wrapper = styled.div`
-  
+  width: 40rem;
+  background-color: var(--clr-white);
 `;
 
 export default Loader;
