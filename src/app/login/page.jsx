@@ -1,4 +1,5 @@
 'use client';
+import styled from 'styled-components';
 
 import Loader from "@/components/Loader";
 
@@ -7,5 +8,6 @@ const login = () => {
     <div><Loader size='md' /></div>
   );
 }
+
 
 export default login;
