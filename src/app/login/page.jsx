@@ -11,7 +11,7 @@ const Login = () => {
   );
 }
 
-const Container = styled.section`
+const Container = styled.main`
   
 `;
 
