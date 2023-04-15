@@ -3,7 +3,9 @@ import styled from 'styled-components';
 const Loader = () => {
   return (
     <Container>
-      Loader
+      <Wrapper>
+        Loader
+      </Wrapper>
     </Container>
   );
 }
