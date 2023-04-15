@@ -141,6 +141,11 @@ const LogoBox = styled.div`
     &:visited {
       text-decoration: none;
     }
+
+    & > img {
+      display: block;
+      object-fit: cover;
+    }
   }
 `;
 
