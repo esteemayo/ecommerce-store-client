@@ -124,6 +124,10 @@ const ListItem = styled.li`
     margin-bottom: 1.6rem;
   }
 
+  &:hover {
+    color: #f5f5f5;
+  }
+
   
   &::after {
     content: '';
