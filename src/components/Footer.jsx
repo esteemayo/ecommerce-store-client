@@ -133,7 +133,7 @@ const ListItem = styled.li`
   &::after {
     content: '';
     display: inline-block;
-    width: 3rem;
+    width: 2rem;
     height: 1px;
     background-color: var(--clr-white);
   }
