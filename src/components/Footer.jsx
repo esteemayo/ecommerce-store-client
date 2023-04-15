@@ -136,8 +136,6 @@ const ListItem = styled.li`
     }
 
     &:hover {
-      display: flex;
-      flex-direction: column;
     }
   }
 `;
