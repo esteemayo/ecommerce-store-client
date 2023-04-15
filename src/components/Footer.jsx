@@ -198,6 +198,10 @@ const SocialContainer = styled.div`
   gap: 1rem;
 `;
 
+const Header = styled.h4`
+  
+`;
+
 const SocialIcon = styled.div`
   width: 4rem;
   height: 4rem;
