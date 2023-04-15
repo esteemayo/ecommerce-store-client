@@ -145,9 +145,6 @@ const ListItem = styled.li`
       backface-visibility: hidden;
       outline-color: #1658a3;
     }
-
-    &:hover {
-    }
   }
 `;
 
