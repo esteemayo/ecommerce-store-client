@@ -122,6 +122,15 @@ const ListItem = styled.li`
     margin-bottom: 1.6rem;
   }
 
+  
+  &::after {
+    content: '';
+    display: inline-block;
+    width: 3rem;
+    height: 1px;
+    background-color: var(--clr-white);
+  }
+
   a {
     &:link,
     &:visited {
