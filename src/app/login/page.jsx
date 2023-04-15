@@ -5,7 +5,7 @@ import Loader from "@/components/Loader";
 
 const login = () => {
   return (
-    <div><Loader size='md' /></div>
+    <Container><Loader size='md' /></Container>
   );
 }
 
