@@ -171,6 +171,7 @@ const SearchContainer = styled.div`
   padding: 1rem 0;
   background-color: var(--clr-white);
   border-radius: 0.5rem;
+  margin-bottom: 3rem;
 `;
 
 const SearchInput = styled.input`
