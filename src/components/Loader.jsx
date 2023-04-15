@@ -5,7 +5,7 @@ const Loader = ({ size }) => {
   return (
     <Container>
       <Wrapper>
-        <Spinner />
+        <Spinner size={size} />
       </Wrapper>
     </Container>
   );
