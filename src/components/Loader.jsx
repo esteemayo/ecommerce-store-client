@@ -20,4 +20,8 @@ const Container = styled.div`
   justify-content: center;
 `;
 
+const Wrapper = styled.div`
+  
+`;
+
 export default Loader;
