@@ -16,6 +16,9 @@ const CarouselSlider = () => {
         <ArrowButton type='button' direction='left'>
 
         </ArrowButton>
+        <ArrowButton type='button' direction='right'>
+
+        </ArrowButton>
       </Wrapper>
     </Container>
   );
