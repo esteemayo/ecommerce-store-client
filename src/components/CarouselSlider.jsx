@@ -13,7 +13,16 @@ const CarouselSlider = () => {
     '/img/hero-3.jpg',
   ];
 
-  useEffect(() => { })
+  useEffect(() => {
+    const lastIndex = data.length - 1;
+    if (slideNumber < 0) {
+      setSlideNumber(lastIndex);
+    }
+
+    if (slideNumber > lastIndex) {
+      setSlideNumber(0);
+    }
+  }, [slideNumber, data.length]);
 
   return (
     <Container>
