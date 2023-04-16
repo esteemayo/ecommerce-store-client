@@ -159,9 +159,9 @@ const ArrowButton = styled.button`
 
 const ActiveSlideContainer = styled.div`
   position: absolute;
-  top: 80%;
+  top: 90%;
   left: 50%;
-  transform: translate(-80%,-50%);
+  transform: translate(-90%,-50%);
   display: flex;
   align-items: center;
   gap: 0.5rem;
