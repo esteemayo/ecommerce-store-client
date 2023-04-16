@@ -166,6 +166,7 @@ const ActiveSlideButton = styled.button`
   height: 1rem;
   background-color: var(--clr-white);
   border-radius: 50%;
+  outline-color: #f5f5f5;
   cursor: pointer;
 `;
 
