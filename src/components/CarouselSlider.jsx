@@ -6,7 +6,12 @@ const CarouselSlider = () => {
     <Container>
       <Wrapper>
         <Article>
-
+          <Image
+            src='/img/hero-1.webp'
+            width={1800}
+            height={800}
+            alt=''
+          />
         </Article>
       </Wrapper>
     </Container>
