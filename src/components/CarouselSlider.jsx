@@ -74,7 +74,11 @@ const CarouselSlider = () => {
           <FontAwesomeIcon icon={faChevronRight} />
         </ArrowButton>
         <ActiveSlideContainer>
-          <ActiveSlideButton></ActiveSlideButton>
+          {data.map((_, index) => {
+            return (
+              <ActiveSlideButton key={index}></ActiveSlideButton>
+            );
+          })}
         </ActiveSlideContainer>
       </Wrapper>
     </Container>
