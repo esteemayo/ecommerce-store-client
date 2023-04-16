@@ -13,14 +13,20 @@ const CarouselSlider = () => {
   return (
     <Container>
       <Wrapper>
-        <Article type='activeSlide'>
-          <Image
-            src='/img/hero-1.webp'
-            width={1800}
-            height={800}
-            alt=''
-          />
-        </Article>
+        {data.map((item, index) => {
+          let position = 'nextSlide';
+
+          return (
+            <Article key={index} type={position}>
+              <Image
+                src={item}
+                width={1800}
+                height={800}
+                alt=''
+              />
+            </Article>
+          );
+        })}
         <ArrowButton type='button' direction='left'>
           <FontAwesomeIcon icon={faChevronLeft} />
         </ArrowButton>
