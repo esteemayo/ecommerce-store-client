@@ -155,6 +155,9 @@ const ActiveSlideContainer = styled.div`
   top: 80%;
   left: 50%;
   transform: translate(-80%,-50%);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 `;
 
 const ActiveSlideButton = styled.button`
