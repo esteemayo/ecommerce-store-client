@@ -116,7 +116,7 @@ const ListContainer = styled.ul`
 `;
 
 const ListItem = styled.li`
-  outline-color: #1658a3;
+  outline-color: var(--clr-secondary-blue);
   display: flex;
   flex-direction: column;
   transition: all 0.3s ease;
