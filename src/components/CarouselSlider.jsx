@@ -13,6 +13,9 @@ const CarouselSlider = () => {
             alt=''
           />
         </Article>
+        <ArrowButton type='button' direction='left'>
+
+        </ArrowButton>
       </Wrapper>
     </Container>
   );
