@@ -164,7 +164,7 @@ const ActiveSlideButton = styled.button`
   border: none;
   width: 1rem;
   height: 1rem;
-  background-color: var(--clr-white);
+  background-color: ${({ bcg }) => bcg ? '#535353' : 'var(--clr-white)'};
   border-radius: 50%;
   outline-color: #f5f5f5;
   cursor: pointer;
