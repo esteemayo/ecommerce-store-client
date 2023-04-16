@@ -151,7 +151,9 @@ const ActiveSlideContainer = styled.div`
 `;
 
 const ActiveSlideButton = styled.button`
-  
+  border: none;
+  width: 1rem;
+  height: 1rem;
 `;
 
 export default CarouselSlider;
