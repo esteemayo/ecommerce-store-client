@@ -187,7 +187,7 @@ const SearchInput = styled.input`
   padding: 0 1rem;
   background-color: transparent;
   color: #999;
-  caret-color: #1658a3;
+  caret-color: var(--caret-light);
 
   &::placeholder {
     font-size: 1.4rem;
