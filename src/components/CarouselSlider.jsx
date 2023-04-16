@@ -24,4 +24,8 @@ const Wrapper = styled.div`
   overflow: hidden;
 `;
 
+const Article = styled.article`
+  
+`;
+
 export default CarouselSlider;
