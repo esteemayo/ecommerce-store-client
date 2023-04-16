@@ -36,4 +36,8 @@ const Article = styled.article`
   
 `;
 
+const ArrowButton = styled.button`
+  
+`;
+
 export default CarouselSlider;
