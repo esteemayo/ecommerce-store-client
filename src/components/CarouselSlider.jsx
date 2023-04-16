@@ -6,6 +6,7 @@ import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons
 import { useDispatch } from 'react-redux';
 
 const CarouselSlider = () => {
+  const dispatch = useDispatch();
   const [slideNumber, setSlideNumber] = useState(0);
 
   const data = [
