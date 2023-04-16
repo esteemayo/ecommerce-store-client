@@ -7,7 +7,7 @@ const CarouselSlider = () => {
   return (
     <Container>
       <Wrapper>
-        <Article>
+        <Article type='activeSlide'>
           <Image
             src='/img/hero-1.webp'
             width={1800}
