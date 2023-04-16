@@ -78,7 +78,7 @@ const CarouselSlider = () => {
             return (
               <ActiveSlideButton
                 type='button'
-                bcg={index === slideNumber}
+                active={index === slideNumber}
                 key={index}
               >
                 &nbsp;
@@ -170,7 +170,7 @@ const ActiveSlideButton = styled.button`
   border: none;
   width: 1rem;
   height: 1rem;
-  background-color: ${({ bcg }) => bcg ? '#535353' : 'var(--clr-white)'};
+  background-color: ${({ active }) => active ? '#535353' : 'var(--clr-white)'};
   border-radius: 50%;
   outline-color: #f5f5f5;
   cursor: pointer;
