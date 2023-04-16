@@ -148,7 +148,7 @@ const ListItem = styled.li`
       line-height: 1.3em;
       transition: all 0.2s ease;
       backface-visibility: hidden;
-      outline-color: #1658a3;
+      outline-color: var(--clr-secondary-blue);
     }
   }
 `;
