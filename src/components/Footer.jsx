@@ -78,7 +78,7 @@ const Footer = () => {
 const Container = styled.footer`
   width: 100vw;
   padding: 15rem 0;
-  background-color: #1e3161;
+  background-color: var(--clr-primary-blue);
   color: var(--clr-white);
 `;
 
