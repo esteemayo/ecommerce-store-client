@@ -55,6 +55,8 @@ const ArrowButton = styled.button`
   transform: translateY(-50%);
   width: 4rem;
   height: 4rem;
+  border: none;
+  outline: none;
 `;
 
 export default CarouselSlider;
