@@ -47,6 +47,9 @@ const Article = styled.article`
   width: 100%;
   height: 100%;
   opacity: ${({ type }) => type === 'activeSlide' ? 1 : 0};
+  transform: translateX(${({ type }) => type === 'activeSlide' && 0});
+  transform: translateX(${({ type }) => type === 'lastSlide' && '-100%'});
+  transform: translateX(${({ type }) => type === 'nextSlide' && '100%'});
   transition: all 0.3s linear;
 
   & > img {
