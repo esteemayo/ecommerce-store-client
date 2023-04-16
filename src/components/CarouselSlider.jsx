@@ -19,7 +19,7 @@ const CarouselSlider = () => {
           <FontAwesomeIcon icon={faChevronLeft} />
         </ArrowButton>
         <ArrowButton type='button' direction='right'>
-
+          <FontAwesomeIcon icon={faChevronRight} />
         </ArrowButton>
       </Wrapper>
     </Container>
