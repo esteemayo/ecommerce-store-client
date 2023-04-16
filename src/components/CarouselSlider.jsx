@@ -41,6 +41,10 @@ const Wrapper = styled.div`
 `;
 
 const Article = styled.article`
+  position: absolute;
+  top: 0;
+  left: 0;
+
   & > img {
     width: 100%;
     height: 100%;
