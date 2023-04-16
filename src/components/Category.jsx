@@ -104,7 +104,7 @@ const Wrapper = styled.div`
 
 const HeadingWrapper = styled.div`
   position: absolute;
-  top: 65%;
+  top: 80%;
   right: 2rem;
   color: var(--clr-white);
 `;
