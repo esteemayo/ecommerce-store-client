@@ -169,8 +169,8 @@ const ActiveSlideContainer = styled.div`
 
 const ActiveSlideButton = styled.button`
   border: none;
-  width: 1rem;
-  height: 1rem;
+  width: ${({ active }) => active ? '1.5rem' : '1rem'};
+  height: ${({ active }) => active ? '1.5rem' : '1rem'};
   background-color: ${({ active }) => active ? '#535353' : 'var(--clr-white)'};
   border-radius: 50%;
   outline-color: #f5f5f5;
