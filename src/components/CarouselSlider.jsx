@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useEffect, useState } from 'react';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { useDispatch } from 'react-redux';
 
 const CarouselSlider = () => {
   const [slideNumber, setSlideNumber] = useState(0);
