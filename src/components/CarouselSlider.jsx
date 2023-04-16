@@ -37,7 +37,7 @@ const CarouselSlider = () => {
         >
           <FontAwesomeIcon icon={faChevronLeft} />
         </ArrowButton>
-        <ArrowButton type='button' direction='right'>
+        <ArrowButton type='button' direction='right' onClick={() => setSlideNumber(slideNumber + 1)}>
           <FontAwesomeIcon icon={faChevronRight} />
         </ArrowButton>
       </Wrapper>
