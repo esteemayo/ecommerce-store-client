@@ -4,6 +4,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 const CarouselSlider = () => {
+  const data = [
+    '/img/hero-1.webp',
+    '/img/hero-2.jpg',
+    '/img/hero-3.jpg',
+  ];
+
   return (
     <Container>
       <Wrapper>
