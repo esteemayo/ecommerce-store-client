@@ -29,7 +29,7 @@ const Heading = styled.h1`
   font-family: inherit;
   font-weight: 600;
   font-size: 2.7rem;
-  color: #1658a3;
+  color: var(--clr-secondary-blue);
   margin-bottom: 7rem;
   display: flex;
   flex-direction: column;
