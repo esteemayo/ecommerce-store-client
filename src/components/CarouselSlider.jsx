@@ -57,6 +57,8 @@ const ArrowButton = styled.button`
   height: 4rem;
   border: none;
   outline: none;
+  border-radius: 50%;
+  cursor: pointer;
 `;
 
 export default CarouselSlider;
