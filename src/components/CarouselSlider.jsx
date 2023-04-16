@@ -50,7 +50,9 @@ const Article = styled.article`
 `;
 
 const ArrowButton = styled.button`
-  
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 `;
 
 export default CarouselSlider;
