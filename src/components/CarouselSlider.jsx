@@ -24,6 +24,14 @@ const CarouselSlider = () => {
     }
   }, [slideNumber, data.length]);
 
+  useEffect(() => {
+    const slider = setInterval(() => {
+      setSlideNumber(slideNumber + 1);
+    }, 5000);
+
+    return () => clearInterval(slider);
+  }, [slideNumber]);
+
   return (
     <Container>
       <Wrapper>
