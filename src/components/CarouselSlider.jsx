@@ -5,7 +5,7 @@ import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons
 import { useState } from 'react';
 
 const CarouselSlider = () => {
-  const [slideNumber, setSlideNumber] = useState();
+  const [slideNumber, setSlideNumber] = useState(0);
 
   const data = [
     '/img/hero-1.webp',
