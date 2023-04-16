@@ -38,6 +38,16 @@ const CarouselSlider = () => {
         {data.map((item, index) => {
           let position = 'nextSlide';
 
+          if (index === slideNumber) {
+            position = 'activeSlide';
+          }
+
+          if (index === slideNumber - 1 ||
+            (slideNumber === 0 && index === data.length - 1)
+          ) {
+            position = 'lastSlide';
+          }
+
           return (
             <Article key={index} type={position}>
               <Image
