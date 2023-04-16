@@ -73,6 +73,9 @@ const CarouselSlider = () => {
         >
           <FontAwesomeIcon icon={faChevronRight} />
         </ArrowButton>
+        <ActiveSlideContainer>
+
+        </ActiveSlideContainer>
       </Wrapper>
     </Container>
   );
