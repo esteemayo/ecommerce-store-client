@@ -76,7 +76,13 @@ const CarouselSlider = () => {
         <ActiveSlideContainer>
           {data.map((_, index) => {
             return (
-              <ActiveSlideButton type='button' bcg={index === slideNumber} key={index}>&nbsp;</ActiveSlideButton>
+              <ActiveSlideButton
+                type='button'
+                bcg={index === slideNumber}
+                key={index}
+              >
+                &nbsp;
+              </ActiveSlideButton>
             );
           })}
         </ActiveSlideContainer>
