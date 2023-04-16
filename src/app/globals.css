@@ -6,6 +6,10 @@
   --caret-light: #1658a3;
 }
 
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
 ::-webkit-scrollbar-thumb {
   background-color: var(--clr-primary-blue);
   background-clip: content-box;
