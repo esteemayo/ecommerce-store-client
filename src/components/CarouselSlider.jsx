@@ -68,6 +68,12 @@ const ArrowButton = styled.button`
   -moz-box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.04);
   cursor: pointer;
 
+  &:hover {
+    background-color: transparent;
+    color: var(--clr-white);
+    border: 1px solid var(--clr-white);
+  }
+
   svg {
     font-size: inherit;
     color: inherit;
