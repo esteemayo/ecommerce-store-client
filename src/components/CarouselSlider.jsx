@@ -11,6 +11,9 @@ const CarouselSlider = () => {
     '/img/hero-1.webp',
     '/img/hero-2.jpg',
     '/img/hero-3.jpg',
+    'https://images.pexels.com/photos/4049990/pexels-photo-4049990.jpeg?auto=compress&cs=tinysrgb&w=600',
+    'https://images.pexels.com/photos/3784391/pexels-photo-3784391.jpeg?auto=compress&cs=tinysrgb&w=600',
+    'https://images.pexels.com/photos/4968390/pexels-photo-4968390.jpeg?auto=compress&cs=tinysrgb&w=600',
   ];
 
   useEffect(() => {
