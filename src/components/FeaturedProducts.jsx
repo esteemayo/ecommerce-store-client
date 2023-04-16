@@ -39,7 +39,7 @@ const Heading = styled.h1`
     display: inline-block;
     width: 4rem;
     height: 3px;
-    background-color: #1658a3;
+    background-color: var(--clr-secondary-blue);
     border-radius: 3px;
   }
 `;
