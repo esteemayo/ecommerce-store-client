@@ -6,4 +6,8 @@ const CarouselSlider = () => {
   );
 }
 
+const Container = styled.section`
+  
+`;
+
 export default CarouselSlider;
