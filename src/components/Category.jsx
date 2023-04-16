@@ -106,6 +106,7 @@ const HeadingWrapper = styled.div`
   position: absolute;
   top: 80%;
   right: 2rem;
+  transform: translateY(-80%);
   color: var(--clr-white);
 `;
 
