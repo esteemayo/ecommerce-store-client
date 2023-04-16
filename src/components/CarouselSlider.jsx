@@ -13,4 +13,8 @@ const Container = styled.section`
   height: 70vw;
 `;
 
+const Wrapper = styled.div`
+  
+`;
+
 export default CarouselSlider;
