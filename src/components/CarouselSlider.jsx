@@ -158,6 +158,7 @@ const ActiveSlideButton = styled.button`
   width: 1rem;
   height: 1rem;
   background-color: var(--clr-white);
+  border-radius: 50%;
 `;
 
 export default CarouselSlider;
