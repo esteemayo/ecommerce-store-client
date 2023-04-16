@@ -52,6 +52,8 @@ const Article = styled.article`
 const ArrowButton = styled.button`
   position: absolute;
   top: 50%;
+  left: ${({ direction }) => direction === 'left' && '1rem'};
+  right: ${({ direction }) => direction === 'right' && '3rem'};
   transform: translateY(-50%);
   width: 4rem;
   height: 4rem;
