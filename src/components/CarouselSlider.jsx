@@ -4,7 +4,9 @@ const CarouselSlider = () => {
   return (
     <Container>
       <Wrapper>
+        <Article>
 
+        </Article>
       </Wrapper>
     </Container>
   );
