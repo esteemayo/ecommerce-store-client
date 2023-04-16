@@ -16,7 +16,7 @@ const CarouselSlider = () => {
           />
         </Article>
         <ArrowButton type='button' direction='left'>
-
+          <FontAwesomeIcon icon={faChevronLeft} />
         </ArrowButton>
         <ArrowButton type='button' direction='right'>
 
