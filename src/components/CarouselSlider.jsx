@@ -9,7 +9,8 @@ const CarouselSlider = () => {
 }
 
 const Container = styled.section`
-  
+  width: 100vw;
+  height: 70vw;
 `;
 
 export default CarouselSlider;
