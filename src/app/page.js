@@ -10,7 +10,7 @@ import CarouselSlider from '@/components/CarouselSlider';
 const Home = () => {
   return (
     <Container>
-      <Slider />
+      <CarouselSlider />
       <Categories />
       <FeaturedProducts />
       <TopReviews />
