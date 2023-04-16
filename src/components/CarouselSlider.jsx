@@ -2,7 +2,7 @@ import Image from 'next/image';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const CarouselSlider = () => {
   const [slideNumber, setSlideNumber] = useState(0);
@@ -12,6 +12,8 @@ const CarouselSlider = () => {
     '/img/hero-2.jpg',
     '/img/hero-3.jpg',
   ];
+
+  useEffect(() => { })
 
   return (
     <Container>
