@@ -3,7 +3,9 @@ import styled from 'styled-components';
 const CarouselSlider = () => {
   return (
     <Container>
-      CarouselSlider
+      <Wrapper>
+
+      </Wrapper>
     </Container>
   );
 }
