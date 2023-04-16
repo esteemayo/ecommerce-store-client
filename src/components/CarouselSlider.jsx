@@ -53,6 +53,8 @@ const ArrowButton = styled.button`
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  width: 4rem;
+  height: 4rem;
 `;
 
 export default CarouselSlider;
