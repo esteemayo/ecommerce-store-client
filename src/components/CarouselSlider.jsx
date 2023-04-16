@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useEffect, useState } from 'react';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { useDispatch } from 'react-redux';
+import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
 const CarouselSlider = () => {
   const dispatch = useDispatch();
