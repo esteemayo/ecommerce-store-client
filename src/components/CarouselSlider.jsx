@@ -98,6 +98,7 @@ const CarouselSlider = () => {
 const Container = styled.section`
   width: 100vw;
   height: 40vw;
+  background-color: #f9f9f9;
 `;
 
 const Wrapper = styled.div`
