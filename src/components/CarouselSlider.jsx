@@ -150,4 +150,8 @@ const ActiveSlideContainer = styled.div`
   
 `;
 
+const ActiveSlideButton = styled.button`
+  
+`;
+
 export default CarouselSlider;
