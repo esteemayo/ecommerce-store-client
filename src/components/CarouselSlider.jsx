@@ -46,7 +46,7 @@ const Article = styled.article`
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 0;
+  opacity: ${({ type }) => type === 'activeSlide' ? 1 : 0};
   transition: all 0.3s linear;
 
   & > img {
