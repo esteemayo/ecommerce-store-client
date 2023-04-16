@@ -6,6 +6,11 @@
   --caret-light: #1658a3;
 }
 
+::-webkit-scrollbar-thumb {
+  background-color: var(--clr-primary-blue);
+  background-clip: content-box;
+}
+
 *,
 *::after,
 *::before {
