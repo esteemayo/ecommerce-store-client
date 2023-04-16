@@ -80,6 +80,7 @@ const CarouselSlider = () => {
                 type='button'
                 active={index === slideNumber}
                 key={index}
+                onClick={() => setSlideNumber(index)}
               >
                 &nbsp;
               </ActiveSlideButton>
