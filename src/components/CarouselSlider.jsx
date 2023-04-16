@@ -55,6 +55,7 @@ const ArrowButton = styled.button`
   transform: translateY(-50%);
   width: 4rem;
   height: 4rem;
+  font-size: 1rem;
   background-color: var(--clr-white);
   color: #777;
   border: none;
