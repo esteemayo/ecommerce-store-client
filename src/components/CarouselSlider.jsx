@@ -67,6 +67,7 @@ const ArrowButton = styled.button`
   -webkit-box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.04);
   -moz-box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.04);
   cursor: pointer;
+  transition: all 0.5s ease;
 
   &:hover {
     background-color: transparent;
