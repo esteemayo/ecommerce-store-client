@@ -143,4 +143,8 @@ const ArrowButton = styled.button`
   }
 `;
 
+const ActiveSlideContainer = styled.div`
+  
+`;
+
 export default CarouselSlider;
