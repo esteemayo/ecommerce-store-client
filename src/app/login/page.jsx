@@ -31,6 +31,7 @@ const Header = styled.h1`
   font-weight: 400;
   font-size: 2rem;
   text-align: center;
+  color: #979797;
 `;
 
 export default Login;
