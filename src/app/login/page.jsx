@@ -62,7 +62,8 @@ const GoogleButton = styled.button`
 `;
 
 const FacebookButton = styled.button`
-  
+  border: none;
+  padding: 1.25rem 2.5rem;
 `;
 
 export default Login;
