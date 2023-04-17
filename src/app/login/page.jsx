@@ -90,6 +90,7 @@ const FacebookButton = styled.button`
   color: inherit;
   border: 1px solid #999;
   border-radius: 3px;
+  outline-color: #777;
   cursor: pointer;
   transition: all 0.3s ease;
 
