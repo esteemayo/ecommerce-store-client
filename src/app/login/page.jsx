@@ -6,6 +6,9 @@ const Login = () => {
     <Container>
       <Wrapper>
         <Header>Log in with</Header>
+        <GoogleContainer>
+
+        </GoogleContainer>
       </Wrapper>
     </Container>
   );
