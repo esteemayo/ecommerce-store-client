@@ -162,6 +162,12 @@ const FormInput = styled.input`
   border-radius: 2px;
   outline-color: #eee;
   caret-color: var(--caret-light);
+
+  &::-webkit-input-placeholder {
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: #bbb;
+  }
 `;
 
 const FormButton = styled.button`
