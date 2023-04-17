@@ -57,6 +57,9 @@ const Register = () => {
               placeholder='Confirm your password'
             />
           </FormGroup>
+          <FormGroup>
+            <FormUpload type='file' id='file' />
+          </FormGroup>
           <FormButton type='submit'>Register</FormButton>
         </Form>
       </Wrapper>
