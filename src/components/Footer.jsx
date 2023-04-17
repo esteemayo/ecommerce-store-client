@@ -265,7 +265,7 @@ const FooterLinkContainer = styled.ul`
 
 const LinkItem = styled.li`
   font-size: 1.4rem;
-  color: var(--clr-white);
+  color: #ccc;
   outline-color: var(--clr-secondary-blue);
 
   a {
