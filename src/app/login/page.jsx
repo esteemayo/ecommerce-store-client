@@ -63,6 +63,7 @@ const GoogleButton = styled.button`
   font-size: 1.5rem;
   background-color: transparent;
   color: inherit;
+  border: 1px solid #999;
   border-radius: 3px;
   cursor: pointer;
 
