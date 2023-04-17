@@ -20,6 +20,7 @@ const Login = () => {
             Facebook
           </FacebookButton>
         </GoogleContainer>
+        <Text>or</Text>
       </Wrapper>
     </Container>
   );
