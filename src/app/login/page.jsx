@@ -70,7 +70,7 @@ const GoogleButton = styled.button`
   align-items: center;
 
   svg {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 `;
 
