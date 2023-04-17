@@ -149,9 +149,9 @@ const FormGroup = styled.div`
 
 const FormLabel = styled.label`
   display: inline-block;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1.4rem;
-  color: inherit;
+  color: #888;
 `;
 
 const FormInput = styled.input`
