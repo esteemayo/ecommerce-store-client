@@ -194,6 +194,7 @@ const FormButton = styled.button`
   border-radius: 3px;
   outline-color: #4489fe;
   cursor: pointer;
+  transition: all 0.3s ease;
 
   &:hover {
     background-position: 100%;
