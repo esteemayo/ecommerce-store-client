@@ -44,7 +44,7 @@ const Login = () => {
         </Form>
       </Wrapper>
       <RegisterContainer>
-
+        <RegisterText>Don&apos;t have an account?</RegisterText>
       </RegisterContainer>
     </Container>
   );
@@ -214,7 +214,7 @@ const RegisterContainer = styled.div`
 `;
 
 const RegisterText = styled.p`
-  
+
 `;
 
 export default Login;
