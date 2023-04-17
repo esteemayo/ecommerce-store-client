@@ -87,6 +87,11 @@ const FacebookButton = styled.button`
 
   display: flex;
   align-items: center;
+
+  svg {
+    font-size: 2.5rem;
+    color: #3b5999;
+  }
 `;
 
 export default Login;
