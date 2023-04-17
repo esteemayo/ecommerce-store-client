@@ -26,7 +26,7 @@ const Register = () => {
       </Wrapper>
       <LoginContainer>
         <LoginText>
-          Already have an account?
+          Already have an account? {' '}
           <Link href='/login' passHref>Sign in</Link>
         </LoginText>
       </LoginContainer>
