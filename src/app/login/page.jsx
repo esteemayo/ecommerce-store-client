@@ -47,4 +47,8 @@ const GoogleButton = styled.button`
   
 `;
 
+const FacebookButton = styled.button`
+  
+`;
+
 export default Login;
