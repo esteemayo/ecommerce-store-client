@@ -62,7 +62,7 @@ const GoogleButton = styled.button`
   font-weight: 400;
   font-size: 1.5rem;
   background-color: transparent;
-  color: var(--clr-white);
+  color: inherit;
   border-radius: 3px;
   cursor: pointer;
 
@@ -81,7 +81,7 @@ const FacebookButton = styled.button`
   font-weight: 400;
   font-size: 1.5rem;
   background-color: transparent;
-  color: var(--clr-white);
+  color: inherit;
   border-radius: 3px;
   cursor: pointer;
 
