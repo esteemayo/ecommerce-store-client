@@ -23,6 +23,7 @@ const Wrapper = styled.div`
   width: 40rem;
   padding: 2rem;
   box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.25);
+  border-radius: 1rem;
 `;
 
 export default Login;
