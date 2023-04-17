@@ -57,7 +57,6 @@ const GoogleContainer = styled.div`
 `;
 
 const GoogleButton = styled.button`
-  border: none;
   padding: 1rem 3rem;
   font-weight: 400;
   font-size: 1.5rem;
