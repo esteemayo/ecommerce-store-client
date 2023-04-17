@@ -24,7 +24,7 @@ const Register = () => {
         </Form>
       </Wrapper>
       <LoginContainer>
-
+        <LoginText>Already have an account?</LoginText>
       </LoginContainer>
     </Container>
   );
