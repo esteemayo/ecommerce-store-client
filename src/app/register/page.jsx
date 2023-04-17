@@ -11,7 +11,9 @@ const Register = () => {
       <Wrapper>
         <Header>Register your account</Header>
         <Form onSubmit={handleSubmit}>
+          <FormGroup>
 
+          </FormGroup>
         </Form>
       </Wrapper>
     </Container>
