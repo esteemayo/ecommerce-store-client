@@ -114,6 +114,11 @@ const FormButton = styled.button`
   outline-color: #4489fe;
   cursor: pointer;
   transition: all 0.3s ease;
+
+  &:hover {
+    font-weight: 600;
+    background-position: 100%;
+  }
 `;
 
 export default Register;
