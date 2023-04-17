@@ -23,7 +23,7 @@ const Login = () => {
         <Text>or</Text>
         <Form>
           <FormGroup>
-
+            <FormLabel>Username</FormLabel>
           </FormGroup>
         </Form>
       </Wrapper>
@@ -126,7 +126,7 @@ const FormGroup = styled.div`
 
 `;
 
-const Label = styled.label`
+const FormLabel = styled.label`
   
 `;
 
