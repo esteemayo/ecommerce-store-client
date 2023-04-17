@@ -147,6 +147,7 @@ const LoginText = styled.p`
       text-decoration: none;
       color: var(--clr-secondary-blue);
       outline-color: #ddd;
+      transition: all 0.3s ease;
     }
 
     &:hover {
