@@ -89,7 +89,7 @@ const Footer = () => {
         </LinkItem>
       </FooterLinkContainer>
       <FooterText>
-
+        &copy; 2023 by Emmanuel Adebayo&trade;. All rights reserved.
       </FooterText>
     </Container>
   );
