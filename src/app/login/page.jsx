@@ -7,7 +7,9 @@ const Login = () => {
       <Wrapper>
         <Header>Log in with</Header>
         <GoogleContainer>
-
+          <GoogleButton>
+            Google
+          </GoogleButton>
         </GoogleContainer>
       </Wrapper>
     </Container>
