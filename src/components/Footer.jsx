@@ -284,8 +284,8 @@ const LinkItem = styled.li`
 `;
 
 const FooterText = styled.p`
-  width: 70%;
-  font-size: 1.5rem;
+  width: 60%;
+  font-size: 1.6rem;
   text-align: center;
   margin: 0 auto;
   margin-top: 6rem;
