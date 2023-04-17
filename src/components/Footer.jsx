@@ -258,6 +258,7 @@ const FooterLinkContainer = styled.ul`
   list-style: none;
   display: flex;
   align-items: center;
+  justify-content: center;
 `;
 
 const LinkItem = styled.li`
