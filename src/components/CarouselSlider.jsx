@@ -12,7 +12,7 @@ const CarouselSlider = () => {
   const [slideNumber, setSlideNumber] = useState(0);
 
   const data = [
-    '/img/hero-1.webp',
+    '/img/hero-1.jpg',
     '/img/hero-2.jpg',
     '/img/hero-4.avif',
     '/img/hero-9.webp',
