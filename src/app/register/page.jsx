@@ -30,6 +30,15 @@ const Register = () => {
               placeholder='Enter email address'
             />
           </FormGroup>
+          <FormGroup>
+            <FormLabel htmlFor='username'>Username</FormLabel>
+            <FormInput
+              type='text'
+              id='username'
+              name='username'
+              placeholder='Enter username'
+            />
+          </FormGroup>
           <FormButton type='submit'>Register</FormButton>
         </Form>
       </Wrapper>
