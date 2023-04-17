@@ -148,6 +148,11 @@ const FormUpload = styled.input`
   overflow: hidden;
   position: absolute;
   z-index: -1;
+
+  &:focus + ${FormLabel} {
+    outline: 3px solid var(--clr-secondary-blue);
+    outline-offset: 3px;
+  }
 `;
 
 const FormButton = styled.button`
