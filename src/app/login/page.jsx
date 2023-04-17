@@ -213,4 +213,8 @@ const RegisterContainer = styled.div`
 
 `;
 
+const RegisterText = styled.p`
+  
+`;
+
 export default Login;
