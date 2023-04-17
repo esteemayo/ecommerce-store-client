@@ -145,6 +145,8 @@ const LoginText = styled.p`
     &:visited {
       display: inline-block;
       text-decoration: none;
+      color: var(--clr-secondary-blue);
+      outline-color: #ddd;
     }
   }
 `;
