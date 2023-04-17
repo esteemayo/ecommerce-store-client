@@ -16,7 +16,7 @@ const CarouselSlider = () => {
     '/img/hero-2.jpg',
     '/img/hero-4.jpg',
     '/img/hero-9.jpg',
-    '/img/hero-10.webp',
+    '/img/hero-10.jpg',
   ];
 
   useEffect(() => {
