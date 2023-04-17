@@ -45,7 +45,10 @@ const Login = () => {
         </Form>
       </Wrapper>
       <RegisterContainer>
-        <RegisterText>Don&apos;t have an account? <Link href='/register' passHref>Sign up</Link></RegisterText>
+        <RegisterText>
+          Don&apos;t have an account?
+          <Link href='/register' passHref>Sign up</Link>
+        </RegisterText>
       </RegisterContainer>
     </Container>
   );
