@@ -12,6 +12,8 @@ const Login = () => {
             Google
           </GoogleButton>
           <FacebookButton>
+            <FacebookIcon />
+            &nbsp;
             Facebook
           </FacebookButton>
         </GoogleContainer>
