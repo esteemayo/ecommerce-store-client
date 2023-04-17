@@ -5,6 +5,10 @@ import GoogleIcon from '@mui/icons-material/Google';
 import Link from 'next/link';
 
 const Login = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <Container>
       <Wrapper>
