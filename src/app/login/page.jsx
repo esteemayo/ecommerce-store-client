@@ -220,6 +220,13 @@ const RegisterContainer = styled.div`
 
 const RegisterText = styled.p`
   font-size: 1.7rem;
+
+  a {
+    &:link,
+    &:visited {
+      text-decoration: none;
+    }
+  }
 `;
 
 export default Login;
