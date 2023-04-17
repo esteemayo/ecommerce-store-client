@@ -224,6 +224,7 @@ const RegisterText = styled.p`
   a {
     &:link,
     &:visited {
+      display: inline-block;
       text-decoration: none;
       color: var(--clr-secondary-blue);
     }
