@@ -30,6 +30,14 @@ const Login = () => {
               placeholder='Enter username'
             />
           </FormGroup>
+          <FormGroup>
+            <FormLabel htmlFor='password'>Password</FormLabel>
+            <FormInput
+              type='text'
+              id='password'
+              placeholder='Enter your password'
+            />
+          </FormGroup>
         </Form>
       </Wrapper>
     </Container>
