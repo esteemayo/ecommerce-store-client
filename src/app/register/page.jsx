@@ -2,6 +2,10 @@
 import styled from 'styled-components';
 
 const Register = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <Container>
       <Wrapper>
