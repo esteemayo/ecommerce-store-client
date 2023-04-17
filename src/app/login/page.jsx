@@ -225,6 +225,7 @@ const RegisterText = styled.p`
     &:link,
     &:visited {
       text-decoration: none;
+      color: var(--clr-secondary-blue);
     }
   }
 `;
