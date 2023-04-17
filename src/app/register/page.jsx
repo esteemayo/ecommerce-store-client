@@ -20,6 +20,7 @@ const Register = () => {
               placeholder='Name'
             />
           </FormGroup>
+          <FormButton type='submit'>Register</FormButton>
         </Form>
       </Wrapper>
     </Container>
