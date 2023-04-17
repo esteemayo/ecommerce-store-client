@@ -64,7 +64,7 @@ const GoogleButton = styled.button`
   color: inherit;
   border: 1px solid #999;
   border-radius: 3px;
-  outline-color: #777;
+  outline-color: #ccc;
   cursor: pointer;
   transition: all 0.3s ease;
 
@@ -89,7 +89,7 @@ const FacebookButton = styled.button`
   color: inherit;
   border: 1px solid #999;
   border-radius: 3px;
-  outline-color: #777;
+  outline-color: #ccc;
   cursor: pointer;
   transition: all 0.3s ease;
 
