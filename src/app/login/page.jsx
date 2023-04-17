@@ -24,6 +24,7 @@ const Login = () => {
         <Form>
           <FormGroup>
             <FormLabel>Username</FormLabel>
+            <FormInput type='text' id='username' placeholder='Enter username' />
           </FormGroup>
         </Form>
       </Wrapper>
