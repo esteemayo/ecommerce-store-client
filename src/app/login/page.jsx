@@ -34,4 +34,8 @@ const Header = styled.h1`
   color: #979797;
 `;
 
+const GoogleContainer = styled.div`
+  
+`;
+
 export default Login;
