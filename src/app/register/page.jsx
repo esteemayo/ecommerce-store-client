@@ -146,6 +146,8 @@ const FormUpload = styled.input`
   height: 0.1px;
   opacity: 0;
   overflow: hidden;
+  position: absolute;
+  z-index: -1;
 `;
 
 const FormButton = styled.button`
