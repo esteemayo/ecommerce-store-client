@@ -5,7 +5,7 @@ const Register = () => {
   return (
     <Container>
       <Wrapper>
-        Register
+        <Header>Register your account</Header>
       </Wrapper>
     </Container>
   );
