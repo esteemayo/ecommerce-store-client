@@ -53,8 +53,11 @@ const GoogleContainer = styled.div`
 const GoogleButton = styled.button`
   border: none;
   padding: 1.25rem 2.5rem;
+  font-weight: 500;
+  font-size: 1.5rem;
   background-color: #908f91;
   color: var(--clr-white);
+  border-radius: 3px;
 `;
 
 const FacebookButton = styled.button`
