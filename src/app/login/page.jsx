@@ -137,7 +137,8 @@ const Form = styled.form`
 `;
 
 const FormGroup = styled.div`
-
+  display: flex;
+  flex-direction: column;
 `;
 
 const FormLabel = styled.label`
