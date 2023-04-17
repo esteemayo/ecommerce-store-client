@@ -19,6 +19,7 @@ const CarouselSlider = () => {
     '/img/hero-5.avif',
     '/img/hero-6.jpg',
     '/img/hero-7.avif',
+    '/img/hero-8.avif',
     '/img/hero-9.webp',
     '/img/hero-10.webp',
     'https://images.unsplash.com/photo-1549298916-f52d724204b4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1113&q=80',
