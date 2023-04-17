@@ -315,3 +315,21 @@ export const social = [
     color: 'e60023',
   },
 ];
+
+export const footerLinks = [
+  {
+    id: 1,
+    url: '#',
+    text: 'Terms of purchase',
+  },
+  {
+    id: 2,
+    url: '#',
+    text: 'Security and privacy',
+  },
+  {
+    id: 3,
+    url: '#',
+    text: 'Newsletter',
+  },
+];
