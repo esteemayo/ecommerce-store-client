@@ -33,8 +33,8 @@ const Login = () => {
           <FormGroup>
             <FormLabel htmlFor='password'>Password</FormLabel>
             <FormInput
-              type='password'
               id='password'
+              type='password'
               placeholder='Enter your password'
             />
           </FormGroup>
