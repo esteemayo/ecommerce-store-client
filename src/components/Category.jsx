@@ -6,11 +6,11 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const Category = () => {
   const images = [
-    '/img/category-1.webp',
-    '/img/category-2.webp',
-    '/img/category-3.webp',
-    '/img/category-4.webp',
-    '/img/category-5.webp',
+    '/img/category-1.jpg',
+    '/img/category-2.jpg',
+    '/img/category-3.jpg',
+    '/img/category-4.jpg',
+    '/img/category-5.jpg',
   ];
 
   return (
