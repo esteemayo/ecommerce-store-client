@@ -10,6 +10,9 @@ const Login = () => {
           <GoogleButton>
             Google
           </GoogleButton>
+          <FacebookButton>
+            Facebook
+          </FacebookButton>
         </GoogleContainer>
       </Wrapper>
     </Container>
