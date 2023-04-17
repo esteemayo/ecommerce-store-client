@@ -177,6 +177,7 @@ const FormButton = styled.button`
   display: inline-block;
   width: 100%;
   padding: 1.5rem;
+  border-radius: 2px;
 `;
 
 export default Login;
