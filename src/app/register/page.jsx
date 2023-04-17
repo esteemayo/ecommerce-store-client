@@ -29,4 +29,8 @@ const Wrapper = styled.div`
   -moz-box-shadow: 0 2rem 4rem rgba(145, 143, 143, 0.25);
 `;
 
+const Header = styled.h1`
+
+`;
+
 export default Register;
