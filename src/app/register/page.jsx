@@ -77,6 +77,8 @@ const FormInput = styled.input`
   display: inline-block;
   font-family: inherit;
   font-size: 1.4rem;
+  width: 100%;
+  padding: 1.5rem 1rem;
 `;
 
 export default Register;
