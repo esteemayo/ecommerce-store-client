@@ -21,7 +21,8 @@ const Container = styled.main`
 `;
 
 const Wrapper = styled.div`
-
+  width: 40rem;
+  padding: 2rem;
 `;
 
 export default Register;
