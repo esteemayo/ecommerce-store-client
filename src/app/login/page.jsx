@@ -66,6 +66,7 @@ const GoogleButton = styled.button`
   border: 1px solid #999;
   border-radius: 3px;
   cursor: pointer;
+  transition: all 0.3s ease;
 
   display: flex;
   align-items: center;
