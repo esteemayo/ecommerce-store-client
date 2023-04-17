@@ -1,6 +1,7 @@
 'use client';
 import styled from 'styled-components';
 import FacebookIcon from '@mui/icons-material/Facebook';
+import Link from 'next/link';
 import GoogleIcon from '@mui/icons-material/Google';
 import Link from 'next/link';
 
