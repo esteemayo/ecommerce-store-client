@@ -58,6 +58,7 @@ const GoogleButton = styled.button`
   background-color: #908f91;
   color: var(--clr-white);
   border-radius: 3px;
+  cursor: pointer;
 `;
 
 const FacebookButton = styled.button`
