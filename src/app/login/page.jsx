@@ -65,6 +65,9 @@ const GoogleButton = styled.button`
   color: var(--clr-white);
   border-radius: 3px;
   cursor: pointer;
+
+  display: flex;
+  align-items: center;
 `;
 
 const FacebookButton = styled.button`
