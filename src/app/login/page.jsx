@@ -41,4 +41,8 @@ const GoogleContainer = styled.div`
   
 `;
 
+const GoogleButton = styled.button`
+  
+`;
+
 export default Login;
