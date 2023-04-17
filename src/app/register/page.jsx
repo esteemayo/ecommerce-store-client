@@ -33,6 +33,8 @@ const Header = styled.h1`
   display: block;
   font-weight: 400;
   font-size: 2rem;
+  text-align: center;
+  color: #979797;
 `;
 
 export default Register;
