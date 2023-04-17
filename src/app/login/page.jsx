@@ -85,7 +85,7 @@ const Header = styled.h1`
 const GoogleContainer = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   gap: 1.5rem;
   margin: 2rem 0;
 `;
