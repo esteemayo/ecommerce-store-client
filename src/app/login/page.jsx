@@ -52,7 +52,7 @@ const GoogleContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 1.5rem;
   margin: 2rem 0;
 `;
 
