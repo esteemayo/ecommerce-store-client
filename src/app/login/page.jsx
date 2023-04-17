@@ -173,6 +173,8 @@ const FormInput = styled.input`
 
 const FormButton = styled.button`
   margin-top: 2rem;
+  border: none;
+  display: inline-block;
 `;
 
 export default Login;
