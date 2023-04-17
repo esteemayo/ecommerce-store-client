@@ -72,7 +72,11 @@ const Footer = () => {
         </FooterRight>
       </Wrapper>
       <FooterLinkContainer>
-
+        <LinkItem>
+          <Link href='#' passHref>
+            Terms of purchase
+          </Link>
+        </LinkItem>
       </FooterLinkContainer>
     </Container>
   );
