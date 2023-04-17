@@ -180,6 +180,8 @@ const FormButton = styled.button`
   background-color: var(--clr-secondary-blue);
   color: var(--clr-white);
   border-radius: 2px;
+  outline-color: #4489fe;
+  cursor: pointer;
 `;
 
 export default Login;
