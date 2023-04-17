@@ -13,7 +13,7 @@ const Register = () => {
         <Header>Register your account</Header>
         <Form onSubmit={handleSubmit}>
           <FormGroup>
-            <FormLabel htmlFor='name'>Enter your name</FormLabel>
+            <FormLabel htmlFor='name'>Name</FormLabel>
             <FormInput
               type='text'
               id='name'
