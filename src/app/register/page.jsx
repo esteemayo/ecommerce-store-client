@@ -57,7 +57,7 @@ const Register = () => {
               placeholder='Confirm your password'
             />
           </FormGroup>
-          <FormGroup>
+          <FormGroup type='file'>
             <FormLabel htmlFor='file'>Attach a photo</FormLabel>
             <FormUpload type='file' id='file' />
           </FormGroup>
