@@ -13,6 +13,12 @@ const Register = () => {
         <Form onSubmit={handleSubmit}>
           <FormGroup>
             <FormLabel htmlFor='name'>Name</FormLabel>
+            <FormInput
+              type='text'
+              id='name'
+              name='name'
+              placeholder='Name'
+            />
           </FormGroup>
         </Form>
       </Wrapper>
