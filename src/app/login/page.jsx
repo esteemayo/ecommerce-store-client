@@ -113,4 +113,8 @@ const Text = styled.p`
   text-transform: lowercase;
 `;
 
+const Form = styled.form`
+
+`;
+
 export default Login;
