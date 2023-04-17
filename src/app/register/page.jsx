@@ -18,7 +18,7 @@ const Register = () => {
               type='text'
               id='name'
               name='name'
-              placeholder='Name'
+              placeholder='Enter your name'
             />
           </FormGroup>
           <FormButton type='submit'>Register</FormButton>
