@@ -177,6 +177,8 @@ const FormButton = styled.button`
   display: inline-block;
   width: 100%;
   padding: 1.5rem;
+  background-color: var(--clr-secondary-blue);
+  color: var(--clr-white);
   border-radius: 2px;
 `;
 
