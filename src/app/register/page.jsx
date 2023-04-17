@@ -112,6 +112,8 @@ const FormButton = styled.button`
   background-size: 220%;
   border-radius: 0.5rem;
   outline-color: #4489fe;
+  cursor: pointer;
+  transition: all 0.3s ease;
 `;
 
 export default Register;
