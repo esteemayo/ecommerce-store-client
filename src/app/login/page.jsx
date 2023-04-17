@@ -38,6 +38,7 @@ const Login = () => {
               placeholder='Enter your password'
             />
           </FormGroup>
+          <FormButton type='submit'>Log in</FormButton>
         </Form>
       </Wrapper>
     </Container>
