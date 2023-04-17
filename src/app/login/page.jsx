@@ -19,7 +19,7 @@ const Login = () => {
             &nbsp;
             Google
           </GoogleButton>
-          <FacebookButton>
+          <FacebookButton type='button'>
             <FacebookIcon />
             &nbsp;
             Facebook
