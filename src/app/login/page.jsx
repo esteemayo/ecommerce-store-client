@@ -23,7 +23,7 @@ const Login = () => {
         <Text>or</Text>
         <Form>
           <FormGroup>
-            <FormLabel>Username</FormLabel>
+            <FormLabel htmlFor='username'>Username</FormLabel>
             <FormInput type='text' id='username' placeholder='Enter username' />
           </FormGroup>
         </Form>
