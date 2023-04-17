@@ -159,6 +159,8 @@ const FormInput = styled.input`
   padding: 1.5rem 1rem;
   background-color: #f9f9f9;
   color: #999;
+  border-radius: 2px;
+  outline-color: #eee;
 `;
 
 const FormButton = styled.button`
