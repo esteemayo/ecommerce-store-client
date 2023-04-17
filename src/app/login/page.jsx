@@ -191,7 +191,7 @@ const FormButton = styled.button`
     #5885b9 50%
   );
   background-size: 220%;
-  border-radius: 3px;
+  border-radius: 0.5rem;
   outline-color: #4489fe;
   cursor: pointer;
   transition: all 0.3s ease;
