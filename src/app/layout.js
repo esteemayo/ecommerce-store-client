@@ -8,7 +8,6 @@ import Sidebar from '@/components/Sidebar';
 import Footer from '@/components/Footer';
 import ScrollToTop from '@/components/ScrollToTop';
 
-import "react-responsive-carousel/lib/styles/carousel.min.css";
 import './globals.css';
 
 export default function RootLayout({ children }) {
