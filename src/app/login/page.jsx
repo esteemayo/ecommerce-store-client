@@ -27,6 +27,7 @@ const Login = () => {
             <FormInput
               type='text'
               id='username'
+              name='username'
               placeholder='Enter username'
             />
           </FormGroup>
