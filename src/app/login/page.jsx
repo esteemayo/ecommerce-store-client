@@ -110,6 +110,7 @@ const FacebookButton = styled.button`
 const Text = styled.p`
   display: block;
   text-align: center;
+  text-transform: lowercase;
 `;
 
 export default Login;
