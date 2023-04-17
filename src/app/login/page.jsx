@@ -130,4 +130,8 @@ const FormLabel = styled.label`
   
 `;
 
+const FormInput = styled.input`
+  
+`;
+
 export default Login;
