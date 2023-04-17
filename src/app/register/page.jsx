@@ -37,4 +37,8 @@ const Header = styled.h1`
   color: #979797;
 `;
 
+const Form = styled.form`
+  
+`;
+
 export default Register;
