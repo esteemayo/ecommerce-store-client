@@ -194,6 +194,10 @@ const FormButton = styled.button`
   border-radius: 3px;
   outline-color: #4489fe;
   cursor: pointer;
+
+  &:hover {
+    background-position: 100%;
+  }
 `;
 
 export default Login;
