@@ -139,6 +139,14 @@ const LoginContainer = styled.div`
 const LoginText = styled.p`
   font-size: 1.7rem;
   color: #888;
+
+  a {
+    &:link,
+    &:visited {
+      display: inline-block;
+      text-decoration: none;
+    }
+  }
 `;
 
 export default Register;
