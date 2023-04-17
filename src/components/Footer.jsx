@@ -88,6 +88,9 @@ const Footer = () => {
           </Link>
         </LinkItem>
       </FooterLinkContainer>
+      <FooterText>
+
+      </FooterText>
     </Container>
   );
 }
