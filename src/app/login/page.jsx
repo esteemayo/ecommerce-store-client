@@ -61,7 +61,7 @@ const GoogleButton = styled.button`
   padding: 1rem 3rem;
   font-weight: 400;
   font-size: 1.5rem;
-  background-color: #908f91;
+  background-color: transparent;
   color: var(--clr-white);
   border-radius: 3px;
   cursor: pointer;
@@ -80,7 +80,7 @@ const FacebookButton = styled.button`
   padding: 1rem 3rem;
   font-weight: 400;
   font-size: 1.5rem;
-  background-color: #908f91;
+  background-color: transparent;
   color: var(--clr-white);
   border-radius: 3px;
   cursor: pointer;
