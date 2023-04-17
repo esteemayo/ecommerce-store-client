@@ -68,6 +68,10 @@ const GoogleButton = styled.button`
 
   display: flex;
   align-items: center;
+
+  svg {
+    font-size: 3rem;
+  }
 `;
 
 const FacebookButton = styled.button`
