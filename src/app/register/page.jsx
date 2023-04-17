@@ -53,6 +53,10 @@ const Form = styled.form`
 const FormGroup = styled.div`
   display: flex;
   flex-direction: column;
+
+  &:not(:last-of-type) {
+    margin-bottom: 2rem;
+  }
 `;
 
 export default Register;
