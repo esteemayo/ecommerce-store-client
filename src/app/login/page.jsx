@@ -5,7 +5,7 @@ const Login = () => {
   return (
     <Container>
       <Wrapper>
-        Login
+        <Header>Log in with</Header>
       </Wrapper>
     </Container>
   );
