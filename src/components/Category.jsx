@@ -6,11 +6,11 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const Category = () => {
   const images = [
-    'https://images.pexels.com/photos/2635315/pexels-photo-2635315.jpeg?auto=compress&cs=tinysrgb&w=600',
-    'https://images.pexels.com/photos/159643/laptop-ipad-organic-natural-159643.jpeg?auto=compress&cs=tinysrgb&w=600',
-    'https://images.pexels.com/photos/1087180/pexels-photo-1087180.jpeg?auto=compress&cs=tinysrgb&w=600',
-    'https://images.pexels.com/photos/4557822/pexels-photo-4557822.jpeg?auto=compress&cs=tinysrgb&w=600',
-    'https://images.pexels.com/photos/2529158/pexels-photo-2529158.jpeg?auto=compress&cs=tinysrgb&w=600',
+    '/img/category-1.webp',
+    '/img/category-2.webp',
+    '/img/category-3.webp',
+    '/img/category-4.webp',
+    '/img/category-5.webp',
   ];
 
   return (
