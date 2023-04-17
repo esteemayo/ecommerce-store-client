@@ -153,6 +153,12 @@ const FormUpload = styled.input`
     outline: 3px solid var(--clr-secondary-blue);
     outline-offset: 3px;
   }
+
+  & + ${FormLabel} {
+    color: var(--clr-secondary-blue);
+    display: inline-block;
+    text-decoration: none;
+  }
 `;
 
 const FormButton = styled.button`
