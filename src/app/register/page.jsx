@@ -12,7 +12,7 @@ const Register = () => {
         <Header>Register your account</Header>
         <Form onSubmit={handleSubmit}>
           <FormGroup>
-
+            <FormLabel htmlFor='name'>Name</FormLabel>
           </FormGroup>
         </Form>
       </Wrapper>
