@@ -47,6 +47,7 @@ const GoogleContainer = styled.div`
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  margin: 2rem 0;
 `;
 
 const GoogleButton = styled.button`
