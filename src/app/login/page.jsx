@@ -26,7 +26,7 @@ const Login = () => {
           </FacebookButton>
         </GoogleContainer>
         <Text>or</Text>
-        <Form>
+        <Form onSubmit={handleSubmit}>
           <FormGroup>
             <FormLabel htmlFor='username'>Username</FormLabel>
             <FormInput
