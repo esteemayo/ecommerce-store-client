@@ -85,7 +85,7 @@ const GoogleButton = styled.button`
   background-color: transparent;
   color: inherit;
   border: 1px solid #999;
-  border-radius: 3px;
+  border-radius: 0.5rem;
   outline-color: #ccc;
   cursor: pointer;
   transition: all 0.3s ease;
