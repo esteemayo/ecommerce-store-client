@@ -256,6 +256,8 @@ const SocialIcon = styled.div`
 
 const FooterLinkContainer = styled.ul`
   list-style: none;
+  display: flex;
+  align-items: center;
 `;
 
 const LinkItem = styled.li`
