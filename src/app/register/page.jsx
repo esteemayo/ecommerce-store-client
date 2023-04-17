@@ -66,4 +66,8 @@ const FormLabel = styled.label`
   color: #888;
 `;
 
+const FormInput = styled.input`
+
+`;
+
 export default Register;
