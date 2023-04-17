@@ -79,6 +79,9 @@ const FacebookButton = styled.button`
   color: var(--clr-white);
   border-radius: 3px;
   cursor: pointer;
+
+  display: flex;
+  align-items: center;
 `;
 
 export default Login;
