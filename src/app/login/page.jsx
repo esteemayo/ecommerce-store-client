@@ -14,7 +14,7 @@ const Login = () => {
       <Wrapper>
         <Header>Log in with</Header>
         <GoogleContainer>
-          <GoogleButton>
+          <GoogleButton type='button'>
             <GoogleIcon />
             &nbsp;
             Google
