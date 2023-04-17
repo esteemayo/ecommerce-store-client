@@ -10,7 +10,7 @@ const Register = () => {
     <Container>
       <Wrapper>
         <Header>Register your account</Header>
-        <Form>
+        <Form onSubmit={handleSubmit}>
 
         </Form>
       </Wrapper>
