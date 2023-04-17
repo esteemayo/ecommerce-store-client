@@ -71,6 +71,7 @@ const GoogleButton = styled.button`
 
   svg {
     font-size: 2.5rem;
+    color: #f00;
   }
 `;
 
