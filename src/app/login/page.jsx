@@ -155,6 +155,8 @@ const FormInput = styled.input`
   border: none;
   display: inline-block;
   font-family: inherit;
+  width: 100%;
+  padding: 1.5rem 1rem;
 `;
 
 const FormButton = styled.button`
