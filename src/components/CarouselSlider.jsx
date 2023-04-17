@@ -15,7 +15,6 @@ const CarouselSlider = () => {
     '/img/hero-1.jpg',
     '/img/hero-4.jpg',
     '/img/hero-2.jpg',
-    '/img/hero-4.jpg',
     '/img/hero-9.jpg',
     '/img/hero-10.jpg',
   ];
