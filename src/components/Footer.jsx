@@ -280,4 +280,8 @@ const LinkItem = styled.li`
   }
 `;
 
+const FooterText = styled.p`
+  
+`;
+
 export default Footer;
