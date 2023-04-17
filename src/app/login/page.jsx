@@ -121,7 +121,7 @@ const FacebookButton = styled.button`
   font-size: 1.5rem;
   background-color: transparent;
   color: inherit;
-  border: 1px solid #999;
+  border: 1px solid #ddd;
   border-radius: 0.5rem;
   outline-color: #ccc;
   cursor: pointer;
