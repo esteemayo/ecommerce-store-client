@@ -106,4 +106,8 @@ const FacebookButton = styled.button`
   }
 `;
 
+const Text = styled.p`
+
+`;
+
 export default Login;
