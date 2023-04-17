@@ -34,6 +34,7 @@ const Login = () => {
             <FormLabel htmlFor='password'>Password</FormLabel>
             <FormInput
               id='password'
+              name='password'
               type='password'
               placeholder='Enter your password'
             />
