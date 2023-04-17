@@ -271,8 +271,11 @@ const LinkItem = styled.li`
   a {
     &:link,
     &:visited {
+      display: inline-block;
       text-decoration: none;
       color: inherit;
+      line-height: 1.3em;
+      outline-color: var(--clr-secondary-blue);
     }
   }
 `;
