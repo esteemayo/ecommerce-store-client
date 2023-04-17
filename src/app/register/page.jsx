@@ -48,6 +48,15 @@ const Register = () => {
               placeholder='Enter your password'
             />
           </FormGroup>
+          <FormGroup>
+            <FormLabel htmlFor='confirmPassword'>Confirm Password</FormLabel>
+            <FormInput
+              type='password'
+              id='confirmPassword'
+              name='confirmPassword'
+              placeholder='Confirm your password'
+            />
+          </FormGroup>
           <FormButton type='submit'>Register</FormButton>
         </Form>
       </Wrapper>
