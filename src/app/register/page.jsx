@@ -133,7 +133,7 @@ const FormButton = styled.button`
 `;
 
 const LoginContainer = styled.div`
-
+  margin-top: 3rem;
 `;
 
 const LoginText = styled.p`
