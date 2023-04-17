@@ -4,7 +4,9 @@ import styled from 'styled-components';
 const Login = () => {
   return (
     <Container>
-      Login
+      <Wrapper>
+        Login
+      </Wrapper>
     </Container>
   );
 }
