@@ -73,7 +73,8 @@ const FormLabel = styled.label`
 `;
 
 const FormInput = styled.input`
-
+  border: none;
+  display: inline-block;
 `;
 
 export default Register;
