@@ -231,6 +231,7 @@ const RegisterText = styled.p`
       display: inline-block;
       text-decoration: none;
       color: var(--clr-secondary-blue);
+      transition: all 0.3s ease;
     }
 
     &:hover {
