@@ -43,6 +43,9 @@ const Login = () => {
           <FormButton type='submit'>Log in</FormButton>
         </Form>
       </Wrapper>
+      <RegisterContainer>
+
+      </RegisterContainer>
     </Container>
   );
 }
