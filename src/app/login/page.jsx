@@ -26,4 +26,8 @@ const Wrapper = styled.div`
   border-radius: 1rem;
 `;
 
+const Header = styled.h1`
+  
+`;
+
 export default Login;
