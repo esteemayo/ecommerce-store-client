@@ -22,7 +22,9 @@ const Login = () => {
         </GoogleContainer>
         <Text>or</Text>
         <Form>
+          <FormGroup>
 
+          </FormGroup>
         </Form>
       </Wrapper>
     </Container>
