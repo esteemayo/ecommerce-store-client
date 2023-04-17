@@ -70,6 +70,10 @@ const GoogleButton = styled.button`
   display: flex;
   align-items: center;
 
+  &:hover {
+    opacity: 0.7;
+  }
+
   svg {
     font-size: 2.5rem;
     color: #e60023;
