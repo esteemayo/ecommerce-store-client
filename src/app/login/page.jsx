@@ -68,6 +68,8 @@ const FacebookButton = styled.button`
   font-size: 1.5rem;
   background-color: #908f91;
   color: var(--clr-white);
+  border-radius: 3px;
+  cursor: pointer;
 `;
 
 export default Login;
