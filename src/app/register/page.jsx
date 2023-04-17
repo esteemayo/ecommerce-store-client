@@ -7,4 +7,8 @@ const Register = () => {
   );
 }
 
+const Container = styled.main`
+  
+`;
+
 export default Register;
