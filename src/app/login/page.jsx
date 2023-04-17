@@ -108,7 +108,8 @@ const FacebookButton = styled.button`
 `;
 
 const Text = styled.p`
-
+  display: block;
+  text-align: center;
 `;
 
 export default Login;
