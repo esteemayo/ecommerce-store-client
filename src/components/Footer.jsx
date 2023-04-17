@@ -77,6 +77,11 @@ const Footer = () => {
             Terms of purchase
           </Link>
         </LinkItem>
+        <LinkItem>
+          <Link href='#' passHref>
+            Security and privacy
+          </Link>
+        </LinkItem>
       </FooterLinkContainer>
     </Container>
   );
