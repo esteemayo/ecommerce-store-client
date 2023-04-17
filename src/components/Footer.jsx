@@ -81,6 +81,7 @@ const Footer = () => {
           <Link href='#' passHref>
             Security and privacy
           </Link>
+        </LinkItem>
           <LinkItem>
             <Link href='#' passHref>
               Newsletter
