@@ -287,6 +287,7 @@ const FooterText = styled.p`
   width: 60%;
   font-size: 1.6rem;
   text-align: center;
+  color: #ccc;
   margin: 0 auto;
   margin-top: 6rem;
 `;
