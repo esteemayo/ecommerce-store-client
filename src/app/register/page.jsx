@@ -6,6 +6,9 @@ const Register = () => {
     <Container>
       <Wrapper>
         <Header>Register your account</Header>
+        <Form>
+
+        </Form>
       </Wrapper>
     </Container>
   );
