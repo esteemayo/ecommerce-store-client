@@ -80,16 +80,6 @@ const Footer = () => {
             Terms of purchase
           </Link>
         </LinkItem>
-        <LinkItem>
-          <Link href='#' passHref>
-            Security and privacy
-          </Link>
-        </LinkItem>
-        <LinkItem>
-          <Link href='#' passHref>
-            Newsletter
-          </Link>
-        </LinkItem>
       </FooterLinkContainer>
       <FooterText>
         &copy; {year} by Emmanuel Adebayo&trade;. All rights reserved. We are a young company always looking for new and creative ideas to help you with our products in your everyday work.
