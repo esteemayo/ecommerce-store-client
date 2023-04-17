@@ -178,6 +178,7 @@ const FormButton = styled.button`
   margin-top: 2rem;
   border: none;
   display: inline-block;
+  font-weight: 600;
   font-size: 1.4rem;
   width: 100%;
   padding: 1.5rem;
