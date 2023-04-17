@@ -232,6 +232,10 @@ const RegisterText = styled.p`
       text-decoration: none;
       color: var(--clr-secondary-blue);
     }
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 `;
 
