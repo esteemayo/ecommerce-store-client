@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import styled from 'styled-components';
 
-import { customerLinks, discoverLinks, social, storeLinks } from '@/data';
+import { customerLinks, discoverLinks, footerLinks, social, storeLinks } from '@/data';
 
 const Footer = () => {
   const date = new Date();
