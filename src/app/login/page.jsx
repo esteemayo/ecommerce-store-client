@@ -77,7 +77,7 @@ const GoogleButton = styled.button`
 
 const FacebookButton = styled.button`
   border: none;
-  padding: 1.25rem 2.5rem;
+  padding: 1rem 2.5rem;
   font-weight: 500;
   font-size: 1.5rem;
   background-color: #908f91;
