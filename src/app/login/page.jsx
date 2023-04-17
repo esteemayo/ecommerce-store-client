@@ -161,6 +161,7 @@ const FormInput = styled.input`
   color: #999;
   border-radius: 2px;
   outline-color: #eee;
+  caret-color: var(--caret-light);
 `;
 
 const FormButton = styled.button`
