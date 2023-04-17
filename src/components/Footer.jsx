@@ -259,6 +259,7 @@ const FooterLinkContainer = styled.ul`
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 1.5rem;
 `;
 
 const LinkItem = styled.li`
