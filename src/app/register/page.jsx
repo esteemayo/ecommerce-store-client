@@ -23,6 +23,9 @@ const Register = () => {
           <FormButton type='submit'>Register</FormButton>
         </Form>
       </Wrapper>
+      <LoginContainer>
+
+      </LoginContainer>
     </Container>
   );
 }
@@ -126,7 +129,7 @@ const FormButton = styled.button`
 `;
 
 const LoginContainer = styled.div`
-  
+
 `;
 
 export default Register;
