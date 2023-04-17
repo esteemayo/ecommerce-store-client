@@ -206,4 +206,8 @@ const FormButton = styled.button`
   }
 `;
 
+const RegisterContainer = styled.div`
+
+`;
+
 export default Login;
