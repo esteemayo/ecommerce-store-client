@@ -215,7 +215,8 @@ const FormButton = styled.button`
 `;
 
 const RegisterContainer = styled.div`
-
+  margin-top: 3rem;
+  font-size: 1.7rem;
 `;
 
 const RegisterText = styled.p`
