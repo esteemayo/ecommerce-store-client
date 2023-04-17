@@ -244,4 +244,8 @@ const FooterLinkContainer = styled.ul`
   
 `;
 
+const LinkItem = styled.li`
+
+`;
+
 export default Footer;
