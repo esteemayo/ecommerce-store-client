@@ -237,4 +237,8 @@ const SocialIcon = styled.div`
   }
 `;
 
+const FooterLinkContainer = styled.ul`
+  
+`;
+
 export default Footer;
