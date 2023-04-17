@@ -71,6 +71,9 @@ const Footer = () => {
           </FooterContainer>
         </FooterRight>
       </Wrapper>
+      <FooterLinkContainer>
+
+      </FooterLinkContainer>
     </Container>
   );
 }
