@@ -39,6 +39,15 @@ const Register = () => {
               placeholder='Enter username'
             />
           </FormGroup>
+          <FormGroup>
+            <FormLabel htmlFor='password'>Password</FormLabel>
+            <FormInput
+              type='password'
+              id='password'
+              name='password'
+              placeholder='Enter your password'
+            />
+          </FormGroup>
           <FormButton type='submit'>Register</FormButton>
         </Form>
       </Wrapper>
