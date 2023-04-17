@@ -190,6 +190,7 @@ const FormButton = styled.button`
     transparent 50%,
     #5e9de4 50%
   );
+  background-size: 220%;
   border-radius: 3px;
   outline-color: #4489fe;
   cursor: pointer;
