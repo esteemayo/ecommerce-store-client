@@ -92,6 +92,10 @@ const FacebookButton = styled.button`
   border-radius: 3px;
   cursor: pointer;
 
+  &:hover {
+    opacity: 0.7;
+  }
+
   display: flex;
   align-items: center;
 
