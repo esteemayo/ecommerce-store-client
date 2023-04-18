@@ -1,8 +1,10 @@
 'use client';
 import styled from 'styled-components';
 import { useState } from 'react';
+import { useDispatch } from 'react-redux';
 
 const Forgot = () => {
+  const dispatch = useDispatch();
   const [email, setEmail] = useState(null);
 
   const handleSubmit = (e) => {
