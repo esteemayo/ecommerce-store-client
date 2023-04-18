@@ -14,4 +14,8 @@ const Container = styled.main`
   height: 100vh;
 `;
 
+const Wrapper = styled.div`
+
+`;
+
 export default page;
