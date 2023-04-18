@@ -16,7 +16,7 @@ const ResetPassword = () => {
   };
 
   return (
-    <Container>
+    <Container onMouseOver={() => dispatch(closeSubmenu())}>
       <Wrapper>
         <Header>Reset your password</Header>
         <Form onSubmit={handleSubmit}>
