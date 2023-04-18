@@ -76,7 +76,7 @@ const Register = () => {
 
 const Container = styled.main`
   width: 100vw;
-  height: 100vh;
+  height: 130vh;
   display: flex;
   flex-direction: column;
   align-items: center;
