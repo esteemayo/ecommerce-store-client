@@ -73,6 +73,9 @@ const FormGroup = styled.div`
 const FormLabel = styled.label`
   display: inline-block;
   width: 13rem;
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: #888;
 `;
 
 const FormInput = styled.input`
