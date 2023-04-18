@@ -220,6 +220,11 @@ const SearchInput = styled.input`
   }
 `;
 
+const Header = styled.h4`
+  font-weight: 300;
+  font-size: 1.4rem;
+`;
+
 const SocialContainer = styled.div`
   display: flex;
   align-items: center;
