@@ -165,6 +165,9 @@ const FormUpload = styled.input`
     &:hover {
       background-color: var(--clr-secondary-blue);
       color: var(--clr-white);
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+      -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+      -moz-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
     }
   }
 `;
