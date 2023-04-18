@@ -4,7 +4,9 @@ import styled from 'styled-components';
 const Forgot = () => {
   return (
     <Container>
-      Forgot
+      <Wrapper>
+        Forgot
+      </Wrapper>
     </Container>
   );
 }
