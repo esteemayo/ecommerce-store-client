@@ -103,6 +103,13 @@ const FormButton = styled.button`
   padding: 1.5rem;
   background-color: var(--clr-secondary-blue);
   color: var(--clr-white);
+  background-image: linear-gradient(
+    120deg,
+    transparent 0%,
+    transparent 50%,
+    #5885b9 50%
+  );
+  background-size: 220%;
 `;
 
 export default Forgot;
