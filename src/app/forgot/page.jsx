@@ -98,6 +98,7 @@ const FormButton = styled.button`
   margin-top: 2rem;
   border: none;
   display: inline-block;
+  text-transform: capitalize;
   font-weight: 500;
   font-size: 1.4rem;
   width: 100%;
