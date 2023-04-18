@@ -43,6 +43,7 @@ const Register = () => {
                   id={id}
                   name={name}
                   placeholder={placeholder}
+                  onChange={handleChange}
                 />
               </FormGroup>
             );
