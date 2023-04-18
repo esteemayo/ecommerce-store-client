@@ -55,7 +55,7 @@ const Register = () => {
             <FormUpload
               type='file'
               id='file'
-              accept='images/*'
+              accept='image/*'
               onChange={(e) => setFile(e.target.files[0])}
             />
             <FormLabel htmlFor='file' type='file'>Attach a photo</FormLabel>
