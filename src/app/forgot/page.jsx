@@ -10,7 +10,7 @@ const Forgot = () => {
     <Container>
       <Wrapper>
         <Header>Forgot password</Header>
-        <Form>
+        <Form onSubmit={handleSubmit}>
           <FormGroup>
             <FormLabel htmlFor='email'>Email</FormLabel>
             <FormInput
