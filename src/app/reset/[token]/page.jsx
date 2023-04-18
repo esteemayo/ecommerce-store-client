@@ -4,7 +4,9 @@ import styled from 'styled-components';
 const ResetPassword = () => {
   return (
     <Container>
-      ResetPassword
+      <Wrapper>
+        ResetPassword
+      </Wrapper>
     </Container>
   );
 }
