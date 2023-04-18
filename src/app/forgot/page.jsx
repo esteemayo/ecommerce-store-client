@@ -113,6 +113,11 @@ const FormButton = styled.button`
   border-radius: 0.5rem;
   outline-color: #4489fe;
   cursor: pointer;
+
+  &:hover {
+    font-weight: 600;
+    background-position: 100%;
+  }
 `;
 
 export default Forgot;
