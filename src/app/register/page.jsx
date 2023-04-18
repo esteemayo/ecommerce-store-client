@@ -161,6 +161,7 @@ const FormUpload = styled.input`
     padding: 3px;
     border-bottom: 1px solid var(--clr-secondary-blue);
     cursor: pointer;
+    transition: all 0.3s;
 
     &:hover {
       background-color: var(--clr-secondary-blue);
