@@ -8,7 +8,7 @@ const ResetPassword = () => {
         <Header>Reset your password</Header>
         <Form>
           <FormGroup>
-
+            <FormLabel>Password</FormLabel>
           </FormGroup>
         </Form>
       </Wrapper>
