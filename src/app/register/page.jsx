@@ -35,15 +35,6 @@ const Register = () => {
               placeholder='Enter email address'
             />
           </FormGroup>
-          <FormGroup>
-            <FormLabel htmlFor='username'>Username</FormLabel>
-            <FormInput
-              type='text'
-              id='username'
-              name='username'
-              placeholder='Enter username'
-            />
-          </FormGroup>
           <FormGroup type='file'>
             <FormUpload type='file' id='file' />
             <FormLabel htmlFor='file' type='file'>Attach a photo</FormLabel>
