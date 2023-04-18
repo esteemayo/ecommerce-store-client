@@ -18,15 +18,20 @@ const Register = () => {
       <Wrapper>
         <Header>Register your account</Header>
         <Form onSubmit={handleSubmit}>
-          <FormGroup>
-            <FormLabel htmlFor='name'>Name</FormLabel>
-            <FormInput
-              type='text'
-              id='name'
-              name='name'
-              placeholder='Enter your name'
-            />
-          </FormGroup>
+          {registerInputs.map((input) => {
+            const { id, name, type, label, placeholder } = input;
+            return (
+              <FormGroup key={id}>
+                <FormLabel htmlFor={id}>{label}</FormLabel>
+                <FormInput
+                  type={type}
+                  id={id}
+                  name={name}
+                  placeholder={placeholder}
+                />
+              </FormGroup>
+            );
+          })}
           <FormGroup type='file'>
             <FormUpload type='file' id='file' />
             <FormLabel htmlFor='file' type='file'>Attach a photo</FormLabel>
