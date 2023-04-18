@@ -17,6 +17,7 @@ const initialState = {
 
 const Register = () => {
   const dispatch = useDispatch();
+  const [file, setFile] = useState(null);
   const [data, setData] = useState(initialState);
 
   const handleChange = ({ target: input }) => {
