@@ -20,7 +20,7 @@ const Forgot = () => {
               placeholder='Enter email address'
             />
           </FormGroup>
-          <FormButton type='submit'>Send</FormButton>
+          <FormButton type='submit'>Reset password</FormButton>
         </Form>
       </Wrapper>
     </Container>
