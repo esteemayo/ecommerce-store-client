@@ -26,15 +26,6 @@ const Register = () => {
               placeholder='Enter your name'
             />
           </FormGroup>
-          <FormGroup>
-            <FormLabel htmlFor='email'>Email</FormLabel>
-            <FormInput
-              type='email'
-              id='email'
-              name='email'
-              placeholder='Enter email address'
-            />
-          </FormGroup>
           <FormGroup type='file'>
             <FormUpload type='file' id='file' />
             <FormLabel htmlFor='file' type='file'>Attach a photo</FormLabel>
