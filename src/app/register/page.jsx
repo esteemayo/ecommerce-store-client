@@ -118,8 +118,7 @@ const FormGroup = styled.div`
 const FormLabel = styled.label`
   display: inline-block;
   font-weight: 600;
-  font-size: 1.4rem;
-  font-size: ${({ type }) => type === 'file' && '1.6rem'};
+  font-size: ${({ type }) => type === 'file' ? '1.6rem' : '1.4rem'};
   color: #888;
 `;
 
