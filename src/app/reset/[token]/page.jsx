@@ -22,6 +22,7 @@ const ResetPassword = () => {
               type='password'
               name='password'
               placeholder='Enter your password'
+              onChange={(e) => setPassword(e.target.value)}
             />
           </FormGroup>
           <FormGroup>
