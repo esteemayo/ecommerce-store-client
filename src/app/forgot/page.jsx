@@ -8,7 +8,7 @@ const Forgot = () => {
         <Header>Forgot password</Header>
         <Form>
           <FormGroup>
-
+            <FormLabel htmlFor='email'>Email</FormLabel>
           </FormGroup>
         </Form>
       </Wrapper>
@@ -50,7 +50,7 @@ const FormGroup = styled.div`
 `;
 
 const FormLabel = styled.label`
-  
+
 `;
 
 export default Forgot;
