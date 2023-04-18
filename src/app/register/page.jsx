@@ -58,8 +58,8 @@ const Register = () => {
             />
           </FormGroup>
           <FormGroup type='file'>
-            <FormLabel htmlFor='file'>Attach a photo</FormLabel>
             <FormUpload type='file' id='file' />
+            <FormLabel htmlFor='file'>Attach a photo</FormLabel>
           </FormGroup>
           <FormButton type='submit'>Register</FormButton>
         </Form>
