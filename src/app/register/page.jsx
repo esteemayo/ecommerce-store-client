@@ -5,7 +5,6 @@ import { useDispatch } from 'react-redux';
 
 import { registerInputs } from '@/formData';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
-import { registerInputs } from '@/formData';
 
 const Register = () => {
   const dispatch = useDispatch();
