@@ -1,6 +1,7 @@
 'use client';
 import { useState } from 'react';
 import styled from 'styled-components';
+import { useState } from 'react';
 
 const Forgot = () => {
   const [email, setEmail] = useState(null);
