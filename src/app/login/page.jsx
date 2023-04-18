@@ -6,6 +6,8 @@ import GoogleIcon from '@mui/icons-material/Google';
 import { useDispatch } from 'react-redux';
 
 const Login = () => {
+  const dispatch = useDispatch();
+
   const handleSubmit = (e) => {
     e.preventDefault();
   };
