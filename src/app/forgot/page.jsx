@@ -9,6 +9,12 @@ const Forgot = () => {
         <Form>
           <FormGroup>
             <FormLabel htmlFor='email'>Email</FormLabel>
+            <FormInput
+              type='email'
+              id='email'
+              name='email'
+              placeholder='Enter email address'
+            />
           </FormGroup>
         </Form>
       </Wrapper>
