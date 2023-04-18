@@ -3,7 +3,9 @@ import styled from 'styled-components';
 
 const page = () => {
   return (
-    <div>page</div>
+    <Container>
+      page
+    </Container>
   );
 }
 
