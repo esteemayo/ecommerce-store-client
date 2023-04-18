@@ -14,7 +14,7 @@ const ResetPassword = () => {
     <Container>
       <Wrapper>
         <Header>Reset your password</Header>
-        <Form>
+        <Form onSubmit={handleSubmit}>
           <FormGroup>
             <FormLabel htmlFor='password'>Password</FormLabel>
             <FormInput
