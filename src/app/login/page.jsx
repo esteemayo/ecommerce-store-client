@@ -14,7 +14,7 @@ const Login = () => {
   };
 
   return (
-    <Container>
+    <Container onMouseOver={() => dispatch(closeSubmenu())}>
       <Wrapper>
         <Header>Log in with</Header>
         <GoogleContainer>
