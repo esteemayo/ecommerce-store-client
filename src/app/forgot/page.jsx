@@ -14,8 +14,8 @@ const Forgot = () => {
           <FormGroup>
             <FormLabel htmlFor='email'>Email</FormLabel>
             <FormInput
-              type='email'
               id='email'
+              type='email'
               name='email'
               placeholder='Enter email address'
             />
