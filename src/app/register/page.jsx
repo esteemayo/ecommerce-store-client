@@ -1,6 +1,7 @@
 'use client';
 import Link from 'next/link';
 import styled from 'styled-components';
+import Link from 'next/link';
 
 const Register = () => {
   const handleSubmit = (e) => {
