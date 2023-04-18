@@ -21,6 +21,7 @@ const Forgot = () => {
               type='email'
               name='email'
               placeholder='Enter email address'
+              onChange={(e) => setEmail(e.target.value)}
             />
           </FormGroup>
           <FormButton type='submit'>Reset password</FormButton>
