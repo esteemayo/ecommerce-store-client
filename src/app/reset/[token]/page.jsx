@@ -25,6 +25,7 @@ const ResetPassword = () => {
               placeholder='Confirm your password'
             />
           </FormGroup>
+          <FormButton type='submit'>Reset password</FormButton>
         </Form>
       </Wrapper>
     </Container>
