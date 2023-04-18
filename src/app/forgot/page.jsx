@@ -63,4 +63,8 @@ const FormInput = styled.input`
 
 `;
 
+const FormButton = styled.button`
+
+`;
+
 export default Forgot;
