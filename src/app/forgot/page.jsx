@@ -7,7 +7,9 @@ const Forgot = () => {
       <Wrapper>
         <Header>Forgot password</Header>
         <Form>
+          <FormGroup>
 
+          </FormGroup>
         </Form>
       </Wrapper>
     </Container>
@@ -44,7 +46,7 @@ const Form = styled.form`
 `;
 
 const FormGroup = styled.div`
-  
+
 `;
 
 export default Forgot;
