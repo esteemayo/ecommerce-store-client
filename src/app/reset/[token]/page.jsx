@@ -9,6 +9,12 @@ const ResetPassword = () => {
         <Form>
           <FormGroup>
             <FormLabel htmlFor='password'>Password</FormLabel>
+            <FormInput
+              id='password'
+              type='password'
+              name='password'
+              placeholder='Enter your password'
+            />
           </FormGroup>
         </Form>
       </Wrapper>
