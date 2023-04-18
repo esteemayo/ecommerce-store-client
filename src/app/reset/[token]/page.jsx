@@ -32,6 +32,7 @@ const ResetPassword = () => {
               type='password'
               name='confirmPassword'
               placeholder='Confirm your password'
+              onChange={(e) => setConfirmPassword(e.target.value)}
             />
           </FormGroup>
           <FormButton type='submit'>Reset password</FormButton>
