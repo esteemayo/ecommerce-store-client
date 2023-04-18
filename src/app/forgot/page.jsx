@@ -14,7 +14,7 @@ const Forgot = () => {
   };
 
   return (
-    <Container>
+    <Container onMouseOver={() => dispatch(closeSubmenu())}>
       <Wrapper>
         <Header>Forgot password</Header>
         <Form onSubmit={handleSubmit}>
