@@ -4,6 +4,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import Link from 'next/link';
 import GoogleIcon from '@mui/icons-material/Google';
 import { useDispatch } from 'react-redux';
+import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
 const Login = () => {
   const dispatch = useDispatch();
