@@ -158,6 +158,8 @@ const FormUpload = styled.input`
     color: var(--clr-secondary-blue);
     display: inline-block;
     text-decoration: none;
+    padding: 3px;
+    border-bottom: 1px solid var(--clr-secondary-blue);
   }
 `;
 
