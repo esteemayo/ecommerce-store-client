@@ -32,6 +32,8 @@ const Header = styled.h1`
   display: block;
   font-weight: 500;
   font-size: 2.5rem;
+  text-align: center;
+  color: #979797;
 `;
 
 export default Forgot;
