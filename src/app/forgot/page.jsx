@@ -1,10 +1,10 @@
 'use client';
 import styled from 'styled-components';
 
-const page = () => {
+const Forgot = () => {
   return (
     <Container>
-      page
+      Forgot
     </Container>
   );
 }
@@ -18,4 +18,4 @@ const Wrapper = styled.div`
 
 `;
 
-export default page;
+export default Forgot;
