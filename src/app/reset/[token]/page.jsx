@@ -103,6 +103,8 @@ const FormButton = styled.button`
   border: none;
   display: inline-block;
   text-transform: capitalize;
+  font-weight: 500;
+  font-size: 1.4rem;
 `;
 
 export default ResetPassword;
