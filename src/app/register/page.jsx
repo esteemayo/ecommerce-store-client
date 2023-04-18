@@ -17,7 +17,7 @@ const initialState = {
 
 const Register = () => {
   const dispatch = useDispatch();
-  const [data, setData] = useState();
+  const [data, setData] = useState(initialState);
 
   const handleSubmit = (e) => {
     e.preventDefault();
