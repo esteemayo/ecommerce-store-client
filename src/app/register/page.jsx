@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { useDispatch } from 'react-redux';
 
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
+import { registerInputs } from '@/formData';
 
 const Register = () => {
   const dispatch = useDispatch();
