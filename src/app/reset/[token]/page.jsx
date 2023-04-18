@@ -58,7 +58,7 @@ const Header = styled.h1`
 `;
 
 const Form = styled.form`
-
+  margin: 2rem 0;
 `;
 
 const FormGroup = styled.div`
