@@ -7,6 +7,14 @@ import { useState } from 'react';
 import { registerInputs } from '@/formData';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
+const initialState = {
+  name: '',
+  email: '',
+  username: '',
+  password: '',
+  confirmPassword: '',
+};
+
 const Register = () => {
   const dispatch = useDispatch();
   const [data, setData] = useState();
