@@ -74,7 +74,8 @@ const FormLabel = styled.label`
 `;
 
 const FormInput = styled.input`
-
+  border: none;
+  display: inline-block;
 `;
 
 const FormButton = styled.button`
