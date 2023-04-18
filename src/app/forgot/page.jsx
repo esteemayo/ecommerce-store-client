@@ -110,6 +110,8 @@ const FormButton = styled.button`
     #5885b9 50%
   );
   background-size: 220%;
+  border-radius: 0.5rem;
+  outline-color: #4489fe;
 `;
 
 export default Forgot;
