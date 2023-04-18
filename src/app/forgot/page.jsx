@@ -96,6 +96,9 @@ const FormInput = styled.input`
 const FormButton = styled.button`
   margin-top: 2rem;
   border: none;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 1.4rem;
 `;
 
 export default Forgot;
