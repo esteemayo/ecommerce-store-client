@@ -2,7 +2,9 @@ import styled from 'styled-components';
 
 const ResetPassword = () => {
   return (
-    <div>ResetPassword</div>
+    <Container>
+      ResetPassword
+    </Container>
   );
 }
 
