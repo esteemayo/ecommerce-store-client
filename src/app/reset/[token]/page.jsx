@@ -1,8 +1,11 @@
 'use client';
 import { useState } from 'react';
+import { useDispatch } from 'react-redux';
 import styled from 'styled-components';
 
 const ResetPassword = () => {
+  const dispatch = useDispatch();
+
   const [password, setPassword] = useState(null);
   const [confirmPassword, setConfirmPassword] = useState(null);
 
