@@ -14,7 +14,7 @@ const Container = styled.main`
   height: 100vh;
   display: flex;
   align-items: center;
-  jsutify-content: center;
+  justify-content: center;
 `;
 
 export default ResetPassword;
