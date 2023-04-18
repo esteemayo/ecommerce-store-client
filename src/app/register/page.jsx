@@ -12,7 +12,7 @@ const Register = () => {
   };
 
   return (
-    <Container>
+    <Container onMouseOver={() => dispatch(closeSubmenu())}>
       <Wrapper>
         <Header>Register your account</Header>
         <Form onSubmit={handleSubmit}>
