@@ -3,6 +3,9 @@ import { useState } from 'react';
 import styled from 'styled-components';
 
 const ResetPassword = () => {
+  const [password, setPassword] = useState(null);
+  const [confirmPassword, setConfirmPassword] = useState(null);
+
   return (
     <Container>
       <Wrapper>
