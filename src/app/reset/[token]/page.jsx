@@ -41,7 +41,9 @@ const Container = styled.main`
 `;
 
 const Wrapper = styled.div`
-
+  width: 40rem;
+  padding: 2rem;
+  border-radius: 1rem;
 `;
 
 const Header = styled.h1`
