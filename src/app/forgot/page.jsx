@@ -7,4 +7,8 @@ const page = () => {
   );
 }
 
+const Container = styled.main`
+  
+`;
+
 export default page;
