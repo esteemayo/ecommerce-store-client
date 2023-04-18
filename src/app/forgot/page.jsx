@@ -3,6 +3,8 @@ import { useState } from 'react';
 import styled from 'styled-components';
 
 const Forgot = () => {
+  const [email, setEmail] = useState(null);
+
   const handleSubmit = (e) => {
     e.preventDefault();
   };
