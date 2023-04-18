@@ -17,4 +17,8 @@ const Container = styled.main`
   justify-content: center;
 `;
 
+const Wrapper = styled.div`
+
+`;
+
 export default ResetPassword;
