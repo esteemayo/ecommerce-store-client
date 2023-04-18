@@ -253,6 +253,7 @@ const SocialIcon = styled.div`
       justify-content: center;
       text-decoration: none;
       color: inherit;
+      outline-color: #ccc;
     }
   }
 
