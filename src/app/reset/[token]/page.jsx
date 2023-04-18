@@ -6,6 +6,9 @@ const ResetPassword = () => {
     <Container>
       <Wrapper>
         <Header>Reset your password</Header>
+        <Form>
+
+        </Form>
       </Wrapper>
     </Container>
   );
