@@ -50,7 +50,9 @@ const Wrapper = styled.div`
 `;
 
 const Header = styled.h1`
-
+  display: block;
+  font-weight: 500;
+  font-size: 2.5rem;
 `;
 
 const Form = styled.form`
