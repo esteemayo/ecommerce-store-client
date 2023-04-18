@@ -2,7 +2,6 @@
 import styled from 'styled-components';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import styled from 'styled-components';
 
 const ResetPassword = () => {
   const dispatch = useDispatch();
