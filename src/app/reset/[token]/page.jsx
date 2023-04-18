@@ -5,7 +5,7 @@ const ResetPassword = () => {
   return (
     <Container>
       <Wrapper>
-        ResetPassword
+        <Header>Reset your password</Header>
       </Wrapper>
     </Container>
   );
