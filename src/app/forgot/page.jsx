@@ -6,6 +6,9 @@ const Forgot = () => {
     <Container>
       <Wrapper>
         <Header>Forgot password</Header>
+        <Form>
+
+        </Form>
       </Wrapper>
     </Container>
   );
