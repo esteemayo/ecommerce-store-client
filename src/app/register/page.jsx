@@ -161,6 +161,11 @@ const FormUpload = styled.input`
     padding: 3px;
     border-bottom: 1px solid var(--clr-secondary-blue);
     cursor: pointer;
+
+    &:hover {
+      background-color: var(--clr-secondary-blue);
+      color: var(--clr-white);
+    }
   }
 `;
 
