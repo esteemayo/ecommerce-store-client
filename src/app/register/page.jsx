@@ -1,6 +1,7 @@
 'use client';
 import styled from 'styled-components';
 import Link from 'next/link';
+import { useDispatch } from 'react-redux';
 
 const Register = () => {
   const handleSubmit = (e) => {
