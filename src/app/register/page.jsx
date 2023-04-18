@@ -4,6 +4,8 @@ import Link from 'next/link';
 import { useDispatch } from 'react-redux';
 
 const Register = () => {
+  const dispatch = useDispatch();
+
   const handleSubmit = (e) => {
     e.preventDefault();
   };
