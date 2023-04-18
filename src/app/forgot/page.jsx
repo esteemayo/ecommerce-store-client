@@ -5,7 +5,7 @@ const Forgot = () => {
   return (
     <Container>
       <Wrapper>
-        Forgot
+        <Header>Forgot password</Header>
       </Wrapper>
     </Container>
   );
