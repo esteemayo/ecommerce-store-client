@@ -66,7 +66,8 @@ const FormGroup = styled.div`
 `;
 
 const FormLabel = styled.label`
-
+  display: inline-block;
+  width: 13rem;
 `;
 
 const FormInput = styled.input`
