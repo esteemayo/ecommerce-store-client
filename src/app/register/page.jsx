@@ -6,10 +6,10 @@ import { useState } from 'react';
 
 import { registerInputs } from '@/formData';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
-import { useState } from 'react';
 
 const Register = () => {
   const dispatch = useDispatch();
+  const [data, setData] = useState();
 
   const handleSubmit = (e) => {
     e.preventDefault();
