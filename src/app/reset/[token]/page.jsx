@@ -6,4 +6,8 @@ const ResetPassword = () => {
   );
 }
 
+const Container = styled.main`
+
+`;
+
 export default ResetPassword;
