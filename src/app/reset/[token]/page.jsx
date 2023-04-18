@@ -105,6 +105,8 @@ const FormButton = styled.button`
   text-transform: capitalize;
   font-weight: 500;
   font-size: 1.4rem;
+  width: 100%;
+  padding: 1.5rem;
 `;
 
 export default ResetPassword;
