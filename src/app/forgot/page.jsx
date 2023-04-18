@@ -118,6 +118,10 @@ const FormButton = styled.button`
     font-weight: 600;
     background-position: 100%;
   }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
 `;
 
 export default Forgot;
