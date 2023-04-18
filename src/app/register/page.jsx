@@ -50,7 +50,11 @@ const Register = () => {
             );
           })}
           <FormGroup type='file'>
-            <FormUpload type='file' id='file' onChange={(e) => setFile(e.target.files[0])} />
+            <FormUpload
+              type='file'
+              id='file'
+              onChange={(e) => setFile(e.target.files[0])}
+            />
             <FormLabel htmlFor='file' type='file'>Attach a photo</FormLabel>
           </FormGroup>
           <FormButton type='submit'>Register</FormButton>
