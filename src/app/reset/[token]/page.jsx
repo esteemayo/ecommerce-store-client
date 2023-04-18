@@ -23,4 +23,8 @@ const Wrapper = styled.div`
 
 `;
 
+const Header = styled.h1`
+
+`;
+
 export default ResetPassword;
