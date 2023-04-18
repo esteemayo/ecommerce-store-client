@@ -16,6 +16,15 @@ const ResetPassword = () => {
               placeholder='Enter your password'
             />
           </FormGroup>
+          <FormGroup>
+            <FormLabel htmlFor='confirmPassword'>Confirm password</FormLabel>
+            <FormInput
+              id='confirmPassword'
+              type='password'
+              name='confirmPassword'
+              placeholder='Confirm your password'
+            />
+          </FormGroup>
         </Form>
       </Wrapper>
     </Container>
