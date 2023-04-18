@@ -76,6 +76,8 @@ const FormLabel = styled.label`
 const FormInput = styled.input`
   border: none;
   display: inline-block;
+  font-family: inherit;
+  font-size: 1.5rem;
 `;
 
 const FormButton = styled.button`
