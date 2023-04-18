@@ -94,7 +94,7 @@ const Wrapper = styled.div`
 
 const Header = styled.h1`
   display: block;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 2.5rem;
   text-align: center;
   color: #979797;
