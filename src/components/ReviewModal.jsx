@@ -118,7 +118,8 @@ const Title = styled.h2`
 const TextArea = styled.textarea`
   display: inline-block;
   width: 100%;
-  padding: 3rem 1rem;
+  height: 10rem;;
+  padding: 1rem;
   overflow: hidden;
   resize: none;
 `;
