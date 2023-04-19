@@ -37,7 +37,7 @@ const ReviewModal = () => {
         ></TextArea>
         <Agreement>
           <RadioButton type='radio' />
-          <Span>I accept the <Link href='#' passHref>terms and conditions</Link></Span>
+          <Label>I accept the <Link href='#' passHref>terms and conditions</Link></Label>
         </Agreement>
         <Information>
           You will be able to receive emails in connection with this review (eg if others comment on your review).
