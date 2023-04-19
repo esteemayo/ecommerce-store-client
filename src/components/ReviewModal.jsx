@@ -7,6 +7,10 @@ import { useState } from 'react';
 const ReviewModal = () => {
   const [rating, setRating] = useState(null);
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <Container>
       <Wrapper>
