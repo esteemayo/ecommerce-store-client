@@ -176,7 +176,7 @@ const Button = styled.button`
   display: inline-block;
   padding: 1.5rem 1rem;
   font-weight: 500;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   background-color: var(--clr-primary-blue);
   color: var(--clr-white);
   border-radius: 3px;
