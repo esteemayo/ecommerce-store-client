@@ -6,4 +6,8 @@ const ReviewModal = () => {
   );
 }
 
+const Container = styled.div`
+
+`;
+
 export default ReviewModal;
