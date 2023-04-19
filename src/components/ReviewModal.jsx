@@ -88,6 +88,10 @@ const RatingContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 2px;
+
+  svg {
+    font-size: 3.5rem;
+  }
 `;
 
 const Text = styled.span`
