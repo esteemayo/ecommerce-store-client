@@ -7,10 +7,6 @@ import { useState } from 'react';
 const ReviewModal = () => {
   const [rating, setRating] = useState(null);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-  };
-
   return (
     <Container>
       <Wrapper>
@@ -32,9 +28,6 @@ const ReviewModal = () => {
           />
           <Text>Click to rate</Text>
         </RatingContainer>
-        <Form onSubmit={handleSubmit}>
-
-        </Form>
       </Wrapper>
     </Container>
   );
@@ -109,10 +102,6 @@ const Text = styled.span`
   display: inline-block;
   font-size: 1.2rem;
   color: #111;
-`;
-
-const Form = styled.form`
-  
 `;
 
 export default ReviewModal;
