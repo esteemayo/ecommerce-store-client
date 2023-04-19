@@ -62,10 +62,10 @@ const Container = styled.div`
 `;
 
 const Wrapper = styled.div`
-  width: 50rem;
+  width: 40rem;
   padding: 2rem 4rem;
   background-color: var(--clr-white);
-  border-radius: 1rem;
+  border-radius: 1.5rem;
   box-shadow: 0 1rem 4rem rgba(255, 255, 255, 0.5);
   -webkit-box-shadow: 0 1rem 4rem rgba(255, 255, 255, 0.5);
   -moz-box-shadow: 0 1rem 4rem rgba(255, 255, 255, 0.5);
