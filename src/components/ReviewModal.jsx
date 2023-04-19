@@ -130,7 +130,7 @@ const Title = styled.h2`
 const TextArea = styled.textarea`
   display: inline-block;
   width: 100%;
-  height: 10rem;;
+  height: 10rem;
   padding: 1rem;
   color: #999;
   border: 1px solid #ccc;
