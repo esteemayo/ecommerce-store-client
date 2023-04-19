@@ -28,6 +28,7 @@ const ReviewModal = () => {
           />
           <Text>Click to rate</Text>
         </RatingContainer>
+        <Title>Product review</Title>
       </Wrapper>
     </Container>
   );
