@@ -7,6 +7,7 @@ import Link from 'next/link';
 
 const ReviewModal = () => {
   const [rating, setRating] = useState(null);
+  const [review, setReview] = useState(null);
 
   return (
     <Container>
