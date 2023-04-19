@@ -26,6 +26,7 @@ const Container = styled.div`
 const Wrapper = styled.div`
   width: 50rem;
   padding: 2rem;
+  background-color: var(--clr-white);
 `;
 
 export default ReviewModal;
