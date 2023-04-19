@@ -32,7 +32,7 @@ const ReviewModal = () => {
           />
           <Text>Click to rate</Text>
         </RatingContainer>
-        <Form>
+        <Form onSubmit={handleSubmit}>
 
         </Form>
       </Wrapper>
