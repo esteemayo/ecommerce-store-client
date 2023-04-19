@@ -127,7 +127,6 @@ const FormButton = styled.button`
   transition: all 0.3s ease;
 
   &:hover {
-    font-weight: 600;
     background-position: 100%;
   }
 
