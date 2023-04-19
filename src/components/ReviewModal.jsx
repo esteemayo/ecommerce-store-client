@@ -147,7 +147,7 @@ const RadioButton = styled.input`
 
 const Span = styled.span`
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   color: var(--clr-black);
 
   a {
