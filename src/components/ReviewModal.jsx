@@ -172,7 +172,8 @@ const Information = styled.p`
 `;
 
 const Button = styled.button`
-
+  border: none;
+  display: inline-block;
 `;
 
 export default ReviewModal;
