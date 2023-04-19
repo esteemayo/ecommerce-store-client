@@ -5,6 +5,8 @@ import Rating from '@mui/material/Rating';
 import { useState } from 'react';
 
 const ReviewModal = () => {
+  const [rating, setRating] = useState(null);
+
   return (
     <Container>
       <Wrapper>
@@ -14,6 +16,15 @@ const ReviewModal = () => {
           </CloseButton>
         </ButtonContainer>
         <Header>Overall rating</Header>
+        <Rating
+          size='large'
+          name='size-large'
+          value={3}
+          precision={0.5}
+          onChange={(e, newValue) => {
+            setRating(newValue);
+          }}
+        />
       </Wrapper>
     </Container>
   );
