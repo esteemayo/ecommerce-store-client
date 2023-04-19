@@ -139,6 +139,7 @@ const Agreement = styled.div`
   align-items: center;
   justify-content: start;
   gap: 0.5rem;
+  margin: 2rem 0;
 `;
 
 const RadioButton = styled.input`
