@@ -47,6 +47,8 @@ const CloseButton = styled.button`
   position: absolute;
   top: 0;
   right: 0;
+  border: none;
+  display: inline-block;
 `;
 
 export default ReviewModal;
