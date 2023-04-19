@@ -87,7 +87,7 @@ const Header = styled.h1`
 const RatingContainer = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 0.5rem;
   width: 10rem;
   margin-top: 1rem;
 
