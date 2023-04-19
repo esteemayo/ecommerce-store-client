@@ -136,4 +136,8 @@ const Agreement = styled.div`
 
 `;
 
+const RadioButton = styled.input`
+  
+`;
+
 export default ReviewModal;
