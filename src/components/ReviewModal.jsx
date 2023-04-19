@@ -175,8 +175,11 @@ const Button = styled.button`
   border: none;
   display: inline-block;
   padding: 1.5rem 1rem;
+  font-weight: 500;
+  font-size: 1.6rem;
   background-color: var(--clr-primary-blue);
   color: var(--clr-white);
+  border-radius: 3px;
 `;
 
 export default ReviewModal;
