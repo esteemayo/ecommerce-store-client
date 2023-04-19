@@ -9,6 +9,10 @@ const ReviewModal = () => {
   const [rating, setRating] = useState(null);
   const [review, setReview] = useState(null);
 
+  const handleClick = () => {
+    console.log({ rating, review });
+  };
+
   return (
     <Container>
       <Wrapper>
