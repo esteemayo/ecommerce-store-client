@@ -4,7 +4,6 @@ import Rating from '@mui/material/Rating';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
 import { useState } from 'react';
-import Link from 'next/link';
 
 const ReviewModal = () => {
   const [rating, setRating] = useState(null);
