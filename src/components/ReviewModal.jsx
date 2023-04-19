@@ -118,6 +118,9 @@ const Title = styled.h2`
 const TextArea = styled.textarea`
   display: inline-block;
   width: 100%;
+  padding: 3rem 1rem;
+  overflow: hidden;
+  resize: none;
 `;
 
 export default ReviewModal;
