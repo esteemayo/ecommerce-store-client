@@ -81,4 +81,8 @@ const Header = styled.h1`
   color: var(--clr-black);
 `;
 
+const RatingContainer = styled.div`
+  
+`;
+
 export default ReviewModal;
