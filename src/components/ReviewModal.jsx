@@ -174,6 +174,7 @@ const Information = styled.p`
 const Button = styled.button`
   border: none;
   display: inline-block;
+  text-align: start;
   width: 20rem;
   padding: 1.5rem 1rem;
   font-weight: 500;
