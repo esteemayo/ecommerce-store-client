@@ -149,6 +149,13 @@ const Span = styled.span`
   font-weight: 400;
   font-size: 1.5rem;
   color: var(--clr-black);
+
+  a {
+    &:link,
+    &:visited {
+      color: inherit;
+    }
+  }
 `;
 
 export default ReviewModal;
