@@ -180,6 +180,8 @@ const Button = styled.button`
   background-color: var(--clr-primary-blue);
   color: var(--clr-white);
   border-radius: 3px;
+  outline-color: #4489fe;
+  cursor: pointer;
 `;
 
 export default ReviewModal;
