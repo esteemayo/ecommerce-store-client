@@ -129,4 +129,8 @@ const TextArea = styled.textarea`
   caret-color: var(--caret-light);
 `;
 
+const Agreement = styled.div`
+
+`;
+
 export default ReviewModal;
