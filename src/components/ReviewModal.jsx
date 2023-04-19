@@ -78,7 +78,7 @@ const ButtonContainer = styled.div`
 
 const CloseButton = styled.button`
   position: absolute;
-  top: 0;
+  top: -1rem;
   right: -2rem;
   border: none;
   outline: none;
