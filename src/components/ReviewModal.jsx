@@ -65,6 +65,7 @@ const Header = styled.h1`
   display: inline-block;
   font-weight: 400;
   font-size: 1.75rem;
+  color: var(--clr-black);
 `;
 
 export default ReviewModal;
