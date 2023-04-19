@@ -13,6 +13,7 @@ const ReviewModal = () => {
           </CloseButton>
         </ButtonContainer>
         <Header>Overall rating</Header>
+        <StarRating />
       </Wrapper>
     </Container>
   );
