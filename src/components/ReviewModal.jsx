@@ -28,6 +28,9 @@ const ReviewModal = () => {
           />
           <Text>Click to rate</Text>
         </RatingContainer>
+        <Form>
+
+        </Form>
       </Wrapper>
     </Container>
   );
