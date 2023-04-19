@@ -95,9 +95,9 @@ const CloseButton = styled.button`
 
 const Header = styled.h1`
   display: inline-block;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 1.75rem;
-  color: var(--clr-black);
+  color: inherit;
 `;
 
 const RatingContainer = styled.div`
