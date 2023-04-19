@@ -91,7 +91,9 @@ const RatingContainer = styled.div`
 `;
 
 const Text = styled.span`
-  
+  display: inline-block;
+  font-size: 1.2rem;
+  color: #111;
 `;
 
 export default ReviewModal;
