@@ -87,4 +87,8 @@ const RatingContainer = styled.div`
   
 `;
 
+const Text = styled.span`
+  
+`;
+
 export default ReviewModal;
