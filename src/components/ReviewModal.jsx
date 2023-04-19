@@ -16,15 +16,17 @@ const ReviewModal = () => {
           </CloseButton>
         </ButtonContainer>
         <Header>Overall rating</Header>
-        <Rating
-          size='large'
-          name='size-large'
-          value={rating}
-          precision={0.5}
-          onChange={(e, newValue) => {
-            setRating(newValue);
-          }}
-        />
+        <RatingContainer>
+          <Rating
+            size='large'
+            name='size-large'
+            value={rating}
+            precision={0.5}
+            onChange={(e, newValue) => {
+              setRating(newValue);
+            }}
+          />
+        </RatingContainer>
       </Wrapper>
     </Container>
   );
