@@ -26,6 +26,7 @@ const ReviewModal = () => {
               setRating(newValue);
             }}
           />
+          <Text>Click to rate</Text>
         </RatingContainer>
       </Wrapper>
     </Container>
