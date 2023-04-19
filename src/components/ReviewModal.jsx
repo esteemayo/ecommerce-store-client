@@ -104,4 +104,8 @@ const Text = styled.span`
   color: #111;
 `;
 
+const Title = styled.h2`
+  
+`;
+
 export default ReviewModal;
