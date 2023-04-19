@@ -126,6 +126,7 @@ const TextArea = styled.textarea`
   outline-color: #eee;
   overflow: hidden;
   resize: none;
+  caret-color: var(--caret-light);
 `;
 
 export default ReviewModal;
