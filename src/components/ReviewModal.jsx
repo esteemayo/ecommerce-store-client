@@ -85,7 +85,9 @@ const Header = styled.h1`
 `;
 
 const RatingContainer = styled.div`
-  
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
 `;
 
 const Text = styled.span`
