@@ -5,6 +5,7 @@ import Categories from '@/components/Categories';
 import FeaturedProducts from '@/components/FeaturedProducts';
 import TopReviews from '@/components/TopReviews';
 import CarouselSlider from '@/components/CarouselSlider';
+import ReviewModal from '@/components/ReviewModal';
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Categories />
       <FeaturedProducts />
       <TopReviews />
+      <ReviewModal />
     </Container>
   );
 }
