@@ -35,7 +35,7 @@ const ReviewModal = () => {
         ></TextArea>
         <Agreement>
           <RadioButton type='radio' />
-          I accept the <Link href='#' passHref>terms and conditions</Link>
+          <Span>I accept the <Link href='#' passHref>terms and conditions</Link></Span>
         </Agreement>
       </Wrapper>
     </Container>
