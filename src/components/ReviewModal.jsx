@@ -29,6 +29,9 @@ const ReviewModal = () => {
           <Text>Click to rate</Text>
         </RatingContainer>
         <Title>Product review</Title>
+        <TextArea
+          placeholder='Example: Since i bought this a month ago, it has been used a lot. What i like best/what is worst about this product is ...'
+        ></TextArea>
       </Wrapper>
     </Container>
   );
