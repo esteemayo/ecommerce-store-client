@@ -33,4 +33,8 @@ const Wrapper = styled.div`
   -moz-box-shadow: 0 1rem 4rem rgba(255, 255, 255, 0.5);
 `;
 
+const ButtonContainer = styled.div`
+  
+`;
+
 export default ReviewModal;
