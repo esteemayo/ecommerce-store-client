@@ -4,7 +4,9 @@ const ReviewModal = () => {
   return (
     <Container>
       <Wrapper>
-        ReviewModal
+        <ButtonContainer>
+
+        </ButtonContainer>
       </Wrapper>
     </Container>
   );
