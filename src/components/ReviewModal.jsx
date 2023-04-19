@@ -112,4 +112,8 @@ const Title = styled.h2`
   margin-top: 2rem;
 `;
 
+const TextArea = styled.textarea`
+  
+`;
+
 export default ReviewModal;
