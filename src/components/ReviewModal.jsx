@@ -174,6 +174,8 @@ const Information = styled.p`
 const Button = styled.button`
   border: none;
   display: inline-block;
+  padding: 1.5rem 1rem;
+  background-color: var(--clr-primary-blue);
 `;
 
 export default ReviewModal;
