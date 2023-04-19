@@ -90,6 +90,7 @@ const CloseButton = styled.button`
   background-color: #f5eef4;
   color: #888;
   border-radius: 50%;
+  cursor: pointer;
 `;
 
 const Header = styled.h1`
