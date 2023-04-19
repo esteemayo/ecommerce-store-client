@@ -37,6 +37,11 @@ const ReviewModal = () => {
           <RadioButton type='radio' />
           <Span>I accept the <Link href='#' passHref>terms and conditions</Link></Span>
         </Agreement>
+        <Information>
+          You will be able to receive emails in connection with this review (eg if ohers comment on your review).
+          All emails contain the option to unsubscribe. We can use the text and star rating
+          from your review in other marketting.
+        </Information>
       </Wrapper>
     </Container>
   );
