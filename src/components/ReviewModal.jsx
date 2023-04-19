@@ -120,6 +120,7 @@ const Text = styled.span`
   display: inline-block;
   font-size: 1.2rem;
   color: inherit;
+  margin-bottom: 1.5rem;
 `;
 
 const Label = styled.label`
