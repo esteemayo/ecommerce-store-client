@@ -36,7 +36,7 @@ const ReviewModal = () => {
           placeholder='Example: Since i bought this a month ago, it has been used a lot. What i like best/what is worst about this product is ...'
         ></TextArea>
         <Agreement>
-          <RadioButton id='terms' type='radio' />
+          <Input id='terms' type='radio' />
           <Label htmlFor='terms'>I accept the <Link href='#' passHref>terms and conditions</Link></Label>
         </Agreement>
         <Information>
@@ -165,7 +165,7 @@ const Agreement = styled.div`
   margin: 2rem 0;
 `;
 
-const RadioButton = styled.input`
+const Input = styled.input`
   
 `;
 
