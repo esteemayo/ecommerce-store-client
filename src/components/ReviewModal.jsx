@@ -34,6 +34,7 @@ const ReviewModal = () => {
         <TextArea
           id='review'
           name='review'
+          onChange={(e) => setReview(e.target.value)}
           placeholder='Example: Since i bought this a month ago, it has been used a lot. What i like best/what is worst about this product is ...'
         ></TextArea>
         <Agreement>
