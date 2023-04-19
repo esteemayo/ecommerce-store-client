@@ -19,7 +19,7 @@ const ReviewModal = () => {
         <Rating
           size='large'
           name='size-large'
-          value={3}
+          value={rating}
           precision={0.5}
           onChange={(e, newValue) => {
             setRating(newValue);
