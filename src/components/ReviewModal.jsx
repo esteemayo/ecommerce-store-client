@@ -48,6 +48,7 @@ const CloseButton = styled.button`
   top: 0;
   right: 0;
   border: none;
+  outline: none;
   display: inline-block;
   width: 4rem;
   height: 4rem;
