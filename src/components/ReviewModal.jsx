@@ -88,6 +88,7 @@ const RatingContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 2px;
+  width: 10rem;
   margin-top: 1rem;
 
   svg {
