@@ -141,6 +141,11 @@ const TextArea = styled.textarea`
   overflow: hidden;
   resize: none;
   caret-color: var(--caret-light);
+
+  &::placeholder {
+    font-size: 1.3rem;
+    color: #bbb;
+  }
 `;
 
 const Agreement = styled.div`
