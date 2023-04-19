@@ -169,19 +169,6 @@ const RadioButton = styled.input`
   
 `;
 
-const Span = styled.span`
-  font-weight: 600;
-  font-size: 1.45rem;
-  color: inherit;
-
-  a {
-    &:link,
-    &:visited {
-      color: inherit;
-    }
-  }
-`;
-
 const Information = styled.p`
   font-size: 1.3rem;
   letter-spacing: 0.2px;
