@@ -165,7 +165,9 @@ const Span = styled.span`
 `;
 
 const Information = styled.p`
-  
+  font-size: 1.3rem;
+  letter-spacing: 0.2px;
+  line-height: 1.2;
 `;
 
 export default ReviewModal;
