@@ -54,6 +54,7 @@ const CloseButton = styled.button`
   font-size: 2rem;
   background-color: #f5eef4;
   color: #888;
+  border-radius: 50%;
 `;
 
 export default ReviewModal;
