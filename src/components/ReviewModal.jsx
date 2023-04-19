@@ -32,7 +32,7 @@ const Container = styled.div`
 
 const Wrapper = styled.div`
   width: 50rem;
-  padding: 2rem;
+  padding: 2rem 4rem;
   background-color: var(--clr-white);
   border-radius: 1rem;
   box-shadow: 0 1rem 4rem rgba(255, 255, 255, 0.5);
