@@ -174,6 +174,7 @@ const Information = styled.p`
 const Button = styled.button`
   border: none;
   display: inline-block;
+  width: 20rem;
   padding: 1.5rem 1rem;
   font-weight: 500;
   font-size: 1.4rem;
@@ -181,6 +182,7 @@ const Button = styled.button`
   color: var(--clr-white);
   border-radius: 3px;
   outline-color: #4489fe;
+  margin: 3rem 0;
   cursor: pointer;
 `;
 
