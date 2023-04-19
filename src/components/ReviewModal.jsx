@@ -145,4 +145,8 @@ const RadioButton = styled.input`
   
 `;
 
+const Span = styled.span`
+
+`;
+
 export default ReviewModal;
