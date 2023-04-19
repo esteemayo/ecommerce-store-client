@@ -49,8 +49,8 @@ const CloseButton = styled.button`
   right: 0;
   border: none;
   display: inline-block;
-  width: 3rem;
-  height: 3rem;
+  width: 4rem;
+  height: 4rem;
   font-size: 2rem;
   background-color: #f5eef4;
   color: #888;
