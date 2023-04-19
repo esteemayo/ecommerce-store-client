@@ -43,7 +43,9 @@ const ButtonContainer = styled.div`
 `;
 
 const CloseButton = styled.button`
-  
+  position: absolute;
+  top: 0;
+  right: 0;
 `;
 
 export default ReviewModal;
