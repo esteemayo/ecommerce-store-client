@@ -3,7 +3,9 @@ import styled from 'styled-components';
 const ReviewModal = () => {
   return (
     <Container>
-      ReviewModal
+      <Wrapper>
+        ReviewModal
+      </Wrapper>
     </Container>
   );
 }
