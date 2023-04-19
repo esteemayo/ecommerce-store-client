@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Rating from '@mui/material/Rating';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import Rating from '@mui/material/Rating';
 import { useState } from 'react';
