@@ -6,7 +6,9 @@ const ReviewModal = () => {
     <Container>
       <Wrapper>
         <ButtonContainer>
-
+          <CloseButton>
+            <FontAwesomeIcon icon={faXmark} />
+          </CloseButton>
         </ButtonContainer>
       </Wrapper>
     </Container>
