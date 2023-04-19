@@ -170,4 +170,8 @@ const Information = styled.p`
   line-height: 1.2;
 `;
 
+const Button = styled.button`
+
+`;
+
 export default ReviewModal;
