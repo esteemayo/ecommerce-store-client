@@ -176,6 +176,7 @@ const Button = styled.button`
   display: inline-block;
   padding: 1.5rem 1rem;
   background-color: var(--clr-primary-blue);
+  color: var(--clr-white);
 `;
 
 export default ReviewModal;
