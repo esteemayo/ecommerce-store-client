@@ -51,6 +51,8 @@ const CloseButton = styled.button`
   display: inline-block;
   width: 3rem;
   height: 3rem;
+  background-color: #f5eef4;
+  color: #888;
 `;
 
 export default ReviewModal;
