@@ -91,6 +91,7 @@ const RatingContainer = styled.div`
 
   svg {
     font-size: 3.5rem;
+    border: 1px solid #f4f8f7;
   }
 `;
 
