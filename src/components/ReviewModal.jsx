@@ -121,9 +121,9 @@ const Text = styled.span`
 `;
 
 const Title = styled.h2`
-  font-weight: 400;
+  font-weight: 600;
   font-size: 1.3rem;
-  color: var(--clr-black);
+  color: inherit;
   margin-top: 2rem;
 `;
 
