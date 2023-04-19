@@ -165,9 +165,7 @@ const Agreement = styled.div`
   margin: 2rem 0;
 `;
 
-const Input = styled.input`
-  
-`;
+const Input = styled.input``;
 
 const Information = styled.p`
   font-size: 1.3rem;
