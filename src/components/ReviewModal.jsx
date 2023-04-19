@@ -181,6 +181,13 @@ const Button = styled.button`
   font-size: 1.4rem;
   background-color: var(--clr-primary-blue);
   color: var(--clr-white);
+  background-image: linear-gradient(
+    120deg,
+    transparent 0%,
+    transparent 50%,
+    #283f79 100%
+  );
+  background-size: 220%;
   border-radius: 3px;
   outline-color: #4489fe;
   margin: 3rem 0;
