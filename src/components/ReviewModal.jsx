@@ -192,7 +192,7 @@ const Button = styled.button`
     #5885b9 50%
   );
   background-size: 220%;
-  border-radius: 3px;
+  border-radius: 0.5rem;
   outline-color: #4489fe;
   margin: 3rem 0;
   cursor: pointer;
