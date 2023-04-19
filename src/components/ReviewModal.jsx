@@ -11,6 +11,7 @@ const ReviewModal = () => {
             <FontAwesomeIcon icon={faXmark} />
           </CloseButton>
         </ButtonContainer>
+        <Header>Overall rating</Header>
       </Wrapper>
     </Container>
   );
