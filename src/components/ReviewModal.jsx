@@ -121,6 +121,7 @@ const TextArea = styled.textarea`
   height: 10rem;;
   padding: 1rem;
   color: #999;
+  border: 1px solid #ccc;
   outline-color: #eee;
   overflow: hidden;
   resize: none;
