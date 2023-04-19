@@ -185,7 +185,7 @@ const Button = styled.button`
     120deg,
     transparent 0%,
     transparent 50%,
-    #283f79 100%
+    #283f79 50%
   );
   background-size: 220%;
   border-radius: 3px;
