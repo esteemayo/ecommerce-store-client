@@ -116,7 +116,8 @@ const Title = styled.h2`
 `;
 
 const TextArea = styled.textarea`
-  
+  display: inline-block;
+  width: 100%;
 `;
 
 export default ReviewModal;
