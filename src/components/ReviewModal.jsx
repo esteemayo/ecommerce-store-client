@@ -109,6 +109,7 @@ const Title = styled.h2`
   font-weight: 400;
   font-size: 1.3rem;
   color: var(--clr-black);
+  margin-top: 2rem;
 `;
 
 export default ReviewModal;
