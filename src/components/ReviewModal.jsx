@@ -159,4 +159,8 @@ const Span = styled.span`
   }
 `;
 
+const Information = styled.p`
+  
+`;
+
 export default ReviewModal;
