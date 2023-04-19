@@ -29,8 +29,10 @@ const ReviewModal = () => {
           />
           <Text>Click to rate</Text>
         </RatingContainer>
-        <Title>Product review</Title>
+        <Label htmlFor='review'>Product review</Label>
         <TextArea
+          id='review'
+          name='review'
           placeholder='Example: Since i bought this a month ago, it has been used a lot. What i like best/what is worst about this product is ...'
         ></TextArea>
         <Agreement>
@@ -120,7 +122,7 @@ const Text = styled.span`
   color: inherit;
 `;
 
-const Title = styled.h2`
+const Label = styled.label`
   font-weight: 600;
   font-size: 1.3rem;
   color: inherit;
