@@ -59,4 +59,8 @@ const CloseButton = styled.button`
   border-radius: 50%;
 `;
 
+const Header = styled.h1`
+  
+`;
+
 export default ReviewModal;
