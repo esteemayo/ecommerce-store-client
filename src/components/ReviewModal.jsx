@@ -36,8 +36,8 @@ const ReviewModal = () => {
           placeholder='Example: Since i bought this a month ago, it has been used a lot. What i like best/what is worst about this product is ...'
         ></TextArea>
         <Agreement>
-          <RadioButton type='radio' />
-          <Label>I accept the <Link href='#' passHref>terms and conditions</Link></Label>
+          <RadioButton id='terms' type='radio' />
+          <Label htmlFor='terms'>I accept the <Link href='#' passHref>terms and conditions</Link></Label>
         </Agreement>
         <Information>
           You will be able to receive emails in connection with this review (eg if others comment on your review).
