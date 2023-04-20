@@ -5,7 +5,9 @@ const ReviewCard = () => {
     <Container>
       <Wrapper>
         <ReviewContainer>
+          <Reviewer>
 
+          </Reviewer>
         </ReviewContainer>
       </Wrapper>
     </Container>
