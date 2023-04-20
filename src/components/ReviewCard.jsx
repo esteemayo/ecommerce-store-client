@@ -44,7 +44,9 @@ const ReviewContainer = styled.div`
 `;
 
 const Reviewer = styled.div`
-
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 `;
 
 const Avatar = styled.span`
