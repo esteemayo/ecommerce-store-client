@@ -139,7 +139,7 @@ const CloseButton = styled.button`
 const Header = styled.h1`
   display: inline-block;
   font-weight: 600;
-  font-size: 1.75rem;
+  font-size: 1.85rem;
   color: inherit;
 `;
 
