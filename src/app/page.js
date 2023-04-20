@@ -9,7 +9,7 @@ import ReviewModal from '@/components/ReviewModal';
 import { useState } from 'react';
 
 const Home = () => {
-  const [openModal, setOpenModal] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
     <Container>
