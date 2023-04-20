@@ -42,4 +42,8 @@ const Name = styled.h3`
   
 `;
 
+const Review = styled.p`
+  
+`;
+
 export default ReviewCard;
