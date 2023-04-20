@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import StarRating from './StarRating';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUpFromBracket } from '@fortawesome/free-solid-svg-icons';
+import StarRating from './StarRating';
 
 const ReviewCard = () => {
   return (
