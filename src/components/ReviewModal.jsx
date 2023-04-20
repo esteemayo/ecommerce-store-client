@@ -154,7 +154,7 @@ const RatingContainer = styled.div`
     font-size: 3.5rem;
     border: 2px solid #eef2ff;
     border-radius: 0.5rem;
-    margin-right: 3px;
+    margin-right: 0.5rem;
   }
 `;
 
