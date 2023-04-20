@@ -9,8 +9,6 @@ import ReviewModal from '@/components/ReviewModal';
 import { useState } from 'react';
 
 const Home = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
   return (
     <Container>
       <CarouselSlider />
