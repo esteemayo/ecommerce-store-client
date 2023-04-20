@@ -43,7 +43,9 @@ const ReviewModal = () => {
         ></TextArea>
         <Agreement>
           <Input id='terms' type='radio' />
-          <Label htmlFor='terms'>I accept the <Link href='#' passHref>terms and conditions</Link></Label>
+          <Label htmlFor='terms'>
+            I accept the <Link href='#' passHref>terms and conditions</Link>
+          </Label>
         </Agreement>
         <Information>
           You will be able to receive emails in connection with this review (eg if others comment on your review).
