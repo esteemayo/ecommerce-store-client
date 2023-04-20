@@ -35,4 +35,8 @@ const Avatar = styled.span`
   
 `;
 
+const Name = styled.h3`
+  
+`;
+
 export default ReviewCard;
