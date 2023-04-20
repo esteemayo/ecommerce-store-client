@@ -14,7 +14,6 @@ const Home = () => {
   return (
     <Container>
       <CarouselSlider />
-      <button onClick={() => setIsModalOpen(true)}>Open</button>
       <Categories />
       <FeaturedProducts />
       <TopReviews />
