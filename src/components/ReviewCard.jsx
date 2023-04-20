@@ -16,7 +16,7 @@ const Container = styled.article`
 `;
 
 const Wrapper = styled.div`
-  
+  padding: 3rem;
 `;
 
 export default ReviewCard;
