@@ -90,7 +90,7 @@ const ShareButton = styled.button`
   align-items: center;
   gap: 0.5rem;
   width: 8rem;
-  padding: 1rem;
+  padding: 0.7rem 1rem;
   font-size: 1.4rem;
   background-color: transparent;
   color: #8a8ca0;
