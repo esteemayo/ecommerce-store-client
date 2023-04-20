@@ -25,4 +25,8 @@ const ReviewContainer = styled.div`
   
 `;
 
+const Reviewer = styled.div`
+
+`;
+
 export default ReviewCard;
