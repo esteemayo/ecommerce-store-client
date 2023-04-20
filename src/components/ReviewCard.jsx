@@ -17,7 +17,10 @@ const ReviewCard = () => {
         <Review>Gorgeous design! Even more responsive than the previous version. A pleasure to use!</Review>
         <DateContainer>
           <ReviewDate dateTime='2023-02-13 20:00'>Feb 13, 2023</ReviewDate>
-          <ShareButton type='button'>Share</ShareButton>
+          <ShareButton type='button'>
+            <FontAwesomeIcon icon={faArrowUpFromBracket} />
+            Share
+          </ShareButton>
         </DateContainer>
       </Wrapper>
     </Container>
