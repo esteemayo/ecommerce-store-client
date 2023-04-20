@@ -51,6 +51,7 @@ const Avatar = styled.span`
   height: 4rem;
   background-color: #d56a6a;
   color: var(--clr-white);
+  border-radius: 50%;
 `;
 
 const Name = styled.h3`
