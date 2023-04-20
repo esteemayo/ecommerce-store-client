@@ -86,6 +86,9 @@ const ReviewDate = styled.time`
 `;
 
 const ShareButton = styled.button`
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   width: 8rem;
   padding: 1rem;
   background-color: transparent;
