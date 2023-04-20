@@ -14,7 +14,7 @@ const ReviewModal = ({ onOpen, onClose }) => {
   };
 
   return (
-    <Container>
+    <Container type={onOpen ? 'show' : ''}>
       <Wrapper>
         <ButtonContainer>
           <CloseButton>
