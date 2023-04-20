@@ -19,4 +19,8 @@ const Wrapper = styled.div`
   padding: 3rem;
 `;
 
+const ReviewContainer = styled.div`
+  
+`;
+
 export default ReviewCard;
