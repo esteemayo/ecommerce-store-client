@@ -185,7 +185,6 @@ const Information = styled.p`
 
 const Button = styled.button`
   border: none;
-  display: inline-block;
   text-align: center;
   width: 17rem;
   padding: 1.5rem 1rem;
