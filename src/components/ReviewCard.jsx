@@ -47,4 +47,8 @@ const Review = styled.p`
   
 `;
 
+const DateContainer = styled.div`
+  
+`;
+
 export default ReviewCard;
