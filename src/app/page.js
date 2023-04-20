@@ -14,11 +14,11 @@ const Home = () => {
   return (
     <Container>
       <CarouselSlider />
-      <button onClick={() => setOpenModal(true)}>Open</button>
+      <button onClick={() => setIsModalOpen(true)}>Open</button>
       <Categories />
       <FeaturedProducts />
       <TopReviews />
-      <ReviewModal onOpen={openModal} onClose={() => setOpenModal(false)} />
+      <ReviewModal onOpen={openModal} onClose={() => setIsModalOpen(false)} />
     </Container>
   );
 }
