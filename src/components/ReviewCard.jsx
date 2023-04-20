@@ -46,7 +46,8 @@ const Reviewer = styled.div`
 `;
 
 const Avatar = styled.span`
-  
+  width: 3rem;
+  height: 3rem;
 `;
 
 const Name = styled.h3`
