@@ -41,6 +41,10 @@ const ReviewContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  svg {
+    font-size: 2.3rem;
+  }
 `;
 
 const Reviewer = styled.div`
