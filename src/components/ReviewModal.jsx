@@ -164,6 +164,7 @@ const Label = styled.label`
     &:link,
     &:visited {
       color: inherit;
+      transition: all 0.3s ease;
     }
 
     &:hover {
