@@ -90,6 +90,8 @@ const ShareButton = styled.button`
   display: inline-block;
   width: 8rem;
   padding: 1rem;
+  background-color: transparent;
+  color: #8a8ca0;
 `;
 
 export default ReviewCard;
