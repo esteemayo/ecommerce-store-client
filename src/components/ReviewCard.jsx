@@ -55,6 +55,8 @@ const Reviewer = styled.div`
 
 const Avatar = styled.div`
   display: flex;
+  align-items: center;
+  justify-content: center;
   text-transform: uppercase;
   width: 4rem;
   height: 4rem;
