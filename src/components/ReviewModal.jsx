@@ -22,7 +22,7 @@ const ReviewModal = ({ isModalOpen, onClose }) => {
   return (
     <Container
       className='container'
-      type={onOpen ? 'show' : ''}
+      type={isModalOpen ? 'show' : ''}
       onClick={handleCloseModal}
     >
       <Wrapper>
