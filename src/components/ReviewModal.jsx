@@ -5,7 +5,7 @@ import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
 import { useState } from 'react';
 
-const ReviewModal = () => {
+const ReviewModal = ({ onOpen }) => {
   const [rating, setRating] = useState(null);
   const [review, setReview] = useState(null);
 
