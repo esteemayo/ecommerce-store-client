@@ -7,6 +7,7 @@ const ReviewCard = () => {
         <ReviewContainer>
           <Reviewer>
             <Avatar>&nbsp;</Avatar>
+            <Name>Jesse hopkins</Name>
           </Reviewer>
         </ReviewContainer>
       </Wrapper>
