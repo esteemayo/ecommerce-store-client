@@ -11,7 +11,7 @@ const ReviewModal = ({ isModalOpen, setIsModalOpen }) => {
 
   const handleCloseModal = (e) => {
     if (e.target.classList.contains('container')) {
-      onClose()
+      setIsModalOpen()
     }
   };
 
