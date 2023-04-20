@@ -18,10 +18,6 @@ const Home = () => {
       <Categories />
       <FeaturedProducts />
       <TopReviews />
-      <ReviewModal
-        isModalOpen={isModalOpen}
-        setIsModalOpen={setIsModalOpen}
-      />
     </Container>
   );
 }
