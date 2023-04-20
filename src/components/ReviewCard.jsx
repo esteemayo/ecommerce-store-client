@@ -91,6 +91,7 @@ const ShareButton = styled.button`
   background-color: transparent;
   color: #8a8ca0;
   border: 1px solid #757785;
+  border-radius: 0.5rem;
 `;
 
 export default ReviewCard;
