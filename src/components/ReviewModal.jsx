@@ -70,7 +70,9 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 4000;
+  z-index: ${({ type }) => type === 'show' ? 4000 : -1};
+  visibility: ${({ type }) => type === 'show' ? 'visible' : 'hidden'};
+  opacity: ${({ type }) => type === 'show' ? 1 : 0};
 `;
 
 const Wrapper = styled.div`
