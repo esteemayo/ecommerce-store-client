@@ -6,15 +6,19 @@ import FeaturedProducts from '@/components/FeaturedProducts';
 import TopReviews from '@/components/TopReviews';
 import CarouselSlider from '@/components/CarouselSlider';
 import ReviewModal from '@/components/ReviewModal';
+import { useState } from 'react';
 
 const Home = () => {
+  const [openModal, setOpenModal] = useState(false);
+
   return (
     <Container>
       <CarouselSlider />
+      <button onClick={() => setOpenModal(true)}>Open</button>
       <Categories />
       <FeaturedProducts />
       <TopReviews />
-      <ReviewModal />
+      <ReviewModal onOpen={openModal} onClose={() => setOpenModal(false)} />
     </Container>
   );
 }
