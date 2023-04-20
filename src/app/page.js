@@ -18,7 +18,7 @@ const Home = () => {
       <Categories />
       <FeaturedProducts />
       <TopReviews />
-      <ReviewModal onOpen={openModal} onClose={() => setIsModalOpen(false)} />
+      <ReviewModal isModalOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </Container>
   );
 }
