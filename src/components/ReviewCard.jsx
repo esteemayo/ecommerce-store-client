@@ -75,7 +75,9 @@ const Review = styled.p`
 `;
 
 const DateContainer = styled.div`
-  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 `;
 
 const ReviewDate = styled.time`
