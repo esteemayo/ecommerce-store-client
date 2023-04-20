@@ -13,4 +13,8 @@ const Container = styled.article`
   background-color: #f9f9f9;
 `;
 
+const Wrapper = styled.div`
+  
+`;
+
 export default ReviewCard;
