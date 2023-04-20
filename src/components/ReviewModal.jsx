@@ -205,6 +205,10 @@ const Button = styled.button`
   cursor: pointer;
   transition: all 0.3s ease;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   &:hover {
     background-position: 100%;
   }
