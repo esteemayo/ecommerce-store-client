@@ -17,7 +17,7 @@ const ReviewModal = ({ onOpen, onClose }) => {
     <Container type={onOpen ? 'show' : ''}>
       <Wrapper>
         <ButtonContainer>
-          <CloseButton>
+          <CloseButton type='button'>
             <FontAwesomeIcon icon={faXmark} />
           </CloseButton>
         </ButtonContainer>
