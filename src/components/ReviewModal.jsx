@@ -20,7 +20,7 @@ const ReviewModal = ({ onOpen, onClose }) => {
   };
 
   return (
-    <Container className='container' type={onOpen ? 'show' : ''}>
+    <Container className='container' type={onOpen ? 'show' : ''} onClick={handleCloseModal}>
       <Wrapper>
         <ButtonContainer>
           <CloseButton type='button' onClick={onClose}>
