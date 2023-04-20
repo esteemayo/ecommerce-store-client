@@ -124,6 +124,11 @@ const CloseButton = styled.button`
   border-radius: 50%;
   cursor: pointer;
 
+  &:hover {
+    background-color: #e6e5f1;
+    color: #6f707e;
+  }
+
   svg {
     font-size: inherit;
     color: currentColor;
