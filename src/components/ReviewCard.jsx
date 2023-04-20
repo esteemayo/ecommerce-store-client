@@ -31,4 +31,8 @@ const Reviewer = styled.div`
 
 `;
 
+const Avatar = styled.span`
+  
+`;
+
 export default ReviewCard;
