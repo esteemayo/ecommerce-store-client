@@ -48,6 +48,8 @@ const Reviewer = styled.div`
 const Avatar = styled.span`
   width: 3rem;
   height: 3rem;
+  background-color: #d56a6a;
+  color: var(--clr-white);
 `;
 
 const Name = styled.h3`
