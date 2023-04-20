@@ -59,7 +59,10 @@ const Avatar = styled.div`
 `;
 
 const Name = styled.h3`
-  
+  display: inline-block;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 1.8rem;
 `;
 
 const Review = styled.p`
