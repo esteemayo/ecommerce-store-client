@@ -58,4 +58,8 @@ const ReviewDate = styled.time`
   
 `;
 
+const ShareButton = styled.button`
+  
+`;
+
 export default ReviewCard;
