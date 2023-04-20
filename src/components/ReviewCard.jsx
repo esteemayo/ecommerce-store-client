@@ -81,7 +81,7 @@ const DateContainer = styled.div`
 `;
 
 const ReviewDate = styled.time`
-  
+  font-size: 1.4rem;
 `;
 
 const ShareButton = styled.button`
