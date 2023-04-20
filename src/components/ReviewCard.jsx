@@ -30,7 +30,7 @@ const ReviewCard = () => {
 
 const Container = styled.article`
   width: 40rem;
-  background-color: #f9f9f9;
+  background-color: #eef2ff;
 `;
 
 const Wrapper = styled.div`
