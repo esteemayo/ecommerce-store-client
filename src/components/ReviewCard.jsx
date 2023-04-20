@@ -97,6 +97,10 @@ const ShareButton = styled.button`
   border: 1px solid #757785;
   border-radius: 0.5rem;
   cursor: pointer;
+
+  svg {
+    font-size: inherit;
+  }
 `;
 
 export default ReviewCard;
