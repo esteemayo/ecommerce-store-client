@@ -123,6 +123,7 @@ const CloseButton = styled.button`
   color: #8a8ca0;
   border-radius: 50%;
   cursor: pointer;
+  transition: all 0.3s ease;
 
   &:hover {
     background-color: #e6e5f1;
