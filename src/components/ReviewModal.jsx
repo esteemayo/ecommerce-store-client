@@ -9,6 +9,12 @@ const ReviewModal = ({ onOpen, onClose }) => {
   const [rating, setRating] = useState(null);
   const [review, setReview] = useState(null);
 
+  const handleCloseModal = (e) => {
+    if (e.target.classList.contains('container')) {
+      onClose()
+    }
+  };
+
   const handleClick = () => {
     console.log({ rating, review });
   };
