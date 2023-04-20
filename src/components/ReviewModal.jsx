@@ -165,6 +165,10 @@ const Label = styled.label`
     &:visited {
       color: inherit;
     }
+
+    &:hover {
+      letter-spacing: 0.1px;
+    }
   }
 `;
 
