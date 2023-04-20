@@ -10,6 +10,7 @@ const ReviewCard = () => {
             <Avatar>&nbsp;</Avatar>
             <Name>Jesse hopkins</Name>
           </Reviewer>
+          <StarRating value={5} />
         </ReviewContainer>
       </Wrapper>
     </Container>
