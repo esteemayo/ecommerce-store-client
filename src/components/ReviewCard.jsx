@@ -88,6 +88,8 @@ const ReviewDate = styled.time`
 const ShareButton = styled.button`
   border: none;
   display: inline-block;
+  width: 8rem;
+  padding: 1rem;
 `;
 
 export default ReviewCard;
