@@ -70,7 +70,7 @@ const Name = styled.h3`
 `;
 
 const Review = styled.p`
-  
+  margin: 2rem 0;
 `;
 
 const DateContainer = styled.div`
