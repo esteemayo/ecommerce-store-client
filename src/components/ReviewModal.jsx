@@ -117,6 +117,11 @@ const CloseButton = styled.button`
   color: #888;
   border-radius: 50%;
   cursor: pointer;
+
+  svg {
+    font-size: inherit;
+    color: currentColor;
+  }
 `;
 
 const Header = styled.h1`
