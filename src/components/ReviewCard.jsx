@@ -13,6 +13,9 @@ const ReviewCard = () => {
           <StarRating value={5} />
         </ReviewContainer>
         <Review>Gorgeous design! Even more responsive than the previous version. A pleasure to use!</Review>
+        <DateContainer>
+
+        </DateContainer>
       </Wrapper>
     </Container>
   );
