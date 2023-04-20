@@ -152,7 +152,7 @@ const RatingContainer = styled.div`
 
   svg {
     font-size: 3.5rem;
-    border: 1px solid #eef2ff;
+    border: 2px solid #eef2ff;
     border-radius: 0.5rem;
     margin-right: 3px;
   }
