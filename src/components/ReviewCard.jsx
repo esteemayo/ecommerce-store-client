@@ -49,7 +49,7 @@ const Reviewer = styled.div`
   gap: 1rem;
 `;
 
-const Avatar = styled.span`
+const Avatar = styled.div`
   display: block;
   width: 4rem;
   height: 4rem;
