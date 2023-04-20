@@ -4,7 +4,9 @@ const ReviewCard = () => {
   return (
     <Container>
       <Wrapper>
-        ReviewCard
+        <ReviewContainer>
+
+        </ReviewContainer>
       </Wrapper>
     </Container>
   );
