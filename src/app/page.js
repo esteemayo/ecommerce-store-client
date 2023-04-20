@@ -6,7 +6,6 @@ import FeaturedProducts from '@/components/FeaturedProducts';
 import TopReviews from '@/components/TopReviews';
 import CarouselSlider from '@/components/CarouselSlider';
 import ReviewModal from '@/components/ReviewModal';
-import { useState } from 'react';
 
 const Home = () => {
   return (
