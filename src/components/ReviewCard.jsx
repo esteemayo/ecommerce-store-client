@@ -54,4 +54,8 @@ const DateContainer = styled.div`
   
 `;
 
+const ReviewDate = styled.time`
+  
+`;
+
 export default ReviewCard;
