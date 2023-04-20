@@ -47,8 +47,8 @@ const Reviewer = styled.div`
 
 const Avatar = styled.span`
   display: block;
-  width: 3rem;
-  height: 3rem;
+  width: 4rem;
+  height: 4rem;
   background-color: #d56a6a;
   color: var(--clr-white);
 `;
