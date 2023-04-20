@@ -86,7 +86,8 @@ const ReviewDate = styled.time`
 `;
 
 const ShareButton = styled.button`
-  
+  border: none;
+  display: inline-block;
 `;
 
 export default ReviewCard;
