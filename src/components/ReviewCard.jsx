@@ -6,4 +6,8 @@ const ReviewCard = () => {
   );
 }
 
+const Container = styled.article`
+  
+`;
+
 export default ReviewCard;
