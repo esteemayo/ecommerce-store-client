@@ -52,7 +52,9 @@ const ReviewModal = () => {
           All emails contain the option to unsubscribe. We can use the text and star rating
           from your review in other marketting.
         </Information>
-        <Button type='button' onClick={handleClick}>Submit product review</Button>
+        <Button type='button' onClick={handleClick}>
+          Submit product review
+        </Button>
       </Wrapper>
     </Container>
   );
