@@ -100,6 +100,7 @@ const ShareButton = styled.button`
 
   svg {
     font-size: inherit;
+    color: currentColor;
   }
 `;
 
