@@ -92,6 +92,10 @@ const Avatar = styled.div`
   color: var(--clr-white);
   border-radius: 50%;
   
+  &:nth-child(odd){
+    background-color: #d56a6a;
+  }
+
   &:nth-child(even) {
     background-color: #d56a6a;
   }
