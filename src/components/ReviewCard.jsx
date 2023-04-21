@@ -20,7 +20,7 @@ const ReviewCard = ({ user, rating, review }) => {
                 alt=''
               />
             )}
-            <Name>Jesse hopkins</Name>
+            <Name>{user.name}</Name>
           </Reviewer>
           <StarRating value={5} />
         </ReviewContainer>
