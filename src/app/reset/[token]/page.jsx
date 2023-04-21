@@ -12,6 +12,24 @@ const ResetPassword = () => {
   const [password, setPassword] = useState(null);
   const [confirmPassword, setConfirmPassword] = useState(null);
 
+  const validateForm = () => {
+    const tempErrors = {};
+
+    if (!password) {
+      tempErrors.password = 'Please enter your new password';
+    }
+
+    if (password !== confirmPassword) {
+      tempErrors.confirmPassword = 'Passwords do not match';
+    }
+
+    if (Object.keys(tempErrors).length > 0) {
+      setErrors(tempErrors);
+      return true;
+    }
+    return false;
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log({ password, confirmPassword });
