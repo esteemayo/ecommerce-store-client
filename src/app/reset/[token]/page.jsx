@@ -64,6 +64,7 @@ const ResetPassword = () => {
               placeholder='Confirm your password'
               onChange={(e) => setConfirmPassword(e.target.value)}
             />
+            {errors.confirmPassword && <ErrorMsg>{errors.confirmPassword}</ErrorMsg>}
           </FormGroup>
           <FormButton type='submit'>Reset password</FormButton>
         </Form>
