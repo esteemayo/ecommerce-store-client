@@ -13,7 +13,7 @@ const ReviewCard = () => {
           <ReviewContainer>
             <Reviewer>
               {/* <Avatar>J</Avatar> */}
-              <Image src='/img/user-1.jpg' width={50} height={50} alt='' />
+              <Image src='/img/user-1.jpg' width={500} height={500} alt='' />
               <Name>Jesse hopkins</Name>
             </Reviewer>
             <StarRating value={5} />
