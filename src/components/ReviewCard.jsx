@@ -11,8 +11,9 @@ const ReviewCard = ({ user, rating, review }) => {
       <Wrapper>
         <ReviewContainer>
           <Reviewer>
-            {!user.img && <Avatar>{user.name.charAt(0)}</Avatar>}
-            {user.img && (
+            {!user.img ? (
+              <Avatar>{user.name.charAt(0)}</Avatar>
+            ) : (
               <Image
                 src={user.img}
                 width={500}
