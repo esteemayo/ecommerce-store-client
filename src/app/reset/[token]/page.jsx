@@ -147,4 +147,8 @@ const FormButton = styled.button`
   }
 `;
 
+const ErrorMsg = styled.span`
+
+`;
+
 export default ResetPassword;
