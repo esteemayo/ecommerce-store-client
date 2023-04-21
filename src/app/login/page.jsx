@@ -264,6 +264,7 @@ const ForgotPassword = styled.p`
       font-size: 1.7rem;
       color: var(--clr-secondary-blue);
       outline-color: #ddd;
+      transition: all 0.3s ease;
     }
 
     &:hover {
