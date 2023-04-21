@@ -273,7 +273,7 @@ const ForgotPassword = styled.p`
     &:visited {
       display: inline-block;
       text-decoration: none;
-      font-size: 1.65rem;
+      font-size: inherit;
       color: currentColor;
       outline-color: #ddd;
       margin-top: 1rem;
