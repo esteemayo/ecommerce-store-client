@@ -43,6 +43,7 @@ const Login = () => {
               id='username'
               name='username'
               placeholder='Enter username'
+              ref={usernameRef}
             />
           </FormGroup>
           <FormGroup>
