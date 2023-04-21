@@ -13,7 +13,7 @@ const Forgot = () => {
   const validateForm = () => {
     const errors = {};
 
-    if (email.trim() === '') {
+    if (email === '') {
       errors.email = 'Please enter your email address';
     }
 
