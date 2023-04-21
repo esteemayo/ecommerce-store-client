@@ -122,7 +122,7 @@ const ShareButton = styled.button`
   font-size: 1.4rem;
   background-color: transparent;
   color: #8a8ca0;
-  border: 1px solid #757785;
+  border: 1px solid #8a8ca0;
   border-radius: 0.5rem;
   cursor: pointer;
 
