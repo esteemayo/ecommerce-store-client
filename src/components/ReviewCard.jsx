@@ -125,8 +125,8 @@ const ShareButton = styled.button`
   padding: 0.7rem 1rem;
   font-size: 1.4rem;
   background-color: transparent;
-  color: #8a8ca0;
-  border: 1px solid #8a8ca0;
+  color: #89a8a0;
+  border: 1px solid #89a8a0;
   border-radius: 0.5rem;
   outline-color: #ccc;
   cursor: pointer;
