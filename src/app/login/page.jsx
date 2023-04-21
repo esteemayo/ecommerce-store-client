@@ -4,7 +4,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import Link from 'next/link';
 import GoogleIcon from '@mui/icons-material/Google';
 import { useDispatch } from 'react-redux';
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
