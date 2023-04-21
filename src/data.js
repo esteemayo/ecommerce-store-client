@@ -333,3 +333,23 @@ export const footerLinks = [
     text: 'Newsletter',
   },
 ];
+
+export const reviews = [
+  {
+    id: 1,
+    user: {
+      name: 'Jesse hopkins',
+      img: '/img/user-1.jpg',
+    },
+    rating: 5,
+    review: 'Gorgeous design! Even more responsive than the previous version. A pleasure to use!',
+  },
+  {
+    id: 2,
+    user: {
+      name: 'Alice banks',
+    },
+    rating: 5,
+    review: 'The device has a clean design, and the metal housing feels sturdy in my hands. Soft rounded corners make it a pleasure to look at.',
+  }
+];
