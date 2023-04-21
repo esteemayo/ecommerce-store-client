@@ -58,6 +58,11 @@ const Login = () => {
           Don&apos;t have an account? {' '}
           <Link href='/register' passHref>Sign up</Link>
         </RegisterText>
+        <ForgotPassword>
+          <Link href='/forgot' passHref>
+            Forgot your password?
+          </Link>
+        </ForgotPassword>
       </RegisterContainer>
     </Container>
   );
