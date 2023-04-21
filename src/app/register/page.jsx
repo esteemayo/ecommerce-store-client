@@ -75,6 +75,7 @@ const Register = () => {
               <FormGroup key={id}>
                 <FormLabel htmlFor={id}>{label}</FormLabel>
                 <FormInput
+                  id={id}
                   type={type}
                   name={name}
                   placeholder={placeholder}
