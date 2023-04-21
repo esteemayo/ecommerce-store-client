@@ -12,12 +12,14 @@ const ReviewCard = ({ user, rating, review }) => {
         <ReviewContainer>
           <Reviewer>
             {!user.img && <Avatar>J</Avatar>}
-            <Image
-              src='/img/user-1.jpg'
-              width={500}
-              height={500}
-              alt=''
-            />
+            {user.img && (
+              <Image
+                src={user.img}
+                width={500}
+                height={500}
+                alt=''
+              />
+            )}
             <Name>Jesse hopkins</Name>
           </Reviewer>
           <StarRating value={5} />
