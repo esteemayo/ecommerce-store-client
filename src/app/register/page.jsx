@@ -81,6 +81,7 @@ const Register = () => {
                   placeholder={placeholder}
                   onChange={handleChange}
                 />
+                {errors[name] && <ErrorMsg>{errors[name]}</ErrorMsg>}
               </FormGroup>
             );
           })}
