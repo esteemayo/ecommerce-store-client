@@ -5,8 +5,6 @@ import Categories from '@/components/Categories';
 import FeaturedProducts from '@/components/FeaturedProducts';
 import TopReviews from '@/components/TopReviews';
 import CarouselSlider from '@/components/CarouselSlider';
-import ReviewCard from '@/components/ReviewCard';
-import { reviews } from '@/data';
 
 const Home = () => {
   return (
