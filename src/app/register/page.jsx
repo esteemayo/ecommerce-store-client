@@ -2,7 +2,7 @@
 import styled from 'styled-components';
 import Link from 'next/link';
 import { useDispatch } from 'react-redux';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 import { registerInputs } from '@/formData';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
