@@ -18,6 +18,24 @@ const Login = () => {
   const username = usernameRef.current?.value;
   const password = passwordRef.current?.value;
 
+  const validateForm = () => {
+    const tempErrors = {};
+
+    if (username.trim() === '') {
+      tempErrors.username = 'Username field is required';
+    }
+
+    if (password.trim() === '') {
+      tempErrors.password = 'Password field is required';
+    }
+
+    if (Object.keys(tempErrors).length > 0) {
+      setErrors(tempErrors);
+      return true;
+    }
+    return false;
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log({ username, password });
