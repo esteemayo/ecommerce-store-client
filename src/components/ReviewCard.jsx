@@ -22,7 +22,7 @@ const ReviewCard = ({ user, rating, review }) => {
             )}
             <Name>{user.name}</Name>
           </Reviewer>
-          <StarRating value={5} />
+          <StarRating value={rating} />
         </ReviewContainer>
         <Review>Gorgeous design! Even more responsive than the previous version. A pleasure to use!</Review>
         <DateContainer>
