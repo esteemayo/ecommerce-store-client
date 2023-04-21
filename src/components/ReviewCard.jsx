@@ -6,25 +6,46 @@ import StarRating from './StarRating';
 
 const ReviewCard = () => {
   return (
-    <Container>
-      <Wrapper>
-        <ReviewContainer>
-          <Reviewer>
-            <Avatar>J</Avatar>
-            <Name>Jesse hopkins</Name>
-          </Reviewer>
-          <StarRating value={5} />
-        </ReviewContainer>
-        <Review>Gorgeous design! Even more responsive than the previous version. A pleasure to use!</Review>
-        <DateContainer>
-          <ReviewDate dateTime='2023-02-13 20:00'>Feb 13, 2023</ReviewDate>
-          <ShareButton type='button'>
-            <FontAwesomeIcon icon={faArrowUpFromBracket} />
-            Share
-          </ShareButton>
-        </DateContainer>
-      </Wrapper>
-    </Container>
+    <>
+      <Container>
+        <Wrapper>
+          <ReviewContainer>
+            <Reviewer>
+              <Avatar>J</Avatar>
+              <Name>Jesse hopkins</Name>
+            </Reviewer>
+            <StarRating value={5} />
+          </ReviewContainer>
+          <Review>Gorgeous design! Even more responsive than the previous version. A pleasure to use!</Review>
+          <DateContainer>
+            <ReviewDate dateTime='2023-02-13 20:00'>Feb 13, 2023</ReviewDate>
+            <ShareButton type='button'>
+              <FontAwesomeIcon icon={faArrowUpFromBracket} />
+              Share
+            </ShareButton>
+          </DateContainer>
+        </Wrapper>
+      </Container>
+      <Container>
+        <Wrapper>
+          <ReviewContainer>
+            <Reviewer>
+              <Avatar>J</Avatar>
+              <Name>Jesse hopkins</Name>
+            </Reviewer>
+            <StarRating value={5} />
+          </ReviewContainer>
+          <Review>Gorgeous design! Even more responsive than the previous version. A pleasure to use!</Review>
+          <DateContainer>
+            <ReviewDate dateTime='2023-02-13 20:00'>Feb 13, 2023</ReviewDate>
+            <ShareButton type='button'>
+              <FontAwesomeIcon icon={faArrowUpFromBracket} />
+              Share
+            </ShareButton>
+          </DateContainer>
+        </Wrapper>
+      </Container>
+    </>
   );
 }
 
