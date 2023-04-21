@@ -28,29 +28,6 @@ const ReviewCard = () => {
         </DateContainer>
       </Wrapper>
     </Container>
-      <Container>
-        <Wrapper>
-          <ReviewContainer>
-            <Reviewer>
-              <Avatar>A</Avatar>
-              <Name>Alice banks</Name>
-            </Reviewer>
-            <StarRating value={5} />
-          </ReviewContainer>
-          <Review>
-            The device has a clean design, and the metal housing feels sturdy in my hands.
-            Soft rounded corners make it a pleasure to look at.
-          </Review>
-          <DateContainer>
-            <ReviewDate dateTime='2023-02-13 20:00'>Feb 13, 2023</ReviewDate>
-            <ShareButton type='button'>
-              <FontAwesomeIcon icon={faArrowUpFromBracket} />
-              Share
-            </ShareButton>
-          </DateContainer>
-        </Wrapper>
-      </Container>
-    </>
   );
 }
 
