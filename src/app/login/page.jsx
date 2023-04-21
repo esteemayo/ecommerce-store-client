@@ -262,7 +262,6 @@ const ForgotPassword = styled.p`
       display: inline-block;
       text-decoration: none;
       font-size: 1.65rem;
-      color: var(--clr-secondary-blue);
       outline-color: #ddd;
       margin-top: 1rem;
       transition: all 0.3s ease;
