@@ -11,6 +11,9 @@ import { useRef } from 'react';
 const Login = () => {
   const dispatch = useDispatch();
 
+  const usernameRef = useRef();
+  const passwordRef = useRef();
+
   const handleSubmit = (e) => {
     e.preventDefault();
   };
