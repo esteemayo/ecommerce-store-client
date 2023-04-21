@@ -53,6 +53,7 @@ const ResetPassword = () => {
               placeholder='Enter your password'
               onChange={(e) => setPassword(e.target.value)}
             />
+            {errors.password && <ErrorMsg>{errors.password}</ErrorMsg>}
           </FormGroup>
           <FormGroup>
             <FormLabel htmlFor='confirmPassword'>Confirm password</FormLabel>
