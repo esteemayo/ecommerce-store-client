@@ -32,6 +32,10 @@ const ResetPassword = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if (validateForm) return;
+    setErrors({});
+
     console.log({ password, confirmPassword });
   };
 
