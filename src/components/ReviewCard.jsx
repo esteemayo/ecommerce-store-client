@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { faArrowUpFromBracket } from '@fortawesome/free-solid-svg-icons';
+import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import StarRating from './StarRating';
