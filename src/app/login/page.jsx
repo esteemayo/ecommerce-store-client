@@ -45,6 +45,10 @@ const Login = () => {
     console.log({ username, password });
   };
 
+  useEffect(() => {
+    usernameRef.current.focus();
+  }, []);
+
   return (
     <Container onMouseOver={() => dispatch(closeSubmenu())}>
       <Wrapper>
