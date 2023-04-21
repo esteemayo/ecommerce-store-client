@@ -53,6 +53,7 @@ const Login = () => {
               name='password'
               type='password'
               placeholder='Enter your password'
+              ref={passwordRef}
             />
           </FormGroup>
           <FormButton type='submit'>Log in</FormButton>
