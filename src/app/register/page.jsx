@@ -80,6 +80,7 @@ const Register = () => {
                   name={name}
                   placeholder={placeholder}
                   onChange={handleChange}
+                  autoFocus={name === 'name' ? true : false}
                 />
                 {errors[name] && <ErrorMsg>{errors[name]}</ErrorMsg>}
               </FormGroup>
