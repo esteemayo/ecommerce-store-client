@@ -263,4 +263,8 @@ const LoginText = styled.p`
   }
 `;
 
+const ErrorMsg = styled.span`
+
+`;
+
 export default Register;
