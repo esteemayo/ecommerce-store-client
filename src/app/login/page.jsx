@@ -83,6 +83,7 @@ const Login = () => {
               placeholder='Enter your password'
               ref={passwordRef}
             />
+            {errors.password && <ErrorMsg>{errors.password}</ErrorMsg>}
           </FormGroup>
           <FormButton type='submit'>Log in</FormButton>
           <ForgotPassword>
