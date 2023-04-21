@@ -89,6 +89,7 @@ const Reviewer = styled.div`
     height: 5rem;
     display: inline-block;
     object-fit: cover;
+    border-radius: 50%;
   }
 `;
 
