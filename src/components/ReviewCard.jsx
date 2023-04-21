@@ -54,7 +54,7 @@ const ReviewCard = () => {
 
 const Container = styled.article`
   width: 40rem;
-  background-color: #eef2ff;
+  background-color: #fff;
   border-radius: 0.5rem;
   box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
   -webkit-box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
