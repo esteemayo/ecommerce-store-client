@@ -15,7 +15,6 @@ const ReviewCard = () => {
               <Avatar>J</Avatar>
               <Name>Jesse hopkins</Name>
             </Reviewer>
-            <Image src='/img/user-1.jpg' width={50} height={50} alt='' />
             <StarRating value={5} />
           </ReviewContainer>
           <Review>Gorgeous design! Even more responsive than the previous version. A pleasure to use!</Review>
