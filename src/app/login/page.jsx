@@ -72,6 +72,7 @@ const Login = () => {
               placeholder='Enter username'
               ref={usernameRef}
             />
+            {errors.username && <ErrorMsg>{errors.username}</ErrorMsg>}
           </FormGroup>
           <FormGroup>
             <FormLabel htmlFor='password'>Password</FormLabel>
