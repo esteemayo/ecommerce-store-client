@@ -97,7 +97,7 @@ const Avatar = styled.div`
   }
 
   &:nth-child(even) {
-    background-color: #d56a6a;
+    background-color: #d5a66a;
   }
 `;
 
