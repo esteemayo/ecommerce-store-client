@@ -45,7 +45,7 @@ const Container = styled.article`
   box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
   -webkit-box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
   -moz-box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   line-height: 1.4;
 `;
 
