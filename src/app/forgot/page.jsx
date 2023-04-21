@@ -10,6 +10,16 @@ const Forgot = () => {
   const [email, setEmail] = useState(null);
   const [errors, setErrors] = useState({});
 
+  const validateForm = () => {
+    const errors = {};
+
+    if (email.trim() === '') {
+      errors.email = 'Please enter your email address';
+    }
+
+    return errors;
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(email);
