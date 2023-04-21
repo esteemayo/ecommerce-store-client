@@ -313,7 +313,7 @@ const ForgotPassword = styled.p`
 `;
 
 const ErrorMsg = styled.span`
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   color: hsl(360, 71%, 66%);
 `;
 
