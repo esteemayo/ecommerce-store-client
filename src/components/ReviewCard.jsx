@@ -59,7 +59,7 @@ const ReviewContainer = styled.div`
   justify-content: space-between;
 
   svg {
-    font-size: 2.3rem;
+    font-size: 2.5rem;
   }
 `;
 
