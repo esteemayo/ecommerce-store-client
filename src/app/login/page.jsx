@@ -256,7 +256,13 @@ const RegisterText = styled.p`
 `;
 
 const ForgotPassword = styled.p`
-  
+  a {
+    &:link,
+    &:visited {
+      display: inline-block;
+      text-decoration: none;
+    }
+  }
 `;
 
 export default Login;
