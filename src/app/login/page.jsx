@@ -250,4 +250,8 @@ const RegisterText = styled.p`
   }
 `;
 
+const ForgotPassword = styled.p`
+
+`;
+
 export default Login;
