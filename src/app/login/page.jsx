@@ -19,6 +19,7 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    console.log({ username, password });
   };
 
   return (
