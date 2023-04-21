@@ -14,6 +14,9 @@ const Login = () => {
   const usernameRef = useRef();
   const passwordRef = useRef();
 
+  const username = usernameRef.current.value;
+  const password = passwordRef.current.value;
+
   const handleSubmit = (e) => {
     e.preventDefault();
   };
