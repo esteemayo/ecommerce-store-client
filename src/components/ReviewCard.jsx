@@ -7,7 +7,6 @@ import Image from 'next/image';
 
 const ReviewCard = () => {
   return (
-    <>
     <Container>
       <Wrapper>
         <ReviewContainer>
