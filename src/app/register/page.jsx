@@ -76,7 +76,6 @@ const Register = () => {
                 <FormLabel htmlFor={id}>{label}</FormLabel>
                 <FormInput
                   type={type}
-                  id={id}
                   name={name}
                   placeholder={placeholder}
                   onChange={handleChange}
