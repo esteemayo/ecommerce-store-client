@@ -30,7 +30,7 @@ const ReviewCard = () => {
         <Wrapper>
           <ReviewContainer>
             <Reviewer>
-              <Avatar>J</Avatar>
+              <Avatar>A</Avatar>
               <Name>Jesse hopkins</Name>
             </Reviewer>
             <StarRating value={5} />
