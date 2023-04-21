@@ -8,6 +8,7 @@ import { closeSubmenu } from '@/features/submenu/submenuSlice';
 const Forgot = () => {
   const dispatch = useDispatch();
   const [email, setEmail] = useState(null);
+  const [errors, setErrors] = useState({});
 
   const handleSubmit = (e) => {
     e.preventDefault();
