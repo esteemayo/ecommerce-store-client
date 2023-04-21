@@ -31,7 +31,7 @@ const ReviewCard = () => {
           <ReviewContainer>
             <Reviewer>
               <Avatar>A</Avatar>
-              <Name>Jesse hopkins</Name>
+              <Name>Alice banks</Name>
             </Reviewer>
             <StarRating value={5} />
           </ReviewContainer>
