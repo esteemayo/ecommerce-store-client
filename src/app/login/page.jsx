@@ -265,6 +265,10 @@ const ForgotPassword = styled.p`
       color: var(--clr-secondary-blue);
       outline-color: #ddd;
     }
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 `;
 
