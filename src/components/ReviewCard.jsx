@@ -56,6 +56,9 @@ const Container = styled.article`
   width: 40rem;
   background-color: #eef2ff;
   border-radius: 0.5rem;
+  box-shadow: 0 2rem 4rem rgba(145, 143, 143, 0.25);
+  -webkit-box-shadow: 0 2rem 4rem rgba(145, 143, 143, 0.25);
+  -moz-box-shadow: 0 2rem 4rem rgba(145, 143, 143, 0.25);
   margin-bottom: 1rem;
 `;
 
