@@ -124,6 +124,7 @@ const ShareButton = styled.button`
   color: #8a8ca0;
   border: 1px solid #8a8ca0;
   border-radius: 0.5rem;
+  outline-color: #ccc;
   cursor: pointer;
 
   svg {
