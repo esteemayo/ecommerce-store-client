@@ -105,6 +105,7 @@ const Name = styled.h3`
 const Review = styled.p`
   margin: 2rem 0;
   font-size: 1.8rem;
+  color: #888;
 `;
 
 const DateContainer = styled.div`
