@@ -35,7 +35,10 @@ const ReviewCard = () => {
             </Reviewer>
             <StarRating value={5} />
           </ReviewContainer>
-          <Review>Gorgeous design! Even more responsive than the previous version. A pleasure to use!</Review>
+          <Review>
+            The device has a clean design, and the metal housing feels sturdy in my hands.
+            Soft rounded corners make it a pleasure to look at.
+          </Review>
           <DateContainer>
             <ReviewDate dateTime='2023-02-13 20:00'>Feb 13, 2023</ReviewDate>
             <ShareButton type='button'>
