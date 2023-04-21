@@ -56,9 +56,9 @@ const Container = styled.article`
   width: 40rem;
   background-color: #eef2ff;
   border-radius: 0.5rem;
-  box-shadow: 0 2rem 4rem rgba(145, 143, 143, 0.25);
-  -webkit-box-shadow: 0 2rem 4rem rgba(145, 143, 143, 0.25);
-  -moz-box-shadow: 0 2rem 4rem rgba(145, 143, 143, 0.25);
+  box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+  -webkit-box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+  -moz-box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
   margin-bottom: 1rem;
 `;
 
