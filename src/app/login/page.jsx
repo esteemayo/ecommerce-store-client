@@ -310,4 +310,8 @@ const ForgotPassword = styled.p`
   }
 `;
 
+const ErrorMsg = styled.span`
+
+`;
+
 export default Login;
