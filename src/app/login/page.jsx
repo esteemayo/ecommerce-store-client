@@ -316,7 +316,6 @@ const ErrorMsg = styled.span`
   font-size: 1.3rem;
   color: hsl(360, 71%, 66%);
   margin-top: 1px;
-  text-transform: lowercase;
 `;
 
 export default Login;
