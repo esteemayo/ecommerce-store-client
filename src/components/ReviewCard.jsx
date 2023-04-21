@@ -91,6 +91,10 @@ const Avatar = styled.div`
   font-size: 2.5rem;
   color: var(--clr-white);
   border-radius: 50%;
+  
+  &:nth-child(even) {
+    background-color: #d56a6a;
+  }
 `;
 
 const Name = styled.h3`
