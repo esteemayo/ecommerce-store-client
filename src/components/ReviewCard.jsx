@@ -8,26 +8,26 @@ import Image from 'next/image';
 const ReviewCard = () => {
   return (
     <>
-      <Container>
-        <Wrapper>
-          <ReviewContainer>
-            <Reviewer>
-              {/* <Avatar>J</Avatar> */}
-              <Image src='/img/user-1.jpg' width={500} height={500} alt='' />
-              <Name>Jesse hopkins</Name>
-            </Reviewer>
-            <StarRating value={5} />
-          </ReviewContainer>
-          <Review>Gorgeous design! Even more responsive than the previous version. A pleasure to use!</Review>
-          <DateContainer>
-            <ReviewDate dateTime='2023-02-13 20:00'>Feb 13, 2023</ReviewDate>
-            <ShareButton type='button'>
-              <FontAwesomeIcon icon={faArrowUpFromBracket} />
-              Share
-            </ShareButton>
-          </DateContainer>
-        </Wrapper>
-      </Container>
+    <Container>
+      <Wrapper>
+        <ReviewContainer>
+          <Reviewer>
+            {/* <Avatar>J</Avatar> */}
+            <Image src='/img/user-1.jpg' width={500} height={500} alt='' />
+            <Name>Jesse hopkins</Name>
+          </Reviewer>
+          <StarRating value={5} />
+        </ReviewContainer>
+        <Review>Gorgeous design! Even more responsive than the previous version. A pleasure to use!</Review>
+        <DateContainer>
+          <ReviewDate dateTime='2023-02-13 20:00'>Feb 13, 2023</ReviewDate>
+          <ShareButton type='button'>
+            <FontAwesomeIcon icon={faArrowUpFromBracket} />
+            Share
+          </ShareButton>
+        </DateContainer>
+      </Wrapper>
+    </Container>
       <Container>
         <Wrapper>
           <ReviewContainer>
