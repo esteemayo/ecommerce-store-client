@@ -349,7 +349,7 @@ export const reviews = [
     user: {
       name: 'Alice banks',
     },
-    rating: 5,
+    rating: 4,
     review: 'The device has a clean design, and the metal housing feels sturdy in my hands. Soft rounded corners make it a pleasure to look at.',
   }
 ];
