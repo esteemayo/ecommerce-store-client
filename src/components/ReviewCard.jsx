@@ -87,8 +87,8 @@ const Avatar = styled.div`
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
-  width: 4rem;
-  height: 4rem;
+  width: 5rem;
+  height: 5rem;
   background-color: #d56a6a;
   color: var(--clr-white);
   border-radius: 50%;
