@@ -83,6 +83,11 @@ const Reviewer = styled.div`
   display: flex;
   align-items: center;
   gap: 1rem;
+
+  & > img {
+    width: 5rem;
+    height: 5rem;
+  }
 `;
 
 const Avatar = styled.div`
