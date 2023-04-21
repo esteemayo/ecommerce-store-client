@@ -27,6 +27,33 @@ const Register = () => {
     setData((prev) => ({ ...prev, [name]: value }));
   };
 
+  const validateForm = () => {
+    const errors = {};
+    const { name, email, username, password, confirmPassword } = data;
+
+    if (name.trim() === '') {
+      errors.name = 'Name field is required';
+    }
+
+    if (email.trim() === '') {
+      errors.email = 'Email field is required';
+    }
+
+    if (username.trim() === '') {
+      errors.username = 'Username field is required';
+    }
+
+    if (password.trim() === '') {
+      errors.password = 'Password field is required';
+    }
+
+    if (password !== confirmPassword) {
+      errors.confirmPassword = 'Passwords do not match';
+    }
+
+    return errors;
+  }
+
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log({ ...data, file });
