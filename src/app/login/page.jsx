@@ -51,6 +51,11 @@ const Login = () => {
             />
           </FormGroup>
           <FormButton type='submit'>Log in</FormButton>
+          <ForgotPassword>
+            <Link href='/forgot' passHref>
+              Forgot your password?
+            </Link>
+          </ForgotPassword>
         </Form>
       </Wrapper>
       <RegisterContainer>
@@ -58,11 +63,6 @@ const Login = () => {
           Don&apos;t have an account? {' '}
           <Link href='/register' passHref>Sign up</Link>
         </RegisterText>
-        <ForgotPassword>
-          <Link href='/forgot' passHref>
-            Forgot your password?
-          </Link>
-        </ForgotPassword>
       </RegisterContainer>
     </Container>
   );
@@ -256,7 +256,7 @@ const RegisterText = styled.p`
 `;
 
 const ForgotPassword = styled.p`
-
+  
 `;
 
 export default Login;
