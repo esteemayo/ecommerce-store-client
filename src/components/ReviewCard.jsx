@@ -3,7 +3,6 @@ import { faArrowUpFromBracket } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import StarRating from './StarRating';
-import Image from 'next/image';
 
 const ReviewCard = ({ user, rating, review }) => {
   return (
