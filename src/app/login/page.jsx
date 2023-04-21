@@ -256,6 +256,8 @@ const RegisterText = styled.p`
 `;
 
 const ForgotPassword = styled.p`
+  color: #888;
+
   a {
     &:link,
     &:visited {
