@@ -60,6 +60,7 @@ const ReviewContainer = styled.div`
 
   svg {
     font-size: 2.5rem;
+    border: 2px solid #eef2ff;
   }
 `;
 
