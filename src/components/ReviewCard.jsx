@@ -114,7 +114,7 @@ const DateContainer = styled.div`
 
 const ReviewDate = styled.time`
   font-size: 1.4rem;
-  color: #8a8ca0;
+  color: #89a8a0;
 `;
 
 const ShareButton = styled.button`
