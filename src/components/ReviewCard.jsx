@@ -55,6 +55,7 @@ const ReviewCard = () => {
 const Container = styled.article`
   width: 40rem;
   background-color: #eef2ff;
+  margin-bottom: 1rem;
 `;
 
 const Wrapper = styled.div`
