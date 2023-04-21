@@ -15,9 +15,6 @@ const Home = () => {
       <Categories />
       <FeaturedProducts />
       <TopReviews />
-      {reviews.map((item) => {
-        return <ReviewCard key={item.id} {...item} />;
-      })}
     </Container>
   );
 }
