@@ -99,6 +99,7 @@ const Name = styled.h3`
   text-transform: capitalize;
   font-weight: 600;
   font-size: 1.8rem;
+  color: #888;
 `;
 
 const Review = styled.p`
