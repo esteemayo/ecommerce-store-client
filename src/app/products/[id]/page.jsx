@@ -262,7 +262,10 @@ const SizeContainer = styled.div`
 `;
 
 const SelectSize = styled.button`
-  
+  display: inline-block;
+  font-size: 1.4rem;
+  min-width: 3rem;
+  height: 3rem;
 `;
 
 export default SingleProduct;
