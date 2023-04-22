@@ -65,7 +65,7 @@ const SingleProduct = () => {
                 <ProductColor>Color</ProductColor>
                 <ColorWrapper>
                   {[...new Array(3)].map((_, index) => {
-                    return <Color key={index}>&nbsp;</Color>;
+                    return <Color key={index} selected={isSelected} onClick={() => setIsSelected(true)}>&nbsp;</Color>;
                   })}
                 </ColorWrapper>
               </ColorContainer>
@@ -227,7 +227,14 @@ const Color = styled.button`
   height: 2rem;
   background-color: crimson;
   border-radius: 50%;
+  outline-color: ${({ selected }) => selected && '#89a8a0'};
+  outline-offset: 3px;
   cursor: pointer;
+
+  &:focus {
+    outline-color: #89a8a0;
+    outline-offset: 3px;
+  }
 `;
 
 export default SingleProduct;
