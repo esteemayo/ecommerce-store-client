@@ -306,4 +306,8 @@ const Button = styled.button`
   }
 `;
 
+const DescriptionHeader = styled.h4`
+  
+`
+
 export default SingleProduct;
