@@ -54,7 +54,9 @@ const SingleProduct = () => {
                 &nbsp;
                 <Link href='#' passHref>Learn more</Link>
               </Message>
-              <StarRating value={0} />
+              <Rating>
+                <StarRating value={0} />
+              </Rating>
             </ProductWrapper>
           </Right>
         </ProductContainer>
