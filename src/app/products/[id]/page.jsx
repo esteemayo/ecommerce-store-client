@@ -83,4 +83,8 @@ const ImageWrapper = styled.figure`
   }
 `;
 
+const Right = styled.div`
+  flex: 1;
+`;
+
 export default SingleProduct;
