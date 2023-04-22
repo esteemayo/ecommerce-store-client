@@ -209,7 +209,7 @@ const Rating = styled.div`
 `;
 
 const Hr = styled.hr`
-  width: 90%;
+  width: 100%;
   height: 1px;
   border: none;
   background-color: #ebf0ef;
