@@ -252,6 +252,10 @@ const SizeHeading = styled.h3`
   margin-top: 1rem 0 2rem 0;
 `;
 
+const SizeContainer = styled.div`
+  
+`;
+
 const SelectSize = styled.button`
   
 `;
