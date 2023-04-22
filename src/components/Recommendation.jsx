@@ -13,6 +13,7 @@ const Recommendation = () => {
             <ProductTitle>
               <Link href='#' passHref>The Rain Bucket Hat in Black</Link>
             </ProductTitle>
+            <ProductPrice>$39.50</ProductPrice>
           </ProductContainer>
         </ProductWrapper>
         <ProductWrapper>
