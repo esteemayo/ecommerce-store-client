@@ -220,8 +220,8 @@ const ColorWrapper = styled.div`
 const Color = styled.button`
   border: none;
   display: block;
-  width: 3rem;
-  height: 3rem;
+  width: 2rem;
+  height: 2rem;
   background-color: crimson;
   border-radius: 50%;
   cursor: pointer;
