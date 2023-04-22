@@ -217,7 +217,7 @@ const ProductColor = styled.h2`
 const ColorWrapper = styled.div`
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
 `;
 
 const Color = styled.button`
