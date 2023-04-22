@@ -223,6 +223,8 @@ const Color = styled.button`
   width: 3rem;
   height: 3rem;
   background-color: crimson;
+  border-radius: 50%;
+  cursor: pointer;
 `;
 
 export default SingleProduct;
