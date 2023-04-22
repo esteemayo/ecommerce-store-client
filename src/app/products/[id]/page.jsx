@@ -279,4 +279,8 @@ const SelectSize = styled.button`
   cursor: pointer;
 `;
 
+const Button = styled.button`
+  
+`;
+
 export default SingleProduct;
