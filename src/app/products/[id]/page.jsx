@@ -288,6 +288,13 @@ const Button = styled.button`
   padding: 2rem 1rem;
   background-color: var(--clr-black);
   color: var(--clr-white);
+  background-image: linear-gradient(
+    120deg,
+    transparent 0%,
+    transparent 50%,
+    #333 50%
+  );
+  background-size: 220%;
   border: 1px solid var(--clr-black);
   outline-color: #777;
   line-height: 1.3em;
