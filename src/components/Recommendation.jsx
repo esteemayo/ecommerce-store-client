@@ -57,6 +57,7 @@ const Recommendation = () => {
 const Container = styled.div`
   width: 100vw;
   padding: 0 4rem;
+  margin-bottom: 10rem;
 `;
 
 const Heading = styled.h1`
