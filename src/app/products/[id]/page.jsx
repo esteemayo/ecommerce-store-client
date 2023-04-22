@@ -2,6 +2,7 @@
 import StarRating from '@/components/StarRating';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useState } from 'react';
 import styled from 'styled-components';
 
 const SingleProduct = () => {
