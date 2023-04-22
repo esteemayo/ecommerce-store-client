@@ -9,9 +9,11 @@ const Recommendation = () => {
       <Wrapper>
         <ProductWrapper>
           <Image src='/img/user-9.jpg' width={500} height={700} alt='' />
-          <ProductTitle>
-            <Link href='#' passHref>The Rain Bucket Hat in Black</Link>
-          </ProductTitle>
+          <ProductContainer>
+            <ProductTitle>
+              <Link href='#' passHref>The Rain Bucket Hat in Black</Link>
+            </ProductTitle>
+          </ProductContainer>
         </ProductWrapper>
         <ProductWrapper>
           <Image src='/img/user-5.jpg' width={500} height={700} alt='' />
