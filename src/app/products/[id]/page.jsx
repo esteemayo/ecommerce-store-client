@@ -5,7 +5,9 @@ const SingleProduct = () => {
   return (
     <Container>
       <Wrapper>
-        SingleProduct
+        <ProductContainer>
+          SingleProduct
+        </ProductContainer>
       </Wrapper>
     </Container>
   );
