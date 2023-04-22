@@ -1,4 +1,5 @@
 'use client';
+import Image from 'next/image';
 import styled from 'styled-components';
 
 const SingleProduct = () => {
@@ -25,7 +26,17 @@ const SingleProduct = () => {
         <ProductContainer>
           <Left>
             <ImageWrapper>
-
+              {images.map((item, index) => {
+                return (
+                  <Image
+                    key={index} 
+                    src={item}
+                    width={500} 
+                    height={500} 
+                    alt=''
+                  />
+                )
+              })}
             </ImageWrapper>
           </Left>
           <Right>Right</Right>
