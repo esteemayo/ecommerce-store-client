@@ -98,6 +98,7 @@ const BreadCrumbs = styled.div`
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  color: #888;
 
   a {
     &:link,
@@ -106,6 +107,7 @@ const BreadCrumbs = styled.div`
       text-decoration: none;
       text-transform: capitalize;
       font-size: 1.6rem;
+      color: currentColor;
     }
   }
 `;
