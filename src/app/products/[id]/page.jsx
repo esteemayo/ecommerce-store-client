@@ -197,7 +197,7 @@ const Hr = styled.hr`
 `;
 
 const ColorContainer = styled.div`
-  
+  margin: 2rem 0;
 `;
 
 const ProductColor = styled.h2`
