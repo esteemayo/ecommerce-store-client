@@ -116,7 +116,7 @@ const BreadCrumbs = styled.div`
     &::after {
       content: '';
       display: inline-block;
-      width: 3rem;
+      width: 4rem;
       height: 1px;
       background-color: var(--clr-secondary-blue);
     }
