@@ -129,6 +129,7 @@ const Right = styled.div`
   flex: 1;
   padding-top: 5rem;
   padding-right: 3rem;
+  padding-left: 3rem;
 `;
 
 const BreadCrumbs = styled.div`
