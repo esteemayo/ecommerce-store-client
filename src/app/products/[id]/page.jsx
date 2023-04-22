@@ -219,6 +219,7 @@ const ColorWrapper = styled.div`
   display: flex;
   align-items: center;
   gap: 2rem;
+  margin: 1.5rem 0;
 `;
 
 const Color = styled.button`
