@@ -49,7 +49,10 @@ const Wrapper = styled.div`
 `;
 
 const ProductWrapper = styled.div`
-  
+  img {
+    width: 100%;
+    height: 70rem;
+  }
 `;
 
 const ProductTitle = styled.p`
