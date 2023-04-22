@@ -59,7 +59,7 @@ const SingleProduct = () => {
               </Rating>
               <Hr />
               <ColorContainer>
-
+                <ProductColor>Color</ProductColor>
               </ColorContainer>
             </ProductWrapper>
           </Right>
