@@ -43,7 +43,7 @@ const Register = () => {
       errors.username = 'Username field is required';
     }
 
-    if (password.trim() === '') {
+    if (password === '') {
       errors.password = 'Password field is required';
     }
 
