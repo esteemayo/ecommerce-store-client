@@ -212,6 +212,9 @@ const ProductColor = styled.h2`
 const Color = styled.button`
   border: none;
   display: block;
+  width: 3rem;
+  height: 3rem;
+  background-color: crimson;
 `;
 
 export default SingleProduct;
