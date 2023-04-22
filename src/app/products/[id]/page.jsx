@@ -289,6 +289,7 @@ const Button = styled.button`
   background-color: var(--clr-black);
   color: var(--clr-white);
   border: 1px solid var(--clr-black);
+  outline-color: #777;
   line-height: 1.3em;
 `;
 
