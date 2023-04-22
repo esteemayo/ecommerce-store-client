@@ -39,7 +39,11 @@ const SingleProduct = () => {
               })}
             </ImageWrapper>
           </Left>
-          <Right>Right</Right>
+          <Right>
+            <BreadCrumbs>
+
+            </BreadCrumbs>
+          </Right>
         </ProductContainer>
       </Wrapper>
     </Container>
