@@ -83,9 +83,17 @@ const ProductWrapper = styled.div`
 `;
 
 const ProductContainer = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  a {
+    &:link,
+    &:visited {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-decoration: none;
+      font-size: inherit;
+      color: inherit;
+    }
+  }
 `;
 
 const ProductTitle = styled.p`
