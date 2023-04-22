@@ -4,7 +4,7 @@ const Recommendation = () => {
   return (
     <Container>
       <Wrapper>
-        Recommendation
+        <Heading>You might also like</Heading>
       </Wrapper>
     </Container>
   );
