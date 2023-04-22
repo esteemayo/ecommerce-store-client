@@ -186,6 +186,7 @@ const Message = styled.p`
       text-decoration: underline;
       text-transform: capitalize;
       color: inherit;
+      outline-color: #eee;
     }
 
     &:hover,
