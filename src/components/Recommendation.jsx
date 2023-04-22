@@ -17,10 +17,6 @@ const Container = styled.div`
   padding: 8rem 4rem;
 `;
 
-const Wrapper = styled.div`
-  
-`;
-
 const Heading = styled.h1`
   display: block;
   text-align: left;
