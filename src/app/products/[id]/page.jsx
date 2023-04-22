@@ -57,6 +57,7 @@ const SingleProduct = () => {
               <Rating>
                 <StarRating value={0} />
               </Rating>
+              <Hr />
             </ProductWrapper>
           </Right>
         </ProductContainer>
