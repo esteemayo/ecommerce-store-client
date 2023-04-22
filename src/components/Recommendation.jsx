@@ -89,7 +89,12 @@ const ProductContainer = styled.div`
 `;
 
 const ProductTitle = styled.p`
-  
+  display: block;
+  width: 100%;
+  font-size: 1.6rem;
+  color: inherit;
+  line-height: 1.8rem;
+  margin: 1rem 0;
 `;
 
 const ProductPrice = styled.p`
