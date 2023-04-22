@@ -32,6 +32,10 @@ const Forgot = () => {
     console.log(email);
   };
 
+  useEffect(() => {
+    emailRef.current.focus();
+  }, []);
+
   return (
     <Container onMouseOver={() => dispatch(closeSubmenu())}>
       <Wrapper>
