@@ -6,6 +6,8 @@ import { useState } from 'react';
 import styled from 'styled-components';
 
 const SingleProduct = () => {
+  const [isSelected, setIsSelected] = useState(false);
+
   const images = [
     '/img/category-1.jpg',
     '/img/category-5.jpg',
