@@ -299,7 +299,7 @@ const Button = styled.button`
   border-radius: 0.5rem;
   outline-color: #777;
   line-height: 1.3em;
-  margin-top: 3rem;
+  margin: 3rem 0;
   cursor: pointer;
   transition: all 0.3s;
 
