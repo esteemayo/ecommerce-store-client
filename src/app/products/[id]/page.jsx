@@ -77,6 +77,13 @@ const ImageWrapper = styled.figure`
   flex-wrap: wrap;
   align-items: center;
   gap: 1rem;
+
+  & > img {
+    display: block;
+    width: 50rem;
+    height: 70rem;
+    object-fit: cover;
+  }
 `;
 
 export default SingleProduct;
