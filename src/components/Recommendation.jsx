@@ -28,4 +28,8 @@ const Heading = styled.h1`
   font-size: 3.2rem;
 `;
 
+const ProductTitle = styled.p`
+  
+`;
+
 export default Recommendation;
