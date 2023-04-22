@@ -47,6 +47,7 @@ const SingleProduct = () => {
             </BreadCrumbs>
             <ProductWrapper>
               <ProductName>The Stanley Rain Jacket in Black</ProductName>
+              <ProductPrice>$199.00</ProductPrice>
             </ProductWrapper>
           </Right>
         </ProductContainer>
