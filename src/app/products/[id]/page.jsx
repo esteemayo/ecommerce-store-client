@@ -46,7 +46,7 @@ const SingleProduct = () => {
               <Link href='#' passHref>Shirts</Link>
             </BreadCrumbs>
             <ProductWrapper>
-
+              <ProductName>The Stanley Rain Jacket in Black</ProductName>
             </ProductWrapper>
           </Right>
         </ProductContainer>
