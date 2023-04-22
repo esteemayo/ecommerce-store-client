@@ -2,7 +2,7 @@
 import styled from 'styled-components';
 import Link from 'next/link';
 import { useState } from 'react';
-import styled from 'styled-components';
+import Image from 'next/image';
 
 import StarRating from '@/components/StarRating';
 import Recommendation from '@/components/Recommendation';
