@@ -154,7 +154,12 @@ const ProductPrice = styled.p`
 `;
 
 const Message = styled.p`
-  
+  a {
+    &:link,
+    &:visited {
+      text-decoration: underline;
+    }
+  }
 `;
 
 export default SingleProduct;
