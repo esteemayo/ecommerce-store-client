@@ -91,6 +91,7 @@ const ImageWrapper = styled.figure`
 
 const Right = styled.div`
   flex: 1;
+  padding-top: 5rem;
 `;
 
 const BreadCrumbs = styled.div`
