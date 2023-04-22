@@ -160,6 +160,7 @@ const Message = styled.p`
     &:link,
     &:visited {
       text-decoration: underline;
+      text-transform: capitalize;
       color: inherit;
     }
   }
