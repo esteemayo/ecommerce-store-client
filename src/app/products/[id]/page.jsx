@@ -178,6 +178,10 @@ const Message = styled.p`
 
 const Rating = styled.div`
   margin-top: 1rem;
+
+  svg {
+    color: #89a8a0;
+  }
 `;
 
 export default SingleProduct;
