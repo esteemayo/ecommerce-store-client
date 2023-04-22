@@ -13,6 +13,18 @@ const Recommendation = () => {
             <Link href='#' passHref>The Rain Bucket Hat in Black</Link>
           </ProductTitle>
         </ProductWrapper>
+        <ProductWrapper>
+          <Image src='/img/user-5.jpg' width={500} height={700} alt='' />
+          <ProductTitle>
+            <Link href='#' passHref>The Skyline Collard Jacket in Rosin</Link>
+          </ProductTitle>
+        </ProductWrapper>
+        <ProductWrapper>
+          <Image src='/img/user-8.jpg' width={500} height={700} alt='' />
+          <ProductTitle>
+            <Link href='#' passHref>The Slyline Reversible Bomber in Blackk</Link>
+          </ProductTitle>
+        </ProductWrapper>
       </Wrapper>
     </Container>
   );
