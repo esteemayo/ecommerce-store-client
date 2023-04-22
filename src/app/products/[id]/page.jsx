@@ -128,4 +128,8 @@ const BreadCrumbs = styled.div`
   }
 `;
 
+const ProductWrapper = styled.div`
+  
+`;
+
 export default SingleProduct;
