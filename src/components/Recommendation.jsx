@@ -15,9 +15,9 @@ const Recommendation = () => {
             alt=''
           />
           <ProductContainer>
-            <ProductTitle>
-              <Link href='#' passHref>The Rain Bucket Hat in Black</Link>
-            </ProductTitle>
+            <Link href='#' passHref>
+              <ProductTitle>The Rain Bucket Hat in Black</ProductTitle>
+            </Link>
             <ProductPrice>$39.50</ProductPrice>
           </ProductContainer>
         </ProductWrapper>
