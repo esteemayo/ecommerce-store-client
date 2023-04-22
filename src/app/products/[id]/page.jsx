@@ -271,6 +271,7 @@ const SelectSize = styled.button`
   color: inherit;
   border: 2px solid #ebf0ef;
   border-radius: 0.4rem;
+  outline-color: #ccc;
   margin-bottom: 0.8rem;
   cursor: pointer;
 `;
