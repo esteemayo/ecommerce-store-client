@@ -25,7 +25,7 @@ const Login = () => {
       tempErrors.username = 'Username field is required';
     }
 
-    if (password.trim() === '') {
+    if (password === '') {
       tempErrors.password = 'Password field is required';
     }
 
