@@ -315,4 +315,8 @@ const DescriptionHeader = styled.h4`
   margin: 3rem 0;
 `
 
+const DescriptionText = styled.p`
+  
+`;
+
 export default SingleProduct;
