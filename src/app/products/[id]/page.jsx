@@ -136,7 +136,10 @@ const ProductWrapper = styled.div`
 `;
 
 const ProductName = styled.h1`
-  
+  display: inline-block;
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 1.3;
 `;
 
 export default SingleProduct;
