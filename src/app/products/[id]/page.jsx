@@ -60,9 +60,11 @@ const SingleProduct = () => {
               <Hr />
               <ColorContainer>
                 <ProductColor>Color</ProductColor>
-                {[...new Array(3)].map((_, index) => {
-                  return <Color key={index}>&nbsp;</Color>;
-                })}
+                <ColorWrapper>
+                  {[...new Array(3)].map((_, index) => {
+                    return <Color key={index}>&nbsp;</Color>;
+                  })}
+                </ColorWrapper>
               </ColorContainer>
             </ProductWrapper>
           </Right>
