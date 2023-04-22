@@ -103,7 +103,9 @@ const BreadCrumbs = styled.div`
   a {
     &:link,
     &:visited {
-      display: inline-block;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
       text-decoration: none;
       text-transform: capitalize;
       font-size: 1.6rem;
