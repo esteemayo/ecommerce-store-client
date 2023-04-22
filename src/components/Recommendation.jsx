@@ -43,10 +43,10 @@ const Recommendation = () => {
             alt=''
           />
           <ProductContainer>
-            <ProductTitle>
-              <Link href='#' passHref>The Slyline Reversible Bomber in Blackk</Link>
-            </ProductTitle>
-            <ProductPrice>$169.00</ProductPrice>
+            <Link href='#' passHref>
+              <ProductTitle>The Slyline Reversible Bomber in Black</ProductTitle>
+              <ProductPrice>$169.00</ProductPrice>
+            </Link>
           </ProductContainer>
         </ProductWrapper>
       </Wrapper>
