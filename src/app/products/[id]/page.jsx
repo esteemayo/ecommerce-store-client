@@ -266,6 +266,8 @@ const SelectSize = styled.button`
   font-size: 1.4rem;
   min-width: 3rem;
   height: 3rem;
+  padding: 0 0.4rem;
+  line-height: 0.2;
 `;
 
 export default SingleProduct;
