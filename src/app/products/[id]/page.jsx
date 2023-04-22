@@ -10,7 +10,8 @@ const SingleProduct = () => {
 }
 
 const Container = styled.main`
-  
+  width: 100vw;
+  min-height: 100vh;
 `;
 
 export default SingleProduct;
