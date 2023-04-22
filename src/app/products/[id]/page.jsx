@@ -106,6 +106,7 @@ const ImageWrapper = styled.figure`
 const Right = styled.div`
   flex: 1;
   padding-top: 5rem;
+  padding-right: 3rem;
 `;
 
 const BreadCrumbs = styled.div`
@@ -186,7 +187,7 @@ const Rating = styled.div`
 `;
 
 const Hr = styled.hr`
-  
+  width: 90%;
 `;
 
 export default SingleProduct;
