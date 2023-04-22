@@ -104,6 +104,8 @@ const BreadCrumbs = styled.div`
     &:visited {
       display: inline-block;
       text-decoration: none;
+      text-transform: capitalize;
+      font-size: 1.6rem;
     }
   }
 `;
