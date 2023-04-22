@@ -144,7 +144,9 @@ const BreadCrumbs = styled.div`
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
-      text-decoration: none;
+      text-decoration: underline;
+      text-decoration-color: #89a8a0;
+      text-underline-offset: 3px;
       text-transform: capitalize;
       font-size: 1.6rem;
       color: currentColor;
