@@ -272,6 +272,9 @@ const SelectSize = styled.button`
   background-color: transparent;
   color: inherit;
   border: 2px solid #ebf0ef;
+  border-radius: 0.4rem;
+  margin-bottom: 0.8rem;
+  cursor: pointer;
 `;
 
 export default SingleProduct;
