@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 import styled from 'styled-components';
 
+import StarRating from '@/components/StarRating';
 import Recommendation from '@/components/Recommendation';
 
 const SingleProduct = () => {
