@@ -283,10 +283,13 @@ const SelectSize = styled.button`
 const Button = styled.button`
   display: inline-block;
   border: none;
+  font-size: 1.8rem;
   width: 100%;
   padding: 2rem 1rem;
   background-color: var(--clr-black);
   color: var(--clr-white);
+  border: 1px solid var(--clr-black);
+  line-height: 1.3em;
 `;
 
 export default SingleProduct;
