@@ -69,6 +69,7 @@ const SingleProduct = () => {
                   })}
                 </ColorWrapper>
               </ColorContainer>
+              <SizeHeading>Select a size</SizeHeading>
             </ProductWrapper>
           </Right>
         </ProductContainer>
