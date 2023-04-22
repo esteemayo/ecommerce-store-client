@@ -18,4 +18,8 @@ const Wrapper = styled.div`
   
 `;
 
+const Heading = styled.h1`
+  
+`;
+
 export default Recommendation;
