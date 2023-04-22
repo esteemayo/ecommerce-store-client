@@ -19,7 +19,10 @@ const Wrapper = styled.div`
 `;
 
 const Heading = styled.h1`
-  
+  display: block;
+  text-align: left;
+  font-weight: 500;
+  font-size: 3.2rem;
 `;
 
 export default Recommendation;
