@@ -6,7 +6,7 @@ const SingleProduct = () => {
     <Container>
       <Wrapper>
         <ProductContainer>
-          SingleProduct
+          <Left>Left</Left>
         </ProductContainer>
       </Wrapper>
     </Container>
