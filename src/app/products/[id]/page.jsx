@@ -154,10 +154,13 @@ const ProductPrice = styled.p`
 `;
 
 const Message = styled.p`
+  color: inherit;
+
   a {
     &:link,
     &:visited {
       text-decoration: underline;
+      color: inherit;
     }
   }
 `;
