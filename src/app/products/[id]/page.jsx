@@ -148,4 +148,8 @@ const ProductPrice = styled.p`
   font-size: 1.6rem;
 `;
 
+const Message = styled.p`
+  
+`;
+
 export default SingleProduct;
