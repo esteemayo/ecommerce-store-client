@@ -62,4 +62,8 @@ const ProductTitle = styled.p`
   
 `;
 
+const ProductPrice = styled.p`
+  
+`;
+
 export default Recommendation;
