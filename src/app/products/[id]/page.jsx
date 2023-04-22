@@ -29,10 +29,10 @@ const SingleProduct = () => {
               {images.map((item, index) => {
                 return (
                   <Image
-                    key={index} 
+                    key={index}
                     src={item}
-                    width={500} 
-                    height={500} 
+                    width={500}
+                    height={700}
                     alt=''
                   />
                 )
