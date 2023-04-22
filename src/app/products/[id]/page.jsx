@@ -39,4 +39,8 @@ const Right = styled.div`
   flex: 1;
 `;
 
+const ImageWrapper = styled.figure`
+  
+`;
+
 export default SingleProduct;
