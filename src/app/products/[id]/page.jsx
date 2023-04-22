@@ -206,4 +206,8 @@ const ProductColor = styled.h2`
   font-size: 1.7rem;
 `;
 
+const Color = styled.button`
+  
+`;
+
 export default SingleProduct;
