@@ -28,6 +28,10 @@ const Wrapper = styled.div`
   
 `;
 
+const ProductWrapper = styled.div`
+  
+`;
+
 const ProductTitle = styled.p`
   
 `;
