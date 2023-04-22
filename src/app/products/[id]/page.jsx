@@ -81,6 +81,7 @@ const SingleProduct = () => {
               <Hr />
               <Button type='button'>Add to cart</Button>
               <Hr />
+              <DescriptionHeader>Overview</DescriptionHeader>
             </ProductWrapper>
           </Right>
         </ProductContainer>
