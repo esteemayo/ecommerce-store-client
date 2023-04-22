@@ -142,4 +142,8 @@ const ProductName = styled.h1`
   line-height: 1.3;
 `;
 
+const ProductPrice = styled.p`
+
+`;
+
 export default SingleProduct;
