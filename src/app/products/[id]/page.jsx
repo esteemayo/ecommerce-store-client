@@ -164,6 +164,11 @@ const Message = styled.p`
       text-transform: capitalize;
       color: inherit;
     }
+
+    &:hover,
+    &:active {
+      color: inherit;
+    }
   }
 `;
 
