@@ -95,15 +95,6 @@ const ProductTitle = styled.p`
   color: inherit;
   line-height: 1.8rem;
   margin: 1rem 0;
-
-  a {
-    &:link,
-    &:visited {
-      text-decoration: none;
-      font-size: inherit;
-      color: inherit;
-    }
-  }
 `;
 
 const ProductPrice = styled.p`
