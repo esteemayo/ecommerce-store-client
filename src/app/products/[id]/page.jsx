@@ -282,7 +282,7 @@ const SelectSize = styled.button`
 
 const Button = styled.button`
   display: inline-block;
-  border: none;
+  text-align: center;
   font-size: 1.8rem;
   width: 100%;
   padding: 2rem 1rem;
