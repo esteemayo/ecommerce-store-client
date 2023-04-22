@@ -210,7 +210,7 @@ const Hr = styled.hr`
   width: 90%;
   height: 1px;
   border: none;
-  background-color: #9bb3ad;
+  background-color: #ebf0ef;
 `;
 
 const ColorContainer = styled.div`
