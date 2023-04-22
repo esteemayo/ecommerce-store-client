@@ -8,7 +8,12 @@ const Recommendation = () => {
       <Heading>You might also like</Heading>
       <Wrapper>
         <ProductWrapper>
-          <Image src='/img/user-9.jpg' width={500} height={700} alt='' />
+          <Image
+            src='/img/user-9.jpg'
+            width={500}
+            height={700}
+            alt=''
+          />
           <ProductContainer>
             <ProductTitle>
               <Link href='#' passHref>The Rain Bucket Hat in Black</Link>
