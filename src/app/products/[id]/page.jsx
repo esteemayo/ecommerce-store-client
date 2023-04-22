@@ -177,7 +177,7 @@ const Message = styled.p`
 `;
 
 const Rating = styled.div`
-  
+  margin-top: 1rem;
 `;
 
 export default SingleProduct;
