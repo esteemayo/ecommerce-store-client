@@ -87,4 +87,8 @@ const Right = styled.div`
   flex: 1;
 `;
 
+const BreadCrumbs = styled.div`
+  
+`;
+
 export default SingleProduct;
