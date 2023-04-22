@@ -132,7 +132,7 @@ const BreadCrumbs = styled.div`
 `;
 
 const ProductWrapper = styled.div`
-  
+  margin-top: 2rem;
 `;
 
 const ProductName = styled.h1`
