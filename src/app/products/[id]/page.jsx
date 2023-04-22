@@ -78,6 +78,7 @@ const SingleProduct = () => {
                 <SelectSize type='button'>XL</SelectSize>
                 <SelectSize type='button'>XXL</SelectSize>
               </SizeContainer>
+              <Hr />
             </ProductWrapper>
           </Right>
         </ProductContainer>
