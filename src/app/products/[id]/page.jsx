@@ -50,6 +50,7 @@ const SingleProduct = () => {
               <ProductPrice>$199.00</ProductPrice>
               <Message>
                 4 interest-free payments of $49.75.
+                &nbsp;
                 <Link href='#' passHref>Learn more</Link>
               </Message>
             </ProductWrapper>
