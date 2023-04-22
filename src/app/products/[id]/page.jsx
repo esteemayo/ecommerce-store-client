@@ -201,7 +201,9 @@ const ColorContainer = styled.div`
 `;
 
 const ProductColor = styled.h2`
-  
+  display: inline-block;
+  font-weight: 400;
+  font-size: 1.7rem;
 `;
 
 export default SingleProduct;
