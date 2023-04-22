@@ -2,7 +2,9 @@ import styled from 'styled-components';
 
 const Recommendation = () => {
   return (
-    <div>Recommendation</div>
+    <Container>
+      Recommendation
+    </Container>
   );
 }
 
