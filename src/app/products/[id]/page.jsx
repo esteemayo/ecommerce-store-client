@@ -80,6 +80,7 @@ const SingleProduct = () => {
               </SizeContainer>
               <Hr />
               <Button type='button'>Add to cart</Button>
+              <Hr />
             </ProductWrapper>
           </Right>
         </ProductContainer>
