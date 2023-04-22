@@ -72,7 +72,10 @@ const Right = styled.div`
 `;
 
 const ImageWrapper = styled.figure`
-  
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
 `;
 
 export default SingleProduct;
