@@ -269,6 +269,9 @@ const SelectSize = styled.button`
   height: 3rem;
   padding: 0 0.4rem;
   line-height: 0.2;
+  background-color: transparent;
+  color: inherit;
+  border: 2px solid #ebf0ef;
 `;
 
 export default SingleProduct;
