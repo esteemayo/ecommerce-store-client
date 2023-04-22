@@ -58,6 +58,9 @@ const SingleProduct = () => {
                 <StarRating value={0} />
               </Rating>
               <Hr />
+              <ColorContainer>
+
+              </ColorContainer>
             </ProductWrapper>
           </Right>
         </ProductContainer>
