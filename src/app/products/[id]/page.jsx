@@ -95,7 +95,9 @@ const Right = styled.div`
 `;
 
 const BreadCrumbs = styled.div`
-  
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 `;
 
 export default SingleProduct;
