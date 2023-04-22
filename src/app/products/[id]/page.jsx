@@ -333,7 +333,7 @@ const DescriptionText = styled.p`
   font-size: 1.6rem;
   line-height: 1.3;
   word-wrap: break-word;
-  margin: 3rem 0;
+  margin-bottom: 3rem;
 `;
 
 export default SingleProduct;
