@@ -1,4 +1,5 @@
 'use client';
+import Recommendation from '@/components/Recommendation';
 import StarRating from '@/components/StarRating';
 import Image from 'next/image';
 import Link from 'next/link';
