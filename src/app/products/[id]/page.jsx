@@ -341,9 +341,10 @@ const DescriptionText = styled.p`
 `;
 
 const Line = styled.hr`
-  width: 80%;
+  width: 93%;
   height: 1px;
   border: none;
+  margin: 0 auto;
   background-color: #ebf0ef;
 `;
 
