@@ -281,7 +281,10 @@ const SelectSize = styled.button`
 `;
 
 const Button = styled.button`
-  
+  display: inline-block;
+  border: none;
+  width: 100%;
+  padding: 1rem 2rem;
 `;
 
 export default SingleProduct;
