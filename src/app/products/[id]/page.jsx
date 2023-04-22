@@ -5,7 +5,6 @@ import { useState } from 'react';
 import styled from 'styled-components';
 
 import Recommendation from '@/components/Recommendation';
-import StarRating from '@/components/StarRating';
 
 const SingleProduct = () => {
   const [isSelected, setIsSelected] = useState(false);
