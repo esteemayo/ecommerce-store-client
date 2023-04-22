@@ -299,6 +299,7 @@ const Button = styled.button`
   border-radius: 0.5rem;
   outline-color: #777;
   line-height: 1.3em;
+  margin-top: 3rem;
   cursor: pointer;
   transition: all 0.3s;
 
