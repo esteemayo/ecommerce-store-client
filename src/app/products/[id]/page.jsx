@@ -83,6 +83,7 @@ const ImageWrapper = styled.figure`
     width: 50rem;
     height: 70rem;
     object-fit: cover;
+    border-radius: 0.5rem;
   }
 `;
 
