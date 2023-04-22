@@ -11,7 +11,8 @@ const Recommendation = () => {
 }
 
 const Container = styled.div`
-  
+  width: 100vw;
+  padding: 8rem 4rem;
 `;
 
 const Wrapper = styled.div`
