@@ -298,6 +298,7 @@ const Button = styled.button`
   border: 1px solid var(--clr-black);
   outline-color: #777;
   line-height: 1.3em;
+  cursor: pointer;
 `;
 
 export default SingleProduct;
