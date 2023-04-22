@@ -135,4 +135,8 @@ const ProductWrapper = styled.div`
   
 `;
 
+const ProductName = styled.h1`
+  
+`;
+
 export default SingleProduct;
