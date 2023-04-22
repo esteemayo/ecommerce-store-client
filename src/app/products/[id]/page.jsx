@@ -123,6 +123,7 @@ const ProductContainer = styled.div`
   display: flex;
   align-items: start;
   justify-content: space-between;
+  margin-bottom: 3rem;
 `;
 
 const Left = styled.div`
