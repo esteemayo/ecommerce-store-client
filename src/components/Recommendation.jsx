@@ -6,6 +6,7 @@ const Recommendation = () => {
     <Container>
       <Wrapper>
         <Heading>You might also like</Heading>
+        <Image src='/img/user-9.jpg' width={500} height={700} alt='' />
       </Wrapper>
     </Container>
   );
