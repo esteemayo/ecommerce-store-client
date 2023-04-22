@@ -339,4 +339,11 @@ const DescriptionText = styled.p`
   margin-bottom: 3rem;
 `;
 
+const Line = styled.hr`
+  width: 80%;
+  height: 1px;
+  border: none;
+  background-color: #ebf0ef;
+`;
+
 export default SingleProduct;
