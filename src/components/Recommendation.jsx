@@ -22,7 +22,12 @@ const Recommendation = () => {
           </ProductContainer>
         </ProductWrapper>
         <ProductWrapper>
-          <Image src='/img/user-5.jpg' width={500} height={700} alt='' />
+          <Image
+            src='/img/user-5.jpg'
+            width={500}
+            height={700}
+            alt=''
+          />
           <ProductContainer>
             <ProductTitle>
               <Link href='#' passHref>The Skyline Collard Jacket in Rosin</Link>
