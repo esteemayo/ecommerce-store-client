@@ -208,7 +208,8 @@ const ProductColor = styled.h2`
 `;
 
 const Color = styled.button`
-  
+  border: none;
+  display: block;
 `;
 
 export default SingleProduct;
