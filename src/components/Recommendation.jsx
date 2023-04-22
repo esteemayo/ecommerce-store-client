@@ -17,15 +17,19 @@ const Recommendation = () => {
         </ProductWrapper>
         <ProductWrapper>
           <Image src='/img/user-5.jpg' width={500} height={700} alt='' />
-          <ProductTitle>
-            <Link href='#' passHref>The Skyline Collard Jacket in Rosin</Link>
-          </ProductTitle>
+          <ProductContainer>
+            <ProductTitle>
+              <Link href='#' passHref>The Skyline Collard Jacket in Rosin</Link>
+            </ProductTitle>
+          </ProductContainer>
         </ProductWrapper>
         <ProductWrapper>
           <Image src='/img/user-8.jpg' width={500} height={700} alt='' />
-          <ProductTitle>
-            <Link href='#' passHref>The Slyline Reversible Bomber in Blackk</Link>
-          </ProductTitle>
+          <ProductContainer>
+            <ProductTitle>
+              <Link href='#' passHref>The Slyline Reversible Bomber in Blackk</Link>
+            </ProductTitle>
+          </ProductContainer>
         </ProductWrapper>
       </Wrapper>
     </Container>
