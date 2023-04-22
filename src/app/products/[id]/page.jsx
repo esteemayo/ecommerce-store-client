@@ -284,7 +284,7 @@ const Button = styled.button`
   display: inline-block;
   border: none;
   width: 100%;
-  padding: 1rem 2rem;
+  padding: 2rem 1rem;
 `;
 
 export default SingleProduct;
