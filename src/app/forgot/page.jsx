@@ -43,6 +43,7 @@ const Forgot = () => {
               id='email'
               type='email'
               name='email'
+              ref={emailRef}
               placeholder='Enter email address'
               onChange={(e) => setEmail(e.target.value)}
             />
