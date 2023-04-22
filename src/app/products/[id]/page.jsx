@@ -243,6 +243,7 @@ const SizeHeading = styled.h3`
   display: inline-block;
   font-weight: 400;
   font-size: 1.65rem;
+  margin-top: 1rem 0 2rem 0;
 `;
 
 export default SingleProduct;
