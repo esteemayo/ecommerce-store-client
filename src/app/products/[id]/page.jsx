@@ -193,4 +193,8 @@ const Hr = styled.hr`
   background-color: #9bb3ad;
 `;
 
+const ColorContainer = styled.div`
+  
+`;
+
 export default SingleProduct;
