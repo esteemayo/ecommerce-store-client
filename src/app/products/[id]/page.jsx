@@ -48,7 +48,10 @@ const SingleProduct = () => {
             <ProductWrapper>
               <ProductName>The Stanley Rain Jacket in Black</ProductName>
               <ProductPrice>$199.00</ProductPrice>
-              <Message>4 interest-free payments of $49.75</Message>
+              <Message>
+                4 interest-free payments of $49.75.
+                <Link href='#' passHref>Learn more</Link>
+              </Message>
             </ProductWrapper>
           </Right>
         </ProductContainer>
