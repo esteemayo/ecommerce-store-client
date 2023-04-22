@@ -60,6 +60,7 @@ const SingleProduct = () => {
               <Hr />
               <ColorContainer>
                 <ProductColor>Color</ProductColor>
+                <Color>&nbsp;</Color>
               </ColorContainer>
             </ProductWrapper>
           </Right>
