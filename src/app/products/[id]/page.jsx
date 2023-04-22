@@ -68,10 +68,6 @@ const Left = styled.div`
   padding: 1rem;
 `;
 
-const Right = styled.div`
-  flex: 1;
-`;
-
 const ImageWrapper = styled.figure`
   display: flex;
   flex-wrap: wrap;
