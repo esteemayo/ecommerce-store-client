@@ -70,12 +70,14 @@ const SingleProduct = () => {
                 </ColorWrapper>
               </ColorContainer>
               <SizeHeading>Select a size</SizeHeading>
-              <SelectSize type='button'>XS</SelectSize>
-              <SelectSize type='button'>S</SelectSize>
-              <SelectSize type='button'>M</SelectSize>
-              <SelectSize type='button'>L</SelectSize>
-              <SelectSize type='button'>XL</SelectSize>
-              <SelectSize type='button'>XXL</SelectSize>
+              <SizeContainer>
+                <SelectSize type='button'>XS</SelectSize>
+                <SelectSize type='button'>S</SelectSize>
+                <SelectSize type='button'>M</SelectSize>
+                <SelectSize type='button'>L</SelectSize>
+                <SelectSize type='button'>XL</SelectSize>
+                <SelectSize type='button'>XXL</SelectSize>
+              </SizeContainer>
             </ProductWrapper>
           </Right>
         </ProductContainer>
