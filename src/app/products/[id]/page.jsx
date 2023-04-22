@@ -237,4 +237,8 @@ const Color = styled.button`
   }
 `;
 
+const SizeHeading = styled.h3`
+
+`;
+
 export default SingleProduct;
