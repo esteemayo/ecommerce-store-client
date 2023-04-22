@@ -6,4 +6,8 @@ const Recommendation = () => {
   );
 }
 
+const Container = styled.div`
+  
+`;
+
 export default Recommendation;
