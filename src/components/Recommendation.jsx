@@ -32,7 +32,7 @@ const Recommendation = () => {
 
 const Container = styled.div`
   width: 100vw;
-  padding: 8rem 4rem;
+  padding: 0 4rem;
 `;
 
 const Heading = styled.h1`
