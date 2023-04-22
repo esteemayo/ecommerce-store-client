@@ -256,6 +256,9 @@ const SizeHeading = styled.h3`
 
 const SizeContainer = styled.div`
   margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 `;
 
 const SelectSize = styled.button`
