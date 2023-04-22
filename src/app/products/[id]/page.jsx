@@ -95,6 +95,7 @@ const SingleProduct = () => {
                 Inside chest pocket. Inside mesh storage pocket. Inside pocket is made with shell fabric. Flag label at side seam.
                 Small logo branding at the chest. Machine washable. Compatible with all Smart Layer base jackets.
               </DescriptionText>
+              <Hr />
             </ProductWrapper>
           </Right>
         </ProductContainer>
