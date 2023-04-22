@@ -109,6 +109,14 @@ const BreadCrumbs = styled.div`
       font-size: 1.6rem;
       color: currentColor;
     }
+
+    &::after {
+      content: '';
+      display: inline-block;
+      width: 3rem;
+      height: 1px;
+      background-color: var(--clr-secondary-blue);
+    }
   }
 `;
 
