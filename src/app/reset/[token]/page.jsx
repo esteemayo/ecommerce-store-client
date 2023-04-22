@@ -40,6 +40,10 @@ const ResetPassword = () => {
     console.log({ password, confirmPassword });
   };
 
+  useEffect(() => {
+    passwordRef.current.focus();
+  }, []);
+
   return (
     <Container onMouseOver={() => dispatch(closeSubmenu())}>
       <Wrapper>
