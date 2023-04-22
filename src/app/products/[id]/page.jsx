@@ -144,7 +144,7 @@ const ProductName = styled.h1`
 `;
 
 const ProductPrice = styled.p`
-
+  font-size: 1.6rem;
 `;
 
 export default SingleProduct;
