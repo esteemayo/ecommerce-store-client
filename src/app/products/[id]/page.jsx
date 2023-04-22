@@ -7,4 +7,8 @@ const SingleProduct = () => {
   );
 }
 
+const Container = styled.main`
+  
+`;
+
 export default SingleProduct;
