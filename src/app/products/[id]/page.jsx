@@ -110,6 +110,7 @@ const BreadCrumbs = styled.div`
       text-transform: capitalize;
       font-size: 1.6rem;
       color: currentColor;
+      line-height: 1.2;
     }
 
     &::after {
