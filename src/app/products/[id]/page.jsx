@@ -98,6 +98,14 @@ const BreadCrumbs = styled.div`
   display: flex;
   align-items: center;
   gap: 0.5rem;
+
+  a {
+    &:link,
+    &:visited {
+      display: inline-block;
+      text-decoration: none;
+    }
+  }
 `;
 
 export default SingleProduct;
