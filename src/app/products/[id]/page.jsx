@@ -2,6 +2,23 @@
 import styled from 'styled-components';
 
 const SingleProduct = () => {
+  const images = [
+    '/img/category-1.jpg',
+    '/img/category-5.jpg',
+    '/img/user-1.jpg',
+    '/img/user-2.jpg',
+    '/img/user-3.jpg',
+    '/img/user-4.jpg',
+    '/img/user-5.jpg',
+    '/img/user-6.jpg',
+    '/img/user-7.jpg',
+    '/img/user-8.jpg',
+    '/img/user-9.jpg',
+    '/img/reviewer-1.jpg',
+    '/img/reviewer-2.jpg',
+    '/img/reviewer-3.jpg',
+  ];
+
   return (
     <Container>
       <Wrapper>
