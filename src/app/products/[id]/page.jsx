@@ -83,11 +83,11 @@ const SingleProduct = () => {
               <Hr />
               <DescriptionHeader>Overview</DescriptionHeader>
               <DescriptionText>
-                Let the rain fall, you’ve come prepared. Introducing The Stanley, our newest Smart Layer rain jacket.
+                Let the rain fall, you&apos;ve come prepared. Introducing The Stanley, our newest Smart Layer rain jacket.
                 Made with recycled polyester, it features a regular fit and a waist length. This coat has a 10k/10k
                 water resistant and breathability rating, protecting you from heavy rainfalls while keeping your body
                 temperature on point. It achieves this rating because of its 2-layer fabric with different capabilities
-                that are laminated together to create a super material that’s lightweight and more flexible.
+                that are laminated together to create a super material that&apos;s lightweight and more flexible.
                 Better yet, this coat has an extra layer of protection made with a PFC-free C0 (carbon-free)
                 DWR (Durable Water Repellent) with an 80/10 rating that ensures efficiency even after multiple washes.
                 2-way mechanical stretch fabric. Hand pockets with recycled zip closure. Recycled zip closure at
