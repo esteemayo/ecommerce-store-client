@@ -184,4 +184,8 @@ const Rating = styled.div`
   }
 `;
 
+const Hr = styled.hr`
+  
+`;
+
 export default SingleProduct;
