@@ -155,6 +155,7 @@ const ProductPrice = styled.p`
 
 const Message = styled.p`
   color: inherit;
+  margin-top: 1rem;
 
   a {
     &:link,
