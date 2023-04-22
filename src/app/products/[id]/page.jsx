@@ -113,6 +113,11 @@ const BreadCrumbs = styled.div`
       line-height: 1.2;
     }
 
+    &:hover,
+    &:active {
+      color: currentColor;
+    }
+
     &::after {
       content: '';
       display: inline-block;
