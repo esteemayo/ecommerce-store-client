@@ -26,7 +26,9 @@ const Wrapper = styled.div`
 `;
 
 const ProductContainer = styled.div`
-  
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
 `;
 
 const Left = styled.div`
