@@ -42,7 +42,8 @@ const SingleProduct = () => {
           </Left>
           <Right>
             <BreadCrumbs>
-
+              <Link href='/' passHref>Home</Link> / {' '}
+              <Link href='#' passHref>Shirts</Link>
             </BreadCrumbs>
           </Right>
         </ProductContainer>
