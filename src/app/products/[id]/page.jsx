@@ -65,6 +65,7 @@ const ProductContainer = styled.div`
 
 const Left = styled.div`
   flex: 2;
+  padding: 1rem;
 `;
 
 const Right = styled.div`
