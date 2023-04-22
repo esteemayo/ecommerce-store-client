@@ -100,6 +100,7 @@ const SingleProduct = () => {
             </ProductWrapper>
           </Right>
         </ProductContainer>
+        <Recommendation />
       </Wrapper>
     </Container>
   );
