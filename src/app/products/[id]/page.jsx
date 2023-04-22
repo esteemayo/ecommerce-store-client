@@ -6,7 +6,11 @@ const SingleProduct = () => {
     <Container>
       <Wrapper>
         <ProductContainer>
-          <Left>Left</Left>
+          <Left>
+            <ImageWrapper>
+
+            </ImageWrapper>
+          </Left>
           <Right>Right</Right>
         </ProductContainer>
       </Wrapper>
