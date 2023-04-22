@@ -179,7 +179,7 @@ const Message = styled.p`
 `;
 
 const Rating = styled.div`
-  margin: 1rem 0;
+  margin: 1rem 0 2rem 0;
 
   svg {
     color: #89a8a0;
