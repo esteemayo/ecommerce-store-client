@@ -211,6 +211,10 @@ const PriceDiscount = styled.span`
   
 `;
 
+const NewPrice = styled.p`
+
+`;
+
 const Message = styled.p`
   color: inherit;
   margin-top: 1rem;
