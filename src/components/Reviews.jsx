@@ -12,9 +12,11 @@ const Reviews = () => {
       <Wrapper>
         <Heading>Reviews</Heading>
         <ReviewContainer>
-          <TotalRatings>5.0</TotalRatings>
-          <StarRating value={0} />
-          <TotalReviews>0 reviews</TotalReviews>
+          <Ratings>
+            <TotalRatings>5.0</TotalRatings>
+            <StarRating value={0} />
+            <TotalReviews>0 reviews</TotalReviews>
+          </Ratings>
           <FilterContainer>
             <Filter>Sort</Filter>
             <FilterText>Select</FilterText>
