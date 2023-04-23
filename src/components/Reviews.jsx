@@ -20,7 +20,7 @@ const Reviews = () => {
             <TotalReviews>0 reviews</TotalReviews>
           </Ratings>
           <FilterWrapper>
-            <FilterContainer>
+            <FilterContainer onClick={() => setIsFilterOpen(!isFilterOpen)}>
               <Filter>Sort:</Filter>
               <FilterText>Select</FilterText>
               <FilterIcon>
