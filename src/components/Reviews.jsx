@@ -80,6 +80,10 @@ const ReviewContainer = styled.div`
   }
 `;
 
+const Ratings = styled.div`
+
+`;
+
 const TotalRatings = styled.span`
   display: inline-block;
   font-weight: 500;
