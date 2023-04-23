@@ -151,6 +151,8 @@ const FilterList = styled.ul`
 
 const ListCategory = styled.li`
   display: block;
+  text-transform: capitalize;
+  font-size: 1.3rem;
   width: 100%;
   padding: 0.7rem 0.9rem 0.9rem 1.2rem;
   object-fit: contain;
