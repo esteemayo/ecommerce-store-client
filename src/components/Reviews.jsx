@@ -108,7 +108,7 @@ const FilterText = styled.span`
 `;
 
 const FilterList = styled.ul`
-  
+  display: none;
 `;
 
 const ListCategory = styled.li`
