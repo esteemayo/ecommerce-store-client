@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const Reviews = () => {
   return (
     <Container>
-      Reviews
+      <Heading>Reviews</Heading>
     </Container>
   );
 }
