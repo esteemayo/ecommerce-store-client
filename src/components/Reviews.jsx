@@ -20,7 +20,9 @@ const Reviews = () => {
             <FilterText>Select</FilterText>
           </FilterContainer>
           <FilterList>
-
+            <ListCategory>Newest</ListCategory>
+            <ListCategory>Highest rating</ListCategory>
+            <ListCategory>Lowest rating</ListCategory>
           </FilterList>
         </ReviewContainer>
         <ReviewsWrapper>
