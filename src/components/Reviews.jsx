@@ -107,6 +107,7 @@ const ReviewButton = styled.button`
   border-radius: 0.5rem;
   outline-color: #89a8a0;
   cursor: pointer;
+  transition: all 0.3s ease;
 
   &:hover {
     background-position: 100%;
