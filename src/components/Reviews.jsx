@@ -92,7 +92,8 @@ const Message = styled.span`
 `;
 
 const ReviewButton = styled.button`
-
+  border: none;
+  display: inline-block;
 `;
 
 export default Reviews;
