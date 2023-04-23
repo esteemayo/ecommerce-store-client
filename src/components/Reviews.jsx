@@ -60,4 +60,8 @@ const ReviewsWrapper = styled.div`
   
 `;
 
+const EmptyReview = styled.div`
+  
+`;
+
 export default Reviews;
