@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import StarRating from './StarRating';
+import { useState } from 'react';
 
 const Reviews = () => {
   return (
