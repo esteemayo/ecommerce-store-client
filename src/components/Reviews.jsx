@@ -18,18 +18,20 @@ const Reviews = () => {
             <StarRating value={0} />
             <TotalReviews>0 reviews</TotalReviews>
           </Ratings>
-          <FilterContainer>
-            <Filter>Sort:</Filter>
-            <FilterText>Select</FilterText>
-            <FilterIcon>
-              <ArrowDropDownIcon />
-            </FilterIcon>
-          </FilterContainer>
-          <FilterList>
-            <ListCategory>Newest</ListCategory>
-            <ListCategory>Highest rating</ListCategory>
-            <ListCategory>Lowest rating</ListCategory>
-          </FilterList>
+          <FilterWrapper>
+            <FilterContainer>
+              <Filter>Sort:</Filter>
+              <FilterText>Select</FilterText>
+              <FilterIcon>
+                <ArrowDropDownIcon />
+              </FilterIcon>
+            </FilterContainer>
+            <FilterList>
+              <ListCategory>Newest</ListCategory>
+              <ListCategory>Highest rating</ListCategory>
+              <ListCategory>Lowest rating</ListCategory>
+            </FilterList>
+          </FilterWrapper>
         </ReviewContainer>
         <ReviewsWrapper>
           <EmptyReview>
