@@ -10,7 +10,9 @@ const Reviews = () => {
         <TotalReviews>0 reviews</TotalReviews>
       </ReviewContainer>
       <ReviewsWrapper>
+        <EmptyReview>
 
+        </EmptyReview>
       </ReviewsWrapper>
     </Container>
   );
