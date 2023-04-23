@@ -108,7 +108,9 @@ const ProductTitle = styled.p`
 `;
 
 const ProductPrice = styled.p`
-  
+  display: inline-block;
+  font-size: 1.3rem;
+  line-height: 1.3em;
 `;
 
 export default Recommendation;
