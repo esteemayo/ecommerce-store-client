@@ -19,6 +19,9 @@ const Reviews = () => {
             <Filter>Sort</Filter>
             <FilterText>Select</FilterText>
           </FilterContainer>
+          <FilterList>
+
+          </FilterList>
         </ReviewContainer>
         <ReviewsWrapper>
           <EmptyReview>
