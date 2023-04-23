@@ -11,7 +11,7 @@ const Reviews = () => {
       </ReviewContainer>
       <ReviewsWrapper>
         <EmptyReview>
-
+          <StarRating value={5} />
         </EmptyReview>
       </ReviewsWrapper>
     </Container>
