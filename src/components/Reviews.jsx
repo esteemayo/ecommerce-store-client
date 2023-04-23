@@ -150,7 +150,8 @@ const FilterList = styled.ul`
 `;
 
 const ListCategory = styled.li`
-  
+  display: block;
+  padding: 0.7rem 0.9rem 0.9rem 1.2rem;
 `;
 
 const ReviewsWrapper = styled.div`
