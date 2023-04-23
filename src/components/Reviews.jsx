@@ -64,6 +64,12 @@ const ReviewsWrapper = styled.div`
 `;
 
 const EmptyReview = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
   svg {
     font-size: 2.5rem;
     color: #89a8a0;
