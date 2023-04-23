@@ -6,6 +6,7 @@ import Image from 'next/image';
 
 import StarRating from '@/components/StarRating';
 import Recommendation from '@/components/Recommendation';
+import Reviews from '@/components/Reviews';
 
 const SingleProduct = () => {
   const [isSelected, setIsSelected] = useState(false);
