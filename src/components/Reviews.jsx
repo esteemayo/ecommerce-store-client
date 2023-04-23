@@ -15,7 +15,12 @@ const Container = styled.section`
 `;
 
 const Heading = styled.h1`
-  
+  display: inline-block;
+  width: 100%;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 3.2rem;
+  line-height: 3.2rem;
 `;
 
 export default Reviews;
