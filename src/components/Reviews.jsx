@@ -127,6 +127,8 @@ const FilterText = styled.span`
 
 const FilterIcon = styled.span`
   padding-left: 0.5rem;
+  display: flex;
+  align-items: flex-end;
 
   svg {
     font-size: 2rem;
