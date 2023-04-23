@@ -158,6 +158,7 @@ const ListCategory = styled.li`
   object-fit: contain;
   box-sizing: border-box;
   cursor: pointer;
+  transition: all 0.3s ease;
 
   &:hover {
     background-color: rgba(0, 0, 0, 0.07);
