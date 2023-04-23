@@ -16,7 +16,7 @@ const Reviews = () => {
           <StarRating value={0} />
           <TotalReviews>0 reviews</TotalReviews>
           <FilterContainer>
-
+            <Filter>Sort</Filter>
           </FilterContainer>
         </ReviewContainer>
         <ReviewsWrapper>
