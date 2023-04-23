@@ -127,6 +127,11 @@ const FilterText = styled.span`
 
 const FilterIcon = styled.span`
   padding-left: 0.5rem;
+
+  svg {
+    font-size: 2rem;
+    fill: #89a8a0;
+  }
 `;
 
 const FilterList = styled.ul`
