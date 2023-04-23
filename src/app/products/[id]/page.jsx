@@ -104,6 +104,7 @@ const SingleProduct = () => {
         </ProductContainer>
         <Line />
         <Recommendation />
+        <Reviews />
       </Wrapper>
     </Container>
   );
