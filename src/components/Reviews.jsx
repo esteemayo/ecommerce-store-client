@@ -22,7 +22,10 @@ const Reviews = () => {
           </EmptyReview>
         </ReviewsWrapper>
       </Wrapper>
-      <ReviewModal />
+      <ReviewModal
+        isModalOpen={isModalOpen}
+        setIsModalOpen={setIsModalOpen}
+      />
     </Container>
   );
 }
