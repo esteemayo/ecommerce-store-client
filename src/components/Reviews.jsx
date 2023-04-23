@@ -22,6 +22,7 @@ const Reviews = () => {
           </EmptyReview>
         </ReviewsWrapper>
       </Wrapper>
+      <ReviewModal />
     </Container>
   );
 }
