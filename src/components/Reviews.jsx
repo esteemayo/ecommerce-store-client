@@ -4,17 +4,19 @@ import StarRating from './StarRating';
 const Reviews = () => {
   return (
     <Container>
-      <Heading>Reviews</Heading>
-      <ReviewContainer>
-        <StarRating value={0} />
-        <TotalReviews>0 reviews</TotalReviews>
-      </ReviewContainer>
-      <ReviewsWrapper>
-        <EmptyReview>
-          <StarRating value={5} />
-          <Message>Currently, there are no reviews for this product.</Message>
-        </EmptyReview>
-      </ReviewsWrapper>
+      <Wrapper>
+        <Heading>Reviews</Heading>
+        <ReviewContainer>
+          <StarRating value={0} />
+          <TotalReviews>0 reviews</TotalReviews>
+        </ReviewContainer>
+        <ReviewsWrapper>
+          <EmptyReview>
+            <StarRating value={5} />
+            <Message>Currently, there are no reviews for this product.</Message>
+          </EmptyReview>
+        </ReviewsWrapper>
+      </Wrapper>
     </Container>
   );
 }
