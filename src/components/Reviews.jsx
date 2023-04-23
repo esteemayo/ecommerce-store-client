@@ -79,7 +79,7 @@ const EmptyReview = styled.div`
 `;
 
 const Message = styled.span`
-  
+  color: inherit;
 `;
 
 export default Reviews;
