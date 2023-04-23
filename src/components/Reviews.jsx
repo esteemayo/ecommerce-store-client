@@ -9,7 +9,9 @@ const Reviews = () => {
 }
 
 const Container = styled.section`
-  
+  width: 100vw;
+  padding: 6rem 4rem;
+  background-color: #f4f8f7;
 `;
 
 export default Reviews;
