@@ -141,8 +141,12 @@ const FilterIcon = styled.span`
 const FilterList = styled.ul`
   list-style: none;
   width: 20rem;
+  padding: 0.4rem;
   text-align: left;
   background-color: var(--clr-white);
+  border: 1px solid #e3e3e3;
+  border-radius: 3px;
+  z-index: 1000;
 `;
 
 const ListCategory = styled.li`
