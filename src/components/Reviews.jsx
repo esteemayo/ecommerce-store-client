@@ -27,7 +27,7 @@ const Reviews = () => {
                 <ArrowDropDownIcon />
               </FilterIcon>
             </FilterContainer>
-            <FilterList>
+            <FilterList type={isFilterOpen ? 'show' : ''}>
               <ListCategory>Newest</ListCategory>
               <ListCategory>Highest rating</ListCategory>
               <ListCategory>Lowest rating</ListCategory>
