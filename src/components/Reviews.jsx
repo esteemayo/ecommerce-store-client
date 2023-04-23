@@ -112,6 +112,7 @@ const FilterContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  position: relative;
 `;
 
 const Filter = styled.span`
