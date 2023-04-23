@@ -81,6 +81,14 @@ const Wrapper = styled.div`
 `;
 
 const ProductWrapper = styled.div`
+  a {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      outline-color: #ddd;
+    }
+  }
+
   img {
     width: 100%;
     height: 70rem;
