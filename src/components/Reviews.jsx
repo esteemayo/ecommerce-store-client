@@ -23,6 +23,8 @@ const Reviews = () => {
 
 const Container = styled.section`
   width: 100vw;
+  background-color: var(--clr-white);
+  padding-bottom: 4rem;
 `;
 
 const Wrapper = styled.div`
