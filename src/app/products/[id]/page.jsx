@@ -58,6 +58,7 @@ const SingleProduct = () => {
                 <ProductPrice>$199.00</ProductPrice>
                 <PriceDiscount>-22%</PriceDiscount>
               </PriceContainer>
+              <NewPrice>$99.99</NewPrice>
               <Message>
                 4 interest-free payments of $49.75.
                 &nbsp;
