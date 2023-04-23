@@ -206,6 +206,10 @@ const ProductPrice = styled.p`
   font-size: 1.6rem;
 `;
 
+const PriceDiscount = styled.span`
+  
+`;
+
 const Message = styled.p`
   color: inherit;
   margin-top: 1rem;
