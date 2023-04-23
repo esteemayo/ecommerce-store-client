@@ -210,7 +210,7 @@ const ProductPrice = styled.p`
   font-size: 1.6rem;
 `;
 
-const PriceDiscount = styled.span`
+const PriceDiscount = styled.p`
   
 `;
 
