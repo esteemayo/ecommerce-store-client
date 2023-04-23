@@ -221,7 +221,7 @@ const PriceDiscount = styled.p`
   letter-spacing: 0.02em;
 `;
 
-const NewPrice = styled.p`
+const SalePrice = styled.p`
 
 `;
 
