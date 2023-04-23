@@ -208,6 +208,7 @@ const PriceContainer = styled.div`
 
 const ProductPrice = styled.p`
   font-size: 1.6rem;
+  cursor: default;
 `;
 
 const PriceDiscount = styled.p`
