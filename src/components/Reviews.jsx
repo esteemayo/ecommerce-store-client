@@ -4,6 +4,9 @@ const Reviews = () => {
   return (
     <Container>
       <Heading>Reviews</Heading>
+      <ReviewContainer>
+
+      </ReviewContainer>
     </Container>
   );
 }
