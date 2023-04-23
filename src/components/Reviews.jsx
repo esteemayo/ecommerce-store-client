@@ -121,6 +121,10 @@ const TotalReviews = styled.span`
 
 const FilterWrapper = styled.div`
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
 `;
 
 const FilterContainer = styled.div`
