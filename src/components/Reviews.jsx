@@ -106,6 +106,10 @@ const TotalReviews = styled.span`
   line-height: 1.8rem;
 `;
 
+const FilterWrapper = styled.div`
+  
+`;
+
 const FilterContainer = styled.div`
   padding: 2rem 0;
   padding-right: 3rem;
@@ -140,6 +144,9 @@ const FilterIcon = styled.span`
 `;
 
 const FilterList = styled.ul`
+  position: absolute;
+  right: 0;
+  top: 3.5rem;
   list-style: none;
   width: 20rem;
   padding: 0.4rem;
