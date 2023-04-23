@@ -222,7 +222,11 @@ const PriceDiscount = styled.p`
 `;
 
 const SalePrice = styled.p`
-
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: #fa4b21;
+  line-height: 1.3;
+  cursor: default;
 `;
 
 const Message = styled.p`
