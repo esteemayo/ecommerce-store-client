@@ -159,7 +159,9 @@ const FilterList = styled.ul`
   display: ${({ type }) => type === 'show' ? 'block' : 'none'};
   visibility: ${({ type }) => type === 'show' ? 'visible' : 'hidden'};
   opacity: ${({ type }) => type === 'show' ? 1 : 0};
+  transform: scale(${({ type }) => type === 'show' ? 1 : 0});
   z-index: ${({ type }) => type === 'show' ? 1000 : -1};
+  transition: all 0.3s linear;
 `;
 
 const ListCategory = styled.li`
