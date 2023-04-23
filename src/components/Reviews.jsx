@@ -123,12 +123,14 @@ const Filter = styled.span`
 const FilterText = styled.span`
   display: inline-block;
   font-size: 1.6rem;
+  cursor: pointer;
 `;
 
 const FilterIcon = styled.span`
   padding-left: 0.5rem;
   display: flex;
   align-items: flex-end;
+  cursor: pointer;
 
   svg {
     font-size: 2rem;
