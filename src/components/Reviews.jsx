@@ -117,7 +117,8 @@ const Filter = styled.span`
 `;
 
 const FilterText = styled.span`
-  
+  display: inline-block;
+  font-size: 1.6rem;
 `;
 
 const FilterList = styled.ul`
