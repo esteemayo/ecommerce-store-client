@@ -109,6 +109,10 @@ const FilterList = styled.ul`
   
 `;
 
+const ListCategory = styled.li`
+  
+`;
+
 const ReviewsWrapper = styled.div`
   padding: 5rem 0;
   border-top: 1px solid #e2e9e7;
