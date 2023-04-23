@@ -182,7 +182,6 @@ const FilterList = styled.ul`
   background-color: var(--clr-white);
   border: 1px solid #e3e3e3;
   border-radius: 3px;
-  /* display: ${({ type }) => type === 'show' ? 'block' : 'none'}; */
   visibility: ${({ type }) => type === 'show' ? 'visible' : 'hidden'};
   opacity: ${({ type }) => type === 'show' ? 1 : 0};
   transform: scale(${({ type }) => type === 'show' ? 1 : 0});
