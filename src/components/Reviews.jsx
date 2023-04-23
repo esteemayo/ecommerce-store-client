@@ -31,4 +31,8 @@ const ReviewContainer = styled.div`
   
 `;
 
+const TotalRatings = styled.span`
+
+`;
+
 export default Reviews;
