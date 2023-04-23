@@ -66,6 +66,7 @@ const SingleProduct = () => {
               </Message>
               <Rating>
                 <StarRating value={0} />
+                <ReviewQuantity>1 Review</ReviewQuantity>
               </Rating>
               <Hr />
               <ColorContainer>
