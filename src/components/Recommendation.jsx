@@ -108,6 +108,7 @@ const ProductContainer = styled.div`
       text-decoration: none;
       font-size: inherit;
       color: inherit;
+      outline-color: #ddd;
     }
   }
 `;
