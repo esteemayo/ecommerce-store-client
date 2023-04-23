@@ -77,7 +77,7 @@ const Heading = styled.h1`
 `;
 
 const ReviewContainer = styled.div`
-  padding: 3rem 0;
+  padding: 3rem 0 0.5rem 0;
   display: flex;
   flex-direction: column;
 
