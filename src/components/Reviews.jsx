@@ -139,7 +139,10 @@ const FilterIcon = styled.span`
 `;
 
 const FilterList = styled.ul`
-  display: none;
+  list-style: none;
+  width: 20rem;
+  text-align: left;
+  background-color: var(--clr-white);
 `;
 
 const ListCategory = styled.li`
