@@ -22,7 +22,7 @@ const Reviews = () => {
             <Filter>Sort:</Filter>
             <FilterText>Select</FilterText>
             <FilterIcon>
-
+              <ArrowDropDownIcon />
             </FilterIcon>
           </FilterContainer>
           <FilterList>
