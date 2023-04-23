@@ -9,6 +9,9 @@ const Reviews = () => {
         <StarRating value={0} />
         <TotalReviews>0 reviews</TotalReviews>
       </ReviewContainer>
+      <ReviewsWrapper>
+
+      </ReviewsWrapper>
     </Container>
   );
 }
