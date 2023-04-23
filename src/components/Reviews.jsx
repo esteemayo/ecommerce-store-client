@@ -126,7 +126,7 @@ const FilterText = styled.span`
 `;
 
 const FilterIcon = styled.span`
-  
+  padding-left: 0.5rem;
 `;
 
 const FilterList = styled.ul`
