@@ -72,7 +72,10 @@ const ReviewContainer = styled.div`
 `;
 
 const TotalRatings = styled.span`
-
+  display: inline-block;
+  font-weight: 500;
+  font-size: 3.2rem;
+  line-height: 3.2rem;
 `;
 
 const TotalReviews = styled.span`
