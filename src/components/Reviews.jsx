@@ -19,7 +19,7 @@ const Reviews = () => {
           <Ratings>
             <TotalRatings>5.0</TotalRatings>
             <StarRating value={0} />
-            <TotalReviews>0 reviews</TotalReviews>
+            <TotalReviews>{reviews.length} reviews</TotalReviews>
           </Ratings>
           <FilterWrapper>
             <FilterContainer onClick={() => setIsFilterOpen(!isFilterOpen)}>
