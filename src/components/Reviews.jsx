@@ -90,4 +90,8 @@ const Message = styled.span`
   color: inherit;
 `;
 
+const ReviewButton = styled.button`
+
+`;
+
 export default Reviews;
