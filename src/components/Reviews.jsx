@@ -2,7 +2,9 @@ import styled from 'styled-components';
 
 const Reviews = () => {
   return (
-    <div>Reviews</div>
+    <Container>
+      Reviews
+    </Container>
   );
 }
 
