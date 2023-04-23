@@ -18,7 +18,7 @@ const Reviews = () => {
             <TotalReviews>0 reviews</TotalReviews>
           </Ratings>
           <FilterContainer>
-            <Filter>Sort</Filter>
+            <Filter>Sort:</Filter>
             <FilterText>Select</FilterText>
           </FilterContainer>
           <FilterList>
