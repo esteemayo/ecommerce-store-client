@@ -259,6 +259,10 @@ const Rating = styled.div`
   }
 `;
 
+const ReviewQuantity = styled.span`
+  
+`;
+
 const Hr = styled.hr`
   width: 100%;
   height: 1px;
