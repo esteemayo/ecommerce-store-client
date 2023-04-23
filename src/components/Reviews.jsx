@@ -237,7 +237,8 @@ const Message = styled.span`
 `;
 
 const ReviewButtonWrapper = styled.div`
-
+  position: absolute;
+  top: 1rem;
 `;
 
 const ReviewButton = styled.button`
