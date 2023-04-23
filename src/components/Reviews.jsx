@@ -93,6 +93,10 @@ const FilterContainer = styled.div`
   
 `;
 
+const Filter = styled.span`
+  
+`;
+
 const ReviewsWrapper = styled.div`
   padding: 5rem 0;
   border-top: 1px solid #e2e9e7;
