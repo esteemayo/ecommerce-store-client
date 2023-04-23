@@ -14,6 +14,7 @@ const Reviews = () => {
           <EmptyReview>
             <StarRating value={5} />
             <Message>Currently, there are no reviews for this product.</Message>
+            <ReviewButton type='button'>Leave a review</ReviewButton>
           </EmptyReview>
         </ReviewsWrapper>
       </Wrapper>
