@@ -107,6 +107,10 @@ const ReviewButton = styled.button`
   border-radius: 0.5rem;
   outline-color: #89a8a0;
   cursor: pointer;
+
+  &:hover {
+    background-position: 100%;
+  }
 `;
 
 export default Reviews;
