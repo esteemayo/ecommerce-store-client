@@ -66,4 +66,8 @@ const EmptyReview = styled.div`
   
 `;
 
+const Message = styled.span`
+  
+`;
+
 export default Reviews;
