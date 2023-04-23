@@ -109,7 +109,7 @@ const TotalReviews = styled.span`
 `;
 
 const FilterWrapper = styled.div`
-  
+  position: relative;
 `;
 
 const FilterContainer = styled.div`
