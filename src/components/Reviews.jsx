@@ -83,7 +83,10 @@ const ReviewContainer = styled.div`
 `;
 
 const Ratings = styled.div`
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
 `;
 
 const TotalRatings = styled.span`
