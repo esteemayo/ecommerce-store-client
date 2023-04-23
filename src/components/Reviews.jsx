@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import StarRating from './StarRating';
 import { useState } from 'react';
+import ReviewModal from './ReviewModal';
 
 const Reviews = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
