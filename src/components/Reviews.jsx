@@ -29,7 +29,11 @@ const Heading = styled.h1`
 `;
 
 const ReviewContainer = styled.div`
-  
+  padding: 3rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
 `;
 
 const TotalRatings = styled.span`
