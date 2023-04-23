@@ -151,7 +151,11 @@ const FilterList = styled.ul`
 
 const ListCategory = styled.li`
   display: block;
+  width: 100%;
   padding: 0.7rem 0.9rem 0.9rem 1.2rem;
+  object-fit: contain;
+  box-sizing: border-box;
+  cursor: pointer;
 `;
 
 const ReviewsWrapper = styled.div`
