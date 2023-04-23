@@ -7,6 +7,7 @@ const Reviews = () => {
       <Heading>Reviews</Heading>
       <ReviewContainer>
         <StarRating value={0} />
+        <TotalReviews>0 reviews</TotalReviews>
       </ReviewContainer>
     </Container>
   );
