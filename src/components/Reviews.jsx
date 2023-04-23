@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { useState } from 'react';
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
 import StarRating from './StarRating';
 import ReviewModal from './ReviewModal';
@@ -22,7 +23,7 @@ const Reviews = () => {
             <FilterText>Select</FilterText>
             <FilterIcon>
 
-              </FilterIcon>
+            </FilterIcon>
           </FilterContainer>
           <FilterList>
             <ListCategory>Newest</ListCategory>
