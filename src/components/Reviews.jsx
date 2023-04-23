@@ -196,6 +196,10 @@ const ReviewsWrapper = styled.div`
   border-top: 1px solid #e2e9e7;
 `;
 
+const ReviewCardContainer = styled.div`
+  
+`;
+
 const EmptyReview = styled.div`
   display: flex;
   flex-direction: column;
