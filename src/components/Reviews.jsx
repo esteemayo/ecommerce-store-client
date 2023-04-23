@@ -103,7 +103,11 @@ const TotalReviews = styled.span`
 `;
 
 const FilterContainer = styled.div`
-  
+  padding: 2rem 0;
+  padding-right: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 `;
 
 const Filter = styled.span`
