@@ -7,6 +7,7 @@ import ReviewModal from './ReviewModal';
 
 const Reviews = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isFilterOpen, setIsFilterOpen] = useState(false);
 
   return (
     <Container>
