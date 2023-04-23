@@ -219,6 +219,7 @@ const PriceDiscount = styled.p`
   border-radius: 10rem;
   line-height: 1;
   letter-spacing: 0.02em;
+  cursor: default;
 `;
 
 const SalePrice = styled.p`
