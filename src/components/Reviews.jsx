@@ -94,6 +94,9 @@ const Message = styled.span`
 const ReviewButton = styled.button`
   border: none;
   display: inline-block;
+  padding: 1rem;
+  background-color: #e2e9e7;
+  color: #89a8a0;
 `;
 
 export default Reviews;
