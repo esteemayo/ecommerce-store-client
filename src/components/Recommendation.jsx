@@ -34,7 +34,7 @@ const Recommendation = () => {
           </Link>
           <ProductContainer>
             <Link href='#' passHref>
-              <ProductTitle>The Skyline Collard Jacket in Rosin</ProductTitle>
+              <ProductTitle>The Skyline Collared Jacket in Rosin</ProductTitle>
               <ProductPrice>$169.00</ProductPrice>
             </Link>
           </ProductContainer>
