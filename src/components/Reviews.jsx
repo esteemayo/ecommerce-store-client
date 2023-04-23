@@ -25,6 +25,10 @@ const Container = styled.section`
   background-color: #f4f8f7;
 `;
 
+const Wrapper = styled.div`
+  
+`;
+
 const Heading = styled.h1`
   display: inline-block;
   width: 100%;
