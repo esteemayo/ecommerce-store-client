@@ -34,6 +34,11 @@ const ReviewContainer = styled.div`
   align-items: center;
   justify-content: center;
   gap: 2rem;
+
+  svg {
+    font-size: 3rem;
+    color: #89a8a0;
+  }
 `;
 
 const TotalRatings = styled.span`
