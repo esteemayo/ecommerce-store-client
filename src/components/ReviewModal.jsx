@@ -198,7 +198,7 @@ const TextArea = styled.textarea`
   outline-color: #eee;
   overflow: hidden;
   resize: none;
-  caret-color: var(--caret-light);
+  caret-color: #89a8a0;
 
   &::placeholder {
     font-size: 1.3rem;
