@@ -196,6 +196,10 @@ const ProductName = styled.h1`
   margin-bottom: 2rem;
 `;
 
+const PriceContainer = styled.div`
+  
+`;
+
 const ProductPrice = styled.p`
   font-size: 1.6rem;
 `;
