@@ -195,7 +195,7 @@ const EmptyReview = styled.div`
 
   svg {
     font-size: 2.5rem;
-    color: #89a8a0;
+    fill: #89a8a0;
     margin-right: 0.5rem;
   }
 `;
