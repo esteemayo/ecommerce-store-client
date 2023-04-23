@@ -12,6 +12,7 @@ const Reviews = () => {
       <ReviewsWrapper>
         <EmptyReview>
           <StarRating value={5} />
+          <Message>Currently, there are no reviews for this product.</Message>
         </EmptyReview>
       </ReviewsWrapper>
     </Container>
