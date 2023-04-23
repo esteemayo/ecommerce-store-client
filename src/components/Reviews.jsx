@@ -121,6 +121,10 @@ const FilterText = styled.span`
   font-size: 1.6rem;
 `;
 
+const FilterIcon = styled.span`
+  
+`;
+
 const FilterList = styled.ul`
   display: none;
 `;
