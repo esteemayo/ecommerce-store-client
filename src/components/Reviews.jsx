@@ -38,11 +38,11 @@ const Reviews = () => {
         </ReviewContainer>
         <ReviewsWrapper>
           {reviews.length > 0 ? (
-            <>
+            <ReviewCardContainer>
               {reviews.map((item) => {
                 return <ReviewCard key={item.id} {...item} />
               })}
-            </>
+            </ReviewCardContainer>
           ) : (
             <EmptyReview>
               <StarRating value={5} />
