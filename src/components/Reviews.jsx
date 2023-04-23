@@ -158,6 +158,10 @@ const ListCategory = styled.li`
   object-fit: contain;
   box-sizing: border-box;
   cursor: pointer;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.07);
+  }
 `;
 
 const ReviewsWrapper = styled.div`
