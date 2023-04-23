@@ -80,6 +80,7 @@ const ProductWrapper = styled.div`
     height: 70rem;
     display: block;
     object-fit: cover;
+    border-radius: 0.5rem;
   }
 `;
 
