@@ -53,4 +53,8 @@ const TotalReviews = styled.span`
   line-height: 1.8rem;
 `;
 
+const ReviewsWrapper = styled.div`
+  
+`;
+
 export default Reviews;
