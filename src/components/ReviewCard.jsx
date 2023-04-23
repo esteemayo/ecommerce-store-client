@@ -91,14 +91,6 @@ const Avatar = styled.div`
   font-size: 2.5rem;
   color: var(--clr-white);
   border-radius: 50%;
-  
-  &:nth-child(odd){
-    background-color: #d56a6a;
-  }
-
-  &:nth-child(even) {
-    background-color: #d5a66a;
-  }
 `;
 
 const Name = styled.h3`
