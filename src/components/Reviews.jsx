@@ -3,6 +3,8 @@ import StarRating from './StarRating';
 import { useState } from 'react';
 
 const Reviews = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <Container>
       <Wrapper>
