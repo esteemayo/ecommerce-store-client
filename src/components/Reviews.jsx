@@ -147,7 +147,7 @@ const FilterIcon = styled.span`
 const FilterList = styled.ul`
   position: absolute;
   right: 0;
-  top: 3.5rem;
+  top: 6rem;
   list-style: none;
   width: 20rem;
   padding: 0.4rem;
