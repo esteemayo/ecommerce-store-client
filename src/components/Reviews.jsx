@@ -191,7 +191,7 @@ const EmptyReview = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 1.3rem;
 
   svg {
     font-size: 2.5rem;
