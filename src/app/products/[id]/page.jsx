@@ -211,7 +211,14 @@ const ProductPrice = styled.p`
 `;
 
 const PriceDiscount = styled.p`
-  
+  font-weight: 700;
+  font-size: 1.4rem;
+  padding: 0.4rem 0.6rem;
+  background-color: #fa4b21;
+  color: var(--clr-white);
+  border-radius: 10rem;
+  line-height: 1;
+  letter-spacing: 0.02em;
 `;
 
 const NewPrice = styled.p`
