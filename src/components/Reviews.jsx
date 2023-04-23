@@ -23,4 +23,8 @@ const Heading = styled.h1`
   line-height: 3.2rem;
 `;
 
+const ReviewContainer = styled.div`
+  
+`;
+
 export default Reviews;
