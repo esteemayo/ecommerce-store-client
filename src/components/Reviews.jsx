@@ -99,6 +99,7 @@ const ReviewButton = styled.button`
   color: #89a8a0;
   border-radius: 0.5rem;
   outline-color: #89a8a0;
+  cursor: pointer;
 `;
 
 export default Reviews;
