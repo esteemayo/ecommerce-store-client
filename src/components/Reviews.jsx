@@ -14,4 +14,8 @@ const Container = styled.section`
   background-color: #f4f8f7;
 `;
 
+const Heading = styled.h1`
+  
+`;
+
 export default Reviews;
