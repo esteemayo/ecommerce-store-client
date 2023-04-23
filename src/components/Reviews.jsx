@@ -125,6 +125,7 @@ const Filter = styled.span`
   display: inline-block;
   font-size: 1.6rem;
   margin-right: 3px;
+  cursor: default;
 `;
 
 const FilterText = styled.span`
