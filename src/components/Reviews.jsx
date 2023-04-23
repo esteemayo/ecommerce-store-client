@@ -128,11 +128,12 @@ const FilterWrapper = styled.div`
 `;
 
 const FilterContainer = styled.div`
+  width: 13rem;
   padding: 2rem 0;
   padding-right: 3rem;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
 `;
 
 const Filter = styled.span`
