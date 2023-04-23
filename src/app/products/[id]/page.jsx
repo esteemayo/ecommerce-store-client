@@ -261,7 +261,8 @@ const Rating = styled.div`
 `;
 
 const ReviewQuantity = styled.span`
-  
+  font-size: 1.3rem;
+  color: inherit;
 `;
 
 const Hr = styled.hr`
