@@ -4,6 +4,7 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
 import StarRating from './StarRating';
 import ReviewModal from './ReviewModal';
+import { reviews } from '@/data';
 
 const Reviews = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
