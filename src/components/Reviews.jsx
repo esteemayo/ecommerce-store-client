@@ -37,16 +37,24 @@ const Reviews = () => {
           </FilterWrapper>
         </ReviewContainer>
         <ReviewsWrapper>
-          <EmptyReview>
-            <StarRating value={5} />
-            <Message>Currently, there are no reviews for this product.</Message>
-            <ReviewButton
-              type='button'
-              onClick={() => setIsModalOpen(true)}
-            >
-              Leave a review
-            </ReviewButton>
-          </EmptyReview>
+          {reviews.length > 0 ? (
+            <>
+              {reviews.map((item) => {
+                return <ReviewCard key={item.id} {...item} />
+              })}
+            </>
+          ) : (
+            <EmptyReview>
+              <StarRating value={5} />
+              <Message>Currently, there are no reviews for this product.</Message>
+              <ReviewButton
+                type='button'
+                onClick={() => setIsModalOpen(true)}
+              >
+                Leave a review
+              </ReviewButton>
+            </EmptyReview>
+          )}
         </ReviewsWrapper>
       </Wrapper>
       <ReviewModal
