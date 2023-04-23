@@ -97,6 +97,8 @@ const ReviewButton = styled.button`
   padding: 1rem;
   background-color: #e2e9e7;
   color: #89a8a0;
+  border-radius: 0.5rem;
+  outline-color: #89a8a0;
 `;
 
 export default Reviews;
