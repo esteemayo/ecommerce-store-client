@@ -281,7 +281,7 @@ const ReviewQuantity = styled.span`
   a {
     &:link,
     &:visited {
-      color: inherit;
+      color: currentColor;
       text-decoration-color: #89a8a0;
       text-underline-offset: 3px;
     }
