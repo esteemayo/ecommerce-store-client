@@ -464,7 +464,7 @@ const Line = styled.hr`
   height: 1px;
   border: none;
   margin: 0 auto;
-  background-color: #ebf0ef;
+  background-color: #e2e9e7;
 `;
 
 export default SingleProduct;
