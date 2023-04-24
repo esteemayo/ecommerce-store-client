@@ -120,7 +120,7 @@ const SingleProduct = () => {
         </ProductContainer>
         <Line />
         <Recommendation />
-        <Reviews />
+        <Reviews reviews={reviews} />
       </Wrapper>
     </Container>
   );
