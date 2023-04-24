@@ -104,8 +104,8 @@ const SingleProduct = () => {
                 <ValueAdd>
                   <Image
                     src='/img/Shipping-black.svg'
-                    width={30}
-                    height={30}
+                    width={24}
+                    height={24}
                     alt=''
                   />
                   <span>Free Shipping over $50</span>
