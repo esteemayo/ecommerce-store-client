@@ -420,6 +420,10 @@ const Button = styled.button`
 const ValueAddWrapper = styled.div`
   display: flex;
   align-items: center;
+  width: 100%;
+  padding-top: 2.4rem;
+  margin-top: 2.4rem;
+  margin-bottom: 2rem;
 `;
 
 const ValueAdd = styled.div`
