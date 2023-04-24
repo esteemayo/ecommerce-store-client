@@ -404,6 +404,10 @@ const ValueAddWrapper = styled.div`
   
 `;
 
+const ValueAdd = styled.div`
+  
+`;
+
 const DescriptionHeader = styled.h4`
   display: inline-block;
   font-weight: 400;
