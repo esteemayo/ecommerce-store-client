@@ -78,6 +78,7 @@ const Container = styled.section`
   width: 100vw;
   background-color: var(--clr-white);
   padding-bottom: 4rem;
+  cursor: default;
 `;
 
 const Wrapper = styled.div`
