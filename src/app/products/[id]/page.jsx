@@ -434,6 +434,8 @@ const ValueAdd = styled.div`
   img {
     width: 2.4rem;
     height: auto;
+    display: inline-block;
+    object-fit: cover;
   }
 `;
 
