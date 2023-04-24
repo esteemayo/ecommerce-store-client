@@ -147,7 +147,12 @@ const SingleProduct = () => {
         <Reviews reviews={reviews} />
         <ImageOverlay>
           <ImageContainer>
-            
+            <Image
+              src={images[slideIndex]}
+              width={1200}
+              height={1000}
+              alt=''
+            />
           </ImageContainer>
         </ImageOverlay>
       </Wrapper>
