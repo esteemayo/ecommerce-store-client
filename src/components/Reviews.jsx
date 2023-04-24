@@ -11,7 +11,7 @@ const Reviews = ({ reviews }) => {
   const [isFilterOpen, setIsFilterOpen] = useState(false);
 
   return (
-    <Container id='#reviews'>
+    <Container id='reviews'>
       <Wrapper>
         <Heading>Reviews</Heading>
         <ReviewContainer>
