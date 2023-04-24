@@ -144,6 +144,9 @@ const SingleProduct = () => {
         <Line />
         <Recommendation />
         <Reviews reviews={reviews} />
+        <ImageOverlay>
+
+        </ImageOverlay>
       </Wrapper>
     </Container>
   );
