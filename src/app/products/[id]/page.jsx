@@ -418,7 +418,8 @@ const Button = styled.button`
 `;
 
 const ValueAddWrapper = styled.div`
-  
+  display: flex;
+  align-items: center;
 `;
 
 const ValueAdd = styled.div`
