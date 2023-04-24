@@ -462,7 +462,6 @@ const DescriptionText = styled.p`
   font-size: 1.6rem;
   line-height: 1.3;
   word-wrap: break-word;
-  margin-bottom: 3rem;
 `;
 
 const Line = styled.hr`
