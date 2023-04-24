@@ -479,4 +479,8 @@ const ImageOverlay = styled.section`
   
 `;
 
+const ImageContainer = styled.div`
+  
+`;
+
 export default SingleProduct;
