@@ -472,4 +472,8 @@ const Line = styled.hr`
   background-color: #e2e9e7;
 `;
 
+const ImageOverlay = styled.section`
+  
+`;
+
 export default SingleProduct;
