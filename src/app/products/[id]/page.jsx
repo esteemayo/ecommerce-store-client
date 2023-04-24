@@ -7,6 +7,7 @@ import Image from 'next/image';
 import StarRating from '@/components/StarRating';
 import Recommendation from '@/components/Recommendation';
 import Reviews from '@/components/Reviews';
+import { reviews } from '@/data';
 
 const SingleProduct = () => {
   const [isSelected, setIsSelected] = useState(false);
@@ -67,7 +68,7 @@ const SingleProduct = () => {
               <Rating>
                 <StarRating value={0} />
                 <ReviewQuantity>
-                  <Link href='#' passHref>1 Review</Link>
+                  <Link href='#' passHref>{reviews.length} Review</Link>
                 </ReviewQuantity>
               </Rating>
               <Hr />
