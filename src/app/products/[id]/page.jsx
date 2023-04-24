@@ -419,6 +419,8 @@ const Button = styled.button`
 const ValueAddWrapper = styled.div`
   display: flex;
   align-items: center;
+  justify-content: flex-start;
+  gap: 3.2rem;
   width: 100%;
   padding-top: 2.4rem;
   margin-top: 2.4rem;
