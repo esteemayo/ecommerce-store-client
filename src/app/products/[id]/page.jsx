@@ -6,6 +6,7 @@ import Image from 'next/image';
 
 import Recommendation from '@/components/Recommendation';
 import Reviews from '@/components/Reviews';
+import StarRating from '@/components/StarRating';
 import { reviews } from '@/data';
 
 const SingleProduct = () => {
