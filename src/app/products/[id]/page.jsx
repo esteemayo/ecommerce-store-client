@@ -100,6 +100,8 @@ const SingleProduct = () => {
               <Hr />
               <Button type='button'>Add to cart</Button>
               <Hr />
+              <Hr />
+              <Hr />
               <DescriptionHeader>Overview</DescriptionHeader>
               <DescriptionText>
                 Let the rain fall, you&apos;ve come prepared. Introducing The Stanley, our newest Smart Layer rain jacket.
