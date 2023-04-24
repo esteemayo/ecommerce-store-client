@@ -319,7 +319,7 @@ const Hr = styled.hr`
   width: 100%;
   height: 1px;
   border: none;
-  background-color: #ebf0ef;
+  background-color: #e2e9e7;
 `;
 
 const ColorContainer = styled.div`
