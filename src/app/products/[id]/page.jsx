@@ -430,6 +430,11 @@ const ValueAddWrapper = styled.div`
 const ValueAdd = styled.div`
   display: flex;
   align-items: center;
+
+  img {
+    width: 2.4rem;
+    height: auto;
+  }
 `;
 
 const DescriptionHeader = styled.h4`
