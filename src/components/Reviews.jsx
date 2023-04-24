@@ -172,7 +172,7 @@ const FilterIcon = styled.span`
 
 const FilterList = styled.ul`
   position: absolute;
-  right: 0;
+  right: ${({ type }) => type === 'show' ? 0 : '-30rem'};
   top: 6rem;
   list-style: none;
   width: 20rem;
