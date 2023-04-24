@@ -113,8 +113,8 @@ const SingleProduct = () => {
                 <ValueAdd>
                   <Image
                     src='/img/Returns-black.svg'
-                    width={30}
-                    height={30}
+                    width={24}
+                    height={24}
                     alt=''
                   />
                   <span>Free returns</span>
