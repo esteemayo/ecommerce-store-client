@@ -448,7 +448,7 @@ const ValueAdd = styled.div`
 `;
 
 const DescriptinContainer = styled.div`
-
+  margin: 3rem 0;
 `;
 
 const DescriptionHeader = styled.h4`
