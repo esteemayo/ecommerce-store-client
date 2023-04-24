@@ -100,6 +100,9 @@ const SingleProduct = () => {
               <Hr />
               <Button type='button'>Add to cart</Button>
               <Hr />
+              <ValueAddWrapper>
+
+              </ValueAddWrapper>
               <Hr />
               <Hr />
               <DescriptionHeader>Overview</DescriptionHeader>
