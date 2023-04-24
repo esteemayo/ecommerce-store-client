@@ -428,7 +428,8 @@ const ValueAddWrapper = styled.div`
 `;
 
 const ValueAdd = styled.div`
-  
+  display: flex;
+  align-items: center;
 `;
 
 const DescriptionHeader = styled.h4`
