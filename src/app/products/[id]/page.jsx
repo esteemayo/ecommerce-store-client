@@ -288,7 +288,7 @@ const ReviewQuantity = styled.span`
 
     &:hover,
     &:active {
-      color: inherit;
+      color: currentColor;
     }
   }
 `;
