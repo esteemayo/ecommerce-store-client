@@ -108,6 +108,7 @@ const SingleProduct = () => {
                     height={50}
                     alt=''
                   />
+                  <span>Free Shipping over $50</span>
                 </ValueAdd>
                 <ValueAdd></ValueAdd>
               </ValueAddWrapper>
