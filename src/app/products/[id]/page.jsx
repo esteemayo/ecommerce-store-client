@@ -455,7 +455,7 @@ const DescriptionHeader = styled.h4`
   display: inline-block;
   font-weight: 400;
   font-size: 1.8rem;
-  margin: 3rem 0;
+  margin-bottom: 3rem;
 `
 
 const DescriptionText = styled.p`
