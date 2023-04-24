@@ -101,7 +101,7 @@ const SingleProduct = () => {
               <Button type='button'>Add to cart</Button>
               <Hr />
               <ValueAddWrapper>
-
+                <ValueAdd></ValueAdd>
               </ValueAddWrapper>
               <Hr />
               <Hr />
