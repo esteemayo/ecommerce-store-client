@@ -68,7 +68,7 @@ const SingleProduct = () => {
               <Rating>
                 <StarRating value={0} />
                 <ReviewQuantity>
-                  <Link href='#' passHref>{reviews.length} Review</Link>
+                  <Link href='#reviews' passHref>{reviews.length} Review</Link>
                 </ReviewQuantity>
               </Rating>
               <Hr />
