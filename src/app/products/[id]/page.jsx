@@ -101,7 +101,14 @@ const SingleProduct = () => {
               <Button type='button'>Add to cart</Button>
               <Hr />
               <ValueAddWrapper>
-                <ValueAdd></ValueAdd>
+                <ValueAdd>
+                  <Image
+                    src='/img/Shipping-black.svg'
+                    width={50}
+                    height={50}
+                    alt=''
+                  />
+                </ValueAdd>
                 <ValueAdd></ValueAdd>
               </ValueAddWrapper>
               <Hr />
