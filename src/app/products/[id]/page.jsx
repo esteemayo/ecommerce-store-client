@@ -75,7 +75,15 @@ const SingleProduct = () => {
                 <ProductColor>Color</ProductColor>
                 <ColorWrapper>
                   {[...new Array(3)].map((_, index) => {
-                    return <Color key={index} selected={isSelected} onClick={() => setIsSelected(true)}>&nbsp;</Color>;
+                    return (
+                      <Color
+                        key={index}
+                        selected={isSelected}
+                        onClick={() => setIsSelected(true)}
+                      >
+                        &nbsp;
+                      </Color>
+                    );
                   })}
                 </ColorWrapper>
               </ColorContainer>
