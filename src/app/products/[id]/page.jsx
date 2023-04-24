@@ -117,7 +117,7 @@ const SingleProduct = () => {
                     height={24}
                     alt=''
                   />
-                  <span>Free returns</span>
+                  <span>Free Returns</span>
                 </ValueAdd>
               </ValueAddWrapper>
               <Hr />
