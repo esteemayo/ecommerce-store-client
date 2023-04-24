@@ -273,6 +273,11 @@ const ReviewQuantity = styled.span`
       text-decoration-color: #89a8a0;
       text-underline-offset: 3px;
     }
+
+    &:hover,
+    &:active {
+      color: inherit;
+    }
   }
 `;
 
