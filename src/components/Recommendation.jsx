@@ -60,7 +60,7 @@ const Recommendation = () => {
   );
 }
 
-const Container = styled.div`
+const Container = styled.section`
   width: 100vw;
   padding: 0 4rem;
   margin-bottom: 10rem;
