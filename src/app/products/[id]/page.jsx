@@ -102,6 +102,7 @@ const SingleProduct = () => {
               <Hr />
               <ValueAddWrapper>
                 <ValueAdd></ValueAdd>
+                <ValueAdd></ValueAdd>
               </ValueAddWrapper>
               <Hr />
               <Hr />
