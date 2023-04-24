@@ -430,7 +430,7 @@ const ValueAddWrapper = styled.div`
 const ValueAdd = styled.div`
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.8rem;
 
   img {
     width: 2.4rem;
