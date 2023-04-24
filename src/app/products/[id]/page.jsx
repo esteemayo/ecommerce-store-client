@@ -422,7 +422,6 @@ const ValueAddWrapper = styled.div`
   justify-content: flex-start;
   gap: 3.2rem;
   width: 100%;
-  padding-top: 2.4rem;
   margin-top: 2.4rem;
   margin-bottom: 2rem;
 `;
