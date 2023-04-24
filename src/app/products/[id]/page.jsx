@@ -121,7 +121,6 @@ const SingleProduct = () => {
                 </ValueAdd>
               </ValueAddWrapper>
               <Hr />
-              <Hr />
               <DescriptionHeader>Overview</DescriptionHeader>
               <DescriptionText>
                 Let the rain fall, you&apos;ve come prepared. Introducing The Stanley, our newest Smart Layer rain jacket.
