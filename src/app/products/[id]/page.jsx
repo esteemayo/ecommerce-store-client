@@ -520,6 +520,10 @@ const ArrowButton = styled.button`
   left: ${({ direction }) => direction === 'left' && '1rem'};
   right: ${({ direction }) => direction === 'right' && '2.5rem'};
   transform: translateY(-50%);
+
+  svg {
+    fill: var(--clr-white);
+  }
 `;
 
 const ImageContainer = styled.div`
