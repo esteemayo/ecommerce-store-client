@@ -169,7 +169,11 @@ const SingleProduct = () => {
               <AddContainer>
                 <AmountHeading>Quantity</AmountHeading>
                 <AmountContainer>
-                  <AddButton type='button' disabled={quantity <= 1} onClick={() => handleQuantity('dec')}>
+                  <AddButton
+                    type='button'
+                    disabled={quantity <= 1}
+                    onClick={() => handleQuantity('dec')}
+                  >
                     <FontAwesomeIcon icon={faMinus} />
                   </AddButton>
                   <Amount>{quantity}</Amount>
