@@ -103,7 +103,6 @@ const SingleProduct = () => {
                 <PriceDiscount>-22%</PriceDiscount>
               </PriceContainer>
               <SalePrice>
-                $99.99
                 <NumericFormat
                   value='99.99'
                   displayType={'text'}
