@@ -517,6 +517,9 @@ const ArrowButton = styled.button`
   outline-color: #777;
   position: absolute;
   top: 50%;
+  left: ${({ direction }) => direction === 'left' && '1rem'};
+  right: ${({ direction }) => direction === 'right' && '2.5rem'};
+  transform: translateY(-50%);
 `;
 
 const ImageContainer = styled.div`
