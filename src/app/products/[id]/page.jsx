@@ -447,7 +447,7 @@ const Color = styled.button`
   display: block;
   width: 2rem;
   height: 2rem;
-  background-color: crimson;
+  background-color: ${({ color }) => color};
   border-radius: 50%;
   outline-color: ${({ selected }) => selected && '#89a8a0'};
   outline-offset: 3px;
