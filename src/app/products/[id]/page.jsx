@@ -63,10 +63,6 @@ const SingleProduct = () => {
     setSlideIndex(newSlideIndex);
   };
 
-  console.log(slideIndex)
-  console.log('index', images.lastIndexOf(images[images.length - 1]))
-  console.log(images.lastIndexOf(images.slice(-1)[0]))
-
   return (
     <Container>
       <Wrapper>
