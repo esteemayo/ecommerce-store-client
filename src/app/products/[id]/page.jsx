@@ -30,8 +30,6 @@ const SingleProduct = () => {
   const sizes = ['XS', 'S', 'M', 'L', 'XL', 'XXL'];
 
   const images = [
-    '/img/category-1.jpg',
-    '/img/category-5.jpg',
     '/img/user-1.jpg',
     '/img/user-2.jpg',
     '/img/user-3.jpg',
