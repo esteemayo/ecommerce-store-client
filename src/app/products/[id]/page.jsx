@@ -148,6 +148,7 @@ const SingleProduct = () => {
         <Recommendation />
         <Reviews reviews={reviews} />
         <ImageOverlay>
+          <ArrowButton></ArrowButton>
           <ImageContainer>
             <Image
               src={images[slideIndex]}
