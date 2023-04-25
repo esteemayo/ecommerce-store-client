@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Link from 'next/link';
 import { useState } from 'react';
 import Image from 'next/image';
-import { faArrowLeft, faArrowRight, faMinus } from '@fortawesome/free-solid-svg-icons';
+import { faArrowLeft, faArrowRight, faMinus, faPlus } from '@fortawesome/free-solid-svg-icons';
 import CloseIcon from '@mui/icons-material/Close';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { NumericFormat } from 'react-number-format';
@@ -157,7 +157,7 @@ const SingleProduct = () => {
                     <FontAwesomeIcon icon={faMinus} />
                   </AddButton>
                   <AddButton type='button'>
-                    
+                    <FontAwesomeIcon icon={faPlus} />
                   </AddButton>
                 </AmountContainer>
               </AddContainer>
