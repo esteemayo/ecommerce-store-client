@@ -67,7 +67,7 @@ const SingleProduct = () => {
   };
 
   const handleQuantity = (type) => {
-    type === 'dec' && quantity > 0 && setQuantity(quantity - 1);
+    type === 'dec' && quantity >= 1 && setQuantity(quantity - 1);
     type === 'inc' && setQuantity(quantity + 1);
   };
 
