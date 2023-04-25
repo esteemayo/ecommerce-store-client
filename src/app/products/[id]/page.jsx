@@ -12,7 +12,6 @@ import Recommendation from '@/components/Recommendation';
 import Reviews from '@/components/Reviews';
 import StarRating from '@/components/StarRating';
 import { reviews } from '@/data';
-import { useDispatch } from 'react-redux';
 
 const SingleProduct = () => {
   const dispatch = useDispatch();
