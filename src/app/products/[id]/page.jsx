@@ -455,7 +455,6 @@ const SizeContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 1rem;
-  margin-bottom: 4rem;
 `;
 
 const SelectSize = styled.button`
