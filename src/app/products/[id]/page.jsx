@@ -149,6 +149,7 @@ const SingleProduct = () => {
                   <SelectSize type='button'>XXL</SelectSize>
                 </SizeContainer>
               </SizeWrapper>
+              <Hr />
               <AddContainer>
                 <AmountHeading>Quantity</AmountHeading>
               </AddContainer>
