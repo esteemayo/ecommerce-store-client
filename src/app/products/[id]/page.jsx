@@ -69,7 +69,7 @@ const SingleProduct = () => {
   };
 
   return (
-    <Container>
+    <Container onMouseOver={() => dispatch(closeSubmenu())}>
       <Wrapper>
         <ProductContainer>
           <Left>
