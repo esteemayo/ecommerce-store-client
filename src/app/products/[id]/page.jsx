@@ -508,8 +508,8 @@ const SelectSize = styled.button`
   padding: 1.6rem 0.4rem;
   line-height: 0.2;
   background-color: ${({ bcg }) => bcg ? '#89a8a0' : 'transparent'};
-  color: inherit;
-  border: 2px solid #ebf0ef;
+  color: ${({ bcg }) => bcg ? 'var(--clr-white)' : 'inherit'};
+  border: 2px solid ${({ bcg }) => bcg ? '#89a8a0' : '#ebf0ef'};
   border-radius: 0.4rem;
   outline-color: #ccc;
   margin-bottom: 0.8rem;
