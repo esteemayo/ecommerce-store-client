@@ -508,6 +508,9 @@ const ArrowButton = styled.button`
   display: inline-block;
   width: 4rem;
   height: 4rem;
+  background-color: var(--clr-black);
+  color: var(--clr-white);
+  border-radius: 50%;
 `;
 
 const ImageContainer = styled.div`
