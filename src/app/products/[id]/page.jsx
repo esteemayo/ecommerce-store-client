@@ -162,7 +162,11 @@ const SingleProduct = () => {
                 <SizeContainer>
                   {sizes.map((size, index) => {
                     return (
-                      <SelectSize key={index} type='button' onClick={() => setSize(size)}>
+                      <SelectSize
+                        key={index}
+                        type='button'
+                        onClick={() => setSize(size)}
+                      >
                         {size}
                       </SelectSize>
                     );
