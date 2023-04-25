@@ -21,7 +21,7 @@ const SingleProduct = () => {
   const [size, setSize] = useState(null);
   const [color, setColor] = useState(null);
   const [isOpen, setIsOpen] = useState(false);
-  const [quantity, setQuantity] = useState(0);
+  const [quantity, setQuantity] = useState(1);
   const [isMoved, setIsMoved] = useState(false);
   const [slideIndex, setSlideIndex] = useState(0);
   const [isSelected, setIsSelected] = useState(false);
