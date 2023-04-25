@@ -19,6 +19,7 @@ const SingleProduct = () => {
   const dispatch = useDispatch();
 
   const [isOpen, setIsOpen] = useState(false);
+  const [quantity, setQuantity] = useState(0);
   const [isMoved, setIsMoved] = useState(false);
   const [slideIndex, setSlideIndex] = useState(0);
   const [isSelected, setIsSelected] = useState(false);
