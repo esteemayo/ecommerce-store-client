@@ -511,6 +511,9 @@ const ArrowButton = styled.button`
   background-color: var(--clr-black);
   color: var(--clr-white);
   border-radius: 50%;
+  box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+  -webkit-box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+  -moz-box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
 `;
 
 const ImageContainer = styled.div`
