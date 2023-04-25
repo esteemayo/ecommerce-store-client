@@ -102,7 +102,15 @@ const SingleProduct = () => {
                 </ProductPrice>
                 <PriceDiscount>-22%</PriceDiscount>
               </PriceContainer>
-              <SalePrice>$99.99</SalePrice>
+              <SalePrice>
+                $99.99
+                <NumericFormat
+                  value='99.99'
+                  displayType={'text'}
+                  thousandSeparator={true}
+                  prefix={'$'}
+                />
+              </SalePrice>
               <Message>
                 4 interest-free payments of $49.75.
                 &nbsp;
