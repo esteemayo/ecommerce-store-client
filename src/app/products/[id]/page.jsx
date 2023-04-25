@@ -471,7 +471,7 @@ const Color = styled.button`
   background-color: ${({ color }) => color};
   border-radius: 50%;
   outline: 1px solid ${({ selected }) => selected ? '#89a8a0' : 'transparent'};
-  outline-offset: 3px;
+  outline-offset: 2px;
   cursor: ${({ selected }) => selected ? 'default' : 'pointer'};
 `;
 
