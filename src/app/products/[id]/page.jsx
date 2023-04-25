@@ -52,7 +52,7 @@ const SingleProduct = () => {
     }
   };
 
-  const handleClick = (direction) => {
+  const handleMove = (direction) => {
     let newSlideIndex;
 
     setIsMoved(true);
