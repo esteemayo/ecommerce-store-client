@@ -507,7 +507,7 @@ const SelectSize = styled.button`
   height: 3rem;
   padding: 1.6rem 0.4rem;
   line-height: 0.2;
-  background-color: transparent;
+  background-color: ${({ bcg }) => bcg ? '#89a8a0' : 'transparent'};
   color: inherit;
   border: 2px solid #ebf0ef;
   border-radius: 0.4rem;
