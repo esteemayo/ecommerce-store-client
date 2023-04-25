@@ -158,7 +158,7 @@ const SingleProduct = () => {
                       <SelectSize
                         key={index}
                         type='button'
-                        bcg={selectedSize}
+                        bcg={selectedSize === size}
                         onClick={() => {
                           setSize(size);
                           setSelectedSize(true);
