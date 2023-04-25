@@ -479,7 +479,6 @@ const SizeWrapper = styled.div`
 
 const SizeHeading = styled.h3`
   display: inline-block;
-  text-transform: capitalize;
   font-weight: 400;
   font-size: 1.65rem;
 `;
