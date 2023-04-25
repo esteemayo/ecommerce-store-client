@@ -491,7 +491,7 @@ const ImageOverlay = styled.section`
   top: 0;
   left: 0;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 `;
 
