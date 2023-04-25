@@ -544,7 +544,6 @@ const AddButton = styled.button`
 
   &:disabled {
     background-color: #f5f5f5;
-    cursor: not-allowed;
   }
 
   svg {
