@@ -169,7 +169,7 @@ const SingleProduct = () => {
                   <AddButton type='button' onClick={() => handleQuantity('dec')}>
                     <FontAwesomeIcon icon={faMinus} />
                   </AddButton>
-                  <Amount>1</Amount>
+                  <Amount>{quantity}</Amount>
                   <AddButton type='button' onClick={() => handleQuantity('inc')}>
                     <FontAwesomeIcon icon={faPlus} />
                   </AddButton>
