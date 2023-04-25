@@ -497,7 +497,7 @@ const ImageOverlay = styled.section`
 
 const ImageContainer = styled.div`
   width: 100%;
-  height: 80%;
+  height: 95%;
   display: flex;
   align-items: flex-start;
   justify-content: center;
