@@ -470,7 +470,7 @@ const Color = styled.button`
   height: 2rem;
   background-color: ${({ color }) => color};
   border-radius: 50%;
-  outline: 1px solid#89a8a0;
+  outline: 1px solid ${({ color }) => color ? '#89a8a0' : 'transparent'};
   outline-offset: 3px;
   cursor: pointer;
 `;
