@@ -511,6 +511,10 @@ const ImageOverlay = styled.section`
   z-index: 4000;
 `;
 
+const CloseButton = styled.button`
+  
+`;
+
 const ArrowButton = styled.button`
   border: none;
   display: inline-block;
