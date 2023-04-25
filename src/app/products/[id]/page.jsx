@@ -159,12 +159,9 @@ const SingleProduct = () => {
               <SizeWrapper>
                 <SizeHeading>Select a size</SizeHeading>
                 <SizeContainer>
-                  <SelectSize type='button'>XS</SelectSize>
-                  <SelectSize type='button'>S</SelectSize>
-                  <SelectSize type='button'>M</SelectSize>
-                  <SelectSize type='button'>L</SelectSize>
-                  <SelectSize type='button'>XL</SelectSize>
-                  <SelectSize type='button'>XXL</SelectSize>
+                  {sizes.map((size, index) => {
+                    return <SelectSize key={index} type='button'>{size}</SelectSize>;
+                  })}
                 </SizeContainer>
               </SizeWrapper>
               <Hr />
