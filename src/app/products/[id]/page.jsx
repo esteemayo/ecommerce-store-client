@@ -523,6 +523,10 @@ const CloseButton = styled.button`
   color: var(--clr-white);
   outline-color: #777;
   cursor: pointer;
+
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
 `;
 
 const ArrowButton = styled.button`
