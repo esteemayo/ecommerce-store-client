@@ -196,7 +196,11 @@ const SingleProduct = () => {
               alt=''
             />
           </ImageContainer>
-          <ArrowButton type='button' direction='right' onClick={() => handleClick('right')}>
+          <ArrowButton
+            type='button'
+            direction='right'
+            onClick={() => handleClick('right')}
+          >
             <FontAwesomeIcon icon={faArrowRight} />
           </ArrowButton>
         </ImageOverlay>
