@@ -501,6 +501,7 @@ const ImageOverlay = styled.section`
   display: flex;
   align-items: flex-start;
   justify-content: center;
+  z-index: 4000;
 `;
 
 const ArrowButton = styled.button`
