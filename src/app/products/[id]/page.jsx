@@ -513,6 +513,8 @@ const AddButton = styled.button`
   height: 3rem;
   padding: 0 0.4rem;
   line-height: 0.2;
+  background-color: transparent;
+  color: inherit;
 `;
 
 const Amount = styled.span`
