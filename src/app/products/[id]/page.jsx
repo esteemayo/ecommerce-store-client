@@ -500,7 +500,7 @@ const SelectSize = styled.button`
   font-size: 1.4rem;
   min-width: 4rem;
   height: 3rem;
-  padding: 0 0.4rem;
+  padding: 1.6rem 0.4rem;
   line-height: 0.2;
   background-color: transparent;
   color: inherit;
