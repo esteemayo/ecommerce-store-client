@@ -161,7 +161,7 @@ const SingleProduct = () => {
         <Line />
         <Recommendation />
         <Reviews reviews={reviews} />
-        <ImageOverlay className='imageOverlay' type={isOpen ? 'show' : ''}>
+        <ImageOverlay className='imageOverlay' type={isOpen ? 'show' : ''} onClick={closeModalHandler}>
           <CloseButton type='button' onClick={() => setIsOpen(false)}>
             <CloseIcon />
           </CloseButton>
