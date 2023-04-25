@@ -466,8 +466,8 @@ const ColorWrapper = styled.div`
 const Color = styled.button`
   border: none;
   display: block;
-  width: 2rem;
-  height: 2rem;
+  width: 2.2rem;
+  height: 2.2rem;
   background-color: ${({ color }) => color};
   border-radius: 50%;
   outline: 1px solid ${({ selected }) => selected ? '#89a8a0' : 'transparent'};
