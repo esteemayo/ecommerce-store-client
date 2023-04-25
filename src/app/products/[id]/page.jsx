@@ -520,6 +520,11 @@ const AddButton = styled.button`
   border-radius: 0.4rem;
   outline-color: #ccc;
   cursor: pointer;
+
+  svg {
+    font-size: 1.6rem;
+    fill: currentColor;
+  }
 `;
 
 const Amount = styled.span`
