@@ -509,6 +509,10 @@ const SelectSize = styled.button`
   outline-color: #ccc;
   margin-bottom: 0.8rem;
   cursor: pointer;
+
+  &:hover {
+    background-color: #ebf0ef;
+  }
 `;
 
 const AddContainer = styled.div`
