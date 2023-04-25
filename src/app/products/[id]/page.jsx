@@ -159,6 +159,7 @@ const SingleProduct = () => {
               alt=''
             />
           </ImageContainer>
+          <ArrowButton></ArrowButton>
         </ImageOverlay>
       </Wrapper>
     </Container>
