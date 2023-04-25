@@ -148,7 +148,7 @@ const SingleProduct = () => {
         <Recommendation />
         <Reviews reviews={reviews} />
         <ImageOverlay>
-          <ArrowButton>
+          <ArrowButton type='button'>
             <FontAwesomeIcon icon={faArrowLeft} />
           </ArrowButton>
           <ImageContainer>
