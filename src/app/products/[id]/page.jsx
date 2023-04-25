@@ -155,7 +155,7 @@ const SingleProduct = () => {
         <Recommendation />
         <Reviews reviews={reviews} />
         <ImageOverlay>
-          <CloseButton>
+          <CloseButton type='button' onClick={() => setIsOpen(false)}>
             <CloseIcon />
           </CloseButton>
           <ArrowButton type='button' direction='left'>
