@@ -437,6 +437,10 @@ const Color = styled.button`
   }
 `;
 
+const SizeWrapper = styled.div`
+
+`;
+
 const SizeHeading = styled.h3`
   display: inline-block;
   font-weight: 400;
