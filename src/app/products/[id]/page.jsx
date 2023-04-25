@@ -486,6 +486,7 @@ const Line = styled.hr`
 const ImageOverlay = styled.section`
   width: 100vw;
   height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 `;
 
 const ImageContainer = styled.div`
