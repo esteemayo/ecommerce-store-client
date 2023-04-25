@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import CloseIcon from '@mui/icons-material/Close';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { NumericFormat } from 'react-number-format';
 
 import Recommendation from '@/components/Recommendation';
 import Reviews from '@/components/Reviews';
