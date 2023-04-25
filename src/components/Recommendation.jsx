@@ -20,7 +20,14 @@ const Recommendation = () => {
           <ProductContainer>
             <Link href='#' passHref>
               <ProductTitle>The Rain Bucket Hat in Black</ProductTitle>
-              <ProductPrice>$39.50</ProductPrice>
+              <ProductPrice>
+                <NumericFormat
+                  value='39.50'
+                  displayType={'text'}
+                  thousandSeparator={true}
+                  prefix={'$'}
+                />
+              </ProductPrice>
             </Link>
           </ProductContainer>
         </ProductWrapper>
