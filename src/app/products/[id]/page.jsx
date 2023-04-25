@@ -7,6 +7,7 @@ import { faArrowLeft, faArrowRight, faMinus, faPlus } from '@fortawesome/free-so
 import CloseIcon from '@mui/icons-material/Close';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { NumericFormat } from 'react-number-format';
+import { useDispatch } from 'react-redux';
 
 import Recommendation from '@/components/Recommendation';
 import Reviews from '@/components/Reviews';
