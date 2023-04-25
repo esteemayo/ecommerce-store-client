@@ -35,6 +35,8 @@ const SingleProduct = () => {
     '/img/reviewer-3.jpg',
   ];
 
+  const lastIndex = images.lastIndexOf(images[images.length - 1]);
+
   const handleOpen = (index) => {
     setSlideIndex(index);
     setIsOpen(true);
@@ -60,6 +62,10 @@ const SingleProduct = () => {
 
     setSlideIndex(newSlideIndex);
   };
+
+  console.log(slideIndex)
+  console.log('index', images.lastIndexOf(images[images.length - 1]))
+  console.log(images.lastIndexOf(images.slice(-1)[0]))
 
   return (
     <Container>
@@ -198,15 +204,14 @@ const SingleProduct = () => {
               alt=''
             />
           </ImageContainer>
-          {slideIndex <= images[images.length - 1] && (
-            <ArrowButton
-              type='button'
-              direction='right'
-              onClick={() => handleClick('right')}
-            >
-              <FontAwesomeIcon icon={faArrowRight} />
-            </ArrowButton>
-          )}
+          <ArrowButton
+            type='button'
+            direction='right'
+            style={{ display: slideIndex === lastIndex && 'none' }}
+            onClick={() => handleClick('right')}
+          >
+            <FontAwesomeIcon icon={faArrowRight} />
+          </ArrowButton>
         </ImageOverlay>
       </Wrapper>
     </Container>
