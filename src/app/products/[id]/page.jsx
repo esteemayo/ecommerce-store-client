@@ -527,6 +527,11 @@ const CloseButton = styled.button`
   position: absolute;
   top: 3rem;
   left: 3rem;
+
+  svg {
+    font-size: 2rem;
+    fill: currentColor;
+  }
 `;
 
 const ArrowButton = styled.button`
