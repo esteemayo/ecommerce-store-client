@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Link from 'next/link';
 import { useState } from 'react';
 import Image from 'next/image';
+import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import Recommendation from '@/components/Recommendation';
