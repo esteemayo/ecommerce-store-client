@@ -474,6 +474,10 @@ const SelectSize = styled.button`
   cursor: pointer;
 `;
 
+const AddContainer = styled.div`
+
+`;
+
 const Button = styled.button`
   display: inline-block;
   text-align: center;
