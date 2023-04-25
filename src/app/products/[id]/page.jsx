@@ -592,7 +592,7 @@ const ArrowButton = styled.button`
   transition: all 0.3s ease;
 
   &:hover {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.25);
   }
 
   svg {
