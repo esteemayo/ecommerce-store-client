@@ -526,6 +526,7 @@ const Amount = styled.span`
   width: 3rem;
   height: 3rem;
   text-align: center;
+  font-size: 1.4rem;
   border: 1px solid #89a8a0;
   border-radius: 1.5rem;
 `;
