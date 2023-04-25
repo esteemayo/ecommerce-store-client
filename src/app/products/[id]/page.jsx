@@ -71,6 +71,11 @@ const SingleProduct = () => {
     setSlideIndex(newSlideIndex);
   };
 
+  const handleQuantity = (type) => {
+    type === 'dec' && quantity > 0 && setQuantity(quantity - 1);
+    type === 'inc' && setQuantity(quantity + 1);
+  };
+
   return (
     <Container onMouseOver={() => dispatch(closeSubmenu())}>
       <Wrapper>
