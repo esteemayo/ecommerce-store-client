@@ -496,6 +496,7 @@ const AmountHeading = styled.h3`
   display: inline-block;
   font-weight: 400;
   font-size: 1.65rem;
+  margin-bottom: 1rem;
 `;
 
 const AmountContainer = styled.div`
@@ -522,7 +523,8 @@ const AddButton = styled.button`
 `;
 
 const Amount = styled.span`
-
+  width: 3rem;
+  height: 3rem;
 `;
 
 const Button = styled.button`
