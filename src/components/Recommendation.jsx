@@ -66,7 +66,14 @@ const Recommendation = () => {
           <ProductContainer>
             <Link href='#' passHref>
               <ProductTitle>The Skyline Reversible Bomber in Black</ProductTitle>
-              <ProductPrice>$169.00</ProductPrice>
+              <ProductPrice>
+                <NumericFormat
+                  value='169.00'
+                  displayType={'text'}
+                  thousandSeparator={true}
+                  prefix={'$'}
+                />
+              </ProductPrice>
             </Link>
           </ProductContainer>
         </ProductWrapper>
