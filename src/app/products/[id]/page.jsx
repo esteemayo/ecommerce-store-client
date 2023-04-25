@@ -131,10 +131,11 @@ const SingleProduct = () => {
               <ColorContainer>
                 <ProductColor>Color</ProductColor>
                 <ColorWrapper>
-                  {[...new Array(3)].map((_, index) => {
+                  {colors.map((color, index) => {
                     return (
                       <Color
                         key={index}
+                        color={color}
                         selected={isSelected}
                         onClick={() => setIsSelected(true)}
                       >
