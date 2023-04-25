@@ -92,7 +92,14 @@ const SingleProduct = () => {
             <ProductWrapper>
               <ProductName>The Stanley Rain Jacket in Black</ProductName>
               <PriceContainer>
-                <ProductPrice>$199.00</ProductPrice>
+                <ProductPrice>
+                  <NumericFormat
+                    value='199.00'
+                    displayType={'text'}
+                    thousandSeparator={true}
+                    prefix={'$'}
+                  />
+                </ProductPrice>
                 <PriceDiscount>-22%</PriceDiscount>
               </PriceContainer>
               <SalePrice>$99.99</SalePrice>
