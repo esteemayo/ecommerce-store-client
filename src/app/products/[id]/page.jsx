@@ -545,6 +545,7 @@ const AddButton = styled.button`
   border-radius: 0.4rem;
   outline-color: #ccc;
   cursor: pointer;
+  transition: all 0.3s ease;
 
   &:disabled {
     background-color: #f5f5f5;
