@@ -170,7 +170,7 @@ const SingleProduct = () => {
                     <FontAwesomeIcon icon={faMinus} />
                   </AddButton>
                   <Amount>1</Amount>
-                  <AddButton type='button' onClick={() => handleQuantity('dec')}>
+                  <AddButton type='button' onClick={() => handleQuantity('inc')}>
                     <FontAwesomeIcon icon={faPlus} />
                   </AddButton>
                 </AmountContainer>
