@@ -529,6 +529,9 @@ const Amount = styled.span`
   font-size: 1.4rem;
   border: 1px solid #89a8a0;
   border-radius: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 const Button = styled.button`
