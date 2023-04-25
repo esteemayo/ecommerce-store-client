@@ -181,7 +181,11 @@ const SingleProduct = () => {
           <CloseButton type='button' onClick={() => setIsOpen(false)}>
             <CloseIcon />
           </CloseButton>
-          <ArrowButton type='button' direction='left' onClick={() => handleClick('left')}>
+          <ArrowButton
+            type='button'
+            direction='left'
+            onClick={() => handleClick('left')}
+          >
             <FontAwesomeIcon icon={faArrowLeft} />
           </ArrowButton>
           <ImageContainer className='imageContainer' onClick={closeModalHandler}>
