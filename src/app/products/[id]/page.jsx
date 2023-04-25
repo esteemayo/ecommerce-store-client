@@ -53,6 +53,7 @@ const SingleProduct = () => {
                     width={500}
                     height={700}
                     alt=''
+                    onClick={() => handleOpen(index)}
                   />
                 )
               })}
