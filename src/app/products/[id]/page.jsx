@@ -46,6 +46,21 @@ const SingleProduct = () => {
     }
   };
 
+  const handleClick = (direction) => {
+    let newSlideIndex;
+
+    setIsMoved(true);
+    if (direction === 'left') {
+      newSlideIndex = slideIndex - 1;
+    }
+
+    if (direction === 'right') {
+      newSlideIndex = slideIndex + 1;
+    }
+
+    setSlideIndex(newSlideIndex);
+  };
+
   return (
     <Container>
       <Wrapper>
