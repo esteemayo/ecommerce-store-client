@@ -474,8 +474,7 @@ const Color = styled.button`
   cursor: pointer;
 
   &:hover {
-    outline-color: #89a8a0;
-    outline-offset: 3px;
+    outline: 1px solid#89a8a0;
   }
 `;
 
