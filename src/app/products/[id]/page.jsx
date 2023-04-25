@@ -473,7 +473,7 @@ const Color = styled.button`
   outline-offset: 3px;
   cursor: pointer;
 
-  &:focus {
+  &:hover {
     outline-color: #89a8a0;
     outline-offset: 3px;
   }
