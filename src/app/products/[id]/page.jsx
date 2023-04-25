@@ -488,6 +488,10 @@ const AmountHeading = styled.h3`
   font-size: 1.65rem;
 `;
 
+const AmountContainer = styled.div`
+  
+`;
+
 const Button = styled.button`
   display: inline-block;
   text-align: center;
