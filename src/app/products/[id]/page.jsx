@@ -484,7 +484,8 @@ const Line = styled.hr`
 `;
 
 const ImageOverlay = styled.section`
-  
+  width: 100vw;
+  height: 100%;
 `;
 
 const ImageContainer = styled.div`
