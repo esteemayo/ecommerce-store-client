@@ -513,6 +513,7 @@ const AddContainer = styled.div`
 
 const AmountHeading = styled.h3`
   display: inline-block;
+  text-transform: capitalize;
   font-weight: 400;
   font-size: 1.65rem;
   margin-bottom: 1rem;
