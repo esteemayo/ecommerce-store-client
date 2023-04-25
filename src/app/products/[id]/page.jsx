@@ -23,6 +23,8 @@ const SingleProduct = () => {
   const [slideIndex, setSlideIndex] = useState(0);
   const [isSelected, setIsSelected] = useState(false);
 
+  const colors = ['black', 'pink', 'crimson'];
+
   const images = [
     '/img/category-1.jpg',
     '/img/category-5.jpg',
