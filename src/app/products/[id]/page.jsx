@@ -509,6 +509,7 @@ const SelectSize = styled.button`
   outline-color: #ccc;
   margin-bottom: 0.8rem;
   cursor: pointer;
+  transition: all 0.1s ease-in-out;
 
   &:hover {
     background-color: #ebf0ef;
