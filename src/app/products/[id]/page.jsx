@@ -33,6 +33,11 @@ const SingleProduct = () => {
     '/img/reviewer-3.jpg',
   ];
 
+  const handleOpen = (index) => {
+    setSlideIndex(index);
+    setIsOpen(true);
+  };
+
   return (
     <Container>
       <Wrapper>
