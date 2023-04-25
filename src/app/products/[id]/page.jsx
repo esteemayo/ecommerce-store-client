@@ -515,7 +515,10 @@ const ImageOverlay = styled.section`
 `;
 
 const CloseButton = styled.button`
-  
+  border: none;
+  display: inline-block;
+  background-color: transparent;
+  color: var(--clr-white);
 `;
 
 const ArrowButton = styled.button`
