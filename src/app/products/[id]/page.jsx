@@ -156,6 +156,7 @@ const SingleProduct = () => {
                   <AddButton type='button'>
                     <FontAwesomeIcon icon={faMinus} />
                   </AddButton>
+                  <Amount>1</Amount>
                   <AddButton type='button'>
                     <FontAwesomeIcon icon={faPlus} />
                   </AddButton>
