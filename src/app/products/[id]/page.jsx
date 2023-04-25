@@ -150,7 +150,7 @@ const SingleProduct = () => {
                 </SizeContainer>
               </SizeWrapper>
               <AddContainer>
-
+                <AmountHeading>Quantity</AmountHeading>
               </AddContainer>
               <Hr />
               <Button type='button'>Add to cart</Button>
