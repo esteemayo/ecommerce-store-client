@@ -472,7 +472,7 @@ const Color = styled.button`
   border-radius: 50%;
   outline: 1px solid ${({ selected }) => selected ? '#89a8a0' : 'transparent'};
   outline-offset: 3px;
-  cursor: pointer;
+  cursor: ${({ selected }) => selected ? 'default' : 'pointer'};
 `;
 
 const SizeWrapper = styled.div`
