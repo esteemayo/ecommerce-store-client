@@ -502,6 +502,8 @@ const ImageContainer = styled.div`
   img {
     width: 90%;
     height: 100%;
+    display: block;
+    object-fit: cover;
   }
 `;
 
