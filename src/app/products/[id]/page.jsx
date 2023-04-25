@@ -520,6 +520,7 @@ const ArrowButton = styled.button`
   left: ${({ direction }) => direction === 'left' && '1rem'};
   right: ${({ direction }) => direction === 'right' && '2.5rem'};
   transform: translateY(-50%);
+  cursor: pointer;
 
   svg {
     fill: var(--clr-white);
