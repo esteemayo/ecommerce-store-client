@@ -608,7 +608,7 @@ const ImageContainer = styled.div`
   justify-content: center;
 
   img {
-    width: 90%;
+    width: 50rem;
     height: 100%;
     display: block;
     object-fit: cover;
