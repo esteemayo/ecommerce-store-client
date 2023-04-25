@@ -166,7 +166,7 @@ const SingleProduct = () => {
               <AddContainer>
                 <AmountHeading>Quantity</AmountHeading>
                 <AmountContainer>
-                  <AddButton type='button'>
+                  <AddButton type='button' onClick={() => handleQuantity('dec')}>
                     <FontAwesomeIcon icon={faMinus} />
                   </AddButton>
                   <Amount>1</Amount>
