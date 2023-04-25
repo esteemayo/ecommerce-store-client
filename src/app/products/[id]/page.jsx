@@ -518,6 +518,7 @@ const AddButton = styled.button`
   border: 2px solid #ebf0ef;
   border-radius: 0.4rem;
   outline-color: #ccc;
+  cursor: pointer;
 `;
 
 const Amount = styled.span`
