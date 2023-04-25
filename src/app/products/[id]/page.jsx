@@ -141,7 +141,7 @@ const SingleProduct = () => {
                         selected={isSelected}
                         onClick={() => {
                           setColor(color);
-                          setIsSelected(true);
+                          setIsSelected(color);
                         }}
                       >
                         &nbsp;
