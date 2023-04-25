@@ -153,7 +153,9 @@ const SingleProduct = () => {
               <AddContainer>
                 <AmountHeading>Quantity</AmountHeading>
                 <AmountContainer>
-
+                  <AddButton type='button'>
+                    
+</AddButton>
                 </AmountContainer>
               </AddContainer>
               <Hr />
