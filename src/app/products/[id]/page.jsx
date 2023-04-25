@@ -505,7 +505,8 @@ const AmountContainer = styled.div`
 `;
 
 const AddButton = styled.button`
-
+  border: none;
+  display: inline-block;
 `;
 
 const Amount = styled.span`
