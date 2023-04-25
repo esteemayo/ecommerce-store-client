@@ -18,6 +18,7 @@ import { closeSubmenu } from '@/features/submenu/submenuSlice';
 const SingleProduct = () => {
   const dispatch = useDispatch();
 
+  const [color, setColor] = useState(null);
   const [isOpen, setIsOpen] = useState(false);
   const [quantity, setQuantity] = useState(0);
   const [isMoved, setIsMoved] = useState(false);
