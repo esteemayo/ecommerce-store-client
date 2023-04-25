@@ -440,7 +440,8 @@ const Color = styled.button`
 `;
 
 const SizeWrapper = styled.div`
-
+  margin-top: 1rem;
+  margin-bottom: 4rem;
 `;
 
 const SizeHeading = styled.h3`
