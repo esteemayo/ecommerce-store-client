@@ -161,7 +161,11 @@ const SingleProduct = () => {
                 <SizeHeading>Select a size</SizeHeading>
                 <SizeContainer>
                   {sizes.map((size, index) => {
-                    return <SelectSize key={index} type='button'>{size}</SelectSize>;
+                    return (
+                      <SelectSize key={index} type='button'>
+                        {size}
+                      </SelectSize>
+                    );
                   })}
                 </SizeContainer>
               </SizeWrapper>
