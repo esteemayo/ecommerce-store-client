@@ -522,6 +522,7 @@ const CloseButton = styled.button`
   background-color: transparent;
   color: var(--clr-white);
   outline-color: #777;
+  cursor: pointer;
 `;
 
 const ArrowButton = styled.button`
