@@ -499,7 +499,9 @@ const AmountHeading = styled.h3`
 `;
 
 const AmountContainer = styled.div`
-  
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 `;
 
 const AddButton = styled.button`
