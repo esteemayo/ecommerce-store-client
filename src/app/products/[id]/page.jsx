@@ -149,6 +149,9 @@ const SingleProduct = () => {
                   <SelectSize type='button'>XXL</SelectSize>
                 </SizeContainer>
               </SizeWrapper>
+              <AddContainer>
+
+              </AddContainer>
               <Hr />
               <Button type='button'>Add to cart</Button>
               <Hr />
