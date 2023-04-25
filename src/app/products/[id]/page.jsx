@@ -12,6 +12,7 @@ import StarRating from '@/components/StarRating';
 import { reviews } from '@/data';
 
 const SingleProduct = () => {
+  const [isOpen, setIsOpen] = useState(false);
   const [slideIndex, setSlideIndex] = useState(0);
   const [isSelected, setIsSelected] = useState(false);
 
