@@ -542,6 +542,11 @@ const AddButton = styled.button`
   outline-color: #ccc;
   cursor: pointer;
 
+  &:disabled {
+    background-color: #f5f5f5;
+    cursor: not-allowed;
+  }
+
   svg {
     font-size: 1.6rem;
     fill: currentColor;
