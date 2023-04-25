@@ -172,7 +172,7 @@ const SingleProduct = () => {
           <ArrowButton type='button' direction='left'>
             <FontAwesomeIcon icon={faArrowLeft} />
           </ArrowButton>
-          <ImageContainer>
+          <ImageContainer className='imageContainer' onClick={closeModalHandler}>
             <Image
               src={images[slideIndex]}
               width={1200}
