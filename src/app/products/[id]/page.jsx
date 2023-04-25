@@ -475,7 +475,6 @@ const Color = styled.button`
 
   &:hover {
     outline: 1px solid#89a8a0;
-  }
 `;
 
 const SizeWrapper = styled.div`
