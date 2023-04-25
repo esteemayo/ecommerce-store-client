@@ -517,6 +517,8 @@ const ImageOverlay = styled.section`
 const CloseButton = styled.button`
   border: none;
   display: inline-block;
+  width: 2rem;
+  height: 2rem;
   background-color: transparent;
   color: var(--clr-white);
 `;
