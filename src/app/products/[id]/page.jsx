@@ -25,6 +25,7 @@ const SingleProduct = () => {
   const [isMoved, setIsMoved] = useState(false);
   const [slideIndex, setSlideIndex] = useState(0);
   const [isSelected, setIsSelected] = useState(false);
+  const [selectedSize, setSelectedSize] = useState(false);
 
   const colors = ['black', 'pink', 'crimson'];
   const sizes = ['XS', 'S', 'M', 'L', 'XL', 'XXL'];
