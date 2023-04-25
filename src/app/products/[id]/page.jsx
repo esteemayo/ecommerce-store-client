@@ -138,15 +138,17 @@ const SingleProduct = () => {
                   })}
                 </ColorWrapper>
               </ColorContainer>
-              <SizeHeading>Select a size</SizeHeading>
-              <SizeContainer>
-                <SelectSize type='button'>XS</SelectSize>
-                <SelectSize type='button'>S</SelectSize>
-                <SelectSize type='button'>M</SelectSize>
-                <SelectSize type='button'>L</SelectSize>
-                <SelectSize type='button'>XL</SelectSize>
-                <SelectSize type='button'>XXL</SelectSize>
-              </SizeContainer>
+              <SizeWrapper>
+                <SizeHeading>Select a size</SizeHeading>
+                <SizeContainer>
+                  <SelectSize type='button'>XS</SelectSize>
+                  <SelectSize type='button'>S</SelectSize>
+                  <SelectSize type='button'>M</SelectSize>
+                  <SelectSize type='button'>L</SelectSize>
+                  <SelectSize type='button'>XL</SelectSize>
+                  <SelectSize type='button'>XXL</SelectSize>
+                </SizeContainer>
+              </SizeWrapper>
               <Hr />
               <Button type='button'>Add to cart</Button>
               <Hr />
