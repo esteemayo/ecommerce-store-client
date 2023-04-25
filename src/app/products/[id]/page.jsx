@@ -495,6 +495,10 @@ const AmountContainer = styled.div`
   
 `;
 
+const AddButton = styled.button`
+
+`;
+
 const Button = styled.button`
   display: inline-block;
   text-align: center;
