@@ -504,6 +504,10 @@ const AddButton = styled.button`
 
 `;
 
+const Amount = styled.span`
+
+`;
+
 const Button = styled.button`
   display: inline-block;
   text-align: center;
