@@ -40,7 +40,7 @@ const SingleProduct = () => {
   };
 
   const closeModalHandler = (e) => {
-    if (e.target.classList.contains('imageOverlay')) {
+    if (e.target.classList.contains('imageContainer')) {
       setIsOpen(false);
     }
   };
