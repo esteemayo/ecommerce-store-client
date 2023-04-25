@@ -481,6 +481,10 @@ const AddContainer = styled.div`
 
 `;
 
+const AmountHeading = styled.h3`
+  
+`;
+
 const Button = styled.button`
   display: inline-block;
   text-align: center;
