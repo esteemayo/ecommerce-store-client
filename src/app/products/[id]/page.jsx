@@ -508,6 +508,11 @@ const AddButton = styled.button`
   border: none;
   display: inline-block;
   text-align: center;
+  font-size: 1.4rem;
+  min-width: 3rem;
+  height: 3rem;
+  padding: 0 0.4rem;
+  line-height: 0.2;
 `;
 
 const Amount = styled.span`
