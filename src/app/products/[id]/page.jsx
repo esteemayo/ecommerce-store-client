@@ -161,7 +161,7 @@ const SingleProduct = () => {
                         bcg={selectedSize === size}
                         onClick={() => {
                           setSize(size);
-                          setSelectedSize(true);
+                          setSelectedSize(size);
                         }}
                       >
                         {size}
