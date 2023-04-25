@@ -159,7 +159,9 @@ const SingleProduct = () => {
               alt=''
             />
           </ImageContainer>
-          <ArrowButton></ArrowButton>
+          <ArrowButton>
+            <FontAwesomeIcon icon={faArrowRight} />
+          </ArrowButton>
         </ImageOverlay>
       </Wrapper>
     </Container>
