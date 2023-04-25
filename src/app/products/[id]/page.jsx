@@ -592,6 +592,7 @@ const ArrowButton = styled.button`
   right: ${({ direction }) => direction === 'right' && '2.5rem'};
   transform: translateY(-50%);
   cursor: pointer;
+  transition: all 0.3s ease;
 
   &:hover {
     background-color: rgba(0, 0, 0, 0.1);
