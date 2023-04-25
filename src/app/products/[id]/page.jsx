@@ -138,7 +138,7 @@ const SingleProduct = () => {
                       <Color
                         key={index}
                         color={color}
-                        selected={isSelected}
+                        selected={color === isSelected}
                         onClick={() => {
                           setColor(color);
                           setIsSelected(color);
