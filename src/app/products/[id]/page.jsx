@@ -39,6 +39,12 @@ const SingleProduct = () => {
     setIsOpen(true);
   };
 
+  const closeModalHandler = (e) => {
+    if (e.target.classList.contains('imageOverlay')) {
+      setIsOpen(false);
+    }
+  };
+
   return (
     <Container>
       <Wrapper>
