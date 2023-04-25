@@ -504,7 +504,8 @@ const ImageOverlay = styled.section`
 `;
 
 const ArrowButton = styled.button`
-  
+  border: none;
+  display: inline-block;
 `;
 
 const ImageContainer = styled.div`
