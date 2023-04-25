@@ -548,7 +548,7 @@ const AddButton = styled.button`
   transition: all 0.3s ease;
 
   &:disabled {
-    background-color: #f5f5f5;
+    background-color: #f9f9f9;
     color: #999;
   }
 
