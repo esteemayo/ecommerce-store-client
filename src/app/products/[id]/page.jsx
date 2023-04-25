@@ -555,7 +555,7 @@ const Line = styled.hr`
 const ImageOverlay = styled.section`
   width: 100vw;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.95);
   position: fixed;
   top: 0;
   left: ${({ type }) => type === 'show' ? 0 : '-100vw'};
