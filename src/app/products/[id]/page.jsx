@@ -513,7 +513,7 @@ const SelectSize = styled.button`
   border-radius: 0.4rem;
   outline-color: #ccc;
   margin-bottom: 0.8rem;
-  cursor: pointer;
+  cursor: ${({ bcg }) => bcg ? 'default' : 'pointer'};
   transition: all 0.1s ease-in-out;
 
   &:hover {
