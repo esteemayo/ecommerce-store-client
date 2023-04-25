@@ -593,6 +593,10 @@ const ArrowButton = styled.button`
   transform: translateY(-50%);
   cursor: pointer;
 
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
   svg {
     fill: var(--clr-white);
   }
