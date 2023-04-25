@@ -152,6 +152,9 @@ const SingleProduct = () => {
               <Hr />
               <AddContainer>
                 <AmountHeading>Quantity</AmountHeading>
+                <AmountContainer>
+
+                </AmountContainer>
               </AddContainer>
               <Hr />
               <Button type='button'>Add to cart</Button>
