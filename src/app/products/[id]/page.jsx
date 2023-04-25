@@ -26,6 +26,7 @@ const SingleProduct = () => {
   const [isSelected, setIsSelected] = useState(false);
 
   const colors = ['black', 'pink', 'crimson'];
+  const sizes = ['XS', 'S', 'M', 'L', 'XL', 'XXL'];
 
   const images = [
     '/img/category-1.jpg',
