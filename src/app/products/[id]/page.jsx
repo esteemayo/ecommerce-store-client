@@ -198,13 +198,15 @@ const SingleProduct = () => {
               alt=''
             />
           </ImageContainer>
-          <ArrowButton
-            type='button'
-            direction='right'
-            onClick={() => handleClick('right')}
-          >
-            <FontAwesomeIcon icon={faArrowRight} />
-          </ArrowButton>
+          {slideIndex <= images[images.length - 1] && (
+            <ArrowButton
+              type='button'
+              direction='right'
+              onClick={() => handleClick('right')}
+            >
+              <FontAwesomeIcon icon={faArrowRight} />
+            </ArrowButton>
+          )}
         </ImageOverlay>
       </Wrapper>
     </Container>
