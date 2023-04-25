@@ -527,7 +527,7 @@ const Amount = styled.span`
   height: 3rem;
   text-align: center;
   border: 1px solid #89a8a0;
-  border-radius: 1rem;
+  border-radius: 1.5rem;
 `;
 
 const Button = styled.button`
