@@ -340,7 +340,7 @@ export const topReviews = [
     rating: 5,
     review: 'Exactly what I wanted - slightly elevated but still warm. Fits like a dream with nice big pockets with zippers. Great addition!',
     user: {
-      name: 'Sarah P.',
+      name: 'Sarah Paul',
       photo: '/img/reviewer-1.jpg'
     },
   },
@@ -349,7 +349,7 @@ export const topReviews = [
     rating: 5,
     review: 'Exactly what I wanted - slightly elevated but still warm. Fits like a dream with nice big pockets with zippers. Great addition!',
     user: {
-      name: 'Sarah P.',
+      name: 'John Doe',
       photo: '/img/reviewer-2.jpg'
     },
   },
