@@ -36,7 +36,7 @@ const SingleProduct = () => {
     '/img/img-5.jpg',
     '/img/img-7.jpg',
     '/img/img-10.jpg',
-    '/img/user-6.jpg',
+    '/img/img-12.jpg',
   ];
 
   const lastIndex = images.lastIndexOf(images[images.length - 1]);
