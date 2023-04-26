@@ -50,6 +50,17 @@ const SingleProduct = () => {
     if (e.target.classList.contains('imageContainer')) {
       setIsOpen(false);
     }
+
+    const exitModal = (e) => {
+      e.preventDefault();
+
+      if (e.key === 'Escape') {
+        setIsOpen(false);
+      }
+    }
+
+    window.addEventListener('keydown', exitModal);
+    return () => window.removeEventListener('keydown', exitModal);
   };
 
   const handleMove = (direction) => {
