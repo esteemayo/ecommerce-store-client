@@ -395,7 +395,7 @@ export const topReviews = [
     review: 'Exactly what I wanted - slightly elevated but still warm. Fits like a dream with nice big pockets with zippers. Great addition!',
     user: {
       name: 'Sarah P.',
-      photo: '/img/user3-.jpg'
+      photo: '/img/user-3.jpg'
     },
   },
   {
