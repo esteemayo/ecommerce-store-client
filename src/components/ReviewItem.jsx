@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 import StarRating from './StarRating';
 
-const ReviewItem = () => {
+const ReviewItem = ({ user, rating, review }) => {
   return (
     <Container>
       <Wrapper>
