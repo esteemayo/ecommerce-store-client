@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from 'react';
+import CloseIcon from '@mui/icons-material/Close';
 import Image from 'next/image';
 import { faArrowLeft, faArrowRight, faMinus, faPlus } from '@fortawesome/free-solid-svg-icons';
 import { NumericFormat } from 'react-number-format';
