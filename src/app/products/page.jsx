@@ -23,4 +23,8 @@ const FilterHeading = styled.h1`
   
 `;
 
+const Filter = styled.div`
+
+`;
+
 export default Products;
