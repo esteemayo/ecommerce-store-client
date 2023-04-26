@@ -334,6 +334,99 @@ export const footerLinks = [
   },
 ];
 
+export const topReviews = [
+  {
+    id: 1,
+    rating: 5,
+    review: 'Exactly what I wanted - slightly elevated but still warm. Fits like a dream with nice big pockets with zippers. Great addition!',
+    user: {
+      name: 'Sarah P.',
+      photo: '/img/reviewer-1.jpg'
+    },
+  },
+  {
+    id: 2,
+    rating: 5,
+    review: 'Exactly what I wanted - slightly elevated but still warm. Fits like a dream with nice big pockets with zippers. Great addition!',
+    user: {
+      name: 'Sarah P.',
+      photo: '/img/reviewer-2.jpg'
+    },
+  },
+  {
+    id: 3,
+    rating: 4.5,
+    review: 'Exactly what I wanted - slightly elevated but still warm. Fits like a dream with nice big pockets with zippers. Great addition!',
+    user: {
+      name: 'Sarah P.',
+      photo: '/img/reviewer-3.jpg'
+    },
+  },
+  {
+    id: 4,
+    rating: 4.8,
+    review: 'Exactly what I wanted - slightly elevated but still warm. Fits like a dream with nice big pockets with zippers. Great addition!',
+    user: {
+      name: 'Sarah P.',
+      photo: '/img/reviewer-4.jpg'
+    },
+  },
+  {
+    id: 5,
+    rating: 5,
+    review: 'Exactly what I wanted - slightly elevated but still warm. Fits like a dream with nice big pockets with zippers. Great addition!',
+    user: {
+      name: 'Sarah P.',
+      photo: '/img/user-1.jpg'
+    },
+  },
+  {
+    id: 6,
+    rating: 4.9,
+    review: 'Exactly what I wanted - slightly elevated but still warm. Fits like a dream with nice big pockets with zippers. Great addition!',
+    user: {
+      name: 'Sarah P.',
+      photo: '/img/user-2.jpg'
+    },
+  },
+  {
+    id: 7,
+    rating: 5,
+    review: 'Exactly what I wanted - slightly elevated but still warm. Fits like a dream with nice big pockets with zippers. Great addition!',
+    user: {
+      name: 'Sarah P.',
+      photo: '/img/user3-.jpg'
+    },
+  },
+  {
+    id: 8,
+    rating: 4.5,
+    review: 'Exactly what I wanted - slightly elevated but still warm. Fits like a dream with nice big pockets with zippers. Great addition!',
+    user: {
+      name: 'Sarah P.',
+      photo: '/img/user-4.jpg'
+    },
+  },
+  {
+    id: 9,
+    rating: 5,
+    review: 'Exactly what I wanted - slightly elevated but still warm. Fits like a dream with nice big pockets with zippers. Great addition!',
+    user: {
+      name: 'Sarah P.',
+      photo: '/img/user-5.jpg'
+    },
+  },
+  {
+    id: 10,
+    rating: 4.7,
+    review: 'Exactly what I wanted - slightly elevated but still warm. Fits like a dream with nice big pockets with zippers. Great addition!',
+    user: {
+      name: 'Sarah P.',
+      photo: '/img/user-9.jpg'
+    },
+  },
+];
+
 export const reviews = [
   {
     id: 1,
