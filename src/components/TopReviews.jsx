@@ -38,15 +38,6 @@ const TopReviews = () => {
         </IconButton>
         <ReviewContainer ref={reviewRef}>
           <ReviewItem />
-          <ReviewItem />
-          <ReviewItem />
-          <ReviewItem />
-          <ReviewItem />
-          <ReviewItem />
-          <ReviewItem />
-          <ReviewItem />
-          <ReviewItem />
-          <ReviewItem />
         </ReviewContainer>
         <IconButton
           direction='right'
