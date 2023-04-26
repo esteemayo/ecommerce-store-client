@@ -10,14 +10,12 @@ const ReviewItem = ({ user, rating, review }) => {
       <Wrapper>
         <Left>
           <RatingContainer>
-            <StarRating value={5} />
+            <StarRating value={rating} />
             <ReviewCount>Based on 61 reviews</ReviewCount>
           </RatingContainer>
           <ReviewContainer>
-            <Review>
-              Exactly what I wanted - slightly elevated but still warm. Fits like a dream with nice big pockets with zippers. Great addition!
-            </Review>
-            <Reviewer>Sarah P.</Reviewer>
+            <Review>{review}</Review>
+            <Reviewer>{user.name}</Reviewer>
           </ReviewContainer>
           <Button>
             <Link href='/' passHref>
@@ -27,7 +25,7 @@ const ReviewItem = ({ user, rating, review }) => {
         </Left>
         <Right>
           <Image
-            src='/img/reviewer-1.webp'
+            src={user.photo}
             width={1200}
             height={1200}
             alt=''
