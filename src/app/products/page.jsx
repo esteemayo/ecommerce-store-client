@@ -10,7 +10,7 @@ const Products = () => {
 }
 
 const Container = styled.main`
-  
+  width: 100vw;
 `;
 
 export default Products;
