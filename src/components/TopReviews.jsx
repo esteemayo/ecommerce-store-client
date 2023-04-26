@@ -38,7 +38,9 @@ const TopReviews = () => {
           <FontAwesomeIcon icon={faArrowLeft} />
         </IconButton>
         <ReviewContainer ref={reviewRef}>
-          <ReviewItem />
+          {topReviews.map((review) => {
+            return <ReviewItem key={review.id} {...review} />;
+          })}
         </ReviewContainer>
         <IconButton
           direction='right'
