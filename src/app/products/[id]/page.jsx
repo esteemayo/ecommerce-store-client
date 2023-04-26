@@ -170,10 +170,7 @@ const SingleProduct = () => {
                         key={index}
                         type='button'
                         bcg={selectedSize === size}
-                        onClick={() => {
-                          setSize(size);
-                          setSelectedSize(size);
-                        }}
+                        onClick={() => handleSize(size)}
                       >
                         {size}
                       </SelectSize>
