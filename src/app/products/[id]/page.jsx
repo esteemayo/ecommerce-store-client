@@ -242,7 +242,7 @@ const SingleProduct = () => {
             <ArrowButton
               type='button'
               direction='left'
-              onClick={() => handleClick('left')}
+              onClick={() => handleMove('left')}
             >
               <FontAwesomeIcon icon={faArrowLeft} />
             </ArrowButton>
@@ -259,7 +259,7 @@ const SingleProduct = () => {
             type='button'
             direction='right'
             style={{ display: slideIndex === lastIndex && 'none' }}
-            onClick={() => handleClick('right')}
+            onClick={() => handleMove('right')}
           >
             <FontAwesomeIcon icon={faArrowRight} />
           </ArrowButton>
