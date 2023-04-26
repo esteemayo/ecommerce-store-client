@@ -13,4 +13,8 @@ const Container = styled.main`
   width: 100vw;
 `;
 
+const FilterContainer = styled.div`
+  
+`;
+
 export default Products;
