@@ -266,6 +266,7 @@ const SingleProduct = () => {
           <ArrowButton
             type='button'
             direction='right'
+            onClick={() => handleMove('right')}
             style={{ display: slideIndex === lastIndex && 'none' }}
             onClick={() => handleMove('right')}
           >
