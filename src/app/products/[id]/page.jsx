@@ -32,7 +32,7 @@ const SingleProduct = () => {
 
   const images = [
     '/img/img-2.jpg',
-    '/img/user-2.jpg',
+    '/img/img-3.jpg',
     '/img/user-3.jpg',
     '/img/user-4.jpg',
     '/img/user-5.jpg',
