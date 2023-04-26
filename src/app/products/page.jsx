@@ -5,7 +5,7 @@ const Products = () => {
   return (
     <Container>
       <FilterContainer>
-        
+
       </FilterContainer>
     </Container>
   );
@@ -16,6 +16,10 @@ const Container = styled.main`
 `;
 
 const FilterContainer = styled.div`
+  
+`;
+
+const FilterText = styled.h1`
   
 `;
 
