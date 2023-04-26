@@ -56,6 +56,8 @@ const Left = styled.div`
   display: flex;
   flex-direction: column;
   gap: 5rem;
+  width: 100%;
+  height: 100%;
   padding: 8rem 0 10rem 4rem;
   background-color: var(--clr-white);
 `;
