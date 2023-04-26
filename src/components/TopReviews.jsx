@@ -11,6 +11,8 @@ const TopReviews = () => {
   const [isMoved, setIsMoved] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0);
 
+  const lastIndex = topReviews.lastIndexOf(topReviews.slice(-1)[0]);
+
   const handleClick = (direction) => {
     setIsMoved(true);
     const distance = reviewRef.current.getBoundingClientRect().x - 50;
