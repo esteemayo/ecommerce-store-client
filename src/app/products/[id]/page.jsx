@@ -366,6 +366,7 @@ const PriceContainer = styled.div`
 `;
 
 const ProductPrice = styled.p`
+  text-decoration: line-through;
   font-size: 1.6rem;
   cursor: default;
 `;
