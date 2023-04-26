@@ -67,6 +67,11 @@ const SingleProduct = () => {
     setSlideIndex(newSlideIndex);
   };
 
+  const handleColor = (color) => {
+    setColor(color);
+    setIsSelected(color);
+  };
+
   const handleQuantity = (type) => {
     type === 'dec' && quantity > 1 && setQuantity(quantity - 1);
     type === 'inc' && setQuantity(quantity + 1);
