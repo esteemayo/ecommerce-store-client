@@ -148,10 +148,7 @@ const SingleProduct = () => {
                         key={index}
                         color={color}
                         selected={color === isSelected}
-                        onClick={() => {
-                          setColor(color);
-                          setIsSelected(color);
-                        }}
+                        onClick={() => handleColor(color)}
                       >
                         &nbsp;
                       </Color>
