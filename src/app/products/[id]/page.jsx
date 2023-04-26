@@ -34,7 +34,7 @@ const SingleProduct = () => {
     '/img/img-2.jpg',
     '/img/img-3.jpg',
     '/img/img-5.jpg',
-    '/img/user-4.jpg',
+    '/img/img-7.jpg',
     '/img/user-5.jpg',
     '/img/user-6.jpg',
   ];
