@@ -192,7 +192,7 @@ const SingleProduct = () => {
                 </AmountContainer>
               </AddContainer>
               <Hr />
-              <Button type='button'>Add to cart</Button>
+              <Button type='button' onClick={handleClick}>Add to cart</Button>
               <Hr />
               <ValueAddWrapper>
                 <ValueAdd>
