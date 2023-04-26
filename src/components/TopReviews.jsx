@@ -47,6 +47,7 @@ const TopReviews = () => {
         <IconButton
           direction='right'
           onClick={() => handleClick('right')}
+          style={{ display: currentSlide === lastIndex - 1 && 'none' }}
         >
           <FontAwesomeIcon icon={faArrowRight} />
         </IconButton>
