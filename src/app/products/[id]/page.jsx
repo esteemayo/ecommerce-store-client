@@ -72,6 +72,10 @@ const SingleProduct = () => {
     type === 'inc' && setQuantity(quantity + 1);
   };
 
+  const handleClick = () => {
+    console.log({ size, color, quantity });
+  };
+
   return (
     <Container onMouseOver={() => dispatch(closeSubmenu())}>
       <Wrapper>
