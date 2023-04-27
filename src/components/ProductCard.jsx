@@ -2,6 +2,7 @@ import Image from 'next/image';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import StarRating from './StarRating';
+import { faScaleBalanced } from '@fortawesome/free-solid-svg-icons';
 
 const ProductCard = () => {
   return (
