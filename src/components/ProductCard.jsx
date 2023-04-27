@@ -209,6 +209,11 @@ const WishlistButton = styled.button`
   border-radius: 0.5rem;
   outline-color: #85beae;
   cursor: pointer;
+
+  svg {
+    font-size: 2rem;
+    fill: currentColor;
+  }
 `;
 
 export default ProductCard;
