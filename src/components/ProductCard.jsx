@@ -118,6 +118,9 @@ const Button = styled.button`
   display: inline-block;
   width: 100%;
   padding: 1.5rem 1rem;
+  font-size: 1.5rem;
+  background-color: #89a8a0;
+  color: var(--clr-white);
 `;
 
 export default ProductCard;
