@@ -164,4 +164,8 @@ const ButtonsContainer = styled.div`
   
 `;
 
+const CartButton = styled.button`
+
+`;
+
 export default ProductCard;
