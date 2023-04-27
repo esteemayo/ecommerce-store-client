@@ -141,7 +141,10 @@ const Button = styled.button`
 `;
 
 const InStock = styled.div`
-
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 2px;
 `;
 
 export default ProductCard;
