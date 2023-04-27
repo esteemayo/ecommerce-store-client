@@ -78,7 +78,9 @@ const Label = styled.label`
 `;
 
 const Select = styled.select`
-
+  display: inline-block;
+  width: 20rem;
+  padding: 3px;
 `;
 
 const Option = styled.option`
