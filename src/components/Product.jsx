@@ -40,7 +40,10 @@ const Product = () => {
             add to cart
           </Button>
           <FavWrapper>
-            <WishlistButton>Add to Wishlist</WishlistButton>
+            <WishlistButton>
+              <FontAwesomeIcon icon={faHeart} />
+              Add to Wishlist
+            </WishlistButton>
             <LikeButton>
               <FontAwesomeIcon icon={faStar} />
               Add to favorites
@@ -79,6 +82,9 @@ const Product = () => {
           </Button>
           <FavWrapper>
             <WishlistButton>
+
+              <FontAwesomeIcon icon={faHeart} />
+
               Add to Wishlist
             </WishlistButton>
             <LikeButton>
@@ -118,7 +124,10 @@ const Product = () => {
             add to cart
           </Button>
           <FavWrapper>
-            <WishlistButton>Add to Wishlist</WishlistButton>
+            <WishlistButton>
+              <FontAwesomeIcon icon={faHeart} />
+              Add to Wishlist
+            </WishlistButton>
             <LikeButton>
               <FontAwesomeIcon icon={faStar} />
               Add to favorites
