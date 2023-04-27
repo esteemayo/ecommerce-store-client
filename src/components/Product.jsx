@@ -22,7 +22,7 @@ const Product = ({ name, desc, price, inStock, images, ratingsAverage }) => {
             <Link href='/' passHref>{name}</Link>
           </ProductName>
           <ReviewContainer>
-            <StarRating value={5} />
+            <StarRating value={ratingsAverage} />
             <Reviews>(<span><span>6 reviews</span></span>)</Reviews>
           </ReviewContainer>
           <PriceContainer>
