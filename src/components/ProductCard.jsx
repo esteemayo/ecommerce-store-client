@@ -178,6 +178,8 @@ const CartButton = styled.button`
   color: inherit;
   border: 1px solid #89a8a0;
   border-radius: 0.5rem;
+  outline-color: #85beae;
+  cursor: pointer;
 `;
 
 const WishlistButton = styled.button`
