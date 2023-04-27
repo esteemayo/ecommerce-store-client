@@ -30,15 +30,17 @@ const Container = styled.div`
 `;
 
 const Wrapper = styled.div`
-  
+  display: flex;
+  align-items: flex-end;
+  gap: 3rem;
 `;
 
 const Left = styled.div`
-
+  flex: 1;
 `;
 
 const ImageContainer = styled.div`
-  
+  flex: 2;
 `;
 
 const Right = styled.div`
