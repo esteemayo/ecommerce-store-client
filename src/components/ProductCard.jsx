@@ -26,7 +26,10 @@ const ProductCard = () => {
           <Button type='button'>Add to cart</Button>
           <InStock>50+ pcs. in stock.</InStock>
           <ButtonsContainer>
-            <CartButton type='button'>Add to cart</CartButton>
+            <CartButton type='button'>
+              <FontAwesomeIcon icon={faScaleBalanced} />
+              Add to cart
+            </CartButton>
             <WishlistButton type='button'>Add to wishlist</WishlistButton>
           </ButtonsContainer>
         </Right>
