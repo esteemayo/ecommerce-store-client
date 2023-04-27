@@ -12,6 +12,9 @@ const ProductCard = () => {
         </Left>
         <Right>
           <ProductName>The Stanley Rain Jacket in Black</ProductName>
+          <ReviewContainer>
+
+          </ReviewContainer>
         </Right>
       </Wrapper>
     </Container>
