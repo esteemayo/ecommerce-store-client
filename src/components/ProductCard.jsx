@@ -162,7 +162,10 @@ const InStock = styled.div`
 `;
 
 const ButtonsContainer = styled.div`
-  
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 0;
 `;
 
 const CartButton = styled.button`
