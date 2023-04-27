@@ -139,6 +139,10 @@ const ProductContainer = styled.section`
   width: 65%;
   margin: 0 auto;
   padding: 8rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5rem;
 `;
 
 export default Products;
