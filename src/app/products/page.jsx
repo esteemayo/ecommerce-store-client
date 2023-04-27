@@ -90,7 +90,8 @@ const Select = styled.select`
 `;
 
 const Option = styled.option`
-  
+  background-color: var(--clr-white);
+  color: inherit;
 `;
 
 const Input = styled.input`
