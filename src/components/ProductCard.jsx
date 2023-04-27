@@ -25,6 +25,7 @@ const ProductCard = () => {
           <InStock>50+ pcs. in stock.</InStock>
           <ButtonsContainer>
             <CartButton type='button'>Add to cart</CartButton>
+            <WishlistButton type='button'>Add to wishlist</WishlistButton>
           </ButtonsContainer>
         </Right>
       </Wrapper>
