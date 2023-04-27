@@ -195,7 +195,7 @@ const WishlistButton = styled.button`
   font-weight: 500;
   font-size: 1.4rem;
   background-color: transparent;
-  color: inherit;
+  color: #89a8a0;
   border: 1px solid #89a8a0;
   border-radius: 0.5rem;
   outline-color: #85beae;
