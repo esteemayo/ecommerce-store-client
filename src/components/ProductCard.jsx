@@ -69,8 +69,8 @@ const ImageContainer = styled.div`
   height: 100%;
 
   img {
-    width: 10rem;
-    height: 10rem;
+    width: 12rem;
+    height: 12rem;
     display: block;
     object-fit: cover;
   }
