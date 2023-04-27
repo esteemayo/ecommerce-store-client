@@ -59,4 +59,8 @@ const Option = styled.option`
   
 `;
 
+const Input = styled.input`
+  
+`;
+
 export default Products;
