@@ -7,7 +7,9 @@ const Products = () => {
       <FilterContainer>
         <FilterHeading>Filter by</FilterHeading>
         <Filter>
+          <Select>
 
+          </Select>
         </Filter>
       </FilterContainer>
     </Container>
