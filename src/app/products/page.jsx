@@ -43,6 +43,8 @@ const Products = () => {
       </FilterContainer>
       <ProductContainer>
         <ProductCard />
+        <ProductCard />
+        <ProductCard />
       </ProductContainer>
     </Container>
   );
