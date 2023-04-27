@@ -11,7 +11,7 @@ const ProductCard = () => {
           </ImageContainer>
         </Left>
         <Right>
-          Right
+          <ProductName>The Stanley Rain Jacket in Black</ProductName>
         </Right>
       </Wrapper>
     </Container>
