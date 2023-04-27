@@ -6,37 +6,39 @@ const Products = () => {
     <Container>
       <FilterContainer>
         <FilterHeading>Filter by</FilterHeading>
-        <Filter>
-          <Label htmlFor='color'>Color</Label>
-          <Select id='color'>
-            <Option>White</Option>
-            <Option>Black</Option>
-            <Option>Blue</Option>
-            <Option>Pink</Option>
-            <Option>Red</Option>
-          </Select>
-        </Filter>
-        <Filter>
-          <Label htmlFor='category'>Category</Label>
-          <Select id='category'>
-            <Option>Jeans</Option>
-            <Option>Shirts</Option>
-            <Option>Electronics</Option>
-            <Option>Sneakers</Option>
-            <Option>Gadgets</Option>
-          </Select>
-        </Filter>
-        <Filter>
-          <Label htmlFor='price'>Product price</Label>
-          <Input type='range' id='price' min={0} max={900} />
-        </Filter>
-        <Filter>
-          <Label htmlFor='size'>Product size</Label>
-          <SizeInputs>
-            <SizeInput type='number' name='size' id='size' value={0} />
-            <SizeInput type='number' name='size' id='size' value={100} />
-          </SizeInputs>
-        </Filter>
+        <FilterWrapper>
+          <Filter>
+            <Label htmlFor='color'>Color</Label>
+            <Select id='color'>
+              <Option>White</Option>
+              <Option>Black</Option>
+              <Option>Blue</Option>
+              <Option>Pink</Option>
+              <Option>Red</Option>
+            </Select>
+          </Filter>
+          <Filter>
+            <Label htmlFor='category'>Category</Label>
+            <Select id='category'>
+              <Option>Jeans</Option>
+              <Option>Shirts</Option>
+              <Option>Electronics</Option>
+              <Option>Sneakers</Option>
+              <Option>Gadgets</Option>
+            </Select>
+          </Filter>
+          <Filter>
+            <Label htmlFor='price'>Product price</Label>
+            <Input type='range' id='price' min={0} max={900} />
+          </Filter>
+          <Filter>
+            <Label htmlFor='size'>Product size</Label>
+            <SizeInputs>
+              <SizeInput type='number' name='size' id='size' value={0} />
+              <SizeInput type='number' name='size' id='size' value={100} />
+            </SizeInputs>
+          </Filter>
+        </FilterWrapper>
       </FilterContainer>
     </Container>
   );
