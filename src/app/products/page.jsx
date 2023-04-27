@@ -83,6 +83,8 @@ const Select = styled.select`
   padding: 3px;
   background-color: transparent;
   color: #999;
+  border: 1px solid #89a8a0;
+  border-radius: 3px;
 `;
 
 const Option = styled.option`
