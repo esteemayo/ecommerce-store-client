@@ -90,7 +90,10 @@ const PriceDiscount = styled.p`
 `;
 
 const ProductPrice = styled.p`
-  
+  display: inline-block;
+  font-weight: 600;
+  font-size: 3rem;
+  color: #999;
 `;
 
 const Right = styled.div`
