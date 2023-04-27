@@ -216,7 +216,7 @@ const WishlistButton = styled.button`
   cursor: pointer;
 
   svg {
-    font-size: 2rem;
+    font-size: 1.7rem;
     fill: currentColor;
   }
 `;
