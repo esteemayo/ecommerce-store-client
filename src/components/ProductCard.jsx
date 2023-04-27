@@ -65,6 +65,14 @@ const Right = styled.div`
 
 `;
 
+const ProductName = styled.h1`
+  display: inline-block;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 1.3;
+  margin-bottom: 2rem;
+`;
+
 const ReviewContainer = styled.div`
   display: flex;
   align-items: center;
