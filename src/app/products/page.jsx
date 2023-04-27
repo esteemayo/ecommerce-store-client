@@ -112,6 +112,9 @@ const SizeInput = styled.input`
   display: inline-block;
   width: 8rem;
   padding: 3px;
+  font-size: 1.4rem;
+  background-color: transparent;
+  color: #999;
 `;
 
 export default Products;
