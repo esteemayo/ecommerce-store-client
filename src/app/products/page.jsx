@@ -107,7 +107,9 @@ const Input = styled.input`
 `;
 
 const SizeInputs = styled.div`
-  
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 `;
 
 const SizeInput = styled.input`
