@@ -18,7 +18,7 @@ const ProductCard = () => {
             <Reviews>(<span><span>6 reviews</span></span>)</Reviews>
           </ReviewContainer>
           <PriceContainer>
-            <PriceDiscount>159,-</PriceDiscount>
+            <PriceDiscount>1,599,-</PriceDiscount>
           </PriceContainer>
         </Right>
       </Wrapper>
@@ -83,6 +83,10 @@ const PriceContainer = styled.div`
 `;
 
 const PriceDiscount = styled.p`
+  
+`;
+
+const ProductPrice = styled.p`
   
 `;
 
