@@ -131,6 +131,10 @@ const Button = styled.button`
   outline-color: #85beae;
   border-radius: 0.5rem;
   cursor: pointer;
+
+  &:hover {
+    background-position: 100%;
+  }
 `;
 
 export default ProductCard;
