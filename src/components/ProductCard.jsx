@@ -4,7 +4,9 @@ const ProductCard = () => {
   return (
     <Container>
       <Wrapper>
-        ProductCard
+        <Left>
+          Left
+        </Left>
       </Wrapper>
     </Container>
   );
