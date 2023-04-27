@@ -40,6 +40,9 @@ const Products = () => {
           </Filter>
         </FilterWrapper>
       </FilterContainer>
+      <ProductContainer>
+        
+      </ProductContainer>
     </Container>
   );
 }
