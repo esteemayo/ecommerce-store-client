@@ -157,4 +157,8 @@ const InStock = styled.div`
   }
 `;
 
+const ButtonsContainer = styled.div`
+  
+`;
+
 export default ProductCard;
