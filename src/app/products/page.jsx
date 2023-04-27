@@ -129,4 +129,8 @@ const SizeInput = styled.input`
   outline-color: #74948c;
 `;
 
+const ProductContainer = styled.section`
+  
+`;
+
 export default Products;
