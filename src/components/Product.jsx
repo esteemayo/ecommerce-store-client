@@ -321,10 +321,6 @@ const LikeButton = styled.button`
   align-items: center;
   gap: 0.5rem;
 
-  &:hover {
-    transform: scale(1);
-  }
-
   svg {
     font-size: 1.7rem;
   }
