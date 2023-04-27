@@ -58,7 +58,10 @@ const ImageContainer = styled.div`
 `;
 
 const ReviewContainer = styled.div`
-
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
 `;
 
 const Reviews = styled.div`
