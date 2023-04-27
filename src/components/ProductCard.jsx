@@ -173,9 +173,12 @@ const CartButton = styled.button`
   display: inline-block;
   width: 50%;
   padding: 1rem;
+  font-weight: 500;
   font-size: 1.4rem;
   background-color: transparent;
   color: inherit;
+  border: 1px solid #89a8a0;
+  border-radius: 0.5rem;
 `;
 
 const WishlistButton = styled.button`
