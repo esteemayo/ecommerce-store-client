@@ -7,6 +7,16 @@ const Products = () => {
       <FilterContainer>
         <FilterHeading>Filter by</FilterHeading>
         <Filter>
+          <Label htmlFor='color'>Color</Label>
+          <Select id='color'>
+            <Option>White</Option>
+            <Option>Black</Option>
+            <Option>Blue</Option>
+            <Option>Pink</Option>
+            <Option>Red</Option>
+          </Select>
+        </Filter>
+        <Filter>
           <Label htmlFor='category'>Category</Label>
           <Select id='category'>
             <Option>Jeans</Option>
