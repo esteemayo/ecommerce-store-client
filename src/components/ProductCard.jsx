@@ -42,7 +42,7 @@ const Container = styled.div`
 const Wrapper = styled.div`
   display: flex;
   align-items: flex-start;
-  gap: 3rem;
+  gap: 1rem;
 `;
 
 const Left = styled.div`
