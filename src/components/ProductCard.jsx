@@ -52,6 +52,10 @@ const ImageContainer = styled.div`
   }
 `;
 
+const ReviewContainer = styled.div`
+
+`;
+
 const Right = styled.div`
 
 `;
