@@ -7,21 +7,20 @@ import { NumericFormat } from 'react-number-format';
 import { faHeart } from '@fortawesome/free-regular-svg-icons';
 
 import StarRating from './StarRating';
-import { useRouter } from 'next/router';
 
-const Product = ({ name, desc, price, inStock, images, ratingsAverage }) => {
+const Product = ({ id, name, price, inStock, images, ratingsAverage }) => {
   return (
     <Container>
       <Wrapper>
         <Image
-          src='https://images.pexels.com/photos/63690/pexels-photo-63690.jpeg?auto=compress&cs=tinysrgb&w=600'
+          src={images[0]}
           width={300}
           height={200}
           alt=''
         />
         <InfoContainer>
           <ProductName>
-            <Link href='/' passHref>{name}</Link>
+            <Link href={`/products/${id}`} passHref>{name}</Link>
           </ProductName>
           <ReviewContainer>
             <StarRating value={ratingsAverage} />
@@ -30,11 +29,18 @@ const Product = ({ name, desc, price, inStock, images, ratingsAverage }) => {
           <PriceContainer>
             <Prices>
               <Discount>$297</Discount>
-              <Price>$235</Price>
+              <Price>
+                <NumericFormat
+                  value={price}
+                  displayType={'text'}
+                  thousandSeparator={true}
+                  prefix={'$'}
+                />
+              </Price>
             </Prices>
-            <InStock>In stock</InStock>
+            {inStock && <InStock>In stock</InStock>}
           </PriceContainer>
-          <Button>
+          <Button type='button'>
             <FontAwesomeIcon icon={faShoppingCart} />
             &nbsp;
             add to cart
