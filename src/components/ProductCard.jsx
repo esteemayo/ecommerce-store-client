@@ -3,7 +3,9 @@ import styled from 'styled-components';
 const ProductCard = () => {
   return (
     <Container>
-      ProductCard
+      <Wrapper>
+        ProductCard
+      </Wrapper>
     </Container>
   );
 }
