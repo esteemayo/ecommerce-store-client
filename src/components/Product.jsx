@@ -20,7 +20,7 @@ const Product = ({ name, desc, price, inStock, images }) => {
         <InfoContainer>
           <ProductName>
             <Link href='/' passHref>
-              iPhone 14
+              {name}
             </Link>
           </ProductName>
           <ReviewContainer>
