@@ -15,6 +15,7 @@ const ProductCard = () => {
           <ProductName>The Stanley Rain Jacket in Black</ProductName>
           <ReviewContainer>
             <StarRating value={5} />
+            <Reviews>(<span><span>6 reviews</span></span>)</Reviews>
           </ReviewContainer>
         </Right>
       </Wrapper>
