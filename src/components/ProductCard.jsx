@@ -196,6 +196,10 @@ const WishlistButton = styled.button`
   font-size: 1.4rem;
   background-color: transparent;
   color: inherit;
+  border: 1px solid #89a8a0;
+  border-radius: 0.5rem;
+  outline-color: #85beae;
+  cursor: pointer;
 `;
 
 export default ProductCard;
