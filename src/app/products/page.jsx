@@ -30,4 +30,8 @@ const Filter = styled.div`
 
 `;
 
+const Select = styled.select`
+
+`;
+
 export default Products;
