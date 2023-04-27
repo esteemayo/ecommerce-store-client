@@ -9,7 +9,8 @@ const ProductCard = () => {
 }
 
 const Container = styled.div`
-  
+  width: 30%;
+  background-color: var(--color-white);
 `;
 
 export default ProductCard;
