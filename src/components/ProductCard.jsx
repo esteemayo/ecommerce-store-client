@@ -17,6 +17,9 @@ const ProductCard = () => {
             <StarRating value={5} />
             <Reviews>(<span><span>6 reviews</span></span>)</Reviews>
           </ReviewContainer>
+          <PriceContainer>
+
+          </PriceContainer>
         </Right>
       </Wrapper>
     </Container>
