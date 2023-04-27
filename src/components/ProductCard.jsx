@@ -6,4 +6,8 @@ const ProductCard = () => {
   );
 }
 
+const Container = styled.div`
+  
+`;
+
 export default ProductCard;
