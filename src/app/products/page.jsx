@@ -8,7 +8,11 @@ const Products = () => {
         <FilterHeading>Filter by</FilterHeading>
         <Filter>
           <Select>
-
+            <Option>Jeans</Option>
+            <Option>Shirts</Option>
+            <Option>Electronics</Option>
+            <Option>Sneakers</Option>
+            <Option>Gadgets</Option>
           </Select>
         </Filter>
       </FilterContainer>
