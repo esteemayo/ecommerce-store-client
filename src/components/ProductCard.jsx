@@ -84,6 +84,7 @@ const PriceContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   line-height: 1.2;
+  margin: 1rem 0;
 `;
 
 const PriceDiscount = styled.p`
