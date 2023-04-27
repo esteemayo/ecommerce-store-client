@@ -56,7 +56,7 @@ const Container = styled.div`
 const Wrapper = styled.div`
   display: flex;
   align-items: flex-start;
-  gap: 1rem;
+  gap: 0.5rem;
 `;
 
 const Left = styled.div`
