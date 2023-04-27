@@ -67,4 +67,8 @@ const Input = styled.input`
   
 `;
 
+const SizeInputs = styled.div`
+  
+`;
+
 export default Products;
