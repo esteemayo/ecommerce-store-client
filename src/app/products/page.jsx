@@ -8,7 +8,7 @@ const Products = () => {
         <FilterHeading>Filter by</FilterHeading>
         <Filter>
           <Label htmlFor='category'>Category</Label>
-          <Select>
+          <Select id='category'>
             <Option>Jeans</Option>
             <Option>Shirts</Option>
             <Option>Electronics</Option>
