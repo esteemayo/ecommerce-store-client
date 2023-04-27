@@ -121,6 +121,13 @@ const Button = styled.button`
   font-size: 1.5rem;
   background-color: #89a8a0;
   color: var(--clr-white);
+  background-image: linear-gradient(
+    120deg,
+    transparent 0%,
+    transparent 50%,
+    #89a8a0 50%
+  );
+  background-size: 220%;
 `;
 
 export default ProductCard;
