@@ -114,7 +114,10 @@ const ProductPrice = styled.p`
 `;
 
 const Button = styled.button`
-  
+  border: none;
+  display: inline-block;
+  width: 100%;
+  padding: 1.5rem 1rem;
 `;
 
 export default ProductCard;
