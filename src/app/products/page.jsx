@@ -71,7 +71,9 @@ const Filter = styled.div`
 `;
 
 const Label = styled.label`
-  
+  display: inline-block;
+  letter-spacing: 3px;
+  margin-bottom: 0.5rem;
 `;
 
 const Select = styled.select`
