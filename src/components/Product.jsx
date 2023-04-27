@@ -191,12 +191,13 @@ const ReviewContainer = styled.div`
 
   svg {
     font-size: 2.3rem;
+    fill: #89a8a0;
   }
 `;
 
 const Reviews = styled.div`
   span {
-    color: #3a7ecc;
+    color: #89a8a0;
   }
 `;
 
