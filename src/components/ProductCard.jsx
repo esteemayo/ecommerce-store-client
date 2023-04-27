@@ -44,4 +44,8 @@ const Right = styled.div`
 
 `;
 
+const ProductName = styled.h1`
+  
+`;
+
 export default ProductCard;
