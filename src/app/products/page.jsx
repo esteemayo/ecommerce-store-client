@@ -95,7 +95,9 @@ const Option = styled.option`
 `;
 
 const Input = styled.input`
-  
+  display: inline-block;
+  width: 20rem;
+  padding: 3px;
 `;
 
 const SizeInputs = styled.div`
