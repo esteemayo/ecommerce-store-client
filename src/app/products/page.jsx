@@ -7,6 +7,7 @@ const Products = () => {
       <FilterContainer>
         <FilterHeading>Filter by</FilterHeading>
         <Filter>
+          <Label htmlFor='category'>Category</Label>
           <Select>
             <Option>Jeans</Option>
             <Option>Shirts</Option>
