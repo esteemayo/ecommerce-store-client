@@ -134,7 +134,9 @@ const SizeInput = styled.input`
 `;
 
 const ProductContainer = styled.section`
-  
+  width: 65%;
+  margin: 0 auto;
+  padding: 8rem 0;
 `;
 
 export default Products;
