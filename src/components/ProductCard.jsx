@@ -80,7 +80,10 @@ const Reviews = styled.div`
 `;
 
 const PriceContainer = styled.div`
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.2;
 `;
 
 const PriceDiscount = styled.p`
