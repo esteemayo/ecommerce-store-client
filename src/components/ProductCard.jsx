@@ -11,7 +11,12 @@ const ProductCard = () => {
       <Wrapper>
         <Left>
           <ImageContainer>
-            <Image src='/img/img-9.jpg' width={120} height={120} alt='' />
+            <Image
+              src='/img/img-9.jpg'
+              width={120}
+              height={120}
+              alt=''
+            />
           </ImageContainer>
         </Left>
         <Right>
