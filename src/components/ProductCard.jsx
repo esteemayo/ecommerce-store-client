@@ -104,12 +104,4 @@ const ProductPrice = styled.p`
   color: #999;
 `;
 
-const ProductName = styled.h1`
-  display: inline-block;
-  font-weight: 500;
-  font-size: 2rem;
-  line-height: 1.3;
-  margin-bottom: 2rem;
-`;
-
 export default ProductCard;
