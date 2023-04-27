@@ -171,6 +171,7 @@ const ButtonsContainer = styled.div`
 const CartButton = styled.button`
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 1rem;
   width: 50%;
   padding: 1rem;
