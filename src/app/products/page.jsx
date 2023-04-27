@@ -54,7 +54,8 @@ const Container = styled.main`
 
 const FilterContainer = styled.div`
   padding: 5rem 0;
-  width: 65%;
+  width: 100%;
+  max-width: 102.4rem;
   margin: 0 auto;
 `;
 
@@ -134,7 +135,8 @@ const SizeInput = styled.input`
 `;
 
 const ProductContainer = styled.section`
-  width: 65%;
+  width: 100%;
+  max-width: 102.4rem;
   margin: 0 auto;
   padding: 8rem 0;
   display: flex;
