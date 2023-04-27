@@ -169,7 +169,6 @@ const ButtonsContainer = styled.div`
 `;
 
 const CartButton = styled.button`
-  border: none;
   display: inline-block;
   width: 50%;
   padding: 1rem;
