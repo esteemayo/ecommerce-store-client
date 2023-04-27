@@ -63,6 +63,7 @@ const FilterHeading = styled.h1`
 
 const FilterWrapper = styled.div`
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 2rem;
 `;
