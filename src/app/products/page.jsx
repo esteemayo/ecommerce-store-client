@@ -65,7 +65,9 @@ const FilterWrapper = styled.div`
 `;
 
 const Filter = styled.div`
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 `;
 
 const Label = styled.label`
