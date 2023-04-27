@@ -84,7 +84,9 @@ const PriceContainer = styled.div`
 `;
 
 const PriceDiscount = styled.p`
-  
+  display: inline-block;
+  text-decoration: line-through;
+  font-size: 1.4rem;
 `;
 
 const ProductPrice = styled.p`
