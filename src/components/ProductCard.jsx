@@ -144,7 +144,7 @@ const InStock = styled.div`
   font-size: 1.5rem;
   display: flex;
   align-items: center;
-  gap: 2px;
+  gap: 0.5rem;
 
   &::before {
     content: '';
