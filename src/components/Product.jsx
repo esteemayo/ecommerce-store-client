@@ -145,6 +145,7 @@ const Container = styled.article`
   flex-wrap: wrap;
   align-items: center;
   gap: 4rem;
+  cursor: default;
 `;
 
 const Wrapper = styled.div`
