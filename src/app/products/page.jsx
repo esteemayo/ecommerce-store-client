@@ -50,6 +50,8 @@ const Container = styled.main`
 
 const FilterContainer = styled.div`
   padding: 5rem 0;
+  width: 65%;
+  margin: 0 auto;
 `;
 
 const FilterHeading = styled.h1`
