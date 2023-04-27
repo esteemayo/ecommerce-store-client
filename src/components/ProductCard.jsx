@@ -26,6 +26,7 @@ const Container = styled.div`
   -webkit-box-shadow: 0 2rem 4rem rgba(145, 143, 143, 0.25);
   -moz-box-shadow: 0 2rem 4rem rgba(145, 143, 143, 0.25);
   border-radius: 1rem;
+  cursor: default;
 `;
 
 const Wrapper = styled.div`
