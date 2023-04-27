@@ -1,8 +1,11 @@
 import styled from 'styled-components';
 import Product from './Product';
 import { useState } from 'react';
+import { products } from '@/data';
 
 const FeaturedProducts = () => {
+  const [featuredProducts, setFeaturedProducts] = useState(products);
+
   return (
     <Container>
       <Wrapper>
