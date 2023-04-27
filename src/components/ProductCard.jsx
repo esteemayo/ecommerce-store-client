@@ -112,4 +112,8 @@ const ProductPrice = styled.p`
   color: #999;
 `;
 
+const Button = styled.button`
+  
+`;
+
 export default ProductCard;
