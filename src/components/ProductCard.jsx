@@ -18,4 +18,8 @@ const Container = styled.div`
   border-radius: 1rem;
 `;
 
+const Wrapper = styled.div`
+  
+`;
+
 export default ProductCard;
