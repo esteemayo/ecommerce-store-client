@@ -43,7 +43,9 @@ const Products = () => {
         </FilterWrapper>
       </FilterContainer>
       <ProductContainer>
-        <Product />
+        {products.map((product) => {
+          return <Product key={product.id} {...product} />;
+        })}
       </ProductContainer>
     </Container>
   );
