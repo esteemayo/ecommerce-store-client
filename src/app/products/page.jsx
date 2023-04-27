@@ -36,6 +36,10 @@ const Filter = styled.div`
 
 `;
 
+const Label = styled.label`
+  
+`;
+
 const Select = styled.select`
 
 `;
