@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import Product from './Product';
+import { useState } from 'react';
 
 const FeaturedProducts = () => {
   return (
