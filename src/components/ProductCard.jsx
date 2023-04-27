@@ -93,7 +93,7 @@ const ReviewContainer = styled.div`
 
 const Reviews = styled.div`
   span {
-    color: #89a8a0;
+    color: #92c2b4;
   }
 `;
 
