@@ -109,7 +109,9 @@ const SizeInputs = styled.div`
 `;
 
 const SizeInput = styled.input`
-
+  display: inline-block;
+  width: 8rem;
+  padding: 3px;
 `;
 
 export default Products;
