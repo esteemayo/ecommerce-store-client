@@ -98,6 +98,9 @@ const Input = styled.input`
   display: inline-block;
   width: 20rem;
   padding: 3px;
+  background-color: transparent;
+  color: #999;
+  border: 1px solid #89a8a0;
 `;
 
 const SizeInputs = styled.div`
