@@ -31,7 +31,10 @@ const ProductCard = () => {
               <FontAwesomeIcon icon={faScaleBalanced} />
               Add to cart
             </CartButton>
-            <WishlistButton type='button'>Add to wishlist</WishlistButton>
+            <WishlistButton type='button'>
+              <FontAwesomeIcon icon={faHeart} />
+              Add to wishlist
+            </WishlistButton>
           </ButtonsContainer>
         </Right>
       </Wrapper>
