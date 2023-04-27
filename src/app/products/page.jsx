@@ -81,6 +81,8 @@ const Select = styled.select`
   display: inline-block;
   width: 20rem;
   padding: 3px;
+  background-color: transparent;
+  color: #999;
 `;
 
 const Option = styled.option`
