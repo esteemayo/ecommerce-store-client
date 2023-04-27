@@ -47,7 +47,7 @@ const Container = styled.main`
 `;
 
 const FilterContainer = styled.div`
-  
+  padding: 5rem 0;
 `;
 
 const FilterHeading = styled.h1`
