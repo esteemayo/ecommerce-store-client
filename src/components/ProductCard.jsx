@@ -65,6 +65,45 @@ const Right = styled.div`
 
 `;
 
+const ReviewContainer = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+
+  svg {
+    font-size: 2.3rem;
+    fill: #89a8a0;
+  }
+`;
+
+const Reviews = styled.div`
+  span {
+    color: #89a8a0;
+  }
+`;
+
+const PriceContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.2;
+  margin: 1rem 0;
+`;
+
+const PriceDiscount = styled.p`
+  display: inline-block;
+  text-decoration: line-through;
+  font-size: 1.4rem;
+`;
+
+const ProductPrice = styled.p`
+  display: inline-block;
+  font-weight: 600;
+  font-size: 3rem;
+  color: #999;
+`;
+
 const ProductName = styled.h1`
   display: inline-block;
   font-weight: 500;
