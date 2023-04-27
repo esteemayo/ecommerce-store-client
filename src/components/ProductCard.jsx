@@ -172,6 +172,10 @@ const CartButton = styled.button`
   border: none;
   display: inline-block;
   width: 50%;
+  padding: 1rem;
+  font-size: 1.4rem;
+  background-color: transparent;
+  color: inherit;
 `;
 
 const WishlistButton = styled.button`
