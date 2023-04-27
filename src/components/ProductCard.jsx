@@ -194,6 +194,8 @@ const WishlistButton = styled.button`
   padding: 1rem;
   font-weight: 500;
   font-size: 1.4rem;
+  background-color: transparent;
+  color: inherit;
 `;
 
 export default ProductCard;
