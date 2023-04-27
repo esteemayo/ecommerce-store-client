@@ -29,7 +29,7 @@ const ProductCard = () => {
 }
 
 const Container = styled.div`
-  width: 40%;
+  width: 50%;
   background-color: var(--color-white);
   padding: 3rem;
   box-shadow: 0 2rem 4rem rgba(145, 143, 143, 0.25);
