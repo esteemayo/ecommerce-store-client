@@ -75,6 +75,10 @@ const Reviews = styled.div`
   }
 `;
 
+const PriceContainer = styled.div`
+  
+`;
+
 const Right = styled.div`
 
 `;
