@@ -7,6 +7,9 @@ const ProductCard = () => {
         <Left>
           Left
         </Left>
+        <Right>
+          Right
+        </Right>
       </Wrapper>
     </Container>
   );
