@@ -169,7 +169,9 @@ const ButtonsContainer = styled.div`
 `;
 
 const CartButton = styled.button`
-
+  border: none;
+  display: inline-block;
+  width: 50%;
 `;
 
 const WishlistButton = styled.button`
