@@ -19,9 +19,7 @@ const Product = ({ name, desc, price, inStock, images }) => {
         />
         <InfoContainer>
           <ProductName>
-            <Link href='/' passHref>
-              {name}
-            </Link>
+            <Link href='/' passHref>{name}</Link>
           </ProductName>
           <ReviewContainer>
             <StarRating value={5} />
