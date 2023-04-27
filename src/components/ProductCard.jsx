@@ -60,6 +60,10 @@ const ReviewContainer = styled.div`
 
 `;
 
+const Reviews = styled.div`
+
+`;
+
 const Right = styled.div`
 
 `;
