@@ -130,6 +130,7 @@ const Button = styled.button`
   background-size: 220%;
   outline-color: #85beae;
   border-radius: 0.5rem;
+  margin-top: 2rem;
   cursor: pointer;
   transition: all 0.3s ease;
 
