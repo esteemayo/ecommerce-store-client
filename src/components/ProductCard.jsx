@@ -82,6 +82,10 @@ const PriceContainer = styled.div`
   
 `;
 
+const PriceDiscount = styled.p`
+  
+`;
+
 const Right = styled.div`
 
 `;
