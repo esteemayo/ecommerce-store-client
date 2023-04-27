@@ -168,4 +168,8 @@ const CartButton = styled.button`
 
 `;
 
+const WishlistButton = styled.button`
+
+`;
+
 export default ProductCard;
