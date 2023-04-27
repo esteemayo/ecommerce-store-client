@@ -36,4 +36,8 @@ const Select = styled.select`
 
 `;
 
+const Option = styled.option`
+  
+`;
+
 export default Products;
