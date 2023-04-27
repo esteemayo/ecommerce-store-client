@@ -56,7 +56,7 @@ const Product = () => {
 }
 
 const Container = styled.article`
-  width: 100%;
+  width: 30%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -65,7 +65,7 @@ const Container = styled.article`
 `;
 
 const Wrapper = styled.div`
-  width: 30%;
+  /* width: 30%; */
   background-color: var(--clr-white);
   border-radius: 0.5rem;
   box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
