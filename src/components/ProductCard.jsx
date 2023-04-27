@@ -192,6 +192,11 @@ const CartButton = styled.button`
   border-radius: 0.5rem;
   outline-color: #85beae;
   cursor: pointer;
+
+  svg {
+    font-size: 1.7rem;
+    fill: currentColor;
+  }
 `;
 
 const WishlistButton = styled.button`
