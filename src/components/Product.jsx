@@ -7,7 +7,7 @@ import { faHeart } from '@fortawesome/free-regular-svg-icons';
 
 import StarRating from './StarRating';
 
-const Product = ({ name, desc, price, inStock, images }) => {
+const Product = ({ name, desc, price, inStock, images, ratingsAverage }) => {
   return (
     <Container>
       <Wrapper>
