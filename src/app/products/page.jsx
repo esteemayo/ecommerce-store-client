@@ -26,6 +26,10 @@ const Products = () => {
             <Option>Gadgets</Option>
           </Select>
         </Filter>
+        <Filter>
+          <Label htmlFor='price'>Product price</Label>
+          <Input type='range' id='price' min={0} max={900} />
+        </Filter>
       </FilterContainer>
     </Container>
   );
