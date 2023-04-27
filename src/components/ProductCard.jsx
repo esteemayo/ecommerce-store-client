@@ -63,7 +63,7 @@ const ImageContainer = styled.div`
 `;
 
 const Right = styled.div`
-
+  flex: 2;
 `;
 
 const ProductName = styled.h1`
