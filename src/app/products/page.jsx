@@ -54,6 +54,10 @@ const FilterHeading = styled.h1`
   
 `;
 
+const FilterWrapper = styled.div`
+
+`;
+
 const Filter = styled.div`
 
 `;
