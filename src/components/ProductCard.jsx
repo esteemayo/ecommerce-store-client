@@ -41,6 +41,8 @@ const Left = styled.div`
 
 const ImageContainer = styled.div`
   flex: 2;
+  width: 100%;
+  height: 100%;
 `;
 
 const Right = styled.div`
