@@ -19,6 +19,7 @@ const ProductCard = () => {
           </ReviewContainer>
           <PriceContainer>
             <PriceDiscount>1,599,-</PriceDiscount>
+            <ProductPrice>799,-</ProductPrice>
           </PriceContainer>
         </Right>
       </Wrapper>
