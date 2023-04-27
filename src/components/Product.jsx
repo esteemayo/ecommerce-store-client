@@ -7,6 +7,7 @@ import { NumericFormat } from 'react-number-format';
 import { faHeart } from '@fortawesome/free-regular-svg-icons';
 
 import StarRating from './StarRating';
+import { useRouter } from 'next/router';
 
 const Product = ({ name, desc, price, inStock, images, ratingsAverage }) => {
   return (
