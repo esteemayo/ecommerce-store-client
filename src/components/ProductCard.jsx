@@ -31,7 +31,7 @@ const Container = styled.div`
 
 const Wrapper = styled.div`
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
   gap: 3rem;
 `;
 
