@@ -54,4 +54,8 @@ const Heading = styled.h1`
   }
 `;
 
+const ProductsContainer = styled.div`
+
+`;
+
 export default FeaturedProducts;
