@@ -55,7 +55,10 @@ const FilterContainer = styled.div`
 `;
 
 const FilterHeading = styled.h1`
-  
+  display: inline-block;
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 `;
 
 const FilterWrapper = styled.div`
