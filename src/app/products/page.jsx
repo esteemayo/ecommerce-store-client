@@ -1,6 +1,7 @@
 'use client';
 import styled from 'styled-components';
 import ProductCard from '@/components/ProductCard';
+import Product from '@/components/Product';
 
 const Products = () => {
   return (
