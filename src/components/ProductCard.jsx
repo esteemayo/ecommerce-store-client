@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import styled from 'styled-components';
+import StarRating from './StarRating';
 
 const ProductCard = () => {
   return (
