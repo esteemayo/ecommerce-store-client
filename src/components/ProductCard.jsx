@@ -125,9 +125,12 @@ const Button = styled.button`
     120deg,
     transparent 0%,
     transparent 50%,
-    #89a8a0 50%
+    #e2e9e7 50%
   );
   background-size: 220%;
+  outline-color: #85beae;
+  border-radius: 0.5rem;
+  cursor: pointer;
 `;
 
 export default ProductCard;
