@@ -190,6 +190,10 @@ const WishlistButton = styled.button`
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  width: 50%;
+  padding: 1rem;
+  font-weight: 500;
+  font-size: 1.4rem;
 `;
 
 export default ProductCard;
