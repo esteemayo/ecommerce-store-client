@@ -21,6 +21,7 @@ const ProductCard = () => {
             <PriceDiscount>1,599,-</PriceDiscount>
             <ProductPrice>799,-</ProductPrice>
           </PriceContainer>
+          <Button type='button'>Add to cart</Button>
         </Right>
       </Wrapper>
     </Container>
