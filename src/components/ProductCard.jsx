@@ -145,6 +145,15 @@ const InStock = styled.div`
   display: flex;
   align-items: center;
   gap: 2px;
+
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-color: #00e774;
+    border-radius: 50%;
+  }
 `;
 
 export default ProductCard;
