@@ -42,7 +42,7 @@ const Products = () => {
         </FilterWrapper>
       </FilterContainer>
       <ProductContainer>
-        
+        <ProductCard />
       </ProductContainer>
     </Container>
   );
