@@ -11,7 +11,12 @@ const FeaturedProducts = () => {
     <Container>
       <Wrapper>
         <Heading>Featured products</Heading>
-        <Product />
+        {featuredProducts
+          .filter((product) => product.featured === true)
+          .map((product) => {
+            return <Product key={product.id} {...product} />;
+          })
+        }
       </Wrapper>
     </Container>
   );
