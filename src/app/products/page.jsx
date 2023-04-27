@@ -30,6 +30,12 @@ const Products = () => {
           <Label htmlFor='price'>Product price</Label>
           <Input type='range' id='price' min={0} max={900} />
         </Filter>
+        <Filter>
+          <Label htmlFor='size'>Product size</Label>
+          <SizeInputs>
+
+          </SizeInputs>
+        </Filter>
       </FilterContainer>
     </Container>
   );
