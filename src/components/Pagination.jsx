@@ -41,6 +41,8 @@ const ButtonContainer = styled.div`
 const Button = styled.button`
   border: none;
   display: inline-block;
+  text-transform: capitalize;
+  font-size: 1.7rem;
   background-color: transparent;
   color: inherit;
 `;
