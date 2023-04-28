@@ -29,6 +29,10 @@ const Wrapper = styled.div`
   border-radius: 0.5rem;
 `;
 
+const ButtonContainer = styled.div`
+
+`;
+
 const Button = styled.button`
   
 `;
