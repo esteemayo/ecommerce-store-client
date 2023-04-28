@@ -10,6 +10,7 @@ const Pagination = () => {
           <Button type='button'>Next</Button>
         </ButtonContainer>
       </Wrapper>
+      <TotalItems>- 1477 items -</TotalItems>
     </Container>
   );
 }
