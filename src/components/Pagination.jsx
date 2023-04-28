@@ -67,6 +67,8 @@ const TotalItems = styled.p`
   display: block;
   text-align: center;
   padding-top: 2rem;
+  font-size: 1.5rem;
+  color: #999;
 `;
 
 export default Pagination;
