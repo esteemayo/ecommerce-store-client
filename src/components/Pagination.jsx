@@ -13,6 +13,7 @@ const Pagination = () => {
 const Container = styled.section`
   width: 100vw;
   padding: 5rem 0;
+  cursor: default;
 `;
 
 const Wrapper = styled.div`
