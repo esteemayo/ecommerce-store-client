@@ -1,5 +1,6 @@
 'use client';
 import styled from 'styled-components';
+import { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 
 import { storeProducts } from '@/data';
@@ -7,7 +8,6 @@ import { closeSubmenu } from '@/features/submenu/submenuSlice';
 import ProductList from '@/components/ProductList';
 import Pagination from '@/components/Pagination';
 import ProductFilter from '@/components/ProductFilter';
-import { useEffect, useState } from 'react';
 
 const Products = () => {
   const dispatch = useDispatch();
@@ -28,7 +28,7 @@ const Products = () => {
   };
 
   const { category, size, color, price, products, sortedProducts } = values;
-  
+
   useEffect(() => {
     let tempProducts = [];
     storeProducts.map((item) => {
