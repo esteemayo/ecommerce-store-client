@@ -45,6 +45,9 @@ const Button = styled.button`
   font-size: 1.7rem;
   background-color: transparent;
   color: inherit;
+  outline-color: #ccc;
+  outline-offset: 3px;
+  cursor: pointer;
 `;
 
 export default Pagination;
