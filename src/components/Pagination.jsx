@@ -3,7 +3,9 @@ import styled from 'styled-components';
 const Pagination = () => {
   return (
     <Container>
-      Pagination
+      <Wrapper>
+        Pagination
+      </Wrapper>
     </Container>
   );
 }
