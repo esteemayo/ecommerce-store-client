@@ -13,40 +13,7 @@ const Products = () => {
   return (
     <Container onMouseOver={() => dispatch(closeSubmenu())}>
       <FilterContainer>
-        <FilterHeading>Filter by</FilterHeading>
-        <FilterWrapper>
-          <Filter>
-            <Label htmlFor='color'>Color</Label>
-            <Select id='color'>
-              <Option>White</Option>
-              <Option>Black</Option>
-              <Option>Blue</Option>
-              <Option>Pink</Option>
-              <Option>Red</Option>
-            </Select>
-          </Filter>
-          <Filter>
-            <Label htmlFor='category'>Category</Label>
-            <Select id='category'>
-              <Option>Jeans</Option>
-              <Option>Shirts</Option>
-              <Option>Electronics</Option>
-              <Option>Sneakers</Option>
-              <Option>Gadgets</Option>
-            </Select>
-          </Filter>
-          <Filter>
-            <Label htmlFor='price'>Product price</Label>
-            <Input type='range' id='price' min={0} max={900} />
-          </Filter>
-          <Filter>
-            <Label htmlFor='size'>Product size</Label>
-            <SizeInputs>
-              <SizeInput type='number' name='size' id='size' />
-              <SizeInput type='number' name='size' id='size' />
-            </SizeInputs>
-          </Filter>
-        </FilterWrapper>
+
       </FilterContainer>
       <ProductList products={products} />
       <Pagination />
