@@ -13,4 +13,8 @@ const Container = styled.section`
   padding: 5rem 0;
 `;
 
+const Wrapper = styled.div`
+  
+`;
+
 export default Pagination;
