@@ -5,7 +5,9 @@ import { products } from '@/data';
 const ProductList = () => {
   return (
     <Container>
-      ProductList
+      {products.map((product) => {
+        return <Product key={product.id} {...product} />;
+      })}
     </Container>
   );
 }
