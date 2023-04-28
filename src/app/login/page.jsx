@@ -253,7 +253,7 @@ const FormButton = styled.button`
     120deg,
     transparent 0%,
     transparent 50%,
-    #5885b9 50%
+    #89a8a0 50%
   );
   background-size: 220%;
   border-radius: 0.5rem;
