@@ -10,7 +10,7 @@ const Products = () => {
   const dispatch = useDispatch();
 
   return (
-    <Container>
+    <Container onMouseOver={() => dispatch(closeSubmenu())}>
       <FilterContainer>
         <FilterHeading>Filter by</FilterHeading>
         <FilterWrapper>
