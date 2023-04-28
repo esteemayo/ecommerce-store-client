@@ -30,9 +30,9 @@ const Products = () => {
   const { category, size, color, price, sortedProducts } = values;
 
   useEffect(() => {
-    const products = [...products];
-    const maxPrice = Math.max(...products.map((item) => item.price));
-    setValues({ products, sortedProducts: products, price: maxPrice, maxPrice });
+    const tempProducts = [...products];
+    const maxPrice = Math.max(...tempProducts.map((item) => item.price));
+    setValues({ tempProducts, sortedProducts: tempProducts, price: maxPrice, maxPrice });
   }, []);
 
   useEffect(() => {
