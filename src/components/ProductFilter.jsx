@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const ProductFilter = () => {
+const ProductFilter = ({ products }) => {
   return (
     <Container>
       <FilterHeading>Filter by</FilterHeading>
