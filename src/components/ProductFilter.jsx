@@ -15,6 +15,15 @@ const ProductFilter = ({ products }) => {
     );
   });
 
+  let categories = ['all', ...getUnique(products, 'category')];
+  categories = categories.map((category, index) => {
+    return (
+      <Option key={index} value={category}>
+        {category}
+      </Option>
+    );
+  });
+
   return (
     <Container>
       <FilterHeading>Filter by</FilterHeading>
