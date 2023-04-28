@@ -11,6 +11,13 @@ import { useState } from 'react';
 
 const Products = () => {
   const dispatch = useDispatch();
+  const [values, setValues] = useState({
+    category: 'all',
+    size: '',
+    color: '',
+    minPrice: 0,
+    maxPrice: 0,
+  });
   const [sortedProducts, setSortedProducts] = useState([]);
 
   return (
