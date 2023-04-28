@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { products } from '@/data';
 import Product from '@/components/Product';
 import { useDispatch } from 'react-redux';
+import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
 const Products = () => {
   const dispatch = useDispatch();
