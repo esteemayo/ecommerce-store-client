@@ -5,7 +5,7 @@ const getUnique = (items, value) => {
   return [...new Set(tempItems)];
 };
 
-const ProductFilter = ({ products, category, size, color, minPrice, maxPrice, handleChange }) => {
+const ProductFilter = ({ products, price, category, size, color, minPrice, maxPrice, handleChange }) => {
   let colors = getUnique(products, 'color');
   colors = colors.map((color, index) => {
     return (
@@ -46,6 +46,7 @@ const ProductFilter = ({ products, category, size, color, minPrice, maxPrice, ha
             id='price'
             name='price'
             type='range'
+            value={price}
             min={minPrice}
             max={maxPrice}
           />

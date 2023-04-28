@@ -17,17 +17,52 @@ const Products = () => {
     color: '',
     minPrice: 0,
     maxPrice: 0,
+    price: 0,
+    products: [],
+    sortedProducts: [],
   });
-  const [sortedProducts, setSortedProducts] = useState([]);
 
   const handleChange = ({ target: input }) => {
     const { name, value } = input;
     setValues((prev) => ({ ...prev, [name]: value }));
   };
 
-  useEffect(() => {
+  const { category, size, color, price, minPrice, maxPrice } = values;
 
-  })
+  useEffect(() => {
+    const products = [...products];
+    const maxPrice = Math.max(...products.map((item) => item.price));
+    setValues({ products, sortedProducts: products, price: maxPrice, maxPrice });
+  }, []);
+
+  useEffect(() => {
+    let tempProducts = [...products];
+    if (category !== 'all') {
+      tempProducts = tempProducts.filter((item) => item.category === category);
+    }
+
+    if (color) {
+      tempProducts = tempProducts.filter((item) =>
+        Object.entries(color).every(([key, value]) => {
+          item[key].includes(value)
+        })
+      );
+    }
+
+    if (size) {
+      tempProducts = tempProducts.filter((item) =>
+        Object.entries(size).every(([key, value]) => {
+          item[key].includes(value)
+        })
+      );
+    }
+
+    if (price) {
+      tempProducts = tempProducts.filter((item) => item.price <= price);
+    }
+
+    setValues({ sortedProducts: tempProducts });
+  }, [category, color, size, price]);
 
   return (
     <Container onMouseOver={() => dispatch(closeSubmenu())}>
