@@ -4,7 +4,9 @@ const Pagination = () => {
   return (
     <Container>
       <Wrapper>
-        <Button type='button'>Prev</Button>
+        <ButtonContainer>
+          <Button type='button'>Prev</Button>
+        </ButtonContainer>
       </Wrapper>
     </Container>
   );
