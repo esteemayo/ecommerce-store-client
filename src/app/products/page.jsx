@@ -27,7 +27,7 @@ const Products = () => {
     setValues((prev) => ({ ...prev, [name]: value }));
   };
 
-  const { category, size, color, price, minPrice, maxPrice } = values;
+  const { category, size, color, price, sortedProducts } = values;
 
   useEffect(() => {
     const products = [...products];
