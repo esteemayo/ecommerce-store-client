@@ -22,11 +22,7 @@ const ProductFilter = ({ products }) => {
         <Filter>
           <Label htmlFor='color'>Color</Label>
           <Select id='color'>
-            <Option>White</Option>
-            <Option>Black</Option>
-            <Option>Blue</Option>
-            <Option>Pink</Option>
-            <Option>Red</Option>
+            {colors}
           </Select>
         </Filter>
         <Filter>
