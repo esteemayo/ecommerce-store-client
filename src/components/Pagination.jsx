@@ -62,4 +62,8 @@ const Button = styled.button`
   cursor: pointer;
 `;
 
+const TotalItems = styled.p`
+  
+`;
+
 export default Pagination;
