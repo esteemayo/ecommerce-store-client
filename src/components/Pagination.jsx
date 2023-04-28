@@ -55,7 +55,7 @@ const Button = styled.button`
   border: none;
   display: inline-block;
   text-transform: capitalize;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   background-color: transparent;
   color: inherit;
   outline-color: #ccc;
