@@ -30,13 +30,13 @@ const ProductFilter = ({ products, category, size, color, minPrice, maxPrice, ha
       <FilterWrapper>
         <Filter>
           <Label htmlFor='color'>Color</Label>
-          <Select id='color'>
+          <Select id='color' name='color' onChange={handleChange}>
             {colors}
           </Select>
         </Filter>
         <Filter>
           <Label htmlFor='category'>Category</Label>
-          <Select id='category'>
+          <Select id='category' name='category' onChange={handleChange}>
             {categories}
           </Select>
         </Filter>
