@@ -2,10 +2,10 @@ import { useState } from 'react';
 import styled from 'styled-components';
 
 import Product from './Product';
-import { products } from '@/data';
+import { storeProducts } from '@/data';
 
 const FeaturedProducts = () => {
-  const [featuredProducts, setFeaturedProducts] = useState(products);
+  const [featuredProducts, setFeaturedProducts] = useState(storeProducts);
 
   return (
     <Container>
