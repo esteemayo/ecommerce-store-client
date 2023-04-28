@@ -6,4 +6,8 @@ const ProductFilter = () => {
   );
 }
 
+const Container = styled.section`
+  
+`;
+
 export default ProductFilter;
