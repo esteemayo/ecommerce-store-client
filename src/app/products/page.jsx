@@ -48,7 +48,7 @@ const Products = () => {
           </Filter>
         </FilterWrapper>
       </FilterContainer>
-      <ProductList />
+      <ProductList products={products} />
       <Pagination />
     </Container>
   );
