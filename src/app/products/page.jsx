@@ -20,6 +20,11 @@ const Products = () => {
   });
   const [sortedProducts, setSortedProducts] = useState([]);
 
+  const handleChange = ({ target: input }) => {
+    const { name, value } = input;
+    setValues((prev) => ({ ...prev, [name]: value }));
+  };
+
   return (
     <Container onMouseOver={() => dispatch(closeSubmenu())}>
       <ProductFilter products={products} {...values} />
