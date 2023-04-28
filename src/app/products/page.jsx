@@ -72,7 +72,7 @@ const FilterContainer = styled.div`
 const FilterHeading = styled.h1`
   display: inline-block;
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 2.25rem;
   margin-bottom: 1rem;
 `;
 
