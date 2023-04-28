@@ -313,6 +313,7 @@ const ForgotPassword = styled.p`
 
     &:hover {
       text-decoration: underline;
+      text-underline-offset: 3px;
     }
   }
 `;
