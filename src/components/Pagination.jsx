@@ -39,7 +39,10 @@ const ButtonContainer = styled.div`
 `;
 
 const Button = styled.button`
-  
+  border: none;
+  display: inline-block;
+  background-color: transparent;
+  color: inherit;
 `;
 
 export default Pagination;
