@@ -2,7 +2,7 @@
 import styled from 'styled-components';
 import { useDispatch } from 'react-redux';
 
-import { products } from '@/data';
+import { storeProducts } from '@/data';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 import ProductList from '@/components/ProductList';
 import Pagination from '@/components/Pagination';
@@ -18,7 +18,7 @@ const Products = () => {
     minPrice: 0,
     maxPrice: 0,
     price: 0,
-    products: [],
+    products: storeProducts,
     sortedProducts: [],
   });
 
@@ -27,13 +27,14 @@ const Products = () => {
     setValues((prev) => ({ ...prev, [name]: value }));
   };
 
-  const { category, size, color, price, sortedProducts } = values;
+  const { category, size, color, price, products, sortedProducts } = values;
 
   useEffect(() => {
-    const tempProducts = [...products];
-    const maxPrice = Math.max(...tempProducts.map((item) => item.price));
-    setValues({ tempProducts, sortedProducts: tempProducts, price: maxPrice, maxPrice });
-  }, []);
+    // const tempProducts = [...products];
+    const maxPrice = Math.max(...products.map((item) => item.price));
+    console.log(tempProducts)
+    setValues({  sortedProducts: tempProducts, price: maxPrice, maxPrice });
+  }, [products]);
 
   useEffect(() => {
     let tempProducts = [...products];
@@ -62,13 +63,13 @@ const Products = () => {
     }
 
     setValues({ sortedProducts: tempProducts });
-  }, [category, color, size, price]);
+  }, [products, category, color, size, price]);
 
   return (
     <Container onMouseOver={() => dispatch(closeSubmenu())}>
       <ProductFilter
         {...values}
-        products={products}
+        products={storeProducts}
         handleChange={handleChange}
       />
       <ProductList products={sortedProducts} />
