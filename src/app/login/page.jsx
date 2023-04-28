@@ -57,12 +57,10 @@ const Login = () => {
         <GoogleContainer>
           <GoogleButton type='button'>
             <GoogleIcon />
-            &nbsp;
             Google
           </GoogleButton>
           <FacebookButton type='button'>
             <FaFacebookF />
-            &nbsp;
             Facebook
           </FacebookButton>
         </GoogleContainer>
@@ -144,6 +142,7 @@ const GoogleContainer = styled.div`
 `;
 
 const GoogleButton = styled.button`
+  width: 50%;
   padding: 1rem 4rem;
   font-weight: 400;
   font-size: 1.5rem;
@@ -157,6 +156,7 @@ const GoogleButton = styled.button`
 
   display: flex;
   align-items: center;
+  gap: 0.8rem;
 
   &:hover {
     opacity: 0.7;
@@ -169,6 +169,7 @@ const GoogleButton = styled.button`
 `;
 
 const FacebookButton = styled.button`
+  width: 50%;
   padding: 1rem 4rem;
   font-weight: 400;
   font-size: 1.5rem;
@@ -186,9 +187,10 @@ const FacebookButton = styled.button`
 
   display: flex;
   align-items: center;
+  gap: 0.8rem;
 
   svg {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     color: #3b5999;
   }
 `;
