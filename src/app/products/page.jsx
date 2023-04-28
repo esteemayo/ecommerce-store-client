@@ -53,6 +53,7 @@ const Products = () => {
           return <Product key={product.id} {...product} />;
         })}
       </ProductContainer>
+      <Pagination />
     </Container>
   );
 }
