@@ -2,6 +2,7 @@
 import styled from 'styled-components';
 
 import { useDispatch } from 'react-redux';
+import { products } from '@/data';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 import Pagination from '@/components/Pagination';
 import ProductList from '@/components/ProductList';
