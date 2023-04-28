@@ -71,7 +71,7 @@ const Products = () => {
         products={products}
         handleChange={handleChange}
       />
-      <ProductList products={products} />
+      <ProductList products={sortedProducts} />
       <Pagination />
     </Container>
   );
