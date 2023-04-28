@@ -6,6 +6,7 @@ const Pagination = () => {
       <Wrapper>
         <ButtonContainer>
           <Button type='button'>Prev</Button>
+          <CurrentPage>9</CurrentPage>
           <Button type='button'>Next</Button>
         </ButtonContainer>
       </Wrapper>
