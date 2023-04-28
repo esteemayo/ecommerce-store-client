@@ -1,5 +1,10 @@
 import styled from 'styled-components';
 
+const getUnique = (items, value) => {
+  const tempItems = items.map((item) => item[value]).flat();
+  return [...new Set(tempItems)];
+};
+
 const ProductFilter = ({ products }) => {
   return (
     <Container>
