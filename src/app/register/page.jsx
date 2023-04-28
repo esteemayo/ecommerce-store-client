@@ -115,6 +115,7 @@ const Container = styled.main`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  cursor: default;
 `;
 
 const Wrapper = styled.div`
@@ -218,17 +219,17 @@ const FormButton = styled.button`
   font-size: 1.4rem;
   width: 100%;
   padding: 1.5rem;
-  background-color: var(--clr-secondary-blue);
+  background-color: #6d857f;
   color: var(--clr-white);
   background-image: linear-gradient(
     120deg,
     transparent 0%,
     transparent 50%,
-    #5885b9 50%
+    #89a8a0 50%
   );
   background-size: 220%;
   border-radius: 0.5rem;
-  outline-color: #4489fe;
+  outline-color: #85beae;
   cursor: pointer;
   transition: all 0.3s ease;
 
