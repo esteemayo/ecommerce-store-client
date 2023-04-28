@@ -7,6 +7,7 @@ import { closeSubmenu } from '@/features/submenu/submenuSlice';
 import ProductList from '@/components/ProductList';
 import Pagination from '@/components/Pagination';
 import ProductFilter from '@/components/ProductFilter';
+import { useState } from 'react';
 
 const Products = () => {
   const dispatch = useDispatch();
