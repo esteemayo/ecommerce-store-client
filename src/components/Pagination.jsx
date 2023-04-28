@@ -66,6 +66,7 @@ const Button = styled.button`
 const TotalItems = styled.p`
   display: block;
   text-align: center;
+  text-transform: lowercase;
   padding-top: 2rem;
   font-size: 1.5rem;
   color: #999;
