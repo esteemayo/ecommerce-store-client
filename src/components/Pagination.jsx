@@ -4,7 +4,7 @@ const Pagination = () => {
   return (
     <Container>
       <Wrapper>
-        Pagination
+        <Button type='button'>Prev</Button>
       </Wrapper>
     </Container>
   );
