@@ -38,6 +38,10 @@ const ButtonContainer = styled.div`
   justify-content: space-between;
 `;
 
+const CurrentPage = styled.span`
+  
+`;
+
 const Button = styled.button`
   border: none;
   display: inline-block;
