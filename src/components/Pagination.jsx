@@ -40,7 +40,8 @@ const ButtonContainer = styled.div`
 `;
 
 const CurrentPage = styled.span`
-  
+  width: 3rem;
+  height: 3rem;
 `;
 
 const Button = styled.button`
