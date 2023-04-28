@@ -38,10 +38,6 @@ const ProductFilter = ({ products }) => {
           <Label htmlFor='category'>Category</Label>
           <Select id='category'>
             <Option>Jeans</Option>
-            <Option>Shirts</Option>
-            <Option>Electronics</Option>
-            <Option>Sneakers</Option>
-            <Option>Gadgets</Option>
           </Select>
         </Filter>
         <Filter>
