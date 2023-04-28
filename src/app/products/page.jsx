@@ -7,7 +7,7 @@ import { closeSubmenu } from '@/features/submenu/submenuSlice';
 import ProductList from '@/components/ProductList';
 import Pagination from '@/components/Pagination';
 import ProductFilter from '@/components/ProductFilter';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const Products = () => {
   const dispatch = useDispatch();
@@ -25,12 +25,16 @@ const Products = () => {
     setValues((prev) => ({ ...prev, [name]: value }));
   };
 
+  useEffect(() => {
+
+  })
+
   return (
     <Container onMouseOver={() => dispatch(closeSubmenu())}>
-      <ProductFilter 
-        {...values} 
-        products={products} 
-        handleChange={handleChange} 
+      <ProductFilter
+        {...values}
+        products={products}
+        handleChange={handleChange}
       />
       <ProductList products={products} />
       <Pagination />
