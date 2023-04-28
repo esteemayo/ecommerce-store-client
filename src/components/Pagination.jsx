@@ -6,4 +6,8 @@ const Pagination = () => {
   );
 }
 
+const Container = styled.section`
+  
+`;
+
 export default Pagination;
