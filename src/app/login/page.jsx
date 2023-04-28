@@ -283,6 +283,7 @@ const RegisterText = styled.p`
     &:visited {
       display: inline-block;
       text-decoration: none;
+      text-decoration-color: #89a8a0;
       color: #89a8a0;
       outline-color: #ddd;
       transition: all 0.3s ease;
@@ -290,6 +291,7 @@ const RegisterText = styled.p`
 
     &:hover {
       text-decoration: underline;
+      text-decoration-color: #89a8a0;
       text-underline-offset: 0.4rem;
     }
   }
