@@ -23,7 +23,12 @@ const Product = ({ id, name, price, inStock, images, ratingsAverage }) => {
         />
         <InfoContainer>
           <ProductName>
-            <Link href={`/products/${encodeURIComponent(id)}`} passHref>{name}</Link>
+            <Link
+              href={`/products/${encodeURIComponent(id)}`}
+              passHref
+            >
+              {name}
+            </Link>
           </ProductName>
           <ReviewContainer>
             <StarRating value={ratingsAverage} />
