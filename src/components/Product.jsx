@@ -43,7 +43,7 @@ const Product = ({ id, name, price, inStock, images, ratingsAverage }) => {
             </Prices>
             {inStock && <InStock>In stock</InStock>}
           </PriceContainer>
-          <Button type='button'>
+          <Button type='button' onClick={() => push(`/products/${encodeURIComponent(id)}`)}>
             <FontAwesomeIcon icon={faShoppingCart} />
             &nbsp;
             add to cart
