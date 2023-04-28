@@ -25,6 +25,7 @@ const Wrapper = styled.div`
   box-shadow: 0 2rem 4rem rgba(145, 143, 143, 0.25);
   -webkit-box-shadow: 0 2rem 4rem rgba(145, 143, 143, 0.25);
   -moz-box-shadow: 0 2rem 4rem rgba(145, 143, 143, 0.25);
+  border-radius: 0.5rem;
 `;
 
 export default Pagination;
