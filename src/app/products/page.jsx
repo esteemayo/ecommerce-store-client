@@ -12,9 +12,7 @@ const Products = () => {
 
   return (
     <Container onMouseOver={() => dispatch(closeSubmenu())}>
-      <FilterContainer>
-
-      </FilterContainer>
+      
       <ProductList products={products} />
       <Pagination />
     </Container>
