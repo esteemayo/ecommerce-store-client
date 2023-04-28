@@ -187,21 +187,21 @@ const FormUpload = styled.input`
   z-index: -1;
 
   &:focus + ${FormLabel} {
-    outline: 3px solid var(--clr-secondary-blue);
+    outline: 3px solid #89a8a0;
     outline-offset: 3px;
   }
 
   & + ${FormLabel} {
-    color: var(--clr-secondary-blue);
+    color: #89a8a0;
     display: inline-block;
     text-decoration: none;
     padding: 3px;
-    border-bottom: 1px solid var(--clr-secondary-blue);
+    border-bottom: 1px solid #89a8a0;
     cursor: pointer;
     transition: all 0.3s;
 
     &:hover {
-      background-color: var(--clr-secondary-blue);
+      background-color: #89a8a0;
       color: var(--clr-white);
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
       -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
