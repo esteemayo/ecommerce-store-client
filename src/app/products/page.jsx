@@ -11,6 +11,7 @@ import { useState } from 'react';
 
 const Products = () => {
   const dispatch = useDispatch();
+  const [sortedProducts, setSortedProducts] = useState([]);
 
   return (
     <Container onMouseOver={() => dispatch(closeSubmenu())}>
