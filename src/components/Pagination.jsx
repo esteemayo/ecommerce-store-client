@@ -29,4 +29,8 @@ const Wrapper = styled.div`
   border-radius: 0.5rem;
 `;
 
+const Button = styled.button`
+  
+`;
+
 export default Pagination;
