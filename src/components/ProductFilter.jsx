@@ -42,7 +42,7 @@ const ProductFilter = ({ products, category, size, color, minPrice, maxPrice }) 
         </Filter>
         <Filter>
           <Label htmlFor='price'>Product price</Label>
-          <Input type='range' id='price' min={0} max={900} />
+          <Input type='range' id='price' min={minPrice} max={maxPrice} />
         </Filter>
         <Filter>
           <Label htmlFor='size'>Product size</Label>
