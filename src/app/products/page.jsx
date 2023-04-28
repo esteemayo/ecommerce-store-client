@@ -3,8 +3,11 @@ import styled from 'styled-components';
 
 import { products } from '@/data';
 import Product from '@/components/Product';
+import { useDispatch } from 'react-redux';
 
 const Products = () => {
+  const dispatch = useDispatch();
+
   return (
     <Container>
       <FilterContainer>
