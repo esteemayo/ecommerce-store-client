@@ -16,7 +16,9 @@ const Container = styled.section`
 `;
 
 const Wrapper = styled.div`
-  
+  width: 100%;
+  max-width: 102.4rem;
+  margin: 0 auto;
 `;
 
 export default Pagination;
