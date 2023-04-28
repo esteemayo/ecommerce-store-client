@@ -49,6 +49,7 @@ const ProductFilter = ({ products, price, category, size, color, minPrice, maxPr
             value={price}
             min={minPrice}
             max={maxPrice}
+            onChange={handleChange}
           />
         </Filter>
         <Filter>
