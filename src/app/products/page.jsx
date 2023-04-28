@@ -27,7 +27,11 @@ const Products = () => {
 
   return (
     <Container onMouseOver={() => dispatch(closeSubmenu())}>
-      <ProductFilter products={products} {...values} handleChange={handleChange} />
+      <ProductFilter 
+        {...values} 
+        products={products} 
+        handleChange={handleChange} 
+      />
       <ProductList products={products} />
       <Pagination />
     </Container>
