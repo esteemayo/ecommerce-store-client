@@ -118,7 +118,9 @@ const ProductName = styled.h3`
     &:visited {
       display: inline-block;
       text-decoration: none;
+      text-decoration-color: #e2e9e7;
       color: inherit;
+      transition: all 0.3s ease;
     }
 
     &:hover,
