@@ -64,7 +64,9 @@ const Button = styled.button`
 `;
 
 const TotalItems = styled.p`
-  
+  display: block;
+  text-align: center;
+  padding-top: 2rem;
 `;
 
 export default Pagination;
