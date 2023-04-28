@@ -106,7 +106,7 @@ const Select = styled.select`
   color: #999;
   border: 1px solid #89a8a0;
   border-radius: 3px;
-  outline-color: #74948c;
+  outline-color: #eee;
 `;
 
 const Option = styled.option`
