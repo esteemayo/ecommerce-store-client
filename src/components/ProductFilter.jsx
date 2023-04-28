@@ -2,7 +2,9 @@ import styled from 'styled-components';
 
 const ProductFilter = () => {
   return (
-    <div>ProductFilter</div>
+    <Container>
+      ProductFilter
+    </Container>
   );
 }
 
