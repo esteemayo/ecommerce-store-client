@@ -41,8 +41,8 @@ const Products = () => {
           <Filter>
             <Label htmlFor='size'>Product size</Label>
             <SizeInputs>
-              <SizeInput type='number' name='size' id='size' value={0} />
-              <SizeInput type='number' name='size' id='size' value={100} />
+              <SizeInput type='number' name='size' id='size' />
+              <SizeInput type='number' name='size' id='size' />
             </SizeInputs>
           </Filter>
         </FilterWrapper>
