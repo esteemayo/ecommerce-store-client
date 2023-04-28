@@ -334,7 +334,7 @@ export const footerLinks = [
   },
 ];
 
-export const products = [
+export const storeProducts = [
   {
     id: 1,
     name: 'The Stanley Rain Jacket in Black',
