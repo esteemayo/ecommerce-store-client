@@ -5,7 +5,7 @@ const getUnique = (items, value) => {
   return [...new Set(tempItems)];
 };
 
-const ProductFilter = ({ products }) => {
+const ProductFilter = ({ products, category, size, color, minPrice, maxPrice }) => {
   let colors = getUnique(products, 'color');
   colors = colors.map((color, index) => {
     return (
