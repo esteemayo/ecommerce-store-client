@@ -6,6 +6,7 @@ import { products } from '@/data';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 import Pagination from '@/components/Pagination';
 import ProductList from '@/components/ProductList';
+import ProductFilter from '@/components/ProductFilter';
 
 const Products = () => {
   const dispatch = useDispatch();
