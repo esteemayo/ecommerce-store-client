@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 import Product from './Product';
 
-const ProductList = () => {
+const ProductList = ({ products }) => {
   return (
     <Container>
       {products.map((product) => {
