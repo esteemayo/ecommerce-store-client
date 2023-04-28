@@ -63,7 +63,7 @@ const Container = styled.main`
 `;
 
 const FilterContainer = styled.div`
-  padding: 5rem 0;
+  padding: 7rem 0;
   width: 100%;
   max-width: 102.4rem;
   margin: 0 auto;
