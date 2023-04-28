@@ -283,14 +283,14 @@ const RegisterText = styled.p`
     &:visited {
       display: inline-block;
       text-decoration: none;
-      color: var(--clr-secondary-blue);
+      color: #89a8a0;
       outline-color: #ddd;
       transition: all 0.3s ease;
     }
 
     &:hover {
       text-decoration: underline;
-      text-underline-offset: 3px;
+      text-underline-offset: 0.4rem;
     }
   }
 `;
