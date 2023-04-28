@@ -6,4 +6,8 @@ const ProductList = () => {
   );
 }
 
+const Container = styled.section`
+  
+`;
+
 export default ProductList;
