@@ -124,6 +124,8 @@ const ProductName = styled.h3`
     &:hover,
     &:active {
       text-decoration: underline;
+      text-decoration-color: #e2e9e7;
+      text-underline-offset: 3px;
     }
   }
 `;
