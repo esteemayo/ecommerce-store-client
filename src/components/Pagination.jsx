@@ -42,6 +42,8 @@ const ButtonContainer = styled.div`
 const CurrentPage = styled.span`
   width: 3rem;
   height: 3rem;
+  border: 1px solid #89a8a0;
+  border-radius: 50%;
 `;
 
 const Button = styled.button`
