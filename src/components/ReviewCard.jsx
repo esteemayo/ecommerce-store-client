@@ -47,7 +47,6 @@ const Container = styled.article`
   -moz-box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
   margin-bottom: 2rem;
   line-height: 1.4;
-  cursor: default;
 `;
 
 const Wrapper = styled.div`
