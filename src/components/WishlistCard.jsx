@@ -158,6 +158,7 @@ const CloseButton = styled.button`
   cursor: pointer;
 
   svg {
+    font-weight: inherit;
     font-size: 2.5rem;
     fill: currentColor;
   }
