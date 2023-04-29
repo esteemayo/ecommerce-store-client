@@ -54,10 +54,9 @@ const ProductFilter = ({ products, price, category, size, color, minPrice, maxPr
         </Filter>
         <Filter>
           <Label htmlFor='size'>Product size</Label>
-          <SizeInputs>
-            <SizeInput type='number' name='size' id='size' />
-            <SizeInput type='number' name='size' id='size' />
-          </SizeInputs>
+          <Select id='size' name='size' value={size}>
+
+          </Select>
         </Filter>
       </FilterWrapper>
     </Container>
