@@ -9,6 +9,7 @@ import { useState } from 'react';
 
 const WishLists = () => {
   const dispatch = useDispatch();
+  const [products, setProducts] = useState(wishlists);
 
   return (
     <Container onMouseOver={() => dispatch(closeSubmenu())}>
