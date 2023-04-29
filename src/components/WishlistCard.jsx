@@ -33,6 +33,10 @@ const ImageContainer = styled.div`
 
 `;
 
+const OverviewContainer = styled.div`
+
+`;
+
 const Right = styled.div`
   
 `;
