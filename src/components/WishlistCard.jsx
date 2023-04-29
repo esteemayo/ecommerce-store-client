@@ -65,4 +65,8 @@ const ProductPrice = styled.span`
   
 `;
 
+const CartButton = styled.button`
+  
+`;
+
 export default WishlistCard;
