@@ -48,8 +48,4 @@ const SendButton = styled.button`
   cursor: pointer;
 `;
 
-const CardContainer = styled.div`
-  
-`;
-
 export default WishlistHeader;
