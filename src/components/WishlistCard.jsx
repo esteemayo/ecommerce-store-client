@@ -6,4 +6,8 @@ const WishlistCard = () => {
   );
 }
 
+const Container = styled.article`
+  
+`;
+
 export default WishlistCard;
