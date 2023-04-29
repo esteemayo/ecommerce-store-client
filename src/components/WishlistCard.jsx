@@ -142,7 +142,9 @@ const CartButton = styled.button`
 `;
 
 const CloseButton = styled.button`
-  
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
 `;
 
 export default WishlistCard;
