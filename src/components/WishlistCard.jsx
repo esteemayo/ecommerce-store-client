@@ -61,4 +61,8 @@ const CartContainer = styled.div`
   
 `;
 
+const ProductPrice = styled.span`
+  
+`;
+
 export default WishlistCard;
