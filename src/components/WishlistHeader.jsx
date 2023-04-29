@@ -6,4 +6,8 @@ const WishlistHeader = () => {
   );
 }
 
+const Container = styled.section`
+  
+`;
+
 export default WishlistHeader;
