@@ -18,6 +18,9 @@ const WishlistCard = () => {
       <Right>
         <CartContainer>
           <ProductPrice>$12.79</ProductPrice>
+          <CartButton type='button'>
+            Add to cart
+          </CartButton>
         </CartContainer>
       </Right>
     </Container>
