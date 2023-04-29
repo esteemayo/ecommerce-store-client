@@ -35,4 +35,8 @@ const Date = styled.time`
   color: #999;
 `;
 
+const SendButton = styled.button`
+
+`;
+
 export default WishlistHeader;
