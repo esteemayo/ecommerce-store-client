@@ -6,7 +6,7 @@ const WishlistCard = () => {
     <Container>
       <Left>
         <ImageContainer>
-          
+          <Image src='/img/img-7.jpg' width={80} height={80} alt='' />
         </ImageContainer>
       </Left>
       <Right>
