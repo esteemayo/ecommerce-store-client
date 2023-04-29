@@ -23,7 +23,9 @@ const Container = styled.section`
 `;
 
 const Wrapper = styled.div`
-  
+  width: 35rem;
+  padding: 5rem;
+  background-color: var(--clr-white);
 `;
 
 export default DeleteModal;
