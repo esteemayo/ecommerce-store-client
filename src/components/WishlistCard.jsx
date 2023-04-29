@@ -44,6 +44,10 @@ const ProductName = styled.h2`
   
 `;
 
+const Description = styled.p`
+  
+`;
+
 const Right = styled.div`
   
 `;
