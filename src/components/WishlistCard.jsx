@@ -144,7 +144,7 @@ const CartButton = styled.button`
 const CloseButton = styled.button`
   position: absolute;
   top: 0.5rem;
-  right: 1rem;
+  right: 3rem;
   display: inline-block;
   border: none;
   font-weight: 600;
