@@ -69,7 +69,7 @@ const SendButton = styled.button`
 `;
 
 const CardContainer = styled.div`
-
+  padding: 1rem 2.5rem;
 `;
 
 export default WishLists;
