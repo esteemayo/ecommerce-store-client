@@ -10,7 +10,8 @@ const WishLists = () => {
 }
 
 const Container = styled.main`
-
+  width: 100vw;
+  padding: 10rem 0;
 `;
 
 export default WishLists;
