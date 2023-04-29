@@ -2,7 +2,9 @@ import styled from 'styled-components';
 
 const WishlistCard = () => {
   return (
-    <div>WishlistCard</div>
+    <Container>
+      WishlistCard
+    </Container>
   );
 }
 
