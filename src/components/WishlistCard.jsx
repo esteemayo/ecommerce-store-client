@@ -153,7 +153,7 @@ const CloseButton = styled.button`
   font-weight: lighter;
   font-size: 2rem;
   background-color: transparent;
-  color: #bdbebd;
+  color: #d2d3d2;
   outline-color: #f1e4f4;
   cursor: pointer;
 
