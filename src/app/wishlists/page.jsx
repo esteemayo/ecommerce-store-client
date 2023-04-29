@@ -51,7 +51,8 @@ const Date = styled.time`
 `;
 
 const SendButton = styled.button`
-  
+  border: none;
+  display: inline-block;
 `;
 
 export default WishLists;
