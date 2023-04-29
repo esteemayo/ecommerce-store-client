@@ -199,7 +199,6 @@ const Button = styled.button`
   text-transform: capitalize;
   background-color: transparent;
   color: var(--clr-white);
-  cursor: default;
 
   &:hover {
     opacity: 0.5;
