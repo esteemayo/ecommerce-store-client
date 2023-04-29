@@ -36,7 +36,7 @@ const Header = styled.div`
 `;
 
 const HeadingContainer = styled.div`
-  
+  line-height: 1.1;
 `;
 
 const Heading = styled.h1`
