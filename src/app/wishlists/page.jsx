@@ -5,7 +5,9 @@ const WishLists = () => {
   return (
     <Container>
       <Wrapper>
-        WishLists
+        <HeadingContainer>
+
+        </HeadingContainer>
       </Wrapper>
     </Container>
   );
