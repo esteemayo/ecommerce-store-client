@@ -17,7 +17,7 @@ const WishlistCard = () => {
       </Left>
       <Right>
         <CartContainer>
-
+          <ProductPrice>$12.79</ProductPrice>
         </CartContainer>
       </Right>
     </Container>
