@@ -6,6 +6,7 @@ import { useState } from 'react';
 import { wishlists } from '@/data';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 import WishlistCard from '@/components/WishlistCard';
+import WishlistHeader from '@/components/WishlistHeader';
 
 const WishLists = () => {
   const dispatch = useDispatch();
