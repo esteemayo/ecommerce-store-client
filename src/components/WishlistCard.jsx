@@ -83,6 +83,7 @@ const ProductName = styled.h2`
       text-decoration: none;
       color: currentColor;
       transition: all 0.3s ease;
+      outline-color: #f1e4f4;
     }
 
     &:hover {
