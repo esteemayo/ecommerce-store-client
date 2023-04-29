@@ -20,4 +20,8 @@ const Container = styled.section`
   justify-content: center;
 `;
 
+const Wrapper = styled.div`
+  
+`;
+
 export default DeleteModal;
