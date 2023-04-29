@@ -4,7 +4,7 @@ const WishlistHeader = () => {
   return (
     <Container>
       <HeadingContainer>
-
+        <Heading>My wishlist</Heading>
       </HeadingContainer>
     </Container>
   );
