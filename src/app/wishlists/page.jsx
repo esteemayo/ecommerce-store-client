@@ -36,7 +36,8 @@ const Header = styled.div`
 `;
 
 const HeadingContainer = styled.div`
-  
+  display: inline-block;
+  text-transform: uppercase;
 `;
 
 const Heading = styled.h1`
