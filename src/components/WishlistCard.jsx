@@ -48,6 +48,10 @@ const WishlistCard = ({ id, name, desc, image, price, onDelete }) => {
 }
 
 const Container = styled.article`
+
+`;
+
+const Wrapper = styled.div`
   position: relative;
   padding: 3rem;
   background-color: var(--clr-white);
