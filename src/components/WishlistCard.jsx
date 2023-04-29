@@ -156,6 +156,11 @@ const CloseButton = styled.button`
   color: #bdbebd;
   outline-color: #f1e4f4;
   cursor: pointer;
+
+  svg {
+    font-size: 2.5rem;
+    fill: currentColor;
+  }
 `;
 
 export default WishlistCard;
