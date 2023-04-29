@@ -36,4 +36,8 @@ const Heading = styled.h1`
 
 `;
 
+const WarningMessage = styled.p`
+  
+`;
+
 export default DeleteModal;
