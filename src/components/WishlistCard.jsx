@@ -48,7 +48,7 @@ const WishlistCard = ({ id, name, desc, image, price, onDelete }) => {
 }
 
 const Container = styled.article`
-
+  padding: 1rem 2.5rem;
 `;
 
 const Wrapper = styled.div`
