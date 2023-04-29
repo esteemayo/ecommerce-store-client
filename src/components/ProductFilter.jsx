@@ -57,7 +57,12 @@ const ProductFilter = ({ products, price, category, size, color, minPrice, maxPr
         </Filter>
         <Filter>
           <Label htmlFor='size'>Product size</Label>
-          <Select id='size' name='size' value={size} onChange={handleChange}>
+          <Select
+            id='size'
+            name='size'
+            value={size}
+            onChange={handleChange}
+          >
             {sizes}
           </Select>
         </Filter>
