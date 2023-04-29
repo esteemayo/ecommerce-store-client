@@ -93,6 +93,7 @@ const FilterHeading = styled.h1`
   font-weight: 600;
   font-size: 2.25rem;
   margin-bottom: 1rem;
+  cursor: default;
 `;
 
 const FilterWrapper = styled.div`
