@@ -38,7 +38,7 @@ const WishlistCard = ({ id, name, desc, image, price, onDelete }) => {
           </CartButton>
         </CartContainer>
       </Right>
-      <CloseButton type='button'>
+      <CloseButton type='button' onClick={() => onDelete(id)}>
         <CloseIcon />
       </CloseButton>
     </Container>
