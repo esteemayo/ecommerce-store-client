@@ -10,6 +10,9 @@ const WishlistCard = () => {
         </ImageContainer>
         <OverviewContainer>
           <ProductName>The Stanley Rain Jacket in Black</ProductName>
+          <Description>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, officiis fugiat voluptatum!
+          </Description>
         </OverviewContainer>
       </Left>
       <Right>
