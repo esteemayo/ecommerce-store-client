@@ -29,6 +29,9 @@ const WishlistCard = () => {
           </CartButton>
         </CartContainer>
       </Right>
+      <CloseButton type='button'>
+
+      </CloseButton>
     </Container>
   );
 }
