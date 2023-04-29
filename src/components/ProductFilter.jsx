@@ -6,7 +6,16 @@ const getUnique = (items, value) => {
   return [...new Set(newItems)];
 };
 
-const ProductFilter = ({ products, price, category, size, color, minPrice, maxPrice, handleChange }) => {
+const ProductFilter = ({
+  products,
+  price,
+  category,
+  size,
+  color,
+  minPrice,
+  maxPrice,
+  handleChange,
+}) => {
   let colors = getUnique(products, 'color');
   colors = colors.map((color, index) => {
     return (
