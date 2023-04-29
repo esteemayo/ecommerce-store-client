@@ -22,7 +22,7 @@ const WishLists = () => {
           <SendButton type='button'>Send wishlist</SendButton>
         </Header>
         <CardContainer>
-          {wishlists.map((wishlist) => {
+          {products.map((wishlist) => {
             return <WishlistCard key={wishlist.id} {...wishlist} />;
           })}
         </CardContainer>
