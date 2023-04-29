@@ -11,6 +11,10 @@ const WishLists = () => {
   const dispatch = useDispatch();
   const [products, setProducts] = useState(wishlists);
 
+  const handleDelete = (id) => {
+    setProducts((prev) => prev.filter((item) => item.id !== id));
+  };
+
   return (
     <Container onMouseOver={() => dispatch(closeSubmenu())}>
       <Wrapper>
