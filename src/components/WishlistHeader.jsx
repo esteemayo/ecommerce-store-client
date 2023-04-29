@@ -3,7 +3,9 @@ import styled from 'styled-components';
 const WishlistHeader = () => {
   return (
     <Container>
+      <HeadingContainer>
 
+      </HeadingContainer>
     </Container>
   );
 }
