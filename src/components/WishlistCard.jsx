@@ -37,6 +37,9 @@ const Container = styled.article`
   -webkit-box-shadow: 2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.25);
   -moz-box-shadow: 2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.25);
   border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 `;
 
 const Left = styled.div`
