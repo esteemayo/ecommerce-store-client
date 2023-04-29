@@ -15,9 +15,9 @@ const WishlistCard = () => {
 
 const Container = styled.article`
   background-color: var(--clr-white);
-  box-shadow: 2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.47);
-  -webkit-box-shadow: 2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.47);
-  -moz-box-shadow: 2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.47);
+  box-shadow: 2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.25);
+  -webkit-box-shadow: 2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.25);
+  -moz-box-shadow: 2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.25);
 `;
 
 const Left = styled.div`
