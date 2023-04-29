@@ -10,7 +10,7 @@ const WishLists = () => {
   const dispatch = useDispatch();
 
   return (
-    <Container>
+    <Container onMouseOver={() => dispatch(closeSubmenu())}>
       <Wrapper>
         <Header>
           <HeadingContainer>
