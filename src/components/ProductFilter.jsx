@@ -146,10 +146,4 @@ const Input = styled.input`
   outline-color: #eee;
 `;
 
-const SizeInputs = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-`;
-
 export default ProductFilter;
