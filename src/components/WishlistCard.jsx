@@ -14,7 +14,7 @@ const WishlistCard = ({ id, name, desc, image, price }) => {
         </ImageContainer>
         <OverviewContainer>
           <ProductName>
-            <Link href='#' passHref>{name}</Link>
+            <Link href={`/products/${encodeURIComponent(id)}`} passHref>{name}</Link>
           </ProductName>
           <Description>{desc}</Description>
         </OverviewContainer>
