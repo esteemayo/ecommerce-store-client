@@ -16,7 +16,9 @@ const WishlistCard = () => {
         </OverviewContainer>
       </Left>
       <Right>
-        Right
+        <CartContainer>
+
+        </CartContainer>
       </Right>
     </Container>
   );
