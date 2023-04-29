@@ -931,18 +931,18 @@ export const wishlists = [
     id: 1,
     name: 'The Stanley Rain Jacket in Black',
     desc: 'Libero magna mi suspendisse curabitur, lorem mi massa, ipsum pharetra posuere  elementum.',
-    img: '/img/user-7.jpg',
+    image: '/img/user-7.jpg',
   },
   {
     id: 2,
     name: 'Samsumg Galaxy 13',
     desc: 'Orci ullamcorper primis fusce, elit sit in penatibus pretium. Cogue eget consequat.',
-    img: '/img/user-8.jpg',
+    image: '/img/user-8.jpg',
   },
   {
     id: 3,
     name: '',
     desc: 'Sapien dui sed amet, vitae in vestibulum, egestas lobortis metus.',
-    img: '/img/user-9.jpg',
+    image: '/img/user-9.jpg',
   },
 ];
