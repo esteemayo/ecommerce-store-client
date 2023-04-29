@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { NumericFormat } from 'react-number-format';
 
 const getUnique = (items, value) => {
   const tempItems = items.map((item) => item[value]).flat();
