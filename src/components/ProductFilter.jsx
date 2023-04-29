@@ -24,6 +24,8 @@ const ProductFilter = ({ products, price, category, size, color, minPrice, maxPr
     );
   });
 
+  let sizes = getUnique(products, 'size');
+
   return (
     <Container>
       <FilterHeading>Filter by</FilterHeading>
