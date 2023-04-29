@@ -33,6 +33,7 @@ const Header = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: #f9f9f9;
 `;
 
 const HeadingContainer = styled.div`
