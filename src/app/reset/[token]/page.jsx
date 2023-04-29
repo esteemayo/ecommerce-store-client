@@ -85,7 +85,6 @@ const Container = styled.main`
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: default;
 `;
 
 const Wrapper = styled.div`
