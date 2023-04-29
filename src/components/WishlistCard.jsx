@@ -110,6 +110,10 @@ const CartButton = styled.button`
   border-radius: 0.5rem;
   outline-color: #85beae;
   cursor: pointer;
+
+  &:hover {
+    background-position: 100%;
+  }
 `;
 
 export default WishlistCard;
