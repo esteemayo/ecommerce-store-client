@@ -9,40 +9,45 @@ import { NumericFormat } from 'react-number-format';
 const WishlistCard = ({ wishllists, onDelete }) => {
   return (
     <Container>
-      <Wrapper>
-        <Left>
-          <ImageContainer>
-            <Image src={image} width={80} height={80} alt='' />
-          </ImageContainer>
-          <OverviewContainer>
-            <ProductName>
-              <Link href={`/products/${encodeURIComponent(id)}`} passHref>
-                {name}
-              </Link>
-            </ProductName>
-            <Description>{desc}</Description>
-          </OverviewContainer>
-        </Left>
-        <Right>
-          <CartContainer>
-            <ProductPrice>
-              <NumericFormat
-                value={price}
-                displayType={'text'}
-                thousandSeparator={true}
-                prefix={'$'}
-              />
-            </ProductPrice>
-            <CartButton type='button'>
-              <FontAwesomeIcon icon={faShoppingCart} />
-              Add to cart
-            </CartButton>
-          </CartContainer>
-        </Right>
-      </Wrapper>
-      <CloseButton type='button' onClick={() => onDelete(id)}>
-        <CloseIcon />
-      </CloseButton>
+      {wishllists.map((wishlist) => {
+        const { id, name, desc, image, price } = wishlist;
+        return (
+          <Wrapper key={id}>
+            <Left>
+              <ImageContainer>
+                <Image src={image} width={80} height={80} alt='' />
+              </ImageContainer>
+              <OverviewContainer>
+                <ProductName>
+                  <Link href={`/products/${encodeURIComponent(id)}`} passHref>
+                    {name}
+                  </Link>
+                </ProductName>
+                <Description>{desc}</Description>
+              </OverviewContainer>
+            </Left>
+            <Right>
+              <CartContainer>
+                <ProductPrice>
+                  <NumericFormat
+                    value={price}
+                    displayType={'text'}
+                    thousandSeparator={true}
+                    prefix={'$'}
+                  />
+                </ProductPrice>
+                <CartButton type='button'>
+                  <FontAwesomeIcon icon={faShoppingCart} />
+                  Add to cart
+                </CartButton>
+              </CartContainer>
+            </Right>
+            <CloseButton type='button' onClick={() => onDelete(id)}>
+              <CloseIcon />
+            </CloseButton>
+          </Wrapper>
+        );
+      })}
     </Container>
   );
 }
