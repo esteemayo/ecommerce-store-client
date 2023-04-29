@@ -121,7 +121,7 @@ const CartContainer = styled.div`
 `;
 
 const ProductPrice = styled.span`
-  font-weight: 700;
+  font-weight: 400;
   font-size: 2.23rem;
   color: #6e6e6e;
 `;
