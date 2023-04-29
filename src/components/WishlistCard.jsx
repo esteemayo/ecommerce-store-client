@@ -46,6 +46,7 @@ const Left = styled.div`
   flex: 4;
   display: flex;
   align-items: center;
+  gap: 3rem;
 `;
 
 const ImageContainer = styled.div`
