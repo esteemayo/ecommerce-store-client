@@ -1,11 +1,12 @@
 'use client';
 import styled from 'styled-components';
 import { useDispatch } from 'react-redux';
+import { useState } from 'react';
 
 import { wishlists } from '@/data';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 import WishlistCard from '@/components/WishlistCard';
-import { useState } from 'react';
+
 const WishLists = () => {
   const dispatch = useDispatch();
   const [products, setProducts] = useState(wishlists);
