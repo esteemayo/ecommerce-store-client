@@ -55,4 +55,8 @@ const Right = styled.div`
   
 `;
 
+const CartContainer = styled.div`
+  
+`;
+
 export default WishlistCard;
