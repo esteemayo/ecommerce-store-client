@@ -57,7 +57,15 @@ const ProductFilter = ({ products, price, category, size, color, minPrice, maxPr
           </Select>
         </Filter>
         <Filter>
-          <Label htmlFor='price'>Product price</Label>
+          <Label htmlFor='price'>
+            Product price {' '}
+            <NumericFormat
+              value={price}
+              displayType={'text'}
+              thousandSeparator={true}
+              prefix={'$'}
+            />
+          </Label>
           <Input
             id='price'
             name='price'
