@@ -3,7 +3,9 @@ import styled from 'styled-components';
 const DeleteModal = () => {
   return (
     <Container>
-      DeleteModal
+      <Wrapper>
+        DeleteModal
+      </Wrapper>
     </Container>
   );
 }
