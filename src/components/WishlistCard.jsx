@@ -8,6 +8,9 @@ const WishlistCard = () => {
         <ImageContainer>
           <Image src='/img/img-7.jpg' width={80} height={80} alt='' />
         </ImageContainer>
+        <OverviewContainer>
+
+        </OverviewContainer>
       </Left>
       <Right>
         Right
