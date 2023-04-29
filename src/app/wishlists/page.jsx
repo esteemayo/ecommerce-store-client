@@ -40,7 +40,10 @@ const HeadingContainer = styled.div`
 `;
 
 const Heading = styled.h1`
-  
+  display: block;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.8rem;
 `;
 
 const Date = styled.time`
