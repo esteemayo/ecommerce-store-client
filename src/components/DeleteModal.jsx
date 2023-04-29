@@ -4,7 +4,7 @@ const DeleteModal = () => {
   return (
     <Container>
       <Wrapper>
-        DeleteModal
+        <Heading>Remove a wishlist?</Heading>
       </Wrapper>
     </Container>
   );
