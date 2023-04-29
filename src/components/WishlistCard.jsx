@@ -71,6 +71,13 @@ const ProductName = styled.h2`
   color: #6e6e6e;
   margin-bottom: 0.5rem;
   line-height: 1;
+
+  a {
+    &:link,
+    &:visited {
+      text-decoration: none;
+    }
+  }
 `;
 
 const Description = styled.p`
