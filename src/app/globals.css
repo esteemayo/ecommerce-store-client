@@ -50,6 +50,7 @@ body {
   color: #777;
   line-height: 1.6;
   overflow-x: hidden;
+  cursor: default;
 }
 
 .container {
