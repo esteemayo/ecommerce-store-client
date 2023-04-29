@@ -43,7 +43,7 @@ const Container = styled.article`
 `;
 
 const Left = styled.div`
-  flex: 2;
+  flex: 4;
   display: flex;
   align-items: center;
 `;
