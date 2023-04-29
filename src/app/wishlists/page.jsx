@@ -15,7 +15,9 @@ const WishLists = () => {
           <SendButton type='button'>Send wishlist</SendButton>
         </Header>
         <CardContainer>
-          <WishlistCard />
+          {wishlists.map((wishlist) => {
+            return <WishlistCard key={wishlist.id} {...wishlist} />;
+          })}
         </CardContainer>
       </Wrapper>
     </Container>
