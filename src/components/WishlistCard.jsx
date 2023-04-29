@@ -83,7 +83,9 @@ const Right = styled.div`
 `;
 
 const CartContainer = styled.div`
-  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 `;
 
 const ProductPrice = styled.span`
