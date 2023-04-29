@@ -49,6 +49,7 @@ const WishlistCard = ({ wishlists, onDelete }) => {
           </Wrapper>
         );
       })}
+      <DeleteModal />
     </Container>
   );
 }
