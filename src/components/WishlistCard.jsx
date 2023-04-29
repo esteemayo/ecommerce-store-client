@@ -59,6 +59,10 @@ const Container = styled.article`
   margin-bottom: 1rem;
 `;
 
+const Wrapper = styled.div`
+  
+`;
+
 const Left = styled.div`
   flex: 4;
   display: flex;
