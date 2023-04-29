@@ -4,7 +4,9 @@ import styled from 'styled-components';
 const WishLists = () => {
   return (
     <Container>
-      WishLists
+      <Wrapper>
+        WishLists
+      </Wrapper>
     </Container>
   );
 }
