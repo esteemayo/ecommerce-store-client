@@ -24,7 +24,14 @@ const WishlistCard = ({ id, name, desc, image, price }) => {
       </Left>
       <Right>
         <CartContainer>
-          <ProductPrice>${price}</ProductPrice>
+          <ProductPrice>
+            <NumericFormat
+              value={price}
+              displayType={'text'}
+              thousandSeparator={true}
+              prefix={'$'}
+            />
+          </ProductPrice>
           <CartButton type='button'>
             <FontAwesomeIcon icon={faShoppingCart} />
             Add to cart
