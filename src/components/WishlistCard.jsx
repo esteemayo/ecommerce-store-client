@@ -150,7 +150,7 @@ const CloseButton = styled.button`
   font-weight: 600;
   font-size: 2rem;
   background-color: transparent;
-  color: #f1fef4;
+  color: #bdbebd;
 `;
 
 export default WishlistCard;
