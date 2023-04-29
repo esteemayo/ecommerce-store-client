@@ -6,4 +6,8 @@ const DeleteModal = () => {
   );
 }
 
+const Container = styled.section`
+  
+`;
+
 export default DeleteModal;
