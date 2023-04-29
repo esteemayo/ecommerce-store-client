@@ -16,4 +16,8 @@ const Container = styled.section`
   padding: 2rem 2.5rem;
 `;
 
+const HeadingContainer = styled.div`
+
+`;
+
 export default WishlistHeader;
