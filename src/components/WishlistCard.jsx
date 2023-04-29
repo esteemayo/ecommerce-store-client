@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import CloseIcon from '@mui/icons-material/Close';
 import { NumericFormat } from 'react-number-format';
 
-const WishlistCard = ({ id, name, desc, image, price, onDelete }) => {
+const WishlistCard = ({ wishllists, onDelete }) => {
   return (
     <Container>
       <Wrapper>
