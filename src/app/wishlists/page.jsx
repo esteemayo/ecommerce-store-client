@@ -38,6 +38,8 @@ const Header = styled.div`
 const HeadingContainer = styled.div`
   display: inline-block;
   text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1rem;
 `;
 
 const Heading = styled.h1`
