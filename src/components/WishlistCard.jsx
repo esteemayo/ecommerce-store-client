@@ -50,7 +50,11 @@ const Left = styled.div`
 `;
 
 const ImageContainer = styled.div`
-
+  img {
+    display: block;
+    width: 8rem;
+    height: 8rem;
+  }
 `;
 
 const OverviewContainer = styled.div`
