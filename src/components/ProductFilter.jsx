@@ -50,6 +50,12 @@ const ProductFilter = ({ products, price, category, size, color, minPrice, maxPr
           </Select>
         </Filter>
         <Filter>
+          <Label htmlFor='size'>Product size</Label>
+          <Select id='size' name='size' value={size}>
+            {sizes}
+          </Select>
+        </Filter>
+        <Filter>
           <Label htmlFor='price'>Product price</Label>
           <Input
             id='price'
