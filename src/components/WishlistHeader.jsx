@@ -19,7 +19,7 @@ const Container = styled.section`
 `;
 
 const HeadingContainer = styled.div`
-
+  line-height: 1.1;
 `;
 
 export default WishlistHeader;
