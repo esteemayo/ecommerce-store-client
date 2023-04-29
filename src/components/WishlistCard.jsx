@@ -147,6 +147,8 @@ const CloseButton = styled.button`
   right: 1rem;
   display: inline-block;
   border: none;
+  background-color: transparent;
+  color: #f1fef4;
 `;
 
 export default WishlistCard;
