@@ -932,6 +932,7 @@ export const wishlists = [
     name: 'The Stanley Rain Jacket in Black',
     desc: 'Libero magna mi suspendisse curabitur, lorem mi massa, ipsum pharetra posuere  elementum.',
     image: '/img/user-7.jpg',
+    price: 300,
   },
   {
     id: 2,
