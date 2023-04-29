@@ -18,6 +18,7 @@ const Container = styled.article`
   box-shadow: 2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.25);
   -webkit-box-shadow: 2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.25);
   -moz-box-shadow: 2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.25);
+  border-radius: 0.5rem;
 `;
 
 const Left = styled.div`
