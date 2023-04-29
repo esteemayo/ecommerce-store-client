@@ -5,6 +5,7 @@ import { useDispatch } from 'react-redux';
 import { wishlists } from '@/data';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 import WishlistCard from '@/components/WishlistCard';
+import { useState } from 'react';
 
 const WishLists = () => {
   const dispatch = useDispatch();
