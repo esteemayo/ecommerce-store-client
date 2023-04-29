@@ -6,6 +6,9 @@ const WishlistCard = () => {
       <Left>
         Left
       </Left>
+      <Right>
+        Right
+      </Right>
     </Container>
   );
 }
