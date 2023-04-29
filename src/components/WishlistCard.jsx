@@ -65,10 +65,6 @@ const Wrapper = styled.div`
   margin-bottom: 1rem;
 `;
 
-const Wrapper = styled.div`
-  
-`;
-
 const Left = styled.div`
   flex: 4;
   display: flex;
