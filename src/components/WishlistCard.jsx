@@ -82,6 +82,8 @@ const ProductName = styled.h2`
 
     &:hover {
       text-decoration: underline;
+      text-decoration-color: #6d857f;
+      text-underline-offset: 4px;
     }
   }
 `;
