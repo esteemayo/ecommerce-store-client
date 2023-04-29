@@ -136,4 +136,8 @@ const CartButton = styled.button`
   }
 `;
 
+const CloseButton = styled.button`
+  
+`;
+
 export default WishlistCard;
