@@ -6,7 +6,7 @@ const WishLists = () => {
     <Container>
       <Wrapper>
         <HeadingContainer>
-
+          <Heading>My wishlist</Heading>
         </HeadingContainer>
       </Wrapper>
     </Container>
