@@ -44,4 +44,8 @@ const Date = styled.time`
   
 `;
 
+const SendButton = styled.button`
+  
+`;
+
 export default WishLists;
