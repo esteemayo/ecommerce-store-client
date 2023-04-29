@@ -152,16 +152,4 @@ const SizeInputs = styled.div`
   gap: 0.5rem;
 `;
 
-const SizeInput = styled.input`
-  display: inline-block;
-  width: 8rem;
-  padding: 3px;
-  font-size: 1.4rem;
-  background-color: transparent;
-  color: #999;
-  border: 1px solid #ddd;
-  border-radius: 3px;
-  outline-color: #eee;
-`;
-
 export default ProductFilter;
