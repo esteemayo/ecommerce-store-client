@@ -43,7 +43,9 @@ const Container = styled.article`
 `;
 
 const Left = styled.div`
-  
+  flex: 2;
+  display: flex;
+  align-items: center;
 `;
 
 const ImageContainer = styled.div`
