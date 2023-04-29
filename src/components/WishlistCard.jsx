@@ -54,6 +54,7 @@ const ImageContainer = styled.div`
     display: block;
     width: 8rem;
     height: 8rem;
+    object-fit: cover;
   }
 `;
 
