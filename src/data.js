@@ -939,6 +939,7 @@ export const wishlists = [
     name: 'Samsumg Galaxy 13',
     desc: 'Orci ullamcorper primis fusce, elit sit in penatibus pretium. Cogue eget consequat.',
     image: '/img/user-8.jpg',
+    price: 300,
   },
   {
     id: 3,
