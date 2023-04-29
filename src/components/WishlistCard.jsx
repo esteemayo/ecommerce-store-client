@@ -9,7 +9,7 @@ const WishlistCard = () => {
           <Image src='/img/img-7.jpg' width={80} height={80} alt='' />
         </ImageContainer>
         <OverviewContainer>
-
+          <ProductName>The Stanley Rain Jacket in Black</ProductName>
         </OverviewContainer>
       </Left>
       <Right>
