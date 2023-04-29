@@ -20,17 +20,10 @@ const WishLists = () => {
     <Container onMouseOver={() => dispatch(closeSubmenu())}>
       <Wrapper>
         <WishlistHeader />
-        <CardContainer>
-          {products.map((wishlist) => {
-            return (
-              <WishlistCard
-                {...wishlist}
-                key={wishlist.id}
-                onDelete={handleDelete}
-              />
-            );
-          })}
-        </CardContainer>
+        <WishlistCard
+          wishlists={products}
+          onDelete={handleDelete}
+        />
       </Wrapper>
     </Container>
   );
