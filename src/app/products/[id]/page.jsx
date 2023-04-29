@@ -400,7 +400,6 @@ const SalePrice = styled.p`
   font-size: 1.6rem;
   color: #fa4b21;
   line-height: 1.3;
-  cursor: default;
 `;
 
 const Message = styled.p`
