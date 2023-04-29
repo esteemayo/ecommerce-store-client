@@ -31,7 +31,8 @@ const Heading = styled.h1`
 `;
 
 const Date = styled.time`
-
+  font-size: 1.5rem;
+  color: #999;
 `;
 
 export default WishlistHeader;
