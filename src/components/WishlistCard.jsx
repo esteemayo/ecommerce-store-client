@@ -31,7 +31,7 @@ const WishlistCard = () => {
         </CartContainer>
       </Right>
       <CloseButton type='button'>
-
+        <CloseIcon />
       </CloseButton>
     </Container>
   );
