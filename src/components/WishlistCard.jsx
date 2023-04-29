@@ -89,7 +89,8 @@ const CartContainer = styled.div`
 `;
 
 const ProductPrice = styled.span`
-  
+  font-weight: 700;
+  font-size: 2.23rem;
 `;
 
 const CartButton = styled.button`
