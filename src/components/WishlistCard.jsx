@@ -85,6 +85,7 @@ const Right = styled.div`
 const CartContainer = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
   justify-content: center;
 `;
 
@@ -94,7 +95,8 @@ const ProductPrice = styled.span`
 `;
 
 const CartButton = styled.button`
-  
+  display: inline-block;
+  border: none;
 `;
 
 export default WishlistCard;
