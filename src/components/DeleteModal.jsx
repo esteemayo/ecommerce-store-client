@@ -26,6 +26,7 @@ const Wrapper = styled.div`
   width: 35rem;
   padding: 5rem;
   background-color: var(--clr-white);
+  border-radius: 1rem;
 `;
 
 export default DeleteModal;
