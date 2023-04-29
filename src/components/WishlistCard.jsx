@@ -78,6 +78,10 @@ const ProductName = styled.h2`
       text-decoration: none;
       color: currentColor;
     }
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 `;
 
