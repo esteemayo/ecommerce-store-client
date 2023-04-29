@@ -56,6 +56,7 @@ const Date = styled.time`
 const SendButton = styled.button`
   border: none;
   display: inline-block;
+  text-transform: capitalize;
   padding: 1rem 3rem;
   background-color: var(--clr-white);
   color: #89a8a0;
