@@ -27,7 +27,13 @@ const WishLists = () => {
         </Header>
         <CardContainer>
           {products.map((wishlist) => {
-            return <WishlistCard key={wishlist.id} {...wishlist} onDelete={handleDelete} />;
+            return (
+            <WishlistCard 
+              {...wishlist} 
+              key={wishlist.id} 
+              onDelete={handleDelete}
+            />
+            );
           })}
         </CardContainer>
       </Wrapper>
