@@ -12,6 +12,9 @@ const WishLists = () => {
           </HeadingContainer>
           <SendButton type='button'>Send wishlist</SendButton>
         </Header>
+        <CardContainer>
+
+        </CardContainer>
       </Wrapper>
     </Container>
   );
