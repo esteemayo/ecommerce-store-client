@@ -60,6 +60,8 @@ const SendButton = styled.button`
   padding: 1rem 3rem;
   background-color: var(--clr-white);
   color: #89a8a0;
+  border-radius: 0.5rem;
+  outline-color: #ccc;
 `;
 
 export default WishLists;
