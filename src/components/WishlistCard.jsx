@@ -123,6 +123,7 @@ const CartContainer = styled.div`
 const ProductPrice = styled.span`
   font-weight: 700;
   font-size: 2.23rem;
+  color: #6e6e6e;
 `;
 
 const CartButton = styled.button`
