@@ -462,7 +462,6 @@ const Hr = styled.hr`
 
 const ColorContainer = styled.div`
   margin: 2rem 0;
-  cursor: default;
 `;
 
 const ProductColor = styled.h2`
