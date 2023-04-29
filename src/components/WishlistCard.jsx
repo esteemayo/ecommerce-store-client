@@ -58,9 +58,7 @@ const ImageContainer = styled.div`
   }
 `;
 
-const OverviewContainer = styled.div`
-
-`;
+const OverviewContainer = styled.div``;
 
 const ProductName = styled.h2`
   display: inline-block;
