@@ -6,6 +6,8 @@ import { wishlists } from '@/data';
 import { useDispatch } from 'react-redux';
 
 const WishLists = () => {
+  const dispatch = useDispatch();
+
   return (
     <Container>
       <Wrapper>
