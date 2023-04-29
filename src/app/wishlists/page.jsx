@@ -29,4 +29,8 @@ const HeadingContainer = styled.div`
   
 `;
 
+const Heading = styled.h1`
+  
+`;
+
 export default WishLists;
