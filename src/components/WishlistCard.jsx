@@ -40,6 +40,7 @@ const Container = styled.article`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 1rem;
 `;
 
 const Left = styled.div`
