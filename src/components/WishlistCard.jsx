@@ -95,7 +95,9 @@ const ProductPrice = styled.span`
 `;
 
 const CartButton = styled.button`
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   border: none;
   padding: 1rem 2rem;
   background-color: #6d857f;
