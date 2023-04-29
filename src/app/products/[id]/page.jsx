@@ -493,7 +493,6 @@ const Color = styled.button`
 const SizeWrapper = styled.div`
   margin-top: 1rem;
   margin-bottom: 4rem;
-  cursor: default;
 `;
 
 const SizeHeading = styled.h3`
