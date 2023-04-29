@@ -65,7 +65,7 @@ const Description = styled.p`
 `;
 
 const Right = styled.div`
-  
+  flex: 1;
 `;
 
 const CartContainer = styled.div`
