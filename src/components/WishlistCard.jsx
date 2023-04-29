@@ -58,7 +58,7 @@ const OverviewContainer = styled.div`
 `;
 
 const ProductName = styled.h2`
-  text-transform: capitalize;
+  display: inline-block;
   font-weight: 500;
   font-size: 1.8rem;
   color: #6e6e6e;
