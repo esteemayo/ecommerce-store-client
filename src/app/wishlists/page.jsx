@@ -7,4 +7,8 @@ const WishLists = () => {
   );
 }
 
+const Container = styled.main`
+
+`;
+
 export default WishLists;
