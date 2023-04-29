@@ -33,4 +33,8 @@ const Heading = styled.h1`
   
 `;
 
+const Date = styled.time`
+  
+`;
+
 export default WishLists;
