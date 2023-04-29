@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import CloseIcon from '@mui/icons-material/Close';
 
-const WishlistCard = () => {
+const WishlistCard = ({ id, name, desc, image }) => {
   return (
     <Container>
       <Left>
