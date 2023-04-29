@@ -97,6 +97,9 @@ const ProductPrice = styled.span`
 const CartButton = styled.button`
   display: inline-block;
   border: none;
+  padding: 1rem 2rem;
+  background-color: #6d857f;
+  color: var(--clr-white);
 `;
 
 export default WishlistCard;
