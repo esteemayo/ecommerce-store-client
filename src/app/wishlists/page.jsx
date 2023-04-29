@@ -53,6 +53,8 @@ const Date = styled.time`
 const SendButton = styled.button`
   border: none;
   display: inline-block;
+  padding: 1rem 3rem;
+  background-color: var(--clr-white);
 `;
 
 export default WishLists;
