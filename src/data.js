@@ -941,7 +941,7 @@ export const wishlists = [
   },
   {
     id: 3,
-    name: '',
+    name: 'Dennim Rain Jacket',
     desc: 'Sapien dui sed amet, vitae in vestibulum, egestas lobortis metus.',
     image: '/img/user-9.jpg',
   },
