@@ -26,6 +26,10 @@ const Wrapper = styled.div`
   margin: 0 auto;
 `;
 
+const Header = styled.div`
+  
+`;
+
 const HeadingContainer = styled.div`
   
 `;
