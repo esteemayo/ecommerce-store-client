@@ -40,6 +40,10 @@ const OverviewContainer = styled.div`
 
 `;
 
+const ProductName = styled.h2`
+  
+`;
+
 const Right = styled.div`
   
 `;
