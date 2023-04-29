@@ -42,7 +42,6 @@ const Container = styled.article`
   height: 50rem;
   max-height: 50rem;
   margin-right: 30px;
-  cursor: default;
 `;
 
 const Wrapper = styled.div`
