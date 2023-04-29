@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import styled from 'styled-components';
+import Image from 'next/image';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
