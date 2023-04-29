@@ -76,6 +76,7 @@ const ProductName = styled.h2`
     &:link,
     &:visited {
       text-decoration: none;
+      color: currentColor;
     }
   }
 `;
