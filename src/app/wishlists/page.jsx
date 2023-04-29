@@ -1,6 +1,7 @@
 'use client';
 import styled from 'styled-components';
 import WishlistCard from '@/components/WishlistCard';
+import { wishlists } from '@/data';
 
 const WishLists = () => {
   return (
