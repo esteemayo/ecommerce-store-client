@@ -77,6 +77,7 @@ const ProductName = styled.h2`
     &:visited {
       text-decoration: none;
       color: currentColor;
+      transition: all 0.3s ease;
     }
 
     &:hover {
