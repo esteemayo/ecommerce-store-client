@@ -14,7 +14,9 @@ const CartModal = ({ isModalOpen, closeModal }) => {
         <ImageContainer>
           <Image src='/img/img-9.jpg' width={300} height={250} alt='' />
         </ImageContainer>
-        <ProductName>The Stanley Rain Jacket in Black</ProductName>
+        <ProductContainer>
+          <ProductName>The Stanley Rain Jacket in Black</ProductName>
+        </ProductContainer>
       </Wrapper>
     </Container>
   );
