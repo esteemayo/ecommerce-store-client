@@ -104,4 +104,8 @@ const ProductPrice = styled.p`
   
 `;
 
+const PriceDiscount = styled.p`
+  
+`;
+
 export default CartModal;
