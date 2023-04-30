@@ -156,7 +156,7 @@ const ImageContainer = styled.div`
     height: 20rem;
     display: block;
     object-fit: cover;
-    border-radius: 3px;
+    border-radius: 0.5rem;
   }
 `;
 
