@@ -10,6 +10,9 @@ const CartModal = ({ isModalOpen, closeModal }) => {
             <CloseIcon />
           </CloseButton>
         </ButtonContainer>
+        <ImageContainer>
+
+        </ImageContainer>
       </Wrapper>
     </Container>
   );
