@@ -51,7 +51,7 @@ const CartModal = ({ isModalOpen, closeModal }) => {
             </ColorWrapper>
           </ColorContainer>
           <SizeWrapper>
-
+            <SizeHeading>Select a size</SizeHeading>
           </SizeWrapper>
         </ProductContainer>
       </Wrapper>
