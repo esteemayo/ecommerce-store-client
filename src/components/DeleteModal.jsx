@@ -3,7 +3,7 @@ import CloseIcon from '@mui/icons-material/Close';
 
 const DeleteModal = ({ openModal, closeModal, onDelete, wishlistId }) => {
   return (
-    <Container type={openModal ? 'show' : ''}>
+    <Container className='container' type={openModal ? 'show' : ''}>
       <Wrapper>
         <CloseButton type='button' onClick={() => closeModal(false)}>
           <CloseIcon />
