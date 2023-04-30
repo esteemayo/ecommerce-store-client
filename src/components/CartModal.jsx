@@ -131,4 +131,8 @@ const SalePrice = styled.p`
   line-height: 1.3;
 `;
 
+const Hr = styled.hr`
+
+`;
+
 export default CartModal;
