@@ -53,7 +53,7 @@ const CartModal = ({ isModalOpen, closeModal }) => {
           <SizeWrapper>
             <SizeHeading>Select a size</SizeHeading>
             <SizeContainer>
-              
+
             </SizeContainer>
           </SizeWrapper>
         </ProductContainer>
@@ -213,6 +213,10 @@ const SizeHeading = styled.h3`
 `;
 
 const SizeContainer = styled.div`
+
+`;
+
+const SelectSize = styled.button`
 
 `;
 
