@@ -264,7 +264,7 @@ const SelectSize = styled.button`
   min-width: 4rem;
   height: 3rem;
   padding: 1rem 0.4rem;
-  line-height: 0.2;
+  line-height: 0.1;
   background-color: ${({ bcg }) => bcg ? '#89a8a0' : 'transparent'};
   color: ${({ bcg }) => bcg ? 'var(--clr-white)' : 'inherit'};
   border: 2px solid ${({ bcg }) => bcg ? '#89a8a0' : '#ebf0ef'};
@@ -280,14 +280,14 @@ const SelectSize = styled.button`
 `;
 
 const AddContainer = styled.div`
-  margin: 2rem 0;
+  margin: 1rem 0;
 `;
 
 const AmountHeading = styled.h3`
   display: inline-block;
   text-transform: capitalize;
   font-weight: 400;
-  font-size: 1.65rem;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
 `;
 
@@ -301,7 +301,7 @@ const AddButton = styled.button`
   border: none;
   display: inline-block;
   text-align: center;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   min-width: 3rem;
   height: 3rem;
   padding: 0 0.4rem;
@@ -328,7 +328,7 @@ const AddButton = styled.button`
 const Amount = styled.span`
   width: 3rem;
   height: 3rem;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   border: 1px solid #89a8a0;
   border-radius: 1.5rem;
   display: flex;
@@ -339,9 +339,9 @@ const Amount = styled.span`
 const Button = styled.button`
   display: inline-block;
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   width: 100%;
-  padding: 2rem 1rem;
+  padding: 1.3rem 1rem;
   background-color: var(--clr-black);
   color: var(--clr-white);
   background-image: linear-gradient(
@@ -354,7 +354,7 @@ const Button = styled.button`
   border: 1px solid var(--clr-black);
   border-radius: 0.5rem;
   outline-color: #777;
-  line-height: 1.3em;
+  line-height: 1em;
   margin: 3rem 0;
   cursor: pointer;
   transition: all 0.3s;
