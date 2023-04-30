@@ -83,6 +83,10 @@ const ImageContainer = styled.div`
   }
 `;
 
+const ProductContainer = styled.div`
+  
+`;
+
 const ProductName = styled.h1`
   
 `;
