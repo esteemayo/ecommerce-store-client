@@ -49,6 +49,8 @@ const CloseButton = styled.button`
   display: inline-block;
   width: 2rem;
   height: 2rem;
+  background-color: transparent;
+  color: #a2a8b0;
 `;
 
 const Heading = styled.h1`
