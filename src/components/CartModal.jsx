@@ -266,7 +266,7 @@ const SizeHeading = styled.h3`
 `;
 
 const SizeContainer = styled.div`
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   display: flex;
   align-items: center;
   gap: 1rem;
