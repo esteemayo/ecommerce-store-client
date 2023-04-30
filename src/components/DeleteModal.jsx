@@ -59,7 +59,8 @@ const ButtonContainer = styled.div`
 `;
 
 const CancelButton = styled.button`
-
+  width: 50%;
+  display: inline-block;
 `;
 
 const DeleteButton = styled.button`
