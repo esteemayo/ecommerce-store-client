@@ -1,8 +1,12 @@
 import styled from 'styled-components';
 import CloseIcon from '@mui/icons-material/Close';
 import Image from 'next/image';
+import { useState } from 'react';
 
 const CartModal = ({ isModalOpen, closeModal }) => {
+  const [color, setColor] = useState(null);
+  const [isSelected, setIsSelected] = useState(null);
+
   return (
     <Container type={isModalOpen ? 'show' : ''}>
       <Wrapper>
