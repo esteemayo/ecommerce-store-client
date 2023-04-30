@@ -326,8 +326,8 @@ const AddButton = styled.button`
 `;
 
 const Amount = styled.span`
-  width: 3rem;
-  height: 3rem;
+  width: 2.5rem;
+  height: 2.5rem;
   font-size: 1.3rem;
   border: 1px solid #89a8a0;
   border-radius: 1.5rem;
