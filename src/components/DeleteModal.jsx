@@ -6,6 +6,17 @@ const DeleteModal = ({ openModal, closeModal, onDelete, wishlistId }) => {
     if (e.target.classList.contains('container')) {
       closeModal(false);
     }
+
+    const exitModal = (e) => {
+      e.preventDefault();
+
+      if (e.key === 'Escape') {
+        closeModal(false);
+      }
+    };
+
+    window.addEventListener('keydown', exitModal);
+    return window.removeEventListener('keydown', exitModal);
   };
 
   const deleteWishlistHandler = (wishlistId) => {
