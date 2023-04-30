@@ -52,7 +52,7 @@ const WarningMessage = styled.p`
 `;
 
 const ButtonContainer = styled.div`
-  
+  margin-top: 3rem;
 `;
 
 const Button = styled.button`
