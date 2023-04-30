@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import CloseIcon from '@mui/icons-material/Close';
+import Image from 'next/image';
 
 const CartModal = ({ isModalOpen, closeModal }) => {
   return (
