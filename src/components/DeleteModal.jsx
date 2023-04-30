@@ -34,7 +34,8 @@ const Wrapper = styled.div`
 `;
 
 const Heading = styled.h1`
-
+  display: inline-block;
+  font-size: 2rem;
 `;
 
 const WarningMessage = styled.p`
