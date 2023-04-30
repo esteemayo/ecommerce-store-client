@@ -171,7 +171,10 @@ const ColorContainer = styled.div`
 `;
 
 const ProductColor = styled.h2`
-
+  display: inline-block;
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 1.7rem;
 `;
 
 const ColorWrapper = styled.div`
