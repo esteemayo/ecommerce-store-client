@@ -53,6 +53,9 @@ const WarningMessage = styled.p`
 
 const ButtonContainer = styled.div`
   margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 `;
 
 const Button = styled.button`
