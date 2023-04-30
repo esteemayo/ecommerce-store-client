@@ -22,7 +22,7 @@ const FeaturedProducts = () => {
           }
         </ProductsContainer>
       </Wrapper>
-      <CartModal openModal={isModalOpen} closeModal={setIsModalOpen} />
+      <CartModal isModalOpen={isModalOpen} closeModal={setIsModalOpen} />
     </Container>
   );
 }
