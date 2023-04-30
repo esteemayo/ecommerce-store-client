@@ -71,7 +71,7 @@ const CloseButton = styled.button`
 `;
 
 const ImageContainer = styled.div`
-  
+  margin-top: 2rem;
 `;
 
 export default CartModal;
