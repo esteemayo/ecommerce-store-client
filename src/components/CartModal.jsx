@@ -20,6 +20,11 @@ const CartModal = ({ isModalOpen, closeModal }) => {
     setIsSelected(color);
   };
 
+  const handleSize = (size) => {
+    setSize(size);
+    setSelectedSize(size);
+  };
+
   return (
     <Container type={isModalOpen ? 'show' : ''}>
       <Wrapper>
