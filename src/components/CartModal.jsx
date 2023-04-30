@@ -271,4 +271,8 @@ const AmountHeading = styled.h3`
   
 `;
 
+const AmountContainer = styled.div`
+
+`;
+
 export default CartModal;
