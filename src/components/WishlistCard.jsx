@@ -11,7 +11,6 @@ import DeleteModal from './DeleteModal';
 
 const WishlistCard = ({ wishlists, onDelete }) => {
   const [isSelectedId, setIsSelectedId] = useState(null);
-  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleOpenModal = (wishlistId) => {
     setIsSelectedId(wishlistId);
