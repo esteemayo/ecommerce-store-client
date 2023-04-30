@@ -57,7 +57,7 @@ const SingleProduct = () => {
       if (e.key === 'Escape') {
         setIsOpen(false);
       }
-    }
+    };
 
     window.addEventListener('keydown', exitModal);
     return () => window.removeEventListener('keydown', exitModal);
