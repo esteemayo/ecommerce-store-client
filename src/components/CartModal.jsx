@@ -89,6 +89,7 @@ const CartModal = ({ isModalOpen, closeModal }) => {
               </AmountContainer>
             </AddContainer>
             <Hr />
+            <Button type='button'>Add to cart</Button>
           </SizeWrapper>
         </ProductContainer>
       </Wrapper>
