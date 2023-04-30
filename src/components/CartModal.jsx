@@ -209,4 +209,8 @@ const SizeHeading = styled.h3`
 
 `;
 
+const SizeContainer = styled.div`
+
+`;
+
 export default CartModal;
