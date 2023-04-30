@@ -133,7 +133,10 @@ const SalePrice = styled.p`
 `;
 
 const Hr = styled.hr`
-
+  width: 100%;
+  height: 1px;
+  border: none;
+  background-color: #e2e9e7;
 `;
 
 export default CartModal;
