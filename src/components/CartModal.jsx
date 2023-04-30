@@ -25,4 +25,8 @@ const ButtonContainer = styled.div`
   
 `;
 
+const CloseButton = styled.button`
+  
+`;
+
 export default CartModal;
