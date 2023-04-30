@@ -198,4 +198,8 @@ const Color = styled.button`
   cursor: ${({ selected }) => selected ? 'default' : 'pointer'};
 `;
 
+const SizeWrapper = styled.div`
+  
+`;
+
 export default CartModal;
