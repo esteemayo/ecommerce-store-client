@@ -59,9 +59,9 @@ const ButtonContainer = styled.div`
 `;
 
 const CancelButton = styled.button`
+  display: inline-block;
   font-size: 1.43rem;
   padding: 1rem 2rem;
-  display: inline-block;
   background-color: transparent;
   color: #89a8a0;
 `;
