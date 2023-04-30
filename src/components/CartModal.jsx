@@ -18,6 +18,7 @@ const CartModal = ({ isModalOpen, closeModal }) => {
 const Container = styled.div`
   width: 100vw;
   height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 `;
 
 const Wrapper = styled.div`
