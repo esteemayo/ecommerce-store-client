@@ -57,6 +57,10 @@ const CloseButton = styled.button`
   border-radius: 50%;
   outline-color: #f1e4f4;
   cursor: pointer;
+
+  svg {
+    fill: currentColor;
+  }
 `;
 
 const Heading = styled.h1`
