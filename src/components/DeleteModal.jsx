@@ -78,7 +78,7 @@ const DeleteButton = styled.button`
   color: var(--clr-white);
   border: 1px solid #e3e3f3;
   border-radius: 0.5rem;
-  outline-color: #f1e4f4;
+  outline-color: #ccc;
   cursor: pointer;
 `;
 
