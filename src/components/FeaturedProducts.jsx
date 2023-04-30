@@ -17,7 +17,13 @@ const FeaturedProducts = () => {
           {featuredProducts
             .filter((product) => product.featured === true)
             .map((product) => {
-              return <Product key={product.id} {...product} openModal={setIsModalOpen} />;
+              return (
+                <Product
+                  {...product}
+                  key={product.id}
+                  openModal={setIsModalOpen}
+                />
+              );
             })
           }
         </ProductsContainer>
