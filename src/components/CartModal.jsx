@@ -48,9 +48,12 @@ const ButtonContainer = styled.div`
 `;
 
 const CloseButton = styled.button`
+  border: none;
   display: inline-block;
   width: 2.5rem;
   height: 2.5rem;
+  background-color: transparent;
+  color: #a2a8b0;
 `;
 
 export default CartModal;
