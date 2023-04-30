@@ -77,6 +77,7 @@ const ImageContainer = styled.div`
     width: 30rem;
     height: 25rem;
     display: block;
+    object-fit: cover;
   }
 `;
 
