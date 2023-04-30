@@ -50,6 +50,9 @@ const CartModal = ({ isModalOpen, closeModal }) => {
               })}
             </ColorWrapper>
           </ColorContainer>
+          <SizeWrapper>
+
+          </SizeWrapper>
         </ProductContainer>
       </Wrapper>
     </Container>
