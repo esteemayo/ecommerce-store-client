@@ -17,7 +17,7 @@ const CartModal = ({ isModalOpen, closeModal }) => {
         <ProductContainer>
           <ProductName>The Stanley Rain Jacket in Black</ProductName>
           <PriceContainer>
-
+            <ProductPrice>$99.99</ProductPrice>
           </PriceContainer>
         </ProductContainer>
       </Wrapper>
