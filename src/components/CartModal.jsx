@@ -82,4 +82,8 @@ const ImageContainer = styled.div`
   }
 `;
 
+const ProductName = styled.h1`
+  
+`;
+
 export default CartModal;
