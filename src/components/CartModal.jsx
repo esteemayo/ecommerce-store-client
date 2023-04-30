@@ -278,7 +278,7 @@ const SelectSize = styled.button`
 `;
 
 const AddContainer = styled.div`
-  
+  margin: 2rem 0;
 `;
 
 const AmountHeading = styled.h3`
