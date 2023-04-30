@@ -267,4 +267,8 @@ const AddContainer = styled.div`
   
 `;
 
+const AmountHeading = styled.h3`
+  
+`;
+
 export default CartModal;
