@@ -8,6 +8,7 @@ const CartModal = ({ isModalOpen, closeModal }) => {
   const [isSelected, setIsSelected] = useState(null);
 
   const colors = ['black', 'pink', 'crimson'];
+  const sizes = ['XS', 'S', 'M', 'L', 'XL', 'XXL'];
 
   const handleColor = (color) => {
     setColor(color);
