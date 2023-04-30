@@ -24,6 +24,9 @@ const CartModal = ({ isModalOpen, closeModal }) => {
           <Hr />
           <ColorContainer>
             <ProductColor>Color</ProductColor>
+            <ColorWrapper>
+            
+            </ColorWrapper>
           </ColorContainer>
         </ProductContainer>
       </Wrapper>
