@@ -9,7 +9,7 @@ const DeleteModal = () => {
           <CloseIcon />
         </CloseButton>
         <Heading>Remove a wishlist?</Heading>
-        <WarningMessage>Are you sure you wanted to remove this product from your wishlist</WarningMessage>
+        <WarningMessage>Are you sure you wanted to remove this product from your wishlist?</WarningMessage>
         <ButtonContainer>
           <CancelButton type='button'>Not now</CancelButton>
           <DeleteButton type='button'>Remove</DeleteButton>
