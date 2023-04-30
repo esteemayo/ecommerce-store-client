@@ -23,7 +23,7 @@ const CartModal = ({ isModalOpen, closeModal }) => {
           <SalePrice>$69.99</SalePrice>
           <Hr />
           <ColorContainer>
-
+            <ProductColor>Color</ProductColor>
           </ColorContainer>
         </ProductContainer>
       </Wrapper>
