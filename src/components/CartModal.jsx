@@ -49,7 +49,9 @@ const ButtonContainer = styled.div`
 
 const CloseButton = styled.button`
   border: none;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 2.5rem;
   height: 2.5rem;
   background-color: #f9f9f9;
