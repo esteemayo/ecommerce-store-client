@@ -5,6 +5,7 @@ import Product from './Product';
 import { storeProducts } from '@/data';
 
 const FeaturedProducts = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const [featuredProducts, setFeaturedProducts] = useState(storeProducts);
 
   return (
