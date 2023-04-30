@@ -334,4 +334,8 @@ const Amount = styled.span`
   justify-content: center;
 `;
 
+const Button = styled.button`
+
+`;
+
 export default CartModal;
