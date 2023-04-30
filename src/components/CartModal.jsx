@@ -103,7 +103,9 @@ const ProductName = styled.h1`
 `;
 
 const PriceContainer = styled.div`
-  
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 `;
 
 const ProductPrice = styled.p`
