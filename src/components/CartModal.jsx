@@ -147,4 +147,8 @@ const ColorContainer = styled.div`
 
 `;
 
+const ProductColor = styled.h2`
+
+`;
+
 export default CartModal;
