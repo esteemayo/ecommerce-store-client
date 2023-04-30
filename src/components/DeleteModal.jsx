@@ -46,6 +46,7 @@ const CloseButton = styled.button`
   position: absolute;
   top: 1rem;
   right: 1rem;
+  display: inline-block;
 `;
 
 const Heading = styled.h1`
