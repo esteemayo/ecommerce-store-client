@@ -72,6 +72,12 @@ const CloseButton = styled.button`
 
 const ImageContainer = styled.div`
   margin-top: 2rem;
+
+  img {
+    width: 30rem;
+    height: 25rem;
+    display: block;
+  }
 `;
 
 export default CartModal;
