@@ -58,7 +58,7 @@ const ButtonContainer = styled.div`
   gap: 1rem;
 `;
 
-const Button = styled.button`
+const CancelButton = styled.button`
 
 `;
 
