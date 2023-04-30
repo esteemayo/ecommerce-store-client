@@ -13,6 +13,11 @@ const WishlistCard = ({ wishlists, onDelete }) => {
   const [selectedId, setSelectedId] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
+  const handleOpenModal = (wishlistId) => {
+    setSelectedId(wishlistId);
+    setIsModalOpen(true);
+  };
+
   return (
     <Container>
       {wishlists.map((wishlist) => {
