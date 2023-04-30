@@ -66,6 +66,8 @@ const CancelButton = styled.button`
   color: #89a8a0;
   border: 1px solid #e3e3f3;
   border-radius: 0.5rem;
+  outline-color: #f1e4f4;
+  cursor: pointer;
 `;
 
 const DeleteButton = styled.button`
