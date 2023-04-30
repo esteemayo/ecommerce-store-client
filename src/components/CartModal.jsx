@@ -310,6 +310,11 @@ const AddButton = styled.button`
     background-color: #f9f9f9;
     color: #999;
   }
+
+  svg {
+    font-size: 1.6rem;
+    fill: currentColor;
+  }
 `;
 
 const Amount = styled.span`
