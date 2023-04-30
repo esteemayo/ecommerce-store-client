@@ -54,4 +54,8 @@ const ButtonContainer = styled.div`
   
 `;
 
+const Button = styled.button`
+
+`;
+
 export default DeleteModal;
