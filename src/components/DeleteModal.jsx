@@ -2,6 +2,12 @@ import styled from 'styled-components';
 import CloseIcon from '@mui/icons-material/Close';
 
 const DeleteModal = ({ openModal, closeModal, onDelete, wishlistId }) => {
+  const closeModalHandler = (e) => {
+    if (e.target.classList.contains('container')) {
+      closeModal(true);
+    }
+  };
+
   return (
     <Container className='container' type={openModal ? 'show' : ''}>
       <Wrapper>
