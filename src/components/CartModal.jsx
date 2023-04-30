@@ -151,4 +151,8 @@ const ProductColor = styled.h2`
 
 `;
 
+const ColorWrapper = styled.div`
+
+`;
+
 export default CartModal;
