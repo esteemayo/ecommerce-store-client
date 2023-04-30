@@ -25,6 +25,9 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  visibility: ${({ type }) => type === 'show' ? 'visible' : 'hidden'};
+  opacity: ${({ type }) => type === 'show' ? 1 : 0};
+  z-index: ${({ type }) => type === 'show' ? 4000 : -1};
 `;
 
 const Wrapper = styled.div`
