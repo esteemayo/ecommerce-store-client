@@ -56,6 +56,7 @@ const CloseButton = styled.button`
   border: 1px solid #f2f9fB;
   border-radius: 50%;
   outline-color: #f1e4f4;
+  cursor: pointer;
 `;
 
 const Heading = styled.h1`
