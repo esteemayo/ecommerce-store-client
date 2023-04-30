@@ -91,7 +91,7 @@ const ImageContainer = styled.div`
 `;
 
 const ProductContainer = styled.div`
-  
+  margin-top: 2rem;
 `;
 
 const ProductName = styled.h1`
