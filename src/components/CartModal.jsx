@@ -18,4 +18,8 @@ const Wrapper = styled.div`
   
 `;
 
+const ButtonContainer = styled.div`
+  
+`;
+
 export default CartModal;
