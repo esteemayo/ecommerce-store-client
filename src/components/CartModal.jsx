@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import CloseIcon from '@mui/icons-material/Close';
 import Image from 'next/image';
 import { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const CartModal = ({ isModalOpen, closeModal }) => {
   const [size, setSize] = useState(null);
