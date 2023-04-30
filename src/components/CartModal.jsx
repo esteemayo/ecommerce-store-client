@@ -74,7 +74,7 @@ const CartModal = ({ isModalOpen, closeModal }) => {
             <AddContainer>
               <AmountHeading>Quantity</AmountHeading>
               <AmountContainer>
-                
+
               </AmountContainer>
             </AddContainer>
           </SizeWrapper>
@@ -275,6 +275,10 @@ const AmountHeading = styled.h3`
 `;
 
 const AmountContainer = styled.div`
+
+`;
+
+const AddButton = styled.button`
 
 `;
 
