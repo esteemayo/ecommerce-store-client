@@ -339,7 +339,7 @@ const Amount = styled.span`
 const Button = styled.button`
   display: inline-block;
   text-align: center;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   width: 100%;
   padding: 1.3rem 1rem;
   background-color: var(--clr-black);
