@@ -7,6 +7,8 @@ const CartModal = ({ isModalOpen, closeModal }) => {
   const [color, setColor] = useState(null);
   const [isSelected, setIsSelected] = useState(null);
 
+  const colors = ['black', 'pink', 'crimson'];
+
   return (
     <Container type={isModalOpen ? 'show' : ''}>
       <Wrapper>
