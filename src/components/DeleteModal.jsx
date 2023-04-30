@@ -8,7 +8,7 @@ const DeleteModal = () => {
         <WarningMessage>Are you sure you wanted to remove this product from your wishlist</WarningMessage>
         <ButtonContainer>
           <CancelButton type='button'>Not now</CancelButton>
-          <Button type='button'>Remove</Button>
+          <DeleteButton type='button'>Remove</DeleteButton>
         </ButtonContainer>
       </Wrapper>
     </Container>
