@@ -303,7 +303,7 @@ const AmountHeading = styled.h3`
   text-transform: capitalize;
   font-weight: 400;
   font-size: 1.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 `;
 
 const AmountContainer = styled.div`
