@@ -161,13 +161,13 @@ const ImageContainer = styled.div`
 `;
 
 const ProductContainer = styled.div`
-  margin-top: 2rem;
+  margin-top: 1rem;
 `;
 
 const ProductName = styled.h1`
   display: inline-block;
   font-weight: 500;
-  font-size: 2.4rem;
+  font-size: 2rem;
   line-height: 1.3;
   margin-bottom: 2rem;
 `;
