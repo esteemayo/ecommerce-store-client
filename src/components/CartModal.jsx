@@ -125,7 +125,7 @@ const Wrapper = styled.div`
 
 const ButtonContainer = styled.div`
   position: absolute;
-  top: 1rem;
+  top: 0.5rem;
   right: 1rem;
 `;
 
