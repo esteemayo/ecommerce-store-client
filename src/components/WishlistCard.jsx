@@ -10,7 +10,7 @@ import { useState } from 'react';
 import DeleteModal from './DeleteModal';
 
 const WishlistCard = ({ wishlists, onDelete }) => {
-  const [selectedId, setSelectedId] = useState(null);
+  const [isSelectedId, setIsSelectedId] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleOpenModal = (wishlistId) => {
