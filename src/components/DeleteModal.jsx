@@ -6,7 +6,7 @@ const DeleteModal = () => {
     <Container>
       <Wrapper>
         <CloseButton>
-
+          <CloseIcon />
         </CloseButton>
         <Heading>Remove a wishlist?</Heading>
         <WarningMessage>Are you sure you wanted to remove this product from your wishlist</WarningMessage>
