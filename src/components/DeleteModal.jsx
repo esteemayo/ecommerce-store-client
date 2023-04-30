@@ -76,6 +76,8 @@ const DeleteButton = styled.button`
   padding: 1rem 2rem;
   background-color: #6d857f;
   color: var(--clr-white);
+  border: 1px solid #e3e3f3;
+  border-radius: 0.5rem;
 `;
 
 export default DeleteModal;
