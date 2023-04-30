@@ -305,6 +305,11 @@ const AddButton = styled.button`
   outline-color: #ccc;
   cursor: pointer;
   transition: all 0.3s ease;
+
+  &:disabled {
+    background-color: #f9f9f9;
+    color: #999;
+  }
 `;
 
 const Amount = styled.span`
