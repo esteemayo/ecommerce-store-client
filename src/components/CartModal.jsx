@@ -70,6 +70,7 @@ const CartModal = ({ isModalOpen, closeModal }) => {
                 );
               })}
             </SizeContainer>
+            <Hr />
           </SizeWrapper>
         </ProductContainer>
       </Wrapper>
@@ -257,6 +258,10 @@ const SelectSize = styled.button`
   &:hover {
     background-color: ${({ bcg }) => bcg ? '#89a8a0' : '#ebf0ef'};
   }
+`;
+
+const AddContainer = styled.div`
+  
 `;
 
 export default CartModal;
