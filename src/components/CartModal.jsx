@@ -6,7 +6,7 @@ const CartModal = ({ isModalOpen, closeModal }) => {
     <Container type={isModalOpen ? 'show' : ''}>
       <Wrapper>
         <ButtonContainer>
-          <CloseButton type='button'>
+          <CloseButton type='button' onClick={() => closeModal(false)}>
             <CloseIcon />
           </CloseButton>
         </ButtonContainer>
