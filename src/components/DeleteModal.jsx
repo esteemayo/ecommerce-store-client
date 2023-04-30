@@ -41,7 +41,8 @@ const Heading = styled.h1`
 `;
 
 const WarningMessage = styled.p`
-  
+  font-size: 1.6rem;
+  color: #999;
 `;
 
 export default DeleteModal;
