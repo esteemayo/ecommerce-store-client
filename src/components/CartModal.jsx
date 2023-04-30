@@ -89,7 +89,7 @@ const CartModal = ({ isModalOpen, closeModal }) => {
                 <AddButton
                   type='button'
                   disabled={quantity <= 1}
-                  onClick={()=>handleQuantity('dec')}
+                  onClick={() => handleQuantity('dec')}
                 >
                   <FontAwesomeIcon icon={faMinus} />
                 </AddButton>
