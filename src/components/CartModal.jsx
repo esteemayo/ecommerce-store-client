@@ -292,4 +292,8 @@ const AddButton = styled.button`
 
 `;
 
+const Amount = styled.span`
+
+`;
+
 export default CartModal;
