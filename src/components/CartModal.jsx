@@ -302,8 +302,8 @@ const AddButton = styled.button`
   display: inline-block;
   text-align: center;
   font-size: 1.3rem;
-  min-width: 3rem;
-  height: 3rem;
+  min-width: 2.5rem;
+  height: 2.5rem;
   padding: 0 0.4rem;
   line-height: 0.2;
   background-color: transparent;
