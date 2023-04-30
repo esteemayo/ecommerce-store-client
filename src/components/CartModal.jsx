@@ -66,4 +66,8 @@ const CloseButton = styled.button`
   }
 `;
 
+const ImageContainer = styled.div`
+  
+`;
+
 export default CartModal;
