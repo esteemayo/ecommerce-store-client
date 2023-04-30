@@ -47,9 +47,9 @@ const WishlistCard = ({ wishlists, onDelete }) => {
                 </CartButton>
               </CartContainer>
             </Right>
-            <CloseButton type='button' onClick={() => setIsModalOpen(true)}>
+            <DeleteButton type='button' onClick={() => setIsModalOpen(true)}>
               <CloseIcon />
-            </CloseButton>
+            </DeleteButton>
           </Wrapper>
         );
       })}
