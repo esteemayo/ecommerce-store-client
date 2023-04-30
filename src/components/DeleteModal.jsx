@@ -74,7 +74,7 @@ const DeleteButton = styled.button`
   display: inline-block;
   font-size: 1.43rem;
   padding: 1rem 3rem;
-  background-color: #6d857f;
+  background-color: #de0a0a;
   color: var(--clr-white);
   border: 1px solid #e3e3f3;
   border-radius: 0.5rem;
