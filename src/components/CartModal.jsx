@@ -6,4 +6,8 @@ const CartModal = () => {
   );
 }
 
+const Container = styled.div`
+  
+`;
+
 export default CartModal;
