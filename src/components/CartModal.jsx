@@ -195,8 +195,8 @@ const PriceDiscount = styled.p`
 `;
 
 const SalePrice = styled.p`
-  font-weight: 500;
-  font-size: 1.6rem;
+  font-weight: 400;
+  font-size: 1.5rem;
   color: #fa4b21;
   line-height: 1.3;
   margin-bottom: 1rem;
