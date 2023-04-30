@@ -6,7 +6,9 @@ const CartModal = () => {
     <Container>
       <Wrapper>
         <ButtonContainer>
+          <CloseButton type='button'>
 
+          </CloseButton>
         </ButtonContainer>
       </Wrapper>
     </Container>
