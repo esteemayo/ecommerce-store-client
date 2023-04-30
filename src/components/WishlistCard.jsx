@@ -7,6 +7,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import { NumericFormat } from 'react-number-format';
 
 import DeleteModal from './DeleteModal';
+import { useState } from 'react';
 
 const WishlistCard = ({ wishlists, onDelete }) => {
   return (
