@@ -22,6 +22,7 @@ const FeaturedProducts = () => {
           }
         </ProductsContainer>
       </Wrapper>
+      <CartModal />
     </Container>
   );
 }
