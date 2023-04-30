@@ -4,8 +4,11 @@ import Image from 'next/image';
 import { useState } from 'react';
 
 const CartModal = ({ isModalOpen, closeModal }) => {
+  const [size, setSize] = useState(null);
   const [color, setColor] = useState(null);
+  const [quantity, setQuantity] = useState(1);
   const [isSelected, setIsSelected] = useState(null);
+  const [selectedSize, setSelectedSize] = useState(null);
 
   const colors = ['black', 'pink', 'crimson'];
   const sizes = ['XS', 'S', 'M', 'L', 'XL', 'XXL'];
