@@ -247,11 +247,11 @@ const SizeWrapper = styled.div`
 const SizeHeading = styled.h3`
   display: inline-block;
   font-weight: 400;
-  font-size: 1.65rem;
+  font-size: 1.5rem;
 `;
 
 const SizeContainer = styled.div`
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -260,10 +260,10 @@ const SizeContainer = styled.div`
 const SelectSize = styled.button`
   display: inline-block;
   text-align: center;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   min-width: 4rem;
   height: 3rem;
-  padding: 1.6rem 0.4rem;
+  padding: 1rem 0.4rem;
   line-height: 0.2;
   background-color: ${({ bcg }) => bcg ? '#89a8a0' : 'transparent'};
   color: ${({ bcg }) => bcg ? 'var(--clr-white)' : 'inherit'};
