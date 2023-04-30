@@ -22,6 +22,9 @@ const CartModal = ({ isModalOpen, closeModal }) => {
           </PriceContainer>
           <SalePrice>$69.99</SalePrice>
           <Hr />
+          <ColorContainer>
+
+          </ColorContainer>
         </ProductContainer>
       </Wrapper>
     </Container>
