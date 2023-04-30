@@ -51,6 +51,8 @@ const CloseButton = styled.button`
   height: 2rem;
   background-color: transparent;
   color: #a2a8b0;
+  border: 1px solid #f2f9fB;
+  outline-color: #f1e4f4;
 `;
 
 const Heading = styled.h1`
