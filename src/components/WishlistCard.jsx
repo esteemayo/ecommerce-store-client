@@ -10,6 +10,8 @@ import DeleteModal from './DeleteModal';
 import { useState } from 'react';
 
 const WishlistCard = ({ wishlists, onDelete }) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <Container>
       {wishlists.map((wishlist) => {
