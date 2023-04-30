@@ -72,7 +72,7 @@ const CartModal = ({ isModalOpen, closeModal }) => {
             </SizeContainer>
             <Hr />
             <AddContainer>
-
+              <AmountHeading>Quantity</AmountHeading>
             </AddContainer>
           </SizeWrapper>
         </ProductContainer>
