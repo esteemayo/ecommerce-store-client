@@ -3,7 +3,7 @@ import CloseIcon from '@mui/icons-material/Close';
 
 const CartModal = ({ isModalOpen, closeModal }) => {
   return (
-    <Container>
+    <Container type={isModalOpen ? 'show' : ''}>
       <Wrapper>
         <ButtonContainer>
           <CloseButton type='button'>
