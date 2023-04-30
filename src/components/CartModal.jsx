@@ -180,12 +180,12 @@ const PriceContainer = styled.div`
 
 const ProductPrice = styled.p`
   text-decoration: line-through;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
 `;
 
 const PriceDiscount = styled.p`
-  font-weight: 700;
-  font-size: 1.4rem;
+  font-weight: 600;
+  font-size: 1.3rem;
   padding: 0.4rem 0.6rem;
   background-color: #fa4b21;
   color: var(--clr-white);
