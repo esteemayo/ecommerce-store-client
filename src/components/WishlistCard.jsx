@@ -14,7 +14,7 @@ const WishlistCard = ({ wishlists, onDelete }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleOpenModal = (wishlistId) => {
-    setSelectedId(wishlistId);
+    setIsSelectedId(wishlistId);
     setIsModalOpen(true);
   };
 
