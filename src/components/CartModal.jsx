@@ -357,6 +357,10 @@ const Button = styled.button`
   line-height: 1.3em;
   margin: 3rem 0;
   cursor: pointer;
+
+  &:hover {
+    background-position: 100%;
+  }
 `;
 
 export default CartModal;
