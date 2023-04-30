@@ -93,4 +93,8 @@ const ProductName = styled.h1`
   
 `;
 
+const PriceContainer = styled.div`
+  
+`;
+
 export default CartModal;
