@@ -29,7 +29,7 @@ const CartModal = ({ isModalOpen, closeModal }) => {
           </CloseButton>
         </ButtonContainer>
         <ImageContainer>
-          <Image src='/img/img-9.jpg' width={300} height={250} alt='' />
+          <Image src='/img/img-9.jpg' width={320} height={200} alt='' />
         </ImageContainer>
         <ProductContainer>
           <ProductName>The Stanley Rain Jacket in Black</ProductName>
@@ -152,8 +152,8 @@ const ImageContainer = styled.div`
   margin-top: 2rem;
 
   img {
-    width: 30rem;
-    height: 25rem;
+    width: 32rem;
+    height: 20rem;
     display: block;
     object-fit: cover;
     border-radius: 3px;
