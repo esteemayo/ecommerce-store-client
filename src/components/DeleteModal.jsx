@@ -9,7 +9,7 @@ const DeleteModal = ({ openModal, closeModal, onDelete, wishlistId }) => {
   };
 
   return (
-    <Container className='container' type={openModal ? 'show' : ''}>
+    <Container className='container' type={openModal ? 'show' : ''} onClick={closeModalHandler}>
       <Wrapper>
         <CloseButton type='button' onClick={() => closeModal(false)}>
           <CloseIcon />
