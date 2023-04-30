@@ -78,6 +78,7 @@ const ImageContainer = styled.div`
     height: 25rem;
     display: block;
     object-fit: cover;
+    border-radius: 3px;
   }
 `;
 
