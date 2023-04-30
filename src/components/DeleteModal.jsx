@@ -11,7 +11,7 @@ const DeleteModal = ({ openModal, closeModal, onDelete, wishlistId }) => {
         <Heading>Remove a wishlist?</Heading>
         <WarningMessage>Are you sure you wanted to remove this product from your wishlist?</WarningMessage>
         <ButtonContainer>
-          <CancelButton type='button'>Not now</CancelButton>
+          <CancelButton type='button' onClick={() => closeModal(false)}>Not now</CancelButton>
           <DeleteButton type='button'>Remove</DeleteButton>
         </ButtonContainer>
       </Wrapper>
