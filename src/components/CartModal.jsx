@@ -94,7 +94,7 @@ const CartModal = ({ isModalOpen, closeModal }) => {
                   <FontAwesomeIcon icon={faMinus} />
                 </AddButton>
                 <Amount>{quantity}</Amount>
-                <AddButton type='button'>
+                <AddButton type='button' onClick={() => handleQuantity('inc')}>
                   <FontAwesomeIcon icon={faPlus} />
                 </AddButton>
               </AmountContainer>
