@@ -73,6 +73,7 @@ const CancelButton = styled.button`
 const DeleteButton = styled.button`
   display: inline-block;
   font-size: 1.43rem;
+  padding: 1rem 2rem;
 `;
 
 export default DeleteModal;
