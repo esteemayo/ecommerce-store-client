@@ -61,6 +61,8 @@ const ButtonContainer = styled.div`
 const CancelButton = styled.button`
   width: 50%;
   display: inline-block;
+  background-color: transparent;
+  color: #89a8a0;
 `;
 
 const DeleteButton = styled.button`
