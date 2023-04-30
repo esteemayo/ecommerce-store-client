@@ -210,21 +210,21 @@ const Hr = styled.hr`
 `;
 
 const ColorContainer = styled.div`
-  margin: 2rem 0;
+  margin: 1rem 0;
 `;
 
 const ProductColor = styled.h2`
   display: inline-block;
   text-transform: capitalize;
   font-weight: 400;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
 `;
 
 const ColorWrapper = styled.div`
   display: flex;
   align-items: center;
   gap: 2.6rem;
-  margin: 1.5rem 0;
+  margin: 1rem 0;
 `;
 
 const Color = styled.button`
@@ -241,7 +241,7 @@ const Color = styled.button`
 
 const SizeWrapper = styled.div`
   margin-top: 1rem;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
 `;
 
 const SizeHeading = styled.h3`
