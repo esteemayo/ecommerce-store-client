@@ -57,7 +57,18 @@ const CartModal = ({ isModalOpen, closeModal }) => {
           <SizeWrapper>
             <SizeHeading>Select a size</SizeHeading>
             <SizeContainer>
-
+              {sizes.map((size, index) => {
+                return (
+                  <SelectSize
+                    key={index}
+                    type='button'
+                    bcg={selectedSize === size}
+                    onClick={() => handleSize(size)}
+                  >
+                    {size}
+                  </SelectSize>
+                );
+              })}
             </SizeContainer>
           </SizeWrapper>
         </ProductContainer>
