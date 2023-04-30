@@ -50,7 +50,7 @@ const Product = ({ id, name, price, inStock, images, ratingsAverage, openModal }
           </PriceContainer>
           <Button
             type='button'
-            onClick={() => push(`/products/${encodeURIComponent(id)}`)}
+            onClick={() => openModal(true)}
           >
             <FontAwesomeIcon icon={faShoppingCart} />
             &nbsp;
