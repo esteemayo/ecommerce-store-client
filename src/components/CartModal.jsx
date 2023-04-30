@@ -43,7 +43,9 @@ const CartModal = ({ isModalOpen, closeModal }) => {
                     color={color}
                     selected={color === isSelected}
                     onClick={() => handleColor(color)}
-                  />
+                  >
+                    &nbsp;
+                  </Color>
                 );
               })}
             </ColorWrapper>
