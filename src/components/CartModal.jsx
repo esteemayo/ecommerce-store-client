@@ -54,6 +54,8 @@ const CloseButton = styled.button`
   height: 2.5rem;
   background-color: transparent;
   color: #a2a8b0;
+  outline-color: #f1e4f4;
+  cursor: pointer;
 `;
 
 export default CartModal;
