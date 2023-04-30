@@ -42,7 +42,9 @@ const Wrapper = styled.div`
 `;
 
 const ButtonContainer = styled.div`
-  
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
 `;
 
 const CloseButton = styled.button`
