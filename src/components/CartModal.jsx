@@ -16,6 +16,9 @@ const CartModal = ({ isModalOpen, closeModal }) => {
         </ImageContainer>
         <ProductContainer>
           <ProductName>The Stanley Rain Jacket in Black</ProductName>
+          <PriceContainer>
+            
+          </PriceContainer>
         </ProductContainer>
       </Wrapper>
     </Container>
