@@ -295,7 +295,7 @@ const SelectSize = styled.button`
 `;
 
 const AddContainer = styled.div`
-  margin: 1rem 0;
+  margin: 0.5rem 0;
 `;
 
 const AmountHeading = styled.h3`
