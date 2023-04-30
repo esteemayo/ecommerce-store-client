@@ -253,6 +253,10 @@ const SelectSize = styled.button`
   margin-bottom: 0.8rem;
   cursor: ${({ bcg }) => bcg ? 'default' : 'pointer'};
   transition: all 0.1s ease-in-out;
+
+  &:hover {
+    background-color: ${({ bcg }) => bcg ? '#89a8a0' : '#ebf0ef'};
+  }
 `;
 
 export default CartModal;
