@@ -30,6 +30,10 @@ const CartModal = ({ isModalOpen, closeModal }) => {
     type === 'inc' && setQuantity((prev) => prev + 1);
   };
 
+  const handleClick = () => {
+    console.log({ size, color, quantity });
+  };
+
   return (
     <Container type={isModalOpen ? 'show' : ''}>
       <Wrapper>
