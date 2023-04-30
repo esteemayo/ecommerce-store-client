@@ -54,6 +54,7 @@ const CloseButton = styled.button`
   background-color: transparent;
   color: #a2a8b0;
   border: 1px solid #f2f9fB;
+  border-radius: 50%;
   outline-color: #f1e4f4;
 `;
 
