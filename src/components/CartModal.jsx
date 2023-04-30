@@ -290,7 +290,21 @@ const AmountContainer = styled.div`
 `;
 
 const AddButton = styled.button`
-
+  border: none;
+  display: inline-block;
+  text-align: center;
+  font-size: 1.4rem;
+  min-width: 3rem;
+  height: 3rem;
+  padding: 0 0.4rem;
+  line-height: 0.2;
+  background-color: transparent;
+  color: inherit;
+  border: 2px solid #ebf0ef;
+  border-radius: 0.4rem;
+  outline-color: #ccc;
+  cursor: pointer;
+  transition: all 0.3s ease;
 `;
 
 const Amount = styled.span`
