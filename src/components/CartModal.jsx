@@ -184,7 +184,7 @@ const ProductPrice = styled.p`
 `;
 
 const PriceDiscount = styled.p`
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1.3rem;
   padding: 0.4rem 0.6rem;
   background-color: #fa4b21;
