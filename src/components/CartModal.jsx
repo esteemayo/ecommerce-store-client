@@ -223,7 +223,7 @@ const ProductColor = styled.h2`
 const ColorWrapper = styled.div`
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
   margin: 1rem 0;
 `;
 
