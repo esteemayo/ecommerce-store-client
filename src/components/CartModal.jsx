@@ -7,7 +7,7 @@ const CartModal = () => {
       <Wrapper>
         <ButtonContainer>
           <CloseButton type='button'>
-
+            <CloseIcon />
           </CloseButton>
         </ButtonContainer>
       </Wrapper>
