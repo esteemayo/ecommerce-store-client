@@ -9,7 +9,7 @@ import { useRouter } from 'next/navigation';
 
 import StarRating from './StarRating';
 
-const Product = ({ id, name, price, inStock, images, ratingsAverage }) => {
+const Product = ({ id, name, price, inStock, images, ratingsAverage, openModal }) => {
   const { push } = useRouter();
 
   return (
