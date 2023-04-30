@@ -38,6 +38,7 @@ const Heading = styled.h1`
   font-weight: 500;
   font-size: 2rem;
   line-height: 1;
+  margin-bottom: 2rem;
 `;
 
 const WarningMessage = styled.p`
