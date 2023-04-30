@@ -45,7 +45,7 @@ const Wrapper = styled.div`
 const CloseButton = styled.button`
   position: absolute;
   top: 1rem;
-  right: 1rem;
+  right: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
