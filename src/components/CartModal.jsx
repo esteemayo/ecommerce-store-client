@@ -76,7 +76,10 @@ const CartModal = ({ isModalOpen, closeModal }) => {
             <AddContainer>
               <AmountHeading>Quantity</AmountHeading>
               <AmountContainer>
-                <AddButton type='button'>
+                <AddButton
+                  type='button'
+                  disabled={quantity <= 1}
+                >
                   <FontAwesomeIcon icon={faMinus} />
                 </AddButton>
                 <AddButton type='button'>
