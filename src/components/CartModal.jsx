@@ -342,6 +342,8 @@ const Button = styled.button`
   font-size: 1.8rem;
   width: 100%;
   padding: 2rem 1rem;
+  background-color: var(--clr-black);
+  color: var(--clr-white);
 `;
 
 export default CartModal;
