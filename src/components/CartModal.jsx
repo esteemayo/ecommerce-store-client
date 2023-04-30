@@ -12,7 +12,7 @@ const CartModal = ({ isModalOpen, closeModal }) => {
           </CloseButton>
         </ButtonContainer>
         <ImageContainer>
-
+          <Image src='/img/img-9.jpg' width={300} height={300} alt='' />
         </ImageContainer>
       </Wrapper>
     </Container>
