@@ -158,4 +158,8 @@ const ColorWrapper = styled.div`
 
 `;
 
+const Color = styled.button`
+
+`;
+
 export default CartModal;
