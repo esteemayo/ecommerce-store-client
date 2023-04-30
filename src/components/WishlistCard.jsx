@@ -53,7 +53,7 @@ const WishlistCard = ({ wishlists, onDelete }) => {
           </Wrapper>
         );
       })}
-      <DeleteModal />
+      <DeleteModal openModal={isModalOpen} closeModal={setIsModalOpen} />
     </Container>
   );
 }
