@@ -47,4 +47,8 @@ const WarningMessage = styled.p`
   line-height: 1.2;
 `;
 
+const ButtonContainer = styled.div`
+  
+`;
+
 export default DeleteModal;
