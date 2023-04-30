@@ -36,7 +36,16 @@ const CartModal = ({ isModalOpen, closeModal }) => {
           <ColorContainer>
             <ProductColor>Color</ProductColor>
             <ColorWrapper>
-              <Color></Color>
+              {colors.map((color, index) => {
+                return (
+                  <Color
+                    key={index}
+                    color={color}
+                    selected={color === isSelected}
+                    onClick={() => handleColor(color)}
+                  />
+                );
+              })}
             </ColorWrapper>
           </ColorContainer>
         </ProductContainer>
