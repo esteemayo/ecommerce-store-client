@@ -337,7 +337,9 @@ const Amount = styled.span`
 `;
 
 const Button = styled.button`
-
+  display: inline-block;
+  text-align: center;
+  font-size: 1.8rem;
 `;
 
 export default CartModal;
