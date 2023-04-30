@@ -59,6 +59,7 @@ const CloseButton = styled.button`
   cursor: pointer;
 
   svg {
+    font-size: 1.8rem;
     fill: currentColor;
   }
 `;
