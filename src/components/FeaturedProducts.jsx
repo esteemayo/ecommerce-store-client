@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import Product from './Product';
 import { storeProducts } from '@/data';
+import CartModal from './CartModal';
 
 const FeaturedProducts = () => {
   const [featuredProducts, setFeaturedProducts] = useState(storeProducts);
