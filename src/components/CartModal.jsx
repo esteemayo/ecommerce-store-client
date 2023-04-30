@@ -4,7 +4,9 @@ const CartModal = () => {
   return (
     <Container>
       <Wrapper>
-        CartModal
+        <ButtonContainer>
+
+        </ButtonContainer>
       </Wrapper>
     </Container>
   );
