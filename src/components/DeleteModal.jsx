@@ -8,6 +8,11 @@ const DeleteModal = ({ openModal, closeModal, onDelete, wishlistId }) => {
     }
   };
 
+  const deleteWishlistHandler = (wishlistId) => {
+    onDelete(wishlistId);
+    closeModal(false);
+  };
+
   return (
     <Container
       className='container'
@@ -22,7 +27,7 @@ const DeleteModal = ({ openModal, closeModal, onDelete, wishlistId }) => {
         <WarningMessage>Are you sure you wanted to remove this product from your wishlist?</WarningMessage>
         <ButtonContainer>
           <CancelButton type='button' onClick={() => closeModal(false)}>Not now</CancelButton>
-          <DeleteButton type='button' onClick={() => onDelete(wishlistId)}>Remove</DeleteButton>
+          <DeleteButton type='button' onClick={() => }>Remove</DeleteButton>
         </ButtonContainer>
       </Wrapper>
     </Container>
