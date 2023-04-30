@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import CloseIcon from '@mui/icons-material/Close';
 
-const CartModal = () => {
+const CartModal = ({ isModalOpen, closeModal }) => {
   return (
     <Container>
       <Wrapper>
