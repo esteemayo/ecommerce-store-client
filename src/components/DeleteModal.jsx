@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import CloseIcon from '@mui/icons-material/Close';
 
-const DeleteModal = ({ openModal, closeModal }) => {
+const DeleteModal = ({ openModal, closeModal, onDelete, wishlistId }) => {
   return (
     <Container type={openModal ? 'show' : ''}>
       <Wrapper>
@@ -31,7 +31,7 @@ const Container = styled.section`
   justify-content: center;
   visibility: ${({ type }) => type === 'show' ? 'visible' : 'hidden'};
   opacity: ${({ type }) => type === 'show' ? 1 : 0};
-  transform: scale(${({type}) => type==='show' ? 1 : 0});
+  transform: scale(${({ type }) => type === 'show' ? 1 : 0});
   z-index: ${({ type }) => type === 'show' ? 4000 : -1};
   transition: all 0.3s linear;
 `;
