@@ -3,7 +3,9 @@ import styled from 'styled-components';
 const CartModal = () => {
   return (
     <Container>
-      CartModal
+      <Wrapper>
+        CartModal
+      </Wrapper>
     </Container>
   );
 }
