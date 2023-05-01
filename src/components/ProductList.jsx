@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import Product from './Product';
 import { useState } from 'react';
+import CartModal from './CartModal';
 
 const ProductList = ({ products }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
