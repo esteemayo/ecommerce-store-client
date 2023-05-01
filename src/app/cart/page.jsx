@@ -32,4 +32,8 @@ const HeadingMain = styled.span`
 
 `;
 
+const HeadingSub = styled.span`
+
+`;
+
 export default Cart;
