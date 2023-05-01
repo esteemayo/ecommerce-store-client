@@ -38,7 +38,9 @@ const HeadingMain = styled.span`
 `;
 
 const HeadingSub = styled.span`
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 2.5rem;
   height: 2.5rem;
   font-weight: 300;
