@@ -74,7 +74,7 @@ const Wrapper = styled.div`
 
   svg {
     font-size: 1.5rem;
-    color: inherit;
+    fill: inherit;
   }
 `;
 
