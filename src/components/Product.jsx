@@ -253,6 +253,7 @@ const LikeButton = styled.button`
   background-color: transparent;
   color: #858585;
   outline-color: #b8b6b6;
+  outline-offset: 3px;
   cursor: pointer;
 
   display: flex;
