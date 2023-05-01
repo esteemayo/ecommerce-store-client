@@ -10,7 +10,8 @@ const Cart = () => {
 }
 
 const Container = styled.main`
-  
+  width: 100vw;
+  padding: 8rem 0;
 `;
 
 export default Cart;
