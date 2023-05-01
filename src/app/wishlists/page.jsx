@@ -7,7 +7,7 @@ import { wishlists } from '@/data';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 import WishlistCard from '@/components/WishlistCard';
 import WishlistHeader from '@/components/WishlistHeader';
-import CartModal from './CartModal';
+import CartModal from '@/components/CartModal';
 
 const WishLists = () => {
   const dispatch = useDispatch();
