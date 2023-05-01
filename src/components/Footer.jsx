@@ -173,7 +173,7 @@ const ListItem = styled.li`
       line-height: 1.3em;
       transition: all 0.2s ease;
       backface-visibility: hidden;
-      outline-color: #55c57a;
+      outline-color: var(--clr-primary-green);
     }
   }
 `;
