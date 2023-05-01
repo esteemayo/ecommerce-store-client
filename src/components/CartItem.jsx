@@ -21,6 +21,10 @@ const Left = styled.div`
   
 `;
 
+const ImageContainer = styled.div`
+  
+`;
+
 const Right = styled.div`
   
 `;
