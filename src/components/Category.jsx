@@ -55,7 +55,7 @@ const Button = styled.button`
   border: none;
   padding: 1rem 2rem;
   width: 100%;
-  background-color: rgba(56, 122, 197, 0.5);
+  background-color: rgba(137, 168, 160, 0.5);
   color: var(--clr-white);
   outline-color: #043369;
   cursor: pointer;
