@@ -182,7 +182,7 @@ const ProductContainer = styled.div`
 const ProductName = styled.h1`
   display: inline-block;
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: 1;
   margin-bottom: 1rem;
 `;
