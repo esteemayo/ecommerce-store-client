@@ -116,6 +116,8 @@ const ProductName = styled.h3`
       text-decoration: none;
       text-decoration-color: #e2e9e7;
       color: inherit;
+      outline-color: #eee;
+      outline-offset: 3px;
       transition: all 0.3s ease;
     }
 
