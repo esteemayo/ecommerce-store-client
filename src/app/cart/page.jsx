@@ -29,6 +29,7 @@ const Heading = styled.h1`
   display: flex;
   align-items: center;
   gap: 1rem;
+  font-size: 1.5rem;
 `;
 
 const HeadingMain = styled.span`
