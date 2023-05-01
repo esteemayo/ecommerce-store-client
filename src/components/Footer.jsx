@@ -103,7 +103,7 @@ const Footer = () => {
 const Container = styled.footer`
   width: 100vw;
   padding: 15rem 0;
-  background-color: var(--clr-primary-green);
+  background-color: var(--clr-secondary-green);
   color: var(--clr-white);
 `;
 
