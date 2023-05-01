@@ -133,7 +133,7 @@ const Heading = styled.h4`
   font-weight: 500;
   font-size: 2rem;
   line-height: 1em;
-  margin-bottom: 2.4rem;
+  margin-bottom: 2rem;
 `;
 
 const ListContainer = styled.ul`
