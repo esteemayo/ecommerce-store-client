@@ -26,7 +26,9 @@ const Wrapper = styled.div`
 `;
 
 const Heading = styled.h1`
-  
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 `;
 
 const HeadingMain = styled.span`
