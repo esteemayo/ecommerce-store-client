@@ -121,7 +121,7 @@ const Navbar = () => {
 const Container = styled.nav`
   width: 100vw;
   height: 5rem;
-  background-color: var(--clr-primary-green);
+  background-color: var(--clr-secondary-green);
   color: var(--clr-white);
   display: flex;
   align-items: center;
