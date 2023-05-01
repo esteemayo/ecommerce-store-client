@@ -38,7 +38,9 @@ const HeadingMain = styled.span`
 `;
 
 const HeadingSub = styled.span`
-
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
 `;
 
 export default Cart;
