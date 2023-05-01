@@ -27,7 +27,7 @@ const WishLists = () => {
           onDelete={handleDelete}
         />
       </Wrapper>
-      <CartModal />
+      <CartModal isModalOpen={isModalOpen} closeModal={setIsModalOpen} />
     </Container>
   );
 }
