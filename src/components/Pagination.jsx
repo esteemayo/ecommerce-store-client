@@ -16,7 +16,7 @@ const Pagination = () => {
 }
 
 const Container = styled.section`
-  /* width: 100vw; */
+  width: 100%;
   padding: 5rem 0 10rem;
 `;
 
