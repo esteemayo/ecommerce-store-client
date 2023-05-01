@@ -4,7 +4,9 @@ const CartItem = () => {
   return (
     <Container>
       <Left>
-        Left
+        <ImageContainer>
+
+        </ImageContainer>
       </Left>
       <Right>
         Right
