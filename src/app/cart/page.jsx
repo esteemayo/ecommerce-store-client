@@ -10,6 +10,7 @@ const Cart = () => {
           <HeadingMain>My cart</HeadingMain>
           <HeadingSub>2</HeadingSub>
         </Heading>
+        <CartItem />
       </Wrapper>
     </Container>
   );
