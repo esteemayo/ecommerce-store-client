@@ -47,7 +47,7 @@ const WishlistCard = ({ wishlists, onDelete, openModal }) => {
                     prefix={'$'}
                   />
                 </ProductPrice>
-                <CartButton type='button'>
+                <CartButton type='button' onClick={() => openModal(true)}>
                   <FontAwesomeIcon icon={faShoppingCart} />
                   Add to cart
                 </CartButton>
