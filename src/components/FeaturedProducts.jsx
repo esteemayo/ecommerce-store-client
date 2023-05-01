@@ -72,7 +72,7 @@ const ProductsContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 5rem;
+  gap: 1rem;
 `;
 
 export default FeaturedProducts;
