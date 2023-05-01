@@ -29,11 +29,12 @@ const Heading = styled.h1`
   display: flex;
   align-items: center;
   gap: 1rem;
-  font-size: 1.5rem;
+  font-size: 2.65rem;
 `;
 
 const HeadingMain = styled.span`
-
+  display: inline-block;
+  font-weight: 400;
 `;
 
 const HeadingSub = styled.span`
