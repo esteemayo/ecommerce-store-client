@@ -106,7 +106,7 @@ const ProductFilter = ({
 }
 
 const Container = styled.section`
-  padding: 7rem 0;
+  padding: 7rem 3rem;
   width: 100%;
 `;
 
