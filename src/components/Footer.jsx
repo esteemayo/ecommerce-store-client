@@ -269,7 +269,7 @@ const FooterLinkContainer = styled.ul`
   align-items: center;
   justify-content: center;
   gap: 1.5rem;
-  margin-top: 5rem;
+  margin-top: 3rem;
 `;
 
 const LinkItem = styled.li`
