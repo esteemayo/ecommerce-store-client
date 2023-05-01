@@ -7,6 +7,7 @@ import { storeProducts } from '@/data';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 import ProductList from '@/components/ProductList';
 import ProductFilter from '@/components/ProductFilter';
+import CartModal from './CartModal';
 import Pagination from '@/components/Pagination';
 
 const Products = () => {
