@@ -41,6 +41,8 @@ const HeadingSub = styled.span`
   display: inline-block;
   width: 2.5rem;
   height: 2.5rem;
+  background-color: var(--clr-white);
+  color: inherit;
 `;
 
 export default Cart;
