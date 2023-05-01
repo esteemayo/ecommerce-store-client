@@ -122,7 +122,7 @@ const ListItem = styled.li`
 
     svg {
       font-size: 2rem;
-      fill: #89a8a0;
+      color: var(--clr-secondary-green);
     }
   }
 
