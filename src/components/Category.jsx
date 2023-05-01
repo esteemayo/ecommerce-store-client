@@ -77,6 +77,7 @@ const Button = styled.button`
     &:visited {
       text-decoration: none;
       color: inherit;
+      outline-color: #89a8a0;
     }
   }
 `;
