@@ -6,7 +6,7 @@ const Cart = () => {
     <Container>
       <Wrapper>
         <Heading>
-
+          <HeadingMain>My cart</HeadingMain>
         </Heading>
       </Wrapper>
     </Container>
