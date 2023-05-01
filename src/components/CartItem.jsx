@@ -12,4 +12,8 @@ const Container = styled.article`
   
 `;
 
+const Left = styled.div`
+  
+`;
+
 export default CartItem;
