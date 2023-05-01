@@ -25,9 +25,10 @@ const WishLists = () => {
         <WishlistCard
           wishlists={products}
           onDelete={handleDelete}
+          openModal={setIsModalOpen}
         />
       </Wrapper>
-      <CartModal 
+      <CartModal
         isModalOpen={isModalOpen}
         closeModal={setIsModalOpen}
       />
