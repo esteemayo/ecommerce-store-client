@@ -59,7 +59,14 @@ const CartModal = ({ isModalOpen, closeModal }) => {
             </ProductPrice>
             <PriceDiscount>-22%</PriceDiscount>
           </PriceContainer>
-          <SalePrice>$69.99</SalePrice>
+          <SalePrice>
+            <NumericFormat
+              value='69.99'
+              displayType={'text'}
+              thousandSeparator={true}
+              prefix={'$'}
+            />
+          </SalePrice>
           <Hr />
           <ColorContainer>
             <ProductColor>Color</ProductColor>
