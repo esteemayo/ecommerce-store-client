@@ -41,6 +41,8 @@ const HeadingSub = styled.span`
   display: inline-block;
   width: 2.5rem;
   height: 2.5rem;
+  font-weight: 300;
+  font-size: 2rem;
   background-color: var(--clr-white);
   color: inherit;
   box-shadow: 2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.47);
