@@ -44,7 +44,7 @@ const Container = styled.section`
 
 const Wrapper = styled.div`
   width: 100%;
-  max-width: 102.4rem;
+  max-width: 120rem;
   margin: 0 auto;
 `;
 
