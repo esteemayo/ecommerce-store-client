@@ -275,7 +275,7 @@ const FooterLinkContainer = styled.ul`
 const LinkItem = styled.li`
   font-size: 1.4rem;
   color: var(--clr-white);
-  outline-color: var(--clr-secondary-blue);
+  outline-color: var(--clr-primary-green);
 
   a {
     &:link,
@@ -284,7 +284,7 @@ const LinkItem = styled.li`
       text-decoration: none;
       color: inherit;
       line-height: 1.3em;
-      outline-color: var(--clr-secondary-blue);
+      outline-color: var(--clr-primary-green);
     }
   }
 `;
