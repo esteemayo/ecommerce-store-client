@@ -7,6 +7,7 @@ const Cart = () => {
       <Wrapper>
         <Heading>
           <HeadingMain>My cart</HeadingMain>
+          <HeadingSub>2</HeadingSub>
         </Heading>
       </Wrapper>
     </Container>
