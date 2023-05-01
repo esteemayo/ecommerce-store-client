@@ -228,7 +228,7 @@ const Header = styled.h4`
 const SocialContainer = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 1rem;
   margin-top: 1rem;
 `;
