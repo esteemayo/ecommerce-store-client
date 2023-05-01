@@ -34,6 +34,7 @@ const Heading = styled.h1`
 
 const HeadingMain = styled.span`
   display: inline-block;
+  text-transform: capitalize;
   font-weight: 400;
 `;
 
