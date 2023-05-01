@@ -70,7 +70,7 @@ const Heading = styled.h1`
   font-family: inherit;
   font-weight: 600;
   font-size: 2.7rem;
-  color: var(--clr-secondary-blue);
+  color: var(--clr-secondary-green);
   margin-bottom: 7rem;
   display: flex;
   flex-direction: column;
