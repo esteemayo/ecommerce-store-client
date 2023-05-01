@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { useState } from 'react';
+
 import Product from './Product';
 import CartModal from './CartModal';
 
