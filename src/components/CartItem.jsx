@@ -6,4 +6,8 @@ const CartItem = () => {
   );
 }
 
+const Container = styled.article`
+  
+`;
+
 export default CartItem;
