@@ -5,7 +5,9 @@ const Cart = () => {
   return (
     <Container>
       <Wrapper>
-        Cart
+        <Heading>
+
+        </Heading>
       </Wrapper>
     </Container>
   );
