@@ -43,6 +43,10 @@ const HeadingSub = styled.span`
   height: 2.5rem;
   background-color: var(--clr-white);
   color: inherit;
+  box-shadow: 2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.47);
+  -webkit-box-shadow: 2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.47);
+  -moz-box-shadow: 2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.47);
+  border-radius: 50%;
 `;
 
 export default Cart;
