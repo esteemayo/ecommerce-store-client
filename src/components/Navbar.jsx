@@ -167,7 +167,7 @@ const ToggleButton = styled.button`
   svg {
     width: 3rem;
     height: 3rem;
-    color: inherit;
+    fill: inherit;
   }
 
   @media only screen and (min-width:50em){
