@@ -19,6 +19,16 @@ const WishLists = () => {
     setProducts((prev) => prev.filter((item) => item.id !== id));
   };
 
+  if (products.length < 1) {
+    return (
+      <Container onMouseOver={() => dispatch(closeSubmenu())}>
+        <Wrapper>
+          loading
+        </Wrapper>
+      </Container>
+    );
+  }
+
   return (
     <Container onMouseOver={() => dispatch(closeSubmenu())}>
       <Wrapper>
@@ -46,6 +56,10 @@ const Wrapper = styled.div`
   width: 100%;
   max-width: 80rem;
   margin: 0 auto;
+`;
+
+const Text = styled.p`
+
 `;
 
 export default WishLists;
