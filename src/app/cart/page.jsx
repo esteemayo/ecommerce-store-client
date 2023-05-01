@@ -28,4 +28,8 @@ const Heading = styled.h1`
   
 `;
 
+const HeadingMain = styled.span`
+
+`;
+
 export default Cart;
