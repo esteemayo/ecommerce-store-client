@@ -28,7 +28,6 @@ const ProductList = ({ products }) => {
 
 const Container = styled.section`
   width: 100%;
-  margin: 0 auto;
   padding: 8rem 0;
   display: flex;
   flex-wrap: wrap;
