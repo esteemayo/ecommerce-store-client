@@ -18,7 +18,7 @@ const CartModal = ({ isModalOpen, closeModal }) => {
 
   const closeModalHandler = (e) => {
     if (e.target.classList.contains('container')) {
-      closeModal(true);
+      closeModal(false);
     }
   };
 
