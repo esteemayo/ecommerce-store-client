@@ -11,6 +11,7 @@ import Pagination from '@/components/Pagination';
 
 const Products = () => {
   const dispatch = useDispatch();
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const [values, setValues] = useState({
     category: 'all',
     size: '',
