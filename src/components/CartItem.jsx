@@ -20,7 +20,7 @@ const Container = styled.article`
 `;
 
 const Left = styled.div`
-  
+  flex: 3;
 `;
 
 const ImageContainer = styled.div`
@@ -28,7 +28,7 @@ const ImageContainer = styled.div`
 `;
 
 const Right = styled.div`
-  
+  flex: 1;
 `;
 
 export default CartItem;
