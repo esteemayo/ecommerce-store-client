@@ -17,7 +17,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--clr-primary-blue);
+  background-color: var(--clr-primary-green);
   background-clip: content-box;
   box-shadow: inset 0 0 0.6rem rgba(0, 0, 0, 0.3);
   border-radius: 0.45rem;
