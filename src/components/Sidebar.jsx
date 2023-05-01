@@ -139,7 +139,7 @@ const ListItem = styled.li`
     }
 
     &:hover {
-      color: #264868;
+      color: var(--clr-secondary-green);
     }
   }
 `;
