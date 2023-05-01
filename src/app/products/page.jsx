@@ -77,7 +77,6 @@ const Products = () => {
       />
       <ProductList products={sortedProducts} />
       <Pagination />
-      <CartModal />
     </Container>
   );
 }
