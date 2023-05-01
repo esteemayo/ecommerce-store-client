@@ -147,7 +147,7 @@ const ListItem = styled.li`
   transition: all 0.3s ease;
 
   &:not(:last-of-type) {
-    margin-bottom: 1.6rem;
+    margin-bottom: 1.5rem;
   }
 
   &:hover {
