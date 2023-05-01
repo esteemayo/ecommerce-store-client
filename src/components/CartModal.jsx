@@ -176,7 +176,7 @@ const ImageContainer = styled.div`
 `;
 
 const ProductContainer = styled.div`
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 `;
 
 const ProductName = styled.h1`
