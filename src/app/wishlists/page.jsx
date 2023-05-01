@@ -11,6 +11,7 @@ import WishlistHeader from '@/components/WishlistHeader';
 const WishLists = () => {
   const dispatch = useDispatch();
   const [products, setProducts] = useState(wishlists);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleDelete = (id) => {
     setProducts((prev) => prev.filter((item) => item.id !== id));
