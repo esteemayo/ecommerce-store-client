@@ -53,7 +53,7 @@ const Heading = styled.h1`
   font-family: inherit;
   font-weight: 600;
   font-size: 2.7rem;
-  color: var(--clr-secondary-blue);
+  color: var(--clr-secondary-green);
   margin-bottom: 7rem;
   display: flex;
   flex-direction: column;
@@ -63,7 +63,7 @@ const Heading = styled.h1`
     display: inline-block;
     width: 4rem;
     height: 3px;
-    background-color: var(--clr-secondary-blue);
+    background-color: var(--clr-secondary-green);
     border-radius: 3px;
   }
 `;
