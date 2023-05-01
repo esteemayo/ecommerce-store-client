@@ -42,7 +42,11 @@ const CartModal = ({ isModalOpen, closeModal }) => {
   };
 
   return (
-    <Container className='container' type={isModalOpen ? 'show' : ''} onClick={closeModalHandler}>
+    <Container
+      className='container'
+      type={isModalOpen ? 'show' : ''}
+      onClick={closeModalHandler}
+    >
       <Wrapper>
         <ButtonContainer>
           <CloseButton type='button' onClick={() => closeModal(false)}>
