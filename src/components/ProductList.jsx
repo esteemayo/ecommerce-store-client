@@ -32,7 +32,9 @@ const Container = styled.section`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 4rem;
+  justify-content: center;
+  row-gap: 4rem;
+  column-gap: 1rem;
 `;
 
 export default ProductList;
