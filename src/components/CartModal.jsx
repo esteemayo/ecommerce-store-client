@@ -3,7 +3,6 @@ import CloseIcon from '@mui/icons-material/Close';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from 'react';
-import { NumericFormat } from 'react-number-format';
 import { faMinus, faPlus } from '@fortawesome/free-solid-svg-icons';
 
 const CartModal = ({ isModalOpen, closeModal }) => {
