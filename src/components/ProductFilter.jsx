@@ -108,7 +108,6 @@ const ProductFilter = ({
 const Container = styled.section`
   padding: 7rem 0;
   width: 100%;
-  max-width: 102.4rem;
   margin: 0 auto;
 `;
 
