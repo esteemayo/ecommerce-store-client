@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from 'react';
 import { faMinus, faPlus } from '@fortawesome/free-solid-svg-icons';
+import { NumericFormat } from 'react-number-format';
 
 const CartModal = ({ isModalOpen, closeModal }) => {
   const [size, setSize] = useState(null);
