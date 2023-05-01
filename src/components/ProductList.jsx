@@ -10,7 +10,7 @@ const ProductList = ({ products }) => {
   return (
     <Container>
       {products.map((product) => {
-        return <Product key={product.id} {...product} />;
+        return <Product key={product.id} {...product} openModal={setIsModalOpen} />;
       })}
       <CartModal
         isModalOpen={isModalOpen}
