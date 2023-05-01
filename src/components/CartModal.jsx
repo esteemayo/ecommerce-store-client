@@ -86,6 +86,7 @@ const CartModal = ({ isModalOpen, closeModal }) => {
                   <Color
                     key={index}
                     color={color}
+                    type='button'
                     selected={color === isSelected}
                     onClick={() => handleColor(color)}
                   >
