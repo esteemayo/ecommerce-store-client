@@ -16,6 +16,12 @@ const CartModal = ({ isModalOpen, closeModal }) => {
   const colors = ['black', 'pink', 'crimson'];
   const sizes = ['XS', 'S', 'M', 'L', 'XL', 'XXL'];
 
+  const closeModalHandler = (e) => {
+    if (e.target.classList.contains('container')) {
+      closeModal(true);
+    }
+  };
+
   const handleColor = (color) => {
     setColor(color);
     setIsSelected(color);
