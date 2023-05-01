@@ -6,6 +6,9 @@ const CartItem = () => {
       <Left>
         Left
       </Left>
+      <Right>
+        Right
+      </Right>
     </Container>
   );
 }
