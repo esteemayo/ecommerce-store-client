@@ -14,7 +14,9 @@ const CartItem = () => {
 }
 
 const Container = styled.article`
-  
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
 `;
 
 const Left = styled.div`
