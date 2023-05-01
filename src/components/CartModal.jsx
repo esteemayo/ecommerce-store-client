@@ -276,8 +276,8 @@ const SelectSize = styled.button`
   display: inline-block;
   text-align: center;
   font-size: 1.3rem;
-  min-width: 4rem;
-  height: 3rem;
+  min-width: 3rem;
+  height: 2rem;
   padding: 1.3rem 0.4rem;
   line-height: 0.1;
   background-color: ${({ bcg }) => bcg ? '#89a8a0' : 'transparent'};
