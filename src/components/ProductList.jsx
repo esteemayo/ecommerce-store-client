@@ -3,6 +3,7 @@ import Product from './Product';
 import { useState } from 'react';
 
 const ProductList = ({ products }) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <Container>
       {products.map((product) => {
