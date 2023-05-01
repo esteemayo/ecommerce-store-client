@@ -60,7 +60,8 @@ const Wrapper = styled.div`
 `;
 
 const Text = styled.p`
-
+  font-size: 4rem;
+  text-align: center;
 `;
 
 export default WishLists;
