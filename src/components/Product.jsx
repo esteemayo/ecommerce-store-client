@@ -70,11 +70,12 @@ const Product = ({ id, name, price, inStock, images, ratingsAverage, openModal }
 }
 
 const Container = styled.article`
-  width: 30%;
+  width: 37rem;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 4rem;
+  row-gap: 2rem;
+  column-gap: 1rem;
 `;
 
 const Wrapper = styled.div`
