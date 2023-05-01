@@ -12,7 +12,7 @@ const Categories = () => {
 
 const Container = styled.section`
   width: 100%;
-  max-width: 102.4rem;
+  max-width: 120rem;
   margin: 0 auto;
   padding: 10rem 0;
 `;
