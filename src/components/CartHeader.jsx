@@ -3,7 +3,11 @@ import styled from 'styled-components';
 const CartHeader = () => {
   return (
     <Container>
-      CartHeader
+      <Heading>
+        <HeadingMain>My cart</HeadingMain>
+        <HeadingSub>2</HeadingSub>
+      </Heading>
+      <ClearButton type='button'>Clear cart</ClearButton>
     </Container>
   );
 }
