@@ -8,6 +8,9 @@ const CartItem = () => {
         <ImageContainer>
           <Image src='/img/img-10.jpg' width={120} height={120} alt='' />
         </ImageContainer>
+        <ProductDetails>
+
+        </ProductDetails>
       </Left>
       <Right>
         Right
