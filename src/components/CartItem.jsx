@@ -17,6 +17,7 @@ const CartItem = () => {
             <ProductColor color='blue'>Blue</ProductColor>
           </ColorContainer>
           <SizeContainer>
+            <Title>Size:</Title>
             <ProductSize>XS</ProductSize>
           </SizeContainer>
         </ProductDetails>
