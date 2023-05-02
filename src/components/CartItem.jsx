@@ -11,6 +11,7 @@ const CartItem = () => {
         <ProductDetails>
           <ProductName>Short blouse with embroideries</ProductName>
           <ProductColor>&nbsp;</ProductColor>
+          <ProductSize>XS</ProductSize>
         </ProductDetails>
       </Left>
       <Right>
