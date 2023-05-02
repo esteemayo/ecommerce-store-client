@@ -9,13 +9,7 @@ const Cart = () => {
   return (
     <Container>
       <Wrapper>
-        <HeadingContainer>
-          <Heading>
-            <HeadingMain>My cart</HeadingMain>
-            <HeadingSub>2</HeadingSub>
-          </Heading>
-          <ClearButton type='button'>Clear cart</ClearButton>
-        </HeadingContainer>
+        <CartHeader />
         <CartItemsContainer>
           {cartItems.map((cart) => {
             return <CartItem key={cart.id} {...cart} />;
