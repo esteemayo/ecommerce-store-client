@@ -97,6 +97,7 @@ const ProductColor = styled.span`
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  text-transform: capitalize;
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
 
