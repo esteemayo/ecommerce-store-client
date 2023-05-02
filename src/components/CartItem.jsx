@@ -53,9 +53,6 @@ const CartItem = ({ id, name, size, color, image, price, quantity }) => {
 }
 
 const Container = styled.article`
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
   line-height: 1;
 
   &:not(:last-of-type) {
