@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { faMinus, faPlus } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const CartItem = () => {
+const CartItem = ({ id, name, size, color, image, price, quantity }) => {
   return (
     <Container>
       <Left>
