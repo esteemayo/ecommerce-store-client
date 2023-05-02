@@ -54,7 +54,7 @@ const CartItem = ({ id, name, size, color, image, price, quantity }) => {
 
 const Container = styled.article`
   line-height: 1;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #e2e9e7;
 
   &:not(:last-of-type) {
     margin-bottom: 1.25rem;
