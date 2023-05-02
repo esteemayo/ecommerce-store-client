@@ -79,6 +79,8 @@ const HeadingSub = styled.span`
 const ClearButton = styled.button`
   display: inline-block;
   padding: 0.8rem 2.5rem;
+  text-transform: capitalize;
+  font-size: 1.5rem;
 `;
 
 const CartItemsContainer = styled.div`
