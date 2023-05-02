@@ -996,7 +996,7 @@ export const cartItems = [
     id: 5,
     name: 'Handbag',
     image: '/img/img-5.jpg',
-    color: 'wine',
+    color: 'green',
     size: 'U',
     price: 30,
     inCart: true,
