@@ -120,7 +120,8 @@ const ProductSize = styled.span`
 `;
 
 const RemoveButton = styled.button`
-  
+  display: inline-block;
+  border: none;
 `;
 
 const Right = styled.div`
