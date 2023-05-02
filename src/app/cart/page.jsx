@@ -65,4 +65,8 @@ const HeadingSub = styled.span`
   border-radius: 50%;
 `;
 
+const CartItemsContainer = styled.div`
+  
+`;
+
 export default Cart;
