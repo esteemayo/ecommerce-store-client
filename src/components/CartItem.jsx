@@ -15,7 +15,9 @@ const CartItem = () => {
         </ProductDetails>
       </Left>
       <Right>
-        Right
+        <QuantityContainer>
+
+        </QuantityContainer>
       </Right>
     </Container>
   );
