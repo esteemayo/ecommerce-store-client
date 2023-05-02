@@ -87,6 +87,10 @@ const ClearButton = styled.button`
   border-radius: 0.5rem;
   outline-color: #a10606;
   cursor: pointer;
+
+  &:hover {
+    background-color: rgba(222, 10, 10, 0.1);
+  }
 `;
 
 const CartItemsContainer = styled.div`
