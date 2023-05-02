@@ -10,9 +10,7 @@ const Cart = () => {
           <HeadingMain>My cart</HeadingMain>
           <HeadingSub>2</HeadingSub>
         </Heading>
-        <CartContainer>
-          <CartItem />
-        </CartContainer>
+        <CartItem />
       </Wrapper>
     </Container>
   );
@@ -57,11 +55,6 @@ const HeadingSub = styled.span`
   -webkit-box-shadow: 2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.47);
   -moz-box-shadow: 2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.47);
   border-radius: 50%;
-`;
-
-const CartContainer = styled.section`
-  /* max-width: 80rem;
-  margin: 0 auto; */
 `;
 
 export default Cart;
