@@ -57,7 +57,7 @@ const Container = styled.article`
   border-bottom: 1px solid #eee;
 
   &:not(:last-of-type) {
-    margin-bottom: 2.25rem;
+    margin-bottom: 1.25rem;
   }
 `;
 
