@@ -108,6 +108,8 @@ const QuantityContainer = styled.div`
 const AddQuantity = styled.button`
   border: none;
   display: inline-block;
+  font-weight: lighter;
+  font-size: 1.7rem;
 `;
 
 const MinusQuantity = styled.button`
