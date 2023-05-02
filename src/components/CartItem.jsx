@@ -146,7 +146,10 @@ const MinusQuantity = styled.button`
 `;
 
 const Quantity = styled.span`
-  
+  display: inline-block;
+  font-size: 600;
+  font-size: 2rem;
+  color: inherit;
 `;
 
 export default CartItem;
