@@ -61,7 +61,9 @@ const Container = styled.article`
 `;
 
 const Wrapper = styled.div`
-  
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
 `;
 
 const Left = styled.div`
