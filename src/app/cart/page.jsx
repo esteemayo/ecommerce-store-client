@@ -51,7 +51,6 @@ const Heading = styled.h1`
   align-items: center;
   gap: 1rem;
   font-size: 2.65rem;
-  margin-bottom: 3rem;
 `;
 
 const HeadingMain = styled.span`
