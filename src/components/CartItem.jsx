@@ -106,7 +106,8 @@ const QuantityContainer = styled.div`
 `;
 
 const AddQuantity = styled.button`
-  
+  border: none;
+  display: inline-block;
 `;
 
 const MinusQuantity = styled.button`
