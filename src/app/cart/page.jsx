@@ -84,6 +84,9 @@ const ClearButton = styled.button`
   background-color: transparent;
   color: #de0a0a;
   border: 1px solid #de0a0a;
+  border-radius: 0.5rem;
+  outline-color: #a10606;
+  cursor: pointer;
 `;
 
 const CartItemsContainer = styled.div`
