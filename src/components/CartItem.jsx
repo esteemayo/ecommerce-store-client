@@ -124,6 +124,8 @@ const RemoveButton = styled.button`
   border: none;
   background-color: transparent;
   color: var(--clr-primary-green);
+  outline-color: #eee;
+  outline-offset: 3px;
 `;
 
 const Right = styled.div`
