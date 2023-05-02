@@ -107,7 +107,9 @@ const ProductColor = styled.span`
 `;
 
 const SizeContainer = styled.div`
-  
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 `;
 
 const ProductSize = styled.span`
