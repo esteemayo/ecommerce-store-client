@@ -74,7 +74,9 @@ const ProductName = styled.h2`
 `;
 
 const ColorContainer = styled.div`
-  
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 `;
 
 const Title = styled.p`
