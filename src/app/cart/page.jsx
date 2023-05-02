@@ -87,6 +87,7 @@ const ClearButton = styled.button`
   border-radius: 0.5rem;
   outline-color: #a10606;
   cursor: pointer;
+  transition: all 0.3s ease;
 
   &:hover {
     background-color: rgba(222, 10, 10, 0.1);
