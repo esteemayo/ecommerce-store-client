@@ -113,7 +113,7 @@ const AddQuantity = styled.button`
   font-weight: lighter;
   font-size: 1.7rem;
   background-color: transparent;
-  color: #f1e4f4;
+  color: #c3c3c4;
   border: 1px solid #eee;
   border-radius: 50%;
 `;
