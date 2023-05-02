@@ -45,4 +45,22 @@ const HeadingSub = styled.span`
   border-radius: 50%;
 `;
 
+const ClearButton = styled.button`
+  display: inline-block;
+  padding: 0.8rem 2.5rem;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  background-color: transparent;
+  color: #de0a0a;
+  border: 1px solid #de0a0a;
+  border-radius: 0.5rem;
+  outline-color: #eb4d4d;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: rgba(222, 10, 10, 0.1);
+  }
+`;
+
 export default CartHeader;
