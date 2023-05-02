@@ -57,6 +57,10 @@ const ProductColor = styled.span`
   
 `;
 
+const ProductSize = styled.span`
+  
+`;
+
 const Right = styled.div`
   flex: 1;
 `;
