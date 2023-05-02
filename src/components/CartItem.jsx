@@ -63,6 +63,8 @@ const ProductColor = styled.span`
   display: block;
   width: 2.2rem;
   height: 2.2rem;
+  background-color: ${({ color }) => color};
+  border-radius: 50%;
 `;
 
 const ProductSize = styled.span`
