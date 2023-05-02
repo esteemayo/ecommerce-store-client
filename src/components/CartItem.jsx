@@ -15,7 +15,14 @@ const CartItem = ({ id, name, size, color, image, price, quantity }) => {
           <ProductName>{name}</ProductName>
           <PriceContainer>
             <Title>Price:</Title>
-            <Price>${price}</Price>
+            <Price>
+              <NumericFormat
+                value={price}
+                displayType={'text'}
+                thousandSeparator={true}
+                prefix={'$'}
+              />
+            </Price>
           </PriceContainer>
           <ColorContainer>
             <Title>Color:</Title>
