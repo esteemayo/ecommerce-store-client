@@ -102,6 +102,10 @@ const ProductColor = styled.span`
   }
 `;
 
+const SizeContainer = styled.div`
+  
+`;
+
 const ProductSize = styled.span`
   display: block;
   font-size: 1.5rem;
