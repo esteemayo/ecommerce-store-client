@@ -20,6 +20,7 @@ const CartItem = () => {
             <Title>Size:</Title>
             <ProductSize>XS</ProductSize>
           </SizeContainer>
+          <RemoveButton type='button'>Remove</RemoveButton>
         </ProductDetails>
       </Left>
       <Right>
