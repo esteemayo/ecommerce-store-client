@@ -80,7 +80,8 @@ const ColorContainer = styled.div`
 `;
 
 const Title = styled.p`
-  
+  font-weight: 500;
+  font-size: 1.6rem;
 `;
 
 const ProductColor = styled.span`
