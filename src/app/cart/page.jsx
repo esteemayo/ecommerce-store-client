@@ -7,10 +7,12 @@ const Cart = () => {
   return (
     <Container>
       <Wrapper>
-        <Heading>
-          <HeadingMain>My cart</HeadingMain>
-          <HeadingSub>2</HeadingSub>
-        </Heading>
+        <HeadingContainer>
+          <Heading>
+            <HeadingMain>My cart</HeadingMain>
+            <HeadingSub>2</HeadingSub>
+          </Heading>
+        </HeadingContainer>
         <CartItemsContainer>
           {cartItems.map((cart) => {
             return <CartItem key={cart.id} {...cart} />;
