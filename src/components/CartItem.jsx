@@ -118,6 +118,11 @@ const AddQuantity = styled.button`
   border-radius: 50%;
   outline-color: #ddd;
   cursor: pointer;
+
+  svg {
+    font-size: inherit;
+    color: currentColor;
+  }
 `;
 
 const MinusQuantity = styled.button`
