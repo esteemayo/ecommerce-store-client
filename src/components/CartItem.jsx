@@ -10,7 +10,7 @@ const CartItem = () => {
         </ImageContainer>
         <ProductDetails>
           <ProductName>Short blouse with embroideries</ProductName>
-          <ProductColor color='blue'>&nbsp;</ProductColor>
+          <ProductColor color='blue'>Blue</ProductColor>
           <ProductSize>XS</ProductSize>
         </ProductDetails>
       </Left>
