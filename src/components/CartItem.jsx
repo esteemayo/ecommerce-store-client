@@ -92,7 +92,9 @@ const PriceContainer = styled.div`
 `;
 
 const Price = styled.span`
-  
+  display: block;
+  font-size: 1.5rem;
+  color: #999;
 `;
 
 const ColorContainer = styled.div`
