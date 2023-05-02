@@ -11,9 +11,11 @@ const Cart = () => {
           <HeadingMain>My cart</HeadingMain>
           <HeadingSub>2</HeadingSub>
         </Heading>
-        {cartItems.map((cart) => {
-          return <CartItem key={cart.id} {...cart} />;
-        })}
+        <CartItemsContainer>
+          {cartItems.map((cart) => {
+            return <CartItem key={cart.id} {...cart} />;
+          })}
+        </CartItemsContainer>
       </Wrapper>
     </Container>
   );
