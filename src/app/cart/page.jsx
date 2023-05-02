@@ -50,7 +50,6 @@ const Heading = styled.h1`
   align-items: center;
   gap: 1rem;
   font-size: 2.65rem;
-  padding: 2rem 5rem 0.5rem 5rem;
   margin-bottom: 3rem;
 `;
 
