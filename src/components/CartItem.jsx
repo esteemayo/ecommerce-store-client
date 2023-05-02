@@ -123,6 +123,8 @@ const AddQuantity = styled.button`
 const MinusQuantity = styled.button`
   border: none;
   display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
 `;
 
 const Quantity = styled.span`
