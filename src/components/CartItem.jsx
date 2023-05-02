@@ -78,6 +78,7 @@ const ProductColor = styled.span`
 `;
 
 const ProductSize = styled.span`
+  display: block;
   font-size: 1.5rem;
   color: #999;
 `;
