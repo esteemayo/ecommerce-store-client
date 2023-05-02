@@ -23,4 +23,10 @@ const Heading = styled.h1`
   font-size: 2.65rem;
 `;
 
+const HeadingMain = styled.span`
+  display: inline-block;
+  text-transform: capitalize;
+  font-weight: 400;
+`;
+
 export default CartHeader;
