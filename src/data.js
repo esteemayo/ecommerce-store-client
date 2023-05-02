@@ -986,7 +986,7 @@ export const cartItems = [
     id: 4,
     name: 'Striped cotton t-shirt',
     image: '/img/img-4.jpg',
-    color: 'mustard',
+    color: 'crimson',
     size: 'S',
     price: 60,
     inCart: true,
