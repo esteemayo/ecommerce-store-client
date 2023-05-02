@@ -127,6 +127,8 @@ const MinusQuantity = styled.button`
   height: 2.5rem;
   font-weight: lighter;
   font-size: 1.7rem;
+  background-color: transparent;
+  color: #c3c3c4;
 `;
 
 const Quantity = styled.span`
