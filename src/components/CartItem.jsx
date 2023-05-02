@@ -6,7 +6,7 @@ const CartItem = () => {
     <Container>
       <Left>
         <ImageContainer>
-          <Image src='/img/img-10.jpg' width={200} height={200} alt='' />
+          <Image src='/img/img-10.jpg' width={120} height={120} alt='' />
         </ImageContainer>
       </Left>
       <Right>
