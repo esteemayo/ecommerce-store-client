@@ -36,6 +36,10 @@ const Wrapper = styled.div`
   border-radius: 1rem;
 `;
 
+const HeadingContainer = styled.div`
+  
+`;
+
 const Heading = styled.h1`
   display: flex;
   align-items: center;
