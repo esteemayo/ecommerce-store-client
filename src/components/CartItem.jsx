@@ -61,6 +61,10 @@ const Container = styled.article`
   }
 `;
 
+const Wrapper = styled.div`
+  
+`;
+
 const Left = styled.div`
   flex: 3;
   display: flex;
