@@ -93,4 +93,8 @@ const QuantityContainer = styled.div`
   
 `;
 
+const AddQuantity = styled.button`
+  
+`;
+
 export default CartItem;
