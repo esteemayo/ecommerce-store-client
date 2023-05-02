@@ -25,7 +25,7 @@ const Container = styled.main`
 
 const Wrapper = styled.div`
   width: 100%;
-  max-width: 120rem;
+  max-width: 80rem;
   margin: 0 auto;
 `;
 
@@ -60,7 +60,8 @@ const HeadingSub = styled.span`
 `;
 
 const CartContainer = styled.section`
-  
+  /* max-width: 80rem;
+  margin: 0 auto; */
 `;
 
 export default Cart;
