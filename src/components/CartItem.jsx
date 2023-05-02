@@ -29,6 +29,9 @@ const Container = styled.article`
 
 const Left = styled.div`
   flex: 3;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
 `;
 
 const ImageContainer = styled.div`
