@@ -6,4 +6,8 @@ const CartHeader = () => {
   );
 }
 
+const Container = styled.div`
+  
+`;
+
 export default CartHeader;
