@@ -57,6 +57,7 @@ const ProductName = styled.h2`
   display: block;
   font-weight: 500;
   font-size: 2rem;
+  margin-bottom: 1rem;
 `;
 
 const ProductColor = styled.span`
