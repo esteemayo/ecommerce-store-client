@@ -128,8 +128,8 @@ const AddQuantity = styled.button`
 const MinusQuantity = styled.button`
   border: none;
   display: inline-block;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 3rem;
+  height: 3rem;
   font-weight: lighter;
   font-size: 1.7rem;
   background-color: transparent;
