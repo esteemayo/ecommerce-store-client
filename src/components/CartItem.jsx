@@ -64,8 +64,6 @@ const ProductColor = styled.span`
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  width: 2.2rem;
-  height: 2.2rem;
   background-color: ${({ color }) => color};
   border-radius: 50%;
   margin-bottom: 1rem;
