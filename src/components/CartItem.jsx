@@ -41,6 +41,10 @@ const ImageContainer = styled.div`
   }
 `;
 
+const ProductDetails = styled.div`
+  
+`;
+
 const Right = styled.div`
   flex: 1;
 `;
