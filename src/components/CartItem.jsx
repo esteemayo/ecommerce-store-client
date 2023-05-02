@@ -125,6 +125,8 @@ const MinusQuantity = styled.button`
   display: inline-block;
   width: 2.5rem;
   height: 2.5rem;
+  font-weight: lighter;
+  font-size: 1.7rem;
 `;
 
 const Quantity = styled.span`
