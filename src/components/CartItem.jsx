@@ -50,7 +50,7 @@ const ImageContainer = styled.div`
 `;
 
 const ProductDetails = styled.div`
-  
+  width: 30rem;
 `;
 
 const ProductName = styled.h2`
