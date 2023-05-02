@@ -64,7 +64,7 @@ const ProductColor = styled.span`
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 
   &::before {
     content: '';
