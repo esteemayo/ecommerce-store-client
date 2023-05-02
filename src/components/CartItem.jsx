@@ -88,6 +88,10 @@ const PriceContainer = styled.div`
   
 `;
 
+const Price = styled.span`
+  
+`;
+
 const ColorContainer = styled.div`
   display: flex;
   align-items: center;
