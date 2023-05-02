@@ -122,6 +122,7 @@ const ProductSize = styled.span`
 const RemoveButton = styled.button`
   display: inline-block;
   border: none;
+  text-transform: capitalize;
   background-color: transparent;
   color: var(--clr-primary-green);
   outline-color: #eee;
