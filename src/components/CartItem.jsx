@@ -42,6 +42,10 @@ const Container = styled.article`
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+
+  &:not(:last-of-type) {
+    margin-bottom: 2rem;
+  }
 `;
 
 const Left = styled.div`
