@@ -64,7 +64,8 @@ const ProductColor = styled.span`
 `;
 
 const ProductSize = styled.span`
-  
+  font-size: 1.5rem;
+  color: #999;
 `;
 
 const Right = styled.div`
