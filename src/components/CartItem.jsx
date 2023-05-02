@@ -60,7 +60,9 @@ const ProductName = styled.h2`
 `;
 
 const ProductColor = styled.span`
-  
+  display: block;
+  width: 2.2rem;
+  height: 2.2rem;
 `;
 
 const ProductSize = styled.span`
