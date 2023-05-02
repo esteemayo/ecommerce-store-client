@@ -121,7 +121,8 @@ const AddQuantity = styled.button`
 `;
 
 const MinusQuantity = styled.button`
-  
+  border: none;
+  display: inline-block;
 `;
 
 const Quantity = styled.span`
