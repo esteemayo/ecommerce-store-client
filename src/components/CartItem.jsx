@@ -52,6 +52,10 @@ const ProductName = styled.h2`
   
 `;
 
+const ProductColor = styled.span`
+  
+`;
+
 const Right = styled.div`
   flex: 1;
 `;
