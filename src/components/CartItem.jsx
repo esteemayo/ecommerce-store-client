@@ -108,4 +108,8 @@ const MinusQuantity = styled.button`
   
 `;
 
+const Quantity = styled.span`
+  
+`;
+
 export default CartItem;
