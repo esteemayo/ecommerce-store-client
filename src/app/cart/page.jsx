@@ -41,7 +41,7 @@ const Heading = styled.h1`
   align-items: center;
   gap: 1rem;
   font-size: 2.65rem;
-  padding: 1rem 5rem;
+  padding: 2rem 5rem 0.5rem 5rem;
   margin-bottom: 3rem;
 `;
 
@@ -68,7 +68,7 @@ const HeadingSub = styled.span`
 `;
 
 const CartItemsContainer = styled.div`
-  
+  padding: 0.5rem 5rem 3rem 5rem;
 `;
 
 export default Cart;
