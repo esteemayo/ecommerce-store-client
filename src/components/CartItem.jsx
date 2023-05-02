@@ -61,7 +61,9 @@ const ProductName = styled.h2`
 `;
 
 const ProductColor = styled.span`
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   width: 2.2rem;
   height: 2.2rem;
   background-color: ${({ color }) => color};
