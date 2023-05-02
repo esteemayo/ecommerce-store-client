@@ -76,6 +76,10 @@ const ColorContainer = styled.div`
   
 `;
 
+const Title = styled.p`
+  
+`;
+
 const ProductColor = styled.span`
   display: flex;
   align-items: center;
