@@ -7,45 +7,47 @@ import { NumericFormat } from 'react-number-format';
 const CartItem = ({ id, name, size, color, image, price, quantity }) => {
   return (
     <Container>
-      <Left>
-        <ImageContainer>
-          <Image src={image} width={120} height={120} alt='' />
-        </ImageContainer>
-        <ProductDetails>
-          <ProductName>{name}</ProductName>
-          <PriceContainer>
-            <Title>Price:</Title>
-            <Price>
-              <NumericFormat
-                value={price}
-                displayType={'text'}
-                thousandSeparator={true}
-                prefix={'$'}
-              />
-            </Price>
-          </PriceContainer>
-          <ColorContainer>
-            <Title>Color:</Title>
-            <ProductColor color={color}>{color}</ProductColor>
-          </ColorContainer>
-          <SizeContainer>
-            <Title>Size:</Title>
-            <ProductSize>{size}</ProductSize>
-          </SizeContainer>
-          <RemoveButton type='button'>Remove</RemoveButton>
-        </ProductDetails>
-      </Left>
-      <Right>
-        <QuantityContainer>
-          <AddQuantity type='button'>
-            <FontAwesomeIcon icon={faPlus} />
-          </AddQuantity>
-          <Quantity>{quantity}</Quantity>
-          <MinusQuantity type='button'>
-            <FontAwesomeIcon icon={faMinus} />
-          </MinusQuantity>
-        </QuantityContainer>
-      </Right>
+      <Wrapper>
+        <Left>
+          <ImageContainer>
+            <Image src={image} width={120} height={120} alt='' />
+          </ImageContainer>
+          <ProductDetails>
+            <ProductName>{name}</ProductName>
+            <PriceContainer>
+              <Title>Price:</Title>
+              <Price>
+                <NumericFormat
+                  value={price}
+                  displayType={'text'}
+                  thousandSeparator={true}
+                  prefix={'$'}
+                />
+              </Price>
+            </PriceContainer>
+            <ColorContainer>
+              <Title>Color:</Title>
+              <ProductColor color={color}>{color}</ProductColor>
+            </ColorContainer>
+            <SizeContainer>
+              <Title>Size:</Title>
+              <ProductSize>{size}</ProductSize>
+            </SizeContainer>
+            <RemoveButton type='button'>Remove</RemoveButton>
+          </ProductDetails>
+        </Left>
+        <Right>
+          <QuantityContainer>
+            <AddQuantity type='button'>
+              <FontAwesomeIcon icon={faPlus} />
+            </AddQuantity>
+            <Quantity>{quantity}</Quantity>
+            <MinusQuantity type='button'>
+              <FontAwesomeIcon icon={faMinus} />
+            </MinusQuantity>
+          </QuantityContainer>
+        </Right>
+      </Wrapper>
     </Container>
   );
 }
