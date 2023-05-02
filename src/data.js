@@ -966,7 +966,7 @@ export const cartItems = [
     id: 2,
     name: 'Flowing frilled shorts',
     image: '/img/img-2.jpg',
-    color: 'cream',
+    color: 'gray',
     size: 'XS',
     price: 25,
     inCart: true,
