@@ -67,6 +67,13 @@ const ProductColor = styled.span`
   background-color: ${({ color }) => color};
   border-radius: 50%;
   margin-bottom: 1rem;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 2.2rem;
+    height: 2.2rem;
+  }
 `;
 
 const ProductSize = styled.span`
