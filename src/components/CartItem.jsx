@@ -83,6 +83,7 @@ const ColorContainer = styled.div`
 `;
 
 const Title = styled.p`
+  text-transform: capitalize;
   font-weight: 500;
   font-size: 1.6rem;
 `;
