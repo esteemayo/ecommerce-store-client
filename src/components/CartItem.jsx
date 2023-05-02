@@ -16,7 +16,7 @@ const CartItem = () => {
       </Left>
       <Right>
         <QuantityContainer>
-
+          <AddQuantity type='button'></AddQuantity>
         </QuantityContainer>
       </Right>
     </Container>
