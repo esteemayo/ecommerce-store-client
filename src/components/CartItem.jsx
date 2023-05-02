@@ -2,8 +2,6 @@ import Image from 'next/image';
 import styled from 'styled-components';
 
 const CartItem = () => {
-  const colors = ['black', 'pink', 'crimson'];
-
   return (
     <Container>
       <Left>
