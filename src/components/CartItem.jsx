@@ -115,6 +115,7 @@ const ProductColor = styled.span`
   gap: 0.5rem;
   text-transform: capitalize;
   font-size: 1.5rem;
+  color: #999;
   margin-bottom: 0.5rem;
 
   &::before {
