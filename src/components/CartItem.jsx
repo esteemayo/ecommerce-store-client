@@ -9,7 +9,7 @@ const CartItem = () => {
           <Image src='/img/img-10.jpg' width={120} height={120} alt='' />
         </ImageContainer>
         <ProductDetails>
-
+          <ProductName>Short blouse with embroideries</ProductName>
         </ProductDetails>
       </Left>
       <Right>
