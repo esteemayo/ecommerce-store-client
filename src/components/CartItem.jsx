@@ -116,6 +116,8 @@ const AddQuantity = styled.button`
   color: #c3c3c4;
   border: 1px solid #eee;
   border-radius: 50%;
+  outline-color: #ccc;
+  cursor: pointer;
 `;
 
 const MinusQuantity = styled.button`
