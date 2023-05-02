@@ -65,7 +65,7 @@ const Wrapper = styled.div`
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
 `;
 
 const Left = styled.div`
