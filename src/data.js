@@ -955,6 +955,7 @@ export const cartItems = [
   {
     id: 1,
     name: 'Short blouse with embroideries',
+    image: '/img/img-1.jpg',
     color: 'blue',
     size: 'XS',
     price: 70,
@@ -964,6 +965,7 @@ export const cartItems = [
   {
     id: 2,
     name: 'Flowing frilled shorts',
+    image: '/img/img-2.jpg',
     color: 'cream',
     size: 'XS',
     price: 25,
@@ -973,6 +975,7 @@ export const cartItems = [
   {
     id: 3,
     name: 'Embroidered high heel sandals',
+    image: '/img/img-3.jpg',
     color: 'black',
     size: 36,
     price: 20,
@@ -982,6 +985,7 @@ export const cartItems = [
   {
     id: 4,
     name: 'Striped cotton t-shirt',
+    image: '/img/img-4.jpg',
     color: 'mustard',
     size: 'S',
     price: 60,
@@ -991,6 +995,7 @@ export const cartItems = [
   {
     id: 5,
     name: 'Handbag',
+    image: '/img/img-5.jpg',
     color: 'wine',
     size: 'U',
     price: 30,
@@ -1000,6 +1005,7 @@ export const cartItems = [
   {
     id: 6,
     name: 'The Stanley Rain Jacket in Black',
+    image: '/img/img-6.jpg',
     color: 'black',
     size: 'XL',
     price: 300,
@@ -1009,6 +1015,7 @@ export const cartItems = [
   {
     id: 7,
     name: 'Striped cotton t-shirt',
+    image: '/img/img-7.jpg',
     color: 'pink',
     size: 'M',
     price: 15,
