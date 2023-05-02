@@ -39,7 +39,9 @@ const Wrapper = styled.div`
 `;
 
 const HeadingContainer = styled.div`
-  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 `;
 
 const Heading = styled.h1`
