@@ -70,6 +70,10 @@ const ProductName = styled.h2`
   margin-bottom: 1rem;
 `;
 
+const ColorContainer = styled.div`
+  
+`;
+
 const ProductColor = styled.span`
   display: flex;
   align-items: center;
