@@ -81,6 +81,9 @@ const ClearButton = styled.button`
   padding: 0.8rem 2.5rem;
   text-transform: capitalize;
   font-size: 1.5rem;
+  background-color: transparent;
+  color: #de0a0a;
+  border: 1px solid #de0a0a;
 `;
 
 const CartItemsContainer = styled.div`
