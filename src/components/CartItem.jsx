@@ -35,6 +35,9 @@ const ImageContainer = styled.div`
   img {
     width: 12rem;
     height: 12rem;
+    display: block;
+    object-fit: cover;
+    border-radius: 3px;
   }
 `;
 
