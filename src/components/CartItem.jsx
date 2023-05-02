@@ -13,6 +13,7 @@ const CartItem = ({ id, name, size, color, image, price, quantity }) => {
         <ProductDetails>
           <ProductName>{name}</ProductName>
           <PriceContainer>
+            <Title>Price:</Title>
             <Price>${price}</Price>
           </PriceContainer>
           <ColorContainer>
