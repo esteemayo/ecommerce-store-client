@@ -97,4 +97,8 @@ const AddQuantity = styled.button`
   
 `;
 
+const MinusQuantity = styled.button`
+  
+`;
+
 export default CartItem;
