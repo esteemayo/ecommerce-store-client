@@ -112,6 +112,8 @@ const AddQuantity = styled.button`
   height: 2.5rem;
   font-weight: lighter;
   font-size: 1.7rem;
+  background-color: transparent;
+  color: #f1e4f4;
 `;
 
 const MinusQuantity = styled.button`
