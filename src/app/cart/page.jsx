@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import { cartItems } from '@/data';
 import CartHeader from '@/components/CartHeader';
+import CartItem from '@/components/CartItem';
 
 const Cart = () => {
   return (
