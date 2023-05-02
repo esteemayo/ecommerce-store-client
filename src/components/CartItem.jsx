@@ -138,6 +138,11 @@ const MinusQuantity = styled.button`
   border-radius: 50%;
   outline-color: #ddd;
   cursor: pointer;
+
+  svg {
+    font-size: inherit;
+    fill: currentColor;
+  }
 `;
 
 const Quantity = styled.span`
