@@ -78,7 +78,7 @@ const Left = styled.div`
 const ImageContainer = styled.div`
   width: 12rem;
   height: 12rem;
-  background-color: #f9f9f9;
+  background-color: #ede9e6;
   border-radius: 3px;
 
   img {
