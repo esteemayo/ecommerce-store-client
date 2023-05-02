@@ -8,17 +8,17 @@ const CartItem = ({ id, name, size, color, image, price, quantity }) => {
     <Container>
       <Left>
         <ImageContainer>
-          <Image src='/img/img-10.jpg' width={120} height={120} alt='' />
+          <Image src={image} width={120} height={120} alt='' />
         </ImageContainer>
         <ProductDetails>
-          <ProductName>Short blouse with embroideries</ProductName>
+          <ProductName>{name}</ProductName>
           <ColorContainer>
             <Title>Color:</Title>
-            <ProductColor color='blue'>Blue</ProductColor>
+            <ProductColor color={color}>{color}</ProductColor>
           </ColorContainer>
           <SizeContainer>
             <Title>Size:</Title>
-            <ProductSize>XS</ProductSize>
+            <ProductSize>{size}</ProductSize>
           </SizeContainer>
           <RemoveButton type='button'>Remove</RemoveButton>
         </ProductDetails>
@@ -28,7 +28,7 @@ const CartItem = ({ id, name, size, color, image, price, quantity }) => {
           <AddQuantity type='button'>
             <FontAwesomeIcon icon={faPlus} />
           </AddQuantity>
-          <Quantity>1</Quantity>
+          <Quantity>{quantity}</Quantity>
           <MinusQuantity type='button'>
             <FontAwesomeIcon icon={faMinus} />
           </MinusQuantity>
