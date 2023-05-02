@@ -21,6 +21,7 @@ const CartItem = () => {
           <AddQuantity type='button'>
             <FontAwesomeIcon icon={faPlus} />
           </AddQuantity>
+          <Quantity>1</Quantity>
           <MinusQuantity type='button'>
             <FontAwesomeIcon icon={faMinus} />
           </MinusQuantity>
