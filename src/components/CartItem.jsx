@@ -31,6 +31,11 @@ const ImageContainer = styled.div`
   height: 12rem;
   background-color: #f9f9f9;
   border-radius: 3px;
+
+  img {
+    width: 12rem;
+    height: 12rem;
+  }
 `;
 
 const Right = styled.div`
