@@ -2,7 +2,6 @@
 import styled from 'styled-components';
 
 import { cartItems } from '@/data';
-import CartItem from '@/components/CartItem';
 import CartHeader from '@/components/CartHeader';
 
 const Cart = () => {
