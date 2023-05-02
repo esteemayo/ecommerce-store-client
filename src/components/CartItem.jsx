@@ -98,7 +98,10 @@ const Right = styled.div`
 `;
 
 const QuantityContainer = styled.div`
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 `;
 
 const AddQuantity = styled.button`
