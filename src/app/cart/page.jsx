@@ -43,6 +43,7 @@ const HeadingContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 2rem 5rem 0.5rem 5rem;
 `;
 
 const Heading = styled.h1`
