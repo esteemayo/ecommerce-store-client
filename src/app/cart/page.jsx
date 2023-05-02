@@ -12,6 +12,7 @@ const Cart = () => {
             <HeadingMain>My cart</HeadingMain>
             <HeadingSub>2</HeadingSub>
           </Heading>
+          <ClearButton type='button'>Clear cart</ClearButton>
         </HeadingContainer>
         <CartItemsContainer>
           {cartItems.map((cart) => {
