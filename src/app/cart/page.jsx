@@ -75,6 +75,10 @@ const HeadingSub = styled.span`
   border-radius: 50%;
 `;
 
+const ClearButton = styled.button`
+  
+`;
+
 const CartItemsContainer = styled.div`
   padding: 0.5rem 5rem 3rem 5rem;
 `;
