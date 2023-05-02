@@ -118,6 +118,10 @@ const ProductSize = styled.span`
   color: #999;
 `;
 
+const RemoveButton = styled.button`
+  
+`;
+
 const Right = styled.div`
   flex: 1;
 `;
