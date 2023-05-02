@@ -173,7 +173,7 @@ const AddQuantity = styled.button`
   width: 3rem;
   height: 3rem;
   font-weight: lighter;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   background-color: transparent;
   color: #c3c3c4;
   border: 1px solid #eee;
@@ -193,7 +193,7 @@ const MinusQuantity = styled.button`
   width: 3rem;
   height: 3rem;
   font-weight: lighter;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   background-color: transparent;
   color: #c3c3c4;
   border: 1px solid #eee;
