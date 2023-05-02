@@ -16,4 +16,11 @@ const Container = styled.div`
   margin-bottom: 3rem;
 `;
 
+const Heading = styled.h1`
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 2.65rem;
+`;
+
 export default CartHeader;
