@@ -170,8 +170,8 @@ const QuantityContainer = styled.div`
 const AddQuantity = styled.button`
   border: none;
   display: inline-block;
-  width: 3rem;
-  height: 3rem;
+  width: 2.5rem;
+  height: 2.5rem;
   font-weight: lighter;
   font-size: 1.4rem;
   background-color: transparent;
