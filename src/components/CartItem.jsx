@@ -81,6 +81,10 @@ const ProductName = styled.h2`
   margin-bottom: 0.5rem;
 `;
 
+const PriceContainer = styled.div`
+  
+`;
+
 const ColorContainer = styled.div`
   display: flex;
   align-items: center;
