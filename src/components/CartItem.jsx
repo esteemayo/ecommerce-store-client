@@ -104,8 +104,8 @@ const ProductColor = styled.span`
   &::before {
     content: '';
     display: block;
-    width: 2.2rem;
-    height: 2.2rem;
+    width: 2rem;
+    height: 2rem;
     background-color: ${({ color }) => color};
     border: 1px solid ${({ color }) => color};
     border-radius: 50%;
