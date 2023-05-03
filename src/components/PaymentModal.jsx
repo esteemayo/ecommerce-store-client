@@ -22,6 +22,13 @@ const PaymentModal = ({ openModal, closeModal, setIsOpen }) => {
     setIsOpen(false);
   };
 
+  const handleClick = (e) => {
+    if (e.target.classList.contains('overlay')) {
+      closeModal(false);
+      setIsOpen(false);
+    }
+  };
+
   const validateForm = () => {
     const errors = {};
     const { name, address } = inputs;
