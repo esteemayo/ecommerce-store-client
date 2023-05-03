@@ -21,7 +21,11 @@ const Cart = () => {
             return <CartItem key={cart.id} {...cart} />;
           })}
         </CartItemsContainer>
-        <CartTotal isOpen={isOpen} setIsOpen={setIsOpen} setIsCash={setIsCash} />
+        <CartTotal
+          isOpen={isOpen}
+          setIsOpen={setIsOpen}
+          setIsCash={setIsCash}
+        />
       </Wrapper>
       <PaymentModal
         openModal={isCash}
