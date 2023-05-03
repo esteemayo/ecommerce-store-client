@@ -48,7 +48,8 @@ const Text = styled.h3`
 `;
 
 const PriceTotal = styled.span`
-  
+  font-weight: 600;
+  font-size: 1.7rem;
 `;
 
 export default CartTotal;
