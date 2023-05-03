@@ -17,8 +17,8 @@ const Cart = () => {
   const [isCash, setIsCash] = useState(false);
 
   useEffect(() => {
-
-  })
+    dispatch(calcTotals());
+  }, [cart, dispatch]);
 
   return (
     <Container>
