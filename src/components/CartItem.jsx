@@ -132,7 +132,6 @@ const ProductColor = styled.span`
   text-transform: capitalize;
   font-size: 1.5rem;
   color: #999;
-  margin-bottom: 0.5rem;
 
   &::before {
     content: '';
