@@ -1,7 +1,10 @@
 import styled from 'styled-components';
 import { NumericFormat } from 'react-number-format';
+import { useSelector } from 'react-redux';
 
 const CartTotal = ({ isOpen, setIsOpen, setIsCash }) => {
+  const { tax, total, subtotal } = useSelector((state) => ({ ...state.cart }));
+
   const handleClose = (e) => {
     if (!e.target.classList.contains('btn-pay')) {
       setIsOpen(false);
