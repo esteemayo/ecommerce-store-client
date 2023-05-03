@@ -105,6 +105,7 @@ const PaymentModal = ({ openModal, closeModal, setIsOpen }) => {
               <TextArea
                 id='address'
                 name='address'
+                value={address}
                 placeholder='Enter your address'
                 onChange={handleChange}
               />
