@@ -20,6 +20,7 @@ const PaymentModal = ({ openModal, closeModal, setIsOpen }) => {
   const handleClose = () => {
     closeModal(false);
     setIsOpen(false);
+    errors && setErrors({});
   };
 
   const handleClick = (e) => {
