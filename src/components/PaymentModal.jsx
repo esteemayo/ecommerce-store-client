@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { NumericFormat } from 'react-number-format';
-import { useEffect, useRef, useState } from 'react';
+import { useState } from 'react';
 import CloseIcon from '@mui/icons-material/Close';
 import { useSelector } from 'react-redux';
 
@@ -12,7 +12,6 @@ const initialState = {
 const PaymentModal = ({ openModal, closeModal, setIsOpen }) => {
   const { total } = useSelector((state) => ({ ...state.cart }));
 
-  const nameRef = useRef();
   const [errors, setErrors] = useState({});
   const [inputs, setInputs] = useState(initialState);
 
@@ -65,8 +64,6 @@ const PaymentModal = ({ openModal, closeModal, setIsOpen }) => {
     handleClear();
   };
 
-  useEffect(() => { })
-
   return (
     <Overlay
       className='overlay'
@@ -98,7 +95,6 @@ const PaymentModal = ({ openModal, closeModal, setIsOpen }) => {
                 name='name'
                 type='text'
                 value={name}
-                ref={nameRef}
                 placeholder='Enter your name'
                 onChange={handleChange}
               />
