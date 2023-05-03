@@ -54,7 +54,7 @@ const PaymentModal = ({ openModal, closeModal, setIsOpen }) => {
     if (Object.keys(errors).length > 0) return setErrors(errors);
     setErrors({});
 
-    console.log({ ...inputs });
+    console.log({ ...inputs, total });
   };
 
   return (
@@ -74,7 +74,7 @@ const PaymentModal = ({ openModal, closeModal, setIsOpen }) => {
             <Heading>
               You will pay {' '}
               <NumericFormat
-                value='99.99'
+                value={total}
                 displayType={'text'}
                 thousandSeparator={true}
                 prefix={'$'}
