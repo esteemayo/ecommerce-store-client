@@ -129,7 +129,7 @@ const FormInput = styled.input`
   font-size: 1.5rem;
   width: 100%;
   padding: 1.5rem 1rem;
-  background-color: #f9f9f9;
+  background-color: transparent;
   color: #999;
   border: 2px solid #eef2ff;
   border-radius: 0.5rem;
