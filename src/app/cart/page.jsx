@@ -22,6 +22,7 @@ const Cart = () => {
         </CartItemsContainer>
         <CartTotal setIsCash={setIsCash} />
       </Wrapper>
+      <PaymentModal />
     </Container>
   );
 }
