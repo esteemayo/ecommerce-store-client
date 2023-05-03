@@ -96,6 +96,7 @@ const PaymentModal = ({ openModal, closeModal, setIsOpen }) => {
                 name='name'
                 type='text'
                 value={name}
+                ref={nameRef}
                 placeholder='Enter your name'
                 onChange={handleChange}
               />
