@@ -71,6 +71,7 @@ const PaymentModal = ({ openModal, closeModal }) => {
                 placeholder='Enter your name'
                 onChange={handleChange}
               />
+              {errors.name && <ErrorMsg>{errors.name}</ErrorMsg>}
             </FormGroup>
             <FormGroup>
               <FormLabel htmlFor='address'>Address</FormLabel>
