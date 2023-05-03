@@ -98,6 +98,7 @@ const Button = styled.button`
   border-radius: 0.5rem;
   outline-color: #777;
   line-height: 1.3em;
+  margin-bottom: 0.5rem;
   cursor: pointer;
   transition: all 0.3s;
 
