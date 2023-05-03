@@ -19,12 +19,14 @@ const PaymentModal = ({ openModal, closeModal }) => {
           <Form onSubmit={handleSubmit}>
             <Heading>
               You will pay
-              <NumericFormat
-                value='99.99'
-                displayType={'text'}
-                thousandSeparator={true}
-                prefix={'$'}
-              />
+              <TotalPrice>
+                <NumericFormat
+                  value='99.99'
+                  displayType={'text'}
+                  thousandSeparator={true}
+                  prefix={'$'}
+                />
+              </TotalPrice>
               after delivery
             </Heading>
             <FormGroup>
