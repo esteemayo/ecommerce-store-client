@@ -81,6 +81,8 @@ const Button = styled.button`
   padding: 1rem 0.5rem;
   background-color: var(--clr-white);
   color: var(--clr-secondary-green);
+  border: 2px solid var(--clr-primary-green);
+  border-radius: 0.5rem;
 `;
 
 const Wrapper = styled.div`
