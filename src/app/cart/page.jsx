@@ -58,7 +58,9 @@ const Container = styled.main`
 `;
 
 const Heading = styled.h1`
-  
+  font-weight: 300;
+  font-size: 3.2rem;
+  text-align: center;
 `;
 
 const Wrapper = styled.div`
