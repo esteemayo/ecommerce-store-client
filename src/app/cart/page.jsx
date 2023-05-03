@@ -6,6 +6,7 @@ import { cartItems } from '@/data';
 import CartHeader from '@/components/CartHeader';
 import CartItem from '@/components/CartItem';
 import PaymentModal from '@/components/PaymentModal';
+import CartTotal from '@/components/CartTotal';
 
 const Cart = () => {
   const [isCash, setIsCash] = useState(false);
