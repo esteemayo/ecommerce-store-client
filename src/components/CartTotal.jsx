@@ -84,6 +84,8 @@ const Button = styled.button`
   font-size: 1.8rem;
   width: 100%;
   padding: 1rem 3.5rem;
+  background-color: var(--clr-black);
+  color: var(--clr-white);
 `;
 
 export default CartTotal;
