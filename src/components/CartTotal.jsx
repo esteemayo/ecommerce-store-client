@@ -75,7 +75,7 @@ const PriceTotal = styled.span`
 `;
 
 const ButtonContainer = styled.div`
-  
+  padding: 1rem 0;
 `;
 
 const Button = styled.button`
