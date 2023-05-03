@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { NumericFormat } from 'react-number-format';
 import { useState } from 'react';
 import CloseIcon from '@mui/icons-material/Close';
+import { useSelector } from 'react-redux';
 
 const initialState = {
   name: '',
@@ -9,6 +10,8 @@ const initialState = {
 };
 
 const PaymentModal = ({ openModal, closeModal, setIsOpen }) => {
+  const { total } = useSelector((state) => ({ ...state.cart }));
+
   const [errors, setErrors] = useState({});
   const [inputs, setInputs] = useState(initialState);
 
