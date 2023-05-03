@@ -1,6 +1,6 @@
 'use client';
 import styled from 'styled-components';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
 import CartHeader from '@/components/CartHeader';
@@ -14,6 +14,10 @@ const Cart = () => {
 
   const [isOpen, setIsOpen] = useState(false);
   const [isCash, setIsCash] = useState(false);
+
+  useEffect(() => {
+
+  })
 
   return (
     <Container>
