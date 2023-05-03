@@ -10,6 +10,10 @@ import { remove, toggleQuantity } from '@/features/cart/cartSlice';
 const CartItem = ({ id, name, size, color, image, price, quantity }) => {
   const dispatch = useDispatch();
 
+  const handleToggle = (type, cartId) => {
+    dispatch(toggleQuantity({ type, cartId }));
+  };
+
   return (
     <Container>
       <Wrapper>
