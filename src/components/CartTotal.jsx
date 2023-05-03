@@ -81,6 +81,9 @@ const ButtonContainer = styled.div`
 const Button = styled.button`
   border: none;
   display: inline-block;
+  font-size: 1.8rem;
+  width: 100%;
+  padding: 1rem 3.5rem;
 `;
 
 export default CartTotal;
