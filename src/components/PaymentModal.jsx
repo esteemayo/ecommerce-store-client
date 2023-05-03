@@ -35,7 +35,6 @@ const PaymentModal = ({ openModal, closeModal, setIsOpen }) => {
 
   const validateForm = () => {
     const errors = {};
-    const { name, address } = inputs;
 
     if (name.trim() === '') {
       errors.name = 'Please enter your name';
