@@ -7,7 +7,6 @@ import CartHeader from '@/components/CartHeader';
 import CartItem from '@/components/CartItem';
 import PaymentModal from '@/components/PaymentModal';
 import CartTotal from '@/components/CartTotal';
-import { useSelector } from 'react-redux';
 
 const Cart = () => {
   const { cart } = useSelector((state) => ({ ...state.cart }));
