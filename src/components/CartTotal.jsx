@@ -13,4 +13,8 @@ const Container = styled.div`
   border-top: 1px solid #e2e9e7;
 `;
 
+const Wrapper = styled.div`
+  
+`;
+
 export default CartTotal;
