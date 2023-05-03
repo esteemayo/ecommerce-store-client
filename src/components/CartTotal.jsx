@@ -6,4 +6,8 @@ const CartTotal = () => {
   );
 }
 
+const Container = styled.div`
+  
+`;
+
 export default CartTotal;
