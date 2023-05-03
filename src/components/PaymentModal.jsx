@@ -47,6 +47,10 @@ const PaymentModal = ({ openModal, closeModal, setIsOpen }) => {
     return errors;
   };
 
+  const handleClear = () => {
+    setInputs(initialState);
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
