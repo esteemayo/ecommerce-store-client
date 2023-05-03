@@ -35,6 +35,7 @@ const PaymentModal = ({ openModal, closeModal }) => {
                 placeholder='Enter your address'
               />
             </FormGroup>
+            <FormButton type='submit'>Order</FormButton>
           </Form>
         </Wrapper>
       </Container>
