@@ -74,10 +74,6 @@ const Heading = styled.h1`
   text-align: center;
 `;
 
-const ButtonWrapper = styled.div`
-  
-`;
-
 const Button = styled.button`
   
 `;
