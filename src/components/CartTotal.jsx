@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { NumericFormat } from 'react-number-format';
 
 const CartTotal = ({ isOpen, setIsOpen, setIsCash }) => {
   const handleClose = (e) => {
