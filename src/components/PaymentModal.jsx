@@ -59,6 +59,7 @@ const PaymentModal = ({ openModal, closeModal, setIsOpen }) => {
     setErrors({});
 
     console.log({ ...inputs, total });
+    handleClear();
   };
 
   return (
