@@ -64,4 +64,8 @@ const PriceTotal = styled.span`
   font-size: 1.7rem;
 `;
 
+const ButtonContainer = styled.div`
+  
+`;
+
 export default CartTotal;
