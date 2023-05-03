@@ -12,6 +12,10 @@ const CartTotal = () => {
           <Text>Tax:</Text>
           <PriceTotal>$8.897</PriceTotal>
         </TotalContainer>
+        <TotalContainer>
+          <Text>Total:</Text>
+          <PriceTotal>$97.867</PriceTotal>
+        </TotalContainer>
       </Wrapper>
     </Container>
   );
