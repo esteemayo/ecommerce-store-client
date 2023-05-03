@@ -29,7 +29,7 @@ const CartTotal = ({ isOpen, setIsOpen, setIsCash }) => {
             <PriceTotal>$97.867</PriceTotal>
           </TotalWrapper>
         </TotalContainer>
-        <ButtonContainer className='btnContainer'>
+        <ButtonContainer className='btnContainer' onClick={handleClose}>
           {isOpen ? (
             <>
               <Button type='button' onClick={() => setIsCash(true)}>Cash on delivery</Button>
