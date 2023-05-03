@@ -56,10 +56,10 @@ const CartTotal = ({ isOpen, setIsOpen, setIsCash }) => {
         </TotalContainer>
         <ButtonContainer>
           {isOpen ? (
-            <>
+            <ButtonWrapper>
               <Button type='button' className='btn-pay' onClick={() => setIsCash(true)}>Cash on delivery</Button>
               <Button type='button' className='btn-pay'>Checkout now</Button>
-            </>
+            </ButtonWrapper>
           ) : (
             <Button type='button' className='btn-check' onClick={() => setIsOpen(true)}>
               Checkout
