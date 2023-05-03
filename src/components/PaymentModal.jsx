@@ -155,6 +155,9 @@ const TextArea = styled.textarea`
   color: #999;
   border-radius: 0.5rem;
   outline-color: #eee;
+  overflow: hidden;
+  resize: none;
+  caret-color: var(--caret-light);
 `;
 
 const FormButton = styled.button`
