@@ -17,7 +17,7 @@ const CartModal = ({ isModalOpen, closeModal }) => {
   const sizes = ['XS', 'S', 'M', 'L', 'XL', 'XXL'];
 
   const closeModalHandler = (e) => {
-    if (e.target.classList.contains('container')) {
+    if (e.target.classList.contains('overlay')) {
       closeModal(false);
     }
   };
@@ -42,8 +42,8 @@ const CartModal = ({ isModalOpen, closeModal }) => {
   };
 
   return (
-    <Container
-      className='container'
+    <Overlay
+      className='overlay'
       type={isModalOpen ? 'show' : ''}
       onClick={closeModalHandler}
     >
@@ -134,11 +134,11 @@ const CartModal = ({ isModalOpen, closeModal }) => {
           </SizeWrapper>
         </ProductContainer>
       </Wrapper>
-    </Container>
+    </Overlay>
   );
 }
 
-const Container = styled.div`
+const Overlay = styled.div`
   width: 100vw;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
