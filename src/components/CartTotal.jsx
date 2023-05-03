@@ -2,6 +2,12 @@ import { useState } from 'react';
 import styled from 'styled-components';
 
 const CartTotal = ({ isOpen, setIsOpen, setIsCash }) => {
+  const handleClose = (e) => {
+    if (e.target.classList.contains('btnContainer')) {
+      setIsOpen(false);
+    }
+  };
+
   return (
     <Container>
       <Wrapper>
