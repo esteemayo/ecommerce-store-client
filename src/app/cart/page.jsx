@@ -1,6 +1,7 @@
 'use client';
 import styled from 'styled-components';
 import { useDispatch, useSelector } from 'react-redux';
+import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
 import CartHeader from '@/components/CartHeader';
@@ -26,7 +27,7 @@ const Cart = () => {
         <HeadingWrapper>
           <Heading>Your cart is currently empty!</Heading>
           <Button type='button'>
-            Back to shopping
+            <Link href='/products' passHref>Back to shopping</Link>
           </Button>
         </HeadingWrapper>
       </Container>
