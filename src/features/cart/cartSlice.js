@@ -21,9 +21,30 @@ export const cartSlice = createSlice({
     remove: (state, { payload }) => {
       state.cart.filter((item) => item.id !== payload);
     },
+    toggleQuantity: (state, { payload }) => {
+      state.cart = state.cart.map((cartItem) => {
+        if (cartItem.id === payload.id) {
+          if (payload.type === 'inc') {
+            return {
+              ...cartItem,
+              quantity: cartItem.quantity + 1,
+            };
+          }
+
+          if (payload.type === 'dec') {
+            return {
+              ...cartItem,
+              quantity: cartItem.quantity - 1,
+            };
+          }
+        }
+        return cartItem;
+      })
+        .filter((cartItem) => cartItem.quantity !== 0);
+    },
   },
 });
 
-export const { addProduct, remove, reset } = cartSlice.actions;
+export const { addProduct, remove, reset, toggleQuantity } = cartSlice.actions;
 
 export default cartSlice.reducer;
