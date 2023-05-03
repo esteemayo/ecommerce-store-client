@@ -47,6 +47,8 @@ const CloseButtonContainer = styled.div`
   position: absolute;
   top: 0;
   right: 0;
+  width: 4rem;
+  height: 4rem;
 `;
 
 const CloseButton = styled.button`
