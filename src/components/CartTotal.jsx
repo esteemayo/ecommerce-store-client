@@ -4,10 +4,10 @@ const CartTotal = () => {
   return (
     <Container>
       <Wrapper>
-        <SubtotalContainer>
+        <TotalContainer>
           <Text>Subtotal:</Text>
           <PriceTotal>$88.97</PriceTotal>
-        </SubtotalContainer>
+        </TotalContainer>
       </Wrapper>
     </Container>
   );
@@ -22,7 +22,7 @@ const Wrapper = styled.div`
   
 `;
 
-const SubtotalContainer = styled.div`
+const TotalContainer = styled.div`
   
 `;
 
