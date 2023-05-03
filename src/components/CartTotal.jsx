@@ -25,4 +25,8 @@ const SubtotalContainer = styled.div`
   
 `;
 
+const Text = styled.h3`
+  
+`;
+
 export default CartTotal;
