@@ -48,7 +48,7 @@ const PaymentModal = ({ openModal, closeModal, setIsOpen }) => {
   };
 
   return (
-    <Overlay type={openModal ? 'show' : ''}>
+    <Overlay className='overlay' type={openModal ? 'show' : ''}>
       <Container>
         <Wrapper>
           <CloseButtonContainer>
