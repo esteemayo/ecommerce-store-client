@@ -4,7 +4,9 @@ const CartTotal = () => {
   return (
     <Container>
       <Wrapper>
-        CartTotal
+        <SubtotalContainer>
+
+        </SubtotalContainer>
       </Wrapper>
     </Container>
   );
