@@ -96,6 +96,8 @@ const Button = styled.button`
   border: 1px solid var(--clr-black);
   border-radius: 0.5rem;
   outline-color: #777;
+  line-height: 1.3em;
+  cursor: pointer;
 `;
 
 export default CartTotal;
