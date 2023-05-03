@@ -22,6 +22,15 @@ const PaymentModal = ({ openModal, closeModal }) => {
                 placeholder='Enter your name'
               />
             </FormGroup>
+            <FormGroup>
+              <FormLabel htmlFor='address'>Address</FormLabel>
+              <FormInput
+                type='text'
+                id='address'
+                name='address'
+                placeholder='Enter your address'
+              />
+            </FormGroup>
           </Form>
         </Wrapper>
       </Container>
