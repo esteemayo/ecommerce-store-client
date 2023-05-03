@@ -143,7 +143,10 @@ const FormInput = styled.input`
 `;
 
 const TextArea = styled.textarea`
-  
+  border: none;
+  display: inline-block;
+  width: 100%;
+  height: 10rem;
 `;
 
 const FormButton = styled.button`
