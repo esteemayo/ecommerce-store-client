@@ -37,7 +37,9 @@ const CartItem = ({ id, name, size, color, image, price, quantity }) => {
               <Title>Size:</Title>
               <ProductSize>{size}</ProductSize>
             </SizeContainer>
-            <RemoveButton type='button' onClick={() => dispatch(remove(id))}>Remove</RemoveButton>
+            <RemoveButton type='button' onClick={() => dispatch(remove(id))}>
+              Remove
+            </RemoveButton>
           </ProductDetails>
         </Left>
         <Right>
