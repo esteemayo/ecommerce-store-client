@@ -4,7 +4,9 @@ const PaymentModal = ({ openModal, closeModal }) => {
   return (
     <Overlay type={openModal ? 'show' : ''}>
       <Container>
-        PaymentModal
+        <Wrapper>
+          PaymentModal
+        </Wrapper>
       </Container>
     </Overlay>
   );
