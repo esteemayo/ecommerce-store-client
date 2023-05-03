@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import { NumericFormat } from 'react-number-format';
 import CloseIcon from '@mui/icons-material/Close';
-import { useState } from 'react';
 
 const initialState = {
   name: '',
