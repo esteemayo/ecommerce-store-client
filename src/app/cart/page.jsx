@@ -2,6 +2,7 @@
 import styled from 'styled-components';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect, useState } from 'react';
+import { useRouter } from 'next/navigation';
 
 import CartHeader from '@/components/CartHeader';
 import CartItem from '@/components/CartItem';
@@ -10,6 +11,7 @@ import CartTotal from '@/components/CartTotal';
 import { calcTotals } from '@/features/cart/cartSlice';
 
 const Cart = () => {
+  const { push } = useRouter();
   const dispatch = useDispatch();
   const { cart } = useSelector((state) => ({ ...state.cart }));
 
@@ -84,6 +86,7 @@ const Button = styled.button`
   border: 2px solid var(--clr-primary-green);
   border-radius: 0.5rem;
   outline-color: #85beae;
+  margin-top: 2rem;
   cursor: pointer;
 `;
 
