@@ -48,6 +48,7 @@ const PaymentModal = ({ openModal, closeModal }) => {
                 name='name'
                 type='text'
                 placeholder='Enter your name'
+                onChange={handleChange}
               />
             </FormGroup>
             <FormGroup>
