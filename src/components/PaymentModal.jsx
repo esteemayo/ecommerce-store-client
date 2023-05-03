@@ -56,6 +56,8 @@ const CloseButton = styled.button`
   border: none;
   width: 2.5rem;
   height: 2.5rem;
+  background-color: transparent;
+  color: #838283;
 `;
 
 export default PaymentModal;
