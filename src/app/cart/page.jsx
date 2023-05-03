@@ -20,6 +20,14 @@ const Cart = () => {
     dispatch(calcTotals());
   }, [cart, dispatch]);
 
+  if (cart.length < 1) {
+    return (
+      <Container>
+        <Heading>Your cart is currently empty!</Heading>
+      </Container>
+    );
+  }
+
   return (
     <Container>
       <Wrapper>
