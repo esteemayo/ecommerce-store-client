@@ -68,4 +68,8 @@ const CloseButton = styled.button`
   }
 `;
 
+const Heading = styled.h1`
+  
+`;
+
 export default PaymentModal;
