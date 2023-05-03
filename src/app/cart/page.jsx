@@ -75,7 +75,10 @@ const Heading = styled.h1`
 `;
 
 const Button = styled.button`
-  
+  display: inline-block;
+  font-weight: 400;
+  font-size: 1.5rem;
+  padding: 1rem 0.5rem;
 `;
 
 const Wrapper = styled.div`
