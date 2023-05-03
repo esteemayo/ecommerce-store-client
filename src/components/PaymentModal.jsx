@@ -6,4 +6,8 @@ const PaymentModal = () => {
   );
 }
 
+const Overlay = styled.aside`
+  
+`;
+
 export default PaymentModal;
