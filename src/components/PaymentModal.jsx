@@ -97,6 +97,7 @@ const PaymentModal = ({ openModal, closeModal, setIsOpen }) => {
                 value={name}
                 placeholder='Enter your name'
                 onChange={handleChange}
+                autoFocus
               />
               {errors.name && <ErrorMsg>{errors.name}</ErrorMsg>}
             </FormGroup>
