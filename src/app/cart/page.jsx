@@ -25,9 +25,7 @@ const Cart = () => {
       <Container>
         <HeadingWrapper>
           <Heading>Your cart is currently empty!</Heading>
-          <ButtonWrapper>
-            <Button type='button'>Back to shopping</Button>
-          </ButtonWrapper>
+          <Button type='button'>Back to shopping</Button>
         </HeadingWrapper>
       </Container>
     );
@@ -66,7 +64,8 @@ const HeadingWrapper = styled.div`
   width: 100%;
   min-height: 70vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 `;
 
 const Heading = styled.h1`
