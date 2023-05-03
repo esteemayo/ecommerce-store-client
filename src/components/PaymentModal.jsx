@@ -7,7 +7,9 @@ const PaymentModal = ({ openModal, closeModal }) => {
       <Container>
         <Wrapper>
           <CloseButtonContainer>
-            <CloseButton type='button'></CloseButton>
+            <CloseButton type='button'>
+              <CloseIcon />
+            </CloseButton>
           </CloseButtonContainer>
         </Wrapper>
       </Container>
