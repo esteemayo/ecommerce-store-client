@@ -114,7 +114,9 @@ const FormGroup = styled.div`
 `;
 
 const FormLabel = styled.label`
-  
+  display: inline-block;
+  width: 5rem;
+  text-transform: capitalize;
 `;
 
 const FormInput = styled.input`
