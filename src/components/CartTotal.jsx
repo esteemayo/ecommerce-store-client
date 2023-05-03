@@ -126,7 +126,7 @@ const Button = styled.button`
   border: none;
   display: inline-block;
   text-transform: capitalize;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   width: 100%;
   padding: ${({ btnType }) => btnType === 'check' ? '1rem 3rem' : '1rem 0.5rem'};
   background-color: var(--clr-black);
