@@ -10,6 +10,7 @@ import CartTotal from '@/components/CartTotal';
 import { useSelector } from 'react-redux';
 
 const Cart = () => {
+  const { cart } = useSelector((state) => ({ ...state.cart }));
   const [isOpen, setIsOpen] = useState(false);
   const [isCash, setIsCash] = useState(false);
 
