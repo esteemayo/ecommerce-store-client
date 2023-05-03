@@ -35,7 +35,9 @@ const Wrapper = styled.div`
 `;
 
 const TotalContainer = styled.div`
-  
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 `;
 
 const Text = styled.h3`
