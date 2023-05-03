@@ -23,7 +23,7 @@ const CartTotal = ({ isOpen, setIsOpen, setIsCash }) => {
             <Text>Subtotal:</Text>
             <PriceTotal>
               <NumericFormat
-                value='88.97'
+                value={subtotal}
                 displayType={'text'}
                 thousandSeparator={true}
                 prefix={'$'}
@@ -36,7 +36,7 @@ const CartTotal = ({ isOpen, setIsOpen, setIsCash }) => {
             <Text>Tax:</Text>
             <PriceTotal>
               <NumericFormat
-                value='8.897'
+                value={tax}
                 displayType={'text'}
                 thousandSeparator={true}
                 prefix={'$'}
@@ -49,7 +49,7 @@ const CartTotal = ({ isOpen, setIsOpen, setIsCash }) => {
             <Text>Total:</Text>
             <PriceTotal>
               <NumericFormat
-                value='97.867'
+                value={total}
                 displayType={'text'}
                 thousandSeparator={true}
                 prefix={'$'}
