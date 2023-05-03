@@ -2,6 +2,8 @@ import { useState } from 'react';
 import styled from 'styled-components';
 
 const CartTotal = () => {
+  const [isCash, setIsCash] = useState(false);
+
   return (
     <Container>
       <Wrapper>
