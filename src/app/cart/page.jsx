@@ -1,7 +1,7 @@
 'use client';
 import styled from 'styled-components';
 import { useState } from 'react';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 
 import CartHeader from '@/components/CartHeader';
 import CartItem from '@/components/CartItem';
@@ -9,6 +9,7 @@ import PaymentModal from '@/components/PaymentModal';
 import CartTotal from '@/components/CartTotal';
 
 const Cart = () => {
+  const dispatch = useDispatch();
   const { cart } = useSelector((state) => ({ ...state.cart }));
 
   const [isOpen, setIsOpen] = useState(false);
