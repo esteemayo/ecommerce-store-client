@@ -5,7 +5,7 @@ import { NumericFormat } from 'react-number-format';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useDispatch } from 'react-redux';
 
-import { remove } from '@/features/cart/cartSlice';
+import { remove, toggleQuantity } from '@/features/cart/cartSlice';
 
 const CartItem = ({ id, name, size, color, image, price, quantity }) => {
   const dispatch = useDispatch();
