@@ -19,7 +19,7 @@ const Cart = () => {
             return <CartItem key={cart.id} {...cart} />;
           })}
         </CartItemsContainer>
-        <CartTotal />
+        <CartTotal setIsCash={setIsCash} />
       </Wrapper>
     </Container>
   );
