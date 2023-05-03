@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const PaymentModal = () => {
+const PaymentModal = ({ openModal, closeModal }) => {
   return (
     <Overlay>
       PaymentModal
