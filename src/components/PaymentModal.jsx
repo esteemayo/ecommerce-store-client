@@ -143,6 +143,10 @@ const FormInput = styled.input`
   }
 `;
 
+const TextArea = styled.textarea`
+  
+`;
+
 const FormButton = styled.button`
   border: none;
   display: inline-block;
