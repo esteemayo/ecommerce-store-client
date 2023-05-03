@@ -98,6 +98,7 @@ const Heading = styled.h1`
   display: inline-block;
   font-weight: 500;
   font-size: 2rem;
+  margin-bottom: 1rem;
 `;
 
 const Form = styled.form`
