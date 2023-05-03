@@ -49,11 +49,11 @@ const CartItem = ({ id, name, size, color, image, price, quantity }) => {
         </Left>
         <Right>
           <QuantityContainer>
-            <AddQuantity type='button' onClick={() => handleToggle('inc', id)}>
+            <AddQuantity type='button' onClick={() => handleToggle('inc')}>
               <FontAwesomeIcon icon={faPlus} />
             </AddQuantity>
             <Quantity>{quantity}</Quantity>
-            <MinusQuantity type='button' onClick={() => handleToggle('dec', id)}>
+            <MinusQuantity type='button' onClick={() => handleToggle('dec')}>
               <FontAwesomeIcon icon={faMinus} />
             </MinusQuantity>
           </QuantityContainer>
