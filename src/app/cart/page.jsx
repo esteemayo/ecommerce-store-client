@@ -97,6 +97,10 @@ const Button = styled.button`
       font-size: inherit;
       color: currentColor;
     }
+
+    &:active {
+      color: currentColor;
+    }
   }
 `;
 
