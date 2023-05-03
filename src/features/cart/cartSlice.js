@@ -79,7 +79,7 @@ export const cartSlice = createSlice({
       state.tax = tax;
       state.total = total;
       state.subtotal = subtotal;
-    }
+    },
   },
 });
 
