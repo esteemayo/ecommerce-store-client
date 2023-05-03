@@ -11,7 +11,6 @@ import CartTotal from '@/components/CartTotal';
 import { calcTotals } from '@/features/cart/cartSlice';
 
 const Cart = () => {
-  const { push } = useRouter();
   const dispatch = useDispatch();
   const { cart } = useSelector((state) => ({ ...state.cart }));
 
