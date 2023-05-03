@@ -143,7 +143,8 @@ const FormInput = styled.input`
 `;
 
 const FormButton = styled.button`
-  
+  border: none;
+  display: inline-block;
 `;
 
 export default PaymentModal;
