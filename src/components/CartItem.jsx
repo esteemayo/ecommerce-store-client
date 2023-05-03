@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import Image from 'next/image';
 import { faMinus, faPlus } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { NumericFormat } from 'react-number-format';
 
 const CartItem = ({ id, name, size, color, image, price, quantity }) => {
   return (
