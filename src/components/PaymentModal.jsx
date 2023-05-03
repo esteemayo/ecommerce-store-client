@@ -19,4 +19,8 @@ const Overlay = styled.aside`
   z-index: 4000;
 `;
 
+const Container = styled.div`
+  
+`;
+
 export default PaymentModal;
