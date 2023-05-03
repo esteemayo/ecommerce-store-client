@@ -31,7 +31,14 @@ const CartTotal = ({ isOpen, setIsOpen, setIsCash }) => {
         <TotalContainer>
           <TotalWrapper>
             <Text>Tax:</Text>
-            <PriceTotal>$8.897</PriceTotal>
+            <PriceTotal>
+              <NumericFormat
+                value='8.897'
+                displayType={'text'}
+                thousandSeparator={true}
+                prefix={'$'}
+              />
+            </PriceTotal>
           </TotalWrapper>
         </TotalContainer>
         <TotalContainer>
