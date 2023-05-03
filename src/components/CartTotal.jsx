@@ -40,6 +40,10 @@ const TotalContainer = styled.div`
   gap: 1rem;
 `;
 
+const TotalWrapper = styled.div`
+  
+`;
+
 const Text = styled.h3`
   display: inline-block;
   text-transform: capitalize;
