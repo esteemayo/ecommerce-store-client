@@ -17,6 +17,11 @@ const PaymentModal = ({ openModal, closeModal, setIsOpen }) => {
     setInputs((prev) => ({ ...prev, [name]: value }));
   };
 
+  const handleClose = () => {
+    closeModal(false);
+    setIsOpen(false);
+  };
+
   const validateForm = () => {
     const errors = {};
     const { name, address } = inputs;
