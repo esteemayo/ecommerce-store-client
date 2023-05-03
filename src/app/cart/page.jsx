@@ -7,6 +7,7 @@ import CartHeader from '@/components/CartHeader';
 import CartItem from '@/components/CartItem';
 import PaymentModal from '@/components/PaymentModal';
 import CartTotal from '@/components/CartTotal';
+import { calcTotals } from '@/features/cart/cartSlice';
 
 const Cart = () => {
   const dispatch = useDispatch();
