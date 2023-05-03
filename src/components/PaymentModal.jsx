@@ -158,6 +158,12 @@ const TextArea = styled.textarea`
   overflow: hidden;
   resize: none;
   caret-color: var(--caret-light);
+
+  &::placeholder {
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: #bbb;
+  }
 `;
 
 const FormButton = styled.button`
