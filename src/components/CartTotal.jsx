@@ -85,7 +85,7 @@ const Button = styled.button`
   text-transform: capitalize;
   font-size: 1.8rem;
   width: 100%;
-  padding: 1rem 0.5rem;
+  padding: ${({ btnType }) => btnType === 'check' ? '1rem 3rem' : '1rem 0.5rem'};
   background-color: var(--clr-black);
   color: var(--clr-white);
   background-image: linear-gradient(
