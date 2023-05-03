@@ -2,7 +2,7 @@ import { useState } from 'react';
 import styled from 'styled-components';
 
 const CartTotal = () => {
-  const [isCash, setIsCash] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <Container>
@@ -26,8 +26,8 @@ const CartTotal = () => {
           </TotalWrapper>
         </TotalContainer>
         <ButtonContainer>
-          {isCash ? (
-            <Button type='button'>Cash on delivery</Button>
+          {isOpen ? (
+            <Button type='button'>Open on delivery</Button>
           ) : (
             <Button type='button'>Checkout</Button>
           )}
