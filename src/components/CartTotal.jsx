@@ -98,6 +98,7 @@ const Button = styled.button`
   outline-color: #777;
   line-height: 1.3em;
   cursor: pointer;
+  transition: all 0.3s;
 
   &:hover {
     background-position: 100%;
