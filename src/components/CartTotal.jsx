@@ -84,7 +84,7 @@ const Button = styled.button`
   text-transform: capitalize;
   font-size: 1.8rem;
   width: 100%;
-  padding: 1rem 3.5rem;
+  padding: 1rem 0.5rem;
   background-color: var(--clr-black);
   color: var(--clr-white);
   background-image: linear-gradient(
