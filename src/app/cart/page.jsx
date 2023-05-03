@@ -9,6 +9,7 @@ import PaymentModal from '@/components/PaymentModal';
 import CartTotal from '@/components/CartTotal';
 
 const Cart = () => {
+  const [isOpen, setIsOpen] = useState(false);
   const [isCash, setIsCash] = useState(false);
 
   return (
