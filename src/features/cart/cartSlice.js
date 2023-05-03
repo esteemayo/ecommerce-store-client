@@ -23,7 +23,7 @@ export const cartSlice = createSlice({
       state.cart = [];
     },
     remove: (state, { payload }) => {
-      state.cart.filter((item) => item.id !== payload);
+      state.cart = state.cart.filter((cartItem) => cartItem.id !== payload);
     },
     toggleQuantity: (state, { payload }) => {
       state.cart = state.cart.map((cartItem) => {
