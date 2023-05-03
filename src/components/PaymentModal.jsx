@@ -12,6 +12,9 @@ const PaymentModal = ({ openModal, closeModal }) => {
             </CloseButton>
           </CloseButtonContainer>
           <Heading>You will pay $99.99 after delivery</Heading>
+          <Form>
+
+          </Form>
         </Wrapper>
       </Container>
     </Overlay>
