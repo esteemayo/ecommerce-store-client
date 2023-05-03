@@ -18,6 +18,7 @@ const Overlay = styled.aside`
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 4000;
 `;
 
 export default PaymentModal;
