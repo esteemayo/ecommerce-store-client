@@ -9,6 +9,7 @@ const initialState = {
 };
 
 const PaymentModal = ({ openModal, closeModal }) => {
+  const [errors, setErrors] = useState({});
   const [inputs, setInputs] = useState(initialState);
 
   const handleChange = ({ target: input }) => {
