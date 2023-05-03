@@ -15,6 +15,7 @@ const PaymentModal = ({ openModal, closeModal }) => {
               <CloseIcon />
             </CloseButton>
           </CloseButtonContainer>
+          <Form onSubmit={handleSubmit}>
             <Heading>You will pay $99.99 after delivery</Heading>
             <FormGroup>
               <FormLabel htmlFor='name'>Name</FormLabel>
