@@ -28,4 +28,8 @@ const Container = styled.div`
   transform: translate(-50%,-50%);
 `;
 
+const Wrapper = styled.div`
+  
+`;
+
 export default PaymentModal;
