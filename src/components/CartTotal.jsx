@@ -6,6 +6,10 @@ const CartTotal = ({ isOpen, setIsOpen, setIsCash }) => {
     if (!e.target.classList.contains('btn-pay')) {
       setIsOpen(false);
     }
+
+    if (e.target.classList.contains('btn-check')) {
+      setIsOpen(true);
+    }
   };
 
   return (
