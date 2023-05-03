@@ -11,6 +11,11 @@ export const cartSlice = createSlice({
   initialState,
   reducers: {
     reset: (state) => initialState,
+    addProduct: (state, { payload }) => {
+      state.cart.push(payload);
+      state.qty += 1;
+      state.total += payload.price * payload.quantity;
+    },
   },
 });
 
