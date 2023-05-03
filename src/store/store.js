@@ -4,6 +4,7 @@ import subMenuReducer from '@/features/submenu/submenuSlice';
 
 const store = configureStore({
   reducer: {
+    cart: cartReducer,
     submenu: subMenuReducer,
   },
 });
