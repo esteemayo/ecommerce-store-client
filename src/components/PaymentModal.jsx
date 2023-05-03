@@ -17,6 +17,21 @@ const PaymentModal = ({ openModal, closeModal }) => {
     setInputs((prev) => ({ ...prev, [name]: value }));
   };
 
+  const validateForm = () => {
+    const errors = {};
+    const { name, address } = inputs;
+
+    if (name.trim() === '') {
+      errors.name = 'Please enter your name';
+    }
+
+    if (address.trim() === '') {
+      errors.address = 'Please enter your address';
+    }
+
+    return errors;
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log({ ...inputs });
