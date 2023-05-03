@@ -45,11 +45,11 @@ const CartItem = ({ id, name, size, color, image, price, quantity }) => {
         </Left>
         <Right>
           <QuantityContainer>
-            <AddQuantity type='button'>
+            <AddQuantity type='button' onClick={() => dispatch(toggleQuantity({ type: 'inc', id }))}>
               <FontAwesomeIcon icon={faPlus} />
             </AddQuantity>
             <Quantity>{quantity}</Quantity>
-            <MinusQuantity type='button'>
+            <MinusQuantity type='button' onClick={() => dispatch(toggleQuantity({ type: 'dec', id }))}>
               <FontAwesomeIcon icon={faMinus} />
             </MinusQuantity>
           </QuantityContainer>
