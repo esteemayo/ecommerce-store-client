@@ -40,6 +40,7 @@ const Wrapper = styled.div`
   padding: 2rem 4rem;
   background-color: var(--clr-white);
   border-radius: 1.5rem;
+  position: relative;
 `;
 
 const CloseButtonContainer = styled.div`
