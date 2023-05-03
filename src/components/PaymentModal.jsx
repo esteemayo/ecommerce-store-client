@@ -147,6 +147,9 @@ const TextArea = styled.textarea`
   display: inline-block;
   width: 100%;
   height: 10rem;
+  font-family: inherit;
+  font-weight: lighter;
+  font-size: 1.5rem;
 `;
 
 const FormButton = styled.button`
