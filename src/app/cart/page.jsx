@@ -8,6 +8,8 @@ import CartTotal from '@/components/CartTotal';
 import { useState } from 'react';
 
 const Cart = () => {
+  const [isCash, setIsCash] = useState(false);
+
   return (
     <Container>
       <Wrapper>
