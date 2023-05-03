@@ -57,6 +57,10 @@ const Container = styled.main`
   padding: 8rem 0;
 `;
 
+const HeadingWrapper = styled.div`
+  
+`;
+
 const Heading = styled.h1`
   font-weight: 300;
   font-size: 3.2rem;
