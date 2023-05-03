@@ -45,7 +45,7 @@ const Wrapper = styled.div`
 
 const CloseButtonContainer = styled.div`
   position: absolute;
-  top: 0;
+  top: 1rem;
   right: 0;
   width: 4rem;
   height: 4rem;
@@ -56,14 +56,14 @@ const CloseButton = styled.button`
   border: none;
   width: 2.5rem;
   height: 2.5rem;
-  font-size: 2rem;
+  font-size: 2.3rem;
   background-color: transparent;
   color: #838283;
   outline-color: #f1e4f4;
   cursor: pointer;
 
   svg {
-    font-size: 2rem;
+    font-size: 2.3rem;
     fill: currentColor;
   }
 `;
