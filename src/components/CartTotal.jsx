@@ -13,8 +13,10 @@ const CartTotal = () => {
           <PriceTotal>$8.897</PriceTotal>
         </TotalContainer>
         <TotalContainer>
-          <Text>Total:</Text>
-          <PriceTotal>$97.867</PriceTotal>
+          <TotalWrapper>
+            <Text>Total:</Text>
+            <PriceTotal>$97.867</PriceTotal>
+          </TotalWrapper>
         </TotalContainer>
       </Wrapper>
     </Container>
