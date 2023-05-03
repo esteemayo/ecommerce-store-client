@@ -7,6 +7,7 @@ import CartHeader from '@/components/CartHeader';
 import CartItem from '@/components/CartItem';
 import PaymentModal from '@/components/PaymentModal';
 import CartTotal from '@/components/CartTotal';
+import { useSelector } from 'react-redux';
 
 const Cart = () => {
   const [isOpen, setIsOpen] = useState(false);
