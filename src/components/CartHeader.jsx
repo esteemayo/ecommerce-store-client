@@ -2,6 +2,8 @@ import styled from 'styled-components';
 import { useSelector } from 'react-redux';
 
 const CartHeader = () => {
+  const { qty } = useSelector((state) => ({ ...state.cart }));
+
   return (
     <Container>
       <Heading>
