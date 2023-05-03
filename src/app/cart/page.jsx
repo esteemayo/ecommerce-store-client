@@ -23,7 +23,9 @@ const Cart = () => {
   if (cart.length < 1) {
     return (
       <Container>
-        <Heading>Your cart is currently empty!</Heading>
+        <HeadingWrapper>
+          <Heading>Your cart is currently empty!</Heading>
+        </HeadingWrapper>
       </Container>
     );
   }
