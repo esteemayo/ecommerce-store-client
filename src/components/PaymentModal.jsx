@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const PaymentModal = ({ openModal, closeModal }) => {
   return (
-    <Overlay>
+    <Overlay type={openModal ? 'show' : ''}>
       PaymentModal
     </Overlay>
   );
