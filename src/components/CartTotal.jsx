@@ -19,4 +19,8 @@ const Wrapper = styled.div`
   
 `;
 
+const SubtotalContainer = styled.div`
+  
+`;
+
 export default CartTotal;
