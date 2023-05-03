@@ -15,9 +15,7 @@ const Overlay = styled.aside`
   position: fixed;
   top: 0;
   left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: ${({ type }) => type === 'show' ? 'block' : 'none'};
   z-index: 4000;
 `;
 
