@@ -43,7 +43,9 @@ const TotalContainer = styled.div`
 `;
 
 const TotalWrapper = styled.div`
-  
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 `;
 
 const Text = styled.h3`
