@@ -17,7 +17,16 @@ const PaymentModal = ({ openModal, closeModal }) => {
             </CloseButton>
           </CloseButtonContainer>
           <Form onSubmit={handleSubmit}>
-            <Heading>You will pay $99.99 after delivery</Heading>
+            <Heading>
+              You will pay
+              <NumericFormat
+                value='99.99'
+                displayType={'text'}
+                thousandSeparator={true}
+                prefix={'$'}
+              />
+              after delivery
+            </Heading>
             <FormGroup>
               <FormLabel htmlFor='name'>Name</FormLabel>
               <FormInput
@@ -100,6 +109,8 @@ const Heading = styled.h1`
   font-size: 2rem;
   margin-bottom: 1rem;
 `;
+
+const TotalPrice = styled.span``;
 
 const Form = styled.form`
   margin: 2rem 0;
