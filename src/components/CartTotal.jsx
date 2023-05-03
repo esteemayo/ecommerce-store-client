@@ -41,7 +41,8 @@ const TotalContainer = styled.div`
 `;
 
 const Text = styled.h3`
-  
+  display: inline-block;
+  text-transform: capitalize;
 `;
 
 const PriceTotal = styled.span`
