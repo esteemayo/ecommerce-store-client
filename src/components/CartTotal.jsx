@@ -22,6 +22,9 @@ const CartTotal = () => {
             <PriceTotal>$97.867</PriceTotal>
           </TotalWrapper>
         </TotalContainer>
+        <ButtonContainer>
+
+        </ButtonContainer>
       </Wrapper>
     </Container>
   );
