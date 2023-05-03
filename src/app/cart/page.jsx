@@ -79,6 +79,8 @@ const Button = styled.button`
   font-weight: 400;
   font-size: 1.5rem;
   padding: 1rem 0.5rem;
+  background-color: var(--clr-white);
+  color: var(--clr-secondary-green);
 `;
 
 const Wrapper = styled.div`
