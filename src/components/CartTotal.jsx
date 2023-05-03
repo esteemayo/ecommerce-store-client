@@ -26,7 +26,11 @@ const CartTotal = () => {
           </TotalWrapper>
         </TotalContainer>
         <ButtonContainer>
-
+          {isCash ? (
+            <Button type='button'>Cash on delivery</Button>
+          ) : (
+            <Button type='button'>Checkout</Button>
+          )}
         </ButtonContainer>
       </Wrapper>
     </Container>
