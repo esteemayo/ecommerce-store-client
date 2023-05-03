@@ -8,7 +8,7 @@ const CartHeader = () => {
     <Container>
       <Heading>
         <HeadingMain>My cart</HeadingMain>
-        <HeadingSub>2</HeadingSub>
+        <HeadingSub>{qty}</HeadingSub>
       </Heading>
       <ClearButton type='button'>Clear cart</ClearButton>
     </Container>
