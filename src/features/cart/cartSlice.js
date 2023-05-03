@@ -46,9 +46,43 @@ export const cartSlice = createSlice({
       })
         .filter((cartItem) => cartItem.quantity !== 0);
     },
+    calcTotals: (state) => {
+      let {
+        total,
+        qty,
+        subtotal,
+        tax,
+      } = state.cart.reduce((cartTotal, cartItem) => {
+        const { price, quantity } = cartItem;
+        const itemTotal = price * quantity;
+
+        cartTotal.subtotal += itemTotal;
+        cartTotal.qty += quantity;
+        cartTotal.tax = cartTotal.subtotal * 0.05;
+        cartTotal.total = cartTotal.subtotal + cartTotal.tax;
+        return cartTotal;
+      },
+        {
+          total: 0,
+          qty: 0,
+          subtotal: 0,
+          tax: 0,
+        },
+      );
+
+      qty = parseFloat(qty.toFixed(2));
+      tax = parseFloat(tax.toFixed(2));
+      total = parseFloat(total.toFixed(2));
+      subtotal = parseFloat(subtotal.toFixed(2));
+
+      state.qty = qty;
+      state.tax = tax;
+      state.total = total;
+      state.subtotal = subtotal;
+    }
   },
 });
 
-export const { addProduct, clearCart, remove, reset, toggleQuantity } = cartSlice.actions;
+export const { addProduct, calcTotals, clearCart, remove, reset, toggleQuantity } = cartSlice.actions;
 
 export default cartSlice.reducer;
