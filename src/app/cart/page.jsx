@@ -27,7 +27,7 @@ const Cart = () => {
       <Container>
         <HeadingWrapper>
           <Heading>Your cart is currently empty!</Heading>
-          <Button type='button'>Back to shopping</Button>
+          <Button type='button' onClick={() => dispatch(push('/products'))}>Back to shopping</Button>
         </HeadingWrapper>
       </Container>
     );
