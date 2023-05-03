@@ -22,7 +22,10 @@ const Cart = () => {
         </CartItemsContainer>
         <CartTotal setIsCash={setIsCash} />
       </Wrapper>
-      <PaymentModal openModal={isCash} closeModal={setIsCash} />
+      <PaymentModal
+        openModal={isCash}
+        closeModal={setIsCash}
+      />
     </Container>
   );
 }
