@@ -152,7 +152,7 @@ const TextArea = styled.textarea`
   font-size: 1.5rem;
   padding: 1.5rem 1rem;
   background-color: #f9f9f9;
-  color: #757373;
+  color: #999;
   border-radius: 0.5rem;
   outline-color: #eee;
 `;
