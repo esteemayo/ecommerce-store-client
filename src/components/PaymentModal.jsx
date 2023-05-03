@@ -3,7 +3,14 @@ import { NumericFormat } from 'react-number-format';
 import CloseIcon from '@mui/icons-material/Close';
 import { useState } from 'react';
 
+const initialState = {
+  name: '',
+  address: '',
+};
+
 const PaymentModal = ({ openModal, closeModal }) => {
+  const [inputs, setInputs] = useState(initialState);
+
   const handleSubmit = (e) => {
     e.preventDefault();
   };
