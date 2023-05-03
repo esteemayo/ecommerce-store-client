@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { NumericFormat } from 'react-number-format';
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import CloseIcon from '@mui/icons-material/Close';
 import { useSelector } from 'react-redux';
 
@@ -64,6 +64,8 @@ const PaymentModal = ({ openModal, closeModal, setIsOpen }) => {
     console.log({ ...inputs, total });
     handleClear();
   };
+
+  useEffect(() => { })
 
   return (
     <Overlay
