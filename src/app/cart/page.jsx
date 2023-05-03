@@ -25,8 +25,8 @@ const Cart = () => {
       <Container>
         <HeadingWrapper>
           <Heading>Your cart is currently empty!</Heading>
-          <Button type='button'>Back to shopping</Button>
         </HeadingWrapper>
+        <Button type='button'>Back to shopping</Button>
       </Container>
     );
   }
