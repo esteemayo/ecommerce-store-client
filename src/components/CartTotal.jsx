@@ -43,6 +43,8 @@ const TotalContainer = styled.div`
 const Text = styled.h3`
   display: inline-block;
   text-transform: capitalize;
+  font-weight: 500;
+  font-size: 2.3rem;
 `;
 
 const PriceTotal = styled.span`
