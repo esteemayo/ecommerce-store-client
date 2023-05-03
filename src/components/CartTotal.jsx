@@ -5,8 +5,10 @@ const CartTotal = () => {
     <Container>
       <Wrapper>
         <TotalContainer>
-          <Text>Subtotal:</Text>
-          <PriceTotal>$88.97</PriceTotal>
+          <TotalWrapper>
+            <Text>Subtotal:</Text>
+            <PriceTotal>$88.97</PriceTotal>
+          </TotalWrapper>
         </TotalContainer>
         <TotalContainer>
           <TotalWrapper>
