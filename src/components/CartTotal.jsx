@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import styled from 'styled-components';
 
-const CartTotal = () => {
+const CartTotal = ({ setIsCash }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
