@@ -13,6 +13,7 @@ const PaymentModal = ({ openModal, closeModal }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    console.log({ ...inputs });
   };
 
   return (
