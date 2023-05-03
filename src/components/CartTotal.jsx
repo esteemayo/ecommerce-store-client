@@ -29,4 +29,8 @@ const Text = styled.h3`
   
 `;
 
+const PriceTotal = styled.span`
+  
+`;
+
 export default CartTotal;
