@@ -28,7 +28,7 @@ const CartTotal = ({ setIsCash }) => {
         <ButtonContainer>
           {isOpen ? (
             <>
-              <Button type='button'>Cash on delivery</Button>
+              <Button type='button' onClick={() => setIsCash(true)}>Cash on delivery</Button>
               <Button type='button'>Checkout now</Button>
             </>
           ) : (
