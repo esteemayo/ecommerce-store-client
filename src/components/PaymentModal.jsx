@@ -8,7 +8,7 @@ const initialState = {
   address: '',
 };
 
-const PaymentModal = ({ openModal, closeModal }) => {
+const PaymentModal = ({ openModal, closeModal, setIsOpen }) => {
   const [errors, setErrors] = useState({});
   const [inputs, setInputs] = useState(initialState);
 
