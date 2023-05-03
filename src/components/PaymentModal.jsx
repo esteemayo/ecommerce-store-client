@@ -95,7 +95,9 @@ const CloseButton = styled.button`
 `;
 
 const Heading = styled.h1`
-  
+  display: inline-block;
+  font-weight: 500;
+  font-size: 2rem;
 `;
 
 const Form = styled.form`
