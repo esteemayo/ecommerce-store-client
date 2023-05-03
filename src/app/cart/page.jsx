@@ -5,7 +5,6 @@ import { useState } from 'react';
 import { cartItems } from '@/data';
 import CartHeader from '@/components/CartHeader';
 import CartItem from '@/components/CartItem';
-import CartTotal from '@/components/CartTotal';
 import PaymentModal from '@/components/PaymentModal';
 
 const Cart = () => {
