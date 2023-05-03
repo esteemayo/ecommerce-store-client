@@ -37,4 +37,8 @@ const Wrapper = styled.div`
   border-radius: 1.5rem;
 `;
 
+const CloseButtonContainer = styled.div`
+  
+`;
+
 export default PaymentModal;
