@@ -6,6 +6,7 @@ const CartTotal = () => {
       <Wrapper>
         <SubtotalContainer>
           <Text>Subtotal:</Text>
+          <PriceTotal>$88.97</PriceTotal>
         </SubtotalContainer>
       </Wrapper>
     </Container>
