@@ -55,7 +55,7 @@ const PaymentModal = ({ openModal, closeModal, setIsOpen }) => {
   };
 
   return (
-    <Overlay className='overlay' type={openModal ? 'show' : ''}>
+    <Overlay className='overlay' type={openModal ? 'show' : ''} onClick={handleClick}>
       <Container>
         <Wrapper>
           <CloseButtonContainer>
