@@ -34,6 +34,11 @@ const PaymentModal = ({ openModal, closeModal }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    const errors = validateForm();
+    if (Object.keys(errors).length > 0) return setErrors(errors);
+    setErrors({});
+
     console.log({ ...inputs });
   };
 
