@@ -60,7 +60,8 @@ const Container = styled.main`
 `;
 
 const HeadingWrapper = styled.div`
-  
+  width: 100%;
+  min-height: 70vh;
 `;
 
 const Heading = styled.h1`
