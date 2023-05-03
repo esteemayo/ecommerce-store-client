@@ -9,7 +9,7 @@ const CartTotal = ({ isOpen, setIsOpen, setIsCash }) => {
   };
 
   return (
-    <Container className='container' onClick={handleClose}>
+    <Container onClick={handleClose}>
       <Wrapper>
         <TotalContainer>
           <TotalWrapper>
