@@ -49,6 +49,10 @@ const Container = styled.main`
   padding: 8rem 0;
 `;
 
+const Heading = styled.h1`
+  
+`;
+
 const Wrapper = styled.div`
   width: 100%;
   max-width: 80rem;
