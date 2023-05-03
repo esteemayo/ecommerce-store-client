@@ -57,6 +57,7 @@ const PaymentModal = ({ openModal, closeModal }) => {
                 id='address'
                 name='address'
                 placeholder='Enter your address'
+                onChange={handleChange}
               ></TextArea>
             </FormGroup>
             <FormButton type='submit'>Order</FormButton>
