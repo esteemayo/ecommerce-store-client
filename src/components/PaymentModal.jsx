@@ -15,6 +15,8 @@ const PaymentModal = ({ openModal, closeModal, setIsOpen }) => {
   const [errors, setErrors] = useState({});
   const [inputs, setInputs] = useState(initialState);
 
+  const { name, address } = inputs;
+
   const handleChange = ({ target: input }) => {
     const { name, value } = input;
     setInputs((prev) => ({ ...prev, [name]: value }));
