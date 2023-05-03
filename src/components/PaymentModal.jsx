@@ -61,6 +61,11 @@ const CloseButton = styled.button`
   color: #838283;
   outline-color: #f1e4f4;
   cursor: pointer;
+
+  svg {
+    font-size: 2rem;
+    fill: currentColor;
+  }
 `;
 
 export default PaymentModal;
