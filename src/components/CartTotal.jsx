@@ -27,7 +27,7 @@ const CartTotal = () => {
         </TotalContainer>
         <ButtonContainer>
           {isOpen ? (
-            <Button type='button'>Open on delivery</Button>
+            <Button type='button'>Cash on delivery</Button>
           ) : (
             <Button type='button'>Checkout</Button>
           )}
