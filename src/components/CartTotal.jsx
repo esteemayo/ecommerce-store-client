@@ -98,6 +98,10 @@ const Button = styled.button`
   outline-color: #777;
   line-height: 1.3em;
   cursor: pointer;
+
+  &:hover {
+    background-position: 100%;
+  }
 `;
 
 export default CartTotal;
