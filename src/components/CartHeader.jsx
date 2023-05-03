@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { useDispatch, useSelector } from 'react-redux';
+import { clearCart } from '@/features/cart/cartSlice';
 
 const CartHeader = () => {
   const dispatch = useDispatch();
