@@ -2,7 +2,9 @@ import styled from 'styled-components';
 
 const PaymentModal = () => {
   return (
-    <div>PaymentModal</div>
+    <Overlay>
+      PaymentModal
+    </Overlay>
   );
 }
 
