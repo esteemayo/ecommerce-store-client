@@ -1,6 +1,7 @@
 'use client';
 import styled from 'styled-components';
 import { useState } from 'react';
+import { useSelector } from 'react-redux';
 
 import { cartItems } from '@/data';
 import CartHeader from '@/components/CartHeader';
