@@ -28,12 +28,11 @@ const PaymentModal = ({ openModal, closeModal }) => {
             </FormGroup>
             <FormGroup>
               <FormLabel htmlFor='address'>Address</FormLabel>
-              <FormInput
-                type='text'
+              <TextArea
                 id='address'
                 name='address'
                 placeholder='Enter your address'
-              />
+              ></TextArea>
             </FormGroup>
             <FormButton type='submit'>Order</FormButton>
           </Form>
