@@ -12,7 +12,7 @@ const CartHeader = () => {
         <HeadingMain>My cart</HeadingMain>
         <HeadingSub>{qty}</HeadingSub>
       </Heading>
-      <ClearButton type='button'>Clear cart</ClearButton>
+      <ClearButton type='button' onClick={() => dispatch(clearCart())}>Clear cart</ClearButton>
     </Container>
   );
 }
