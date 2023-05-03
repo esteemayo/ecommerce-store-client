@@ -1,7 +1,8 @@
 import styled from 'styled-components';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 
 const CartHeader = () => {
+  const dispatch = useDispatch();
   const { qty } = useSelector((state) => ({ ...state.cart }));
 
   return (
