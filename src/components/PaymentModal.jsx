@@ -11,6 +11,7 @@ const PaymentModal = ({ openModal, closeModal }) => {
               <CloseIcon />
             </CloseButton>
           </CloseButtonContainer>
+          <Heading>You will pay $99.99 after delivery</Heading>
         </Wrapper>
       </Container>
     </Overlay>
