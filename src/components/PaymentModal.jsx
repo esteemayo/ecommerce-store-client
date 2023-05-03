@@ -133,7 +133,7 @@ const CloseButton = styled.button`
   font-size: 2.3rem;
   background-color: transparent;
   color: #838283;
-  outline-color: #f1e4f4;
+  outline-color: #f7f3f8;
   cursor: pointer;
 
   svg {
