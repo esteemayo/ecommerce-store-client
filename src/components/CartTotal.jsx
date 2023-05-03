@@ -79,7 +79,8 @@ const ButtonContainer = styled.div`
 `;
 
 const Button = styled.button`
-  
+  border: none;
+  display: inline-block;
 `;
 
 export default CartTotal;
