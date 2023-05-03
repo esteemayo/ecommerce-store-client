@@ -3,7 +3,9 @@ import styled from 'styled-components';
 const CartTotal = () => {
   return (
     <Container>
-      CartTotal
+      <Wrapper>
+        CartTotal
+      </Wrapper>
     </Container>
   );
 }
