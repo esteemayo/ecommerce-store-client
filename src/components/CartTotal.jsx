@@ -3,13 +3,13 @@ import styled from 'styled-components';
 
 const CartTotal = ({ isOpen, setIsOpen, setIsCash }) => {
   const handleClose = (e) => {
-    if (e.target.classList.contains('btnContainer')) {
+    if (e.target.classList.contains('container')) {
       setIsOpen(false);
     }
   };
 
   return (
-    <Container>
+    <Container className='container' onClick={handleClose}>
       <Wrapper>
         <TotalContainer>
           <TotalWrapper>
