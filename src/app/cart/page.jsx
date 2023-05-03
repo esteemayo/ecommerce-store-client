@@ -2,7 +2,6 @@
 import styled from 'styled-components';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect, useState } from 'react';
-import { useRouter } from 'next/navigation';
 
 import CartHeader from '@/components/CartHeader';
 import CartItem from '@/components/CartItem';
