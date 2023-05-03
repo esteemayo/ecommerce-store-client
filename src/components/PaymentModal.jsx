@@ -150,6 +150,9 @@ const TextArea = styled.textarea`
   font-family: inherit;
   font-weight: lighter;
   font-size: 1.5rem;
+  padding: 1.5rem 1rem;
+  background-color: #f9f9f9;
+  color: #757373;
 `;
 
 const FormButton = styled.button`
