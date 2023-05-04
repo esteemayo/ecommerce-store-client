@@ -219,6 +219,8 @@ const CloseButton = styled.button`
 
 const ImageContainer = styled.div`
   margin-top: 2rem;
+  width: 32rem;
+  height: 20rem;
 
   img {
     width: 32rem;
