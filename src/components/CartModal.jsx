@@ -50,6 +50,7 @@ const CartModal = ({ product, isModalOpen, closeModal, setIsSelectedProduct }) =
 
   const handleClick = () => {
     console.log({ size, color, quantity });
+    handleClear();
   };
 
   return (
