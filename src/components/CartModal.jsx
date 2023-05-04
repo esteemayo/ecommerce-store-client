@@ -57,7 +57,7 @@ const CartModal = ({ product, isModalOpen, closeModal, setIsSelectedProduct }) =
             </CloseButton>
           </ButtonContainer>
           <ImageContainer>
-            <Image src='/img/img-9.jpg' width={320} height={200} alt='' />
+            <Image src={product?.images[0]} width={320} height={200} alt='' />
           </ImageContainer>
           <ProductContainer>
             <ProductName>{product?.name}</ProductName>
