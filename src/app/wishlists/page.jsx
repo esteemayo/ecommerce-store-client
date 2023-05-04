@@ -14,6 +14,7 @@ const WishLists = () => {
 
   const [products, setProducts] = useState(wishlists);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isSelectedProduct, setIsSelectedProduct] = useState({});
 
   const handleDelete = (id) => {
     setProducts((prev) => prev.filter((item) => item.id !== id));
