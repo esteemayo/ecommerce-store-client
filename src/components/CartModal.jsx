@@ -221,6 +221,7 @@ const ImageContainer = styled.div`
   margin-top: 2rem;
   width: 32rem;
   height: 20rem;
+  background-color: #ede9e6;
 
   img {
     width: 32rem;
