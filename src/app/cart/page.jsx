@@ -24,7 +24,7 @@ const Cart = () => {
 
   if (cart.length < 1) {
     return (
-      <Container>
+      <Container onMouseOver={() => dispatch(closeSubmenu())}>
         <HeadingWrapper>
           <Heading>Your cart is currently empty!</Heading>
           <Button type='button'>
