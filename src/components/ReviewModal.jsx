@@ -88,14 +88,17 @@ const Overlay = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  display: : ${({ type }) => type === 'show' ? 'block' : 'none'};
+  display: ${({ type }) => type === 'show' ? 'block' : 'none'};
   visibility: ${({ type }) => type === 'show' ? 'visible' : 'hidden'};
   opacity: ${({ type }) => type === 'show' ? 1 : 0};
   z-index: ${({ type }) => type === 'show' ? 4000 : -1};
 `;
 
 const Container = styled.div`
-  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 `;
 
 const Wrapper = styled.div`
