@@ -19,6 +19,11 @@ const CartModal = ({ product, isModalOpen, closeModal, setIsSelectedProduct }) =
     }
   };
 
+  const handleCloseModal = () => {
+    closeModal(false);
+    setIsSelectedProduct(null);
+  };
+
   const handleColor = (color) => {
     setColor(color);
     setIsSelected(color);
