@@ -3,7 +3,7 @@ import CloseIcon from '@mui/icons-material/Close';
 
 const DeleteModal = ({ openModal, closeModal, onDelete, wishlistId }) => {
   const closeModalHandler = (e) => {
-    if (e.target.classList.contains('container')) {
+    if (e.target.classList.contains('overlay')) {
       closeModal(false);
     }
 
@@ -26,7 +26,7 @@ const DeleteModal = ({ openModal, closeModal, onDelete, wishlistId }) => {
 
   return (
     <Overlay
-      className='container'
+      className='overlay'
       onClick={closeModalHandler}
       type={openModal ? 'show' : ''}
     >
