@@ -68,7 +68,7 @@ const CartModal = ({ product, isModalOpen, closeModal, setIsSelectedProduct }) =
           </ButtonContainer>
           <ImageContainer>
             <Image
-              src={product?.images[0]}
+              src={product?.images ? product?.images[0] : '/img/img-1.jpg'}
               width={320}
               height={200}
               alt=''
