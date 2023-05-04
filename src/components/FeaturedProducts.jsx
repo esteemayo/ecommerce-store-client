@@ -7,6 +7,7 @@ import CartModal from './CartModal';
 
 const FeaturedProducts = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isSelectedProduct, setIsSelectedProduct] = useState(null);
   const [featuredProducts, setFeaturedProducts] = useState(storeProducts);
 
   return (
