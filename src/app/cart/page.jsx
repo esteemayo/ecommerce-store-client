@@ -36,7 +36,7 @@ const Cart = () => {
   }
 
   return (
-    <Container>
+    <Container onMouseOver={() => dispatch(closeSubmenu())}>
       <Wrapper>
         <CartHeader />
         <CartItemsContainer>
