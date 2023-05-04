@@ -906,7 +906,7 @@ export const topReviews = [
   },
 ];
 
-export const reviews = [
+export const reviewItems = [
   {
     id: 1,
     user: {
