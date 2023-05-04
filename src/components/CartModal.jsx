@@ -153,6 +153,10 @@ const Overlay = styled.div`
   z-index: ${({ type }) => type === 'show' ? 4000 : -1};
 `;
 
+const Container = styled.div`
+
+`;
+
 const Wrapper = styled.div`
   width: 40rem;
   padding: 2rem 4rem;
