@@ -8,7 +8,9 @@ const WishlistHeader = () => {
     <Container>
       <HeadingContainer>
         <Heading>My wishlist</Heading>
-        <DateTime dateTime={today}>{today.toLocaleDateString('en-us', options)}</DateTime>
+        <DateTime dateTime={today}>
+          {today.toLocaleDateString('en-us', options)}
+        </DateTime>
       </HeadingContainer>
       <SendButton type='button'>Send wishlist</SendButton>
     </Container>
