@@ -58,11 +58,11 @@ const CartModal = ({ product, isModalOpen, closeModal }) => {
             <Image src='/img/img-9.jpg' width={320} height={200} alt='' />
           </ImageContainer>
           <ProductContainer>
-            <ProductName>The Stanley Rain Jacket in Black</ProductName>
+            <ProductName>{product.name}</ProductName>
             <PriceContainer>
               <ProductPrice>
                 <NumericFormat
-                  value='99.99'
+                  value={product.price}
                   displayType={'text'}
                   thousandSeparator={true}
                   prefix={'$'}
@@ -82,7 +82,7 @@ const CartModal = ({ product, isModalOpen, closeModal }) => {
             <ColorContainer>
               <ProductColor>Color</ProductColor>
               <ColorWrapper>
-                {colors.map((color, index) => {
+                {product.color.map((color, index) => {
                   return (
                     <Color
                       key={index}
@@ -100,7 +100,7 @@ const CartModal = ({ product, isModalOpen, closeModal }) => {
             <SizeWrapper>
               <SizeHeading>Select a size</SizeHeading>
               <SizeContainer>
-                {sizes.map((size, index) => {
+                {product.size.map((size, index) => {
                   return (
                     <SelectSize
                       key={index}
