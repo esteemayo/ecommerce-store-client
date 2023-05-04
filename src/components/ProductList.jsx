@@ -24,6 +24,7 @@ const ProductList = ({ products }) => {
         isModalOpen={isModalOpen}
         closeModal={setIsModalOpen}
         product={isSelectedProduct}
+        setIsSelectedProduct={setIsSelectedProduct}
       />
     </Container>
   );
