@@ -115,21 +115,25 @@ const CartModal = ({ product, isModalOpen, closeModal, setIsSelectedProduct }) =
               </ColorWrapper>
             </ColorContainer>
             <SizeWrapper>
-              <SizeHeading>Select a size</SizeHeading>
-              <SizeContainer>
-                {product?.size?.map((size, index) => {
-                  return (
-                    <SelectSize
-                      key={index}
-                      type='button'
-                      bcg={selectedSize === size}
-                      onClick={() => handleSize(size)}
-                    >
-                      {size}
-                    </SelectSize>
-                  );
-                })}
-              </SizeContainer>
+              {product?.size?.length > 0 && (
+                <>
+                  <SizeHeading>Select a size</SizeHeading>
+                  <SizeContainer>
+                    {product?.size?.map((size, index) => {
+                      return (
+                        <SelectSize
+                          key={index}
+                          type='button'
+                          bcg={selectedSize === size}
+                          onClick={() => handleSize(size)}
+                        >
+                          {size}
+                        </SelectSize>
+                      );
+                    })}
+                  </SizeContainer>
+                </>
+              )}
               <Hr />
               <AddContainer>
                 <AmountHeading>Quantity</AmountHeading>
