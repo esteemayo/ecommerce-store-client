@@ -23,6 +23,7 @@ const FeaturedProducts = () => {
                   key={product.id}
                   product={product}
                   openModal={setIsModalOpen}
+                  setIsSelectedProduct={setIsSelectedProduct}
                 />
               );
             })
