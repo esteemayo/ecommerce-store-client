@@ -62,6 +62,10 @@ const Overlay = styled.section`
   transition: all 0.3s linear;
 `;
 
+const Container = styled.div`
+
+`;
+
 const Wrapper = styled.div`
   width: 35rem;
   padding: 5rem;
