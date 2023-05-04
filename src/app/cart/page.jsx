@@ -9,6 +9,7 @@ import CartItem from '@/components/CartItem';
 import PaymentModal from '@/components/PaymentModal';
 import CartTotal from '@/components/CartTotal';
 import { calcTotals } from '@/features/cart/cartSlice';
+import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
 const Cart = () => {
   const dispatch = useDispatch();
