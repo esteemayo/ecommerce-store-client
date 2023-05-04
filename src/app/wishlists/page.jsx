@@ -38,6 +38,7 @@ const WishLists = () => {
           wishlists={products}
           onDelete={handleDelete}
           openModal={setIsModalOpen}
+          setIsSelectedProduct={setIsSelectedProduct}
         />
       </Wrapper>
       <CartModal
