@@ -27,7 +27,7 @@ const ReviewCard = ({ user, rating, review, createdAt }) => {
         </ReviewContainer>
         <Review>{review}</Review>
         <DateContainer>
-          <ReviewDate dateTime='2023-02-13 20:00'>Feb 13, 2023</ReviewDate>
+          <ReviewDate dateTime={createdAt}>Feb 13, 2023</ReviewDate>
           <ShareButton type='button'>
             <FontAwesomeIcon icon={faArrowUpFromBracket} />
             Share
