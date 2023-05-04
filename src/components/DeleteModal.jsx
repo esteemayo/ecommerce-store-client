@@ -54,9 +54,6 @@ const Overlay = styled.section`
   position: fixed;
   top: 0;
   left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   display: ${({ type }) => type === 'show' ? 'block' : 'none'};
   visibility: ${({ type }) => type === 'show' ? 'visible' : 'hidden'};
   opacity: ${({ type }) => type === 'show' ? 1 : 0};
