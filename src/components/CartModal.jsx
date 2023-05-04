@@ -60,11 +60,11 @@ const CartModal = ({ product, isModalOpen, closeModal, setIsSelectedProduct }) =
             <Image src='/img/img-9.jpg' width={320} height={200} alt='' />
           </ImageContainer>
           <ProductContainer>
-            <ProductName>{product.name}</ProductName>
+            <ProductName>{product?.name}</ProductName>
             <PriceContainer>
               <ProductPrice>
                 <NumericFormat
-                  value={product.price}
+                  value={product?.price}
                   displayType={'text'}
                   thousandSeparator={true}
                   prefix={'$'}
@@ -84,7 +84,7 @@ const CartModal = ({ product, isModalOpen, closeModal, setIsSelectedProduct }) =
             <ColorContainer>
               <ProductColor>Color</ProductColor>
               <ColorWrapper>
-                {product.color.map((color, index) => {
+                {product?.color?.map((color, index) => {
                   return (
                     <Color
                       key={index}
@@ -102,7 +102,7 @@ const CartModal = ({ product, isModalOpen, closeModal, setIsSelectedProduct }) =
             <SizeWrapper>
               <SizeHeading>Select a size</SizeHeading>
               <SizeContainer>
-                {product.size.map((size, index) => {
+                {product?.size?.map((size, index) => {
                   return (
                     <SelectSize
                       key={index}
