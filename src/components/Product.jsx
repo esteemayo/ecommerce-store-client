@@ -52,7 +52,7 @@ const Product = ({ product, openModal, setIsSelectedProduct }) => {
           </PriceContainer>
           <Button
             type='button'
-            onClick={() => openModal(true)}
+            onClick={handleOpen}
           >
             <FontAwesomeIcon icon={faShoppingCart} />
             &nbsp;
