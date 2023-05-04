@@ -26,7 +26,7 @@ const Product = ({ product, openModal, setIsSelectedProduct }) => {
         <InfoContainer>
           <ProductName>
             <Link
-              href={`/products/${encodeURIComponent(id)}`}
+              href={`/products/${encodeURIComponent(product.id)}`}
               passHref
             >
               {product.name}
