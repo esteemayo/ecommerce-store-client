@@ -6,7 +6,7 @@ import StarRating from './StarRating';
 import ReviewModal from './ReviewModal';
 import ReviewCard from './ReviewCard';
 
-const Reviews = ({ reviews }) => {
+const Reviews = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isFilterOpen, setIsFilterOpen] = useState(false);
 
