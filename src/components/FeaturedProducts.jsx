@@ -19,8 +19,8 @@ const FeaturedProducts = () => {
             .map((product) => {
               return (
                 <Product
-                  {...product}
                   key={product.id}
+                  product={product}
                   openModal={setIsModalOpen}
                 />
               );
