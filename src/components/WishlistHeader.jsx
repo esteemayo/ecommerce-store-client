@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 
 const WishlistHeader = () => {
+  const today = new Date();
+  const options = { day: 'numeric', month: 'long', year: 'numeric' };
+
   return (
     <Container>
       <HeadingContainer>
