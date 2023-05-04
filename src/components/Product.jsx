@@ -13,7 +13,7 @@ const Product = ({ product, openModal }) => {
     <Container>
       <Wrapper>
         <Image
-          src={images[0]}
+          src={product.images[0]}
           width={300}
           height={200}
           alt=''
@@ -24,11 +24,11 @@ const Product = ({ product, openModal }) => {
               href={`/products/${encodeURIComponent(id)}`}
               passHref
             >
-              {name}
+              {product.name}
             </Link>
           </ProductName>
           <ReviewContainer>
-            <StarRating value={ratingsAverage} />
+            <StarRating value={product.ratingsAverage} />
             <Reviews>(<span><span>6 reviews</span></span>)</Reviews>
           </ReviewContainer>
           <PriceContainer>
@@ -36,14 +36,14 @@ const Product = ({ product, openModal }) => {
               <Discount>$297</Discount>
               <Price>
                 <NumericFormat
-                  value={price}
+                  value={product.price}
                   displayType={'text'}
                   thousandSeparator={true}
                   prefix={'$'}
                 />
               </Price>
             </Prices>
-            {inStock && <InStock>In stock</InStock>}
+            {product.inStock && <InStock>In stock</InStock>}
           </PriceContainer>
           <Button
             type='button'
