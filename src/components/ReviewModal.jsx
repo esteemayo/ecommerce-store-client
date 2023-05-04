@@ -20,7 +20,7 @@ const ReviewModal = ({ isModalOpen, setIsModalOpen }) => {
   };
 
   return (
-    <Container
+    <Overlay
       className='container'
       type={isModalOpen ? 'show' : ''}
       onClick={handleCloseModal}
@@ -72,11 +72,11 @@ const ReviewModal = ({ isModalOpen, setIsModalOpen }) => {
           Submit product review
         </Button>
       </Wrapper>
-    </Container>
+    </Overlay>
   );
 }
 
-const Container = styled.div`
+const Overlay = styled.div`
   width: 100vw;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
