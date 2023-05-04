@@ -106,6 +106,10 @@ const Left = styled.div`
 `;
 
 const ImageContainer = styled.div`
+  width: 8rem;
+  height: 8rem;
+  background-color: #ede9e6;
+
   img {
     display: block;
     width: 8rem;
