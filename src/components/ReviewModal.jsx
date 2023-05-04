@@ -25,53 +25,55 @@ const ReviewModal = ({ isModalOpen, setIsModalOpen }) => {
       type={isModalOpen ? 'show' : ''}
       onClick={handleCloseModal}
     >
-      <Wrapper>
-        <ButtonContainer>
-          <CloseButton
+      <Container>
+        <Wrapper>
+          <ButtonContainer>
+            <CloseButton
+              type='button'
+              onClick={() => setIsModalOpen(false)}
+            >
+              <FontAwesomeIcon icon={faXmark} />
+            </CloseButton>
+          </ButtonContainer>
+          <Header>Overall rating</Header>
+          <RatingContainer>
+            <Rating
+              size='large'
+              name='size-large'
+              value={rating}
+              precision={0.5}
+              onChange={(e, newValue) => {
+                setRating(newValue);
+              }}
+            />
+            <Text>Click to rate</Text>
+          </RatingContainer>
+          <Label htmlFor='review'>Product review</Label>
+          <TextArea
+            id='review'
+            name='review'
+            onChange={(e) => setReview(e.target.value)}
+            placeholder='Example: Since i bought this a month ago, it has been used a lot. What i like best/what is worst about this product is ...'
+          ></TextArea>
+          <Agreement>
+            <Input id='terms' type='radio' />
+            <Label htmlFor='terms'>
+              I accept the <Link href='#' passHref>terms and conditions</Link>
+            </Label>
+          </Agreement>
+          <Information>
+            You will be able to receive emails in connection with this review (eg if others comment on your review).
+            All emails contain the option to unsubscribe. We can use the text and star rating
+            from your review in other marketting.
+          </Information>
+          <Button
             type='button'
-            onClick={() => setIsModalOpen(false)}
+            onClick={handleClick}
           >
-            <FontAwesomeIcon icon={faXmark} />
-          </CloseButton>
-        </ButtonContainer>
-        <Header>Overall rating</Header>
-        <RatingContainer>
-          <Rating
-            size='large'
-            name='size-large'
-            value={rating}
-            precision={0.5}
-            onChange={(e, newValue) => {
-              setRating(newValue);
-            }}
-          />
-          <Text>Click to rate</Text>
-        </RatingContainer>
-        <Label htmlFor='review'>Product review</Label>
-        <TextArea
-          id='review'
-          name='review'
-          onChange={(e) => setReview(e.target.value)}
-          placeholder='Example: Since i bought this a month ago, it has been used a lot. What i like best/what is worst about this product is ...'
-        ></TextArea>
-        <Agreement>
-          <Input id='terms' type='radio' />
-          <Label htmlFor='terms'>
-            I accept the <Link href='#' passHref>terms and conditions</Link>
-          </Label>
-        </Agreement>
-        <Information>
-          You will be able to receive emails in connection with this review (eg if others comment on your review).
-          All emails contain the option to unsubscribe. We can use the text and star rating
-          from your review in other marketting.
-        </Information>
-        <Button
-          type='button'
-          onClick={handleClick}
-        >
-          Submit product review
-        </Button>
-      </Wrapper>
+            Submit product review
+          </Button>
+        </Wrapper>
+      </Container>
     </Overlay>
   );
 }
