@@ -47,93 +47,95 @@ const CartModal = ({ isModalOpen, closeModal }) => {
       type={isModalOpen ? 'show' : ''}
       onClick={closeModalHandler}
     >
-      <Wrapper>
-        <ButtonContainer>
-          <CloseButton type='button' onClick={() => closeModal(false)}>
-            <CloseIcon />
-          </CloseButton>
-        </ButtonContainer>
-        <ImageContainer>
-          <Image src='/img/img-9.jpg' width={320} height={200} alt='' />
-        </ImageContainer>
-        <ProductContainer>
-          <ProductName>The Stanley Rain Jacket in Black</ProductName>
-          <PriceContainer>
-            <ProductPrice>
+      <Container>
+        <Wrapper>
+          <ButtonContainer>
+            <CloseButton type='button' onClick={() => closeModal(false)}>
+              <CloseIcon />
+            </CloseButton>
+          </ButtonContainer>
+          <ImageContainer>
+            <Image src='/img/img-9.jpg' width={320} height={200} alt='' />
+          </ImageContainer>
+          <ProductContainer>
+            <ProductName>The Stanley Rain Jacket in Black</ProductName>
+            <PriceContainer>
+              <ProductPrice>
+                <NumericFormat
+                  value='99.99'
+                  displayType={'text'}
+                  thousandSeparator={true}
+                  prefix={'$'}
+                />
+              </ProductPrice>
+              <PriceDiscount>-22%</PriceDiscount>
+            </PriceContainer>
+            <SalePrice>
               <NumericFormat
-                value='99.99'
+                value='69.99'
                 displayType={'text'}
                 thousandSeparator={true}
                 prefix={'$'}
               />
-            </ProductPrice>
-            <PriceDiscount>-22%</PriceDiscount>
-          </PriceContainer>
-          <SalePrice>
-            <NumericFormat
-              value='69.99'
-              displayType={'text'}
-              thousandSeparator={true}
-              prefix={'$'}
-            />
-          </SalePrice>
-          <Hr />
-          <ColorContainer>
-            <ProductColor>Color</ProductColor>
-            <ColorWrapper>
-              {colors.map((color, index) => {
-                return (
-                  <Color
-                    key={index}
-                    color={color}
-                    type='button'
-                    selected={color === isSelected}
-                    onClick={() => handleColor(color)}
-                  >
-                    &nbsp;
-                  </Color>
-                );
-              })}
-            </ColorWrapper>
-          </ColorContainer>
-          <SizeWrapper>
-            <SizeHeading>Select a size</SizeHeading>
-            <SizeContainer>
-              {sizes.map((size, index) => {
-                return (
-                  <SelectSize
-                    key={index}
-                    type='button'
-                    bcg={selectedSize === size}
-                    onClick={() => handleSize(size)}
-                  >
-                    {size}
-                  </SelectSize>
-                );
-              })}
-            </SizeContainer>
+            </SalePrice>
             <Hr />
-            <AddContainer>
-              <AmountHeading>Quantity</AmountHeading>
-              <AmountContainer>
-                <AddButton
-                  type='button'
-                  disabled={quantity <= 1}
-                  onClick={() => handleQuantity('dec')}
-                >
-                  <FontAwesomeIcon icon={faMinus} />
-                </AddButton>
-                <Amount>{quantity}</Amount>
-                <AddButton type='button' onClick={() => handleQuantity('inc')}>
-                  <FontAwesomeIcon icon={faPlus} />
-                </AddButton>
-              </AmountContainer>
-            </AddContainer>
-            <Hr />
-            <Button type='button' onClick={handleClick}>Add to cart</Button>
-          </SizeWrapper>
-        </ProductContainer>
-      </Wrapper>
+            <ColorContainer>
+              <ProductColor>Color</ProductColor>
+              <ColorWrapper>
+                {colors.map((color, index) => {
+                  return (
+                    <Color
+                      key={index}
+                      color={color}
+                      type='button'
+                      selected={color === isSelected}
+                      onClick={() => handleColor(color)}
+                    >
+                      &nbsp;
+                    </Color>
+                  );
+                })}
+              </ColorWrapper>
+            </ColorContainer>
+            <SizeWrapper>
+              <SizeHeading>Select a size</SizeHeading>
+              <SizeContainer>
+                {sizes.map((size, index) => {
+                  return (
+                    <SelectSize
+                      key={index}
+                      type='button'
+                      bcg={selectedSize === size}
+                      onClick={() => handleSize(size)}
+                    >
+                      {size}
+                    </SelectSize>
+                  );
+                })}
+              </SizeContainer>
+              <Hr />
+              <AddContainer>
+                <AmountHeading>Quantity</AmountHeading>
+                <AmountContainer>
+                  <AddButton
+                    type='button'
+                    disabled={quantity <= 1}
+                    onClick={() => handleQuantity('dec')}
+                  >
+                    <FontAwesomeIcon icon={faMinus} />
+                  </AddButton>
+                  <Amount>{quantity}</Amount>
+                  <AddButton type='button' onClick={() => handleQuantity('inc')}>
+                    <FontAwesomeIcon icon={faPlus} />
+                  </AddButton>
+                </AmountContainer>
+              </AddContainer>
+              <Hr />
+              <Button type='button' onClick={handleClick}>Add to cart</Button>
+            </SizeWrapper>
+          </ProductContainer>
+        </Wrapper>
+      </Container>
     </Overlay>
   );
 }
