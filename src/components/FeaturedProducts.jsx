@@ -32,6 +32,7 @@ const FeaturedProducts = () => {
       <CartModal
         isModalOpen={isModalOpen}
         closeModal={setIsModalOpen}
+        product={isSelectedProduct}
       />
     </Container>
   );
