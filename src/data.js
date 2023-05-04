@@ -915,6 +915,8 @@ export const reviews = [
     },
     rating: 5,
     review: 'Gorgeous design! Even more responsive than the previous version. A pleasure to use!',
+    createdAt: '2023-02-02T16:43:48.757Z',
+    updatedAt: '2023-02-02T16:43:48.757Z',
   },
   {
     id: 2,
@@ -923,6 +925,8 @@ export const reviews = [
     },
     rating: 4,
     review: 'The device has a clean design, and the metal housing feels sturdy in my hands. Soft rounded corners make it a pleasure to look at.',
+    createdAt: '2023-01-02T17:57:18.357Z',
+    updatedAt: '2023-01-02T17:57:18.357Z',
   },
 ];
 
