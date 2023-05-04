@@ -23,7 +23,7 @@ const WishLists = () => {
     return (
       <Container onMouseOver={() => dispatch(closeSubmenu())}>
         <Wrapper>
-          <Text>Your wishlist is current empty!</Text>
+          <Text>Your wishlist is currently empty!</Text>
         </Wrapper>
       </Container>
     );
