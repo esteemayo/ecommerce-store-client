@@ -6,6 +6,7 @@ import CartModal from './CartModal';
 
 const ProductList = ({ products }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isSelectedProduct, setIsSelectedProduct] = useState(null);
 
   return (
     <Container>
