@@ -22,6 +22,7 @@ const ProductList = ({ products }) => {
       <CartModal
         isModalOpen={isModalOpen}
         closeModal={setIsModalOpen}
+        product={isSelectedProduct}
       />
     </Container>
   );
