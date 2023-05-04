@@ -48,7 +48,7 @@ const Reviews = ({ reviews }) => {
               </ReviewButtonWrapper>
               <ReviewCardContainer>
                 {reviews.map((item) => {
-                  return <ReviewCard key={item.id} {...item} />
+                  return <ReviewCard key={item.id} {...item} />;
                 })}
               </ReviewCardContainer>
             </>
