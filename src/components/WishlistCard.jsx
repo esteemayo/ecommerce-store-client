@@ -27,13 +27,13 @@ const WishlistCard = ({ wishlists, onDelete, openModal, setIsSelectedProduct }) 
   return (
     <Container>
       {wishlists.map((wishlist) => {
-        const { id, name, desc, image, price } = wishlist;
+        const { id, name, desc, images, price } = wishlist;
         return (
           <Wrapper key={id}>
             <Left>
               <ImageContainer>
                 <Image
-                  src={image ? image[0] : '/img/img-1.jpg'}
+                  src={images ? images[0] : '/img/img-1.jpg'}
                   width={80}
                   height={80}
                   alt=''
