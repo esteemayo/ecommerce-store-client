@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import StarRating from './StarRating';
 
-const ReviewCard = ({ user, rating, review }) => {
+const ReviewCard = ({ user, rating, review, createdAt }) => {
   return (
     <Container>
       <Wrapper>
