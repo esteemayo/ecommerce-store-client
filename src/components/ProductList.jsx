@@ -12,8 +12,8 @@ const ProductList = ({ products }) => {
       {products.map((product) => {
         return (
           <Product
-            {...product}
             key={product.id}
+            product={product}
             openModal={setIsModalOpen}
           />
         );
