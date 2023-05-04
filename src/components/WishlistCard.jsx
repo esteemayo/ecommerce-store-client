@@ -41,7 +41,7 @@ const WishlistCard = ({ wishlists, onDelete, openModal, setIsSelectedProduct }) 
                     {name}
                   </Link>
                 </ProductName>
-                <Description>{desc}</Description>
+                <Description>{excerpts(desc, 120)}</Description>
               </OverviewContainer>
             </Left>
             <Right>
