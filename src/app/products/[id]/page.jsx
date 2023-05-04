@@ -12,7 +12,6 @@ import { faArrowLeft, faArrowRight, faMinus, faPlus } from '@fortawesome/free-so
 import Recommendation from '@/components/Recommendation';
 import Reviews from '@/components/Reviews';
 import StarRating from '@/components/StarRating';
-import { reviews } from '@/data';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
 const SingleProduct = () => {
