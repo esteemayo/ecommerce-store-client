@@ -10,7 +10,7 @@ const ReviewModal = ({ isModalOpen, setIsModalOpen }) => {
   const [review, setReview] = useState(null);
 
   const handleCloseModal = (e) => {
-    if (e.target.classList.contains('container')) {
+    if (e.target.classList.contains('overlay')) {
       setIsModalOpen(false);
     }
   };
@@ -21,7 +21,7 @@ const ReviewModal = ({ isModalOpen, setIsModalOpen }) => {
 
   return (
     <Overlay
-      className='container'
+      className='overlay'
       type={isModalOpen ? 'show' : ''}
       onClick={handleCloseModal}
     >
