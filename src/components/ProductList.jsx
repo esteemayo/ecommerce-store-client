@@ -16,6 +16,7 @@ const ProductList = ({ products }) => {
             key={product.id}
             product={product}
             openModal={setIsModalOpen}
+            setIsSelectedProduct={setIsSelectedProduct}
           />
         );
       })}
