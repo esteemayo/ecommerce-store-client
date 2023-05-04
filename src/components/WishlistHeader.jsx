@@ -34,7 +34,7 @@ const Heading = styled.h1`
   font-size: 1.8rem;
 `;
 
-const Date = styled.time`
+const DateTime = styled.time`
   font-size: 1.5rem;
   color: #999;
 `;
