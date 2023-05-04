@@ -13,9 +13,6 @@ const CartModal = ({ product, isModalOpen, closeModal }) => {
   const [isSelected, setIsSelected] = useState(null);
   const [selectedSize, setSelectedSize] = useState(null);
 
-  const colors = ['black', 'pink', 'crimson'];
-  const sizes = ['XS', 'S', 'M', 'L', 'XL', 'XXL'];
-
   const closeModalHandler = (e) => {
     if (e.target.classList.contains('overlay')) {
       closeModal(false);
