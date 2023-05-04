@@ -57,6 +57,7 @@ const Overlay = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
+  display: ${({ type }) => type === 'show' ? 'block' : 'none'};
   visibility: ${({ type }) => type === 'show' ? 'visible' : 'hidden'};
   opacity: ${({ type }) => type === 'show' ? 1 : 0};
   transform: scale(${({ type }) => type === 'show' ? 1 : 0});
