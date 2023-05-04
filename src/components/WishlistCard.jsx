@@ -27,7 +27,7 @@ const WishlistCard = ({ wishlists, onDelete, openModal, setIsSelectedProduct }) 
           <Wrapper key={id}>
             <Left>
               <ImageContainer>
-                <Image src={image} width={80} height={80} alt='' />
+                <Image src={image[0]} width={80} height={80} alt='' />
               </ImageContainer>
               <OverviewContainer>
                 <ProductName>
