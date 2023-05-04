@@ -25,7 +25,7 @@ const DeleteModal = ({ openModal, closeModal, onDelete, wishlistId }) => {
   };
 
   return (
-    <Container
+    <Overlay
       className='container'
       onClick={closeModalHandler}
       type={openModal ? 'show' : ''}
@@ -41,11 +41,11 @@ const DeleteModal = ({ openModal, closeModal, onDelete, wishlistId }) => {
           <DeleteButton type='button' onClick={() => deleteWishlistHandler(wishlistId)}>Remove</DeleteButton>
         </ButtonContainer>
       </Wrapper>
-    </Container>
+    </Overlay>
   );
 }
 
-const Container = styled.section`
+const Overlay = styled.section`
   width: 100vw;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
