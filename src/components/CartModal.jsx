@@ -15,7 +15,7 @@ const CartModal = ({ product, isModalOpen, closeModal, setIsSelectedProduct }) =
 
   const closeModalHandler = (e) => {
     if (e.target.classList.contains('overlay')) {
-      closeModal(false);
+      handleCloseModal();
     }
   };
 
