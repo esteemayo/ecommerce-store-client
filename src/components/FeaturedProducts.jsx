@@ -34,6 +34,7 @@ const FeaturedProducts = () => {
         isModalOpen={isModalOpen}
         closeModal={setIsModalOpen}
         product={isSelectedProduct}
+        setIsSelectedProduct={setIsSelectedProduct}
       />
     </Container>
   );
