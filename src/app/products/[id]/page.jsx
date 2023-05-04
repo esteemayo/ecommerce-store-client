@@ -11,8 +11,8 @@ import { faArrowLeft, faArrowRight, faMinus, faPlus } from '@fortawesome/free-so
 
 import Recommendation from '@/components/Recommendation';
 import Reviews from '@/components/Reviews';
-import StarRating from '@/components/StarRating';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
+import StarRating from '@/components/StarRating';
 
 const SingleProduct = () => {
   const dispatch = useDispatch();
