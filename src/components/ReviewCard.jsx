@@ -6,6 +6,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import StarRating from './StarRating';
 
 const ReviewCard = ({ user, rating, review, createdAt }) => {
+  const options = { month: 'long', day: 'numeric', year: 'numeric' };
+
   return (
     <Container>
       <Wrapper>
