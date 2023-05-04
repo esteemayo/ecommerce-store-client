@@ -14,10 +14,9 @@ const WishlistCard = ({ wishlists, onDelete, openModal, setIsSelectedProduct }) 
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isSelectedId, setIsSelectedId] = useState(null);
 
-  const handleOpenModal = (wishlist) => {
-    setIsSelectedId(wishlist.id);
+  const handleOpenModal = (id) => {
+    setIsSelectedId(id);
     setIsModalOpen(true);
-    setIsSelectedProduct(wishlist);
   };
 
   return (
@@ -60,7 +59,7 @@ const WishlistCard = ({ wishlists, onDelete, openModal, setIsSelectedProduct }) 
                 </CartButton>
               </CartContainer>
             </Right>
-            <DeleteButton type='button' onClick={() => handleOpenModal(wishlist)}>
+            <DeleteButton type='button' onClick={() => handleOpenModal(id)}>
               <CloseIcon />
             </DeleteButton>
           </Wrapper>
