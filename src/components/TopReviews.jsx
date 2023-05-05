@@ -67,7 +67,9 @@ const Container = styled.section`
 `;
 
 const HeadingContainer = styled.div`
-  
+  width: 100%;
+  max-width: 120rem;
+  margin: 0 auto;
 `;
 
 const Heading = styled.h1`
