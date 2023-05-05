@@ -33,7 +33,7 @@ const Reviews = () => {
       );
     }
 
-    if (sort === 'highest') {
+    if (sort === 'highest rating') {
       setReviews((prev) =>
         [...prev].sort((a, b) => b.rating - a.rating)
       );
