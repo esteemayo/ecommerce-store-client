@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Header = () => {
   return (
-    <div>Header</div>
+    <Heading>Header</Heading>
   );
 }
 
