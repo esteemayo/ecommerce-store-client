@@ -162,7 +162,10 @@ const TotalReviews = styled.span`
 `;
 
 const RewiewWrapper = styled.div`
-  
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 3rem;
 `;
 
 const FilterWrapper = styled.div`
