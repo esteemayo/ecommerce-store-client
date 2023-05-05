@@ -13,7 +13,13 @@ const Reviews = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isFilterOpen, setIsFilterOpen] = useState(false);
 
-  useEffect(() => { })
+  useEffect(() => {
+    if (sort === 'newest') {
+      setReviews((prev) =>
+        [...prev].sort((a, b) => a.createdAt - b.createdAt)
+      );
+    }
+  }, [sort]);
 
   return (
     <Container id='reviews'>
@@ -35,7 +41,7 @@ const Reviews = () => {
             </FilterContainer>
             <FilterList type={isFilterOpen ? 'show' : ''}>
               <ListCategory onClick={() => setSort('newest')}>Newest</ListCategory>
-              <ListCategory onClick={() => setSort('desc')}>Highest rating</ListCategory>
+              <ListCategory onClick={() => setSort('highest')}>Highest rating</ListCategory>
               <ListCategory onClick={() => setSort('asc')}>Lowest rating</ListCategory>
             </FilterList>
           </FilterWrapper>
