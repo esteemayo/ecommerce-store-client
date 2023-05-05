@@ -31,7 +31,6 @@ const TopReviews = () => {
 
   return (
     <Container>
-      <Heading>You didn&apos;t hear it from us</Heading>
       <HeadingContainer>
         <Header title='You didn&apos;t hear it from us' />
       </HeadingContainer>
