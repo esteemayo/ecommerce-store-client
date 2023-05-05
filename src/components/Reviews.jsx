@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
 import StarRating from './StarRating';
@@ -12,6 +12,8 @@ const Reviews = () => {
   const [reviews, setReviews] = useState(reviewItems);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isFilterOpen, setIsFilterOpen] = useState(false);
+
+  useEffect(() => { })
 
   return (
     <Container id='reviews'>
