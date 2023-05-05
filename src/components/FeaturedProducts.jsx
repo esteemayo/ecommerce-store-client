@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import Product from './Product';
 import { storeProducts } from '@/data';
+import Header from './Header';
 import CartModal from './CartModal';
 
 const FeaturedProducts = () => {
