@@ -13,7 +13,7 @@ const Reviews = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isFilterOpen, setIsFilterOpen] = useState(false);
 
-  const handleCloseFilter = (e) => {
+  const handleCloseFilter = () => {
     const reviewsEl = document.querySelector('.reviews');
     const filterEl = document.querySelector('.filter-wrapper');
 
