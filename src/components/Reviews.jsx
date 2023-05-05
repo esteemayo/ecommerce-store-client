@@ -26,6 +26,12 @@ const Reviews = () => {
     };
   };
 
+  const getSort = (sort) => {
+    if (sort === 'newest') return 'newest';
+    if (sort === 'highest') return 'highest rating';
+    if (sort === 'lowest') return 'lowest rating';
+  };
+
   useEffect(() => {
     if (sort === 'newest') {
       setReviews((prev) =>
