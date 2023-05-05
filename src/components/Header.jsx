@@ -25,4 +25,8 @@ const Heading = styled.h1`
   }
 `;
 
+Header.propTypes = {
+  title: PropTypes.string.isRequired,
+};
+
 export default Header;
