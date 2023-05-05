@@ -12,6 +12,8 @@ const Heading = styled.h1`
   font-weight: 600;
   color: var(--clr-secondary-green);
   margin-bottom: 7rem;
+  display: flex;
+  flex-direction: column;
 `;
 
 export default Header;
