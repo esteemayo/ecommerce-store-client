@@ -159,6 +159,10 @@ const TotalReviews = styled.span`
   line-height: 1.8rem;
 `;
 
+const RewiewContainer = styled.div`
+  
+`;
+
 const FilterWrapper = styled.div`
   position: relative;
   display: flex;
