@@ -14,9 +14,16 @@ const Reviews = () => {
   const [isFilterOpen, setIsFilterOpen] = useState(false);
 
   const handleCloseFilter = (e) => {
-    if (!e.target.classList.contains('filter-wrapper')) {
-      setIsFilterOpen(false);
-    }
+    const reviewsEl = document.querySelector('.reviews');
+    const filterEl = document.querySelector('.filter-wrapper');
+
+    reviewsEl.addEventListener('click', () => setIsFilterOpen(false));
+    filterEl.addEventListener('click', () => setIsFilterOpen(true));
+
+    return () => {
+      reviewsEl.removeEventListener('click', () => setIsFilterOpen(false));
+      filterEl.removeEventListener('click', () => setIsFilterOpen(true));
+    };
   };
 
   useEffect(() => {
@@ -40,7 +47,7 @@ const Reviews = () => {
   }, [sort]);
 
   return (
-    <Container id='reviews' onClick={handleCloseFilter}>
+    <Container id='reviews' className='reviews' onClick={handleCloseFilter}>
       <Wrapper>
         <Heading>Reviews</Heading>
         <ReviewContainer>
