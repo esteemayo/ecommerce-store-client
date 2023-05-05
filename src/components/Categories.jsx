@@ -5,7 +5,7 @@ import Header from './Header';
 const Categories = () => {
   return (
     <Container>
-      <Heading>Shop by category</Heading>
+      <Header title='Shop by category' />
       <Category />
     </Container>
   );
