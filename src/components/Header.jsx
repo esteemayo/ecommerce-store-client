@@ -6,4 +6,8 @@ const Header = () => {
   );
 }
 
+const Heading = styled.h1`
+  
+`;
+
 export default Header;
