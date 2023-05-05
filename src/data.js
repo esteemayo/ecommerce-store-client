@@ -915,8 +915,8 @@ export const reviewItems = [
     },
     rating: 5,
     review: 'Gorgeous design! Even more responsive than the previous version. A pleasure to use!',
-    createdAt: '2023-02-02T16:43:48.757Z',
-    updatedAt: '2023-02-02T16:43:48.757Z',
+    createdAt: '2023-02-03T01:49:14.085+00:00',
+    updatedAt: '2023-02-03T01:49:14.085+00:00',
   },
   {
     id: 2,
