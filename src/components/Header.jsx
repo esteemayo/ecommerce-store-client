@@ -13,6 +13,11 @@ const Heading = styled.h1`
   margin-bottom: 7rem;
   display: flex;
   flex-direction: column;
+
+  &::after {
+    content: '';
+    display: inline-block;
+  }
 `;
 
 export default Header;
