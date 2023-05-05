@@ -7,7 +7,6 @@ const Header = ({ title }) => {
 }
 
 const Heading = styled.h1`
-  display: inline-block;
   font-family: inherit;
   font-weight: 600;
   color: var(--clr-secondary-green);
