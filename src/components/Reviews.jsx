@@ -44,6 +44,14 @@ const Reviews = () => {
             <TotalReviews>{reviews.length} reviews</TotalReviews>
           </Ratings>
           <FilterWrapper>
+            <ReviewButtonWrapper>
+              <ReviewButton
+                type='button'
+                onClick={() => setIsModalOpen(true)}
+              >
+                Leave a review
+              </ReviewButton>
+            </ReviewButtonWrapper>
             <FilterContainer onClick={() => setIsFilterOpen(!isFilterOpen)}>
               <Filter>Sort:</Filter>
               <FilterText>Select</FilterText>
@@ -61,14 +69,14 @@ const Reviews = () => {
         <ReviewsWrapper>
           {reviews.length > 0 ? (
             <>
-              <ReviewButtonWrapper>
+              {/* <ReviewButtonWrapper>
                 <ReviewButton
                   type='button'
                   onClick={() => setIsModalOpen(true)}
                 >
                   Leave a review
                 </ReviewButton>
-              </ReviewButtonWrapper>
+              </ReviewButtonWrapper> */}
               <ReviewCardContainer>
                 {reviews.map((item) => {
                   return <ReviewCard key={item.id} {...item} />;
@@ -258,7 +266,7 @@ const Message = styled.span`
 `;
 
 const ReviewButtonWrapper = styled.div`
-  position: absolute;
+  /* position: absolute; */
   top: 1rem;
 `;
 
