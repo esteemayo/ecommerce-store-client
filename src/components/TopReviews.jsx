@@ -32,6 +32,7 @@ const TopReviews = () => {
   return (
     <Container>
       <Heading>You didn&apos;t hear it from us</Heading>
+      <Header title='You didn&apos;t hear it from us' />
       <Wrapper>
         <IconButton
           direction='left'
