@@ -71,14 +71,6 @@ const Reviews = () => {
         <ReviewsWrapper>
           {reviews.length > 0 ? (
             <>
-              {/* <ReviewButtonWrapper>
-                <ReviewButton
-                  type='button'
-                  onClick={() => setIsModalOpen(true)}
-                >
-                  Leave a review
-                </ReviewButton>
-              </ReviewButtonWrapper> */}
               <ReviewCardContainer>
                 {reviews.map((item) => {
                   return <ReviewCard key={item.id} {...item} />;
