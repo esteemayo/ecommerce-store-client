@@ -64,6 +64,10 @@ const Container = styled.section`
   background-color: #f4f8f7;
 `;
 
+const HeadingContainer = styled.div`
+  
+`;
+
 const Heading = styled.h1`
   width: 100%;
   max-width: 120rem;
