@@ -34,7 +34,7 @@ const Reviews = () => {
             <FilterList type={isFilterOpen ? 'show' : ''}>
               <ListCategory onClick={() => setSort('newest')}>Newest</ListCategory>
               <ListCategory onClick={() => setSort('desc')}>Highest rating</ListCategory>
-              <ListCategory>Lowest rating</ListCategory>
+              <ListCategory onClick={() => setSort('asc')}>Lowest rating</ListCategory>
             </FilterList>
           </FilterWrapper>
         </ReviewContainer>
