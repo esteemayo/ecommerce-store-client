@@ -19,6 +19,12 @@ const Reviews = () => {
         [...prev].sort((a, b) => a.createdAt - b.createdAt)
       );
     }
+
+    if (sort === 'highest') {
+      setReviews((prev) =>
+        [...prev].sort((a, b) => b.rating - a.rating)
+      );
+    }
   }, [sort]);
 
   return (
