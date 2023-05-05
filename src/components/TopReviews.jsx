@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { topReviews } from '@/data';
 import ReviewItem from './ReviewItem';
+import Header from './Header';
 
 const TopReviews = () => {
   const reviewRef = useRef();
