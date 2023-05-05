@@ -14,7 +14,7 @@ const FeaturedProducts = () => {
   return (
     <Container>
       <Wrapper>
-        <Heading>Featured products</Heading>
+        <Header title='Featured products' />
         <ProductsContainer>
           {featuredProducts
             .filter((product) => product.featured === true)
