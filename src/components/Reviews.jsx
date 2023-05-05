@@ -27,7 +27,7 @@ const Reviews = () => {
   };
 
   useEffect(() => {
-    if (sort === 'newest') {
+    if (sort === 'newest rating') {
       setReviews((prev) =>
         [...prev].sort((a, b) => a.createdAt - b.createdAt)
       );
