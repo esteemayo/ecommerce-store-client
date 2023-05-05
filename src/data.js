@@ -925,8 +925,8 @@ export const reviewItems = [
     },
     rating: 4,
     review: 'The device has a clean design, and the metal housing feels sturdy in my hands. Soft rounded corners make it a pleasure to look at.',
-    createdAt: '2023-01-02T17:57:18.357Z',
-    updatedAt: '2023-01-02T17:57:18.357Z',
+    createdAt: '2023-02-06T02:14:11.026+00:00',
+    updatedAt: '2023-02-06T02:14:11.026+00:00',
   },
 ];
 
