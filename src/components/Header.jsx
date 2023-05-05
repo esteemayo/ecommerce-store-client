@@ -19,6 +19,8 @@ const Heading = styled.h1`
     display: inline-block;
     width: 4rem;
     height: 3px;
+    background-color: var(--clr-secondary-green);
+    border-radius: 3px;
   }
 `;
 
