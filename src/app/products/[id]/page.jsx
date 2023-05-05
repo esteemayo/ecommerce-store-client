@@ -254,7 +254,7 @@ const SingleProduct = () => {
         </ProductContainer>
         <Line />
         <Recommendation />
-        <Reviews reviews={reviews} />
+        <Reviews />
         <ImageOverlay type={isOpen ? 'show' : ''}>
           <CloseButton type='button' onClick={() => setIsOpen(false)}>
             <CloseIcon />
