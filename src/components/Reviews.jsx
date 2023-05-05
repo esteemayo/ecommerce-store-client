@@ -8,6 +8,7 @@ import { reviewItems } from '@/data';
 import ReviewCard from './ReviewCard';
 
 const Reviews = () => {
+  const [sort, setSort] = useState('newest');
   const [reviews, setReviews] = useState(reviewItems);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isFilterOpen, setIsFilterOpen] = useState(false);
