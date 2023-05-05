@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 
+import Header from './Header';
 import Category from './Category';
 
 const Categories = () => {
