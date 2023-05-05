@@ -40,7 +40,7 @@ const Reviews = () => {
   }, [sort]);
 
   return (
-    <Container id='reviews'>
+    <Container id='reviews' onClick={handleCloseFilter}>
       <Wrapper>
         <Heading>Reviews</Heading>
         <ReviewContainer>
@@ -59,7 +59,7 @@ const Reviews = () => {
               </ReviewButton>
             </ReviewButtonWrapper>
             <FilterWrapper className='filter-wrapper'>
-              <FilterContainer onClick={() => setIsFilterOpen(!isFilterOpen)}>
+              <FilterContainer className='filter-container' onClick={() => setIsFilterOpen(!isFilterOpen)}>
                 <Filter>Sort:</Filter>
                 <FilterText>Select</FilterText>
                 <FilterIcon>
