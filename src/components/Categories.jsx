@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+
 import Category from './Category';
 import Header from './Header';
 
