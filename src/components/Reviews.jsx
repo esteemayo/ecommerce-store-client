@@ -13,6 +13,12 @@ const Reviews = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isFilterOpen, setIsFilterOpen] = useState(false);
 
+  const handleCloseFilter = (e) => {
+    if (!e.target.classList.contains('filter-wrapper')) {
+      setIsFilterOpen(false);
+    }
+  };
+
   useEffect(() => {
     if (sort === 'newest') {
       setReviews((prev) =>
