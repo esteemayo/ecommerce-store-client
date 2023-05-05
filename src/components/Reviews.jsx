@@ -43,7 +43,7 @@ const Reviews = () => {
             <StarRating value={0} />
             <TotalReviews>{reviews.length} reviews</TotalReviews>
           </Ratings>
-          <RewiewWrapper>
+          <Rewiews>
             <ReviewButtonWrapper>
               <ReviewButton
                 type='button'
@@ -66,7 +66,7 @@ const Reviews = () => {
                 <ListCategory onClick={() => setSort('lowest')}>Lowest rating</ListCategory>
               </FilterList>
             </FilterWrapper>
-          </RewiewWrapper>
+          </Rewiews>
         </ReviewContainer>
         <ReviewsWrapper>
           {reviews.length > 0 ? (
@@ -151,7 +151,7 @@ const TotalReviews = styled.span`
   line-height: 1.8rem;
 `;
 
-const RewiewWrapper = styled.div`
+const Rewiews = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
