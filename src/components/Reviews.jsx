@@ -44,15 +44,15 @@ const Reviews = () => {
             <TotalReviews>{reviews.length} reviews</TotalReviews>
           </Ratings>
           <RewiewWrapper>
+            <ReviewButtonWrapper>
+              <ReviewButton
+                type='button'
+                onClick={() => setIsModalOpen(true)}
+              >
+                Leave a review
+              </ReviewButton>
+            </ReviewButtonWrapper>
             <FilterWrapper>
-              <ReviewButtonWrapper>
-                <ReviewButton
-                  type='button'
-                  onClick={() => setIsModalOpen(true)}
-                >
-                  Leave a review
-                </ReviewButton>
-              </ReviewButtonWrapper>
               <FilterContainer onClick={() => setIsFilterOpen(!isFilterOpen)}>
                 <Filter>Sort:</Filter>
                 <FilterText>Select</FilterText>
