@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
-const Header = () => {
+const Header = ({ title }) => {
   return (
-    <Heading>Header</Heading>
+    <Heading>{title}</Heading>
   );
 }
 
