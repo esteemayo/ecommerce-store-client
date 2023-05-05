@@ -27,13 +27,13 @@ const Reviews = () => {
   };
 
   useEffect(() => {
-    if (sort === 'newest rating') {
+    if (sort === 'newest') {
       setReviews((prev) =>
         [...prev].sort((a, b) => a.createdAt - b.createdAt)
       );
     }
 
-    if (sort === 'highest rating') {
+    if (sort === 'highest') {
       setReviews((prev) =>
         [...prev].sort((a, b) => b.rating - a.rating)
       );
