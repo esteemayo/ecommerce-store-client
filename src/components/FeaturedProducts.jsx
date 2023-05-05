@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Product from './Product';
 import { storeProducts } from '@/data';
 import CartModal from './CartModal';
+import Header from './Header';
 
 const FeaturedProducts = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
