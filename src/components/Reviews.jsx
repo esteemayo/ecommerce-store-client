@@ -43,28 +43,30 @@ const Reviews = () => {
             <StarRating value={0} />
             <TotalReviews>{reviews.length} reviews</TotalReviews>
           </Ratings>
-          <FilterWrapper>
-            <ReviewButtonWrapper>
-              <ReviewButton
-                type='button'
-                onClick={() => setIsModalOpen(true)}
-              >
-                Leave a review
-              </ReviewButton>
-            </ReviewButtonWrapper>
-            <FilterContainer onClick={() => setIsFilterOpen(!isFilterOpen)}>
-              <Filter>Sort:</Filter>
-              <FilterText>Select</FilterText>
-              <FilterIcon>
-                <ArrowDropDownIcon />
-              </FilterIcon>
-            </FilterContainer>
-            <FilterList type={isFilterOpen ? 'show' : ''}>
-              <ListCategory onClick={() => setSort('newest')}>Newest</ListCategory>
-              <ListCategory onClick={() => setSort('highest')}>Highest rating</ListCategory>
-              <ListCategory onClick={() => setSort('lowest')}>Lowest rating</ListCategory>
-            </FilterList>
-          </FilterWrapper>
+          <RewiewWrapper>
+            <FilterWrapper>
+              <ReviewButtonWrapper>
+                <ReviewButton
+                  type='button'
+                  onClick={() => setIsModalOpen(true)}
+                >
+                  Leave a review
+                </ReviewButton>
+              </ReviewButtonWrapper>
+              <FilterContainer onClick={() => setIsFilterOpen(!isFilterOpen)}>
+                <Filter>Sort:</Filter>
+                <FilterText>Select</FilterText>
+                <FilterIcon>
+                  <ArrowDropDownIcon />
+                </FilterIcon>
+              </FilterContainer>
+              <FilterList type={isFilterOpen ? 'show' : ''}>
+                <ListCategory onClick={() => setSort('newest')}>Newest</ListCategory>
+                <ListCategory onClick={() => setSort('highest')}>Highest rating</ListCategory>
+                <ListCategory onClick={() => setSort('lowest')}>Lowest rating</ListCategory>
+              </FilterList>
+            </FilterWrapper>
+          </RewiewWrapper>
         </ReviewContainer>
         <ReviewsWrapper>
           {reviews.length > 0 ? (
@@ -159,7 +161,7 @@ const TotalReviews = styled.span`
   line-height: 1.8rem;
 `;
 
-const RewiewContainer = styled.div`
+const RewiewWrapper = styled.div`
   
 `;
 
