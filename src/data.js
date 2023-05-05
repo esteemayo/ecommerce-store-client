@@ -908,7 +908,7 @@ export const topReviews = [
 
 export const reviewItems = [
   {
-    id: '63dc681a546c3aa1e0d114b6',
+    id: 1,
     user: {
       name: 'Jesse hopkins',
       img: '/img/user-1.jpg',
