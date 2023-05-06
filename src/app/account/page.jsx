@@ -13,7 +13,7 @@ const Account = () => {
           <AccountWrapper>
             <AccountInfo>
               <Left>
-                <FormGroup>
+                <InputContainer>
                   <Label htmlFor='name'>Your name</Label>
                   <Input
                     type='text'
@@ -21,8 +21,8 @@ const Account = () => {
                     name='name'
                     placeholder='Name'
                   />
-                </FormGroup>
-                <FormGroup>
+                </InputContainer>
+                <InputContainer>
                   <Label htmlFor='email'>Your email</Label>
                   <Input
                     type='email'
@@ -30,8 +30,8 @@ const Account = () => {
                     name='email'
                     placeholder='Email'
                   />
-                </FormGroup>
-                <FormGroup>
+                </InputContainer>
+                <InputContainer>
                   <Label htmlFor='username'>Your username</Label>
                   <Input
                     type='text'
@@ -39,7 +39,7 @@ const Account = () => {
                     name='username'
                     placeholder='Username'
                   />
-                </FormGroup>
+                </InputContainer>
               </Left>
               <Right>
                 <AvatarContainer>
@@ -114,7 +114,7 @@ const Left = styled.div`
   flex: 2;
 `;
 
-const FormGroup = styled.div`
+const InputContainer = styled.div`
   display: flex;
   flex-direction: column;
 
