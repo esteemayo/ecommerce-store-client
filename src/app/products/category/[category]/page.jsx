@@ -1,6 +1,6 @@
 'use client';
 import styled from 'styled-components';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import { storeProducts } from '@/data';
 import ProductList from '@/components/ProductList';
