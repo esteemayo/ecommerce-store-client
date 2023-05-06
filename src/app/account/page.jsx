@@ -130,4 +130,8 @@ const DeleteContainer = styled.div`
   
 `;
 
+const DeleteHeader = styled.h2`
+  
+`;
+
 export default Account;
