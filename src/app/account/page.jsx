@@ -7,6 +7,9 @@ const Account = () => {
       <Wrapper>
         <Heading>Account settings</Heading>
         <HeadingText>Edit your name, avatar etc.</HeadingText>
+        <AccountWrapper>
+          
+        </AccountWrapper>
       </Wrapper>
     </Container>
   );
