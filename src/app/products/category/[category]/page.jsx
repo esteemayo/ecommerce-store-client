@@ -37,7 +37,7 @@ const ProductCategory = () => {
           <FilterRight>
             <Filter>
               <Label htmlFor='price'>Product price</Label>
-              <Select id='price' name='price'>
+              <Select id='price' name='price' onChange={(e) => setSort(e.target.value)}>
                 <Option value='newest'>Newest</Option>
                 <Option value='asc'>Price (asc)</Option>
                 <Option value='desc'>Price (desc)</Option>
