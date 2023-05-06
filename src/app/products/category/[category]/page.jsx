@@ -29,7 +29,12 @@ const ProductCategory = () => {
           </FilterLeft>
           <FilterRight>
             <Filter>
-
+              <Label htmlFor='price'>Product price</Label>
+              <Select id='price' name='price'>
+                <Option value='newest'>Newest</Option>
+                <Option value='asc'>Price (asc)</Option>
+                <Option value='desc'>Price (desc)</Option>
+              </Select>
             </Filter>
           </FilterRight>
         </FilterWrapper>
