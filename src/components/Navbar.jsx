@@ -279,6 +279,7 @@ const CartWrapper = styled.div`
     &:visited {
       text-decoration: none;
       color: var(--clr-white);
+      outline-color: var(--clr-primary-green);
     }
 
     &:active {
