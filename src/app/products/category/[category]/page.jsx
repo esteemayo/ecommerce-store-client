@@ -70,7 +70,7 @@ const ProductCategory = ({ params }) => {
   });
 
   return (
-    <Container>
+    <Container onMouseOver={() => dispatch(closeSubmenu())}>
       <FilterContainer>
         <FilterHeading>Filter by</FilterHeading>
         <FilterWrapper>
