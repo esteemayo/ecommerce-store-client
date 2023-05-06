@@ -10,9 +10,9 @@ const ProductCategory = () => {
 
   return (
     <Container>
-      <FilterWrapper>
+      <FilterContainer>
         <FilterHeading>Filter by</FilterHeading>
-      </FilterWrapper>
+      </FilterContainer>
       <ProductWrapper>
         <ProductList products={products} />
       </ProductWrapper>
@@ -26,7 +26,7 @@ const Container = styled.main`
   margin: 0 auto;
 `;
 
-const FilterWrapper = styled.section`
+const FilterContainer = styled.section`
   padding: 7rem 3rem;
   width: 100%;
 `;
