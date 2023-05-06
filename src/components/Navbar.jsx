@@ -271,7 +271,7 @@ const CartWrapper = styled.div`
 
     svg {
       font-size: 2.3rem;
-      fill: var(--clr-white);
+      fill: currentColor;
     }
   }
 `;
