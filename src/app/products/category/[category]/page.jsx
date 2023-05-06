@@ -17,7 +17,7 @@ const ProductCategory = () => {
             <Filter>
               <Label htmlFor='color'>Color</Label>
               <Select id='color' name='color'>
-
+                <Option>Blue</Option>
               </Select>
             </Filter>
           </FilterLeft>
