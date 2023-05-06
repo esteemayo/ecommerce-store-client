@@ -256,7 +256,10 @@ const LoginButton = styled.button`
 `;
 
 const CartWrapper = styled.div`
-  
+  svg {
+    font-size: 2.3rem;
+    fill: var(--clr-white);
+  }
 `;
 
 export default Navbar;
