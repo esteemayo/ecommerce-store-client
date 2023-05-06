@@ -10,9 +10,9 @@ const ProductCategory = () => {
 
   return (
     <Container>
-      <Wrapper>
+      <ProductWrapper>
         <ProductList products={products} />
-      </Wrapper>
+      </ProductWrapper>
     </Container>
   );
 }
@@ -23,7 +23,7 @@ const Container = styled.main`
   margin: 0 auto;
 `;
 
-const Wrapper = styled.div`
+const ProductWrapper = styled.div`
   width: 100%;
   padding: 8rem 0;
   display: flex;
