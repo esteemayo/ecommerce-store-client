@@ -13,7 +13,7 @@ const ProductCategory = () => {
       <FilterContainer>
         <FilterHeading>Filter by</FilterHeading>
         <FilterWrapper>
-          
+
         </FilterWrapper>
       </FilterContainer>
       <ProductWrapper>
@@ -42,6 +42,10 @@ const FilterHeading = styled.h1`
 `;
 
 const FilterWrapper = styled.div`
+
+`;
+
+const Filter = styled.div`
 
 `;
 
