@@ -20,6 +20,15 @@ const Account = () => {
                     placeholder='Name'
                   />
                 </FormGroup>
+                <FormGroup>
+                  <FormLabel htmlFor='email'>Your email</FormLabel>
+                  <FormInput
+                    type='email'
+                    id='email'
+                    name='email'
+                    placeholder='Email'
+                  />
+                </FormGroup>
               </Left>
               <Right>Right</Right>
             </Form>
