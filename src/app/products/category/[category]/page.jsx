@@ -66,6 +66,10 @@ const Filter = styled.div`
 
 `;
 
+const Label = styled.label`
+
+`;
+
 const ProductWrapper = styled.div`
   width: 100%;
   padding: 8rem 0;
