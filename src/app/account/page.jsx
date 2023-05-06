@@ -5,7 +5,7 @@ const Account = () => {
   return (
     <Container>
       <Wrapper>
-        Account
+        <Heading>Account settings</Heading>
       </Wrapper>
     </Container>
   );
