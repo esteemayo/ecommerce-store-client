@@ -47,7 +47,7 @@ const Account = () => {
               </Right>
             </Form>
             <DeleteContainer>
-
+              <DeleteHeader>Delete your account</DeleteHeader>
             </DeleteContainer>
           </AccountWrapper>
         </AccountContainer>
