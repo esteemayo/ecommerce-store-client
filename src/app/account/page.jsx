@@ -123,7 +123,8 @@ const FormGroup = styled.div`
 `;
 
 const FormLabel = styled.label`
-  
+  display: inline-block;
+  width: 15rem;
 `;
 
 const FormInput = styled.input`
