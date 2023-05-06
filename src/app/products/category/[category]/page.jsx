@@ -4,6 +4,7 @@ import { useState } from 'react';
 
 import { storeProducts } from '@/data';
 import ProductList from '@/components/ProductList';
+import { getUnique } from '@/utils';
 
 const ProductCategory = () => {
   const [sort, setSort] = useState('newest');
