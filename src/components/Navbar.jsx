@@ -285,6 +285,9 @@ const CartTotal = styled.span`
   background-color: #89a8a0;
   color: var(--clr-white);
   border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
 `;
 
 export default Navbar;
