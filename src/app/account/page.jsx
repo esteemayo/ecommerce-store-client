@@ -30,7 +30,9 @@ const Account = () => {
                     name='email'
                     placeholder='Email'
                   />
-                  <Button type='button'>Change</Button>
+                  <ButtonContainer>
+                    <Button type='button'>Change</Button>
+                  </ButtonContainer>
                 </InputContainer>
                 <InputContainer>
                   <Label htmlFor='username'>Your username</Label>
