@@ -19,6 +19,7 @@ const Account = () => {
 
 const Container = styled.main`
   width: 100vw;
+  padding: 6rem 0;
 `;
 
 const Wrapper = styled.div`
