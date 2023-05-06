@@ -17,7 +17,7 @@ const ProductCategory = () => {
   };
 
   let colors = getUnique(products, 'color');
-  color = colors.map((color, index) => {
+  colors = colors.map((color, index) => {
     return (
       <Option key={index} value={color}>
         {color}
@@ -34,7 +34,7 @@ const ProductCategory = () => {
             <Filter>
               <Label htmlFor='color'>Color</Label>
               <Select id='color' name='color' onChange={handleFilter}>
-                <Option>Blue</Option>
+                {colors}
               </Select>
             </Filter>
             <Filter>
