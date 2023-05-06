@@ -241,6 +241,7 @@ const LoginButton = styled.button`
   background-color: var(--clr-primary-green);
   color: var(--clr-white);
   border-radius: 10rem;
+  outline-color: var(--clr-primary-green);
   cursor: pointer;
   transition: all 0.2s ease;
     
