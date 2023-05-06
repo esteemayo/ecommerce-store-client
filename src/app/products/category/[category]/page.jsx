@@ -20,6 +20,12 @@ const ProductCategory = () => {
                 <Option>Blue</Option>
               </Select>
             </Filter>
+            <Filter>
+              <Label htmlFor='size'>Product size</Label>
+              <Select id='size' name='size'>
+                <Option>XS</Option>
+              </Select>
+            </Filter>
           </FilterLeft>
           <FilterRight>
             <Filter>
