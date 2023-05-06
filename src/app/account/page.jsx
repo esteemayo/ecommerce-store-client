@@ -39,7 +39,11 @@ const Account = () => {
                   />
                 </FormGroup>
               </Left>
-              <Right>Right</Right>
+              <Right>
+                <AvatarContainer>
+
+                </AvatarContainer>
+              </Right>
             </Form>
           </AccountWrapper>
         </AccountContainer>
