@@ -10,7 +10,11 @@ const Account = () => {
         <AccountContainer>
           <AccountWrapper>
             <Form>
-              <Left>Left</Left>
+              <Left>
+                <FormGroup>
+
+                </FormGroup>
+              </Left>
               <Right>Right</Right>
             </Form>
           </AccountWrapper>
