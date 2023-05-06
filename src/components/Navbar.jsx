@@ -265,6 +265,10 @@ const CartWrapper = styled.div`
       color: var(--clr-white);
     }
 
+    &:active {
+      color: currentColor;
+    }
+
     svg {
       font-size: 2.3rem;
       fill: var(--clr-white);
