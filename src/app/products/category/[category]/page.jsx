@@ -65,7 +65,9 @@ const FilterHeading = styled.h1`
 `;
 
 const FilterWrapper = styled.div`
-
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 `;
 
 const FilterLeft = styled.div`
