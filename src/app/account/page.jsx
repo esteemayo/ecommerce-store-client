@@ -25,4 +25,8 @@ const Heading = styled.h1`
   
 `;
 
+const HeadingText = styled.p`
+  
+`;
+
 export default Account;
