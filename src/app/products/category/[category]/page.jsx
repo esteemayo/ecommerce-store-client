@@ -49,7 +49,7 @@ const ProductCategory = () => {
             <Filter>
               <Label htmlFor='size'>Product size</Label>
               <Select id='size' name='size' onChange={handleFilter}>
-                <Option>XS</Option>
+                {sizes}
               </Select>
             </Filter>
           </FilterLeft>
