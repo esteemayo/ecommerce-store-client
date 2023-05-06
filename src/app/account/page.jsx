@@ -29,6 +29,15 @@ const Account = () => {
                     placeholder='Email'
                   />
                 </FormGroup>
+                <FormGroup>
+                  <FormLabel htmlFor='username'>Your username</FormLabel>
+                  <FormInput
+                    type='text'
+                    id='username'
+                    name='username'
+                    placeholder='Username'
+                  />
+                </FormGroup>
               </Left>
               <Right>Right</Right>
             </Form>
