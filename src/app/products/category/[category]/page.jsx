@@ -23,6 +23,10 @@ const Container = styled.main`
   margin: 0 auto;
 `;
 
+const FilterWrapper = styled.div`
+  
+`;
+
 const ProductWrapper = styled.div`
   width: 100%;
   padding: 8rem 0;
