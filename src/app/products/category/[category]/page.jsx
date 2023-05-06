@@ -143,6 +143,7 @@ const FilterLeft = styled.div`
 const FilterRight = styled.div`
   flex: 1;
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-end;
 `;
 
