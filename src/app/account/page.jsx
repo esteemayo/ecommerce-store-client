@@ -33,11 +33,12 @@ const Heading = styled.h1`
   text-transform: capitalize;
   font-weight: 600;
   font-size: 2.3rem;
+  line-height: 1.2;
   letter-spacing: 0.5px;
 `;
 
 const HeadingText = styled.p`
-  
+  font-size: 1.35rem;
 `;
 
 const AccountContainer = styled.div`
