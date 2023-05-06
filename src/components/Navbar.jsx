@@ -7,12 +7,13 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { faBagShopping, faBars } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from 'next/image';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 
 import { closeSubmenu, openSidebar, openSubmenu } from '@/features/submenu/submenuSlice';
 
 const Navbar = () => {
   const dispatch = useDispatch();
+  const { qty } = useSelector((state) => ({ ...state.cart }));
   const [isHover, setIsHover] = useState(false);
 
   const displaySubmenu = (e) => {
@@ -212,49 +213,49 @@ const Button = styled.button`
 `;
 
 const ButtonContainer = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 3rem;
-`;
-
-const LoginButton = styled.button`
   display: none;
 
   @media only screen and (min-width: 50em){
-    border: none;
-    display: inline-block;
-    font-weight: 600;
-    font-size: 1.5rem;
-    padding: 0.75rem 2rem;
-    background-color: var(--clr-primary-green);
-    color: var(--clr-white);
-    border-radius: 10rem;
-    cursor: pointer;
-    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
+`;
+
+const LoginButton = styled.button`
+  border: none;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 1.5rem;
+  padding: 0.75rem 2rem;
+  background-color: var(--clr-primary-green);
+  color: var(--clr-white);
+  border-radius: 10rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
     
-    a {
-      &:link,
-      &:visited {
-        display: inline-block;
-        text-decoration: none;
-        color: currentColor;
-        position: relative;
-      }
+  a {
+    &:link,
+    &:visited {
+      display: inline-block;
+      text-decoration: none;
+      color: currentColor;
+      position: relative;
+    }
   
-      svg {
+    svg {
         position: absolute;
-        top: 3px;
-        right: -1rem;
-        font-size: 1.25rem;
-        fill: currentColor;
-        transition: 150ms cubic-bezier(0.22, 0.61, 0.36, 1);
-      }
+      top: 3px;
+      right: -1rem;
+      font-size: 1.25rem;
+      fill: currentColor;
+      transition: 150ms cubic-bezier(0.22, 0.61, 0.36, 1);
     }
+  }
   
-    &:hover {
-      background-color: hsla(0, 0%, 100%, 0.4);
-      opacity: 1;
-    }
+  &:hover {
+    background-color: hsla(0, 0%, 100%, 0.4);
+    opacity: 1;
   }
 `;
 
