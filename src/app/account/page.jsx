@@ -46,6 +46,9 @@ const Account = () => {
                 <FileButton type='button'>Upload a picture</FileButton>
               </Right>
             </Form>
+            <DeleteContainer>
+
+            </DeleteContainer>
           </AccountWrapper>
         </AccountContainer>
       </Wrapper>
