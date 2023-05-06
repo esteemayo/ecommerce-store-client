@@ -23,7 +23,7 @@ const Container = styled.main`
   margin: 0 auto;
 `;
 
-const FilterWrapper = styled.div`
+const FilterWrapper = styled.section`
   
 `;
 
