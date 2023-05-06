@@ -110,7 +110,7 @@ const AccountInfo = styled.div`
 `;
 
 const Left = styled.div`
-  
+  flex: 2;
 `;
 
 const FormGroup = styled.div`
@@ -126,7 +126,7 @@ const FormInput = styled.input`
 `;
 
 const Right = styled.div`
-  
+  flex: 1;
 `;
 
 const AvatarContainer = styled.div`
