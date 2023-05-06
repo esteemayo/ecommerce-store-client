@@ -30,4 +30,8 @@ const HeadingText = styled.p`
   
 `;
 
+const AccountWrapper = styled.div`
+  
+`;
+
 export default Account;
