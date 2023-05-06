@@ -135,6 +135,7 @@ const FilterWrapper = styled.div`
 const FilterLeft = styled.div`
   flex: 1;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 4rem;
 `;
