@@ -101,7 +101,7 @@ const AccountContainer = styled.div`
 `;
 
 const AccountWrapper = styled.div`
-  padding: 2rem 1rem;
+  padding: 2rem 3rem;
 `;
 
 const AccountInfo = styled.div`
