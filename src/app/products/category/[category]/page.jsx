@@ -15,4 +15,8 @@ const Container = styled.main`
   margin: 0 auto;
 `;
 
+const Wrapper = styled.div`
+  
+`;
+
 export default ProductCategory;
