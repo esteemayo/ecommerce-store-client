@@ -36,13 +36,13 @@ const ProductCategory = () => {
   });
 
   useEffect(() => {
-    setProducts((prev) =>
-      prev.filter((item) =>
+    setSortedRooms(
+      products.filter((item) =>
         Object.entries(filters).every(([key, value]) =>
           item[key].includes(value)
         ))
     );
-  }, [filters]);
+  }, [filters, products]);
 
   return (
     <Container>
