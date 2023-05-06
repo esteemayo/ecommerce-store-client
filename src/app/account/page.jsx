@@ -66,6 +66,10 @@ const Left = styled.div`
   
 `;
 
+const FormGroup = styled.div`
+  
+`;
+
 const Right = styled.div`
   
 `;
