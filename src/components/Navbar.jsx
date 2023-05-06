@@ -9,6 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from 'next/image';
 import { useDispatch, useSelector } from 'react-redux';
 
+import { calcTotals } from '@/features/cart/cartSlice';
 import { closeSubmenu, openSidebar, openSubmenu } from '@/features/submenu/submenuSlice';
 
 const Navbar = () => {
