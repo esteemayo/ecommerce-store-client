@@ -6,6 +6,7 @@ import { storeProducts } from '@/data';
 import ProductList from '@/components/ProductList';
 
 const ProductCategory = () => {
+  const [sort, setSort] = useState('newest');
   const [filters, setFilters] = useState(null);
   const [products, setProducts] = useState(storeProducts);
 
