@@ -12,6 +12,9 @@ const ProductCategory = () => {
     <Container>
       <FilterContainer>
         <FilterHeading>Filter by</FilterHeading>
+        <FilterWrapper>
+          
+        </FilterWrapper>
       </FilterContainer>
       <ProductWrapper>
         <ProductList products={products} />
