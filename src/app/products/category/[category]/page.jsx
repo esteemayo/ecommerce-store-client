@@ -25,6 +25,15 @@ const ProductCategory = () => {
     );
   });
 
+  let sizes = getUnique(products, 'size');
+  sizes = sizes.map((size, index) => {
+    return (
+      <Option key={index} value={size}>
+        {size}
+      </Option>
+    );
+  });
+
   return (
     <Container>
       <FilterContainer>
