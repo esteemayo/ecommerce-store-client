@@ -278,8 +278,8 @@ const CartWrapper = styled.div`
 `;
 
 const CartTotal = styled.span`
-  width: 2rem;
-  height: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
   background-color: #89a8a0;
   color: var(--clr-white);
 `;
