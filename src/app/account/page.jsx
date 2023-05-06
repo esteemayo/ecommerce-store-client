@@ -110,4 +110,8 @@ const Right = styled.div`
   
 `;
 
+const AvatarContainer = styled.div`
+  
+`;
+
 export default Account;
