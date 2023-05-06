@@ -134,4 +134,8 @@ const DeleteHeader = styled.h2`
   
 `;
 
+const DeleteWarning = styled.p`
+  
+`;
+
 export default Account;
