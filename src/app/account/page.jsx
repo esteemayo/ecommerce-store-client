@@ -48,6 +48,10 @@ const Account = () => {
             </Form>
             <DeleteContainer>
               <DeleteHeader>Delete your account</DeleteHeader>
+              <DeleteWarning>
+                You will receive an email to confirm your decision.
+                Please note, that all your data will be permanently erased.
+              </DeleteWarning>
             </DeleteContainer>
           </AccountWrapper>
         </AccountContainer>
