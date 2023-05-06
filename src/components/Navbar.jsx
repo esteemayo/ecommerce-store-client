@@ -165,6 +165,8 @@ const LogoBox = styled.div`
     }
 
     & > img {
+      width: 10rem;
+      height: 5rem;
       display: block;
       object-fit: cover;
     }
