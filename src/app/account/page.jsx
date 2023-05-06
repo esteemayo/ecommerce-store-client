@@ -5,8 +5,10 @@ const Account = () => {
   return (
     <Container>
       <Wrapper>
-        <Heading>Account settings</Heading>
-        <HeadingText>Edit your name, avatar etc.</HeadingText>
+        <HeadingContainer>
+          <Heading>Account settings</Heading>
+          <HeadingText>Edit your name, avatar etc.</HeadingText>
+        </HeadingContainer>
         <AccountContainer>
           <AccountWrapper>
             <Form>
