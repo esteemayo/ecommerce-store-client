@@ -7,4 +7,8 @@ const AccounPassword = () => {
   );
 }
 
+const Container = styled.main`
+  
+`;
+
 export default AccounPassword;
