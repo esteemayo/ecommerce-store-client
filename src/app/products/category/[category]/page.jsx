@@ -10,6 +10,11 @@ const ProductCategory = () => {
   const [filters, setFilters] = useState(null);
   const [products, setProducts] = useState(storeProducts);
 
+  const handleFilter = ({ target: input }) => {
+    const { name, value } = input;
+    setFilters((prev) => ({ ...prev, [name]: value }));
+  };
+
   return (
     <Container>
       <FilterContainer>
