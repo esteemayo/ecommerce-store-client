@@ -70,6 +70,10 @@ const Label = styled.label`
 
 `;
 
+const Select = styled.select`
+
+`;
+
 const ProductWrapper = styled.div`
   width: 100%;
   padding: 8rem 0;
