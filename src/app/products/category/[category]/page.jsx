@@ -23,13 +23,13 @@ const ProductCategory = () => {
           <FilterLeft>
             <Filter>
               <Label htmlFor='color'>Color</Label>
-              <Select id='color' name='color'>
+              <Select id='color' name='color' onChange={handleFilter}>
                 <Option>Blue</Option>
               </Select>
             </Filter>
             <Filter>
               <Label htmlFor='size'>Product size</Label>
-              <Select id='size' name='size'>
+              <Select id='size' name='size' onChange={handleFilter}>
                 <Option>XS</Option>
               </Select>
             </Filter>
