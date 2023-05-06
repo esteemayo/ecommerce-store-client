@@ -38,13 +38,13 @@ const ProductCategory = ({ params }) => {
   });
 
   useEffect(() => {
-    setSortedProducts(
+    category && setSortedProducts(
       products.filter((item) =>
         Object.entries(filters).every(([key, value]) =>
           item[key].includes(value)
         ))
     );
-  }, [filters, products]);
+  }, [category, filters, products]);
 
   useEffect(() => {
     if (sort === 'newest') {
