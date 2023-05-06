@@ -282,6 +282,7 @@ const CartTotal = styled.span`
   height: 2.5rem;
   background-color: #89a8a0;
   color: var(--clr-white);
+  border-radius: 50%;
 `;
 
 export default Navbar;
