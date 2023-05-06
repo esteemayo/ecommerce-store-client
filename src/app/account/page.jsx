@@ -157,7 +157,9 @@ const Input = styled.input`
 `;
 
 const ButtonContainer = styled.div`
-  
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0.5rem;
 `;
 
 const Button = styled.button`
