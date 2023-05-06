@@ -6,7 +6,9 @@ import { storeProducts } from '@/data';
 import ProductList from '@/components/ProductList';
 import { getUnique } from '@/utils';
 
-const ProductCategory = () => {
+const ProductCategory = ({ params }) => {
+  const { category } = params;
+
   const [sort, setSort] = useState('newest');
   const [filters, setFilters] = useState({});
   const [products, setProducts] = useState(storeProducts);
