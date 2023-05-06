@@ -132,7 +132,8 @@ const FormLabel = styled.label`
 `;
 
 const FormInput = styled.input`
-  
+  border: none;
+  display: inline-block;
 `;
 
 const Right = styled.div`
