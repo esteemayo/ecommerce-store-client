@@ -112,22 +112,25 @@ const Navbar = () => {
           </ListItem>
         </ListContainer>
         <ButtonContainer>
-          <LoginButton
-            onMouseOver={() => setIsHover(true)}
-            onMouseLeave={() => setIsHover(false)}
-          >
-            <Link href='/login' passHref>
-              Sign in
-              &nbsp;
-              {isHover ? <ArrowForwardIcon /> : <ArrowForwardIosIcon />}
-            </Link>
-          </LoginButton>
-          <CartWrapper>
-            <Link href='/cart' passHref>
-              <FontAwesomeIcon icon={faBagShopping} />
-              <CartTotal>{qty}</CartTotal>
-            </Link>
-          </CartWrapper>
+          {!user ? (
+            <LoginButton
+              onMouseOver={() => setIsHover(true)}
+              onMouseLeave={() => setIsHover(false)}
+            >
+              <Link href='/login' passHref>
+                Sign in
+                &nbsp;
+                {isHover ? <ArrowForwardIcon /> : <ArrowForwardIosIcon />}
+              </Link>
+            </LoginButton>
+          ): (
+            <CartWrapper>
+              <Link href='/cart' passHref>
+                <FontAwesomeIcon icon={faBagShopping} />
+                <CartTotal>{qty}</CartTotal>
+              </Link>
+            </CartWrapper>
+          )}
         </ButtonContainer>
       </Wrapper>
     </Container>
