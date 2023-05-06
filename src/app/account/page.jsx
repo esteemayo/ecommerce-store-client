@@ -118,4 +118,8 @@ const AvatarContainer = styled.div`
   
 `;
 
+const FileButton = styled.button`
+  
+`;
+
 export default Account;
