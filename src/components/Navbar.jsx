@@ -164,7 +164,7 @@ const LogoBox = styled.div`
       outline-color: var(--clr-primary-green);
     }
 
-    & > img {
+    img {
       width: 10rem;
       height: 5rem;
       display: block;
