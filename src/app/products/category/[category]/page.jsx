@@ -3,7 +3,9 @@ import styled from 'styled-components';
 
 const ProductCategory = () => {
   return (
-    <div>ProductCategory</div>
+    <Container>
+      ProductCategory
+    </Container>
   );
 }
 
