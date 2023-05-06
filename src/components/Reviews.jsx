@@ -285,10 +285,7 @@ const Message = styled.span`
   color: inherit;
 `;
 
-const ReviewButtonWrapper = styled.div`
-  /* position: absolute; */
-  top: 1rem;
-`;
+const ReviewButtonWrapper = styled.div``;
 
 const ReviewButton = styled.button`
   border: none;
