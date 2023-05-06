@@ -258,11 +258,17 @@ const LoginButton = styled.button`
 `;
 
 const CartWrapper = styled.div`
-  cursor: pointer;
+  a {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: var(--clr-white);
+    }
 
-  svg {
-    font-size: 2.3rem;
-    fill: var(--clr-white);
+    svg {
+      font-size: 2.3rem;
+      fill: var(--clr-white);
+    }
   }
 `;
 
