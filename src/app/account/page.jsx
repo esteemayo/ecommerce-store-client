@@ -165,6 +165,9 @@ const ButtonContainer = styled.div`
 const Button = styled.button`
   border: none;
   display: inline-block;
+  font-size: 1.2rem;
+  background-color: transparent;
+  color: var(--clr-primary-green);
 `;
 
 const Right = styled.div`
