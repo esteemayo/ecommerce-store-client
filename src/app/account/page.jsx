@@ -105,7 +105,8 @@ const AccountWrapper = styled.div`
 `;
 
 const AccountInfo = styled.div`
-  
+  display: flex;
+  align-items: flex-start;
 `;
 
 const Left = styled.div`
