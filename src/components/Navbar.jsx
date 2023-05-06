@@ -103,19 +103,21 @@ const Navbar = () => {
             </Button>
           </ListItem>
         </ListContainer>
-        <LoginButton
-          onMouseOver={() => setIsHover(true)}
-          onMouseLeave={() => setIsHover(false)}
-        >
-          <Link href='/login' passHref>
-            Sign in
-            &nbsp;
-            {isHover ? <ArrowForwardIcon /> : <ArrowForwardIosIcon />}
-          </Link>
-        </LoginButton>
-        <CartWrapper>
-          <FontAwesomeIcon icon={faBagShopping} />
-        </CartWrapper>
+        <ButtonContainer>
+          <LoginButton
+            onMouseOver={() => setIsHover(true)}
+            onMouseLeave={() => setIsHover(false)}
+          >
+            <Link href='/login' passHref>
+              Sign in
+              &nbsp;
+              {isHover ? <ArrowForwardIcon /> : <ArrowForwardIosIcon />}
+            </Link>
+          </LoginButton>
+          <CartWrapper>
+            <FontAwesomeIcon icon={faBagShopping} />
+          </CartWrapper>
+        </ButtonContainer>
       </Wrapper>
     </Container>
   );
@@ -207,7 +209,9 @@ const Button = styled.button`
 `;
 
 const ButtonContainer = styled.div`
-
+  display: flex;
+  align-items: center;
+  gap: 3rem;
 `;
 
 const LoginButton = styled.button`
