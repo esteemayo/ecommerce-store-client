@@ -7,4 +7,8 @@ const Account = () => {
   );
 }
 
+const Container = styled.main`
+  
+`;
+
 export default Account;
