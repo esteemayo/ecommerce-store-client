@@ -261,7 +261,7 @@ const LoginButton = styled.button`
     }
   
     svg {
-        position: absolute;
+      position: absolute;
       top: 3px;
       right: -1rem;
       font-size: 1.25rem;
