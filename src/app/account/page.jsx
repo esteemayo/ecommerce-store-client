@@ -169,6 +169,9 @@ const Button = styled.button`
   font-size: 1.2rem;
   background-color: transparent;
   color: var(--clr-primary-green);
+  outline-offset: 3px;
+  outline-color: #ccc;
+  cursor: pointer;
 `;
 
 const Right = styled.div`
