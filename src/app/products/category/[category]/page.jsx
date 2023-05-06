@@ -1,6 +1,7 @@
 'use client';
 import styled from 'styled-components';
 import { useEffect, useState } from 'react';
+import { useDispatch } from 'react-redux';
 
 import { storeProducts } from '@/data';
 import ProductList from '@/components/ProductList';
