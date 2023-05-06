@@ -37,4 +37,8 @@ const AccountContainer = styled.div`
   
 `;
 
+const AccountWrapper = styled.div`
+  
+`;
+
 export default Account;
