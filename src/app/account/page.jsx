@@ -78,6 +78,10 @@ const FormLabel = styled.label`
   
 `;
 
+const FormInput = styled.input`
+  
+`;
+
 const Right = styled.div`
   
 `;
