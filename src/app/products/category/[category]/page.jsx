@@ -53,6 +53,10 @@ const FilterLeft = styled.div`
 
 `;
 
+const FilterRight = styled.div`
+
+`;
+
 const Filter = styled.div`
 
 `;
