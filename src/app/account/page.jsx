@@ -14,7 +14,7 @@ const Account = () => {
             <AccountInfo>
               <Left>
                 <FormGroup>
-                  <FormLabel htmlFor='name'>Your name</FormLabel>
+                  <Label htmlFor='name'>Your name</Label>
                   <Input
                     type='text'
                     id='name'
@@ -23,7 +23,7 @@ const Account = () => {
                   />
                 </FormGroup>
                 <FormGroup>
-                  <FormLabel htmlFor='email'>Your email</FormLabel>
+                  <Label htmlFor='email'>Your email</Label>
                   <Input
                     type='email'
                     id='email'
@@ -32,7 +32,7 @@ const Account = () => {
                   />
                 </FormGroup>
                 <FormGroup>
-                  <FormLabel htmlFor='username'>Your username</FormLabel>
+                  <Label htmlFor='username'>Your username</Label>
                   <Input
                     type='text'
                     id='username'
@@ -123,7 +123,7 @@ const FormGroup = styled.div`
   }
 `;
 
-const FormLabel = styled.label`
+const Label = styled.label`
   display: inline-block;
   width: 10rem;
   text-transform: capitalize;
