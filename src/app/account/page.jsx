@@ -61,4 +61,8 @@ const Form = styled.form`
   
 `;
 
+const Left = styled.div`
+  
+`;
+
 export default Account;
