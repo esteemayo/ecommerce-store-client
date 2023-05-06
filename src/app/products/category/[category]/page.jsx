@@ -16,6 +16,9 @@ const ProductCategory = () => {
           <FilterLeft>
             <Filter>
               <Label htmlFor='color'>Color</Label>
+              <Select id='color' name='color'>
+
+              </Select>
             </Filter>
           </FilterLeft>
           <FilterRight>
