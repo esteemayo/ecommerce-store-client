@@ -7,9 +7,9 @@ const Account = () => {
       <Wrapper>
         <Heading>Account settings</Heading>
         <HeadingText>Edit your name, avatar etc.</HeadingText>
-        <AccountWrapper>
-          
-        </AccountWrapper>
+        <AccountContainer>
+
+        </AccountContainer>
       </Wrapper>
     </Container>
   );
@@ -33,7 +33,7 @@ const HeadingText = styled.p`
   
 `;
 
-const AccountWrapper = styled.div`
+const AccountContainer = styled.div`
   
 `;
 
