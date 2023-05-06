@@ -114,7 +114,7 @@ const Navbar = () => {
           </Link>
         </LoginButton>
         <CartWrapper>
-
+          <FontAwesomeIcon icon={faBagShopping} />
         </CartWrapper>
       </Wrapper>
     </Container>
