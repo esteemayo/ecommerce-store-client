@@ -9,7 +9,9 @@ const Account = () => {
         <HeadingText>Edit your name, avatar etc.</HeadingText>
         <AccountContainer>
           <AccountWrapper>
+            <Form>
 
+            </Form>
           </AccountWrapper>
         </AccountContainer>
       </Wrapper>
