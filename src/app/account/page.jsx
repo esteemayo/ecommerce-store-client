@@ -11,7 +11,7 @@ const Account = () => {
         </HeadingContainer>
         <AccountContainer>
           <AccountWrapper>
-            <Form>
+            <AccountInfo>
               <Left>
                 <FormGroup>
                   <FormLabel htmlFor='name'>Your name</FormLabel>
@@ -47,7 +47,7 @@ const Account = () => {
                 </AvatarContainer>
                 <FileButton type='button'>Upload a picture</FileButton>
               </Right>
-            </Form>
+            </AccountInfo>
             <DeleteContainer>
               <DeleteHeader>Delete your account</DeleteHeader>
               <DeleteWarning>
@@ -104,7 +104,7 @@ const AccountWrapper = styled.div`
   
 `;
 
-const Form = styled.form`
+const AccountInfo = styled.div`
   
 `;
 
