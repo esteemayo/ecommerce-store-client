@@ -2,6 +2,7 @@
 import styled from 'styled-components';
 import { useState } from 'react';
 import { storeProducts } from '@/data';
+import ProductList from '@/components/ProductList';
 
 const ProductCategory = () => {
   const [products, setProducts] = useState(storeProducts);
