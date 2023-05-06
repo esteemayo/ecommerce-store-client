@@ -10,6 +10,9 @@ const ProductCategory = () => {
 
   return (
     <Container>
+      <FilterWrapper>
+        
+      </FilterWrapper>
       <ProductWrapper>
         <ProductList products={products} />
       </ProductWrapper>
