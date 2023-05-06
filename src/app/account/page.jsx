@@ -116,6 +116,10 @@ const Left = styled.div`
 const FormGroup = styled.div`
   display: flex;
   flex-direction: column;
+
+  &:not(:last-of-type) {
+    margin-bottom: 2rem;
+  }
 `;
 
 const FormLabel = styled.label`
