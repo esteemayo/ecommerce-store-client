@@ -9,7 +9,7 @@ const Account = () => {
         <HeadingText>Edit your name, avatar etc.</HeadingText>
         <AccountContainer>
           <AccountWrapper>
-            
+
           </AccountWrapper>
         </AccountContainer>
       </Wrapper>
@@ -28,7 +28,7 @@ const Wrapper = styled.div`
 `;
 
 const Heading = styled.h1`
-  
+  display: inline-block;
 `;
 
 const HeadingText = styled.p`
