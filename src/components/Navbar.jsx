@@ -14,6 +14,7 @@ import { closeSubmenu, openSidebar, openSubmenu } from '@/features/submenu/subme
 const Navbar = () => {
   const dispatch = useDispatch();
   const { qty } = useSelector((state) => ({ ...state.cart }));
+
   const [isHover, setIsHover] = useState(false);
 
   const displaySubmenu = (e) => {
