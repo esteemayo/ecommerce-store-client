@@ -280,6 +280,8 @@ const CartWrapper = styled.div`
 const CartTotal = styled.span`
   width: 2rem;
   height: 2rem;
+  background-color: #89a8a0;
+  color: var(--clr-white);
 `;
 
 export default Navbar;
