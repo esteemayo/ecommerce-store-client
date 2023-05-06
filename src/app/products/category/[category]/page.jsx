@@ -78,7 +78,9 @@ const FilterLeft = styled.div`
 `;
 
 const FilterRight = styled.div`
-
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
 `;
 
 const Filter = styled.div`
