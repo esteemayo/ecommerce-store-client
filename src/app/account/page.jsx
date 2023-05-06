@@ -123,4 +123,8 @@ const FileButton = styled.button`
   
 `;
 
+const DeleteContainer = styled.div`
+  
+`;
+
 export default Account;
