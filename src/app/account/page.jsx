@@ -138,7 +138,7 @@ const FormInput = styled.input`
   font-family: inherit;
   font-size: 1.5rem;
   width: 100%;
-  padding: 1.5rem 1rem;
+  padding: 0.9rem 1rem;
   background-color: transparent;
   color: #999;
   border: 2px solid #f3f4f6;
