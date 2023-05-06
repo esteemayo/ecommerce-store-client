@@ -76,10 +76,10 @@ const ProductCategory = () => {
         </FilterWrapper>
       </FilterContainer>
       <ProductWrapper>
-        {products ? (
-          <ProductList products={products} />
-        ) : (
+        {sortedProducts ? (
           <ProductList products={sortedProducts} />
+        ) : (
+          <ProductList products={products} />
         )}
       </ProductWrapper>
     </Container>
