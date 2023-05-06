@@ -114,7 +114,8 @@ const Left = styled.div`
 `;
 
 const FormGroup = styled.div`
-  
+  display: flex;
+  flex-direction: column;
 `;
 
 const FormLabel = styled.label`
