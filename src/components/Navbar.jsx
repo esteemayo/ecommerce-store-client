@@ -14,7 +14,7 @@ import { closeSubmenu, openSidebar, openSubmenu } from '@/features/submenu/subme
 
 const Navbar = () => {
   const dispatch = useDispatch();
-  const { qty } = useSelector((state) => ({ ...state.cart }));
+  const { cart, qty } = useSelector((state) => ({ ...state.cart }));
 
   const [isHover, setIsHover] = useState(false);
 
@@ -41,6 +41,10 @@ const Navbar = () => {
       dispatch(closeSubmenu());
     }
   };
+
+  useEffect(() => {
+    dispatch(calcTotals());
+  }, [cart, dispatch]);
 
   return (
     <Container onMouseOver={handleSubmenu}>
