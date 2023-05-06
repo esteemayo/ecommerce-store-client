@@ -10,7 +10,7 @@ const ProductCategory = () => {
   return (
     <Container>
       <Wrapper>
-        ProductCategory
+        <ProductList products={products} />
       </Wrapper>
     </Container>
   );
