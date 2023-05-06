@@ -100,6 +100,9 @@ const Label = styled.label`
 const Select = styled.select`
   display: inline-block;
   text-transform: capitalize;
+  width: 20rem;
+  padding: 3px;
+  font-size: 1.4rem;
 `;
 
 const Option = styled.option`
