@@ -153,6 +153,10 @@ const Input = styled.input`
   }
 `;
 
+const Button = styled.button`
+  
+`;
+
 const Right = styled.div`
   flex: 1;
 `;
