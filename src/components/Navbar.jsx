@@ -158,6 +158,7 @@ const LogoBox = styled.div`
     &:link,
     &:visited {
       text-decoration: none;
+      outline-color: var(--clr-primary-green);
     }
 
     & > img {
