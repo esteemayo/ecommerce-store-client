@@ -32,7 +32,8 @@ const FilterContainer = styled.section`
 `;
 
 const FilterHeading = styled.h1`
-
+  display: inline-block;
+  font-weight: 600;
 `;
 
 const ProductWrapper = styled.div`
