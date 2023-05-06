@@ -44,6 +44,26 @@ const ProductCategory = () => {
     );
   }, [filters, products]);
 
+  useEffect(() => {
+    if (sort === 'newest') {
+      setSortedProducts((prev) =>
+        [...prev].sort((a, b) => a.createdAt - b.createdAt)
+      );
+    }
+
+    if (sort === 'asc') {
+      setSortedProducts((prev) =>
+        [...prev].sort((a, b) => a.price - b.price)
+      );
+    }
+
+    if (sort === 'desc') {
+      setSortedProducts((prev) =>
+        [...prev].sort((a, b) => b.price - a.price)
+      );
+    }
+  }, [sort]);
+
   return (
     <Container>
       <FilterContainer>
