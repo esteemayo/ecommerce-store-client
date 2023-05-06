@@ -74,7 +74,7 @@ const Wrapper = styled.div`
 `;
 
 const HeadingContainer = styled.div`
-  
+  margin-bottom: 1.2rem;
 `;
 
 const Heading = styled.h1`
