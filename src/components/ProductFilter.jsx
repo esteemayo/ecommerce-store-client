@@ -1,10 +1,7 @@
 import styled from 'styled-components';
 import { NumericFormat } from 'react-number-format';
 
-const getUnique = (items, value) => {
-  const newItems = items.map((item) => item[value]).flat();
-  return [...new Set(newItems)];
-};
+import { getUnique } from '@/utils';
 
 const ProductFilter = ({
   products,
