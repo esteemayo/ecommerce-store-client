@@ -259,6 +259,8 @@ const LoginButton = styled.button`
 `;
 
 const CartWrapper = styled.div`
+  position: relative;
+
   a {
     &:link,
     &:visited {
