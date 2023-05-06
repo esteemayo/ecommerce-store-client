@@ -98,7 +98,8 @@ const Label = styled.label`
 `;
 
 const Select = styled.select`
-
+  display: inline-block;
+  text-transform: capitalize;
 `;
 
 const Option = styled.option`
