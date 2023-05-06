@@ -7,4 +7,8 @@ const ProductCategory = () => {
   );
 }
 
+const Container = styled.main`
+  
+`;
+
 export default ProductCategory;
