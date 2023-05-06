@@ -15,7 +15,7 @@ const ProductCategory = () => {
         <FilterWrapper>
           <FilterLeft>
             <Filter>
-
+              <Label htmlFor='color'>Color</Label>
             </Filter>
           </FilterLeft>
           <FilterRight>
