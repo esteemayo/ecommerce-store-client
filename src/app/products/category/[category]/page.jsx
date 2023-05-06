@@ -98,7 +98,7 @@ const ProductCategory = ({ params }) => {
         </FilterWrapper>
       </FilterContainer>
       <ProductWrapper>
-        {sortedProducts ? (
+        {category ? (
           <ProductList products={sortedProducts} />
         ) : (
           <ProductList products={products} />
