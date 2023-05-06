@@ -113,7 +113,9 @@ const Navbar = () => {
             {isHover ? <ArrowForwardIcon /> : <ArrowForwardIosIcon />}
           </Link>
         </LoginButton>
-        <FontAwesomeIcon icon={faBagShopping} />
+        <CartWrapper>
+
+        </CartWrapper>
       </Wrapper>
     </Container>
   );
