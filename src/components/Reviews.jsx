@@ -74,7 +74,11 @@ const Reviews = () => {
               </ReviewButtonWrapper>
             )}
             <FilterWrapper className='filter-wrapper'>
-              <FilterContainer sort={sort} className='filter-container' onClick={() => setIsFilterOpen(!isFilterOpen)}>
+              <FilterContainer
+                sort={sort}
+                className='filter-container'
+                onClick={() => setIsFilterOpen(!isFilterOpen)}
+              >
                 <Filter>Sort:</Filter>
                 <FilterText>{getSort(sort) ?? 'Select'}</FilterText>
                 <FilterIcon>
