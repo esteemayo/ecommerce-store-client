@@ -29,7 +29,7 @@ const Category = () => {
               <SubHeading>100</SubHeading>
             </HeadingWrapper>
             <Button>
-              <Link href={`/products/category`} passHref>
+              <Link href={`/products/category/jeans`} passHref>
                 Shop now
                 &nbsp;
                 <FontAwesomeIcon icon={faArrowRight} />
