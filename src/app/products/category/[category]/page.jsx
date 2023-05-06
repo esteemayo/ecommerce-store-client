@@ -111,7 +111,9 @@ const Select = styled.select`
 `;
 
 const Option = styled.option`
-  
+  text-transform: capitalize;
+  background-color: var(--clr-white);
+  color: inherit;
 `;
 
 const ProductWrapper = styled.div`
