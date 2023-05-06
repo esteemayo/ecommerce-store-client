@@ -11,7 +11,7 @@ const ProductCategory = () => {
   return (
     <Container>
       <FilterWrapper>
-
+        <FilterHeading>Filter by</FilterHeading>
       </FilterWrapper>
       <ProductWrapper>
         <ProductList products={products} />
