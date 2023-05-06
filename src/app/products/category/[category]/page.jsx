@@ -105,6 +105,9 @@ const Select = styled.select`
   font-size: 1.4rem;
   background-color: transparent;
   color: #999;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  outline-color: #eee;
 `;
 
 const Option = styled.option`
