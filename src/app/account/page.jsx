@@ -15,7 +15,7 @@ const Account = () => {
               <Left>
                 <FormGroup>
                   <FormLabel htmlFor='name'>Your name</FormLabel>
-                  <FormInput
+                  <Input
                     type='text'
                     id='name'
                     name='name'
@@ -24,7 +24,7 @@ const Account = () => {
                 </FormGroup>
                 <FormGroup>
                   <FormLabel htmlFor='email'>Your email</FormLabel>
-                  <FormInput
+                  <Input
                     type='email'
                     id='email'
                     name='email'
@@ -33,7 +33,7 @@ const Account = () => {
                 </FormGroup>
                 <FormGroup>
                   <FormLabel htmlFor='username'>Your username</FormLabel>
-                  <FormInput
+                  <Input
                     type='text'
                     id='username'
                     name='username'
@@ -132,7 +132,7 @@ const FormLabel = styled.label`
   color: #888;
 `;
 
-const FormInput = styled.input`
+const Input = styled.input`
   border: none;
   display: inline-block;
   font-family: inherit;
