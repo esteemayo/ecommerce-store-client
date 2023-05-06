@@ -13,6 +13,12 @@ const Account = () => {
               <Left>
                 <FormGroup>
                   <FormLabel htmlFor='name'>Your name</FormLabel>
+                  <FormInput
+                    type='text'
+                    id='name'
+                    name='name'
+                    placeholder='Name'
+                  />
                 </FormGroup>
               </Left>
               <Right>Right</Right>
