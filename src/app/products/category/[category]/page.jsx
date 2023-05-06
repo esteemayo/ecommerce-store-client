@@ -9,8 +9,8 @@ import { getUnique } from '@/utils';
 const ProductCategory = () => {
   const [sort, setSort] = useState('newest');
   const [filters, setFilters] = useState({});
-  const [sortedProducts, setSortedProducts] = useState([]);
   const [products, setProducts] = useState(storeProducts);
+  const [sortedProducts, setSortedProducts] = useState([]);
 
   const handleFilter = ({ target: input }) => {
     const { name, value } = input;
