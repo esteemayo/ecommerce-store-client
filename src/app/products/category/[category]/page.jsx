@@ -19,24 +19,6 @@ const ProductCategory = ({ params }) => {
     setFilters((prev) => ({ ...prev, [name]: value }));
   };
 
-  let colors = getUnique(products, 'color');
-  colors = colors.map((color, index) => {
-    return (
-      <Option key={index} value={color}>
-        {color}
-      </Option>
-    );
-  });
-
-  let sizes = getUnique(products, 'size');
-  sizes = sizes.map((size, index) => {
-    return (
-      <Option key={index} value={size}>
-        {size}
-      </Option>
-    );
-  });
-
   useEffect(() => {
     category && setSortedProducts(
       products.filter((item) =>
