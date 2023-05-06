@@ -11,6 +11,7 @@ const Account = () => {
           <AccountWrapper>
             <Form>
               <Left>Left</Left>
+              <Right>Right</Right>
             </Form>
           </AccountWrapper>
         </AccountContainer>
