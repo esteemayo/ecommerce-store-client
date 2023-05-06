@@ -31,6 +31,10 @@ const FilterWrapper = styled.section`
   width: 100%;
 `;
 
+const FilterHeading = styled.h1`
+
+`;
+
 const ProductWrapper = styled.div`
   width: 100%;
   padding: 8rem 0;
