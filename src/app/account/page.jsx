@@ -71,6 +71,10 @@ const Wrapper = styled.div`
   margin: 0 auto;
 `;
 
+const HeadingContainer = styled.div`
+  
+`;
+
 const Heading = styled.h1`
   display: inline-block;
   text-transform: capitalize;
