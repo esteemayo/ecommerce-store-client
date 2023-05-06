@@ -163,7 +163,8 @@ const ButtonContainer = styled.div`
 `;
 
 const Button = styled.button`
-  
+  border: none;
+  display: inline-block;
 `;
 
 const Right = styled.div`
