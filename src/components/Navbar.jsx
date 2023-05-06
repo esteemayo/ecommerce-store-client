@@ -282,6 +282,7 @@ const CartWrapper = styled.div`
 const CartTotal = styled.span`
   width: 1.5rem;
   height: 1.5rem;
+  font-size: 1rem;
   background-color: #89a8a0;
   color: var(--clr-white);
   border-radius: 50%;
