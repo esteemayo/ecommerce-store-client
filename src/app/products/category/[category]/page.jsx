@@ -11,7 +11,7 @@ const ProductCategory = () => {
   return (
     <Container>
       <FilterWrapper>
-        
+
       </FilterWrapper>
       <ProductWrapper>
         <ProductList products={products} />
@@ -27,7 +27,8 @@ const Container = styled.main`
 `;
 
 const FilterWrapper = styled.section`
-  
+  padding: 7rem 3rem;
+  width: 100%;
 `;
 
 const ProductWrapper = styled.div`
