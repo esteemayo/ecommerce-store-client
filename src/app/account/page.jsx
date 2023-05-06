@@ -32,6 +32,7 @@ const Heading = styled.h1`
   text-transform: capitalize;
   font-weight: 600;
   font-size: 2.3rem;
+  letter-spacing: 0.1px;
 `;
 
 const HeadingText = styled.p`
