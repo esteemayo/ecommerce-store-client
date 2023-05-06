@@ -63,14 +63,16 @@ const Reviews = () => {
             <TotalReviews>{reviews.length} reviews</TotalReviews>
           </Ratings>
           <Rewiews>
-            <ReviewButtonWrapper>
-              <ReviewButton
-                type='button'
-                onClick={() => setIsModalOpen(true)}
-              >
-                Leave a review
-              </ReviewButton>
-            </ReviewButtonWrapper>
+            {reviews.length > 0 && (
+              <ReviewButtonWrapper>
+                <ReviewButton
+                  type='button'
+                  onClick={() => setIsModalOpen(true)}
+                >
+                  Leave a review
+                </ReviewButton>
+              </ReviewButtonWrapper>
+            )}
             <FilterWrapper className='filter-wrapper'>
               <FilterContainer sort={sort} className='filter-container' onClick={() => setIsFilterOpen(!isFilterOpen)}>
                 <Filter>Sort:</Filter>
