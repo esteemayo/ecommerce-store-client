@@ -43,6 +43,7 @@ const Account = () => {
                 <AvatarContainer>
 
                 </AvatarContainer>
+                <FileButton type='button'>Upload a picture</FileButton>
               </Right>
             </Form>
           </AccountWrapper>
