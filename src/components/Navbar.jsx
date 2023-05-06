@@ -276,4 +276,8 @@ const CartWrapper = styled.div`
   }
 `;
 
+const CartTotal = styled.span`
+
+`;
+
 export default Navbar;
