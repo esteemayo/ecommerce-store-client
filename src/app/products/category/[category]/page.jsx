@@ -13,9 +13,11 @@ const ProductCategory = () => {
       <FilterContainer>
         <FilterHeading>Filter by</FilterHeading>
         <FilterWrapper>
-          <Filter>
+          <FilterLeft>
+            <Filter>
 
-          </Filter>
+            </Filter>
+          </FilterLeft>
         </FilterWrapper>
       </FilterContainer>
       <ProductWrapper>
@@ -47,11 +49,11 @@ const FilterWrapper = styled.div`
 
 `;
 
-const Filter = styled.div`
+const FilterLeft = styled.div`
 
 `;
 
-const FilterLeft = styled.div`
+const Filter = styled.div`
 
 `;
 
