@@ -290,8 +290,8 @@ const CartTotal = styled.span`
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -0.5rem;
+  right: -0.5rem;
 `;
 
 export default Navbar;
