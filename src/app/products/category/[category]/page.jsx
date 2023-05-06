@@ -34,6 +34,15 @@ const ProductCategory = () => {
     );
   });
 
+  useEffect(() => {
+    setProducts((prev) =>
+      prev.filter((item) =>
+        Object.entries(filters).every(([key, value]) =>
+          item[key].includes(value)
+        ))
+    );
+  }, [filters]);
+
   return (
     <Container>
       <FilterContainer>
