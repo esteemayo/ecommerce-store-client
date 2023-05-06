@@ -115,7 +115,9 @@ const Navbar = () => {
             </Link>
           </LoginButton>
           <CartWrapper>
-            <FontAwesomeIcon icon={faBagShopping} />
+            <Link href='/cart' passHref>
+              <FontAwesomeIcon icon={faBagShopping} />
+            </Link>
           </CartWrapper>
         </ButtonContainer>
       </Wrapper>
