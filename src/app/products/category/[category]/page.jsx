@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { storeProducts } from '@/data';
 
 const ProductCategory = () => {
+  const [products, setProducts] = useState(storeProducts);
   return (
     <Container>
       <Wrapper>
