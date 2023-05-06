@@ -152,6 +152,8 @@ const Wrapper = styled.div`
 `;
 
 const LogoBox = styled.div`
+  height: 5rem;
+
   a {
     &:link,
     &:visited {
