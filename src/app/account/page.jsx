@@ -12,7 +12,7 @@ const Account = () => {
             <Form>
               <Left>
                 <FormGroup>
-
+                  <FormLabel htmlFor='name'>Your name</FormLabel>
                 </FormGroup>
               </Left>
               <Right>Right</Right>
