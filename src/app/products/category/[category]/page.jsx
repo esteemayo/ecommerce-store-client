@@ -16,6 +16,15 @@ const ProductCategory = () => {
     setFilters((prev) => ({ ...prev, [name]: value }));
   };
 
+  let colors = getUnique(products, 'color');
+  color = colors.map((color, index) => {
+    return (
+      <Option key={index} value={color}>
+        {color}
+      </Option>
+    );
+  });
+
   return (
     <Container>
       <FilterContainer>
