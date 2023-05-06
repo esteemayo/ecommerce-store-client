@@ -4,7 +4,9 @@ import styled from 'styled-components';
 const Account = () => {
   return (
     <Container>
-      Account
+      <Wrapper>
+        Account
+      </Wrapper>
     </Container>
   );
 }
