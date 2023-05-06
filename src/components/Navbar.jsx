@@ -113,6 +113,7 @@ const Navbar = () => {
             {isHover ? <ArrowForwardIcon /> : <ArrowForwardIosIcon />}
           </Link>
         </LoginButton>
+        <FontAwesomeIcon icon={faBagShopping} />
       </Wrapper>
     </Container>
   );
@@ -242,6 +243,10 @@ const LoginButton = styled.button`
       opacity: 1;
     }
   }
+`;
+
+const CartWrapper = styled.div`
+  
 `;
 
 export default Navbar;
