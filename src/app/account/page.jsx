@@ -106,6 +106,10 @@ const FormInput = styled.input`
   
 `;
 
+const FormButton = styled.button`
+  
+`;
+
 const Right = styled.div`
   
 `;
