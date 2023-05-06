@@ -206,6 +206,10 @@ const Button = styled.button`
   }
 `;
 
+const ButtonContainer = styled.div`
+
+`;
+
 const LoginButton = styled.button`
   display: none;
 
