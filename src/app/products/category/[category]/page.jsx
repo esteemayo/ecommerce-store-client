@@ -18,6 +18,11 @@ const ProductCategory = () => {
 
             </Filter>
           </FilterLeft>
+          <FilterRight>
+            <Filter>
+
+            </Filter>
+          </FilterRight>
         </FilterWrapper>
       </FilterContainer>
       <ProductWrapper>
