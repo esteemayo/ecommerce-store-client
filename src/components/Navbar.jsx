@@ -13,6 +13,7 @@ import { calcTotals } from '@/features/cart/cartSlice';
 import { closeSubmenu, openSidebar, openSubmenu } from '@/features/submenu/submenuSlice';
 
 const Navbar = () => {
+  const user = true;
   const dispatch = useDispatch();
   const { cart, qty } = useSelector((state) => ({ ...state.cart }));
 
