@@ -9,7 +9,7 @@ import { getUnique } from '@/utils';
 const ProductCategory = () => {
   const [sort, setSort] = useState('newest');
   const [filters, setFilters] = useState({});
-  const [sortedRooms, setSortedRooms] = useState([]);
+  const [sortedProducts, setSortedProducts] = useState([]);
   const [products, setProducts] = useState(storeProducts);
 
   const handleFilter = ({ target: input }) => {
@@ -36,7 +36,7 @@ const ProductCategory = () => {
   });
 
   useEffect(() => {
-    setSortedRooms(
+    setSortedProducts(
       products.filter((item) =>
         Object.entries(filters).every(([key, value]) =>
           item[key].includes(value)
@@ -76,7 +76,11 @@ const ProductCategory = () => {
         </FilterWrapper>
       </FilterContainer>
       <ProductWrapper>
-        <ProductList products={products} />
+        {products ? (
+          <ProductList products={products} />
+        ) : (
+          <ProductList products={sortedProducts} />
+        )}
       </ProductWrapper>
     </Container>
   );
