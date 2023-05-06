@@ -120,7 +120,7 @@ const Navbar = () => {
             <Link href='/cart' passHref>
               <FontAwesomeIcon icon={faBagShopping} />
             </Link>
-            <CartTotal>2</CartTotal>
+            <CartTotal>{qty}</CartTotal>
           </CartWrapper>
         </ButtonContainer>
       </Wrapper>
