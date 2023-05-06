@@ -13,7 +13,9 @@ const ProductCategory = () => {
       <FilterContainer>
         <FilterHeading>Filter by</FilterHeading>
         <FilterWrapper>
-
+          <Filter>
+          
+          <Filter>
         </FilterWrapper>
       </FilterContainer>
       <ProductWrapper>
