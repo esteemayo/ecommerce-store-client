@@ -55,4 +55,8 @@ const AccountWrapper = styled.div`
   
 `;
 
+const Form = styled.form`
+  
+`;
+
 export default Account;
