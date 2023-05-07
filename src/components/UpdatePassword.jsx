@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const UpdatePassword = () => {
   return (
     <Container>
-      UpdatePassword
+      <Heading>Change your password</Heading>
     </Container>
   );
 }
