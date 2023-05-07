@@ -82,7 +82,9 @@ const InputContainer = styled.div`
 `;
 
 const Input = styled.input`
-  
+  display: inline-block;
+  width: 13rem;
+  font-weight: 600;
 `;
 
 const Label = styled.label`
