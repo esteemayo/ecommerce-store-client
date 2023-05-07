@@ -2,7 +2,9 @@ import styled from 'styled-components';
 
 const UpdatePassword = () => {
   return (
-    <div>UpdatePassword</div>
+    <Container>
+      UpdatePassword
+    </Container>
   );
 }
 
