@@ -209,6 +209,9 @@ const DeleteWarning = styled.p`
 
 const Right = styled.div`
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 const AvatarContainer = styled.div`
