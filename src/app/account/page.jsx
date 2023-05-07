@@ -235,7 +235,6 @@ const FileButton = styled.button`
   background-color: #6d857f;
   color: var(--clr-white);
   border-radius: 0.5rem;
-  outline-color: #85beae;
   background-image: linear-gradient(
     120deg,
     transparent 0%,
