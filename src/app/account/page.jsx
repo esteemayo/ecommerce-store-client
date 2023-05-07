@@ -198,10 +198,6 @@ const FileButton = styled.button`
   
 `;
 
-const DeleteContainer = styled.div`
-  
-`;
-
 const DeleteHeader = styled.h2`
   
 `;
