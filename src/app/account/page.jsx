@@ -87,7 +87,11 @@ const Account = () => {
         openModal={isFileUpload}
         closeModal={setIsFileUpload}
       />
-      <Modal openModal={isPassword} closeModal={setIsPassword}>
+      <Modal
+        title='Change your password'
+        openModal={isPassword}
+        closeModal={setIsPassword}
+      >
         <UpdatePassword onCancel={() => setIsPassword(false)} />
       </Modal>
     </Container>
