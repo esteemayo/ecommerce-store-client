@@ -232,6 +232,8 @@ const FileButton = styled.button`
   border: none;
   font-size: 1.5rem;
   padding: 1.2rem 3.5rem;
+  background-color: #6d857f;
+  color: var(--clr-white);
 `;
 
 export default Account;
