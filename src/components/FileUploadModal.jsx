@@ -127,4 +127,8 @@ const Input = styled.input`
   }
 `;
 
+const ButtonContainer = styled.div`
+  
+`;
+
 export default FileUploadModal;
