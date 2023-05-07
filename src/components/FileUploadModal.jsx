@@ -96,6 +96,11 @@ const Input = styled.input`
   overflow: hidden;
   position: absolute;
   z-index: -1;
+
+  &:focus + ${Label} {
+    outline: 3px solid #89a8a0;
+    outline-offset: 3px;
+  }
 `;
 
 export default FileUploadModal;
