@@ -81,7 +81,7 @@ const Container = styled.div`
 `;
 
 const Heading = styled.h1`
-  
+  display: inline-block;
 `;
 
 const Form = styled.form`
