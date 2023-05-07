@@ -12,4 +12,8 @@ const Overlay = styled.aside`
   
 `;
 
+const Container = styled.div`
+  
+`;
+
 export default Modal;
