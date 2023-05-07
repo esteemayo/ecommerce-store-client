@@ -193,6 +193,8 @@ const DeleteContainer = styled.div`
 const DeleteHeader = styled.h2`
   display: inline-block;
   text-transform: capitalize;
+  font-weight: 500;
+  font-size: 1.385rem;
 `;
 
 const DeleteWarning = styled.p`
