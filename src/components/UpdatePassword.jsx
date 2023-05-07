@@ -18,6 +18,24 @@ const UpdatePassword = ({ onCancel }) => {
     setInputs((prev) => ({ ...prev, [name]: value }));
   };
 
+  const validateForm = () => {
+    const errors = {};
+
+    if (password === '') {
+      errors.password = 'Please enter your new password';
+    }
+
+    if (password !== confirmPassword) {
+      errors.confirmPassword = 'Passwords do not match';
+    }
+
+    if (currentPassword === '') {
+      errors.currentPassword = 'Please enter your current password';
+    }
+
+    return errors;
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
