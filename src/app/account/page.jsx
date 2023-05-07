@@ -234,6 +234,9 @@ const FileButton = styled.button`
   padding: 1.2rem 3.5rem;
   background-color: #6d857f;
   color: var(--clr-white);
+  border-radius: 0.5rem;
+  outline-color: #85beae;
+  cursor: pointer;
 `;
 
 export default Account;
