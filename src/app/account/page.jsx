@@ -230,6 +230,8 @@ const AvatarContainer = styled.div`
 const FileButton = styled.button`
   display: inline-block;
   border: none;
+  font-size: 1.5rem;
+  padding: 1.2rem 3.5rem;
 `;
 
 export default Account;
