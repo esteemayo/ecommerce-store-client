@@ -30,6 +30,7 @@ const UpdatePassword = ({ onCancel }) => {
             id='password'
             name='password'
             placeholder='Type in your new password'
+            onChange={handleChange}
           />
         </FormGroup>
         <FormGroup>
@@ -39,6 +40,7 @@ const UpdatePassword = ({ onCancel }) => {
             id='confirmPassword'
             name='confirmPassword'
             placeholder='Confirm your password'
+            onChange={handleChange}
           />
         </FormGroup>
         <FormGroup>
@@ -48,6 +50,7 @@ const UpdatePassword = ({ onCancel }) => {
             id='currentPassword'
             name='currentPassword'
             placeholder='Type in your current password'
+            onChange={handleChange}
           />
         </FormGroup>
         <FormButtonContainer>
