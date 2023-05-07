@@ -32,6 +32,7 @@ const UpdatePassword = () => {
             placeholder='Type in your current password'
           />
         </FormGroup>
+        <FormButton type='button'>Cancel</FormButton>
         <FormButton type='submit'>Save</FormButton>
       </Form>
     </Container>
