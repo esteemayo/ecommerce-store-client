@@ -95,7 +95,6 @@ const InputContainer = styled.div`
 
 const Label = styled.label`
   display: inline-block;
-  width: 13rem;
   font-weight: 600;
   font-size: 1.6rem;
   color: #888;
