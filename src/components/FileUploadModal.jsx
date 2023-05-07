@@ -106,6 +106,9 @@ const Input = styled.input`
     color: #89a8a0;
     display: inline-block;
     text-decoration: none;
+    padding: 3px;
+    border-bottom: 1px solid #89a8a0;
+    cursor: pointer;
   }
 `;
 
