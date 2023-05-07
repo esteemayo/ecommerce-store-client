@@ -7,6 +7,7 @@ const Modal = ({ children, openModal, closeModal }) => {
       <Container>
         <Wrapper>
           <ButtonContainer>
+            <Heading>Change your password</Heading>
             <Button type='button' onClick={() => closeModal(false)}>
               <CloseIcon />
             </Button>
@@ -54,6 +55,12 @@ const ButtonContainer = styled.div`
   position: absolute;
   top: 1rem;
   right: 0;
+`;
+
+const Heading = styled.h1`
+  display: inline-block;
+  font-weight: 500;
+  font-size: 2rem;
 `;
 
 const Button = styled.button`
