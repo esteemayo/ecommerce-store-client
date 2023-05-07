@@ -215,6 +215,7 @@ const AvatarContainer = styled.div`
   width: 10rem;
   height: 10rem;
   background-color: #d5dae7;
+  border-radius: 3.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
