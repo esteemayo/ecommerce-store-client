@@ -32,10 +32,10 @@ const UpdatePassword = ({ onCancel }) => {
     <Container>
       <Form onSubmit={handleSubmit}>
         <FormGroup>
-          <FormLabel htmlFor='password'>Password</FormLabel>
+          <FormLabel htmlFor='password1'>Password</FormLabel>
           <FormInput
             type='password'
-            id='password'
+            id='password1'
             name='password'
             value={password}
             placeholder='Type in your new password'
