@@ -219,6 +219,7 @@ const AvatarContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 1rem;
 
   svg {
     font-size: 5rem;
