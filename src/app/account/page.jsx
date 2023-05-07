@@ -5,6 +5,8 @@ import { faUser } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
 
 const Account = () => {
+  const [isFileUpload, setIsFileUpload] = useState(false);
+
   return (
     <Container>
       <Wrapper>
