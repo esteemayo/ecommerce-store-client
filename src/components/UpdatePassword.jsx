@@ -87,6 +87,12 @@ const FormInput = styled.input`
   border-radius: 0.5rem;
   outline-color: #eee;
   caret-color: var(--caret-light);
+
+  &::-webkit-input-placeholder {
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: #bbb;
+  }
 `;
 
 const FormButtonContainer = styled.div`
