@@ -113,6 +113,7 @@ const CancelButton = styled.button`
   border: 1px solid #ccc;
   border-radius: 0.5rem;
   outline-color: #eee;
+  cursor: pointer;
 `;
 
 const FormButton = styled.button`
