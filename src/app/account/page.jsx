@@ -126,7 +126,7 @@ const AccountInfo = styled.div`
 `;
 
 const Left = styled.div`
-  flex: 2;
+  flex: 1.5;
 `;
 
 const InputContainer = styled.div`
