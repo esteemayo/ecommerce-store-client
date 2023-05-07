@@ -102,7 +102,8 @@ const FormButtonContainer = styled.div`
 `;
 
 const FormButton = styled.button`
-  
+  display: inline-block;
+  border: none;
 `;
 
 export default UpdatePassword;
