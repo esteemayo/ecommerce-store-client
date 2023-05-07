@@ -30,7 +30,6 @@ const UpdatePassword = ({ onCancel }) => {
 
   return (
     <Container>
-      <Heading>Change your password</Heading>
       <Form onSubmit={handleSubmit}>
         <FormGroup>
           <FormLabel htmlFor='password'>Password</FormLabel>
@@ -78,12 +77,6 @@ const UpdatePassword = ({ onCancel }) => {
 
 const Container = styled.div`
   margin-top: 1.5rem;
-`;
-
-const Heading = styled.h1`
-  display: inline-block;
-  font-weight: 500;
-  font-size: 2rem;
 `;
 
 const Form = styled.form`
