@@ -2,7 +2,9 @@ import styled from 'styled-components';
 
 const FileUploadModal = () => {
   return (
-    <div>FileUploadModal</div>
+    <Overlay>
+      FileUploadModal
+    </Overlay>
   );
 }
 
