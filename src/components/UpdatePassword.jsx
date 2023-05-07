@@ -10,6 +10,8 @@ const initialState = {
 const UpdatePassword = ({ onCancel }) => {
   const [inputs, setInputs] = useState(initialState);
 
+  const { password, confirmPassword, currentPassword } = inputs;
+
   const handleChange = ({ target: input }) => {
     const { name, value } = input;
     setInputs((prev) => ({ ...prev, [name]: value }));
@@ -29,6 +31,7 @@ const UpdatePassword = ({ onCancel }) => {
             type='password'
             id='password'
             name='password'
+            value={password}
             placeholder='Type in your new password'
             onChange={handleChange}
           />
@@ -39,6 +42,7 @@ const UpdatePassword = ({ onCancel }) => {
             type='password'
             id='confirmPassword'
             name='confirmPassword'
+            value={confirmPassword}
             placeholder='Confirm your password'
             onChange={handleChange}
           />
@@ -49,6 +53,7 @@ const UpdatePassword = ({ onCancel }) => {
             type='password'
             id='currentPassword'
             name='currentPassword'
+            value={currentPassword}
             placeholder='Type in your current password'
             onChange={handleChange}
           />
