@@ -7,7 +7,9 @@ const Modal = ({ openModal, closeModal }) => {
       <Container>
         <Wrapper>
           <ButtonContainer>
-            <CloseIcon />
+            <Button type='button' onClick={() => closeModal(false)}>
+              <CloseIcon />
+            </Button>
           </ButtonContainer>
         </Wrapper>
       </Container>
