@@ -67,7 +67,7 @@ const Account = () => {
               </Left>
               <Right>
                 <AvatarContainer>
-
+                  <FontAwesomeIcon icon={faUser} />
                 </AvatarContainer>
                 <FileButton type='button'>Upload a picture</FileButton>
               </Right>
