@@ -11,7 +11,7 @@ const FileUploadModal = ({ openModal, closeModal }) => {
               <CloseIcon />
             </CloseButton>
             <InputContainer>
-
+              <Input type='file' id='file' accept='image/*' />
             </InputContainer>
           </CloseButtonContainer>
         </Wrapper>
