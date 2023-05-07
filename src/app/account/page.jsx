@@ -80,7 +80,10 @@ const Account = () => {
           </AccountWrapper>
         </AccountContainer>
       </Wrapper>
-      <FileUploadModal openModal={isFileUpload} closeModal={setIsFileUpload} />
+      <FileUploadModal
+        openModal={isFileUpload}
+        closeModal={setIsFileUpload}
+      />
     </Container>
   );
 }
