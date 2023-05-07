@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const FileUploadModal = ({ openModal, closeModal }) => {
   return (
-    <Overlay>
+    <Overlay type={openModal ? 'show' : ''}>
       FileUploadModal
     </Overlay>
   );
