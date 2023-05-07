@@ -74,6 +74,10 @@ const CloseButton = styled.button`
   }
 `;
 
+const UploadContainer = styled.div`
+  
+`;
+
 const InputContainer = styled.div`
   display: flex;
   flex-direction: column;
