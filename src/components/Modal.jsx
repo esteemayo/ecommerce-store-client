@@ -63,6 +63,11 @@ const Button = styled.button`
   color: #838283;
   outline-color: #f7f3f8;
   cursor: pointer;
+
+  svg {
+    font-size: 2.3rem;
+    fill: currentColor;
+  }
 `;
 
 export default Modal;
