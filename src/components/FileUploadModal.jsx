@@ -109,6 +109,15 @@ const Input = styled.input`
     padding: 3px;
     border-bottom: 1px solid #89a8a0;
     cursor: pointer;
+
+    &:hover {
+      background-color: #89a8a0;
+      color: var(--clr-white);
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+      -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+      -moz-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+      transform: translateY(-2px);
+    }
   }
 `;
 
