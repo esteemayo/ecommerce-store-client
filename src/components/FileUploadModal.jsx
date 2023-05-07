@@ -70,4 +70,8 @@ const CloseButton = styled.button`
   }
 `;
 
+const InputContainer = styled.div`
+  
+`;
+
 export default FileUploadModal;
