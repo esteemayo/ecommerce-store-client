@@ -44,7 +44,11 @@ const Wrapper = styled.div`
 `;
 
 const ButtonContainer = styled.div`
-  
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  top: 1rem;
+  right: 0;
 `;
 
 export default Modal;
