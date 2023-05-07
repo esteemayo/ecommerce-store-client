@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const UpdatePassword = () => {
+const UpdatePassword = ({ onCancel }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
   };
