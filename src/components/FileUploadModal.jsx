@@ -75,7 +75,10 @@ const CloseButton = styled.button`
 `;
 
 const InputContainer = styled.div`
-  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 `;
 
 const Input = styled.input`
