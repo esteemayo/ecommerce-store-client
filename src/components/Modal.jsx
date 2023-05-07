@@ -11,6 +11,9 @@ const Modal = ({ openModal, closeModal }) => {
               <CloseIcon />
             </Button>
           </ButtonContainer>
+          <ModalContent>
+
+          </ModalContent>
         </Wrapper>
       </Container>
     </Overlay>
