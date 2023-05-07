@@ -43,6 +43,18 @@ const Account = () => {
                     <Button type='button'>Change</Button>
                   </ButtonContainer>
                 </InputContainer>
+                <InputContainer>
+                  <Label htmlFor='password'>Password</Label>
+                  <Input
+                    type='password'
+                    id='password'
+                    name='password'
+                    placeholder='********'
+                  />
+                  <ButtonContainer>
+                    <Button type='button'>Change</Button>
+                  </ButtonContainer>
+                </InputContainer>
               </Left>
               <Right>
                 <AvatarContainer>
