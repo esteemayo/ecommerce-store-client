@@ -23,6 +23,15 @@ const Account = () => {
                   />
                 </InputContainer>
                 <InputContainer>
+                  <Label htmlFor='username'>Your username</Label>
+                  <Input
+                    type='text'
+                    id='username'
+                    name='username'
+                    placeholder='Username'
+                  />
+                </InputContainer>
+                <InputContainer>
                   <Label htmlFor='email'>Email address</Label>
                   <Input
                     type='email'
