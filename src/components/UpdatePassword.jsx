@@ -6,4 +6,8 @@ const UpdatePassword = () => {
   );
 }
 
+const Container = styled.div`
+  
+`;
+
 export default UpdatePassword;
