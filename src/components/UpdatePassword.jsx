@@ -37,7 +37,7 @@ const UpdatePassword = () => {
           />
         </FormGroup>
         <FormButtonContainer>
-          <FormButton type='button'>Cancel</FormButton>
+          <CancelButton type='button'>Cancel</CancelButton>
           <FormButton type='submit'>Save</FormButton>
         </FormButtonContainer>
       </Form>
@@ -99,6 +99,10 @@ const FormButtonContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+`;
+
+const CancelButton = styled.button`
+  
 `;
 
 const FormButton = styled.button`
