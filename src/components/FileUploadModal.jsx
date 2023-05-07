@@ -45,4 +45,8 @@ const CloseButtonContainer = styled.div`
   
 `;
 
+const CloseButton = styled.button`
+  
+`;
+
 export default FileUploadModal;
