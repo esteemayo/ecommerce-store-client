@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 
 const UpdatePassword = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <Container>
       <Heading>Change your password</Heading>
