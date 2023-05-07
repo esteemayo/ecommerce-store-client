@@ -4,6 +4,9 @@ const UpdatePassword = () => {
   return (
     <Container>
       <Heading>Change your password</Heading>
+      <Form>
+
+      </Form>
     </Container>
   );
 }
