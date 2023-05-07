@@ -12,6 +12,7 @@ const FileUploadModal = ({ openModal, closeModal }) => {
             </CloseButton>
             <InputContainer>
               <Input type='file' id='file' accept='image/*' />
+              <Label htmlFor='file'>Attach a photo</Label>
             </InputContainer>
           </CloseButtonContainer>
         </Wrapper>
@@ -78,6 +79,10 @@ const InputContainer = styled.div`
 `;
 
 const Input = styled.input`
+  
+`;
+
+const Label = styled.label`
   
 `;
 
