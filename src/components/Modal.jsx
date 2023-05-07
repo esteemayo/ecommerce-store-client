@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import CloseIcon from '@mui/icons-material/Close';
 
 const Modal = () => {
   return (
