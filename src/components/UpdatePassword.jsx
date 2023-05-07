@@ -6,6 +6,24 @@ const UpdatePassword = () => {
       <Heading>Change your password</Heading>
       <Form>
         <FormGroup>
+          <FormLabel htmlFor='password'>Password</FormLabel>
+          <FormInput
+            type='password'
+            id='password'
+            name='password'
+            placeholder='Type in your new password'
+          />
+        </FormGroup>
+        <FormGroup>
+          <FormLabel htmlFor='confirmPassword'>Confirm Password</FormLabel>
+          <FormInput
+            type='password'
+            id='confirmPassword'
+            name='confirmPassword'
+            placeholder='Confirm your password'
+          />
+        </FormGroup>
+        <FormGroup>
           <FormLabel htmlFor='currentPassword'>Current Password</FormLabel>
           <FormInput
             type='password'
