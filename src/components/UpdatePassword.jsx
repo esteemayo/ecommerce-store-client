@@ -96,7 +96,9 @@ const FormInput = styled.input`
 `;
 
 const FormButtonContainer = styled.div`
-  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 `;
 
 const FormButton = styled.button`
