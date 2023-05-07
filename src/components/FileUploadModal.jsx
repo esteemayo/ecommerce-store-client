@@ -21,4 +21,8 @@ const Overlay = styled.aside`
   z-index: ${({ type }) => type === 'show' ? 4000 : -1};
 `;
 
+const Container = styled.div`
+  
+`;
+
 export default FileUploadModal;
