@@ -37,7 +37,9 @@ const UpdatePassword = ({ onCancel }) => {
           />
         </FormGroup>
         <FormButtonContainer>
-          <CancelButton type='button'>Cancel</CancelButton>
+          <CancelButton type='button' onClick={onCancel}>
+            Cancel
+          </CancelButton>
           <FormButton type='submit'>Save</FormButton>
         </FormButtonContainer>
       </Form>
