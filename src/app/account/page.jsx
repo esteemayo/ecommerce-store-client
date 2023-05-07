@@ -195,6 +195,7 @@ const DeleteHeader = styled.h2`
   text-transform: capitalize;
   font-weight: 500;
   font-size: 1.385rem;
+  color: var(--clr-primary-green);
 `;
 
 const DeleteWarning = styled.p`
