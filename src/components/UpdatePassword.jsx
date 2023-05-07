@@ -7,6 +7,12 @@ const UpdatePassword = () => {
       <Form>
         <FormGroup>
           <FormLabel htmlFor='currentPassword'>Current Password</FormLabel>
+          <FormInput
+            type='password'
+            id='currentPassword'
+            name='currentPassword'
+            placeholder='Type in your current password'
+          />
         </FormGroup>
       </Form>
     </Container>
