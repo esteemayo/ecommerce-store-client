@@ -101,6 +101,12 @@ const Input = styled.input`
     outline: 3px solid #89a8a0;
     outline-offset: 3px;
   }
+
+  & + ${Label} {
+    color: #89a8a0;
+    display: inline-block;
+    text-decoration: none;
+  }
 `;
 
 export default FileUploadModal;
