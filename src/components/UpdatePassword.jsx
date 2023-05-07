@@ -77,7 +77,7 @@ const UpdatePassword = ({ onCancel }) => {
 }
 
 const Container = styled.div`
-  
+  margin-top: 1.5rem;
 `;
 
 const Heading = styled.h1`
