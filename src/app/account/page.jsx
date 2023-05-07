@@ -34,15 +34,6 @@ const Account = () => {
                     <Button type='button'>Change</Button>
                   </ButtonContainer>
                 </InputContainer>
-                <InputContainer>
-                  <Label htmlFor='username'>Your username</Label>
-                  <Input
-                    type='text'
-                    id='username'
-                    name='username'
-                    placeholder='Username'
-                  />
-                </InputContainer>
               </Left>
               <Right>
                 <AvatarContainer>
