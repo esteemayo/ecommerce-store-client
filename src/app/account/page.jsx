@@ -191,7 +191,8 @@ const DeleteContainer = styled.div`
 `;
 
 const DeleteHeader = styled.h2`
-  
+  display: inline-block;
+  text-transform: capitalize;
 `;
 
 const DeleteWarning = styled.p`
