@@ -215,6 +215,9 @@ const AvatarContainer = styled.div`
   width: 10rem;
   height: 10rem;
   background-color: #d5dae7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 const FileButton = styled.button`
