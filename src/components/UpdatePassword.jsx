@@ -1,6 +1,15 @@
 import styled from 'styled-components';
+import { useState } from 'react';
+
+const initialState = {
+  password: '',
+  confirmPassword: '',
+  currentPassword: '',
+};
 
 const UpdatePassword = ({ onCancel }) => {
+  const [inputs, setInputs] = useState(initialState);
+
   const handleSubmit = (e) => {
     e.preventDefault();
   };
