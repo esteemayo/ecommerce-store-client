@@ -6,4 +6,8 @@ const FileUploadModal = () => {
   );
 }
 
+const Overlay = styled.aside`
+  
+`;
+
 export default FileUploadModal;
