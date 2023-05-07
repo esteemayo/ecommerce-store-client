@@ -6,7 +6,7 @@ const UpdatePassword = () => {
       <Heading>Change your password</Heading>
       <Form>
         <FormGroup>
-
+          <FormLabel htmlFor='currentPassword'>Current Password</FormLabel>
         </FormGroup>
       </Form>
     </Container>
