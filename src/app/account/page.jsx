@@ -244,6 +244,7 @@ const FileButton = styled.button`
   background-size: 220%;
   outline-color: #85beae;
   cursor: pointer;
+  transition: all 0.3s;
 
   &:hover {
     background-position: 100%;
