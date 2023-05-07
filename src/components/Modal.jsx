@@ -3,7 +3,9 @@ import styled from 'styled-components';
 const Modal = () => {
   return (
     <Overlay>
-      Modal
+      <Container>
+        Modal
+      </Container>
     </Overlay>
   );
 }
