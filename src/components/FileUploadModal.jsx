@@ -15,6 +15,10 @@ const Overlay = styled.aside`
   position: fixed;
   top: 0;
   right: 0;
+  display: ${({ type }) => type === 'show' ? 'block' : 'none'};
+  visibility: ${({ type }) => type === 'show' ? 'visible' : 'hidden'};
+  opacity: ${({ type }) => type === 'show' ? 1 : 0};
+  z-index: ${({ type }) => type === 'show' ? 4000 : -1};
 `;
 
 export default FileUploadModal;
