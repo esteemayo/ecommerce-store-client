@@ -242,6 +242,7 @@ const FileButton = styled.button`
     #89a8a0 50%,
   );
   background-size: 220%;
+  outline-color: #85beae;
   cursor: pointer;
 `;
 
