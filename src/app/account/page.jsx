@@ -62,7 +62,7 @@ const Account = () => {
                     placeholder='********'
                   />
                   <ButtonContainer>
-                    <Button type='button'>Change</Button>
+                    <Button type='button' onClick={() => setIsPassword(true)}>Change</Button>
                   </ButtonContainer>
                 </InputContainer>
                 <DeleteContainer>
