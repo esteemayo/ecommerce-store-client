@@ -119,6 +119,7 @@ const CancelButton = styled.button`
 const FormButton = styled.button`
   display: inline-block;
   border: none;
+  text-transform: uppercase;
   font-weight: 500;
   font-size: 1.4rem;
   width: 50%;
