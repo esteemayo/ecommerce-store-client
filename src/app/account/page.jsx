@@ -218,6 +218,11 @@ const AvatarContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  svg {
+    font-size: 5rem;
+    color: var(--clr-white);
+  }
 `;
 
 const FileButton = styled.button`
