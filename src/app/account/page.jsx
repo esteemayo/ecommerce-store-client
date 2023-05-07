@@ -79,6 +79,7 @@ const Account = () => {
           </AccountWrapper>
         </AccountContainer>
       </Wrapper>
+      <FileUploadModal />
     </Container>
   );
 }
