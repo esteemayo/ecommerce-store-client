@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import CloseIcon from '@mui/icons-material/Close';
 
-const Modal = ({ openModal, closeModal }) => {
+const Modal = ({ children, openModal, closeModal }) => {
   return (
     <Overlay type={openModal ? 'show' : ''}>
       <Container>
@@ -12,7 +12,7 @@ const Modal = ({ openModal, closeModal }) => {
             </Button>
           </ButtonContainer>
           <ModalContent>
-
+            {children}
           </ModalContent>
         </Wrapper>
       </Container>
