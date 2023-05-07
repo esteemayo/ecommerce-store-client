@@ -1,13 +1,13 @@
 import styled from 'styled-components';
 import CloseIcon from '@mui/icons-material/Close';
 
-const Modal = ({ children, openModal, closeModal }) => {
+const Modal = ({ title, children, openModal, closeModal }) => {
   return (
     <Overlay type={openModal ? 'show' : ''}>
       <Container>
         <Wrapper>
           <ButtonContainer>
-            <Heading>Change your password</Heading>
+            <Heading>{title}</Heading>
             <Button type='button' onClick={() => closeModal(false)}>
               <CloseIcon />
             </Button>
