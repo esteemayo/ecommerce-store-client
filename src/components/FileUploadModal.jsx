@@ -54,7 +54,10 @@ const CloseButtonContainer = styled.div`
 `;
 
 const CloseButton = styled.button`
-  
+  display: inline-block;
+  border: none;
+  width: 2.5rem;
+  height: 2.5rem;
 `;
 
 export default FileUploadModal;
