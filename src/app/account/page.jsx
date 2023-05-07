@@ -228,7 +228,8 @@ const AvatarContainer = styled.div`
 `;
 
 const FileButton = styled.button`
-  
+  display: inline-block;
+  border: none;
 `;
 
 export default Account;
