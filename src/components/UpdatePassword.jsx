@@ -8,7 +8,7 @@ const UpdatePassword = () => {
   return (
     <Container>
       <Heading>Change your password</Heading>
-      <Form>
+      <Form onSubmit={handleSubmit}>
         <FormGroup>
           <FormLabel htmlFor='password'>Password</FormLabel>
           <FormInput
