@@ -186,6 +186,18 @@ const Button = styled.button`
   cursor: pointer;
 `;
 
+const DeleteContainer = styled.div`
+  
+`;
+
+const DeleteHeader = styled.h2`
+  
+`;
+
+const DeleteWarning = styled.p`
+  
+`;
+
 const Right = styled.div`
   flex: 1;
 `;
@@ -195,14 +207,6 @@ const AvatarContainer = styled.div`
 `;
 
 const FileButton = styled.button`
-  
-`;
-
-const DeleteHeader = styled.h2`
-  
-`;
-
-const DeleteWarning = styled.p`
   
 `;
 
