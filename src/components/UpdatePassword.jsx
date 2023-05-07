@@ -8,6 +8,7 @@ const initialState = {
 };
 
 const UpdatePassword = ({ onCancel }) => {
+  const [errors, setErrors] = useState({});
   const [inputs, setInputs] = useState(initialState);
 
   const { password, confirmPassword, currentPassword } = inputs;
