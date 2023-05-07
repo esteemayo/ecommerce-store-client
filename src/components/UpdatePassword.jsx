@@ -29,4 +29,8 @@ const FormGroup = styled.div`
   
 `;
 
+const FormLabel = styled.label`
+  
+`;
+
 export default UpdatePassword;
