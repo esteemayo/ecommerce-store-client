@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const FileUploadModal = () => {
+const FileUploadModal = ({ openModal, closeModal }) => {
   return (
     <Overlay>
       FileUploadModal
