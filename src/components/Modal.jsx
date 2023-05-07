@@ -6,4 +6,8 @@ const Modal = () => {
   );
 }
 
+const Overlay = styled.aside`
+  
+`;
+
 export default Modal;
