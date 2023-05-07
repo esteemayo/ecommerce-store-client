@@ -8,7 +8,7 @@ const FileUploadModal = ({ openModal, closeModal }) => {
         <Wrapper>
           <CloseButtonContainer>
             <CloseButton type='button'>
-
+              <CloseIcon />
             </CloseButton>
           </CloseButtonContainer>
         </Wrapper>
