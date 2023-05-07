@@ -48,6 +48,9 @@ const Wrapper = styled.div`
 const CloseButtonContainer = styled.div`
   width: 4rem;
   height: 4rem;
+  position: absolute;
+  top: 1rem;
+  right: 0;
 `;
 
 const CloseButton = styled.button`
