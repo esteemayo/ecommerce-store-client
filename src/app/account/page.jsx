@@ -74,7 +74,7 @@ const Account = () => {
                 <AvatarContainer>
                   <FontAwesomeIcon icon={faUser} />
                 </AvatarContainer>
-                <FileButton type='button'>Upload a picture</FileButton>
+                <FileButton type='button' onClick={() => setIsFileUpload(true)}>Upload a picture</FileButton>
               </Right>
             </AccountInfo>
           </AccountWrapper>
