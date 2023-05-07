@@ -46,15 +46,13 @@ const Wrapper = styled.div`
   padding: 2rem 4rem;
   background-color: var(--clr-white);
   border-radius: 0.5rem;
-  position: relative;
 `;
 
 const ButtonContainer = styled.div`
-  width: 4rem;
-  height: 4rem;
-  position: absolute;
-  top: 1rem;
-  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
 `;
 
 const Heading = styled.h1`
@@ -64,6 +62,12 @@ const Heading = styled.h1`
 `;
 
 const Button = styled.button`
+  position: absolute;
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  top: -1rem;
+  right: -3rem;
   display: inline-block;
   border: none;
   width: 2.5rem;
