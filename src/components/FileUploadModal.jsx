@@ -4,7 +4,9 @@ const FileUploadModal = ({ openModal, closeModal }) => {
   return (
     <Overlay type={openModal ? 'show' : ''}>
       <Container>
-        FileUploadModal
+        <Wrapper>
+          FileUploadModal
+        </Wrapper>
       </Container>
     </Overlay>
   );
