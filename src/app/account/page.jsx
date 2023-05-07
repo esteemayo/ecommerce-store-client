@@ -212,7 +212,9 @@ const Right = styled.div`
 `;
 
 const AvatarContainer = styled.div`
-  
+  width: 10rem;
+  height: 10rem;
+  background-color: #d5dae7;
 `;
 
 const FileButton = styled.button`
