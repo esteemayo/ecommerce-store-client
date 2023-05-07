@@ -9,6 +9,7 @@ import FileUploadModal from '@/components/FileUploadModal';
 import UpdatePassword from '@/components/UpdatePassword';
 
 const Account = () => {
+  const [isPassword, setIsPassword] = useState(false);
   const [isFileUpload, setIsFileUpload] = useState(false);
 
   return (
@@ -86,6 +87,9 @@ const Account = () => {
         openModal={isFileUpload}
         closeModal={setIsFileUpload}
       />
+      <Modal>
+        <UpdatePassword />
+      </Modal>
     </Container>
   );
 }
