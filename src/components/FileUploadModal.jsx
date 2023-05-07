@@ -39,4 +39,8 @@ const Wrapper = styled.div`
   border-radius: 0.5rem;
 `;
 
+const CloseButtonContainer = styled.div`
+  
+`;
+
 export default FileUploadModal;
