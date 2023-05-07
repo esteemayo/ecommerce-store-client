@@ -16,6 +16,9 @@ const FileUploadModal = ({ openModal, closeModal }) => {
               <Input type='file' id='file' accept='image/*' />
               <Label htmlFor='file'>Attach a photo</Label>
             </InputContainer>
+            <ButtonContainer>
+
+            </ButtonContainer>
           </UploadContainer>
         </Wrapper>
       </Container>
