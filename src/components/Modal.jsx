@@ -7,7 +7,7 @@ const Modal = () => {
       <Container>
         <Wrapper>
           <ButtonContainer>
-
+            <CloseIcon />
           </ButtonContainer>
         </Wrapper>
       </Container>
