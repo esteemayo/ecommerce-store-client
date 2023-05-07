@@ -45,7 +45,8 @@ const Wrapper = styled.div`
 `;
 
 const CloseButtonContainer = styled.div`
-  
+  width: 4rem;
+  height: 4rem;
 `;
 
 const CloseButton = styled.button`
