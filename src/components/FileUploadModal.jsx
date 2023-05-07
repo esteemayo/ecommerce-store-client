@@ -77,4 +77,8 @@ const InputContainer = styled.div`
   
 `;
 
+const Input = styled.input`
+  
+`;
+
 export default FileUploadModal;
