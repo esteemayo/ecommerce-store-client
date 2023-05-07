@@ -5,7 +5,9 @@ const UpdatePassword = () => {
     <Container>
       <Heading>Change your password</Heading>
       <Form>
+        <FormGroup>
 
+        </FormGroup>
       </Form>
     </Container>
   );
