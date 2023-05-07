@@ -244,6 +244,10 @@ const FileButton = styled.button`
   background-size: 220%;
   outline-color: #85beae;
   cursor: pointer;
+
+  &:hover {
+    background-position: 100%;
+  }
 `;
 
 export default Account;
