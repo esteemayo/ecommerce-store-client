@@ -51,4 +51,8 @@ const ButtonContainer = styled.div`
   right: 0;
 `;
 
+const Button = styled.button`
+  
+`;
+
 export default Modal;
