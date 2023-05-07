@@ -11,10 +11,12 @@ const FileUploadModal = ({ openModal, closeModal }) => {
               <CloseIcon />
             </CloseButton>
           </CloseButtonContainer>
-          <InputContainer>
-            <Input type='file' id='file' accept='image/*' />
-            <Label htmlFor='file'>Attach a photo</Label>
-          </InputContainer>
+          <UploadContainer>
+            <InputContainer>
+              <Input type='file' id='file' accept='image/*' />
+              <Label htmlFor='file'>Attach a photo</Label>
+            </InputContainer>
+          </UploadContainer>
         </Wrapper>
       </Container>
     </Overlay>
