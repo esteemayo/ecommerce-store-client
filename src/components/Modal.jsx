@@ -2,7 +2,9 @@ import styled from 'styled-components';
 
 const Modal = () => {
   return (
-    <div>Modal</div>
+    <Overlay>
+      Modal
+    </Overlay>
   );
 }
 
