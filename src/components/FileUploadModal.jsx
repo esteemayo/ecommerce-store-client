@@ -160,6 +160,10 @@ const Button = styled.button`
   &:hover {
     background-position: 100%;
   }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
 `;
 
 export default FileUploadModal;
