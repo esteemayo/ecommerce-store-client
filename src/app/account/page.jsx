@@ -230,6 +230,7 @@ const AvatarContainer = styled.div`
 const FileButton = styled.button`
   display: inline-block;
   border: none;
+  font-weight: 500;
   font-size: 1.4rem;
   padding: 1.2rem 3.5rem;
   background-color: #6d857f;
