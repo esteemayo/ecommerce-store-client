@@ -83,6 +83,7 @@ const UploadContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 4rem 0;
 `;
 
 const InputContainer = styled.div`
