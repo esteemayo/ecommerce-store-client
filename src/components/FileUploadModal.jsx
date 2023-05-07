@@ -152,6 +152,9 @@ const Button = styled.button`
     #89a8a0 50%
   );
   background-size: 220%;
+  border-radius: 0.5rem;
+  outline-color: #85beae;
+  cursor: pointer;
 `;
 
 export default FileUploadModal;
