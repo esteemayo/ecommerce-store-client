@@ -142,17 +142,17 @@ const Button = styled.button`
   font-weight: 500;
   font-size: 1.4rem;
   padding: 1rem 3rem;
-  background-color: #6d857f;
+  background-color: var(--clr-black);
   color: var(--clr-white);
   background-image: linear-gradient(
     120deg,
     transparent 0%,
     transparent 50%,
-    #89a8a0 50%
+    #333 50%
   );
   background-size: 220%;
   border-radius: 0.5rem;
-  outline-color: #85beae;
+  outline-color: #777;
   cursor: pointer;
   transition: all 0.3s;
 
