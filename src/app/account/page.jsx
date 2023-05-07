@@ -187,7 +187,7 @@ const Button = styled.button`
 `;
 
 const DeleteContainer = styled.div`
-  
+  margin-top: 3rem;
 `;
 
 const DeleteHeader = styled.h2`
