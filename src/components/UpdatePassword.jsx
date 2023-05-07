@@ -19,6 +19,9 @@ const UpdatePassword = ({ onCancel }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    console.log({ ...inputs });
+    handleClear();
   };
 
   const handleClear = () => {
