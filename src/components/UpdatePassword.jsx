@@ -21,6 +21,10 @@ const UpdatePassword = ({ onCancel }) => {
     e.preventDefault();
   };
 
+  const handleClear = () => {
+    setInputs(initialState);
+  };
+
   return (
     <Container>
       <Heading>Change your password</Heading>
