@@ -12,4 +12,8 @@ const Container = styled.div`
   
 `;
 
+const Heading = styled.h1`
+  
+`;
+
 export default UpdatePassword;
