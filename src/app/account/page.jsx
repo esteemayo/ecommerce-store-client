@@ -87,7 +87,7 @@ const Account = () => {
         openModal={isFileUpload}
         closeModal={setIsFileUpload}
       />
-      <Modal>
+      <Modal openModal={isPassword} closeModal={setIsPassword}>
         <UpdatePassword />
       </Modal>
     </Container>
