@@ -4,7 +4,9 @@ const Modal = () => {
   return (
     <Overlay>
       <Container>
-        Modal
+        <Wrapper>
+          Modal
+        </Wrapper>
       </Container>
     </Overlay>
   );
