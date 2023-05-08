@@ -44,7 +44,7 @@ const Text = styled.p`
 `;
 
 const EmailText = styled.span`
-  
+  display: block;
 `;
 
 const Form = styled.form`
