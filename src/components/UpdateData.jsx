@@ -63,6 +63,7 @@ const UpdateData = ({ onCancel }) => {
             placeholder='Type in your new email address'
             onChange={handleChange}
           />
+          {errors.email && <ErrorMsg>{errors.email}</ErrorMsg>}
         </FormGroup>
         <FormGroup>
           <FormLabel htmlFor='passwordCurrent'>Current Password</FormLabel>
