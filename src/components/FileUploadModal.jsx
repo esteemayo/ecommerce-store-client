@@ -39,7 +39,7 @@ const FileUploadModal = ({ openModal, closeModal }) => {
               <Label htmlFor='file'>Attach a photo</Label>
             </InputContainer>
             <ButtonContainer>
-              <Button type='button'>Upload</Button>
+              <Button type='button' onClick={handleUpload}>Upload</Button>
             </ButtonContainer>
           </UploadContainer>
         </Wrapper>
