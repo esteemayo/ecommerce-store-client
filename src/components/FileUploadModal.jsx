@@ -11,6 +11,10 @@ const FileUploadModal = ({ openModal, closeModal }) => {
     }
   };
 
+  const handleUpload = () => {
+    console.log(file);
+  };
+
   return (
     <Overlay
       className='overlay'
