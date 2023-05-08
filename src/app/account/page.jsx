@@ -248,7 +248,8 @@ const DeleteWarning = styled.p`
 `;
 2
 const DeleteButton = styled.button`
-  
+  display: inline-block;
+  border: none;
 `;
 
 const Right = styled.div`
