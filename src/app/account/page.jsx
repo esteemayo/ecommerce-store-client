@@ -52,7 +52,7 @@ const Account = () => {
                     placeholder='Email'
                   />
                   <ButtonContainer>
-                    <Button type='button'>Change</Button>
+                    <Button type='button' onClick={() => setIsEmailOpen(true)}>Change</Button>
                   </ButtonContainer>
                 </InputContainer>
                 <InputContainer>
