@@ -255,6 +255,7 @@ const DeleteButton = styled.button`
   color: #de0a0a;
   border: 1px solid #de0a0a;
   border-radius: 0.5rem;
+  outline-color: #e92222;
   margin-top: 2rem;
   cursor: pointer;
 
