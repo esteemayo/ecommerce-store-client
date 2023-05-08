@@ -2,7 +2,9 @@ import styled from 'styled-components';
 
 const UpdateData = () => {
   return (
-    <div>UpdateData</div>
+    <Container>
+      UpdateData
+    </Container>
   );
 }
 
