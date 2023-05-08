@@ -59,6 +59,8 @@ const DeleteButton = styled.button`
   border: none;
   display: inline-block;
   text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.4rem;
 `;
 
 export default DeleteAccount;
