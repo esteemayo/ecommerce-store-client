@@ -1,7 +1,14 @@
 import { useState } from 'react';
 import styled from 'styled-components';
 
+const initialState = {
+  email: '',
+  currentPassword: '',
+};
+
 const UpdateData = ({ onCancel }) => {
+  const [data, setData] = useState(initialState);
+
   const handleSubmit = (e) => {
     e.preventDefault();
   };
