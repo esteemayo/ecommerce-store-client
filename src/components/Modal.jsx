@@ -3,7 +3,7 @@ import CloseIcon from '@mui/icons-material/Close';
 
 const Modal = ({ title, children, openModal, closeModal }) => {
   return (
-    <Overlay type={openModal ? 'show' : ''}>
+    <Overlay className='overlay' type={openModal ? 'show' : ''}>
       <Container>
         <Wrapper>
           <ButtonContainer>
