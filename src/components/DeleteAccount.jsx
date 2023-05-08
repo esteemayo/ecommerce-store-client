@@ -9,7 +9,7 @@ const DeleteAccount = () => {
         Please note, that all your data will be permanently erased.
       </WarningText>
       <ButtonContainer>
-
+        <CancelButton type='button'>Cancel</CancelButton>
       </ButtonContainer>
     </Container>
   );
@@ -33,6 +33,10 @@ const WarningText = styled.p`
 `;
 
 const ButtonContainer = styled.div`
+  
+`;
+
+const CancelButton = styled.button`
   
 `;
 
