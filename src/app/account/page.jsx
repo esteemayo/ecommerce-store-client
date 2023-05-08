@@ -8,6 +8,7 @@ import Modal from '@/components/Modal';
 import FileUploadModal from '@/components/FileUploadModal';
 import UpdatePassword from '@/components/UpdatePassword';
 import UpdateData from '@/components/UpdateData';
+import Image from 'next/image';
 
 const Account = () => {
   const [isPassword, setIsPassword] = useState(false);
