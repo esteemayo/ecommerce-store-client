@@ -3,6 +3,8 @@ import CloseIcon from '@mui/icons-material/Close';
 import { useState } from 'react';
 
 const FileUploadModal = ({ openModal, closeModal }) => {
+  const [file, setFile] = useState(null);
+
   const closeModalHandler = (e) => {
     if (e.target.classList.contains('overlay')) {
       closeModal(false);
