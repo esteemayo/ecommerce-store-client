@@ -13,7 +13,7 @@ const DeleteAccount = () => {
 }
 
 const Container = styled.div`
-  
+  padding: 2rem 0;
 `;
 
 const Heading = styled.h4`
