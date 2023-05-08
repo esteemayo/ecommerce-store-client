@@ -28,6 +28,7 @@ const UpdateData = () => {
         </FormGroup>
         <FormButtonContainer>
           <CancelButton type='button'>Cancel</CancelButton>
+          <FormButton type='submit'>Save</FormButton>
         </FormButtonContainer>
       </Form>
     </Container>
