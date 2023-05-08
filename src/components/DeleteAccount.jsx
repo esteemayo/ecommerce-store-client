@@ -45,6 +45,8 @@ const CancelButton = styled.button`
   text-transform: capitalize;
   font-weight: 500;
   font-size: 1.4rem;
+  width: 50%;
+  padding: 1.5rem;
 `;
 
 const DeleteButton = styled.button`
