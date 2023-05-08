@@ -11,6 +11,11 @@ const FileUploadModal = ({ openModal, closeModal }) => {
     }
   };
 
+  const handleClose = () => {
+    closeModal(false);
+    file && setFile(null);
+  };
+
   const handleUpload = () => {
     console.log(file);
   };
