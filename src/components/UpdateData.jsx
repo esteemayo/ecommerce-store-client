@@ -116,7 +116,6 @@ const FormGroup = styled.div`
 const FormLabel = styled.label`
   display: inline-block;
   width: 15rem;
-  text-transform: capitalize;
   font-weight: 600;
   font-size: 1.4rem;
   color: #888;
