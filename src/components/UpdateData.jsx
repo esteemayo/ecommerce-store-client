@@ -6,4 +6,8 @@ const UpdateData = () => {
   );
 }
 
+const Container = styled.div`
+  
+`;
+
 export default UpdateData;
