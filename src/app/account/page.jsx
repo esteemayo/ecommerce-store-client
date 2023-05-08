@@ -96,7 +96,11 @@ const Account = () => {
       >
         <UpdatePassword onCancel={() => setIsPassword(false)} />
       </Modal>
-      <Modal title='Change your email address' openModal={isEmailOpen} closeModal={setIsEmailOpen}>
+      <Modal
+        title='Change your email address'
+        openModal={isEmailOpen}
+        closeModal={setIsEmailOpen}
+      >
         <UpdateData onCancel={() => setIsEmailOpen(false)} />
       </Modal>
     </Container>
