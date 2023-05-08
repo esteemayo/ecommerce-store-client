@@ -21,7 +21,7 @@ const UpdateData = () => {
           <FormLabel htmlFor='passwordCurrent'>Current Password</FormLabel>
           <FormInput
             type='password'
-            name='password'
+            name='currentPassword'
             id='passwordCurrent'
             placeholder='Type in your current password'
           />
