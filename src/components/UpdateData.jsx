@@ -22,7 +22,6 @@ const UpdateData = () => {
           <FormInput
             type='password'
             name='currentPassword'
-            id='passwordCurrent'
             placeholder='Type in your current password'
           />
         </FormGroup>
