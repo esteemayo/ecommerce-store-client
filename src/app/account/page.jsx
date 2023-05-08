@@ -92,7 +92,9 @@ const Account = () => {
                     <FontAwesomeIcon icon={faUser} />
                   )}
                 </AvatarContainer>
-                <FileButton type='button' onClick={() => setIsFileUpload(true)}>Upload a picture</FileButton>
+                <FileButton type='button' onClick={() => setIsFileUpload(true)}>
+                  Upload a picture
+                </FileButton>
               </Right>
             </AccountInfo>
           </AccountWrapper>
