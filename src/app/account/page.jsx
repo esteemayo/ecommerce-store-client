@@ -258,6 +258,7 @@ const DeleteButton = styled.button`
   outline-color: #e92222;
   margin-top: 2rem;
   cursor: pointer;
+  transition: all 0.3s ease;
 
   &:hover {
     background-color: rgba(222, 10, 10, 0.1);
