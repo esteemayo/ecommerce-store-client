@@ -2,6 +2,12 @@ import styled from 'styled-components';
 import CloseIcon from '@mui/icons-material/Close';
 
 const Modal = ({ title, children, openModal, closeModal }) => {
+  const closeModalHandler = (e) => {
+    if (e.target.classList.contains('overlay')) {
+      closeModal(false);
+    }
+  };
+
   return (
     <Overlay className='overlay' type={openModal ? 'show' : ''}>
       <Container>
