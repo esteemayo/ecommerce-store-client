@@ -11,7 +11,7 @@ const UpdateData = () => {
         Your current email address is {' '}
         <EmailText>brent@email.com</EmailText>
       </Text>
-      <Form>
+      <Form onSubmit={handleSubmit}>
         <FormGroup>
           <FormLabel htmlFor='newEmail'>New email address</FormLabel>
           <FormInput
