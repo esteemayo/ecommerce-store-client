@@ -70,4 +70,8 @@ const CancelButton = styled.button`
   
 `;
 
+const FormButton = styled.button`
+  
+`;
+
 export default UpdateData;
