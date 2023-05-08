@@ -7,7 +7,7 @@ const FileUploadModal = ({ openModal, closeModal }) => {
 
   const closeModalHandler = (e) => {
     if (e.target.classList.contains('overlay')) {
-      closeModal(false);
+      handleClose();
     }
   };
 
