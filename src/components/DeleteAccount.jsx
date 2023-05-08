@@ -16,4 +16,8 @@ const Heading = styled.h4`
   
 `;
 
+const WarningText = styled.p`
+  
+`;
+
 export default DeleteAccount;
