@@ -9,6 +9,8 @@ const initialState = {
 const UpdateData = ({ onCancel }) => {
   const [data, setData] = useState(initialState);
 
+  const { email, currentPassword } = data;
+
   const handleChange = ({ target: input }) => {
     const { name, value } = input;
     setData((prev) => ({ ...prev, [name]: value }));
