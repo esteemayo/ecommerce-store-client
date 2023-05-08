@@ -112,7 +112,9 @@ const CancelButton = styled.button`
 `;
 
 const FormButton = styled.button`
-  
+  display: inline-block;
+  border: none;
+  text-transform: uppercase;
 `;
 
 export default UpdateData;
