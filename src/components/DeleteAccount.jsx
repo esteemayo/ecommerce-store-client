@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const DeleteAccount = () => {
   return (
     <Container>
-      DeleteAccount
+      <Heading>You are about to delete your account</Heading>
     </Container>
   );
 }
