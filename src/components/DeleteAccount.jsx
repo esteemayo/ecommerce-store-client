@@ -58,6 +58,7 @@ const CancelButton = styled.button`
 const DeleteButton = styled.button`
   border: none;
   display: inline-block;
+  text-transform: uppercase;
 `;
 
 export default DeleteAccount;
