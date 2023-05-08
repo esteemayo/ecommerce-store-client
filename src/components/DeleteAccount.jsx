@@ -17,7 +17,8 @@ const Container = styled.div`
 `;
 
 const Heading = styled.h4`
-  
+  display: inline-block;
+  font-size: 1.8rem;
 `;
 
 const WarningText = styled.p`
