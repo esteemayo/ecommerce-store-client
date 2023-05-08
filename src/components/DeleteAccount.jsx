@@ -12,4 +12,8 @@ const Container = styled.div`
   
 `;
 
+const Heading = styled.h4`
+  
+`;
+
 export default DeleteAccount;
