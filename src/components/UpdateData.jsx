@@ -90,7 +90,10 @@ const FormInput = styled.input`
 `;
 
 const FormButtonContainer = styled.div`
-  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
 `;
 
 const CancelButton = styled.button`
