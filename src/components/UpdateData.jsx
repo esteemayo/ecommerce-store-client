@@ -20,6 +20,10 @@ const UpdateData = ({ onCancel }) => {
     e.preventDefault();
   };
 
+  const handleClear = () => {
+    setData(initialState);
+  };
+
   return (
     <Container>
       <Text>
