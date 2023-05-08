@@ -18,11 +18,11 @@ const UpdateData = () => {
           />
         </FormGroup>
         <FormGroup>
-          <FormLabel htmlFor='currentPassword'>Current Password</FormLabel>
+          <FormLabel htmlFor='passwordCurrent'>Current Password</FormLabel>
           <FormInput
             type='password'
             name='password'
-            id='currentPassword'
+            id='passwordCurrent'
             placeholder='Type in your current password'
           />
         </FormGroup>
