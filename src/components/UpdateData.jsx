@@ -41,6 +41,7 @@ const Container = styled.div`
 
 const Text = styled.p`
   text-align: center;
+  line-height: 1;
 `;
 
 const EmailText = styled.span`
