@@ -96,6 +96,9 @@ const Account = () => {
       >
         <UpdatePassword onCancel={() => setIsPassword(false)} />
       </Modal>
+      <Modal>
+        <UpdateData onCancel={() => setIsEmailOpen(false)} />
+      </Modal>
     </Container>
   );
 }
