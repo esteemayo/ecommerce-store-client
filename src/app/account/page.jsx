@@ -245,6 +245,10 @@ const DeleteWarning = styled.p`
   line-height: 1.2;
   word-wrap: break-word;
 `;
+2
+const DeleteButton = styled.button`
+  
+`;
 
 const Right = styled.div`
   flex: 1;
