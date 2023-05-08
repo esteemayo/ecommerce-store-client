@@ -10,6 +10,7 @@ const DeleteAccount = () => {
       </WarningText>
       <ButtonContainer>
         <CancelButton type='button'>Cancel</CancelButton>
+        <DeleteButton type='button'>Delete account</DeleteButton>
       </ButtonContainer>
     </Container>
   );
