@@ -15,6 +15,8 @@ const Account = () => {
   const [isEmailOpen, setIsEmailOpen] = useState(false);
   const [isFileUpload, setIsFileUpload] = useState(false);
 
+  const user = false;
+
   return (
     <Container>
       <Wrapper>
