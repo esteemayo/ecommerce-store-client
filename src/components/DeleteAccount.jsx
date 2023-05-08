@@ -41,7 +41,8 @@ const ButtonContainer = styled.div`
 `;
 
 const CancelButton = styled.button`
-  
+  display: inline-block;
+  text-transform: capitalize;
 `;
 
 const DeleteButton = styled.button`
