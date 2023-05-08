@@ -40,7 +40,7 @@ const Container = styled.div`
 `;
 
 const Text = styled.p`
-  
+  text-align: center;
 `;
 
 const EmailText = styled.span`
