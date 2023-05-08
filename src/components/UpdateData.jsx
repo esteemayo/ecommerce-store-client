@@ -9,7 +9,7 @@ const UpdateData = () => {
       </Text>
       <Form>
         <FormGroup>
-
+          <FormLabel htmlFor='newemail'>New email address</FormLabel>
         </FormGroup>
       </Form>
     </Container>
