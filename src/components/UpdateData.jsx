@@ -3,7 +3,9 @@ import styled from 'styled-components';
 const UpdateData = () => {
   return (
     <Container>
-      UpdateData
+      <Text>
+        Your current email address is
+      </Text>
     </Container>
   );
 }
