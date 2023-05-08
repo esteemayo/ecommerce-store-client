@@ -4,6 +4,10 @@ const DeleteAccount = () => {
   return (
     <Container>
       <Heading>You are about to delete your account</Heading>
+      <WarningText>
+        You will receive an email to confirm your decision.
+        Please note, that all your data will be permanently erased.
+      </WarningText>
     </Container>
   );
 }
