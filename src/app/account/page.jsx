@@ -76,6 +76,7 @@ const Account = () => {
                     You will receive an email to confirm your decision.
                     Please note, that all your data will be permanently erased.
                   </DeleteWarning>
+                  <DeleteButton type='button'>Delete account</DeleteButton>
                 </DeleteContainer>
               </Left>
               <Right>
