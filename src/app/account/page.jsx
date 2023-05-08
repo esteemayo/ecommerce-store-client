@@ -258,6 +258,11 @@ const AvatarContainer = styled.div`
   justify-content: center;
   margin-bottom: 1rem;
 
+  img {
+    width: 10rem;
+    height: 10rem;
+  }
+
   svg {
     font-size: 5rem;
     color: var(--clr-white);
