@@ -10,6 +10,7 @@ import UpdatePassword from '@/components/UpdatePassword';
 
 const Account = () => {
   const [isPassword, setIsPassword] = useState(false);
+  const [isEmailOpen, setIsEmailOpen] = useState(false);
   const [isFileUpload, setIsFileUpload] = useState(false);
 
   return (
