@@ -18,4 +18,8 @@ const Text = styled.p`
   
 `;
 
+const EmailText = styled.span`
+  
+`;
+
 export default UpdateData;
