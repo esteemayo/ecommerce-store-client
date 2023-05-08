@@ -44,6 +44,7 @@ const UpdateData = ({ onCancel }) => {
             type='password'
             id='passwordCurrent'
             name='currentPassword'
+            value={currentPassword}
             placeholder='Type in your current password'
             onChange={handleChange}
           />
