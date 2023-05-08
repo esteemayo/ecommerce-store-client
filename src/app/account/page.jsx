@@ -250,6 +250,7 @@ const DeleteWarning = styled.p`
 const DeleteButton = styled.button`
   display: inline-block;
   border: none;
+  padding: 0.5rem 2rem;
 `;
 
 const Right = styled.div`
