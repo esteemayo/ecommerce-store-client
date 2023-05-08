@@ -17,6 +17,20 @@ const UpdateData = ({ onCancel }) => {
     setData((prev) => ({ ...prev, [name]: value }));
   };
 
+  const validateForm = () => {
+    const errors = {};
+
+    if (email.trim() === '') {
+      errors.email = 'Please enter your new email address';
+    }
+
+    if (currentPassword === '') {
+      errors.currentPassword = 'Please enter your password';
+    }
+
+    return errors;
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
   };
