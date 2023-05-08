@@ -169,7 +169,6 @@ const Label = styled.label`
 `;
 
 const Input = styled.input`
-  border: none;
   display: inline-block;
   font-family: inherit;
   font-size: 1.5rem;
