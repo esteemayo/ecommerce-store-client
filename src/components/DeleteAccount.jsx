@@ -29,4 +29,8 @@ const WarningText = styled.p`
   margin-top: 1rem;
 `;
 
+const ButtonContainer = styled.div`
+  
+`;
+
 export default DeleteAccount;
