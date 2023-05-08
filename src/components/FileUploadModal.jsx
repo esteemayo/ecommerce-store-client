@@ -11,7 +11,6 @@ const FileUploadModal = ({ openModal, closeModal }) => {
   return (
     <Overlay
       type={openModal ? 'show' : ''}
-      className='overlay'
       onClick={closeModalHandler}
     >
       <Container>
