@@ -26,6 +26,7 @@ const UpdateData = () => {
             placeholder='Type in your current password'
           />
         </FormGroup>
+        <CancelButton type='button'>Cancel</CancelButton>
       </Form>
     </Container>
   );
