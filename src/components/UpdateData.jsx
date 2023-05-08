@@ -119,6 +119,8 @@ const FormButton = styled.button`
   font-size: 1.4rem;
   width: 50%;
   padding: 1.5rem;
+  background-color: var(--clr-primary-green);
+  color: var(--clr-white);
 `;
 
 export default UpdateData;
