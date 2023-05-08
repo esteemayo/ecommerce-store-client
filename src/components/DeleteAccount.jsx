@@ -40,4 +40,8 @@ const CancelButton = styled.button`
   
 `;
 
+const DeleteButton = styled.button`
+  
+`;
+
 export default DeleteAccount;
