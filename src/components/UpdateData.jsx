@@ -17,6 +17,15 @@ const UpdateData = () => {
             placeholder='Type in your new email address'
           />
         </FormGroup>
+        <FormGroup>
+          <FormLabel htmlFor='currentPassword'>Current Password</FormLabel>
+          <FormInput
+            type='password'
+            name='passwordl'
+            id='currentPassword'
+            placeholder='Type in your current password'
+          />
+        </FormGroup>
       </Form>
     </Container>
   );
