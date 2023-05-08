@@ -42,6 +42,7 @@ const UpdateData = ({ onCancel }) => {
             id='passwordCurrent'
             name='currentPassword'
             placeholder='Type in your current password'
+            onChange={handleChange}
           />
         </FormGroup>
         <FormButtonContainer>
