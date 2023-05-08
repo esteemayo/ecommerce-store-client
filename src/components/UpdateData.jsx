@@ -23,4 +23,8 @@ const EmailText = styled.span`
   
 `;
 
+const Form = styled.form`
+  
+`;
+
 export default UpdateData;
