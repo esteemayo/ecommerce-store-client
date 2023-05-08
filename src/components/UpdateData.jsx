@@ -59,4 +59,8 @@ const FormInput = styled.input`
   
 `;
 
+const CancelButton = styled.button`
+  
+`;
+
 export default UpdateData;
