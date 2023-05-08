@@ -94,8 +94,6 @@ const Button = styled.button`
   }
 `;
 
-const ModalContent = styled.div`
-  
-`;
+const ModalContent = styled.div``;
 
 export default Modal;
