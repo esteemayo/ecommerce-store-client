@@ -251,6 +251,8 @@ const DeleteButton = styled.button`
   display: inline-block;
   border: none;
   padding: 0.5rem 2rem;
+  background-color: transparent;
+  color: #de0a0a;
 `;
 
 const Right = styled.div`
