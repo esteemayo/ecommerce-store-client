@@ -63,7 +63,7 @@ const DeleteButton = styled.button`
   font-size: 1.4rem;
   width: 50%;
   padding: 1.5rem;
-  background-color: var(--clr-primary-green);
+  background-color: #de0a0a;
   color: var(--clr-white);
 `;
 
