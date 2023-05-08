@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const UpdateData = () => {
+const UpdateData = ({ onCancel }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
   };
