@@ -9,7 +9,11 @@ const Modal = ({ title, children, openModal, closeModal }) => {
   };
 
   return (
-    <Overlay className='overlay' type={openModal ? 'show' : ''} onClick={closeModalHandler}>
+    <Overlay
+      className='overlay'
+      type={openModal ? 'show' : ''}
+      onClick={closeModalHandler}
+    >
       <Container>
         <Wrapper>
           <ButtonContainer>
