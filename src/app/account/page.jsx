@@ -9,6 +9,7 @@ import Modal from '@/components/Modal';
 import FileUploadModal from '@/components/FileUploadModal';
 import UpdateData from '@/components/UpdateData';
 import UpdatePassword from '@/components/UpdatePassword';
+import DeleteAccount from '@/components/DeleteAccount';
 
 const Account = () => {
   const [isPassword, setIsPassword] = useState(false);
