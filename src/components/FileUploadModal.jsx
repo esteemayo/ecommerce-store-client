@@ -30,6 +30,7 @@ const FileUploadModal = ({ openModal, closeModal }) => {
                 type='file'
                 id='file'
                 accept='image/*'
+                onChange={(e) => setFile(e.target.files[0])}
               />
               <Label htmlFor='file'>Attach a photo</Label>
             </InputContainer>
