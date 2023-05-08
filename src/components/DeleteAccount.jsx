@@ -34,7 +34,7 @@ const WarningText = styled.p`
 `;
 
 const ButtonContainer = styled.div`
-  
+  margin-top: 2rem;
 `;
 
 const CancelButton = styled.button`
