@@ -7,6 +7,7 @@ import { faUser } from '@fortawesome/free-solid-svg-icons';
 import Modal from '@/components/Modal';
 import FileUploadModal from '@/components/FileUploadModal';
 import UpdatePassword from '@/components/UpdatePassword';
+import UpdateData from '@/components/UpdateData';
 
 const Account = () => {
   const [isPassword, setIsPassword] = useState(false);
