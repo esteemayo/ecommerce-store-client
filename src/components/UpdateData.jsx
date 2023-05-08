@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 
 const UpdateData = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <Container>
       <Text>
