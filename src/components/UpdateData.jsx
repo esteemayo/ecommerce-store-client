@@ -7,6 +7,7 @@ const initialState = {
 };
 
 const UpdateData = ({ onCancel }) => {
+  const [errors, setErrors] = useState({});
   const [data, setData] = useState(initialState);
 
   const { email, currentPassword } = data;
