@@ -78,7 +78,12 @@ const Account = () => {
               </Left>
               <Right>
                 <AvatarContainer>
-                  <Image src='/img/user-9.jpg' width={100} height={100} alt='' />
+                  <Image
+                    src='/img/user-9.jpg'
+                    width={100}
+                    height={100}
+                    alt=''
+                  />
                   <FontAwesomeIcon icon={faUser} />
                 </AvatarContainer>
                 <FileButton type='button' onClick={() => setIsFileUpload(true)}>Upload a picture</FileButton>
