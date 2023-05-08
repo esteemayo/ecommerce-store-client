@@ -33,6 +33,7 @@ const UpdateData = ({ onCancel }) => {
             type='email'
             name='email'
             id='newEmail'
+            value={email}
             placeholder='Type in your new email address'
             onChange={handleChange}
           />
