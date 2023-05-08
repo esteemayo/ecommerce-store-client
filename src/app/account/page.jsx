@@ -256,6 +256,10 @@ const DeleteButton = styled.button`
   border: 1px solid #de0a0a;
   border-radius: 0.5rem;
   cursor: pointer;
+
+  &:hover {
+    background-color: rgba(222, 10, 10, 0.1);
+  }
 `;
 
 const Right = styled.div`
