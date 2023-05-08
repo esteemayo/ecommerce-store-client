@@ -9,11 +9,11 @@ const UpdateData = () => {
       </Text>
       <Form>
         <FormGroup>
-          <FormLabel htmlFor='newemail'>New email address</FormLabel>
+          <FormLabel htmlFor='newEmail'>New email address</FormLabel>
           <FormInput
             type='email'
             name='email'
-            id='newemail'
+            id='newEmail'
             placeholder='Type in your new email address'
           />
         </FormGroup>
