@@ -8,7 +8,9 @@ const UpdateData = () => {
         <EmailText>brent@email.com</EmailText>
       </Text>
       <Form>
+        <FormGroup>
 
+        </FormGroup>
       </Form>
     </Container>
   );
