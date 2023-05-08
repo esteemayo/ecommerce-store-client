@@ -7,6 +7,7 @@ import Image from 'next/image';
 
 import Modal from '@/components/Modal';
 import FileUploadModal from '@/components/FileUploadModal';
+import UpdateData from '@/components/UpdateData';
 import UpdatePassword from '@/components/UpdatePassword';
 
 const Account = () => {
