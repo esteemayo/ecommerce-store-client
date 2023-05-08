@@ -117,6 +117,8 @@ const FormButton = styled.button`
   text-transform: uppercase;
   font-weight: 500;
   font-size: 1.4rem;
+  width: 50%;
+  padding: 1.5rem;
 `;
 
 export default UpdateData;
