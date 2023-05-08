@@ -7,6 +7,9 @@ const UpdateData = () => {
         Your current email address is {' '}
         <EmailText>brent@email.com</EmailText>
       </Text>
+      <Form>
+
+      </Form>
     </Container>
   );
 }
