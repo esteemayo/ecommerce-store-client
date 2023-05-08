@@ -74,6 +74,7 @@ const DeleteButton = styled.button`
   background-size: 220%;
   border-radius: 0.5rem;
   outline-color: #e92222;
+  cursor: pointer;
 `;
 
 export default DeleteAccount;
