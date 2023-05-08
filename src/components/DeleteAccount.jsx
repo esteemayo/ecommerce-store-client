@@ -75,6 +75,10 @@ const DeleteButton = styled.button`
   border-radius: 0.5rem;
   outline-color: #e92222;
   cursor: pointer;
+
+  &:hover {
+    background-position: 100%;
+  }
 `;
 
 export default DeleteAccount;
