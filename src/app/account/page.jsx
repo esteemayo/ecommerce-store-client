@@ -261,6 +261,8 @@ const AvatarContainer = styled.div`
   img {
     width: 10rem;
     height: 10rem;
+    display: block;
+    object-fit: cover;
   }
 
   svg {
