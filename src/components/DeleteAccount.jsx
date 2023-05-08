@@ -35,6 +35,9 @@ const WarningText = styled.p`
 
 const ButtonContainer = styled.div`
   margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 `;
 
 const CancelButton = styled.button`
