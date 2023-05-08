@@ -79,6 +79,8 @@ const FormInput = styled.input`
   color: #999;
   border: 2px solid #f3f4f6;
   border-radius: 0.5rem;
+  outline-color: #eee;
+  caret-color: var(--caret-light);
 `;
 
 const FormButtonContainer = styled.div`
