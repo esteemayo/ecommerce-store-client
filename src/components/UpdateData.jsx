@@ -75,6 +75,7 @@ const UpdateData = ({ onCancel }) => {
             placeholder='Type in your current password'
             onChange={handleChange}
           />
+          {errors.currentPassword && <ErrorMsg>{errors.currentPassword}</ErrorMsg>}
         </FormGroup>
         <FormButtonContainer>
           <CancelButton type='button' onClick={onCancel}>Cancel</CancelButton>
