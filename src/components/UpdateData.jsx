@@ -103,6 +103,8 @@ const CancelButton = styled.button`
   font-size: 1.4rem;
   width: 50%;
   padding: 1.5rem;
+  background-color: transparent;
+  color: #6d857f;
 `;
 
 const FormButton = styled.button`
