@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import CloseIcon from '@mui/icons-material/Close';
+import { useState } from 'react';
 
 const FileUploadModal = ({ openModal, closeModal }) => {
   const closeModalHandler = (e) => {
