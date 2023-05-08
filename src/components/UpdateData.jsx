@@ -4,7 +4,8 @@ const UpdateData = () => {
   return (
     <Container>
       <Text>
-        Your current email address is
+        Your current email address is {' '}
+        <EmailText>brent@email.com</EmailText>
       </Text>
     </Container>
   );
