@@ -21,6 +21,7 @@ const UpdatePassword = ({ onCancel }) => {
 
   const validateForm = () => {
     const errors = {};
+    const { password, confirmPassword, currentPassword } = inputs;
 
     if (password === '') {
       errors.password = 'Please enter your new password';
