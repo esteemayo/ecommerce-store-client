@@ -10,7 +10,6 @@ import FileUploadModal from '@/components/FileUploadModal';
 import UpdateData from '@/components/UpdateData';
 import UpdatePassword from '@/components/UpdatePassword';
 import DeleteAccount from '@/components/DeleteAccount';
-import { useDispatch } from 'react-redux';
 
 const Account = () => {
   const dispatch = useDispatch();
