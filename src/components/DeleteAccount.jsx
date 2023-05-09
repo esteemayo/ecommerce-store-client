@@ -57,7 +57,7 @@ const CancelButton = styled.button`
   width: 50%;
   padding: 1.5rem;
   background-color: transparent;
-  color: #6d857f;
+  color: var(--clr-primary-green);
   border: 1px solid #ccc;
   border-radius: 0.5rem;
   outline-color: #eee;
