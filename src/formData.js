@@ -35,3 +35,28 @@ export const registerInputs = [
     placeholder: 'Confirm your password',
   },
 ];
+
+
+const passwordInputs = [
+  {
+    id: 'password1',
+    name: 'password',
+    type: 'password',
+    label: 'Password',
+    placeholder: 'Type in your new password',
+  },
+  {
+    id: 'confirmPassword',
+    name: 'confirmPassword',
+    type: 'password',
+    label: 'Confirm Password',
+    placeholder: 'Confirm your password',
+  },
+  {
+    id: 'currentPassword',
+    name: 'currentPassword',
+    type: 'password',
+    label: 'Current Password',
+    placeholder: 'Type in your current password',
+  },
+];
