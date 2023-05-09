@@ -71,18 +71,6 @@ const UpdateData = ({ onCancel }) => {
           />
           {errors?.email && <ErrorMsg>{errors?.email}</ErrorMsg>}
         </FormGroup>
-        <FormGroup>
-          <FormLabel htmlFor='passwordCurrent'>Current Password</FormLabel>
-          <FormInput
-            type='password'
-            id='passwordCurrent'
-            name='currentPassword'
-            value={currentPassword}
-            placeholder='Type in your current password'
-            onChange={handleChange}
-          />
-          {errors?.currentPassword && <ErrorMsg>{errors?.currentPassword}</ErrorMsg>}
-        </FormGroup>
         <FormButtonContainer>
           <CancelButton type='button' onClick={closeHandler}>Cancel</CancelButton>
           <FormButton type='submit'>Save</FormButton>
