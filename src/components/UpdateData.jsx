@@ -60,18 +60,23 @@ const UpdateData = ({ onCancel }) => {
         <EmailText>brent@email.com</EmailText>
       </Text>
       <Form onSubmit={handleSubmit}>
-        <FormGroup>
-          <FormLabel htmlFor='newEmail'>New email address</FormLabel>
-          <FormInput
-            type='email'
-            name='email'
-            id='newEmail'
-            value={email}
-            placeholder='Type in your new email address'
-            onChange={handleChange}
-          />
-          {errors?.email && <ErrorMsg>{errors?.email}</ErrorMsg>}
-        </FormGroup>
+        {userDataInputs.map((input) => {
+          const { id, name, type, label, placeholder } = input;
+          return (
+            <FormGroup key={id}>
+              <FormLabel htmlFor={id}>{label}</FormLabel>
+              <FormInput
+                type={type}
+                name={name}
+                id={id}
+                value={data[name]}
+                placeholder={placeholder}
+                onChange={handleChange}
+              />
+              {errors && errors[name] && <ErrorMsg>{errors[name]}</ErrorMsg>}
+            </FormGroup>
+          );
+        })}
         <FormButtonContainer>
           <CancelButton type='button' onClick={closeHandler}>Cancel</CancelButton>
           <FormButton type='submit'>Save</FormButton>
