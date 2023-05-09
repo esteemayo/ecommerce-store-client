@@ -68,7 +68,6 @@ const UpdateData = ({ onCancel }) => {
               <FormInput
                 type={type}
                 name={name}
-                id={id}
                 value={data[name]}
                 placeholder={placeholder}
                 onChange={handleChange}
