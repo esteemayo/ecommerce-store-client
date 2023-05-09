@@ -16,7 +16,7 @@ const DeleteAccount = ({ onCancel }) => {
         <CancelButton type='button' onClick={() => onCancel(false)}>
           Cancel
         </CancelButton>
-        <DeleteButton type='button'>Delete account</DeleteButton>
+        <DeleteButton type='button' onClick={handleDelete}>Delete account</DeleteButton>
       </ButtonContainer>
     </Container>
   );
