@@ -24,7 +24,7 @@ const Account = () => {
   const user = false;
 
   return (
-    <Container>
+    <Container onMouseOver={() => dispatch(closeSubmenu())}>
       <Wrapper>
         <HeadingContainer>
           <Heading>Account settings</Heading>
