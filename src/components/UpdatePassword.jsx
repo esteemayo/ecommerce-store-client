@@ -51,6 +51,12 @@ const UpdatePassword = ({ onCancel }) => {
     setInputs(initialState);
   };
 
+  const cancelHandler = () => {
+    onCancel();
+    handleClear();
+    errors && setErrors();
+  };
+
   return (
     <Container>
       <Form onSubmit={handleSubmit}>
