@@ -76,7 +76,7 @@ const Button = styled.button`
   width: 4rem;
   height: 4rem;
   position: absolute;
-  top: -1rem;
+  top: 0;
   right: -3rem;
   display: inline-block;
   border: none;
