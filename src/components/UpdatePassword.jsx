@@ -13,7 +13,6 @@ const UpdatePassword = ({ onCancel }) => {
   const [errors, setErrors] = useState({});
   const [inputs, setInputs] = useState(initialState);
 
-
   const handleChange = ({ target: input }) => {
     const { name, value } = input;
     setInputs((prev) => ({ ...prev, [name]: value }));
