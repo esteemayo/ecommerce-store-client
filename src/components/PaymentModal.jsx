@@ -279,7 +279,7 @@ const FormButton = styled.button`
 
 const ErrorMsg = styled.span`
   font-size: 1.3rem;
-  color: hsl(360, 71%, 66%);
+  color: var(--clr-secondary-red);
   margin-top: 1px;
 `;
 
