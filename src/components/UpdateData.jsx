@@ -12,7 +12,6 @@ const UpdateData = ({ onCancel }) => {
   const [errors, setErrors] = useState({});
   const [data, setData] = useState(initialState);
 
-
   const handleChange = ({ target: input }) => {
     const { name, value } = input;
     setData((prev) => ({ ...prev, [name]: value }));
