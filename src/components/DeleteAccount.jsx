@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 
 const DeleteAccount = ({ onCancel }) => {
+  const handleDelete = () => {
+    console.log('user deleted!');
+  };
+
   return (
     <Container>
       <Heading>You are about to delete your account</Heading>
