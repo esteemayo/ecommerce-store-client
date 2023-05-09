@@ -97,7 +97,7 @@ const UpdatePassword = ({ onCancel }) => {
           {errors.currentPassword && <ErrorMsg>{errors.currentPassword}</ErrorMsg>}
         </FormGroup>
         <FormButtonContainer>
-          <CancelButton type='button' onClick={onCancel}>
+          <CancelButton type='button' onClick={cancelHandler}>
             Cancel
           </CancelButton>
           <FormButton type='submit'>Save</FormButton>
