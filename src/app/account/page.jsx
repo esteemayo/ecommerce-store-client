@@ -11,6 +11,7 @@ import FileUploadModal from '@/components/FileUploadModal';
 import UpdateData from '@/components/UpdateData';
 import UpdatePassword from '@/components/UpdatePassword';
 import DeleteAccount from '@/components/DeleteAccount';
+import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
 const Account = () => {
   const dispatch = useDispatch();
