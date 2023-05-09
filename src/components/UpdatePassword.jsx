@@ -69,7 +69,6 @@ const UpdatePassword = ({ onCancel }) => {
               <FormLabel htmlFor={id}>{label}</FormLabel>
               <FormInput
                 type={type}
-                id={id}
                 name={name}
                 value={inputs[name]}
                 placeholder={placeholder}
