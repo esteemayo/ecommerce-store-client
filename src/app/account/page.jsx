@@ -265,7 +265,7 @@ const DeleteButton = styled.button`
   border: none;
   padding: 0.5rem 2rem;
   background-color: transparent;
-  color: #de0a0a;
+  color: var(--clr-primary-red);
   border: 1px solid #de0a0a;
   border-radius: 0.5rem;
   outline-color: #e92222;
