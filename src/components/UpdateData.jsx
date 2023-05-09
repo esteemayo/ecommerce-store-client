@@ -69,7 +69,7 @@ const UpdateData = ({ onCancel }) => {
             placeholder='Type in your new email address'
             onChange={handleChange}
           />
-          {errors.email && <ErrorMsg>{errors.email}</ErrorMsg>}
+          {errors?.email && <ErrorMsg>{errors?.email}</ErrorMsg>}
         </FormGroup>
         <FormGroup>
           <FormLabel htmlFor='passwordCurrent'>Current Password</FormLabel>
@@ -81,7 +81,7 @@ const UpdateData = ({ onCancel }) => {
             placeholder='Type in your current password'
             onChange={handleChange}
           />
-          {errors.currentPassword && <ErrorMsg>{errors.currentPassword}</ErrorMsg>}
+          {errors?.currentPassword && <ErrorMsg>{errors?.currentPassword}</ErrorMsg>}
         </FormGroup>
         <FormButtonContainer>
           <CancelButton type='button' onClick={closeHandler}>Cancel</CancelButton>
