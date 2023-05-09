@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from 'react';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
 import Image from 'next/image';
+import { useDispatch } from 'react-redux';
 
 import Modal from '@/components/Modal';
 import FileUploadModal from '@/components/FileUploadModal';
