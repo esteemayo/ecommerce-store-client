@@ -46,6 +46,12 @@ const UpdateData = ({ onCancel }) => {
     setData(initialState);
   };
 
+  const closeHandler = () => {
+    onCancel();
+    handleClear();
+    errors && setErrors();
+  };
+
   return (
     <Container>
       <Text>
