@@ -37,7 +37,7 @@ export const registerInputs = [
 ];
 
 
-const passwordInputs = [
+export const passwordInputs = [
   {
     id: 'password1',
     name: 'password',
