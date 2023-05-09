@@ -66,6 +66,7 @@ const UpdateData = ({ onCancel }) => {
             <FormGroup key={id}>
               <FormLabel htmlFor={id}>{label}</FormLabel>
               <FormInput
+                id={id}
                 type={type}
                 name={name}
                 value={data[name]}
