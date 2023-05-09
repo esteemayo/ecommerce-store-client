@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const DeleteAccount = () => {
+const DeleteAccount = ({ onCancel }) => {
   return (
     <Container>
       <Heading>You are about to delete your account</Heading>
