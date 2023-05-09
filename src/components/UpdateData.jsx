@@ -12,7 +12,6 @@ const UpdateData = ({ onCancel }) => {
   const [errors, setErrors] = useState({});
   const [data, setData] = useState(initialState);
 
-  const { email, currentPassword } = data;
   
   const handleChange = ({ target: input }) => {
     const { name, value } = input;
