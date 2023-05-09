@@ -61,18 +61,23 @@ const UpdatePassword = ({ onCancel }) => {
   return (
     <Container>
       <Form onSubmit={handleSubmit}>
-        <FormGroup>
-          <FormLabel htmlFor='password1'>Password</FormLabel>
-          <FormInput
-            type='password'
-            id='password1'
-            name='password'
-            value={password}
-            placeholder='Type in your new password'
-            onChange={handleChange}
-          />
-          {errors?.password && <ErrorMsg>{errors?.password}</ErrorMsg>}
-        </FormGroup>
+        {passwordInputs.map((input) => {
+          const { id, name, type, label, placeholder } = input;
+          return (
+            <FormGroup key={id}>
+              <FormLabel htmlFor={id}>{label}</FormLabel>
+              <FormInput
+                type={type}
+                id={id}
+                name={name}
+                value={inputs[name]}
+                placeholder={placeholder}
+                onChange={handleChange}
+              />
+              {errors[name] && <ErrorMsg>{errors[name]}</ErrorMsg>}
+            </FormGroup>
+          );
+        })}
         <FormButtonContainer>
           <CancelButton type='button' onClick={cancelHandler}>
             Cancel
