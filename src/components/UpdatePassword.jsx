@@ -164,7 +164,7 @@ const FormButton = styled.button`
   font-weight: 500;
   font-size: 1.4rem;
   width: 50%;
-  padding: 1.5rem;
+  padding: 1rem;
   background-color: var(--clr-primary-green);
   color: var(--clr-white);
   background-image: linear-gradient(
