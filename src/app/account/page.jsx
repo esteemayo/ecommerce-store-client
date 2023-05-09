@@ -190,7 +190,7 @@ const InputContainer = styled.div`
   flex-direction: column;
 
   &:not(:last-of-type) {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
   }
 `;
 
