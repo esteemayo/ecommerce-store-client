@@ -14,4 +14,8 @@ const Container = styled.main`
   padding: 8rem 0;
 `;
 
+const Wrapper = styled.div`
+  
+`;
+
 export default Order;
