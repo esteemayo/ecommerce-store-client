@@ -59,7 +59,7 @@ const CancelButton = styled.button`
 const DeleteButton = styled.button`
   border: none;
   display: inline-block;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-weight: 500;
   font-size: 1.4rem;
   width: 50%;
