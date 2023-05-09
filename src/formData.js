@@ -60,3 +60,21 @@ export const passwordInputs = [
     placeholder: 'Type in your current password',
   },
 ];
+
+
+export const userDataInputs = [
+  {
+    id: 'newEmail',
+    name: 'email',
+    type: 'email',
+    label: 'Email',
+    placeholder: 'Type in your new email address',
+  },
+  {
+    id: 'passwordCurrent',
+    name: 'currentPassword',
+    type: 'password',
+    label: 'Current Password',
+    placeholder: 'Type in your current password',
+  },
+];
