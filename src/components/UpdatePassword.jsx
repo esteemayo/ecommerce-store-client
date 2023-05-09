@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { useState } from 'react';
+
 import { passwordInputs } from '@/formData';
 
 const initialState = {
