@@ -6,4 +6,8 @@ const Order = () => {
   );
 }
 
+const Container = styled.main`
+  
+`;
+
 export default Order;
