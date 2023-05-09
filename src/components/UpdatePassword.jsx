@@ -70,7 +70,7 @@ const UpdatePassword = ({ onCancel }) => {
             placeholder='Type in your new password'
             onChange={handleChange}
           />
-          {errors.password && <ErrorMsg>{errors.password}</ErrorMsg>}
+          {errors?.password && <ErrorMsg>{errors?.password}</ErrorMsg>}
         </FormGroup>
         <FormGroup>
           <FormLabel htmlFor='confirmPassword'>Confirm Password</FormLabel>
@@ -82,7 +82,7 @@ const UpdatePassword = ({ onCancel }) => {
             placeholder='Confirm your password'
             onChange={handleChange}
           />
-          {errors.confirmPassword && <ErrorMsg>{errors.confirmPassword}</ErrorMsg>}
+          {errors?.confirmPassword && <ErrorMsg>{errors?.confirmPassword}</ErrorMsg>}
         </FormGroup>
         <FormGroup>
           <FormLabel htmlFor='currentPassword'>Current Password</FormLabel>
@@ -94,7 +94,7 @@ const UpdatePassword = ({ onCancel }) => {
             placeholder='Type in your current password'
             onChange={handleChange}
           />
-          {errors.currentPassword && <ErrorMsg>{errors.currentPassword}</ErrorMsg>}
+          {errors?.currentPassword && <ErrorMsg>{errors?.currentPassword}</ErrorMsg>}
         </FormGroup>
         <FormButtonContainer>
           <CancelButton type='button' onClick={cancelHandler}>
