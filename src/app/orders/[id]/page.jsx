@@ -32,7 +32,7 @@ const Order = () => {
           </Tbody>
         </Table>
         <StatusContainer>
-
+          <Status>Preparing</Status>
         </StatusContainer>
       </Wrapper>
     </Container>
