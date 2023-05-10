@@ -11,6 +11,7 @@ const Order = () => {
               <Th>Order ID</Th>
               <Th>Customer</Th>
               <Th>Address</Th>
+              <Th>Total</Th>
             </Tr>
           </Thead>
         </Table>
