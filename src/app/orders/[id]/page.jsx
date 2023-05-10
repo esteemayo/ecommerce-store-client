@@ -6,7 +6,9 @@ const Order = () => {
     <Container>
       <Wrapper>
         <Table>
+          <Thead>
 
+          </Thead>
         </Table>
       </Wrapper>
     </Container>
