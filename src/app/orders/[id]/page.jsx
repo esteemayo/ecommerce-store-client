@@ -209,4 +209,8 @@ const Heading = styled.h2`
   
 `;
 
+const TotalContainer = styled.div`
+  
+`;
+
 export default Order;
