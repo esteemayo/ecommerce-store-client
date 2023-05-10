@@ -71,7 +71,7 @@ const Tbody = styled.tbody`
 `;
 
 const Td = styled.td`
-  
+  font-size: 1.5rem;
 `;
 
 const OrderId = styled.span`
