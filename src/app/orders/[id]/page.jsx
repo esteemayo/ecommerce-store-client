@@ -56,7 +56,7 @@ const Order = () => {
               alt=''
             />
           </StatusWrapper>
-          <StatusWrapper>
+          <StatusWrapper status={statusClass(1)}>
             <Image
               src='/img/bake.png'
               width={30}
