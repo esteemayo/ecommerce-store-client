@@ -15,7 +15,7 @@ const Order = () => {
             </Tr>
           </Thead>
           <Tbody>
-
+            <Tr></Tr>
           </Tbody>
         </Table>
       </Wrapper>
