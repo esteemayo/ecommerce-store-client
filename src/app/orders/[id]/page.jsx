@@ -112,6 +112,9 @@ const Order = () => {
           <Right>
             <RightWrapper>
               <Heading>cart total</Heading>
+              <TotalContainer>
+
+              </TotalContainer>
             </RightWrapper>
           </Right>
         </OrderContainer>
