@@ -58,3 +58,8 @@ body {
 .container {
   position: relative;
 }
+
+.undone .checkedIcon,
+.inProgress .checkedIcon {
+  display: none;
+}
