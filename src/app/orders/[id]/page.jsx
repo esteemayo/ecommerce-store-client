@@ -100,12 +100,14 @@ const Order = () => {
               alt=''
             />
             <Status>Delivered</Status>
-            <Image
-              src='/img/checked.png'
-              width={20}
-              height={20}
-              alt=''
-            />
+            <CheckedIcon>
+              <Image
+                src='/img/checked.png'
+                width={20}
+                height={20}
+                alt=''
+              />
+            </CheckedIcon>
           </StatusWrapper>
         </StatusContainer>
       </Wrapper>
