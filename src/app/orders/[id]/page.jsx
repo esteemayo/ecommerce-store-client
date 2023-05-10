@@ -14,103 +14,105 @@ const Order = () => {
   return (
     <Container>
       <Wrapper>
-        <Left>
-          <Table>
-            <Thead>
-              <Tr>
-                <Th>Order ID</Th>
-                <Th>Customer</Th>
-                <Th>Address</Th>
-                <Th>Total</Th>
-              </Tr>
-            </Thead>
-            <Tbody>
-              <Tr>
-                <Td>
-                  <OrderId>63deb1d1a79fe9e5f5a46325</OrderId>
-                </Td>
-                <Td>
-                  <OrderName>Mary Doe</OrderName>
-                </Td>
-                <Td>
-                  <OrderAddress>Lagos,Nigeria</OrderAddress>
-                </Td>
-                <Td>
-                  <OrderTotal>$420</OrderTotal>
-                </Td>
-              </Tr>
-            </Tbody>
-          </Table>
-          <StatusContainer>
-            <StatusWrapper className={statusClass(0)}>
-              <Image
-                src='/img/paid.png'
-                width={30}
-                height={30}
-                alt=''
-              />
-              <Status>Payment</Status>
-              <Image
-                src='/img/checked.png'
-                width={20}
-                height={20}
-                alt=''
-                className='checkedIcon'
-              />
-            </StatusWrapper>
-            <StatusWrapper className={statusClass(1)}>
-              <Image
-                src='/img/bake.png'
-                width={30}
-                height={30}
-                alt=''
-              />
-              <Status>Preparing</Status>
-              <Image
-                src='/img/checked.png'
-                width={20}
-                height={20}
-                alt=''
-                className='checkedIcon'
-              />
-            </StatusWrapper>
-            <StatusWrapper className={statusClass(2)}>
-              <Image
-                src='/img/bike.png'
-                width={30}
-                height={30}
-                alt=''
-              />
-              <Status>On the way</Status>
-              <Image
-                src='/img/checked.png'
-                width={20}
-                height={20}
-                alt=''
-                className='checkedIcon'
-              />
-            </StatusWrapper>
-            <StatusWrapper className={statusClass(3)}>
-              <Image
-                src='/img/delivered.png'
-                width={30}
-                height={30}
-                alt=''
-              />
-              <Status>Delivered</Status>
-              <Image
-                src='/img/checked.png'
-                width={20}
-                height={20}
-                alt=''
-                className='checkedIcon'
-              />
-            </StatusWrapper>
-          </StatusContainer>
-        </Left>
-        <Right>
-          Right
-        </Right>
+        <OrderContainer>
+          <Left>
+            <Table>
+              <Thead>
+                <Tr>
+                  <Th>Order ID</Th>
+                  <Th>Customer</Th>
+                  <Th>Address</Th>
+                  <Th>Total</Th>
+                </Tr>
+              </Thead>
+              <Tbody>
+                <Tr>
+                  <Td>
+                    <OrderId>63deb1d1a79fe9e5f5a46325</OrderId>
+                  </Td>
+                  <Td>
+                    <OrderName>Mary Doe</OrderName>
+                  </Td>
+                  <Td>
+                    <OrderAddress>Lagos,Nigeria</OrderAddress>
+                  </Td>
+                  <Td>
+                    <OrderTotal>$420</OrderTotal>
+                  </Td>
+                </Tr>
+              </Tbody>
+            </Table>
+            <StatusContainer>
+              <StatusWrapper className={statusClass(0)}>
+                <Image
+                  src='/img/paid.png'
+                  width={30}
+                  height={30}
+                  alt=''
+                />
+                <Status>Payment</Status>
+                <Image
+                  src='/img/checked.png'
+                  width={20}
+                  height={20}
+                  alt=''
+                  className='checkedIcon'
+                />
+              </StatusWrapper>
+              <StatusWrapper className={statusClass(1)}>
+                <Image
+                  src='/img/bake.png'
+                  width={30}
+                  height={30}
+                  alt=''
+                />
+                <Status>Preparing</Status>
+                <Image
+                  src='/img/checked.png'
+                  width={20}
+                  height={20}
+                  alt=''
+                  className='checkedIcon'
+                />
+              </StatusWrapper>
+              <StatusWrapper className={statusClass(2)}>
+                <Image
+                  src='/img/bike.png'
+                  width={30}
+                  height={30}
+                  alt=''
+                />
+                <Status>On the way</Status>
+                <Image
+                  src='/img/checked.png'
+                  width={20}
+                  height={20}
+                  alt=''
+                  className='checkedIcon'
+                />
+              </StatusWrapper>
+              <StatusWrapper className={statusClass(3)}>
+                <Image
+                  src='/img/delivered.png'
+                  width={30}
+                  height={30}
+                  alt=''
+                />
+                <Status>Delivered</Status>
+                <Image
+                  src='/img/checked.png'
+                  width={20}
+                  height={20}
+                  alt=''
+                  className='checkedIcon'
+                />
+              </StatusWrapper>
+            </StatusContainer>
+          </Left>
+          <Right>
+            Right
+          </Right>
+        </OrderContainer>
       </Wrapper>
     </Container>
   );
