@@ -14,6 +14,9 @@ const Order = () => {
               <Th>Total</Th>
             </Tr>
           </Thead>
+          <Tbody>
+
+          </Tbody>
         </Table>
       </Wrapper>
     </Container>
