@@ -90,6 +90,7 @@ const Order = () => {
                 width={20}
                 height={20}
                 alt=''
+                className='checkedIcon'
               />
             </CheckedIcon>
           </StatusWrapper>
