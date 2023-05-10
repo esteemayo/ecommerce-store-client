@@ -114,6 +114,7 @@ const Order = () => {
               <Heading>cart total</Heading>
               <TotalContainer>
                 <TotalText>Subtotal:</TotalText>
+                $99.99
               </TotalContainer>
             </RightWrapper>
           </Right>
