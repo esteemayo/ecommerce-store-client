@@ -174,8 +174,6 @@ const StatusContainer = styled.div`
 
 const StatusWrapper = styled.div``;
 
-const Status = styled.span`
-  
-`;
+const Status = styled.span``;
 
 export default Order;
