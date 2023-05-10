@@ -174,6 +174,7 @@ const StatusWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   animation: ${({ status }) => status === 'inProgress' && 'inProgress 1s ease infinite alternate'};
+  opacity: ${({ status }) => status === 'undone' && 0.3};
 
   @keyframes inProgress {
     from {
