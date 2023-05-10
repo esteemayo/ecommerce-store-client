@@ -124,6 +124,7 @@ const Order = () => {
                 <TotalText>Total:</TotalText>
                 $88.90
               </TotalContainer>
+              <Button type='button' disabled>Paid</Button>
             </RightWrapper>
           </Right>
         </OrderContainer>
