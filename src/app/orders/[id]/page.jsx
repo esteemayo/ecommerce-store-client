@@ -20,7 +20,7 @@ const Order = () => {
                 <OrderId>63deb1d1a79fe9e5f5a46325</OrderId>
               </Td>
               <Td>
-
+                <OrderName>Mary Doe</OrderName>
               </Td>
             </Tr>
           </Tbody>
