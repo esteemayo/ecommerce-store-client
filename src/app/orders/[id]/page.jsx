@@ -110,7 +110,9 @@ const Order = () => {
             </StatusContainer>
           </Left>
           <Right>
-            Right
+            <RightWrapper>
+
+            </RightWrapper>
           </Right>
         </OrderContainer>
       </Wrapper>
