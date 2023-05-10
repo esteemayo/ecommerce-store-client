@@ -26,7 +26,7 @@ const Order = () => {
                 <OrderAddress>Lagos,Nigeria</OrderAddress>
               </Td>
               <Td>
-
+                <OrderTotal>$420</OrderTotal>
               </Td>
             </Tr>
           </Tbody>
