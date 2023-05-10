@@ -10,6 +10,7 @@ const Order = () => {
             <Tr>
               <Th>Order ID</Th>
               <Th>Customer</Th>
+              <Th>Address</Th>
             </Tr>
           </Thead>
         </Table>
