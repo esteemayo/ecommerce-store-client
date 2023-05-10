@@ -188,6 +188,11 @@ const StatusWrapper = styled.div`
   animation: ${({ status }) => status === 'inProgress' && 'inProgress 1s ease infinite alternate'};
   opacity: ${({ status }) => status === 'undone' && 0.3};
 
+  .undone .checkedIcon,
+  .inProgress .checkedIcon {
+    display: none;
+  }
+
   @keyframes inProgress {
     from {
       opacity: 0;
