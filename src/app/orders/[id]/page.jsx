@@ -195,7 +195,7 @@ const StatusWrapper = styled.div``;
 const Status = styled.span``;
 
 const Right = styled.div`
-  
+  flex: 1;
 `;
 
 export default Order;
