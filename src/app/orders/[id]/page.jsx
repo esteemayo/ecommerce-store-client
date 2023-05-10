@@ -245,6 +245,8 @@ const Button = styled.button`
   display: inline-block;
   border: none;
   text-transform: capitalize;
+  font-weight: 600;
+  font-size: 1.5rem;
   padding: 1.35rem 3rem;
 `;
 
