@@ -9,6 +9,7 @@ const Order = () => {
           <Thead>
             <Tr>
               <Th>Order ID</Th>
+              <Th>Customer</Th>
             </Tr>
           </Thead>
         </Table>
