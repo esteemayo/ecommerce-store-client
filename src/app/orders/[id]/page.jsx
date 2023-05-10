@@ -41,7 +41,12 @@ const Order = () => {
               alt=''
             />
             <Status>Preparing</Status>
-            <Image src='/img/checked.png' width={20} height={20} alt='' />
+            <Image
+              src='/img/checked.png'
+              width={20}
+              height={20}
+              alt=''
+            />
           </StatusWrapper>
         </StatusContainer>
       </Wrapper>
