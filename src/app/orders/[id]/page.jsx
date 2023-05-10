@@ -101,6 +101,10 @@ const StatusContainer = styled.div`
   
 `;
 
+const StatusWrapper = styled.div`
+  
+`;
+
 const Status = styled.span`
   
 `;
