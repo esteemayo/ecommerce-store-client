@@ -172,13 +172,7 @@ const StatusContainer = styled.div`
   justify-content: space-between;
 `;
 
-const StatusWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  animation: ${({ status }) => status === 'inProgress' && 'inProgress 1s ease infinite alternate'};
-  opacity: ${({ status }) => status === 'undone' && 0.3};
-`;
+const StatusWrapper = styled.div``;
 
 const Status = styled.span`
   
