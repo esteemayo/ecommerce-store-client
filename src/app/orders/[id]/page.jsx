@@ -218,6 +218,7 @@ const RightWrapper = styled.div`
   width: 90%;
   background-color: #555;
   padding: 5rem;
+  padding-top: 1rem;
 `;
 
 const Heading = styled.h2`
