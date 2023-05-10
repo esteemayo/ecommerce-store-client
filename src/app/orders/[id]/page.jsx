@@ -16,7 +16,9 @@ const Order = () => {
           </Thead>
           <Tbody>
             <Tr>
-              <Td>63deb1d1a79fe9e5f5a46325</Td>
+              <Td>
+                <OrderId>63deb1d1a79fe9e5f5a46325</OrderId>
+              </Td>
             </Tr>
           </Tbody>
         </Table>
