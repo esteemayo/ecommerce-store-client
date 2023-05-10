@@ -55,7 +55,7 @@ const Order = () => {
               height={30}
               alt=''
             />
-            <Status>On the way</Status>
+            <Status>Preparing</Status>
             <Image
               src='/img/checked.png'
               width={20}
