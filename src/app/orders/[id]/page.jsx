@@ -245,6 +245,7 @@ const Button = styled.button`
   display: inline-block;
   border: none;
   text-transform: capitalize;
+  padding: 1.5rem 3rem;
 `;
 
 export default Order;
