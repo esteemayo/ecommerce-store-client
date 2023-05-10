@@ -7,7 +7,7 @@ const Order = () => {
       <Wrapper>
         <Table>
           <Thead>
-
+            <Tr></Tr>
           </Thead>
         </Table>
       </Wrapper>
