@@ -116,6 +116,10 @@ const Order = () => {
                 <TotalText>Subtotal:</TotalText>
                 $99.99
               </TotalContainer>
+              <TotalContainer>
+                <TotalText>Discount:</TotalText>
+                $0.00
+              </TotalContainer>
             </RightWrapper>
           </Right>
         </OrderContainer>
