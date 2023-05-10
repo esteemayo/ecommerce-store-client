@@ -133,6 +133,7 @@ const OrderContainer = styled.div`
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  gap: 3rem;
 `;
 
 const Left = styled.div`
