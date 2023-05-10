@@ -101,15 +101,13 @@ const Order = () => {
               alt=''
             />
             <Status>Delivered</Status>
-            <CheckedIcon status={statusClass(0)}>
-              <Image
-                src='/img/checked.png'
-                width={20}
-                height={20}
-                alt=''
-                className='checkedIcon'
-              />
-            </CheckedIcon>
+            <Image
+              src='/img/checked.png'
+              width={20}
+              height={20}
+              alt=''
+              className='checkedIcon'
+            />
           </StatusWrapper>
         </StatusContainer>
       </Wrapper>
