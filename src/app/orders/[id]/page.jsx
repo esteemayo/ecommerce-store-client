@@ -6,7 +6,7 @@ const Order = () => {
     <Container>
       <Wrapper>
         <Table>
-          
+
         </Table>
       </Wrapper>
     </Container>
@@ -25,6 +25,10 @@ const Wrapper = styled.div`
 `;
 
 const Table = styled.table`
+  
+`;
+
+const Thead = styled.thead`
   
 `;
 
