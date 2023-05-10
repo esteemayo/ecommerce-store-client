@@ -22,6 +22,9 @@ const Order = () => {
               <Td>
                 <OrderName>Mary Doe</OrderName>
               </Td>
+              <Td>
+
+              </Td>
             </Tr>
           </Tbody>
         </Table>
