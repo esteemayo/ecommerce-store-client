@@ -66,7 +66,7 @@ const Order = () => {
               alt=''
             />
             <Status>Preparing</Status>
-            <CheckedIcon>
+            <CheckedIcon status={statusClass(0)}>
               <Image
                 src='/img/checked.png'
                 width={20}
