@@ -127,6 +127,10 @@ const Wrapper = styled.div`
   margin: 0 auto;
 `;
 
+const OrderContainer = styled.div`
+  
+`;
+
 const Left = styled.div`
   
 `;
