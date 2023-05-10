@@ -59,6 +59,12 @@ body {
   position: relative;
 }
 
+.done {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .undone .checkedIcon,
 .inProgress .checkedIcon {
   display: none;
