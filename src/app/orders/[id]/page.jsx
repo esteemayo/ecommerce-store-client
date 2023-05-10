@@ -173,6 +173,16 @@ const StatusWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @keyframes inProgress {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
 `;
 
 const Status = styled.span`
