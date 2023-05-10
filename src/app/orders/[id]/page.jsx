@@ -3,6 +3,14 @@ import styled from 'styled-components';
 import Image from 'next/image';
 
 const Order = () => {
+  const status = 0;
+
+  const statusClass = (index) => {
+    if (index - status < 1) return 'done';
+    if (index - status === 1) return 'inProgress';
+    if (index - status > 1) return 'undone';
+  };
+
   return (
     <Container>
       <Wrapper>
