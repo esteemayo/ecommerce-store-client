@@ -130,7 +130,9 @@ const Wrapper = styled.div`
 `;
 
 const OrderContainer = styled.div`
-  
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
 `;
 
 const Left = styled.div`
