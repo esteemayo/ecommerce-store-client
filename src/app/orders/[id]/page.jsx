@@ -62,7 +62,8 @@ const Tr = styled.tr`
 `;
 
 const Th = styled.th`
-  
+  font-weight: 600;
+  font-size: 1.7rem;
 `;
 
 const Tbody = styled.tbody`
