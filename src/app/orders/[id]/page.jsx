@@ -41,7 +41,7 @@ const Order = () => {
           </Tbody>
         </Table>
         <StatusContainer>
-          <StatusWrapper>
+          <StatusWrapper status={statusClass(0)}>
             <Image
               src='/img/paid.png'
               width={30}
