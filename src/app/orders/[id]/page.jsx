@@ -219,6 +219,9 @@ const RightWrapper = styled.div`
   background-color: #555;
   padding: 5rem;
   padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 `;
 
 const Heading = styled.h2`
