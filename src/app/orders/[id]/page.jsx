@@ -33,6 +33,7 @@ const Order = () => {
           </Tbody>
         </Table>
         <StatusContainer>
+          <Image src='/img/paid.png' width={30} height={30} alt='' />
           <Status>Preparing</Status>
         </StatusContainer>
       </Wrapper>
