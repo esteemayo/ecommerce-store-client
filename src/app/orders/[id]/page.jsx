@@ -208,10 +208,4 @@ const Status = styled.span`
   
 `;
 
-const CheckedIcon = styled.div`
-  img {
-    display: ${({ status }) => (status === 'undone' || status === 'inProgress') && 'none'};
-  }
-`;
-
 export default Order;
