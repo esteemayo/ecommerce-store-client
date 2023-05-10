@@ -111,7 +111,7 @@ const Order = () => {
           </Left>
           <Right>
             <RightWrapper>
-
+              <Heading>cart total</Heading>
             </RightWrapper>
           </Right>
         </OrderContainer>
