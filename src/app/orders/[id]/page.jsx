@@ -5,7 +5,9 @@ const Order = () => {
   return (
     <Container>
       <Wrapper>
-        Order
+        <Table>
+          
+        </Table>
       </Wrapper>
     </Container>
   );
