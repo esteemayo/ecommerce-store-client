@@ -75,7 +75,7 @@ const Td = styled.td`
 `;
 
 const OrderId = styled.span`
-  
+  text-transform: uppercase;
 `;
 
 const OrderName = styled.span`
