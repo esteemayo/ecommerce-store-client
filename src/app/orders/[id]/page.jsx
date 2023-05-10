@@ -66,4 +66,8 @@ const OrderId = styled.span`
   
 `;
 
+const OrderName = styled.span`
+  
+`;
+
 export default Order;
