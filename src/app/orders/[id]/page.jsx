@@ -244,6 +244,7 @@ const TotalText = styled.b`
 const Button = styled.button`
   display: inline-block;
   border: none;
+  text-transform: capitalize;
 `;
 
 export default Order;
