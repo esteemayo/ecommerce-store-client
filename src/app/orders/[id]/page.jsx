@@ -34,4 +34,8 @@ const Thead = styled.thead`
   
 `;
 
+const Tr = styled.tr`
+  
+`;
+
 export default Order;
