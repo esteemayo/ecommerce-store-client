@@ -48,6 +48,21 @@ const Order = () => {
               alt=''
             />
           </StatusWrapper>
+          <StatusWrapper>
+            <Image
+              src='/img/bake.png'
+              width={30}
+              height={30}
+              alt=''
+            />
+            <Status>Preparing</Status>
+            <Image
+              src='/img/checked.png'
+              width={20}
+              height={20}
+              alt=''
+            />
+          </StatusWrapper>
         </StatusContainer>
       </Wrapper>
     </Container>
