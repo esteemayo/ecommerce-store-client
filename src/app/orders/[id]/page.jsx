@@ -41,7 +41,7 @@ const Order = () => {
           </Tbody>
         </Table>
         <StatusContainer>
-          <StatusWrapper status={statusClass(0)}>
+          <StatusWrapper className={statusClass(0)}>
             <Image
               src='/img/paid.png'
               width={30}
@@ -57,7 +57,7 @@ const Order = () => {
               className='checkedIcon'
             />
           </StatusWrapper>
-          <StatusWrapper status={statusClass(1)}>
+          <StatusWrapper className={statusClass(1)}>
             <Image
               src='/img/bake.png'
               width={30}
@@ -73,7 +73,7 @@ const Order = () => {
               className='checkedIcon'
             />
           </StatusWrapper>
-          <StatusWrapper status={statusClass(2)}>
+          <StatusWrapper className={statusClass(2)}>
             <Image
               src='/img/bike.png'
               width={30}
@@ -89,7 +89,7 @@ const Order = () => {
               className='checkedIcon'
             />
           </StatusWrapper>
-          <StatusWrapper status={statusClass(3)}>
+          <StatusWrapper className={statusClass(3)}>
             <Image
               src='/img/delivered.png'
               width={30}
@@ -102,7 +102,6 @@ const Order = () => {
               width={20}
               height={20}
               alt=''
-              className='checkedIcon'
             />
           </StatusWrapper>
         </StatusContainer>
