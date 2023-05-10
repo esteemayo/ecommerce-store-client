@@ -232,7 +232,9 @@ const Heading = styled.h2`
 `;
 
 const TotalContainer = styled.div`
-  
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 `;
 
 const TotalText = styled.b`
