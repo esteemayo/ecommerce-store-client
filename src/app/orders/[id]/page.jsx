@@ -80,4 +80,8 @@ const OrderAddress = styled.span`
   
 `;
 
+const OrderTotal = styled.span`
+  
+`;
+
 export default Order;
