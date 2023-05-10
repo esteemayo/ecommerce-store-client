@@ -199,4 +199,8 @@ const Right = styled.div`
   flex: 1;
 `;
 
+const RightWrapper = styled.div`
+  
+`;
+
 export default Order;
