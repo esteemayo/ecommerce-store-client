@@ -216,4 +216,8 @@ const TotalContainer = styled.div`
   
 `;
 
+const TotalText = styled.b`
+  
+`;
+
 export default Order;
