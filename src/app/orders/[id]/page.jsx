@@ -205,4 +205,8 @@ const RightWrapper = styled.div`
   
 `;
 
+const Heading = styled.h2`
+  
+`;
+
 export default Order;
