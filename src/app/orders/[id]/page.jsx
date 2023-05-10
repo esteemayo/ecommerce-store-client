@@ -215,7 +215,7 @@ const Right = styled.div`
 `;
 
 const RightWrapper = styled.div`
-  
+  width: 90%;
 `;
 
 const Heading = styled.h2`
