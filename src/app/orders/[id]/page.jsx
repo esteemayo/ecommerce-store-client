@@ -25,6 +25,9 @@ const Order = () => {
               <Td>
                 <OrderAddress>Lagos,Nigeria</OrderAddress>
               </Td>
+              <Td>
+
+              </Td>
             </Tr>
           </Tbody>
         </Table>
