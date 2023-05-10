@@ -47,4 +47,8 @@ const Th = styled.th`
   
 `;
 
+const Tbody = styled.tbody`
+  
+`;
+
 export default Order;
