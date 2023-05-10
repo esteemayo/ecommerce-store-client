@@ -91,4 +91,8 @@ const OrderTotal = styled.span`
   
 `;
 
+const StatusContainer = styled.div`
+  
+`;
+
 export default Order;
