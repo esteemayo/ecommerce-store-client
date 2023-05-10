@@ -60,4 +60,8 @@ const Td = styled.td`
   
 `;
 
+const OrderId = styled.span`
+  
+`;
+
 export default Order;
