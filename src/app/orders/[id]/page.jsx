@@ -229,4 +229,8 @@ const TotalText = styled.b`
   
 `;
 
+const Button = styled.button`
+  
+`;
+
 export default Order;
