@@ -163,7 +163,10 @@ const OrderTotal = styled.span`
 `;
 
 const StatusContainer = styled.div`
-  
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 `;
 
 const StatusWrapper = styled.div`
