@@ -49,8 +49,8 @@ const Wrapper = styled.div`
 
 const Table = styled.table`
   width: 100%;
-  display: flex;
-  justify-content: space-between;
+  text-align: left;
+  margin-bottom: 5rem;
 `;
 
 const Thead = styled.thead`
