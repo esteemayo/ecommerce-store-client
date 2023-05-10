@@ -31,6 +31,9 @@ const Order = () => {
             </Tr>
           </Tbody>
         </Table>
+        <StatusContainer>
+
+        </StatusContainer>
       </Wrapper>
     </Container>
   );
