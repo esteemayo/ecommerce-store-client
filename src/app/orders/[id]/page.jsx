@@ -49,7 +49,7 @@ const Order = () => {
               alt=''
             />
             <Status>Payment</Status>
-            <CheckedIcon>
+            <CheckedIcon status={statusClass(0)}>
               <Image
                 src='/img/checked.png'
                 width={20}
