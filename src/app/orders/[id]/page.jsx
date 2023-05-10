@@ -38,4 +38,8 @@ const Tr = styled.tr`
   
 `;
 
+const Th = styled.th`
+  
+`;
+
 export default Order;
