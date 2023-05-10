@@ -173,6 +173,7 @@ const StatusWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  animation: ${({ status }) => status === 'inProgress' && 'inProgress 1s ease infinite alternate'};
 
   @keyframes inProgress {
     from {
