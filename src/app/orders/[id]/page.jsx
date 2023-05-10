@@ -23,7 +23,7 @@ const Order = () => {
                 <OrderName>Mary Doe</OrderName>
               </Td>
               <Td>
-
+                <OrderAddress>Lagos,Nigeria</OrderAddress>
               </Td>
             </Tr>
           </Tbody>
