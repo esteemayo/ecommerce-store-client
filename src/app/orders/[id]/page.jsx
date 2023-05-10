@@ -122,6 +122,10 @@ const Wrapper = styled.div`
   margin: 0 auto;
 `;
 
+const Left = styled.div`
+  
+`;
+
 const Table = styled.table`
   width: 100%;
   text-align: left;
