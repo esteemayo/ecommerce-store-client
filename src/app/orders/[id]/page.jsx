@@ -98,4 +98,8 @@ const StatusContainer = styled.div`
   
 `;
 
+const Status = styled.span`
+  
+`;
+
 export default Order;
