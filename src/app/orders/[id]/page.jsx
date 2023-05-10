@@ -66,12 +66,14 @@ const Order = () => {
               alt=''
             />
             <Status>Preparing</Status>
-            <Image
-              src='/img/checked.png'
-              width={20}
-              height={20}
-              alt=''
-            />
+            <CheckedIcon>
+              <Image
+                src='/img/checked.png'
+                width={20}
+                height={20}
+                alt=''
+              />
+            </CheckedIcon>
           </StatusWrapper>
           <StatusWrapper status={statusClass(2)}>
             <Image
