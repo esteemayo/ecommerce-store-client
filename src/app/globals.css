@@ -69,3 +69,13 @@ body {
 .inProgress .checkedIcon {
   display: none;
 }
+
+@keyframes inProgress {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
