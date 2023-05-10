@@ -183,16 +183,6 @@ const StatusWrapper = styled.div`
   .inProgress .checkedIcon {
     display: none;
   }
-
-  @keyframes inProgress {
-    from {
-      opacity: 0;
-    }
-
-    to {
-      opacity: 1;
-    }
-  }
 `;
 
 const Status = styled.span`
