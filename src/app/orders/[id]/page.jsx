@@ -191,4 +191,8 @@ const Status = styled.span`
   
 `;
 
+const CheckedIcon = styled.div`
+  
+`;
+
 export default Order;
