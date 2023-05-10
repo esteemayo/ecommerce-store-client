@@ -19,6 +19,9 @@ const Order = () => {
               <Td>
                 <OrderId>63deb1d1a79fe9e5f5a46325</OrderId>
               </Td>
+              <Td>
+
+              </Td>
             </Tr>
           </Tbody>
         </Table>
