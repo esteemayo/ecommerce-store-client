@@ -86,7 +86,7 @@ const Order = () => {
               alt=''
             />
           </StatusWrapper>
-          <StatusWrapper>
+          <StatusWrapper status={statusClass(3)}>
             <Image
               src='/img/delivered.png'
               width={30}
