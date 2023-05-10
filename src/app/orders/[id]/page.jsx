@@ -73,4 +73,8 @@ const OrderName = styled.span`
   
 `;
 
+const OrderAddress = styled.span`
+  
+`;
+
 export default Order;
