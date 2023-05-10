@@ -113,7 +113,7 @@ const Order = () => {
             <RightWrapper>
               <Heading>cart total</Heading>
               <TotalContainer>
-
+                <TotalText>Subtotal:</TotalText>
               </TotalContainer>
             </RightWrapper>
           </Right>
