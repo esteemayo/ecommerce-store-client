@@ -22,4 +22,8 @@ const Wrapper = styled.div`
   margin: 0 auto;
 `;
 
+const Table = styled.table`
+  
+`;
+
 export default Order;
