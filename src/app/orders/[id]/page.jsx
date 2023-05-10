@@ -136,7 +136,7 @@ const OrderContainer = styled.div`
 `;
 
 const Left = styled.div`
-  
+  flex: 2;
 `;
 
 const Table = styled.table`
