@@ -1124,3 +1124,39 @@ export const cartItems = [
     quantity: 1,
   },
 ];
+
+export const orders = [
+  {
+    id: 1,
+    customer: 'Mary Doe',
+    address: 'Lagos, Nigeria',
+    total: 420,
+    status: 0,
+    paymentMethod: 0,
+    user: '63d9c0dafdc72fd8ed2113b6',
+    createdAt: '2023-01-04T19:28:17.132Z',
+    updatedAt: '2023-01-04T19:28:17.132Z',
+  },
+  {
+    id: 2,
+    customer: 'Mary Doe',
+    address: 'Lagos, Nigeria',
+    total: 500,
+    status: 0,
+    paymentMethod: 0,
+    user: '63d9c0dafdc72fd8ed2113b6',
+    createdAt: '2023-02-04T19:30:32.359Z',
+    updatedAt: '2023-02-04T19:30:32.359Z',
+  },
+  {
+    id: 3,
+    customer: 'Lourdes Browning',
+    address: 'NewYork, USA',
+    total: 1000,
+    status: 0,
+    paymentMethod: 1,
+    user: '63daf094a5a5a41474d2192d',
+    createdAt: '2023-02-05T16:44:49.632Z',
+    updatedAt: '2023-02-05T16:44:49.632Z',
+  },
+];
