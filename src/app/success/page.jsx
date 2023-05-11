@@ -39,4 +39,8 @@ const Text = styled.p`
   
 `;
 
+const InfoContainer = styled.div`
+  
+`;
+
 export default Success;
