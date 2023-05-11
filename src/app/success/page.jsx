@@ -90,4 +90,8 @@ const MushroomContainer = styled.div`
   
 `;
 
+const MushroomText = styled.span`
+  
+`;
+
 export default Success;
