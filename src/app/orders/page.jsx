@@ -99,6 +99,10 @@ const OrderWrapper = styled.div`
   }
 `;
 
+const OrderDateIconContainer = styled.div`
+  
+`;
+
 const OrderDateWrapper = styled.div`
   
 `;
