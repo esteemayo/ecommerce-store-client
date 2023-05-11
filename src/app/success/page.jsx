@@ -70,4 +70,8 @@ const Address = styled.span`
   
 `;
 
+const Phone = styled.span`
+  
+`;
+
 export default Success;
