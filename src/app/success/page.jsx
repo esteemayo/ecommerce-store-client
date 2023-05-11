@@ -15,7 +15,7 @@ const Success = () => {
                 <Address>3711 Schultz Meadow</Address>
               </IconContainer>
               <IconContainer>
-
+                <Phone>60640582</Phone>
               </IconContainer>
             </InfoContainer>
           </SuccessWrapper>
