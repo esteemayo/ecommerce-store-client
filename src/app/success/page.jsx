@@ -22,7 +22,9 @@ const Success = () => {
               </IconContainer>
             </InfoContainer>
             <MushroomContainer>
+              <IconContainer>
 
+              </IconContainer>
             </MushroomContainer>
           </SuccessWrapper>
         </SuccessContainer>
