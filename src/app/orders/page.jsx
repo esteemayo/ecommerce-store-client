@@ -36,4 +36,8 @@ const OrderContainer = styled.div`
   
 `;
 
+const OrderWrapper = styled.div`
+  
+`;
+
 export default Orders;
