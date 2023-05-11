@@ -4,7 +4,9 @@ import styled from 'styled-components';
 const Orders = () => {
   return (
     <Container>
-      Orders
+      <Wrapper>
+        Orders
+      </Wrapper>
     </Container>
   );
 }
