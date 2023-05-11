@@ -41,7 +41,7 @@ const OrderContainer = styled.div`
 `;
 
 const OrderWrapper = styled.div`
-  padding: 1rem;
+  padding: 2rem;
   box-shadow: 2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.47);
   -webkit-box-shadow: 2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.47);
   -moz-box-shadow: 2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.47);
