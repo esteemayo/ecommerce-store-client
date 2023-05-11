@@ -110,7 +110,10 @@ const OrderDateIconContainer = styled.div`
 const OrderDateWrapper = styled.div``;
 
 const OrderIconWrapper = styled.div`
-  
+  svg {
+    font-size: 1.8rem;
+    fill: #bbb;
+  }
 `;
 
 const Order = styled.div`
