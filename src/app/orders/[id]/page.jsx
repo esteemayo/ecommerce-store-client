@@ -250,6 +250,13 @@ const Button = styled.button`
   padding: 1.35rem 3rem;
   background-color: var(--clr-black);
   color: var(--clr-white);
+  background-image: linear-gradient(
+    120 deg,
+    transparent 0%,
+    transparent 50%,
+    #333 50%
+  );
+  background-size: 220%;
 `;
 
 export default Order;
