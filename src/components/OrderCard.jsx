@@ -28,4 +28,68 @@ const Container = styled.article`
   }
 `;
 
+const OrderDateIconContainer = styled.div`
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+`;
+
+const OrderDateWrapper = styled.div``;
+
+const OrderIconWrapper = styled.div`
+  svg {
+    font-size: 1.8rem;
+    fill: #bbb;
+  }
+`;
+
+const Order = styled.div`
+  padding: 2rem;
+
+  a {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: #aaa;
+      outline: none;
+    }
+
+    &:active {
+      color: #aaa;
+    }
+  }
+`;
+
+const OrderId = styled.h2`
+  display: inline-block;
+  font-weight: 400;
+  font-size: 2rem;
+`;
+
+const OrderDate = styled.time`
+  display: block;
+  font-size: 1.45rem;
+  color: #aaa;
+`;
+
+const OrderTotal = styled.p`
+  font-weight: 500;
+  font-size: 2.5rem;
+  color: inherit;
+  margin: 1rem 0 0.5rem;
+`;
+
+const Button = styled.button`
+  display: inline-block;
+  text-transform: capitalize;
+  font-size: 1.3rem;
+  padding: 1rem 2rem;
+  background-color: transparent;
+  color: #aaa;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  outline-color: #eee;
+  cursor: pointer;
+`;
+
 export default OrderCard;
