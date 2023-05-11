@@ -103,7 +103,7 @@ const OrderWrapper = styled.div`
 
 const OrderDateIconContainer = styled.div`
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
 `;
 
