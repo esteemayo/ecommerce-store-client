@@ -84,7 +84,7 @@ const OrderWrapper = styled.div`
     content: '';
     display: block;
     width: 100%;
-    height: 3px;
+    height: 2px;
     background-color: ${({ status }) => status === 0 && 'var(--clr-secondary-red)'};
     background-color: ${({ status }) => status === 1 && '#ffb900'};
     background-color: ${({ status }) => status === 2 && 'var(--clr-secondary-green)'};
