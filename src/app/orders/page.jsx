@@ -80,6 +80,7 @@ const OrderTotal = styled.p`
 
 const Button = styled.button`
   display: inline-block;
+  text-transform: capitalize;
   padding: 1rem 2rem;
   background-color: transparent;
   color: #aaa;
