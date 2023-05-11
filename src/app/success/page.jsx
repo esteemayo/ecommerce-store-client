@@ -63,4 +63,8 @@ const IconContainer = styled.div`
   
 `;
 
+const Address = styled.span`
+  
+`;
+
 export default Success;
