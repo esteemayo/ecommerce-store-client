@@ -62,6 +62,7 @@ const SuccessAlert = styled.p`
   font-size: 1.3rem;
   padding: 0 0.5rem;
   border: 1px solid #409384;
+  border-radius: 10rem;
 `;
 
 const Text = styled.p`
