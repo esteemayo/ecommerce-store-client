@@ -18,7 +18,6 @@ const Orders = () => {
         <Heading>Order history</Heading>
         <OrderContainer>
           {orders.map((order) => {
-            const { id, total, status, createdAt } = order;
             return <OrderCard key={order.id} {...order} />
           })}
         </OrderContainer>
