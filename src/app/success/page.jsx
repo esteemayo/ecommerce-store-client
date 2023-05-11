@@ -77,6 +77,7 @@ const SuccessAlert = styled.p`
 const Text = styled.p`
   display: inline-block;
   font-size: 1.5rem;
+  margin-bottom: 2rem;
 `;
 
 const InfoContainer = styled.div`
