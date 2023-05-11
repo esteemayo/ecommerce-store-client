@@ -191,9 +191,7 @@ const OrderName = styled.span`
   
 `;
 
-const OrderAddress = styled.span`
-  
-`;
+const OrderAddress = styled.span``;
 
 const OrderTotal = styled.span``;
 
