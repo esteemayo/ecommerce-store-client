@@ -95,6 +95,14 @@ const Button = styled.button`
   border-radius: 0.5rem;
   outline-color: #eee;
   cursor: pointer;
+
+  a {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: currentColor;
+    }
+  }
 `;
 
 export default Orders;
