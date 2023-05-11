@@ -42,4 +42,8 @@ const OrderWrapper = styled.div`
   
 `;
 
+const OrderId = styled.h2`
+  
+`;
+
 export default Orders;
