@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import Image from 'next/image';
-import { NumericFormat } from 'react-number-format';
 
 const OrderStatus = ({ statusClass }) => {
   return (
