@@ -14,4 +14,8 @@ const Container = styled.main`
   padding: 10rem 0;
 `;
 
+const Wrapper = styled.div`
+  
+`;
+
 export default Orders;
