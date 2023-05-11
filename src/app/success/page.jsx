@@ -22,4 +22,8 @@ const Wrapper = styled.div`
   margin: 0 auto;
 `;
 
+const SuccessContainer = styled.div`
+  
+`;
+
 export default Success;
