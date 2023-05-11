@@ -80,4 +80,6 @@ const Container = styled.section`
   justify-content: space-between;
 `;
 
+const StatusWrapper = styled.div``;
+
 export default OrderStatus;
