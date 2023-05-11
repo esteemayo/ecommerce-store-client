@@ -80,7 +80,7 @@ const Text = styled.p`
 `;
 
 const InfoContainer = styled.div`
-  
+  background-color: hsla(0, 0%, 100%, 0.4);
 `;
 
 const InfoText = styled.p`
