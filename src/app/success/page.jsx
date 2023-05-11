@@ -69,7 +69,8 @@ const SuccessAlert = styled.p`
 `;
 
 const SuccessInfo = styled.div`
-  
+  max-width: 50rem;
+  margin: 0 auto;
 `;
 
 const Text = styled.p`
