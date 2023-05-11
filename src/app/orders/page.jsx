@@ -37,7 +37,7 @@ const Heading = styled.h1`
 `;
 
 const OrderContainer = styled.div`
-  
+  margin: 2rem 0;
 `;
 
 const OrderWrapper = styled.div`
