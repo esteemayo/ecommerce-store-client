@@ -29,4 +29,8 @@ const Heading = styled.h1`
   font-size: 2.8rem;
 `;
 
+const OrderContainer = styled.div`
+  
+`;
+
 export default Orders;
