@@ -51,7 +51,7 @@ const Order = () => {
                 </Tr>
               </Tbody>
             </Table>
-
+            <OrderStatus statusClass={statusClass} />
           </Left>
           <Right>
             <RightWrapper>
