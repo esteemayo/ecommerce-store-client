@@ -68,11 +68,6 @@ const SuccessAlert = styled.p`
   border-radius: 10rem;
 `;
 
-const SuccessInfo = styled.div`
-  max-width: 50rem;
-  margin: 0 auto;
-`;
-
 const Text = styled.p`
   
 `;
