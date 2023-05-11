@@ -12,7 +12,7 @@ const Success = () => {
             <InfoContainer>
               <InfoText>Here we will deliver your order.</InfoText>
               <IconContainer>
-
+                <Address>3711 Schultz Meadow</Address>
               </IconContainer>
             </InfoContainer>
           </SuccessWrapper>
