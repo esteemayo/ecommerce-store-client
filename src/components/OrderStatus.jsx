@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const OrderStatus = () => {
+const OrderStatus = ({ statusClass }) => {
   return (
     <Container>
       OrderStatus
