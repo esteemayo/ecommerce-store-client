@@ -38,7 +38,14 @@ const Order = () => {
                     <OrderAddress>Lagos,Nigeria</OrderAddress>
                   </Td>
                   <Td>
-                    <OrderTotal>$420</OrderTotal>
+                    <OrderTotal>
+                      <NumericFormat
+                        value={420}
+                        displayType={'text'}
+                        thousandSeparator={true}
+                        prefix={'$'}
+                      />
+                    </OrderTotal>
                   </Td>
                 </Tr>
               </Tbody>
