@@ -17,6 +17,9 @@ const Success = () => {
               <IconContainer>
                 <Phone>60640582</Phone>
               </IconContainer>
+              <IconContainer>
+
+              </IconContainer>
             </InfoContainer>
           </SuccessWrapper>
         </SuccessContainer>
