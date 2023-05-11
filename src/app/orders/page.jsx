@@ -33,11 +33,11 @@ const Orders = () => {
                       prefix={'$'}
                     />
                   </OrderTotal>
-                  <Button type='button'>
                     <Link href={`/orders/${encodeURIComponent(id)}`} passHref>
-                      Order details
+                      <Button type='button'>
+                          Order details
+                      </Button>
                     </Link>
-                  </Button>
                 </Order>
               </OrderWrapper>
             );
