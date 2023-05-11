@@ -7,7 +7,7 @@ const OrderCard = ({ id, total, status, createdAt }) => {
   const options = { month: 'long', day: 'numeric', year: 'numeric' };
 
   return (
-    <Container>
+    <Container status={status}>
       <Order>
         <OrderDateIconContainer>
           <OrderDateWrapper>
