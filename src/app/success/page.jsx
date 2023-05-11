@@ -7,6 +7,7 @@ const Success = () => {
       <Wrapper>
         <SuccessContainer>
           <SuccessAlert>Order successfully placed</SuccessAlert>
+          <Text>Thank you for your order, you will receive it in 45 minutes</Text>
         </SuccessContainer>
       </Wrapper>
     </Container>
