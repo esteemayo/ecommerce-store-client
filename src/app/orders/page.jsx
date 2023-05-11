@@ -49,12 +49,6 @@ const OrderContainer = styled.div`
   gap: 3rem;
 `;
 
-const OrderDate = styled.time`
-  display: block;
-  font-size: 1.45rem;
-  color: #aaa;
-`;
-
 const OrderTotal = styled.p`
   font-weight: 500;
   font-size: 2.5rem;
