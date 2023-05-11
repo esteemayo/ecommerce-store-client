@@ -11,7 +11,7 @@ const Orders = () => {
   const dispatch = useDispatch();
 
   return (
-    <Container>
+    <Container onMouseOver={() => dispatch(closeSubmenu())}>
       <Wrapper>
         <Heading>Order history</Heading>
         <OrderContainer>
