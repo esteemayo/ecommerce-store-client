@@ -161,9 +161,7 @@ const Table = styled.table`
   margin-bottom: 5rem;
 `;
 
-const Thead = styled.thead`
-  
-`;
+const Thead = styled.thead``;
 
 const Tr = styled.tr``;
 
