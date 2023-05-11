@@ -83,6 +83,8 @@ const Button = styled.button`
   padding: 1rem 2rem;
   background-color: transparent;
   color: inherit;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
 `;
 
 export default Orders;
