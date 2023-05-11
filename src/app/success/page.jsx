@@ -57,7 +57,8 @@ const SuccessWrapper = styled.div`
 `;
 
 const SuccessAlert = styled.p`
-  
+  display: inline-block;
+  text-transform: uppercase;
 `;
 
 const Text = styled.p`
