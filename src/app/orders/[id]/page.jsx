@@ -4,6 +4,7 @@ import { NumericFormat } from 'react-number-format';
 import { useDispatch } from 'react-redux';
 
 import OrderStatus from '@/components/OrderStatus';
+import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
 const Order = () => {
   const dispatch = useDispatch();
