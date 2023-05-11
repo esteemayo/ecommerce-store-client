@@ -6,4 +6,8 @@ const OrderCard = () => {
   );
 }
 
+const Container = styled.article`
+  
+`;
+
 export default OrderCard;
