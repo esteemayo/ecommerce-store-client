@@ -11,7 +11,6 @@ import OrderCard from '@/components/OrderCard';
 
 const Orders = () => {
   const dispatch = useDispatch();
-  const options = { month: 'long', day: 'numeric', year: 'numeric' };
 
   return (
     <Container onMouseOver={() => dispatch(closeSubmenu())}>
@@ -20,36 +19,7 @@ const Orders = () => {
         <OrderContainer>
           {orders.map((order) => {
             const { id, total, status, createdAt } = order;
-            return (
-              <OrderWrapper key={id} status={status}>
-                <Order>
-                  <OrderDateIconContainer>
-                    <OrderDateWrapper>
-                      <OrderId>Order id: {id}</OrderId>
-                      <OrderDate dateTime={createdAt}>
-                        Placed on {new Date(createdAt).toLocaleDateString('en-us', options)}
-                      </OrderDate>
-                    </OrderDateWrapper>
-                    <OrderIconWrapper>
-                      <MoreVertIcon />
-                    </OrderIconWrapper>
-                  </OrderDateIconContainer>
-                  <OrderTotal>Total: {' '}
-                    <NumericFormat
-                      value={total}
-                      displayType={'text'}
-                      thousandSeparator={true}
-                      prefix={'$'}
-                    />
-                  </OrderTotal>
-                  <Link href={`/orders/${encodeURIComponent(id)}`} passHref>
-                    <Button type='button'>
-                      Order details
-                    </Button>
-                  </Link>
-                </Order>
-              </OrderWrapper>
-            );
+            return <OrderCard key={order.id} {...order} />
           })}
         </OrderContainer>
       </Wrapper>
