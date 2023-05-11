@@ -9,6 +9,7 @@ import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
 const Orders = () => {
   const dispatch = useDispatch();
+  const options = { month: 'long', day: 'numeric', year: 'numeric' };
 
   return (
     <Container onMouseOver={() => dispatch(closeSubmenu())}>
@@ -20,7 +21,7 @@ const Orders = () => {
             return (
               <OrderWrapper key={id}>
                 <OrderId>Order id: 63deb1d1a79fe9e5f5a46325</OrderId>
-                <OrderDate>Placed on {createdAt}</OrderDate>
+                <OrderDate>Placed on {new Date(createdAt).toLocaleDateString('en-us', options)}</OrderDate>
                 <OrderTotal>Total: {' '}
                   <NumericFormat
                     value={total}
