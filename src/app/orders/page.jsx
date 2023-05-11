@@ -41,7 +41,7 @@ const OrderContainer = styled.div`
 `;
 
 const OrderWrapper = styled.div`
-  width: 25%;
+  width: 30%;
   padding: 2rem;
   border-radius: 1rem;
   box-shadow: 2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.47);
