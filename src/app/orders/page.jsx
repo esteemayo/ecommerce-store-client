@@ -33,11 +33,11 @@ const Orders = () => {
                       prefix={'$'}
                     />
                   </OrderTotal>
-                    <Link href={`/orders/${encodeURIComponent(id)}`} passHref>
-                      <Button type='button'>
-                          Order details
-                      </Button>
-                    </Link>
+                  <Link href={`/orders/${encodeURIComponent(id)}`} passHref>
+                    <Button type='button'>
+                      Order details
+                    </Button>
+                  </Link>
                 </Order>
               </OrderWrapper>
             );
@@ -127,19 +127,6 @@ const Button = styled.button`
   border-radius: 0.5rem;
   outline-color: #eee;
   cursor: pointer;
-
-  a {
-    &:link,
-    &:visited {
-      text-decoration: none;
-      color: currentColor;
-      outline: none;
-    }
-
-    &:active {
-      color: currentColor;
-    }
-  }
 `;
 
 export default Orders;
