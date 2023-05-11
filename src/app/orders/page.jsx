@@ -46,4 +46,8 @@ const OrderId = styled.h2`
   
 `;
 
+const OrderDate = styled.time`
+  
+`;
+
 export default Orders;
