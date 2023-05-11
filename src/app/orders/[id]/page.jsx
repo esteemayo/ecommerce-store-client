@@ -17,7 +17,7 @@ const Order = () => {
   };
 
   return (
-    <Container>
+    <Container onMouseOver={() => dispatch(closeSubmenu())}>
       <Wrapper>
         <OrderContainer>
           <Left>
