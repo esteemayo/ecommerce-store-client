@@ -82,7 +82,7 @@ const Button = styled.button`
   display: inline-block;
   padding: 1rem 2rem;
   background-color: transparent;
-  color: inherit;
+  color: #aaa;
   border: 1px solid #ccc;
   border-radius: 0.5rem;
 `;
