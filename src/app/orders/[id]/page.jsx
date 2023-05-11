@@ -115,7 +115,12 @@ const Order = () => {
               <Heading>cart total</Heading>
               <TotalContainer>
                 <TotalText>Subtotal:</TotalText>
-                $99.99
+                <NumericFormat
+                  value={99.99}
+                  displayType={'text'}
+                  thousandSeparator={true}
+                  prefix={'$'}
+                />
               </TotalContainer>
               <TotalContainer>
                 <TotalText>Discount:</TotalText>
