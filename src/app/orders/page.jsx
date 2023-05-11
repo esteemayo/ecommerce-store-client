@@ -5,6 +5,7 @@ import Link from 'next/link';
 
 import { orders } from '@/data';
 import { useDispatch } from 'react-redux';
+import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
 const Orders = () => {
   const dispatch = useDispatch();
