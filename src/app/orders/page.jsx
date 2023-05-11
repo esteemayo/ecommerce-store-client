@@ -103,6 +103,10 @@ const Button = styled.button`
       color: currentColor;
       outline: none;
     }
+
+    &:active {
+      color: currentColor;
+    }
   }
 `;
 
