@@ -80,6 +80,7 @@ const OrderTotal = styled.p`
 
 const Button = styled.button`
   display: inline-block;
+  padding: 1rem 2rem;
 `;
 
 export default Orders;
