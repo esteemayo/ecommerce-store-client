@@ -11,6 +11,9 @@ const Success = () => {
             <Text>Thank you for your order, you will receive it in 45 minutes</Text>
             <InfoContainer>
               <InfoText>Here we will deliver your order.</InfoText>
+              <IconContainer>
+
+              </IconContainer>
             </InfoContainer>
           </SuccessWrapper>
         </SuccessContainer>
