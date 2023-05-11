@@ -49,12 +49,6 @@ const OrderContainer = styled.div`
   gap: 3rem;
 `;
 
-const OrderId = styled.h2`
-  display: inline-block;
-  font-weight: 400;
-  font-size: 2rem;
-`;
-
 const OrderDate = styled.time`
   display: block;
   font-size: 1.45rem;
