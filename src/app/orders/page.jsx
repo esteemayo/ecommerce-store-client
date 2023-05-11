@@ -95,6 +95,19 @@ const OrderWrapper = styled.div`
 
 const Order = styled.div`
   padding: 2rem;
+
+  a {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: #aaa;
+      outline: none;
+    }
+
+    &:active {
+      color: currentColor;
+    }
+  }
 `;
 
 const OrderId = styled.h2`
