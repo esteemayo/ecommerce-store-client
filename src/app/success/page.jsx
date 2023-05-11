@@ -6,4 +6,8 @@ const Success = () => {
   );
 }
 
+const Container = styled.main`
+  
+`;
+
 export default Success;
