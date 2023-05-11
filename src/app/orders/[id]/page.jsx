@@ -187,9 +187,7 @@ const OrderId = styled.span`
   text-transform: uppercase;
 `;
 
-const OrderName = styled.span`
-  
-`;
+const OrderName = styled.span``;
 
 const OrderAddress = styled.span``;
 
