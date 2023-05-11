@@ -85,7 +85,7 @@ const OrderWrapper = styled.div`
     display: block;
     width: 100%;
     height: 3px;
-    background-color: ${({ status }) => status === 0 && 'red'};
+    background-color: ${({ status }) => status === 0 && 'var(--clr-secondary-red)'};
     background-color: ${({ status }) => status === 1 && '#ffb900'};
     background-color: ${({ status }) => status === 2 && 'var(--clr-secondary-green)'};
     border-radius: 1rem;
