@@ -71,6 +71,7 @@ const SuccessAlert = styled.p`
   color: #409384;
   border: 1px solid #409384;
   border-radius: 10rem;
+  margin-bottom: 2rem;
 `;
 
 const Text = styled.p`
