@@ -77,4 +77,8 @@ const OrderTotal = styled.p`
   color: var(--clr-secondary-green);
 `;
 
+const Button = styled.button`
+  
+`;
+
 export default Orders;
