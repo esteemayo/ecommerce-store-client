@@ -20,23 +20,25 @@ const Orders = () => {
             const { id, total, status, createdAt } = order;
             return (
               <OrderWrapper key={id} status={status}>
-                <OrderId>Order id: {id}</OrderId>
-                <OrderDate dateTime={createdAt}>
-                  Placed on {new Date(createdAt).toLocaleDateString('en-us', options)}
-                </OrderDate>
-                <OrderTotal>Total: {' '}
-                  <NumericFormat
-                    value={total}
-                    displayType={'text'}
-                    thousandSeparator={true}
-                    prefix={'$'}
-                  />
-                </OrderTotal>
-                <Button type='button'>
-                  <Link href={`/orders/${encodeURIComponent(id)}`} passHref>
-                    Order details
-                  </Link>
-                </Button>
+                <Order>
+                  <OrderId>Order id: {id}</OrderId>
+                  <OrderDate dateTime={createdAt}>
+                    Placed on {new Date(createdAt).toLocaleDateString('en-us', options)}
+                  </OrderDate>
+                  <OrderTotal>Total: {' '}
+                    <NumericFormat
+                      value={total}
+                      displayType={'text'}
+                      thousandSeparator={true}
+                      prefix={'$'}
+                    />
+                  </OrderTotal>
+                  <Button type='button'>
+                    <Link href={`/orders/${encodeURIComponent(id)}`} passHref>
+                      Order details
+                    </Link>
+                  </Button>
+                </Order>
               </OrderWrapper>
             );
           })}
