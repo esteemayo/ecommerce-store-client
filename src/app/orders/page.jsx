@@ -8,7 +8,7 @@ const Orders = () => {
         <Heading>Order history</Heading>
         <OrderContainer>
           <OrderWrapper>
-
+            <OrderId>Order id: 63deb1d1a79fe9e5f5a46325</OrderId>
           </OrderWrapper>
         </OrderContainer>
       </Wrapper>
