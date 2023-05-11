@@ -25,6 +25,7 @@ const Wrapper = styled.div`
 const Heading = styled.h1`
   display: inline-block;
   text-transform: capitalize;
+  font-weight: 500;
 `;
 
 export default Orders;
