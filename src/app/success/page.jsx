@@ -23,7 +23,7 @@ const Success = () => {
             </InfoContainer>
             <MushroomContainer>
               <IconContainer>
-
+                <MushroomText>&quot;No mushrooms, please&quot;</MushroomText>
               </IconContainer>
             </MushroomContainer>
           </SuccessWrapper>
