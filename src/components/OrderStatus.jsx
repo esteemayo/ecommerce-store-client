@@ -82,4 +82,6 @@ const Container = styled.section`
 
 const StatusWrapper = styled.div``;
 
+const Status = styled.span``;
+
 export default OrderStatus;
