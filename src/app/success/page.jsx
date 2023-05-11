@@ -60,6 +60,7 @@ const SuccessAlert = styled.p`
   display: inline-block;
   text-transform: uppercase;
   font-size: 1.3rem;
+  padding: 0 0.5rem;
   border: 1px solid #409384;
 `;
 
