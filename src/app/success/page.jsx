@@ -9,7 +9,7 @@ const Success = () => {
           <SuccessAlert>Order successfully placed</SuccessAlert>
           <Text>Thank you for your order, you will receive it in 45 minutes</Text>
           <InfoContainer>
-
+            <InfoText>Here we will deliver your order.</InfoText>
           </InfoContainer>
         </SuccessContainer>
       </Wrapper>
