@@ -59,7 +59,9 @@ body {
   position: relative;
 }
 
-.done {
+.done,
+.inProgress,
+.undone {
   display: flex;
   flex-direction: column;
   align-items: center;
