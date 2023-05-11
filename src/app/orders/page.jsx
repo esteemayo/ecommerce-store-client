@@ -100,6 +100,10 @@ const OrderDateWrapper = styled.div`
   
 `;
 
+const OrderDateContainer = styled.div`
+  
+`;
+
 const Order = styled.div`
   padding: 2rem;
 
