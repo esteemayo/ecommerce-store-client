@@ -49,17 +49,4 @@ const OrderContainer = styled.div`
   gap: 3rem;
 `;
 
-const Button = styled.button`
-  display: inline-block;
-  text-transform: capitalize;
-  font-size: 1.3rem;
-  padding: 1rem 2rem;
-  background-color: transparent;
-  color: #aaa;
-  border: 1px solid #ccc;
-  border-radius: 0.5rem;
-  outline-color: #eee;
-  cursor: pointer;
-`;
-
 export default Orders;
