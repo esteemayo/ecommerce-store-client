@@ -56,4 +56,8 @@ const InfoText = styled.p`
   
 `;
 
+const IconContainer = styled.div`
+  
+`;
+
 export default Success;
