@@ -6,7 +6,7 @@ const Success = () => {
     <Container>
       <Wrapper>
         <SuccessContainer>
-          Success
+          <SuccessAlert>Order successfully placed</SuccessAlert>
         </SuccessContainer>
       </Wrapper>
     </Container>
