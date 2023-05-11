@@ -17,7 +17,14 @@ const Orders = () => {
               <OrderWrapper key={id}>
                 <OrderId>Order id: 63deb1d1a79fe9e5f5a46325</OrderId>
                 <OrderDate>Placed on {createdAt}</OrderDate>
-                <OrderTotal>Total: ${total}</OrderTotal>
+                <OrderTotal>Total:
+                  <NumericFormat
+                    value={total}
+                    displayType={'text'}
+                    thousandSeparator={true}
+                    prefix={'$'}
+                  />
+                </OrderTotal>
                 <Button type='button'>
                   <Link href={`/orders/${encodeURIComponent(id)}`} passHref>
                     Order details
