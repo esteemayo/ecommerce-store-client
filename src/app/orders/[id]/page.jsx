@@ -222,6 +222,7 @@ const Right = styled.div`
 
 const RightWrapper = styled.div`
   width: 90%;
+  max-height: 30rem;
   background-color: #555;
   color: var(--clr-white);
   padding: 5rem;
