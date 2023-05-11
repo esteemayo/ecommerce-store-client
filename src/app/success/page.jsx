@@ -7,25 +7,27 @@ const Success = () => {
       <Wrapper>
         <SuccessContainer>
           <SuccessWrapper>
-            <SuccessAlert>Order successfully placed</SuccessAlert>
-            <Text>Thank you for your order, you will receive it in 45 minutes</Text>
-            <InfoContainer>
-              <InfoText>Here we will deliver your order.</InfoText>
-              <IconContainer>
-                <Address>3711 Schultz Meadow</Address>
-              </IconContainer>
-              <IconContainer>
-                <Phone>60640582</Phone>
-              </IconContainer>
-              <IconContainer>
-                <Email>gorczany.tamara@yahoo.com</Email>
-              </IconContainer>
-            </InfoContainer>
-            <MushroomContainer>
-              <IconContainer>
-                <MushroomText>&quot;No mushrooms, please&quot;</MushroomText>
-              </IconContainer>
-            </MushroomContainer>
+            <SuccessInfo>
+              <SuccessAlert>Order successfully placed</SuccessAlert>
+              <Text>Thank you for your order, you will receive it in 45 minutes</Text>
+              <InfoContainer>
+                <InfoText>Here we will deliver your order.</InfoText>
+                <IconContainer>
+                  <Address>3711 Schultz Meadow</Address>
+                </IconContainer>
+                <IconContainer>
+                  <Phone>60640582</Phone>
+                </IconContainer>
+                <IconContainer>
+                  <Email>gorczany.tamara@yahoo.com</Email>
+                </IconContainer>
+              </InfoContainer>
+              <MushroomContainer>
+                <IconContainer>
+                  <MushroomText>&quot;No mushrooms, please&quot;</MushroomText>
+                </IconContainer>
+              </MushroomContainer>
+            </SuccessInfo>
           </SuccessWrapper>
         </SuccessContainer>
       </Wrapper>
