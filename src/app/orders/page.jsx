@@ -22,4 +22,8 @@ const Wrapper = styled.div`
   margin: 0 auto;
 `;
 
+const Heading = styled.h1`
+  
+`;
+
 export default Orders;
