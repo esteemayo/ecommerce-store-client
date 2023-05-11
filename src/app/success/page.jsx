@@ -59,6 +59,8 @@ const SuccessWrapper = styled.div`
 const SuccessAlert = styled.p`
   display: inline-block;
   text-transform: uppercase;
+  font-size: 1.3rem;
+  border: 1px solid #409384;
 `;
 
 const Text = styled.p`
