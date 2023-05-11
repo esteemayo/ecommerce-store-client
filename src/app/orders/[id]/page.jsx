@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { NumericFormat } from 'react-number-format';
 
 import OrderStatus from '@/components/OrderStatus';
-import { useDispatch } from 'react-redux';
 
 const Order = () => {
   const dispatch = useDispatch();
