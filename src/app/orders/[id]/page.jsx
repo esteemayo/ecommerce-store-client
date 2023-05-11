@@ -260,6 +260,10 @@ const Button = styled.button`
   border-radius: 0.5rem;
   outline-color: #222;
   cursor: pointer;
+
+  &:hover {
+    background-position: 100%;
+  }
 `;
 
 export default Order;
