@@ -2,6 +2,7 @@
 import styled from 'styled-components';
 
 import { orders } from '@/data';
+import Link from 'next/link';
 
 const Orders = () => {
   return (
