@@ -20,7 +20,7 @@ const Orders = () => {
             const { id, total, status, createdAt } = order;
             return (
               <OrderWrapper key={id} status={status}>
-                <OrderId>Order id: 63deb1d1a79fe9e5f5a46325</OrderId>
+                <OrderId>Order id: {id}</OrderId>
                 <OrderDate dateTime={createdAt}>
                   Placed on {new Date(createdAt).toLocaleDateString('en-us', options)}
                 </OrderDate>
