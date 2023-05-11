@@ -5,7 +5,9 @@ const Success = () => {
   return (
     <Container>
       <Wrapper>
-        Success
+        <SuccessContainer>
+          Success
+        </SuccessContainer>
       </Wrapper>
     </Container>
   );
