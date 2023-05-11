@@ -2,7 +2,9 @@ import styled from 'styled-components';
 
 const OrderCard = () => {
   return (
-    <div>OrderCard</div>
+    <Container>
+      OrderCard
+    </Container>
   );
 }
 
