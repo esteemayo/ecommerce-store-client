@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { NumericFormat } from 'react-number-format';
 
 import { orders } from '@/data';
-import Link from 'next/link';
 
 const Orders = () => {
   return (
