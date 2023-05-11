@@ -7,4 +7,8 @@ const Orders = () => {
   );
 }
 
+const Container = styled.main`
+  
+`;
+
 export default Orders;
