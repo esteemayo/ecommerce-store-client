@@ -124,7 +124,12 @@ const Order = () => {
               </TotalContainer>
               <TotalContainer>
                 <TotalText>Discount:</TotalText>
-                $0.00
+                <NumericFormat
+                  value='0.00'
+                  displayType={'text'}
+                  thousandSeparator={true}
+                  prefix={'$'}
+                />
               </TotalContainer>
               <TotalContainer>
                 <TotalText>Total:</TotalText>
