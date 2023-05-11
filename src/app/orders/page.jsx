@@ -49,23 +49,6 @@ const OrderContainer = styled.div`
   gap: 3rem;
 `;
 
-const Order = styled.div`
-  padding: 2rem;
-
-  a {
-    &:link,
-    &:visited {
-      text-decoration: none;
-      color: #aaa;
-      outline: none;
-    }
-
-    &:active {
-      color: #aaa;
-    }
-  }
-`;
-
 const OrderId = styled.h2`
   display: inline-block;
   font-weight: 400;
