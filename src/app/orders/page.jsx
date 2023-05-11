@@ -86,6 +86,7 @@ const OrderWrapper = styled.div`
     width: 100%;
     height: 3px;
     background-color: var(--clr-secondary-green);
+    border-radius: 1rem;
   }
 `;
 
