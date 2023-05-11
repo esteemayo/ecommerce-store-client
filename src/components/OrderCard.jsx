@@ -6,7 +6,32 @@ import { NumericFormat } from 'react-number-format';
 const OrderCard = () => {
   return (
     <Container>
-      OrderCard
+      <Order>
+        <OrderDateIconContainer>
+          <OrderDateWrapper>
+            <OrderId>Order id: {id}</OrderId>
+            <OrderDate dateTime={createdAt}>
+              Placed on {new Date(createdAt).toLocaleDateString('en-us', options)}
+            </OrderDate>
+          </OrderDateWrapper>
+          <OrderIconWrapper>
+            <MoreVertIcon />
+          </OrderIconWrapper>
+        </OrderDateIconContainer>
+        <OrderTotal>Total: {' '}
+          <NumericFormat
+            value={total}
+            displayType={'text'}
+            thousandSeparator={true}
+            prefix={'$'}
+          />
+        </OrderTotal>
+        <Link href={`/orders/${encodeURIComponent(id)}`} passHref>
+          <Button type='button'>
+            Order details
+          </Button>
+        </Link>
+      </Order>
     </Container>
   );
 }
