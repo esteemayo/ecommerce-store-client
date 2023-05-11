@@ -6,6 +6,9 @@ const Orders = () => {
     <Container>
       <Wrapper>
         <Heading>Order history</Heading>
+        <OrderContainer>
+
+        </OrderContainer>
       </Wrapper>
     </Container>
   );
