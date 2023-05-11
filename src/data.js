@@ -1153,7 +1153,7 @@ export const orders = [
     customer: 'Lourdes Browning',
     address: 'NewYork, USA',
     total: 1000,
-    status: 0,
+    status: 2,
     paymentMethod: 1,
     user: '63daf094a5a5a41474d2192d',
     createdAt: '2023-02-05T16:44:49.632Z',
