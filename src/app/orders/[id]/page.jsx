@@ -274,6 +274,10 @@ const Button = styled.button`
   &:hover {
     background-position: 100%;
   }
+
+  &:disabled {
+    opacity: 0.75;
+  }
 `;
 
 export default Order;
