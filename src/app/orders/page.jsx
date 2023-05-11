@@ -101,6 +101,7 @@ const Button = styled.button`
     &:visited {
       text-decoration: none;
       color: currentColor;
+      outline: none;
     }
   }
 `;
