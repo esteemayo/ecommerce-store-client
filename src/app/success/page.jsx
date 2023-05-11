@@ -58,6 +58,11 @@ const SuccessWrapper = styled.div`
   padding: 3rem 7rem;
 `;
 
+const SuccessInfo = styled.div`
+  max-width: 50rem;
+  margin: 0 auto;
+`;
+
 const SuccessAlert = styled.p`
   display: inline-block;
   text-transform: uppercase;
