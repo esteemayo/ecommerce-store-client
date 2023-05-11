@@ -195,9 +195,7 @@ const OrderAddress = styled.span`
   
 `;
 
-const OrderTotal = styled.span`
-  
-`;
+const OrderTotal = styled.span``;
 
 const StatusContainer = styled.div`
   width: 80%;
