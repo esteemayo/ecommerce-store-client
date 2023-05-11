@@ -7,7 +7,9 @@ const Orders = () => {
       <Wrapper>
         <Heading>Order history</Heading>
         <OrderContainer>
+          <OrderWrapper>
 
+          </OrderWrapper>
         </OrderContainer>
       </Wrapper>
     </Container>
