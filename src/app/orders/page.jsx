@@ -27,6 +27,9 @@ const Orders = () => {
                     <OrderDate dateTime={createdAt}>
                       Placed on {new Date(createdAt).toLocaleDateString('en-us', options)}
                     </OrderDate>
+                    <OrderIconWrapper>
+
+                    </OrderIconWrapper>
                   </OrderDateWrapper>
                   <OrderTotal>Total: {' '}
                     <NumericFormat
