@@ -105,7 +105,7 @@ const Order = styled.div`
     }
 
     &:active {
-      color: currentColor;
+      color: #aaa;
     }
   }
 `;
