@@ -235,9 +235,9 @@ const RightWrapper = styled.div`
   padding: 5rem;
   padding-top: 1rem;
   border-radius: 0.5rem;
-  box-shadow: 0 2rem 4rem rgba(145, 143, 143, 0.1);
-  -webkit-box-shadow: 0 2rem 4rem rgba(145, 143, 143, 0.1);
-  -moz-box-shadow: 0 2rem 4rem rgba(145, 143, 143, 0.1);
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.15);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
