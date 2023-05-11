@@ -58,6 +58,7 @@ const OrderId = styled.h2`
 const OrderDate = styled.time`
   display: block;
   font-size: 1.45rem;
+  color: #aaa;
 `;
 
 const OrderTotal = styled.p`
