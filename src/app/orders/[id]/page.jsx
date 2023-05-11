@@ -248,6 +248,8 @@ const Button = styled.button`
   font-weight: 600;
   font-size: 1.5rem;
   padding: 1.35rem 3rem;
+  background-color: var(--clr-black);
+  color: var(--clr-white);
 `;
 
 export default Order;
