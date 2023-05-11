@@ -6,6 +6,7 @@ import OrderStatus from '@/components/OrderStatus';
 import { useDispatch } from 'react-redux';
 
 const Order = () => {
+  const dispatch = useDispatch();
   const status = 0;
 
   const statusClass = (index) => {
