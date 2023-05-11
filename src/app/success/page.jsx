@@ -18,7 +18,7 @@ const Success = () => {
                 <Phone>60640582</Phone>
               </IconContainer>
               <IconContainer>
-
+                <Email>gorczany.tamara@yahoo.com</Email>
               </IconContainer>
             </InfoContainer>
           </SuccessWrapper>
