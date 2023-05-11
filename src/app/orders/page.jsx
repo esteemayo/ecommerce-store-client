@@ -107,9 +107,7 @@ const OrderDateIconContainer = styled.div`
   justify-content: space-between;
 `;
 
-const OrderDateWrapper = styled.div`
-  
-`;
+const OrderDateWrapper = styled.div``;
 
 const OrderIconWrapper = styled.div`
   
