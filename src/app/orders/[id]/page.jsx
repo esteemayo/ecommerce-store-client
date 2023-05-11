@@ -1,6 +1,7 @@
 'use client';
 import styled from 'styled-components';
 import Image from 'next/image';
+import { NumericFormat } from 'react-number-format';
 
 const Order = () => {
   const status = 0;
