@@ -53,6 +53,7 @@ const SuccessContainer = styled.div`
 const SuccessWrapper = styled.div`
   width: 70rem;
   background-color: #f9f9f9;
+  padding: 3rem 7rem;
 `;
 
 const SuccessAlert = styled.p`
