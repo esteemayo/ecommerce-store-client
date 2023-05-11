@@ -51,4 +51,8 @@ const OrderDate = styled.time`
   
 `;
 
+const OrderTotal = styled.p`
+  
+`;
+
 export default Orders;
