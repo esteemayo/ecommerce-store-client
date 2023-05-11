@@ -8,11 +8,16 @@ const Orders = () => {
       <Wrapper>
         <Heading>Order history</Heading>
         <OrderContainer>
-          <OrderWrapper>
-            <OrderId>Order id: 63deb1d1a79fe9e5f5a46325</OrderId>
-            <OrderDate>Placed on May 11, 2023</OrderDate>
-            <OrderTotal>Total: $248</OrderTotal>
-          </OrderWrapper>
+          {orders.map((order) => {
+            const { id, total, createdAt } = order;
+            return (
+              <OrderWrapper key={id}>
+                <OrderId>Order id: 63deb1d1a79fe9e5f5a46325</OrderId>
+                <OrderDate>Placed on {createdAt}</OrderDate>
+                <OrderTotal>Total: ${total}</OrderTotal>
+              </OrderWrapper>
+            );
+          })}
         </OrderContainer>
       </Wrapper>
     </Container>
