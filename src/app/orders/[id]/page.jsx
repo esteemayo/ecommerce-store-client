@@ -257,6 +257,8 @@ const Button = styled.button`
     #333 50%
   );
   background-size: 220%;
+  border-radius: 0.5rem;
+  outline-color: #222;
 `;
 
 export default Order;
