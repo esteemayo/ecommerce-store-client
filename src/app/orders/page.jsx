@@ -49,8 +49,6 @@ const OrderContainer = styled.div`
   gap: 3rem;
 `;
 
-const OrderDateWrapper = styled.div``;
-
 const OrderIconWrapper = styled.div`
   svg {
     font-size: 1.8rem;
