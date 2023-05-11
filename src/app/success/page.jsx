@@ -66,6 +66,10 @@ const SuccessAlert = styled.p`
   border-radius: 10rem;
 `;
 
+const SuccessInfo = styled.div`
+  
+`;
+
 const Text = styled.p`
   
 `;
