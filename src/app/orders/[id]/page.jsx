@@ -234,6 +234,7 @@ const RightWrapper = styled.div`
   color: var(--clr-white);
   padding: 5rem;
   padding-top: 1rem;
+  border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
