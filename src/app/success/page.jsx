@@ -81,4 +81,8 @@ const Email = styled.span`
   
 `;
 
+const MushroomContainer = styled.div`
+  
+`;
+
 export default Success;
