@@ -1,6 +1,8 @@
 'use client';
 import styled from 'styled-components';
 
+import { orders } from '@/data';
+
 const Orders = () => {
   return (
     <Container>
