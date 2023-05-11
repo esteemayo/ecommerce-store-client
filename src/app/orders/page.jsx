@@ -56,7 +56,7 @@ const OrderId = styled.h2`
 `;
 
 const OrderDate = styled.time`
-  
+  display: block;
 `;
 
 const OrderTotal = styled.p`
