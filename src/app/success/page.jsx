@@ -21,6 +21,9 @@ const Success = () => {
                 <Email>gorczany.tamara@yahoo.com</Email>
               </IconContainer>
             </InfoContainer>
+            <MushroomContainer>
+
+            </MushroomContainer>
           </SuccessWrapper>
         </SuccessContainer>
       </Wrapper>
