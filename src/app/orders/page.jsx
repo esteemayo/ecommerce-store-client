@@ -9,6 +9,7 @@ const Orders = () => {
         <OrderContainer>
           <OrderWrapper>
             <OrderId>Order id: 63deb1d1a79fe9e5f5a46325</OrderId>
+            <OrderDate>May 11, 2023</OrderDate>
           </OrderWrapper>
         </OrderContainer>
       </Wrapper>
