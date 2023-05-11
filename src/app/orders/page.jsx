@@ -88,6 +88,10 @@ const OrderWrapper = styled.div`
   }
 `;
 
+const Order = styled.div`
+  
+`;
+
 const OrderId = styled.h2`
   display: inline-block;
   font-weight: 400;
