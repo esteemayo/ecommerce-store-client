@@ -102,7 +102,9 @@ const OrderWrapper = styled.div`
 `;
 
 const OrderDateIconContainer = styled.div`
-  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 `;
 
 const OrderDateWrapper = styled.div`
