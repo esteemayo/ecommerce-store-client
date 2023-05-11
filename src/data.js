@@ -1142,7 +1142,7 @@ export const orders = [
     customer: 'Mary Doe',
     address: 'Lagos, Nigeria',
     total: 500,
-    status: 0,
+    status: 1,
     paymentMethod: 0,
     user: '63d9c0dafdc72fd8ed2113b6',
     createdAt: '2023-02-04T19:30:32.359Z',
