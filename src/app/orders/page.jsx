@@ -47,6 +47,7 @@ const OrderContainer = styled.div`
   margin: 2rem 0;
   display: flex;
   align-items: center;
+  gap: 3rem;
 `;
 
 const OrderWrapper = styled.div`
