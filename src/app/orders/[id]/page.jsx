@@ -1,6 +1,7 @@
 'use client';
 import styled from 'styled-components';
 import { NumericFormat } from 'react-number-format';
+
 import OrderStatus from '@/components/OrderStatus';
 
 const Order = () => {
