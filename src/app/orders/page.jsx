@@ -147,7 +147,7 @@ const OrderDate = styled.time`
 
 const OrderTotal = styled.p`
   font-weight: 500;
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: inherit;
   margin: 1rem 0 0.5rem;
 `;
