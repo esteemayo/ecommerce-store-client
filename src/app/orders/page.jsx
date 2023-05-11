@@ -1,8 +1,5 @@
 'use client';
 import styled from 'styled-components';
-import { NumericFormat } from 'react-number-format';
-import Link from 'next/link';
-import MoreVertIcon from '@mui/icons-material/MoreVert';
 import { useDispatch } from 'react-redux';
 
 import { orders } from '@/data';
