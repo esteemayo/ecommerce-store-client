@@ -241,6 +241,7 @@ const TotalContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 1rem;
+  line-height: 1.3;
 
   &:last-of-type {
     margin-bottom: 2rem;
