@@ -100,7 +100,7 @@ const OrderDateWrapper = styled.div`
   
 `;
 
-const OrderDateContainer = styled.div`
+const OrderIconWrapper = styled.div`
   
 `;
 
