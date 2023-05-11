@@ -251,7 +251,7 @@ const Button = styled.button`
   background-color: var(--clr-black);
   color: var(--clr-white);
   background-image: linear-gradient(
-    120 deg,
+    120deg,
     transparent 0%,
     transparent 50%,
     #333 50%
