@@ -17,7 +17,11 @@ const Orders = () => {
                 <OrderId>Order id: 63deb1d1a79fe9e5f5a46325</OrderId>
                 <OrderDate>Placed on {createdAt}</OrderDate>
                 <OrderTotal>Total: ${total}</OrderTotal>
-                <Button type='button'>Order details</Button>
+                <Button type='button'>
+                  <Link href={`/orders/${encodeURIComponent(id)}`} passHref>
+                    Order details
+                  </Link>
+                </Button>
               </OrderWrapper>
             );
           })}
