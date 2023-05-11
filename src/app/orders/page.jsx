@@ -22,10 +22,12 @@ const Orders = () => {
             return (
               <OrderWrapper key={id} status={status}>
                 <Order>
-                  <OrderId>Order id: {id}</OrderId>
-                  <OrderDate dateTime={createdAt}>
-                    Placed on {new Date(createdAt).toLocaleDateString('en-us', options)}
-                  </OrderDate>
+                  <OrderDateWrapper>
+                    <OrderId>Order id: {id}</OrderId>
+                    <OrderDate dateTime={createdAt}>
+                      Placed on {new Date(createdAt).toLocaleDateString('en-us', options)}
+                    </OrderDate>
+                  </OrderDateWrapper>
                   <OrderTotal>Total: {' '}
                     <NumericFormat
                       value={total}
