@@ -82,6 +82,8 @@ const OrderWrapper = styled.div`
   &::before {
     content: '';
     display: block;
+    width: 3px;
+    height: 100%;
   }
 `;
 
