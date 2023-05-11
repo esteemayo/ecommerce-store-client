@@ -45,7 +45,9 @@ const OrderWrapper = styled.div`
 `;
 
 const OrderId = styled.h2`
-  
+  display: inline-block;
+  font-weight: 400;
+  font-size: 2rem;
 `;
 
 const OrderDate = styled.time`
