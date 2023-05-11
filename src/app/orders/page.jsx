@@ -4,8 +4,11 @@ import { NumericFormat } from 'react-number-format';
 import Link from 'next/link';
 
 import { orders } from '@/data';
+import { useDispatch } from 'react-redux';
 
 const Orders = () => {
+  const dispatch = useDispatch();
+
   return (
     <Container>
       <Wrapper>
