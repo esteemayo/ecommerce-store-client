@@ -5,7 +5,7 @@ const Orders = () => {
   return (
     <Container>
       <Wrapper>
-        Orders
+        <Heading>Order history</Heading>
       </Wrapper>
     </Container>
   );
