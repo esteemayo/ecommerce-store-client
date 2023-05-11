@@ -85,6 +85,8 @@ const Button = styled.button`
   color: #aaa;
   border: 1px solid #ccc;
   border-radius: 0.5rem;
+  outline-color: #eee;
+  cursor: pointer;
 `;
 
 export default Orders;
