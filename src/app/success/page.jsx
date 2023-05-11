@@ -77,4 +77,8 @@ const Phone = styled.span`
   
 `;
 
+const Email = styled.span`
+  
+`;
+
 export default Success;
