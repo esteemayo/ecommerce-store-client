@@ -73,7 +73,7 @@ const OrderContainer = styled.div`
 
 const OrderWrapper = styled.div`
   width: 30%;
-  padding: 2rem;
+  /* padding: 2rem; */
   border-radius: 1rem;
   box-shadow: 2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.47);
   -webkit-box-shadow: 2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.47);
@@ -82,8 +82,9 @@ const OrderWrapper = styled.div`
   &::before {
     content: '';
     display: block;
-    width: 3px;
-    height: 100%;
+    width: 100%;
+    height: 3px;
+    background-color: var(--clr-secondary-green);
   }
 `;
 
