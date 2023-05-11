@@ -45,6 +45,7 @@ const Heading = styled.h1`
 
 const OrderContainer = styled.div`
   margin: 2rem 0;
+  display: flex;
 `;
 
 const OrderWrapper = styled.div`
