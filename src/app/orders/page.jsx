@@ -61,8 +61,9 @@ const OrderDate = styled.time`
 `;
 
 const OrderTotal = styled.p`
-  font-weight: 600;
+  font-weight: 500;
   font-size: 3rem;
+  color: var(--clr-secondary-green);
 `;
 
 export default Orders;
