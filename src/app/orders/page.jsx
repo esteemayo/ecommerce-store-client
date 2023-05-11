@@ -1,5 +1,4 @@
 'use client';
-import { orders } from '@/data';
 import styled from 'styled-components';
 
 const Orders = () => {
