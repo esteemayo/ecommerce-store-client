@@ -30,4 +30,8 @@ const SuccessContainer = styled.div`
   justify-content: center;
 `;
 
+const SuccessAlert = styled.p`
+  
+`;
+
 export default Success;
