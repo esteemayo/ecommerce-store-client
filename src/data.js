@@ -1125,7 +1125,7 @@ export const cartItems = [
   },
 ];
 
-export const orderItems = [
+export const order = [
   {
     id: 1,
     customer: 'Mary Doe',
