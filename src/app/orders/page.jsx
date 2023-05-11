@@ -21,7 +21,9 @@ const Orders = () => {
             return (
               <OrderWrapper key={id}>
                 <OrderId>Order id: 63deb1d1a79fe9e5f5a46325</OrderId>
-                <OrderDate>Placed on {new Date(createdAt).toLocaleDateString('en-us', options)}</OrderDate>
+                <OrderDate>
+                  Placed on {new Date(createdAt).toLocaleDateString('en-us', options)}
+                </OrderDate>
                 <OrderTotal>Total: {' '}
                   <NumericFormat
                     value={total}
