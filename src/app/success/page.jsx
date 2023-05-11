@@ -34,4 +34,8 @@ const SuccessAlert = styled.p`
   
 `;
 
+const Text = styled.p`
+  
+`;
+
 export default Success;
