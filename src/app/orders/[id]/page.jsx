@@ -235,6 +235,10 @@ const TotalContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 1rem;
+
+  &:last-of-type {
+    margin-bottom: 2rem;
+  }
 `;
 
 const TotalText = styled.b`
