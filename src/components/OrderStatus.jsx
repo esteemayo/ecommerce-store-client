@@ -6,4 +6,8 @@ const OrderStatus = () => {
   );
 }
 
+const Container = styled.section`
+  
+`;
+
 export default OrderStatus;
