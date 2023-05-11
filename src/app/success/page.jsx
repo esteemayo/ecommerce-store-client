@@ -34,6 +34,10 @@ const SuccessContainer = styled.div`
   justify-content: center;
 `;
 
+const SuccessWrapper = styled.div`
+  
+`;
+
 const SuccessAlert = styled.p`
   
 `;
