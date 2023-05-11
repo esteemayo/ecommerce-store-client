@@ -79,7 +79,7 @@ const OrderTotal = styled.p`
 `;
 
 const Button = styled.button`
-  
+  display: inline-block;
 `;
 
 export default Orders;
