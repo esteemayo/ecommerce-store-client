@@ -165,9 +165,7 @@ const Thead = styled.thead`
   
 `;
 
-const Tr = styled.tr`
-  
-`;
+const Tr = styled.tr``;
 
 const Th = styled.th`
   font-weight: 600;
