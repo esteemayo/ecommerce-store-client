@@ -60,6 +60,8 @@ const ImageContainer = styled.div`
   img {
     width: 50rem;
     height: 50rem;
+    display: block;
+    object-fit: cover;
   }
 `;
 
