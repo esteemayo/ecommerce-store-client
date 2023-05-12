@@ -90,7 +90,8 @@ const Text = styled.p`
 `;
 
 const Minutes = styled.span`
-  
+  padding: 0.5rem;
+  background-color: hsla(0, 0%, 100%, 0.4);
 `;
 
 const InfoContainer = styled.div`
