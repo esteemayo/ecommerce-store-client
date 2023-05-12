@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Link from 'next/link';
 import { useDispatch } from 'react-redux';
 import { useEffect, useRef, useState } from 'react';
-import { FaFacebookF } from 'react-icons/fa'
+import { FaFacebookF } from 'react-icons/fa';
 
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 import Image from 'next/image';
