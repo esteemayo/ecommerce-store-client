@@ -124,7 +124,7 @@ const MushroomContainer = styled.div`
 `;
 
 const MushroomText = styled.span`
-  
+  font-size: 1.5rem;
 `;
 
 export default Success;
