@@ -81,6 +81,7 @@ const Text = styled.p`
 `;
 
 const InfoContainer = styled.div`
+  padding: 2.7rem 2.3rem;
   background-color: hsla(0, 0%, 100%, 0.4);
 `;
 
