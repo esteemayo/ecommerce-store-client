@@ -38,10 +38,12 @@ const CartItem = ({ id, name, size, color, images, price, quantity }) => {
               <Title>Color:</Title>
               <ProductColor color={color}>{color}</ProductColor>
             </ColorContainer>
-            {<SizeContainer>
-              <Title>Size:</Title>
-              {size ? <ProductSize>{size}</ProductSize>: '-'}
-            </SizeContainer>}
+            {size && (
+              <SizeContainer>
+                <Title>Size:</Title>
+                <ProductSize>{size}</ProductSize>
+              </SizeContainer>
+            )}
             <RemoveButton type='button' onClick={() => dispatch(remove(id))}>
               Remove
             </RemoveButton>
