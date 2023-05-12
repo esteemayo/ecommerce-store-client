@@ -97,6 +97,10 @@ const SuccessInfo = styled.div`
       text-decoration: none;
       color: #409384;
     }
+
+    &:active {
+      color: currentColor;
+    }
   }
 `;
 
