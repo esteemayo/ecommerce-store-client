@@ -1,7 +1,8 @@
 'use client';
 import { Provider } from 'react-redux';
+import { PersistGate } from 'redux-persist/integration/react';
 
-import store from '@/store/store';
+import { persistor, store } from '@/store/store';
 import Submenu from '@/components/Submenu';
 import Navbar from '@/components/Navbar';
 import Sidebar from '@/components/Sidebar';
@@ -20,14 +21,16 @@ export default function RootLayout({ children }) {
       <head />
       <body>
         <Provider store={store}>
-          <div className='container'>
-            <Navbar />
-            <Submenu />
-            <Sidebar />
-            {children}
-            <Footer />
-            <ScrollToTop />
-          </div>
+          <PersistGate loading={null} persistor={persistor}>
+            <div className='container'>
+              <Navbar />
+              <Submenu />
+              <Sidebar />
+              {children}
+              <Footer />
+              <ScrollToTop />
+            </div>
+          </PersistGate>
         </Provider>
       </body>
     </html>
