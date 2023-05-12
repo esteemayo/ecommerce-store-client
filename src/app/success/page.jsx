@@ -96,6 +96,7 @@ const SuccessInfo = styled.div`
     &:visited {
       text-decoration: none;
       color: #409384;
+      outline: none;
     }
 
     &:active {
