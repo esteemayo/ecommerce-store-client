@@ -37,7 +37,7 @@ const Success = () => {
                   <MushroomText>&quot;No mushrooms, please&quot;</MushroomText>
                 </IconContainer>
               </MushroomContainer>
-              <TotalPayment>The payment of
+              <TotalPayment>The payment of {' '}
                 <NumericFormat
                   value={17950}
                   displayType={'text'}
