@@ -21,7 +21,7 @@ const Login = () => {
   const validateForm = () => {
     const tempErrors = {};
 
-    if (username.trim() === '') {
+    if (username === '') {
       tempErrors.username = 'Username field is required';
     }
 
