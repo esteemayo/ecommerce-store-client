@@ -113,7 +113,7 @@ const Minutes = styled.span`
   font-weight: 600;
   padding: 0.5rem;
   background-color: hsla(0, 0%, 100%, 0.4);
-  border-radius: 0.5rem;
+  border-radius: 3px;
 `;
 
 const InfoContainer = styled.div`
