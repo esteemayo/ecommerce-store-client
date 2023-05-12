@@ -7,7 +7,7 @@ import { useDispatch } from 'react-redux';
 
 import { remove, toggleQuantity } from '@/features/cart/cartSlice';
 
-const CartItem = ({ id, name, size, color, image, price, quantity }) => {
+const CartItem = ({ id, name, size, color, images, price, quantity }) => {
   const dispatch = useDispatch();
 
   const handleToggle = (type) => {
@@ -19,7 +19,7 @@ const CartItem = ({ id, name, size, color, image, price, quantity }) => {
       <Wrapper>
         <Left>
           <ImageContainer>
-            <Image src={image} width={120} height={120} alt='' />
+            <Image src={images[0]} width={120} height={120} alt='' />
           </ImageContainer>
           <ProductDetails>
             <ProductName>{name}</ProductName>
