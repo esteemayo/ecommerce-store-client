@@ -203,6 +203,10 @@ const Button = styled.button`
     background-color: #409384;
     margin-top: 0.5rem;
   }
+
+  &:hover {
+    opacity: 0.85;
+  }
 `;
 
 export default Success;
