@@ -200,6 +200,7 @@ const Button = styled.button`
     width: 100%;
     height: 3px;
     background-color: #409384;
+    margin-top: 0.5rem;
   }
 `;
 
