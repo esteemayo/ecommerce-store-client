@@ -9,6 +9,16 @@ import OrderCard from '@/components/OrderCard';
 const Orders = () => {
   const dispatch = useDispatch();
 
+  if (orders.length < 1) {
+    return (
+      <Container onMouseOver={() => dispatch(closeSubmenu())}>
+        <Wrapper>
+
+        </Wrapper>
+      </Container>
+    )
+  }
+
   return (
     <Container onMouseOver={() => dispatch(closeSubmenu())}>
       <Wrapper>
@@ -32,6 +42,10 @@ const Wrapper = styled.div`
   width: 100%;
   max-width: 120rem;
   margin: 0 auto;
+`;
+
+const ImageContainer = styled.div`
+  
 `;
 
 const Heading = styled.h1`
