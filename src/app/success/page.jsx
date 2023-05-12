@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { NumericFormat } from 'react-number-format';
 import { faEnvelope, faLocationDot, faMessage, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { useDispatch } from 'react-redux';
+
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
 const Success = () => {
