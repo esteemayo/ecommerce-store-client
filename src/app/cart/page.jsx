@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { useDispatch, useSelector } from 'react-redux';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
+import Image from 'next/image';
 
 import CartHeader from '@/components/CartHeader';
 import CartItem from '@/components/CartItem';
@@ -27,7 +28,7 @@ const Cart = () => {
       <Container onMouseOver={() => dispatch(closeSubmenu())}>
         <HeadingWrapper>
           <Heading>Your cart is currently empty!</Heading>
-          <Image 
+          <Image
             src='/img/empty-cart.png'
             width={400}
             height={400}
