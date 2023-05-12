@@ -5,8 +5,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from 'react';
 import { faMinus, faPlus } from '@fortawesome/free-solid-svg-icons';
 import { NumericFormat } from 'react-number-format';
+import { useDispatch } from 'react-redux';
 
 const CartModal = ({ product, isModalOpen, closeModal, setIsSelectedProduct }) => {
+  const dispatch = useDispatch();
+
   const [size, setSize] = useState(null);
   const [color, setColor] = useState(null);
   const [quantity, setQuantity] = useState(1);
