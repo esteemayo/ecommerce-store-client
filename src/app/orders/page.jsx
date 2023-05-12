@@ -5,7 +5,6 @@ import { useDispatch } from 'react-redux';
 import { orders } from '@/data';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 import OrderCard from '@/components/OrderCard';
-import Image from 'next/image';
 
 const Orders = () => {
   const dispatch = useDispatch();
