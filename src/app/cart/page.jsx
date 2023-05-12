@@ -81,6 +81,8 @@ const HeadingWrapper = styled.div`
   img {
     width: 40rem;
     height: 40rem;
+    display: block;
+    object-fit: cover;
   }
 `;
 
