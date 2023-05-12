@@ -184,6 +184,9 @@ const Button = styled.button`
   &::after {
     content: '';
     display: inline-block;
+    width: 100%;
+    height: 3px;
+    background-color: #409384;
   }
 `;
 
