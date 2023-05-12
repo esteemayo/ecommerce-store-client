@@ -9,7 +9,7 @@ import {
   PERSIST,
   PURGE,
   REGISTER,
-} from 'redux-persist'
+} from 'redux-persist';
 
 import cartReducer from '@/features/cart/cartSlice';
 import subMenuReducer from '@/features/submenu/submenuSlice';
