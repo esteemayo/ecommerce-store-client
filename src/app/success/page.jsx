@@ -6,7 +6,6 @@ import { faEnvelope, faLocationDot, faMessage, faPhone } from '@fortawesome/free
 import { useDispatch } from 'react-redux';
 
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
-import Link from 'next/link';
 
 const Success = () => {
   const dispatch = useDispatch();
