@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 import { faMinus, faPlus } from '@fortawesome/free-solid-svg-icons';
 import { NumericFormat } from 'react-number-format';
 import { useDispatch } from 'react-redux';
+
 import { addProduct } from '@/features/cart/cartSlice';
 
 const CartModal = ({ product, isModalOpen, closeModal, setIsSelectedProduct }) => {
