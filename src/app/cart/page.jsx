@@ -30,8 +30,8 @@ const Cart = () => {
           <Heading>Your cart is currently empty!</Heading>
           <Image 
             src='/img/empty-cart.png'
-            width={400} 
-            height={400} 
+            width={400}
+            height={400}
             alt=''
           />
           <Button type='button'>
