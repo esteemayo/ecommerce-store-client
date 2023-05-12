@@ -5,7 +5,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useEffect, useState } from 'react';
 import { faMinus, faPlus } from '@fortawesome/free-solid-svg-icons';
 import { NumericFormat } from 'react-number-format';
-import { useDispatch } from 'react-redux';
 
 import { addProduct } from '@/features/cart/cartSlice';
 
