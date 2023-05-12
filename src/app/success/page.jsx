@@ -95,6 +95,7 @@ const SuccessInfo = styled.div`
     &:link,
     &:visited {
       text-decoration: none;
+      color: #409384;
     }
   }
 `;
