@@ -1,5 +1,6 @@
 'use client';
 import styled from 'styled-components';
+import Image from 'next/image';
 import { useDispatch } from 'react-redux';
 
 import { orders } from '@/data';
