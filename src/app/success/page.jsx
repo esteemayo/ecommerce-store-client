@@ -43,7 +43,7 @@ const Success = () => {
                   displayType={'text'}
                   thousandSeparator={true}
                   prefix={'$'}
-                />
+                /> {' '}
                 you&apos;ll make when the courier arrives with your order.
               </TotalPayment>
             </SuccessInfo>
