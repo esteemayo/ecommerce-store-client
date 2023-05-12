@@ -176,6 +176,7 @@ const Button = styled.button`
   border: none;
   font-size: 1.5rem;
   background-color: transparent;
+  color: #409384;
 `;
 
 export default Success;
