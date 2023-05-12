@@ -12,7 +12,7 @@ const Success = () => {
             <SuccessInfo>
               <SuccessAlert>Order successfully placed</SuccessAlert>
               <Text>
-                Thank you for your order, you will receive it in
+                Thank you for your order, you will receive it in {' '}
                 <Minutes>45 minutes</Minutes>
               </Text>
               <InfoContainer>
