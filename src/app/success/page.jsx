@@ -187,6 +187,7 @@ const TotalPayment = styled.p`
 const Button = styled.button`
   display: block;
   border: none;
+  width: 10rem;
   font-size: 1.5rem;
   background-color: transparent;
   color: #409384;
