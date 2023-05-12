@@ -180,6 +180,11 @@ const Button = styled.button`
   outline-color: #409384;
   outline-offset: 0.5rem;
   cursor: pointer;
+
+  &::after {
+    content: '';
+    display: inline-block;
+  }
 `;
 
 export default Success;
