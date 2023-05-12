@@ -98,6 +98,7 @@ const Minutes = styled.span`
 const InfoContainer = styled.div`
   padding: 2.7rem 2.3rem;
   background-color: hsla(0, 0%, 100%, 0.4);
+  border-radius: 0.5rem;
 `;
 
 const InfoText = styled.p`
