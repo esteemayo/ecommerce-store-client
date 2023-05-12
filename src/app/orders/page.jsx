@@ -17,8 +17,8 @@ const Orders = () => {
           <ImageContainer>
             <Image
               src='/img/empty-list.png'
-              width={300}
-              height={300}
+              width={500}
+              height={500}
               alt=''
             />
           </ImageContainer>
