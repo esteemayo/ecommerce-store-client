@@ -118,7 +118,9 @@ const Email = styled.span`
 `;
 
 const MushroomContainer = styled.div`
-  
+  margin-top: 1rem;
+  padding: 0.5rem 2.3rem;
+  background-color: hsla(0, 0%, 100%, 0.4);
 `;
 
 const MushroomText = styled.span`
