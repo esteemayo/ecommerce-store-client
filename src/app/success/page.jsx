@@ -19,10 +19,11 @@ const Success = () => {
                   <Address>3711 Schultz Meadow</Address>
                 </IconContainer>
                 <IconContainer>
-                <FontAwesomeIcon icon={faPhone} />
+                  <FontAwesomeIcon icon={faPhone} />
                   <Phone>60640582</Phone>
                 </IconContainer>
                 <IconContainer>
+                  <FontAwesomeIcon icon={faEnvelope} />
                   <Email>gorczany.tamara@yahoo.com</Email>
                 </IconContainer>
               </InfoContainer>
