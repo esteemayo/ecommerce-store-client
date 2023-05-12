@@ -100,6 +100,7 @@ const InfoText = styled.p`
 const IconContainer = styled.div`
   display: flex;
   align-items: center;
+  gap: 1rem;
 `;
 
 const Address = styled.span`
