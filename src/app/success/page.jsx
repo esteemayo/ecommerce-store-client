@@ -141,6 +141,7 @@ const MushroomText = styled.span`
 
 const TotalPayment = styled.p`
   display: inline-block;
+  width: 90%;
   font-size: 1.5rem;
 `;
 
