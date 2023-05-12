@@ -131,6 +131,7 @@ const MushroomContainer = styled.div`
   margin-top: 1rem;
   padding: 1rem 2.3rem;
   background-color: hsla(0, 0%, 100%, 0.4);
+  border-radius: 0.5rem;
 `;
 
 const MushroomText = styled.span`
