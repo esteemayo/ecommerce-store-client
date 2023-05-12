@@ -6,6 +6,8 @@ import { faEnvelope, faLocationDot, faMessage, faPhone } from '@fortawesome/free
 import { useDispatch } from 'react-redux';
 
 const Success = () => {
+  const dispatch = useDispatch();
+
   return (
     <Container>
       <Wrapper>
