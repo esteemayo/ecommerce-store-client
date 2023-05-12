@@ -104,19 +104,6 @@ const Button = styled.button`
   outline-color: #85beae;
   margin-top: 2rem;
   cursor: pointer;
-
-  a {
-    &:link,
-    &:visited {
-      text-decoration: none;
-      font-size: inherit;
-      color: currentColor;
-    }
-
-    &:active {
-      color: currentColor;
-    }
-  }
 `;
 
 const Wrapper = styled.div`
