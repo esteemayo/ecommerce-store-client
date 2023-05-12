@@ -19,6 +19,7 @@ const Success = () => {
                   <Address>3711 Schultz Meadow</Address>
                 </IconContainer>
                 <IconContainer>
+                <FontAwesomeIcon icon={faPhone} />
                   <Phone>60640582</Phone>
                 </IconContainer>
                 <IconContainer>
