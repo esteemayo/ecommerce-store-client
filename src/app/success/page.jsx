@@ -179,6 +179,7 @@ const Button = styled.button`
   color: #409384;
   outline-color: #409384;
   outline-offset: 0.5rem;
+  margin-top: 3rem;
   cursor: pointer;
 
   &::after {
