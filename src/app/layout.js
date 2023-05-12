@@ -2,11 +2,11 @@
 import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
 
-import { persistor, store } from '@/store/store';
-import Submenu from '@/components/Submenu';
 import Navbar from '@/components/Navbar';
-import Sidebar from '@/components/Sidebar';
+import Submenu from '@/components/Submenu';
 import Footer from '@/components/Footer';
+import { persistor, store } from '@/store/store';
+import Sidebar from '@/components/Sidebar';
 import ScrollToTop from '@/components/ScrollToTop';
 
 import './globals.css';
