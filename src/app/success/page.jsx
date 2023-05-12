@@ -29,6 +29,7 @@ const Success = () => {
               </InfoContainer>
               <MushroomContainer>
                 <IconContainer>
+                  <FontAwesomeIcon icon={faMessage} />
                   <MushroomText>&quot;No mushrooms, please&quot;</MushroomText>
                 </IconContainer>
               </MushroomContainer>
