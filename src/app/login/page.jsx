@@ -4,9 +4,9 @@ import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { FaFacebookF } from 'react-icons/fa';
+import Image from 'next/image';
 
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
-import Image from 'next/image';
 
 const Login = () => {
   const dispatch = useDispatch();
