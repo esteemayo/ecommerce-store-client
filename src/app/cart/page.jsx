@@ -27,7 +27,7 @@ const Cart = () => {
     return (
       <Container onMouseOver={() => dispatch(closeSubmenu())}>
         <HeadingWrapper>
-          <Heading>Your cart is currently empty!</Heading>
+          {/* <Heading>Your cart is currently empty!</Heading> */}
           <Image
             src='/img/empty-cart.png'
             width={400}
