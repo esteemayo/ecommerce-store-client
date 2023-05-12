@@ -167,4 +167,8 @@ const TotalPayment = styled.p`
   margin-top: 3rem;
 `;
 
+const Button = styled.button`
+  
+`;
+
 export default Success;
