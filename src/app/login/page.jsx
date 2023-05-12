@@ -57,7 +57,12 @@ const Login = () => {
         <GoogleContainer>
           <GoogleButton type='button'>
             {/* <GoogleIcon /> */}
-            <Image src='/img/google-logo.png' width={23} height={23} alt='' />
+            <Image 
+              src='/img/google-logo.png'
+              width={23}
+              height={23}
+              alt=''
+            />
             Google
           </GoogleButton>
           <FacebookButton type='button'>
