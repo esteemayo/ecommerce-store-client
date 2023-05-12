@@ -440,4 +440,8 @@ const Button = styled.button`
   }
 `;
 
+const SuccessMessage = styled.span`
+  
+`;
+
 export default CartModal;
