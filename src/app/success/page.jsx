@@ -178,6 +178,7 @@ const Button = styled.button`
   background-color: transparent;
   color: #409384;
   outline-color: #409384;
+  outline-offset: 0.5rem;
 `;
 
 export default Success;
