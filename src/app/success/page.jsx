@@ -174,6 +174,7 @@ const TotalPayment = styled.p`
 const Button = styled.button`
   display: inline-block;
   border: none;
+  font-size: 1.5rem;
 `;
 
 export default Success;
