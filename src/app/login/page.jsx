@@ -164,6 +164,13 @@ const GoogleButton = styled.button`
   &:hover {
     opacity: 0.7;
   }
+
+  svg {
+    width: 2.3rem;
+    height: 2.3rem;
+    display: block;
+    object-fit: cover;
+  }
 `;
 
 const FacebookButton = styled.button`
