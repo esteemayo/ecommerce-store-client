@@ -65,7 +65,7 @@ const SuccessWrapper = styled.div`
 `;
 
 const SuccessInfo = styled.div`
-  max-width: 50rem;
+  max-width: 40rem;
   margin: 0 auto;
 `;
 
