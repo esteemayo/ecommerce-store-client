@@ -24,7 +24,7 @@ const Orders = () => {
           </ImageContainer>
         </Wrapper>
       </Container>
-    )
+    );
   }
 
   return (
