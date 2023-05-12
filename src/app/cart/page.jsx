@@ -84,6 +84,19 @@ const HeadingWrapper = styled.div`
     display: block;
     object-fit: cover;
   }
+
+  a {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      font-size: inherit;
+      color: currentColor;
+    }
+
+    &:active {
+      color: currentColor;
+    }
+  }
 `;
 
 const Heading = styled.h1`
