@@ -109,7 +109,7 @@ const Address = styled.span`
 `;
 
 const Phone = styled.span`
-  
+  font-size: 1.5rem;
 `;
 
 const Email = styled.span`
