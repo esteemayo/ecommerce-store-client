@@ -1,7 +1,6 @@
 'use client';
 import styled from 'styled-components';
 import Link from 'next/link';
-import GoogleIcon from '@mui/icons-material/Google';
 import { useDispatch } from 'react-redux';
 import { useEffect, useRef, useState } from 'react';
 import { FaFacebookF } from 'react-icons/fa'
