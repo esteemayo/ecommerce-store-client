@@ -65,7 +65,7 @@ const CartModal = ({ product, isModalOpen, closeModal, setIsSelectedProduct }) =
     }, 3000);
 
     return () => clearTimeout(timeout);
-  }, []);
+  }, [alert]);
 
   return (
     <Overlay
