@@ -92,6 +92,7 @@ const Text = styled.p`
 `;
 
 const Minutes = styled.span`
+  font-weight: 600;
   padding: 0.5rem;
   background-color: hsla(0, 0%, 100%, 0.4);
 `;
