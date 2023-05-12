@@ -1,6 +1,7 @@
 'use client';
 import styled from 'styled-components';
 import { useDispatch } from 'react-redux';
+import Image from 'next/image';
 
 import { orders } from '@/data';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
