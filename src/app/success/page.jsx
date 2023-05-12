@@ -138,4 +138,8 @@ const MushroomText = styled.span`
   font-size: 1.5rem;
 `;
 
+const TotalPayment = styled.p`
+  
+`;
+
 export default Success;
