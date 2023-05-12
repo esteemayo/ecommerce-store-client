@@ -10,7 +10,7 @@ const Success = () => {
   const dispatch = useDispatch();
 
   return (
-    <Container>
+    <Container onMouseOver={() => dispatch(closeSubmenu())}>
       <Wrapper>
         <SuccessContainer>
           <SuccessWrapper>
