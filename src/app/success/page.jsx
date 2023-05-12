@@ -140,7 +140,8 @@ const MushroomText = styled.span`
 `;
 
 const TotalPayment = styled.p`
-  
+  display: inline-block;
+  font-size: 1.5rem;
 `;
 
 export default Success;
