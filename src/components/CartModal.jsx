@@ -53,7 +53,7 @@ const CartModal = ({ product, isModalOpen, closeModal, setIsSelectedProduct }) =
   };
 
   const handleClick = () => {
-    console.log({ size, color, quantity });
+    dispatch(addProduct({ ...product, size, color, quantity, inCart: true }));
     handleClear();
   };
 
