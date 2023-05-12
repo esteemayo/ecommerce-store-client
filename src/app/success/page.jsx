@@ -104,7 +104,8 @@ const IconContainer = styled.div`
 `;
 
 const Address = styled.span`
-  
+  text-transform: capitalize;
+  font-size: 1.5rem;
 `;
 
 const Phone = styled.span`
