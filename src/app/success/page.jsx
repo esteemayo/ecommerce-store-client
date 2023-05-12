@@ -113,7 +113,8 @@ const Phone = styled.span`
 `;
 
 const Email = styled.span`
-  
+  text-transform: lowercase;
+  font-size: 1.5rem;
 `;
 
 const MushroomContainer = styled.div`
