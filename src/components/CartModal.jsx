@@ -59,6 +59,14 @@ const CartModal = ({ product, isModalOpen, closeModal, setIsSelectedProduct }) =
     setAlert(true);
   };
 
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setAlert(false);
+    }, 3000);
+
+    return () => clearTimeout(timeout);
+  }, []);
+
   return (
     <Overlay
       className='overlay'
