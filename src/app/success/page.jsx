@@ -175,6 +175,7 @@ const Button = styled.button`
   display: inline-block;
   border: none;
   font-size: 1.5rem;
+  background-color: transparent;
 `;
 
 export default Success;
