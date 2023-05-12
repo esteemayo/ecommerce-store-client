@@ -36,6 +36,7 @@ const Success = () => {
                   <MushroomText>&quot;No mushrooms, please&quot;</MushroomText>
                 </IconContainer>
               </MushroomContainer>
+              <TotalPayment>The payment of $17,950 you&apos;ll make when the courier arrives with your order.</TotalPayment>
             </SuccessInfo>
           </SuccessWrapper>
         </SuccessContainer>
