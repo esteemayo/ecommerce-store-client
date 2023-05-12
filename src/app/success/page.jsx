@@ -53,7 +53,7 @@ const Success = () => {
                 you&apos;ll make when the courier arrives with your order.
               </TotalPayment>
               <Link href='/orders' passHref>
-                <Button type='button'>Order history</Button>
+                <OrderButton type='button'>Order history</OrderButton>
               </Link>
             </SuccessInfo>
           </SuccessWrapper>
