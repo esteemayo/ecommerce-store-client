@@ -11,7 +11,10 @@ const Success = () => {
           <SuccessWrapper>
             <SuccessInfo>
               <SuccessAlert>Order successfully placed</SuccessAlert>
-              <Text>Thank you for your order, you will receive it in <Minutes>45 minutes</Minutes></Text>
+              <Text>
+                Thank you for your order, you will receive it in
+                <Minutes>45 minutes</Minutes>
+              </Text>
               <InfoContainer>
                 <InfoText>Here we will deliver your order.</InfoText>
                 <IconContainer>
