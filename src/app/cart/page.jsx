@@ -34,9 +34,9 @@ const Cart = () => {
             height={400}
             alt=''
           />
-          <Button type='button'>
-            <Link href='/products' passHref>Back to shopping</Link>
-          </Button>
+          <Link href='/products' passHref>
+            <Button type='button'>Back to shopping</Button>
+          </Link>
         </HeadingWrapper>
       </Container>
     );
