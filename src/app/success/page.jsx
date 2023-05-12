@@ -113,6 +113,10 @@ const IconContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 1rem;
+
+  svg {
+    color: #409384;
+  }
 `;
 
 const Address = styled.span`
