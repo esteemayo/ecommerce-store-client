@@ -184,7 +184,7 @@ const TotalPayment = styled.p`
   margin-top: 3rem;
 `;
 
-const Button = styled.button`
+const OrderButton = styled.button`
   display: inline-block;
   border: none;
   font-size: 1.35rem;
