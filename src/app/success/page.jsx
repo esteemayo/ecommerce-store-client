@@ -194,6 +194,7 @@ const Button = styled.button`
   outline-offset: 0.5rem;
   margin-top: 3rem;
   cursor: pointer;
+  transition: all 0.3s ease;
 
   &::after {
     content: '';
