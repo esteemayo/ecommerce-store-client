@@ -10,7 +10,6 @@ import PaymentModal from '@/components/PaymentModal';
 import CartTotal from '@/components/CartTotal';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 import { calcTotals } from '@/features/cart/cartSlice';
-import Image from 'next/image';
 
 const Cart = () => {
   const dispatch = useDispatch();
