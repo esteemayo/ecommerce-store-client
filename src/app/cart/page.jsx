@@ -77,6 +77,11 @@ const HeadingWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  img {
+    width: 40rem;
+    height: 40rem;
+  }
 `;
 
 const Heading = styled.h1`
