@@ -10,17 +10,33 @@ import {
   REGISTER,
 } from 'redux-persist'
 import storage from 'redux-persist/lib/storage';
-import { PersistGate } from 'redux-persist/integration/react';
-
 
 import cartReducer from '@/features/cart/cartSlice';
 import subMenuReducer from '@/features/submenu/submenuSlice';
 
+const persistConfig = {
+  key: 'root',
+  version: 1,
+  storage,
+};
+
+const rootReducer = {
+  cart: cartReducer,
+  submenu: subMenuReducer,
+};
+
+const persistedReducer = persistReducer(persistConfig, rootReducer)
+
 const store = configureStore({
-  reducer: {
-    cart: cartReducer,
-    submenu: subMenuReducer,
-  },
+  reducer: persistedReducer,
+  middleware: (getDefaultMiddleware) =>
+  getDefaultMiddleware({
+    serializableCheck: {
+      ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
+    },
+  }),
 });
 
-export default store;
+let persistor = persistStore(store)
+
+export { persistor, store };
