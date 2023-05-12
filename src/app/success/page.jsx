@@ -144,6 +144,7 @@ const TotalPayment = styled.p`
   width: 90%;
   font-size: 1.5rem;
   line-height: 1.3;
+  margin-top: 3rem;
 `;
 
 export default Success;
