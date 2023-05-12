@@ -91,6 +91,7 @@ const HeadingWrapper = styled.div`
       text-decoration: none;
       font-size: inherit;
       color: currentColor;
+      outline: none;
     }
 
     &:active {
