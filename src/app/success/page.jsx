@@ -143,6 +143,7 @@ const TotalPayment = styled.p`
   display: inline-block;
   width: 90%;
   font-size: 1.5rem;
+  line-height: 1.3;
 `;
 
 export default Success;
