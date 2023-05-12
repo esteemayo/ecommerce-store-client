@@ -52,7 +52,9 @@ const Success = () => {
                 /> {' '}
                 you&apos;ll make when the courier arrives with your order.
               </TotalPayment>
-              <Link href='/orders' passHref></Link>
+              <Link href='/orders' passHref>
+                <Button type='button'>Order status</Button>
+              </Link>
             </SuccessInfo>
           </SuccessWrapper>
         </SuccessContainer>
