@@ -7,6 +7,7 @@ import { useEffect, useRef, useState } from 'react';
 import { FaFacebookF } from 'react-icons/fa'
 
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
+import Image from 'next/image';
 
 const Login = () => {
   const dispatch = useDispatch();
