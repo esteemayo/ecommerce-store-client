@@ -15,6 +15,7 @@ const Success = () => {
               <InfoContainer>
                 <InfoText>Here we will deliver your order.</InfoText>
                 <IconContainer>
+                  <FontAwesomeIcon icon={faLocationDot} />
                   <Address>3711 Schultz Meadow</Address>
                 </IconContainer>
                 <IconContainer>
