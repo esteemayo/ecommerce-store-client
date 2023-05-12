@@ -56,7 +56,8 @@ const Login = () => {
         <Header>Log in with</Header>
         <GoogleContainer>
           <GoogleButton type='button'>
-            <GoogleIcon />
+            {/* <GoogleIcon /> */}
+            <Image src='/img/google-logo.png' width={23} height={23} alt='' />
             Google
           </GoogleButton>
           <FacebookButton type='button'>
