@@ -86,7 +86,9 @@ const InfoContainer = styled.div`
 `;
 
 const InfoText = styled.p`
-  
+  display: inline-block;
+  font-size: 1.37rem;
+  margin-bottom: 1.5rem;
 `;
 
 const IconContainer = styled.div`
