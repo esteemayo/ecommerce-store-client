@@ -56,6 +56,11 @@ const ImageContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  img {
+    width: 50rem;
+    height: 50rem;
+  }
 `;
 
 const Heading = styled.h1`
