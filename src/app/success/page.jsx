@@ -98,7 +98,8 @@ const InfoText = styled.p`
 `;
 
 const IconContainer = styled.div`
-  
+  display: flex;
+  align-items: center;
 `;
 
 const Address = styled.span`
