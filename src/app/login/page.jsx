@@ -164,11 +164,6 @@ const GoogleButton = styled.button`
   &:hover {
     opacity: 0.7;
   }
-
-  svg {
-    font-size: 2.5rem;
-    color: #e60023;
-  }
 `;
 
 const FacebookButton = styled.button`
