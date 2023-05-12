@@ -38,7 +38,12 @@ const Success = () => {
                 </IconContainer>
               </MushroomContainer>
               <TotalPayment>The payment of
-                $17,950
+                <NumericFormat
+                  value={17950}
+                  displayType={'text'}
+                  thousandSeparator={true}
+                  prefix={'$'}
+                />
                 you&apos;ll make when the courier arrives with your order.
               </TotalPayment>
             </SuccessInfo>
