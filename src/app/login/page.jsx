@@ -218,7 +218,7 @@ const FacebookButton = styled.button`
   gap: 0.8rem;
 
   @media only screen and (max-width: 21.25em) {
-    width: 40%;
+    width: 45%;
     justify-content: center;
     gap: 0.5rem;
   }
