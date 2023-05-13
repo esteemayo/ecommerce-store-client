@@ -207,7 +207,7 @@ const FooterContainer = styled.div`
   justify-content: space-between;
 
   @media only screen and (max-width: 64em) {
-    justify-content: center;
+    align-items: center;
   }
 `;
 
