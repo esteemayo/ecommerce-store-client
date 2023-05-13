@@ -123,7 +123,7 @@ const Navbar = () => {
                 {isHover ? <ArrowForwardIcon /> : <ArrowForwardIosIcon />}
               </Link>
             </LoginButton>
-          ): (
+          ) : (
             <CartWrapper>
               <Link href='/cart' passHref>
                 <FontAwesomeIcon icon={faBagShopping} />
@@ -153,6 +153,10 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media only screen and (max-width: 64em) {
+    padding: 0 8rem;
+  }
 `;
 
 const LogoBox = styled.div`
