@@ -174,7 +174,7 @@ const GoogleButton = styled.button`
   align-items: center;
   gap: 0.8rem;
 
-  @media only screen and (max-width: 21.25em) {
+  @media only screen and (max-width: 26.25em) {
     width: 100%;
     justify-content: center;
   }
