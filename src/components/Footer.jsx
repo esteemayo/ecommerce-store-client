@@ -170,6 +170,10 @@ const ListItem = styled.li`
 
   &:not(:last-of-type) {
     margin-bottom: 1.5rem;
+
+    @media only screen and (max-width: 26.875em) {
+      margin-bottom: 1rem;
+    }
   }
 
   &:hover {
