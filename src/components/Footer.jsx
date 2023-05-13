@@ -239,6 +239,10 @@ const FooterContainer = styled.div`
   @media only screen and (max-width: 64em) {
     align-items: center;
   }
+
+  @media only screen and (max-width: 25em) {
+    align-items: flex-start;
+  }
 `;
 
 const SearchContainer = styled.div`
