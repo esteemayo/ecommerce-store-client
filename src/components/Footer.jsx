@@ -107,7 +107,7 @@ const Container = styled.footer`
   color: var(--clr-white);
 
   @media only screen and (max-width: 64em) {
-    padding: 6rem 0;
+    padding: 6rem 8rem;
   }
 `;
 
