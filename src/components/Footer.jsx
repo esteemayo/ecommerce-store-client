@@ -348,7 +348,9 @@ const FooterLinkContainer = styled.ul`
   }
 
   @media only screen and (max-width: 25em) {
+    flex-wrap: wrap;
     justify-content: flex-start;
+    gap: 1rem;
   }
 `;
 
