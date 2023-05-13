@@ -151,7 +151,7 @@ const GoogleContainer = styled.div`
     margin: 1.8rem 0;
   }
 
-  @media only screen and (max-width: 21.25em) {
+  @media only screen and (max-width: 26.25em) {
     flex-direction: column;
     gap: 1rem;
   }
