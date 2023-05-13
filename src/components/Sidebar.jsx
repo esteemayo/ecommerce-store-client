@@ -103,6 +103,10 @@ const CloseButton = styled.button`
 
 const LinksContainer = styled.div`
   margin-top: 3rem;
+
+  @media only screen and (max-width: 31.25em) {
+    padding: 0 5rem;
+  }
 `;
 
 const LinksWrapper = styled.article`
