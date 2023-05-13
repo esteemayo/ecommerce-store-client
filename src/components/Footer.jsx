@@ -332,6 +332,10 @@ const SocialIcon = styled.div`
       outline-offset: 1rem;
       outline-color: #ccc;
     }
+
+    &:active {
+      color: currentColor;
+    }
   }
 
   svg {
