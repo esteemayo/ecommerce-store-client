@@ -180,6 +180,7 @@ const ListContainer = styled.ul`
 const ListItem = styled.li`
   display: flex;
   flex-direction: column;
+  outline-color: var(--clr-primary-green);
   transition: all 0.3s ease;
 
   &:not(:last-of-type) {
