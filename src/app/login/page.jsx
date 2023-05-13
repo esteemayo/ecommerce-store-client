@@ -152,6 +152,7 @@ const GoogleContainer = styled.div`
   }
 
   @media only screen and (max-width: 21.25em) {
+    flex-direction: column;
     gap: 1rem;
   }
 `;
