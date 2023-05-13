@@ -167,6 +167,12 @@ const Heading = styled.h4`
 
 const ListContainer = styled.ul`
   list-style: none;
+
+  @media only screen and (max-width: 25em) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
 `;
 
 const ListItem = styled.li`
