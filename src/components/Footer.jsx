@@ -74,7 +74,7 @@ const Footer = () => {
                       {icon}
                     </Link>
                   </SocialIcon>
-                )
+                );
               })}
             </SocialContainer>
           </FooterContainer>
