@@ -286,6 +286,7 @@ const Header = styled.h4`
 
   @media only screen and (max-width: 27.5em) {
     text-decoration: underline;
+    text-underline-offset: 3px;
   }
 `;
 
