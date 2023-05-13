@@ -187,6 +187,11 @@ const GoogleButton = styled.button`
     height: 2.3rem;
     display: block;
     object-fit: cover;
+
+    @media only screen and (max-width: 21.25em) {
+      width: 2rem;
+      height: 2rem;
+    }
   }
 `;
 
