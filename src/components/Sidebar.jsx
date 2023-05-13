@@ -150,6 +150,10 @@ const ListItem = styled.li`
     &:hover {
       color: var(--clr-secondary-green);
     }
+    
+    svg {
+      color: var(--clr-secondary-green);
+    }
   }
 `;
 
