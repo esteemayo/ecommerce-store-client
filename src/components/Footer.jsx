@@ -128,6 +128,10 @@ const Wrapper = styled.div`
 
 const FooterLeft = styled.div`
   flex: 3;
+
+  @media only screen and (max-width: 64em) {
+    width: 100%;
+  }
 `;
 
 const LinkContainer = styled.div`
