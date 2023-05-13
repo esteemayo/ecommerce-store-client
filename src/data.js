@@ -288,7 +288,7 @@ export const social = [
   {
     id: 1,
     url: '#',
-    icon: <FacebookIcon />,
+    icon: <FaFacebookF />,
     color: '3b5999',
   },
   {
