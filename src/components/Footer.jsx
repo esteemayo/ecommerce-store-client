@@ -105,6 +105,10 @@ const Container = styled.footer`
   padding: 8rem 0;
   background-color: var(--clr-secondary-green);
   color: var(--clr-white);
+
+  @media only screen and (max-width: 64em) {
+    padding: 6rem 0;
+  }
 `;
 
 const Wrapper = styled.div`
