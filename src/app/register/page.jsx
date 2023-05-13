@@ -155,7 +155,7 @@ const FormGroup = styled.div`
 
 const FormLabel = styled.label`
   display: inline-block;
-  width: 13rem;
+  width: ${({ type }) => type !== 'file' && '13rem'};
   font-weight: 600;
   font-size: ${({ type }) => type === 'file' ? '1.6rem' : '1.4rem'};
   color: #888;
