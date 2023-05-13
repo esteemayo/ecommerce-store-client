@@ -240,7 +240,7 @@ const FooterContainer = styled.div`
     align-items: center;
   }
 
-  @media only screen and (max-width: 25em) {
+  @media only screen and (max-width: 27.5em) {
     align-items: flex-start;
   }
 `;
