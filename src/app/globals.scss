@@ -67,6 +67,14 @@ body {
   }
 }
 
+body {
+  font-size: 1.6rem;
+  color: #777;
+  line-height: 1.6;
+  overflow-x: hidden;
+  cursor: default;
+}
+
 .container {
   position: relative;
 }
