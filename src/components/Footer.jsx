@@ -109,6 +109,10 @@ const Container = styled.footer`
   @media only screen and (max-width: 64em) {
     padding: 6rem 8rem;
   }
+
+  @media only screen and (max-width: 31.25em) {
+    padding: 6rem;
+  }
 `;
 
 const Wrapper = styled.div`
