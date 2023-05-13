@@ -205,6 +205,10 @@ const FooterContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @media only screen and (max-width: 64em) {
+    justify-content: center;
+  }
 `;
 
 const SearchContainer = styled.div`
