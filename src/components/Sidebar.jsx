@@ -147,6 +147,10 @@ const ListItem = styled.li`
       transition: all 0.2s ease;
     }
 
+    &:active {
+      color: currentColor;
+    }
+
     &:hover {
       color: #686767;
     }
