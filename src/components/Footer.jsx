@@ -143,7 +143,7 @@ const LinkContainer = styled.div`
   align-items: start;
   justify-content: space-between;
 
-  @media only screen and (max-width: 25em) {
+  @media only screen and (max-width: 27.5em) {
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -168,7 +168,7 @@ const Heading = styled.h4`
 const ListContainer = styled.ul`
   list-style: none;
 
-  @media only screen and (max-width: 25em) {
+  @media only screen and (max-width: 27.5em) {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
