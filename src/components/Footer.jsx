@@ -172,7 +172,8 @@ const ListContainer = styled.ul`
   @media only screen and (max-width: 27.5em) {
     display: flex;
     flex-wrap: wrap;
-    gap: 1.5rem;
+    row-gap: 0.5rem;
+    column-gap: 1.5rem;
   }
 `;
 
