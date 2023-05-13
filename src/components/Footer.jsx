@@ -142,6 +142,12 @@ const LinkContainer = styled.div`
   display: flex;
   align-items: start;
   justify-content: space-between;
+
+  @media only screen and (max-width: 25em) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 
 const Left = styled.div``;
