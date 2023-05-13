@@ -189,7 +189,7 @@ const GoogleButton = styled.button`
     display: block;
     object-fit: cover;
 
-    @media only screen and (max-width: 21.25em) {
+    @media only screen and (max-width: 26.25em) {
       width: 2rem;
       height: 2rem;
     }
