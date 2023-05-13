@@ -217,6 +217,7 @@ const ListItem = styled.li`
       line-height: 1.3em;
       transition: all 0.2s ease;
       backface-visibility: hidden;
+      outline-offset: 0.5rem;
       outline-color: var(--clr-primary-green);
     }
   }
