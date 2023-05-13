@@ -143,7 +143,7 @@ const ListItem = styled.li`
       text-decoration: none;
       text-transform: capitalize;
       color: inherit;
-      outline-color: #777;
+      outline-color: #ccc;
       transition: all 0.2s ease;
     }
 
