@@ -221,6 +221,10 @@ const SearchContainer = styled.div`
   @media only screen and (max-width: 64em) {
     width: 30%;
   }
+
+  @media only screen and (max-width: 37.5em) {
+    display: none;
+  }
 `;
 
 const SearchInput = styled.input`
