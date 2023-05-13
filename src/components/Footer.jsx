@@ -283,6 +283,10 @@ const SearchInput = styled.input`
 const Header = styled.h4`
   font-weight: 300;
   font-size: 1.4rem;
+
+  @media only screen and (max-width: 27.5em) {
+    text-decoration: underline;
+  }
 `;
 
 const SocialContainer = styled.div`
