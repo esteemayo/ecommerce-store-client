@@ -212,6 +212,10 @@ const Text = styled.p`
 
 const Form = styled.form`
   margin: 2rem 0;
+
+  @media only screen and (max-width: 64em) {
+    margin: 1.8rem 0;
+  }
 `;
 
 const FormGroup = styled.div`
