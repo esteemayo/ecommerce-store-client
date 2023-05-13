@@ -151,6 +151,11 @@ const Heading = styled.h4`
   font-size: 2rem;
   line-height: 1em;
   margin-bottom: 2rem;
+
+  @media only screen and (max-width: 26.875em) {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
 `;
 
 const ListContainer = styled.ul`
