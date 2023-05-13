@@ -373,6 +373,7 @@ const LinkItem = styled.li`
       text-decoration: none;
       color: inherit;
       line-height: 1.3em;
+      outline-offset: 0.5rem;
       outline-color: var(--clr-primary-green);
     }
   }
