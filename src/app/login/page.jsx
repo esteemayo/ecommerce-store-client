@@ -216,6 +216,11 @@ const FacebookButton = styled.button`
   align-items: center;
   gap: 0.8rem;
 
+  @media only screen and (max-width: 21.25em) {
+    width: 40%;
+    gap: 0.5rem;
+  }
+
   svg {
     font-size: 2.3rem;
     color: #3b5999;
