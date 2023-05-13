@@ -150,6 +150,10 @@ const GoogleContainer = styled.div`
   @media only screen and (max-width: 64em) {
     margin: 1.8rem 0;
   }
+
+  @media only screen and (max-width: 21.25em) {
+    gap: 1rem;
+  }
 `;
 
 const GoogleButton = styled.button`
