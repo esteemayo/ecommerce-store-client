@@ -389,7 +389,7 @@ const FooterText = styled.p`
     font-size: 1.5rem;
   }
 
-  @media only screen and (max-width: 25em) {
+  @media only screen and (max-width: 27.5em) {
     text-align: left;
   }
 `;
