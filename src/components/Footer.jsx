@@ -388,6 +388,10 @@ const FooterText = styled.p`
     width: 100%;
     font-size: 1.5rem;
   }
+
+  @media only screen and (max-width: 25em) {
+    text-align: left;
+  }
 `;
 
 export default Footer;
