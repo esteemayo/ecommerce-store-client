@@ -346,6 +346,10 @@ const FooterLinkContainer = styled.ul`
   @media only screen and (max-width: 26.875em) {
     margin-top: 2rem;
   }
+
+  @media only screen and (max-width: 25em) {
+    justify-content: flex-start;
+  }
 `;
 
 const LinkItem = styled.li`
