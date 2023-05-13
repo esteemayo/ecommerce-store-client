@@ -119,6 +119,11 @@ const Wrapper = styled.div`
   display: flex;
   align-items: start;
   gap: 5rem;
+
+  @media only screen and (max-width: 64em) {
+   flex-direction: column;
+   align-items: center;
+  }
 `;
 
 const FooterLeft = styled.div`
