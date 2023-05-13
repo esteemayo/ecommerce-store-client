@@ -322,6 +322,10 @@ const FooterText = styled.p`
   margin: 0 auto;
   line-height: 1.1;
   margin-top: 2rem;
+
+  @media only screen and (max-width: 37.5em) {
+    width: 80%;
+  }
 `;
 
 export default Footer;
