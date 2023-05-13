@@ -9,7 +9,7 @@ import { persistor, store } from '@/store/store';
 import Sidebar from '@/components/Sidebar';
 import ScrollToTop from '@/components/ScrollToTop';
 
-import './globals.css';
+import './globals.scss';
 
 export default function RootLayout({ children }) {
   return (
