@@ -266,6 +266,11 @@ const SocialIcon = styled.div`
   border-radius: 50%;
   cursor: pointer;
 
+  @media only screen and (max-width: 37.5em) {
+    width: 3rem;
+    height: 3rem;
+  }
+
   display: flex;
   align-items: center;
   justify-content: center;
