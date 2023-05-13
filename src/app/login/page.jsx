@@ -165,7 +165,7 @@ const GoogleButton = styled.button`
     opacity: 0.7;
   }
 
-  svg {
+  img {
     width: 2.3rem;
     height: 2.3rem;
     display: block;
