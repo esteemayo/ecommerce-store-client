@@ -363,6 +363,7 @@ const FooterText = styled.p`
 
   @media only screen and (max-width: 31.25em) {
     width: 100%;
+    font-size: 1.5rem;
   }
 `;
 
