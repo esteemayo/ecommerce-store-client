@@ -226,7 +226,7 @@ const FacebookButton = styled.button`
     font-size: 2.3rem;
     color: #3b5999;
 
-    @media only screen and (max-width: 21.25em) {
+    @media only screen and (max-width: 26.25em) {
       font-size: 2rem;
     }
   }
