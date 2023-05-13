@@ -142,6 +142,10 @@ const GoogleContainer = styled.div`
   justify-content: start;
   gap: 1.5rem;
   margin: 2rem 0;
+
+  @media only screen and (max-width: 64em) {
+    margin: 1.8rem 0;
+  }
 `;
 
 const GoogleButton = styled.button`
