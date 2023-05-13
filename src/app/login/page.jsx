@@ -126,6 +126,10 @@ const Wrapper = styled.div`
   box-shadow: 0 2rem 4rem rgba(145, 143, 143, 0.25);
   -webkit-box-shadow: 0 2rem 4rem rgba(145, 143, 143, 0.25);
   -moz-box-shadow: 0 2rem 4rem rgba(145, 143, 143, 0.25);
+
+  @media only screen and (max-width: 21.25em) {
+    width: 35rem;
+  }
 `;
 
 const Header = styled.h1`
