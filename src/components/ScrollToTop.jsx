@@ -70,6 +70,11 @@ const Wrapper = styled.div`
   transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   cursor: pointer;
 
+  @media only screen and (max-width: 31.25em) {
+    width: 3rem;
+    height: 3rem;
+  }
+
   &:hover {
     background-color: #f9f9f9;
     box-shadow: rgb(0, 0, 0, 0.25) 0 0.4rem 2rem;
