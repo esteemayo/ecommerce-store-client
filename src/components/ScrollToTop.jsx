@@ -39,6 +39,11 @@ const Container = styled.div`
   z-index: 3000;
   animation: fadeIn 700ms ease-in-out 1s both;
 
+  @media only screen and (max-width: 64em) {
+    right: 2rem;
+    bottom: 3rem;
+  }
+
   @keyframes fadeIn {
     from {
       opacity: 0;
