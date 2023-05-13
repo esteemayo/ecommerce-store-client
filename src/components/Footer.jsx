@@ -325,6 +325,10 @@ const FooterLinkContainer = styled.ul`
   justify-content: center;
   gap: 1.5rem;
   margin-top: 3rem;
+
+  @media only screen and (max-width: 26.875em) {
+    margin-top: 2rem;
+  }
 `;
 
 const LinkItem = styled.li`
