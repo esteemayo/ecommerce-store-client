@@ -339,6 +339,10 @@ const FooterText = styled.p`
   @media only screen and (max-width: 37.5em) {
     width: 80%;
   }
+
+  @media only screen and (max-width: 31.25em) {
+    width: 100%;
+  }
 `;
 
 export default Footer;
