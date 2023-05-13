@@ -391,6 +391,7 @@ const FooterText = styled.p`
 
   @media only screen and (max-width: 27.5em) {
     text-align: left;
+    line-height: 1.3;
   }
 `;
 
