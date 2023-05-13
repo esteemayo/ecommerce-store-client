@@ -45,14 +45,6 @@ html {
   scroll-behavior: smooth;
   scrollbar-width: thin;
   scrollbar-color: #ebe9e9;
-}
-
-body {
-  font-size: 1.6rem;
-  color: #777;
-  line-height: 1.6;
-  overflow-x: hidden;
-  cursor: default;
 
   @media only screen and (max-width: 75em) {
     font-size: 56.25%;
