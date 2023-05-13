@@ -178,7 +178,6 @@ const ListContainer = styled.ul`
 `;
 
 const ListItem = styled.li`
-  outline-color: var(--clr-primary-green);
   display: flex;
   flex-direction: column;
   transition: all 0.3s ease;
