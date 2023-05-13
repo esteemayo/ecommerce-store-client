@@ -175,6 +175,7 @@ const GoogleButton = styled.button`
 
   @media only screen and (max-width: 21.25em) {
     width: 40%;
+    justify-content: center;
     gap: 0.5rem;
   }
 
