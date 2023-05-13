@@ -328,6 +328,7 @@ const SocialIcon = styled.div`
       justify-content: center;
       text-decoration: none;
       color: inherit;
+      outline-offset: 0.5rem;
       outline-color: #ccc;
     }
   }
