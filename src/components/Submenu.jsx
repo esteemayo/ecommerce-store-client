@@ -116,6 +116,10 @@ const ListItem = styled.li`
       color: currentColor;
     }
 
+    &:active {
+      color: currentColor;
+    }
+
     &:hover {
       color: #686767;
     }
