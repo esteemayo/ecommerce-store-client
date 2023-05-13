@@ -224,6 +224,10 @@ const FacebookButton = styled.button`
   svg {
     font-size: 2.3rem;
     color: #3b5999;
+
+    @media only screen and (max-width: 21.25em) {
+      font-size: 2rem;
+    }
   }
 `;
 
