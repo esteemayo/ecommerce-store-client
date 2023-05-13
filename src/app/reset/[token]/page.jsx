@@ -10,7 +10,7 @@ const ResetPassword = () => {
 
   const passwordRef = useRef();
   const [errors, setErrors] = useState({});
-  const [password, setPassword] = useState(null);
+  const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState(null);
 
   const validateForm = () => {
