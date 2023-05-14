@@ -18,6 +18,12 @@ const Pagination = () => {
 const Container = styled.section`
   width: 100%;
   padding: 5rem 0 10rem;
+
+  @media only screen and (max-width: 37.5em) {
+    padding-bottom: 5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
 `;
 
 const Wrapper = styled.div`
