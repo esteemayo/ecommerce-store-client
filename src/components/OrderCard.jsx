@@ -120,6 +120,10 @@ const OrderDate = styled.time`
   @media only screen and (max-width: 64em) {
     font-size: 1.3rem;
   }
+
+  @media only screen and (max-width: 37.5em) {
+    font-size: 1.5rem;
+  }
 `;
 
 const OrderTotal = styled.p`
