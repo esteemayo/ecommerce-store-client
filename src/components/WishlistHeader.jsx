@@ -51,6 +51,10 @@ const SendButton = styled.button`
   border-radius: 0.5rem;
   outline-color: #ccc;
   cursor: pointer;
+
+  @media only screen and (max-width: 56.25em) {
+    padding: 1rem 2.5rem;
+  }
 `;
 
 export default WishlistHeader;
