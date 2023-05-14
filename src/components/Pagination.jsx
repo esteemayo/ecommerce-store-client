@@ -52,6 +52,14 @@ const CurrentPage = styled.span`
   color: #89a8a0;
   border: 1px solid #89a8a0;
   border-radius: 50%;
+
+  @media only screen and (max-width: 37.5em) {
+    width: 3.25rem;
+    height: 3.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 
 const Button = styled.button`
