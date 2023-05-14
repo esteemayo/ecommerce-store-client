@@ -169,6 +169,7 @@ const Right = styled.div`
 
   @media only screen and (max-width: 56.25em) {
     width: 100%;
+    margin-top: 1rem;
   }
 `;
 
