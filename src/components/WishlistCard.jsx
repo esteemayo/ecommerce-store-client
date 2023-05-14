@@ -96,6 +96,10 @@ const Wrapper = styled.div`
   align-items: center;
   justify-content: space-between;
   margin-bottom: 1rem;
+
+  @media only screen and (max-width: 29.375em) {
+    flex-direction: column;
+  }
 `;
 
 const Left = styled.div`
