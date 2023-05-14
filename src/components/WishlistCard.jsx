@@ -103,6 +103,10 @@ const Left = styled.div`
   display: flex;
   align-items: center;
   gap: 3rem;
+
+  @media only screen and (max-width: 64em) {
+    flex: 3;
+  }
 `;
 
 const ImageContainer = styled.div`
