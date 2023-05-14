@@ -77,6 +77,10 @@ const Wrapper = styled.div`
   -webkit-box-shadow: 0 2rem 4rem rgba(145, 143, 143, 0.1);
   -moz-box-shadow: 0 2rem 4rem rgba(145, 143, 143, 0.1);
   position: relative;
+
+  @media only screen and (max-width: 18.75em) {
+    width: 32rem;
+  }
 `;
 
 const CloseButton = styled.button`
