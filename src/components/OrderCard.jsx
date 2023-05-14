@@ -107,6 +107,10 @@ const OrderTotal = styled.p`
   font-size: 2.5rem;
   color: inherit;
   margin: 1rem 0 0.5rem;
+
+  @media only screen and (max-width: 64em) {
+    font-size: 2rem;
+  }
 `;
 
 const Button = styled.button`
