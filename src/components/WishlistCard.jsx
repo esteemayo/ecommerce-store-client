@@ -167,7 +167,7 @@ const Description = styled.p`
 const Right = styled.div`
   flex: 1;
 
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (max-width: 37.5em) {
     width: 100%;
     margin-top: 1rem;
   }
