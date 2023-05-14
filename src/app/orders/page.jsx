@@ -66,6 +66,10 @@ const Wrapper = styled.div`
   @media only screen and (max-width: 37.5em) {
     max-width: 50rem;
   }
+
+  @media only screen and (max-width: 28.75em) {
+    max-width: 40rem;
+  }
 `;
 
 const ImageContainer = styled.div`
