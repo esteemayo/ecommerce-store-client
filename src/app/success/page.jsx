@@ -76,6 +76,10 @@ const Wrapper = styled.div`
   width: 100%;
   max-width: 120rem;
   margin: 0 auto;
+
+  @media only screen and (max-width: 43.75em) {
+    max-width: 100rem;
+  }
 `;
 
 const SuccessContainer = styled.div`
