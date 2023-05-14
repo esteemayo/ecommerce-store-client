@@ -60,7 +60,7 @@ const Container = styled.main`
   }
 
   @media only screen and (max-width: 56.25em) {
-    padding: 5rem 0;
+    padding: 5rem 3rem;
   }
 `;
 
