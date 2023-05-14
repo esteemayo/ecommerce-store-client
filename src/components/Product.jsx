@@ -123,6 +123,10 @@ const ProductName = styled.h3`
   margin-bottom: 0.5rem;
   line-height: 1;
 
+  @media only screen and (max-width: 64em) {
+    font-size: 1.7rem;
+  }
+
   a {
     &:link,
     &:visited {
