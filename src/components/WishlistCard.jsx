@@ -179,7 +179,7 @@ const CartContainer = styled.div`
   align-items: flex-end;
   justify-content: center;
 
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (max-width: 37.5em) {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
