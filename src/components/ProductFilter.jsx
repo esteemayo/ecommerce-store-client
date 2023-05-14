@@ -150,6 +150,10 @@ const Select = styled.select`
   border: 1px solid #ddd;
   border-radius: 3px;
   outline-color: #eee;
+
+  @media only screen and (max-width: 37.5em) {
+    width: 30rem;
+  }
 `;
 
 const Option = styled.option`
