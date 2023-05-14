@@ -245,6 +245,11 @@ const OrderButton = styled.button`
     height: 3px;
     background-color: #409384;
     margin-top: 0.5rem;
+
+    @media only screen and (max-width: 43.75em) {
+      height: 2px;
+      margin-top: 3px;
+    }
   }
 
   &:hover {
