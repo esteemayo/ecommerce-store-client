@@ -165,6 +165,10 @@ const InfoText = styled.p`
   display: inline-block;
   font-size: 1.37rem;
   margin-bottom: 1.5rem;
+
+  @media only screen and (max-width: 43.75em) {
+    margin-bottom: 1rem;
+  }
 `;
 
 const IconContainer = styled.div`
