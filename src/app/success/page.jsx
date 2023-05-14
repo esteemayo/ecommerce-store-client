@@ -127,6 +127,11 @@ const SuccessAlert = styled.p`
   border: 1px solid #409384;
   border-radius: 10rem;
   margin-bottom: 2rem;
+
+  @media only screen and (max-width: 43.75em) {
+    font-size: 1.2rem;
+    margin-bottom: 1.45rem;
+  }
 `;
 
 const Text = styled.p`
