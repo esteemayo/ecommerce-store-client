@@ -164,6 +164,10 @@ const Text = styled.p`
   @media only screen and (max-width: 43.75em) {
     margin-bottom: 1.45rem;
   }
+
+  @media only screen and (max-width: 21.875em) {
+    font-size: 1.4rem;
+  }
 `;
 
 const Minutes = styled.span`
