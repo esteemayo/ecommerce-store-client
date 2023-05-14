@@ -50,7 +50,7 @@ const Container = styled.article`
   }
 
   @media only screen and (max-width: 37.5em) {
-    width: 60%;
+    width: 100%;
   }
 
   &::before {
