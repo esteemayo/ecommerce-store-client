@@ -39,6 +39,10 @@ const Heading = styled.h1`
 const DateTime = styled.time`
   font-size: 1.5rem;
   color: #999;
+
+  @media only screen and (max-width: 56.25em) {
+    font-size: 1.3rem;
+  }
 `;
 
 const SendButton = styled.button`
