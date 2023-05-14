@@ -213,6 +213,7 @@ const CartButton = styled.button`
   transition: all 0.3s ease;
 
   @media only screen and (max-width: 56.25em) {
+    font-size: 1.47rem;
     padding: 1rem 1.5rem;
   }
 
