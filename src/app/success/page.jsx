@@ -262,6 +262,10 @@ const TotalPayment = styled.p`
   @media only screen and (max-width: 43.75em) {
     margin-top: 2rem;
   }
+
+  @media only screen and (max-width: 21.875em) {
+    font-size: 1.4rem;
+  }
 `;
 
 const OrderButton = styled.button`
