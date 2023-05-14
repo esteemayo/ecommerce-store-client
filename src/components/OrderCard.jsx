@@ -135,6 +135,10 @@ const OrderTotal = styled.p`
   @media only screen and (max-width: 64em) {
     font-size: 2rem;
   }
+
+  @media only screen and (max-width: 37.5em) {
+    font-size: 2.43rem;
+  }
 `;
 
 const Button = styled.button`
