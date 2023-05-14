@@ -177,6 +177,12 @@ const CartContainer = styled.div`
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
+
+  @media only screen and (max-width: 56.25em) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 `;
 
 const ProductPrice = styled.span`
