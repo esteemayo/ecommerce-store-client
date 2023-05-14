@@ -59,6 +59,10 @@ const Container = styled.main`
   @media only screen and (max-width: 64em) {
     padding: 8rem 0;
   }
+
+  @media only screen and (max-width: 56.25em) {
+    padding: 5rem 0;
+  }
 `;
 
 const Wrapper = styled.div`
