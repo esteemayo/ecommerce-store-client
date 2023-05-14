@@ -66,6 +66,10 @@ const Success = () => {
 const Container = styled.main`
   width: 100vw;
   padding: 10rem 0;
+
+  @media only screen and (max-width: 43.75em) {
+    padding: 8rem 0;
+  }
 `;
 
 const Wrapper = styled.div`
