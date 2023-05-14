@@ -166,6 +166,10 @@ const Description = styled.p`
 
 const Right = styled.div`
   flex: 1;
+
+  @media only screen and (max-width: 56.25em) {
+    width: 100%;
+  }
 `;
 
 const CartContainer = styled.div`
