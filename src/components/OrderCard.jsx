@@ -124,6 +124,10 @@ const Button = styled.button`
   border-radius: 0.5rem;
   outline-color: #eee;
   cursor: pointer;
+
+  @media only screen and (max-width: 64em) {
+    padding: 0.7rem 1.5rem;
+  }
 `;
 
 export default OrderCard;
