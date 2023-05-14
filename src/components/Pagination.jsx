@@ -35,6 +35,11 @@ const Wrapper = styled.div`
   -webkit-box-shadow: 0 2rem 4rem rgba(145, 143, 143, 0.1);
   -moz-box-shadow: 0 2rem 4rem rgba(145, 143, 143, 0.1);
   border-radius: 0.5rem;
+
+  @media only screen and (max-width: 37.5em) {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
 `;
 
 const ButtonContainer = styled.div`
