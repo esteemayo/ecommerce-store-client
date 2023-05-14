@@ -97,7 +97,7 @@ const Wrapper = styled.div`
   justify-content: space-between;
   margin-bottom: 1rem;
 
-  @media only screen and (max-width: 29.375em) {
+  @media only screen and (max-width: 37.5em) {
     flex-direction: column;
   }
 `;
