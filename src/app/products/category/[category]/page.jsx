@@ -153,6 +153,11 @@ const FilterLeft = styled.div`
   flex-wrap: wrap;
   align-items: center;
   gap: 4rem;
+
+  @media only screen and (max-width: 37.5em) {
+    flex-direction: column;
+    gap: 2rem;
+  }
 `;
 
 const FilterRight = styled.div`
