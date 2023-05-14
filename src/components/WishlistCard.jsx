@@ -82,6 +82,10 @@ const WishlistCard = ({ wishlists, onDelete, openModal, setIsSelectedProduct }) 
 
 const Container = styled.article`
   padding: 1rem 2.5rem;
+
+  @media only screen and (max-width: 31.25em) {
+    padding: 1rem 0;
+  }
 `;
 
 const Wrapper = styled.div`
