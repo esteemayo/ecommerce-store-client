@@ -45,6 +45,10 @@ const Container = styled.article`
   -webkit-box-shadow: 2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.47);
   -moz-box-shadow: 2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.47);
 
+  @media only screen and (max-width: 43.75em) {
+    width: 45%; 
+  }
+
   &::before {
     content: '';
     display: block;
