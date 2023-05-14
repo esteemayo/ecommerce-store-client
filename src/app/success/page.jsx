@@ -138,6 +138,10 @@ const Text = styled.p`
   display: inline-block;
   font-size: 1.5rem;
   margin-bottom: 2rem;
+
+  @media only screen and (max-width: 43.75em) {
+    margin-bottom: 1.45rem;
+  }
 `;
 
 const Minutes = styled.span`
