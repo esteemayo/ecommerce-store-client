@@ -105,6 +105,10 @@ const ProductFilter = ({
 const Container = styled.section`
   padding: 7rem 3rem;
   width: 100%;
+
+  @media only screen and (max-width: 37.5em) {
+    padding: 5rem 12rem;
+  }
 `;
 
 const FilterHeading = styled.h1`
