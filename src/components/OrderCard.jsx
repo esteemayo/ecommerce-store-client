@@ -49,6 +49,10 @@ const Container = styled.article`
     width: 45%; 
   }
 
+  @media only screen and (max-width: 37.5em) {
+    width: 100%;
+  }
+
   &::before {
     content: '';
     display: block;
