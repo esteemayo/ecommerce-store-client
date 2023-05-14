@@ -156,6 +156,10 @@ const Button = styled.button`
   @media only screen and (max-width: 64em) {
     padding: 0.7rem 1.5rem;
   }
+
+  @media only screen and (max-width: 37.5em) {
+    padding: 1rem 2.5rem;
+  }
 `;
 
 export default OrderCard;
