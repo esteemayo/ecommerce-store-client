@@ -81,6 +81,10 @@ const Container = styled.article`
   align-items: center;
   row-gap: 2rem;
   column-gap: 1rem;
+
+  @media only screen and (max-width: 43.75em) {
+    row-gap: 1rem;
+  }
 `;
 
 const Wrapper = styled.div`
