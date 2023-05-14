@@ -200,6 +200,10 @@ const MushroomContainer = styled.div`
   padding: 1rem 2.3rem;
   background-color: hsla(0, 0%, 100%, 0.4);
   border-radius: 0.5rem;
+
+  @media only screen and (max-width: 43.75em) {
+    padding: 1rem 2rem;
+  }
 `;
 
 const MushroomText = styled.span`
