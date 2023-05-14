@@ -104,6 +104,10 @@ const OrderDate = styled.time`
   display: block;
   font-size: 1.45rem;
   color: #aaa;
+
+  @media only screen and (max-width: 64em) {
+    font-size: 1.3rem;
+  }
 `;
 
 const OrderTotal = styled.p`
