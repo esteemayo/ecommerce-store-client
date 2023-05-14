@@ -78,6 +78,10 @@ const OrderIconWrapper = styled.div`
   svg {
     font-size: 1.8rem;
     fill: #bbb;
+
+    @media only screen and (max-width: 37.5em) {
+      font-size: 2.3rem;
+    }
   }
 `;
 
