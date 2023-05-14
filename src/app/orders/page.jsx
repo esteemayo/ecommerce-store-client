@@ -70,6 +70,10 @@ const Wrapper = styled.div`
   @media only screen and (max-width: 28.75em) {
     max-width: 40rem;
   }
+
+  @media only screen and (max-width: 21.875em) {
+    padding: 0 2rem;
+  }
 `;
 
 const ImageContainer = styled.div`
