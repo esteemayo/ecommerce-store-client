@@ -93,6 +93,11 @@ const SuccessWrapper = styled.div`
   background-color: #f4f8f7;
   padding: 4rem 7rem;
   border-radius: 0.5rem;
+
+  @media only screen and (max-width: 43.75em) {
+    width: 60rem;
+    padding: 3rem 6rem;
+  }
 `;
 
 const SuccessInfo = styled.div`
