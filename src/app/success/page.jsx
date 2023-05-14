@@ -234,6 +234,10 @@ const OrderButton = styled.button`
   cursor: pointer;
   transition: all 0.3s ease;
 
+  @media only screen and (max-width: 43.75em) {
+    margin-top: 2rem;
+  }
+
   &::after {
     content: '';
     display: block;
