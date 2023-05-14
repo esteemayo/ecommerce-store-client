@@ -121,6 +121,10 @@ const Container = styled.section`
   @media only screen and (max-width: 28.125em) {
     padding-left: 10rem;
   }
+
+  @media only screen and (max-width: 26.25em) {
+    padding-left: 9rem;
+  }
 `;
 
 const FilterHeading = styled.h1`
