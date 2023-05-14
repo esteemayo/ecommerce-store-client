@@ -110,6 +110,10 @@ const Container = styled.section`
     padding: 5rem 6rem;
   }
 
+  @media only screen and (max-width: 33.75em) {
+    padding-left: 15.3rem;
+  }
+
   @media only screen and (max-width: 31.25em) {
     padding-left: 14rem;
   }
@@ -136,6 +140,10 @@ const Container = styled.section`
 
   @media only screen and (max-width: 24.5625em) {
     padding-left: 7rem;
+  }
+
+  @media only screen and (max-width: 23.4375em) {
+    padding-left: 6rem;
   }
 `;
 
