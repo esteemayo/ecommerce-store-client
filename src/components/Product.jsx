@@ -251,6 +251,10 @@ const FavWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media only screen and (max-width: 37.5em) {
+    padding-top: 1.7rem;
+  }
 `;
 
 const WishlistButton = styled.button`
