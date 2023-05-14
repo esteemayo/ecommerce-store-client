@@ -106,6 +106,10 @@ const OrderId = styled.h2`
   @media only screen and (max-width: 64em) {
     font-size: 1.8rem;
   }
+
+  @media only screen and (max-width: 37.5em) {
+    font-size: 2.3rem;
+  }
 `;
 
 const OrderDate = styled.time`
