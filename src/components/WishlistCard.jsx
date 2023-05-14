@@ -197,6 +197,10 @@ const CartButton = styled.button`
   cursor: pointer;
   transition: all 0.3s ease;
 
+  @media only screen and (max-width: 56.25em) {
+    padding: 1rem 1.5rem;
+  }
+
   &:hover {
     background-position: 100%;
   }
