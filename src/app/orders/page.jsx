@@ -74,6 +74,10 @@ const Heading = styled.h1`
   text-transform: capitalize;
   font-weight: 500;
   font-size: 2.8rem;
+
+  @media only screen and (max-width: 64em) {
+    font-size: 2.5rem;
+  }
 `;
 
 const OrderContainer = styled.div`
