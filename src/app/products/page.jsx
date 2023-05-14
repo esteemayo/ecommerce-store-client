@@ -86,6 +86,10 @@ const Container = styled.main`
   @media only screen and (max-width: 64em) {
     max-width: 80rem;
   }
+
+  @media only screen and (max-width: 43.75em) {
+    max-width: 75rem;
+  }
 `;
 
 export default Products;
