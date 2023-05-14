@@ -53,7 +53,6 @@ const WishLists = () => {
 
 const Container = styled.main`
   width: 100vw;
-  min-height: 100vh;
   padding: 10rem 0;
 
   @media only screen and (max-width: 64em) {
