@@ -218,6 +218,10 @@ const Address = styled.span`
 
 const Phone = styled.span`
   font-size: 1.5rem;
+
+  @media only screen and (max-width: 21.875em) {
+    font-size: 1.4rem;
+  }
 `;
 
 const Email = styled.span`
