@@ -22,10 +22,6 @@ const ResetPassword = () => {
       tempErrors.password = 'Password should be at least 8 characters long';
     }
 
-    // if (password.length < 8) {
-    //   tempErrors.password = 'Password should be at least 8 characters long';
-    // }
-
     if (password !== confirmPassword) {
       tempErrors.confirmPassword = 'Passwords do not match';
     }
