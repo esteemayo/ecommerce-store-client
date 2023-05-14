@@ -165,6 +165,10 @@ const FilterRight = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
+
+  @media only screen and (max-width: 37.5em) {
+    margin-top: 2rem;
+  }
 `;
 
 const Filter = styled.div`
