@@ -104,6 +104,12 @@ const SuccessWrapper = styled.div`
     padding-left: 4.5rem;
     padding-right: 4.5rem;
   }
+
+  @media only screen and (max-width: 28.125em) {
+    width: 45rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
 `;
 
 const SuccessInfo = styled.div`
