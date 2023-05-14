@@ -85,6 +85,10 @@ const Container = styled.article`
   @media only screen and (max-width: 43.75em) {
     row-gap: 1rem;
   }
+
+  @media only screen and (max-width: 31.25em) {
+    width: 35rem;
+  }
 `;
 
 const Wrapper = styled.div`
