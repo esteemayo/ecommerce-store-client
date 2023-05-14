@@ -62,6 +62,10 @@ const Wrapper = styled.div`
   @media only screen and (max-width: 43.75em) {
     max-width: 65rem;
   }
+
+  @media only screen and (max-width: 37.5em) {
+    max-width: 50rem;
+  }
 `;
 
 const ImageContainer = styled.div`
@@ -94,6 +98,10 @@ const OrderContainer = styled.div`
   flex-wrap: wrap;
   align-items: center;
   gap: 3rem;
+
+  @media only screen and (max-width: 37.5em) {
+    justify-content: center;
+  }
 `;
 
 export default Orders;
