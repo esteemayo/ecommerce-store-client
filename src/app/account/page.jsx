@@ -405,6 +405,12 @@ const FileButton = styled.button`
     padding-right: 2rem;
   }
 
+  @media only screen and (max-width: 25em) {
+    font-size: 1.3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
   &:hover {
     background-position: 100%;
   }
