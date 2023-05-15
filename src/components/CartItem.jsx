@@ -67,10 +67,6 @@ const CartItem = ({ id, name, size, color, images, price, quantity }) => {
 
 const Container = styled.article`
   line-height: 1.12;
-
-  @media only screen and (max-width: 43.75em) {
-    line-height: 1.08;
-  }
   
   &:not(:last-of-type) {
     border-bottom: 1px solid #e2e9e7;
