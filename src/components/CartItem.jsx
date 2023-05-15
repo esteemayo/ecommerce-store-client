@@ -69,7 +69,7 @@ const Container = styled.article`
   line-height: 1.12;
 
   @media only screen and (max-width: 43.75em) {
-    line-height: 1;
+    line-height: 1.08;
   }
   
   &:not(:last-of-type) {
