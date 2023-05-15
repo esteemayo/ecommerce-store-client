@@ -47,6 +47,10 @@ const ButtonContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
+
+  @media only screen and (max-width: 18.75em) {
+    gap: 1rem;
+  }
 `;
 
 const CancelButton = styled.button`
