@@ -11,7 +11,7 @@ const CartItem = ({ id, name, size, color, images, price, quantity }) => {
   const dispatch = useDispatch();
 
   const handleToggle = (type) => {
-    dispatch(toggleQuantity({ type, id}));
+    dispatch(toggleQuantity({ type, id }));
   };
 
   return (
@@ -67,6 +67,10 @@ const CartItem = ({ id, name, size, color, images, price, quantity }) => {
 
 const Container = styled.article`
   line-height: 1.12;
+
+  @media only screen and (max-width: 43.75em) {
+    line-height: 1;
+  }
   
   &:not(:last-of-type) {
     border-bottom: 1px solid #e2e9e7;
