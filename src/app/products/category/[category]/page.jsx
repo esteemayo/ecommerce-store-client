@@ -189,6 +189,7 @@ const FilterWrapper = styled.div`
 
   @media only screen and (max-width: 37.5em) {
     flex-direction: column;
+    align-items: center;
   }
 `;
 
@@ -201,6 +202,7 @@ const FilterLeft = styled.div`
 
   @media only screen and (max-width: 37.5em) {
     flex-direction: column;
+    align-items: center;
     gap: 2rem;
   }
 `;
