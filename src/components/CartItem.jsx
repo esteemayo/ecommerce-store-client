@@ -267,6 +267,7 @@ const MinusQuantity = styled.button`
   @media only screen and (max-width: 43.75em) {
     width: 2.45rem;
     height: 2.45rem;
+    font-size: 1.3rem;
   }
 
   svg {
