@@ -1056,7 +1056,14 @@ export const cartItems = [
   {
     id: 1,
     name: 'Short blouse with embroideries',
-    image: '/img/img-1.jpg',
+    images: [
+      '/img/img-1.jpg',
+      '/img/img-4.jpg',
+      '/img/img-3.jpg',
+      '/img/img-7.jpg',
+      '/img/img-11.jpg',
+      '/img/img-12.jpg',
+    ],
     color: 'blue',
     size: 'XS',
     price: 70,
