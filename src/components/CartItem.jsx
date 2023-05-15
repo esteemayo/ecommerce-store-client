@@ -264,6 +264,11 @@ const MinusQuantity = styled.button`
   outline-color: #ddd;
   cursor: pointer;
 
+  @media only screen and (max-width: 43.75em) {
+    width: 2.45rem;
+    height: 2.45rem;
+  }
+
   svg {
     font-size: inherit;
     fill: currentColor;
