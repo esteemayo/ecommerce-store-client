@@ -33,6 +33,10 @@ const Heading = styled.h1`
   align-items: center;
   gap: 1rem;
   font-size: 2.65rem;
+
+  @media only screen and (max-width: 43.75em) {
+    font-size: 2rem;
+  }
 `;
 
 const HeadingMain = styled.span`
