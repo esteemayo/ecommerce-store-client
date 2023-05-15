@@ -162,6 +162,10 @@ const Input = styled.input`
     border-bottom: 1px solid #89a8a0;
     cursor: pointer;
 
+    @media only screen and (max-width: 25em) {
+      width: 100%;
+    }
+
     &:hover {
       background-color: #89a8a0;
       color: var(--clr-white);
