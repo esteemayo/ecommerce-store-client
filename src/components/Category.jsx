@@ -87,7 +87,6 @@ const Wrapper = styled.div`
     object-fit: cover;
     border-radius: 3px;
   }
-
   
   a {
     &:link,
