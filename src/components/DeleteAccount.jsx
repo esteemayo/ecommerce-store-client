@@ -86,6 +86,11 @@ const DeleteButton = styled.button`
   cursor: pointer;
   transition: all 0.3s;
 
+  @media only screen and (max-width: 18.75em) {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
   &:hover {
     background-position: 100%;
   }
