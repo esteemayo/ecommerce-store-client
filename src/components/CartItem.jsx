@@ -183,6 +183,10 @@ const ProductSize = styled.span`
   display: block;
   font-size: 1.5rem;
   color: #999;
+
+  @media only screen and (max-width: 43.75em) {
+    font-size: 1.45rem;
+  }
 `;
 
 const RemoveButton = styled.button`
