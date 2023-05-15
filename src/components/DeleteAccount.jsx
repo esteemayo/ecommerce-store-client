@@ -64,6 +64,7 @@ const CancelButton = styled.button`
   cursor: pointer;
   
   @media only screen and (max-width: 18.75em) {
+    font-size: 1.3rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
   }
