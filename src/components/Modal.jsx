@@ -56,6 +56,11 @@ const Wrapper = styled.div`
   padding: 2rem 4rem;
   background-color: var(--clr-white);
   border-radius: 0.5rem;
+
+  @media only screen and (max-width: 25em) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 `;
 
 const ButtonContainer = styled.div`
