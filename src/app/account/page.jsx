@@ -277,8 +277,12 @@ const DeleteWarning = styled.p`
   color: #999;
   line-height: 1.2;
   word-wrap: break-word;
+
+  @media only screen and (max-width: 43.75em) {
+    font-size: 1.5rem;
+  }
 `;
-2
+
 const DeleteButton = styled.button`
   display: inline-block;
   border: none;
