@@ -1141,7 +1141,14 @@ export const cartItems = [
   {
     id: 6,
     name: 'The Stanley Rain Jacket in Black',
-    image: '/img/img-6.jpg',
+    images: [
+      '/img/img-6.jpg',
+      '/img/img-2.jpg',
+      '/img/img-5.jpg',
+      '/img/img-4.jpg',
+      '/img/img-8.jpg',
+      '/img/img-7.jpg',
+    ],
     color: 'black',
     size: 'XL',
     price: 300,
