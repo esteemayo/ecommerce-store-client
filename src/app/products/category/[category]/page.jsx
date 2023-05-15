@@ -184,7 +184,7 @@ const FilterHeading = styled.h1`
 
 const FilterWrapper = styled.div`
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
 
   @media only screen and (max-width: 37.5em) {
