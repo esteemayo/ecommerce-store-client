@@ -214,6 +214,11 @@ const AccountContainer = styled.div`
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
+
+  @media only screen and (max-width: 17.5em) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 `;
 
 const AccountWrapper = styled.div`
