@@ -142,6 +142,10 @@ const FilterHeading = styled.h1`
     justify-content: center;
   }
 
+  @media only screen and (max-width: 33.75em) {
+    width: 40rem;
+  }
+
   @media only screen and (max-width: 32.1875em) {
     width: 36rem;
   }
