@@ -292,6 +292,10 @@ const Right = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media only screen and (max-width: 43.75em) {
+    width: 100%;
+  }
 `;
 
 const AvatarContainer = styled.div`
