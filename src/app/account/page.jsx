@@ -174,6 +174,11 @@ const AccountContainer = styled.div`
   -webkit-box-shadow: 2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.47);
   -moz-box-shadow: 2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.47);
   border-radius: 1rem;
+
+  @media only screen and (max-width: 43.75em) {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
 `;
 
 const AccountWrapper = styled.div`
