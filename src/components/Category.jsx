@@ -88,6 +88,16 @@ const Wrapper = styled.div`
     border-radius: 3px;
   }
 
+  
+  a {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: inherit;
+      outline-color: #89a8a0;
+    }
+  }
+
   &:hover ${Button} {
     visibility: visible;
     opacity: 1;
