@@ -106,7 +106,7 @@ const Container = styled.section`
   padding: 7rem 3rem;
   width: 100%;
 
-  @media only screen and (max-width: 37.5em) {
+  /* @media only screen and (max-width: 37.5em) {
     padding: 5rem 6rem;
   }
 
@@ -148,7 +148,7 @@ const Container = styled.section`
 
   @media only screen and (max-width: 17.5em) {
     padding-left: 2.3rem;
-  }
+  } */
 `;
 
 const FilterHeading = styled.h1`
@@ -163,6 +163,10 @@ const FilterWrapper = styled.div`
   flex-wrap: wrap;
   align-items: center;
   gap: 2rem;
+
+  @media only screen and (max-width: 37.5em) {
+    justify-content: center;
+  }
 `;
 
 const Filter = styled.div`
