@@ -28,13 +28,13 @@ const Category = () => {
               <MainHeading>Jeans</MainHeading>
               <SubHeading>100</SubHeading>
             </HeadingWrapper>
-            <Button>
-              <Link href={`/products/category/jeans`} passHref>
+            <Link href={`/products/category/jeans`} passHref>
+              <Button>
                 Shop now
                 &nbsp;
                 <FontAwesomeIcon icon={faArrowRight} />
-              </Link>
-            </Button>
+              </Button>
+            </Link>
           </Wrapper>
         );
       })}
