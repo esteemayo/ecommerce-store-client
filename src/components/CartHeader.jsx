@@ -26,6 +26,11 @@ const Container = styled.div`
   justify-content: space-between;
   padding: 2rem 5rem 0.5rem 5rem;
   margin-bottom: 3rem;
+
+  @media only screen and (max-width: 43.75em) {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
 `;
 
 const Heading = styled.h1`
