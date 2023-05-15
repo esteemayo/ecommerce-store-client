@@ -214,6 +214,8 @@ const RemoveButton = styled.button`
 
 const Right = styled.div`
   flex: 1;
+  display: flex;
+  justify-content: flex-end;
 `;
 
 const QuantityContainer = styled.div`
