@@ -1107,7 +1107,14 @@ export const cartItems = [
   {
     id: 4,
     name: 'Striped cotton t-shirt',
-    image: '/img/img-4.jpg',
+    images: [
+      '/img/img-4.jpg',
+      '/img/img-6.jpg',
+      '/img/img-1.jpg',
+      '/img/img-2.jpg',
+      '/img/img-9.jpg',
+      '/img/img-11.jpg',
+    ],
     color: 'crimson',
     size: 'S',
     price: 60,
