@@ -163,9 +163,7 @@ const Input = styled.input`
   }
 `;
 
-const ButtonContainer = styled.div`
-  
-`;
+const ButtonContainer = styled.div``;
 
 const Button = styled.button`
   display: inline-block;
