@@ -61,6 +61,8 @@ const HeadingSub = styled.span`
   border-radius: 50%;
 
   @media only screen and (max-width: 43.75em) {
+    width: 2.5rem;
+    height: 2.5rem;
     font-size: 1.5rem;
   }
 `;
