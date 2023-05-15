@@ -137,6 +137,11 @@ const Wrapper = styled.div`
 
 const CartItemsContainer = styled.div`
   padding: 0.5rem 5rem 3rem 5rem;
+
+  @media only screen and (max-width: 43.75em) {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
 `;
 
 export default Cart;
