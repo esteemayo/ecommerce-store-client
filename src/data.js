@@ -1124,7 +1124,14 @@ export const cartItems = [
   {
     id: 5,
     name: 'Handbag',
-    image: '/img/img-5.jpg',
+    images: [
+      '/img/img-5.jpg',
+      '/img/img-1.jpg',
+      '/img/img-6.jpg',
+      '/img/img-8.jpg',
+      '/img/img-11.jpg',
+      '/img/img-10.jpg',
+    ],
     color: 'green',
     size: 'U',
     price: 30,
