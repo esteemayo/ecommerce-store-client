@@ -1090,7 +1090,14 @@ export const cartItems = [
   {
     id: 3,
     name: 'Embroidered high heel sandals',
-    image: '/img/img-3.jpg',
+    images: [
+      '/img/img-3.jpg',
+      '/img/img-5.jpg',
+      '/img/img-8.jpg',
+      '/img/img-9.jpg',
+      '/img/img-10.jpg',
+      '/img/img-12.jpg',
+    ],
     color: 'black',
     size: 36,
     price: 20,
