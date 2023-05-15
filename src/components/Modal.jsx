@@ -97,6 +97,10 @@ const Button = styled.button`
   outline-color: #f7f3f8;
   cursor: pointer;
 
+  @media only screen and (max-width: 25em) {
+    right: 0.5rem;
+  }
+
   svg {
     font-size: 2.3rem;
     fill: currentColor;
