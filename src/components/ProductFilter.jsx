@@ -112,6 +112,46 @@ const FilterHeading = styled.h1`
   font-weight: 600;
   font-size: 2.25rem;
   margin-bottom: 1rem;
+
+  @media only screen and (max-width: 37.5em) {
+    width: 44rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  @media only screen and (max-width: 33.75em) {
+    width: 40rem;
+  }
+
+  @media only screen and (max-width: 32.1875em) {
+    width: 36rem;
+  }
+
+  @media only screen and (max-width: 31.25em) {
+    width: 29rem;
+  }
+
+  @media only screen and (max-width: 26.25em) {
+    width: 24rem;
+  }
+
+  @media only screen and (max-width: 24.5625em) {
+    width: 21rem;
+  }
+
+  @media only screen and (max-width: 23.75em) {
+    width: 19rem;
+  }
+
+  @media only screen and (max-width: 22.5em) {
+    width: 17rem;
+  }
+
+  @media only screen and (max-width: 17.5em) {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
 `;
 
 const FilterWrapper = styled.div`
