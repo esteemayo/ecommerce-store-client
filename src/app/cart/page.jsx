@@ -74,6 +74,11 @@ const Container = styled.main`
     padding-left: 7rem;
     padding-right: 7rem;
   }
+
+  @media only screen and (max-width: 37.5em) {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
 `;
 
 const HeadingWrapper = styled.div`
