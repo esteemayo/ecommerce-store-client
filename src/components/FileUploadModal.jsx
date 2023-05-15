@@ -79,6 +79,10 @@ const Wrapper = styled.div`
   background-color: var(--clr-white);
   border-radius: 0.5rem;
   position: relative;
+
+  @media only screen and (max-width: 25em) {
+    width: 35rem;
+  }
 `;
 
 const CloseButtonContainer = styled.div`
