@@ -141,6 +141,10 @@ const FilterHeading = styled.h1`
     display: flex;
     justify-content: center;
   }
+
+  @media only screen and (max-width: 32.1875em) {
+    width: 36rem;
+  }
 `;
 
 const FilterWrapper = styled.div`
