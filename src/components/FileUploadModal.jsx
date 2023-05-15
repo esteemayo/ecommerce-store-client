@@ -83,6 +83,11 @@ const Wrapper = styled.div`
   @media only screen and (max-width: 25em) {
     width: 35rem;
   }
+
+  @media only screen and (max-width: 18.75em) {
+    width: 30rem;
+    padding-bottom: 2rem;
+  }
 `;
 
 const CloseButtonContainer = styled.div`
