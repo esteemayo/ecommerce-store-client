@@ -169,7 +169,11 @@ const Input = styled.input`
   }
 `;
 
-const ButtonContainer = styled.div``;
+const ButtonContainer = styled.div`
+  @media only screen and (max-width: 25em) {
+    width: 100%;
+  }
+`;
 
 const Button = styled.button`
   display: inline-block;
@@ -193,6 +197,7 @@ const Button = styled.button`
 
   @media only screen and (max-width: 25em) {
     font-size: 1.3rem;
+    width: 100%;
     padding-left: 2rem;
     padding-right: 2rem;
   }
