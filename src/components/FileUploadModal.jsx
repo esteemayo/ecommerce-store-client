@@ -128,6 +128,10 @@ const InputContainer = styled.div`
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+
+  @media only screen and (max-width: 25em) {
+    width: 100%;
+  }
 `;
 
 const Label = styled.label`
