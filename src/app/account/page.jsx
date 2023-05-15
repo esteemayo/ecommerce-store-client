@@ -184,6 +184,10 @@ const AccountInfo = styled.div`
   display: flex;
   align-items: flex-start;
   gap: 5rem;
+
+  @media only screen and (max-width: 43.75em) {
+    flex-direction: column-reverse;
+  }
 `;
 
 const Left = styled.div`
