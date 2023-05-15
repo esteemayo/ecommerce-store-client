@@ -69,6 +69,11 @@ const Cart = () => {
 const Container = styled.main`
   width: 100vw;
   padding: 8rem 0;
+
+  @media only screen and (max-width: 43.75em) {
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
 `;
 
 const HeadingWrapper = styled.div`
