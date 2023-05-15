@@ -142,6 +142,11 @@ const CartItemsContainer = styled.div`
     padding-left: 3rem;
     padding-right: 3rem;
   }
+
+  @media only screen and (max-width: 37.5em) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 `;
 
 export default Cart;
