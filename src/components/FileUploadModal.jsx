@@ -115,6 +115,12 @@ const UploadContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   margin: 4rem 0;
+
+  @media only screen and (max-width: 25em) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+  }
 `;
 
 const InputContainer = styled.div`
