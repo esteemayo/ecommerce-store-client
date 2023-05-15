@@ -98,8 +98,8 @@ const Button = styled.button`
   cursor: pointer;
 
   @media only screen and (max-width: 25em) {
-    width: 2.25rem;
-    height: 2.25rem;
+    width: 1.25rem;
+    height: 1.25rem;
     right: 0.5rem;
   }
 
