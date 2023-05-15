@@ -183,6 +183,11 @@ const AccountContainer = styled.div`
 
 const AccountWrapper = styled.div`
   padding: 2rem 3rem;
+
+  @media only screen and (max-width: 43.75em) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
 `;
 
 const AccountInfo = styled.div`
