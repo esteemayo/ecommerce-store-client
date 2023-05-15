@@ -96,6 +96,10 @@ const Wrapper = styled.div`
       color: inherit;
       outline-color: #89a8a0;
     }
+
+    &:active {
+      color: currentColor;
+    }
   }
 
   &:hover ${Button} {
