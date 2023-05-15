@@ -153,6 +153,10 @@ const FilterHeading = styled.h1`
   @media only screen and (max-width: 26.25em) {
     width: 24rem;
   }
+
+  @media only screen and (max-width: 23.75em) {
+    width: 19rem;
+  }
 `;
 
 const FilterWrapper = styled.div`
