@@ -71,15 +71,6 @@ const Button = styled.button`
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-
-  a {
-    &:link,
-    &:visited {
-      text-decoration: none;
-      color: inherit;
-      outline-color: #89a8a0;
-    }
-  }
 `;
 
 const Wrapper = styled.div`
