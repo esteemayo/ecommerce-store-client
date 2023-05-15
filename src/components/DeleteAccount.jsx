@@ -62,6 +62,11 @@ const CancelButton = styled.button`
   border-radius: 0.5rem;
   outline-color: #eee;
   cursor: pointer;
+  
+  @media only screen and (max-width: 18.75em) {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
 `;
 
 const DeleteButton = styled.button`
