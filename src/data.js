@@ -1073,7 +1073,14 @@ export const cartItems = [
   {
     id: 2,
     name: 'Flowing frilled shorts',
-    image: '/img/img-2.jpg',
+    images: [
+      '/img/img-2.jpg',
+      '/img/img-3.jpg',
+      '/img/img-1.jpg',
+      '/img/img-6.jpg',
+      '/img/img-10.jpg',
+      '/img/img-12.jpg',
+    ],
     color: 'gray',
     size: 'XS',
     price: 25,
