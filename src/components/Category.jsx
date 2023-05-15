@@ -51,6 +51,37 @@ const Container = styled.article`
   margin-top: 3rem;
 `;
 
+const Button = styled.button`
+  border: none;
+  padding: 1rem 2rem;
+  width: 100%;
+  background-color: rgba(137, 168, 160, 0.5);
+  color: var(--clr-white);
+  outline-color: #89a8a0;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all 0.5s ease;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  a {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: inherit;
+      outline-color: #89a8a0;
+    }
+  }
+`;
+
 const Wrapper = styled.div`
   width: 20%;
   box-shadow: 2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.47);
@@ -91,37 +122,6 @@ const SubHeading = styled.h3`
   font-weight: 300;
   font-size: 1.3rem;
   color: inherit;
-`;
-
-const Button = styled.button`
-  border: none;
-  padding: 1rem 2rem;
-  width: 100%;
-  background-color: rgba(137, 168, 160, 0.5);
-  color: var(--clr-white);
-  outline-color: #89a8a0;
-  cursor: pointer;
-  visibility: hidden;
-  opacity: 0;
-
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  transition: all 0.5s ease;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-
-  a {
-    &:link,
-    &:visited {
-      text-decoration: none;
-      color: inherit;
-      outline-color: #89a8a0;
-    }
-  }
 `;
 
 export default Category;
