@@ -93,4 +93,35 @@ const SubHeading = styled.h3`
   color: inherit;
 `;
 
+const Button = styled.button`
+  border: none;
+  padding: 1rem 2rem;
+  width: 100%;
+  background-color: rgba(137, 168, 160, 0.5);
+  color: var(--clr-white);
+  outline-color: #89a8a0;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: all 0.5s ease;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+
+  a {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: inherit;
+      outline-color: #89a8a0;
+    }
+  }
+`;
+
 export default Category;
