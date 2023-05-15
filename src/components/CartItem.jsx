@@ -174,6 +174,11 @@ const ProductColor = styled.span`
     background-color: ${({ color }) => color};
     border: 1px solid ${({ color }) => color};
     border-radius: 50%;
+
+    @media only screen and (max-width: 43.75em) {
+      width: 1.4rem;
+      height: 1.4rem;
+    }
   }
 `;
 
