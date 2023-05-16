@@ -176,6 +176,7 @@ const Form = styled.form`
 
 const Input = styled.input`
   display: inline-block;
+  padding: 1.25rem 1rem;
 `;
 
 export default Sidebar;
