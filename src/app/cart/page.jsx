@@ -114,6 +114,11 @@ const HeadingWrapper = styled.div`
     height: 40rem;
     display: block;
     object-fit: cover;
+
+    @media only screen and (max-width: 56.25em) {
+      width: 35rem;
+      height: 35rem;
+    }
   }
 
   a {
