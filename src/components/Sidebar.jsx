@@ -181,6 +181,7 @@ const Input = styled.input`
   width: 75%;
   padding: 1.25rem 1rem;
   background-color: transparent;
+  color: #999;
 `;
 
 export default Sidebar;
