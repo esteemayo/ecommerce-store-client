@@ -82,6 +82,7 @@ const Wrapper = styled.div`
 
   @media only screen and (max-width: 31.25em) {
     flex-direction: column;
+    gap: 2rem;
   }
 `;
 
