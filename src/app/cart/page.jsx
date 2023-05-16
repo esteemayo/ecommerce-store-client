@@ -105,6 +105,10 @@ const HeadingWrapper = styled.div`
   flex-direction: column;
   align-items: center;
 
+  @media only screen and (max-width: 56.25em) {
+    min-height: 50vh;
+  }
+
   img {
     width: 40rem;
     height: 40rem;
