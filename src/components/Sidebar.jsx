@@ -42,7 +42,7 @@ const Sidebar = () => {
           })}
         </LinksContainer>
         <SearchContainer>
-          
+
         </SearchContainer>
       </Wrapper>
     </Container>
@@ -161,6 +161,10 @@ const ListItem = styled.li`
 `;
 
 const SearchContainer = styled.div`
+  
+`;
+
+const Input = styled.input`
   
 `;
 
