@@ -172,7 +172,6 @@ const SearchContainer = styled.div`
 `;
 
 const Form = styled.form`
-  padding-left: 1.2rem;
   display: flex;
   align-items: center;
 `;
