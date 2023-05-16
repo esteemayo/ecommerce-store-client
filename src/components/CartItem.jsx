@@ -121,6 +121,10 @@ const ProductName = styled.h2`
   @media only screen and (max-width: 43.75em) {
     font-size: 1.8rem;
   }
+
+  @media only screen and (max-width: 31.25em) {
+    word-wrap: break-word;
+  }
 `;
 
 const PriceContainer = styled.div`
