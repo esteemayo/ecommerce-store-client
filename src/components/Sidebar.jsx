@@ -189,6 +189,7 @@ const Input = styled.input`
 
   &::-webkit-input-placeholder {
     font-weight: 300;
+    font-size: 1.5rem;
   }
 `;
 
