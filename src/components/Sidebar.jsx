@@ -177,6 +177,7 @@ const Form = styled.form`
 const Input = styled.input`
   display: inline-block;
   font-family: inherit;
+  font-size: 1.5rem;
   width: 75%;
   padding: 1.25rem 1rem;
 `;
