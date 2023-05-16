@@ -171,7 +171,7 @@ const SearchContainer = styled.div`
 `;
 
 const Form = styled.form`
-  padding-left: 1rem;
+  padding-left: 1.2rem;
 `;
 
 const Input = styled.input`
