@@ -197,6 +197,7 @@ const Input = styled.input`
 
 const Button = styled.button`
   display: inline-block;
+  border: none;
 `;
 
 export default Sidebar;
