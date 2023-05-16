@@ -77,7 +77,7 @@ const Wrapper = styled.div`
   box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
   position: relative;
 
-  @media only screen and (max-width: 31.25em) {
+  @media only screen and (max-width: 31.5em) {
     width: 100vw;
     height: 100%;
   }
