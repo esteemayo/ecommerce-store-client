@@ -163,7 +163,7 @@ const ListItem = styled.li`
 `;
 
 const SearchContainer = styled.div`
-  
+  margin-top: 2rem;
 `;
 
 const Form = styled.form`
