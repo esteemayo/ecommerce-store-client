@@ -146,6 +146,7 @@ const Wrapper = styled.div`
   position: relative;
 
   @media only screen and (max-width: 25em) {
+    width: 35rem;
     padding-left: 2rem;
     padding-right: 2rem;
   }
