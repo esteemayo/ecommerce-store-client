@@ -157,4 +157,8 @@ const ListItem = styled.li`
   }
 `;
 
+const SearchContainer = styled.div`
+  
+`;
+
 export default Sidebar;
