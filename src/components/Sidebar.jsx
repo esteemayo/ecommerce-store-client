@@ -164,6 +164,10 @@ const SearchContainer = styled.div`
   
 `;
 
+const Form = styled.form`
+  
+`;
+
 const Input = styled.input`
   
 `;
