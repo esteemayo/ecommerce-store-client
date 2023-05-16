@@ -221,6 +221,10 @@ const FacebookButton = styled.button`
   align-items: center;
   gap: 0.8rem;
 
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+    font-size: 1.495rem;
+  }
+
   @media only screen and (max-width: 26.25em) {
     width: 100%;
     justify-content: center;
