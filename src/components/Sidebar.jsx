@@ -41,6 +41,9 @@ const Sidebar = () => {
             );
           })}
         </LinksContainer>
+        <SearchContainer>
+          
+        </SearchContainer>
       </Wrapper>
     </Container>
   );
