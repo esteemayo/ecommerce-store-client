@@ -103,6 +103,7 @@ const ClearButton = styled.button`
   @media only screen and (max-width: 18.75em) {
     padding-top: 0.7rem;
     padding-bottom: 0.7rem;
+    font-size: 1.37rem;
   }
 
   &:hover {
