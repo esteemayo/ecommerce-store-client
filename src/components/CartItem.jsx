@@ -124,6 +124,7 @@ const ProductName = styled.h2`
 
   @media only screen and (max-width: 31.25em) {
     word-wrap: break-word;
+    word-break: break-all;
   }
 `;
 
