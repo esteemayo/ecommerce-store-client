@@ -185,6 +185,7 @@ const Input = styled.input`
   border: 2px solid #eef2ff;
   border-radius: 0.5rem;
   outline-color: #eee;
+  caret-color: var(--caret-light);
 `;
 
 export default Sidebar;
