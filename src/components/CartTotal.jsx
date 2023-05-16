@@ -176,7 +176,7 @@ const Button = styled.button`
   }
   
   @media only screen and (max-width: 18.75em) {
-    padding: ${({ btnType }) => btnType === 'check' && '0.7rem 2rem'};
+    padding: ${({ btnType }) => btnType === 'check' ? '0.7rem 2rem' : '0.7rem 0.5rem'};
   }
 
   &:hover {
