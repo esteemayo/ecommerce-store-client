@@ -244,6 +244,10 @@ const Button = styled.button`
     font-size: 1.4rem;
   }
 
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+    font-size: 1.498rem;
+  }
+
   &:hover {
     color: var(--clr-white);
     background-position: 100%;
