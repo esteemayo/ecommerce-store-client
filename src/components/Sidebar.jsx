@@ -201,6 +201,7 @@ const Button = styled.button`
   font-weight: 500;
   font-size: 1.4rem;
   padding: 1.7rem;
+  background-color: var(--clr-primary-green);
 `;
 
 export default Sidebar;
