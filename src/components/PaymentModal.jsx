@@ -294,7 +294,7 @@ const FormButton = styled.button`
   cursor: pointer;
   transition: all 0.3s;
 
-  @media only screen and (max-width: 18.75em) {
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) { 
     padding-top: 1.4rem;
     padding-bottom: 1.4rem;
   }
