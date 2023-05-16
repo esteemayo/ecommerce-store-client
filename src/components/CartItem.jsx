@@ -79,6 +79,10 @@ const Wrapper = styled.div`
   align-items: flex-start;
   justify-content: space-between;
   margin-bottom: 1.25rem;
+
+  @media only screen and (max-width: 31.25em) {
+    flex-direction: column;
+  }
 `;
 
 const Left = styled.div`
