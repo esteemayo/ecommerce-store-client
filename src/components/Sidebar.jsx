@@ -42,7 +42,9 @@ const Sidebar = () => {
           })}
         </LinksContainer>
         <SearchContainer>
-          <Input type='search' placeholder='Search items...' />
+          <Form>
+            <Input type='search' placeholder='Search items...' />
+          </Form>
         </SearchContainer>
       </Wrapper>
     </Container>
