@@ -176,6 +176,10 @@ const Heading = styled.h1`
   font-weight: 500;
   font-size: 2rem;
   margin-bottom: 1rem;
+
+  @media only screen and (max-width: 25em) {
+    font-size: 1.87rem;
+  }
 `;
 
 const Form = styled.form`
