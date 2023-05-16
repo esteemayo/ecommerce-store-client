@@ -174,6 +174,10 @@ const Button = styled.button`
     font-size: 1.47rem;
     padding: ${({ btnType }) => btnType === 'check' && '1rem 2.7rem'};
   }
+  
+  @media only screen and (max-width: 18.75em) {
+    padding: ${({ btnType }) => btnType === 'check' && '0.7rem 2rem'};
+  }
 
   &:hover {
     background-position: 100%;
