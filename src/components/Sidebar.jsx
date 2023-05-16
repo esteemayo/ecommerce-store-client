@@ -184,7 +184,7 @@ const Input = styled.input`
   background-color: transparent;
   color: #999;
   border: 2px solid #eef2ff;
-  border-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
   outline-color: #eee;
   caret-color: var(--caret-light);
 
