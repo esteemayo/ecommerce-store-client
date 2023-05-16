@@ -194,4 +194,8 @@ const Input = styled.input`
   }
 `;
 
+const Button = styled.button`
+  
+`;
+
 export default Sidebar;
