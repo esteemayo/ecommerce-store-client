@@ -47,6 +47,10 @@ const Heading = styled.h1`
   @media only screen and (max-width: 43.75em) {
     font-size: 2rem;
   }
+
+  @media only screen and (max-width: 18.75em) {
+    font-size: 1.78rem;
+  }
 `;
 
 const HeadingMain = styled.span`
