@@ -204,6 +204,7 @@ const Button = styled.button`
   background-color: var(--clr-primary-green);
   color: var(--clr-white);
   border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
 `;
 
 export default Sidebar;
