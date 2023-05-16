@@ -185,6 +185,7 @@ const Input = styled.input`
   color: #999;
   border: 2px solid #eef2ff;
   border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
   outline-color: #eee;
   caret-color: var(--caret-light);
 
