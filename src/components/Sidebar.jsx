@@ -207,6 +207,7 @@ const Button = styled.button`
   border-top-right-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
   outline-color: #85beae;
+  cursor: pointer;
 `;
 
 export default Sidebar;
