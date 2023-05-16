@@ -200,7 +200,7 @@ const Button = styled.button`
   border: none;
   font-weight: 500;
   font-size: 1.4rem;
-  padding: 1.25rem 1.5rem;
+  padding: 1.7rem;
 `;
 
 export default Sidebar;
