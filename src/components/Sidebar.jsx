@@ -183,6 +183,8 @@ const Input = styled.input`
   background-color: transparent;
   color: #999;
   border: 2px solid #eef2ff;
+  border-radius: 0.5rem;
+  outline-color: #eee;
 `;
 
 export default Sidebar;
