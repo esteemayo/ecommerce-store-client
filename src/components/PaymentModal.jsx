@@ -230,6 +230,11 @@ const FormInput = styled.input`
   outline-color: #eee;
   caret-color: var(--caret-light);
 
+  @media only screen and (max-width: 18.75em) {
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
+  }
+
   &::placeholder {
     font-weight: 300;
     font-size: 1.5rem;
