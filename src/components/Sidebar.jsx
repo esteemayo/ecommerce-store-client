@@ -11,6 +11,10 @@ const Sidebar = () => {
   const dispatch = useDispatch();
   const { isSidebarOpen } = useSelector((state) => ({ ...state.submenu }));
 
+  const handleSearch = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <Container type={isSidebarOpen ? 'show' : ''}>
       <Wrapper>
