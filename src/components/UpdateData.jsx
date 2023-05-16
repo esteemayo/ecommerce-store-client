@@ -166,10 +166,6 @@ const CancelButton = styled.button`
   border-radius: 0.5rem;
   outline-color: #eee;
   cursor: pointer;
-
-  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
-    font-size: 1.398rem;
-  }
 `;
 
 const FormButton = styled.button`
