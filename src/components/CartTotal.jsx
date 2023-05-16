@@ -170,6 +170,10 @@ const Button = styled.button`
   cursor: pointer;
   transition: all 0.3s;
 
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+    font-size: 1.5rem;
+  }
+
   @media only screen and (max-width: 43.75em) {
     font-size: 1.47rem;
     padding: ${({ btnType }) => btnType === 'check' && '1rem 2.7rem'};
