@@ -171,7 +171,7 @@ const Button = styled.button`
   transition: all 0.3s;
 
   @media only screen and (max-width: 56.25em), only screen and (hover: none) {
-    font-size: 1.5rem;
+    font-size: 1.49rem;
   }
 
   @media only screen and (max-width: 43.75em) {
