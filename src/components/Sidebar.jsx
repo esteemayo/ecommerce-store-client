@@ -180,6 +180,7 @@ const Input = styled.input`
   font-size: 1.5rem;
   width: 75%;
   padding: 1.25rem 1rem;
+  background-color: transparent;
 `;
 
 export default Sidebar;
