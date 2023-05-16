@@ -182,6 +182,7 @@ const Input = styled.input`
   padding: 1.25rem 1rem;
   background-color: transparent;
   color: #999;
+  border: 2px solid #eef2ff;
 `;
 
 export default Sidebar;
