@@ -186,6 +186,10 @@ const Input = styled.input`
   border-radius: 0.5rem;
   outline-color: #eee;
   caret-color: var(--caret-light);
+
+  &::-webkit-input-placeholder {
+    font-weight: 300;
+  }
 `;
 
 export default Sidebar;
