@@ -150,7 +150,7 @@ const LinkContainer = styled.div`
 
   @media only screen and (max-width: 37.5em) {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     gap: 3rem;
   }
