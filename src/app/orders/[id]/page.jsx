@@ -111,6 +111,7 @@ const Container = styled.main`
 
   @media only screen and (max-width: 25em) {
     padding-left: 2rem;
+    padding-right: 2rem;
   }
 `;
 
