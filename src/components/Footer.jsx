@@ -423,7 +423,7 @@ const FooterText = styled.p`
   }
 
   @media only screen and (max-width: 31.25em) {
-    font-size: 1.5rem;
+    font-size: 1.55rem;
   }
 
   @media only screen and (max-width: 27.5em) {
