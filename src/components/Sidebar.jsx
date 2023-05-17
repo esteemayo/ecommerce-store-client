@@ -22,7 +22,7 @@ const Sidebar = () => {
   return (
     <Container type={isSidebarOpen ? 'show' : ''}>
       <Wrapper>
-        <CloseButton onClick={() => dispatch(closeSidebar())}>
+        <CloseButton type='button' onClick={() => dispatch(closeSidebar())}>
           <FontAwesomeIcon icon={faXmark} />
         </CloseButton>
         <LinksContainer>
