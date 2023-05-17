@@ -46,6 +46,7 @@ const Sidebar = () => {
           })}
         </LinksContainer>
         <SearchContainer>
+          <Title>Search products</Title>
           <Form onSubmit={handleSearch}>
             <Input type='search' placeholder='Search items...' />
             <Button type='submit'>Search</Button>
