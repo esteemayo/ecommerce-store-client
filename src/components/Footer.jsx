@@ -93,7 +93,7 @@ const Footer = () => {
         })}
       </FooterLinkContainer>
       <FooterText>
-        &copy; {year} by Emmanuel Adebayo&trade;. All rights reserved. We are a young company always
+        &copy; {year} by <Author>Emmanuel Adebayo&trade;</Author>. All rights reserved. We are a young company always
         looking for new and creative ideas to help you with our products in your everyday work.
       </FooterText>
     </Container>
