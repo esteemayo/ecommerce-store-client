@@ -229,6 +229,10 @@ const Button = styled.button`
   border-bottom-right-radius: 0.5rem;
   outline-color: #85beae;
   cursor: pointer;
+
+  @media only screen and (max-width: 18.75rem) {
+    padding-top: 1.1rem;
+  }
 `;
 
 export default Sidebar;
