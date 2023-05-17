@@ -178,6 +178,10 @@ const OrderTotal = styled.span``;
 
 const Right = styled.div`
   flex: 1;
+
+  @media only screen and (max-width: 37.5em) {
+    width: 100%;
+  }
 `;
 
 const RightWrapper = styled.div`
