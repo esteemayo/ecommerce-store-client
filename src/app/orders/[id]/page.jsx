@@ -173,6 +173,10 @@ const RightWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @media only screen and (max-width: 64em) {
+    width: 100%;
+  }
 `;
 
 const Heading = styled.h2`
