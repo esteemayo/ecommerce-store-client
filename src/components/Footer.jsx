@@ -395,6 +395,7 @@ const LinkItem = styled.li`
     &:visited {
       display: inline-block;
       text-decoration: none;
+      font-size: inherit;
       color: inherit;
       line-height: 1.3em;
       outline-offset: 0.5rem;
