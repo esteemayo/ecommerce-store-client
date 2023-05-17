@@ -174,7 +174,7 @@ const Heading = styled.h4`
 const ListContainer = styled.ul`
   list-style: none;
 
-  @media only screen and (max-width: 27.5em) {
+  @media only screen and (max-width: 37.5em) {
     display: flex;
     flex-wrap: wrap;
     row-gap: 0.5rem;
