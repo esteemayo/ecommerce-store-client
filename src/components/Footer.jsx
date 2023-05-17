@@ -326,8 +326,8 @@ const SocialIcon = styled.div`
   cursor: pointer;
 
   @media only screen and (max-width: 37.5em) {
-    width: 3rem;
-    height: 3rem;
+    width: 3.5rem;
+    height: 3.5rem;
   }
 
   display: flex;
