@@ -229,6 +229,7 @@ const TotalContainer = styled.div`
 
 const TotalText = styled.b`
   display: inline-block;
+  text-transform: capitalize;
 `;
 
 const Button = styled.button`
