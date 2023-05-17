@@ -124,6 +124,10 @@ const OrderContainer = styled.div`
   align-items: flex-start;
   justify-content: space-between;
   gap: 3rem;
+
+  @media only screen and (max-width: 37.5em) {
+    flex-direction: column;
+  }
 `;
 
 const Left = styled.div`
