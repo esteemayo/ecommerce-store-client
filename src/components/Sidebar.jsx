@@ -6,6 +6,7 @@ import Link from 'next/link';
 
 import { sublinks } from '@/data';
 import { closeSidebar } from '@/features/submenu/submenuSlice';
+import { useState } from 'react';
 
 const Sidebar = () => {
   const dispatch = useDispatch();
