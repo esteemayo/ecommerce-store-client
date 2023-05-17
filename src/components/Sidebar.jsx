@@ -192,7 +192,7 @@ const Input = styled.input`
   font-family: inherit;
   font-size: 1.5rem;
   width: 75%;
-  padding: 1.35rem 1rem;
+  padding: 1rem;
   background-color: transparent;
   color: #999;
   border: 2px solid #eef2ff;
