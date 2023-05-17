@@ -55,6 +55,7 @@ const Sidebar = () => {
               type='search'
               value={query}
               placeholder='Search items...'
+              onChange={(e) => setQuery(e.target.value)}
             />
             <Button type='submit'>Search</Button>
           </Form>
