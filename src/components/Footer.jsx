@@ -207,7 +207,7 @@ const ListItem = styled.li`
     height: 1px;
     background-color: var(--clr-white);
 
-    @media only screen and (max-width: 27.5em) {
+    @media only screen and (max-width: 37.5em) {
       display: none;
     }
   }
