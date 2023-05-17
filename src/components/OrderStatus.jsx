@@ -77,6 +77,10 @@ const Container = styled.section`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media only screen and (max-width: 25em) {
+    width: 90%;
+  }
 `;
 
 const StatusWrapper = styled.div`
