@@ -382,6 +382,10 @@ const LinkItem = styled.li`
   color: var(--clr-white);
   outline-color: var(--clr-primary-green);
 
+  @media only screen and (max-width: 37.5rem) {
+    font-size: 1.57rem;
+  }
+
   a {
     &:link,
     &:visited {
@@ -392,11 +396,8 @@ const LinkItem = styled.li`
       outline-offset: 0.5rem;
       outline-color: var(--clr-primary-green);
 
-      @media only screen and (max-width: 37.5rem) {
-        font-size: 1.57rem;
-      }
     }
-
+    
     &:active {
       color: currentColor;
     }
