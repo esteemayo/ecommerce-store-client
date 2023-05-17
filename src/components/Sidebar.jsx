@@ -16,6 +16,7 @@ const Sidebar = () => {
 
   const handleSearch = (e) => {
     e.preventDefault();
+    console.log(query);
   };
 
   return (
