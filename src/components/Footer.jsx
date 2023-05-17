@@ -400,16 +400,15 @@ const FooterText = styled.p`
   margin-top: 2rem;
 
   @media only screen and (max-width: 37.5em) {
-    width: 80%;
+    width: 100%;
+    text-align: left;
   }
 
   @media only screen and (max-width: 31.25em) {
-    width: 100%;
     font-size: 1.5rem;
   }
 
   @media only screen and (max-width: 27.5em) {
-    text-align: left;
     line-height: 1.3;
   }
 `;
