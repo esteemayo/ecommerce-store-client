@@ -33,7 +33,7 @@ const Order = () => {
               <Tbody>
                 <Tr>
                   <Td>
-                    <OrderId>63deb1d1a79fe9e5f5a46325</OrderId>
+                    <OrderId>63deb1d1</OrderId>
                   </Td>
                   <Td>
                     <OrderName>Mary Doe</OrderName>
