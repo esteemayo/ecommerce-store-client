@@ -396,6 +396,10 @@ const LinkItem = styled.li`
         font-size: 1.57rem;
       }
     }
+
+    &:active {
+      color: currentColor;
+    }
   }
 `;
 
