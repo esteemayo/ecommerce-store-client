@@ -30,7 +30,7 @@ const OrderStatus = ({ statusClass }) => {
         <Status>Preparing</Status>
         <Image
           src='/img/checked.png'
-          width={20}
+          width={30}
           height={20}
           alt=''
           className='checkedIcon'
