@@ -365,7 +365,7 @@ const FooterLinkContainer = styled.ul`
     margin-top: 2rem;
   }
 
-  @media only screen and (max-width: 27.5em) {
+  @media only screen and (max-width: 37.5em) {
     flex-wrap: wrap;
     justify-content: flex-start;
     gap: 1rem;
