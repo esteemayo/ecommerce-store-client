@@ -4,7 +4,6 @@ import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import Link from 'next/link';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
-import Link from 'next/link';
 
 import { sublinks } from '@/data';
 import { closeSidebar } from '@/features/submenu/submenuSlice';
