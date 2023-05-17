@@ -222,6 +222,10 @@ const TotalContainer = styled.div`
     line-height: 1.4;
   }
 
+  @media only screen and (max-width: 37.5em) {
+    align-items: baseline;
+  }
+
   &:last-of-type {
     margin-bottom: 2rem;
   }
