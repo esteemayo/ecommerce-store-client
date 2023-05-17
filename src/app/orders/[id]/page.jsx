@@ -58,7 +58,7 @@ const Order = () => {
           </Left>
           <Right>
             <RightWrapper>
-              <Heading>cart total</Heading>
+              <Heading>Cart total</Heading>
               <TotalContainer>
                 <TotalText>Subtotal:</TotalText>
                 <NumericFormat
