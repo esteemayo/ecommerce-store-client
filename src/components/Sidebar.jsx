@@ -207,6 +207,7 @@ const Input = styled.input`
 
   @media only screen and (max-width: 18.75rem) {
     padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
   }
 
   &::-webkit-input-placeholder {
