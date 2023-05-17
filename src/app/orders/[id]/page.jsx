@@ -176,6 +176,7 @@ const RightWrapper = styled.div`
 
   @media only screen and (max-width: 64em) {
     width: 100%;
+    padding-left: 3rem;
   }
 `;
 
