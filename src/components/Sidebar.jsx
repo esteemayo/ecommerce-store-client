@@ -202,7 +202,7 @@ const Button = styled.button`
   display: inline-block;
   border: none;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.45rem;
   padding: 1.7rem 2.5rem;
   background-color: var(--clr-primary-green);
   color: var(--clr-white);
