@@ -391,6 +391,10 @@ const LinkItem = styled.li`
       line-height: 1.3em;
       outline-offset: 0.5rem;
       outline-color: var(--clr-primary-green);
+
+      @media only screen and (max-width: 37.5rem) {
+        font-size: 1.57rem;
+      }
     }
   }
 `;
