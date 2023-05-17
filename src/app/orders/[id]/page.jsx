@@ -230,6 +230,10 @@ const TotalContainer = styled.div`
 const TotalText = styled.b`
   display: inline-block;
   text-transform: capitalize;
+
+  @media only screen and (max-width: 37.5em) {
+    font-size: 1.7rem;
+  }
 `;
 
 const Button = styled.button`
