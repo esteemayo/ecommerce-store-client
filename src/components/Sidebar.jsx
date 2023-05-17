@@ -12,6 +12,8 @@ const Sidebar = () => {
   const dispatch = useDispatch();
   const { isSidebarOpen } = useSelector((state) => ({ ...state.submenu }));
 
+  const [query, setQuery] = useState('');
+
   const handleSearch = (e) => {
     e.preventDefault();
   };
