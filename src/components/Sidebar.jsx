@@ -217,7 +217,7 @@ const Button = styled.button`
   border: none;
   font-weight: 500;
   font-size: 1.45rem;
-  padding: 1.7rem 2.5rem;
+  padding: 1.4rem 2.5rem;
   background-color: var(--clr-primary-green);
   color: var(--clr-white);
   border-top-right-radius: 0.5rem;
