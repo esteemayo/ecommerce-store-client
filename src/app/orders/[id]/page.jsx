@@ -193,6 +193,10 @@ const TotalContainer = styled.div`
   gap: 1rem;
   line-height: 1.3;
 
+  @media only screen and (max-width: 64em) {
+    line-height: 1.4;
+  }
+
   &:last-of-type {
     margin-bottom: 2rem;
   }
