@@ -221,6 +221,10 @@ const Button = styled.button`
   cursor: pointer;
   transition: all 0.3s;
 
+  @media only screen and (max-width: 64em) {
+    padding-top: 1.2rem;
+  }
+
   &:hover {
     background-position: 100%;
   }
