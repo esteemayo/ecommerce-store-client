@@ -148,7 +148,7 @@ const LinkContainer = styled.div`
   align-items: start;
   justify-content: space-between;
 
-  @media only screen and (max-width: 27.5em) {
+  @media only screen and (max-width: 37.5em) {
     flex-direction: column;
     align-items: center;
     justify-content: center;
