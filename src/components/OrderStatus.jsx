@@ -83,6 +83,8 @@ const StatusWrapper = styled.div`
   img {
     width: 3rem;
     height: 3rem;
+    display: block;
+    object-fit: cover;
   }
 `;
 
