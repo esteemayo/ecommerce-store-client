@@ -85,10 +85,6 @@ const Wrapper = styled.div`
   svg {
     font-size: 1.5rem;
     fill: var(--clr-primary-green);
-
-    @media only screen and (max-width: 31.25em) {
-      font-size: 1.45rem;
-    }
   }
 `;
 
