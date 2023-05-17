@@ -201,6 +201,10 @@ const Input = styled.input`
   outline-color: #eee;
   caret-color: var(--caret-light);
 
+  @media only screen and (max-width: 25rem) {
+    width: 65%;
+  }
+
   &::-webkit-input-placeholder {
     font-weight: 300;
     font-size: 1.5rem;
