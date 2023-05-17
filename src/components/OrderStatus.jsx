@@ -31,7 +31,7 @@ const OrderStatus = ({ statusClass }) => {
         <Image
           src='/img/checked.png'
           width={30}
-          height={20}
+          height={30}
           alt=''
           className='checkedIcon'
         />
