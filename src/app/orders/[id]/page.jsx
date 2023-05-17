@@ -134,6 +134,10 @@ const Tr = styled.tr``;
 const Th = styled.th`
   font-weight: 600;
   font-size: 1.7rem;
+
+  @media only screen and (max-width: 64em) {
+    font-size: 1.6rem;
+  }
 `;
 
 const Tbody = styled.tbody`
