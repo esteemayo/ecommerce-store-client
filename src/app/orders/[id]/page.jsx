@@ -223,6 +223,7 @@ const Button = styled.button`
 
   @media only screen and (max-width: 64em) {
     padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
   }
 
   &:hover {
