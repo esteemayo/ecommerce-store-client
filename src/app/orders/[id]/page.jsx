@@ -233,6 +233,7 @@ const TotalText = styled.b`
 
   @media only screen and (max-width: 37.5em) {
     font-size: 1.7rem;
+    letter-spacing: 3px;
   }
 `;
 
