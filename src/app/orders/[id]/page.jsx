@@ -109,6 +109,10 @@ const Wrapper = styled.div`
   width: 100%;
   max-width: 120rem;
   margin: 0 auto;
+
+  @media only screen and (max-width: 64em) {
+    max-width: 80rem;
+  }
 `;
 
 const OrderContainer = styled.div`
