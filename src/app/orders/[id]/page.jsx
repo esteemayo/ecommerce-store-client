@@ -132,6 +132,10 @@ const OrderContainer = styled.div`
 
 const Left = styled.div`
   flex: 2;
+
+  @media only screen and (max-width: 37.5em) {
+    width: 100%;
+  }
 `;
 
 const Table = styled.table`
