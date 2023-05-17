@@ -229,6 +229,10 @@ const ListItem = styled.li`
         font-size: 1.6rem;
       }
     }
+
+    &:active {
+      color: currentColor;
+    }
   }
 `;
 
