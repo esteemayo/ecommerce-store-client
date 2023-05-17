@@ -290,7 +290,7 @@ const Header = styled.h4`
   font-weight: 300;
   font-size: 1.4rem;
 
-  @media only screen and (max-width: 27.5em) {
+  @media only screen and (max-width: 37.5em) {
     text-decoration: underline;
     text-underline-offset: 3px;
   }
