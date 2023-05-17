@@ -357,7 +357,7 @@ const SocialIcon = styled.div`
     color: inherit;
 
     @media only screen and (max-width: 37.5em) {
-      font-size: 1.7rem;
+      font-size: 1.87rem;
     }
   }
 `;
