@@ -79,7 +79,12 @@ const Container = styled.section`
   justify-content: space-between;
 `;
 
-const StatusWrapper = styled.div``;
+const StatusWrapper = styled.div`
+  img {
+    width: 3rem;
+    height: 3rem;
+  }
+`;
 
 const Status = styled.span``;
 
