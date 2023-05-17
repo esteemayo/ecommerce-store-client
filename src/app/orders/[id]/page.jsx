@@ -103,6 +103,10 @@ const Container = styled.main`
     padding-left: 9rem;
     padding-right: 9rem;
   }
+
+  @media only screen and (max-width: 31.25em) {
+    padding-left: 5rem;
+  }
 `;
 
 const Wrapper = styled.div`
