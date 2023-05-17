@@ -71,8 +71,8 @@ const Wrapper = styled.div`
   cursor: pointer;
 
   @media only screen and (max-width: 31.25em) {
-    width: 3rem;
-    height: 3rem;
+    width: 3.85rem;
+    height: 3.85rem;
   }
 
   &:hover {
