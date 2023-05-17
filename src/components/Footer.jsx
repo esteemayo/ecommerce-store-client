@@ -111,7 +111,7 @@ const Container = styled.footer`
   }
 
   @media only screen and (max-width: 37.5em) {
-    padding: 6rem;
+    padding: 5rem;
   }
 
   @media only screen and (max-width: 17.5em) {
