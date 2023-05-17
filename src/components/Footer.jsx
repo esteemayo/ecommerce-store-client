@@ -431,8 +431,6 @@ const FooterText = styled.p`
   }
 `;
 
-const Author = styled.strong`
-  
-`;
+const Author = styled.strong``;
 
 export default Footer;
