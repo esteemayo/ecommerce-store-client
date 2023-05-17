@@ -87,7 +87,7 @@ const Wrapper = styled.div`
     fill: var(--clr-primary-green);
 
     @media only screen and (max-width: 31.25em) {
-      font-size: 1.3rem;
+      font-size: 1.45rem;
     }
   }
 `;
