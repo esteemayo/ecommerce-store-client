@@ -2,9 +2,7 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 const Header = ({ title }) => {
-  return (
-    <Heading>{title}</Heading>
-  );
+  return <Heading>{title}</Heading>;
 }
 
 const Heading = styled.h1`
