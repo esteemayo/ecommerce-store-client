@@ -161,6 +161,11 @@ const ArrowButton = styled.button`
     height: 3.5rem;
   }
 
+  @media only screen and (max-width: 25em) {
+    width: 3rem;
+    height: 3rem;
+  }
+
   &:hover {
     background-color: transparent;
     color: var(--clr-white);
