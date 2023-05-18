@@ -92,7 +92,7 @@ const ImageContainer = styled.div`
 `;
 
 const Message = styled.span`
-  
+  display: block;
 `;
 
 const Heading = styled.h1`
