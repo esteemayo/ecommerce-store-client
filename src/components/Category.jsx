@@ -52,6 +52,7 @@ const Container = styled.article`
 
   @media only screen and (max-width: 64em) {
     flex-wrap: wrap;
+    justify-content: flex-start;
   }
 `;
 
