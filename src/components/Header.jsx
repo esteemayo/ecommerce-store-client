@@ -16,6 +16,10 @@ const Heading = styled.h1`
   display: flex;
   flex-direction: column;
 
+  @media only screen and (max-width: 64em) {
+    margin-bottom: 5rem;
+  }
+
   &::after {
     content: '';
     display: inline-block;
