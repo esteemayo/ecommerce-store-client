@@ -93,6 +93,7 @@ const ImageContainer = styled.div`
 
 const Message = styled.span`
   display: block;
+  font-size: 3rem;
 `;
 
 const Heading = styled.h1`
