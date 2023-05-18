@@ -115,6 +115,10 @@ const Wrapper = styled.div`
     @media only screen and (max-width: 37.5em) {
       height: 20rem;
     }
+
+    @media only screen and (max-width: 31.25em) {
+      height: 17rem;
+    }
   }
   
   a {
