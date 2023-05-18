@@ -155,6 +155,7 @@ const HeadingWrapper = styled.div`
   @media only screen and (max-width: 31.25em) {
     top: 80%;
     right: 3rem;
+    line-height: 1.3;
   }
 `;
 
