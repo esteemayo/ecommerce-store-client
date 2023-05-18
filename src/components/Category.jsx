@@ -68,7 +68,7 @@ const Container = styled.article`
   }
 
   @media only screen and (max-width: 26.25em) {
-    gap: 3rem;
+    gap: 4rem;
   }
 
   @media only screen and (max-width: 18.75em) {
