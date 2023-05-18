@@ -70,6 +70,10 @@ const Container = styled.article`
   @media only screen and (max-width: 26.25em) {
     gap: 5rem;
   }
+
+  @media only screen and (max-width: 18.75em) {
+    gap: 1rem;
+  }
 `;
 
 const Button = styled.button`
