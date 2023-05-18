@@ -183,6 +183,10 @@ const SubHeading = styled.h3`
   @media only screen and (max-width: 59.375em) {
     font-size: 1.85rem;
   }
+
+  @media only screen and (max-width: 31.25em) {
+    font-size: 1.65rem;
+  }
 `;
 
 export default Category;
