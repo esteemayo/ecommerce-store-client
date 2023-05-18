@@ -151,6 +151,10 @@ const HeadingWrapper = styled.div`
     top: 70%;
     right: 5rem;
   }
+
+  @media only screen and (max-width: 31.25em) {
+    top: 80%;
+  }
 `;
 
 const MainHeading = styled.h2`
