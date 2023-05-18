@@ -45,6 +45,10 @@ const Container = styled.section`
   width: 100vw;
   padding: 15rem 0;
   background-color: #f9f9f9;
+
+  @media only screen and (max-width: 64em) {
+    padding: 13rem 0;
+  }
 `;
 
 const Wrapper = styled.div`
