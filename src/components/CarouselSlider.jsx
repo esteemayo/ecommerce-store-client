@@ -180,6 +180,10 @@ const ActiveSlideContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 0.5rem;
+
+  @media only screen and (max-width: 37.5em) {
+    top: 80%;
+  }
 `;
 
 const ActiveSlideButton = styled.button`
