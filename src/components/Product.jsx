@@ -84,7 +84,7 @@ const Container = styled.article`
   column-gap: 1rem;
 
   @media only screen and (max-width: 64em) {
-    justify-content: center;
+    /* justify-content: center; */
   }
 
   @media only screen and (max-width: 43.75em) {
