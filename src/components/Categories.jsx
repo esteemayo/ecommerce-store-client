@@ -30,6 +30,10 @@ const Container = styled.section`
   @media only screen and (max-width: 50em) {
     max-width: 70rem;
   }
+
+  @media only screen and (max-width: 37.5em) {
+    max-width: 65rem;
+  }
 `;
 
 export default Categories;
