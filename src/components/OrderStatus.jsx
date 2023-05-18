@@ -94,6 +94,7 @@ const StatusWrapper = styled.div`
   img:last-child {
     width: 2rem;
     height: 2rem;
+    display: block;
   }
 `;
 
