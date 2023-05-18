@@ -121,6 +121,11 @@ const HeadingWrapper = styled.div`
   right: 2rem;
   transform: translateY(-80%);
   color: var(--clr-white);
+
+  @media only screen and (max-width: 64em) {
+    top: 70%;
+    right: 5rem;
+  }
 `;
 
 const MainHeading = styled.h2`
