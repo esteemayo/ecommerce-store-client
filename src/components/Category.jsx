@@ -54,6 +54,10 @@ const Container = styled.article`
     flex-wrap: wrap;
     justify-content: flex-start;
   }
+
+  @media only screen and (max-width: 59.375em) {
+    gap: 4rem;
+  }
 `;
 
 const Button = styled.button`
