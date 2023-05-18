@@ -66,7 +66,7 @@ const ProductsContainer = styled.div`
   flex-wrap: wrap;
   align-items: center;
   justify-content: flex-start;
-  gap: 1rem;
+  column-gap: 0rem;
 `;
 
 export default FeaturedProducts;
