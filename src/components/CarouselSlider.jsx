@@ -156,6 +156,10 @@ const ArrowButton = styled.button`
     left: ${({ direction }) => direction === 'left' && '2.15rem'};
   }
 
+  @media only screen and (max-width: 31.25em) {
+    width: 3.5rem;
+  }
+
   &:hover {
     background-color: transparent;
     color: var(--clr-white);
