@@ -107,6 +107,10 @@ const Wrapper = styled.div`
     display: block;
     object-fit: cover;
     border-radius: 3px;
+
+    @media only screen and (max-width: 37.5em) {
+      height: 20rem;
+    }
   }
   
   a {
