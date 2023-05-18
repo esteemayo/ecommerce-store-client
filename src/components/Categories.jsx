@@ -17,6 +17,10 @@ const Container = styled.section`
   max-width: 120rem;
   margin: 0 auto;
   padding: 10rem 0;
+
+  @media only screen and (max-width: 64em) {
+    max-width: 100rem;
+  }
 `;
 
 export default Categories;
