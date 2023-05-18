@@ -90,6 +90,11 @@ const StatusWrapper = styled.div`
     display: block;
     object-fit: cover;
   }
+
+  img:last-child {
+    width: 2rem;
+    height: 2rem;
+  }
 `;
 
 const Status = styled.span``;
