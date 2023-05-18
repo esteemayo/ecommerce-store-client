@@ -84,7 +84,7 @@ const Container = styled.section`
 `;
 
 const StatusWrapper = styled.div`
-  img {
+  img:first-child {
     width: 3rem;
     height: 3rem;
     display: block;
