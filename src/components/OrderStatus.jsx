@@ -95,6 +95,7 @@ const StatusWrapper = styled.div`
     width: 2rem;
     height: 2rem;
     display: block;
+    object-fit: cover;
   }
 `;
 
