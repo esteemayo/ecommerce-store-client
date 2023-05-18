@@ -49,6 +49,10 @@ const Container = styled.article`
   justify-content: space-between;
   gap: 2rem;
   margin-top: 3rem;
+
+  @media only screen and (max-width: 64em) {
+    flex-wrap: wrap;
+  }
 `;
 
 const Button = styled.button`
