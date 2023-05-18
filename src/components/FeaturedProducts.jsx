@@ -66,7 +66,7 @@ const ProductsContainer = styled.div`
   flex-wrap: wrap;
   align-items: center;
   justify-content: flex-start;
-  row-gap: 3rem;
+  row-gap: 5rem;
   column-gap: 0rem;
 `;
 
