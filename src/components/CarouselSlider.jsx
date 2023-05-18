@@ -151,6 +151,10 @@ const ArrowButton = styled.button`
   -moz-box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.04);
   cursor: pointer;
   transition: all 0.5s ease;
+  
+  @media only screen and (max-width: 64em) {
+    left: ${({ direction }) => direction === 'left' && '2.15rem'};
+  }
 
   &:hover {
     background-color: transparent;
