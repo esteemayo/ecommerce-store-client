@@ -169,6 +169,10 @@ const MainHeading = styled.h2`
     font-size: 2.5rem;
     font-weight: 500;
   }
+
+  @media only screen and (max-width: 31.25em) {
+    font-size: 2.25rem;
+  }
 `;
 
 const SubHeading = styled.h3`
