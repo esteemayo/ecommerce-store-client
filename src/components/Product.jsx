@@ -79,6 +79,7 @@ const Container = styled.article`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: flex-start;
   row-gap: 2rem;
   column-gap: 1rem;
 
