@@ -89,6 +89,10 @@ const ImageContainer = styled.div`
   }
 `;
 
+const Message = styled.span`
+  
+`;
+
 const Heading = styled.h1`
   display: inline-block;
   text-transform: capitalize;
