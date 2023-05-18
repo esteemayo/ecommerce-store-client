@@ -21,6 +21,7 @@ const Orders = () => {
               height={500}
               alt=''
             />
+            <Message>No orders found</Message>
           </ImageContainer>
         </Wrapper>
       </Container>
