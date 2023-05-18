@@ -149,6 +149,10 @@ const SubHeading = styled.h3`
   font-weight: 300;
   font-size: 1.3rem;
   color: inherit;
+
+  @media only screen and (max-width: 59.375em) {
+    font-size: 1.7rem;
+  }
 `;
 
 export default Category;
