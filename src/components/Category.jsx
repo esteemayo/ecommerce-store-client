@@ -141,6 +141,7 @@ const MainHeading = styled.h2`
 
   @media only screen and (max-width: 59.375em) {
     font-size: 2.5rem;
+    font-weight: 500;
   }
 `;
 
