@@ -5,6 +5,7 @@ import Product from './Product';
 import { storeProducts } from '@/data';
 import Header from './Header';
 import CartModal from './CartModal';
+import ProductCard from './ProductCard';
 
 const FeaturedProducts = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -20,12 +21,13 @@ const FeaturedProducts = () => {
             .filter((product) => product.featured === true)
             .map((product) => {
               return (
-                <Product
-                  key={product.id}
-                  product={product}
-                  openModal={setIsModalOpen}
-                  setIsSelectedProduct={setIsSelectedProduct}
-                />
+                // <Product
+                //   key={product.id}
+                //   product={product}
+                //   openModal={setIsModalOpen}
+                //   setIsSelectedProduct={setIsSelectedProduct}
+                // />
+                <ProductCard key={product.id} />
               );
             })
           }
@@ -79,8 +81,8 @@ const ProductsContainer = styled.div`
   flex-wrap: wrap;
   align-items: center;
   justify-content: flex-start;
-  row-gap: 5rem;
-  column-gap: 0rem;
+  /* row-gap: 5rem;
+  column-gap: 0rem; */
 `;
 
 export default FeaturedProducts;
