@@ -87,6 +87,10 @@ const Container = styled.article`
     /* justify-content: center; */
   }
 
+  @media only screen and (max-width: 50em) {
+    width: 35rem;
+  }
+
   @media only screen and (max-width: 43.75em) {
     row-gap: 1rem;
   }
