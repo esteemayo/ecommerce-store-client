@@ -95,6 +95,10 @@ const Container = styled.article`
     row-gap: 1rem;
   }
 
+  @media only screen and (max-width: 37.5em) {
+    width: 32rem;
+  }
+
   @media only screen and (max-width: 31.25em) {
     width: 35rem;
   }
