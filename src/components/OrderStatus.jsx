@@ -98,6 +98,10 @@ const StatusWrapper = styled.div`
   }
 `;
 
-const Status = styled.span``;
+const Status = styled.span`
+  @media only screen and (max-width: 37.5em) {
+    font-size: 1.5rem;
+  }
+`;
 
 export default OrderStatus;
