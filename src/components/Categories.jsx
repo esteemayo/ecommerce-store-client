@@ -22,6 +22,11 @@ const Container = styled.section`
     max-width: 100rem;
     padding: 8rem 0;
   }
+
+  @media only screen and (max-width: 59.375em) {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
 `;
 
 export default Categories;
