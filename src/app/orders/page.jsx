@@ -95,6 +95,10 @@ const Message = styled.span`
   display: block;
   font-size: 3rem;
   margin-top: -5rem;
+
+  @media only screen and (max-width: 37.5em) {
+    font-size: 2.5rem;
+  }
 `;
 
 const Heading = styled.h1`
