@@ -229,6 +229,10 @@ const InStock = styled.div`
     height: 1rem;
     background-color: #00e774;
     border-radius: 50%;
+
+    @media only screen and (max-width: 35em) {
+      width: 0.85rem;
+    }
   }
 `;
 
