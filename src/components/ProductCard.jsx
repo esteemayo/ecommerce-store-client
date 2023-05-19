@@ -2,6 +2,8 @@ import styled from 'styled-components';
 import Image from 'next/image';
 import Link from 'next/link';
 
+import StarRating from './StarRating';
+
 const ProductCard = ({ product }) => {
   return (
     <Container>
@@ -21,7 +23,7 @@ const ProductCard = ({ product }) => {
           </Link>
         </ProductName>
         <ReviewContainer>
-          
+
         </ReviewContainer>
       </InfoContainer>
     </Container>
