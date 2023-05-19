@@ -191,6 +191,8 @@ const Button = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  padding: 1.5rem 1rem;
 `;
 
 const FavWrapper = styled.div`
