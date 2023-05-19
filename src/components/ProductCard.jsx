@@ -21,6 +21,15 @@ const Container = styled.article`
   box-shadow: 2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.47);
   -webkit-box-shadow: 2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.47);
   -moz-box-shadow: 2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.47);
+
+  img {
+    width: 40rem;
+    height: 20rem;
+    display: block;
+    object-fit: cover;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+  }
 `;
 
 export default ProductCard;
