@@ -179,6 +179,8 @@ const InStock = styled.div`
   &::before {
     content: '';
     display: inline-block;
+    width: 1rem;
+    height: 1rem;
   }
 `;
 
