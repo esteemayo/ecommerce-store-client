@@ -9,6 +9,11 @@ import { faHeart } from '@fortawesome/free-regular-svg-icons';
 import StarRating from './StarRating';
 
 const ProductCard = ({ product, openModal, setIsSelectedProduct }) => {
+  const handleOpen = () => {
+    openModal(true);
+    setIsSelectedProduct(product);
+  };
+
   return (
     <Container>
       <Image
