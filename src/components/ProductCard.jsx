@@ -170,7 +170,8 @@ const Discount = styled.span`
 `;
 
 const InStock = styled.div`
-
+  color: #00e774;
+  font-size: 1.5rem;
 `;
 
 const Button = styled.button`
