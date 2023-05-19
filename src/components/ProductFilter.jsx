@@ -209,6 +209,10 @@ const Input = styled.input`
   @media only screen and (max-width: 25em) {
     width: 39rem;
   }
+
+  @media only screen and (max-width: 21.875em) {
+    width: 37rem;
+  }
 `;
 
 export default ProductFilter;
