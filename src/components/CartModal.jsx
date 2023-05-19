@@ -250,6 +250,10 @@ const ImageContainer = styled.div`
   height: 20rem;
   background-color: #ede9e6;
 
+  @media only screen and (max-width: 25em) {
+    display: none;
+  }
+
   img {
     width: 100%;
     height: 100%;
