@@ -164,7 +164,9 @@ const Price = styled.span`
 `;
 
 const Discount = styled.span`
-
+  text-decoration: line-through;
+  font-size: 1.7rem;
+  color: #adacac;
 `;
 
 const InStock = styled.div`
