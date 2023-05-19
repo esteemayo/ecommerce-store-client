@@ -46,7 +46,7 @@ const CartModal = ({ product, isModalOpen, closeModal, setIsSelectedProduct }) =
     type === 'inc' && setQuantity((prev) => prev + 1);
   };
 
-  const handleClear = () => {
+  const handleReset = () => {
     setSize(null);
     setColor(null);
     setQuantity(1);
