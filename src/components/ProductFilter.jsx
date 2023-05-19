@@ -207,7 +207,7 @@ const Input = styled.input`
   }
 
   @media only screen and (max-width: 25em) {
-    width: 38rem;
+    width: 39rem;
   }
 `;
 
