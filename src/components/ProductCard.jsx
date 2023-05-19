@@ -260,6 +260,8 @@ const WishlistButton = styled.button`
 
 const LikeButton = styled.button`
   border: none;
+  font-weight: 500;
+  font-size: 1.4rem;
 `;
 
 export default ProductCard;
