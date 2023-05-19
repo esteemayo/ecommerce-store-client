@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import Image from 'next/image';
+import { faShoppingCart, faStar } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
 import { NumericFormat } from 'react-number-format';
 
