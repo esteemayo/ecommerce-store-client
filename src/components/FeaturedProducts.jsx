@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import styled from 'styled-components';
 
-import Product from './Product';
 import ProductCard from './ProductCard';
 import { storeProducts } from '@/data';
 import Header from './Header';
