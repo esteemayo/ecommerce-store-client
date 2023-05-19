@@ -175,6 +175,11 @@ const InStock = styled.div`
   display: flex;
   align-items: center;
   gap: 2px;
+
+  &::before {
+    content: '';
+    display: inline-block;
+  }
 `;
 
 const Button = styled.button`
