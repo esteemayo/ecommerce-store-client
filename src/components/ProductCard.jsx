@@ -31,7 +31,12 @@ const ProductCard = ({ product }) => {
         <Prices>
           <Discount>$297</Discount>
           <Price>
-
+          <NumericFormat
+            value={product.price}
+            displayType={'text'}
+            thousandSeparator={true}
+            prefix={'$'}
+          />
           </Price>
         </Prices>
         </PriceContainer>
