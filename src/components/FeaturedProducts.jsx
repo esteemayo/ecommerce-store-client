@@ -27,7 +27,7 @@ const FeaturedProducts = () => {
                 //   openModal={setIsModalOpen}
                 //   setIsSelectedProduct={setIsSelectedProduct}
                 // />
-                <ProductCard 
+                <ProductCard
                   key={product.id}
                   product={product}
                   openModal={setIsModalOpen}
@@ -88,7 +88,7 @@ const ProductsContainer = styled.div`
   /* justify-content: space-between; */
   /* row-gap: 5rem;
   column-gap: 0rem; */
-  gap: 4rem;
+  gap: 7rem;
 `;
 
 export default FeaturedProducts;
