@@ -266,6 +266,7 @@ const LikeButton = styled.button`
   color: #858585;
   outline-color: #b8b6b6;
   outline-offset: 3px;
+  cursor: pointer;
 `;
 
 export default ProductCard;
