@@ -124,6 +124,10 @@ const FilterWrapper = styled.div`
   @media only screen and (max-width: 59.375em) {
     gap: 4rem;
   }
+
+  @media only screen and (max-width: 37.5em) {
+    gap: 2rem;
+  }
 `;
 
 const Filter = styled.div`
