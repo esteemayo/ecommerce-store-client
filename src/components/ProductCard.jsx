@@ -101,7 +101,9 @@ const ReviewContainer = styled.div`
 `;
 
 const Reviews = styled.div`
-  
+  span {
+    color: #89a8a0;
+  }
 `;
 
 export default ProductCard;
