@@ -21,12 +21,6 @@ const FeaturedProducts = () => {
             .filter((product) => product.featured === true)
             .map((product) => {
               return (
-                // <Product
-                //   key={product.id}
-                //   product={product}
-                //   openModal={setIsModalOpen}
-                //   setIsSelectedProduct={setIsSelectedProduct}
-                // />
                 <ProductCard
                   key={product.id}
                   product={product}
