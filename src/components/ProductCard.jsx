@@ -141,4 +141,8 @@ const InStock = styled.div`
 
 `;
 
+const Button = styled.button`
+
+`;
+
 export default ProductCard;
