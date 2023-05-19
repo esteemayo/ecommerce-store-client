@@ -323,6 +323,10 @@ const LikeButton = styled.button`
 
   svg {
     font-size: 1.7rem;
+
+    @media only screen and (max-width: 35em) {
+      font-size: 1.6rem;
+    }
   }
 `;
 
