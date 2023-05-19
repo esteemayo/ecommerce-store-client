@@ -196,6 +196,10 @@ const Price = styled.span`
   font-size: 1.85rem;
   color: #555;
   line-height: 1;
+
+  @media only screen and (max-width: 35em) {
+    font-size: 1.7rem;
+  }
 `;
 
 const Discount = styled.span`
