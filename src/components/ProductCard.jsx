@@ -66,6 +66,7 @@ const ProductName = styled.h3`
       color: inherit;
       outline-color: #eee;
       outline-offset: 3px;
+      transition: all 0.3s ease;
     }
 
     &:hover,
