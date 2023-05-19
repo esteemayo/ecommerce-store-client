@@ -100,6 +100,10 @@ const ProductsContainer = styled.div`
   @media only screen and (max-width: 37.5em) {
     gap: 2rem;
   }
+
+  @media only screen and (max-width: 31.25em) {
+    justify-content: center;
+  }
 `;
 
 export default FeaturedProducts;
