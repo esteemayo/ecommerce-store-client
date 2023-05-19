@@ -20,6 +20,9 @@ const ProductCard = ({ product }) => {
             {product.name}
           </Link>
         </ProductName>
+        <ReviewContainer>
+          
+        </ReviewContainer>
       </InfoContainer>
     </Container>
   );
