@@ -232,6 +232,7 @@ const InStock = styled.div`
 
     @media only screen and (max-width: 35em) {
       width: 0.85rem;
+      height: 0.85rem;
     }
   }
 `;
