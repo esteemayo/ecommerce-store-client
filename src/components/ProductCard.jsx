@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import Image from 'next/image';
 import Link from 'next/link';
+import { NumericFormat } from 'react-number-format';
 
 import StarRating from './StarRating';
 
@@ -30,7 +31,7 @@ const ProductCard = ({ product }) => {
         <Prices>
           <Discount>$297</Discount>
           <Price>
-            
+
           </Price>
         </Prices>
         </PriceContainer>
