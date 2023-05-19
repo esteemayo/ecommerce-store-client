@@ -8,7 +8,7 @@ import { faHeart } from '@fortawesome/free-regular-svg-icons';
 
 import StarRating from './StarRating';
 
-const ProductCard = ({ product }) => {
+const ProductCard = ({ product, openModal, setIsSelectedProduct }) => {
   return (
     <Container>
       <Image
