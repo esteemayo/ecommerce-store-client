@@ -125,4 +125,8 @@ const Discount = styled.span`
 
 `;
 
+const InStock = styled.div`
+
+`;
+
 export default ProductCard;
