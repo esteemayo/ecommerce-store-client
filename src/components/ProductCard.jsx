@@ -63,6 +63,9 @@ const ProductName = styled.h3`
       display: inline-block;
       text-decoration: none;
       text-decoration-color: #e2e9e7;
+      color: inherit;
+      outline-color: #eee;
+      outline-offset: 3px;
     }
   }
 `;
