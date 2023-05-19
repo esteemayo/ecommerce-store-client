@@ -159,7 +159,7 @@ const FilterWrapper = styled.div`
   flex-wrap: wrap;
   align-items: center;
   justify-content: flex-start;
-  gap: 2rem;
+  gap: 7rem;
 
   @media only screen and (max-width: 37.5em) {
     justify-content: center;
