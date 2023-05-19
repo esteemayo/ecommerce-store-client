@@ -15,7 +15,7 @@ const ProductCard = ({ product }) => {
 }
 
 const Container = styled.article`
-  width: 40rem;
+  width: 35rem;
   background-color: var(--clr-white);
   border-radius: 0.5rem;
   box-shadow: 2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.47);
@@ -23,7 +23,7 @@ const Container = styled.article`
   -moz-box-shadow: 2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.47);
 
   img {
-    width: 40rem;
+    width: 35rem;
     height: 20rem;
     display: block;
     object-fit: cover;
