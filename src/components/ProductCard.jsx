@@ -159,6 +159,8 @@ const Prices = styled.div`
 const Price = styled.span`
   font-weight: 600;
   font-size: 1.85rem;
+  color: #555;
+  line-height: 1;
 `;
 
 const Discount = styled.span`
