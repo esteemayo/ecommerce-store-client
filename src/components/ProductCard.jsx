@@ -106,4 +106,8 @@ const Reviews = styled.div`
   }
 `;
 
+const PriceContainer = styled.div`
+
+`;
+
 export default ProductCard;
