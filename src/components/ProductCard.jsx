@@ -132,6 +132,10 @@ const ProductName = styled.h3`
     font-size: 1.7rem;
   }
 
+  @media only screen and (max-width: 35em) {
+    font-size: 1.63rem;
+  }
+
   a {
     &:link,
     &:visited {
