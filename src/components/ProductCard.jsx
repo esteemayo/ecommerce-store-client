@@ -121,4 +121,8 @@ const Price = styled.span`
 
 `;
 
+const Discount = styled.span`
+
+`;
+
 export default ProductCard;
