@@ -48,7 +48,11 @@ const Container = styled.section`
 `;
 
 const ProductsContainer = styled.div`
-  
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 7rem;
 `;
 
 export default ProductList;
