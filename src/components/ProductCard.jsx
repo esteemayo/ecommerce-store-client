@@ -54,6 +54,10 @@ const ProductCard = ({ product }) => {
           <FontAwesomeIcon icon={faHeart} />
           Add to Wishlist
         </WishlistButton>
+        <LikeButton>
+          <FontAwesomeIcon icon={faStar} />
+          Add to favorites
+        </LikeButton>
         </FavWrapper>
       </InfoContainer>
     </Container>
