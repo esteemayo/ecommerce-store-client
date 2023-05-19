@@ -468,6 +468,10 @@ const Button = styled.button`
   cursor: pointer;
   transition: all 0.3s;
 
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+    font-size: 1.6rem;
+  }
+
   &:hover {
     background-position: 100%;
   }
