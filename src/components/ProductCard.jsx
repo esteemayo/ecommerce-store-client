@@ -27,7 +27,7 @@ const ProductCard = ({ product }) => {
           <Reviews>(<span><span>6 reviews</span></span>)</Reviews>
         </ReviewContainer>
         <PriceContainer>
-          
+
         </PriceContainer>
       </InfoContainer>
     </Container>
@@ -110,6 +110,10 @@ const Reviews = styled.div`
 `;
 
 const PriceContainer = styled.div`
+
+`;
+
+const Prices = styled.div`
 
 `;
 
