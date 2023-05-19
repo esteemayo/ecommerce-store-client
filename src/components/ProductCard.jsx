@@ -243,6 +243,11 @@ const WishlistButton = styled.button`
   color: #858585;
   outline-color: #b8b6b6;
   outline-offset: 3px;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 `;
 
 const LikeButton = styled.button`
