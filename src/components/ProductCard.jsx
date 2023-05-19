@@ -27,7 +27,9 @@ const ProductCard = ({ product }) => {
           <Reviews>(<span><span>6 reviews</span></span>)</Reviews>
         </ReviewContainer>
         <PriceContainer>
-
+        <Prices>
+          
+        </Prices>
         </PriceContainer>
       </InfoContainer>
     </Container>
