@@ -53,6 +53,10 @@ const ProductsContainer = styled.div`
   align-items: center;
   justify-content: flex-start;
   gap: 7rem;
+
+  @media only screen and (max-width: 59.375em) {
+    gap: 4rem;
+  }
 `;
 
 export default ProductList;
