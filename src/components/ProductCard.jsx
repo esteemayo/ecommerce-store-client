@@ -24,6 +24,7 @@ const ProductCard = ({ product }) => {
         </ProductName>
         <ReviewContainer>
           <StarRating value={product.ratingsAverage} />
+          <Reviews>(<span><span>6 reviews</span></span>)</Reviews>
         </ReviewContainer>
       </InfoContainer>
     </Container>
