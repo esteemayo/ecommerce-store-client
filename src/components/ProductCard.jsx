@@ -235,7 +235,8 @@ const FavWrapper = styled.div`
 `;
 
 const WishlistButton = styled.button`
-
+  border: none;
+  display: inline-block;
 `;
 
 const LikeButton = styled.button`
