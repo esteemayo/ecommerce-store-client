@@ -55,14 +55,14 @@ const ProductCard = ({ product, openModal, setIsSelectedProduct }) => {
           add to cart
         </Button>
         <FavWrapper>
-        <WishlistButton>
-          <FontAwesomeIcon icon={faHeart} />
-          Add to Wishlist
-        </WishlistButton>
-        <LikeButton>
-          <FontAwesomeIcon icon={faStar} />
-          Add to favorites
-        </LikeButton>
+          <WishlistButton>
+            <FontAwesomeIcon icon={faHeart} />
+            Add to Wishlist
+          </WishlistButton>
+          <LikeButton>
+            <FontAwesomeIcon icon={faStar} />
+            Add to favorites
+          </LikeButton>
         </FavWrapper>
       </InfoContainer>
     </Container>
