@@ -16,12 +16,14 @@ const ProductCard = ({ product, openModal, setIsSelectedProduct }) => {
 
   return (
     <Container>
-      <Image
-        src={product.images[0]}
-        width={300}
-        height={200}
-        alt=''
-      />
+      <ImageContainer>
+        <Image
+          src={product.images[0]}
+          width={300}
+          height={200}
+          alt=''
+        />
+      </ImageContainer>
       <InfoContainer>
         <ProductName>
           <Link
