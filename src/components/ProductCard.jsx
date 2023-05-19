@@ -81,6 +81,8 @@ const Container = styled.article`
 `;
 
 const ImageContainer = styled.div`
+  width: 100%;
+
   img {
     width: 35rem;
     height: 20rem;
