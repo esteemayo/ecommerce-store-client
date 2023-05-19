@@ -91,6 +91,10 @@ const ProductsContainer = styled.div`
   @media only screen and (max-width: 50em) {
     gap: 4rem;
   }
+
+  @media only screen and (max-width: 37.5em) {
+    gap: 2rem;
+  }
 `;
 
 export default FeaturedProducts;
