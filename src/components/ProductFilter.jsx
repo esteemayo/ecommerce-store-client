@@ -160,10 +160,6 @@ const FilterWrapper = styled.div`
   align-items: center;
   justify-content: flex-start;
   gap: 7rem;
-
-  /* @media only screen and (max-width: 37.5em) {
-    justify-content: center;
-  } */
 `;
 
 const Filter = styled.div`
