@@ -4,6 +4,7 @@ import { faShoppingCart, faStar } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { NumericFormat } from 'react-number-format';
+import { faHeart } from '@fortawesome/free-regular-svg-icons';
 
 import StarRating from './StarRating';
 
