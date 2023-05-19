@@ -32,4 +32,8 @@ const Container = styled.article`
   }
 `;
 
+const InfoContainer = styled.div`
+  
+`;
+
 export default ProductCard;
