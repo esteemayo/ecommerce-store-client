@@ -12,7 +12,14 @@ const ProductCard = ({ product }) => {
         alt=''
       />
       <InfoContainer>
-        <ProductName></ProductName>
+        <ProductName>
+          <Link
+            href={`/products/${encodeURIComponent(product.id)}`}
+            passHref
+          >
+            {product.name}
+          </Link>
+        </ProductName>
       </InfoContainer>
     </Container>
   );
