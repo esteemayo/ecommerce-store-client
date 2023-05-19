@@ -224,7 +224,7 @@ const Button = styled.button`
 `;
 
 const FavWrapper = styled.div`
-
+  padding-top: 2rem;
 `;
 
 const WishlistButton = styled.button`
