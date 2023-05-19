@@ -91,4 +91,8 @@ const ReviewContainer = styled.div`
 
 `;
 
+const Reviews = styled.div`
+  
+`;
+
 export default ProductCard;
