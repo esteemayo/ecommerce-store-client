@@ -240,7 +240,7 @@ const CloseButton = styled.button`
 
 const ImageContainer = styled.div`
   margin-top: 2rem;
-  width: 32rem;
+  width: 100%;
   height: 20rem;
   background-color: #ede9e6;
 
