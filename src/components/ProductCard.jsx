@@ -44,7 +44,9 @@ const Container = styled.article`
 `;
 
 const InfoContainer = styled.div`
-  
+  padding: 2rem;
+  background-color: inherit;
+  border-radius: 0.5rem;
 `;
 
 const ProductName = styled.h3`
