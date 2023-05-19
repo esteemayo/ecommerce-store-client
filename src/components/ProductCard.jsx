@@ -152,7 +152,8 @@ const PriceContainer = styled.div`
 `;
 
 const Prices = styled.div`
-
+  display: flex;
+  flex-direction: column;
 `;
 
 const Price = styled.span`
