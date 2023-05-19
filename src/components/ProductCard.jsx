@@ -181,6 +181,8 @@ const InStock = styled.div`
     display: inline-block;
     width: 1rem;
     height: 1rem;
+    background-color: #00e774;
+    border-radius: 50%;
   }
 `;
 
