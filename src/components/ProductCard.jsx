@@ -93,6 +93,11 @@ const ReviewContainer = styled.div`
   align-items: center;
   gap: 1rem;
   margin-bottom: 0.5rem;
+
+  svg {
+    font-size: 2.3rem;
+    fill: #89a8a0;
+  }
 `;
 
 const Reviews = styled.div`
