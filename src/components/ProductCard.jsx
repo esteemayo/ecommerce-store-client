@@ -67,6 +67,13 @@ const ProductName = styled.h3`
       outline-color: #eee;
       outline-offset: 3px;
     }
+
+    &:hover,
+    &:active {
+      text-decoration: underline;
+      text-decoration-color: #e2e9e7;
+      text-underline-offset: 3px;
+    }
   }
 `;
 
