@@ -219,6 +219,10 @@ const InStock = styled.div`
   align-items: center;
   gap: 2px;
 
+  @media only screen and (max-width: 35em) {
+    font-size: 1.43rem;
+  }
+
   &::before {
     content: '';
     display: inline-block;
