@@ -100,7 +100,7 @@ const ImageContainer = styled.div`
     border-top-right-radius: 0.5rem;
 
     @media only screen and (max-width: 37.5em) {
-      width: 17.5rem;
+      height: 17.5rem;
     }
   }
 `;
