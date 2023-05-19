@@ -80,9 +80,10 @@ const ProductsContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: flex-start;
+  /* justify-content: space-between; */
   /* row-gap: 5rem;
   column-gap: 0rem; */
+  gap: 4rem;
 `;
 
 export default FeaturedProducts;
