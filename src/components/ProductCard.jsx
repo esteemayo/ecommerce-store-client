@@ -36,18 +36,18 @@ const ProductCard = ({ product, openModal, setIsSelectedProduct }) => {
           <Reviews>(<span><span>6 reviews</span></span>)</Reviews>
         </ReviewContainer>
         <PriceContainer>
-        <Prices>
-          <Discount>$297</Discount>
-          <Price>
-          <NumericFormat
-            value={product.price}
-            displayType={'text'}
-            thousandSeparator={true}
-            prefix={'$'}
-          />
-          </Price>
-        </Prices>
-        {product.inStock && <InStock>In stock</InStock>}
+          <Prices>
+            <Discount>$297</Discount>
+            <Price>
+              <NumericFormat
+                value={product.price}
+                displayType={'text'}
+                thousandSeparator={true}
+                prefix={'$'}
+              />
+            </Price>
+          </Prices>
+          {product.inStock && <InStock>In stock</InStock>}
         </PriceContainer>
         <Button type='button' onClick={handleOpen}>
           <FontAwesomeIcon icon={faShoppingCart} />
