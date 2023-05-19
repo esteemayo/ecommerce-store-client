@@ -50,7 +50,9 @@ const InfoContainer = styled.div`
 `;
 
 const ProductName = styled.h3`
-  
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 1.8rem;
 `;
 
 export default ProductCard;
