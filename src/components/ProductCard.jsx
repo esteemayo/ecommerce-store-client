@@ -145,4 +145,8 @@ const Button = styled.button`
 
 `;
 
+const FavWrapper = styled.div`
+
+`;
+
 export default ProductCard;
