@@ -80,6 +80,7 @@ const Container = styled.article`
   -moz-box-shadow: 2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.47);
 `;
 
+const ImageContainer = styled.div`
   img {
     width: 35rem;
     height: 20rem;
