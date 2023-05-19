@@ -56,6 +56,15 @@ const ProductName = styled.h3`
   color: #6e6e6e;
   margin-bottom: 0.5rem;
   line-height: 1;
+
+  a {
+    &:link,
+    &:visited {
+      display: inline-block;
+      text-decoration: none;
+      text-decoration-color: #e2e9e7;
+    }
+  }
 `;
 
 export default ProductCard;
