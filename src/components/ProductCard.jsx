@@ -39,6 +39,7 @@ const ProductCard = ({ product }) => {
           />
           </Price>
         </Prices>
+        {product.inStock && <InStock>In stock</InStock>}
         </PriceContainer>
       </InfoContainer>
     </Container>
