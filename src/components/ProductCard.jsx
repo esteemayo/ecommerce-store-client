@@ -187,7 +187,10 @@ const InStock = styled.div`
 `;
 
 const Button = styled.button`
-
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 const FavWrapper = styled.div`
