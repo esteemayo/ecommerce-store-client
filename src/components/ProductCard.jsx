@@ -11,7 +11,7 @@ const ProductCard = ({ product }) => {
         alt=''
       />
       <InfoContainer>
-
+        <ProductName></ProductName>
       </InfoContainer>
     </Container>
   );
