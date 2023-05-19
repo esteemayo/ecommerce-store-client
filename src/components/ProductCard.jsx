@@ -87,6 +87,10 @@ const Container = styled.article`
   }
 `;
 
+const ImageContainer = styled.div`
+  
+`;
+
 const InfoContainer = styled.div`
   padding: 2rem;
   background-color: inherit;
