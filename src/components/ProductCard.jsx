@@ -117,4 +117,8 @@ const Prices = styled.div`
 
 `;
 
+const Price = styled.span`
+
+`;
+
 export default ProductCard;
