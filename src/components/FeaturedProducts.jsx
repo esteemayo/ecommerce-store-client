@@ -27,7 +27,7 @@ const FeaturedProducts = () => {
                 //   openModal={setIsModalOpen}
                 //   setIsSelectedProduct={setIsSelectedProduct}
                 // />
-                <ProductCard key={product.id} />
+                <ProductCard key={product.id} product={product} />
               );
             })
           }
