@@ -44,6 +44,11 @@ const ProductCard = ({ product }) => {
         </Prices>
         {product.inStock && <InStock>In stock</InStock>}
         </PriceContainer>
+        <Button type='button' onClick={handleOpen}>
+          <FontAwesomeIcon icon={faShoppingCart} />
+          &nbsp;
+          add to cart
+        </Button>
       </InfoContainer>
     </Container>
   );
