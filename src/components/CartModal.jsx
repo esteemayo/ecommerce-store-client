@@ -245,7 +245,7 @@ const ImageContainer = styled.div`
   background-color: #ede9e6;
 
   img {
-    width: 32rem;
+    width: 100%;
     height: 20rem;
     display: block;
     object-fit: cover;
