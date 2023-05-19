@@ -153,4 +153,8 @@ const WishlistButton = styled.button`
 
 `;
 
+const LikeButton = styled.button`
+
+`;
+
 export default ProductCard;
