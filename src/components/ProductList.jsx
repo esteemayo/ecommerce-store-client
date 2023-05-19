@@ -45,4 +45,8 @@ const Container = styled.section`
   }
 `;
 
+const ProductsContainer = styled.div`
+  
+`;
+
 export default ProductList;
