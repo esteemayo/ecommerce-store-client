@@ -193,6 +193,8 @@ const Button = styled.button`
   justify-content: center;
   width: 100%;
   padding: 1.5rem 1rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
 `;
 
 const FavWrapper = styled.div`
