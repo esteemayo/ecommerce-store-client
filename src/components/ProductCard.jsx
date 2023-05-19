@@ -10,6 +10,9 @@ const ProductCard = ({ product }) => {
         height={200}
         alt=''
       />
+      <InfoContainer>
+
+      </InfoContainer>
     </Container>
   );
 }
