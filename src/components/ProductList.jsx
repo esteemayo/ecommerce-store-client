@@ -69,6 +69,10 @@ const ProductsContainer = styled.div`
   @media only screen and (max-width: 26.25em) {
     gap: 3rem;
   }
+
+  @media only screen and (max-width: 18.75em) {
+    gap: 1rem;
+  }
 `;
 
 export default ProductList;
