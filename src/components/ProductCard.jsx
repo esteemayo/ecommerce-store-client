@@ -259,7 +259,7 @@ const WishlistButton = styled.button`
 `;
 
 const LikeButton = styled.button`
-
+  border: none;
 `;
 
 export default ProductCard;
