@@ -50,7 +50,10 @@ const ProductCard = ({ product }) => {
           add to cart
         </Button>
         <FavWrapper>
-          
+        <WishlistButton>
+          <FontAwesomeIcon icon={faHeart} />
+          Add to Wishlist
+        </WishlistButton>
         </FavWrapper>
       </InfoContainer>
     </Container>
