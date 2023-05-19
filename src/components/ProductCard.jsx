@@ -39,4 +39,8 @@ const InfoContainer = styled.div`
   
 `;
 
+const ProductName = styled.h3`
+  
+`;
+
 export default ProductCard;
