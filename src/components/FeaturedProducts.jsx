@@ -85,9 +85,7 @@ const ProductsContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  /* justify-content: space-between; */
-  /* row-gap: 5rem;
-  column-gap: 0rem; */
+  justify-content: flex-start;
   gap: 7rem;
 `;
 
