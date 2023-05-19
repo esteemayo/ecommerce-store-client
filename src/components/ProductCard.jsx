@@ -113,6 +113,10 @@ const InfoContainer = styled.div`
   padding: 2rem;
   background-color: inherit;
   border-radius: 0.5rem;
+
+  @media only screen and (max-width: 35em) {
+    padding-left: 1.4rem;
+  }
 `;
 
 const ProductName = styled.h3`
