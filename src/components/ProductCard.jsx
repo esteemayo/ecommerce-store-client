@@ -82,4 +82,8 @@ const ProductName = styled.h3`
   }
 `;
 
+const ReviewContainer = styled.div`
+
+`;
+
 export default ProductCard;
