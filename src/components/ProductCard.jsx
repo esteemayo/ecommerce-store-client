@@ -49,6 +49,9 @@ const ProductCard = ({ product }) => {
           &nbsp;
           add to cart
         </Button>
+        <FavWrapper>
+          
+        </FavWrapper>
       </InfoContainer>
     </Container>
   );
