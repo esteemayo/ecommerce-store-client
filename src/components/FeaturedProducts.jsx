@@ -5,7 +5,6 @@ import Product from './Product';
 import { storeProducts } from '@/data';
 import Header from './Header';
 import CartModal from './CartModal';
-import ProductCard from './ProductCard';
 
 const FeaturedProducts = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
