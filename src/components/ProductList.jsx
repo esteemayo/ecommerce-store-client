@@ -35,16 +35,6 @@ const ProductList = ({ products }) => {
 const Container = styled.section`
   width: 100%;
   padding: 8rem 0;
-  /* display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  row-gap: 4rem;
-  column-gap: 1rem;
-
-  @media only screen and (max-width: 37.5em) {
-    padding: 4rem 3rem;
-  } */
 `;
 
 const ProductsContainer = styled.div`
