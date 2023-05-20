@@ -149,12 +149,6 @@ const FilterHeading = styled.h1`
   font-weight: 600;
   font-size: 2.25rem;
   margin-bottom: 1rem;
-
-  @media only screen and (max-width: 17.5em) {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-  }
 `;
 
 const FilterWrapper = styled.div`
