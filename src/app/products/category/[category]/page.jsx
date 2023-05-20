@@ -162,7 +162,7 @@ const FilterLeft = styled.div`
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  gap: 4rem;
+  gap: 7rem;
 
   @media only screen and (max-width: 37.5em) {
     flex-direction: column;
