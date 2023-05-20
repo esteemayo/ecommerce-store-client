@@ -55,8 +55,6 @@ const Container = styled.section`
 `;
 
 const ImageContainer = styled.div`
-  width: 50rem;
-  height: 25rem;
   display: flex;
   flex-direction: column;
   align-items: center;
