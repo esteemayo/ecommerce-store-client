@@ -9,6 +9,16 @@ const ProductList = ({ products }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isSelectedProduct, setIsSelectedProduct] = useState({});
 
+  if (products.length < 1) {
+    return (
+      <Container>
+        <ImageContainer>
+          <Image src='/img/no-result.png' width={500} height={300} alt='' />
+        </ImageContainer>
+      </Container>
+    )
+  }
+
   return (
     <Container>
       <ProductsContainer>
