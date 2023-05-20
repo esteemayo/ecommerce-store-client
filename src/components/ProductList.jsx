@@ -55,6 +55,8 @@ const Container = styled.section`
 `;
 
 const ImageContainer = styled.div`
+  width: 50rem;
+  height: 25rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -62,8 +64,6 @@ const ImageContainer = styled.div`
   padding-bottom: 3rem;
 
   img {
-    width: 50rem;
-    height: 25rem;
     display: block;
     object-fit: cover;
   }
