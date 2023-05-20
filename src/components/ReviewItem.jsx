@@ -153,7 +153,7 @@ const Right = styled.div`
   height: 100%;
   background-color: #f8d3da;
 
-  & > img {
+  img {
     width: 100%;
     height: 100%;
     display: block;
