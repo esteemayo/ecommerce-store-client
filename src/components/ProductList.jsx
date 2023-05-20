@@ -37,6 +37,10 @@ const Container = styled.section`
   padding: 8rem 0;
 `;
 
+const ImageContainer = styled.div`
+  
+`;
+
 const ProductsContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
