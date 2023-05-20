@@ -22,7 +22,7 @@ const ProductList = ({ products }) => {
           <Message>No results found!</Message>
         </ImageContainer>
       </Container>
-    )
+    );
   }
 
   return (
