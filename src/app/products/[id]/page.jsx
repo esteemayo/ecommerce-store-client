@@ -317,7 +317,7 @@ const ImageWrapper = styled.figure`
   align-items: center;
   gap: 1rem;
 
-  & > img {
+  img {
     display: block;
     width: 50rem;
     height: 65rem;
