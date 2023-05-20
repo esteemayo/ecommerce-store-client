@@ -93,6 +93,7 @@ const RatingContainer = styled.div`
 
     @media only screen and (max-width: 18.75em) {
       font-size: 1.87rem;
+      margin-right: 3px;
     }
   }
 `;
