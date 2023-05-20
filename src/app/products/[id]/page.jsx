@@ -321,7 +321,7 @@ const ImageWrapper = styled.figure`
 
   img {
     display: block;
-    width: 50rem;
+    width: 35rem;
     height: 65rem;
     object-fit: cover;
     border-radius: 0.5rem;
