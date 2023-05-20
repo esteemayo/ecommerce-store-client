@@ -63,6 +63,10 @@ const Container = styled.section`
   width: 100vw;
   padding: 10rem 0;
   background-color: #f4f8f7;
+
+  @media only screen and (max-width: 64em) {
+    padding-top: 8rem;
+  }
 `;
 
 const HeadingContainer = styled.div`
