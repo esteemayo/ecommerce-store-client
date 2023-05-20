@@ -70,7 +70,7 @@ const ImageContainer = styled.div`
 `;
 
 const Message = styled.span`
-  
+  font-size: 2rem;
 `;
 
 const ProductsContainer = styled.div`
