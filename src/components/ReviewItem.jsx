@@ -164,6 +164,10 @@ const Button = styled.button`
       color: inherit;
       outline-color: #ccc;
     }
+
+    &:active {
+      color: currentColor;
+    }
   }
 `;
 
