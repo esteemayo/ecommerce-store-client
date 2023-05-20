@@ -231,6 +231,10 @@ const Select = styled.select`
   @media only screen and (max-width: 31.25em) {
     width: 40rem;
   }
+
+  @media only screen and (max-width: 25em) {
+    width: 39rem;
+  }
 `;
 
 const Option = styled.option`
