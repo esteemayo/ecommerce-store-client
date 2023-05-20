@@ -227,7 +227,7 @@ const Select = styled.select`
   outline-color: #eee;
 
   @media only screen and (max-width: 37.5em) {
-    width: 26rem;
+    width: 60rem;
   }
 
   @media only screen and (max-width: 31.25em) {
