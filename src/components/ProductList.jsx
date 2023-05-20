@@ -19,6 +19,7 @@ const ProductList = ({ products }) => {
             height={250}
             alt=''
           />
+          <Message>No results found!</Message>
         </ImageContainer>
       </Container>
     )
