@@ -72,6 +72,10 @@ const Left = styled.div`
   @media only screen and (max-width: 64em) {
     padding-left: 3rem;
   }
+
+  @media only screen and (max-width: 50em) {
+    gap: 3rem;
+  }
 `;
 
 const RatingContainer = styled.div`
