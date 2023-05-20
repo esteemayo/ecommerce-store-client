@@ -57,6 +57,10 @@ const ImageContainer = styled.div`
   
 `;
 
+const Message = styled.span`
+  
+`;
+
 const ProductsContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
