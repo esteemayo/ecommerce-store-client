@@ -110,6 +110,10 @@ const Review = styled.p`
   font-weight: 600;
   font-size: 1.8rem;
   color: var(--clr-black);
+
+  @media only screen and (max-width: 18.75em) {
+    width: 60%;
+  }
 `;
 
 const Reviewer = styled.span`
