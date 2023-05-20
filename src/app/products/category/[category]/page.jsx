@@ -173,6 +173,10 @@ const FilterLeft = styled.div`
     align-items: center;
     gap: 2rem;
   }
+
+  @media only screen and (max-width: 31.25em) {
+    gap: 1.5rem;
+  }
 `;
 
 const FilterRight = styled.div`
