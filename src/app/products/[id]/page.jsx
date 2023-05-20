@@ -297,6 +297,8 @@ const Container = styled.main`
 
 const Wrapper = styled.div`
   width: 100%;
+  max-width: 120rem;
+  margin: 0 auto;
 `;
 
 const ProductContainer = styled.div`
