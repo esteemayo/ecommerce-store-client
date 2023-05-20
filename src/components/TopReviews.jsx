@@ -11,7 +11,7 @@ const TopReviews = () => {
   const reviewRef = useRef();
   const [isMoved, setIsMoved] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [clickLimit, setClickLimit] = useState(window.innerWidth);
+  const [clickLimit, setClickLimit] = useState(window.innerWidth / 730);
 
   const lastIndex = topReviews.lastIndexOf(topReviews.slice(-1)[0]);
 
