@@ -21,8 +21,6 @@ const Container = styled.section`
 
   @media only screen and (max-width: 37.5em) {
     padding-bottom: 5rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
   }
 `;
 
