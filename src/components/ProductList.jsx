@@ -3,7 +3,6 @@ import { useState } from 'react';
 
 import CartModal from './CartModal';
 import ProductCard from './ProductCard';
-import Image from 'next/image';
 
 const ProductList = ({ products }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
