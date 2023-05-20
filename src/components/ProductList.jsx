@@ -63,6 +63,10 @@ const ImageContainer = styled.div`
   justify-content: center;
   padding-bottom: 3rem;
 
+  @media only screen and (max-width: 25em) {
+    width: 35rem;
+  }
+
   img {
     width: 100%;
     height: 100%;
