@@ -131,6 +131,7 @@ const IconButton = styled.button`
 
   @media only screen and (max-width: 43.75em) {
     width: 3.5rem;
+    height: 3.5rem;
   }
 
   svg {
