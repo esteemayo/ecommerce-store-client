@@ -64,6 +64,10 @@ const Left = styled.div`
   height: 100%;
   padding: 8rem 0 10rem 4rem;
   background-color: var(--clr-white);
+
+  @media only screen and (max-width: 64em) {
+    padding-left: 3rem;
+  }
 `;
 
 const RatingContainer = styled.div`
