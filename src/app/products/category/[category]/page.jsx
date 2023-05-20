@@ -228,6 +228,7 @@ const Select = styled.select`
 
   @media only screen and (max-width: 37.5em) {
     width: 60rem;
+    padding: 1rem;
   }
 
   @media only screen and (max-width: 31.25em) {
