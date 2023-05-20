@@ -125,6 +125,10 @@ const IconButton = styled.button`
   align-items: center;
   justify-content: center;
 
+  @media only screen and (max-width: 50em) {
+    left: ${({ direction }) => direction === 'left' && '4.5rem'};
+  }
+
   svg {
     color: inherit;
   }
