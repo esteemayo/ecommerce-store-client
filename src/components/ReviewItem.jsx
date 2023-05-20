@@ -45,6 +45,7 @@ const Container = styled.article`
 
   @media only screen and (max-width: 64em) {
     height: 45rem;
+    max-height: 45rem;
   }
 
   @media only screen and (max-width: 50em) {
