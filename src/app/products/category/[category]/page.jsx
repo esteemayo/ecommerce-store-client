@@ -142,11 +142,6 @@ const Container = styled.main`
 const FilterContainer = styled.section`
   padding: 7rem 0;
   width: 100%;
-
-  @media only screen and (max-width: 37.5em) {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-  }
 `;
 
 const FilterHeading = styled.h1`
