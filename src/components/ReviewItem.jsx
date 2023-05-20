@@ -76,6 +76,7 @@ const Left = styled.div`
   }
 
   @media only screen and (max-width: 50em) {
+    padding-top: 5rem;
     gap: 3rem;
   }
 `;
