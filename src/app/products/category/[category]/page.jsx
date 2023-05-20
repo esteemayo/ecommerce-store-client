@@ -155,7 +155,6 @@ const FilterWrapper = styled.div`
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 7rem;
 `;
 
 const FilterLeft = styled.div`
