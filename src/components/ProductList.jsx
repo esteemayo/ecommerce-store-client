@@ -16,7 +16,7 @@ const ProductList = ({ products }) => {
           <Image
             src='/img/no-result.png'
             width={500}
-            height={300}
+            height={250}
             alt=''
           />
         </ImageContainer>
