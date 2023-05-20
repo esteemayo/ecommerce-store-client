@@ -24,7 +24,7 @@ const TopReviews = () => {
       reviewRef.current.style.transform = `translateX(${730 + distance}px)`;
     }
 
-    if (direction === 'right' && currentSlide < 8) {
+    if (direction === 'right' && currentSlide < 8 - clickLimit) {
       setCurrentSlide(currentSlide + 1);
       reviewRef.current.style.transform = `translateX(${-730 + distance}px)`;
     }
