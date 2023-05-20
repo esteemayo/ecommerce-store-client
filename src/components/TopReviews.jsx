@@ -129,6 +129,10 @@ const IconButton = styled.button`
     left: ${({ direction }) => direction === 'left' && '4.5rem'};
   }
 
+  @media only screen and (max-width: 43.75em) {
+    width: 3.5rem;
+  }
+
   svg {
     color: inherit;
   }
