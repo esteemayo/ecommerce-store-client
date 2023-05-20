@@ -119,10 +119,6 @@ const Container = styled.main`
   @media only screen and (max-width: 64em) {
     max-width: 100rem;
   }
-
-  @media only screen and (max-width: 43.75em) {
-    max-width: 75rem;
-  }
 `;
 
 const FilterContainer = styled.section`
