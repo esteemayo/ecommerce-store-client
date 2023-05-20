@@ -56,6 +56,7 @@ const Container = styled.section`
 
 const ImageContainer = styled.div`
   display: flex;
+  flex-direction: column;
 `;
 
 const Message = styled.span`
