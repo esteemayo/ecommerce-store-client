@@ -55,7 +55,7 @@ const Container = styled.section`
 `;
 
 const ImageContainer = styled.div`
-  
+  display: flex;
 `;
 
 const Message = styled.span`
