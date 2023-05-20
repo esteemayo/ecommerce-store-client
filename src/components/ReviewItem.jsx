@@ -141,7 +141,7 @@ const Button = styled.button`
   flex-direction: column;
 
   @media only screen and (max-width: 18.75em) {
-    font-size: 1.65rem;
+    font-size: 1.7rem;
   }
 
   &:hover {
