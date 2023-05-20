@@ -150,10 +150,6 @@ const FilterHeading = styled.h1`
   font-size: 2.25rem;
   margin-bottom: 1rem;
 
-  @media only screen and (max-width: 26.25em) {
-    width: 24rem;
-  }
-
   @media only screen and (max-width: 24.5625em) {
     width: 21rem;
   }
