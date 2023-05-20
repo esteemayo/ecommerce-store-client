@@ -69,6 +69,10 @@ const HeadingContainer = styled.div`
   width: 100%;
   max-width: 120rem;
   margin: 0 auto;
+
+  @media only screen and (max-width: 64em) {
+    max-width: 100rem;
+  }
 `;
 
 const Wrapper = styled.div`
