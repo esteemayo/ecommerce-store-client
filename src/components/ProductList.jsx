@@ -66,6 +66,10 @@ const ImageContainer = styled.div`
     height: 25rem;
     display: block;
     object-fit: cover;
+
+    @media only screen and (max-width: 25em) {
+      width: 40rem;
+    }
   }
 `;
 
