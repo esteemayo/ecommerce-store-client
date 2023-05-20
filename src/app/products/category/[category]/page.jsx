@@ -256,8 +256,6 @@ const ProductWrapper = styled.div`
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  row-gap: 4rem;
-  column-gap: 1rem;
 
   @media only screen and (max-width: 37.5em) {
     padding: 4rem 0;
