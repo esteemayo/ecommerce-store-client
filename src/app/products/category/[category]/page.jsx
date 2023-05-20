@@ -252,8 +252,6 @@ const Option = styled.option`
 `;
 
 const ProductWrapper = styled.div`
-  width: 100%;
-  padding: 8rem 0;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
