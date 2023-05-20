@@ -13,7 +13,12 @@ const ProductList = ({ products }) => {
     return (
       <Container>
         <ImageContainer>
-          <Image src='/img/no-result.png' width={500} height={300} alt='' />
+          <Image
+            src='/img/no-result.png'
+            width={500}
+            height={300}
+            alt=''
+          />
         </ImageContainer>
       </Container>
     )
