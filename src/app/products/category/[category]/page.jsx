@@ -150,12 +150,6 @@ const FilterHeading = styled.h1`
   font-size: 2.25rem;
   margin-bottom: 1rem;
 
-  @media only screen and (max-width: 37.5em) {
-    width: 44rem;
-    display: flex;
-    justify-content: center;
-  }
-
   @media only screen and (max-width: 33.75em) {
     width: 40rem;
   }
