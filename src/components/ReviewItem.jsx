@@ -42,6 +42,10 @@ const Container = styled.article`
   height: 50rem;
   max-height: 50rem;
   margin-right: 30px;
+
+  @media only screen and (max-width: 64em) {
+    height: 45rem;
+  }
 `;
 
 const Wrapper = styled.div`
