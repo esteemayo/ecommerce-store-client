@@ -59,6 +59,11 @@ const ImageContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  img {
+    width: 50rem;
+    height: 25rem;
+  }
 `;
 
 const Message = styled.span`
