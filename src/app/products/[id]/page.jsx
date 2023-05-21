@@ -133,13 +133,13 @@ const SingleProduct = ({ params }) => {
                   )
                 })}
               </ImageWrapper>
-                <IconButton
-                  type='button'
-                  direction='right'
-                  onClick={() => handleDirection('right')}
-                >
-                  <FontAwesomeIcon icon={faArrowRight} />
-                </IconButton>
+              <IconButton
+                type='button'
+                direction='right'
+                onClick={() => handleDirection('right')}
+              >
+                <FontAwesomeIcon icon={faArrowRight} />
+              </IconButton>
               </ImageWrapper>
             </ImagesContainer>
           </Left>
