@@ -111,34 +111,36 @@ const SingleProduct = ({ params }) => {
       <Wrapper>
         <ProductContainer>
           <Left>
-            <ImageWrapper ref={imgContainerRef}>
-              <IconButton
-                type='button'
-                direction='left'
-                onClick={() => handleDirection('left')}
-              >
-                <FontAwesomeIcon icon={faArrowLeft} />
-              </IconButton>
-              {product?.images?.map((item, index) => {
-                return (
-                  <Image
-                    key={index}
-                    src={item}
-                    width={350}
-                    height={350}
-                    alt=''
-                    onClick={() => handleOpen(index)}
-                  />
-                )
-              })}
-              <IconButton
-                type='button'
-                direction='right'
-                onClick={() => handleDirection('right')}
-              >
-                <FontAwesomeIcon icon={faArrowRight} />
-              </IconButton>
-            </ImageWrapper>
+            <ImagesContainer>
+              <ImageWrapper ref={imgContainerRef}>
+                <IconButton
+                  type='button'
+                  direction='left'
+                  onClick={() => handleDirection('left')}
+                >
+                  <FontAwesomeIcon icon={faArrowLeft} />
+                </IconButton>
+                {product?.images?.map((item, index) => {
+                  return (
+                    <Image
+                      key={index}
+                      src={item}
+                      width={350}
+                      height={350}
+                      alt=''
+                      onClick={() => handleOpen(index)}
+                    />
+                  )
+                })}
+                <IconButton
+                  type='button'
+                  direction='right'
+                  onClick={() => handleDirection('right')}
+                >
+                  <FontAwesomeIcon icon={faArrowRight} />
+                </IconButton>
+              </ImageWrapper>
+            </ImagesContainer>
           </Left>
           <Right>
             <BreadCrumbs>
