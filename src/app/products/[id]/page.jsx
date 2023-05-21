@@ -115,7 +115,7 @@ const SingleProduct = ({ params }) => {
                 )
               })}
               <IconButton type='button'>
-                
+                <FontAwesomeIcon icon={faArrowRight} />
               </IconButton>
             </ImageWrapper>
           </Left>
