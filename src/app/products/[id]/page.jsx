@@ -140,7 +140,6 @@ const SingleProduct = ({ params }) => {
               >
                 <FontAwesomeIcon icon={faArrowRight} />
               </IconButton>
-              </ImageWrapper>
             </ImagesContainer>
           </Left>
           <Right>
