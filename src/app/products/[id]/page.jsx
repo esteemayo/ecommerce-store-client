@@ -29,8 +29,6 @@ const SingleProduct = ({ params }) => {
   const [isSelected, setIsSelected] = useState(null);
   const [reviews, setReviews] = useState(reviewItems);
   const [selectedSize, setSelectedSize] = useState(null);
-
-  const colors = ['black', 'pink', 'crimson'];
   const sizes = ['XS', 'S', 'M', 'L', 'XL', 'XXL'];
 
   const images = [
