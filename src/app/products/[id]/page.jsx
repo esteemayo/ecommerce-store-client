@@ -119,6 +119,7 @@ const SingleProduct = ({ params }) => {
               >
                 <FontAwesomeIcon icon={faArrowLeft} />
               </IconButton>
+              <ImageWrapper ref={imgContainerRef}>
                 {product?.images?.map((item, index) => {
                   return (
                     <Image
