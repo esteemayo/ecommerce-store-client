@@ -118,7 +118,7 @@ const SingleProduct = ({ params }) => {
                   <Image
                     key={index}
                     src={item}
-                    width={500}
+                    width={350}
                     height={700}
                     alt=''
                     onClick={() => handleOpen(index)}
