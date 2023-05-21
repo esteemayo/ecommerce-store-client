@@ -320,6 +320,10 @@ const ImageWrapper = styled.figure`
     object-fit: cover;
     border-radius: 0.5rem;
     cursor: pointer;
+
+    @media only screen and (max-width: 64em) {
+      width: 30rem;
+    }
   }
 `;
 
