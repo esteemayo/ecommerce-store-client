@@ -257,7 +257,7 @@ const SingleProduct = ({ params }) => {
           )}
           <ImageContainer className='imageContainer' onClick={closeModalHandler}>
             <Image
-              src={product && product.images[slideIndex]}
+              src={product?.image ? product?.images[slideIndex] : '/img/img-1.jpg'}
               width={1200}
               height={1000}
               alt=''
