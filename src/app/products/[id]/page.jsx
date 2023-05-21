@@ -83,7 +83,7 @@ const SingleProduct = ({ params }) => {
 
     if (direction === 'right') {
       setSlideNumber((prev) => prev + 1);
-      imgContainerRef.current.style.transform = `transformX(${-235 + distance}px)`;
+      imgContainerRef.current.style.transform = `translateX(${-235 + distance}px)`;
     }
   };
 
