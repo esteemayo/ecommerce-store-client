@@ -100,6 +100,11 @@ const SingleProduct = ({ params }) => {
     console.log({ size, color, quantity });
   };
 
+  useEffect(() => {
+    const product = storeProducts.find((item) => item.id === parseInt(id));
+    setProduct(product);
+  }, [id]);
+
   return (
     <Container onMouseOver={() => dispatch(closeSubmenu())}>
       <Wrapper>
