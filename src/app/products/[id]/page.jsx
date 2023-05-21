@@ -159,7 +159,7 @@ const SingleProduct = ({ params }) => {
                 <Link href='#' passHref>Learn more</Link>
               </Message>
               <Rating>
-                <StarRating value={0} />
+                <StarRating value={product.ratingsAverage} />
                 <ReviewQuantity>
                   <a href='#reviews'>{product.ratingsQuantity} Review</a>
                 </ReviewQuantity>
