@@ -376,6 +376,10 @@ const IconButton = styled.button`
   transform: translate(-50%);
   z-index: 1000;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   @media only screen and (min-width: 50em) {
     display: none;
   }
