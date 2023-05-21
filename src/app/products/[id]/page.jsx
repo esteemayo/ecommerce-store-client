@@ -296,6 +296,10 @@ const ProductContainer = styled.div`
   align-items: start;
   justify-content: space-between;
   margin-bottom: 3rem;
+
+  @media only screen and (max-width: 64em) {
+    max-width: 100rem;
+  }
 `;
 
 const Left = styled.div`
