@@ -113,7 +113,7 @@ const SingleProduct = ({ params }) => {
         <ProductContainer>
           <Left>
             <ImageWrapper>
-              {product.images.map((item, index) => {
+              {product?.images?.map((item, index) => {
                 return (
                   <Image
                     key={index}
