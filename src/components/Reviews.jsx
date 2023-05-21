@@ -133,7 +133,7 @@ const Wrapper = styled.div`
   width: 100%;
   max-width: 120rem;
   margin: 0 auto;
-  padding: 6rem 4rem;
+  padding: 6rem 0;
 `;
 
 const Heading = styled.h1`
