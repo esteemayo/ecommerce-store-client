@@ -364,6 +364,7 @@ const ImageWrapper = styled.figure`
   @media only screen and (max-width: 50em) {
     flex-wrap: nowrap;
     width: max-content;
+    transition: all 0.3s ease;
   }
 
   img {
