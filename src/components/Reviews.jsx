@@ -133,7 +133,6 @@ const Wrapper = styled.div`
   max-width: 120rem;
   margin: 0 auto;
   padding: 6rem 4rem;
-  background-color: #f4f8f7;
 `;
 
 const Heading = styled.h1`
