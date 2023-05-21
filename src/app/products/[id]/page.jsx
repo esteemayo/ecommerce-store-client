@@ -358,6 +358,8 @@ const ImageWrapper = styled.figure`
 
 const IconButton = styled.button`
   border: none;
+  width: 4rem;
+  height: 4rem;
 `;
 
 const Right = styled.div`
