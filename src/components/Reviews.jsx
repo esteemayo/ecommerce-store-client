@@ -125,6 +125,7 @@ const Reviews = () => {
 const Container = styled.section`
   width: 100vw;
   background-color: var(--clr-white);
+  background-color: #f4f8f7;
   padding-bottom: 4rem;
 `;
 
