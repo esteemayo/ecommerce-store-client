@@ -30,15 +30,6 @@ const SingleProduct = ({ params }) => {
   const [reviews, setReviews] = useState(reviewItems);
   const [selectedSize, setSelectedSize] = useState(null);
 
-  const images = [
-    '/img/img-2.jpg',
-    '/img/img-3.jpg',
-    '/img/img-5.jpg',
-    '/img/img-7.jpg',
-    '/img/img-10.jpg',
-    '/img/img-12.jpg',
-  ];
-
   const lastIndex = images.lastIndexOf(images[images.length - 1]);
 
   const handleOpen = (index) => {
