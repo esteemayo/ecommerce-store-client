@@ -75,7 +75,6 @@ const SingleProduct = ({ params }) => {
   const handleDirection = (direction) => {
     setIsSliderMoved(true);
     const distance = imgContainerRef.current.getBoundingClientRect().x;
-    console.log(distance);
 
     if (direction === 'left' && slideNumber > 0) {
       setSlideNumber((prev) => prev - 1);
