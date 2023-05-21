@@ -380,6 +380,10 @@ const IconButton = styled.button`
   align-items: center;
   justify-content: center;
 
+  svg {
+    color: inherit;
+  }
+
   @media only screen and (min-width: 50em) {
     display: none;
   }
