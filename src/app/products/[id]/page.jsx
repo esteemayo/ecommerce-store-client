@@ -74,11 +74,17 @@ const SingleProduct = ({ params }) => {
 
   const handleDirection = (direction) => {
     setIsSliderMoved(true);
-    const distance = imgContainerRef.current.getBoundingClientRect();
+    const distance = imgContainerRef.current.getBoundingClientRect().x;
     console.log(distance);
 
     if (direction === 'left') {
+      setSlideNumber((prev) => prev - 1);
+      imgContainerRef.current.style.transform = `translateX(${235 + distance}px)`;
+    }
 
+    if (direction === 'right') {
+      setSlideNumber((prev) => prev + 1);
+      imgContainerRef.current.style.transform = `transformX(${-235 + distance}px)`;
     }
   };
 
