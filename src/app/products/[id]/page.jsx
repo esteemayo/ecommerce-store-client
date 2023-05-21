@@ -130,7 +130,7 @@ const SingleProduct = ({ params }) => {
           <Right>
             <BreadCrumbs>
               <Link href='/' passHref>Home</Link> / {' '}
-              <Link href='#' passHref>Shirts</Link>
+              <Link href='#' passHref>{product.category}</Link>
             </BreadCrumbs>
             <ProductWrapper>
               <ProductName>{product.name}</ProductName>
