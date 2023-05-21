@@ -328,6 +328,11 @@ const ImageWrapper = styled.figure`
     @media only screen and (max-width: 64em) {
       width: 30rem;
     }
+
+    @media only screen and (max-width: 59.375em) {
+      width: 23rem;
+      height: 30rem;
+    }
   }
 `;
 
