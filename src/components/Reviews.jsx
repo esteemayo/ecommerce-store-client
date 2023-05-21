@@ -130,6 +130,8 @@ const Container = styled.section`
 
 const Wrapper = styled.div`
   width: 100%;
+  max-width: 120rem;
+  margin: 0 auto;
   padding: 6rem 4rem;
   background-color: #f4f8f7;
 `;
