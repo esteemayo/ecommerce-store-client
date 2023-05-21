@@ -32,6 +32,7 @@ const SingleProduct = ({ params }) => {
   const [reviews, setReviews] = useState(reviewItems);
   const [selectedSize, setSelectedSize] = useState(null);
   const [isSliderMoved, setIsSliderMoved] = useState(false);
+  const [clickLimit, setClickLimit] = useState(window.innerWidth / 235);
 
   const lastIndex = product?.images?.lastIndexOf(product?.images[product?.images.length - 1]);
 
