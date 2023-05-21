@@ -99,9 +99,9 @@ const SingleProduct = ({ params }) => {
         <ProductContainer>
           <Left>
             <ImageWrapper>
-              <ArrowButton type='button'>
+              <IconButton type='button'>
 
-              </ArrowButton>
+              </IconButton>
               {product?.images?.map((item, index) => {
                 return (
                   <Image
