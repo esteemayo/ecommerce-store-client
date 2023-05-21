@@ -119,7 +119,7 @@ const SingleProduct = ({ params }) => {
                     key={index}
                     src={item}
                     width={350}
-                    height={700}
+                    height={350}
                     alt=''
                     onClick={() => handleOpen(index)}
                   />
