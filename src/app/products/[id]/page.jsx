@@ -74,7 +74,8 @@ const SingleProduct = ({ params }) => {
 
   const handleDirection = (direction) => {
     setIsSliderMoved(true);
-    const distance = ''
+    const distance = imgContainerRef.current.getBoundingClientRect();
+    console.log(distance);
 
     if (direction === 'left') {
 
@@ -110,7 +111,7 @@ const SingleProduct = ({ params }) => {
       <Wrapper>
         <ProductContainer>
           <Left>
-            <ImageWrapper>
+            <ImageWrapper ref={imgContainerRef}>
               <IconButton
                 type='button'
                 direction='left'
