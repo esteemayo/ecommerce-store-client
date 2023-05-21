@@ -353,7 +353,7 @@ const ImageWrapper = styled.figure`
   }
 `;
 
-const ArrowButton = styled.button`
+const IconButton = styled.button`
   
 `;
 
