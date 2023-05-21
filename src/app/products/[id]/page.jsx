@@ -302,6 +302,7 @@ const Wrapper = styled.div`
 const ProductContainer = styled.div`
   max-width: 120rem;
   margin: 0 auto;
+  padding-top: 8rem;
   display: flex;
   align-items: start;
   justify-content: space-between;
