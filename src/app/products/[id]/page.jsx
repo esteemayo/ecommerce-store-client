@@ -112,13 +112,13 @@ const SingleProduct = ({ params }) => {
         <ProductContainer>
           <Left>
             <ImagesContainer>
-                <IconButton
-                  type='button'
-                  direction='left'
-                  onClick={() => handleDirection('left')}
-                >
-                  <FontAwesomeIcon icon={faArrowLeft} />
-                </IconButton>
+              <IconButton
+                type='button'
+                direction='left'
+                onClick={() => handleDirection('left')}
+              >
+                <FontAwesomeIcon icon={faArrowLeft} />
+              </IconButton>
                 {product?.images?.map((item, index) => {
                   return (
                     <Image
