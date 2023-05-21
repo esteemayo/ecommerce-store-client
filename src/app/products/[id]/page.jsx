@@ -362,6 +362,7 @@ const IconButton = styled.button`
   height: 4rem;
   background-color: var(--clr-white);
   color: #777;
+  border-radius: 50%;
 `;
 
 const Right = styled.div`
