@@ -132,6 +132,7 @@ const SingleProduct = ({ params }) => {
                     />
                   )
                 })}
+              </ImageWrapper>
                 <IconButton
                   type='button'
                   direction='right'
