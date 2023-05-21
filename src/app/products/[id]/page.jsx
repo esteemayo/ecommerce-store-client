@@ -346,7 +346,7 @@ const Left = styled.div`
 `;
 
 const ImagesContainer = styled.div`
-  
+  position: relative;
 `;
 
 const ImageWrapper = styled.figure`
