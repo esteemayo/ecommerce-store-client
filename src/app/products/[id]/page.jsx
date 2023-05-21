@@ -100,7 +100,7 @@ const SingleProduct = ({ params }) => {
           <Left>
             <ImageWrapper>
               <IconButton type='button'>
-
+                <FontAwesomeIcon icon={faArrowLeft} />
               </IconButton>
               {product?.images?.map((item, index) => {
                 return (
