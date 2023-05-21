@@ -118,7 +118,11 @@ const SingleProduct = ({ params }) => {
                   />
                 )
               })}
-              <IconButton type='button' direction='right' onClick={() => handleDirection('right')}>
+              <IconButton
+                type='button'
+                direction='right'
+                onClick={() => handleDirection('right')}
+              >
                 <FontAwesomeIcon icon={faArrowRight} />
               </IconButton>
             </ImageWrapper>
