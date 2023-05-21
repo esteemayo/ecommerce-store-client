@@ -26,6 +26,7 @@ const SingleProduct = ({ params }) => {
   const [quantity, setQuantity] = useState(1);
   const [isMoved, setIsMoved] = useState(false);
   const [slideIndex, setSlideIndex] = useState(0);
+  const [slideNumber, setSlideNumber] = useState(0);
   const [isSelected, setIsSelected] = useState(null);
   const [reviews, setReviews] = useState(reviewItems);
   const [selectedSize, setSelectedSize] = useState(null);
