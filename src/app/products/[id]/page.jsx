@@ -281,6 +281,7 @@ const Container = styled.main`
   width: 100vw;
   min-height: 100vh;
   background-color: var(--clr-white);
+  padding-top: 8rem;
   padding-bottom: 4rem;
 `;
 
