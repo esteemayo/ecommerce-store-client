@@ -168,7 +168,7 @@ const SingleProduct = ({ params }) => {
               <ColorContainer>
                 <ProductColor>Color</ProductColor>
                 <ColorWrapper>
-                  {colors.map((color, index) => {
+                  {product.color.map((color, index) => {
                     return (
                       <Color
                         key={index}
