@@ -19,6 +19,7 @@ const SingleProduct = ({ params }) => {
   const { id } = params;
   const dispatch = useDispatch();
 
+  const imgContainerRef = useRef();
   const [size, setSize] = useState(null);
   const [color, setColor] = useState(null);
   const [product, setProduct] = useState({});
