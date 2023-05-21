@@ -114,6 +114,9 @@ const SingleProduct = ({ params }) => {
                   />
                 )
               })}
+              <IconButton type='button'>
+                
+              </IconButton>
             </ImageWrapper>
           </Left>
           <Right>
