@@ -189,7 +189,7 @@ const SingleProduct = ({ params }) => {
                 <SizeHeading>Select a size</SizeHeading>
                 {product.size && (
                   <SizeContainer>
-                    {product.size.map((size, index) => {
+                    {product?.size?.map((size, index) => {
                       return (
                         <SelectSize
                           key={index}
