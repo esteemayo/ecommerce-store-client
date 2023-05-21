@@ -87,6 +87,10 @@ const Container = styled.section`
   max-width: 120rem;
   margin: 0 auto;
   margin-bottom: 10rem;
+
+  @media only screen and (max-width: 64em) {
+    max-width: 100rem;
+  }
 `;
 
 const Heading = styled.h1`
