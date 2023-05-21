@@ -137,7 +137,7 @@ const SingleProduct = ({ params }) => {
               <PriceContainer>
                 <ProductPrice>
                   <NumericFormat
-                    value='199.00'
+                    value={product.price}
                     displayType={'text'}
                     thousandSeparator={true}
                     prefix={'$'}
