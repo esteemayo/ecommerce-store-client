@@ -497,6 +497,10 @@ const ColorWrapper = styled.div`
   align-items: center;
   gap: 2.6rem;
   margin: 1.5rem 0;
+
+  @media only screen and (max-width: 59.375em) {
+    gap: 2.35rem;
+  }
 `;
 
 const Color = styled.button`
