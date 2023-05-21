@@ -77,7 +77,7 @@ const SingleProduct = ({ params }) => {
     const distance = imgContainerRef.current.getBoundingClientRect().x;
     console.log(distance);
 
-    if (direction === 'left') {
+    if (direction === 'left' && slideNumber > 0) {
       setSlideNumber((prev) => prev - 1);
       imgContainerRef.current.style.transform = `translateX(${235 + distance}px)`;
     }
