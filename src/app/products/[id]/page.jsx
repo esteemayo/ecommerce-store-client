@@ -2,7 +2,7 @@
 import styled from 'styled-components';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import CloseIcon from '@mui/icons-material/Close';
 import Image from 'next/image';
 import { NumericFormat } from 'react-number-format';
