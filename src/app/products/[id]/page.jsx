@@ -30,6 +30,8 @@ const SingleProduct = ({ params }) => {
   const [reviews, setReviews] = useState(reviewItems);
   const [selectedSize, setSelectedSize] = useState(null);
 
+  console.log(product)
+
   const colors = ['black', 'pink', 'crimson'];
   const sizes = ['XS', 'S', 'M', 'L', 'XL', 'XXL'];
 
@@ -131,7 +133,7 @@ const SingleProduct = ({ params }) => {
               <Link href='#' passHref>Shirts</Link>
             </BreadCrumbs>
             <ProductWrapper>
-              <ProductName>The Stanley Rain Jacket in Black</ProductName>
+              <ProductName>{product.name}</ProductName>
               <PriceContainer>
                 <ProductPrice>
                   <NumericFormat
