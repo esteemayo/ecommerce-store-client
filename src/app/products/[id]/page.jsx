@@ -343,6 +343,10 @@ const Left = styled.div`
   padding: 1rem 0;
 `;
 
+const ImagesContainer = styled.div`
+  
+`;
+
 const ImageWrapper = styled.figure`
   display: flex;
   flex-wrap: wrap;
