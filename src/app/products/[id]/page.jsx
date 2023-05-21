@@ -322,6 +322,11 @@ const ImageWrapper = styled.figure`
   align-items: center;
   gap: 1rem;
 
+  @media only screen and (max-width: 50em) {
+    flex-wrap: nowrap;
+    width: max-content;
+  }
+
   img {
     display: block;
     width: 35rem;
