@@ -86,7 +86,6 @@ const Container = styled.section`
   width: 100vw;
   max-width: 120rem;
   margin: 0 auto;
-  padding: 0 4rem;
   margin-bottom: 10rem;
 `;
 
