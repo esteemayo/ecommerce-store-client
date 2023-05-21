@@ -350,6 +350,10 @@ const ImageWrapper = styled.figure`
   }
 `;
 
+const ArrowButton = styled.button`
+  
+`;
+
 const Right = styled.div`
   flex: 1;
   padding-top: 5rem;
