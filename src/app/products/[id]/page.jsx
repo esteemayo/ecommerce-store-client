@@ -371,6 +371,8 @@ const IconButton = styled.button`
   cursor: pointer;
   position: absolute;
   top: 50%;
+  left: ${({ direction }) => direction === 'left' && '8.2rem'};
+  right: ${({ direction }) => direction === 'right' && 0};
 
   @media only screen and (min-width: 50em) {
     display: none;
