@@ -369,6 +369,10 @@ const IconButton = styled.button`
   -moz-box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.04);
   outline-color: #777;
   cursor: pointer;
+
+  @media only screen and (min-width: 50em) {
+    display: none;
+  }
 `;
 
 const Right = styled.div`
