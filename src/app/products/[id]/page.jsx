@@ -144,6 +144,7 @@ const SingleProduct = ({ params }) => {
                 type='button'
                 direction='right'
                 onClick={() => handleDirection('right')}
+                style={{ display: slideNumber === lastIndex && 'none' }}
               >
                 <FontAwesomeIcon icon={faArrowRight} />
               </IconButton>
