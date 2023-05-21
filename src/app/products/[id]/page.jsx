@@ -390,6 +390,7 @@ const ProductName = styled.h1`
 
   @media only screen and (max-width: 59.375em) {
     font-size: 2.25rem;
+    margin-bottom: 1.75rem;
   }
 `;
 
