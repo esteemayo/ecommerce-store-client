@@ -100,7 +100,7 @@ const Heading = styled.h1`
 const Wrapper = styled.div`
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
 `;
 
 const ProductWrapper = styled.div`
