@@ -30,7 +30,6 @@ const SingleProduct = ({ params }) => {
   const [isSelected, setIsSelected] = useState(null);
   const [reviews, setReviews] = useState(reviewItems);
   const [selectedSize, setSelectedSize] = useState(null);
-  const [imgContainerRef, setImgContainerRef] = useRef();
   const [isSliderMoved, setIsSliderMoved] = useState(false);
 
   const lastIndex = product?.images?.lastIndexOf(product?.images[product?.images.length - 1]);
