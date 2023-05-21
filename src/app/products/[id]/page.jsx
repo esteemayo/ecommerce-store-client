@@ -300,7 +300,7 @@ const ProductContainer = styled.div`
 
 const Left = styled.div`
   flex: 2;
-  padding: 1rem;
+  padding: 1rem 0;
 `;
 
 const ImageWrapper = styled.figure`
