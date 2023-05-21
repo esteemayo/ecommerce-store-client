@@ -30,7 +30,7 @@ const SingleProduct = ({ params }) => {
   const [reviews, setReviews] = useState(reviewItems);
   const [selectedSize, setSelectedSize] = useState(null);
 
-  const lastIndex = images.lastIndexOf(images[images.length - 1]);
+  const lastIndex = product?.images?.lastIndexOf(product?.images[product?.images.length - 1]);
 
   const handleOpen = (index) => {
     setSlideIndex(index);
