@@ -387,6 +387,10 @@ const ProductName = styled.h1`
   font-size: 2.4rem;
   line-height: 1.3;
   margin-bottom: 2rem;
+
+  @media only screen and (max-width: 59.375em) {
+    font-size: 2.25rem;
+  }
 `;
 
 const PriceContainer = styled.div`
