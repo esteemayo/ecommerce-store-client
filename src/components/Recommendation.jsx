@@ -133,6 +133,10 @@ const ProductContainer = styled.div`
       color: inherit;
       outline-color: #ddd;
     }
+
+    &:active {
+      color: currentColor;
+    }
   }
 `;
 
