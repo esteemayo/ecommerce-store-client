@@ -69,6 +69,10 @@ const SingleProduct = ({ params }) => {
     setSlideIndex(newSlideIndex);
   };
 
+  const handleDirection = (direction) => {
+    console.log(direction);
+  };
+
   const handleColor = (color) => {
     setColor(color);
     setIsSelected(color);
