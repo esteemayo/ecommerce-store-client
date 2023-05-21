@@ -30,8 +30,6 @@ const SingleProduct = ({ params }) => {
   const [reviews, setReviews] = useState(reviewItems);
   const [selectedSize, setSelectedSize] = useState(null);
 
-  console.log(product)
-
   const colors = ['black', 'pink', 'crimson'];
   const sizes = ['XS', 'S', 'M', 'L', 'XL', 'XXL'];
 
