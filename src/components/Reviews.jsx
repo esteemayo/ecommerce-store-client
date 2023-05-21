@@ -132,6 +132,10 @@ const Wrapper = styled.div`
   max-width: 120rem;
   margin: 0 auto;
   padding: 6rem 0;
+
+  @media only screen and (max-width: 64em) {
+    max-width: 100rem;
+  }
 `;
 
 const Heading = styled.h1`
