@@ -357,7 +357,7 @@ const ImageWrapper = styled.figure`
 `;
 
 const IconButton = styled.button`
-  
+  border: none;
 `;
 
 const Right = styled.div`
