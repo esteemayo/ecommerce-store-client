@@ -343,6 +343,10 @@ const ImageWrapper = styled.figure`
       width: 23rem;
       height: 30rem;
     }
+
+    @media only screen and (max-width: 50em) {
+      width: 225px;
+    }
   }
 `;
 
