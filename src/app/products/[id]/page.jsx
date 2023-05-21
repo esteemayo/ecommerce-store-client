@@ -15,7 +15,8 @@ import { closeSubmenu } from '@/features/submenu/submenuSlice';
 import { reviewItems } from '@/data';
 import StarRating from '@/components/StarRating';
 
-const SingleProduct = () => {
+const SingleProduct = ({ params }) => {
+  const { id } = params;
   const dispatch = useDispatch();
 
   const [size, setSize] = useState(null);
