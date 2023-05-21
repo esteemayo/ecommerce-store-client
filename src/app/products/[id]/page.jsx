@@ -112,7 +112,6 @@ const SingleProduct = ({ params }) => {
         <ProductContainer>
           <Left>
             <ImagesContainer>
-              <ImageWrapper ref={imgContainerRef}>
                 <IconButton
                   type='button'
                   direction='left'
