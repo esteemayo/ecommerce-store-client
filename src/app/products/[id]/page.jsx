@@ -185,20 +185,22 @@ const SingleProduct = ({ params }) => {
               </ColorContainer>
               <SizeWrapper>
                 <SizeHeading>Select a size</SizeHeading>
-                <SizeContainer>
-                  {product.size.map((size, index) => {
-                    return (
-                      <SelectSize
-                        key={index}
-                        type='button'
-                        bcg={selectedSize === size}
-                        onClick={() => handleSize(size)}
-                      >
-                        {size}
-                      </SelectSize>
-                    );
-                  })}
-                </SizeContainer>
+                {product.size && (
+                  <SizeContainer>
+                    {product.size.map((size, index) => {
+                      return (
+                        <SelectSize
+                          key={index}
+                          type='button'
+                          bcg={selectedSize === size}
+                          onClick={() => handleSize(size)}
+                        >
+                          {size}
+                        </SelectSize>
+                      );
+                    })}
+                  </SizeContainer>
+                )}
               </SizeWrapper>
               <Hr />
               <AddContainer>
