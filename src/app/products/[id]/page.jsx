@@ -335,6 +335,7 @@ const Right = styled.div`
 
   @media only screen and (max-width: 64em) {
     padding-left: 2rem;
+    padding-right: 2rem;
   }
 `;
 
