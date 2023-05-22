@@ -64,6 +64,10 @@ const Container = styled.article`
   @media only screen and (max-width: 26.875em) {
     width: 45rem;
   }
+
+  @media only screen and (max-width: 25em) {
+    width: 40rem;
+  }
 `;
 
 const Wrapper = styled.div`
