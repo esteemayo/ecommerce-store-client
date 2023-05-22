@@ -158,6 +158,10 @@ const ProductWrapper = styled.div`
     @media only screen and (max-width: 31.25em) {
       width: 45rem;
     }
+
+    @media only screen and (max-width: 25em) {
+      width: 40rem;
+    }
   }
 `;
 
