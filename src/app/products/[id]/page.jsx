@@ -796,6 +796,10 @@ const Button = styled.button`
     padding-bottom: 1.75rem;
   }
 
+  @media only screen and (max-width: 37.5em) {
+    font-size: 1.7rem;
+  }
+
   &:hover {
     background-position: 100%;
   }
