@@ -760,6 +760,7 @@ const Amount = styled.span`
   @media only screen and (max-width: 37.5em) {
     width: 2.85rem;
     height: 2.85rem;
+    font-size: 1.3rem;
   }
 `;
 
