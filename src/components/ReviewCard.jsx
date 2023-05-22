@@ -165,6 +165,10 @@ const DateContainer = styled.div`
 const ReviewDate = styled.time`
   font-size: 1.4rem;
   color: #89a8a0;
+
+  @media only screen and (max-width: 26.875em) {
+    font-size: 1.35rem;
+  }
 `;
 
 const ShareButton = styled.button`
