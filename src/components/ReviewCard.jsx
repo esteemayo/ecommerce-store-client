@@ -143,6 +143,10 @@ const Avatar = styled.div`
     height: 4.5rem;
     font-size: 2.25rem;
   }
+
+  @media only screen and (max-width: 25em) {
+    width: 3.5rem;
+  }
 `;
 
 const Name = styled.h3`
