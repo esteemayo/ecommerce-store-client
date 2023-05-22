@@ -669,7 +669,7 @@ const SelectSize = styled.button`
   transition: all 0.1s ease-in-out;
 
   @media only screen and (max-width: 37.5em) {
-    min-width: 3rem;
+    min-width: 3.75rem;
   }
 
   &:hover {
