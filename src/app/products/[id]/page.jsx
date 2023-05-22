@@ -435,6 +435,10 @@ const Right = styled.div`
     padding-left: 2rem;
     padding-right: 2rem;
   }
+
+  @media only screen and (max-width: 50em) {
+    padding-left: 0;
+  }
 `;
 
 const BreadCrumbs = styled.div`
