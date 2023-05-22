@@ -7,6 +7,8 @@ import { NumericFormat } from 'react-number-format';
 import { useDispatch } from 'react-redux';
 import { faArrowLeft, faArrowRight, faMinus, faPlus } from '@fortawesome/free-solid-svg-icons';
 
+import StarRating from '@/components/StarRating';
+
 const Product = () => {
   return (
     <>
