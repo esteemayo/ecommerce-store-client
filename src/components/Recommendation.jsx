@@ -134,6 +134,10 @@ const ProductWrapper = styled.div`
     display: block;
     object-fit: cover;
     border-radius: 0.5rem;
+
+    @media only screen and (max-width: 64em) {
+      width: 35rem;
+    }
   }
 `;
 
