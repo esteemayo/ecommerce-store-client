@@ -843,6 +843,7 @@ const Button = styled.button`
   }
 
   @media only screen and (max-width: 18.75em) {
+    font-size: 1.6rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
