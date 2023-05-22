@@ -221,6 +221,10 @@ const ShareButton = styled.button`
     font-size: 1.35rem;
   }
 
+  @media only screen and (max-width: 25em) {
+    font-size: 1.3rem;
+  }
+
   svg {
     font-size: inherit;
     color: currentColor;
