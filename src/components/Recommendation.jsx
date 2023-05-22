@@ -165,7 +165,7 @@ const ProductWrapper = styled.div`
     }
 
     @media only screen and (max-width: 18.75em) {
-      width: 31.5rem;
+      width: 30rem;
     }
   }
 `;
