@@ -710,7 +710,7 @@ const AmountContainer = styled.div`
   gap: 2rem;
 
   @media only screen and (max-width: 37.5em) {
-    gap: 1.5rem;;
+    gap: 1.5rem;
   }
 `;
 
