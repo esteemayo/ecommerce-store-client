@@ -451,6 +451,10 @@ const IconButton = styled.button`
     height: 3.5rem;
     right: ${({ direction }) => direction === 'right' && '76%'};
   }
+  
+  @media only screen and (max-width: 18.75em) {
+    right: ${({ direction }) => direction === 'right' && '83%'};
+  }
 `;
 
 const Right = styled.div`
