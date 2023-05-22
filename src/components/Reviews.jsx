@@ -311,6 +311,10 @@ const ReviewsWrapper = styled.div`
   padding: 5rem 0 0.5rem 0;
   border-top: 1px solid #e2e9e7;
   position: relative;
+
+  @media only screen and (max-width: 26.875em) {
+    padding-top: 3rem;
+  }
 `;
 
 const ReviewCardContainer = styled.div`
