@@ -100,6 +100,10 @@ const ReviewContainer = styled.div`
       font-size: 2.3rem;
       margin-right: 2px;
     }
+
+    @media only screen and (max-width: 25em) {
+      font-size: 2rem;
+    }
   }
 `;
 
