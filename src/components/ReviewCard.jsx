@@ -126,6 +126,7 @@ const Reviewer = styled.div`
 
     @media only screen and (max-width: 25em) {
       width: 3.5rem;
+      height: 3.5rem;
     }
   }
 `;
