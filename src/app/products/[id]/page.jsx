@@ -505,6 +505,10 @@ const BreadCrumbs = styled.div`
 
 const ProductWrapper = styled.div`
   margin-top: 2rem;
+
+  @media only screen and (max-width: 37.5em) {
+    margin-top: 1.5rem;
+  }
 `;
 
 const ProductName = styled.h1`
