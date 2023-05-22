@@ -99,6 +99,10 @@ const Reviewer = styled.div`
   align-items: center;
   gap: 1rem;
 
+  @media only screen and (max-width: 31.25em) {
+    gap: 0.7rem;
+  }
+
   img {
     width: 5rem;
     height: 5rem;
