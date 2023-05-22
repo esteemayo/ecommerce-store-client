@@ -154,6 +154,10 @@ const ProductWrapper = styled.div`
       width: 60rem;
       height: 70rem;
     }
+
+    @media only screen and (max-width: 31.25em) {
+      width: 45rem;
+    }
   }
 `;
 
