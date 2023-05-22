@@ -668,6 +668,10 @@ const SelectSize = styled.button`
   cursor: ${({ bcg }) => bcg ? 'default' : 'pointer'};
   transition: all 0.1s ease-in-out;
 
+  @media only screen and (max-width: 37.5em) {
+    min-width: 3rem;
+  }
+
   &:hover {
     background-color: ${({ bcg }) => bcg ? '#89a8a0' : '#ebf0ef'};
   }
