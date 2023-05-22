@@ -89,6 +89,7 @@ const Wrapper = styled.div`
 
   @media only screen and (max-width: 18.75em) {
     padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 `;
 
