@@ -115,6 +115,10 @@ const Avatar = styled.div`
   background-color: #d5a66a;
   color: var(--clr-white);
   border-radius: 50%;
+
+  @media only screen and (max-width: 31.25em) {
+    width: 4.5rem;
+  }
 `;
 
 const Name = styled.h3`
