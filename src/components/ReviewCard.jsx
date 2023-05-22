@@ -225,7 +225,6 @@ const ShareButton = styled.button`
     gap: 1rem;
     font-size: 1.3rem;
     padding: 0.5rem 0.8rem;
-    gap: 1rem;
   }
 
   svg {
