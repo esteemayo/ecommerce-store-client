@@ -729,6 +729,7 @@ const AddButton = styled.button`
 
   @media only screen and (max-width: 37.5em) {
     min-width: 2.85rem;
+    height: 2.85rem;
   }
 
   &:disabled {
