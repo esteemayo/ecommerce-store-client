@@ -113,6 +113,10 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   gap: 1rem;
+
+  @media only screen and (max-width: 64em) {
+    flex-wrap: wrap;
+  }
 `;
 
 const ProductWrapper = styled.div`
