@@ -672,6 +672,7 @@ const SelectSize = styled.button`
     min-width: 3.75rem;
     padding-top: 1.4rem;
     padding-bottom: 1.4rem;
+    font-size: 1.35rem;
   }
 
   &:hover {
