@@ -199,6 +199,10 @@ const ProductTitle = styled.p`
   color: inherit;
   line-height: 1.8rem;
   margin: 1rem 0;
+
+  @media only screen and (max-width: 18.75em) {
+    font-size: 1.5rem;
+  }
 `;
 
 const ProductPrice = styled.p`
