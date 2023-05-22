@@ -197,6 +197,10 @@ const ReviewDate = styled.time`
   @media only screen and (max-width: 26.875em) {
     font-size: 1.35rem;
   }
+
+  @media only screen and (max-width: 25em) {
+    font-size: 1.3rem;
+  }
 `;
 
 const ShareButton = styled.button`
