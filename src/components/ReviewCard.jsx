@@ -54,6 +54,7 @@ const Container = styled.article`
 
   @media only screen and (max-width: 37.5em) {
     width: 60rem;
+    line-height: 1.2;
   }
 `;
 
