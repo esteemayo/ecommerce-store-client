@@ -206,6 +206,7 @@ const Review = styled.p`
 
   @media only screen and (max-width: 18.75em) {
     font-size: 1.4rem;
+    line-height: 1.2;
   }
 `;
 
