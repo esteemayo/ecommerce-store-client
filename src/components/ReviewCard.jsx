@@ -203,6 +203,10 @@ const Review = styled.p`
   @media only screen and (max-width: 25em) {
     font-size: 1.5rem;
   }
+
+  @media only screen and (max-width: 18.75em) {
+    font-size: 1.4rem;
+  }
 `;
 
 const DateContainer = styled.div`
