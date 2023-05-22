@@ -77,6 +77,10 @@ const ReviewContainer = styled.div`
     border: 2px solid #eef2ff;
     border-radius: 0.5rem;
     margin-right: 3px;
+
+    @media only screen and (max-width: 31.25em) {
+      font-size: 2.3rem;
+    }
   }
 `;
 
