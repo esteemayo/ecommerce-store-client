@@ -129,6 +129,10 @@ const Name = styled.h3`
   font-weight: 600;
   font-size: 1.8rem;
   color: inherit;
+
+  @media only screen and (max-width: 31.25em) {
+    font-size: 1.75rem;
+  }
 `;
 
 const Review = styled.p`
