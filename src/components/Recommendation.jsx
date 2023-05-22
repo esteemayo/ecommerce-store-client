@@ -107,10 +107,6 @@ const Heading = styled.h1`
   font-weight: 500;
   font-size: 3.2rem;
   margin: 5rem 0;
-
-  @media only screen and (max-width: 59.375em) {
-    font-size: 3.15rem;
-  }
 `;
 
 const Wrapper = styled.div`
