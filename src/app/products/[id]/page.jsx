@@ -122,7 +122,7 @@ const SingleProduct = ({ params }) => {
                 type='button'
                 direction='left'
                 onClick={() => handleDirection('left')}
-                style={{ display: (!isMoved || slideNumber === 0) && 'none' }}
+                style={{ display: (!isSliderMoved || slideNumber === 0) && 'none' }}
               >
                 <FontAwesomeIcon icon={faArrowLeft} />
               </IconButton>
