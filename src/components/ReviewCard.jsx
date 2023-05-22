@@ -166,6 +166,10 @@ const Name = styled.h3`
   @media only screen and (max-width: 31.25em) {
     font-size: 1.75rem;
   }
+
+  @media only screen and (max-width: 25em) {
+    font-size: 1.6rem;
+  }
 `;
 
 const Review = styled.p`
