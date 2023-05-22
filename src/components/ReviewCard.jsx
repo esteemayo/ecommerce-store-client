@@ -51,6 +51,10 @@ const Container = styled.article`
   -moz-box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
   margin-bottom: 2rem;
   line-height: 1.4;
+
+  @media only screen and (max-width: 37.5em) {
+    width: 60rem;
+  }
 `;
 
 const Wrapper = styled.div`
