@@ -77,6 +77,10 @@ const Wrapper = styled.div`
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
+
+  @media only screen and (max-width: 25em) {
+    padding-left: 1rem;
+  }
 `;
 
 const ReviewContainer = styled.div`
