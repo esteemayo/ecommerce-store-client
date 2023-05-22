@@ -224,6 +224,7 @@ const ShareButton = styled.button`
   @media only screen and (max-width: 25em) {
     font-size: 1.3rem;
     padding: 0.5rem 0.8rem;
+    gap: 1rem;
   }
 
   svg {
