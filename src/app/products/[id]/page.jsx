@@ -555,6 +555,10 @@ const PriceDiscount = styled.p`
   border-radius: 10rem;
   line-height: 1;
   letter-spacing: 0.02em;
+
+  @media only screen and (max-width: 18.75em) {
+    font-size: 1.37rem;
+  }
 `;
 
 const SalePrice = styled.p`
