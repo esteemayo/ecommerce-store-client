@@ -272,7 +272,7 @@ const SingleProduct = ({ params }) => {
                 <DescriptionHeader>Overview</DescriptionHeader>
                 <DescriptionText>{product.desc}</DescriptionText>
               </DescriptinContainer>
-              <Hr />
+              {/* <Hr /> */}
             </ProductWrapper>
           </Right>
         </ProductContainer>
