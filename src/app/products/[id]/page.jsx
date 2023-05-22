@@ -346,6 +346,11 @@ const ProductContainer = styled.div`
     max-width: 70rem;
     flex-direction: column;
   }
+
+  @media only screen and (max-width: 37.5em) {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
 `;
 
 const Left = styled.div`
