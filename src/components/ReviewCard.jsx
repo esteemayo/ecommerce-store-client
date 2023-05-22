@@ -80,6 +80,7 @@ const ReviewContainer = styled.div`
 
     @media only screen and (max-width: 31.25em) {
       font-size: 2.3rem;
+      margin-right: 2px;
     }
   }
 `;
