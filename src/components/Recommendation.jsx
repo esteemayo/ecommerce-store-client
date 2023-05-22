@@ -111,6 +111,7 @@ const Heading = styled.h1`
 
 const Wrapper = styled.div`
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 1rem;
 `;
