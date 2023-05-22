@@ -320,6 +320,10 @@ const Container = styled.main`
   background-color: var(--clr-white);
   padding-top: 8rem;
   padding-bottom: 4rem;
+
+  @media only screen and (max-width: 37.5em) {
+    padding-top: 4rem;
+  }
 `;
 
 const Wrapper = styled.div`
