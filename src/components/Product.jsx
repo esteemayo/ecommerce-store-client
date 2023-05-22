@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import { NumericFormat } from 'react-number-format';
+import { useDispatch } from 'react-redux';
 
 const Product = () => {
   return (
