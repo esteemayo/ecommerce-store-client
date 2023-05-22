@@ -137,6 +137,10 @@ const Review = styled.p`
   color: inherit;
   line-height: 1.3;
   word-wrap: break-word;
+
+  @media only screen and (max-width: 31.25em) {
+    font-size: 1.6rem;
+  }
 `;
 
 const DateContainer = styled.div`
