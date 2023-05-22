@@ -82,7 +82,7 @@ const SingleProduct = ({ params }) => {
       imgContainerRef.current.style.transform = `translateX(${235 + distance}px)`;
     }
 
-    if (direction === 'right' && slideNumber < lastIndex - clickLimit) {
+    if (direction === 'right' && slideNumber < 6 - clickLimit) {
       setSlideNumber((prev) => prev + 1);
       imgContainerRef.current.style.transform = `translateX(${-235 + distance}px)`;
     }
