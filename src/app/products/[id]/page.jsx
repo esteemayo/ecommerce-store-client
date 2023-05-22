@@ -388,6 +388,7 @@ const ImageWrapper = styled.figure`
 
     @media only screen and (max-width: 50em) {
       width: 225px;
+      border-radius: revert;
     }
   }
 `;
