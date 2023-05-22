@@ -653,6 +653,10 @@ const SizeContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 1rem;
+
+  @media only screen and (max-width: 37.5em) {
+    margin-top: 1.3rem;
+  }
 `;
 
 const SelectSize = styled.button`
