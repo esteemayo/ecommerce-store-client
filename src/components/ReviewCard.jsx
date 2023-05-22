@@ -18,8 +18,8 @@ const ReviewCard = ({ user, rating, review, createdAt }) => {
             ) : (
               <Image
                 src={user.img}
-                width={500}
-                height={500}
+                width={50}
+                height={50}
                 alt=''
               />
             )}
