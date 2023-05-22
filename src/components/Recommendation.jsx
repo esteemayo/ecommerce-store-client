@@ -13,7 +13,7 @@ const Recommendation = () => {
             <Image
               src='/img/user-9.jpg'
               width={400}
-              height={700}
+              height={500}
               alt=''
             />
           </Link>
