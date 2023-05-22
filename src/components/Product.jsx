@@ -9,7 +9,7 @@ import { faArrowLeft, faArrowRight, faMinus, faPlus } from '@fortawesome/free-so
 
 import StarRating from '@/components/StarRating';
 
-const Product = () => {
+const Product = ({ product }) => {
   const imgContainerRef = useRef();
   const [size, setSize] = useState(null);
   const [color, setColor] = useState(null);
