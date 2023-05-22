@@ -727,6 +727,10 @@ const AddButton = styled.button`
   cursor: pointer;
   transition: all 0.3s ease;
 
+  @media only screen and (max-width: 37.5em) {
+    min-width: 2.85rem;
+  }
+
   &:disabled {
     background-color: #f9f9f9;
     color: #999;
