@@ -670,6 +670,7 @@ const SelectSize = styled.button`
 
   @media only screen and (max-width: 37.5em) {
     min-width: 3.75rem;
+    padding-top: 1.4rem;
   }
 
   &:hover {
