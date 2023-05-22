@@ -629,6 +629,7 @@ const Color = styled.button`
 
   @media only screen and (max-width: 37.5em) {
     width: 2rem;
+    height: 2rem;
   }
 `;
 
