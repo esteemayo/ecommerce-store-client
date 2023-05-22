@@ -756,6 +756,10 @@ const Amount = styled.span`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media only screen and (max-width: 37.5em) {
+    width: 2.85rem;
+  }
 `;
 
 const Button = styled.button`
