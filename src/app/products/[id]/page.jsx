@@ -638,7 +638,7 @@ const SizeWrapper = styled.div`
   margin-bottom: 4rem;
 
   @media only screen and (max-width: 37.5em) {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
 `;
 
