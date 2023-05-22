@@ -76,7 +76,7 @@ const Reviewer = styled.div`
   align-items: center;
   gap: 1rem;
 
-  & > img {
+  img {
     width: 5rem;
     height: 5rem;
     display: inline-block;
