@@ -68,6 +68,10 @@ const Container = styled.article`
 
 const Wrapper = styled.div`
   padding: 3rem;
+
+  @media only screen and (max-width: 26.875em) {
+    padding-left: 1.5rem;
+  }
 `;
 
 const ReviewContainer = styled.div`
