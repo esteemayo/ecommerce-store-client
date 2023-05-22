@@ -56,6 +56,10 @@ const Container = styled.article`
     width: 60rem;
     line-height: 1.2;
   }
+
+  @media only screen and (max-width: 31.25em) {
+    width: 50rem;
+  }
 `;
 
 const Wrapper = styled.div`
