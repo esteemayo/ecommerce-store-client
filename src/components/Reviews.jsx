@@ -173,6 +173,10 @@ const ReviewContainer = styled.div`
   svg {
     font-size: 3rem;
     color: #89a8a0;
+
+    @media only screen and (max-width: 26.875em) {
+      font-size: 2.65rem;
+    }
   }
 `;
 
