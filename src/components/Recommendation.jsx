@@ -142,6 +142,8 @@ const ProductWrapper = styled.div`
 `;
 
 const ProductContainer = styled.div`
+  width: 100%;
+
   a {
     &:link,
     &:visited {
