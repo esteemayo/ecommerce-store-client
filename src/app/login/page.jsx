@@ -22,7 +22,7 @@ const Login = () => {
     const tempErrors = {};
 
     if (username === '') {
-      tempErrors.username = 'Username field is required';
+      tempErrors.username = 'Username must not be empty';
     }
 
     if (password === '') {
