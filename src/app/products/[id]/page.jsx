@@ -192,17 +192,6 @@ const Right = styled.div`
   }
 `;
 
-const SalePrice = styled.p`
-  font-weight: 500;
-  font-size: 1.6rem;
-  color: #fa4b21;
-  line-height: 1.3;
-
-  @media only screen and (max-width: 18.75em) {
-    font-size: 1.5rem;
-  }
-`;
-
 const Message = styled.p`
   color: inherit;
   margin-top: 1rem;
