@@ -352,30 +352,12 @@ const ColorContainer = styled.div`
   margin: 2rem 0;
 `;
 
-const ProductColor = styled.h2`
-  display: inline-block;
-  text-transform: capitalize;
-  font-weight: 400;
-  font-size: 1.7rem;
-`;
-
-const ColorWrapper = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 2.6rem;
-  margin: 1.5rem 0;
-
-  @media only screen and (max-width: 59.375em) {
-    gap: 2.35rem;
-  }
-
-  @media only screen and (max-width: 37.5em) {
-    margin-top: 1.3rem;
-  }
-
-  @media only screen and (max-width: 18.75em) {
-    gap: 2rem;
-  }
+const Line = styled.hr`
+  width: 93%;
+  height: 1px;
+  border: none;
+  margin: 0 auto;
+  background-color: #e2e9e7;
 `;
 
 export default SingleProduct;
