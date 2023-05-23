@@ -26,6 +26,7 @@ const Product = ({ product }) => {
   const [clickLimit, setClickLimit] = useState(window.innerWidth / 235);
   const [selectedSize, setSelectedSize] = useState(null);
   const [isSliderMoved, setIsSliderMoved] = useState(false);
+  const [alert, setAlert] = useState(false);
 
   const lastIndex = product?.images?.lastIndexOf(product?.images[product?.images.length - 1]);
 
