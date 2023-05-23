@@ -68,6 +68,11 @@ const Container = styled.main`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media only screen and (max-width: 64em) {
+    max-width: 100rem;
+    padding: 8rem 0;
+  }
 `;
 
 const Wrapper = styled.div`
