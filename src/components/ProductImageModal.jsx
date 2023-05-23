@@ -120,7 +120,7 @@ const ArrowButton = styled.button`
 
   @media only screen and (max-width: 50em) {
     width: 6.5rem;
-    height: 5rem;
+    height: 6.5rem;
   }
 
   &:hover {
