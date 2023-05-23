@@ -26,7 +26,7 @@ const Login = () => {
     }
 
     if (password === '') {
-      tempErrors.password = 'Password field is required';
+      tempErrors.password = 'Password must not be empty';
     }
 
     if (Object.keys(tempErrors).length > 0) {
