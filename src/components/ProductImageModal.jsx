@@ -139,6 +139,10 @@ const ImageContainer = styled.div`
     height: 100%;
     display: block;
     object-fit: cover;
+
+    @media only screen and (max-width: 64em) {
+      height: 90%;
+    }
   }
 `;
 
