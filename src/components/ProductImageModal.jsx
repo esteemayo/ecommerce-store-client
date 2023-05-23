@@ -119,7 +119,7 @@ const ArrowButton = styled.button`
   transition: all 0.3s ease;
 
   @media only screen and (max-width: 50em) {
-    width: 5rem;
+    width: 6.5rem;
     height: 5rem;
   }
 
