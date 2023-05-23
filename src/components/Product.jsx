@@ -129,14 +129,14 @@ const Product = ({ product }) => {
                 )
               })}
             </ImageWrapper>
-            <IconButton
+            <ArrowButton
               type='button'
               direction='right'
               onClick={() => handleDirection('right')}
               style={{ display: slideNumber === lastIndex && 'none' }}
             >
               <FontAwesomeIcon icon={faArrowRight} />
-            </IconButton>
+            </ArrowButton>
           </ImagesContainer>
         </Left>
         <Right>
