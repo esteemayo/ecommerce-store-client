@@ -280,7 +280,7 @@ const Product = ({ product }) => {
 }
 
 const Container = styled.div`
-  
+  width: 100%;
 `;
 
 const ProductContainer = styled.div`
