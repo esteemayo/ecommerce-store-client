@@ -179,6 +179,10 @@ const RatingContainer = styled.div`
     border: 2px solid #eef2ff;
     border-radius: 0.5rem;
     margin-right: 0.5rem;
+
+    @media only screen and (max-width: 18.75em) {
+      font-size: 3rem;
+    }
   }
 `;
 
