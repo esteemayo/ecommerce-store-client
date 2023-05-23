@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import CloseIcon from '@mui/icons-material/Close';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
-const ProductImageModal = () => {
+const ProductImageModal = ({ product, isMoved, slideIndex, lastIndex }) => {
   return (
     <ImageOverlay type={isOpen ? 'show' : ''}>
       <CloseButton type='button' onClick={() => setIsOpen(false)}>
