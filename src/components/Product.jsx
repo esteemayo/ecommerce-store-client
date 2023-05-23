@@ -243,6 +243,7 @@ const Product = ({ product }) => {
             </AddContainer>
             <Hr />
             <Button type='button' onClick={handleClick}>Add to cart</Button>
+            {alert && <SuccessMessage>Item added to cart</SuccessMessage>}
             <Hr />
             <ValueAddWrapper>
               <ValueAdd>
