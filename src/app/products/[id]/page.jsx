@@ -103,10 +103,6 @@ const SingleProduct = ({ params }) => {
     type === 'inc' && setQuantity((prev) => prev + 1);
   };
 
-  const handleClick = () => {
-    console.log({ size, color, quantity });
-  };
-
   useEffect(() => {
     const product = storeProducts.find((item) => item.id === parseInt(id));
     setProduct(product);
@@ -119,36 +115,6 @@ const SingleProduct = ({ params }) => {
         <Line />
         <Recommendation />
         <Reviews />
-        {/* <ImageOverlay type={isOpen ? 'show' : ''}>
-          <CloseButton type='button' onClick={() => setIsOpen(false)}>
-            <CloseIcon />
-          </CloseButton>
-          {isMoved && slideIndex > 0 && (
-            <ArrowButton
-              type='button'
-              direction='left'
-              onClick={() => handleMove('left')}
-            >
-              <FontAwesomeIcon icon={faArrowLeft} />
-            </ArrowButton>
-          )}
-          <ImageContainer className='imageContainer' onClick={closeModalHandler}>
-            <Image
-              src={product?.images ? product?.images[slideIndex] : '/img/img-1.jpg'}
-              width={1200}
-              height={1000}
-              alt=''
-            />
-          </ImageContainer>
-          <ArrowButton
-            type='button'
-            direction='right'
-            onClick={() => handleMove('right')}
-            style={{ display: slideIndex === lastIndex && 'none' }}
-          >
-            <FontAwesomeIcon icon={faArrowRight} />
-          </ArrowButton>
-        </ImageOverlay> */}
       </Wrapper>
     </Container>
   );
