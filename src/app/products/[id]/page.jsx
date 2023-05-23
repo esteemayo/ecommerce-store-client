@@ -687,19 +687,4 @@ const ArrowButton = styled.button`
   }
 `;
 
-const ImageContainer = styled.div`
-  width: 100%;
-  height: 95%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  img {
-    width: 50rem;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-  }
-`;
-
 export default SingleProduct;
