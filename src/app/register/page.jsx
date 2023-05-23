@@ -40,7 +40,7 @@ const Register = () => {
     }
 
     if (username.trim() === '') {
-      errors.username = 'Username field is required';
+      errors.username = 'Username must not be empty';
     }
 
     if (password === '') {
