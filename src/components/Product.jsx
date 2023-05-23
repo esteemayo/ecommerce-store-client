@@ -46,6 +46,21 @@ const Product = ({ product }) => {
     setSlideIndex(newSlideIndex);
   };
 
+  const handleDirection = (direction) => {
+    setIsSliderMoved(true);
+    const distance = imgContainerRef.current.getBoundingClientRect().x;
+
+    if (direction === 'left' && slideNumber > 0) {
+      setSlideNumber((prev) => prev - 1);
+      imgContainerRef.current.style.transform = `translateX(${235 + distance}px)`;
+    }
+
+    if (direction === 'right' && slideNumber < 6 - clickLimit) {
+      setSlideNumber((prev) => prev + 1);
+      imgContainerRef.current.style.transform = `translateX(${-235 + distance}px)`;
+    }
+  };
+
   return (
     <>
       <ProductContainer>
