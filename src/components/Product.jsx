@@ -107,14 +107,14 @@ const Product = ({ product }) => {
       <ProductContainer>
         <Left>
           <ImagesContainer>
-            <IconButton
+            <ArrowButton
               type='button'
               direction='left'
               onClick={() => handleDirection('left')}
               style={{ display: (!isSliderMoved || slideNumber === 0) && 'none' }}
             >
               <FontAwesomeIcon icon={faArrowLeft} />
-            </IconButton>
+            </ArrowButton>
             <ImageWrapper ref={imgContainerRef}>
               {product?.images?.map((item, index) => {
                 return (
