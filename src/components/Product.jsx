@@ -11,6 +11,8 @@ import StarRating from '@/components/StarRating';
 import { useDispatch } from 'react-redux';
 
 const Product = ({ product }) => {
+  const dispatch = useDispatch();
+
   const imgContainerRef = useRef();
   const [color, setColor] = useState(null);
   const [size, setSize] = useState(null);
