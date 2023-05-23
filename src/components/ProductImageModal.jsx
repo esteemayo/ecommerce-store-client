@@ -127,12 +127,6 @@ const ArrowButton = styled.button`
     height: 6.5rem;
   }
 
-  @media only screen and (max-width: 37.5em) {
-    width: 5rem;
-    height: 5rem;
-    left: ${({ direction }) => direction === 'left' && '2rem'};
-  }
-
   &:hover {
     background-color: hsla(0, 0%, 100%, 0.05);
   }
