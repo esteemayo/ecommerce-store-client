@@ -410,15 +410,4 @@ const SizeHeading = styled.h3`
   font-size: 1.65rem;
 `;
 
-const SizeContainer = styled.div`
-  margin-top: 1.5rem;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-
-  @media only screen and (max-width: 37.5em) {
-    margin-top: 1.3rem;
-  }
-`;
-
 export default SingleProduct;
