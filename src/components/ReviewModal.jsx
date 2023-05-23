@@ -112,6 +112,10 @@ const Wrapper = styled.div`
     padding-left: 2.5rem;
     padding-right: 2.5rem;
   }
+
+  @media only screen and (max-width: 18.75em) {
+    width: 32rem;
+  }
 `;
 
 const ButtonContainer = styled.div`
