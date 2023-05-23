@@ -192,21 +192,6 @@ const Right = styled.div`
   }
 `;
 
-const PriceDiscount = styled.p`
-  font-weight: 700;
-  font-size: 1.4rem;
-  padding: 0.4rem 0.6rem;
-  background-color: #fa4b21;
-  color: var(--clr-white);
-  border-radius: 10rem;
-  line-height: 1;
-  letter-spacing: 0.02em;
-
-  @media only screen and (max-width: 18.75em) {
-    font-size: 1.37rem;
-  }
-`;
-
 const SalePrice = styled.p`
   font-weight: 500;
   font-size: 1.6rem;
