@@ -121,12 +121,12 @@ const ArrowButton = styled.button`
   @media only screen and (max-width: 50em) {
     width: 6.5rem;
     height: 6.5rem;
-    left: ${({ direction }) => direction === 'left' && '2rem'};
   }
 
   @media only screen and (max-width: 37.5em) {
     width: 5rem;
     height: 5rem;
+    left: ${({ direction }) => direction === 'left' && '2rem'};
   }
 
   &:hover {
