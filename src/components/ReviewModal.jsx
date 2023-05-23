@@ -276,6 +276,10 @@ const Button = styled.button`
   justify-content: center;
   gap: 0.5rem;
 
+  @media only screen and (max-width: 18.75em) {
+    width: 100%;
+  }
+
   &:hover {
     background-position: 100%;
   }
