@@ -57,6 +57,7 @@ const CartModal = ({ product, isModalOpen, closeModal, setIsSelectedProduct }) =
   const handleClick = () => {
     dispatch(addProduct({ ...product, size, color, quantity }));
     setAlert(true);
+    handleReset();
   };
 
   useEffect(() => {
