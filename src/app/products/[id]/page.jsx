@@ -641,24 +641,4 @@ const ImageOverlay = styled.section`
   transition: all 0.3s linear;
 `;
 
-const CloseButton = styled.button`
-  border: none;
-  display: inline-block;
-  width: 2rem;
-  height: 2rem;
-  background-color: transparent;
-  color: var(--clr-white);
-  outline-color: #777;
-  cursor: pointer;
-
-  position: absolute;
-  top: 3rem;
-  left: 3rem;
-
-  svg {
-    font-size: 2rem;
-    fill: currentColor;
-  }
-`;
-
 export default SingleProduct;
