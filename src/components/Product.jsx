@@ -835,7 +835,8 @@ const Button = styled.button`
 `;
 
 const SuccessMessage = styled.span`
-  
+  display: block;
+  font-size: 1.4rem;
 `;
 
 const ValueAddWrapper = styled.div`
