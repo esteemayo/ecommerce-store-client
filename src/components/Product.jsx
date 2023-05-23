@@ -9,6 +9,7 @@ import { useDispatch } from 'react-redux';
 import { NumericFormat } from 'react-number-format';
 
 import StarRating from '@/components/StarRating';
+import { addProduct } from '@/features/cart/cartSlice';
 
 const Product = ({ product }) => {
   const dispatch = useDispatch();
