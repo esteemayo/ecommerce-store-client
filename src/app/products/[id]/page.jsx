@@ -93,11 +93,6 @@ const SingleProduct = ({ params }) => {
     setIsSelected(color);
   };
 
-  const handleSize = (size) => {
-    setSize(size);
-    setSelectedSize(size);
-  };
-
   useEffect(() => {
     const product = storeProducts.find((item) => item.id === parseInt(id));
     setProduct(product);
