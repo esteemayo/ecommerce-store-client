@@ -144,6 +144,7 @@ const FormInput = styled.input`
   border-radius: 0.5rem;
   outline-color: #eee;
   caret-color: var(--caret-light);
+  transition: all 0.3s ease;
 
   &:focus {
     background-color: var(--clr-white);
