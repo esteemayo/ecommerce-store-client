@@ -2,8 +2,6 @@ import styled from 'styled-components';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import CloseIcon from '@mui/icons-material/Close';
-import { useEffect, useRef, useState } from 'react';
-import Image from 'next/image';
 import { faArrowLeft, faArrowRight, faMinus, faPlus } from '@fortawesome/free-solid-svg-icons';
 import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
