@@ -23,7 +23,7 @@ const ProductImageModal = ({ product, isOpen, setIsOpen, isMoved, slideIndex, la
   };
 
   return (
-    <ImageOverlay type={isOpen ? 'show' : ''}>
+    <Overlay type={isOpen ? 'show' : ''}>
       <CloseButton type='button' onClick={() => setIsOpen(false)}>
         <CloseIcon />
       </CloseButton>
@@ -52,11 +52,11 @@ const ProductImageModal = ({ product, isOpen, setIsOpen, isMoved, slideIndex, la
       >
         <FontAwesomeIcon icon={faArrowRight} />
       </ArrowButton>
-    </ImageOverlay>
+    </Overlay>
   );
 }
 
-const ImageOverlay = styled.section`
+const Overlay = styled.section`
   width: 100vw;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.95);
