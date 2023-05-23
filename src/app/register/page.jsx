@@ -32,7 +32,7 @@ const Register = () => {
     const { name, email, username, password, confirmPassword } = data;
 
     if (name.trim() === '') {
-      errors.name = 'Name field is required';
+      errors.name = 'Name must not be empty';
     }
 
     if (email.trim() === '') {
