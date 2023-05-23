@@ -4,7 +4,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import CloseIcon from '@mui/icons-material/Close';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
-const ProductImageModal = ({ product, isOpen, setIsOpen, isMoved, slideIndex, lastIndex, handleMove }) => {
+const ProductImageModal = ({
+  product,
+  isOpen,
+  setIsOpen,
+  isMoved,
+  slideIndex,
+  lastIndex,
+  handleMove,
+}) => {
   const closeModalHandler = (e) => {
     if (e.target.classList.contains('imageContainer')) {
       setIsOpen(false);
