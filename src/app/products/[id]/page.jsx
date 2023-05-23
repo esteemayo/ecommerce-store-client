@@ -395,13 +395,4 @@ const Color = styled.button`
   }
 `;
 
-const SizeWrapper = styled.div`
-  margin-top: 1rem;
-  margin-bottom: 4rem;
-
-  @media only screen and (max-width: 37.5em) {
-    margin-bottom: 2rem;
-  }
-`;
-
 export default SingleProduct;
