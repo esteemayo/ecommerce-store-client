@@ -117,10 +117,11 @@ const ArrowButton = styled.button`
   transform: translateY(-50%);
   cursor: pointer;
   transition: all 0.3s ease;
-
+ 
   @media only screen and (max-width: 50em) {
     width: 6.5rem;
     height: 6.5rem;
+    left: ${({ direction }) => direction === 'left' && '2rem'};
   }
 
   @media only screen and (max-width: 37.5em) {
