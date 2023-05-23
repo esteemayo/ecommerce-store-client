@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useEffect, useRef, useState } from 'react';
-import CloseIcon from '@mui/icons-material/Close';
 import { useDispatch } from 'react-redux';
 
 import Recommendation from '@/components/Recommendation';
