@@ -4,8 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useRef, useState } from 'react';
 import CloseIcon from '@mui/icons-material/Close';
 import Image from 'next/image';
-import { NumericFormat } from 'react-number-format';
 import { faArrowLeft, faArrowRight, faMinus, faPlus } from '@fortawesome/free-solid-svg-icons';
+import { NumericFormat } from 'react-number-format';
 
 import StarRating from '@/components/StarRating';
 
