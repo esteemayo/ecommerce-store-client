@@ -341,13 +341,6 @@ const ReviewQuantity = styled.span`
   }
 `;
 
-const Hr = styled.hr`
-  width: 100%;
-  height: 1px;
-  border: none;
-  background-color: #e2e9e7;
-`;
-
 const Line = styled.hr`
   width: 93%;
   height: 1px;
