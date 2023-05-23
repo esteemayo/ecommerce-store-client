@@ -378,21 +378,4 @@ const ColorWrapper = styled.div`
   }
 `;
 
-const Color = styled.button`
-  border: none;
-  display: block;
-  width: 2.2rem;
-  height: 2.2rem;
-  background-color: ${({ color }) => color};
-  border-radius: 50%;
-  outline: 1px solid ${({ selected }) => selected ? '#89a8a0' : 'transparent'};
-  outline-offset: 2px;
-  cursor: ${({ selected }) => selected ? 'default' : 'pointer'};
-
-  @media only screen and (max-width: 37.5em) {
-    width: 2rem;
-    height: 2rem;
-  }
-`;
-
 export default SingleProduct;
