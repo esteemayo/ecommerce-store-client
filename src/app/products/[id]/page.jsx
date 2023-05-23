@@ -581,22 +581,4 @@ const ValueAddWrapper = styled.div`
   margin-bottom: 2rem;
 `;
 
-const ValueAdd = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
-
-  img {
-    width: 2.4rem;
-    height: auto;
-    display: inline-block;
-    object-fit: cover;
-  }
-
-  span {
-    font-size: 1.25rem;
-    line-height: 1.2;
-  }
-`;
-
 export default SingleProduct;
