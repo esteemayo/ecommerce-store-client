@@ -175,23 +175,6 @@ const IconButton = styled.button`
   }
 `;
 
-const Right = styled.div`
-  flex: 1;
-  padding-top: 5rem;
-  padding-right: 3rem;
-  padding-left: 3rem;
-
-  @media only screen and (max-width: 64em) {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-
-  @media only screen and (max-width: 50em) {
-    padding-left: 0;
-    padding-right: 0;
-  }
-`;
-
 const Line = styled.hr`
   width: 93%;
   height: 1px;
@@ -201,3 +184,4 @@ const Line = styled.hr`
 `;
 
 export default SingleProduct;
+
