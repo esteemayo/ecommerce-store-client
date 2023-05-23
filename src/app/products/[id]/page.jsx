@@ -14,6 +14,7 @@ import Reviews from '@/components/Reviews';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 import { storeProducts } from '@/data';
 import StarRating from '@/components/StarRating';
+import Product from '@/components/Product';
 
 const SingleProduct = ({ params }) => {
   const { id } = params;
