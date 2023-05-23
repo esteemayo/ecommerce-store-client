@@ -840,7 +840,7 @@ const SuccessMessage = styled.span`
   display: block;
   font-size: 1.4rem;
   color: #409384;
-  text-align: center;
+  text-align: left;
 `;
 
 const ValueAddWrapper = styled.div`
