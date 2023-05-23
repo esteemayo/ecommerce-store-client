@@ -834,6 +834,10 @@ const Button = styled.button`
   }
 `;
 
+const SuccessMessage = styled.span`
+  
+`;
+
 const ValueAddWrapper = styled.div`
   display: flex;
   align-items: center;
