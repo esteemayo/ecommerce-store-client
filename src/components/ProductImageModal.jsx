@@ -80,7 +80,7 @@ const Overlay = styled.section`
   z-index: ${({ type }) => type === 'show' ? 4000 : -1};
   transition: all 0.3s linear;
 
-  @media only screen and (max-width: 31.25em) {
+  @media only screen and (max-width: 50em) {
     display: none;
   }
 `;
