@@ -24,8 +24,6 @@ const SingleProduct = ({ params }) => {
   const [size, setSize] = useState(null);
   const [color, setColor] = useState(null);
   const [product, setProduct] = useState({});
-  const [isOpen, setIsOpen] = useState(false);
-  const [quantity, setQuantity] = useState(1);
 
   useEffect(() => {
     const product = storeProducts.find((item) => item.id === parseInt(id));
