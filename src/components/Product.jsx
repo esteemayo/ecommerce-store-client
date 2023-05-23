@@ -80,7 +80,7 @@ const Product = ({ product }) => {
   };
 
   return (
-    <>
+    <Container>
       <ProductContainer>
         <Left>
           <ImagesContainer>
@@ -272,7 +272,7 @@ const Product = ({ product }) => {
           <FontAwesomeIcon icon={faArrowRight} />
         </ArrowButton>
       </ImageOverlay>
-    </>
+    </Container>
   );
 }
 
