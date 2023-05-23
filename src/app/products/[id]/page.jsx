@@ -1,6 +1,5 @@
 'use client';
 import styled from 'styled-components';
-import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
 import { useDispatch } from 'react-redux';
 
