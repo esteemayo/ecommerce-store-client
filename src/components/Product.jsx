@@ -61,6 +61,11 @@ const Product = ({ product }) => {
     }
   };
 
+  const handleColor = (color) => {
+    setColor(color);
+    setIsSelected(color);
+  };
+
   return (
     <>
       <ProductContainer>
