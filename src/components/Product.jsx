@@ -76,6 +76,10 @@ const Product = ({ product }) => {
     type === 'inc' && setQuantity((prev) => prev + 1);
   };
 
+  const handleClick = () => {
+    console.log({ size, color, quantity });
+  };
+
   return (
     <>
       <ProductContainer>
