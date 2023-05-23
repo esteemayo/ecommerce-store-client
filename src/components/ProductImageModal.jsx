@@ -118,6 +118,10 @@ const ArrowButton = styled.button`
   cursor: pointer;
   transition: all 0.3s ease;
 
+  @media only screen and (max-width: 50em) {
+    width: 5rem;
+  }
+
   &:hover {
     background-color: hsla(0, 0%, 100%, 0.05);
   }
