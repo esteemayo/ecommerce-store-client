@@ -85,10 +85,6 @@ const Left = styled.div`
   padding: 1rem 0;
 `;
 
-const ImagesContainer = styled.div`
-  position: relative;
-`;
-
 const Line = styled.hr`
   width: 93%;
   height: 1px;
