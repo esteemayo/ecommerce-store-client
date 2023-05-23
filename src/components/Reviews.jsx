@@ -359,6 +359,10 @@ const EmptyReview = styled.div`
     font-size: 2.5rem;
     fill: #89a8a0;
     margin-right: 0.5rem;
+
+    @media only screen and (max-width: 26.875em) {
+      font-size: 2.25rem;
+    }
   }
 `;
 
