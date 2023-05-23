@@ -57,4 +57,3 @@ const Line = styled.hr`
 `;
 
 export default SingleProduct;
-
