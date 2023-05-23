@@ -133,48 +133,6 @@ const ImageWrapper = styled.figure`
   }
 `;
 
-const IconButton = styled.button`
-  border: none;
-  width: 4rem;
-  height: 4rem;
-  background-color: var(--clr-white);
-  color: #777;
-  border-radius: 50%;
-  box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.04);
-  -webkit-box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.04);
-  -moz-box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.04);
-  outline-color: #777;
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  left: ${({ direction }) => direction === 'left' && '2rem'};
-  right: ${({ direction }) => direction === 'right' && '54%'};
-  transform: translate(-50%);
-  z-index: 1000;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  svg {
-    color: inherit;
-  }
-
-  @media only screen and (min-width: 50em) {
-    display: none;
-  }
-  
-  @media only screen and (max-width: 37.5em) {
-    width: 3.5rem;
-    height: 3.5rem;
-    right: ${({ direction }) => direction === 'right' && '76%'};
-  }
-  
-  @media only screen and (max-width: 18.75em) {
-    right: ${({ direction }) => direction === 'right' && '83%'};
-  }
-`;
-
 const Line = styled.hr`
   width: 93%;
   height: 1px;
