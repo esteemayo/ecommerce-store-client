@@ -95,6 +95,14 @@ const Product = ({ product }) => {
     type === 'inc' && setQuantity((prev) => prev + 1);
   };
 
+  const handleReset = () => {
+    setSize(null);
+    setColor(null);
+    setQuantity(1);
+    setIsSelected(null);
+    setSelectedSize(null);
+  };
+
   const handleClick = () => {
     console.log({ size, color, quantity });
   };
