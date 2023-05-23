@@ -285,6 +285,10 @@ const FormInput = styled.input`
   outline-color: #eee;
   caret-color: var(--caret-light);
 
+  &:focus {
+    background-color: var(--clr-white);
+  }
+
   &::-webkit-input-placeholder {
     font-weight: 300;
     font-size: 1.5rem;
