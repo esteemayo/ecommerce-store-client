@@ -41,23 +41,6 @@ const SingleProduct = ({ params }) => {
     setIsOpen(true);
   };
 
-  const closeModalHandler = (e) => {
-    if (e.target.classList.contains('imageContainer')) {
-      setIsOpen(false);
-    }
-
-    const exitModal = (e) => {
-      e.preventDefault();
-
-      if (e.key === 'Escape') {
-        setIsOpen(false);
-      }
-    };
-
-    window.addEventListener('keydown', exitModal);
-    return () => window.removeEventListener('keydown', exitModal);
-  };
-
   useEffect(() => {
     const product = storeProducts.find((item) => item.id === parseInt(id));
     setProduct(product);
