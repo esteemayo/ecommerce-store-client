@@ -13,7 +13,6 @@ const CartModal = ({ product, isModalOpen, closeModal, setIsSelectedProduct }) =
   const dispatch = useDispatch();
 
   const [size, setSize] = useState(null);
-  const [color, setColor] = useState(null);
   const [alert, setAlert] = useState(false);
   const [quantity, setQuantity] = useState(1);
   const [isSelected, setIsSelected] = useState(null);
