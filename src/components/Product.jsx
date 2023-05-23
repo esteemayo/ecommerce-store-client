@@ -17,11 +17,11 @@ const Product = ({ product }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [slideIndex, setSlideIndex] = useState(0);
   const [quantity, setQuantity] = useState(1);
-  const [slideNumber, setSlideNumber] = useState(0);
   const [isSelected, setIsSelected] = useState(null);
+  const [slideNumber, setSlideNumber] = useState(0);
   const [selectedSize, setSelectedSize] = useState(null);
-  const [isSliderMoved, setIsSliderMoved] = useState(false);
   const [clickLimit, setClickLimit] = useState(window.innerWidth / 235);
+  const [isSliderMoved, setIsSliderMoved] = useState(false);
 
   const lastIndex = product?.images?.lastIndexOf(product?.images[product?.images.length - 1]);
 
