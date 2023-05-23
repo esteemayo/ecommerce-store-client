@@ -66,7 +66,7 @@ const Register = () => {
     if (Object.keys(errors).length > 0) return setErrors(errors);
     setErrors({});
 
-    console.log({ ...data, file });
+    console.log({ ...data, email: data.email.toLowerCase(), file });
   };
 
   return (
