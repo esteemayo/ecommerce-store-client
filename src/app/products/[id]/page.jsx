@@ -321,26 +321,6 @@ const Rating = styled.div`
   }
 `;
 
-const ReviewQuantity = styled.span`
-  font-weight: 600;
-  font-size: 1.3rem;
-  color: #8b8787;
-
-  a {
-    &:link,
-    &:visited {
-      color: currentColor;
-      text-decoration-color: #89a8a0;
-      text-underline-offset: 3px;
-    }
-
-    &:hover,
-    &:active {
-      color: currentColor;
-    }
-  }
-`;
-
 const Line = styled.hr`
   width: 93%;
   height: 1px;
