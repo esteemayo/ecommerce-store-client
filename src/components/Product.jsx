@@ -10,6 +10,7 @@ import { NumericFormat } from 'react-number-format';
 
 import StarRating from '@/components/StarRating';
 import { addProduct } from '@/features/cart/cartSlice';
+import ProductImageModal from './ProductImageModal';
 
 const Product = ({ product }) => {
   const dispatch = useDispatch();
