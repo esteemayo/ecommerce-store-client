@@ -368,7 +368,7 @@ const ImageWrapper = styled.figure`
   }
 `;
 
-const IconButton = styled.button`
+const ArrowButton = styled.button`
   border: none;
   width: 4rem;
   height: 4rem;
