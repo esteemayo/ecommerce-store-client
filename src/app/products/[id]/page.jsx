@@ -20,7 +20,6 @@ const SingleProduct = ({ params }) => {
   const { id } = params;
   const dispatch = useDispatch();
 
-  const imgContainerRef = useRef();
   const [product, setProduct] = useState({});
 
   useEffect(() => {
