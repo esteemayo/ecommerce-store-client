@@ -5,7 +5,6 @@ import { useEffect, useRef, useState } from 'react';
 import CloseIcon from '@mui/icons-material/Close';
 import Image from 'next/image';
 import { NumericFormat } from 'react-number-format';
-import { useDispatch } from 'react-redux';
 import { faArrowLeft, faArrowRight, faMinus, faPlus } from '@fortawesome/free-solid-svg-icons';
 
 import StarRating from '@/components/StarRating';
