@@ -107,6 +107,7 @@ const Product = ({ product }) => {
 
   const handleClick = () => {
     dispatch(addProduct({ ...product, size, color, quantity }));
+    setAlert(true);
     handleReset();
   };
 
