@@ -5,6 +5,23 @@ import CloseIcon from '@mui/icons-material/Close';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const ProductImageModal = ({ product, isMoved, slideIndex, lastIndex }) => {
+  const closeModalHandler = (e) => {
+    if (e.target.classList.contains('imageContainer')) {
+      setIsOpen(false);
+    }
+
+    const exitModal = (e) => {
+      e.preventDefault();
+
+      if (e.key === 'Escape') {
+        setIsOpen(false);
+      }
+    };
+
+    window.addEventListener('keydown', exitModal);
+    return () => window.removeEventListener('keydown', exitModal);
+  };
+
   return (
     <ImageOverlay type={isOpen ? 'show' : ''}>
       <CloseButton type='button' onClick={() => setIsOpen(false)}>
