@@ -192,15 +192,6 @@ const Right = styled.div`
   }
 `;
 
-const ProductPrice = styled.p`
-  text-decoration: line-through;
-  font-size: 1.6rem;
-
-  @media only screen and (max-width: 18.75em) {
-    font-size: 1.5rem;
-  }
-`;
-
 const PriceDiscount = styled.p`
   font-weight: 700;
   font-size: 1.4rem;
