@@ -603,11 +603,4 @@ const DescriptinContainer = styled.div`
   margin: 3rem 0;
 `;
 
-const DescriptionHeader = styled.h4`
-  display: inline-block;
-  font-weight: 400;
-  font-size: 1.8rem;
-  margin-bottom: 3rem;
-`
-
 export default SingleProduct;
