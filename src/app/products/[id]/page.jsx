@@ -661,30 +661,4 @@ const CloseButton = styled.button`
   }
 `;
 
-const ArrowButton = styled.button`
-  border: none;
-  display: inline-block;
-  width: 4rem;
-  height: 4rem;
-  background-color: var(--clr-black);
-  color: var(--clr-white);
-  border-radius: 50%;
-  outline-color: #777;
-  position: absolute;
-  top: 50%;
-  left: ${({ direction }) => direction === 'left' && '1rem'};
-  right: ${({ direction }) => direction === 'right' && '2.5rem'};
-  transform: translateY(-50%);
-  cursor: pointer;
-  transition: all 0.3s ease;
-
-  &:hover {
-    background-color: hsla(0, 0%, 100%, 0.05);
-  }
-
-  svg {
-    fill: var(--clr-white);
-  }
-`;
-
 export default SingleProduct;
