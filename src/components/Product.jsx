@@ -71,6 +71,11 @@ const Product = ({ product }) => {
     setSelectedSize(size);
   };
 
+  const handleQuantity = (type) => {
+    type === 'dec' && quantity > 1 && setQuantity((prev) => prev - 1);
+    type === 'inc' && setQuantity((prev) => prev + 1);
+  };
+
   return (
     <>
       <ProductContainer>
