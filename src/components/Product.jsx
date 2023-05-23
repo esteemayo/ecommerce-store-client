@@ -66,6 +66,11 @@ const Product = ({ product }) => {
     setIsSelected(color);
   };
 
+  const handleSize = (size) => {
+    setSize(size);
+    setSelectedSize(size);
+  };
+
   return (
     <>
       <ProductContainer>
