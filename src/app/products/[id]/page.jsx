@@ -616,12 +616,4 @@ const DescriptionText = styled.p`
   word-wrap: break-word;
 `;
 
-const Line = styled.hr`
-  width: 93%;
-  height: 1px;
-  border: none;
-  margin: 0 auto;
-  background-color: #e2e9e7;
-`;
-
 export default SingleProduct;
