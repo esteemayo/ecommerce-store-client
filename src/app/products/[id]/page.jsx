@@ -58,21 +58,6 @@ const SingleProduct = ({ params }) => {
     return () => window.removeEventListener('keydown', exitModal);
   };
 
-  const handleMove = (direction) => {
-    let newSlideIndex;
-
-    setIsMoved(true);
-    if (direction === 'left') {
-      newSlideIndex = slideIndex - 1;
-    }
-
-    if (direction === 'right') {
-      newSlideIndex = slideIndex + 1;
-    }
-
-    setSlideIndex(newSlideIndex);
-  };
-
   useEffect(() => {
     const product = storeProducts.find((item) => item.id === parseInt(id));
     setProduct(product);
