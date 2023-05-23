@@ -277,7 +277,7 @@ const Button = styled.button`
   justify-content: center;
   gap: 0.5rem;
 
-  @media only screen and (max-width: 18.75em) {
+  @media only screen and (max-width: 25em) {
     width: 100%;
   }
 
