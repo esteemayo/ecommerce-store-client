@@ -284,7 +284,15 @@ const Product = ({ product }) => {
           </ProductWrapper>
         </Right>
       </ProductContainer>
-      <ProductImageModal product={product} isOpen={isOpen} setIsOpen={setIsOpen} isMoved={isMoved} slideIndex={slideIndex} lastIndex={lastIndex} handleMove={handleMove} />
+      <ProductImageModal
+        product={product}
+        isOpen={isOpen}
+        setIsOpen={setIsOpen}
+        isMoved={isMoved}
+        slideIndex={slideIndex}
+        lastIndex={lastIndex}
+        handleMove={handleMove}
+      />
     </Container>
   );
 }
