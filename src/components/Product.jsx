@@ -857,7 +857,7 @@ const DescriptionHeader = styled.h4`
   font-weight: 400;
   font-size: 1.8rem;
   margin-bottom: 3rem;
-`
+`;
 
 const DescriptionText = styled.p`
   font-size: 1.6rem;
