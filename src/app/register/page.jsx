@@ -44,7 +44,7 @@ const Register = () => {
     }
 
     if (password === '') {
-      errors.password = 'Password field is required';
+      errors.password = 'Password must not be empty';
     }
 
     if (password !== confirmPassword) {
