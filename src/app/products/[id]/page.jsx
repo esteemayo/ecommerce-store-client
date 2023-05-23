@@ -192,14 +192,6 @@ const Right = styled.div`
   }
 `;
 
-const ProductWrapper = styled.div`
-  margin-top: 2rem;
-
-  @media only screen and (max-width: 37.5em) {
-    margin-top: 1.5rem;
-  }
-`;
-
 const PriceContainer = styled.div`
   display: flex;
   align-items: center;
