@@ -48,38 +48,6 @@ const Wrapper = styled.div`
   width: 100%;
 `;
 
-const ProductContainer = styled.div`
-  max-width: 120rem;
-  margin: 0 auto;
-  display: flex;
-  align-items: start;
-  justify-content: space-between;
-  margin-bottom: 3rem;
-
-  @media only screen and (max-width: 64em) {
-    max-width: 100rem;
-  }
-
-  @media only screen and (max-width: 59.375em) {
-    max-width: 80rem;
-  }
-
-  @media only screen and (max-width: 50em) {
-    max-width: 70rem;
-    flex-direction: column;
-  }
-
-  @media only screen and (max-width: 37.5em) {
-    padding-left: 5rem;
-    padding-right: 5rem;
-  }
-
-  @media only screen and (max-width: 25em) {
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
-`;
-
 const Line = styled.hr`
   width: 93%;
   height: 1px;
