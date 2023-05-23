@@ -88,11 +88,6 @@ const SingleProduct = ({ params }) => {
     }
   };
 
-  const handleColor = (color) => {
-    setColor(color);
-    setIsSelected(color);
-  };
-
   useEffect(() => {
     const product = storeProducts.find((item) => item.id === parseInt(id));
     setProduct(product);
