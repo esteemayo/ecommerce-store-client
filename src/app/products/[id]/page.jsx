@@ -30,9 +30,6 @@ const SingleProduct = ({ params }) => {
   const [slideIndex, setSlideIndex] = useState(0);
   const [slideNumber, setSlideNumber] = useState(0);
   const [isSelected, setIsSelected] = useState(null);
-  const [selectedSize, setSelectedSize] = useState(null);
-  const [isSliderMoved, setIsSliderMoved] = useState(false);
-  const [clickLimit, setClickLimit] = useState(window.innerWidth / 235);
 
   useEffect(() => {
     const product = storeProducts.find((item) => item.id === parseInt(id));
