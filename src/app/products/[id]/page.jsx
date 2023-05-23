@@ -34,13 +34,6 @@ const SingleProduct = ({ params }) => {
   const [isSliderMoved, setIsSliderMoved] = useState(false);
   const [clickLimit, setClickLimit] = useState(window.innerWidth / 235);
 
-  const lastIndex = product?.images?.lastIndexOf(product?.images[product?.images.length - 1]);
-
-  const handleOpen = (index) => {
-    setSlideIndex(index);
-    setIsOpen(true);
-  };
-
   useEffect(() => {
     const product = storeProducts.find((item) => item.id === parseInt(id));
     setProduct(product);
