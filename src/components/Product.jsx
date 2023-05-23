@@ -8,6 +8,7 @@ import { faArrowLeft, faArrowRight, faMinus, faPlus } from '@fortawesome/free-so
 import { NumericFormat } from 'react-number-format';
 
 import StarRating from '@/components/StarRating';
+import { useDispatch } from 'react-redux';
 
 const Product = ({ product }) => {
   const imgContainerRef = useRef();
