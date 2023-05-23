@@ -5,7 +5,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useEffect, useRef, useState } from 'react';
 import CloseIcon from '@mui/icons-material/Close';
 import Image from 'next/image';
-import { NumericFormat } from 'react-number-format';
 import { useDispatch } from 'react-redux';
 
 import Recommendation from '@/components/Recommendation';
