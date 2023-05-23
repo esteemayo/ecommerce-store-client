@@ -16,6 +16,7 @@ const CartModal = ({ product, isModalOpen, closeModal, setIsSelectedProduct }) =
   const [alert, setAlert] = useState(false);
   const [color, setColor] = useState(null);
   const [isSelected, setIsSelected] = useState(null);
+  const [quantity, setQuantity] = useState(1);
   const [selectedSize, setSelectedSize] = useState(null);
 
   const closeModalHandler = (e) => {
