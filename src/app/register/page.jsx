@@ -122,6 +122,10 @@ const Container = styled.main`
     max-width: 100rem;
     padding: 8rem 0;
   }
+
+  @media only screen and (max-width: 59.375em) {
+    max-width: 80rem;
+  }
 `;
 
 const Wrapper = styled.div`
