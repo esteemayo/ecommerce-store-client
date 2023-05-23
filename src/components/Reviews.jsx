@@ -374,8 +374,8 @@ const Message = styled.span`
   color: inherit;
 
   @media only screen and (max-width: 18.75em) {
-      font-size: 1.5rem;
-    }
+    font-size: 1.5rem;
+  }
 `;
 
 const ReviewButtonWrapper = styled.div``;
