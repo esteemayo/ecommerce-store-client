@@ -192,26 +192,6 @@ const Right = styled.div`
   }
 `;
 
-const Message = styled.p`
-  color: inherit;
-  margin-top: 1rem;
-
-  a {
-    &:link,
-    &:visited {
-      text-decoration: underline;
-      text-transform: capitalize;
-      color: inherit;
-      outline-color: #eee;
-    }
-
-    &:hover,
-    &:active {
-      color: inherit;
-    }
-  }
-`;
-
 const Line = styled.hr`
   width: 93%;
   height: 1px;
