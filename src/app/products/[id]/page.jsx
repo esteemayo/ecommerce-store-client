@@ -348,10 +348,6 @@ const Hr = styled.hr`
   background-color: #e2e9e7;
 `;
 
-const ColorContainer = styled.div`
-  margin: 2rem 0;
-`;
-
 const Line = styled.hr`
   width: 93%;
   height: 1px;
