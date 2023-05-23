@@ -143,6 +143,7 @@ const CloseButton = styled.button`
   transition: all 0.3s ease;
 
   @media only screen and (max-width: 18.75em) {
+    right: -1rem;
     width: 3.5rem;
     height: 3.5rem;
   }
