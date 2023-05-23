@@ -11,12 +11,12 @@ import StarRating from '@/components/StarRating';
 
 const Product = ({ product }) => {
   const imgContainerRef = useRef();
-  const [size, setSize] = useState(null);
   const [color, setColor] = useState(null);
-  const [isOpen, setIsOpen] = useState(false);
-  const [quantity, setQuantity] = useState(1);
+  const [size, setSize] = useState(null);
   const [isMoved, setIsMoved] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   const [slideIndex, setSlideIndex] = useState(0);
+  const [quantity, setQuantity] = useState(1);
   const [slideNumber, setSlideNumber] = useState(0);
   const [isSelected, setIsSelected] = useState(null);
   const [selectedSize, setSelectedSize] = useState(null);
