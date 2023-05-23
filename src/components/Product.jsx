@@ -105,7 +105,8 @@ const Product = ({ product }) => {
   };
 
   const handleClick = () => {
-    console.log({ size, color, quantity });
+    dispatch(addProduct({ ...product, size, color, quantity }));
+    handleReset();
   };
 
   return (
