@@ -1,6 +1,6 @@
 'use client';
 import styled from 'styled-components';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 
 import Recommendation from '@/components/Recommendation';
