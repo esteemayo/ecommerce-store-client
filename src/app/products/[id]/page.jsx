@@ -98,11 +98,6 @@ const SingleProduct = ({ params }) => {
     setSelectedSize(size);
   };
 
-  const handleQuantity = (type) => {
-    type === 'dec' && quantity > 1 && setQuantity((prev) => prev - 1);
-    type === 'inc' && setQuantity((prev) => prev + 1);
-  };
-
   useEffect(() => {
     const product = storeProducts.find((item) => item.id === parseInt(id));
     setProduct(product);
