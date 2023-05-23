@@ -450,8 +450,4 @@ const SelectSize = styled.button`
   }
 `;
 
-const AddContainer = styled.div`
-  margin: 2rem 0;
-`;
-
 export default SingleProduct;
