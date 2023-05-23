@@ -142,6 +142,10 @@ const CloseButton = styled.button`
   cursor: pointer;
   transition: all 0.3s ease;
 
+  @media only screen and (max-width: 18.75em) {
+    width: 3.5rem;
+  }
+
   &:hover {
     background-color: #e6e5f1;
     color: #6f707e;
