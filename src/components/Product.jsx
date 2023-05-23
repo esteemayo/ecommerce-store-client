@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useEffect, useRef, useState } from 'react';
+import CloseIcon from '@mui/icons-material/Close';
 import Image from 'next/image';
 import { NumericFormat } from 'react-number-format';
 import { useDispatch } from 'react-redux';
@@ -186,7 +187,36 @@ const Product = ({ product }) => {
           </ProductWrapper>
         </Right>
       </ProductContainer>
-      <Line />
+      <ImageOverlay type={isOpen ? 'show' : ''}>
+        <CloseButton type='button' onClick={() => setIsOpen(false)}>
+          <CloseIcon />
+        </CloseButton>
+        {isMoved && slideIndex > 0 && (
+          <ArrowButton
+            type='button'
+            direction='left'
+            onClick={() => handleMove('left')}
+          >
+            <FontAwesomeIcon icon={faArrowLeft} />
+          </ArrowButton>
+        )}
+        <ImageContainer className='imageContainer' onClick={closeModalHandler}>
+          <Image
+            src={product?.images ? product?.images[slideIndex] : '/img/img-1.jpg'}
+            width={1200}
+            height={1000}
+            alt=''
+          />
+        </ImageContainer>
+        <ArrowButton
+          type='button'
+          direction='right'
+          onClick={() => handleMove('right')}
+          style={{ display: slideIndex === lastIndex && 'none' }}
+        >
+          <FontAwesomeIcon icon={faArrowRight} />
+        </ArrowButton>
+      </ImageOverlay>
     </>
   );
 }
