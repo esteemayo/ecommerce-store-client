@@ -80,11 +80,6 @@ const ProductContainer = styled.div`
   }
 `;
 
-const Left = styled.div`
-  flex: 2;
-  padding: 1rem 0;
-`;
-
 const Line = styled.hr`
   width: 93%;
   height: 1px;
