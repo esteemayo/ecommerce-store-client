@@ -79,6 +79,10 @@ const Overlay = styled.section`
   transform: scale(${({ type }) => type === 'show' ? 1 : 0});
   z-index: ${({ type }) => type === 'show' ? 4000 : -1};
   transition: all 0.3s linear;
+
+  @media only screen and (max-width: 31.25em) {
+    display: none;
+  }
 `;
 
 const CloseButton = styled.button`
