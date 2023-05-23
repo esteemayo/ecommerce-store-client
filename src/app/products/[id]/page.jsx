@@ -115,7 +115,8 @@ const SingleProduct = ({ params }) => {
   return (
     <Container onMouseOver={() => dispatch(closeSubmenu())}>
       <Wrapper>
-        <ProductContainer>
+        <Product product={product} />
+        {/* <ProductContainer>
           <Left>
             <ImagesContainer>
               <IconButton
@@ -272,14 +273,14 @@ const SingleProduct = ({ params }) => {
                 <DescriptionHeader>Overview</DescriptionHeader>
                 <DescriptionText>{product.desc}</DescriptionText>
               </DescriptinContainer>
-              {/* <Hr /> */}
+              <Hr />
             </ProductWrapper>
           </Right>
-        </ProductContainer>
+        </ProductContainer> */}
         <Line />
         <Recommendation />
         <Reviews />
-        <ImageOverlay type={isOpen ? 'show' : ''}>
+        {/* <ImageOverlay type={isOpen ? 'show' : ''}>
           <CloseButton type='button' onClick={() => setIsOpen(false)}>
             <CloseIcon />
           </CloseButton>
@@ -308,7 +309,7 @@ const SingleProduct = ({ params }) => {
           >
             <FontAwesomeIcon icon={faArrowRight} />
           </ArrowButton>
-        </ImageOverlay>
+        </ImageOverlay> */}
       </Wrapper>
     </Container>
   );
