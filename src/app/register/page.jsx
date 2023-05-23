@@ -36,7 +36,7 @@ const Register = () => {
     }
 
     if (email.trim() === '') {
-      errors.email = 'Email field is required';
+      errors.email = 'Email must not be empty';
     }
 
     if (username.trim() === '') {
