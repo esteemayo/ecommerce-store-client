@@ -3,8 +3,11 @@ import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import CloseIcon from '@mui/icons-material/Close';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { useState } from 'react';
 
 const ProductImageModal = ({ product, isOpen, setIsOpen, isMoved, slideIndex, lastIndex }) => {
+  const [isMoved, setIsMoved] = useState(false);
+
   const closeModalHandler = (e) => {
     if (e.target.classList.contains('imageContainer')) {
       setIsOpen(false);
