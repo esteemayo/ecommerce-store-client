@@ -50,6 +50,8 @@ const Register = () => {
 
     if (password === '') {
       errors.password = 'Password must not be empty';
+    } else if (password.length < 8) {
+      errors.password = 'Password should be at least 8 characters long';
     }
 
     if (password !== confirmPassword) {
