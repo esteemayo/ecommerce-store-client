@@ -149,6 +149,7 @@ const SuccessAlert = styled.p`
   border: 1px solid #409384;
   border-radius: 10rem;
   margin-bottom: 2rem;
+  line-height: 1.8;
 
   @media only screen and (max-width: 43.75em) {
     font-size: 1.2rem;
