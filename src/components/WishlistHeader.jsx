@@ -51,6 +51,10 @@ const DateTime = styled.time`
   @media only screen and (max-width: 56.25em) {
     font-size: 1.3rem;
   }
+
+  @media only screen and (max-width: 18.75em) {
+    font-size: 1.2rem;
+  }
 `;
 
 const SendButton = styled.button`
