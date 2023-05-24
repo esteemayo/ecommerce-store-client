@@ -128,26 +128,6 @@ const Container = styled.main`
     padding-left: 2rem;
     padding-right: 2rem;
   }
-
-  /* @media only screen and (max-width: 50em) {
-    padding-left: 9rem;
-    padding-right: 9rem;
-  }
-
-  @media only screen and (max-width: 37.5em) {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-  }
-
-  @media only screen and (max-width: 31.25em) {
-    padding-left: 5rem;
-    padding-right: 5rem;
-  }
-
-  @media only screen and (max-width: 25em) {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  } */
 `;
 
 const Wrapper = styled.div`
