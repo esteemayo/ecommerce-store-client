@@ -235,6 +235,10 @@ const CartButton = styled.button`
     padding: 1rem 1.5rem;
   }
 
+  @media only screen and (max-width: 18.75em) {
+    font-size: 1.4rem;
+  }
+
   &:hover {
     background-position: 100%;
   }
