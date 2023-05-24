@@ -183,6 +183,10 @@ const Input = styled.input`
   }
 `;
 
+const UploadProgress = styled.span`
+  
+`;
+
 const ButtonContainer = styled.div`
   @media only screen and (max-width: 25em) {
     width: 100%;
