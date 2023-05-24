@@ -119,6 +119,10 @@ const Left = styled.div`
   @media only screen and (max-width: 37.5em) {
     flex: 1.5;
   }
+
+  @media only screen and (max-width: 18.75em) {
+    align-items: flex-start;
+  }
 `;
 
 const ImageContainer = styled.div`
