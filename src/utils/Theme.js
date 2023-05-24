@@ -18,4 +18,5 @@ export const lightTheme = {
   textHeader: 'var(--clr-secondary-green)',
   box: '0 0 1.5rem -1rem rgba(0, 0, 0, 0.75)',
   textProdCard: '#6e6e6e',
+  star: '#89a8a0',
 };
