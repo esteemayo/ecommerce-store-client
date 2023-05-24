@@ -139,7 +139,12 @@ const Container = styled.main`
   margin: 0 auto;
   padding: 6rem 0;
 
-  @media only screen and (max-width: 50em) {
+  @media only screen and (max-width: 64em) {
+    max-width: 100rem;
+    padding: 8rem 0;
+  }
+
+  /* @media only screen and (max-width: 50em) {
     padding-left: 7rem;
     padding-right: 7rem;
   }
@@ -162,7 +167,7 @@ const Container = styled.main`
   @media only screen and (max-width: 17.5em) {
     padding-left: 1.8rem;
     padding-right: 1.8rem;
-  }
+  } */
 `;
 
 const Wrapper = styled.div`
