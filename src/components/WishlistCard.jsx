@@ -274,6 +274,7 @@ const DeleteButton = styled.button`
   }
 
   @media only screen and (max-width: 18.75em) {
+    top: 1px;
     right: 1rem;
   }
 
