@@ -15,4 +15,5 @@ export const lightTheme = {
   textSoft: '#888888',
   soft: '#f9f9f9',
   textHeader: 'var(--clr-secondary-green)',
+  box: '0 0 1.5rem -1rem rgba(0, 0, 0, 0.75)',
 };
