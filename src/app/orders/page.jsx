@@ -125,6 +125,7 @@ const OrderContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: flex-start;
   gap: 3rem;
 `;
 
