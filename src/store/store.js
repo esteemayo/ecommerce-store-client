@@ -13,7 +13,6 @@ import {
 import createWebStorage from 'redux-persist/lib/storage/createWebStorage';
 
 import cartReducer from '@/features/cart/cartSlice';
-import subMenuReducer from '@/features/submenu/submenuSlice';
 import darkModeReducer from '@/features/darkMode/darkModeSlice';
 
 const createNoopStorage = () => {
