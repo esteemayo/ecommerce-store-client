@@ -74,6 +74,7 @@ const SendButton = styled.button`
   }
 
   @media only screen and (max-width: 18.75em) {
+    font-size: 1.4rem;
     padding: 0.87rem 1rem;
   }
 `;
