@@ -105,6 +105,10 @@ const Wrapper = styled.div`
     padding: 2rem;
     flex-direction: column;
   }
+
+  @media only screen and (max-width: 18.75em) {
+    padding-left: 1.5rem;
+  }
 `;
 
 const Left = styled.div`
