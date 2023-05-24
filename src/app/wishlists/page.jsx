@@ -12,7 +12,6 @@ import CartModal from '@/components/CartModal';
 const WishLists = () => {
   const dispatch = useDispatch();
 
-  const [products, setProducts] = useState(wishlists);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isSelectedProduct, setIsSelectedProduct] = useState({});
 
