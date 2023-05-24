@@ -20,7 +20,7 @@ const Register = () => {
 
   const [file, setFile] = useState(null);
   const [errors, setErrors] = useState({});
-  const [perc, setPerc] = useState(null);
+  const [perc, setPerc] = useState(1);
   const [data, setData] = useState(initialState);
 
   const handleChange = ({ target: input }) => {
@@ -261,6 +261,10 @@ const FormUpload = styled.input`
       transform: translateY(-2px);
     }
   }
+`;
+
+const UploadProgress = styled.span`
+  
 `;
 
 const FormButton = styled.button`
