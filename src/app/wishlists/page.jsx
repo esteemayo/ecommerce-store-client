@@ -73,10 +73,6 @@ const Container = styled.main`
     padding-left: 2rem;
     padding-right: 2rem;
   }
-
-  /* @media only screen and (max-width: 56.25em) {
-    padding: 5rem 3rem;
-  } */
 `;
 
 const Wrapper = styled.div`
