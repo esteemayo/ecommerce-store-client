@@ -5,7 +5,7 @@ export const darkTheme = {
   textSoft: '#e2e4e4',
   soft: '#0f0f0f',
   textHeader: '#e2e4e4',
-  box: '2px 4px 10px 1px rgba(201, 201, 201, 0.47)',
+  box: '2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.47)',
 };
 
 export const lightTheme = {
