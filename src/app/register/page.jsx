@@ -109,7 +109,7 @@ const Register = () => {
               </>
             )}
           </FormGroup>
-          <FormButton type='submit'>Register</FormButton>
+          <FormButton type='submit' disabled={perc !== null && perc < 100}>Register</FormButton>
         </Form>
       </Wrapper>
       <LoginContainer>
