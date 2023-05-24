@@ -23,14 +23,16 @@ export default function RootLayout({ children }) {
       <body>
         <Provider store={store}>
           <PersistGate loading={null} persistor={persistor}>
-            <div className='container'>
-              <Navbar />
-              <Submenu />
-              <Sidebar />
-              {children}
-              <Footer />
-              <ScrollToTop />
-            </div>
+            <ThemeProvider>
+              <div className='container'>
+                <Navbar />
+                <Submenu />
+                <Sidebar />
+                {children}
+                <Footer />
+                <ScrollToTop />
+              </div>
+            </ThemeProvider>
           </PersistGate>
         </Provider>
       </body>
