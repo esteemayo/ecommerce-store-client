@@ -23,7 +23,7 @@ const Heading = styled.h1`
     display: inline-block;
     width: 4rem;
     height: 3px;
-    background-color: var(--clr-secondary-green);
+    background-color: ${({ theme }) => theme.textHeader};
     border-radius: 3px;
   }
 `;
