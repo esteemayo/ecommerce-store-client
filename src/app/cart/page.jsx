@@ -72,6 +72,11 @@ const Container = styled.main`
   margin: 0 auto;
   padding: 10rem 0;
 
+  @media only screen and (max-width: 64em) {
+    max-width: 100rem;
+    padding: 8rem 0;
+  }
+
   /* @media only screen and (max-width: 43.75em) {
     padding-top: 5rem;
     padding-bottom: 5rem;
