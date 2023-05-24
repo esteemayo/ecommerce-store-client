@@ -17,6 +17,7 @@ const Account = () => {
   const dispatch = useDispatch();
 
   const [isEmailOpen, setIsEmailOpen] = useState(false);
+  const [isPassword, setIsPassword] = useState(false);
   const [isFileUpload, setIsFileUpload] = useState(false);
   const [isDeleteOpen, setIsDeleteOpen] = useState(false);
 
