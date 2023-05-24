@@ -252,6 +252,12 @@ const CartButton = styled.button`
   &:hover {
     background-position: 100%;
   }
+
+  svg {
+    @media only screen and (max-width: 18.75em) {
+      font-size: 1.3rem;
+    }
+  }
 `;
 
 const DeleteButton = styled.button`
