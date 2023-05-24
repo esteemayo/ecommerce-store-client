@@ -16,6 +16,7 @@ const Categories = () => {
 
 const Container = styled.section`
   width: 100vw;
+  background-color: ${({ theme }) => theme.bg};
 `;
 
 const Wrapper = styled.div`
