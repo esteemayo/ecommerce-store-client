@@ -48,6 +48,7 @@ const Container = styled.main`
 
   @media only screen and (max-width: 64em) {
     padding-top: 8rem;
+    padding-bottom: 8rem;
   }
 `;
 
