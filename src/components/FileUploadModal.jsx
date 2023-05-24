@@ -51,7 +51,7 @@ const FileUploadModal = ({ openModal, closeModal }) => {
               )}
             </InputContainer>
             <ButtonContainer>
-              <Button type='button' onClick={handleUpload}>Upload</Button>
+              <Button type='button' disabled={perc > 0 && perc < 100} onClick={handleUpload}>Upload</Button>
             </ButtonContainer>
           </UploadContainer>
         </Wrapper>
