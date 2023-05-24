@@ -69,9 +69,9 @@ const Wrapper = styled.div`
   max-width: 80rem;
   margin: 0 auto;
 
-  @media only screen and (max-width: 56.25em) {
+  /* @media only screen and (max-width: 56.25em) {
     max-width: 100rem;
-  }
+  } */
 `;
 
 const Text = styled.p`
