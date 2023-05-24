@@ -76,10 +76,10 @@ const Container = styled.main`
     padding-bottom: 6rem;
   }
 
-  @media only screen and (max-width: 25em) {
+  /* @media only screen and (max-width: 25em) {
     padding-left: 3rem;
     padding-right: 3rem;
-  }
+  } */
 `;
 
 const Wrapper = styled.div`
