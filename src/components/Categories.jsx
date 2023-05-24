@@ -47,4 +47,8 @@ const Container = styled.section`
   }
 `;
 
+const Wrapper = styled.div`
+  
+`;
+
 export default Categories;
