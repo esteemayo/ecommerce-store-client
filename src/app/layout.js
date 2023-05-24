@@ -11,6 +11,7 @@ import Sidebar from '@/components/Sidebar';
 import ScrollToTop from '@/components/ScrollToTop';
 
 import './globals.scss';
+import { darkTheme } from '@/utils/Theme';
 
 export default function RootLayout({ children }) {
   const { darkMode } = useSelector((state) => ({ ...state.darkMode }));
