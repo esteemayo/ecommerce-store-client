@@ -9,8 +9,8 @@ const ResetPassword = () => {
   const dispatch = useDispatch();
 
   const passwordRef = useRef();
-  const [errors, setErrors] = useState({});
   const [password, setPassword] = useState('');
+  const [errors, setErrors] = useState({});
   const [confirmPassword, setConfirmPassword] = useState('');
 
   const validateForm = () => {
