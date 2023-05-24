@@ -43,6 +43,7 @@ const persistConfig = {
 const rootReducer = combineReducers({
   cart: cartReducer,
   submenu: subMenuReducer,
+  darkMode: darkModeReducer,
 });
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);
