@@ -166,6 +166,7 @@ const ProductName = styled.h2`
       text-decoration: underline;
       text-decoration-color: #6d857f;
       text-underline-offset: 4px;
+      color: currentColor;
     }
   }
 `;
