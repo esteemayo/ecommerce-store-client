@@ -136,6 +136,10 @@ const ImageContainer = styled.div`
   height: 8rem;
   background-color: #ede9e6;
 
+  @media only screen and (max-width: 18.75em) {
+    width: 5rem;
+  }
+
   img {
     display: block;
     width: 8rem;
