@@ -27,6 +27,8 @@ const Login = () => {
 
     if (password === '') {
       tempErrors.password = 'Password must not be empty';
+    } else if (password.length < 8) {
+      tempErrors.password = 'Password should be at least 8 characters long';
     }
 
     if (Object.keys(tempErrors).length > 0) {
