@@ -329,6 +329,10 @@ const Quantity = styled.span`
   @media only screen and (max-width: 43.75em) {
     font-size: 1.7rem;
   }
+
+  @media only screen and (max-width: 18.75em) {
+    font-size: 1.5rem;
+  }
 `;
 
 export default CartItem;
