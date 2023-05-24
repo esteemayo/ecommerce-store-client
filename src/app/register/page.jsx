@@ -270,7 +270,7 @@ const FormUpload = styled.input`
 `;
 
 const UploadProgress = styled.span`
-  
+  font-size: 1.4rem;
 `;
 
 const FormButton = styled.button`
