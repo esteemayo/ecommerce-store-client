@@ -83,30 +83,6 @@ const Wrapper = styled.div`
     padding-left: 2rem;
     padding-right: 2rem;
   }
-
-  /* @media only screen and (max-width: 64em) {
-    max-width: 90rem;
-  }
-
-  @media only screen and (max-width: 50em) {
-    max-width: 80rem;
-  }
-
-  @media only screen and (max-width: 43.75em) {
-    max-width: 65rem;
-  }
-
-  @media only screen and (max-width: 37.5em) {
-    max-width: 50rem;
-  }
-
-  @media only screen and (max-width: 28.75em) {
-    max-width: 40rem;
-  }
-
-  @media only screen and (max-width: 21.875em) {
-    padding: 0 2rem;
-  } */
 `;
 
 const ImageContainer = styled.div`
