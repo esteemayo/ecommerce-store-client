@@ -6,8 +6,10 @@ import Category from './Category';
 const Categories = () => {
   return (
     <Container>
-      <Header title='Shop by category' />
-      <Category />
+      <Wrapper>
+        <Header title='Shop by category' />
+        <Category />
+      </Wrapper>
     </Container>
   );
 }
