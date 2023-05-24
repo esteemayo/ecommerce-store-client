@@ -3,6 +3,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import { useState } from 'react';
 
 const FileUploadModal = ({ openModal, closeModal }) => {
+  const [perc, setPerc] = useState(0);
   const [file, setFile] = useState(null);
 
   const closeModalHandler = (e) => {
