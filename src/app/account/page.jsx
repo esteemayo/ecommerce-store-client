@@ -16,7 +16,6 @@ import { closeSubmenu } from '@/features/submenu/submenuSlice';
 const Account = () => {
   const dispatch = useDispatch();
 
-  const [isPassword, setIsPassword] = useState(false);
   const [isEmailOpen, setIsEmailOpen] = useState(false);
   const [isFileUpload, setIsFileUpload] = useState(false);
   const [isDeleteOpen, setIsDeleteOpen] = useState(false);
