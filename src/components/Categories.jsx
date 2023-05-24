@@ -15,6 +15,7 @@ const Categories = () => {
 }
 
 const Container = styled.section`
+  width: 100vw;
 `;
 
 const Wrapper = styled.div`
