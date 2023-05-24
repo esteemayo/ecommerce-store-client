@@ -11,4 +11,5 @@ export const lightTheme = {
   bgLight: '#f4f8f7',
   text: 'inherit',
   textSoft: '#888888',
+  soft: '#f9f9f9',
 };
