@@ -13,6 +13,8 @@ import ScrollToTop from '@/components/ScrollToTop';
 import './globals.scss';
 
 export default function RootLayout({ children }) {
+  const { darkMode } = useSelector((state) => ({ ...state.darkMode }));
+
   return (
     <html lang="en">
       {/*
