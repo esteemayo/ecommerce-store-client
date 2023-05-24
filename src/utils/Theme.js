@@ -3,7 +3,7 @@ export const darkTheme = {
   bgLight: '#272727',
   text: '#cfd0d1',
   textSoft: '#e2e4e4',
-  soft: '#333333',
+  soft: '#0f0f0f',
   textHeader: '#e2e4e4',
 };
 
