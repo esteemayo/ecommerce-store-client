@@ -213,6 +213,10 @@ const ProductPrice = styled.span`
   font-weight: 400;
   font-size: 2.23rem;
   color: #6e6e6e;
+
+  @media only screen and (max-width: 18.75em) {
+    font-size: 2rem;
+  }
 `;
 
 const CartButton = styled.button`
