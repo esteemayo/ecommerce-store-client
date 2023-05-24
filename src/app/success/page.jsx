@@ -141,6 +141,7 @@ const SuccessWrapper = styled.div`
 
   @media only screen and (max-width: 18.75em) {
     padding-left: 2rem;
+    padding-right: 2rem;
   }
 `;
 
