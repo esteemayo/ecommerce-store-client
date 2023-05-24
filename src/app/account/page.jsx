@@ -73,7 +73,7 @@ const Account = () => {
                     placeholder='********'
                   />
                   <ButtonContainer>
-                    <Button type='button' onClick={() => setIsPassword(true)}>
+                    <Button type='button' onClick={() => setIsPasswordOpen(true)}>
                       Change
                     </Button>
                   </ButtonContainer>
@@ -117,7 +117,7 @@ const Account = () => {
         openModal={isPasswordOpen}
         closeModal={setIsPasswordOpen}
       >
-        <UpdatePassword onCancel={() => setIsPassword(false)} />
+        <UpdatePassword onCancel={() => setIsPasswordOpen(false)} />
       </Modal>
       <Modal
         title='Change your email address'
