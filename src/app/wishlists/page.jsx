@@ -96,6 +96,10 @@ const Text = styled.p`
   @media only screen and (max-width: 26.25em) {
     font-size: 3rem;
   }
+
+  @media only screen and (max-width: 25em) {
+    font-size: 2.8rem;
+  }
 `;
 
 export default WishLists;
