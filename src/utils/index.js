@@ -12,7 +12,7 @@ export const getUnique = (items, value) => {
 
 export const getFromStorage = (key) => {
   if (typeof window !== 'undefined') {
-    return window.localStorage.getItem(key);
+    return JSON.parse(window.localStorage.getItem(key));
   }
 }
 
