@@ -269,6 +269,10 @@ const DeleteButton = styled.button`
     right: 1.5rem;
   }
 
+  @media only screen and (max-width: 18.75em) {
+    right: 1rem;
+  }
+
   svg {
     font-weight: inherit;
     font-size: 2rem;
