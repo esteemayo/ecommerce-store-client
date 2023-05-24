@@ -126,10 +126,6 @@ const OrderContainer = styled.div`
   flex-wrap: wrap;
   align-items: center;
   gap: 3rem;
-
-  @media only screen and (max-width: 21.875em) {
-    justify-content: flex-start;
-  }
 `;
 
 export default Orders;
