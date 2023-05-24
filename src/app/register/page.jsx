@@ -52,9 +52,9 @@ const Register = () => {
       errors.password = 'Password must not be empty';
     } else if (password.length < 8) {
       errors.password = 'Password should be at least 8 characters long';
-    }
-
-    if (password !== confirmPassword) {
+    } else if (!confirmPassword) {
+      errors.confirmPassword = 'Please confirm your new password';
+    } else if (password !== confirmPassword) {
       errors.confirmPassword = 'Passwords do not match';
     }
 
