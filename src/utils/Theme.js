@@ -6,6 +6,7 @@ export const darkTheme = {
   soft: '#0f0f0f',
   textHeader: '#e2e4e4',
   box: '2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.47)',
+  textprodCard: '#d6d9db',
 };
 
 export const lightTheme = {
