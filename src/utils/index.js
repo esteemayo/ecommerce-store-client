@@ -9,3 +9,9 @@ export const getUnique = (items, value) => {
   const newItems = items.map((item) => item[value]).flat();
   return [...new Set(newItems)];
 }
+
+export const getFromStorage = (key) => {
+  if (typeof window !== 'undefined') {
+    return window.localStorage.getItem(key);
+  }
+}
