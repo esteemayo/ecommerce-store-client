@@ -190,7 +190,7 @@ const Input = styled.input`
 `;
 
 const UploadProgress = styled.span`
-  
+  text-transform: capitalize;
 `;
 
 const ButtonContainer = styled.div`
