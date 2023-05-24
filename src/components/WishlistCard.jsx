@@ -149,6 +149,7 @@ const ImageContainer = styled.div`
 
     @media only screen and (max-width: 18.75em) {
       width: 5rem;
+      height: 5rem;
     }
   }
 `;
