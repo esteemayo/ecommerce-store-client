@@ -9,4 +9,5 @@ export const lightTheme = {
   bg: 'var(--clr-white)',
   bgLight: '#f4f8f7',
   text: 'inherit',
+  textSoft: '#888888',
 };
