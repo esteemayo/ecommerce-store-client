@@ -100,28 +100,6 @@ const Container = styled.main`
     padding-right: 2rem;
   }
 
-  /* @media only screen and (max-width: 43.75em) {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    padding-left: 7rem;
-    padding-right: 7rem;
-  }
-
-  @media only screen and (max-width: 37.5em) {
-    padding-left: 5rem;
-    padding-right: 5rem;
-  }
-
-  @media only screen and (max-width: 25em) {
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
-
-  @media only screen and (max-width: 23.75em) {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-
   @media only screen and (max-width: 18.75em) {
     padding-left: 1.3rem;
     padding-right: 1.3rem;
