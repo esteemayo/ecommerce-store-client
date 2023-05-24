@@ -52,7 +52,7 @@ const Wrapper = styled.div`
   max-width: 120rem;
   margin: 0 auto;
 
-  @media only screen and (max-width: 64em) {
+  /* @media only screen and (max-width: 64em) {
     max-width: 90rem;
   }
 
@@ -74,7 +74,7 @@ const Wrapper = styled.div`
 
   @media only screen and (max-width: 21.875em) {
     padding: 0 2rem;
-  }
+  } */
 `;
 
 const ImageContainer = styled.div`
