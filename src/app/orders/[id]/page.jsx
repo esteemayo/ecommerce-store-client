@@ -99,7 +99,7 @@ const Container = styled.main`
   width: 100vw;
   padding: 8rem 0;
 
-  @media only screen and (max-width: 50em) {
+  /* @media only screen and (max-width: 50em) {
     padding-left: 9rem;
     padding-right: 9rem;
   }
@@ -117,7 +117,7 @@ const Container = styled.main`
   @media only screen and (max-width: 25em) {
     padding-left: 2rem;
     padding-right: 2rem;
-  }
+  } */
 `;
 
 const Wrapper = styled.div`
