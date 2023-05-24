@@ -59,9 +59,9 @@ const Container = styled.main`
     padding: 8rem 0;
   }
 
-  @media only screen and (max-width: 56.25em) {
+  /* @media only screen and (max-width: 56.25em) {
     padding: 5rem 3rem;
-  }
+  } */
 `;
 
 const Wrapper = styled.div`
