@@ -65,6 +65,9 @@ const ProductImageModal = ({
 }
 
 const Overlay = styled.section`
+  display: none;
+  
+  @media only screen and (min-width: 50em) {
   width: 100vw;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.95);
