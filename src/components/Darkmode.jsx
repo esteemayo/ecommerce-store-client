@@ -6,7 +6,9 @@ const Darkmode = ({ children }) => {
   const { darkMode } = useSelector((state) => ({ ...state.darkMode }));
 
   return (
-    <div>Darkmode</div>
+    <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
+      {children}
+    </ThemeProvider>
   );
 }
 
