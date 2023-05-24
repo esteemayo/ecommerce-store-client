@@ -97,16 +97,16 @@ const Register = () => {
           <FormGroup type='file'>
             {perc !== null && perc < 100 ? (
               <UploadProgress>Uploading: {perc}%</UploadProgress>
-            ): (
-            <>
-              <FormUpload
-                type='file'
-                id='file'
-                accept='image/*'
-                onChange={(e) => setFile(e.target.files[0])}
-              />
-              <FormLabel htmlFor='file' type='file'>Attach a photo</FormLabel>
-            </>
+            ) : (
+              <>
+                <FormUpload
+                  type='file'
+                  id='file'
+                  accept='image/*'
+                  onChange={(e) => setFile(e.target.files[0])}
+                />
+                <FormLabel htmlFor='file' type='file'>Attach a photo</FormLabel>
+              </>
             )}
           </FormGroup>
           <FormButton type='submit'>Register</FormButton>
