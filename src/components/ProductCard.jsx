@@ -75,9 +75,9 @@ const Container = styled.article`
   width: 35rem;
   background-color: ${({ theme }) => theme.bg};
   border-radius: 0.5rem;
-  box-shadow: 2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.47);
-  -webkit-box-shadow: 2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.47);
-  -moz-box-shadow: 2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.47);
+  box-shadow: ${({ theme }) => theme.box};
+  -webkit-box-shadow: ${({ theme }) => theme.box};
+  -moz-box-shadow: ${({ theme }) => theme.box};
 
   @media only screen and (max-width: 50em) {
     width: 33rem;
