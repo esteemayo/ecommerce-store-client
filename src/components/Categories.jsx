@@ -15,6 +15,9 @@ const Categories = () => {
 }
 
 const Container = styled.section`
+`;
+
+const Wrapper = styled.div`
   width: 100%;
   max-width: 120rem;
   margin: 0 auto;
@@ -47,10 +50,6 @@ const Container = styled.section`
     padding-left: 2rem;
     padding-right: 2rem;
   }
-`;
-
-const Wrapper = styled.div`
-  
 `;
 
 export default Categories;
