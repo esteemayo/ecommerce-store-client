@@ -128,4 +128,4 @@ const OrderContainer = styled.div`
   gap: 3rem;
 `;
 
-export default Orders;
+  justify-content: flex-start;
