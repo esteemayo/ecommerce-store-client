@@ -5,4 +5,5 @@ export const darkTheme = {
 
 export const lightTheme = {
   bg: 'var(--clr-white)',
+  bgLight: '#f4f8f7',
 };
