@@ -44,7 +44,7 @@ const FeaturedProducts = () => {
 const Container = styled.section`
   width: 100vw;
   padding: 15rem 0;
-  background-color: #f9f9f9;
+  background-color: ${({ theme }) => theme.soft};
 
   @media only screen and (max-width: 64em) {
     padding: 13rem 0;
