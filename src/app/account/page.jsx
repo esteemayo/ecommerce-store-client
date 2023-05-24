@@ -135,6 +135,8 @@ const Account = () => {
 
 const Container = styled.main`
   width: 100vw;
+  max-width: 120rem;
+  margin: 0 auto;
   padding: 6rem 0;
 
   @media only screen and (max-width: 50em) {
