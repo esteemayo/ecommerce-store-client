@@ -6,7 +6,7 @@ export const darkTheme = {
   soft: '#0f0f0f',
   textHeader: '#e2e4e4',
   box: '2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.47)',
-  textprodCard: '#d6d9db',
+  textProdCard: '#d6d9db',
 };
 
 export const lightTheme = {
@@ -17,5 +17,5 @@ export const lightTheme = {
   soft: '#f9f9f9',
   textHeader: 'var(--clr-secondary-green)',
   box: '0 0 1.5rem -1rem rgba(0, 0, 0, 0.75)',
-  textprodCard: '#6e6e6e',
+  textProdCard: '#6e6e6e',
 };
