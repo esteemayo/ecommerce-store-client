@@ -4,6 +4,7 @@ export const darkTheme = {
   text: '#cfd0d1',
   textSoft: '#e2e4e4',
   soft: '#333333',
+  textHeader: '#e2e4e4',
 };
 
 export const lightTheme = {
