@@ -72,7 +72,7 @@ const Container = styled.main`
   margin: 0 auto;
   padding: 10rem 0;
 
-  @media only screen and (max-width: 43.75em) {
+  /* @media only screen and (max-width: 43.75em) {
     padding-top: 5rem;
     padding-bottom: 5rem;
     padding-left: 7rem;
@@ -97,7 +97,7 @@ const Container = styled.main`
   @media only screen and (max-width: 18.75em) {
     padding-left: 1.3rem;
     padding-right: 1.3rem;
-  }
+  } */
 `;
 
 const HeadingWrapper = styled.div`
