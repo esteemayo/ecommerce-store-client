@@ -15,3 +15,9 @@ export const getFromStorage = (key) => {
     return window.localStorage.getItem(key);
   }
 }
+
+export const setToStorage = (key, value) => {
+  if (typeof window !== 'undefined') {
+    return window.localStorage.setItem(key, JSON.stringify(value));
+  }
+}
