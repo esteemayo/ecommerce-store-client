@@ -36,13 +36,19 @@ const FileUploadModal = ({ openModal, closeModal }) => {
           </CloseButtonContainer>
           <UploadContainer>
             <InputContainer>
-              <Input
-                type='file'
-                id='file'
-                accept='image/*'
-                onChange={(e) => setFile(e.target.files[0])}
-              />
-              <Label htmlFor='file'>Attach a photo</Label>
+              {perc > 0 && perc <= 100 ? (
+                <UploadProgress>Uploading: {perc}%</UploadProgress>
+              ) : (
+                <>
+                  <Input
+                    type='file'
+                    id='file'
+                    accept='image/*'
+                    onChange={(e) => setFile(e.target.files[0])}
+                  />
+                  <Label htmlFor='file'>Attach a photo</Label>
+                </>
+              )}
             </InputContainer>
             <ButtonContainer>
               <Button type='button' onClick={handleUpload}>Upload</Button>
@@ -50,7 +56,7 @@ const FileUploadModal = ({ openModal, closeModal }) => {
           </UploadContainer>
         </Wrapper>
       </Container>
-    </Overlay>
+    </Overlay >
   );
 }
 
