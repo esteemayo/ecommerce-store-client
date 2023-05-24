@@ -144,8 +144,8 @@ const ImageContainer = styled.div`
 
   img {
     display: block;
-    width: 100%;
-    height: 100%;
+    width: 8rem;
+    height: 8rem;
     object-fit: cover;
   }
 `;
