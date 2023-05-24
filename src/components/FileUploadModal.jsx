@@ -191,6 +191,7 @@ const Input = styled.input`
 
 const UploadProgress = styled.span`
   text-transform: capitalize;
+  font-size: 1.4rem;
 `;
 
 const ButtonContainer = styled.div`
