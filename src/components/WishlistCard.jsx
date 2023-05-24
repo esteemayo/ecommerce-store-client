@@ -128,6 +128,7 @@ const Left = styled.div`
 
   @media only screen and (max-width: 18.75em) {
     align-items: flex-start;
+    gap: 1.5rem;
   }
 `;
 
