@@ -38,6 +38,10 @@ const Heading = styled.h1`
   @media only screen and (max-width: 56.25em) {
     font-size: 1.6rem;
   }
+
+  @media only screen and (max-width: 18.75em) {
+    font-size: 1.4rem;
+  }
 `;
 
 const DateTime = styled.time`
