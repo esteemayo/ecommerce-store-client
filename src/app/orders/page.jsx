@@ -45,6 +45,10 @@ const Orders = () => {
 const Container = styled.main`
   width: 100vw;
   padding: 10rem 0;
+
+  @media only screen and (max-width: 64em) {
+    padding-top: 8rem;
+  }
 `;
 
 const Wrapper = styled.div`
