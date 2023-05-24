@@ -149,6 +149,10 @@ const ProductName = styled.h2`
   margin-bottom: 0.5rem;
   line-height: 1;
 
+  @media only screen and (max-width: 18.75em) {
+    font-size: 1.6rem;
+  }
+
   a {
     &:link,
     &:visited {
