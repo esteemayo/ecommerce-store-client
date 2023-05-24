@@ -147,11 +147,6 @@ const ImageContainer = styled.div`
     width: 8rem;
     height: 8rem;
     object-fit: cover;
-
-    @media only screen and (max-width: 18.75em) {
-      width: 6.5rem;
-      height: 6.5rem;
-    }
   }
 `;
 
