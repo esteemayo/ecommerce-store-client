@@ -99,6 +99,11 @@ const Container = styled.main`
   width: 100vw;
   padding: 10rem 0;
 
+  @media only screen and (max-width: 64em) {
+    max-width: 100rem;
+    padding: 8rem 0;
+  }
+
   /* @media only screen and (max-width: 50em) {
     padding-left: 9rem;
     padding-right: 9rem;
