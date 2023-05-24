@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
       <body>
         <Provider store={store}>
           <PersistGate loading={null} persistor={persistor}>
-            <ThemeProvider>
+            <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
               <div className='container'>
                 <Navbar />
                 <Submenu />
