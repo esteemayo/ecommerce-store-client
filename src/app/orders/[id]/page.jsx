@@ -97,7 +97,7 @@ const Order = () => {
 
 const Container = styled.main`
   width: 100vw;
-  padding: 8rem 0;
+  padding: 10rem 0;
 
   /* @media only screen and (max-width: 50em) {
     padding-left: 9rem;
