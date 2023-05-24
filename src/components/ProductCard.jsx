@@ -73,7 +73,7 @@ const ProductCard = ({ product, openModal, setIsSelectedProduct }) => {
 
 const Container = styled.article`
   width: 35rem;
-  background-color: var(--clr-white);
+  background-color: ${({ theme }) => theme.bg};
   border-radius: 0.5rem;
   box-shadow: 2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.47);
   -webkit-box-shadow: 2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.47);
