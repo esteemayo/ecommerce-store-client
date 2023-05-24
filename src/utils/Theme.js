@@ -13,4 +13,5 @@ export const lightTheme = {
   text: 'inherit',
   textSoft: '#888888',
   soft: '#f9f9f9',
+  textHeader: 'var(--clr-secondary-green)',
 };
