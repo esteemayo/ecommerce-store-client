@@ -72,6 +72,10 @@ const SendButton = styled.button`
     font-size: 1.47rem;
     padding: 1rem 2.5rem;
   }
+
+  @media only screen and (max-width: 18.75em) {
+    padding: 0.87rem 1rem;
+  }
 `;
 
 export default WishlistHeader;
