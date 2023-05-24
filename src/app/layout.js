@@ -1,6 +1,5 @@
 'use client';
-import { ThemeProvider } from 'styled-components';
-import { Provider, useSelector } from 'react-redux';
+import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
 
 import Navbar from '@/components/Navbar';
@@ -11,11 +10,8 @@ import Sidebar from '@/components/Sidebar';
 import ScrollToTop from '@/components/ScrollToTop';
 
 import './globals.scss';
-import { darkTheme, lightTheme } from '@/utils/Theme';
 
 export default function RootLayout({ children }) {
-  const { darkMode } = useSelector((state) => ({ ...state.darkMode }));
-
   return (
     <html lang="en">
       {/*
@@ -26,16 +22,14 @@ export default function RootLayout({ children }) {
       <body>
         <Provider store={store}>
           <PersistGate loading={null} persistor={persistor}>
-            <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
-              <div className='container'>
-                <Navbar />
-                <Submenu />
-                <Sidebar />
-                {children}
-                <Footer />
-                <ScrollToTop />
-              </div>
-            </ThemeProvider>
+            <div className='container'>
+              <Navbar />
+              <Submenu />
+              <Sidebar />
+              {children}
+              <Footer />
+              <ScrollToTop />
+            </div>
           </PersistGate>
         </Provider>
       </body>
