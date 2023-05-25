@@ -384,7 +384,7 @@ const RegisterContainer = styled.div`
 
 const RegisterText = styled.p`
   font-size: 1.7rem;
-  color: #888;
+  color: ${({ theme }) => theme.textLabel};
 
   a {
     &:link,
