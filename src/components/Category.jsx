@@ -169,7 +169,7 @@ const HeadingWrapper = styled.div`
   top: 80%;
   right: 2rem;
   transform: translateY(-80%);
-  color: var(--clr-white);
+  color: ${({ theme }) => theme.textCat};
 
   @media only screen and (max-width: 64em) {
     top: 70%;
