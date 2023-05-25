@@ -113,6 +113,7 @@ const ProductCategory = ({ params }) => {
 
 const Container = styled.main`
   width: 100vw;
+  background-color: ${({ theme }) => theme.bg};
 `;
 
 const Wrapper = styled.div`
