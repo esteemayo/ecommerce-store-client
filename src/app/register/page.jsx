@@ -230,7 +230,7 @@ const FormInput = styled.input`
   background-color: ${({ theme }) => theme.bgInput};
   color: #999;
   border-radius: 0.5rem;
-  outline-color: #eee;
+  outline-color: ${({ theme }) => theme.inputOut};
   caret-color: var(--caret-light);
   transition: all 0.3s ease;
 
