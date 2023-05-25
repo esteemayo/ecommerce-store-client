@@ -88,7 +88,7 @@ const RatingContainer = styled.div`
 
   svg {
     font-size: 2rem;
-    color: #89a8a0;
+    color:  ${({ theme }) => theme.star};
     margin-right: 0.5rem;
 
     @media only screen and (max-width: 18.75em) {
