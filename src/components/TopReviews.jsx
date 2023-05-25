@@ -108,7 +108,7 @@ const IconButton = styled.button`
   width: 4rem;
   height: 4rem;
   background-color: ${({ theme }) => theme.bgRevArrowBtn};
-  color: #777;
+  color: ${({ theme }) => theme.textRevArrowBtn};
   border-radius: 50%;
   box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.04);
   -webkit-box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.04);
