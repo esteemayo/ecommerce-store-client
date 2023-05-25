@@ -30,7 +30,7 @@ const Wrapper = styled.div`
   background-color: ${({ theme }) => theme.bg};
   color: inherit;
   box-shadow: ${({ theme }) => theme.boxPagination};
-  -webkit-box-shadow: 0 2rem 4rem rgba(145, 143, 143, 0.1);
+  -webkit-box-shadow: ${({ theme }) => theme.boxPagination};
   -moz-box-shadow: 0 2rem 4rem rgba(145, 143, 143, 0.1);
   border-radius: 0.5rem;
 
