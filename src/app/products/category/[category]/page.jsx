@@ -137,6 +137,10 @@ const Container = styled.main`
   }
 `;
 
+const Wrapper = styled.div`
+  
+`;
+
 const FilterContainer = styled.section`
   padding: 7rem 0;
   width: 100%;
