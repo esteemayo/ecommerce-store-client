@@ -75,5 +75,5 @@ export const lightTheme = {
   bgCatBtnOut: '#89a8a0',
   textFilterLabel: 'inherit',
   textFilterSelect: '#999999',
-  filterOut: '#dddddd',
+  filterOut: '#eeeeee',
 };
