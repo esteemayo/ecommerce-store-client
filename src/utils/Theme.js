@@ -87,4 +87,5 @@ export const lightTheme = {
   textNotFound: 'inherit',
   textFormHeader: '#979797',
   inputBorder: '#dddddd',
+  textLabel: '#888888',
 };
