@@ -29,7 +29,7 @@ export const darkTheme = {
   bgCarActiveBtn: '#121212',
   bgActiveBtn: '#d6d9db',
   boxCat: '2px 0.4rem 1rem 1px rgba(107, 106, 106, 0.47)',
-  textCat: '#cfd0d1',
+  textCat: '#d6d9db',
 };
 
 export const lightTheme = {
