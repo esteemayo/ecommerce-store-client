@@ -16,6 +16,7 @@ export const darkTheme = {
   textRevCount: '#d6d9db',
   textReviewer: '#cfd0d1',
   textRevBtn: '#797979',
+  bgRevImg: '#b8b7b7',
 };
 
 export const lightTheme = {
