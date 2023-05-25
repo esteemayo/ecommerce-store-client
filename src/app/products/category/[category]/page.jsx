@@ -112,6 +112,9 @@ const ProductCategory = ({ params }) => {
 }
 
 const Container = styled.main`
+`;
+
+const Wrapper = styled.div`
   width: 100vw;
   max-width: 120rem;
   margin: 0 auto;
@@ -137,10 +140,6 @@ const Container = styled.main`
     padding-left: 3rem;
     padding-right: 3rem;
   }
-`;
-
-const Wrapper = styled.div`
-  
 `;
 
 const FilterContainer = styled.section`
