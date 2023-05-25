@@ -14,6 +14,7 @@ export const darkTheme = {
   bgRev: '#121212',
   textRev: '#e2e4e4',
   textRevCount: '#d6d9db',
+  textReviewer: '#808096',
 };
 
 export const lightTheme = {
