@@ -201,7 +201,7 @@ const Prices = styled.div`
 const Price = styled.span`
   font-weight: 600;
   font-size: 1.85rem;
-  color: #555;
+  color: ${({ theme }) => theme.textPrice};
   line-height: 1;
 
   @media only screen and (max-width: 35em) {
