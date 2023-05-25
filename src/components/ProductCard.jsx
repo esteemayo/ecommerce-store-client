@@ -178,7 +178,7 @@ const ReviewContainer = styled.div`
 
 const Reviews = styled.div`
   span {
-    color: #89a8a0;
+    color: ${({ theme }) => theme.star};
 
     @media only screen and (max-width: 35em) {
       font-size: 1.4rem;
