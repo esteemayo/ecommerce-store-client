@@ -103,12 +103,13 @@ const Login = () => {
             </ForgotPassword>
           </Form>
         </Wrapper>
-      <RegisterContainer>
-        <RegisterText>
-          Don&apos;t have an account? {' '}
-          <Link href='/register' passHref>Sign up</Link>
-        </RegisterText>
-      </RegisterContainer>
+        <RegisterContainer>
+          <RegisterText>
+            Don&apos;t have an account? {' '}
+            <Link href='/register' passHref>Sign up</Link>
+          </RegisterText>
+        </RegisterContainer>
+      </LoginContainer>
     </Container>
   );
 }
@@ -324,7 +325,7 @@ const FormInput = styled.input`
   font-size: 1.5rem;
   width: 100%;
   padding: 1.5rem 1rem;
-  background-color: #f9f9f9;
+  background-color: ${({ theme }) => theme.bgInput};
   color: #999;
   border-radius: 0.5rem;
   outline-color: #eee;
@@ -332,7 +333,7 @@ const FormInput = styled.input`
   transition: all 0.3s ease;
 
   &:focus {
-    background-color: var(--clr-white);
+    background-color: transparent;
   }
 
   &::-webkit-input-placeholder {
@@ -383,7 +384,7 @@ const RegisterContainer = styled.div`
 
 const RegisterText = styled.p`
   font-size: 1.7rem;
-  color: #888;
+  color: ${({ theme }) => theme.textLabel};
 
   a {
     &:link,
