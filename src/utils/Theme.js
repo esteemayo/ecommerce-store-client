@@ -83,4 +83,5 @@ export const lightTheme = {
   textPagination: '#89a8a0',
   boxPagination: '0 2rem 4rem rgba(145, 143, 143, 0.1)',
   textNotFound: 'inherit',
+  textFormHeader: '#979797',
 };
