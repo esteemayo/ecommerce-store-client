@@ -324,7 +324,7 @@ const LoginContainer = styled.div`
 
 const LoginText = styled.p`
   font-size: 1.7rem;
-  color: #888;
+  color:  ${({ theme }) => theme.textLabel};
 
   a {
     &:link,
