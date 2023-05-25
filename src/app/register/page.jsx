@@ -235,7 +235,7 @@ const FormInput = styled.input`
   transition: all 0.3s ease;
 
   &:focus {
-    background-color: var(--clr-white);
+    background-color: transparent;
   }
 
   &::-webkit-input-placeholder {
