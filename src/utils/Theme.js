@@ -27,5 +27,6 @@ export const lightTheme = {
   star: '#89a8a0',
   textBtn: 'var(--clr-white)',
   textPrice: '#555555',
+  bgRev: '#fffdfd',
   textRev: 'var(--clr-black)',
 };
