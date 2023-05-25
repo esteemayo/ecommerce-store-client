@@ -27,7 +27,7 @@ export const darkTheme = {
   bgCarouselBtnHov: 'hsla(0, 0%, 100%, 0.4)',
   textCarouselBtn: '#d6d9db',
   bgCarActiveBtn: '#121212',
-  bgActiveBtn: '#797979',
+  bgActiveBtn: '#d6d9db',
 };
 
 export const lightTheme = {
