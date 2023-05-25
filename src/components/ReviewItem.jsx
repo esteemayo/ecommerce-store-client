@@ -137,7 +137,7 @@ const Button = styled.button`
   font-size: 1.8rem;
   width: 9rem;
   background-color: transparent;
-  color: var(--clr-black);
+  color: ${({ theme }) => theme.textRevBtn};
   outline-color: #ccc;
   cursor: pointer;
   transition: all 0.3s ease;
