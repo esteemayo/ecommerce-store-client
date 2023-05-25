@@ -31,7 +31,7 @@ const Wrapper = styled.div`
   color: inherit;
   box-shadow: ${({ theme }) => theme.boxPagination};
   -webkit-box-shadow: ${({ theme }) => theme.boxPagination};
-  -moz-box-shadow: 0 2rem 4rem rgba(145, 143, 143, 0.1);
+  -moz-box-shadow: ${({ theme }) => theme.boxPagination};
   border-radius: 0.5rem;
 
   @media only screen and (max-width: 37.5em) {
