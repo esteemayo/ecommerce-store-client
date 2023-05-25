@@ -71,7 +71,7 @@ const Button = styled.button`
   text-transform: capitalize;
   font-size: 1.5rem;
   background-color: transparent;
-  color: inherit;
+  color: ${({ theme }) => theme.text};
   outline-color: #ccc;
   outline-offset: 3px;
   cursor: pointer;
