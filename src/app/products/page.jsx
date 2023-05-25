@@ -80,6 +80,10 @@ const Products = () => {
 
 const Container = styled.main`
   width: 100vw;
+`;
+
+const Wrapper = styled.div`
+  width: 100%;
   max-width: 120rem;
   margin: 0 auto;
   background-color: ${({ theme }) => theme.bg};
