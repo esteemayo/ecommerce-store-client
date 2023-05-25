@@ -33,7 +33,7 @@ export const darkTheme = {
   textCat: '#d6d9db',
   bgCatBtn: 'rgba(135, 138, 137, 0.5)',
   bgCatBtnOut: '#797979',
-  textLabel: '#e2e4e4',
+  textFilterLabel: '#e2e4e4',
 };
 
 export const lightTheme = {
