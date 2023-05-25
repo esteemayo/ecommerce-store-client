@@ -20,6 +20,7 @@ export const darkTheme = {
   bgRevArrowBtn: '#121212',
   textRevArrowBtn: '#e2e4e4',
   bgScroll: '#121212',
+  textScroll: '#d6d9db',
 };
 
 export const lightTheme = {
