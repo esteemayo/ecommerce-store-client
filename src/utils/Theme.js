@@ -57,4 +57,5 @@ export const lightTheme = {
   bgCarouselBtn: 'var(--clr-white)',
   bgCarouselBtnHov: 'transparent',
   textCarouselBtn: '#777777',
+  bgActiveBtn: '#535353',
 };
