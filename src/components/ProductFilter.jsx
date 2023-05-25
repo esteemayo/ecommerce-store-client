@@ -166,9 +166,9 @@ const Select = styled.select`
   font-size: 1.4rem;
   background-color: transparent;
   color: ${({ theme }) => theme.textFilterSelect};
-  border: 1px solid ${({ theme }) => theme.filterOut};
+  border: 1px solid #ddd;
   border-radius: 3px;
-  outline-color: #eee;
+  outline-color: ${({ theme }) => theme.filterOut};
 
   @media only screen and (max-width: 37.5em) {
     width: 26rem;
@@ -204,7 +204,7 @@ const Input = styled.input`
   font-size: 1.4rem;
   background-color: transparent;
   color: ${({ theme }) => theme.textFilterSelect};
-  border: 1px solid ${({ theme }) => theme.filterOut};
+  border: 1px solid #ddd;
   border-radius: 3px;
   outline-color: #eee;
 
