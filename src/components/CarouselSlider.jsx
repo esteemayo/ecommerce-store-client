@@ -172,7 +172,7 @@ const ArrowButton = styled.button`
   }
 
   &:hover {
-    background-color: transparent;
+    background-color: ${({ theme }) => theme.bgCarouselBtnHov};
     color: var(--clr-white);
   }
 
