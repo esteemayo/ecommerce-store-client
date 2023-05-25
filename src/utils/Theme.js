@@ -24,6 +24,7 @@ export const darkTheme = {
   boxScroll: '0 0.4rem 1.2rem rgba(136, 135, 135, 0.3)',
   boxScrollHov: 'rgb(136, 135, 135, 0.25) 0 0.4rem 2rem',
   bgCarouselBtn: '#121212',
+  textCarouselBtn: '#d6d9db',
 };
 
 export const lightTheme = {
