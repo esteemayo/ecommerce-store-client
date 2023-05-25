@@ -73,4 +73,5 @@ export const lightTheme = {
   bgCatBtn: 'rgba(137, 168, 160, 0.5)',
   bgCatBtnOut: '#89a8a0',
   textFilterLabel: 'inherit',
+  textFilterSelect: '#999999',
 };
