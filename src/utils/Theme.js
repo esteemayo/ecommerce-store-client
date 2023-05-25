@@ -30,6 +30,7 @@ export const darkTheme = {
   bgActiveBtn: '#d6d9db',
   boxCat: '2px 0.4rem 1rem 1px rgba(107, 106, 106, 0.47)',
   textCat: '#d6d9db',
+  bgCatBtn: 'rgba(137, 168, 160, 0.5)',
 };
 
 export const lightTheme = {
