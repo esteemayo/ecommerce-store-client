@@ -168,7 +168,7 @@ const ReviewContainer = styled.div`
 
   svg {
     font-size: 2.3rem;
-    fill: #89a8a0;
+    fill: ${({ theme }) => theme.star};
 
     @media only screen and (max-width: 35em) {
       font-size: 2rem;
