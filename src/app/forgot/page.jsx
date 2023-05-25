@@ -135,7 +135,7 @@ const Header = styled.h1`
   font-size: 2.5rem;
   text-transform: capitalize;
   text-align: center;
-  color: #979797;
+  color: ${({ theme }) => theme.textFormHeader};
 `;
 
 const Form = styled.form`
