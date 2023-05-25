@@ -94,4 +94,5 @@ export const lightTheme = {
   bgInput: '#f9f9f9',
   inputOut: '#eeeeee',
   boxForm: '0 2rem 4rem rgba(145, 143, 143, 0.25)',
+  inputCaret: 'var(--caret-light)',
 };
