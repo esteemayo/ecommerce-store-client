@@ -79,4 +79,5 @@ export const lightTheme = {
   textFilterSelect: '#999999',
   filterOut: '#eeeeee',
   textPagination: '#89a8a0',
+  boxPagination: '0 2rem 4rem rgba(145, 143, 143, 0.1)',
 };
