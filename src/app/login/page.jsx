@@ -407,7 +407,7 @@ const RegisterText = styled.p`
 
 const ForgotPassword = styled.p`
   font-size: 1.65rem;
-  color: #888;
+  color: ${({ theme }) => theme.textLabel};
 
   a {
     &:link,
