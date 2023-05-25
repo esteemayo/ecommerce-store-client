@@ -41,6 +41,7 @@ export const darkTheme = {
   textNotFound: '#cfd0d1',
   textFormHeader: '#cfd0d1',
   inputBorder: '#797979',
+  textLabel: '#cfd0d1',
 };
 
 export const lightTheme = {
