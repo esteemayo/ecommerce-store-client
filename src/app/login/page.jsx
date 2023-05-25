@@ -289,6 +289,7 @@ const Text = styled.p`
   display: block;
   text-align: center;
   text-transform: lowercase;
+  color: ${({ theme }) => theme.text};
 `;
 
 const Form = styled.form`
