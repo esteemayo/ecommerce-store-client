@@ -255,7 +255,7 @@ const Button = styled.button`
   font-size: 1.5rem;
   text-transform: uppercase;
   background-color: #6d857f;
-  color: var(--clr-white);
+  color: ${({ theme }) => theme.textBtn};
   background-image: linear-gradient(
     120deg,
     transparent 0%,
