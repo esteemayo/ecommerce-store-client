@@ -203,7 +203,7 @@ const Input = styled.input`
   padding: 3px;
   font-size: 1.4rem;
   background-color: transparent;
-  color: #999;
+  color: ${({ theme }) => theme.textFilterSelect};
   border: 1px solid #ddd;
   border-radius: 3px;
   outline-color: #eee;
