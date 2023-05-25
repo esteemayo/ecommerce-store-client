@@ -126,7 +126,7 @@ const Reviewer = styled.span`
   display: inline-block;
   font-weight: 300;
   font-weight: 1.6rem;
-  color: #66667f;
+  color: ${({ theme }) => theme.textReviewer};
 `;
 
 const Button = styled.button`
