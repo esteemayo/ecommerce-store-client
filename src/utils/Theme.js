@@ -21,7 +21,7 @@ export const darkTheme = {
   textRevArrowBtn: '#e2e4e4',
   bgScroll: '#121212',
   textScroll: '#d6d9db',
-  boxScroll: '0 0.4rem 1.2rem rgba(0, 0, 0, 0.04)',
+  boxScroll: '0 0.4rem 1.2rem rgba(136, 135, 135, 0.7)',
 };
 
 export const lightTheme = {
