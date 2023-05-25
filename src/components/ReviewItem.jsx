@@ -180,7 +180,7 @@ const Right = styled.div`
   flex: 1;
   width: 100%;
   height: 49.8rem;
-  background-color: #ebe7e2;
+  background-color: ${({ theme }) => theme.bgRevImg};
 
   img {
     width: 100%;
