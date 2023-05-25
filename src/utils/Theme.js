@@ -89,4 +89,5 @@ export const lightTheme = {
   textFormHeader: '#979797',
   inputBorder: '#dddddd',
   textLabel: '#888888',
+  bgInput: '#f9f9f9',
 };
