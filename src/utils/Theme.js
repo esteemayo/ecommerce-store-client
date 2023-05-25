@@ -71,4 +71,5 @@ export const lightTheme = {
   textCat: 'var(--clr-white)',
   bgCatBtn: 'rgba(137, 168, 160, 0.5)',
   bgCatBtnOut: '#89a8a0',
+  textFilterLabel: 'inherit',
 };
