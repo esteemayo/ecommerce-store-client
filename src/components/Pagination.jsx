@@ -53,7 +53,7 @@ const CurrentPage = styled.span`
   font-weight: 600;
   font-size: 2rem;
   color: ${({ theme }) => theme.textPagination};
-  border: 1px solid #89a8a0;
+  border: 1px solid ${({ theme }) => theme.textPagination};
   border-radius: 50%;
 
   @media only screen and (max-width: 37.5em) {
