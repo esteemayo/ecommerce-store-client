@@ -11,6 +11,7 @@ export const darkTheme = {
   star: '#89898a',
   textBtn: '#cfd0d1',
   textPrice: '#9a9b9c',
+  bgRev: '#121212',
   textRev: '#e2e4e4',
 };
 
