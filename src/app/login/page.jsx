@@ -116,7 +116,7 @@ const Login = () => {
 
 const Container = styled.main`
   width: 100vw;
-  background-color: ${({ theme }) => theme.bg}
+  background-color: ${({ theme }) => theme.bg};
 `;
 
 const LoginContainer = styled.div`
