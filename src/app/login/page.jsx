@@ -116,6 +116,10 @@ const Login = () => {
 
 const Container = styled.main`
   width: 100vw;
+`;
+
+const LoginContainer = styled.div`
+  width: 100%;
   max-width: 120rem;
   margin: 0 auto;
   padding: 10rem 0;
