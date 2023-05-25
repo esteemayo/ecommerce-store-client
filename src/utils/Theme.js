@@ -9,7 +9,7 @@ export const darkTheme = {
   box: '2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.47)',
   textProdCard: '#d6d9db',
   star: '#89898a',
-  textBtn: '#cfdod1',
+  textBtn: '#cfd0d1',
 };
 
 export const lightTheme = {
