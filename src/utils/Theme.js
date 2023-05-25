@@ -5,6 +5,7 @@ export const darkTheme = {
   textSoft: '#e2e4e4',
   soft: '#0f0f0f',
   textHeader: '#e2e4e4',
+  bgProdCard: '#797979',
   box: '2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.47)',
   textProdCard: '#d6d9db',
   star: '#89898a',
