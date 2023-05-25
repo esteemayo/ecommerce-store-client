@@ -17,7 +17,7 @@ export const darkTheme = {
   textReviewer: '#cfd0d1',
   textRevBtn: '#797979',
   bgRevImg: '#b8b7b7',
-  bgRevArrowBtn: '#797979',
+  bgRevArrowBtn: '#121212',
   textRevArrowBtn: '#e2e4e4',
 };
 
