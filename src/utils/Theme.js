@@ -31,6 +31,7 @@ export const darkTheme = {
   boxCat: '2px 0.4rem 1rem 1px rgba(107, 106, 106, 0.47)',
   textCat: '#d6d9db',
   bgCatBtn: 'rgba(135, 138, 137, 0.5)',
+  bgCatBtnOut: '#797979',
 };
 
 export const lightTheme = {
