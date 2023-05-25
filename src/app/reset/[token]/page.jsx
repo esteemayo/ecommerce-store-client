@@ -132,7 +132,7 @@ const Wrapper = styled.div`
   border-radius: 1rem;
   box-shadow: ${({ theme }) => theme.boxForm};
   -webkit-box-shadow: ${({ theme }) => theme.boxForm};
-  -moz-box-shadow: 0 2rem 4rem rgba(145, 143, 143, 0.25);
+  -moz-box-shadow: ${({ theme }) => theme.boxForm};
 
   @media only screen and (max-width: 21.25em) {
     width: 35rem;
