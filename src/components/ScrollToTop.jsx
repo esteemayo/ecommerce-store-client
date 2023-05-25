@@ -58,7 +58,7 @@ const Container = styled.div`
 const Wrapper = styled.div`
   width: 4rem;
   height: 4rem;
-  background-color: var(--clr-white);
+  background-color: ${({ theme }) => theme.bgScroll};
   color: var(--clr-primary-green);
   border-radius: 50%;
   box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.04);
