@@ -46,4 +46,5 @@ export const lightTheme = {
   textRevArrowBtn: '#777777',
   bgScroll: 'var(--clr-white)',
   textScroll: 'var(--clr-primary-green)',
+  boxScroll: 'rgb(0, 0, 0, 0.25) 0 0.4rem 2rem',
 };
