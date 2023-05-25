@@ -208,7 +208,7 @@ const GoogleButton = styled.button`
   font-weight: 400;
   font-size: 1.5rem;
   background-color: transparent;
-  color: inherit;
+  color: ${({ theme }) => theme.text};
   border: 1px solid ${({ theme }) => theme.inputBorder};
   border-radius: 0.5rem;
   outline-color: #ccc;
