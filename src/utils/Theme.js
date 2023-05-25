@@ -37,6 +37,7 @@ export const darkTheme = {
   textFilterSelect: '#d6d9db',
   filterOut: '#797979',
   textPagination: '#cfd0d1',
+  boxPagination: '0 2rem 4rem rgba(145, 143, 143, 0.1)',
 };
 
 export const lightTheme = {
