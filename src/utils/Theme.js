@@ -91,4 +91,5 @@ export const lightTheme = {
   inputBorder: '#dddddd',
   textLabel: '#888888',
   bgInput: '#f9f9f9',
+  inputOut: '#eeeeee',
 };
