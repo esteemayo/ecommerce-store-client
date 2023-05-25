@@ -10,6 +10,7 @@ export const darkTheme = {
   textProdCard: '#d6d9db',
   star: '#89898a',
   textBtn: '#cfd0d1',
+  textPrice: '#cfd0d1',
 };
 
 export const lightTheme = {
