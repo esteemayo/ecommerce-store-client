@@ -35,6 +35,7 @@ export const darkTheme = {
   bgCatBtnOut: '#797979',
   textFilterLabel: '#e2e4e4',
   textFilterSelect: '#d6d9db',
+  filterOut: '#797979',
 };
 
 export const lightTheme = {
