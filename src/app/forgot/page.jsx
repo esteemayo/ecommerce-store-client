@@ -170,7 +170,7 @@ const FormInput = styled.input`
   color: #999;
   border-radius: 0.5rem;
   outline-color: ${({ theme }) => theme.inputOut};
-  caret-color: var(--caret-light);
+  caret-color:${({ theme }) => theme.inputCaret};
   transition: all 0.3s ease;
 
   &:focus {
