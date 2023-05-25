@@ -232,7 +232,7 @@ const Select = styled.select`
   color: ${({ theme }) => theme.textFilterSelect};
   border: 1px solid #ddd;
   border-radius: 3px;
-  outline-color: #eee;
+  outline-color: ${({ theme }) => theme.filterOut};
 
   @media only screen and (max-width: 37.5em) {
     width: 60rem;
