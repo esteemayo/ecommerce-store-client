@@ -193,7 +193,7 @@ const Select = styled.select`
 
 const Option = styled.option`
   text-transform: capitalize;
-  background-color: var(--clr-white);
+  background-color: ${({ theme }) => theme.bgProdCard};
   color: inherit;
 `;
 
