@@ -100,7 +100,7 @@ const RatingContainer = styled.div`
 
 const ReviewCount = styled.span`
   font-size: 1.2rem;
-  color: #666;
+  color: ${({ theme }) => theme.textRevCount};
   letter-spacing: 0.5px;
 `;
 
