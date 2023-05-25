@@ -15,6 +15,7 @@ export const darkTheme = {
   textRev: '#e2e4e4',
   textRevCount: '#d6d9db',
   textReviewer: '#cfd0d1',
+  textRevBtn: '#797979',
 };
 
 export const lightTheme = {
