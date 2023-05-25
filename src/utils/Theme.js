@@ -44,7 +44,7 @@ export const darkTheme = {
   textLabel: '#cfd0d1',
   bgInput: '#121212',
   inputOut: '#797979',
-  boxForm: '0 2rem 4rem rgba(145, 143, 143, 0.25)',
+  boxForm: '0 1rem 2rem rgba(145, 143, 143, 0.25)',
 };
 
 export const lightTheme = {
