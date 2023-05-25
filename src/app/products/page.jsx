@@ -67,13 +67,15 @@ const Products = () => {
 
   return (
     <Container onMouseOver={() => dispatch(closeSubmenu())}>
-      <ProductFilter
-        {...values}
-        products={products}
-        handleChange={handleChange}
-      />
-      <ProductList products={sortedProducts} />
-      <Pagination />
+      <Wrapper>
+        <ProductFilter
+          {...values}
+          products={products}
+          handleChange={handleChange}
+        />
+        <ProductList products={sortedProducts} />
+        <Pagination />
+      </Wrapper>
     </Container>
   );
 }
