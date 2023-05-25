@@ -102,7 +102,7 @@ const Wrapper = styled.div`
   width: 20%;
   box-shadow: ${({ theme }) => theme.boxCat};
   -webkit-box-shadow: ${({ theme }) => theme.boxCat};
-  -moz-box-shadow: 2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.47);
+  -moz-box-shadow: ${({ theme }) => theme.boxCat};
   position: relative;
 
   @media only screen and (max-width: 64em) {
