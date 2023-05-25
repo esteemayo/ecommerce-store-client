@@ -43,6 +43,7 @@ export const darkTheme = {
   inputBorder: '#797979',
   textLabel: '#cfd0d1',
   bgInput: '#121212',
+  inputOut: '#797979',
 };
 
 export const lightTheme = {
