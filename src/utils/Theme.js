@@ -77,4 +77,5 @@ export const lightTheme = {
   textFilterLabel: 'inherit',
   textFilterSelect: '#999999',
   filterOut: '#eeeeee',
+  textPagination: '#89a8a0',
 };
