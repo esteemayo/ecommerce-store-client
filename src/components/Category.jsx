@@ -80,7 +80,7 @@ const Button = styled.button`
   border: none;
   padding: 1rem 2rem;
   width: 100%;
-  background-color: rgba(137, 168, 160, 0.5);
+  background-color: ${({ theme }) => theme.bgCatBtn};
   color: var(--clr-white);
   outline-color: #89a8a0;
   cursor: pointer;
