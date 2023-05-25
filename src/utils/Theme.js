@@ -25,4 +25,5 @@ export const lightTheme = {
   textProdCard: '#6e6e6e',
   star: '#89a8a0',
   textBtn: 'var(--clr-white)',
+  textPrice: '#555555',
 };
