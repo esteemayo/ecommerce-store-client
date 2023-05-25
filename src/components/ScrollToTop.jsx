@@ -63,7 +63,7 @@ const Wrapper = styled.div`
   border-radius: 50%;
   box-shadow: ${({ theme }) => theme.boxScroll};
   -webkit-box-shadow: ${({ theme }) => theme.bgScroll};
-  -moz-box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.04);
+  -moz-box-shadow: ${({ theme }) => theme.bgScroll};
   display: flex;
   align-items: center;
   justify-content: center;
