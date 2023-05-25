@@ -13,6 +13,7 @@ export const darkTheme = {
   textPrice: '#9a9b9c',
   bgRev: '#121212',
   textRev: '#e2e4e4',
+  textRevCount: '#d6d9db',
 };
 
 export const lightTheme = {
