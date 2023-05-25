@@ -60,4 +60,5 @@ export const lightTheme = {
   textCarouselBtn: '#777777',
   bgCarActiveBtn: 'var(--clr-white)',
   bgActiveBtn: '#535353',
+  boxCat: '2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.47)',
 };
