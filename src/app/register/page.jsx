@@ -217,7 +217,7 @@ const FormLabel = styled.label`
   width: ${({ type }) => type !== 'file' && '13rem'};
   font-weight: 600;
   font-size: ${({ type }) => type === 'file' ? '1.6rem' : '1.4rem'};
-  color: #888;
+  color:  ${({ theme }) => theme.textLabel};
 `;
 
 const FormInput = styled.input`
