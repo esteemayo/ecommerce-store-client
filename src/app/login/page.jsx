@@ -182,7 +182,7 @@ const Header = styled.h1`
   font-weight: 400;
   font-size: 2rem;
   text-align: center;
-  color: #979797;
+  color: ${({ theme }) => theme.textFormHeader};
 `;
 
 const GoogleContainer = styled.div`
