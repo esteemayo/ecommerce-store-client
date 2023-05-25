@@ -82,7 +82,7 @@ const Button = styled.button`
   width: 100%;
   background-color: ${({ theme }) => theme.bgCatBtn};
   color: ${({ theme }) => theme.textCat};
-  outline-color: #89a8a0;
+  outline-color: ${({ theme }) => theme.bgCatBtnOut};
   cursor: pointer;
   visibility: hidden;
   opacity: 0;
