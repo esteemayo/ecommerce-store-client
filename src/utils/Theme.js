@@ -48,4 +48,5 @@ export const lightTheme = {
   bgScroll: 'var(--clr-white)',
   textScroll: 'var(--clr-primary-green)',
   boxScroll: '0 0.4rem 1.2rem rgba(0, 0, 0, 0.04)',
+  boxScrollHov: 'rgb(0, 0, 0, 0.25) 0 0.4rem 2rem',
 };
