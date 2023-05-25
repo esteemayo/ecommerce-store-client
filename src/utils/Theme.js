@@ -38,4 +38,5 @@ export const lightTheme = {
   textReviewer: '#66667f',
   textRevBtn: 'var(--clr-black)',
   bgRevImg: '#ebe7e2',
+  bgRevArrowBtn: '#777777',
 };
