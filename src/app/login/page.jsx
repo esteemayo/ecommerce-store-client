@@ -153,10 +153,6 @@ const Container = styled.main`
   }
 `;
 
-const LoginContainer = styled.div`
-  
-`;
-
 const Wrapper = styled.div`
   width: 40rem;
   padding: 2rem;
