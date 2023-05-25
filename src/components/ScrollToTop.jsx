@@ -76,7 +76,7 @@ const Wrapper = styled.div`
   }
 
   &:hover {
-    background-color: #f9f9f9;
+    background-color: ${({ theme }) => theme.soft};
     box-shadow: rgb(0, 0, 0, 0.25) 0 0.4rem 2rem;
     -webkit-box-shadow: rgb(0, 0, 0, 0.25) 0 0.4rem 2rem;
     -moz-box-shadow: rgb(0, 0, 0, 0.25) 0 0.4rem 2rem;
