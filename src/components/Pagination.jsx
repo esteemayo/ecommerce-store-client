@@ -27,7 +27,7 @@ const Container = styled.section`
 const Wrapper = styled.div`
   width: 100%;
   padding: 2rem 3rem;
-  background-color: var(--clr-white);
+  background-color: ${({ theme }) => theme.bg};
   color: inherit;
   box-shadow: 0 2rem 4rem rgba(145, 143, 143, 0.1);
   -webkit-box-shadow: 0 2rem 4rem rgba(145, 143, 143, 0.1);
