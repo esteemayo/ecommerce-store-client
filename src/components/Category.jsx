@@ -81,7 +81,7 @@ const Button = styled.button`
   padding: 1rem 2rem;
   width: 100%;
   background-color: ${({ theme }) => theme.bgCatBtn};
-  color: var(--clr-white);
+  color: ${({ theme }) => theme.textCat};
   outline-color: #89a8a0;
   cursor: pointer;
   visibility: hidden;
