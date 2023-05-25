@@ -166,7 +166,7 @@ const Select = styled.select`
   font-size: 1.4rem;
   background-color: transparent;
   color: ${({ theme }) => theme.textFilterSelect};
-  border: 1px solid #ddd;
+  border: 1px solid ${({ theme }) => theme.filterOut};
   border-radius: 3px;
   outline-color: #eee;
 
