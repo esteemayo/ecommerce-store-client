@@ -200,7 +200,7 @@ const ActiveSlideButton = styled.button`
   border: none;
   width: ${({ active }) => active ? '1.5rem' : '1rem'};
   height: ${({ active }) => active ? '1.5rem' : '1rem'};
-  background-color: ${({ active }) => active ? '#535353' : 'var(--clr-white)'};
+  background-color: ${({ active, theme }) => active ? '#535353' : theme.bgCarActiveBtn};
   border-radius: 50%;
   outline-color: #f5f5f5;
   cursor: pointer;
