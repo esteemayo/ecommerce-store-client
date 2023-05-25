@@ -52,7 +52,7 @@ const CurrentPage = styled.span`
   text-align: center;
   font-weight: 600;
   font-size: 2rem;
-  color: #89a8a0;
+  color: ${({ theme }) => theme.textPagination};
   border: 1px solid #89a8a0;
   border-radius: 50%;
 
