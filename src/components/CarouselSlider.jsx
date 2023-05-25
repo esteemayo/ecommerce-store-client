@@ -141,7 +141,7 @@ const ArrowButton = styled.button`
   width: 4rem;
   height: 4rem;
   font-size: 1rem;
-  background-color: var(--clr-white);
+  background-color: ${({ theme }) => theme.bgCarouselBtn};
   color: #777;
   border: 2px solid var(--clr-white);
   outline: none;
