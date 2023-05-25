@@ -173,7 +173,7 @@ const ArrowButton = styled.button`
 
   &:hover {
     background-color: ${({ theme }) => theme.bgCarouselBtnHov};
-    color: var(--clr-white);
+    color: ${({ theme }) => theme.bgCarouselBtn};
   }
 
   svg {
