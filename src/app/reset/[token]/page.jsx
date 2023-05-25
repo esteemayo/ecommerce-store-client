@@ -48,35 +48,37 @@ const ResetPassword = () => {
 
   return (
     <Container onMouseOver={() => dispatch(closeSubmenu())}>
-      <Wrapper>
-        <Header>Reset your password</Header>
-        <Form onSubmit={handleSubmit}>
-          <FormGroup>
-            <FormLabel htmlFor='password'>Password</FormLabel>
-            <FormInput
-              id='password'
-              type='password'
-              name='password'
-              ref={passwordRef}
-              placeholder='Enter your password'
-              onChange={(e) => setPassword(e.target.value)}
-            />
-            {errors.password && <ErrorMsg>{errors.password}</ErrorMsg>}
-          </FormGroup>
-          <FormGroup>
-            <FormLabel htmlFor='confirmPassword'>Confirm password</FormLabel>
-            <FormInput
-              id='confirmPassword'
-              type='password'
-              name='confirmPassword'
-              placeholder='Confirm your password'
-              onChange={(e) => setConfirmPassword(e.target.value)}
-            />
-            {errors.confirmPassword && <ErrorMsg>{errors.confirmPassword}</ErrorMsg>}
-          </FormGroup>
-          <FormButton type='submit'>Reset password</FormButton>
-        </Form>
-      </Wrapper>
+      <ResetContainer>
+        <Wrapper>
+          <Header>Reset your password</Header>
+          <Form onSubmit={handleSubmit}>
+            <FormGroup>
+              <FormLabel htmlFor='password'>Password</FormLabel>
+              <FormInput
+                id='password'
+                type='password'
+                name='password'
+                ref={passwordRef}
+                placeholder='Enter your password'
+                onChange={(e) => setPassword(e.target.value)}
+              />
+              {errors.password && <ErrorMsg>{errors.password}</ErrorMsg>}
+            </FormGroup>
+            <FormGroup>
+              <FormLabel htmlFor='confirmPassword'>Confirm password</FormLabel>
+              <FormInput
+                id='confirmPassword'
+                type='password'
+                name='confirmPassword'
+                placeholder='Confirm your password'
+                onChange={(e) => setConfirmPassword(e.target.value)}
+              />
+              {errors.confirmPassword && <ErrorMsg>{errors.confirmPassword}</ErrorMsg>}
+            </FormGroup>
+            <FormButton type='submit'>Reset password</FormButton>
+          </Form>
+        </Wrapper>
+      </ResetContainer>
     </Container>
   );
 }
@@ -120,7 +122,7 @@ const Container = styled.main`
 `;
 
 const ResetContainer = styled.div`
-  
+
 `;
 
 const Wrapper = styled.div`
