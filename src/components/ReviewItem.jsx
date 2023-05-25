@@ -158,7 +158,7 @@ const Button = styled.button`
     display: inline-block;
     width: 8.5rem;
     height: 1px;
-    background-color: #89a8a0;
+    background-color: ${({ theme }) => theme.star};
   }
 
   a {
