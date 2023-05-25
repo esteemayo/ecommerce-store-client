@@ -19,7 +19,7 @@ export const darkTheme = {
   bgRevImg: '#b8b7b7',
   bgRevArrowBtn: '#121212',
   textRevArrowBtn: '#e2e4e4',
-  boxRev: '0 0.4rem 1.2rem rgba(0, 0, 0, 0.04)',
+  boxRev: '0 0.4rem 1.2rem rgba(143, 142, 142, 0.4)',
   bgScroll: '#121212',
   textScroll: '#d6d9db',
   boxScroll: '0 0.4rem 1.2rem rgba(136, 135, 135, 0.3)',
