@@ -40,4 +40,5 @@ export const lightTheme = {
   textRevBtn: 'var(--clr-black)',
   bgRevImg: '#ebe7e2',
   bgRevArrowBtn: 'var(--clr-white)',
+  textRevArrowBtn: '#777777',
 };
