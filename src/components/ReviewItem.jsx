@@ -69,7 +69,7 @@ const Left = styled.div`
   width: 100%;
   height: 100%;
   padding: 8rem 0 10rem 4rem;
-  background-color: var(--clr-white);
+  background-color: ${({ theme }) => theme.bg};
 
   @media only screen and (max-width: 64em) {
     padding-left: 3rem;
