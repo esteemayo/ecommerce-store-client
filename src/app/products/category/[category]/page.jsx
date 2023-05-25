@@ -112,6 +112,7 @@ const ProductCategory = ({ params }) => {
 }
 
 const Container = styled.main`
+  width: 100vw;
 `;
 
 const Wrapper = styled.div`
