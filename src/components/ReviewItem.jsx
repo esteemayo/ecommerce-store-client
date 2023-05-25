@@ -37,7 +37,7 @@ const ReviewItem = ({ user, rating, review }) => {
 }
 
 const Container = styled.article`
-  background-color: #fffdfd;
+  background-color: ${({ theme }) => theme.bgRev};
   width: 700px;
   height: 50rem;
   max-height: 50rem;
