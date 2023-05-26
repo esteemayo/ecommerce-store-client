@@ -122,6 +122,7 @@ const Text = styled.h3`
   text-transform: capitalize;
   font-weight: 500;
   font-size: 2.3rem;
+  color: ${({ theme }) => theme.text};
 
   @media only screen and (max-width: 43.75em) {
     font-size: 2.27rem;
