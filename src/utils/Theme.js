@@ -61,6 +61,7 @@ export const darkTheme = {
   bgCartBtn: '#121212',
   boxOverlay: 'rgba(47, 46, 46, 0.5)',
   bgModal: '#121212',
+  modalInputBorder: '#797979',
 };
 
 export const lightTheme = {
