@@ -98,4 +98,5 @@ export const lightTheme = {
   boxForm: '0 2rem 4rem rgba(145, 143, 143, 0.25)',
   inputCaret: 'var(--caret-light)',
   uploadInput: '#89a8a0',
+  textFile: '#89a8a0',
 };
