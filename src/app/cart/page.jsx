@@ -106,6 +106,10 @@ const Container = styled.main`
   }
 `;
 
+const CartContainer = styled.div`
+
+`;
+
 const HeadingWrapper = styled.div`
   width: 100%;
   min-height: 70vh;
