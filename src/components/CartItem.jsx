@@ -192,7 +192,7 @@ const ProductColor = styled.span`
   gap: 0.5rem;
   text-transform: capitalize;
   font-size: 1.5rem;
-  color: #999;
+  color: ${({ theme }) => theme.textCartItem};
 
   @media only screen and (max-width: 43.75em) {
     font-size: 1.45rem;
