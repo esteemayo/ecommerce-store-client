@@ -136,6 +136,7 @@ const ProductName = styled.h2`
   display: block;
   font-weight: 500;
   font-size: 2rem;
+  color: ${({ theme }) => theme.text};
   margin-bottom: 0.5rem;
 
   @media only screen and (max-width: 43.75em) {
