@@ -268,7 +268,7 @@ const FormUpload = styled.input`
     transition: all 0.3s;
 
     &:hover {
-      background-color: #89a8a0;
+      background-color: ${({ theme }) => theme.uploadInput};
       color: var(--clr-white);
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
       -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
