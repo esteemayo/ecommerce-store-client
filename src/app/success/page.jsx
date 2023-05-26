@@ -200,6 +200,7 @@ const Minutes = styled.span`
   font-weight: 600;
   padding: 0.5rem;
   background-color: ${({ theme }) => theme.bgInfo};
+  color: currentColor;
   border-radius: 3px;
 `;
 
