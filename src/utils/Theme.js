@@ -54,7 +54,7 @@ export const darkTheme = {
   textCartHeader: '#e2e4e4',
   bgCartHeader: '#121212',
   boxCartHeader: '2px 0.4rem 1rem 1px rgba(96, 94, 94, 0.47)',
-  textCartPrice: '#d6d9db',
+  textCartItem: '#d6d9db',
 };
 
 export const lightTheme = {
