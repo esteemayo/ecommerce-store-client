@@ -44,19 +44,21 @@ const Cart = () => {
 
   return (
     <Container onMouseOver={() => dispatch(closeSubmenu())}>
-      <Wrapper>
-        <CartHeader />
-        <CartItemsContainer>
-          {cart.map((cart) => {
-            return <CartItem key={cart.id} {...cart} />;
-          })}
-        </CartItemsContainer>
-        <CartTotal
-          isOpen={isOpen}
-          setIsOpen={setIsOpen}
-          setIsCash={setIsCash}
-        />
-      </Wrapper>
+      <CartContainer>
+        <Wrapper>
+          <CartHeader />
+          <CartItemsContainer>
+            {cart.map((cart) => {
+              return <CartItem key={cart.id} {...cart} />;
+            })}
+          </CartItemsContainer>
+          <CartTotal
+            isOpen={isOpen}
+            setIsOpen={setIsOpen}
+            setIsCash={setIsCash}
+          />
+        </Wrapper>
+      </CartContainer>
       <PaymentModal
         openModal={isCash}
         setIsOpen={setIsOpen}
