@@ -71,7 +71,7 @@ const HeadingSub = styled.span`
   background-color: ${({ theme }) => theme.bgCartHeader};
   color: inherit;
   box-shadow: ${({ theme }) => theme.boxCartHeader};
-  -webkit-box-shadow: 2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.47);
+  -webkit-box-shadow: ${({ theme }) => theme.boxCartHeader};
   -moz-box-shadow: 2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.47);
   border-radius: 50%;
 
