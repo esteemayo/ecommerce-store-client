@@ -102,4 +102,5 @@ export const lightTheme = {
   fileInput: '#89a8a0',
   textFile: '#89a8a0',
   bgSuccess: '#f4f8f7',
+  bgInfo: 'hsla(0, 0%, 100%, 0.4)',
 };
