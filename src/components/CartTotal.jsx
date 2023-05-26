@@ -83,7 +83,7 @@ const CartTotal = ({ isOpen, setIsOpen, setIsCash }) => {
 
 const Container = styled.div`
   padding: 2rem 5rem;
-  border-top: 1px solid #e2e9e7;
+  border-top: 1px solid ${({ theme }) => theme.cartBorder};
   line-height: 1.2;
 
   @media only screen and (max-width: 43.75em) {
