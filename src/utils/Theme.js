@@ -100,4 +100,5 @@ export const lightTheme = {
   inputCaret: 'var(--caret-light)',
   fileInput: '#89a8a0',
   textFile: '#89a8a0',
+  bgSuccess: '#f4f8f7',
 };
