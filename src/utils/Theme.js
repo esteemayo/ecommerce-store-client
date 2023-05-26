@@ -109,4 +109,5 @@ export const lightTheme = {
   bgInfo: 'hsla(0, 0%, 100%, 0.4)',
   successIcon: '#409384',
   textCartHeader: 'inherit',
+  bgCartHeader: 'var(--clr-white)',
 };
