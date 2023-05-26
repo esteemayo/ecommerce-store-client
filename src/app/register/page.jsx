@@ -254,7 +254,7 @@ const FormUpload = styled.input`
   z-index: -1;
 
   &:focus + ${FormLabel} {
-    outline: 3px solid #89a8a0;
+    outline: 3px solid ${({ theme }) => theme.uploadInput};
     outline-offset: 3px;
   }
 
