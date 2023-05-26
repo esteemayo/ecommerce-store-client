@@ -110,4 +110,5 @@ export const lightTheme = {
   successIcon: '#409384',
   textCartHeader: 'inherit',
   bgCartHeader: 'var(--clr-white)',
+  boxCartHeader: '2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.47)',
 };
