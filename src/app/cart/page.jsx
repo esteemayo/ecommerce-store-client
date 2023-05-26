@@ -178,7 +178,7 @@ const Wrapper = styled.div`
   width: 100%;
   max-width: 80rem;
   margin: 0 auto;
-  box-shadow: 2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.47);
+  box-shadow: ${({ theme }) => theme.boxCart};
   -webkit-box-shadow: 2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.47);
   -moz-box-shadow: 2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.47);
   border-radius: 1rem;
