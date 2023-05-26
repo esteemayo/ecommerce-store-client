@@ -165,7 +165,7 @@ const Button = styled.button`
   font-weight: 400;
   font-size: 1.5rem;
   padding: 1rem 0.5rem;
-  background-color: var(--clr-white);
+  background-color: transparent;
   color: var(--clr-secondary-green);
   border: 2px solid var(--clr-primary-green);
   border-radius: 0.5rem;
