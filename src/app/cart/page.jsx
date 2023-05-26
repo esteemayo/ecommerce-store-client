@@ -180,7 +180,7 @@ const Wrapper = styled.div`
   margin: 0 auto;
   box-shadow: ${({ theme }) => theme.boxCart};
   -webkit-box-shadow: ${({ theme }) => theme.boxCart};
-  -moz-box-shadow: 2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.47);
+  -moz-box-shadow: ${({ theme }) => theme.boxCart};
   border-radius: 1rem;
 `;
 
