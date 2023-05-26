@@ -50,6 +50,7 @@ export const darkTheme = {
   textFile: '#e2e4e4',
   bgSuccess: '#121212',
   bgInfo: '#272727',
+  successIcon: '#89898a',
 };
 
 export const lightTheme = {
