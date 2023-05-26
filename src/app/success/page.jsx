@@ -231,7 +231,7 @@ const IconContainer = styled.div`
   gap: 1rem;
 
   svg {
-    color: #409384;
+    color: ${({ theme }) => theme.successIcon};
   }
 `;
 
