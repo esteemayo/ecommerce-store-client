@@ -53,6 +53,7 @@ export const darkTheme = {
   successIcon: '#89898a',
   textCartHeader: '#e2e4e4',
   bgCartHeader: '#121212',
+  boxCartHeader: '2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.47)',
 };
 
 export const lightTheme = {
