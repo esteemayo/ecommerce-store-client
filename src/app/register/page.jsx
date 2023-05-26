@@ -263,7 +263,7 @@ const FormUpload = styled.input`
     display: inline-block;
     text-decoration: none;
     padding: 3px;
-    border-bottom: 1px solid ${({ theme }) => theme.uploadInput};
+    border-bottom: 1px solid ${({ theme }) => theme.fileInput};
     cursor: pointer;
     transition: all 0.3s;
 
