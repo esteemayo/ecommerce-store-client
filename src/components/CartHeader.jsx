@@ -68,7 +68,7 @@ const HeadingSub = styled.span`
   height: 3rem;
   font-weight: 300;
   font-size: 1.7rem;
-  background-color: var(--clr-white);
+  background-color: ${({ theme }) => theme.bgCartHeader};
   color: inherit;
   box-shadow: 2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.47);
   -webkit-box-shadow: 2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.47);
