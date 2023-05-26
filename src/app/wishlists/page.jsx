@@ -89,6 +89,7 @@ const Wrapper = styled.div`
 const Text = styled.p`
   font-size: 4rem;
   text-align: center;
+  color: ${({ theme }) => theme.textCartHeader};
 
   @media only screen and (max-width: 37.5em) {
     font-size: 3.5rem;
