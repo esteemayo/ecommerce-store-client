@@ -60,6 +60,7 @@ export const darkTheme = {
   cartBorder: '#111111',
   bgCartBtn: '#121212',
   boxOverlay: 'rgba(47, 46, 46, 0.5)',
+  bgModal: '#121212',
 };
 
 export const lightTheme = {
