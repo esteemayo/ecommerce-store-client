@@ -166,7 +166,7 @@ const Button = styled.button`
   font-size: 1.5rem;
   padding: 1rem 0.5rem;
   background-color: transparent;
-  color: var(--clr-secondary-green);
+  color: ${({ theme }) => theme.textEmptyCartBtn};
   border: 2px solid var(--clr-primary-green);
   border-radius: 0.5rem;
   outline-color: #85beae;
