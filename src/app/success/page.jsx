@@ -119,7 +119,7 @@ const SuccessContainer = styled.div`
 
 const SuccessWrapper = styled.div`
   width: 70rem;
-  background-color: #f4f8f7;
+  background-color: ${({ theme }) => theme.bgSuccess};
   padding: 4rem 7rem;
   border-radius: 0.5rem;
 
