@@ -56,7 +56,7 @@ export const darkTheme = {
   boxCartHeader: '2px 0.4rem 1rem 1px rgba(96, 94, 94, 0.47)',
   textCartItem: '#d6d9db',
   textRemoveCart: '#797979',
-  cartBorder: '#797979',
+  cartBorder: '#111111',
   bgCartBtn: '#121212',
 };
 
