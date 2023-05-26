@@ -125,4 +125,5 @@ export const lightTheme = {
   cartBorder: '#e2e9e7',
   bgCartBtn: 'var(--clr-black)',
   boxOverlay: 'rgba(0, 0, 0, 0.5)',
+  bgModal: 'var(--clr-white)',
 };
