@@ -52,6 +52,7 @@ export const darkTheme = {
   bgInfo: '#272727',
   successIcon: '#89898a',
   textCartHeader: '#e2e4e4',
+  bgCartHeader: '#121212',
 };
 
 export const lightTheme = {
