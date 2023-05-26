@@ -261,7 +261,7 @@ const Email = styled.span`
 const MushroomContainer = styled.div`
   margin-top: 1rem;
   padding: 1rem 2.3rem;
-  background-color: hsla(0, 0%, 100%, 0.4);
+  background-color: ${({ theme }) => theme.bgInfo};
   border-radius: 0.5rem;
 
   @media only screen and (max-width: 43.75em) {
