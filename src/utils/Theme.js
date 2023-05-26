@@ -122,4 +122,5 @@ export const lightTheme = {
   textRemoveCart: 'var(--clr-primary-green)',
   cartBorder: '#e2e9e7',
   bgCartBtn: 'var(--clr-black)',
+  boxOverlay: 'rgba(0, 0, 0, 0.5)',
 };
