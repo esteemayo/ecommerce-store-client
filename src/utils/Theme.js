@@ -114,6 +114,7 @@ export const lightTheme = {
   bgSuccess: '#f4f8f7',
   bgInfo: 'hsla(0, 0%, 100%, 0.4)',
   successIcon: '#409384',
+  boxCart: '2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.47)',
   textCartHeader: 'inherit',
   bgCartHeader: 'var(--clr-white)',
   boxCartHeader: '2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.47)',
