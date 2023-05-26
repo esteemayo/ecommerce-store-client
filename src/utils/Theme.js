@@ -51,7 +51,7 @@ export const darkTheme = {
   bgSuccess: '#121212',
   bgInfo: '#272727',
   successIcon: '#89898a',
-  boxCart: '2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.47)',
+  boxCart: '2px 0.4rem 1rem 1px rgba(80, 78, 78, 0.25)',
   textCartHeader: '#e2e4e4',
   bgCartHeader: '#121212',
   boxCartHeader: '2px 0.4rem 1rem 1px rgba(96, 94, 94, 0.47)',
