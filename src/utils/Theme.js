@@ -59,7 +59,7 @@ export const darkTheme = {
   textRemoveCart: '#797979',
   cartBorder: '#111111',
   bgCartBtn: '#121212',
-  boxOverlay: 'rgba(0, 0, 0, 0.5)',
+  boxOverlay: 'rgba(47, 46, 46, 0.5)',
 };
 
 export const lightTheme = {
