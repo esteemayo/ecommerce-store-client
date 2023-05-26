@@ -47,6 +47,7 @@ export const darkTheme = {
   boxForm: '0 1rem 2rem rgba(145, 143, 143, 0.15)',
   inputCaret: 'var(--caret-dark)',
   uploadInput: '#121212',
+  textFile: '#e2e4e4',
 };
 
 export const lightTheme = {
