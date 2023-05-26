@@ -237,7 +237,7 @@ const RemoveButton = styled.button`
   font-weight: 500;
   font-size: 1.5rem;
   background-color: transparent;
-  color: var(--clr-primary-green);
+  color: ${({ theme }) => theme.textRemoveCart};
   outline-color: #eee;
   outline-offset: 3px;
   margin-top: 1rem;
