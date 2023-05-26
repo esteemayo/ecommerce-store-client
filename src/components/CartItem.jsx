@@ -69,7 +69,7 @@ const Container = styled.article`
   line-height: 1.12;
   
   &:not(:last-of-type) {
-    border-bottom: 1px solid #e2e9e7;
+    border-bottom: 1px solid ${({ theme }) => theme.cartBorder};
     margin-bottom: 1.25rem;
   }
 `;
