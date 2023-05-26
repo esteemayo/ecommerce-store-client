@@ -162,7 +162,7 @@ const PriceContainer = styled.div`
 const Price = styled.span`
   display: block;
   font-size: 1.5rem;
-  color: #999;
+  color: ${({ theme }) => theme.textCartPrice};
 
   @media only screen and (max-width: 43.75em) {
     font-size: 1.45rem;
