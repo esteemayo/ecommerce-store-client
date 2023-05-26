@@ -49,7 +49,7 @@ export const darkTheme = {
   fileInput: '#121212',
   textFile: '#e2e4e4',
   bgSuccess: '#121212',
-  bgInfo: '#121212',
+  bgInfo: '#272727',
 };
 
 export const lightTheme = {
