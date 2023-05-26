@@ -119,4 +119,5 @@ export const lightTheme = {
   textCartItem: '#999999',
   textRemoveCart: 'var(--clr-primary-green)',
   cartBorder: '#e2e9e7',
+  bgCartBtn: 'var(--clr-black)',
 };
