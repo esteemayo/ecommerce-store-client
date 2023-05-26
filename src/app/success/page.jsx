@@ -184,6 +184,7 @@ const SuccessAlert = styled.p`
 const Text = styled.p`
   display: inline-block;
   font-size: 1.5rem;
+  color:  ${({ theme }) => theme.text};
   margin-bottom: 2rem;
 
   @media only screen and (max-width: 43.75em) {
