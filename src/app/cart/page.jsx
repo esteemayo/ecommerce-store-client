@@ -72,6 +72,9 @@ const Cart = () => {
 
 const Container = styled.main`
   width: 100vw;
+`;
+
+const CartContainer = styled.div`
   max-width: 120rem;
   margin: 0 auto;
   padding: 10rem 0;
@@ -108,10 +111,6 @@ const Container = styled.main`
     padding-left: 1.3rem;
     padding-right: 1.3rem;
   }
-`;
-
-const CartContainer = styled.div`
-
 `;
 
 const HeadingWrapper = styled.div`
