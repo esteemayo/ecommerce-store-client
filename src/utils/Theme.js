@@ -107,4 +107,5 @@ export const lightTheme = {
   bgSuccess: '#f4f8f7',
   bgInfo: 'hsla(0, 0%, 100%, 0.4)',
   successIcon: '#409384',
+  textCartHeader: 'inherit',
 };
