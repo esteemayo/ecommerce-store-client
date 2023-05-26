@@ -75,6 +75,7 @@ const Container = styled.main`
 `;
 
 const CartContainer = styled.div`
+  width: 100%;
   max-width: 120rem;
   margin: 0 auto;
   padding: 10rem 0;
