@@ -115,4 +115,5 @@ export const lightTheme = {
   bgCartHeader: 'var(--clr-white)',
   boxCartHeader: '2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.47)',
   textCartItem: '#999999',
+  textRemoveCart: 'var(--clr-primary-green)',
 };
