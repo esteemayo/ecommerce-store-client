@@ -57,6 +57,7 @@ export const darkTheme = {
   textCartItem: '#d6d9db',
   textRemoveCart: '#797979',
   cartBorder: '#797979',
+  bgCartBtn: '#121212',
 };
 
 export const lightTheme = {
