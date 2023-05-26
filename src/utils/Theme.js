@@ -113,5 +113,5 @@ export const lightTheme = {
   textCartHeader: 'inherit',
   bgCartHeader: 'var(--clr-white)',
   boxCartHeader: '2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.47)',
-  textCartPrice: '#999999',
+  textCartItem: '#999999',
 };
