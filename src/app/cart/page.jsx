@@ -179,7 +179,7 @@ const Wrapper = styled.div`
   max-width: 80rem;
   margin: 0 auto;
   box-shadow: ${({ theme }) => theme.boxCart};
-  -webkit-box-shadow: 2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.47);
+  -webkit-box-shadow: ${({ theme }) => theme.boxCart};
   -moz-box-shadow: 2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.47);
   border-radius: 1rem;
 `;
