@@ -207,6 +207,7 @@ const Minutes = styled.span`
 const InfoContainer = styled.div`
   padding: 2.7rem 2.3rem;
   background-color: ${({ theme }) => theme.bgInfo};
+  color:  ${({ theme }) => theme.text};
   border-radius: 0.5rem;
 
   @media only screen and (max-width: 43.75em) {
