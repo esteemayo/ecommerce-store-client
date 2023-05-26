@@ -48,6 +48,7 @@ export const darkTheme = {
   inputCaret: 'var(--caret-dark)',
   fileInput: '#121212',
   textFile: '#e2e4e4',
+  bgSuccess: '#121212',
 };
 
 export const lightTheme = {
