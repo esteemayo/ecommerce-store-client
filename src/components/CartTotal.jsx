@@ -156,7 +156,7 @@ const Button = styled.button`
   width: 100%;
   padding: ${({ btnType }) => btnType === 'check' ? '1rem 3rem' : '1rem 0.5rem'};
   background-color: var(--clr-black);
-  color: var(--clr-white);
+  color: ${({ theme }) => theme.textBtn};
   background-image: linear-gradient(
     120deg,
     transparent 0%,
