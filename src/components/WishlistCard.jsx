@@ -91,7 +91,7 @@ const Container = styled.article`
 const Wrapper = styled.div`
   position: relative;
   padding: 3rem;
-  background-color: var(--clr-white);
+  background-color: ${({ theme }) => theme.bgWlCard};
   box-shadow: 2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.25);
   -webkit-box-shadow: 2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.25);
   -moz-box-shadow: 2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.25);
