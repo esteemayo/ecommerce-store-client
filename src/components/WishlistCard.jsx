@@ -161,7 +161,7 @@ const ProductName = styled.h2`
   display: inline-block;
   font-weight: 500;
   font-size: 2rem;
-  color: #6d857f;
+  color: ${({ theme }) => theme.textWlCardName};
   margin-bottom: 0.5rem;
   line-height: 1;
 
