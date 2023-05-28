@@ -133,4 +133,5 @@ export const lightTheme = {
   modalInputBorder: '#eef2ff',
   textEmptyCartBtn: 'var(--clr-secondary-green)',
   bgWlHeader: '#f9f9f9',
+  textWlHeader: 'e2e4e4',
 };
