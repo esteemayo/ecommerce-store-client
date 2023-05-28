@@ -67,6 +67,7 @@ export const darkTheme = {
   textWlHeader: '#e2e4e4',
   bgWlHeaderBtn: '#1c1b1b',
   textWlHeaderBtn: '#cfd0d1',
+  bgWlCard: '#1c1b1b',
 };
 
 export const lightTheme = {
