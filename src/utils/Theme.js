@@ -3,8 +3,8 @@ export const darkTheme = {
   bgLight: '#272727',
   text: '#cfd0d1',
   textSoft: '#e2e4e4',
-  soft: '#0f0f0f',
   textHeader: '#e2e4e4',
+  soft: '#0f0f0f',
   bgProdCard: '#121212',
   box: '2px 0.4rem 1rem 1px rgba(70, 69, 69, 0.47)',
   textProdCard: '#d6d9db',
@@ -68,6 +68,7 @@ export const darkTheme = {
   bgWlHeaderBtn: '#1c1b1b',
   textWlHeaderBtn: '#cfd0d1',
   bgWlCard: '#1c1b1b',
+  textWlCardName: '#e2e4e4',
   textWlCard: '#d6d9db',
 };
 
