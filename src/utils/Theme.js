@@ -65,6 +65,7 @@ export const darkTheme = {
   textEmptyCartBtn: '#d6d9db',
   bgWlHeader: '#121212',
   textWlHeader: '#e2e4e4',
+  bgWlHeaderBtn: '#797979',
 };
 
 export const lightTheme = {
