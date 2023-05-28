@@ -136,4 +136,5 @@ export const lightTheme = {
   bgWlHeader: '#f9f9f9',
   textWlHeader: '#999999',
   bgWlHeaderBtn: 'var(--clr-white)',
+  textWlHeaderBtn: '#89a8a0',
 };
