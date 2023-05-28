@@ -64,6 +64,7 @@ export const darkTheme = {
   modalInputBorder: '#797979',
   textEmptyCartBtn: '#d6d9db',
   bgWlHeader: '#121212',
+  textWlHeader: 'e2e4e4',
 };
 
 export const lightTheme = {
