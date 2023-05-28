@@ -140,4 +140,5 @@ export const lightTheme = {
   bgWlHeaderBtn: 'var(--clr-white)',
   textWlHeaderBtn: '#89a8a0',
   bgWlCard: 'var(--clr-white)',
+  textWlCard: '#999999',
 };
