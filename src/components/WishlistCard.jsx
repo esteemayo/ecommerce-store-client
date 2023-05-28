@@ -180,7 +180,7 @@ const ProductName = styled.h2`
 
     &:hover {
       text-decoration: underline;
-      text-decoration-color: #6d857f;
+      text-decoration-color: ${({ theme }) => theme.textWlCardName};
       text-underline-offset: 4px;
       color: currentColor;
     }
