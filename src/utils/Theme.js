@@ -135,4 +135,5 @@ export const lightTheme = {
   textEmptyCartBtn: 'var(--clr-secondary-green)',
   bgWlHeader: '#f9f9f9',
   textWlHeader: '#999999',
+  bgWlHeaderBtn: 'var(--clr-white)',
 };
