@@ -47,7 +47,7 @@ const Heading = styled.h1`
 
 const DateTime = styled.time`
   font-size: 1.5rem;
-  color: #999;
+  color: ${({ theme }) => theme.textWlHeader};
 
   @media only screen and (max-width: 56.25em) {
     font-size: 1.3rem;
