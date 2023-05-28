@@ -64,7 +64,7 @@ const SendButton = styled.button`
   text-transform: capitalize;
   padding: 1rem 3rem;
   background-color: ${({ theme }) => theme.bgWlHeaderBtn};
-  color: #89a8a0;
+  color: ${({ theme }) => theme.textWlHeaderBtn};
   border-radius: 0.5rem;
   outline-color: #ccc;
   cursor: pointer;
