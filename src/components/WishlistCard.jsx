@@ -82,7 +82,6 @@ const WishlistCard = ({ wishlists, onDelete, openModal, setIsSelectedProduct }) 
 
 const Container = styled.article`
   padding: 1rem 2.5rem;
-  background-color: ${({ theme }) => theme.bgWlCard};
 
   @media only screen and (max-width: 31.25em) {
     padding: 1rem 0;
