@@ -130,4 +130,5 @@ export const lightTheme = {
   bgModal: 'var(--clr-white)',
   modalInputBorder: '#eef2ff',
   textEmptyCartBtn: 'var(--clr-secondary-green)',
+  bgWlHeader: '#f9f9f9',
 };
