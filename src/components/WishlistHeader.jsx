@@ -63,7 +63,7 @@ const SendButton = styled.button`
   display: inline-block;
   text-transform: capitalize;
   padding: 1rem 3rem;
-  background-color: var(--clr-white);
+  background-color: ${({ theme }) => theme.bgWlHeaderBtn};
   color: #89a8a0;
   border-radius: 0.5rem;
   outline-color: #ccc;
