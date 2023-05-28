@@ -189,7 +189,7 @@ const ProductName = styled.h2`
 
 const Description = styled.p`
   font-size: 1.6rem;
-  color: #999;
+  color: ${({ theme }) => theme.textWlCard};
   line-height: 1.2;
   word-wrap: break-word;
 
