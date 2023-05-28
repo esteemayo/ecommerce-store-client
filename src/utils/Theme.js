@@ -141,5 +141,6 @@ export const lightTheme = {
   bgWlHeaderBtn: 'var(--clr-white)',
   textWlHeaderBtn: '#89a8a0',
   bgWlCard: 'var(--clr-white)',
+  textWlCardName: '#6d857f',
   textWlCard: '#999999',
 };
