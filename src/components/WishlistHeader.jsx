@@ -34,6 +34,7 @@ const Heading = styled.h1`
   text-transform: uppercase;
   font-weight: 600;
   font-size: 1.8rem;
+  color: ${({ theme }) => theme.text};
 
   @media only screen and (max-width: 56.25em) {
     font-size: 1.6rem;
