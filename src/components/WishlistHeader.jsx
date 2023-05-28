@@ -21,7 +21,7 @@ const Container = styled.section`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #f9f9f9;
+  background-color: ${({ theme }) => theme.bgWlHeader};
   padding: 2rem 2.5rem;
 `;
 
