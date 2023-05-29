@@ -215,7 +215,7 @@ const HeadingText = styled.p`
 const AccountContainer = styled.div`
   padding: 3rem 5rem;
   box-shadow: ${({ theme }) => theme.boxCart};
-  -webkit-box-shadow: 2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.47);
+  -webkit-box-shadow: ${({ theme }) => theme.boxCart};
   -moz-box-shadow: 2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.47);
   border-radius: 1rem;
 
