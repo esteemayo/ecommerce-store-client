@@ -177,7 +177,7 @@ const Input = styled.input`
     display: inline-block;
     text-decoration: none;
     padding: 3px;
-    border-bottom: 1px solid #89a8a0;
+    border-bottom: 1px solid ${({ theme }) => theme.fileInput};
     cursor: pointer;
 
     @media only screen and (max-width: 25em) {
