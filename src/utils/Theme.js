@@ -62,7 +62,7 @@ export const darkTheme = {
   boxOverlay: 'rgba(47, 46, 46, 0.5)',
   bgModal: '#121212',
   textModal: '#d6d9db',
-  textModalBtn: '#797979',
+  textModalBtn: '#c5c6c7',
   modalInputBorder: '#797979',
   textEmptyCartBtn: '#d6d9db',
   bgWlHeader: '#121212',
