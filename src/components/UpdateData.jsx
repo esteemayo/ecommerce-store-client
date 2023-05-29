@@ -133,7 +133,7 @@ const FormInput = styled.input`
   border: 2px solid #f3f4f6;
   border-radius: 0.5rem;
   outline-color: #eee;
-  caret-color: var(--caret-light);
+  caret-color: ${({ theme }) => theme.inputCaret};
 
   @media only screen and (max-width: 25em) {
     padding-top: 1.2rem;
