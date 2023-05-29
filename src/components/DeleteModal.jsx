@@ -71,7 +71,7 @@ const Container = styled.div`
 const Wrapper = styled.div`
   width: 35rem;
   padding: 5rem;
-  background-color: var(--clr-white);
+  background-color: ${({ theme }) => theme.bgModal};
   border-radius: 1rem;
   box-shadow: 0 2rem 4rem rgba(145, 143, 143, 0.1);
   -webkit-box-shadow: 0 2rem 4rem rgba(145, 143, 143, 0.1);
