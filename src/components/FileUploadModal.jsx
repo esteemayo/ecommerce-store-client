@@ -173,7 +173,7 @@ const Input = styled.input`
   }
 
   & + ${Label} {
-    color: #89a8a0;
+    color: ${({ theme }) => theme.textFile};
     display: inline-block;
     text-decoration: none;
     padding: 3px;
