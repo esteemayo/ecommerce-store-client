@@ -202,6 +202,7 @@ const Heading = styled.h1`
 
 const HeadingText = styled.p`
   font-size: 1.35rem;
+  color: ${({ theme }) => theme.textWlHeader};
   line-height: 1.3;
   letter-spacing: 0.3px;
 
