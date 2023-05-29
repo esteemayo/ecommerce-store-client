@@ -292,7 +292,7 @@ const Input = styled.input`
   border: 2px solid #f3f4f6;
   border-radius: 0.5rem;
   outline-color: #eee;
-  caret-color: var(--caret-light);
+  caret-color: ${({ theme }) => theme.inputCaret};
 
   &::-webkit-input-placeholder {
     font-weight: 300;
