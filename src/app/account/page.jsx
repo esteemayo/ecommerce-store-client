@@ -168,6 +168,10 @@ const Container = styled.main`
   }
 `;
 
+const ContainerBox = styled.div`
+  
+`;
+
 const Wrapper = styled.div`
   width: 100%;
   max-width: 80rem;
