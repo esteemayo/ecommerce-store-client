@@ -401,6 +401,7 @@ const AmountHeading = styled.h3`
   text-transform: capitalize;
   font-weight: 400;
   font-size: 1.5rem;
+  color: ${({ theme }) => theme.text};
   margin-bottom: 0.5rem;
 `;
 
