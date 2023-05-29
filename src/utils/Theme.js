@@ -159,4 +159,5 @@ export const lightTheme = {
   textWlCard: '#999999',
   boxWlCard: '2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.25)',
   cartSelected: '#89a8a0',
+  textAccBtn: 'var(--clr-primary-green)',
 };
