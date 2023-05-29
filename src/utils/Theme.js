@@ -61,6 +61,7 @@ export const darkTheme = {
   bgCartBtn: '#121212',
   boxOverlay: 'rgba(47, 46, 46, 0.5)',
   bgModal: '#121212',
+  bgModalCloseBtn: '#121212',
   textModal: '#d6d9db',
   textModalBtn: '#c5c6c7',
   textModalDelBtn: '#c5c6c7',
