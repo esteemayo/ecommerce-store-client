@@ -123,7 +123,7 @@ const PaymentModal = ({ openModal, closeModal, setIsOpen }) => {
 const Overlay = styled.aside`
   width: 100vw;
   height: 100%;
-  background-color: ${({ theme }) => theme.boxOverlay};
+  background-color: ${({ theme }) => theme.bgOverlay};
   position: fixed;
   top: 0;
   left: 0;
