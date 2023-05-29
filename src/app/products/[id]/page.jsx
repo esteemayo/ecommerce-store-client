@@ -35,7 +35,7 @@ const SingleProduct = ({ params }) => {
 const Container = styled.main`
   width: 100vw;
   min-height: 100vh;
-  background-color: var(--clr-white);
+  background-color: ${({ theme }) => theme.bg};
   padding-top: 8rem;
   padding-bottom: 4rem;
 
