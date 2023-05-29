@@ -346,7 +346,7 @@ const Color = styled.button`
   height: 2.2rem;
   background-color: ${({ color }) => color};
   border-radius: 50%;
-  outline: 1px solid ${({ selected }) => selected ? '#89a8a0' : 'transparent'};
+  outline: 1px solid ${({ theme, selected }) => selected ? theme.cartSelected : 'transparent'};
   outline-offset: 2px;
   cursor: ${({ selected }) => selected ? 'default' : 'pointer'};
 `;
