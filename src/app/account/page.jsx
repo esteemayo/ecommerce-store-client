@@ -190,6 +190,7 @@ const Heading = styled.h1`
   text-transform: capitalize;
   font-weight: 600;
   font-size: 2.3rem;
+  color: ${({ theme }) => theme.text};
   line-height: 1.2;
   letter-spacing: 0.5px;
 
