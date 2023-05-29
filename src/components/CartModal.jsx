@@ -277,6 +277,7 @@ const ProductName = styled.h1`
   display: inline-block;
   font-weight: 500;
   font-size: 1.8rem;
+  color: ${({ theme }) => theme.text};
   line-height: 1;
   margin-bottom: 1rem;
 `;
