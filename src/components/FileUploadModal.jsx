@@ -185,7 +185,7 @@ const Input = styled.input`
     }
 
     &:hover {
-      background-color: #89a8a0;
+      background-color: ${({ theme }) => theme.fileInput};
       color: var(--clr-white);
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
       -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
