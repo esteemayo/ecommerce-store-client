@@ -140,6 +140,7 @@ export const lightTheme = {
   bgCartBtn: 'var(--clr-black)',
   boxOverlay: 'rgba(0, 0, 0, 0.5)',
   bgModal: 'var(--clr-white)',
+  bgModalCloseBtn: '#f9f9f9',
   textModal: '#999999',
   textModalBtn: '#89a8a0',
   textModalDelBtn: 'var(--clr-white)',
