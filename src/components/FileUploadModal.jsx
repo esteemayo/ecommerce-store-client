@@ -168,7 +168,7 @@ const Input = styled.input`
   z-index: -1;
 
   &:focus + ${Label} {
-    outline: 3px solid ${({ theme }) => theme.fileInput};
+    outline: 3px solid ${({ theme }) => theme.uploadFileInput};
     outline-offset: 3px;
   }
 
@@ -177,7 +177,7 @@ const Input = styled.input`
     display: inline-block;
     text-decoration: none;
     padding: 3px;
-    border-bottom: 1px solid ${({ theme }) => theme.fileInput};
+    border-bottom: 1px solid ${({ theme }) => theme.uploadFileInput};
     cursor: pointer;
     transition: all 0.3s;
 
@@ -186,7 +186,7 @@ const Input = styled.input`
     }
 
     &:hover {
-      background-color: ${({ theme }) => theme.fileInput};
+      background-color: ${({ theme }) => theme.uploadFileInput};
       color: ${({ theme }) => theme.textCat};
       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
       -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
