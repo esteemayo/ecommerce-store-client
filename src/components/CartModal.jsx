@@ -238,7 +238,7 @@ const CloseButton = styled.button`
   justify-content: center;
   width: 2.5rem;
   height: 2.5rem;
-  background-color: #f9f9f9;
+  background-color: ${({ theme }) => theme.bgModalCloseBtn};
   color: #a2a8b0;
   border-radius: 50%;
   outline-color: #f1e4f4;
