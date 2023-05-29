@@ -155,7 +155,7 @@ const CancelButton = styled.button`
   width: 50%;
   padding: 1rem;
   background-color: transparent;
-  color: var(--clr-primary-green);
+  color: ${({ theme }) => theme.textModalBtn};
   border: 1px solid #ccc;
   border-radius: 0.5rem;
   outline-color: #eee;
