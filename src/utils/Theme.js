@@ -77,7 +77,7 @@ export const darkTheme = {
   textWlCard: '#d6d9db',
   boxWlCard: '2px 0.4rem 1rem 1px rgba(27, 27, 27, 0.25)',
   cartSelected: '#797979',
-  textAccBtn: '#797979',
+  textAccBtn: '#d6d9db',
 };
 
 export const lightTheme = {
