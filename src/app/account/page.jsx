@@ -278,7 +278,7 @@ const Label = styled.label`
   text-transform: capitalize;
   font-weight: 600;
   font-size: 1.4rem;
-  color: #888;
+  color: ${({ theme }) => theme.textLabel};
 `;
 
 const Input = styled.input`
