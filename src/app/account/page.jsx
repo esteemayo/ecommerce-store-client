@@ -137,6 +137,9 @@ const Account = () => {
 
 const Container = styled.main`
   width: 100vw;
+`;
+
+const ContainerBox = styled.div`
   max-width: 120rem;
   margin: 0 auto;
   padding: 10rem 0;
@@ -168,10 +171,6 @@ const Container = styled.main`
     padding-left: 2rem;
     padding-right: 2rem;
   }
-`;
-
-const ContainerBox = styled.div`
-  
 `;
 
 const Wrapper = styled.div`
