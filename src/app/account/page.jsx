@@ -313,7 +313,7 @@ const Button = styled.button`
   text-transform: capitalize;
   font-size: 1.2rem;
   background-color: transparent;
-  color: var(--clr-primary-green);
+  color: ${({ theme }) => theme.textAccBtn};
   outline-offset: 3px;
   outline-color: #ccc;
   cursor: pointer;
