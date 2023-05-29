@@ -88,6 +88,7 @@ const UpdateData = ({ onCancel }) => {
 
 const Container = styled.div`
   margin-top: 1.5rem;
+  color: ${({ theme }) => theme.text};
 `;
 
 const Text = styled.p`
