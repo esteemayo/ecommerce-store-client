@@ -70,7 +70,7 @@ export const darkTheme = {
   bgWlCard: '#1c1b1b',
   textWlCardName: '#e2e4e4',
   textWlCard: '#d6d9db',
-  boxWlCard: '2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.25)',
+  boxWlCard: '2px 0.4rem 1rem 1px rgba(27, 27, 27, 0.25)',
 };
 
 export const lightTheme = {
