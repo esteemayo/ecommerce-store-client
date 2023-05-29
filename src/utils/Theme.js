@@ -146,6 +146,7 @@ export const lightTheme = {
   textModalBtn: '#89a8a0',
   textModalDelBtn: 'var(--clr-white)',
   modalInputBorder: '#eef2ff',
+  cartModalBorder: '#e2e9e7',
   textEmptyCartBtn: 'var(--clr-secondary-green)',
   bgWlHeader: '#f9f9f9',
   textWlHeader: '#999999',
