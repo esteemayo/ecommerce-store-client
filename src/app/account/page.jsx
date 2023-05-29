@@ -216,7 +216,7 @@ const AccountContainer = styled.div`
   padding: 3rem 5rem;
   box-shadow: ${({ theme }) => theme.boxCart};
   -webkit-box-shadow: ${({ theme }) => theme.boxCart};
-  -moz-box-shadow: 2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.47);
+  -moz-box-shadow: ${({ theme }) => theme.boxCart};
   border-radius: 1rem;
 
   @media only screen and (max-width: 43.75em) {
