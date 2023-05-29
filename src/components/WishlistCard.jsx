@@ -94,7 +94,7 @@ const Wrapper = styled.div`
   background-color: ${({ theme }) => theme.bgWlCard};
   box-shadow: ${({ theme }) => theme.boxWlCard};
   -webkit-box-shadow: ${({ theme }) => theme.boxWlCard};
-  -moz-box-shadow: 2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.25);
+  -moz-box-shadow: ${({ theme }) => theme.boxWlCard};
   border-radius: 0.5rem;
   display: flex;
   align-items: center;
