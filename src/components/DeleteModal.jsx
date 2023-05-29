@@ -149,7 +149,7 @@ const DeleteButton = styled.button`
   font-size: 1.43rem;
   padding: 1rem 3rem;
   background-color: var(--clr-primary-red);
-  color: var(--clr-white);
+  color: ${({ theme }) => theme.textModalDelBtn};
   border: 1px solid #e3e3f3;
   border-radius: 0.5rem;
   outline-color: #b10101;
