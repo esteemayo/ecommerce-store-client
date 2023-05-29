@@ -328,7 +328,7 @@ const DeleteHeader = styled.h2`
   text-transform: capitalize;
   font-weight: 500;
   font-size: 1.385rem;
-  color: var(--clr-primary-green);
+  color: ${({ theme }) => theme.textDelHeader};
 
   @media only screen and (max-width: 43.75em) {
     font-size: 1.58rem;
