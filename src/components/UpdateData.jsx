@@ -92,6 +92,7 @@ const Container = styled.div`
 
 const Text = styled.p`
   text-align: center;
+  color: ${({ theme }) => theme.text};
   line-height: 1;
 `;
 
