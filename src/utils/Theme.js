@@ -66,6 +66,7 @@ export const darkTheme = {
   textModalBtn: '#c5c6c7',
   textModalDelBtn: '#c5c6c7',
   modalInputBorder: '#797979',
+  cartModalBorder: '#222222',
   textEmptyCartBtn: '#d6d9db',
   bgWlHeader: '#121212',
   textWlHeader: '#e2e4e4',
