@@ -412,7 +412,7 @@ const FileButton = styled.button`
   font-size: 1.4rem;
   padding: 1.2rem 3.5rem;
   background-color: #6d857f;
-  color: var(--clr-white);
+  color: ${({ theme }) => theme.textBtn};
   background-image: linear-gradient(
     120deg,
     transparent 0%,
