@@ -28,9 +28,7 @@ const UpdatePassword = ({ onCancel }) => {
       errors.password = 'Password should be at least 8 characters long';
     } else if (!confirmPassword) {
       errors.confirmPassword = 'Please confirm your new password';
-    }
-
-    if (password !== confirmPassword) {
+    } else if (password !== confirmPassword) {
       errors.confirmPassword = 'Passwords do not match';
     }
 
