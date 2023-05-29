@@ -25,89 +25,91 @@ const Account = () => {
 
   return (
     <Container onMouseOver={() => dispatch(closeSubmenu())}>
-      <Wrapper>
-        <HeadingContainer>
-          <Heading>Account settings</Heading>
-          <HeadingText>Edit your name, avatar etc.</HeadingText>
-        </HeadingContainer>
-        <AccountContainer>
-          <AccountWrapper>
-            <AccountInfo>
-              <Left>
-                <InputContainer>
-                  <Label htmlFor='name'>Your name</Label>
-                  <Input
-                    type='text'
-                    id='name'
-                    name='name'
-                    placeholder='Name'
-                  />
-                </InputContainer>
-                <InputContainer>
-                  <Label htmlFor='username'>Your username</Label>
-                  <Input
-                    type='text'
-                    id='username'
-                    name='username'
-                    placeholder='Username'
-                  />
-                </InputContainer>
-                <InputContainer>
-                  <Label htmlFor='email'>Email address</Label>
-                  <Input
-                    type='email'
-                    id='email'
-                    name='email'
-                    placeholder='Email'
-                  />
-                  <ButtonContainer>
-                    <Button type='button' onClick={() => setIsEmailOpen(true)}>Change</Button>
-                  </ButtonContainer>
-                </InputContainer>
-                <InputContainer>
-                  <Label htmlFor='password'>Password</Label>
-                  <Input
-                    type='password'
-                    id='password'
-                    name='password'
-                    placeholder='********'
-                  />
-                  <ButtonContainer>
-                    <Button type='button' onClick={() => setIsPasswordOpen(true)}>
-                      Change
-                    </Button>
-                  </ButtonContainer>
-                </InputContainer>
-                <DeleteContainer>
-                  <DeleteHeader>Delete your account</DeleteHeader>
-                  <DeleteWarning>
-                    You will receive an email to confirm your decision.
-                    Please note, that all your data will be permanently erased.
-                  </DeleteWarning>
-                  <DeleteButton type='button' onClick={() => setIsDeleteOpen(true)}>Delete account</DeleteButton>
-                </DeleteContainer>
-              </Left>
-              <Right>
-                <AvatarContainer>
-                  {user ? (
-                    <Image
-                      src='/img/user-9.jpg'
-                      width={100}
-                      height={100}
-                      alt=''
+      <ContainerBox>
+        <Wrapper>
+          <HeadingContainer>
+            <Heading>Account settings</Heading>
+            <HeadingText>Edit your name, avatar etc.</HeadingText>
+          </HeadingContainer>
+          <AccountContainer>
+            <AccountWrapper>
+              <AccountInfo>
+                <Left>
+                  <InputContainer>
+                    <Label htmlFor='name'>Your name</Label>
+                    <Input
+                      type='text'
+                      id='name'
+                      name='name'
+                      placeholder='Name'
                     />
-                  ) : (
-                    <FontAwesomeIcon icon={faUser} />
-                  )}
-                </AvatarContainer>
-                <FileButton type='button' onClick={() => setIsFileUploadOpen(true)}>
-                  Upload a picture
-                </FileButton>
-              </Right>
-            </AccountInfo>
-          </AccountWrapper>
-        </AccountContainer>
-      </Wrapper>
+                  </InputContainer>
+                  <InputContainer>
+                    <Label htmlFor='username'>Your username</Label>
+                    <Input
+                      type='text'
+                      id='username'
+                      name='username'
+                      placeholder='Username'
+                    />
+                  </InputContainer>
+                  <InputContainer>
+                    <Label htmlFor='email'>Email address</Label>
+                    <Input
+                      type='email'
+                      id='email'
+                      name='email'
+                      placeholder='Email'
+                    />
+                    <ButtonContainer>
+                      <Button type='button' onClick={() => setIsEmailOpen(true)}>Change</Button>
+                    </ButtonContainer>
+                  </InputContainer>
+                  <InputContainer>
+                    <Label htmlFor='password'>Password</Label>
+                    <Input
+                      type='password'
+                      id='password'
+                      name='password'
+                      placeholder='********'
+                    />
+                    <ButtonContainer>
+                      <Button type='button' onClick={() => setIsPasswordOpen(true)}>
+                        Change
+                      </Button>
+                    </ButtonContainer>
+                  </InputContainer>
+                  <DeleteContainer>
+                    <DeleteHeader>Delete your account</DeleteHeader>
+                    <DeleteWarning>
+                      You will receive an email to confirm your decision.
+                      Please note, that all your data will be permanently erased.
+                    </DeleteWarning>
+                    <DeleteButton type='button' onClick={() => setIsDeleteOpen(true)}>Delete account</DeleteButton>
+                  </DeleteContainer>
+                </Left>
+                <Right>
+                  <AvatarContainer>
+                    {user ? (
+                      <Image
+                        src='/img/user-9.jpg'
+                        width={100}
+                        height={100}
+                        alt=''
+                      />
+                    ) : (
+                      <FontAwesomeIcon icon={faUser} />
+                    )}
+                  </AvatarContainer>
+                  <FileButton type='button' onClick={() => setIsFileUploadOpen(true)}>
+                    Upload a picture
+                  </FileButton>
+                </Right>
+              </AccountInfo>
+            </AccountWrapper>
+          </AccountContainer>
+        </Wrapper>
+      </ContainerBox>
       <FileUploadModal
         openModal={isFileUploadOpen}
         closeModal={setIsFileUploadOpen}
