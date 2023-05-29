@@ -291,7 +291,7 @@ const Input = styled.input`
   color: #999;
   border: 2px solid #f3f4f6;
   border-radius: 0.5rem;
-  outline-color: #eee;
+  outline-color: ${({ theme }) => theme.inputOut};
   caret-color: ${({ theme }) => theme.inputCaret};
 
   &::-webkit-input-placeholder {
