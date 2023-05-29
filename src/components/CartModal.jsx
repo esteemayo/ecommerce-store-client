@@ -291,6 +291,7 @@ const PriceContainer = styled.div`
 const ProductPrice = styled.p`
   text-decoration: line-through;
   font-size: 1.5rem;
+  color: ${({ theme }) => theme.text};
 `;
 
 const PriceDiscount = styled.p`
