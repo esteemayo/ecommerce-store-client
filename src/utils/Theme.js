@@ -85,6 +85,7 @@ export const darkTheme = {
   bgProdBtn: '#111111',
   filterBorder: '#403e3e',
   filterHov: 'rgba(0, 0, 0, 0.3)',
+  bgRevCard: '#121212',
 };
 
 export const lightTheme = {
