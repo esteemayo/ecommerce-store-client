@@ -87,7 +87,7 @@ export const darkTheme = {
   filterHov: 'rgba(0, 0, 0, 0.3)',
   bgRevCard: '#121212',
   starBorder: '#403e3e',
-  textRevDate: '#e2e4e4',
+  textRevDate: '#999898',
 };
 
 export const lightTheme = {
