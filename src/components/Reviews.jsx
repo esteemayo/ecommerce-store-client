@@ -59,7 +59,7 @@ const Reviews = () => {
         <ReviewContainer>
           <Ratings>
             <TotalRatings>
-              {reviews.length === 0 ? 0 : reviews.length}
+              {reviews.length === 0 ? 0 : reviews.length.toFixed(1)}
             </TotalRatings>
             <StarRating value={0} />
             <TotalReviews>{reviews.length} reviews</TotalReviews>
