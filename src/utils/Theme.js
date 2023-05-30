@@ -88,8 +88,8 @@ export const darkTheme = {
   bgRevCard: '#121212',
   starBorder: '#403e3e',
   textRevDate: '#999898',
-  bgRevBtn: '#121212',
-  bgImgRevBtn: '#252525',
+  bgRevBtn: '#000000',
+  bgImgRevBtn: '#121212',
   textRevBtn: '#cfd0d1',
 };
 
