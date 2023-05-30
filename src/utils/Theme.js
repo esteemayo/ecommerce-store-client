@@ -84,6 +84,7 @@ export const darkTheme = {
   textReviewCount: '#b1aaaa',
   bgProdBtn: '#111111',
   filterBorder: '#403e3e',
+  filterHov: 'rgba(0, 0, 0, 0.3)',
 };
 
 export const lightTheme = {
