@@ -388,7 +388,7 @@ const ReviewButton = styled.button`
   border: none;
   display: inline-block;
   padding: 1rem;
-  background-color: #e2e9e7;
+  background-color: ${({ theme }) => theme.bgRevBtn};
   color: #89a8a0;
   background-image: linear-gradient(
     120deg,
