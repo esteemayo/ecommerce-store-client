@@ -88,6 +88,7 @@ export const darkTheme = {
   bgRevCard: '#121212',
   starBorder: '#403e3e',
   textRevDate: '#999898',
+  bgRevBtn: '#000000',
 };
 
 export const lightTheme = {
