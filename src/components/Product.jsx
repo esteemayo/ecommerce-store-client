@@ -582,7 +582,7 @@ const Hr = styled.hr`
   width: 100%;
   height: 1px;
   border: none;
-  background-color: color: ${({ theme }) => theme.cartBorder};
+  background-color: ${({ theme }) => theme.cartBorder};
 `;
 
 const ColorContainer = styled.div`
