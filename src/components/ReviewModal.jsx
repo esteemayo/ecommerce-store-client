@@ -104,7 +104,7 @@ const Container = styled.div`
 const Wrapper = styled.div`
   width: 40rem;
   padding: 2rem 4rem;
-  background-color: var(--clr-white);
+  background-color: ${({ theme }) => theme.bgModal};
   border-radius: 1.5rem;
 
   @media only screen and (max-width: 25em) {
