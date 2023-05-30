@@ -625,7 +625,7 @@ const Color = styled.button`
   display: block;
   width: 2.2rem;
   height: 2.2rem;
-  background-color: ${({ color }) => color};
+  background-color: ${({ color, darkMode }) => darkMode && color === 'black' ? '#111' : color};
   border-radius: 50%;
   outline: 1px solid ${({ theme, selected }) => selected ? theme.cartSelected : 'transparent'};
   outline-offset: 2px;
