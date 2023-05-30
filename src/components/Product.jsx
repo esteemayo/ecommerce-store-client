@@ -13,6 +13,7 @@ import ProductImageModal from './ProductImageModal';
 
 const Product = ({ product }) => {
   const dispatch = useDispatch();
+  const { darkMode } = useSelector((state) => ({ ...state.darkMode }));
 
   const imgContainerRef = useRef();
   const [color, setColor] = useState(null);
