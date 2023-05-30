@@ -375,7 +375,7 @@ const EmptyReview = styled.div`
 `;
 
 const Message = styled.span`
-  color: inherit;
+  color: ${({ theme }) => theme.text};
 
   @media only screen and (max-width: 18.75em) {
     font-size: 1.5rem;
