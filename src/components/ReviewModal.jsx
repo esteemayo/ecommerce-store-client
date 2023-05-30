@@ -224,7 +224,7 @@ const TextArea = styled.textarea`
   color: ${({ theme }) => theme.textReview};
   border: 2px solid ${({ theme }) => theme.starBorder};
   border-radius: 0.5rem;
-  outline-color: #eee;
+  outline-color: ${({ theme }) => theme.revOut};
   overflow: hidden;
   resize: none;
   caret-color: ${({ theme }) => theme.inputCaret};
