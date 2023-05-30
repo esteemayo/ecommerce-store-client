@@ -189,6 +189,7 @@ const Product = ({ product }) => {
                       key={index}
                       color={color}
                       type='button'
+                      darkMode={darkMode}
                       selected={color === isSelected}
                       onClick={() => handleColor(color)}
                     >
