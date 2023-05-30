@@ -92,7 +92,7 @@ export const darkTheme = {
   bgImgRevBtn: '#121212',
   textRevBtn: '#cfd0d1',
   textReview: '#b6b5b5',
-  revBorder: '#9e9d9d',
+  revOut: '#9e9d9d',
 };
 
 export const lightTheme = {
@@ -189,5 +189,5 @@ export const lightTheme = {
   bgImgRevBtn: '#eaf7f3',
   textRevBtn: '#89a8a0',
   textReview: '#757373',
-  revBorder: '#eeeeee',
+  revOut: '#eeeeee',
 };
