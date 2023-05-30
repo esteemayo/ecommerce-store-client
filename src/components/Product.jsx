@@ -536,7 +536,7 @@ const Message = styled.p`
     &:visited {
       text-decoration: underline;
       text-transform: capitalize;
-      color: inherit;
+      color: ${({ theme }) => theme.text};
       outline-color: #eee;
     }
 
