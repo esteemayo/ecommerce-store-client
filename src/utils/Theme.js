@@ -190,5 +190,5 @@ export const lightTheme = {
   textRevBtn: '#89a8a0',
   textReview: '#757373',
   revOut: '#eeeeee',
-  revCloseBtn: '#f5f4ff',
+  bgRevCloseBtn: '#f5f4ff',
 };
