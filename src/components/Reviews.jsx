@@ -309,7 +309,7 @@ const FilterList = styled.ul`
   padding: 0.4rem;
   text-align: left;
   background-color: ${({ theme }) => theme.bgProdCard};
-  border: 1px solid #e3e3e3;
+  border: 1px solid ${({ theme }) => theme.filterBorder};
   border-radius: 3px;
   visibility: ${({ type }) => type === 'show' ? 'visible' : 'hidden'};
   opacity: ${({ type }) => type === 'show' ? 1 : 0};
