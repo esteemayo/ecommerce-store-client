@@ -171,4 +171,5 @@ export const lightTheme = {
   textProdHeader: 'inherit',
   textReviewCount: '#8b8787',
   bgProdBtn: 'var(--clr-black)',
+  filterBorder: '#e3e3e3',
 };
