@@ -137,7 +137,7 @@ const CloseButton = styled.button`
   height: 4rem;
   font-weight: 300;
   font-size: 2rem;
-  background-color: #f5f4ff;
+  background-color: ${({ theme }) => theme.bgRevCloseBtn};
   color: #8a8ca0;
   border-radius: 50%;
   cursor: pointer;
