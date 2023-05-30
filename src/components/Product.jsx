@@ -200,22 +200,21 @@ const Product = ({ product }) => {
             <SizeWrapper>
               {product.size.length > 0 && (
                 <>
-              <SizeHeading>Select a size</SizeHeading>
-              {product.size && (
-                <SizeContainer>
-                  {product?.size?.map((size, index) => {
-                    return (
-                      <SelectSize
-                        key={index}
-                        type='button'
-                        bcg={selectedSize === size}
-                        onClick={() => handleSize(size)}
-                      >
-                        {size}
-                      </SelectSize>
-                    );
-                  })}
-                </SizeContainer>
+                  <SizeHeading>Select a size</SizeHeading>
+                  <SizeContainer>
+                    {product?.size?.map((size, index) => {
+                      return (
+                        <SelectSize
+                          key={index}
+                          type='button'
+                          bcg={selectedSize === size}
+                          onClick={() => handleSize(size)}
+                        >
+                          {size}
+                        </SelectSize>
+                      );
+                    })}
+                  </SizeContainer>
                 </>
               )}
             </SizeWrapper>
