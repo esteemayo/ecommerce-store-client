@@ -198,6 +198,8 @@ const Product = ({ product }) => {
               </ColorWrapper>
             </ColorContainer>
             <SizeWrapper>
+              {product.size.length > 0 && (
+                <>
               <SizeHeading>Select a size</SizeHeading>
               {product.size && (
                 <SizeContainer>
