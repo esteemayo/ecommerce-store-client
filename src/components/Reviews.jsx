@@ -58,7 +58,7 @@ const Reviews = () => {
         <Heading>Reviews</Heading>
         <ReviewContainer>
           <Ratings>
-            {reviews.length && <TotalRatings>5.0</TotalRatings>}
+            <TotalRatings>{reviews.length}</TotalRatings>
             <StarRating value={0} />
             <TotalReviews>{reviews.length} reviews</TotalReviews>
           </Ratings>
