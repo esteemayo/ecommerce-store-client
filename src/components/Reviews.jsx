@@ -166,6 +166,7 @@ const Heading = styled.h1`
   text-transform: capitalize;
   font-weight: 500;
   font-size: 3.2rem;
+  color: ${({ theme }) => theme.textProdHeader};
   line-height: 3.2rem;
 `;
 
