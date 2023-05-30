@@ -150,7 +150,7 @@ const CloseButton = styled.button`
   }
 
   &:hover {
-    background-color: #e6e5f1;
+    background-color: ${({ theme }) => theme.bgRevCloseBtnHov};
     color: #6f707e;
   }
 
