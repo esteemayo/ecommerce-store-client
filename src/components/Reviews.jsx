@@ -361,7 +361,7 @@ const EmptyReview = styled.div`
 
   svg {
     font-size: 2.5rem;
-    fill: #89a8a0;
+    fill: ${({ theme }) => theme.star};
     margin-right: 0.5rem;
 
     @media only screen and (max-width: 26.875em) {
