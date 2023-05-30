@@ -240,6 +240,7 @@ const Agreement = styled.div`
   align-items: center;
   justify-content: start;
   gap: 0.5rem;
+  color: ${({ theme }) => theme.text};
   margin: 2rem 0;
 `;
 
