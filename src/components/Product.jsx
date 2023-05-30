@@ -772,7 +772,7 @@ const Button = styled.button`
   font-size: 1.8rem;
   width: 100%;
   padding: 2rem 1rem;
-  background-color: var(--clr-black);
+  background-color: ${({ theme }) => theme.bgProdBtn};
   color: var(--clr-white);
   background-image: linear-gradient(
     120deg,
