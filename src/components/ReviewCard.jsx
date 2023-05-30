@@ -101,7 +101,7 @@ const ReviewContainer = styled.div`
   svg {
     font-size: 2.5rem;
     color: ${({ theme }) => theme.star};
-    border: 2px solid #eef2ff;
+    border: 2px solid ${({ theme }) => theme.starBorder};
     border-radius: 0.5rem;
     margin-right: 3px;
 
