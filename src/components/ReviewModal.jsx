@@ -176,7 +176,7 @@ const RatingContainer = styled.div`
 
   svg {
     font-size: 3.5rem;
-    fill: #89a8a0;
+    fill: ${({ theme }) => theme.star};
     border: 2px solid #eef2ff;
     border-radius: 0.5rem;
     margin-right: 0.5rem;
