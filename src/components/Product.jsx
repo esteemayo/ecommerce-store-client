@@ -494,6 +494,7 @@ const PriceContainer = styled.div`
 const ProductPrice = styled.p`
   text-decoration: line-through;
   font-size: 1.6rem;
+  color: ${({ theme }) => theme.text};
 
   @media only screen and (max-width: 18.75em) {
     font-size: 1.5rem;
