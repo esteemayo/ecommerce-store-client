@@ -222,7 +222,7 @@ const TextArea = styled.textarea`
   padding: 1rem;
   background-color: transparent;
   color: ${({ theme }) => theme.textReview};
-  border: 2px solid #eef2ff;
+  border: 2px solid ${({ theme }) => theme.starBorder};
   border-radius: 0.5rem;
   outline-color: #eee;
   overflow: hidden;
