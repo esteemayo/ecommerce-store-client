@@ -690,7 +690,7 @@ const SelectSize = styled.button`
   }
 
   &:hover {
-    background-color: ${({ bcg, theme }) => bcg ? theme.cartSelected : '#ebf0ef'};
+    background-color: ${({ bcg, theme }) => bcg ? theme.cartSelected : theme.sizeHover};
   }
 `;
 
