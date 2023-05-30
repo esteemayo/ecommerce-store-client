@@ -670,7 +670,7 @@ const SelectSize = styled.button`
   line-height: 0.2;
   background-color: ${({ bcg, theme }) => bcg ? theme.cartSelected : 'transparent'};
   color: ${({ bcg }) => bcg ? 'var(--clr-white)' : 'inherit'};
-  border: 2px solid ${({ bcg }) => bcg ? '#89a8a0' : '#ebf0ef'};
+  border: 2px solid ${({ bcg, theme }) => bcg ? theme.cartSelected : '#ebf0ef'};
   border-radius: 0.4rem;
   outline-color: #ccc;
   margin-bottom: 0.8rem;
