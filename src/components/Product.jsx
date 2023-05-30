@@ -431,7 +431,7 @@ const BreadCrumbs = styled.div`
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: #888;
+  color: ${({ theme }) => theme.textLabel};
 
   a {
     &:link,
