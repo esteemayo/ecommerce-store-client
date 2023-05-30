@@ -183,5 +183,6 @@ export const lightTheme = {
   starBorder: '#eef2ff',
   textRevDate: '#89a8a0',
   bgRevBtn: '#e2e9e7',
+  bgImgRevBtn: '#eaf7f3',
   textRevBtn: '#89a8a0',
 };
