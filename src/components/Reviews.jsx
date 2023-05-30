@@ -330,7 +330,7 @@ const ListCategory = styled.li`
   transition: all 0.3s ease;
 
   &:hover {
-    background-color: rgba(0, 0, 0, 0.07);
+    background-color: ${({ theme }) => theme.filterHov};
   }
 `;
 
