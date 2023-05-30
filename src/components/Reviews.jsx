@@ -334,7 +334,7 @@ const ListCategory = styled.li`
 
 const ReviewsWrapper = styled.div`
   padding: 5rem 0 0.5rem 0;
-  border-top: 1px solid #e2e9e7;
+  border-top: 1px solid ${({ theme }) => theme.cartBorder};
   position: relative;
 
   @media only screen and (max-width: 26.875em) {
