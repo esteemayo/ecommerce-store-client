@@ -827,6 +827,7 @@ const ValueAdd = styled.div`
   display: flex;
   align-items: center;
   gap: 0.8rem;
+  color: ${({ theme }) => theme.text};
 
   img {
     width: 2.4rem;
