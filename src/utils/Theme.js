@@ -93,6 +93,7 @@ export const darkTheme = {
   textRevBtn: '#cfd0d1',
   textReview: '#b6b5b5',
   revOut: '#9e9d9d',
+  bgRevCloseBtn: '#403e3e',
 };
 
 export const lightTheme = {
