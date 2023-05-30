@@ -167,5 +167,5 @@ export const lightTheme = {
   textAccBtn: 'var(--clr-primary-green)',
   textDelHeader: 'var(--clr-primary-green)',
   textProdHeader: 'inherit',
-  textRevCount: '#8b8787',
+  textReviewCount: '#8b8787',
 };
