@@ -216,6 +216,7 @@ const Product = ({ product }) => {
                     );
                   })}
                 </SizeContainer>
+                </>
               )}
             </SizeWrapper>
             <Hr />
