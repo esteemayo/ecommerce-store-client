@@ -208,6 +208,7 @@ const ProductTitle = styled.p`
 const ProductPrice = styled.p`
   display: inline-block;
   font-size: 1.3rem;
+  color: ${({ theme }) => theme.text};
   line-height: 1.3em;
 `;
 
