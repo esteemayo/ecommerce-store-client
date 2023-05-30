@@ -168,4 +168,5 @@ export const lightTheme = {
   textDelHeader: 'var(--clr-primary-green)',
   textProdHeader: 'inherit',
   textReviewCount: '#8b8787',
+  bgProdBtn: 'var(--clr-black)',
 };
