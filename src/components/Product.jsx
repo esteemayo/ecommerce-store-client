@@ -561,7 +561,7 @@ const Rating = styled.div`
 const ReviewQuantity = styled.span`
   font-weight: 600;
   font-size: 1.3rem;
-  color: #8b8787;
+  color: ${({ theme }) => theme.textReviewCount};
 
   a {
     &:link,
