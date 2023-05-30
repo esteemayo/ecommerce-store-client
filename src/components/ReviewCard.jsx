@@ -46,7 +46,7 @@ const Container = styled.article`
   width: 65rem;
   background-color: transparent;
   border-radius: 1rem;
-  box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+  box-shadow: ${({ theme }) => theme.boxCat};
   -webkit-box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
   -moz-box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
   margin-bottom: 2rem;
