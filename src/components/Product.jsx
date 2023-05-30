@@ -554,7 +554,7 @@ const Rating = styled.div`
   gap: 1rem;
 
   svg {
-    color: #89a8a0;
+    color: ${({ theme }) => theme.star};
   }
 `;
 
