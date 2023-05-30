@@ -94,7 +94,7 @@ export const darkTheme = {
   textReview: '#b6b5b5',
   revOut: '#9e9d9d',
   bgRevCloseBtn: '#403e3e',
-  bgRevCloseBtnHov: '#363636',
+  bgRevCloseBtnHov: '#4e4b4b',
   textRevCloseBtn: '#cfd0d1',
 };
 
