@@ -158,7 +158,7 @@ const Avatar = styled.div`
   height: 5rem;
   font-size: 2.5rem;
   background-color: #d5a66a;
-  color: var(--clr-white);
+  color: ${({ theme }) => theme.textBtn};
   border-radius: 50%;
 
   @media only screen and (max-width: 31.25em) {
