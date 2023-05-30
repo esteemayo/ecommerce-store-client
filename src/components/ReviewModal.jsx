@@ -220,6 +220,7 @@ const TextArea = styled.textarea`
   font-weight: lighter;
   font-size: 1.5rem;
   padding: 1rem;
+  background-color: transparent;
   color: #757373;
   border: 2px solid #eef2ff;
   border-radius: 0.5rem;
