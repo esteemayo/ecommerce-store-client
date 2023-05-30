@@ -89,6 +89,7 @@ export const darkTheme = {
   starBorder: '#403e3e',
   textRevDate: '#999898',
   bgRevBtn: '#121212',
+  textRevBtn: '#cfd0d1',
 };
 
 export const lightTheme = {
