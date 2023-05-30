@@ -190,7 +190,7 @@ const RatingContainer = styled.div`
 const Text = styled.span`
   display: inline-block;
   font-size: 1.2rem;
-  color: inherit;
+  color: ${({ theme }) => theme.text};
   margin-bottom: 1.5rem;
 `;
 
