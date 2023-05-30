@@ -186,4 +186,5 @@ export const lightTheme = {
   bgRevBtn: '#e2e9e7',
   bgImgRevBtn: '#eaf7f3',
   textRevBtn: '#89a8a0',
+  textReview: '#757373',
 };
