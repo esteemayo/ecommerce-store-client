@@ -164,7 +164,7 @@ const Header = styled.h1`
   display: inline-block;
   font-weight: 600;
   font-size: 1.85rem;
-  color: inherit;
+  color: ${({ theme }) => theme.text};
 `;
 
 const RatingContainer = styled.div`
