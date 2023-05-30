@@ -80,6 +80,7 @@ export const darkTheme = {
   cartSelected: '#797979',
   textAccBtn: '#d6d9db',
   textDelHeader: '#e2e4e4',
+  textProdHeader: '#e2e4e4',
 };
 
 export const lightTheme = {
