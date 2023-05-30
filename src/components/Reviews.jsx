@@ -389,7 +389,7 @@ const ReviewButton = styled.button`
   display: inline-block;
   padding: 1rem;
   background-color: ${({ theme }) => theme.bgRevBtn};
-  color: #89a8a0;
+  color:  ${({ theme }) => theme.textRevBtn};
   background-image: linear-gradient(
     120deg,
     transparent 0%,
