@@ -202,7 +202,7 @@ const Name = styled.h3`
 const Review = styled.p`
   margin: 2rem 0;
   font-size: 1.65rem;
-  color: inherit;
+  color: ${({ theme }) => theme.text};
   line-height: 1.3;
   word-wrap: break-word;
 
