@@ -248,6 +248,7 @@ const Input = styled.input``;
 
 const Information = styled.p`
   font-size: 1.3rem;
+  color: ${({ theme }) => theme.text};
   letter-spacing: 0.2px;
   line-height: 1.2;
 `;
