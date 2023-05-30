@@ -221,7 +221,7 @@ const TextArea = styled.textarea`
   font-size: 1.5rem;
   padding: 1rem;
   background-color: transparent;
-  color: #757373;
+  color: ${({ theme }) => theme.textReview};
   border: 2px solid #eef2ff;
   border-radius: 0.5rem;
   outline-color: #eee;
