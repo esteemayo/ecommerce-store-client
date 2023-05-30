@@ -740,7 +740,7 @@ const AddButton = styled.button`
   }
 
   &:disabled {
-    background-color: #f9f9f9;
+    background-color: ${({ theme }) => theme.bgAddBtnDis};
     color: #999;
   }
 
