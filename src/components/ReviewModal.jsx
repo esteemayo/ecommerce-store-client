@@ -202,7 +202,7 @@ const Label = styled.label`
   a {
     &:link,
     &:visited {
-      color: inherit;
+      color: ${({ theme }) => theme.text};
       transition: all 0.3s ease;
     }
 
