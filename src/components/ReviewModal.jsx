@@ -151,7 +151,7 @@ const CloseButton = styled.button`
 
   &:hover {
     background-color: ${({ theme }) => theme.bgRevCloseBtnHov};
-    color: #6f707e;
+    color: ${({ theme }) => theme.textRevCloseBtnHov};
   }
 
   svg {
