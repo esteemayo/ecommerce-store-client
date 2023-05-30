@@ -82,6 +82,7 @@ export const darkTheme = {
   textDelHeader: '#e2e4e4',
   textProdHeader: '#e2e4e4',
   textReviewCount: '#b1aaaa',
+  bgProdBtn: '#111111',
 };
 
 export const lightTheme = {
