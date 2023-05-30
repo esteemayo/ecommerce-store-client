@@ -184,7 +184,7 @@ const Name = styled.h3`
   text-transform: capitalize;
   font-weight: 600;
   font-size: 1.8rem;
-  color: inherit;
+  color: ${({ theme }) => theme.text};
 
   @media only screen and (max-width: 31.25em) {
     font-size: 1.75rem;
