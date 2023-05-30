@@ -78,6 +78,7 @@ export const darkTheme = {
   textWlCard: '#d6d9db',
   boxWlCard: '2px 0.4rem 1rem 1px rgba(27, 27, 27, 0.25)',
   cartSelected: '#252424',
+  sizeHover: '#ebf0ef',
   textAccBtn: '#d6d9db',
   textDelHeader: '#e2e4e4',
   textProdHeader: '#e2e4e4',
