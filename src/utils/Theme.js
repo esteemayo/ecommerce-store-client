@@ -165,4 +165,5 @@ export const lightTheme = {
   cartSelected: '#89a8a0',
   textAccBtn: 'var(--clr-primary-green)',
   textDelHeader: 'var(--clr-primary-green)',
+  textProdHeader: 'inherit',
 };
