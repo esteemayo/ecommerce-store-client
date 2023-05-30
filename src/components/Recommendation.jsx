@@ -196,7 +196,7 @@ const ProductTitle = styled.p`
   display: block;
   width: 100%;
   font-size: 1.6rem;
-  color: inherit;
+  color: ${({ theme }) => theme.text};
   line-height: 1.8rem;
   margin: 1rem 0;
 
