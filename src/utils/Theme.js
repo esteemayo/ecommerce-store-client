@@ -200,4 +200,5 @@ export const lightTheme = {
   bgRevCloseBtnHov: '#e6e5f1',
   textRevCloseBtn: '#8a8ca0',
   textRevCloseBtnHov: '#6f707e',
+  bgAddBtnDis: '#f9f9f9',
 };
