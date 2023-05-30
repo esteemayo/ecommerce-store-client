@@ -398,7 +398,7 @@ const ReviewButton = styled.button`
   );
   background-size: 220%;
   border-radius: 0.5rem;
-  outline-color: #89a8a0;
+  outline-color: ${({ theme }) => theme.textRevBtn};
   cursor: pointer;
   transition: all 0.3s ease;
 
