@@ -46,9 +46,9 @@ const Container = styled.article`
   width: 65rem;
   background-color: transparent;
   border-radius: 1rem;
-  box-shadow: ${({ theme }) => theme.boxCat};
-  -webkit-box-shadow: ${({ theme }) => theme.boxCat};
-  -moz-box-shadow: ${({ theme }) => theme.boxCat};
+  box-shadow: ${({ theme }) => theme.boxCart};
+  -webkit-box-shadow: ${({ theme }) => theme.boxCart};
+  -moz-box-shadow: ${({ theme }) => theme.boxCart};
   margin-bottom: 2rem;
   line-height: 1.4;
 
