@@ -645,6 +645,7 @@ const SizeHeading = styled.h3`
   display: inline-block;
   font-weight: 400;
   font-size: 1.65rem;
+  color: ${({ theme }) => theme.text};
 `;
 
 const SizeContainer = styled.div`
