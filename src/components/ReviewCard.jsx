@@ -248,7 +248,7 @@ const ShareButton = styled.button`
   font-size: 1.4rem;
   background-color: transparent;
   color: ${({ theme }) => theme.textRevDate};
-  border: 1px solid #89a8a0;
+  border: 1px solid ${({ theme }) => theme.textRevDate};
   border-radius: 0.5rem;
   outline-color: #ccc;
   cursor: pointer;
