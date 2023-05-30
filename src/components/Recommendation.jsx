@@ -116,6 +116,7 @@ const Heading = styled.h1`
   text-align: left;
   font-weight: 500;
   font-size: 3.2rem;
+  color: ${({ theme }) => theme.textProdHeader};
   margin: 5rem 0;
 `;
 
