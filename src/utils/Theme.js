@@ -176,4 +176,5 @@ export const lightTheme = {
   filterBorder: '#e3e3e3',
   filterHov: 'rgba(0, 0, 0, 0.07)',
   bgRevCard: '#f4f8f7',
+  starBorder: '#eef2ff',
 };
