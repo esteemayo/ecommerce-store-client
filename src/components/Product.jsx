@@ -528,7 +528,7 @@ const SalePrice = styled.p`
 `;
 
 const Message = styled.p`
-  color: inherit;
+  color: ${({ theme }) => theme.text};
   margin-top: 1rem;
 
   a {
