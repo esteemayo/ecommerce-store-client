@@ -96,6 +96,7 @@ export const darkTheme = {
   bgRevCloseBtn: '#403e3e',
   bgRevCloseBtnHov: '#4e4b4b',
   textRevCloseBtn: '#cfd0d1',
+  textRevCloseBtnHov: '#b0b0b1',
 };
 
 export const lightTheme = {
