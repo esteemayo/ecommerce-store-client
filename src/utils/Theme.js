@@ -86,6 +86,7 @@ export const darkTheme = {
   filterBorder: '#403e3e',
   filterHov: 'rgba(0, 0, 0, 0.3)',
   bgRevCard: '#121212',
+  starBorder: '#403e3e',
 };
 
 export const lightTheme = {
