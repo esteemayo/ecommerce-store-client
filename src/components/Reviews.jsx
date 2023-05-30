@@ -296,7 +296,7 @@ const FilterIcon = styled.span`
 
   svg {
     font-size: 2rem;
-    fill: #89a8a0;
+    fill: ${({ theme }) => theme.star};
   }
 `;
 
