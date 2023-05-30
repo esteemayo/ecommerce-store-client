@@ -542,7 +542,7 @@ const Message = styled.p`
 
     &:hover,
     &:active {
-      color: inherit;
+      color: ${({ theme }) => theme.text};
     }
   }
 `;
