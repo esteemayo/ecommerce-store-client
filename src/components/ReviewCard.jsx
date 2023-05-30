@@ -48,7 +48,7 @@ const Container = styled.article`
   border-radius: 1rem;
   box-shadow: ${({ theme }) => theme.boxCat};
   -webkit-box-shadow: ${({ theme }) => theme.boxCat};
-  -moz-box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+  -moz-box-shadow: ${({ theme }) => theme.boxCat};
   margin-bottom: 2rem;
   line-height: 1.4;
 
