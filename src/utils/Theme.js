@@ -83,7 +83,7 @@ export const darkTheme = {
   textProdHeader: '#e2e4e4',
   textReviewCount: '#b1aaaa',
   bgProdBtn: '#111111',
-  filterBorder: '#111111',
+  filterBorder: '#403e3e',
 };
 
 export const lightTheme = {
