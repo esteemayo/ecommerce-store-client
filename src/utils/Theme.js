@@ -173,4 +173,5 @@ export const lightTheme = {
   textReviewCount: '#8b8787',
   bgProdBtn: 'var(--clr-black)',
   filterBorder: '#e3e3e3',
+  filterHov: 'rgba(0, 0, 0, 0.07)',
 };
