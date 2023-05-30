@@ -227,7 +227,7 @@ const TextArea = styled.textarea`
   outline-color: #eee;
   overflow: hidden;
   resize: none;
-  caret-color: #89a8a0;
+  caret-color: ${({ theme }) => theme.inputCaret};
 
   &::placeholder {
     font-size: 1.3rem;
