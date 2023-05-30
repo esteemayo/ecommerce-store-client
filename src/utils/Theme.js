@@ -180,4 +180,5 @@ export const lightTheme = {
   bgRevCard: '#f4f8f7',
   starBorder: '#eef2ff',
   textRevDate: '#89a8a0',
+  bgRevBtn: '#e2e9e7',
 };
