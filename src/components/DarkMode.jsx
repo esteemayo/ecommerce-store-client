@@ -3,13 +3,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useDispatch, useSelector } from 'react-redux';
 import { DarkModeOutlined, LightModeOutlined } from '@mui/icons-material';
 
+import { toggle } from '@/features/darkMode/darkModeSlice';
+
 const Darkmode = () => {
   const dispatch = useDispatch();
   const { darkMode } = useSelector((state) => ({ ...state.darkMode }));
 
   return (
     <Container>
-      <Wrapper>
+      <Wrapper onClick={() => dispatch(toggle())}>
         {darkMode ? <LightModeOutlined /> : <DarkModeOutlined />}
       </Wrapper>
     </Container>
