@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSunBright } from '@fortawesome/free-solid-svg-icons';
+// import { faSunBright } from '@fortawesome/free-solid-svg-icons';
 import { useDispatch, useSelector } from 'react-redux';
+import { faMoon } from '@fortawesome/free-solid-svg-icons';
 
 const Darkmode = () => {
   const dispatch = useDispatch();
@@ -10,7 +11,7 @@ const Darkmode = () => {
   return (
     <Container>
       <Wrapper>
-      <FontAwesomeIcon icon={faSunBright} />
+        <FontAwesomeIcon icon={faMoon} />
       </Wrapper>
     </Container>
   );
