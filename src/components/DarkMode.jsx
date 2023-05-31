@@ -57,6 +57,11 @@ const Wrapper = styled.div`
   cursor: pointer;
   transition: all 200ms ease-in;
 
+  @media only screen and (max-width: 37.5em) {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+
   svg {
     font-size: 2.5rem;
     color: ${({ theme }) => theme.textMode};
