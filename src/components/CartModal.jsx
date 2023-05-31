@@ -11,7 +11,6 @@ import { addProduct } from '@/features/cart/cartSlice';
 
 const CartModal = ({ product, isModalOpen, closeModal, setIsSelectedProduct }) => {
   const dispatch = useDispatch();
-  const { darkMode } = useSelector((state) => ({ ...state.darkMode }));
 
   const [size, setSize] = useState(null);
   const [alert, setAlert] = useState(false);
@@ -121,6 +120,7 @@ const CartModal = ({ product, isModalOpen, closeModal, setIsSelectedProduct }) =
                       key={index}
                       color={color}
                       type='button'
+                      darkMode={darkMode}
                       selected={color === isSelected}
                       onClick={() => handleColor(color)}
                     >
