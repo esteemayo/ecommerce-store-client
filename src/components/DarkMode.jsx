@@ -6,4 +6,8 @@ const Darkmode = () => {
   );
 }
 
+const Container = styled.div`
+  
+`;
+
 export default Darkmode;
