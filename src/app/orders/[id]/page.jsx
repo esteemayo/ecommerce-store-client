@@ -244,14 +244,12 @@ const Heading = styled.h2`
   display: inline-block;
   text-transform: capitalize;
   font-weight: 500;
-  color: ${({ theme }) => theme.text};
 `;
 
 const TotalContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 1rem;
-  color: ${({ theme }) => theme.text};
   line-height: 1.3;
 
   @media only screen and (max-width: 64em) {
