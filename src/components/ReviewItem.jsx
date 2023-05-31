@@ -182,6 +182,10 @@ const Right = styled.div`
   height: 49.8rem;
   background-color: ${({ theme }) => theme.bgRevImg};
 
+  @media only screen and (max-width: 62.5em) {
+    height: 45.2rem;
+  }
+
   img {
     width: 100%;
     height: 100%;
