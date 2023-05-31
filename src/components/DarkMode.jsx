@@ -43,6 +43,11 @@ const Wrapper = styled.div`
   transform: scale(0.75);
   cursor: pointer;
   transition: all 200ms ease-in;
+
+  svg {
+    font-size: 2.5rem;
+    color: ${({ theme }) => theme.textMode};
+  }
 `;
 
 export default Darkmode;
