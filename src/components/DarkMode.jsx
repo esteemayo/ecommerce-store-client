@@ -65,6 +65,10 @@ const Wrapper = styled.div`
   svg {
     font-size: 2.5rem;
     color: ${({ theme }) => theme.textMode};
+
+    @media only screen and (max-width: 37.5em) {
+      font-size: 2rem;
+    }
   }
 `;
 
