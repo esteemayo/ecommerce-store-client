@@ -103,6 +103,7 @@ export const darkTheme = {
   colCrumbs: '#333333',
   bgMode: '#131417',
   bgIconMode: '#e4e4e8',
+  textMode: '#39393c',
 };
 
 export const lightTheme = {
