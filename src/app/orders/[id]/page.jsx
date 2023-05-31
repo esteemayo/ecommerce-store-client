@@ -228,7 +228,7 @@ const RightWrapper = styled.div`
   border-radius: 0.5rem;
   box-shadow: ${({ theme }) => theme.boxOrderTotal};
   -webkit-box-shadow: ${({ theme }) => theme.boxOrderTotal};
-  -moz-box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: ${({ theme }) => theme.boxOrderTotal};
   display: flex;
   flex-direction: column;
   justify-content: space-between;
