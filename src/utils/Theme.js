@@ -104,6 +104,7 @@ export const darkTheme = {
   bgMode: '#131417',
   bgIconMode: '#e4e4e8',
   textMode: '#39393c',
+  boxMode: '0px 0px 4px rgba(255, 255, 255, 0.5)',
 };
 
 export const lightTheme = {
