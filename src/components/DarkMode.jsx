@@ -42,9 +42,9 @@ const Wrapper = styled.div`
   height: 4rem;
   background-color:  ${({ theme }) => theme.bgIconMode};
   border-radius: 50%;
-  box-shadow: 0px 0px 0.4rem rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow: 0px 0px 0.4rem rgba(0, 0, 0, 0.1);
-  -moz-box-shadow: 0px 0px 0.4rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.1);
   margin: 0.2rem;
   border: 0;
   transform: scale(0.75);
