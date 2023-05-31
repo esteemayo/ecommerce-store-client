@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 
 const Darkmode = () => {
   const dispatch = useDispatch();
+  const { darkMode } = useSelector((state) => ({ ...state.darkMode }));
 
   return (
     <Container>
