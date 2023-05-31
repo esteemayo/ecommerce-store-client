@@ -42,6 +42,7 @@ const Wrapper = styled.div`
   border: 0;
   transform: scale(0.75);
   cursor: pointer;
+  transition: all 200ms ease-in;
 `;
 
 export default Darkmode;
