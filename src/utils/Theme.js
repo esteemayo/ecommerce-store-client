@@ -107,7 +107,7 @@ export const darkTheme = {
   boxMode: '0 0 0.4rem rgba(255, 255, 255, 0.5)',
   bgOrderTotal: '#121212',
   textOrderTotal: '#cfd0d1',
-  boxOrderTotal: '0 2rem 4rem rgba(0, 0, 0, 0.15)',
+  boxOrderTotal: '0 2rem 4rem rgba(88, 87, 87, 0.15)',
 };
 
 export const lightTheme = {
