@@ -12,6 +12,7 @@ import ScrollToTop from '@/components/ScrollToTop';
 import AppTheme from '@/components/AppTheme';
 import Darkmode from '@/components/DarkMode';
 
+import 'react-toastify/dist/ReactToastify.css';
 import './globals.scss';
 
 export default function RootLayout({ children }) {
