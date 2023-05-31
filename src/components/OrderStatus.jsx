@@ -13,7 +13,6 @@ const OrderStatus = ({ statusClass }) => {
           width={30}
           height={30}
           alt=''
-          darkMode={darkMode}
         />
         <Status>Payment</Status>
         <Image
@@ -30,7 +29,6 @@ const OrderStatus = ({ statusClass }) => {
           width={30}
           height={30}
           alt=''
-          darkMode={darkMode}
         />
         <Status>Preparing</Status>
         <Image
@@ -47,7 +45,6 @@ const OrderStatus = ({ statusClass }) => {
           width={30}
           height={30}
           alt=''
-          darkMode={darkMode}
         />
         <Status>On the way</Status>
         <Image
@@ -64,7 +61,6 @@ const OrderStatus = ({ statusClass }) => {
           width={30}
           height={30}
           alt=''
-          darkMode={darkMode}
         />
         <Status>Delivered</Status>
         <Image
