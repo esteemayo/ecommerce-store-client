@@ -347,6 +347,7 @@ const Color = styled.button`
   width: 2.2rem;
   height: 2.2rem;
   background-color: ${({ color }) => color};
+  background-color: ${({ color, darkMode }) => !darkMode && color === 'white' && '#f9f9f9'};
   border-radius: 50%;
   outline: 1px solid ${({ theme, selected }) => selected ? theme.cartSelected : 'transparent'};
   outline-offset: 2px;
