@@ -11,6 +11,7 @@ import ScrollToTop from '@/components/ScrollToTop';
 import AppTheme from '@/components/AppTheme';
 
 import './globals.scss';
+import Darkmode from '@/components/DarkMode';
 
 export default function RootLayout({ children }) {
   return (
