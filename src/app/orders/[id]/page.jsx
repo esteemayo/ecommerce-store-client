@@ -130,7 +130,7 @@ const Container = styled.main`
   }
 `;
 
-const OrderContainer = styled.div`
+const OrderWrapper = styled.div`
   
 `;
 
