@@ -251,7 +251,7 @@ const Product = ({ product }) => {
                 />
                 <span>Free Shipping over $50</span>
               </ValueAdd>
-              <ValueAdd>
+              <ValueAdd darkMode={darkMode}>
                 <Image
                   src='/img/Returns-black.svg'
                   width={24}
