@@ -728,7 +728,7 @@ const AddButton = styled.button`
   line-height: 0.2;
   background-color: transparent;
   color: inherit;
-  border: 2px solid #ebf0ef;
+  border: 2px solid ${({ theme }) => theme.sizeHover};
   border-radius: 0.4rem;
   outline-color: #ccc;
   cursor: pointer;
