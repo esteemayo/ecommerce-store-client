@@ -11,7 +11,7 @@ const Darkmode = () => {
   return (
     <Container>
       <Wrapper>
-        <FontAwesomeIcon icon={faMoon} />
+        {darkMode ? <FontAwesomeIcon icon={faMoon} /> : <FontAwesomeIcon icon={faMoon} />}
       </Wrapper>
     </Container>
   );
