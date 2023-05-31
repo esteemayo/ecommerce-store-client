@@ -13,6 +13,7 @@ const OrderStatus = ({ statusClass }) => {
           width={30}
           height={30}
           alt=''
+          darkMode={darkMode}
         />
         <Status>Payment</Status>
         <Image
