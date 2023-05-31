@@ -183,6 +183,7 @@ export const lightTheme = {
   boxWlCard: '2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.25)',
   cartSelected: '#89a8a0',
   sizeHover: '#ebf0ef',
+  sizeHovModal: '#ebf0ef',
   textAccBtn: 'var(--clr-primary-green)',
   textDelHeader: 'var(--clr-primary-green)',
   textProdHeader: 'inherit',
