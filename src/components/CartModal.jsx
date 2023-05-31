@@ -429,7 +429,7 @@ const AddButton = styled.button`
   transition: all 0.3s ease;
 
   &:disabled {
-    background-color: #f9f9f9;
+    background-color: ${({ theme }) => theme.bgAddBtnDis};
     color: #999;
   }
 
