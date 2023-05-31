@@ -7,7 +7,7 @@ const OrderStatus = ({ statusClass }) => {
 
   return (
     <Container>
-      <StatusWrapper className={statusClass(0)} darkMode={darkMode}>
+      <StatusWrapper className={statusClass(0)}>
         <Image
           src='/img/paid.png'
           width={30}
@@ -23,7 +23,7 @@ const OrderStatus = ({ statusClass }) => {
           className='checkedIcon'
         />
       </StatusWrapper>
-      <StatusWrapper className={statusClass(1)} darkMode={darkMode}>
+      <StatusWrapper className={statusClass(1)}>
         <Image
           src='/img/bake.png'
           width={30}
@@ -39,7 +39,7 @@ const OrderStatus = ({ statusClass }) => {
           className='checkedIcon'
         />
       </StatusWrapper>
-      <StatusWrapper className={statusClass(2)} darkMode={darkMode}>
+      <StatusWrapper className={statusClass(2)}>
         <Image
           src='/img/bike.png'
           width={30}
@@ -55,7 +55,7 @@ const OrderStatus = ({ statusClass }) => {
           className='checkedIcon'
         />
       </StatusWrapper>
-      <StatusWrapper className={statusClass(3)} darkMode={darkMode}>
+      <StatusWrapper className={statusClass(3)}>
         <Image
           src='/img/delivered.png'
           width={30}
