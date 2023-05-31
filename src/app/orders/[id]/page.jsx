@@ -130,6 +130,10 @@ const Container = styled.main`
   }
 `;
 
+const OrderContainer = styled.div`
+  
+`;
+
 const Wrapper = styled.div`
   width: 100%;
   max-width: 120rem;
