@@ -444,7 +444,7 @@ const BreadCrumbs = styled.div`
       flex-direction: column;
       justify-content: flex-start;
       text-decoration: underline;
-      text-decoration-color: #89a8a0;
+      text-decoration-color: ${({ theme }) => theme.colCrumbs};
       text-underline-offset: 3px;
       text-transform: capitalize;
       font-size: 1.6rem;
