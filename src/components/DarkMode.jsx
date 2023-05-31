@@ -1,11 +1,12 @@
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSunBright } from '@fortawesome/free-solid-svg-icons';
 
 const Darkmode = () => {
   return (
     <Container>
       <Wrapper>
-        Darkmode
+      <FontAwesomeIcon icon={faSunBright} />
       </Wrapper>
     </Container>
   );
