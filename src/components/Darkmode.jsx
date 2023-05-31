@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 
 import { darkTheme, lightTheme } from '@/utils/Theme';
 
-const Darkmode = ({ children }) => {
+const AppTheme = ({ children }) => {
   const { darkMode } = useSelector((state) => ({ ...state.darkMode }));
 
   return (
@@ -13,4 +13,4 @@ const Darkmode = ({ children }) => {
   );
 }
 
-export default Darkmode;
+export default AppTheme;
