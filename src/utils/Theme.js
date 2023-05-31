@@ -211,4 +211,5 @@ export const lightTheme = {
   colCrumbs: '#89a8a0',
   bgMode: 'rgb(236, 236, 236)',
   bgIconMode: '#39393c',
+  textMode: '#e4e4e8',
 };
