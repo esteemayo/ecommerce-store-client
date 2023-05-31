@@ -92,6 +92,7 @@ const StatusWrapper = styled.div`
     height: 3rem;
     display: block;
     object-fit: cover;
+    background-color: ${({ darkMode }) => darkMode && '#1b1a1a'};
   }
 
   img:last-child {
