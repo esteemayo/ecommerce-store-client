@@ -99,6 +99,8 @@ const StatusWrapper = styled.div`
 `;
 
 const Status = styled.span`
+  color: ${({ theme }) => theme.text};
+
   @media only screen and (max-width: 37.5em) {
     font-size: 1.5rem;
   }
