@@ -251,6 +251,7 @@ const TotalContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 1rem;
+  color: ${({ theme }) => theme.text};
   line-height: 1.3;
 
   @media only screen and (max-width: 64em) {
