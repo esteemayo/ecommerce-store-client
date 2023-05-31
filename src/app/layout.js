@@ -8,7 +8,7 @@ import Footer from '@/components/Footer';
 import { persistor, store } from '@/store/store';
 import Sidebar from '@/components/Sidebar';
 import ScrollToTop from '@/components/ScrollToTop';
-import Darkmode from '@/components/Darkmode';
+import AppTheme from '@/components/Darkmode';
 
 import './globals.scss';
 
@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
       <body>
         <Provider store={store}>
           <PersistGate loading={null} persistor={persistor}>
-            <Darkmode>
+            <AppTheme>
               <div className='container'>
                 <Navbar />
                 <Submenu />
@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
                 <Footer />
                 <ScrollToTop />
               </div>
-            </Darkmode>
+            </AppTheme>
           </PersistGate>
         </Provider>
       </body>
