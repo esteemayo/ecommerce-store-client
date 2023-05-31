@@ -190,9 +190,7 @@ const Th = styled.th`
   }
 `;
 
-const Tbody = styled.tbody`
-  
-`;
+const Tbody = styled.tbody``;
 
 const Td = styled.td`
   font-size: 1.5rem;
