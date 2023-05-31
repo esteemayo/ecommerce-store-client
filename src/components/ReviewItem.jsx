@@ -186,6 +186,10 @@ const Right = styled.div`
     height: 45.2rem;
   }
 
+  @media only screen and (max-width: 50em) {
+    height: 40.3rem;
+  }
+
   img {
     width: 100%;
     height: 100%;
