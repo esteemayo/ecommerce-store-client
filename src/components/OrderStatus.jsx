@@ -30,6 +30,7 @@ const OrderStatus = ({ statusClass }) => {
           width={30}
           height={30}
           alt=''
+          darkMode={darkMode}
         />
         <Status>Preparing</Status>
         <Image
