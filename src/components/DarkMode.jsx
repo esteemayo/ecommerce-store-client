@@ -16,6 +16,7 @@ const Container = styled.div`
   bottom: 1%;
   width: 4.5rem;
   height: 4.5rem;
+  background-color: ${({ theme }) => theme.bgMode};
 `;
 
 const Wrapper = styled.div`
