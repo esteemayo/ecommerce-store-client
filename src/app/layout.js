@@ -29,6 +29,7 @@ export default function RootLayout({ children }) {
             <AppTheme>
               <div className='container'>
                 <Navbar />
+                <ToastContainer />
                 <Submenu />
                 <Sidebar />
                 {children}
