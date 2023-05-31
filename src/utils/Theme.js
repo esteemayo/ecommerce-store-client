@@ -216,4 +216,5 @@ export const lightTheme = {
   textMode: '#e4e4e8',
   boxMode: '0 0 0.4rem rgba(82, 76, 76, 0.5)',
   bgOrderTotal: '#555555',
+  textOrderTotal: 'var(--clr-white)',
 };
