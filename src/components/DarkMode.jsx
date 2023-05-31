@@ -32,6 +32,12 @@ const Container = styled.div`
   -webkit-box-shadow: ${({ theme }) => theme.boxMode};
   -moz-box-shadow: ${({ theme }) => theme.boxMode};
   box-shadow: ${({ theme }) => theme.boxMode};
+
+  @media only screen and (max-width: 37.5em) {
+    bottom: 1rem;
+    width: 4rem;
+    height: 4rem;
+  }
 `;
 
 const Wrapper = styled.div`
