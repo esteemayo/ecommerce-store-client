@@ -196,6 +196,7 @@ const Tbody = styled.tbody`
 
 const Td = styled.td`
   font-size: 1.5rem;
+  color: ${({ theme }) => theme.text};
 `;
 
 const OrderId = styled.span`
