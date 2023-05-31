@@ -222,7 +222,7 @@ const RightWrapper = styled.div`
   width: 90%;
   max-height: 30rem;
   background-color: ${({ theme }) => theme.bgOrderTotal};
-  color: var(--clr-white);
+  color: ${({ theme }) => theme.textOrderTotal};
   padding: 5rem;
   padding-top: 1rem;
   border-radius: 0.5rem;
