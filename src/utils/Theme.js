@@ -101,6 +101,7 @@ export const darkTheme = {
   textRevCloseBtnHov: '#b0b0b1',
   bgAddBtnDis: '#1b1a1a',
   colCrumbs: '#333333',
+  bgMode: '#131417',
 };
 
 export const lightTheme = {
