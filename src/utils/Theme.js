@@ -99,7 +99,7 @@ export const darkTheme = {
   textRevCloseBtn: '#cfd0d1',
   textRevCloseBtnHov: '#b0b0b1',
   bgAddBtnDis: '#1b1a1a',
-  colCrumbs: '#131313',
+  colCrumbs: '#333333',
 };
 
 export const lightTheme = {
