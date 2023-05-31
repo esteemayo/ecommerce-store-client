@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import Image from 'next/image';
+import { useSelector } from 'react-redux';
 
 const OrderStatus = ({ statusClass }) => {
   return (
