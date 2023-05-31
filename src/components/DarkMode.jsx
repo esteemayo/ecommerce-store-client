@@ -22,6 +22,9 @@ const Container = styled.div`
   justify-content: center;
   border-top-right-radius: 50%;
   border-bottom-right-radius: 50%;
+  -webkit-box-shadow: ${({ theme }) => theme.boxMode};
+  -moz-box-shadow: ${({ theme }) => theme.boxMode};
+  box-shadow: ${({ theme }) => theme.boxMode};
 `;
 
 const Wrapper = styled.div`
