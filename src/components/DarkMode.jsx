@@ -20,7 +20,7 @@ const Darkmode = () => {
 const Container = styled.div`
   position: fixed;
   left: 0;
-  bottom: 1%;
+  bottom: 0.5rem;
   width: 4.5rem;
   height: 4.5rem;
   background-color: ${({ theme }) => theme.bgMode};
