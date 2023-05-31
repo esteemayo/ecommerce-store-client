@@ -102,6 +102,7 @@ export const darkTheme = {
   bgAddBtnDis: '#1b1a1a',
   colCrumbs: '#333333',
   bgMode: '#131417',
+  bgIconMode: '#e4e4e8',
 };
 
 export const lightTheme = {
