@@ -11,7 +11,9 @@ const Darkmode = () => {
 }
 
 const Container = styled.div`
-  
+  position: fixed;
+  left: 0;
+  bottom: 1%;
 `;
 
 const Wrapper = styled.div`
