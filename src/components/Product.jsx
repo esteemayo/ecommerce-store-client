@@ -571,7 +571,7 @@ const ReviewQuantity = styled.span`
     &:link,
     &:visited {
       color: currentColor;
-      text-decoration-color: #89a8a0;
+      text-decoration-color: ${({ theme }) => theme.colCrumbs};
       text-underline-offset: 3px;
     }
 
