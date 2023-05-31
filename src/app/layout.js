@@ -12,7 +12,6 @@ import AppTheme from '@/components/AppTheme';
 import Darkmode from '@/components/DarkMode';
 
 import './globals.scss';
-import Darkmode from '@/components/DarkMode';
 
 export default function RootLayout({ children }) {
   return (
