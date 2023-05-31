@@ -3,6 +3,8 @@ import Image from 'next/image';
 import { useSelector } from 'react-redux';
 
 const OrderStatus = ({ statusClass }) => {
+  const { darkMode } = useSelector((state) => ({ ...state.darkMode }));
+
   return (
     <Container>
       <StatusWrapper className={statusClass(0)}>
