@@ -242,7 +242,7 @@ const Product = ({ product }) => {
             {alert && <SuccessMessage>Item added to cart</SuccessMessage>}
             <Hr />
             <ValueAddWrapper>
-              <ValueAdd>
+              <ValueAdd darkMode={darkMode}>
                 <Image
                   src='/img/Shipping-black.svg'
                   width={24}
