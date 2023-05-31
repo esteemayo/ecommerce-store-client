@@ -9,6 +9,7 @@ import { persistor, store } from '@/store/store';
 import Sidebar from '@/components/Sidebar';
 import ScrollToTop from '@/components/ScrollToTop';
 import AppTheme from '@/components/AppTheme';
+import Darkmode from '@/components/DarkMode';
 
 import './globals.scss';
 import Darkmode from '@/components/DarkMode';
