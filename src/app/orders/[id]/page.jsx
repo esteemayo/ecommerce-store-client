@@ -283,7 +283,7 @@ const Button = styled.button`
   font-size: 1.5rem;
   padding: 1.35rem 3rem;
   background-color: var(--clr-black);
-  color: var(--clr-white);
+  color: ${({ theme }) => theme.textBtn};
   background-image: linear-gradient(
     120deg,
     transparent 0%,
