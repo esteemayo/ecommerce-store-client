@@ -8,7 +8,7 @@ import Footer from '@/components/Footer';
 import { persistor, store } from '@/store/store';
 import Sidebar from '@/components/Sidebar';
 import ScrollToTop from '@/components/ScrollToTop';
-import AppTheme from '@/components/Darkmode';
+import AppTheme from '@/components/AppTheme';
 
 import './globals.scss';
 
