@@ -14,7 +14,7 @@ const NewProduct = () => {
           <Form onSubmit={handleSubmit}>
             <FormGroup>
               <FormLabel htmlFor='name'>Product name</FormLabel>
-              <FormInput 
+              <FormInput
                 id='name'
                 name='name'
                 placeholder='Enter product name'
@@ -65,6 +65,10 @@ const FormLabel = styled.label`
 `;
 
 const FormInput = styled.input`
+  
+`;
+
+const TextArea = styled.textarea`
   
 `;
 
