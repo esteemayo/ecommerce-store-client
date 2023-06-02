@@ -39,7 +39,14 @@ const ProductCard = ({ product, openModal, setIsSelectedProduct }) => {
         </ReviewContainer>
         <PriceContainer>
           <Prices>
-            <Discount>${product.price + product.discount}</Discount>
+            <Discount>
+              <NumericFormat
+                value={product.price + product.discount}
+                displayType={'text'}
+                thousandSeparator={true}
+                prefix={'$'}
+              />
+            </Discount>
             <Price>
               <NumericFormat
                 value={product.price}
