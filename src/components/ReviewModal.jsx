@@ -12,8 +12,7 @@ const ReviewModal = ({ isModalOpen, setIsModalOpen }) => {
 
   const handleCloseModal = (e) => {
     if (e.target.classList.contains('overlay')) {
-      setIsModalOpen(false);
-      handleClear();
+      closeModalHandler();
     }
   };
 
