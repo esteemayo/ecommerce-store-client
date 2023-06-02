@@ -7,7 +7,7 @@ import { useState } from 'react';
 
 const ReviewModal = ({ isModalOpen, setIsModalOpen }) => {
   const [rating, setRating] = useState(null);
-  const [review, setReview] = useState(null);
+  const [review, setReview] = useState('');
   const [isAccept, setIsAccept] = useState(false);
 
   const handleCloseModal = (e) => {
