@@ -23,6 +23,10 @@ const NewProduct = () => {
     setData((prev) => ({ ...prev, [name]: value }));
   };
 
+  const handleColor = () => {
+    setData((prev) => ({ ...prev, color: prev.color.target.split(',') }));
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
   };
