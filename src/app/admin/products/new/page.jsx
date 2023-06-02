@@ -241,6 +241,8 @@ const Option = styled.option`
 const FormUpload = styled.input`
   width: 0.1px;
   height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
 `;
 
 const FormButton = styled.button`
