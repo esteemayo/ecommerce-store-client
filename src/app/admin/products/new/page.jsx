@@ -135,6 +135,10 @@ const TextArea = styled.textarea`
   
 `;
 
+const FormSelect = styled.select`
+  
+`;
+
 const FormButton = styled.button`
   
 `;
