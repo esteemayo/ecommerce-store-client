@@ -158,7 +158,7 @@ const Product = ({ product }) => {
                   prefix={'$'}
                 />
               </ProductPrice>
-              <PriceDiscount>-22%</PriceDiscount>
+              <PriceDiscount>-{product.priceDiscount}%</PriceDiscount>
             </PriceContainer>
             <SalePrice>
               <NumericFormat
