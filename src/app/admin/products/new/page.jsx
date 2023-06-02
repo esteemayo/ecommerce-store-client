@@ -3,7 +3,9 @@ import styled from 'styled-components';
 
 const NewProduct = () => {
   return (
-    <div>NewProduct</div>
+    <Container>
+      NewProduct
+    </Container>
   );
 }
 
