@@ -31,6 +31,10 @@ const NewProduct = () => {
     setData((prev) => ({ ...prev, size: prev.size.target.value.split(',') }));
   };
 
+  const handleTags = () => {
+    setData((prev) => ({ ...prev, tags: prev.tags.target.value.split(',') }));
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
   };
@@ -127,6 +131,7 @@ const NewProduct = () => {
                 type='text'
                 name='tags'
                 placeholder='Separate the tags with commas'
+                onChange={handleTags}
               />
             </FormGroup>
             <FormGroup type='file'>
