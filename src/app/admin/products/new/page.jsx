@@ -195,7 +195,9 @@ const Option = styled.option`
 `;
 
 const FormButton = styled.button`
-  
+  margin-top: 2rem;
+  border: none;
+  display: inline-block;
 `;
 
 export default NewProduct;
