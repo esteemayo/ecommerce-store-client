@@ -202,6 +202,12 @@ const TextArea = styled.textarea`
   &:focus {
     background-color: transparent;
   }
+
+  &::-webkit-input-placeholder {
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: #bbb;
+  }
 `;
 
 const FormSelect = styled.select`
