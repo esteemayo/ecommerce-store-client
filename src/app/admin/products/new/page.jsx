@@ -169,6 +169,10 @@ const FormInput = styled.input`
   border-radius: 0.5rem;
   outline-color: ${({ theme }) => theme.inputOut};
   caret-color: ${({ theme }) => theme.inputCaret};
+
+  &:focus {
+    background-color: transparent;
+  }
 `;
 
 const TextArea = styled.textarea`
