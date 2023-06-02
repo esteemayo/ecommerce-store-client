@@ -194,6 +194,8 @@ const TextArea = styled.textarea`
   color: #999;
   border-radius: 0.5rem;
   outline-color: ${({ theme }) => theme.inputOut};
+  overflow: hidden;
+  resize: none;
   caret-color: ${({ theme }) => theme.inputCaret};
 `;
 
