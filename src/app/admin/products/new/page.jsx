@@ -132,6 +132,7 @@ const NewProduct = () => {
                 placeholder='Enter price discount'
                 onChange={handleChange}
               />
+              {errors.priceDiscount && <ErrorMsg>{errors.priceDiscount}</ErrorMsg>}
             </FormGroup>
             <FormGroup>
               <FormLabel htmlFor='numberInStock'>Number in stock</FormLabel>
