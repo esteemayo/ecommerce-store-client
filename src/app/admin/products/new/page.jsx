@@ -183,7 +183,8 @@ const FormInput = styled.input`
 `;
 
 const TextArea = styled.textarea`
-  
+  border: none;
+  display: inline-block;
 `;
 
 const FormSelect = styled.select`
