@@ -53,7 +53,7 @@ const NewProduct = () => {
     }
 
     if (price === '') {
-      errors.price = 'Product price must not be empty';
+      errors.price = 'Price must not be empty';
     }
 
     if (priceDiscount === '') {
