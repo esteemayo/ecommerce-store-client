@@ -27,6 +27,10 @@ const NewProduct = () => {
     setData((prev) => ({ ...prev, color: prev.color.target.split(',') }));
   };
 
+  const handleSize = () => {
+    setData((prev) => ({ ...prev, size: prev.size.target.value.split(',') }));
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
   };
