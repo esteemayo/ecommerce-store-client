@@ -199,6 +199,10 @@ const FormSelect = styled.select`
   outline-color: ${({ theme }) => theme.inputOut};
   caret-color: ${({ theme }) => theme.inputCaret};
   transition: all 0.3s ease;
+
+  &:focus {
+    background-color: transparent;
+  }
 `;
 
 const Option = styled.option`
