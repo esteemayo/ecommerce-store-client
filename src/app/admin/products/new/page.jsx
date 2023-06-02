@@ -197,6 +197,10 @@ const TextArea = styled.textarea`
   overflow: hidden;
   resize: none;
   caret-color: ${({ theme }) => theme.inputCaret};
+
+  &:focus {
+    background-color: transparent;
+  }
 `;
 
 const FormSelect = styled.select`
