@@ -37,6 +37,7 @@ const NewProduct = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    console.log({ ...data, files, color, size, tags });
   };
 
   return (
