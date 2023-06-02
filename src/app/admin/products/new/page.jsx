@@ -40,6 +40,7 @@ const NewProduct = () => {
                 type='text'
                 name='name'
                 placeholder='Enter product name'
+                onChange={handleChange}
               />
             </FormGroup>
             <FormGroup>
