@@ -218,6 +218,10 @@ const FormButton = styled.button`
   &:hover {
     background-position: 100%;
   }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
 `;
 
 export default NewProduct;
