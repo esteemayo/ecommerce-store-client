@@ -30,8 +30,8 @@ const UpdateData = ({ onCancel }) => {
       }
     }
 
-    if (currentPassword === '') {
-      errors.currentPassword = 'Please enter your password';
+    if (password === '') {
+      errors.password = 'Please enter your password';
     }
 
     return errors;
