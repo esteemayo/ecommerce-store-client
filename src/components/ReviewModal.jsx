@@ -43,7 +43,7 @@ const ReviewModal = ({ isModalOpen, setIsModalOpen }) => {
           <ButtonContainer>
             <CloseButton
               type='button'
-              onClick={() => setIsModalOpen(false)}
+              onClick={closeModalHandler}
             >
               <FontAwesomeIcon icon={faXmark} />
             </CloseButton>
