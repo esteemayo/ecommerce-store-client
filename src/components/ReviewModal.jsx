@@ -17,6 +17,11 @@ const ReviewModal = ({ isModalOpen, setIsModalOpen }) => {
     }
   };
 
+  const closeModalHandler = () => {
+    setIsModalOpen(false);
+    handleClear();
+  };
+
   const handleClear = () => {
     setRating(null);
     setReview('');
