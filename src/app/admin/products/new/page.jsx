@@ -81,6 +81,7 @@ const NewProduct = () => {
                 <Option value='electronics'>Electronics</Option>
                 <Option value='gadgets'>Gadgets</Option>
                 <Option value='shirts'>Shirts</Option>
+                <Option value='snickers'>Snickers</Option>
               </FormSelect>
             </FormGroup>
             <FormGroup>
