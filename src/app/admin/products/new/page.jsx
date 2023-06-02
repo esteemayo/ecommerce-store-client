@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import { useState } from 'react';
 
 const NewProduct = () => {
+  const [files, setFiles] = useState(null);
+
   const handleSubmit = (e) => {
     e.preventDefault();
   };
