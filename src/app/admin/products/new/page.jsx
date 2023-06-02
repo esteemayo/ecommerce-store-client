@@ -194,6 +194,7 @@ const TextArea = styled.textarea`
   color: #999;
   border-radius: 0.5rem;
   outline-color: ${({ theme }) => theme.inputOut};
+  caret-color: ${({ theme }) => theme.inputCaret};
 `;
 
 const FormSelect = styled.select`
