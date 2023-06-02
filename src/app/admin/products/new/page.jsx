@@ -7,6 +7,9 @@ const NewProduct = () => {
       <Wrapper>
         <FormWrapper>
           <Header>Create new product</Header>
+          <Form>
+
+          </Form>
         </FormWrapper>
       </Wrapper>
     </Container>
