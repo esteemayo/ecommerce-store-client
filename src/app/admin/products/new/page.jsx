@@ -100,6 +100,7 @@ const NewProduct = () => {
                 placeholder='Enter product name'
                 onChange={handleChange}
               />
+              {errors.name && <ErrorMsg>{errors.name}</ErrorMsg>}
             </FormGroup>
             <FormGroup>
               <FormLabel htmlFor='desc'>Description</FormLabel>
