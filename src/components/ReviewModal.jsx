@@ -256,7 +256,7 @@ const Information = styled.p`
 const Button = styled.button`
   border: none;
   text-align: center;
-  width: 17rem;
+  width: 100%;
   padding: 1.5rem 1rem;
   font-weight: 500;
   font-size: 1.4rem;
