@@ -57,7 +57,7 @@ const ReviewModal = ({ isModalOpen, setIsModalOpen }) => {
             placeholder='Example: Since i bought this a month ago, it has been used a lot. What i like best/what is worst about this product is ...'
           ></TextArea>
           <Agreement>
-            <Input id='terms' type='radio' />
+            <Input id='terms' type='checkbox' onChange={(e) => setIsAccept(e.currentTarget.checked)} />
             <Label htmlFor='terms'>
               I accept the <Link href='#' passHref>terms and conditions</Link>
             </Label>
