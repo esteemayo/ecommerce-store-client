@@ -98,6 +98,7 @@ const NewProduct = () => {
                 type='file'
                 id='file'
                 accept='image/*'
+                multiple
               />
               <FormLabel htmlFor='file' type='file'>Attach images</FormLabel>
             </FormGroup>
