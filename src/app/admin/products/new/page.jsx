@@ -187,7 +187,8 @@ const TextArea = styled.textarea`
 `;
 
 const FormSelect = styled.select`
-  
+  border: none;
+  display: inline-block;
 `;
 
 const Option = styled.option`
