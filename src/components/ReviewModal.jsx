@@ -69,6 +69,7 @@ const ReviewModal = ({ isModalOpen, setIsModalOpen }) => {
             <Input
               id='terms'
               type='checkbox'
+              value={isAccept}
               onChange={(e) => setIsAccept(e.currentTarget.checked)}
             />
             <Label htmlFor='terms'>
