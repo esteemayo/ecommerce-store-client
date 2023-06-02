@@ -93,6 +93,7 @@ const NewProduct = () => {
                 type='text'
                 name='color'
                 placeholder='Enter color'
+                onChange={handleColor}
               />
             </FormGroup>
             <FormGroup>
