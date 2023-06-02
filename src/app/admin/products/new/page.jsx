@@ -270,6 +270,10 @@ const FormUpload = styled.input`
   }
 `;
 
+const UploadProgress = styled.span`
+  
+`;
+
 const FormButton = styled.button`
   margin-top: 2rem;
   border: none;
