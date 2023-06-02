@@ -105,7 +105,7 @@ const CartModal = ({ product, isModalOpen, closeModal, setIsSelectedProduct }) =
             </PriceContainer>
             <SalePrice>
               <NumericFormat
-                value='69.99'
+                value={product?.price}
                 displayType={'text'}
                 thousandSeparator={true}
                 prefix={'$'}
