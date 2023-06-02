@@ -203,6 +203,12 @@ const FormSelect = styled.select`
   &:focus {
     background-color: transparent;
   }
+
+  &::-webkit-input-placeholder {
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: #bbb;
+  }
 `;
 
 const Option = styled.option`
