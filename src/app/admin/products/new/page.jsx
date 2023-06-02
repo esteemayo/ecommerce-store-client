@@ -2,6 +2,10 @@
 import styled from 'styled-components';
 
 const NewProduct = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <Container>
       <Wrapper>
