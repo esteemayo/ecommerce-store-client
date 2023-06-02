@@ -77,7 +77,7 @@ const NewProduct = () => {
             <FormGroup>
               <FormLabel htmlFor='category'>Select category</FormLabel>
               <FormSelect id='category' name='category'>
-
+                <Option value='jeans'>Jeans</Option>
               </FormSelect>
             </FormGroup>
             <FormGroup>
