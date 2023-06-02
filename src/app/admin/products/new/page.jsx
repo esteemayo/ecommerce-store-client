@@ -256,6 +256,10 @@ const FormWrapper = styled.div`
   box-shadow: ${({ theme }) => theme.boxForm};
   -webkit-box-shadow: ${({ theme }) => theme.boxForm};
   -moz-box-shadow: ${({ theme }) => theme.boxForm};
+
+  @media only screen and (max-width: 21.25em) {
+    width: 35rem;
+  }
 `;
 
 const Header = styled.h1`
