@@ -44,4 +44,8 @@ const Form = styled.form`
   
 `;
 
+const FormGroup = styled.div`
+  
+`;
+
 export default NewProduct;
