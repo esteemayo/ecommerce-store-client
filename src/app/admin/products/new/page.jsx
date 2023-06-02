@@ -11,7 +11,7 @@ const NewProduct = () => {
       <Wrapper>
         <FormWrapper>
           <Header>Create new product</Header>
-          <Form>
+          <Form onSubmit={handleSubmit}>
             <FormGroup>
               <FormLabel htmlFor='name'>Product name</FormLabel>
               <FormInput id='name' name='name' placeholder='Enter product name' />
