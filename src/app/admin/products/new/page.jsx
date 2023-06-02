@@ -18,6 +18,7 @@ const NewProduct = () => {
 
   const [data, setData] = useState(initialState);
   const [size, setSize] = useState([]);
+  const [files, setFiles] = useState(null);
   const [tags, setTags] = useState([]);
 
   const handleChange = ({ target: input }) => {
