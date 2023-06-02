@@ -190,6 +190,8 @@ const TextArea = styled.textarea`
   width: 100%;
   height: 10rem;
   padding: 1.5rem 1rem;
+  background-color: ${({ theme }) => theme.bgInput};
+  color: #999;
 `;
 
 const FormSelect = styled.select`
