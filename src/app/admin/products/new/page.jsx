@@ -99,7 +99,7 @@ const NewProduct = () => {
                 id='file'
                 accept='image/*'
               />
-              <FormLabel htmlFor='file' type='file' multiple>Attach images</FormLabel>
+              <FormLabel htmlFor='file' type='file'>Attach images</FormLabel>
             </FormGroup>
             <FormButton type='submit'>Create</FormButton>
           </Form>
