@@ -193,6 +193,8 @@ const FormSelect = styled.select`
   font-size: 1.5rem;
   width: 100%;
   padding: 1.5rem 1rem;
+  background-color: ${({ theme }) => theme.bgInput};
+  color: #999;
 `;
 
 const Option = styled.option`
