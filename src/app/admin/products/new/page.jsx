@@ -145,6 +145,10 @@ const FormSelect = styled.select`
   
 `;
 
+const Option = styled.option`
+  
+`;
+
 const FormButton = styled.button`
   
 `;
