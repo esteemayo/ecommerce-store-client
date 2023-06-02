@@ -24,7 +24,7 @@ const NewProduct = () => {
   };
 
   const handleColor = () => {
-    setData((prev) => ({ ...prev, color: prev.color.target.split(',') }));
+    setData((prev) => ({ ...prev, color: prev.color.target.value.split(',') }));
   };
 
   const handleSize = () => {
