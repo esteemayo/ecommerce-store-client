@@ -30,8 +30,8 @@ const NewProduct = () => {
     setColor(e.target.value.split(','));
   };
 
-  const handleSize = () => {
-    setData((prev) => ({ ...prev, size: prev.size.target.value.split(',') }));
+  const handleSize = (e) => {
+    setSize(e.target.value.split(','));
   };
 
   const handleTags = () => {
