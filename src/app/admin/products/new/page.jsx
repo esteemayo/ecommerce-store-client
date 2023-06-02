@@ -118,7 +118,8 @@ const Wrapper = styled.div`
 `;
 
 const FormWrapper = styled.div`
-  
+  width: 40rem;
+  padding: 2rem;
 `;
 
 const Header = styled.h1`
