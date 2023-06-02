@@ -17,6 +17,7 @@ const initialState = {
 const NewProduct = () => {
   const [files, setFiles] = useState(null);
   const [data, setData] = useState(initialState);
+  const [color, setColor] = useState([]);
 
   const handleChange = ({ target: input }) => {
     const { name, value } = input;
