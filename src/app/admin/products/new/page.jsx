@@ -120,6 +120,10 @@ const Wrapper = styled.div`
 const FormWrapper = styled.div`
   width: 40rem;
   padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: ${({ theme }) => theme.boxForm};
+  -webkit-box-shadow: ${({ theme }) => theme.boxForm};
+  -moz-box-shadow: ${({ theme }) => theme.boxForm};
 `;
 
 const Header = styled.h1`
