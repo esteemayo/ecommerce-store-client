@@ -65,6 +65,15 @@ const NewProduct = () => {
                 placeholder='Enter color'
               />
             </FormGroup>
+            <FormGroup>
+              <FormLabel htmlFor='size'>Size</FormLabel>
+              <FormInput
+                id='size'
+                type='text'
+                name='size'
+                placeholder='Enter size'
+              />
+            </FormGroup>
             <FormButton type='submit'>Create</FormButton>
           </Form>
         </FormWrapper>
