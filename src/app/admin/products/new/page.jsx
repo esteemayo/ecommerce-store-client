@@ -16,6 +16,7 @@ const NewProduct = () => {
               <FormLabel htmlFor='name'>Product name</FormLabel>
               <FormInput
                 id='name'
+                type='text'
                 name='name'
                 placeholder='Enter product name'
               />
