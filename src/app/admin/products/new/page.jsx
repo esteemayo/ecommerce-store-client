@@ -20,6 +20,7 @@ const NewProduct = () => {
   const [size, setSize] = useState([]);
   const [files, setFiles] = useState(null);
   const [tags, setTags] = useState([]);
+  const [errors, setErrors] = useState({});
   const [color, setColor] = useState([]);
 
   const handleChange = ({ target: input }) => {
