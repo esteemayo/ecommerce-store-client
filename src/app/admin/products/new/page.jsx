@@ -107,6 +107,7 @@ const NewProduct = () => {
                 type='text'
                 name='size'
                 placeholder='Enter size'
+                onChange={handleSize}
               />
             </FormGroup>
             <FormGroup>
