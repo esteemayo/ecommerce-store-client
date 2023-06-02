@@ -20,6 +20,14 @@ const NewProduct = () => {
                 placeholder='Enter product name'
               />
             </FormGroup>
+            <FormGroup>
+              <FormLabel htmlFor='desc'>Description</FormLabel>
+              <TextArea
+                id='desc'
+                name='desc'
+                placeholder='Enter product description'
+              />
+            </FormGroup>
             <FormButton type='submit'>Create</FormButton>
           </Form>
         </FormWrapper>
