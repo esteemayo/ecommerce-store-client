@@ -2,8 +2,21 @@
 import styled from 'styled-components';
 import { useState } from 'react';
 
+const initialState = {
+  name: '',
+  desc: '',
+  price: '',
+  priceDiscount: '',
+  numberInStock: '',
+  category: '',
+  color: [],
+  size: [],
+  tags: [],
+};
+
 const NewProduct = () => {
   const [files, setFiles] = useState(null);
+  const [data, setData] = useState(initialState);
 
   const handleSubmit = (e) => {
     e.preventDefault();
