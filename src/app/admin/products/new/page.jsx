@@ -93,6 +93,13 @@ const NewProduct = () => {
                 placeholder='Enter tags'
               />
             </FormGroup>
+            <FormGroup type='file'>
+              <FormUpload
+                type='file'
+                id='file'
+                accept='image/*'
+              />
+            </FormGroup>
             <FormButton type='submit'>Create</FormButton>
           </Form>
         </FormWrapper>
