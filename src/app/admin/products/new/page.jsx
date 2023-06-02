@@ -19,6 +19,7 @@ const NewProduct = () => {
   const [data, setData] = useState(initialState);
   const [color, setColor] = useState([]);
   const [size, setSize] = useState([]);
+  const [tags, setTags] = useState([]);
 
   const handleChange = ({ target: input }) => {
     const { name, value } = input;
