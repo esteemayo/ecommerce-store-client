@@ -281,7 +281,7 @@ const Button = styled.button`
   gap: 0.5rem;
 
   @media only screen and (max-width: 25em), only screen and (hover: none) {
-    width: 100%;
+    font-size: 1.38rem;
   }
 
   &:hover {
