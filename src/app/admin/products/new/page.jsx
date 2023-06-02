@@ -200,6 +200,8 @@ const FormButton = styled.button`
   display: inline-block;
   font-weight: 500;
   font-size: 1.4rem;
+  width: 100%;
+  padding: 1.5rem;
 `;
 
 export default NewProduct;
