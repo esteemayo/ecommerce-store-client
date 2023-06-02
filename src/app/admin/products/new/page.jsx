@@ -56,6 +56,15 @@ const NewProduct = () => {
                 placeholder='Enter number in stock'
               />
             </FormGroup>
+            <FormGroup>
+              <FormLabel htmlFor='color'>Color</FormLabel>
+              <FormInput
+                id='color'
+                type='text'
+                name='color'
+                placeholder='Enter color'
+              />
+            </FormGroup>
             <FormButton type='submit'>Create</FormButton>
           </Form>
         </FormWrapper>
