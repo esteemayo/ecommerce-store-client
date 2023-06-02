@@ -19,7 +19,7 @@ const UpdateData = ({ onCancel }) => {
 
   const validateForm = () => {
     const errors = {};
-    const { email, currentPassword } = data;
+    const { email, password } = data;
 
     if (email.trim() === '') {
       errors.email = 'Please enter your new email address';
