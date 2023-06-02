@@ -213,6 +213,7 @@ const FormButton = styled.button`
   background-size: 220%;
   border-radius: 0.5rem;
   outline-color: #85beae;
+  cursor: pointer;
 `;
 
 export default NewProduct;
