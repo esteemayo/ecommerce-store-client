@@ -250,6 +250,11 @@ const FormUpload = styled.input`
     outline: 3px solid ${({ theme }) => theme.fileInput};
     outline-offset: 3px;
   }
+
+  & + ${FormLabel} {
+    display: inline-block;
+    color: ${({ theme }) => theme.textFile};
+  }
 `;
 
 const FormButton = styled.button`
