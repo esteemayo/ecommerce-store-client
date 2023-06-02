@@ -10,6 +10,7 @@ const NewProduct = () => {
           <Form>
             <FormGroup>
               <FormLabel htmlFor='name'>Product name</FormLabel>
+              <FormInput id='name' name='name' placeholder='Enter product name' />
             </FormGroup>
           </Form>
         </FormWrapper>
