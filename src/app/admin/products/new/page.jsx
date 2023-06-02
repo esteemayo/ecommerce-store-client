@@ -101,6 +101,7 @@ const NewProduct = () => {
                 type='file'
                 id='file'
                 accept='image/*'
+                onChange={(e) => setFiles(e.target.files)}
                 multiple
               />
               <FormLabel htmlFor='file' type='file'>Attach images</FormLabel>
