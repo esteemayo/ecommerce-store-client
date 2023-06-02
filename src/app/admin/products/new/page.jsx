@@ -260,6 +260,12 @@ const FormWrapper = styled.div`
   @media only screen and (max-width: 21.25em) {
     width: 35rem;
   }
+
+  @media only screen and (max-width: 18.75em) {
+    width: 32rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
 `;
 
 const Header = styled.h1`
