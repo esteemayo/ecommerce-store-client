@@ -143,6 +143,10 @@ const FormGroup = styled.div`
   flex-direction: column;
   align-items: ${({ type }) => type === 'file' && 'start'};
   justify-content: ${({ type }) => type === 'file' && 'center'};
+
+  &:not(:last-of-type) {
+    margin-bottom: 2rem;
+  }
 `;
 
 const FormLabel = styled.label`
