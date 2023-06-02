@@ -38,6 +38,15 @@ const NewProduct = () => {
                 placeholder='Enter product price'
               />
             </FormGroup>
+            <FormGroup>
+              <FormLabel htmlFor='priceDiscount'>Price Discount</FormLabel>
+              <FormInput
+                id='priceDiscount'
+                type='number'
+                name='priceDiscount'
+                placeholder='Enter price discount'
+              />
+            </FormGroup>
             <FormButton type='submit'>Create</FormButton>
           </Form>
         </FormWrapper>
