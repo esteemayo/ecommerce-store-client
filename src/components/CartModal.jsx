@@ -101,7 +101,7 @@ const CartModal = ({ product, isModalOpen, closeModal, setIsSelectedProduct }) =
                   prefix={'$'}
                 />
               </ProductPrice>
-              <PriceDiscount>-22%</PriceDiscount>
+              <PriceDiscount>-{product?.priceDiscount}%</PriceDiscount>
             </PriceContainer>
             <SalePrice>
               <NumericFormat
