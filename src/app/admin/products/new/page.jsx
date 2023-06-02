@@ -9,7 +9,7 @@ const NewProduct = () => {
           <Header>Create new product</Header>
           <Form>
             <FormGroup>
-
+              <FormLabel htmlFor='name'>Product name</FormLabel>
             </FormGroup>
           </Form>
         </FormWrapper>
