@@ -158,7 +158,8 @@ const FormLabel = styled.label`
 `;
 
 const FormInput = styled.input`
-  
+  border: none;
+  display: inline-block;
 `;
 
 const TextArea = styled.textarea`
