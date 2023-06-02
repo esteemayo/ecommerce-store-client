@@ -27,4 +27,8 @@ const Wrapper = styled.div`
   justify-content: center;
 `;
 
+const FormWrapper = styled.div`
+  
+`;
+
 export default NewProduct;
