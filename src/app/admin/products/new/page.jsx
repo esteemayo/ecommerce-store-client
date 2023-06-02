@@ -254,6 +254,8 @@ const FormUpload = styled.input`
   & + ${FormLabel} {
     display: inline-block;
     color: ${({ theme }) => theme.textFile};
+    text-decoration: none;
+    padding: 3px;
   }
 `;
 
