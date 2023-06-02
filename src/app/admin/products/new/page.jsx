@@ -34,8 +34,8 @@ const NewProduct = () => {
     setSize(e.target.value.split(','));
   };
 
-  const handleTags = () => {
-    setData((prev) => ({ ...prev, tags: prev.tags.target.value.split(',') }));
+  const handleTags = (e) => {
+    setTags(e.target.value.split(','));
   };
 
   const handleSubmit = (e) => {
