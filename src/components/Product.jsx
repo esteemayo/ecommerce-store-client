@@ -162,7 +162,7 @@ const Product = ({ product }) => {
             </PriceContainer>
             <SalePrice>
               <NumericFormat
-                value='99.99'
+                value={product.price}
                 displayType={'text'}
                 thousandSeparator={true}
                 prefix={'$'}
