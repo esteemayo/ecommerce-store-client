@@ -239,7 +239,8 @@ const Option = styled.option`
 `;
 
 const FormUpload = styled.input`
-  
+  width: 0.1px;
+  height: 0.1px;
 `;
 
 const FormButton = styled.button`
