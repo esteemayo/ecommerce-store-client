@@ -90,7 +90,7 @@ const NewProduct = () => {
                 id='tags'
                 type='text'
                 name='tags'
-                placeholder='Enter tags'
+                placeholder='Separate the tags with commas'
               />
             </FormGroup>
             <FormGroup type='file'>
