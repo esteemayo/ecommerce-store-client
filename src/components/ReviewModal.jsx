@@ -16,6 +16,12 @@ const ReviewModal = ({ isModalOpen, setIsModalOpen }) => {
     }
   };
 
+  const handleClear = () => {
+    setRating(null);
+    setReview(null);
+    setIsAccept(false);
+  };
+
   const handleClick = () => {
     console.log({ rating, review });
   };
