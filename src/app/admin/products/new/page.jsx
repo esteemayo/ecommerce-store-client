@@ -74,6 +74,15 @@ const NewProduct = () => {
                 placeholder='Enter size'
               />
             </FormGroup>
+            <FormGroup>
+              <FormLabel htmlFor='tags'>Product tags</FormLabel>
+              <FormInput
+                id='tags'
+                type='text'
+                name='tags'
+                placeholder='Enter tags'
+              />
+            </FormGroup>
             <FormButton type='submit'>Create</FormButton>
           </Form>
         </FormWrapper>
