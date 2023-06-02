@@ -45,7 +45,7 @@ const NewProduct = () => {
   };
 
   return (
-    <Container>
+    <Container onMouseOver={() => dispatch(closeSubmenu())}>
       <Wrapper>
         <FormWrapper>
           <Header>Create new product</Header>
