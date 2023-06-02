@@ -37,4 +37,8 @@ const Header = styled.h1`
   
 `;
 
+const Form = styled.form`
+  
+`;
+
 export default NewProduct;
