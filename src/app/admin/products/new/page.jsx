@@ -21,6 +21,10 @@ const Wrapper = styled.div`
   max-width: 120rem;
   margin: 0 auto;
   padding: 10rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 `;
 
 export default NewProduct;
