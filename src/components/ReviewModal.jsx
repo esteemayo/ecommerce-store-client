@@ -8,7 +8,7 @@ import { useState } from 'react';
 const ReviewModal = ({ isModalOpen, setIsModalOpen }) => {
   const [rating, setRating] = useState(null);
   const [review, setReview] = useState('');
-  const [isAccept, setIsAccept] = useState(false);
+  const [terms, setTerms] = useState(false);
 
   const handleCloseModal = (e) => {
     if (e.target.classList.contains('overlay')) {
@@ -24,11 +24,11 @@ const ReviewModal = ({ isModalOpen, setIsModalOpen }) => {
   const handleClear = () => {
     setRating(null);
     setReview('');
-    setIsAccept(false);
+    setTerms(false);
   };
 
   const handleClick = () => {
-    console.log({ rating, review, isAccept });
+    console.log({ rating, review, terms });
     handleClear();
   };
 
@@ -73,8 +73,8 @@ const ReviewModal = ({ isModalOpen, setIsModalOpen }) => {
             <Input
               id='terms'
               type='checkbox'
-              value={isAccept}
-              onChange={(e) => setIsAccept(e.currentTarget.checked)}
+              value={terms}
+              onChange={(e) => setTerms(e.currentTarget.checked)}
             />
             <Label htmlFor='terms'>
               I accept the <Link href='#' passHref>terms and conditions</Link>
