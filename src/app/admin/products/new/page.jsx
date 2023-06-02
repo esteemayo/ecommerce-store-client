@@ -201,7 +201,9 @@ const FormSelect = styled.select`
 `;
 
 const Option = styled.option`
-  
+  text-transform: capitalize;
+  background-color: ${({ theme }) => theme.bgProdCard};
+  color: inherit;
 `;
 
 const FormButton = styled.button`
