@@ -13,6 +13,8 @@ const initialState = {
 };
 
 const NewProduct = () => {
+  const dispatch = useDispatch();
+
   const [files, setFiles] = useState(null);
   const [data, setData] = useState(initialState);
   const [color, setColor] = useState([]);
