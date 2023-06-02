@@ -5,7 +5,7 @@ import { userDataInputs } from '@/formData';
 
 const initialState = {
   email: '',
-  currentPassword: '',
+  password: '',
 };
 
 const UpdateData = ({ onCancel }) => {
