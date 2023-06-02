@@ -40,6 +40,41 @@ const NewProduct = () => {
     setTags(e.target.value.split(','));
   };
 
+  const validateForm = () => {
+    const errors = {};
+    const { name, desc, price, priceDiscount, numberInStock, category } = data;
+
+    if (name.trim() === '') {
+      errors.name = 'Product name must not be empty';
+    }
+
+    if (desc.trim() === '') {
+      errors.desc = 'Product description must not be empty';
+    }
+
+    if (price === '') {
+      errors.price = 'Product price must not be empty';
+    }
+
+    if (priceDiscount === '') {
+      errors.priceDiscount = 'Price discount must not be empty';
+    }
+
+    if (numberInStock === '') {
+      errors.numberInStock = 'Number in stock must not be empty';
+    }
+
+    if (category.trim() === '') {
+      errors.category = 'Product category must not be empty';
+    }
+
+    if (tags.length < 1) {
+      errors.tags = 'Please provide some tags';
+    }
+
+    return errors;
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log({ ...data, files, color, size, tags });
