@@ -59,6 +59,7 @@ const NewProduct = () => {
                 type='number'
                 name='price'
                 placeholder='Enter product price'
+                onChange={handleChange}
               />
             </FormGroup>
             <FormGroup>
