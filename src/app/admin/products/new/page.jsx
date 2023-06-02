@@ -259,6 +259,11 @@ const FormUpload = styled.input`
     border-bottom: 1px solid ${({ theme }) => theme.fileInput};
     cursor: pointer;
   }
+
+  &:hover {
+    background-color: ${({ theme }) => theme.fileInput};
+    color: ${({ theme }) => theme.textCat};
+  }
 `;
 
 const FormButton = styled.button`
