@@ -197,6 +197,7 @@ const TextArea = styled.textarea`
   overflow: hidden;
   resize: none;
   caret-color: ${({ theme }) => theme.inputCaret};
+  transition: all 0.3s ease;
 
   &:focus {
     background-color: transparent;
