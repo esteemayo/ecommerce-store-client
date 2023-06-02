@@ -65,7 +65,7 @@ const NewProduct = () => {
     }
 
     if (category.trim() === '') {
-      errors.category = 'Product category must not be empty';
+      errors.category = 'Category must not be empty';
     }
 
     if (tags.length < 1) {
