@@ -72,7 +72,7 @@ export const userDataInputs = [
   },
   {
     id: 'passwordCurrent',
-    name: 'currentPassword',
+    name: 'password',
     type: 'password',
     label: 'Current Password',
     placeholder: 'Type in your current password',
