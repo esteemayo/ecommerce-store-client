@@ -33,4 +33,8 @@ const FormWrapper = styled.div`
   
 `;
 
+const Header = styled.h1`
+  
+`;
+
 export default NewProduct;
