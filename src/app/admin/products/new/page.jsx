@@ -9,9 +9,6 @@ const initialState = {
   priceDiscount: '',
   numberInStock: '',
   category: '',
-  color: [],
-  size: [],
-  tags: [],
 };
 
 const NewProduct = () => {
