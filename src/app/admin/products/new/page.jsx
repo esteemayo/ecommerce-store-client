@@ -230,6 +230,10 @@ const Option = styled.option`
   color: inherit;
 `;
 
+const FormUpload = styled.input`
+  
+`;
+
 const FormButton = styled.button`
   margin-top: 2rem;
   border: none;
