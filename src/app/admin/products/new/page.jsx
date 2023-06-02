@@ -17,7 +17,6 @@ const NewProduct = () => {
   const dispatch = useDispatch();
 
   const [data, setData] = useState(initialState);
-  const [color, setColor] = useState([]);
   const [size, setSize] = useState([]);
   const [tags, setTags] = useState([]);
 
