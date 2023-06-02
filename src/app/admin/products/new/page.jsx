@@ -6,7 +6,7 @@ const NewProduct = () => {
     <Container>
       <Wrapper>
         <FormWrapper>
-          NewProduct
+          <Header>Create new product</Header>
         </FormWrapper>
       </Wrapper>
     </Container>
