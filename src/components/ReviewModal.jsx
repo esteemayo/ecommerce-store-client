@@ -19,7 +19,7 @@ const ReviewModal = ({ isModalOpen, setIsModalOpen }) => {
 
   const handleClear = () => {
     setRating(null);
-    setReview(null);
+    setReview('');
     setIsAccept(false);
   };
 
