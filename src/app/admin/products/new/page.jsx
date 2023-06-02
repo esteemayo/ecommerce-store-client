@@ -174,6 +174,12 @@ const FormInput = styled.input`
   &:focus {
     background-color: transparent;
   }
+
+  &::-webkit-input-placeholder {
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: #bbb;
+  }
 `;
 
 const TextArea = styled.textarea`
