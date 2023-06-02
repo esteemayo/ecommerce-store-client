@@ -164,6 +164,8 @@ const FormInput = styled.input`
   font-size: 1.5rem;
   width: 100%;
   padding: 1.5rem 1rem;
+  background-color: ${({ theme }) => theme.bgInput};
+  color: #999;
 `;
 
 const TextArea = styled.textarea`
