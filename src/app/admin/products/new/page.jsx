@@ -79,6 +79,7 @@ const NewProduct = () => {
               <FormSelect id='category' name='category'>
                 <Option value='jeans'>Jeans</Option>
                 <Option value='electronics'>Electronics</Option>
+                <Option value='gadgets'>Gadgets</Option>
               </FormSelect>
             </FormGroup>
             <FormGroup>
