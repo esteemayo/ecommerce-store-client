@@ -202,6 +202,7 @@ const Input = styled.input`
   display: inline-block;
   width: 20rem;
   padding: 3px;
+  font-family: inherit;
   font-size: 1.4rem;
   background-color: transparent;
   color: ${({ theme }) => theme.textFilterSelect};
