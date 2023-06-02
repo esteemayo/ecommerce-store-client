@@ -18,6 +18,11 @@ const NewProduct = () => {
   const [files, setFiles] = useState(null);
   const [data, setData] = useState(initialState);
 
+  const handleChange = ({ target: input }) => {
+    const { name, value } = input;
+    setData((prev) => ({ ...prev, [name]: value }));
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
   };
