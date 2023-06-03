@@ -27,7 +27,7 @@ const Container = styled.div`
 const Wrapper = styled.div`
   width: 40rem;
   height: 30rem;
-  background-color: var(--clr-white);
+  background-color: ${({ theme }) => theme.bgModal};
   border-radius: 1.5rem;
   display: flex;
   align-items: center;
