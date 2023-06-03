@@ -100,6 +100,7 @@ const NewProduct = () => {
                 type='text'
                 name='name'
                 placeholder='Enter product name'
+                ref={nameRef}
                 onChange={handleChange}
               />
               {errors.name && <ErrorMsg>{errors.name}</ErrorMsg>}
