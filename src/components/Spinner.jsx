@@ -14,7 +14,7 @@ const Container = styled.div`
   height: ${({ size }) => size === 'md' && '5rem'};
   height: ${({ size }) => size === 'lg' && '10rem'};
   border: 3px solid #f5f5f5;
-  border-top-color: #979797;
+  border-top-color: ${({ theme }) => theme.spnrBorTop};
   border-radius: 50%;
   animation: rotate 0.6s linear infinite;
 
