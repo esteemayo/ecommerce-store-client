@@ -220,4 +220,5 @@ export const lightTheme = {
   bgOrderTotal: '#555555',
   textOrderTotal: 'var(--clr-white)',
   boxOrderTotal: '0 2rem 4rem rgba(0, 0, 0, 0.15)',
+  spnrBorTop: '#979797',
 };
