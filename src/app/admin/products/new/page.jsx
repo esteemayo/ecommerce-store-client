@@ -158,7 +158,7 @@ const NewProduct = () => {
                 id='color'
                 type='text'
                 name='color'
-                placeholder='Enter color'
+                placeholder='Separate the color with commas'
                 onChange={handleColor}
               />
             </FormGroup>
