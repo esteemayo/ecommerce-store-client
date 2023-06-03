@@ -87,6 +87,10 @@ const NewProduct = () => {
     console.log({ ...data, files, color, size, tags });
   };
 
+  useEffect(() => {
+    nameRef.current.focus();
+  }, []);
+
   return (
     <Container onMouseOver={() => dispatch(closeSubmenu())}>
       <Wrapper>
