@@ -17,6 +17,7 @@ const initialState = {
 const NewProduct = () => {
   const dispatch = useDispatch();
 
+  const nameRef = useRef();
   const [data, setData] = useState(initialState);
   const [size, setSize] = useState([]);
   const [files, setFiles] = useState(null);
