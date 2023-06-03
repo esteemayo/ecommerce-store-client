@@ -168,7 +168,7 @@ const NewProduct = () => {
                 id='size'
                 type='text'
                 name='size'
-                placeholder='Enter size'
+                placeholder='Separate the size with commas'
                 onChange={handleSize}
               />
             </FormGroup>
