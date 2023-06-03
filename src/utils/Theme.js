@@ -108,6 +108,7 @@ export const darkTheme = {
   bgOrderTotal: '#121212',
   textOrderTotal: '#cfd0d1',
   boxOrderTotal: '0 1rem 4rem rgba(145, 143, 143, 0.15)',
+  spnrBorTop: '#797979',
 };
 
 export const lightTheme = {
