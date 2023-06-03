@@ -120,7 +120,7 @@ const NewProduct = () => {
               {errors.desc && <ErrorMsg>{errors.desc}</ErrorMsg>}
             </FormGroup>
             <FormGroup>
-              <FormLabel htmlFor='price'>Product price</FormLabel>
+              <FormLabel htmlFor='price'>Price</FormLabel>
               <FormInput
                 id='price'
                 type='number'
