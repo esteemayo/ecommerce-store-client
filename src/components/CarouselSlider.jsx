@@ -160,6 +160,8 @@ const Description = styled.p`
   margin: 5rem 0;
   font-weight: 500;
   font-size: 2rem;
+  color: ${({ theme }) => theme.textSoft};
+  letter-spacing: 3px;
 `;
 
 const Button = styled.button`
