@@ -185,7 +185,7 @@ const Button = styled.button`
   font-size: 1.8rem;
   text-transform: uppercase;
   background-color: transparent;
-  color: var(--clr-white);
+  color: inherit;
   border: 1px solid var(--clr-white);
   border-radius: 3px;
   outline-color: #ccc;
