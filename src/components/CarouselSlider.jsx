@@ -153,6 +153,7 @@ const InfoContainer = styled.div`
     &:visited {
       text-decoration: none;
       color: var(--clr-white);
+      outline: none;
     }
     
     &:active,
