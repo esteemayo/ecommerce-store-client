@@ -7,6 +7,7 @@ import { useDispatch } from 'react-redux';
 
 import { sliderItems } from '@/data';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
+import Link from 'next/link';
 
 const CarouselSlider = () => {
   const dispatch = useDispatch();
@@ -65,8 +66,14 @@ const CarouselSlider = () => {
 
           return (
             <Article key={index} type={position}>
-              <h1>{item.title}</h1>
               {/* <Image src={item.img} fill alt='' /> */}
+              <InfoContainer>
+                <Title>{item.title}</Title>
+                <Description>{item.desc}</Description>
+                <Link href={item.url} passHref>
+                  <Button type='button'>Shop now</Button>
+                </Link>
+              </InfoContainer>
             </Article>
           );
         })}
@@ -139,7 +146,9 @@ const Article = styled.article`
 `;
 
 const InfoContainer = styled.div`
-  
+  flex: 1;
+  padding: 5rem;
+  text-transform: uppercase;
 `;
 
 const Title = styled.h1`
