@@ -155,6 +155,14 @@ const InfoContainer = styled.div`
   position: absolute;
   top: 10%;
   right: 3rem;
+
+  a {
+    &:link,
+    &:active {
+      text-decoration: none;
+      color: var(--clr-white);
+    }
+  }
 `;
 
 const Title = styled.h1`
