@@ -64,11 +64,7 @@ const CarouselSlider = () => {
 
           return (
             <Article key={index} type={position}>
-              <Image
-                src={item}
-                fill
-                alt=''
-              />
+              <Image src={item} fill alt='' />
             </Article>
           );
         })}
