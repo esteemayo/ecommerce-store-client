@@ -175,7 +175,6 @@ export const sliderItems = [
     img: '/img/hero-2.jpg',
     title: 'SUMMER SALE',
     desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
-    bg: 'fbf0f4',
   },
   {
     id: 4,
