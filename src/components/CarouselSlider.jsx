@@ -145,7 +145,7 @@ const InfoContainer = styled.div`
   padding: 5rem;
   padding-right: 0;
   text-transform: uppercase;
-  color: var(--clr-white);
+  color: ${({ theme }) => theme.textSlider};
   position: absolute;
   top: 15%;
   right: 3rem;
