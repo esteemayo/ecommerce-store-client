@@ -222,4 +222,5 @@ export const lightTheme = {
   textOrderTotal: 'var(--clr-white)',
   boxOrderTotal: '0 2rem 4rem rgba(0, 0, 0, 0.15)',
   spnrBorTop: '#979797',
+  textSlider: 'var(--clr-white)',
 };
