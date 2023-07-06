@@ -154,6 +154,49 @@ export const sublinks = [
   },
 ];
 
+export const sliderItems = [
+  {
+    id: 1,
+    url: '/products',
+    img: '/img/hero-1.jpg',
+    title: 'SUMMER SALE',
+    desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
+    bg: 'f5fafd',
+  },
+  {
+    id: 2,
+    url: '/products',
+    img: '/img/hero-4.jpg',
+    title: 'AUTUMN COLLECTION',
+    desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
+    bg: 'fcf1ed',
+  },
+  {
+    id: 3,
+    url: '/products',
+    img: '/img/hero-2.jpg',
+    title: 'LOUNGEWEAR LOVE',
+    desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
+    bg: 'fbf0f4',
+  },
+  {
+    id: 4,
+    url: '/products',
+    img: '/img/hero-9.jpg',
+    title: 'LOUNGEWEAR LOVE',
+    desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
+    bg: 'fbf0f4',
+  },
+  {
+    id: 5,
+    url: '/products',
+    img: '/img/hero-10.jpg',
+    title: 'LOUNGEWEAR LOVE',
+    desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
+    bg: 'fbf0f4',
+  },
+];
+
 export const storeLinks = [
   {
     id: 1,
