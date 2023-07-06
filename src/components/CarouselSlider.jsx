@@ -145,7 +145,7 @@ const InfoContainer = styled.div`
   padding: 5rem;
   text-transform: uppercase;
   position: absolute;
-  top: 10%;
+  top: 15%;
   right: 3rem;
 
   a {
