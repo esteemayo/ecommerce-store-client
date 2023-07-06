@@ -175,9 +175,9 @@ const Button = styled.button`
   padding: 1rem;
   font-size: 2rem;
   text-transform: uppercase;
-  border: 1px solid #777;
+  border: 1px solid var(--clr-white);
   background-color: transparent;
-  color: #777;
+  color: var(--clr-white);
   border-radius: 3px;
   cursor: pointer;
 `;
