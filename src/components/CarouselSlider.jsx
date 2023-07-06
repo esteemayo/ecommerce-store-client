@@ -158,9 +158,14 @@ const InfoContainer = styled.div`
 
   a {
     &:link,
-    &:active {
+    &:visited {
       text-decoration: none;
       color: var(--clr-white);
+    }
+    
+    &:active,
+    &:hover {
+      color: currentColor;
     }
   }
 `;
