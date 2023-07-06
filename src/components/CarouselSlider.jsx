@@ -137,14 +137,6 @@ const Article = styled.article`
   transform: translateX(${({ type }) => type === 'lastSlide' && '-100%'});
   transform: translateX(${({ type }) => type === 'nextSlide' && '100%'});
   transition: all 0.3s linear;
-
-  & > img {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    display: block;
-    object-fit: cover;
-  }
 `;
 
 const ImageContainer = styled.div`
