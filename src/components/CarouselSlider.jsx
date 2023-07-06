@@ -153,6 +153,9 @@ const InfoContainer = styled.div`
   flex: 1;
   padding: 5rem;
   text-transform: uppercase;
+  position: absolute;
+  top: 10%;
+  right: 3rem;
 `;
 
 const Title = styled.h1`
