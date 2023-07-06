@@ -168,7 +168,6 @@ export const sliderItems = [
     img: '/img/hero-4.jpg',
     title: 'AUTUMN COLLECTION',
     desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
-    bg: 'fcf1ed',
   },
   {
     id: 3,
