@@ -5,6 +5,7 @@ import { useCallback, useEffect, useState } from 'react';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { useDispatch } from 'react-redux';
 
+import { sliderItems } from '@/data';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
 const CarouselSlider = () => {
