@@ -66,7 +66,7 @@ const CarouselSlider = () => {
           return (
             <Article key={index} type={position}>
               <h1>{item.title}</h1>
-              <Image src={item.img} fill alt='' />
+              {/* <Image src={item.img} fill alt='' /> */}
             </Article>
           );
         })}
@@ -136,6 +136,10 @@ const Article = styled.article`
     display: block;
     object-fit: cover;
   }
+`;
+
+const InfoContainer = styled.div`
+  
 `;
 
 const ArrowButton = styled.button`
