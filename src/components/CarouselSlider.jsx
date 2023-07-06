@@ -186,6 +186,7 @@ const Button = styled.button`
   color: var(--clr-white);
   border: 1px solid var(--clr-white);
   border-radius: 3px;
+  outline-color: #ccc;
   cursor: pointer;
 `;
 
