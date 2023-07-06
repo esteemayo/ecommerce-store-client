@@ -152,7 +152,8 @@ const InfoContainer = styled.div`
 `;
 
 const Title = styled.h1`
-  
+  font-size: 7rem;
+  color: ${({ theme }) => theme.textSoft};
 `;
 
 const Description = styled.p`
