@@ -187,7 +187,7 @@ export const sliderItems = [
     id: 5,
     url: '/products',
     img: '/img/hero-10.jpg',
-    title: 'LOUNGEWEAR LOVE',
+    title: 'SHIRT COLLECTION',
     desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
   },
 ];
