@@ -159,14 +159,14 @@ const InfoContainer = styled.div`
 
 const Title = styled.h1`
   font-size: 5rem;
-  color: ${({ theme }) => theme.textSoft};
+  color: var(--clr-white);
 `;
 
 const Description = styled.p`
   margin: 5rem 0;
   font-weight: 500;
   font-size: 2rem;
-  color: ${({ theme }) => theme.textSoft};
+  color: var(--clr-white);
   letter-spacing: 3px;
 `;
 
