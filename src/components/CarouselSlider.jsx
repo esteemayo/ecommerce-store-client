@@ -168,6 +168,7 @@ const Title = styled.h1`
 `;
 
 const Description = styled.p`
+  width: 60%;
   margin: 3rem 0;
   font-weight: 500;
   font-size: 2rem;
