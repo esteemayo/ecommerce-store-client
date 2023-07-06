@@ -109,6 +109,7 @@ export const darkTheme = {
   textOrderTotal: '#cfd0d1',
   boxOrderTotal: '0 1rem 4rem rgba(145, 143, 143, 0.15)',
   spnrBorTop: '#797979',
+  textSlider: '#cfd0d1',
 };
 
 export const lightTheme = {
