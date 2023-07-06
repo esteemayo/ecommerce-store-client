@@ -175,7 +175,7 @@ const Description = styled.p`
   margin: 3rem 0;
   font-weight: 500;
   font-size: 2rem;
-  color: var(--clr-white);
+  color: inherit;
   letter-spacing: 3px;
 `;
 
