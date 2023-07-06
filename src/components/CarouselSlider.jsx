@@ -23,6 +23,10 @@ const CarouselSlider = () => {
     setSlideNumber((prev) => prev - 1);
   }, []);
 
+  const handleNext = useCallback(() => {
+    setSlideNumber((prev) => prev + 1);
+  }, []);
+
   useEffect(() => {
     const lastIndex = data.length - 1;
     if (slideNumber < 0) {
