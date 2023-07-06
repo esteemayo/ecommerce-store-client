@@ -150,6 +150,10 @@ const Description = styled.p`
   
 `;
 
+const Button = styled.button`
+  
+`;
+
 const ArrowButton = styled.button`
   position: absolute;
   top: 50%;
