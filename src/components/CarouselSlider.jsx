@@ -150,6 +150,11 @@ const InfoContainer = styled.div`
   top: 15%;
   right: 3rem;
 
+  @media only screen and (max-width: 64em) {
+    padding: 3rem;
+    padding-right: 0;
+  }
+
   a {
     &:link,
     &:visited {
