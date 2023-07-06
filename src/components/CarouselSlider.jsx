@@ -143,6 +143,7 @@ const ImageContainer = styled.div`
 
 const InfoContainer = styled.div`
   padding: 5rem;
+  padding-right: 0;
   text-transform: uppercase;
   position: absolute;
   top: 15%;
