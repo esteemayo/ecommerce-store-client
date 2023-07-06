@@ -146,6 +146,10 @@ const Title = styled.h1`
   
 `;
 
+const Description = styled.p`
+  
+`;
+
 const ArrowButton = styled.button`
   position: absolute;
   top: 50%;
