@@ -19,6 +19,10 @@ const CarouselSlider = () => {
     '/img/hero-10.jpg',
   ];
 
+  const handlePrev = useCallback(() => {
+    setSlideNumber((prev) => prev - 1);
+  }, []);
+
   useEffect(() => {
     const lastIndex = data.length - 1;
     if (slideNumber < 0) {
