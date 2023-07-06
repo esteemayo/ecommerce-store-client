@@ -12,13 +12,13 @@ const CarouselSlider = () => {
   const dispatch = useDispatch();
   const [slideNumber, setSlideNumber] = useState(0);
 
-  const data = [
-    '/img/hero-1.jpg',
-    '/img/hero-4.jpg',
-    '/img/hero-2.jpg',
-    '/img/hero-9.jpg',
-    '/img/hero-10.jpg',
-  ];
+  // const sliderItems = [
+  //   '/img/hero-1.jpg',
+  //   '/img/hero-4.jpg',
+  //   '/img/hero-2.jpg',
+  //   '/img/hero-9.jpg',
+  //   '/img/hero-10.jpg',
+  // ];
 
   const handlePrev = useCallback(() => {
     setSlideNumber((prev) => prev - 1);
@@ -29,7 +29,7 @@ const CarouselSlider = () => {
   }, []);
 
   useEffect(() => {
-    const lastIndex = data.length - 1;
+    const lastIndex = sliderItems.length - 1;
     if (slideNumber < 0) {
       setSlideNumber(lastIndex);
     }
@@ -37,7 +37,7 @@ const CarouselSlider = () => {
     if (slideNumber > lastIndex) {
       setSlideNumber(0);
     }
-  }, [slideNumber, data.length]);
+  }, [slideNumber]);
 
   useEffect(() => {
     const slider = setInterval(() => {
@@ -50,7 +50,7 @@ const CarouselSlider = () => {
   return (
     <Container onMouseOver={() => dispatch(closeSubmenu())}>
       <Wrapper>
-        {data.map((item, index) => {
+        {sliderItems.map((item, index) => {
           let position = 'nextSlide';
 
           if (index === slideNumber) {
@@ -58,14 +58,15 @@ const CarouselSlider = () => {
           }
 
           if (index === slideNumber - 1 ||
-            (slideNumber === 0 && index === data.length - 1)
+            (slideNumber === 0 && index === sliderItems.length - 1)
           ) {
             position = 'lastSlide';
           }
 
           return (
             <Article key={index} type={position}>
-              <Image src={item} fill alt='' />
+              <h1>{item.title}</h1>
+              <Image src={item.img} fill alt='' />
             </Article>
           );
         })}
@@ -84,7 +85,7 @@ const CarouselSlider = () => {
           <FontAwesomeIcon icon={faChevronRight} />
         </ArrowButton>
         <ActiveSlideContainer>
-          {data.map((_, index) => {
+          {sliderItems.map((_, index) => {
             return (
               <ActiveSlideButton
                 type='button'
