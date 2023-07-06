@@ -188,7 +188,7 @@ export const sliderItems = [
     url: '/products',
     img: '/img/hero-10.jpg',
     title: 'SHIRT COLLECTION',
-    desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
+    desc: 'DON\'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.',
   },
 ];
 
