@@ -150,7 +150,6 @@ const ImageContainer = styled.div`
 `;
 
 const InfoContainer = styled.div`
-  flex: 1;
   padding: 5rem;
   text-transform: uppercase;
   position: absolute;
@@ -159,7 +158,7 @@ const InfoContainer = styled.div`
 `;
 
 const Title = styled.h1`
-  font-size: 7rem;
+  font-size: 5rem;
   color: ${({ theme }) => theme.textSoft};
 `;
 
