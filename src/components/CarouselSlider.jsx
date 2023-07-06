@@ -179,7 +179,7 @@ const Description = styled.p`
 `;
 
 const Button = styled.button`
-  display: block;
+  display: inline-block;
   padding: 1rem;
   font-size: 1.8rem;
   text-transform: uppercase;
