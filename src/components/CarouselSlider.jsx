@@ -148,7 +148,13 @@ const Article = styled.article`
 `;
 
 const ImageContainer = styled.div`
-  
+  img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: block;
+    object-fit: cover;
+  }
 `;
 
 const InfoContainer = styled.div`
