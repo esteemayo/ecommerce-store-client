@@ -13,14 +13,6 @@ const CarouselSlider = () => {
   const dispatch = useDispatch();
   const [slideNumber, setSlideNumber] = useState(0);
 
-  // const sliderItems = [
-  //   '/img/hero-1.jpg',
-  //   '/img/hero-4.jpg',
-  //   '/img/hero-2.jpg',
-  //   '/img/hero-9.jpg',
-  //   '/img/hero-10.jpg',
-  // ];
-
   const handlePrev = useCallback(() => {
     setSlideNumber((prev) => prev - 1);
   }, []);
