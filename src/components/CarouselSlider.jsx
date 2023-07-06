@@ -168,6 +168,9 @@ const Button = styled.button`
   display: block;
   padding: 1rem;
   font-size: 2rem;
+  text-transform: uppercase;
+  border: 1px solid #777;
+  background-color: transparent;
 `;
 
 const ArrowButton = styled.button`
