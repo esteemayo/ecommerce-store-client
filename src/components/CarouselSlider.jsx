@@ -157,7 +157,9 @@ const Title = styled.h1`
 `;
 
 const Description = styled.p`
-  
+  margin: 5rem 0;
+  font-weight: 500;
+  font-size: 2rem;
 `;
 
 const Button = styled.button`
