@@ -154,7 +154,7 @@ const InfoContainer = styled.div`
     &:link,
     &:visited {
       text-decoration: none;
-      color: var(--clr-white);
+      color: inherit;
       outline: none;
     }
     
@@ -167,7 +167,7 @@ const InfoContainer = styled.div`
 
 const Title = styled.h1`
   font-size: 5rem;
-  color: var(--clr-white);
+  color: inherit;
 `;
 
 const Description = styled.p`
