@@ -142,6 +142,10 @@ const InfoContainer = styled.div`
   
 `;
 
+const Title = styled.h1`
+  
+`;
+
 const ArrowButton = styled.button`
   position: absolute;
   top: 50%;
