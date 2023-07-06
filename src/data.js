@@ -181,7 +181,7 @@ export const sliderItems = [
     url: '/products',
     img: '/img/hero-9.jpg',
     title: 'LOUNGEWEAR LOVE',
-    desc: "DON'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.",
+    desc: 'DON\'T COMPROMISE ON STYLE! GET FLAT 30% OFF FOR NEW ARRIVALS.',
   },
   {
     id: 5,
