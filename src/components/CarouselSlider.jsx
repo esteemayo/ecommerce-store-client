@@ -76,7 +76,7 @@ const CarouselSlider = () => {
         <ArrowButton
           type='button'
           direction='left'
-          onClick={() => setSlideNumber(slideNumber - 1)}
+          onClick={handlePrev}
         >
           <FontAwesomeIcon icon={faChevronLeft} />
         </ArrowButton>
