@@ -165,7 +165,9 @@ const Description = styled.p`
 `;
 
 const Button = styled.button`
-  
+  display: block;
+  padding: 1rem;
+  font-size: 2rem;
 `;
 
 const ArrowButton = styled.button`
