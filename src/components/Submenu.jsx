@@ -127,7 +127,7 @@ const ListItem = styled.li`
 
     svg {
       font-size: 2rem;
-      color: var(--clr-secondary-green);
+      color: ${({ theme }) => theme.textHeader};
     }
   }
 
