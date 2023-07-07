@@ -34,11 +34,11 @@ const CarouselSlider = () => {
 
   useEffect(() => {
     const slider = setInterval(() => {
-      setSlideNumber(slideNumber + 1);
+      setSlideNumber((prev) => prev + 1);
     }, 5000);
 
     return () => clearInterval(slider);
-  }, [slideNumber]);
+  }, []);
 
   return (
     <Container onMouseOver={() => dispatch(closeSubmenu())}>
