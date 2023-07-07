@@ -6,7 +6,7 @@ import { faUser } from '@fortawesome/free-solid-svg-icons';
 import Image from 'next/image';
 import { useDispatch } from 'react-redux';
 
-import Modal from '@/components/Modal';
+import Modal from '@/components/modals/Modal';
 import FileUploadModal from '@/components/modals/FileUploadModal';
 import UpdateData from '@/components/UpdateData';
 import UpdatePassword from '@/components/UpdatePassword';
