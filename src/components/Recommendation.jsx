@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import Link from 'next/link';
 import { NumericFormat } from 'react-number-format';
 import Image from 'next/image';
+import { recommendations } from '@/data';
 
 const Recommendation = () => {
   return (
