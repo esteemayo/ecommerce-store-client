@@ -31,29 +31,6 @@ const Recommendation = () => {
             </Link>
           </ProductContainer>
         </ProductWrapper>
-        <ProductWrapper>
-          <Link href='#' passHref>
-            <Image
-              src='/img/user-5.jpg'
-              width={500}
-              height={700}
-              alt=''
-            />
-          </Link>
-          <ProductContainer>
-            <Link href='#' passHref>
-              <ProductTitle>The Skyline Collared Jacket in Rosin</ProductTitle>
-              <ProductPrice>
-                <NumericFormat
-                  value='169.00'
-                  displayType={'text'}
-                  thousandSeparator={true}
-                  prefix={'$'}
-                />
-              </ProductPrice>
-            </Link>
-          </ProductContainer>
-        </ProductWrapper>
       </Wrapper>
     </Container>
   );
