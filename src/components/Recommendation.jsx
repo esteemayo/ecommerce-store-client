@@ -21,9 +21,7 @@ const Recommendation = () => {
                   height={500}
                   alt=''
                 />
-              </Link>
-              <ProductContainer>
-                <Link href='#' passHref>
+                <ProductContainer>
                   <ProductTitle>{name}</ProductTitle>
                   <ProductPrice>
                     <NumericFormat
@@ -33,8 +31,8 @@ const Recommendation = () => {
                       prefix={'$'}
                     />
                   </ProductPrice>
-                </Link>
-              </ProductContainer>
+                </ProductContainer>
+              </Link>
             </ProductWrapper>
           )
         })}
