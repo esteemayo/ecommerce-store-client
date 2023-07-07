@@ -26,11 +26,11 @@ const CartModal = ({ product, isModalOpen, closeModal, setIsSelectedProduct }) =
     }
   };
 
-  const handleCloseModal = () => {
+  const handleCloseModal = useCallback(() => {
     closeModal(false);
     setIsSelectedProduct(null);
     handleReset();
-  };
+  }, [closeModal, setIsSelectedProduct]);
 
   const handleColor = (color) => {
     setColor(color);
