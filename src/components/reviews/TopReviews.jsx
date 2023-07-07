@@ -16,7 +16,7 @@ const TopReviews = () => {
 
   const lastIndex = topReviews.lastIndexOf(topReviews.slice(-1)[0]);
 
-  const handleClick = (direction) => {
+  const handleClick = useCallback((direction) => {
     setIsMoved(true);
     const distance = reviewRef.current.getBoundingClientRect().x - 50;
 
@@ -29,7 +29,7 @@ const TopReviews = () => {
       setCurrentSlide(currentSlide + 1);
       reviewRef.current.style.transform = `translateX(${-730 + distance}px)`;
     }
-  };
+  }, [clickLimit, currentSlide]);
 
   return (
     <Container>
