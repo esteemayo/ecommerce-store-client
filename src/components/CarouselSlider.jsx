@@ -256,6 +256,11 @@ const Button = styled.button`
     padding: 0.7rem;
     font-size: 1.5rem;
   }
+
+  @media only screen and (max-width: 31.25em) {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
 `;
 
 const ArrowButton = styled.button`
