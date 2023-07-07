@@ -190,6 +190,7 @@ const Description = styled.p`
   @media only screen and (max-width: 64em) {
     font-size: 1.7rem;
     letter-spacing: 0.5rem;
+    margin: 2rem 0;
   }
 `;
 
