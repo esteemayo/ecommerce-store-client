@@ -27,10 +27,10 @@ const ReviewModal = ({ isModalOpen, setIsModalOpen }) => {
     setTerms(false);
   }, []);
 
-  const handleClick = () => {
+  const handleClick = useCallback(() => {
     console.log({ rating, review, terms });
     handleClear();
-  };
+  }, [rating, review, terms, handleClear]);
 
   return (
     <Overlay
