@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { faMinus, faPlus } from '@fortawesome/free-solid-svg-icons';
 import { NumericFormat } from 'react-number-format';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useCallback } from 'react';
 import { useDispatch } from 'react-redux';
 
 import { remove, toggleQuantity } from '@/features/cart/cartSlice';
