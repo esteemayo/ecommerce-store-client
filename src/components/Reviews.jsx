@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 
 import StarRating from './StarRating';
 import ReviewModal from './ReviewModal';
