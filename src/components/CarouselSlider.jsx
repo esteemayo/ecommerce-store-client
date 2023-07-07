@@ -203,6 +203,7 @@ const Description = styled.p`
   }
 
   @media only screen and (max-width: 50em) {
+    font-size: 1.6rem;
     margin: 1.5rem 0;
   }
 `;
