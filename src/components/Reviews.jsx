@@ -14,7 +14,7 @@ const Reviews = () => {
   const [reviews, setReviews] = useState(reviewItems);
   const [isFilterOpen, setIsFilterOpen] = useState(false);
 
-  const handleCloseFilter = () => {
+  const handleCloseFilter = useCallback(() => {
     const reviewsEl = document.querySelector('.reviews');
     const filterEl = document.querySelector('.filter-wrapper');
 
@@ -25,7 +25,7 @@ const Reviews = () => {
       reviewsEl.removeEventListener('click', () => setIsFilterOpen(false));
       filterEl.removeEventListener('click', () => setIsFilterOpen(true));
     };
-  };
+  }, []);
 
   const getSort = (sort) => {
     if (sort === 'newest') return 'newest';
