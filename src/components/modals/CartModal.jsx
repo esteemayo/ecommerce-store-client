@@ -121,7 +121,7 @@ const CartModal = ({ product, isModalOpen, closeModal, setIsSelectedProduct }) =
                       key={index}
                       color={color}
                       type='button'
-                      darkMode={darkMode}
+                      mode={darkMode}
                       selected={color === isSelected}
                       onClick={() => handleColor(color)}
                     >
