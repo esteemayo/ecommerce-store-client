@@ -199,6 +199,10 @@ const Title = styled.h1`
     font-size: 3rem;
     letter-spacing: 2px;
   }
+
+  @media only screen and (max-width: 31.25em) {
+    font-size: 2.7rem;
+  }
 `;
 
 const Description = styled.p`
