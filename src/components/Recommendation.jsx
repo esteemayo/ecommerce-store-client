@@ -9,29 +9,34 @@ const Recommendation = () => {
     <Container>
       <Heading>You might also like</Heading>
       <Wrapper>
-        <ProductWrapper>
-          <Link href='#' passHref>
-            <Image
-              src='/img/user-9.jpg'
-              width={400}
-              height={500}
-              alt=''
-            />
-          </Link>
-          <ProductContainer>
-            <Link href='#' passHref>
-              <ProductTitle>The Rain Bucket Hat in Black</ProductTitle>
-              <ProductPrice>
-                <NumericFormat
-                  value='39.50'
-                  displayType={'text'}
-                  thousandSeparator={true}
-                  prefix={'$'}
+        {recommendations.map((item) => {
+          const { id, image, name, price } = item;
+          return (
+            <ProductWrapper key={id}>
+              <Link href='#' passHref>
+                <Image
+                  src={image}
+                  width={400}
+                  height={500}
+                  alt=''
                 />
-              </ProductPrice>
-            </Link>
-          </ProductContainer>
-        </ProductWrapper>
+              </Link>
+              <ProductContainer>
+                <Link href='#' passHref>
+                  <ProductTitle>{name}</ProductTitle>
+                  <ProductPrice>
+                    <NumericFormat
+                      value={price}
+                      displayType={'text'}
+                      thousandSeparator={true}
+                      prefix={'$'}
+                    />
+                  </ProductPrice>
+                </Link>
+              </ProductContainer>
+            </ProductWrapper>
+          )
+        })}
       </Wrapper>
     </Container>
   );
