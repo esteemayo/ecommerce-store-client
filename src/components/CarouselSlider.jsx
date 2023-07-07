@@ -205,6 +205,10 @@ const Title = styled.h1`
   @media only screen and (max-width: 31.25em) {
     font-size: 2.7rem;
   }
+
+  @media only screen and (max-width: 25em) {
+    font-size: 2.3rem;
+  }
 `;
 
 const Description = styled.p`
