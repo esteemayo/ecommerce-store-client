@@ -14,7 +14,7 @@ const ProductImageModal = ({
   lastIndex,
   handleMove,
 }) => {
-  const closeModalHandler = (e) => {
+  const closeModalHandler = useCallback((e) => {
     if (e.target.classList.contains('imageContainer')) {
       setIsOpen(false);
     }
@@ -29,7 +29,7 @@ const ProductImageModal = ({
 
     window.addEventListener('keydown', exitModal);
     return () => window.removeEventListener('keydown', exitModal);
-  };
+  }, [setIsOpen]);
 
   return (
     <Overlay type={isOpen ? 'show' : ''}>
