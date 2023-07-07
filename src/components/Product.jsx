@@ -867,6 +867,7 @@ const DescriptionHeader = styled.h4`
 `;
 
 const DescriptionText = styled.p`
+  text-align: justify;
   font-size: 1.6rem;
   color: ${({ theme }) => theme.text};
   line-height: 1.3;
