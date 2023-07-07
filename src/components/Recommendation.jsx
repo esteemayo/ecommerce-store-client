@@ -136,10 +136,6 @@ const ProductContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  text-decoration: none;
-  font-size: inherit;
-  color: inherit;
-  outline-color: #ddd;
 `;
 
 const ProductTitle = styled.p`
