@@ -250,6 +250,10 @@ const Description = styled.p`
     font-size: 1.4rem;
     letter-spacing: 0;
   }
+
+  @media only screen and (max-width: 18.75em) {
+    width: 68% !important;
+  }
 `;
 
 const Button = styled.button`
