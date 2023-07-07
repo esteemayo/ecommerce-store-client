@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 import { useState } from 'react';
 
-import ProductCard from './ProductCard';
 import Header from '../Header';
+import ProductCard from './ProductCard';
+
 import CartModal from '../modals/CartModal';
 
 import { storeProducts } from '@/data';
