@@ -51,7 +51,7 @@ const Product = ({ product }) => {
     setSlideIndex(newSlideIndex);
   }, [slideIndex]);
 
-  const handleDirection = (direction) => {
+  const handleDirection = useCallback((direction) => {
     setIsSliderMoved(true);
     const distance = imgContainerRef.current.getBoundingClientRect().x;
 
@@ -64,7 +64,7 @@ const Product = ({ product }) => {
       setSlideNumber((prev) => prev + 1);
       imgContainerRef.current.style.transform = `translateX(${-235 + distance}px)`;
     }
-  };
+  }, [clickLimit, slideNumber]);
 
   const handleColor = useCallback((color) => {
     setColor(color);
