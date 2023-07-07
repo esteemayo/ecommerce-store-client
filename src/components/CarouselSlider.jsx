@@ -223,6 +223,7 @@ const Description = styled.p`
 
   @media only screen and (max-width: 37.5em) {
     margin: 1rem 0;
+    letter-spacing: 2px;
   }
 `;
 
