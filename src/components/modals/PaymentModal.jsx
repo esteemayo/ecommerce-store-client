@@ -35,7 +35,7 @@ const PaymentModal = ({ openModal, closeModal, setIsOpen }) => {
     }
   }, [handleClose]);
 
-  const validateForm = () => {
+  const validateForm = useCallback(() => {
     const errors = {};
 
     if (name.trim() === '') {
@@ -47,7 +47,7 @@ const PaymentModal = ({ openModal, closeModal, setIsOpen }) => {
     }
 
     return errors;
-  };
+  }, [address, name]);
 
   const handleClear = () => {
     setInputs(initialState);
