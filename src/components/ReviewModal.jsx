@@ -10,16 +10,16 @@ const ReviewModal = ({ isModalOpen, setIsModalOpen }) => {
   const [review, setReview] = useState('');
   const [terms, setTerms] = useState(false);
 
-  const handleCloseModal = (e) => {
+  const handleCloseModal = useCallback((e) => {
     if (e.target.classList.contains('overlay')) {
       closeModalHandler();
     }
-  };
+  }, [closeModalHandler]);
 
-  const closeModalHandler = () => {
+  const closeModalHandler = useCallback(() => {
     setIsModalOpen(false);
     handleClear();
-  };
+  }, [setIsModalOpen]);
 
   const handleClear = () => {
     setRating(null);
