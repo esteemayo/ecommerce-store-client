@@ -81,13 +81,13 @@ const Product = ({ product }) => {
     type === 'inc' && setQuantity((prev) => prev + 1);
   }, [quantity]);
 
-  const handleReset = () => {
+  const handleReset = useCallback(() => {
     setSize(null);
     setColor(null);
     setQuantity(1);
     setIsSelected(null);
     setSelectedSize(null);
-  };
+  }, []);
 
   const handleClick = () => {
     dispatch(addProduct({ ...product, size, color, quantity }));
