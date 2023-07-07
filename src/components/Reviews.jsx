@@ -10,7 +10,6 @@ import { reviewItems } from '@/data';
 
 const Reviews = () => {
   const [sort, setSort] = useState(null);
-  const [reviews, setReviews] = useState(reviewItems);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isFilterOpen, setIsFilterOpen] = useState(false);
 
