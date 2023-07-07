@@ -133,17 +133,17 @@ const ProductWrapper = styled.div`
 
 const ProductContainer = styled.div`
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  font-size: inherit;
+  color: inherit;
+  outline-color: #ddd;
 
   a {
     &:link,
     &:visited {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      text-decoration: none;
-      font-size: inherit;
-      color: inherit;
-      outline-color: #ddd;
     }
 
     &:active {
