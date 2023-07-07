@@ -227,6 +227,10 @@ const Button = styled.button`
   @media only screen and (max-width: 64em) {
     font-size: 1.65rem;
   }
+
+  @media only screen and (max-width: 50em) {
+    font-size: 1.57rem;
+  }
 `;
 
 const ArrowButton = styled.button`
