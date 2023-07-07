@@ -49,9 +49,9 @@ const PaymentModal = ({ openModal, closeModal, setIsOpen }) => {
     return errors;
   }, [address, name]);
 
-  const handleClear = () => {
+  const handleClear = useCallback(() => {
     setInputs(initialState);
-  };
+  }, []);
 
   const handleSubmit = (e) => {
     e.preventDefault();
