@@ -6,7 +6,7 @@ import { useSelector } from 'react-redux';
 const CartTotal = ({ isOpen, setIsOpen, setIsCash }) => {
   const { tax, total, subtotal } = useSelector((state) => ({ ...state.cart }));
 
-  const handleClose = (e) => {
+  const handleClose = useCallback((e) => {
     if (!e.target.classList.contains('btn-pay')) {
       setIsOpen(false);
     }
@@ -14,7 +14,7 @@ const CartTotal = ({ isOpen, setIsOpen, setIsCash }) => {
     if (e.target.classList.contains('btn-check')) {
       setIsOpen(true);
     }
-  };
+  }, [setIsOpen]);
 
   return (
     <Container onClick={handleClose}>
