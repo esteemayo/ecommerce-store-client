@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { NumericFormat } from 'react-number-format';
+import { useCallback } from 'react';
 import { useSelector } from 'react-redux';
 
 const CartTotal = ({ isOpen, setIsOpen, setIsCash }) => {
