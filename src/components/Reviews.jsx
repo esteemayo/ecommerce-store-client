@@ -11,6 +11,7 @@ import { reviewItems } from '@/data';
 const Reviews = () => {
   const [sort, setSort] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [reviews, setReviews] = useState(reviewItems);
   const [isFilterOpen, setIsFilterOpen] = useState(false);
 
   const handleCloseFilter = () => {
