@@ -6,16 +6,16 @@ const FileUploadModal = ({ openModal, closeModal }) => {
   const [perc, setPerc] = useState(0);
   const [file, setFile] = useState(null);
 
-  const closeModalHandler = (e) => {
+  const closeModalHandler = useCallback((e) => {
     if (e.target.classList.contains('overlay')) {
       handleClose();
     }
-  };
+  }, [handleClose]);
 
-  const handleClose = () => {
+  const handleClose = useCallback(() => {
     closeModal(false);
     file && setFile(null);
-  };
+  }, [file, closeModal]);
 
   const handleUpload = () => {
     console.log(file);
