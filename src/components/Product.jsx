@@ -843,7 +843,7 @@ const ValueAdd = styled.div`
   img {
     width: 2.4rem;
     height: auto;
-    background-color: ${({ darkMode }) => darkMode && '#1b1a1a'};
+    background-color: ${({ mode }) => mode && '#1b1a1a'};
     display: inline-block;
     object-fit: cover;
   }
