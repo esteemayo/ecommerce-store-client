@@ -1,14 +1,13 @@
 import styled from 'styled-components';
 import { useCallback } from 'react';
-
 import CloseIcon from '@mui/icons-material/Close';
 
 const Modal = ({ title, children, openModal, closeModal }) => {
-  const closeModalHandler = (e) => {
+  const closeModalHandler = useCallback((e) => {
     if (e.target.classList.contains('overlay')) {
       closeModal(false);
     }
-  };
+  }, [closeModal]);
 
   return (
     <Overlay
