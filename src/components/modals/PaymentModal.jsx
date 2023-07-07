@@ -17,10 +17,10 @@ const PaymentModal = ({ openModal, closeModal, setIsOpen }) => {
 
   const { name, address } = inputs;
 
-  const handleChange = ({ target: input }) => {
+  const handleChange = useCallback(({ target: input }) => {
     const { name, value } = input;
     setInputs((prev) => ({ ...prev, [name]: value }));
-  };
+  }, []);
 
   const handleClose = useCallback(() => {
     closeModal(false);
