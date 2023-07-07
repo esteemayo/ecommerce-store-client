@@ -5,8 +5,8 @@ import { useState } from 'react';
 
 import { wishlists } from '@/data';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
-import WishlistCard from '@/components/WishlistCard';
-import WishlistHeader from '@/components/WishlistHeader';
+import WishlistCard from '@/components/wishlists/WishlistCard';
+import WishlistHeader from '@/components/wishlists/WishlistHeader';
 import CartModal from '@/components/modals/CartModal';
 
 const WishLists = () => {
