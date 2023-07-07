@@ -38,7 +38,7 @@ const CarouselSlider = () => {
     }, 5000);
 
     return () => clearInterval(slider);
-  }, []);
+  }, [slideNumber]);
 
   return (
     <Container onMouseOver={() => dispatch(closeSubmenu())}>
