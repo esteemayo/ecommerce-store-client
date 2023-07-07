@@ -241,6 +241,11 @@ const Description = styled.p`
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
   }
+
+  @media only screen and (max-width: 25em) {
+    font-size: 1.4rem;
+    letter-spacing: 0;
+  }
 `;
 
 const Button = styled.button`
