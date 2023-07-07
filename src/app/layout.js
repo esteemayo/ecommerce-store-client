@@ -9,7 +9,7 @@ import Footer from '@/components/Footer';
 import { persistor, store } from '@/store/store';
 import Sidebar from '@/components/Sidebar';
 import ScrollToTop from '@/components/ScrollToTop';
-import AppTheme from '@/components/AppTheme';
+import AppThemeProvider from '@/providers/ThemeProvider';
 import Darkmode from '@/components/DarkMode';
 
 import 'react-toastify/dist/ReactToastify.css';
@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
       <body>
         <Provider store={store}>
           <PersistGate loading={null} persistor={persistor}>
-            <AppTheme>
+            <AppThemeProvider>
               <div className='container'>
                 <Navbar />
                 <ToastContainer />
@@ -37,7 +37,7 @@ export default function RootLayout({ children }) {
                 <ScrollToTop />
                 <Darkmode />
               </div>
-            </AppTheme>
+            </AppThemeProvider>
           </PersistGate>
         </Provider>
       </body>
