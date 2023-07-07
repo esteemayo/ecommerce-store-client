@@ -53,7 +53,7 @@ const PaymentModal = ({ openModal, closeModal, setIsOpen }) => {
     setInputs(initialState);
   }, []);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = useCallback((e) => {
     e.preventDefault();
 
     const errors = validateForm();
@@ -62,7 +62,7 @@ const PaymentModal = ({ openModal, closeModal, setIsOpen }) => {
 
     console.log({ ...inputs, total });
     handleClear();
-  };
+  }, [total, inputs, handleClear, validateForm]);
 
   return (
     <Overlay
