@@ -164,6 +164,10 @@ const InfoContainer = styled.div`
     transform: translate(-50%, -50%);
   }
 
+  @media only screen and (max-width: 37.5em) {
+    top: 40%;
+  }
+
   a {
     &:link,
     &:visited {
