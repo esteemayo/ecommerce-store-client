@@ -44,6 +44,7 @@ const CarouselSlider = () => {
     <Container onMouseOver={() => dispatch(closeSubmenu())}>
       <Wrapper>
         {sliderItems.map((item, index) => {
+          const { id, img, url, desc, title } = item;
           let position = 'nextSlide';
 
           if (index === slideNumber) {
@@ -57,7 +58,7 @@ const CarouselSlider = () => {
           }
 
           return (
-            <Article key={index} type={position}>
+            <Article key={id} type={position}>
               <ImageContainer>
                 <Image src={item.img} fill={true} alt='' />
               </ImageContainer>
