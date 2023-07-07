@@ -205,6 +205,10 @@ const Button = styled.button`
   border-radius: 3px;
   outline-color: #ccc;
   cursor: pointer;
+
+  @media only screen and (max-width: 64em) {
+    font-size: 1.65rem;
+  }
 `;
 
 const ArrowButton = styled.button`
