@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 
+import Product from '@/components/Product';
 import Recommendation from '@/components/Recommendation';
 import Reviews from '@/components/Reviews';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
