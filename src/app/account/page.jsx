@@ -7,7 +7,7 @@ import Image from 'next/image';
 import { useDispatch } from 'react-redux';
 
 import Modal from '@/components/Modal';
-import FileUploadModal from '@/components/FileUploadModal';
+import FileUploadModal from '@/components/modals/FileUploadModal';
 import UpdateData from '@/components/UpdateData';
 import UpdatePassword from '@/components/UpdatePassword';
 import DeleteAccount from '@/components/DeleteAccount';
