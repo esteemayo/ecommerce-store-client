@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import Image from 'next/image';
 import { useState } from 'react';
 
-import CartModal from './CartModal';
+import CartModal from './modals/CartModal';
 import ProductCard from './ProductCard';
 
 const ProductList = ({ products }) => {
