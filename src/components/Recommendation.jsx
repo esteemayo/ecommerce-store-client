@@ -34,7 +34,7 @@ const Recommendation = () => {
                 </ProductContainer>
               </Link>
             </ProductWrapper>
-          )
+          );
         })}
       </Wrapper>
     </Container>
