@@ -5,7 +5,7 @@ import { useDispatch } from 'react-redux';
 
 import Product from '@/components/products/Product';
 import Recommendation from '@/components/Recommendation';
-import Reviews from '@/components/Reviews';
+import Reviews from '@/components/reviews/Reviews';
 
 import { storeProducts } from '@/data';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
