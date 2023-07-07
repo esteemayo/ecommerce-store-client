@@ -16,6 +16,7 @@ const Product = ({ product }) => {
   const { darkMode } = useSelector((state) => ({ ...state.darkMode }));
 
   const imgContainerRef = useRef();
+
   const [color, setColor] = useState(null);
   const [size, setSize] = useState(null);
   const [isMoved, setIsMoved] = useState(false);
