@@ -9,8 +9,8 @@ import Footer from '@/components/Footer';
 import { persistor, store } from '@/store/store';
 import Sidebar from '@/components/Sidebar';
 import ScrollToTop from '@/components/ScrollToTop';
-import AppThemeProvider from '@/providers/ThemeProvider';
 import Darkmode from '@/components/DarkMode';
+import AppThemeProvider from '@/providers/ThemeProvider';
 
 import 'react-toastify/dist/ReactToastify.css';
 import './globals.scss';
