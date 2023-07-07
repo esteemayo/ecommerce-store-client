@@ -55,11 +55,11 @@ const CartModal = ({ product, isModalOpen, closeModal, setIsSelectedProduct }) =
     setSelectedSize(null);
   }, []);
 
-  const handleClick = () => {
+  const handleClick = useCallback(() => {
     dispatch(addProduct({ ...product, size, color, quantity }));
     setAlert(true);
     handleReset();
-  };
+  }, [color, size, product, quantity, handleReset, dispatch]);
 
   useEffect(() => {
     const timeout = setTimeout(() => {
