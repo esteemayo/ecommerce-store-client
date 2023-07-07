@@ -20,7 +20,8 @@ const Category = () => {
           <Wrapper key={index}>
             <Image
               src={item}
-              fill={true}
+              width={1200}
+              height={1200}
               alt=''
             />
             <HeadingWrapper>
@@ -119,7 +120,6 @@ const Wrapper = styled.div`
   img {
     width: 100%;
     height: 25rem;
-    position: relative;
     display: block;
     object-fit: cover;
     border-radius: 3px;
