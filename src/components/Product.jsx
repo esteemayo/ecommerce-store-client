@@ -36,7 +36,7 @@ const Product = ({ product }) => {
     setIsOpen(true);
   }, []);
 
-  const handleMove = (direction) => {
+  const handleMove = useCallback((direction) => {
     let newSlideIndex;
 
     setIsMoved(true);
@@ -49,7 +49,7 @@ const Product = ({ product }) => {
     }
 
     setSlideIndex(newSlideIndex);
-  };
+  }, [slideIndex]);
 
   const handleDirection = (direction) => {
     setIsSliderMoved(true);
