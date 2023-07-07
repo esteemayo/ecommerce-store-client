@@ -66,10 +66,10 @@ const Product = ({ product }) => {
     }
   };
 
-  const handleColor = (color) => {
+  const handleColor = useCallback((color) => {
     setColor(color);
     setIsSelected(color);
-  };
+  }, []);
 
   const handleSize = (size) => {
     setSize(size);
