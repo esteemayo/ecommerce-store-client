@@ -8,7 +8,7 @@ import { NumericFormat } from 'react-number-format';
 import { useState } from 'react';
 
 import { excerpts } from '@/utils';
-import DeleteModal from './DeleteModal';
+import DeleteModal from './modals/DeleteModal';
 
 const WishlistCard = ({ wishlists, onDelete, openModal, setIsSelectedProduct }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
