@@ -60,7 +60,7 @@ const CarouselSlider = () => {
           return (
             <Article key={id} type={position}>
               <ImageContainer>
-                <Image src={item.img} fill={true} alt='' />
+                <Image src={img} fill={true} alt='' />
               </ImageContainer>
               <InfoContainer>
                 <Title>{item.title}</Title>
