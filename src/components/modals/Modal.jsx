@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import { useCallback } from 'react';
+
 import CloseIcon from '@mui/icons-material/Close';
 
 const Modal = ({ title, children, openModal, closeModal }) => {
