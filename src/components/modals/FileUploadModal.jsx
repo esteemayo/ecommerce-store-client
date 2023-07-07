@@ -17,9 +17,9 @@ const FileUploadModal = ({ openModal, closeModal }) => {
     file && setFile(null);
   }, [file, closeModal]);
 
-  const handleUpload = () => {
+  const handleUpload = useCallback(() => {
     console.log(file);
-  };
+  }, [file]);
 
   return (
     <Overlay
