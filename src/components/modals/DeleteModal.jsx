@@ -21,10 +21,10 @@ const DeleteModal = ({ openModal, closeModal, onDelete, wishlistId }) => {
     return window.removeEventListener('keydown', exitModal);
   }, [closeModal]);
 
-  const deleteWishlistHandler = (wishlistId) => {
+  const deleteWishlistHandler = useCallback((wishlistId) => {
     onDelete(wishlistId);
     closeModal(false);
-  };
+  }, [onDelete, closeModal]);
 
   return (
     <Overlay
