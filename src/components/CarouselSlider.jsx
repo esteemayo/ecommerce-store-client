@@ -231,7 +231,7 @@ const Description = styled.p`
   }
 
   @media only screen and (max-width: 31.25em) {
-    font-size: 1.57rem;
+    font-size: 1.5rem;
   }
 `;
 
