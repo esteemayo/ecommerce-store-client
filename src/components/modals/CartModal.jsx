@@ -4,8 +4,8 @@ import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useCallback, useEffect, useState } from 'react';
 import { faMinus, faPlus } from '@fortawesome/free-solid-svg-icons';
-import { useDispatch, useSelector } from 'react-redux';
 import { NumericFormat } from 'react-number-format';
+import { useDispatch, useSelector } from 'react-redux';
 
 import { addProduct } from '@/features/cart/cartSlice';
 
