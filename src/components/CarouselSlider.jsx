@@ -253,6 +253,7 @@ const Description = styled.p`
 
   @media only screen and (max-width: 18.75em) {
     width: 68% !important;
+    font-size: 1.3rem;
   }
 `;
 
