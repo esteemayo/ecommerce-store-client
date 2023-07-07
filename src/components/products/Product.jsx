@@ -8,8 +8,8 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import { NumericFormat } from 'react-number-format';
 
 import StarRating from '@/components/StarRating';
-import { addProduct } from '@/features/cart/cartSlice';
 import ProductImageModal from '../modals/ProductImageModal';
+import { addProduct } from '@/features/cart/cartSlice';
 
 const Product = ({ product }) => {
   const dispatch = useDispatch();
