@@ -89,8 +89,8 @@ const CarouselSlider = () => {
           {sliderItems.map((_, index) => {
             return (
               <ActiveSlideButton
-                type='button'
                 key={index}
+                type='button'
                 active={index === slideNumber}
                 onClick={() => setSlideNumber(index)}
               >
