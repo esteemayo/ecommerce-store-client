@@ -243,7 +243,7 @@ const Product = ({ product }) => {
             {alert && <SuccessMessage>Item added to cart</SuccessMessage>}
             <Hr />
             <ValueAddWrapper>
-              <ValueAdd darkMode={darkMode}>
+              <ValueAdd mode={darkMode}>
                 <Image
                   src='/img/Shipping-black.svg'
                   width={24}
@@ -252,7 +252,7 @@ const Product = ({ product }) => {
                 />
                 <span>Free Shipping over $50</span>
               </ValueAdd>
-              <ValueAdd darkMode={darkMode}>
+              <ValueAdd mode={darkMode}>
                 <Image
                   src='/img/Returns-black.svg'
                   width={24}
