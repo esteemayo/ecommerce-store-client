@@ -19,7 +19,7 @@ const ReviewModal = ({ isModalOpen, setIsModalOpen }) => {
   const closeModalHandler = useCallback(() => {
     setIsModalOpen(false);
     handleClear();
-  }, [setIsModalOpen]);
+  }, [setIsModalOpen, handleClear]);
 
   const handleClear = useCallback(() => {
     setRating(null);
