@@ -71,10 +71,10 @@ const Product = ({ product }) => {
     setIsSelected(color);
   }, []);
 
-  const handleSize = (size) => {
+  const handleSize = useCallback((size) => {
     setSize(size);
     setSelectedSize(size);
-  };
+  }, []);
 
   const handleQuantity = (type) => {
     type === 'dec' && quantity > 1 && setQuantity((prev) => prev - 1);
