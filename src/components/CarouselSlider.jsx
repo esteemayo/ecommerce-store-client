@@ -186,6 +186,11 @@ const Description = styled.p`
   font-size: 2rem;
   color: inherit;
   letter-spacing: 3px;
+
+  @media only screen and (max-width: 64em) {
+    font-size: 1.7rem;
+    letter-spacing: 0.5rem;
+  }
 `;
 
 const Button = styled.button`
