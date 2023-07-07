@@ -31,10 +31,10 @@ const Product = ({ product }) => {
 
   const lastIndex = product?.images?.lastIndexOf(product?.images[product?.images.length - 1]);
 
-  const handleOpen = (index) => {
+  const handleOpen = useCallback((index) => {
     setSlideIndex(index);
     setIsOpen(true);
-  };
+  }, []);
 
   const handleMove = (direction) => {
     let newSlideIndex;
