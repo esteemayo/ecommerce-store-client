@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { NumericFormat } from 'react-number-format';
 import { faHeart } from '@fortawesome/free-regular-svg-icons';
+import { useCallback } from 'react';
 
 import StarRating from '../StarRating';
 
