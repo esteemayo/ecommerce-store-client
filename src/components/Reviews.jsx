@@ -27,11 +27,11 @@ const Reviews = () => {
     };
   }, []);
 
-  const getSort = useMemo((sort) => {
+  const getSort = useMemo(() => {
     if (sort === 'newest') return 'newest';
     if (sort === 'highest') return 'highest rating';
     if (sort === 'lowest') return 'lowest rating';
-  }, []);
+  }, [sort]);
 
   useEffect(() => {
     if (sort === 'newest') {
