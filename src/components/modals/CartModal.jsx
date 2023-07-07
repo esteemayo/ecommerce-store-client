@@ -30,7 +30,7 @@ const CartModal = ({ product, isModalOpen, closeModal, setIsSelectedProduct }) =
     closeModal(false);
     setIsSelectedProduct(null);
     handleReset();
-  }, [closeModal, setIsSelectedProduct]);
+  }, [closeModal, setIsSelectedProduct, handleReset]);
 
   const handleColor = useCallback((color) => {
     setColor(color);
