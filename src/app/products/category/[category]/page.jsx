@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 
 import { storeProducts } from '@/data';
-import ProductList from '@/components/ProductList';
+import ProductList from '@/components/products/ProductList';
 import { getUnique } from '@/utils';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
