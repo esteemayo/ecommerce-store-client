@@ -6,6 +6,8 @@ import StarRating from './StarRating';
 import ReviewModal from './ReviewModal';
 import ReviewCard from './ReviewCard';
 
+import { reviewItems } from '@/data';
+
 const Reviews = () => {
   const [sort, setSort] = useState(null);
   const [reviews, setReviews] = useState(reviewItems);
