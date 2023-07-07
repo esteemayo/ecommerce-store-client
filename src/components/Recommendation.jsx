@@ -140,16 +140,6 @@ const ProductContainer = styled.div`
   font-size: inherit;
   color: inherit;
   outline-color: #ddd;
-
-  a {
-    &:link,
-    &:visited {
-    }
-
-    &:active {
-      color: currentColor;
-    }
-  }
 `;
 
 const ProductTitle = styled.p`
