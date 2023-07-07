@@ -173,6 +173,10 @@ const InfoContainer = styled.div`
 const Title = styled.h1`
   font-size: 5rem;
   color: inherit;
+
+  @media only screen and (max-width: 64em) {
+    font-size: 4.7rem;
+  }
 `;
 
 const Description = styled.p`
