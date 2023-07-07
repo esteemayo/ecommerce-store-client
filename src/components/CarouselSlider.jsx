@@ -232,7 +232,7 @@ const Description = styled.p`
   }
 
   @media only screen and (max-width: 31.25em) {
-    font-size: 1.5rem;
+    font-size: 1.45rem;
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
   }
