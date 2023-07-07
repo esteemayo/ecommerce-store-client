@@ -7,7 +7,6 @@ import { useDispatch } from 'react-redux';
 
 import { sliderItems } from '@/data';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
-import Link from 'next/link';
 
 const CarouselSlider = () => {
   const dispatch = useDispatch();
