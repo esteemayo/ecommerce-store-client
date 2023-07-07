@@ -245,6 +245,11 @@ const Button = styled.button`
     font-size: 1.57rem;
     border-width: 2px;
   }
+
+  @media only screen and (max-width: 37.5em) {
+    padding: 0.7rem;
+    font-size: 1.5rem;
+  }
 `;
 
 const ArrowButton = styled.button`
