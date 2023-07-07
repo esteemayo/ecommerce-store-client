@@ -9,8 +9,6 @@ import Reviews from '@/components/Reviews';
 
 import { storeProducts } from '@/data';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
-import { storeProducts } from '@/data';
-import Product from '@/components/Product';
 
 const SingleProduct = ({ params }) => {
   const { id } = params;
