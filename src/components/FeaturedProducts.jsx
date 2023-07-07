@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import { useState } from 'react';
 
 import ProductCard from './ProductCard';
-import { storeProducts } from '@/data';
 import Header from './Header';
 import CartModal from './CartModal';
 
