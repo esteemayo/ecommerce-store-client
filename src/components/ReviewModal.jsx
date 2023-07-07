@@ -21,11 +21,11 @@ const ReviewModal = ({ isModalOpen, setIsModalOpen }) => {
     handleClear();
   }, [setIsModalOpen]);
 
-  const handleClear = () => {
+  const handleClear = useCallback(() => {
     setRating(null);
     setReview('');
     setTerms(false);
-  };
+  }, []);
 
   const handleClick = () => {
     console.log({ rating, review, terms });
