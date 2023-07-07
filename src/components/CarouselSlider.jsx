@@ -201,6 +201,10 @@ const Description = styled.p`
     letter-spacing: 0.5rem;
     margin: 2rem 0;
   }
+
+  @media only screen and (max-width: 50em) {
+    margin: 1.5rem 0;
+  }
 `;
 
 const Button = styled.button`
