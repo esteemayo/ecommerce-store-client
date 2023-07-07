@@ -155,6 +155,13 @@ const InfoContainer = styled.div`
     padding-right: 0;
   }
 
+  @media only screen and (max-width: 50em) {
+    top: 50%;
+    left: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+  }
+
   a {
     &:link,
     &:visited {
