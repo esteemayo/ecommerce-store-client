@@ -22,12 +22,12 @@ const PaymentModal = ({ openModal, closeModal, setIsOpen }) => {
     setInputs((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleClose = () => {
+  const handleClose = useCallback(() => {
     closeModal(false);
     setIsOpen(false);
     errors && setErrors({});
     handleClear();
-  };
+  }, [errors, closeModal, setIsOpen]);
 
   const handleClick = (e) => {
     if (e.target.classList.contains('overlay')) {
