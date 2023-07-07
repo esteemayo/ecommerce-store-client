@@ -20,8 +20,7 @@ const Category = () => {
           <Wrapper key={index}>
             <Image
               src={item}
-              width={1200}
-              height={1200}
+              fill={true}
               alt=''
             />
             <HeadingWrapper>
