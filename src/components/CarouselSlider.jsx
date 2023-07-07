@@ -63,7 +63,7 @@ const CarouselSlider = () => {
                 <Image src={img} fill={true} alt='' />
               </ImageContainer>
               <InfoContainer>
-                <Title>{item.title}</Title>
+                <Title>{title}</Title>
                 <Description>{item.desc}</Description>
                 <Link href={item.url} passHref>
                   <Button type='button'>Shop now</Button>
