@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import Categories from '@/components/Categories';
 import FeaturedProducts from '@/components/products/FeaturedProducts';
-import TopReviews from '@/components/TopReviews';
+import TopReviews from '@/components/reviews/TopReviews';
 import CarouselSlider from '@/components/CarouselSlider';
 
 const Home = () => {
