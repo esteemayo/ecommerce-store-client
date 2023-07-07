@@ -27,7 +27,7 @@ const Recommendation = () => {
                   <ProductTitle>{name}</ProductTitle>
                   <ProductPrice>
                     <NumericFormat
-                      value={price}
+                      value={price.toFixed(2)}
                       displayType={'text'}
                       thousandSeparator={true}
                       prefix={'$'}
