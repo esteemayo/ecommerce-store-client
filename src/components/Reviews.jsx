@@ -4,7 +4,6 @@ import { useEffect, useState } from 'react';
 
 import StarRating from './StarRating';
 import ReviewModal from './ReviewModal';
-import { reviewItems } from '@/data';
 import ReviewCard from './ReviewCard';
 
 const Reviews = () => {
