@@ -65,7 +65,7 @@ const CarouselSlider = () => {
               <InfoContainer>
                 <Title>{title}</Title>
                 <Description>{desc}</Description>
-                <Link href={item.url} passHref>
+                <Link href={url} passHref>
                   <Button type='button'>Shop now</Button>
                 </Link>
               </InfoContainer>
