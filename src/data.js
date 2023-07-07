@@ -1304,3 +1304,24 @@ export const orders = [
     updatedAt: '2023-02-05T16:44:49.632Z',
   },
 ];
+
+export const recommendations = [
+  {
+    id: 1,
+    image: '/img/user-9.jpg',
+    name: 'The Rain Bucket Hat in Black',
+    price: 39.50,
+  },
+  {
+    id: 2,
+    image: '/img/user-5.jpg',
+    name: 'The Skyline Collared Jacket in Rosin',
+    price: 169,
+  },
+  {
+    id: 3,
+    image: '/img/user-8.jpg',
+    name: 'The Skyline Reversible Bomber in Black',
+    price: 169,
+  },
+];
