@@ -14,7 +14,7 @@ const Recommendation = () => {
           const { id, image, name, price } = item;
           return (
             <ProductWrapper key={id}>
-              <Link href='#' passHref>
+              <Link href={`/products/${encodeURIComponent(id)}`} passHref>
                 <Image
                   src={image}
                   width={400}
