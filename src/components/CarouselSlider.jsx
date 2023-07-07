@@ -280,6 +280,10 @@ const Button = styled.button`
     font-size: 1.4rem;
     border-width: 1px;
   }
+
+  @media only screen and (max-width: 25em) {
+    font-size: 1.37rem;
+  }
 `;
 
 const ArrowButton = styled.button`
