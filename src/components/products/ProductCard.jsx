@@ -10,10 +10,10 @@ import { useCallback } from 'react';
 import StarRating from '../StarRating';
 
 const ProductCard = ({ product, openModal, setIsSelectedProduct }) => {
-  const handleOpen = () => {
+  const handleOpen = useCallback(() => {
     openModal(true);
     setIsSelectedProduct(product);
-  };
+  }, [product, openModal, setIsSelectedProduct]);
 
   return (
     <Container>
