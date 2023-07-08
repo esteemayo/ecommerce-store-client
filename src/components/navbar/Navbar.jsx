@@ -54,15 +54,7 @@ const Navbar = () => {
     <Container onMouseOver={handleSubmenu}>
       <Wrapper>
         <LogoBox>
-          <Link href='/' passHref>
-            <Image
-              src='/img/logo.png'
-              width={100}
-              height={100}
-              priority
-              alt=''
-            />
-          </Link>
+          <Logo />
         </LogoBox>
         <ToggleButton onClick={() => dispatch(openSidebar())}>
           <FontAwesomeIcon icon={faBars} />
