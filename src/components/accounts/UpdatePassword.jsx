@@ -39,7 +39,7 @@ const UpdatePassword = ({ onCancel }) => {
     return errors;
   }, [inputs]);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = useCallback((e) => {
     e.preventDefault();
 
     const errors = validateForm();
@@ -48,7 +48,7 @@ const UpdatePassword = ({ onCancel }) => {
 
     console.log({ ...inputs });
     handleClear();
-  };
+  }, [inputs, validateForm]);
 
   const handleClear = () => {
     setInputs(initialState);
