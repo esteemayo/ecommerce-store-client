@@ -9,7 +9,7 @@ import Image from 'next/image';
 import CartHeader from '@/components/carts/CartHeader';
 import CartItem from '@/components/carts/CartItem';
 import PaymentModal from '@/components/modals/PaymentModal';
-import CartTotal from '@/components/CartTotal';
+import CartTotal from '@/components/carts/CartTotal';
 
 import { calcTotals } from '@/features/cart/cartSlice';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
