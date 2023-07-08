@@ -10,4 +10,8 @@ const Container = styled.div`
   
 `;
 
+const Icon = styled.div`
+  
+`;
+
 export default DarkModeToggle;
