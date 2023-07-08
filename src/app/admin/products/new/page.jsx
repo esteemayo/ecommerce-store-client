@@ -78,7 +78,7 @@ const NewProduct = () => {
     return errors;
   }, [data, tags]);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = useCallback((e) => {
     e.preventDefault();
 
     const errors = validateForm();
@@ -86,7 +86,7 @@ const NewProduct = () => {
     setErrors({});
 
     console.log({ ...data, files, color, size, tags });
-  };
+  }, [color, data, files, size, tags, validateForm]);
 
   useEffect(() => {
     nameRef.current.focus();
