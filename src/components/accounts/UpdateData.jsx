@@ -52,11 +52,11 @@ const UpdateData = ({ onCancel }) => {
     setData(initialState);
   }, []);
 
-  const closeHandler = () => {
+  const closeHandler = useCallback(() => {
     onCancel();
     handleClear();
     errors && setErrors();
-  };
+  }, [errors, handleClear, onCancel]);
 
   return (
     <Container>
