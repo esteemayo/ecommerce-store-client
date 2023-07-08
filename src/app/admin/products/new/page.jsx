@@ -43,7 +43,7 @@ const NewProduct = () => {
     setTags(e.target.value.split(','));
   }, []);
 
-  const validateForm = () => {
+  const validateForm = useCallback(() => {
     const errors = {};
     const { name, desc, price, priceDiscount, numberInStock, category } = data;
 
@@ -76,7 +76,7 @@ const NewProduct = () => {
     }
 
     return errors;
-  };
+  }, [data, tags]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
