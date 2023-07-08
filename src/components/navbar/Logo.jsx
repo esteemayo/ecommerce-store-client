@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const Logo = () => {
   return (
-    <div>
+    <Container>
       <Link href='/' passHref>
         <Image
           src='/img/logo.png'
@@ -14,7 +14,7 @@ const Logo = () => {
           alt=''
         />
       </Link>
-    </div>
+    </Container>
   );
 }
 
