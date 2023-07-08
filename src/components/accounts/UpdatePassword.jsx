@@ -50,9 +50,9 @@ const UpdatePassword = ({ onCancel }) => {
     handleClear();
   }, [inputs, validateForm]);
 
-  const handleClear = () => {
+  const handleClear = useCallback(() => {
     setInputs(initialState);
-  };
+  }, []);
 
   const cancelHandler = () => {
     onCancel();
