@@ -6,9 +6,6 @@ import { ToastContainer } from 'react-toastify';
 
 import Navbar from '@/components/navbar/Navbar';
 import Submenu from '@/components/Submenu';
-import Footer from '@/components/Footer';
-import { persistor, store } from '@/store/store';
-import Sidebar from '@/components/Sidebar';
 import ScrollToTop from '@/components/ScrollToTop';
 import Darkmode from '@/components/DarkMode';
 import AppThemeProvider from '@/providers/ThemeProvider';
