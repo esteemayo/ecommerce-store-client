@@ -5,9 +5,9 @@ import { useCallback, useEffect, useState } from 'react';
 const ScrollToTop = () => {
   const [isVisible, setIsVisible] = useState(false);
 
-  const toggleVisibility = () => {
+  const toggleVisibility = useCallback(() => {
     setIsVisible(window.pageYOffset > 500 ? true : false);
-  };
+  }, []);
 
   const scrollHandler = () => {
     window.scrollTo({
