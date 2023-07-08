@@ -35,9 +35,9 @@ const NewProduct = () => {
     setColor(e.target.value.split(','));
   }, []);
 
-  const handleSize = (e) => {
+  const handleSize = useCallback((e) => {
     setSize(e.target.value.split(','));
-  };
+  }, []);
 
   const handleTags = (e) => {
     setTags(e.target.value.split(','));
