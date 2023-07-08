@@ -31,9 +31,9 @@ const NewProduct = () => {
     setData((prev) => ({ ...prev, [name]: value }));
   }, []);
 
-  const handleColor = (e) => {
+  const handleColor = useCallback((e) => {
     setColor(e.target.value.split(','));
-  };
+  }, []);
 
   const handleSize = (e) => {
     setSize(e.target.value.split(','));
