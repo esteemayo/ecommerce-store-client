@@ -26,10 +26,10 @@ const NewProduct = () => {
   const [errors, setErrors] = useState({});
   const [color, setColor] = useState([]);
 
-  const handleChange = ({ target: input }) => {
+  const handleChange = useCallback(({ target: input }) => {
     const { name, value } = input;
     setData((prev) => ({ ...prev, [name]: value }));
-  };
+  }, []);
 
   const handleColor = (e) => {
     setColor(e.target.value.split(','));
