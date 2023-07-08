@@ -9,7 +9,7 @@ const Logo = () => {
         <Image
           src='/img/logo.png'
           width={100}
-          height={100}
+          height={50}
           priority
           alt=''
         />
