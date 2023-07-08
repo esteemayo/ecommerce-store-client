@@ -39,9 +39,9 @@ const NewProduct = () => {
     setSize(e.target.value.split(','));
   }, []);
 
-  const handleTags = (e) => {
+  const handleTags = useCallback((e) => {
     setTags(e.target.value.split(','));
-  };
+  }, []);
 
   const validateForm = () => {
     const errors = {};
