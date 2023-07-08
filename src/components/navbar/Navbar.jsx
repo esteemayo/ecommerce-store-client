@@ -8,6 +8,7 @@ import { faBagShopping, faBars } from '@fortawesome/free-solid-svg-icons';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { useDispatch, useSelector } from 'react-redux';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 import { calcTotals } from '@/features/cart/cartSlice';
 import { closeSubmenu, openSidebar, openSubmenu } from '@/features/submenu/submenuSlice';
