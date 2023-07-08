@@ -11,8 +11,10 @@ import {
 } from '@/data';
 
 const Footer = () => {
-  const date = new Date();
-  const year = date.getFullYear();
+  const year = useMemo(() => {
+    const date = new Date();
+    return date.getFullYear();
+  }, []);
 
   return (
     <Container>
