@@ -10,6 +10,7 @@ import CartHeader from '@/components/carts/CartHeader';
 import CartItem from '@/components/carts/CartItem';
 import PaymentModal from '@/components/modals/PaymentModal';
 import CartTotal from '@/components/CartTotal';
+
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 import { calcTotals } from '@/features/cart/cartSlice';
 
