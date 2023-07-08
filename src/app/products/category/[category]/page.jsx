@@ -8,6 +8,9 @@ import ProductList from '@/components/products/ProductList';
 import { getUnique } from '@/utils';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
+import { storeProducts } from '@/data';
+import { getUnique } from '@/utils';
+
 const ProductCategory = ({ params }) => {
   const { category } = params;
   const dispatch = useDispatch();
