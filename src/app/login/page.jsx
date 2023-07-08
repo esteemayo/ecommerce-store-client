@@ -38,14 +38,14 @@ const Login = () => {
     return false;
   }, [password, username]);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = useCallback((e) => {
     e.preventDefault();
 
     if (validateForm()) return;
     setErrors({});
 
     console.log({ username, password });
-  };
+  }, [password, username, validateForm]);
 
   useEffect(() => {
     usernameRef.current.focus();
