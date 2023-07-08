@@ -107,6 +107,7 @@ const Navbar = () => {
           </ListItem>
         </ListContainer>
         <ButtonContainer>
+          <DarkMode />
           {!user ? (
             <LoginButton
               onMouseOver={() => setIsHover(true)}
