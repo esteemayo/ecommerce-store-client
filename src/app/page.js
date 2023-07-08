@@ -1,4 +1,5 @@
 'use client';
+
 import styled from 'styled-components';
 
 import Categories from '@/components/categories/Categories';
