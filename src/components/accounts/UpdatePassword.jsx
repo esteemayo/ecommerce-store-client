@@ -13,10 +13,10 @@ const UpdatePassword = ({ onCancel }) => {
   const [errors, setErrors] = useState({});
   const [inputs, setInputs] = useState(initialState);
 
-  const handleChange = ({ target: input }) => {
+  const handleChange = useCallback(({ target: input }) => {
     const { name, value } = input;
     setInputs((prev) => ({ ...prev, [name]: value }));
-  };
+  }, []);
 
   const validateForm = () => {
     const errors = {};
