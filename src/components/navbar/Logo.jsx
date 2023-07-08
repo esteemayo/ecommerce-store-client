@@ -4,7 +4,17 @@ import Image from 'next/image';
 
 const Logo = () => {
   return (
-    <div>Logo</div>
+    <div>
+      <Link href='/' passHref>
+        <Image
+          src='/img/logo.png'
+          width={100}
+          height={100}
+          priority
+          alt=''
+        />
+      </Link>
+    </div>
   );
 }
 
