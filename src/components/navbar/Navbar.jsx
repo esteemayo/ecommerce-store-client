@@ -13,6 +13,7 @@ import { calcTotals } from '@/features/cart/cartSlice';
 import { closeSubmenu, openSidebar, openSubmenu } from '@/features/submenu/submenuSlice';
 
 import Logo from './Logo';
+import DarkMode from './DarkMode';
 
 const Navbar = () => {
   const user = true;
