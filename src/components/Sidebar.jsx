@@ -14,10 +14,10 @@ const Sidebar = () => {
 
   const [query, setQuery] = useState('');
 
-  const handleSearch = (e) => {
+  const handleSearch = useCallback((e) => {
     e.preventDefault();
     console.log(query);
-  };
+  }, [query]);
 
   return (
     <Container type={isSidebarOpen ? 'show' : ''}>
