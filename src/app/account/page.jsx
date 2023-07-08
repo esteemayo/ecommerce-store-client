@@ -12,6 +12,7 @@ import FileUploadModal from '@/components/modals/FileUploadModal';
 import UpdateData from '@/components/accounts/UpdateData';
 import UpdatePassword from '@/components/accounts/UpdatePassword';
 import DeleteAccount from '@/components/accounts/DeleteAccount';
+
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
 const Account = () => {
