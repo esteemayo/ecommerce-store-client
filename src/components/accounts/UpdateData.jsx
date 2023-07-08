@@ -17,7 +17,7 @@ const UpdateData = ({ onCancel }) => {
     setData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const validateForm = () => {
+  const validateForm = useCallback(() => {
     const errors = {};
     const { email, password } = data;
 
@@ -35,7 +35,7 @@ const UpdateData = ({ onCancel }) => {
     }
 
     return errors;
-  };
+  }, [data]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
