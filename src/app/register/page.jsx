@@ -23,10 +23,10 @@ const Register = () => {
   const [perc, setPerc] = useState(null);
   const [data, setData] = useState(initialState);
 
-  const handleChange = ({ target: input }) => {
+  const handleChange = useCallback(({ target: input }) => {
     const { name, value } = input;
     setData((prev) => ({ ...prev, [name]: value }));
-  };
+  }, []);
 
   const validateForm = () => {
     const errors = {};
