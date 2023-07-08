@@ -18,10 +18,10 @@ const ProductCategory = ({ params }) => {
   const [products, setProducts] = useState(storeProducts);
   const [sortedProducts, setSortedProducts] = useState([]);
 
-  const handleFilter = ({ target: input }) => {
+  const handleFilter = useCallback(({ target: input }) => {
     const { name, value } = input;
     setFilters((prev) => ({ ...prev, [name]: value }));
-  };
+  }, []);
 
   useEffect(() => {
     category && setSortedProducts(
