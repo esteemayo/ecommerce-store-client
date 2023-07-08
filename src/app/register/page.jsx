@@ -62,7 +62,7 @@ const Register = () => {
     return errors;
   }, [data]);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = useCallback((e) => {
     e.preventDefault();
 
     const errors = validateForm();
@@ -70,7 +70,7 @@ const Register = () => {
     setErrors({});
 
     console.log({ ...data, email: data.email.toLowerCase(), file });
-  };
+  }, [data, file, validateForm]);
 
   return (
     <Container onMouseOver={() => dispatch(closeSubmenu())}>
