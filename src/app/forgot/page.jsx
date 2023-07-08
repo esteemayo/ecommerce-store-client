@@ -27,7 +27,7 @@ const Forgot = () => {
     return errors;
   }, [email]);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = useCallback((e) => {
     e.preventDefault();
 
     const errors = validateForm();
@@ -35,7 +35,7 @@ const Forgot = () => {
     setErrors({});
 
     console.log(email);
-  };
+  }, [email, validateForm]);
 
   useEffect(() => {
     emailRef.current.focus();
