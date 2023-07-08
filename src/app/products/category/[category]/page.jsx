@@ -6,6 +6,7 @@ import { useDispatch } from 'react-redux';
 import ProductList from '@/components/products/ProductList';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
+import { getUnique } from '@/utils';
 import { storeProducts } from '@/data';
 
 const ProductCategory = ({ params }) => {
