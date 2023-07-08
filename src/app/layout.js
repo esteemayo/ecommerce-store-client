@@ -8,6 +8,7 @@ import Navbar from '@/components/navbar/Navbar';
 import Footer from '@/components/Footer';
 import Submenu from '@/components/Submenu';
 import ScrollToTop from '@/components/ScrollToTop';
+import Sidebar from '@/components/Sidebar';
 import Darkmode from '@/components/DarkMode';
 import AppThemeProvider from '@/providers/ThemeProvider';
 
