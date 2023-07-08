@@ -18,7 +18,7 @@ const Login = () => {
   const username = usernameRef.current?.value;
   const password = passwordRef.current?.value;
 
-  const validateForm = () => {
+  const validateForm = useCallback(() => {
     const tempErrors = {};
 
     if (username === '') {
@@ -36,7 +36,7 @@ const Login = () => {
       return true;
     }
     return false;
-  };
+  }, [password, username]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
