@@ -28,7 +28,7 @@ const Register = () => {
     setData((prev) => ({ ...prev, [name]: value }));
   }, []);
 
-  const validateForm = () => {
+  const validateForm = useCallback(() => {
     const errors = {};
     const { name, email, username, password, confirmPassword } = data;
 
@@ -60,7 +60,7 @@ const Register = () => {
     }
 
     return errors;
-  }
+  }, [data]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
