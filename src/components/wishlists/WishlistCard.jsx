@@ -19,10 +19,10 @@ const WishlistCard = ({ wishlists, onDelete, openModal, setIsSelectedProduct }) 
     setIsSelectedProduct(wishlist);
   }, [openModal, setIsSelectedProduct]);
 
-  const handleOpenModal = (id) => {
+  const handleOpenModal = useCallback((id) => {
     setIsSelectedId(id);
     setIsModalOpen(true);
-  };
+  }, []);
 
   return (
     <Container>
