@@ -33,14 +33,14 @@ const ResetPassword = () => {
     return false;
   }, [confirmPassword, password]);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = useCallback((e) => {
     e.preventDefault();
 
     if (validateForm()) return;
     setErrors({});
 
     console.log({ password, confirmPassword });
-  };
+  }, [confirmPassword, password, validateForm]);
 
   useEffect(() => {
     passwordRef.current.focus();
