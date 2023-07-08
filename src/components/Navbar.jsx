@@ -37,11 +37,11 @@ const Navbar = () => {
     dispatch(openSubmenu(submenu));
   }, [dispatch]);
 
-  const handleSubmenu = (e) => {
+  const handleSubmenu = useCallback((e) => {
     if (!e.target.classList.contains('link-btn')) {
       dispatch(closeSubmenu());
     }
-  };
+  }, [dispatch]);
 
   useEffect(() => {
     dispatch(calcTotals());
