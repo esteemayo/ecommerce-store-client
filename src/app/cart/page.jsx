@@ -11,6 +11,7 @@ import CartItem from '@/components/carts/CartItem';
 import PaymentModal from '@/components/modals/PaymentModal';
 import CartTotal from '@/components/CartTotal';
 
+import { calcTotals } from '@/features/cart/cartSlice';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 import { calcTotals } from '@/features/cart/cartSlice';
 
