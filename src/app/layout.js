@@ -3,7 +3,7 @@ import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
 import { ToastContainer } from 'react-toastify';
 
-import Navbar from '@/components/Navbar';
+import Navbar from '@/components/navbar/Navbar';
 import Submenu from '@/components/Submenu';
 import Footer from '@/components/Footer';
 import { persistor, store } from '@/store/store';
