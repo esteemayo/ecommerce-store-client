@@ -12,7 +12,7 @@ const Forgot = () => {
   const [email, setEmail] = useState(null);
   const [errors, setErrors] = useState({});
 
-  const validateForm = () => {
+  const validateForm = useCallback(() => {
     const errors = {};
 
     if (!email) {
@@ -25,7 +25,7 @@ const Forgot = () => {
     }
 
     return errors;
-  };
+  }, [email]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
