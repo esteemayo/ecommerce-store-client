@@ -54,11 +54,11 @@ const UpdatePassword = ({ onCancel }) => {
     setInputs(initialState);
   }, []);
 
-  const cancelHandler = () => {
+  const cancelHandler = useCallback(() => {
     onCancel();
     handleClear();
     errors && setErrors();
-  };
+  }, [errors, handleClear, onCancel]);
 
   return (
     <Container>
