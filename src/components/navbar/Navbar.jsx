@@ -13,6 +13,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { calcTotals } from '@/features/cart/cartSlice';
 import { closeSubmenu, openSidebar, openSubmenu } from '@/features/submenu/submenuSlice';
 
+import Logo from './Logo';
+
 const Navbar = () => {
   const user = true;
   const dispatch = useDispatch();
