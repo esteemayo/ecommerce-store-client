@@ -46,11 +46,11 @@ const UpdateData = ({ onCancel }) => {
 
     console.log({ ...data });
     handleClear();
-  }, [data, validateForm]);
+  }, [data, validateForm, handleClear]);
 
-  const handleClear = () => {
+  const handleClear = useCallback(() => {
     setData(initialState);
-  };
+  }, []);
 
   const closeHandler = () => {
     onCancel();
