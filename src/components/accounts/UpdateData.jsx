@@ -37,7 +37,7 @@ const UpdateData = ({ onCancel }) => {
     return errors;
   }, [data]);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = useCallback((e) => {
     e.preventDefault();
 
     const errors = validateForm();
@@ -46,7 +46,7 @@ const UpdateData = ({ onCancel }) => {
 
     console.log({ ...data });
     handleClear();
-  };
+  }, [data, validateForm]);
 
   const handleClear = () => {
     setData(initialState);
