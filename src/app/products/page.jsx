@@ -22,10 +22,10 @@ const Products = () => {
     sortedProducts: [],
   });
 
-  const handleChange = ({ target: input }) => {
+  const handleChange = useCallback(({ target: input }) => {
     const { name, value } = input;
     setValues((prev) => ({ ...prev, [name]: value }));
-  };
+  }, []);
 
   const { category, size, color, price, products, sortedProducts } = values;
 
