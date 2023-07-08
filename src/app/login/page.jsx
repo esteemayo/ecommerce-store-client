@@ -1,7 +1,7 @@
 'use client';
 import styled from 'styled-components';
 import Link from 'next/link';
-import { useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { FaFacebookF } from 'react-icons/fa';
 import Image from 'next/image';
