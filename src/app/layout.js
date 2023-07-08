@@ -5,6 +5,7 @@ import { PersistGate } from 'redux-persist/integration/react';
 import { ToastContainer } from 'react-toastify';
 
 import Navbar from '@/components/navbar/Navbar';
+import Footer from '@/components/Footer';
 import Submenu from '@/components/Submenu';
 import ScrollToTop from '@/components/ScrollToTop';
 import Darkmode from '@/components/DarkMode';
