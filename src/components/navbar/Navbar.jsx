@@ -13,7 +13,7 @@ import { calcTotals } from '@/features/cart/cartSlice';
 import { closeSubmenu, openSidebar, openSubmenu } from '@/features/submenu/submenuSlice';
 
 import Logo from './Logo';
-import DarkMode from './DarkMode';
+import DarkModeToggle from './DarkModeToggle';
 
 const Navbar = () => {
   const user = true;
@@ -107,7 +107,7 @@ const Navbar = () => {
           </ListItem>
         </ListContainer>
         <ButtonContainer>
-          <DarkMode />
+          <DarkModeToggle />
           {!user ? (
             <LoginButton
               onMouseOver={() => setIsHover(true)}
