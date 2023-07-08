@@ -19,7 +19,7 @@ const Navbar = () => {
 
   const [isHover, setIsHover] = useState(false);
 
-  const displaySubmenu = (e) => {
+  const displaySubmenu = useCallback((e) => {
     const page = e.target.textContent;
     const tempBtn = e.target.getBoundingClientRect();
 
@@ -35,7 +35,7 @@ const Navbar = () => {
     };
 
     dispatch(openSubmenu(submenu));
-  };
+  }, [dispatch]);
 
   const handleSubmenu = (e) => {
     if (!e.target.classList.contains('link-btn')) {
