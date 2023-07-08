@@ -48,7 +48,7 @@ const UpdatePassword = ({ onCancel }) => {
 
     console.log({ ...inputs });
     handleClear();
-  }, [inputs, validateForm]);
+  }, [inputs, validateForm, handleClear]);
 
   const handleClear = useCallback(() => {
     setInputs(initialState);
