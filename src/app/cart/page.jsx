@@ -13,7 +13,6 @@ import CartTotal from '@/components/CartTotal';
 
 import { calcTotals } from '@/features/cart/cartSlice';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
-import { calcTotals } from '@/features/cart/cartSlice';
 
 const Cart = () => {
   const dispatch = useDispatch();
