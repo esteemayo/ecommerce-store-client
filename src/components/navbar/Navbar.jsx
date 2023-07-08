@@ -166,21 +166,6 @@ const LogoBox = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-
-  a {
-    &:link,
-    &:visited {
-      text-decoration: none;
-      outline-color: var(--clr-primary-green);
-    }
-
-    img {
-      width: 10rem;
-      height: 5rem;
-      display: block;
-      object-fit: cover;
-    }
-  }
 `;
 
 const ToggleButton = styled.button`
