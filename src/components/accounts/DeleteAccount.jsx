@@ -2,9 +2,9 @@ import styled from 'styled-components';
 import { useCallback } from 'react';
 
 const DeleteAccount = ({ onCancel }) => {
-  const handleDelete = () => {
+  const handleDelete = useCallback(() => {
     console.log('user deleted!');
-  };
+  }, []);
 
   return (
     <Container>
