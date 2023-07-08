@@ -16,9 +16,9 @@ const WishLists = () => {
   const [products, setProducts] = useState(wishlists);
   const [isSelectedProduct, setIsSelectedProduct] = useState({});
 
-  const handleDelete = (id) => {
+  const handleDelete = useCallback((id) => {
     setProducts((prev) => prev.filter((item) => item.id !== id));
-  };
+  }, []);
 
   if (products.length < 1) {
     return (
