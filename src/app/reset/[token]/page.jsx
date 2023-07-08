@@ -13,7 +13,7 @@ const ResetPassword = () => {
   const [errors, setErrors] = useState({});
   const [confirmPassword, setConfirmPassword] = useState('');
 
-  const validateForm = () => {
+  const validateForm = useCallback(() => {
     const tempErrors = {};
 
     if (!password) {
@@ -31,7 +31,7 @@ const ResetPassword = () => {
       return true;
     }
     return false;
-  };
+  }, [confirmPassword, password]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
