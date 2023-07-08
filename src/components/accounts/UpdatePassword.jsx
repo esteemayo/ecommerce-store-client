@@ -18,7 +18,7 @@ const UpdatePassword = ({ onCancel }) => {
     setInputs((prev) => ({ ...prev, [name]: value }));
   }, []);
 
-  const validateForm = () => {
+  const validateForm = useCallback(() => {
     const errors = {};
     const { password, confirmPassword, currentPassword } = inputs;
 
@@ -37,7 +37,7 @@ const UpdatePassword = ({ onCancel }) => {
     }
 
     return errors;
-  };
+  }, [inputs]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
