@@ -14,10 +14,10 @@ const WishlistCard = ({ wishlists, onDelete, openModal, setIsSelectedProduct }) 
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isSelectedId, setIsSelectedId] = useState(null);
 
-  const handleClick = (wishlist) => {
+  const handleClick = useCallback((wishlist) => {
     openModal(true);
     setIsSelectedProduct(wishlist);
-  };
+  }, [openModal, setIsSelectedProduct]);
 
   const handleOpenModal = (id) => {
     setIsSelectedId(id);
