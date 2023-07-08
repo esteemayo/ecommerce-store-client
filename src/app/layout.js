@@ -10,6 +10,8 @@ import Submenu from '@/components/Submenu';
 import ScrollToTop from '@/components/ScrollToTop';
 import Sidebar from '@/components/Sidebar';
 import Darkmode from '@/components/DarkMode';
+
+import { persistor, store } from '@/store/store';
 import AppThemeProvider from '@/providers/ThemeProvider';
 
 import 'react-toastify/dist/ReactToastify.css';
