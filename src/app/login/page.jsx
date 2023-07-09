@@ -393,7 +393,7 @@ const RegisterText = styled.p`
       display: inline-block;
       text-decoration: none;
       text-decoration-color: var(--clr-tertiary-green);
-      color: #89a8a0;
+      color: var(--clr-tertiary-green);
       outline-color: #ddd;
       transition: all 0.3s ease;
     }
