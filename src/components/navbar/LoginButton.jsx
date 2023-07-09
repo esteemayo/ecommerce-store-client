@@ -34,6 +34,14 @@ const Button = styled.button`
   border-radius: 10rem;
   outline-color: var(--clr-primary-green);
   cursor: pointer;
+
+  a {
+    &:link,
+    &:visited {
+      display: inline-block;
+      text-decoration: none;
+    }
+  }
 `;
 
 export default LoginButton;
