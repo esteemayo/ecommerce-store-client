@@ -48,6 +48,8 @@ const CartTotal = styled.span`
   background-color: var(--clr-tertiary-green);
   color: var(--clr-white);
   border-radius: 50%;
+  display: flex;
+  align-items: center;
 `;
 
 export default CartQuantity;
