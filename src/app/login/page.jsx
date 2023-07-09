@@ -392,7 +392,7 @@ const RegisterText = styled.p`
     &:visited {
       display: inline-block;
       text-decoration: none;
-      text-decoration-color: #89a8a0;
+      text-decoration-color: var(--clr-tertiary-green);
       color: #89a8a0;
       outline-color: #ddd;
       transition: all 0.3s ease;
