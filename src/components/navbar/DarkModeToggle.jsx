@@ -30,6 +30,7 @@ const Ball = styled.div`
   width: 1.5rem;
   height: 1.5rem;
   background-color: var(--clr-primary-green);
+  border-radius: 50%;
 `;
 
 export default DarkModeToggle;
