@@ -50,6 +50,8 @@ const CartTotal = styled.span`
   border-radius: 50%;
   display: flex;
   align-items: center;
+  justify-content: center;
+  position: absolute;
 `;
 
 export default CartQuantity;
