@@ -203,7 +203,7 @@ export const lightTheme = {
   filterHov: 'rgba(0, 0, 0, 0.07)',
   bgRevCard: '#f4f8f7',
   starBorder: '#eef2ff',
-  textRevDate: '#89a8a0',
+  textRevDate: 'var(--clr-tertiary-green)',
   bgRevBtn: '#e2e9e7',
   bgImgRevBtn: '#eaf7f3',
   textRevBtn: '#89a8a0',
