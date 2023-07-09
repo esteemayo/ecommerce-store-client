@@ -121,12 +121,7 @@ const Navbar = () => {
               </Link>
             </LoginButton>
           ) : (
-            <CartWrapper>
-              <Link href='/cart' passHref>
-                <FontAwesomeIcon icon={faBagShopping} />
-                <CartTotal>{qty}</CartTotal>
-              </Link>
-            </CartWrapper>
+            <CartQuantity qty={qty} />
           )}
         </ButtonContainer>
       </Wrapper>
