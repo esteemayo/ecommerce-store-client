@@ -11,7 +11,7 @@ const DarkModeToggle = () => {
   const { darkMode } = useSelector((state) => ({ ...state.darkMode }));
 
   return (
-    <Container>
+    <Container onClick={() => dispatch(toggle())}>
       <Icon>🌙</Icon>
       <Icon>🔆</Icon>
       <Ball mode={darkMode} />
