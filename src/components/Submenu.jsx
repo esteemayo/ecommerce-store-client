@@ -1,4 +1,5 @@
 'use client';
+
 import styled from 'styled-components';
 import Link from 'next/link';
 import { useEffect, useState, useRef } from 'react';
