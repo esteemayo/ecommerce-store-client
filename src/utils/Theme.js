@@ -178,7 +178,7 @@ export const lightTheme = {
   bgModal: 'var(--clr-white)',
   bgModalCloseBtn: '#f9f9f9',
   textModal: '#999999',
-  textModalBtn: '#89a8a0',
+  textModalBtn: 'var(--clr-tertiary-green)',
   textModalDelBtn: 'var(--clr-white)',
   modalInputBorder: '#eef2ff',
   cartModalBorder: '#e2e9e7',
