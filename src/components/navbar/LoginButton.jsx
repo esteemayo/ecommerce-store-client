@@ -4,9 +4,8 @@ import styled from 'styled-components';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import Link from 'next/link';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import { useState } from 'react';
 
-const LoginButton = () => {
+const LoginButton = ({ isHover }) => {
   return (
     <>
       <Button type='button'>Sign in</Button>
