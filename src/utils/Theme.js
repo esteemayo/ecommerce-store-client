@@ -146,7 +146,7 @@ export const lightTheme = {
   boxCat: '2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.47)',
   textCat: 'var(--clr-white)',
   bgCatBtn: 'rgba(137, 168, 160, 0.5)',
-  bgCatBtnOut: '#89a8a0',
+  bgCatBtnOut: 'var(--clr-tertiary-green)',
   textFilterLabel: 'inherit',
   textFilterSelect: '#999999',
   filterOut: '#eeeeee',
