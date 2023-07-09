@@ -38,6 +38,8 @@ const Container = styled.div`
 
 const Icon = styled.div`
   font-size: 1.2rem;
+  display: flex;
+  align-items: center;
 `;
 
 const Ball = styled.div`
