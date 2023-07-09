@@ -3,9 +3,9 @@
 import styled from 'styled-components';
 import Link from 'next/link';
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { useDispatch } from 'react-redux';
-import { FaFacebookF } from 'react-icons/fa';
 import Image from 'next/image';
+import { FaFacebookF } from 'react-icons/fa';
+import { useDispatch } from 'react-redux';
 
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
