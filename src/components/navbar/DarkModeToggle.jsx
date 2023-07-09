@@ -8,7 +8,7 @@ const DarkModeToggle = () => {
     <Container>
       <Icon>🌙</Icon>
       <Icon>🔆</Icon>
-      <Ball />
+      <Ball mode={darkMode} />
     </Container>
   );
 }
