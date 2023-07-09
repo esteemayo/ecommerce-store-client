@@ -42,7 +42,8 @@ const Container = styled.div`
 `;
 
 const CartTotal = styled.span`
-  
+  width: 2rem;
+  height: 2rem;
 `;
 
 export default CartQuantity;
