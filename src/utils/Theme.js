@@ -150,7 +150,7 @@ export const lightTheme = {
   textFilterLabel: 'inherit',
   textFilterSelect: '#999999',
   filterOut: '#eeeeee',
-  textPagination: '#89a8a0',
+  textPagination: 'var(--clr-tertiary-green)',
   boxPagination: '0 2rem 4rem rgba(145, 143, 143, 0.1)',
   textNotFound: 'inherit',
   textFormHeader: '#979797',
