@@ -41,7 +41,7 @@ const Icon = styled.div`
   align-items: center;
 
   svg {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: var(--clr-white);
   }
 `;
