@@ -18,6 +18,8 @@ const Button = styled.button`
   padding: 0.75rem 2rem;
   background-color: var(--clr-primary-green);
   color: var(--clr-white);
+  border-radius: 10rem;
+  outline-color: var(--clr-primary-green);
 `;
 
 export default LoginButton;
