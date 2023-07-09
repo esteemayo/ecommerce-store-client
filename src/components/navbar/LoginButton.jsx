@@ -49,6 +49,8 @@ const Button = styled.button`
       position: absolute;
       top: 3px;
       right: -1rem;
+      font-size: 1.25rem;
+      fill: currentColor;
     }
   }
 `;
