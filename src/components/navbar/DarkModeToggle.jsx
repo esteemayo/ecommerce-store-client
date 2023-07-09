@@ -4,6 +4,7 @@ const DarkModeToggle = () => {
   return (
     <Container>
       <Icon>🌙</Icon>
+      <Icon>🔆</Icon>
     </Container>
   );
 }
