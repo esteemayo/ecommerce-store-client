@@ -299,7 +299,7 @@ const CartTotal = styled.span`
   width: 2rem;
   height: 2rem;
   font-size: 1rem;
-  background-color: #89a8a0;
+  background-color: var(--clr-tertiary-green);
   color: var(--clr-white);
   border-radius: 50%;
   display: flex;
