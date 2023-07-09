@@ -13,6 +13,8 @@ const LoginButton = () => {
 const Button = styled.button`
   border: none;
   display: inline-block;
+  font-weight: 600;
+  font-size: 1.5rem;
 `;
 
 export default LoginButton;
