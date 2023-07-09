@@ -6,7 +6,6 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import { useCallback, useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useDispatch, useSelector } from 'react-redux';
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 import { calcTotals } from '@/features/cart/cartSlice';
