@@ -186,7 +186,7 @@ export const lightTheme = {
   bgWlHeader: '#f9f9f9',
   textWlHeader: '#999999',
   bgWlHeaderBtn: 'var(--clr-white)',
-  textWlHeaderBtn: '#89a8a0',
+  textWlHeaderBtn: 'var(--clr-tertiary-green)',
   bgWlCard: 'var(--clr-white)',
   textWlCardName: '#6d857f',
   textWlCard: '#999999',
