@@ -2,6 +2,8 @@ import styled from 'styled-components';
 import { useSelector } from 'react-redux';
 
 const DarkModeToggle = () => {
+  const { darkMode } = useSelector((state) => ({ ...state.darkMode }));
+
   return (
     <Container>
       <Icon>🌙</Icon>
