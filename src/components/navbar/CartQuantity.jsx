@@ -20,7 +20,7 @@ const CartQuantity = () => {
 }
 
 const Container = styled.div`
-  
+  position: relative;
 `;
 
 const CartTotal = styled.span`
