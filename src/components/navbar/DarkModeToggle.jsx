@@ -27,7 +27,7 @@ const Container = styled.div`
   width: 4.2rem;
   height: 2.4rem;
   padding: 2px;
-  border: 2px solid var(--clr-primary-green);
+  border: 2px solid #89a8a0;
   border-radius: 3rem;
   display: flex;
   align-items: center;
@@ -49,7 +49,7 @@ const Icon = styled.div`
 const Ball = styled.div`
   width: 1.5rem;
   height: 1.5rem;
-  background-color: var(--clr-primary-green);
+  background-color: #89a8a0;
   border-radius: 50%;
   position: absolute;
   left: ${({ mode }) => !mode && '2px'};
