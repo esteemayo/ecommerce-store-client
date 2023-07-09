@@ -5,7 +5,7 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import Link from 'next/link';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
-const LoginButton = ({ isHover }) => {
+const LoginButton = ({ isHover, onMouse }) => {
   return (
     <>
       <Button type='button'>
