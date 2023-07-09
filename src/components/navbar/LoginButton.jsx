@@ -16,6 +16,8 @@ const Button = styled.button`
   font-weight: 600;
   font-size: 1.5rem;
   padding: 0.75rem 2rem;
+  background-color: var(--clr-primary-green);
+  color: var(--clr-white);
 `;
 
 export default LoginButton;
