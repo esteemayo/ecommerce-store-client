@@ -21,6 +21,19 @@ const CartQuantity = () => {
 
 const Container = styled.div`
   position: relative;
+
+  a {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: var(--clr-white);
+      outline-color: var(--clr-primary-green);
+    }
+
+    &:active {
+      color: currentColor;
+    }
+  }
 `;
 
 const CartTotal = styled.span`
