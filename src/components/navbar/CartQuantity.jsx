@@ -7,6 +7,8 @@ import { faBagShopping } from '@fortawesome/free-solid-svg-icons';
 import { useSelector } from 'react-redux';
 
 const CartQuantity = () => {
+  const { qty } = useSelector((state) => ({ ...state.cart }));
+
   return (
     <Container>CartQuantity</Container>
   );
