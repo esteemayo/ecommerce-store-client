@@ -52,6 +52,8 @@ const CartTotal = styled.span`
   align-items: center;
   justify-content: center;
   position: absolute;
+  top: -0.7rem;
+  right: -1rem;
 `;
 
 export default CartQuantity;
