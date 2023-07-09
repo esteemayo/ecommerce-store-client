@@ -150,7 +150,7 @@ const Wrapper = styled.div`
     &:visited {
       text-decoration: none;
       color: inherit;
-      outline-color: #89a8a0;
+      outline-color: var(--clr-tertiary-green);
     }
 
     &:active {
