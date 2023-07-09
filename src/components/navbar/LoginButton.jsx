@@ -42,6 +42,7 @@ const Button = styled.button`
       text-decoration: none;
       color: currentColor;
       outline-color: var(--clr-primary-green);
+      position: relative;
     }
   }
 `;
