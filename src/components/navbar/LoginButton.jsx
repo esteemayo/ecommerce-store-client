@@ -40,6 +40,8 @@ const Button = styled.button`
     &:visited {
       display: inline-block;
       text-decoration: none;
+      color: currentColor;
+      outline-color: var(--clr-primary-green);
     }
   }
 `;
