@@ -15,6 +15,7 @@ const Button = styled.button`
   display: inline-block;
   font-weight: 600;
   font-size: 1.5rem;
+  padding: 0.75rem 2rem;
 `;
 
 export default LoginButton;
