@@ -14,6 +14,7 @@ const Container = styled.div`
   height: 2.4rem;
   padding: 2px;
   border: 1.5px solid var(--clr-primary-green);
+  border-radius: 3rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
