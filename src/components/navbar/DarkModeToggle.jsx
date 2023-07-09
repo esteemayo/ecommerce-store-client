@@ -37,6 +37,7 @@ const Ball = styled.div`
   border-radius: 50%;
   position: absolute;
   left: ${({ mode }) => !mode && '2px'};
+  right: ${({ mode }) => mode && '2px'};
 `;
 
 export default DarkModeToggle;
