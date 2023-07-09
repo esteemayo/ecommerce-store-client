@@ -54,6 +54,7 @@ const CartTotal = styled.span`
   position: absolute;
   top: -0.7rem;
   right: -1rem;
+  cursor: pointer;
 `;
 
 export default CartQuantity;
