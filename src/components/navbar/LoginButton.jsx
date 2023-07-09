@@ -20,6 +20,7 @@ const Button = styled.button`
   color: var(--clr-white);
   border-radius: 10rem;
   outline-color: var(--clr-primary-green);
+  cursor: pointer;
 `;
 
 export default LoginButton;
