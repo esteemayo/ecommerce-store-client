@@ -10,7 +10,12 @@ const CartQuantity = () => {
   const { qty } = useSelector((state) => ({ ...state.cart }));
 
   return (
-    <Container>CartQuantity</Container>
+    <Container>
+      <Link href='/cart' passHref>
+        <FontAwesomeIcon icon={faBagShopping} />
+        <CartTotal>{qty}</CartTotal>
+      </Link>
+    </Container>
   );
 }
 
