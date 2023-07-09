@@ -44,6 +44,10 @@ const Button = styled.button`
       outline-color: var(--clr-primary-green);
       position: relative;
     }
+
+    svg {
+      position: absolute;
+    }
   }
 `;
 
