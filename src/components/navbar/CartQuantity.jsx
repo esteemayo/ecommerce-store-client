@@ -47,6 +47,7 @@ const CartTotal = styled.span`
   font-size: 1rem;
   background-color: var(--clr-tertiary-green);
   color: var(--clr-white);
+  border-radius: 50%;
 `;
 
 export default CartQuantity;
