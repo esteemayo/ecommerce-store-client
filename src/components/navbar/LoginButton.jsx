@@ -54,6 +54,11 @@ const Button = styled.button`
       transition: 150ms cubic-bezier(0.22, 0.61, 0.36, 1);
     }
   }
+
+  &:hover {
+    background-color: hsla(0, 0%, 100%, 0.4);
+    opacity: 1;
+  }
 `;
 
 export default LoginButton;
