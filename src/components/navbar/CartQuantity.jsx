@@ -33,6 +33,11 @@ const Container = styled.div`
     &:active {
       color: currentColor;
     }
+
+    svg {
+      font-size: 2.3rem;
+      fill: currentColor;
+    }
   }
 `;
 
