@@ -10,6 +10,8 @@ const DarkModeToggle = () => {
 }
 
 const Container = styled.div`
+  width: 4.2rem;
+  height: 2.4rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
