@@ -16,7 +16,6 @@ import Logo from './Logo';
 import DarkModeToggle from './DarkModeToggle';
 import LoginButton from './LoginButton';
 import CartQuantity from './CartQuantity';
-import LoginButton from './LoginButton';
 
 const Navbar = () => {
   const user = true;
