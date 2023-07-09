@@ -29,6 +29,7 @@ const Icon = styled.div`
 const Ball = styled.div`
   width: 1.5rem;
   height: 1.5rem;
+  background-color: var(--clr-primary-green);
 `;
 
 export default DarkModeToggle;
