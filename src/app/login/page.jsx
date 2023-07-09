@@ -400,7 +400,7 @@ const RegisterText = styled.p`
 
     &:hover {
       text-decoration: underline;
-      text-decoration-color: #89a8a0;
+      text-decoration-color: var(--clr-tertiary-green);
       text-underline-offset: 0.4rem;
     }
   }
