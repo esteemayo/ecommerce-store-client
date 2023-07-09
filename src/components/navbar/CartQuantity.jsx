@@ -15,4 +15,8 @@ const Container = styled.div`
   
 `;
 
+const CartTotal = styled.span`
+  
+`;
+
 export default CartQuantity;
