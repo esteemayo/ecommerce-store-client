@@ -160,7 +160,7 @@ export const lightTheme = {
   inputOut: '#eeeeee',
   boxForm: '0 2rem 4rem rgba(145, 143, 143, 0.25)',
   inputCaret: 'var(--caret-light)',
-  fileInput: '#89a8a0',
+  fileInput: 'var(--clr-tertiary-green)',
   uploadFileInput: '#89a8a0',
   textFile: '#89a8a0',
   bgSuccess: '#f4f8f7',
