@@ -12,7 +12,9 @@ const DarkModeToggle = () => {
 
   return (
     <Container onClick={() => dispatch(toggle())}>
-      <Icon>🌙</Icon>
+      <Icon>
+        <DarkModeOutlined />
+      </Icon>
       <Icon>🔆</Icon>
       <Ball mode={darkMode} />
     </Container>
