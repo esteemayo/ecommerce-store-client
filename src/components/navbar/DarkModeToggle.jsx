@@ -4,6 +4,8 @@ import styled from 'styled-components';
 import { DarkModeOutlined, LightModeOutlined } from '@mui/icons-material';
 import { useDispatch, useSelector } from 'react-redux';
 
+import { toggle } from '@/features/darkMode/darkModeSlice';
+
 const DarkModeToggle = () => {
   const dispatch = useDispatch();
   const { darkMode } = useSelector((state) => ({ ...state.darkMode }));
