@@ -14,6 +14,7 @@ import { closeSubmenu, openSidebar, openSubmenu } from '@/features/submenu/subme
 
 import Logo from './Logo';
 import DarkModeToggle from './DarkModeToggle';
+import LoginButton from './LoginButton';
 import CartQuantity from './CartQuantity';
 import LoginButton from './LoginButton';
 
