@@ -268,7 +268,7 @@ const Button = styled.button`
     120deg,
     transparent 0%,
     transparent 50%,
-    #89a8a0 50%
+    var(--clr-tertiary-green) 50%
   );
   background-size: 220%;
   outline-color: #85beae;
