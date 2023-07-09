@@ -14,6 +14,7 @@ import { closeSubmenu, openSidebar, openSubmenu } from '@/features/submenu/subme
 
 import Logo from './Logo';
 import DarkModeToggle from './DarkModeToggle';
+import CartQuantity from './CartQuantity';
 
 const Navbar = () => {
   const user = true;
