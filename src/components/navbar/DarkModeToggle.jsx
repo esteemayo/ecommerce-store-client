@@ -37,6 +37,10 @@ const Container = styled.div`
 `;
 
 const Icon = styled.div`
+  display: flex;
+  align-items: center;
+
+  svg {
   font-size: 1.2rem;
   color: var(--clr-white);
   display: flex;
