@@ -214,7 +214,7 @@ export const lightTheme = {
   textRevCloseBtn: '#8a8ca0',
   textRevCloseBtnHov: '#6f707e',
   bgAddBtnDis: '#f9f9f9',
-  colCrumbs: '#89a8a0',
+  colCrumbs: 'var(--clr-tertiary-green)',
   bgMode: 'rgb(236, 236, 236)',
   bgIconMode: '#39393c',
   textMode: '#e4e4e8',
