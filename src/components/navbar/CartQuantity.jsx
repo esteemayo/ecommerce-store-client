@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const CartQuantity = () => {
   return (
-    <div>CartQuantity</div>
+    <Container>CartQuantity</Container>
   );
 }
 
