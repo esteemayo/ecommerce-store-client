@@ -15,7 +15,9 @@ const DarkModeToggle = () => {
       <Icon>
         <DarkModeOutlined />
       </Icon>
-      <Icon>🔆</Icon>
+      <Icon>
+        <LightModeOutlined />
+      </Icon>
       <Ball mode={darkMode} />
     </Container>
   );
