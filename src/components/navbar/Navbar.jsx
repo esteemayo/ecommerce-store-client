@@ -121,7 +121,7 @@ const Navbar = () => {
               </Link>
             </LoginButton>
           ) : (
-            <CartQuantity qty={qty} />
+            <CartQuantity amount={qty} />
           )}
         </ButtonContainer>
       </Wrapper>
