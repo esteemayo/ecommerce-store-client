@@ -1,6 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
+import { DarkModeOutlined, LightModeOutlined } from '@mui/icons-material';
 import { useDispatch, useSelector } from 'react-redux';
 
 const DarkModeToggle = () => {
