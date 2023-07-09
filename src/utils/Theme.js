@@ -206,7 +206,7 @@ export const lightTheme = {
   textRevDate: 'var(--clr-tertiary-green)',
   bgRevBtn: '#e2e9e7',
   bgImgRevBtn: '#eaf7f3',
-  textRevBtn: '#89a8a0',
+  textRevBtn: 'var(--clr-tertiary-green)',
   textReview: '#757373',
   revOut: '#eeeeee',
   bgRevCloseBtn: '#f5f4ff',
