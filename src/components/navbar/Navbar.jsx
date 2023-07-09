@@ -269,20 +269,4 @@ const LoginButton = styled.button`
   }
 `;
 
-const CartTotal = styled.span`
-  width: 2rem;
-  height: 2rem;
-  font-size: 1rem;
-  background-color: var(--clr-tertiary-green);
-  color: var(--clr-white);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: -0.7rem;
-  right: -1rem;
-  cursor: pointer;
-`;
-
 export default Navbar;
