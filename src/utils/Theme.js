@@ -162,7 +162,7 @@ export const lightTheme = {
   inputCaret: 'var(--caret-light)',
   fileInput: 'var(--clr-tertiary-green)',
   uploadFileInput: 'var(--clr-tertiary-green)',
-  textFile: '#89a8a0',
+  textFile: 'var(--clr-tertiary-green)',
   bgSuccess: '#f4f8f7',
   bgInfo: 'hsla(0, 0%, 100%, 0.4)',
   successIcon: '#409384',
