@@ -2,7 +2,6 @@
 
 import styled from 'styled-components';
 import Link from 'next/link';
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import { useCallback, useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useDispatch, useSelector } from 'react-redux';
