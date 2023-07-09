@@ -8,7 +8,13 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 const LoginButton = ({ isHover }) => {
   return (
     <>
-      <Button type='button'>Sign in</Button>
+      <Button type='button'>
+        <Link href='/login' passHref>
+          Sign in
+          &nbsp;
+          {isHover ? <ArrowForwardIcon /> : <ArrowForwardIosIcon />}
+        </Link>
+      </Button>
     </>
   );
 }
