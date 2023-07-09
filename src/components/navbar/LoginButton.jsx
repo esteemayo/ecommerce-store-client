@@ -4,7 +4,9 @@ import styled from 'styled-components';
 
 const LoginButton = () => {
   return (
-    <>LoginButton</>
+    <>
+      <Button type='button'>Sign in</Button>
+    </>
   );
 }
 
