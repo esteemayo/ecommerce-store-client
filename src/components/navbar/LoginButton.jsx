@@ -34,6 +34,7 @@ const Button = styled.button`
   border-radius: 10rem;
   outline-color: var(--clr-primary-green);
   cursor: pointer;
+  transition: all 0.2s ease;
 
   a {
     &:link,
