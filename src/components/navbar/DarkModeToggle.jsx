@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { useDispatch, useSelector } from 'react-redux';
 
 const DarkModeToggle = () => {
+  const dispatch = useDispatch();
   const { darkMode } = useSelector((state) => ({ ...state.darkMode }));
 
   return (
