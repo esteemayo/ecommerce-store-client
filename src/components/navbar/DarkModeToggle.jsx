@@ -20,6 +20,7 @@ const Container = styled.div`
   align-items: center;
   justify-content: space-between;
   position: relative;
+  cursor: pointer;
 `;
 
 const Icon = styled.div`
