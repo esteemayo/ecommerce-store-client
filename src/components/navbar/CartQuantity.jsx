@@ -44,6 +44,9 @@ const Container = styled.div`
 const CartTotal = styled.span`
   width: 2rem;
   height: 2rem;
+  font-size: 1rem;
+  background-color: var(--clr-tertiary-green);
+  color: var(--clr-white);
 `;
 
 export default CartQuantity;
