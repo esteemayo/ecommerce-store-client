@@ -8,4 +8,8 @@ const LoginButton = () => {
   );
 }
 
+const Button = styled.button`
+  
+`;
+
 export default LoginButton;
