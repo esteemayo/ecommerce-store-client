@@ -11,7 +11,8 @@ const LoginButton = () => {
 }
 
 const Button = styled.button`
-  
+  border: none;
+  display: inline-block;
 `;
 
 export default LoginButton;
