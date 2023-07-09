@@ -51,6 +51,7 @@ const Button = styled.button`
       right: -1rem;
       font-size: 1.25rem;
       fill: currentColor;
+      transition: 150ms cubic-bezier(0.22, 0.61, 0.36, 1);
     }
   }
 `;
