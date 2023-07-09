@@ -122,7 +122,7 @@ export const lightTheme = {
   bgProdCard: 'var(--clr-white)',
   box: '0 0 1.5rem -1rem rgba(0, 0, 0, 0.75)',
   textProdCard: '#6e6e6e',
-  star: '#89a8a0',
+  star: 'var(--clr-tertiary-green)',
   textBtn: 'var(--clr-white)',
   textPrice: '#555555',
   bgRev: '#fffdfd',
