@@ -111,16 +111,7 @@ const Navbar = () => {
         <ButtonContainer>
           <DarkModeToggle />
           {!user ? (
-            <LoginButton
-              onMouseOver={() => setIsHover(true)}
-              onMouseLeave={() => setIsHover(false)}
-            >
-              <Link href='/login' passHref>
-                Sign in
-                &nbsp;
-                {isHover ? <ArrowForwardIcon /> : <ArrowForwardIosIcon />}
-              </Link>
-            </LoginButton>
+            <LoginButton isHover={isHover} onMouse={setIsHover} />
           ) : (
             <CartQuantity amount={qty} />
           )}
