@@ -21,7 +21,7 @@ const Container = styled.div`
 `;
 
 const Icon = styled.div`
-  
+  font-size: 1.2rem;
 `;
 
 const Ball = styled.div`
