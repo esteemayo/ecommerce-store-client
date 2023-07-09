@@ -47,6 +47,8 @@ const Button = styled.button`
 
     svg {
       position: absolute;
+      top: 3px;
+      right: -1rem;
     }
   }
 `;
