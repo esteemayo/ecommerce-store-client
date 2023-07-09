@@ -1,3 +1,5 @@
+'use client';
+
 import styled from 'styled-components';
 import { useDispatch, useSelector } from 'react-redux';
 
