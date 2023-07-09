@@ -27,7 +27,7 @@ const Container = styled.div`
   width: 4.2rem;
   height: 2.4rem;
   padding: 2px;
-  border: 1.5px solid var(--clr-primary-green);
+  border: 2px solid var(--clr-primary-green);
   border-radius: 3rem;
   display: flex;
   align-items: center;
