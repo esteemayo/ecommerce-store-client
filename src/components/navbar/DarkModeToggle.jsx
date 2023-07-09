@@ -24,4 +24,8 @@ const Icon = styled.div`
   
 `;
 
+const Ball = styled.div`
+
+`;
+
 export default DarkModeToggle;
