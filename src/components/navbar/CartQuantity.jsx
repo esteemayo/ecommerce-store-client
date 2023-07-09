@@ -5,12 +5,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 import { faBagShopping } from '@fortawesome/free-solid-svg-icons';
 
-const CartQuantity = ({ qty }) => {
+const CartQuantity = ({ amount }) => {
   return (
     <Container>
       <Link href='/cart' passHref>
         <FontAwesomeIcon icon={faBagShopping} />
-        <CartTotal>{qty}</CartTotal>
+        <CartTotal>{amount}</CartTotal>
       </Link>
     </Container>
   );
