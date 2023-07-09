@@ -41,10 +41,9 @@ const Icon = styled.div`
   align-items: center;
 
   svg {
-  font-size: 1.2rem;
-  color: var(--clr-white);
-  display: flex;
-  align-items: center;
+    font-size: 1.2rem;
+    color: var(--clr-white);
+  }
 `;
 
 const Ball = styled.div`
