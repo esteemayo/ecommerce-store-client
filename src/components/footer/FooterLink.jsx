@@ -10,7 +10,9 @@ const FooterLink = ({ data }) => {
         const { id, url, text } = item;
         return (
           <LinkItem key={id}>
-            <Link href={url} passHref>{text}</Link>
+            <Link href={url} passHref>
+              {text}
+            </Link>
           </LinkItem>
         );
       })}
