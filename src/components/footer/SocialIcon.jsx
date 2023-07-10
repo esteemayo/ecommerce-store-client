@@ -7,11 +7,11 @@ const SocialIcon = ({ data }) => {
   return (
     <Container>
       {data.map((item) => {
-        const { id, url, icon: Icon, color } = item;
+        const { id, url, icon, color } = item;
         return (
           <Link key={id} href={url} passHref>
             <IconWrapper color={color}>
-              <Icon />
+              {icon}
             </IconWrapper>
           </Link>
         )
