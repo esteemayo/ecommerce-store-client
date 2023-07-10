@@ -28,23 +28,23 @@ import {
 
 export const navLinks = [
   {
-    id: 'products',
+    id: 1,
     text: 'products',
   },
   {
-    id: 'sells',
+    id: 2,
     text: 'sells',
   },
   {
-    id: 'manage',
+    id: 3,
     text: 'manage',
   },
   {
-    id: 'integrate',
+    id: 4,
     text: 'integrate',
   },
   {
-    id: 'resources',
+    id: 5,
     text: 'resources',
   },
 ];
