@@ -32,6 +32,8 @@ const ListItem = styled.li`
   &::after {
     content: '';
     display: inline-block;
+    width: 2rem;
+    height: 1px;
   }
 `;
 
