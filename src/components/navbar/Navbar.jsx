@@ -63,10 +63,6 @@ const Navbar = () => {
         </ToggleButton>
         <ListContainer>
           <MenuItem label='products' onMouse={displaySubmenu} />
-          <MenuItem label='sells' onMouse={displaySubmenu} />
-          <MenuItem label='manage' onMouse={displaySubmenu} />
-          <MenuItem label='integrate' onMouse={displaySubmenu} />
-          <MenuItem label='resources' onMouse={displaySubmenu} />
         </ListContainer>
         <ButtonContainer>
           <DarkModeToggle />
