@@ -15,6 +15,8 @@ import LoginButton from './LoginButton';
 import CartQuantity from './CartQuantity';
 import MenuItem from './MenuItem';
 
+import { navLinks } from '@/data';
+
 const Navbar = () => {
   const user = true;
   const dispatch = useDispatch();
