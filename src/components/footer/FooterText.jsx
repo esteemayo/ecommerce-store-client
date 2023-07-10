@@ -15,6 +15,8 @@ const FooterText = ({ year }) => {
 const Text = styled.p`
   width: 60%;
   font-size: 1.6rem;
+  text-align: center;
+  color: var(--clr-white);
 `;
 
 const Author = styled.strong``;
