@@ -15,6 +15,8 @@ const Button = styled.button`
   border: none;
   width: 4rem;
   height: 4rem;
+  background-color: transparent;
+  color: var(--clr-white);
 `;
 
 export default ToggleButton;
