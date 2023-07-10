@@ -28,6 +28,7 @@ const Button = styled.button`
   background-color: transparent;
   color: var(--clr-white);
   outline-color: var(--clr-primary-green);
+  transition: all 0.3s ease;
 
   &:hover {
     opacity: 0.5;
