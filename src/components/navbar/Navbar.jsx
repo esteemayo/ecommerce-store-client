@@ -59,9 +59,10 @@ const Navbar = () => {
         <LogoBox>
           <Logo />
         </LogoBox>
-        <ToggleButton onClick={() => dispatch(openSidebar())}>
-          <FontAwesomeIcon icon={faBars} />
-        </ToggleButton>
+        <ToggleButton
+          icon={<FontAwesomeIcon icon={faBars} />} 
+          onClick={() => dispatch(openSidebar())}
+        />
         <ListContainer>
           {navLinks.map((item) => {
             const { id, text } = item;
