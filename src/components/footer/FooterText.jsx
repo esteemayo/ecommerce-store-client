@@ -25,6 +25,10 @@ const Text = styled.p`
     width: 100%;
     text-align: left;
   }
+
+  @media only screen and (max-width: 31.25em) {
+    font-size: 1.55rem;
+  }
 `;
 
 const Author = styled.strong``;
