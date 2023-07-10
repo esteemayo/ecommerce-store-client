@@ -61,15 +61,7 @@ const Navbar = () => {
         </ToggleButton>
         <ListContainer>
           <MenuItem label='products' onMouse={displaySubmenu} />
-          <ListItem>
-            <Button
-              type='button'
-              className='link-btn'
-              onMouseOver={displaySubmenu}
-            >
-              sells
-            </Button>
-          </ListItem>
+          <MenuItem label='sells' onMouse={displaySubmenu} />
           <ListItem>
             <Button
               type='button'
