@@ -13,7 +13,8 @@ const FooterText = ({ year }) => {
 }
 
 const Text = styled.p`
-  
+  width: 60%;
+  font-size: 1.6rem;
 `;
 
 const Author = styled.strong``;
