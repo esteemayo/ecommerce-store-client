@@ -15,6 +15,11 @@ const MenuItem = ({ url, label }) => {
 
 const ListContainer = styled.ul`
   list-style: none;
+
+  @media only screen and (max-width: 37.5em) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 `;
 
 const ListItem = styled.li`
