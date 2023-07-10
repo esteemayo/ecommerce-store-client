@@ -8,6 +8,7 @@ import FooterText from './FooterText';
 import MenuItem from './MenuItem';
 import SocialIcon from './SocialIcon';
 import Heading from './Heading';
+import FooterLink from './FooterLink';
 
 import {
   customerLinks,
