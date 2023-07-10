@@ -30,6 +30,7 @@ const Container = styled.div`
       display: inline-block;
       text-decoration: none;
       color: currentColor;
+      outline: none;
     }
   }
 `;
