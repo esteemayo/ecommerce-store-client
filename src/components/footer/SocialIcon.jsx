@@ -33,7 +33,8 @@ const Container = styled.div`
 `;
 
 const IconWrapper = styled.div`
-  
+  width: 4rem;
+  height: 4rem;
 `;
 
 export default SocialIcon;
