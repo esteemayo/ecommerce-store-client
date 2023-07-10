@@ -34,6 +34,7 @@ const ListItem = styled.li`
     display: inline-block;
     width: 2rem;
     height: 1px;
+    background-color: var(--clr-white);
   }
 `;
 
