@@ -2,9 +2,9 @@
 
 import styled from 'styled-components';
 
-const Heading = () => {
+const Heading = ({ title }) => {
   return (
-    <Header>Heading</Header>
+    <Header>{title}</Header>
   );
 }
 
