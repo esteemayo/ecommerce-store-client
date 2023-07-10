@@ -17,6 +17,8 @@ const Text = styled.p`
   font-size: 1.6rem;
   text-align: center;
   color: var(--clr-white);
+  margin: 0 auto;
+  line-height: 1.1;
 `;
 
 const Author = styled.strong``;
