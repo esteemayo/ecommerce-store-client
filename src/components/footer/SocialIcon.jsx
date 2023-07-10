@@ -37,6 +37,8 @@ const IconWrapper = styled.div`
   height: 4rem;
   background-color: #${({ color }) => color};
   color: inherit;
+  border-radius: 50%;
+  cursor: pointer;
 `;
 
 export default SocialIcon;
