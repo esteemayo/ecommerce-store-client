@@ -44,7 +44,7 @@ const Footer = () => {
               </ListContainer>
             </Left>
             <Center>
-              <Heading>Discover</Heading>
+              <Heading title='Discover' />
               <ListContainer>
                 {discoverLinks.map((link) => {
                   const { id, url, text } = link;
