@@ -26,6 +26,29 @@ import {
   faTruckFast,
 } from '@fortawesome/free-solid-svg-icons';
 
+export const navLinks = [
+  {
+    id: 'products',
+    text: 'products',
+  },
+  {
+    id: 'sells',
+    text: 'sells',
+  },
+  {
+    id: 'manage',
+    text: 'manage',
+  },
+  {
+    id: 'integrate',
+    text: 'integrate',
+  },
+  {
+    id: 'resources',
+    text: 'resources',
+  },
+];
+
 export const sublinks = [
   {
     page: 'products',
