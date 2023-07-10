@@ -20,6 +20,11 @@ const Text = styled.p`
   margin: 0 auto;
   line-height: 1.1;
   margin-top: 2rem;
+
+  @media only screen and (max-width: 37.5em) {
+    width: 100%;
+    text-align: left;
+  }
 `;
 
 const Author = styled.strong``;
