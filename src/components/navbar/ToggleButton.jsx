@@ -5,12 +5,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useDispatch } from 'react-redux';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
-const ToggleButton = () => {
+const ToggleButton = ({ icon: Icon, onClick }) => {
   const dispatch = useDispatch();
 
   return (
-    <Button type='button'>
-      <FontAwesomeIcon icon={faBars} />
+    <Button type='button' onClick={onClick}>
+      <Icon />
     </Button>
   );
 }
