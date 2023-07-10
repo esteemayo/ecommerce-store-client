@@ -51,6 +51,8 @@ const LinkItem = styled.li`
     &:visited {
       display: inline-block;
       text-decoration: none;
+      font-size: inherit;
+      color: inherit;
     }
   }
 `;
