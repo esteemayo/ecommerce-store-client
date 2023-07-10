@@ -24,6 +24,10 @@ const ListItem = styled.li`
       margin-bottom: 1rem;
     }
   }
+
+  &:hover {
+    color: #f5f5f5;
+  }
 `;
 
 export default MenuItem;
