@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const ToggleButton = ({ icon: Icon, onClick }) => {
   return (
     <Button type='button' onClick={onClick}>
-      <Icon />
+      <FontAwesomeIcon icon={Icon} />
     </Button>
   );
 }
