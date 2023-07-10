@@ -27,6 +27,7 @@ const Button = styled.button`
   text-transform: capitalize;
   background-color: transparent;
   color: var(--clr-white);
+  outline-color: var(--clr-primary-green);
 `;
 
 export default MenuItem;
