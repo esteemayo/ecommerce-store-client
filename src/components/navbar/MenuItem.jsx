@@ -16,9 +16,7 @@ const MenuItem = ({ label, onMouse }) => {
   );
 };
 
-const ListItem = styled.li`
-  
-`;
+const ListItem = styled.li``;
 
 const Button = styled.button`
   
