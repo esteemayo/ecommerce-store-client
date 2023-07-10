@@ -1,7 +1,6 @@
 'use client';
 
 import styled from 'styled-components';
-import Link from 'next/link';
 import { useMemo } from 'react';
 
 import FooterText from './FooterText';
