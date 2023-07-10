@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { useMemo } from 'react';
 
 import MenuItem from './MenuItem';
+import FooterText from './FooterText';
 
 import {
   customerLinks,
