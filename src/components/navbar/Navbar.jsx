@@ -60,7 +60,7 @@ const Navbar = () => {
           <Logo />
         </LogoBox>
         <ToggleButton
-          icon={<FontAwesomeIcon icon={faBars} />} 
+          icon={faBars}
           onClick={() => dispatch(openSidebar())}
         />
         <ListContainer>
