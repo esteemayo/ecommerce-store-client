@@ -13,6 +13,7 @@ import Logo from './Logo';
 import DarkModeToggle from './DarkModeToggle';
 import LoginButton from './LoginButton';
 import CartQuantity from './CartQuantity';
+import MenuItem from './MenuItem';
 
 const Navbar = () => {
   const user = true;
