@@ -12,7 +12,8 @@ const MenuItem = ({ url, label }) => {
 }
 
 const ListItem = styled.li`
-  
+  display: flex;
+  flex-direction: column;
 `;
 
 export default MenuItem;
