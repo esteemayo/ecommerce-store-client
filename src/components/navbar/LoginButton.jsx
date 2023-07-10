@@ -8,17 +8,17 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 const LoginButton = ({ isHover, onMouse }) => {
   return (
     <>
-      <Button
-        type='button'
-        onMouseOver={() => onMouse(true)}
-        onMouseLeave={() => onMouse(false)}
-      >
-        <Link href='/login' passHref>
+      <Link href='/login' passHref>
+        <Button
+          type='button'
+          onMouseOver={() => onMouse(true)}
+          onMouseLeave={() => onMouse(false)}
+        >
           Sign in
           &nbsp;
           {isHover ? <ArrowForwardIcon /> : <ArrowForwardIosIcon />}
-        </Link>
-      </Button>
+        </Button>
+      </Link>
     </>
   );
 }
