@@ -60,15 +60,7 @@ const Navbar = () => {
           <FontAwesomeIcon icon={faBars} />
         </ToggleButton>
         <ListContainer>
-          <ListItem>
-            <Button
-              type='button'
-              className='link-btn'
-              onMouseOver={displaySubmenu}
-            >
-              products
-            </Button>
-          </ListItem>
+          <MenuItem label='products' onMouse={displaySubmenu} />
           <ListItem>
             <Button
               type='button'
