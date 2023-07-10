@@ -24,7 +24,16 @@ const LoginButton = ({ isHover, onMouse }) => {
 }
 
 const Container = styled.div`
-
+  a {
+    &:link,
+    &:visited {
+      display: inline-block;
+      text-decoration: none;
+      color: currentColor;
+      outline-color: var(--clr-primary-green);
+      position: relative;
+    }
+  }
 `;
 
 const Button = styled.button`
