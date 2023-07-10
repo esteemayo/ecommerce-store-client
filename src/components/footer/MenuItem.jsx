@@ -14,7 +14,7 @@ const MenuItem = ({ url, label }) => {
 }
 
 const ListContainer = styled.ul`
-  
+  list-style: none;
 `;
 
 const ListItem = styled.li`
