@@ -9,6 +9,8 @@ const Heading = ({ title, small }) => {
 const Header = styled.h4`
   font-weight: ${({ small }) => small ? '300' : '500'};
   font-size: ${({ small }) => small ? '1.4rem' : '2rem'};
+  line-height: ${({ small }) => !small && '1em'};
+  margin-bottom: ${({ small }) => !small && '2rem'};
 `;
 
 export default Heading;
