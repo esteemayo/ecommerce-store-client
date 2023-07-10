@@ -35,6 +35,10 @@ const ListItem = styled.li`
     width: 2rem;
     height: 1px;
     background-color: var(--clr-white);
+
+    @media only screen and (max-width: 37.5em) {
+      display: none;
+    }
   }
 `;
 
