@@ -34,18 +34,7 @@ const Footer = () => {
             </Left>
             <Center>
               <Heading title='Discover' />
-              <ListContainer>
-                {discoverLinks.map((link) => {
-                  const { id, url, text } = link;
-                  return (
-                    <MenuItem
-                      key={id}
-                      url={url}
-                      label={text}
-                    />
-                  );
-                })}
-              </ListContainer>
+              <MenuItem data={discoverLinks} />
             </Center>
             <Right>
               <Heading title='Customer care' />
