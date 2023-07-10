@@ -16,6 +16,10 @@ const ListItem = styled.li`
   flex-direction: column;
   outline-color: var(--clr-primary-green);
   transition: all 0.3s ease;
+
+  &:not(:last-of-type) {
+    margin-bottom: 1.5rem;
+  }
 `;
 
 export default MenuItem;
