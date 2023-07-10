@@ -18,6 +18,10 @@ const Button = styled.button`
   background-color: transparent;
   color: var(--clr-white);
   margin-right: 2rem;
+
+  &:hover {
+    transform: rotate(90deg);
+  }
 `;
 
 export default ToggleButton;
