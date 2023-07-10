@@ -164,19 +164,6 @@ const LinkContainer = styled.div`
 
 const Left = styled.div``;
 
-const Heading = styled.h4`
-  font-weight: 500;
-  font-size: 2rem;
-  line-height: 1em;
-  margin-bottom: 2rem;
-
-  @media only screen and (max-width: 37.5em) {
-    text-decoration: underline;
-    text-underline-offset: 0.5rem;
-    margin-bottom: 1.5rem;
-  }
-`;
-
 const ListContainer = styled.ul`
   list-style: none;
 
