@@ -3,9 +3,18 @@
 import styled from 'styled-components';
 import Link from 'next/link';
 
-const FooterLink = () => {
+const FooterLink = ({ data }) => {
   return (
-    <LinkContainer>FooterLink</LinkContainer>
+    <LinkContainer>
+      {data.map((item) => {
+        const { id, url, text } = item;
+        return (
+          <LinkItem key={id}>
+            <Link href={url} passHref>{text}</Link>
+          </LinkItem>
+        );
+      })}
+    </LinkContainer>
   );
 }
 
