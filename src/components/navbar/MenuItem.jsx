@@ -23,6 +23,7 @@ const Button = styled.button`
   display: inline-block;
   font-family: inherit;
   font-weight: 600;
+  font-size: 1.5rem;
 `;
 
 export default MenuItem;
