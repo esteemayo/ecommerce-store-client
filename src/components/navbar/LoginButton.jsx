@@ -51,7 +51,7 @@ const Button = styled.button`
 
   svg {
     position: absolute;
-    top: 3px;
+    top: 1rem;
     right: 1rem;
     font-size: 1.25rem;
     fill: currentColor;
