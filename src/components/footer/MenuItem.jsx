@@ -50,6 +50,8 @@ const ListItem = styled.li`
       color: inherit;
       line-height: 1.3em;
       transition: all 0.2s ease;
+      backface-visibility: hidden;
+      outline-offset: 0.5rem;
     }
   }
 `;
