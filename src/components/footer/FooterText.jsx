@@ -29,6 +29,10 @@ const Text = styled.p`
   @media only screen and (max-width: 31.25em) {
     font-size: 1.55rem;
   }
+
+  @media only screen and (max-width: 27.5em) {
+    line-height: 1.3;
+  }
 `;
 
 const Author = styled.strong``;
