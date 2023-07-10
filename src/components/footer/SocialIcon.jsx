@@ -43,6 +43,10 @@ const Container = styled.div`
       outline-offset: 1rem;
       outline-color: #eee;
     }
+
+    &:active {
+      color: currentColor;
+    }
   }
 `;
 
