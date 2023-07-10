@@ -86,18 +86,7 @@ const Footer = () => {
           </FooterContainer>
         </FooterRight>
       </Wrapper>
-      <FooterLinkContainer>
-        {footerLinks.map((link) => {
-          const { id, url, text } = link;
-          return (
-            <LinkItem key={id}>
-              <Link href={url} passHref>
-                {text}
-              </Link>
-            </LinkItem>
-          );
-        })}
-      </FooterLinkContainer>
+      <FooterLink data={footerLinks} />
       <FooterText value={year} />
     </Container>
   );
