@@ -3,12 +3,17 @@
 import styled from 'styled-components';
 import Link from 'next/link';
 
-const MenuItem = ({ url, label }) => {
+const MenuItem = ({ data }) => {
   return (
     <ListContainer>
-      <ListItem>
-        <Link href={url} passHref>{label}</Link>
-      </ListItem>
+      {data.map((link) => {
+        const { id, url, text } = link;
+        return (
+          <ListItem key={id}>
+            <Link href={url} passHref>{text}</Link>
+          </ListItem>
+        )
+      })}
     </ListContainer>
   );
 }
