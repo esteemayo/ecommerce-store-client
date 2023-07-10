@@ -14,6 +14,8 @@ const MenuItem = ({ url, label }) => {
 const ListItem = styled.li`
   display: flex;
   flex-direction: column;
+  outline-color: var(--clr-primary-green);
+  transition: all 0.3s ease;
 `;
 
 export default MenuItem;
