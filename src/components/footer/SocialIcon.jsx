@@ -30,6 +30,15 @@ const Container = styled.div`
   @media only screen and (max-width: 26.875em) {
     margin-top: 0.7rem;
   }
+
+  a {
+    &:link,
+    &:visited {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
 `;
 
 const IconWrapper = styled.div`
