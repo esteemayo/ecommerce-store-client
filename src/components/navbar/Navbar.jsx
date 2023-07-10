@@ -152,8 +152,6 @@ const ListContainer = styled.ul`
   }
 `;
 
-const ListItem = styled.li``;
-
 const Button = styled.button`
   border: none;
   display: inline-block;
