@@ -19,7 +19,8 @@ const MenuItem = ({ label, onMouse }) => {
 const ListItem = styled.li``;
 
 const Button = styled.button`
-  
+  border: none;
+  display: inline-block;
 `;
 
 export default MenuItem;
