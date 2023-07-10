@@ -38,7 +38,9 @@ const LinkContainer = styled.ul`
 `;
 
 const LinkItem = styled.li`
-  
+  font-size: 1.4rem;
+  color: var(--clr-white);
+  outline-color: var(--clr-primary-green);
 `;
 
 export default FooterLink;
