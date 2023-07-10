@@ -59,7 +59,7 @@ const Footer = () => {
               </ListContainer>
             </Center>
             <Right>
-              <Heading>Customer care</Heading>
+              <Heading title='Customer care' />
               <ListContainer>
                 {customerLinks.map((link) => {
                   const { id, url, text } = link;
