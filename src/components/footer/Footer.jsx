@@ -373,29 +373,4 @@ const LinkItem = styled.li`
   }
 `;
 
-const FooterText = styled.p`
-  width: 60%;
-  font-size: 1.6rem;
-  text-align: center;
-  color: var(--clr-white);
-  margin: 0 auto;
-  line-height: 1.1;
-  margin-top: 2rem;
-
-  @media only screen and (max-width: 37.5em) {
-    width: 100%;
-    text-align: left;
-  }
-
-  @media only screen and (max-width: 31.25em) {
-    font-size: 1.55rem;
-  }
-
-  @media only screen and (max-width: 27.5em) {
-    line-height: 1.3;
-  }
-`;
-
-const Author = styled.strong``;
-
 export default Footer;
