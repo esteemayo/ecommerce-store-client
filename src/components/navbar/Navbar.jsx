@@ -25,6 +25,8 @@ const Navbar = () => {
   const [isHover, setIsHover] = useState(false);
 
   const displaySubmenu = useCallback((e) => {
+    e.stopPropagation();
+
     const page = e.target.textContent;
     const tempBtn = e.target.getBoundingClientRect();
 
