@@ -31,7 +31,6 @@ const Container = styled.div`
       text-decoration: none;
       color: currentColor;
       outline-color: var(--clr-primary-green);
-      position: relative;
     }
   }
 `;
