@@ -2,9 +2,17 @@
 
 import styled from 'styled-components';
 
-const MenuItem = () => {
+const MenuItem = ({ label, onMouse }) => {
   return (
-    <ListItem>MenuItem</ListItem>
+    <ListItem>
+      <Button
+        type='button'
+        className='link-btn'
+        onMouseOver={onMouse}
+      >
+        {label}
+      </Button>
+    </ListItem>
   );
 };
 
