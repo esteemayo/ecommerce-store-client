@@ -106,7 +106,7 @@ const Footer = () => {
           );
         })}
       </FooterLinkContainer>
-      <FooterText year={year} />
+      <FooterText value={year} />
     </Container>
   );
 }
