@@ -40,6 +40,14 @@ const ListItem = styled.li`
       display: none;
     }
   }
+
+  a {
+    &:link,
+    &:visited {
+      display: inline-block;
+      text-decoration: none;
+    }
+  }
 `;
 
 export default MenuItem;
