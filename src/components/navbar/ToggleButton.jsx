@@ -5,8 +5,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useDispatch } from 'react-redux';
 
 const ToggleButton = ({ icon: Icon, onClick }) => {
-  const dispatch = useDispatch();
-
   return (
     <Button type='button' onClick={onClick}>
       <Icon />
