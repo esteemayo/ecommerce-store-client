@@ -45,6 +45,14 @@ const LinkItem = styled.li`
   @media only screen and (max-width: 37.5rem) {
     font-size: 1.57rem;
   }
+
+  a {
+    &:link,
+    &:visited {
+      display: inline-block;
+      text-decoration: none;
+    }
+  }
 `;
 
 export default FooterLink;
