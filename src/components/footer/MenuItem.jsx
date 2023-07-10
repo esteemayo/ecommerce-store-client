@@ -5,9 +5,11 @@ import Link from 'next/link';
 
 const MenuItem = ({ url, label }) => {
   return (
-    <ListItem>
-      <Link href={url} passHref>{label}</Link>
-    </ListItem>
+    <ListContainer>
+      <ListItem>
+        <Link href={url} passHref>{label}</Link>
+      </ListItem>
+    </ListContainer>
   );
 }
 
