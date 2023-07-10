@@ -39,6 +39,7 @@ const Container = styled.div`
       justify-content: center;
       text-decoration: none;
       color: inherit;
+      border-radius: 50%;
     }
   }
 `;
