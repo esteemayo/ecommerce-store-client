@@ -28,6 +28,11 @@ const ListItem = styled.li`
   &:hover {
     color: #f5f5f5;
   }
+
+  &::after {
+    content: '';
+    display: inline-block;
+  }
 `;
 
 export default MenuItem;
