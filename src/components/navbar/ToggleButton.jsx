@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const ToggleButton = () => {
   return (
-    <div>ToggleButton</div>
+    <Button type='button'>ToggleButton</Button>
   );
 }
 
