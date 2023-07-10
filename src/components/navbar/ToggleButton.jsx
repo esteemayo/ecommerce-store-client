@@ -13,6 +13,8 @@ const ToggleButton = ({ icon: Icon, onClick }) => {
 const Button = styled.button`
   display: inline-block;
   border: none;
+  width: 4rem;
+  height: 4rem;
 `;
 
 export default ToggleButton;
