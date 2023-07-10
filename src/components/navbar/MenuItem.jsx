@@ -4,11 +4,11 @@ import styled from 'styled-components';
 
 const MenuItem = () => {
   return (
-    <Container>MenuItem</Container>
+    <ListItem>MenuItem</ListItem>
   );
 };
 
-const Container = styled.li`
+const ListItem = styled.li`
   
 `;
 
