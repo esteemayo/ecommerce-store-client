@@ -8,4 +8,8 @@ const FooterLink = () => {
   );
 }
 
+const LinkContainer = styled.ul`
+  
+`;
+
 export default FooterLink;
