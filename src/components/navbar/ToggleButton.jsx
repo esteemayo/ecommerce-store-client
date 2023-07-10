@@ -23,6 +23,12 @@ const Button = styled.button`
   &:hover {
     transform: rotate(90deg);
   }
+
+  svg {
+    width: 3rem;
+    height: 3rem;
+    fill: inherit;
+  }
 `;
 
 export default ToggleButton;
