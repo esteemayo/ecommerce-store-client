@@ -279,51 +279,6 @@ const SocialContainer = styled.div`
   }
 `;
 
-const SocialIcon = styled.div`
-  width: 4rem;
-  height: 4rem;
-  background-color: #${({ color }) => color};
-  color: inherit;
-  border-radius: 50%;
-  cursor: pointer;
-
-  @media only screen and (max-width: 37.5em) {
-    width: 3.5rem;
-    height: 3.5rem;
-  }
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
-  a {
-    &:link,
-    &:visited {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-decoration: none;
-      color: inherit;
-      border-radius: 50%;
-      outline-offset: 1rem;
-      outline-color: #eee;
-    }
-
-    &:active {
-      color: currentColor;
-    }
-  }
-
-  svg {
-    font-size: 2rem;
-    color: inherit;
-
-    @media only screen and (max-width: 37.5em) {
-      font-size: 1.87rem;
-    }
-  }
-`;
-
 const FooterLinkContainer = styled.ul`
   list-style: none;
   display: flex;
