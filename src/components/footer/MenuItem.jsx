@@ -53,6 +53,10 @@ const ListItem = styled.li`
       backface-visibility: hidden;
       outline-offset: 0.5rem;
       outline-color: var(--clr-primary-green);
+
+      @media only screen and (max-width: 37.5rem) {
+        font-size: 1.6rem;
+      }
     }
   }
 `;
