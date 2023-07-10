@@ -8,4 +8,8 @@ const ToggleButton = () => {
   );
 }
 
+const Button = styled.button`
+  
+`;
+
 export default ToggleButton;
