@@ -20,4 +20,8 @@ const Container = styled.div`
   }
 `;
 
+const IconWrapper = styled.div`
+  
+`;
+
 export default SocialIcon;
