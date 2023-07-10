@@ -8,4 +8,8 @@ const Heading = () => {
   );
 }
 
+const Header = styled.h4`
+  
+`;
+
 export default Heading;
