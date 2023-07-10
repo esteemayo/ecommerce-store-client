@@ -62,7 +62,16 @@ const Navbar = () => {
           <FontAwesomeIcon icon={faBars} />
         </ToggleButton>
         <ListContainer>
-          <MenuItem label='products' onMouse={displaySubmenu} />
+          {navLinks.map((item) => {
+            const { id, text } = item;
+            return (
+              <MenuItem
+                key={id}
+                label={text}
+                onMouse={displaySubmenu}
+              />
+            );
+          })}
         </ListContainer>
         <ButtonContainer>
           <DarkModeToggle />
