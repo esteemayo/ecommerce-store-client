@@ -45,6 +45,8 @@ const Navbar = () => {
   }, [dispatch]);
 
   const handleSubmenu = useCallback((e) => {
+    e.stopPropagation();
+
     if (!e.target.classList.contains('link-btn')) {
       dispatch(closeSubmenu());
     }
