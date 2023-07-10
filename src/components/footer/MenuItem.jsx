@@ -46,6 +46,8 @@ const ListItem = styled.li`
     &:visited {
       display: inline-block;
       text-decoration: none;
+      font-size: 1.4rem;
+      color: inherit;
     }
   }
 `;
