@@ -9,7 +9,10 @@ const SocialIcon = ({ data }) => {
 }
 
 const Container = styled.div`
-  
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
 `;
 
 export default SocialIcon;
