@@ -5,7 +5,18 @@ import Link from 'next/link';
 
 const SocialIcon = ({ data }) => {
   return (
-    <Container>SocialIcon</Container>
+    <Container>
+      {data.map((item) => {
+        const { id, url, icon: Icon, color } = item;
+        return (
+          <Link key={id} href={url} passHref>
+            <IconWrapper color={color}>
+              <Icon />
+            </IconWrapper>
+          </Link>
+        )
+      })}
+    </Container>
   );
 }
 
