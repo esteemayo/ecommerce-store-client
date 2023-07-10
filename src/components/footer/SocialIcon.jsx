@@ -40,8 +40,7 @@ const Container = styled.div`
       text-decoration: none;
       color: inherit;
       border-radius: 50%;
-      outline-offset: 1rem;
-      outline-color: #eee;
+      outline: none;
     }
 
     &:active {
