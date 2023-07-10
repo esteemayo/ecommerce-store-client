@@ -6,6 +6,7 @@ import { useMemo } from 'react';
 
 import MenuItem from './MenuItem';
 import FooterText from './FooterText';
+import SocialIcon from './SocialIcon';
 
 import {
   customerLinks,
@@ -79,18 +80,7 @@ const Footer = () => {
               <SearchInput type='search' placeholder='Search store...' />
             </SearchContainer>
             <Header>Follow us</Header>
-            <SocialContainer>
-              {social.map((item) => {
-                const { id, url, icon, color } = item;
-                return (
-                  <SocialIcon key={id} color={color}>
-                    <Link href={url} passHref>
-                      {icon}
-                    </Link>
-                  </SocialIcon>
-                );
-              })}
-            </SocialContainer>
+            <SocialIcon data={social} />
           </FooterContainer>
         </FooterRight>
       </Wrapper>
