@@ -8,4 +8,8 @@ const FooterText = () => {
   );
 }
 
+const Text = styled.p`
+  
+`;
+
 export default FooterText;
