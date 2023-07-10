@@ -41,6 +41,10 @@ const LinkItem = styled.li`
   font-size: 1.4rem;
   color: var(--clr-white);
   outline-color: var(--clr-primary-green);
+
+  @media only screen and (max-width: 37.5rem) {
+    font-size: 1.57rem;
+  }
 `;
 
 export default FooterLink;
