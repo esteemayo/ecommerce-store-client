@@ -24,6 +24,7 @@ const Button = styled.button`
   font-family: inherit;
   font-weight: 600;
   font-size: 1.5rem;
+  text-transform: capitalize;
 `;
 
 export default MenuItem;
