@@ -4,8 +4,8 @@ import styled from 'styled-components';
 import Link from 'next/link';
 import { useMemo } from 'react';
 
-import MenuItem from './MenuItem';
 import FooterText from './FooterText';
+import MenuItem from './MenuItem';
 import SocialIcon from './SocialIcon';
 
 import {
