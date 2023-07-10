@@ -61,9 +61,11 @@ const Footer = () => {
                 {customerLinks.map((link) => {
                   const { id, url, text } = link;
                   return (
-                    <ListItem key={id}>
-                      <Link href={url} passHref>{text}</Link>
-                    </ListItem>
+                    <MenuItem
+                      key={id}
+                      url={url}
+                      label={text}
+                    />
                   );
                 })}
               </ListContainer>
