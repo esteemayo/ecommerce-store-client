@@ -54,6 +54,10 @@ const Ball = styled.div`
   position: absolute;
   left: ${({ mode }) => !mode && '2px'};
   right: ${({ mode }) => mode && '2px'};
+
+  &:hover {
+    background-color: var(--clr-primary-green);
+  }
 `;
 
 export default DarkModeToggle;
