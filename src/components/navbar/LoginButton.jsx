@@ -48,6 +48,7 @@ const Button = styled.button`
   outline-color: var(--clr-primary-green);
   cursor: pointer;
   transition: all 0.2s ease;
+  position: relative;
 
   svg {
     position: absolute;
