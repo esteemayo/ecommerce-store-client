@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const SocialIcon = ({ data }) => {
   return (
-    <div>SocialIcon</div>
+    <Container>SocialIcon</Container>
   );
 }
 
