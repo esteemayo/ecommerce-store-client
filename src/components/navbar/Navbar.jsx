@@ -14,6 +14,7 @@ import DarkModeToggle from './DarkModeToggle';
 import LoginButton from './LoginButton';
 import CartQuantity from './CartQuantity';
 import MenuItem from './MenuItem';
+import ToggleButton from './ToggleButton';
 
 import { navLinks } from '@/data';
 
