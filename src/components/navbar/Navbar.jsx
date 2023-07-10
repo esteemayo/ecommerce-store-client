@@ -62,15 +62,7 @@ const Navbar = () => {
         <ListContainer>
           <MenuItem label='products' onMouse={displaySubmenu} />
           <MenuItem label='sells' onMouse={displaySubmenu} />
-          <ListItem>
-            <Button
-              type='button'
-              className='link-btn'
-              onMouseOver={displaySubmenu}
-            >
-              manage
-            </Button>
-          </ListItem>
+          <MenuItem label='manage' onMouse={displaySubmenu} />
           <ListItem>
             <Button
               type='button'
