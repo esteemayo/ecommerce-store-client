@@ -29,6 +29,12 @@ const LinkContainer = styled.ul`
   @media only screen and (max-width: 26.875em) {
     margin-top: 2rem;
   }
+
+  @media only screen and (max-width: 37.5em) {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 1rem;
+  }
 `;
 
 const LinkItem = styled.li`
