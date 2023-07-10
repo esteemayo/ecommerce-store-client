@@ -223,23 +223,4 @@ const SearchInput = styled.input`
   }
 `;
 
-const FooterLinkContainer = styled.ul`
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1.5rem;
-  margin-top: 3rem;
-
-  @media only screen and (max-width: 26.875em) {
-    margin-top: 2rem;
-  }
-
-  @media only screen and (max-width: 37.5em) {
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 1rem;
-  }
-`;
-
 export default Footer;
