@@ -19,7 +19,7 @@ const FooterLink = ({ data }) => {
 }
 
 const LinkContainer = styled.ul`
-  
+  list-style: none;
 `;
 
 const LinkItem = styled.li`
