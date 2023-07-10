@@ -7,8 +7,8 @@ const Heading = ({ title, small }) => {
 }
 
 const Header = styled.h4`
-  font-weight: 500;
-  font-size: 2rem;
+  font-weight: ${({ small }) => small ? '300' : '500'};
+  font-size: ${({ small }) => small ? '1.4rem' : '2rem'};
 `;
 
 export default Heading;
