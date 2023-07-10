@@ -31,7 +31,11 @@ const Footer = () => {
                 {storeLinks.map((link) => {
                   const { id, url, text } = link;
                   return (
-                    <MenuItem key={id} url={url} label={text} />
+                    <MenuItem
+                      key={id}
+                      url={url}
+                      label={text}
+                    />
                   );
                 })}
               </ListContainer>
