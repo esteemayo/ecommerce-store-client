@@ -57,6 +57,10 @@ const LinkItem = styled.li`
       outline-offset: 0.5rem;
       outline-color: var(--clr-primary-green);
     }
+
+    &:active {
+      color: currentColor;
+    }
   }
 `;
 
