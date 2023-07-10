@@ -53,6 +53,7 @@ const LinkItem = styled.li`
       text-decoration: none;
       font-size: inherit;
       color: inherit;
+      line-height: 1.3em;
     }
   }
 `;
