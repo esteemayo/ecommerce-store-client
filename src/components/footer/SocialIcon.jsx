@@ -39,6 +39,11 @@ const IconWrapper = styled.div`
   color: inherit;
   border-radius: 50%;
   cursor: pointer;
+
+  @media only screen and (max-width: 37.5em) {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
 `;
 
 export default SocialIcon;
