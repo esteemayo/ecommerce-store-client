@@ -54,6 +54,7 @@ const Ball = styled.div`
   position: absolute;
   left: ${({ mode }) => !mode && '2px'};
   right: ${({ mode }) => mode && '2px'};
+  transition: all 0.2s ease;
 
   &:hover {
     background-color: var(--clr-primary-green);
