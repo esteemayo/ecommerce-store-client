@@ -80,7 +80,7 @@ const Footer = () => {
             <SearchContainer>
               <SearchInput type='search' placeholder='Search store...' />
             </SearchContainer>
-            <Header>Follow us</Header>
+            <Heading title='Follow us' small />
             <SocialIcon data={social} />
           </FooterContainer>
         </FooterRight>
