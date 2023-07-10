@@ -16,4 +16,6 @@ const Text = styled.p`
   
 `;
 
+const Author = styled.strong``;
+
 export default FooterText;
