@@ -12,4 +12,8 @@ const LinkContainer = styled.ul`
   
 `;
 
+const LinkItem = styled.li`
+  
+`;
+
 export default FooterLink;
