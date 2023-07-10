@@ -7,6 +7,7 @@ import { useMemo } from 'react';
 import FooterText from './FooterText';
 import MenuItem from './MenuItem';
 import SocialIcon from './SocialIcon';
+import Heading from './Heading';
 
 import {
   customerLinks,
@@ -28,7 +29,7 @@ const Footer = () => {
         <FooterLeft>
           <LinkContainer>
             <Left>
-              <Heading>About the store</Heading>
+              <Heading title='About the store' />
               <ListContainer>
                 {storeLinks.map((link) => {
                   const { id, url, text } = link;
