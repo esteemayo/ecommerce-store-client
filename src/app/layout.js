@@ -42,6 +42,7 @@ export default function RootLayout({ children }) {
                   <Footer />
                   <ScrollToTop />
                   <Darkmode />
+                </ClientOnly>
               </div>
             </AppThemeProvider>
           </PersistGate>
