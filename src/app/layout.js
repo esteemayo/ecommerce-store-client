@@ -31,10 +31,12 @@ export default function RootLayout({ children }) {
           <PersistGate loading={null} persistor={persistor}>
             <AppThemeProvider>
               <div className='container'>
-                <Navbar />
-                <ToastProvider />
-                <Submenu />
-                <Sidebar />
+                <ClientOnly>
+                  <Navbar />
+                  <ToastProvider />
+                  <Submenu />
+                  <Sidebar />
+                </ClientOnly>
                 {children}
                 <Footer />
                 <ScrollToTop />
