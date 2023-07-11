@@ -45,9 +45,7 @@ const Footer = () => {
         </FooterLeft>
         <FooterRight>
           <FooterContainer>
-            <SearchContainer>
-              <SearchInput type='search' placeholder='Search store...' />
-            </SearchContainer>
+            <Search />
             <Heading title='Follow us' small />
             <SocialIcon data={social} />
           </FooterContainer>
