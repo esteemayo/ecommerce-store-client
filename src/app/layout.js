@@ -38,9 +38,9 @@ export default function RootLayout({ children }) {
                   <Sidebar />
                 </ClientOnly>
                 {children}
-                <Footer />
-                <ScrollToTop />
-                <Darkmode />
+                  <Footer />
+                  <ScrollToTop />
+                  <Darkmode />
               </div>
             </AppThemeProvider>
           </PersistGate>
