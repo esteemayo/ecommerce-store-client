@@ -18,6 +18,12 @@ import { persistor, store } from '@/store/store';
 
 import './globals.scss';
 
+export const metadata = {
+  title: 'eStore',
+  description: '',
+  keywords: '',
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
