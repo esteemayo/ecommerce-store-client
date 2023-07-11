@@ -37,6 +37,11 @@ const Input = styled.input`
   background-color: transparent;
   color: #999;
   caret-color: var(--caret-light);
+
+  &::placeholder {
+    font-size: 1.4rem;
+    color: #aaa;
+  }
 `;
 
 export default Search;
