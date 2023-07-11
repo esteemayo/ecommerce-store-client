@@ -1,3 +1,5 @@
+'use client';
+
 import styled from 'styled-components';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import { useCallback, useEffect, useMemo, useState } from 'react';
