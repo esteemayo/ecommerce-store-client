@@ -38,6 +38,7 @@ export default function RootLayout({ children }) {
                   <Sidebar />
                 </ClientOnly>
                 {children}
+                <ClientOnly>
                   <Footer />
                   <ScrollToTop />
                   <Darkmode />
