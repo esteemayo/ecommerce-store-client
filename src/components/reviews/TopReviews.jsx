@@ -1,3 +1,5 @@
+'use client';
+
 import styled from 'styled-components';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { useCallback, useRef, useState } from 'react';
