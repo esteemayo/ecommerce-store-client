@@ -2,6 +2,7 @@
 
 import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
+import { Nunito } from 'next/font/google';
 
 import Navbar from '@/components/navbar/Navbar';
 import Submenu from '@/components/Submenu';
