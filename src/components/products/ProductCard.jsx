@@ -1,3 +1,5 @@
+'use client';
+
 import styled from 'styled-components';
 import Image from 'next/image';
 import { faShoppingCart, faStar } from '@fortawesome/free-solid-svg-icons';
