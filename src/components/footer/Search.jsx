@@ -36,6 +36,7 @@ const Input = styled.input`
   padding: 0 1rem;
   background-color: transparent;
   color: #999;
+  caret-color: var(--caret-light);
 `;
 
 export default Search;
