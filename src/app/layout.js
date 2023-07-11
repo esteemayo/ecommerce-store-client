@@ -16,6 +16,7 @@ import AppThemeProvider from '@/providers/ThemeProvider';
 import { persistor, store } from '@/store/store';
 
 import './globals.scss';
+import ClientOnly from '@/components/ClientOnly';
 
 export default function RootLayout({ children }) {
   return (
