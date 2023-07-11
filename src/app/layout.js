@@ -9,6 +9,7 @@ import ScrollToTop from '@/components/ScrollToTop';
 import Sidebar from '@/components/Sidebar';
 import Footer from '@/components/footer/Footer';
 import Darkmode from '@/components/DarkMode';
+import ClientOnly from '@/components/ClientOnly';
 
 import ToastProvider from '@/providers/ToastProvider';
 import AppThemeProvider from '@/providers/ThemeProvider';
