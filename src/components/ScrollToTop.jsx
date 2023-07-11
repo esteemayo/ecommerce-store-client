@@ -1,3 +1,5 @@
+'use client';
+
 import styled from 'styled-components';
 import KeyboardDoubleArrowUpIcon from '@mui/icons-material/KeyboardDoubleArrowUp';
 import { useCallback, useEffect, useState } from 'react';
