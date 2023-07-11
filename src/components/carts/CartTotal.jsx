@@ -9,6 +9,8 @@ const CartTotal = ({ isOpen, setIsOpen, setIsCash }) => {
   const { tax, total, subtotal } = useSelector((state) => ({ ...state.cart }));
 
   const handleClose = useCallback((e) => {
+    e.stopPropagation();
+
     if (!e.target.classList.contains('btn-pay')) {
       setIsOpen(false);
     }
