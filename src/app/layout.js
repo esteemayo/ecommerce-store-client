@@ -10,6 +10,7 @@ import Sidebar from '@/components/Sidebar';
 import Footer from '@/components/footer/Footer';
 import Darkmode from '@/components/DarkMode';
 
+import ToastProvider from '@/providers/ToastProvider';
 import AppThemeProvider from '@/providers/ThemeProvider';
 
 import { persistor, store } from '@/store/store';
