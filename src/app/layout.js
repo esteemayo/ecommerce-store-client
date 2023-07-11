@@ -15,7 +15,6 @@ import { persistor, store } from '@/store/store';
 import AppThemeProvider from '@/providers/ThemeProvider';
 import ToastProvider from '@/providers/ToastProvider';
 
-import 'react-toastify/dist/ReactToastify.css';
 import './globals.scss';
 
 export default function RootLayout({ children }) {
