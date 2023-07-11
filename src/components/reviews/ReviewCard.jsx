@@ -1,3 +1,5 @@
+'use client';
+
 import styled from 'styled-components';
 import { faArrowUpFromBracket } from '@fortawesome/free-solid-svg-icons';
 import Image from 'next/image';
