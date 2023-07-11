@@ -11,7 +11,6 @@ import Footer from '@/components/footer/Footer';
 import Darkmode from '@/components/DarkMode';
 
 import AppThemeProvider from '@/providers/ThemeProvider';
-import ToastProvider from '@/providers/ToastProvider';
 
 import { persistor, store } from '@/store/store';
 
