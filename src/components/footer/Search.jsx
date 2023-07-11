@@ -8,4 +8,8 @@ const Search = () => {
   );
 }
 
+const Container = styled.div`
+  
+`;
+
 export default Search;
