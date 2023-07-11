@@ -160,22 +160,4 @@ const SearchContainer = styled.div`
   }
 `;
 
-const SearchInput = styled.input`
-  display: inline-block;
-  border: none;
-  outline: none;
-  font-family: inherit;
-  font-size: 1.5rem;
-  width: 100%;
-  padding: 0 1rem;
-  background-color: transparent;
-  color: #999;
-  caret-color: var(--caret-light);
-
-  &::placeholder {
-    font-size: 1.4rem;
-    color: #aaa;
-  }
-`;
-
 export default Footer;
