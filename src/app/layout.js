@@ -8,6 +8,7 @@ import Navbar from '@/components/navbar/Navbar';
 import Submenu from '@/components/Submenu';
 import ScrollToTop from '@/components/ScrollToTop';
 import Sidebar from '@/components/Sidebar';
+import Footer from '@/components/footer/Footer';
 import Darkmode from '@/components/DarkMode';
 
 import { persistor, store } from '@/store/store';
