@@ -34,6 +34,8 @@ const Input = styled.input`
   font-size: 1.5rem;
   width: 100%;
   padding: 0 1rem;
+  background-color: transparent;
+  color: #999;
 `;
 
 export default Search;
