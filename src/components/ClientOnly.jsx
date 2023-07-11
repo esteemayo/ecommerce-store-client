@@ -14,7 +14,7 @@ const ClientOnly = ({ children }) => {
   }
 
   return (
-    <div>ClientOnly</div>
+    <>ClientOnly</>
   );
 }
 
