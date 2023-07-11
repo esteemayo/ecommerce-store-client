@@ -30,6 +30,8 @@ const Input = styled.input`
   display: inline-block;
   border: none;
   outline: none;
+  font-family: inherit;
+  font-size: 1.5rem;
 `;
 
 export default Search;
