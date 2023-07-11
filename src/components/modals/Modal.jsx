@@ -6,6 +6,8 @@ import CloseIcon from '@mui/icons-material/Close';
 
 const Modal = ({ title, children, openModal, closeModal }) => {
   const closeModalHandler = useCallback((e) => {
+    e.stopPropagation();
+
     if (e.target.classList.contains('overlay')) {
       closeModal(false);
     }

@@ -9,6 +9,8 @@ const FileUploadModal = ({ openModal, closeModal }) => {
   const [file, setFile] = useState(null);
 
   const closeModalHandler = useCallback((e) => {
+    e.stopPropagation();
+
     if (e.target.classList.contains('overlay')) {
       handleClose();
     }

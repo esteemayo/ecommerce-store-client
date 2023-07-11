@@ -17,6 +17,8 @@ const ProductImageModal = ({
   handleMove,
 }) => {
   const closeModalHandler = useCallback((e) => {
+    e.stopPropagation();
+
     if (e.target.classList.contains('imageContainer')) {
       setIsOpen(false);
     }

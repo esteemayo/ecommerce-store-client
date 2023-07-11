@@ -32,6 +32,8 @@ const PaymentModal = ({ openModal, closeModal, setIsOpen }) => {
   }, [errors, closeModal, setIsOpen, handleClear]);
 
   const handleClick = useCallback((e) => {
+    e.stopPropagation();
+
     if (e.target.classList.contains('overlay')) {
       handleClose();
     }
