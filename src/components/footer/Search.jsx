@@ -16,6 +16,10 @@ const Container = styled.div`
   background-color: var(--clr-white);
   border-radius: 0.5rem;
   margin-bottom: 3rem;
+
+  @media only screen and (max-width: 64em) {
+    width: 30%;
+  }
 `;
 
 const Input = styled.input`
