@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const Search = () => {
   return (
-    <div>Search</div>
+    <Container>Search</Container>
   );
 }
 
