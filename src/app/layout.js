@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
             <AppThemeProvider>
               <div className='container'>
                 <Navbar />
-                <ToastContainer />
+                <ToastProvider />
                 <Submenu />
                 <Sidebar />
                 {children}
