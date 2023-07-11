@@ -23,6 +23,8 @@ const CartModal = ({ product, isModalOpen, closeModal, setIsSelectedProduct }) =
   const [selectedSize, setSelectedSize] = useState(null);
 
   const closeModalHandler = useCallback((e) => {
+    e.stopPropagation();
+
     if (e.target.classList.contains('overlay')) {
       handleCloseModal();
     }
