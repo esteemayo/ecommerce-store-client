@@ -4,7 +4,9 @@ import styled from 'styled-components';
 
 const Search = () => {
   return (
-    <Container>Search</Container>
+    <Container>
+      <Input type='search' placeholder='Search store...' />
+    </Container>
   );
 }
 
