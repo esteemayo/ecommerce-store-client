@@ -11,7 +11,8 @@ const Search = () => {
 }
 
 const Container = styled.div`
-  
+  width: 100%;
+  padding: 1rem 0;
 `;
 
 const Input = styled.input`
