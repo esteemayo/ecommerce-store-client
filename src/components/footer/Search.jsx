@@ -29,6 +29,7 @@ const Container = styled.div`
 const Input = styled.input`
   display: inline-block;
   border: none;
+  outline: none;
 `;
 
 export default Search;
