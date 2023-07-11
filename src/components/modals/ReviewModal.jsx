@@ -13,6 +13,8 @@ const ReviewModal = ({ isModalOpen, setIsModalOpen }) => {
   const [terms, setTerms] = useState(false);
 
   const handleCloseModal = useCallback((e) => {
+    e.stopPropagation();
+
     if (e.target.classList.contains('overlay')) {
       closeModalHandler();
     }
