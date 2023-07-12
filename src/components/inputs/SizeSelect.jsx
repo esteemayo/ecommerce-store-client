@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { useCallback } from 'react';
 
 const SizeSelect = ({ value, selected, onAction, secondaryAction }) => {
-  const handleSize = useCallback((size) => {
+  const handleSelect = useCallback((size) => {
     onAction(size);
     secondaryAction(size);
   }, [onAction, secondaryAction]);
@@ -19,6 +19,7 @@ const SizeSelect = ({ value, selected, onAction, secondaryAction }) => {
               key={index}
               type='button'
               bcg={selected === item}
+              onClick={() => handleSelect(item)}
             />
           );
         })}
