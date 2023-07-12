@@ -17,7 +17,7 @@ const SizeSelect = ({
 
   return (
     <Container modal={modal}>
-      <Heading>Select a size</Heading>
+      <Heading modal={modal}>Select a size</Heading>
       <Wrapper>
         {value?.map((item, index) => {
           return (
