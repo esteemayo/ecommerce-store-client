@@ -19,6 +19,7 @@ const Heading = styled.h2`
   text-transform: capitalize;
   font-weight: 400;
   font-size: 1.7rem;
+  color: ${({ theme }) => theme.text};
 `;
 
 export default ColorSelect;
