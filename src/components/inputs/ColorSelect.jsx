@@ -17,8 +17,8 @@ const ColorSelect = ({ mode, value, selected, onAction, onSecondaryAction }) => 
           return (
             <Color
               key={index}
-              color={item}
               type='button'
+              color={item}
               mode={mode}
               selected={item === selected}
               onClick={() => handleColor(item)}
