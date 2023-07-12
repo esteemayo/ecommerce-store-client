@@ -3,7 +3,14 @@
 import styled from 'styled-components';
 import { useCallback } from 'react';
 
-const ColorSelect = ({ mode, value, modal, selected, onAction, onSecondaryAction }) => {
+const ColorSelect = ({
+  mode,
+  value,
+  modal,
+  selected,
+  onAction,
+  onSecondaryAction,
+}) => {
   const handleColor = useCallback((color) => {
     onAction(color);
     onSecondaryAction(color);
