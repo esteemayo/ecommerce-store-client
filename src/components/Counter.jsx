@@ -1,13 +1,16 @@
 'use client';
 
 import styled from 'styled-components';
+import { faMinus, faPlus } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Counter = () => {
   return (
     <Container>
       <Heading>Quantity</Heading>
-      <Wrapper></Wrapper>
+      <Wrapper>
+        <Button type='button'></Button>
+      </Wrapper>
     </Container>
   );
 }
