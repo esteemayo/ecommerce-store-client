@@ -3,7 +3,7 @@
 import styled from 'styled-components';
 import { useCallback } from 'react';
 
-const SizeSelect = ({ value, selected, onAction, secondaryAction }) => {
+const SizeSelect = ({ value, modal, selected, onAction, secondaryAction }) => {
   const handleSelect = useCallback((size) => {
     onAction(size);
     secondaryAction(size);
