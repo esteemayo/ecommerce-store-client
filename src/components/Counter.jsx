@@ -9,7 +9,7 @@ const Counter = () => {
 }
 
 const Container = styled.div`
-
+  margin: 2rem 0;
 `;
 
 export default Counter;
