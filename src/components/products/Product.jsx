@@ -17,8 +17,8 @@ import ColorSelect from '../inputs/ColorSelect';
 import SizeSelect from '../inputs/SizeSelect';
 
 import ProductHead from './ProductHead';
-
 import ProductInfo from './ProductInfo';
+
 import ProductImageModal from '../modals/ProductImageModal';
 
 const Product = ({ product }) => {
@@ -144,37 +144,14 @@ const Product = ({ product }) => {
             </Link>
           </BreadCrumbs>
           <ProductWrapper>
-            <ProductName>{product.name}</ProductName>
-            <PriceContainer>
-              <ProductPrice>
-                <NumericFormat
-                  value={product.price + product.discount}
-                  displayType={'text'}
-                  thousandSeparator={true}
-                  prefix={'$'}
-                />
-              </ProductPrice>
-              <PriceDiscount>-{product.priceDiscount}%</PriceDiscount>
-            </PriceContainer>
-            <SalePrice>
-              <NumericFormat
-                value={product.price}
-                displayType={'text'}
-                thousandSeparator={true}
-                prefix={'$'}
-              />
-            </SalePrice>
-            <Message>
-              4 interest-free payments of $49.75.
-              &nbsp;
-              <Link href='#' passHref>Learn more</Link>
-            </Message>
-            <Rating>
-              <StarRating value={product.ratingsAverage} />
-              <ReviewQuantity>
-                <a href='#reviews'>{product.ratingsQuantity} Review</a>
-              </ReviewQuantity>
-            </Rating>
+            <ProductHead
+              name={product.name}
+              price={product.price}
+              discount={product.discount}
+              priceDiscount={product.priceDiscount}
+              ratingsAverage={product.ratingsAverage}
+              ratingsQuantity={product.ratingsQuantity}
+            />
             <Hr />
             <ColorSelect
               mode={darkMode}
