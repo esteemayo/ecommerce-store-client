@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const BreadCrumbs = () => {
   return (
-    <div>BreadCrumbs</div>
+    <Container>BreadCrumbs</Container>
   );
 }
 
