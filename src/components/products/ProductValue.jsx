@@ -12,4 +12,8 @@ const Container = styled.div`
   
 `;
 
+const ValueAdd = styled.div`
+  
+`;
+
 export default ProductValue;
