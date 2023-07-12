@@ -54,6 +54,7 @@ const Size = styled.button`
   min-width: 4rem;
   height: 3rem;
   padding: 1.6rem 0.4rem;
+  line-height: 0.2;
 `;
 
 export default SizeSelect;
