@@ -87,7 +87,7 @@ const Wrapper = styled.figure`
 `;
 
 const ArrowButton = styled.button`
-  
+  border: none;
 `;
 
 export default ProductImage;
