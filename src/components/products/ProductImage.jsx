@@ -9,20 +9,20 @@ import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 const ProductImage = () => {
   return (
     <Container>
+      <ArrowButton
+        type='button'
+        direction='left'
+      >
+        <FontAwesomeIcon icon={faArrowLeft} />
+      </ArrowButton>
       <Wrapper>
-        <ArrowButton
-          type='button'
-          direction='left'
-        >
-          <FontAwesomeIcon icon={faArrowLeft} />
-        </ArrowButton>
-        <ArrowButton
-          type='button'
-          direction='right'
-        >
-          <FontAwesomeIcon icon={faArrowRight} />
-        </ArrowButton>
       </Wrapper>
+      <ArrowButton
+        type='button'
+        direction='right'
+      >
+        <FontAwesomeIcon icon={faArrowRight} />
+      </ArrowButton>
     </Container>
   );
 }
