@@ -28,7 +28,7 @@ const Heading = styled.h3`
 `;
 
 const Wrapper = styled.div`
-  
+  margin-top: 1.5rem;
 `;
 
 export default SizeSelect;
