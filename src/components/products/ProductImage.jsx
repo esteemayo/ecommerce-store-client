@@ -112,6 +112,10 @@ const ArrowButton = styled.button`
   svg {
     color: inherit;
   }
+
+  @media only screen and (min-width: 50em) {
+    display: none;
+  }
 `;
 
 export default ProductImage;
