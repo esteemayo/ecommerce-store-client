@@ -2,7 +2,6 @@
 
 import styled from 'styled-components';
 import Image from 'next/image';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useDispatch, useSelector } from 'react-redux';
 import { useCallback, useEffect, useRef, useState } from 'react';
 
