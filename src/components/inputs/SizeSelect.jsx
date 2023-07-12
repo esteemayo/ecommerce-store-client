@@ -40,7 +40,7 @@ const Container = styled.div`
 const Heading = styled.h3`
   display: inline-block;
   font-weight: 400;
-  font-size: 1.65rem;
+  font-size: ${({ modal }) => modal ? '1.5rem' : '1.65rem'};
   color: ${({ theme }) => theme.text};
 `;
 
