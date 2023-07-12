@@ -12,6 +12,9 @@ const Counter = () => {
         <Button type='button'>
           <FontAwesomeIcon icon={faMinus} />
         </Button>
+        <Button type='button'>
+          <FontAwesomeIcon icon={faPlus} />
+        </Button>
       </Wrapper>
     </Container>
   );
