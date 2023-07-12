@@ -34,7 +34,6 @@ const Product = ({ product }) => {
   const [slideIndex, setSlideIndex] = useState(0);
   const [quantity, setQuantity] = useState(1);
   const [isSelected, setIsSelected] = useState(null);
-  const [slideNumber, setSlideNumber] = useState(0);
   const [selectedSize, setSelectedSize] = useState(null);
   const [alert, setAlert] = useState(false);
 
