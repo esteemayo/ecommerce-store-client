@@ -14,6 +14,7 @@ import { addProduct } from '@/features/cart/cartSlice';
 
 import Counter from '../inputs/Counter';
 import ProductImageModal from '../modals/ProductImageModal';
+import ColorSelect from '../inputs/ColorSelect';
 
 const Product = ({ product }) => {
   const dispatch = useDispatch();
