@@ -623,12 +623,4 @@ const ValueAdd = styled.div`
   }
 `;
 
-const DescriptionText = styled.p`
-  text-align: justify;
-  font-size: 1.6rem;
-  color: ${({ theme }) => theme.text};
-  line-height: 1.3;
-  word-wrap: break-word;
-`;
-
 export default Product;
