@@ -45,7 +45,7 @@ const Heading = styled.h3`
 `;
 
 const Wrapper = styled.div`
-  margin-top: 1.5rem;
+  margin-top: ${({ modal }) => modal ? '0.5rem' : '1.5rem'};
   display: flex;
   align-items: center;
   gap: 1rem;
