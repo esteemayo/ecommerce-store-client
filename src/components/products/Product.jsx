@@ -13,6 +13,7 @@ import StarRating from '@/components/StarRating';
 import { addProduct } from '@/features/cart/cartSlice';
 
 import Counter from '../Counter';
+import ProductImageModal from '../modals/ProductImageModal';
 
 const Product = ({ product }) => {
   const dispatch = useDispatch();
