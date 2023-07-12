@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const ColorSelect = () => {
   return (
-    <div>ColorSelect</div>
+    <Container>ColorSelect</Container>
   );
 }
 
