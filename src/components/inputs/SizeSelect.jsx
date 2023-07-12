@@ -33,7 +33,7 @@ const Container = styled.div`
   margin-bottom: ${({ modal }) => modal ? '1rem' : '4rem'};
 
   @media only screen and (max-width: 37.5em) {
-    margin-bottom: 2rem;
+    margin-bottom: ${({ modal }) => !modal && '2rem'};
   }
 `;
 
