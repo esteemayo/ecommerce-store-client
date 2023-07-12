@@ -7,6 +7,8 @@ import { useCallback } from 'react';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const ProductImage = ({ images, isMoved, slideNumber, clickLimit, imgContainer, onClick, onAction }) => {
+  const lastIndex = images?.lastIndexOf(images[images.length - 1]);
+
   const handleDirection = useCallback((direction) => {
     onClick(true);
     const distance = imgContainer.current.getBoundingClientRect().x;
@@ -48,6 +50,8 @@ const ProductImage = ({ images, isMoved, slideNumber, clickLimit, imgContainer, 
       <ArrowButton
         type='button'
         direction='right'
+        onClick={() => handleDirection('right')}
+        style={{ display: slideNumber === lastIndex && 'none' }}
       >
         <FontAwesomeIcon icon={faArrowRight} />
       </ArrowButton>
