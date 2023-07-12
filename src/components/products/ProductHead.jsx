@@ -50,4 +50,8 @@ const TotalPrice = styled.p`
   
 `;
 
+const Message = styled.p`
+  
+`;
+
 export default ProductHead;
