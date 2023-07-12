@@ -58,6 +58,7 @@ const Button = styled.button`
   border-radius: 0.4rem;
   outline-color: #ccc;
   cursor: pointer;
+  transition: all 0.3s ease;
 
   @media only screen and (max-width: 37.5em) {
     min-width: 2.85rem;
