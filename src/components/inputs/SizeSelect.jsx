@@ -4,6 +4,11 @@ import styled from 'styled-components';
 import { useCallback } from 'react';
 
 const SizeSelect = ({ value, selected, onAction, secondaryAction }) => {
+  const handleSize = useCallback((size) => {
+    onAction(size);
+    secondaryAction(size);
+  }, [onAction, secondaryAction]);
+
   return (
     <Container>
       <Heading>Select a size</Heading>
