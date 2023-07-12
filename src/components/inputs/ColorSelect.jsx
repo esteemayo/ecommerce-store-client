@@ -75,7 +75,7 @@ const Color = styled.button`
 
   @media only screen and (max-width: 37.5em) {
     width: ${({ modal }) => !modal && '2rem'};
-    height: 2rem;
+    height:  ${({ modal }) => !modal && '2rem'};
   }
 `;
 
