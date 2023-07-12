@@ -55,6 +55,10 @@ const Heading = styled.h1`
   @media only screen and (max-width: 59.375em) {
     margin-bottom: 1.75rem;
   }
+
+  @media only screen and (max-width: 37.5em) {
+    font-size: 2.23rem;
+  }
 `;
 
 const PriceContainer = styled.div`
