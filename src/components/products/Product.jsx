@@ -567,25 +567,6 @@ const Hr = styled.hr`
   background-color: ${({ theme }) => theme.cartModalBorder};
 `;
 
-const ColorWrapper = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 2.6rem;
-  margin: 1.5rem 0;
-
-  @media only screen and (max-width: 59.375em) {
-    gap: 2.35rem;
-  }
-
-  @media only screen and (max-width: 37.5em) {
-    margin-top: 1.3rem;
-  }
-
-  @media only screen and (max-width: 18.75em) {
-    gap: 2rem;
-  }
-`;
-
 const Color = styled.button`
   border: none;
   display: block;
