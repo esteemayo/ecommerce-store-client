@@ -2,11 +2,11 @@
 
 import styled from 'styled-components';
 
-const ProductInfo = ({ value }) => {
+const ProductInfo = ({ content }) => {
   return (
     <Container>
       <Heading>Overview</Heading>
-      <Text>{value}</Text>
+      <Text>{content}</Text>
     </Container>
   );
 }
