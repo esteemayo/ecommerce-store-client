@@ -178,26 +178,7 @@ const Product = ({ product }) => {
               />
             )}
             <Hr />
-            <ValueAddWrapper>
-              <ValueAdd mode={darkMode}>
-                <Image
-                  src='/img/Shipping-black.svg'
-                  width={24}
-                  height={24}
-                  alt=''
-                />
-                <span>Free Shipping over $50</span>
-              </ValueAdd>
-              <ValueAdd mode={darkMode}>
-                <Image
-                  src='/img/Returns-black.svg'
-                  width={24}
-                  height={24}
-                  alt=''
-                />
-                <span>Free Returns</span>
-              </ValueAdd>
-            </ValueAddWrapper>
+            <ProductValue items={productValue} mode={darkMode} />
             <Hr />
             <ProductInfo
               title='Overview'
