@@ -15,6 +15,10 @@ const ProductHead = ({
   ratingsAverage,
   ratingsQuantity,
 }) => {
+  const initialPrice = useMemo(() => {
+    return price + discount;
+  }, [discount, price]);
+
   return (
     <>
       <Heading>{name}</Heading>
