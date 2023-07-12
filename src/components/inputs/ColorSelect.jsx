@@ -55,6 +55,11 @@ const Color = styled.button`
   outline: 1px solid ${({ theme, selected }) => selected ? theme.cartSelected : 'transparent'};
   outline-offset: 2px;
   cursor: ${({ selected }) => selected ? 'default' : 'pointer'};
+
+  @media only screen and (max-width: 37.5em) {
+    width: 2rem;
+    height: 2rem;
+  }
 `;
 
 export default ColorSelect;
