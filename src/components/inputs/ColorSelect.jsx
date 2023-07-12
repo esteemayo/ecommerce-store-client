@@ -2,12 +2,19 @@
 
 import styled from 'styled-components';
 
-const ColorSelect = () => {
+const ColorSelect = ({ value }) => {
   return (
     <Container>
       <Heading>Color</Heading>
       <Wrapper>
-        <Color type='button' />
+        {value.map((item, index) => {
+          return (
+            <Color
+              key={index}
+              type='button'
+            />
+          );
+        })}
       </Wrapper>
     </Container>
   );
