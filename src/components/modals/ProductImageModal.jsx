@@ -16,6 +16,8 @@ const ProductImageModal = ({
   lastIndex,
   onMove,
 }) => {
+  const [open, setOpen] = useState(false);
+
   const closeModalHandler = useCallback((e) => {
     e.stopPropagation();
 
