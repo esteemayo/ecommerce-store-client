@@ -17,6 +17,7 @@ const Counter = ({ value, modal, onClick }) => {
       <Wrapper modal={modal}>
         <Button
           type='button'
+          modal={modal}
           disabled={value <= 1}
           onClick={() => handleQuantity('dec')}
         >
