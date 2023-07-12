@@ -94,7 +94,7 @@ const ProductImage = ({ images }) => {
         isMoved={isMoved}
         slideIndex={slideIndex}
         lastIndex={lastIndex}
-        handleMove={handleMove}
+        onMove={handleMove}
       />
     </Container>
   );
