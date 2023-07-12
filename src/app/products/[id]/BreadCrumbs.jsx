@@ -9,4 +9,8 @@ const BreadCrumbs = () => {
   );
 }
 
+const Container = styled.div`
+  
+`;
+
 export default BreadCrumbs;
