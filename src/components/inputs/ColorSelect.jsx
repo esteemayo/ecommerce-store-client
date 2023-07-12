@@ -11,7 +11,7 @@ const ColorSelect = () => {
 }
 
 const Container = styled.div`
-  
+  margin: 2rem 0;
 `;
 
 const Heading = styled.h2`
