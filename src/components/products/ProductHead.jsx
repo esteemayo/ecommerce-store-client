@@ -18,6 +18,14 @@ const ProductHead = ({ name, price, discount, priceDiscount }) => {
         </Price>
         <Discount>-{priceDiscount}%</Discount>
       </PriceContainer>
+      <TotalPrice>
+        <NumericFormat
+          value={price}
+          displayType={'text'}
+          thousandSeparator={true}
+          prefix={'$'}
+        />
+      </TotalPrice>
     </>
   );
 }
