@@ -400,26 +400,6 @@ const ProductWrapper = styled.div`
   }
 `;
 
-const ReviewQuantity = styled.span`
-  font-weight: 600;
-  font-size: 1.3rem;
-  color: ${({ theme }) => theme.textReviewCount};
-
-  a {
-    &:link,
-    &:visited {
-      color: currentColor;
-      text-decoration-color: ${({ theme }) => theme.colCrumbs};
-      text-underline-offset: 3px;
-    }
-
-    &:hover,
-    &:active {
-      color: currentColor;
-    }
-  }
-`;
-
 const Hr = styled.hr`
   width: 100%;
   height: 1px;
