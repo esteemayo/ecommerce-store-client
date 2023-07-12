@@ -686,43 +686,6 @@ const SelectSize = styled.button`
   }
 `;
 
-const AddButton = styled.button`
-  border: none;
-  display: inline-block;
-  text-align: center;
-  font-size: 1.4rem;
-  min-width: 3rem;
-  height: 3rem;
-  padding: 0 0.4rem;
-  line-height: 0.2;
-  background-color: transparent;
-  color: inherit;
-  border: 2px solid ${({ theme }) => theme.sizeHover};
-  border-radius: 0.4rem;
-  outline-color: #ccc;
-  cursor: pointer;
-  transition: all 0.3s ease;
-
-  @media only screen and (max-width: 37.5em) {
-    min-width: 2.85rem;
-    height: 2.85rem;
-  }
-
-  &:disabled {
-    background-color: ${({ theme }) => theme.bgAddBtnDis};
-    color: #999;
-  }
-
-  svg {
-    font-size: 1.6rem;
-    fill: currentColor;
-
-    @media only screen and (max-width: 37.5em) {
-      font-size: 1.4rem;
-    }
-  }
-`;
-
 const Amount = styled.span`
   width: 3rem;
   height: 3rem;
