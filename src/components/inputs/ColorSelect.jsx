@@ -32,6 +32,10 @@ const Wrapper = styled.div`
   @media only screen and (max-width: 59.375em) {
     gap: 2.35rem;
   }
+
+  @media only screen and (max-width: 37.5em) {
+    margin-top: 1.3rem;
+  }
 `;
 
 export default ColorSelect;
