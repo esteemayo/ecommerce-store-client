@@ -16,7 +16,8 @@ const Alert = ({ alert, message, onChange }) => {
 }
 
 const Message = styled.span`
-  
+  display: block;
+  font-size: 1.4rem;
 `;
 
 export default Alert;
