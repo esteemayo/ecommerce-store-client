@@ -98,38 +98,17 @@ const Product = ({ product }) => {
     <Container>
       <ProductContainer>
         <Left>
-          <ImagesContainer>
-            <ArrowButton
-              type='button'
-              direction='left'
-              onClick={() => handleDirection('left')}
-              style={{ display: (!isSliderMoved || slideNumber === 0) && 'none' }}
-            >
-              <FontAwesomeIcon icon={faArrowLeft} />
-            </ArrowButton>
-            <ImageWrapper ref={imgContainerRef}>
-              {product?.images?.map((item, index) => {
-                return (
-                  <Image
-                    key={index}
-                    src={item}
-                    width={350}
-                    height={350}
-                    alt=''
-                    onClick={() => handleOpen(index)}
-                  />
-                )
-              })}
-            </ImageWrapper>
-            <ArrowButton
-              type='button'
-              direction='right'
-              onClick={() => handleDirection('right')}
-              style={{ display: slideNumber === lastIndex && 'none' }}
-            >
-              <FontAwesomeIcon icon={faArrowRight} />
-            </ArrowButton>
-          </ImagesContainer>
+          <ProductImage
+            images={product.images}
+            isMoved={isSliderMoved}
+            slideNumber={slideNumber}
+            clickLimit={clickLimit}
+            imgContainer={imgContainerRef}
+            onClick={setIsSliderMoved}
+            onAction={setSlideNumber}
+            onOpen={setIsOpen}
+            secondaryAction={setSlideIndex}
+          />
         </Left>
         <Right>
           <BreadCrumbs category={product.category} />
