@@ -184,7 +184,7 @@ const Product = ({ product }) => {
             <Hr />
             <ColorSelect
               mode={darkMode}
-              value={color}
+              value={product.color}
               selected={isSelected}
               onAction={setColor}
               secondaryAction={setIsSelected}
