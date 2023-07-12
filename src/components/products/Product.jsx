@@ -1,9 +1,8 @@
 'use client';
 
 import styled from 'styled-components';
-import Image from 'next/image';
 import { useDispatch, useSelector } from 'react-redux';
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useCallback, useRef, useState } from 'react';
 
 import { addProduct } from '@/features/cart/cartSlice';
 import BreadCrumbs from '@/app/products/[id]/BreadCrumbs';
