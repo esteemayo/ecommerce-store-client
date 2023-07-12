@@ -2,7 +2,7 @@
 
 import styled from 'styled-components';
 
-const SizeSelect = ({ value }) => {
+const SizeSelect = ({ value, selected, onAction, secondaryAction }) => {
   return (
     <Container>
       <Heading>Select a size</Heading>
