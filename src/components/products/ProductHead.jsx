@@ -34,7 +34,9 @@ const ProductHead = ({ name, price, discount, priceDiscount }) => {
         &nbsp;
         <Link href='#' passHref>Learn more</Link>
       </Message>
-      <Rating></Rating>
+      <Rating>
+        <StarRating value={product.ratingsAverage} />
+      </Rating>
     </>
   );
 }
