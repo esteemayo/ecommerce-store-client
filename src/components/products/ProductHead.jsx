@@ -87,6 +87,7 @@ const Discount = styled.p`
   padding: 0.4rem 0.6rem;
   background-color: #fa4b21;
   color: var(--clr-white);
+  border-radius: 10rem;
 `;
 
 const TotalPrice = styled.p`
