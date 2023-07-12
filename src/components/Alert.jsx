@@ -1,22 +1,18 @@
 'use client';
 
 import styled from 'styled-components';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 
-const Alert = () => {
-  const [alert, setAlert] = useState(false);
-
+const Alert = ({ alert, message, onChange }) => {
   useEffect(() => {
     const timeout = setTimeout(() => {
-      setAlert(false);
+      onChange(false);
     }, 3000);
 
     return () => clearTimeout(timeout);
-  }, [alert]);
+  }, [alert, onChange]);
 
-  return (
-    <div>Alert</div>
-  );
+  return <Message>{message}</Message>;
 }
 
 const Message = styled.span`
