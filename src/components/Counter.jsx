@@ -82,7 +82,7 @@ const Button = styled.button`
   }
 
   svg {
-    font-size: 1.6rem;
+    font-size: ${({ modal }) => modal ? '1.4rem' : '1.6rem'};
     fill: currentColor;
 
     @media only screen and (max-width: 37.5em) {
