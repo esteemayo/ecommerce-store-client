@@ -59,6 +59,7 @@ const ProductImage = ({
               width={350}
               height={350}
               alt=''
+              onClick={() => handleOpen(index)}
             />
           );
         })}
