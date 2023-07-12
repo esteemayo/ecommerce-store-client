@@ -128,7 +128,7 @@ const Message = styled.p`
 `;
 
 const Rating = styled.div`
-  
+  margin: 1rem 0 2rem 0;
 `;
 
 const ReviewQuantity = styled.span`
