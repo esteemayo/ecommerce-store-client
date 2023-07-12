@@ -548,13 +548,6 @@ const Hr = styled.hr`
   background-color: ${({ theme }) => theme.cartModalBorder};
 `;
 
-const SizeHeading = styled.h3`
-  display: inline-block;
-  font-weight: 400;
-  font-size: 1.65rem;
-  color: ${({ theme }) => theme.text};
-`;
-
 const SizeContainer = styled.div`
   margin-top: 1.5rem;
   display: flex;
