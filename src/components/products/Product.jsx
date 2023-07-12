@@ -567,6 +567,15 @@ const Hr = styled.hr`
   background-color: ${({ theme }) => theme.cartModalBorder};
 `;
 
+const SizeWrapper = styled.div`
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+
+  @media only screen and (max-width: 37.5em) {
+    margin-bottom: 2rem;
+  }
+`;
+
 const SizeHeading = styled.h3`
   display: inline-block;
   font-weight: 400;
