@@ -42,4 +42,8 @@ const Wrapper = styled.div`
   }
 `;
 
+const Color = styled.button`
+  
+`;
+
 export default ColorSelect;
