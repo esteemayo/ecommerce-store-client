@@ -4,8 +4,12 @@ import styled from 'styled-components';
 
 const ProductHead = () => {
   return (
-    <div>ProductHead</div>
+    <>ProductHead</>
   );
 }
+
+const Heading = styled.h1`
+
+`;
 
 export default ProductHead;
