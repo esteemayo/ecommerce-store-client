@@ -46,7 +46,7 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   gap: 2.6rem;
-  margin: 1.5rem 0;
+  margin: ${({ modal }) => modal ? '1rem 0' : '1.5rem 0'};
 
   @media only screen and (max-width: 59.375em) {
     gap: 2.35rem;
