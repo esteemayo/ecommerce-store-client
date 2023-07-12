@@ -39,7 +39,7 @@ const ProductImage = ({ images }) => {
 }
 
 const Container = styled.div`
-
+  position: relative;
 `;
 
 const Wrapper = styled.figure`
