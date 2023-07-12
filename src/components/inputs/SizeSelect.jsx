@@ -55,6 +55,8 @@ const Size = styled.button`
   height: 3rem;
   padding: 1.6rem 0.4rem;
   line-height: 0.2;
+  background-color: ${({ bcg, theme }) => bcg ? theme.cartSelected : 'transparent'};
+  color: ${({ bcg }) => bcg ? 'var(--clr-white)' : 'inherit'};
 `;
 
 export default SizeSelect;
