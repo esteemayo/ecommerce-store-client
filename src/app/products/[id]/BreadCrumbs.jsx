@@ -3,9 +3,14 @@
 import styled from 'styled-components';
 import Link from 'next/link';
 
-const BreadCrumbs = () => {
+const BreadCrumbs = ({ category }) => {
   return (
-    <Container>BreadCrumbs</Container>
+    <Container>
+      <Link href='/' passHref>Home</Link> / {' '}
+      <Link href={`/products/category/${encodeURIComponent(category)}`} passHref>
+        {category}
+      </Link>
+    </Container>
   );
 }
 
