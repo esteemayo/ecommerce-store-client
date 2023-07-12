@@ -35,7 +35,6 @@ const Product = ({ product }) => {
   const [quantity, setQuantity] = useState(1);
   const [isSelected, setIsSelected] = useState(null);
   const [slideNumber, setSlideNumber] = useState(0);
-  const [clickLimit, setClickLimit] = useState(window.innerWidth / 235);
   const [selectedSize, setSelectedSize] = useState(null);
   const [alert, setAlert] = useState(false);
 
