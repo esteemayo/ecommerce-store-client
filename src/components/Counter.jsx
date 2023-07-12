@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { faMinus, faPlus } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const Counter = () => {
+const Counter = ({ value }) => {
   return (
     <Container>
       <Heading>Quantity</Heading>
@@ -12,6 +12,7 @@ const Counter = () => {
         <Button type='button'>
           <FontAwesomeIcon icon={faMinus} />
         </Button>
+        <Amount>{value}</Amount>
         <Button type='button'>
           <FontAwesomeIcon icon={faPlus} />
         </Button>
