@@ -69,4 +69,8 @@ const Rating = styled.div`
   
 `;
 
+const ReviewQuantity = styled.span`
+  
+`;
+
 export default ProductHead;
