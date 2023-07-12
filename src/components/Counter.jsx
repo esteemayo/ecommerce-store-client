@@ -32,7 +32,7 @@ const Counter = ({ value, modal, onClick }) => {
 }
 
 const Container = styled.div`
-  margin: 2rem 0;
+  margin: ${({ modal }) => modal ? '0.5rem 0' : '2rem 0'};
 `;
 
 const Heading = styled.h3`
