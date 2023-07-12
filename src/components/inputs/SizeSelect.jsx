@@ -61,6 +61,8 @@ const Size = styled.button`
   border-radius: 0.4rem;
   outline-color: #ccc;
   margin-bottom: 0.8rem;
+  cursor: ${({ bcg }) => bcg ? 'default' : 'pointer'};
+  transition: all 0.1s ease-in-out;
 `;
 
 export default SizeSelect;
