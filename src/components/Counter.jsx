@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const Counter = () => {
   return (
-    <div>Counter</div>
+    <Container>Counter</Container>
   );
 }
 
