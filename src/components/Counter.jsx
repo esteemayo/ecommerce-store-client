@@ -18,6 +18,8 @@ const Container = styled.div`
 const Heading = styled.h3`
   display: inline-block;
   text-transform: capitalize;
+  font-weight: 400;
+  font-size: 1.65rem;
 `;
 
 const Wrapper = styled.div`
