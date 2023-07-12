@@ -93,14 +93,6 @@ const Product = ({ product }) => {
     handleReset();
   }, [color, product, quantity, size, handleReset, dispatch]);
 
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      setAlert(false);
-    }, 3000);
-
-    return () => clearTimeout(timeout);
-  }, [alert]);
-
   return (
     <Container>
       <ProductContainer>
