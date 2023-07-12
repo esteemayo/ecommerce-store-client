@@ -44,7 +44,7 @@ const ProductImageModal = ({
 
     window.addEventListener('keydown', exitModal);
     return () => window.removeEventListener('keydown', exitModal);
-  }, [setIsOpen]);
+  }, [onClose]);
 
   useEffect(() => {
     setShowModal(isOpen);
