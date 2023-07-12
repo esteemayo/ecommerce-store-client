@@ -102,6 +102,8 @@ const ArrowButton = styled.button`
   top: 50%;
   left: ${({ direction }) => direction === 'left' && '2rem'};
   right: ${({ direction }) => direction === 'right' && '54%'};
+  transform: translate(-50%);
+  z-index: 1000;
 `;
 
 export default ProductImage;
