@@ -110,6 +110,21 @@ const TotalPrice = styled.p`
 const Message = styled.p`
   color: ${({ theme }) => theme.text};
   margin-top: 1rem;
+
+  a {
+    &:link,
+    &:visited {
+      text-decoration: underline;
+      text-transform: capitalize;
+      color: ${({ theme }) => theme.text};
+      outline-color: #eee;
+    }
+
+    &:hover,
+    &:active {
+      color: ${({ theme }) => theme.text};
+    }
+  }
 `;
 
 const Rating = styled.div`
