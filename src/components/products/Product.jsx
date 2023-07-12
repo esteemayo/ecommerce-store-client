@@ -14,6 +14,7 @@ import { addProduct } from '@/features/cart/cartSlice';
 
 import Counter from '../inputs/Counter';
 import ColorSelect from '../inputs/ColorSelect';
+import SizeSelect from '../inputs/SizeSelect';
 
 import ProductImageModal from '../modals/ProductImageModal';
 
