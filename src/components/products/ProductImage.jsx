@@ -6,8 +6,24 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useCallback } from 'react';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
-const ProductImage = ({ images, isMoved, slideNumber, clickLimit, imgContainer, onClick, onAction }) => {
+const ProductImage = ({
+  images,
+  isMoved,
+  isSliderMoved,
+  slideNumber,
+  clickLimit,
+  imgContainer,
+  onClick,
+  onAction,
+  onOpen,
+  secondaryAction,
+}) => {
   const lastIndex = images?.lastIndexOf(images[images.length - 1]);
+
+  const handleOpen = useCallback((index) => {
+    secondaryAction(index);
+    onOpen(true);
+  }, [onOpen, secondaryAction]);
 
   const handleDirection = useCallback((direction) => {
     onClick(true);
@@ -30,11 +46,11 @@ const ProductImage = ({ images, isMoved, slideNumber, clickLimit, imgContainer, 
         type='button'
         direction='left'
         onClick={() => handleDirection('left')}
-        style={{ display: (!isMoved || slideNumber === 0) && 'none' }}
+        style={{ display: (!isSliderMoved || slideNumber === 0) && 'none' }}
       >
         <FontAwesomeIcon icon={faArrowLeft} />
       </ArrowButton>
-      <Wrapper>
+      <Wrapper ref={imgContainer}>
         {images?.map((item, index) => {
           return (
             <Image
