@@ -60,6 +60,7 @@ const Wrapper = styled.figure`
     height: 35rem;
     object-fit: cover;
     border-radius: 0.5rem;
+    cursor: pointer;
   }
 `;
 
