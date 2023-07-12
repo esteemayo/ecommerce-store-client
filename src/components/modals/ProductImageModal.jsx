@@ -38,7 +38,7 @@ const ProductImageModal = ({
       e.preventDefault();
 
       if (e.key === 'Escape') {
-        setIsOpen(false);
+        onClose();
       }
     };
 
