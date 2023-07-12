@@ -19,6 +19,15 @@ const Container = styled.div`
   align-items: center;
   gap: 0.5rem;
   color: ${({ theme }) => theme.textLabel};
+
+  a {
+    &:link,
+    &:visited {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+  }
 `;
 
 export default BreadCrumbs;
