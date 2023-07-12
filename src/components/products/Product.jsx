@@ -60,21 +60,6 @@ const Product = ({ product }) => {
     setSlideIndex(newSlideIndex);
   }, [slideIndex]);
 
-  const handleDirection = useCallback((direction) => {
-    setIsSliderMoved(true);
-    const distance = imgContainerRef.current.getBoundingClientRect().x;
-
-    if (direction === 'left' && slideNumber > 0) {
-      setSlideNumber((prev) => prev - 1);
-      imgContainerRef.current.style.transform = `translateX(${235 + distance}px)`;
-    }
-
-    if (direction === 'right' && slideNumber < 6 - clickLimit) {
-      setSlideNumber((prev) => prev + 1);
-      imgContainerRef.current.style.transform = `translateX(${-235 + distance}px)`;
-    }
-  }, [clickLimit, slideNumber]);
-
   const handleReset = useCallback(() => {
     setSize(null);
     setColor(null);
