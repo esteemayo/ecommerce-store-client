@@ -6,6 +6,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useCallback } from 'react';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
+import ProductImageModal from '../modals/ProductImageModal';
+
 const ProductImage = ({
   images,
   isMoved,

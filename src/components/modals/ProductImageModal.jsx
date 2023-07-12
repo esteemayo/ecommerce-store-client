@@ -8,7 +8,7 @@ import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { useCallback } from 'react';
 
 const ProductImageModal = ({
-  product,
+  images,
   isOpen,
   setIsOpen,
   isMoved,
@@ -51,7 +51,7 @@ const ProductImageModal = ({
       )}
       <ImageContainer className='imageContainer' onClick={closeModalHandler}>
         <Image
-          src={product?.images ? product?.images[slideIndex] : '/img/img-1.jpg'}
+          src={images ? images[slideIndex] : '/img/img-1.jpg'}
           width={1200}
           height={1000}
           alt=''
