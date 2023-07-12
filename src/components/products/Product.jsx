@@ -194,10 +194,6 @@ const Left = styled.div`
   padding: 1rem 0;
 `;
 
-const ImagesContainer = styled.div`
-  position: relative;
-`;
-
 const Right = styled.div`
   flex: 1;
   padding-top: 5rem;
