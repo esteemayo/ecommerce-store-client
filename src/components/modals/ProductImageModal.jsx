@@ -16,7 +16,7 @@ const ProductImageModal = ({
   lastIndex,
   onMove,
 }) => {
-  const [open, setOpen] = useState(false);
+  const [showModal, setShowModal] = useState(false);
 
   const closeModalHandler = useCallback((e) => {
     e.stopPropagation();
@@ -36,6 +36,10 @@ const ProductImageModal = ({
     window.addEventListener('keydown', exitModal);
     return () => window.removeEventListener('keydown', exitModal);
   }, [setIsOpen]);
+
+  useEffect(() => {
+
+  }, [])
 
   return (
     <Overlay type={isOpen ? 'show' : ''}>
