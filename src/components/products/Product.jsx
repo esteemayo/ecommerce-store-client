@@ -419,24 +419,4 @@ const ValueAddWrapper = styled.div`
   margin-bottom: 2rem;
 `;
 
-const ValueAdd = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
-  color: ${({ theme }) => theme.text};
-
-  img {
-    width: 2.4rem;
-    height: auto;
-    background-color: ${({ mode }) => mode && '#1b1a1a'};
-    display: inline-block;
-    object-fit: cover;
-  }
-
-  span {
-    font-size: 1.25rem;
-    line-height: 1.2;
-  }
-`;
-
 export default Product;
