@@ -6,7 +6,9 @@ const ColorSelect = () => {
   return (
     <Container>
       <Heading>Color</Heading>
-      <Wrapper></Wrapper>
+      <Wrapper>
+        <Color type='button' />
+      </Wrapper>
     </Container>
   );
 }
