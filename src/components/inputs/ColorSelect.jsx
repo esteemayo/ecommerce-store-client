@@ -22,4 +22,8 @@ const Heading = styled.h2`
   color: ${({ theme }) => theme.text};
 `;
 
+const Wrapper = styled.div`
+  
+`;
+
 export default ColorSelect;
