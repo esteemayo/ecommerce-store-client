@@ -12,7 +12,7 @@ const ColorSelect = ({ mode, value, modal, selected, onAction, onSecondaryAction
   return (
     <Container modal={modal}>
       <Heading modal={modal}>Color</Heading>
-      <Wrapper>
+      <Wrapper modal={modal}>
         {value.map((item, index) => {
           return (
             <Color
