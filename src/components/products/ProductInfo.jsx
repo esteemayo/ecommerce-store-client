@@ -16,7 +16,7 @@ const Container = styled.div`
 `;
 
 const Heading = styled.h4`
-  
+  display: inline-block;
 `;
 
 const Text = styled.p`
