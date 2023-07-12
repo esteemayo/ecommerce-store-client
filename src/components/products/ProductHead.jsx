@@ -6,6 +6,9 @@ const ProductHead = ({ name }) => {
   return (
     <>
       <Heading>{name}</Heading>
+      <PriceContainer>
+        
+      </PriceContainer>
     </>
   );
 }
