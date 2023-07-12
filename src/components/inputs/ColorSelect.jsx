@@ -13,6 +13,7 @@ const ColorSelect = ({ mode, value, selected }) => {
               key={index}
               type='button'
               mode={mode}
+              selected={item === selected}
             />
           );
         })}
