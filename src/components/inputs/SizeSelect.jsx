@@ -30,7 +30,7 @@ const SizeSelect = ({ value, modal, selected, onAction, secondaryAction }) => {
 
 const Container = styled.div`
   margin-top: 1rem;
-  margin-bottom: 4rem;
+  margin-bottom: ${({ modal }) => modal ? '1rem' : '4rem'};
 
   @media only screen and (max-width: 37.5em) {
     margin-bottom: 2rem;
