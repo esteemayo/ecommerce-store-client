@@ -50,7 +50,7 @@ const Wrapper = styled.div`
   gap: ${({ modal }) => modal ? '1rem' : '2rem'};
 
   @media only screen and (max-width: 37.5em) {
-    gap: 1.5rem;
+    gap: ${({ modal }) => !modal && '1.5rem'};
   }
 `;
 
