@@ -25,7 +25,7 @@ const ProductHead = ({
       <PriceContainer>
         <Price>
           <NumericFormat
-            value={price + discount}
+            value={initialPrice}
             displayType={'text'}
             thousandSeparator={true}
             prefix={'$'}
