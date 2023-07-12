@@ -97,7 +97,8 @@ const Discount = styled.p`
 `;
 
 const TotalPrice = styled.p`
-  
+  font-weight: 500;
+  font-size: 1.6rem;
 `;
 
 const Message = styled.p`
