@@ -43,7 +43,10 @@ const Container = styled.div`
 `;
 
 const Wrapper = styled.figure`
-  
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
 `;
 
 const ArrowButton = styled.button`
