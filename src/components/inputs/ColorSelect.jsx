@@ -22,6 +22,7 @@ const ColorSelect = ({ mode, value, modal, selected, onAction, onSecondaryAction
               mode={mode}
               selected={item === selected}
               onClick={() => handleColor(item)}
+              modal={modal}
             />
           );
         })}
