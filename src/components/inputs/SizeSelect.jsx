@@ -26,6 +26,7 @@ const SizeSelect = ({
               type='button'
               bcg={selected === item}
               onClick={() => handleSelect(item)}
+              modal={modal}
             >
               {item}
             </Size>
