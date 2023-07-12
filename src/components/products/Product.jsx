@@ -623,14 +623,6 @@ const ValueAdd = styled.div`
   }
 `;
 
-const DescriptionHeader = styled.h4`
-  display: inline-block;
-  font-weight: 400;
-  font-size: 1.8rem;
-  color: ${({ theme }) => theme.textProdHeader};
-  margin-bottom: 3rem;
-`;
-
 const DescriptionText = styled.p`
   text-align: justify;
   font-size: 1.6rem;
