@@ -15,6 +15,7 @@ import ColorSelect from '../inputs/ColorSelect';
 import SizeSelect from '../inputs/SizeSelect';
 
 import ProductHead from './ProductHead';
+import ProductValue from './ProductValue';
 import ProductInfo from './ProductInfo';
 
 import Alert from '../Alert';
