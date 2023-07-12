@@ -84,6 +84,7 @@ const Price = styled.p`
 const Discount = styled.p`
   font-weight: 700;
   font-size: 1.4rem;
+  padding: 0.4rem 0.6rem;
 `;
 
 const TotalPrice = styled.p`
