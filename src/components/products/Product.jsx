@@ -30,7 +30,6 @@ const Product = ({ product }) => {
   const [color, setColor] = useState(null);
   const [size, setSize] = useState(null);
   const [isMoved, setIsMoved] = useState(false);
-  const [isOpen, setIsOpen] = useState(false);
   const [quantity, setQuantity] = useState(1);
   const [isSelected, setIsSelected] = useState(null);
   const [selectedSize, setSelectedSize] = useState(null);
