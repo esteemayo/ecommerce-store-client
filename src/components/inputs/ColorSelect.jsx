@@ -2,7 +2,7 @@
 
 import styled from 'styled-components';
 
-const ColorSelect = ({ value }) => {
+const ColorSelect = ({ mode, value, selected }) => {
   return (
     <Container>
       <Heading>Color</Heading>
