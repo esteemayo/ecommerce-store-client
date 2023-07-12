@@ -132,6 +132,10 @@ const Rating = styled.div`
   display: flex;
   align-items: center;
   gap: 1rem;
+
+  svg {
+    color: ${({ theme }) => theme.star};
+  }
 `;
 
 const ReviewQuantity = styled.span`
