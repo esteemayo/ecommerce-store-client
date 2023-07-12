@@ -21,6 +21,8 @@ import ProductInfo from './ProductInfo';
 import Alert from '../Alert';
 import ProductImageModal from '../modals/ProductImageModal';
 
+import { productValue } from '@/data';
+
 const Product = ({ product }) => {
   const dispatch = useDispatch();
   const { darkMode } = useSelector((state) => ({ ...state.darkMode }));
