@@ -1,6 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
+import { useCallback } from 'react';
 
 const ColorSelect = ({ mode, value, selected }) => {
   return (
