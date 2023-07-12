@@ -9,7 +9,9 @@ const Counter = () => {
     <Container>
       <Heading>Quantity</Heading>
       <Wrapper>
-        <Button type='button'></Button>
+        <Button type='button'>
+          <FontAwesomeIcon icon={faMinus} />
+        </Button>
       </Wrapper>
     </Container>
   );
