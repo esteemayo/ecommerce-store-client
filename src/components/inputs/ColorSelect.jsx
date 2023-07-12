@@ -27,6 +27,7 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   gap: 2.6rem;
+  margin: 1.5rem 0;
 `;
 
 export default ColorSelect;
