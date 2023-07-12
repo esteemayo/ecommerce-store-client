@@ -51,6 +51,10 @@ const Heading = styled.h1`
   color: ${({ theme }) => theme.textProdHeader};
   line-height: 1.3;
   margin-bottom: 2rem;
+
+  @media only screen and (max-width: 59.375em) {
+    margin-bottom: 1.75rem;
+  }
 `;
 
 const PriceContainer = styled.div`
