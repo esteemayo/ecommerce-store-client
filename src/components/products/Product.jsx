@@ -16,6 +16,8 @@ import Counter from '../inputs/Counter';
 import ColorSelect from '../inputs/ColorSelect';
 import SizeSelect from '../inputs/SizeSelect';
 
+import ProductHead from './ProductHead';
+
 import ProductInfo from './ProductInfo';
 import ProductImageModal from '../modals/ProductImageModal';
 
