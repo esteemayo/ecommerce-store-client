@@ -50,6 +50,11 @@ const ValueAdd = styled.div`
     display: inline-block;
     object-fit: cover;
   }
+
+  span {
+    font-size: 1.25rem;
+    line-height: 1.2;
+  }
 `;
 
 export default ProductValue;
