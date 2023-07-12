@@ -18,7 +18,7 @@ const Counter = ({ value, onClick }) => {
         <Button
           type='button'
           disabled={value <= 1}
-          onClick={handleQuantity('dec')}
+          onClick={() => handleQuantity('dec')}
         >
           <FontAwesomeIcon icon={faMinus} />
         </Button>
