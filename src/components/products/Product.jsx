@@ -225,7 +225,10 @@ const Product = ({ product }) => {
               )}
             </SizeWrapper>
             <Hr />
-            <Counter value={quantity} onClick={setQuantity} />
+            <Counter
+              value={quantity}
+              onClick={setQuantity}
+            />
             <Hr />
             <Button type='button' onClick={handleClick}>Add to cart</Button>
             {alert && <SuccessMessage>Item added to cart</SuccessMessage>}
