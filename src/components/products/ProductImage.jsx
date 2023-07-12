@@ -90,6 +90,8 @@ const ArrowButton = styled.button`
   border: none;
   width: 4rem;
   height: 4rem;
+  background-color: var(--clr-white);
+  color: #777;
 `;
 
 export default ProductImage;
