@@ -58,7 +58,7 @@ const Button = styled.button`
   border: none;
   display: inline-block;
   text-align: center;
-  font-size: 1.4rem;
+  font-size: ${({ modal }) => modal ? '1.3rem' : '1.4rem'};
   min-width: 3rem;
   height: 3rem;
   padding: 0 0.4rem;
