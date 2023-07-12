@@ -12,7 +12,7 @@ import { NumericFormat } from 'react-number-format';
 import StarRating from '@/components/StarRating';
 import { addProduct } from '@/features/cart/cartSlice';
 
-import Counter from '../Counter';
+import Counter from '../inputs/Counter';
 import ProductImageModal from '../modals/ProductImageModal';
 
 const Product = ({ product }) => {
