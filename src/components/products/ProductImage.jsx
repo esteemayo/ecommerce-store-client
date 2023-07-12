@@ -7,7 +7,9 @@ import { useCallback } from 'react';
 
 const ProductImage = () => {
   return (
-    <Container>ProductImage</Container>
+    <Container>
+      <Wrapper></Wrapper>
+    </Container>
   );
 }
 
