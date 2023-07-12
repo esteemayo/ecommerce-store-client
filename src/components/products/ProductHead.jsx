@@ -3,7 +3,7 @@
 import styled from 'styled-components';
 import { NumericFormat } from 'react-number-format';
 
-const ProductHead = ({ name, price, discount }) => {
+const ProductHead = ({ name, price, discount, priceDiscount }) => {
   return (
     <>
       <Heading>{name}</Heading>
@@ -16,6 +16,7 @@ const ProductHead = ({ name, price, discount }) => {
             prefix={'$'}
           />
         </Price>
+        <Discount>-{priceDiscount}%</Discount>
       </PriceContainer>
     </>
   );
