@@ -25,8 +25,8 @@ const Product = ({ product }) => {
 
   const [color, setColor] = useState(null);
   const [size, setSize] = useState(null);
-  const [quantity, setQuantity] = useState(1);
   const [isSelected, setIsSelected] = useState(null);
+  const [quantity, setQuantity] = useState(1);
   const [selectedSize, setSelectedSize] = useState(null);
   const [alert, setAlert] = useState(false);
 
