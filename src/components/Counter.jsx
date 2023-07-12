@@ -80,4 +80,8 @@ const Button = styled.button`
   }
 `;
 
+const Amount = styled.span`
+  
+`;
+
 export default Counter;
