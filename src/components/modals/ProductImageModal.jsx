@@ -31,7 +31,7 @@ const ProductImageModal = ({
     e.stopPropagation();
 
     if (e.target.classList.contains('imageContainer')) {
-      setIsOpen(false);
+      onClose();
     }
 
     const exitModal = (e) => {
