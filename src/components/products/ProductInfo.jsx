@@ -24,7 +24,8 @@ const Heading = styled.h4`
 `;
 
 const Text = styled.p`
-  
+  text-align: justify;
+  font-size: 1.6rem;
 `;
 
 export default ProductInfo;
