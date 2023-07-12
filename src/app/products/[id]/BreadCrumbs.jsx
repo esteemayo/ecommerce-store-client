@@ -35,6 +35,11 @@ const Container = styled.div`
       outline-color: #ccc;
       line-height: 1.2;
     }
+
+    &:hover,
+    &:active {
+      color: currentColor;
+    }
   }
 `;
 
