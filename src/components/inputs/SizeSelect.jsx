@@ -70,6 +70,10 @@ const Size = styled.button`
     padding-bottom: 1.4rem;
     font-size: 1.35rem;
   }
+
+  &:hover {
+    background-color: ${({ bcg, theme }) => bcg ? theme.cartSelected : theme.sizeHover};
+  }
 `;
 
 export default SizeSelect;
