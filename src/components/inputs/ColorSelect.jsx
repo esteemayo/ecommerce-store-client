@@ -51,6 +51,7 @@ const Color = styled.button`
   height: 2.2rem;
   background-color: ${({ color, mode }) => mode && color === 'black' ? '#111' : color};
   background-color: ${({ color, mode }) => !mode && color === 'white' && '#f9f9f9'};
+  border-radius: 50%;
 `;
 
 export default ColorSelect;
