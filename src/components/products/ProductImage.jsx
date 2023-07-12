@@ -3,44 +3,57 @@
 import styled from 'styled-components';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useCallback } from 'react';
+import { useCallback, useRef, useState } from 'react';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 import ProductImageModal from '../modals/ProductImageModal';
 
-const ProductImage = ({
-  images,
-  isMoved,
-  isSliderMoved,
-  slideNumber,
-  clickLimit,
-  imgContainer,
-  onClick,
-  onAction,
-  onOpen,
-  secondaryAction,
-}) => {
+const ProductImage = ({ images }) => {
+  const imgContainerRef = useRef();
+
+  const [isMoved, setIsMoved] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const [slideNumber, setSlideNumber] = useState(0);
+  const [slideIndex, setSlideIndex] = useState(0);
+  const [clickLimit, setClickLimit] = useState(window.innerWidth / 235);
+  const [isSliderMoved, setIsSliderMoved] = useState(false);
+
   const lastIndex = images?.lastIndexOf(images[images.length - 1]);
 
   const handleOpen = useCallback((index) => {
-    secondaryAction(index);
-    onOpen(true);
-  }, [onOpen, secondaryAction]);
+    setSlideIndex(index);
+    setIsOpen(true);
+  }, []);
+
+  const handleMove = useCallback((direction) => {
+    let newSlideIndex;
+
+    setIsMoved(true);
+    if (direction === 'left') {
+      newSlideIndex = slideIndex - 1;
+    }
+
+    if (direction === 'right') {
+      newSlideIndex = slideIndex + 1;
+    }
+
+    setSlideIndex(newSlideIndex);
+  }, [slideIndex]);
 
   const handleDirection = useCallback((direction) => {
-    onClick(true);
-    const distance = imgContainer.current.getBoundingClientRect().x;
+    setIsSliderMoved(true);
+    const distance = imgContainerRef.current.getBoundingClientRect().x;
 
     if (direction === 'left' && slideNumber > 0) {
-      onAction(slideNumber - 1);
-      imgContainer.current.style.transform = `translateX(${235 + distance}px)`;
+      setSlideNumber((prev) => prev - 1);
+      imgContainerRef.current.style.transform = `translateX(${235 + distance}px)`;
     }
 
     if (direction === 'right' && slideNumber < 6 - clickLimit) {
-      onAction(slideNumber + 1);
-      imgContainer.current.style.transform = `translateX(${-235 + distance}px)`;
+      setSlideNumber((prev) => prev + 1);
+      imgContainerRef.current.style.transform = `translateX(${-235 + distance}px)`;
     }
-  }, [clickLimit, slideNumber, imgContainer, onClick, onAction]);
+  }, [clickLimit, slideNumber]);
 
   return (
     <Container>
@@ -52,7 +65,7 @@ const ProductImage = ({
       >
         <FontAwesomeIcon icon={faArrowLeft} />
       </ArrowButton>
-      <Wrapper ref={imgContainer}>
+      <Wrapper ref={imgContainerRef}>
         {images?.map((item, index) => {
           return (
             <Image
@@ -74,6 +87,15 @@ const ProductImage = ({
       >
         <FontAwesomeIcon icon={faArrowRight} />
       </ArrowButton>
+      <ProductImageModal
+        images={images}
+        isOpen={isOpen}
+        setIsOpen={setIsOpen}
+        isMoved={isMoved}
+        slideIndex={slideIndex}
+        lastIndex={lastIndex}
+        handleMove={handleMove}
+      />
     </Container>
   );
 }
