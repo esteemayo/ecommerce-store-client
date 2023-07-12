@@ -18,4 +18,8 @@ const Heading = styled.h3`
 
 `;
 
+const Wrapper = styled.div`
+
+`;
+
 export default Counter;
