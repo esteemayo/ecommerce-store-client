@@ -37,7 +37,6 @@ const Product = ({ product }) => {
   const [slideNumber, setSlideNumber] = useState(0);
   const [clickLimit, setClickLimit] = useState(window.innerWidth / 235);
   const [selectedSize, setSelectedSize] = useState(null);
-  const [isSliderMoved, setIsSliderMoved] = useState(false);
   const [alert, setAlert] = useState(false);
 
   const handleReset = useCallback(() => {
