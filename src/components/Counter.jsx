@@ -59,6 +59,11 @@ const Button = styled.button`
   outline-color: #ccc;
   cursor: pointer;
 
+  @media only screen and (max-width: 37.5em) {
+    min-width: 2.85rem;
+    height: 2.85rem;
+  }
+
   &:disabled {
     background-color: ${({ theme }) => theme.bgAddBtnDis};
     color: #999;
