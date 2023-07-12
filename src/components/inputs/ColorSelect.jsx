@@ -12,6 +12,7 @@ const ColorSelect = ({ mode, value, selected }) => {
             <Color
               key={index}
               type='button'
+              mode={mode}
             />
           );
         })}
