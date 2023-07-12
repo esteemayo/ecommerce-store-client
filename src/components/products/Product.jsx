@@ -73,11 +73,6 @@ const Product = ({ product }) => {
     }
   }, [clickLimit, slideNumber]);
 
-  const handleColor = useCallback((color) => {
-    setColor(color);
-    setIsSelected(color);
-  }, []);
-
   const handleSize = useCallback((size) => {
     setSize(size);
     setSelectedSize(size);
