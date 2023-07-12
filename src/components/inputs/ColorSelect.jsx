@@ -74,7 +74,7 @@ const Color = styled.button`
   cursor: ${({ selected }) => selected ? 'default' : 'pointer'};
 
   @media only screen and (max-width: 37.5em) {
-    width: 2rem;
+    width: ${({ modal }) => !modal && '2rem'};
     height: 2rem;
   }
 `;
