@@ -11,4 +11,8 @@ const ProductImage = () => {
   );
 }
 
+const Container = styled.div`
+
+`;
+
 export default ProductImage;
