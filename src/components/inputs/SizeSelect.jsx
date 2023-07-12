@@ -48,7 +48,8 @@ const Wrapper = styled.div`
 `;
 
 const Size = styled.button`
-  
+  display: inline-block;
+  text-align: center;
 `;
 
 export default SizeSelect;
