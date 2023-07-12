@@ -9,6 +9,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useCallback, useEffect, useRef, useState } from 'react';
 
 import { addProduct } from '@/features/cart/cartSlice';
+import BreadCrumbs from '@/app/products/[id]/BreadCrumbs';
 
 import Counter from '../inputs/Counter';
 import ColorSelect from '../inputs/ColorSelect';
