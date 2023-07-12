@@ -52,6 +52,8 @@ const Color = styled.button`
   background-color: ${({ color, mode }) => mode && color === 'black' ? '#111' : color};
   background-color: ${({ color, mode }) => !mode && color === 'white' && '#f9f9f9'};
   border-radius: 50%;
+  outline: 1px solid ${({ theme, selected }) => selected ? theme.cartSelected : 'transparent'};
+  outline-offset: 2px;
 `;
 
 export default ColorSelect;
