@@ -8,4 +8,8 @@ const SizeSelect = () => {
   );
 }
 
+const Container = styled.div`
+  
+`;
+
 export default SizeSelect;
