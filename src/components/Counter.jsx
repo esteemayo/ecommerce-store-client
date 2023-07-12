@@ -52,6 +52,8 @@ const Button = styled.button`
   height: 3rem;
   padding: 0 0.4rem;
   line-height: 0.2;
+  background-color: transparent;
+  color: inherit;
 `;
 
 export default Counter;
