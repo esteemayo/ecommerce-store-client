@@ -2,13 +2,21 @@
 
 import styled from 'styled-components';
 import Image from 'next/image';
-import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useCallback } from 'react';
+import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const ProductImage = () => {
   return (
     <Container>
-      <Wrapper></Wrapper>
+      <Wrapper>
+        <ArrowButton
+          type='button'
+          direction='left'
+        >
+          <FontAwesomeIcon icon={faArrowLeft} />
+        </ArrowButton>
+      </Wrapper>
     </Container>
   );
 }
