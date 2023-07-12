@@ -9,7 +9,8 @@ const SizeSelect = () => {
 }
 
 const Container = styled.div`
-  
+  margin-top: 1rem;
+  margin-bottom: 4rem;
 `;
 
 export default SizeSelect;
