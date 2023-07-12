@@ -23,7 +23,7 @@ const Counter = ({ value, modal, onClick }) => {
         >
           <FontAwesomeIcon icon={faMinus} />
         </Button>
-        <Amount>{value}</Amount>
+        <Amount modal={modal}>{value}</Amount>
         <Button type='button' modal={modal} onClick={() => handleQuantity('inc')}>
           <FontAwesomeIcon icon={faPlus} />
         </Button>
