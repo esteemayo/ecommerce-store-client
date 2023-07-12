@@ -76,7 +76,7 @@ const Size = styled.button`
     min-width: ${({ modal }) => !modal && '3.75rem'};
     padding-top: ${({ modal }) => !modal && '1.4rem'};
     padding-bottom:  ${({ modal }) => !modal && '1.4rem'};
-    font-size: 1.35rem;
+    font-size:  ${({ modal }) => !modal && '1.35rem'};
   }
 
   &:hover {
