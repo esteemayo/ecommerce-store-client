@@ -400,12 +400,6 @@ const ProductWrapper = styled.div`
   }
 `;
 
-const PriceContainer = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-`;
-
 const ProductPrice = styled.p`
   text-decoration: line-through;
   font-size: 1.6rem;
