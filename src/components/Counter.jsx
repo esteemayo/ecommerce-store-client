@@ -58,6 +58,11 @@ const Button = styled.button`
   border-radius: 0.4rem;
   outline-color: #ccc;
   cursor: pointer;
+
+  &:disabled {
+    background-color: ${({ theme }) => theme.bgAddBtnDis};
+    color: #999;
+  }
 `;
 
 export default Counter;
