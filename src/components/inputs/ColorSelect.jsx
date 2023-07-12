@@ -11,7 +11,7 @@ const ColorSelect = ({
   onAction,
   secondaryAction,
 }) => {
-  const handleColor = useCallback((color) => {
+  const handleSelect = useCallback((color) => {
     onAction(color);
     secondaryAction(color);
   }, [onAction, secondaryAction]);
@@ -28,7 +28,7 @@ const ColorSelect = ({
               color={item}
               mode={mode}
               selected={item === selected}
-              onClick={() => handleColor(item)}
+              onClick={() => handleSelect(item)}
               modal={modal}
             />
           );
