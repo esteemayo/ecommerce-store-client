@@ -52,7 +52,7 @@ const ProductImageModal = ({
 
   return (
     <Overlay type={showModal ? 'show' : ''}>
-      <CloseButton type='button' onClick={() => setIsOpen(false)}>
+      <CloseButton type='button' onClick={handleClose}>
         <CloseIcon />
       </CloseButton>
       {isMoved && slideIndex > 0 && (
