@@ -425,13 +425,6 @@ const Button = styled.button`
   }
 `;
 
-const SuccessMessage = styled.span`
-  display: block;
-  font-size: 1.4rem;
-  color: #409384;
-  text-align: left;
-`;
-
 const ValueAddWrapper = styled.div`
   display: flex;
   align-items: center;
