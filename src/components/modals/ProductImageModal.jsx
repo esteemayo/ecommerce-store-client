@@ -15,8 +15,17 @@ const ProductImageModal = ({
   slideIndex,
   lastIndex,
   onMove,
+  onClose,
 }) => {
   const [showModal, setShowModal] = useState(isOpen);
+
+  const handleClose = useCallback(() => {
+    setShowModal(false);
+
+    setTimeout(() => {
+      onClose();
+    }, 300);
+  }, [onClose]);
 
   const closeModalHandler = useCallback((e) => {
     e.stopPropagation();
