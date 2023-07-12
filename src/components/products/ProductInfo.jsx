@@ -18,4 +18,8 @@ const Heading = styled.h4`
   
 `;
 
+const Text = styled.p`
+  
+`;
+
 export default ProductInfo;
