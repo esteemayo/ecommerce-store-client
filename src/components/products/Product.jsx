@@ -40,8 +40,6 @@ const Product = ({ product }) => {
   const [isSliderMoved, setIsSliderMoved] = useState(false);
   const [alert, setAlert] = useState(false);
 
-  const lastIndex = product?.images?.lastIndexOf(product?.images[product?.images.length - 1]);
-
   const handleReset = useCallback(() => {
     setSize(null);
     setColor(null);
