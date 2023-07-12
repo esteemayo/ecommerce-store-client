@@ -17,4 +17,8 @@ const Container = styled.div`
   }
 `;
 
+const Heading = styled.h3`
+  
+`;
+
 export default SizeSelect;
