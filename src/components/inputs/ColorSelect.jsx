@@ -53,7 +53,7 @@ const Wrapper = styled.div`
   }
 
   @media only screen and (max-width: 37.5em) {
-    margin-top: 1.3rem;
+    margin-top: ${({ modal }) => !modal && '1.3rem'};
   }
 
   @media only screen and (max-width: 18.75em) {
