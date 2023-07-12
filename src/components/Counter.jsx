@@ -59,7 +59,7 @@ const Button = styled.button`
   display: inline-block;
   text-align: center;
   font-size: ${({ modal }) => modal ? '1.3rem' : '1.4rem'};
-  min-width: 3rem;
+  min-width: ${({ modal }) => modal ? '2.5rem' : '3rem'};
   height: 3rem;
   padding: 0 0.4rem;
   line-height: 0.2;
