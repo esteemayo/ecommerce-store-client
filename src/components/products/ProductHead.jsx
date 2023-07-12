@@ -46,6 +46,8 @@ const ProductHead = ({ name, price, discount, priceDiscount, ratingsAverage, rat
 
 const Heading = styled.h1`
   display: inline-block;
+  font-weight: 500;
+  font-size: 2.4rem;
 `;
 
 const PriceContainer = styled.div`
