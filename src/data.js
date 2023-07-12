@@ -1348,3 +1348,16 @@ export const recommendations = [
     price: 169,
   },
 ];
+
+export const productValue = [
+  {
+    id: 1,
+    desc: 'Free Shipping over $50',
+    img: '/img/Shipping-black.svg',
+  },
+  {
+    id: 2,
+    desc: 'Free Returns',
+    img: '/img/Returns-black.svg',
+  },
+];
