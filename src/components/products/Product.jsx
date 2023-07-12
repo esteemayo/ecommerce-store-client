@@ -686,10 +686,6 @@ const SelectSize = styled.button`
   }
 `;
 
-const AddContainer = styled.div`
-  margin: 2rem 0;
-`;
-
 const AmountHeading = styled.h3`
   display: inline-block;
   text-transform: capitalize;
