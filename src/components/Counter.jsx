@@ -82,7 +82,8 @@ const Button = styled.button`
 `;
 
 const Amount = styled.span`
-  
+  width: 3rem;
+  height: 3rem;
 `;
 
 export default Counter;
