@@ -4,6 +4,8 @@ import styled from 'styled-components';
 import { NumericFormat } from 'react-number-format';
 import Link from 'next/link';
 
+import StarRating from '../StarRating';
+
 const ProductHead = ({ name, price, discount, priceDiscount }) => {
   return (
     <>
