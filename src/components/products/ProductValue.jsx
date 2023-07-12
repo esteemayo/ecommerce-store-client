@@ -31,6 +31,8 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  gap: 3.2rem;
+  width: 100%;
 `;
 
 const ValueAdd = styled.div`
