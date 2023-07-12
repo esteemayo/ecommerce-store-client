@@ -75,6 +75,10 @@ const Wrapper = styled.figure`
       width: 225px;
       border-radius: revert;
     }
+
+    @media only screen and (max-width: 37.5em) {
+      height: 20rem;
+    }
   }
 `;
 
