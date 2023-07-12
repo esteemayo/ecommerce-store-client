@@ -97,6 +97,7 @@ const ProductWrapper = styled.div`
     &:link,
     &:visited {
       text-decoration: none;
+      color: inherit;
       outline-color: #ddd;
     }
   }
