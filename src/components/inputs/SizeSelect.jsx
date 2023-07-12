@@ -4,7 +4,9 @@ import styled from 'styled-components';
 
 const SizeSelect = () => {
   return (
-    <Container>SizeSelect</Container>
+    <Container>
+      <Heading>Select a size</Heading>
+    </Container>
   );
 }
 
