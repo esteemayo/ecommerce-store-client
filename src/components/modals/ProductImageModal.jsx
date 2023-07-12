@@ -14,7 +14,7 @@ const ProductImageModal = ({
   isMoved,
   slideIndex,
   lastIndex,
-  handleMove,
+  onMove,
 }) => {
   const closeModalHandler = useCallback((e) => {
     e.stopPropagation();
@@ -44,7 +44,7 @@ const ProductImageModal = ({
         <ArrowButton
           type='button'
           direction='left'
-          onClick={() => handleMove('left')}
+          onClick={() => onMove('left')}
         >
           <FontAwesomeIcon icon={faArrowLeft} />
         </ArrowButton>
@@ -60,7 +60,7 @@ const ProductImageModal = ({
       <ArrowButton
         type='button'
         direction='right'
-        onClick={() => handleMove('right')}
+        onClick={() => onMove('right')}
         style={{ display: slideIndex === lastIndex && 'none' }}
       >
         <FontAwesomeIcon icon={faArrowRight} />
