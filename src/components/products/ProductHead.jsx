@@ -6,7 +6,14 @@ import Link from 'next/link';
 
 import StarRating from '../StarRating';
 
-const ProductHead = ({ name, price, discount, priceDiscount, ratingsAverage, ratingsQuantity }) => {
+const ProductHead = ({
+  name,
+  price,
+  discount,
+  priceDiscount,
+  ratingsAverage,
+  ratingsQuantity,
+}) => {
   return (
     <>
       <Heading>{name}</Heading>
