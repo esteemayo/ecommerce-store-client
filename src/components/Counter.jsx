@@ -90,6 +90,12 @@ const Amount = styled.span`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media only screen and (max-width: 37.5em) {
+    width: 2.85rem;
+    height: 2.85rem;
+    font-size: 1.3rem;
+  }
 `;
 
 export default Counter;
