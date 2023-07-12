@@ -1,7 +1,6 @@
 'use client';
 
 import styled from 'styled-components';
-import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useDispatch, useSelector } from 'react-redux';
