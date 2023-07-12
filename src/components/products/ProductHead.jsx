@@ -3,12 +3,19 @@
 import styled from 'styled-components';
 import { NumericFormat } from 'react-number-format';
 
-const ProductHead = ({ name }) => {
+const ProductHead = ({ name, price, discount }) => {
   return (
     <>
       <Heading>{name}</Heading>
       <PriceContainer>
-        <Price></Price>
+        <Price>
+          <NumericFormat
+            value={price + discount}
+            displayType={'text'}
+            thousandSeparator={true}
+            prefix={'$'}
+          />
+        </Price>
       </PriceContainer>
     </>
   );
