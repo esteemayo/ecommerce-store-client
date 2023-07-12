@@ -16,7 +16,8 @@ const Container = styled.div`
 `;
 
 const Heading = styled.h3`
-
+  display: inline-block;
+  text-transform: capitalize;
 `;
 
 const Wrapper = styled.div`
