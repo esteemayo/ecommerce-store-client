@@ -28,6 +28,7 @@ const Text = styled.p`
   font-size: 1.6rem;
   color: ${({ theme }) => theme.text};
   line-height: 1.3;
+  word-wrap: break-word;
 `;
 
 export default ProductInfo;
