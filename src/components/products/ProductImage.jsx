@@ -79,6 +79,10 @@ const Wrapper = styled.figure`
     @media only screen and (max-width: 37.5em) {
       height: 20rem;
     }
+
+    @media only screen and (max-width: 18.75em) {
+      height: 15rem;
+    }
   }
 `;
 
