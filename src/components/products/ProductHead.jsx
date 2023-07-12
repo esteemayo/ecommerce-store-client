@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 import StarRating from '../StarRating';
 
-const ProductHead = ({ name, price, discount, priceDiscount }) => {
+const ProductHead = ({ name, price, discount, priceDiscount, ratingsAverage, ratingsQuantity }) => {
   return (
     <>
       <Heading>{name}</Heading>
@@ -35,7 +35,10 @@ const ProductHead = ({ name, price, discount, priceDiscount }) => {
         <Link href='#' passHref>Learn more</Link>
       </Message>
       <Rating>
-        <StarRating value={product.ratingsAverage} />
+        <StarRating value={ratingsAverage} />
+        <ReviewQuantity>
+          <a href='#reviews'>{ratingsQuantity} Review</a>
+        </ReviewQuantity>
       </Rating>
     </>
   );
