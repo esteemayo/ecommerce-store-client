@@ -42,7 +42,7 @@ const ProductImageModal = ({
   }, [isOpen]);
 
   return (
-    <Overlay type={isOpen ? 'show' : ''}>
+    <Overlay type={showModal ? 'show' : ''}>
       <CloseButton type='button' onClick={() => setIsOpen(false)}>
         <CloseIcon />
       </CloseButton>
