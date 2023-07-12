@@ -1,7 +1,6 @@
 'use client';
 
 import styled from 'styled-components';
-import Link from 'next/link';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
