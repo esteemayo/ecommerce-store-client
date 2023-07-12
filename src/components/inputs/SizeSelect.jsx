@@ -73,7 +73,7 @@ const Size = styled.button`
   transition: all 0.1s ease-in-out;
 
   @media only screen and (max-width: 37.5em) {
-    min-width: 3.75rem;
+    min-width: ${({ modal }) => !modal && '3.75rem'};
     padding-top: 1.4rem;
     padding-bottom: 1.4rem;
     font-size: 1.35rem;
