@@ -26,6 +26,8 @@ const Heading = styled.h4`
 const Text = styled.p`
   text-align: justify;
   font-size: 1.6rem;
+  color: ${({ theme }) => theme.text};
+  line-height: 1.3;
 `;
 
 export default ProductInfo;
