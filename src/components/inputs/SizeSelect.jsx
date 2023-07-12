@@ -50,6 +50,8 @@ const Wrapper = styled.div`
 const Size = styled.button`
   display: inline-block;
   text-align: center;
+  font-size: 1.4rem;
+  min-width: 4rem;
 `;
 
 export default SizeSelect;
