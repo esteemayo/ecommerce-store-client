@@ -2,10 +2,10 @@
 
 import styled from 'styled-components';
 
-const ProductInfo = ({ content }) => {
+const ProductInfo = ({ title, content }) => {
   return (
     <Container>
-      <Heading>Overview</Heading>
+      <Heading>{title}</Heading>
       <Text>{content}</Text>
     </Container>
   );

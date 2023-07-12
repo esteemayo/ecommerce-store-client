@@ -217,7 +217,10 @@ const Product = ({ product }) => {
               </ValueAdd>
             </ValueAddWrapper>
             <Hr />
-            <ProductInfo content={product.desc} />
+            <ProductInfo
+              title='Overview'
+              content={product.desc}
+            />
             {/* <Hr /> */}
           </ProductWrapper>
         </Right>
