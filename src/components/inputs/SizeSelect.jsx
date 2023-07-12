@@ -12,6 +12,7 @@ const SizeSelect = ({ value, selected, onAction, secondaryAction }) => {
             <Size
               key={index}
               type='button'
+              bcg={selected === item}
             />
           );
         })}
