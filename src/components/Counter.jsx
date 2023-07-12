@@ -5,7 +5,12 @@ import { faMinus, faPlus } from '@fortawesome/free-solid-svg-icons';
 import { useCallback } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const Counter = ({ value }) => {
+const Counter = ({ value, onClick }) => {
+  const handleQuantity = useCallback((type) => {
+    type === 'dec' && value > 1 && onClick(value - 1);
+    type === 'inc' && onClick(value + 1);
+  }, [value, onClick]);
+
   return (
     <Container>
       <Heading>Quantity</Heading>
