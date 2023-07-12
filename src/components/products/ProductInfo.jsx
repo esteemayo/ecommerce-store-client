@@ -12,7 +12,7 @@ const ProductInfo = ({ value }) => {
 }
 
 const Container = styled.div`
-  
+  margin: 3rem 0;
 `;
 
 const Heading = styled.h4`
