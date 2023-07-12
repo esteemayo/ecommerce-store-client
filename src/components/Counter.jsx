@@ -41,7 +41,7 @@ const Heading = styled.h3`
   font-weight: 400;
   font-size: ${({ modal }) => modal ? '1.5rem' : '1.65rem'};
   color: ${({ theme }) => theme.text};
-  margin-bottom: 1rem;
+  margin-bottom: ${({ modal }) => modal ? '0.5rem' : '1rem'};
 `;
 
 const Wrapper = styled.div`
