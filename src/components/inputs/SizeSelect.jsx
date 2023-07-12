@@ -1,6 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
+import { useCallback } from 'react';
 
 const SizeSelect = ({ value, selected, onAction, secondaryAction }) => {
   return (
