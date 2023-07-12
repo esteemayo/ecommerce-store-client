@@ -17,6 +17,8 @@ const Container = styled.div`
 
 const Heading = styled.h4`
   display: inline-block;
+  font-weight: 400;
+  font-size: 1.8rem;
 `;
 
 const Text = styled.p`
