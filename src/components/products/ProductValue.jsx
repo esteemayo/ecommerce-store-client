@@ -33,6 +33,8 @@ const Container = styled.div`
   justify-content: flex-start;
   gap: 3.2rem;
   width: 100%;
+  margin-top: 2.4rem;
+  margin-bottom: 2rem;
 `;
 
 const ValueAdd = styled.div`
