@@ -9,12 +9,12 @@ const ColorSelect = ({
   modal,
   selected,
   onAction,
-  onSecondaryAction,
+  secondaryAction,
 }) => {
   const handleColor = useCallback((color) => {
     onAction(color);
-    onSecondaryAction(color);
-  }, [onAction, onSecondaryAction]);
+    secondaryAction(color);
+  }, [onAction, secondaryAction]);
 
   return (
     <Container modal={modal}>
