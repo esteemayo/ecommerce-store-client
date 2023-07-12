@@ -38,4 +38,8 @@ const Wrapper = styled.div`
   }
 `;
 
+const Size = styled.button`
+  
+`;
+
 export default SizeSelect;
