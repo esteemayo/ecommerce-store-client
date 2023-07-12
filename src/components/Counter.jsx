@@ -94,7 +94,7 @@ const Button = styled.button`
 const Amount = styled.span`
   width: ${({ modal }) => modal ? '2.5rem' : '3rem'};
   height: ${({ modal }) => modal ? '2.5rem' : '3rem'};
-  font-size: 1.4rem;
+  font-size: ${({ modal }) => modal ? '1.3rem' : '1.4rem'};
   border: 1px solid ${({ theme }) => theme.cartSelected};
   border-radius: 1.5rem;
   display: flex;
