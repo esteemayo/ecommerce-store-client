@@ -41,6 +41,7 @@ const ValueAdd = styled.div`
   display: flex;
   align-items: center;
   gap: 0.8rem;
+  color: ${({ theme }) => theme.text};
 `;
 
 export default ProductValue;
