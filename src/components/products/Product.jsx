@@ -136,12 +136,7 @@ const Product = ({ product }) => {
           </ImagesContainer>
         </Left>
         <Right>
-          <BreadCrumbs>
-            <Link href='/' passHref>Home</Link> / {' '}
-            <Link href={`/products/category/${encodeURIComponent(product.category)}`} passHref>
-              {product.category}
-            </Link>
-          </BreadCrumbs>
+          <BreadCrumbs category={product.category} />
           <ProductWrapper>
             <ProductHead
               name={product.name}
