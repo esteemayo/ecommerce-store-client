@@ -17,6 +17,8 @@ const Container = styled.div`
 const Heading = styled.h2`
   display: inline-block;
   text-transform: capitalize;
+  font-weight: 400;
+  font-size: 1.7rem;
 `;
 
 export default ColorSelect;
