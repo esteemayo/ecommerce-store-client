@@ -104,7 +104,7 @@ const Amount = styled.span`
   @media only screen and (max-width: 37.5em) {
     width: ${({ modal }) => !modal && '2.85rem'};
     height: ${({ modal }) => !modal && '2.85rem'};
-    font-size: 1.3rem;
+    font-size: ${({ modal }) => !modal && '1.3rem'};
   }
 `;
 
