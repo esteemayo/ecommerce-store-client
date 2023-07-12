@@ -363,35 +363,6 @@ const Right = styled.div`
   }
 `;
 
-const BreadCrumbs = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  color: ${({ theme }) => theme.textLabel};
-
-  a {
-    &:link,
-    &:visited {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-      text-decoration: underline;
-      text-decoration-color: ${({ theme }) => theme.colCrumbs};
-      text-underline-offset: 3px;
-      text-transform: capitalize;
-      font-size: 1.6rem;
-      color: currentColor;
-      outline-color: #ccc;
-      line-height: 1.2;
-    }
-
-    &:hover,
-    &:active {
-      color: currentColor;
-    }
-  }
-`;
-
 const ProductWrapper = styled.div`
   margin-top: 2rem;
 
