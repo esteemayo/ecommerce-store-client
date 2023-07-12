@@ -26,6 +26,9 @@ const Container = styled.div`
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
+      text-decoration: underline;
+      text-decoration-color: ${({ theme }) => theme.colCrumbs};
+      text-underline-offset: 3px;
     }
   }
 `;
