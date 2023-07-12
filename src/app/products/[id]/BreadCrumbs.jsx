@@ -15,7 +15,9 @@ const BreadCrumbs = ({ category }) => {
 }
 
 const Container = styled.div`
-  
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 `;
 
 export default BreadCrumbs;
