@@ -21,4 +21,8 @@ const Wrapper = styled.figure`
   
 `;
 
+const ArrowButton = styled.button`
+  
+`;
+
 export default ProductImage;
