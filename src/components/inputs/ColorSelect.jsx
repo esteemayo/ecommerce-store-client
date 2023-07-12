@@ -24,7 +24,9 @@ const Heading = styled.h2`
 `;
 
 const Wrapper = styled.div`
-  
+  display: flex;
+  align-items: center;
+  gap: 2.6rem;
 `;
 
 export default ColorSelect;
