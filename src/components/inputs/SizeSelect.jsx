@@ -6,6 +6,7 @@ const SizeSelect = () => {
   return (
     <Container>
       <Heading>Select a size</Heading>
+      <Wrapper></Wrapper>
     </Container>
   );
 }
