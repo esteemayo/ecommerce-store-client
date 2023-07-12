@@ -8,7 +8,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useDispatch, useSelector } from 'react-redux';
 import { useCallback, useEffect, useRef, useState } from 'react';
 
-import StarRating from '@/components/StarRating';
 import { addProduct } from '@/features/cart/cartSlice';
 
 import Counter from '../inputs/Counter';
