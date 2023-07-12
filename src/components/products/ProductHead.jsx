@@ -33,4 +33,8 @@ const Price = styled.p`
 
 `;
 
+const Discount = styled.p`
+
+`;
+
 export default ProductHead;
