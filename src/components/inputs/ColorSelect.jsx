@@ -47,6 +47,8 @@ const Wrapper = styled.div`
 const Color = styled.button`
   border: none;
   display: block;
+  width: 2.2rem;
+  height: 2.2rem;
 `;
 
 export default ColorSelect;
