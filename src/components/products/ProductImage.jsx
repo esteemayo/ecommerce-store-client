@@ -53,6 +53,10 @@ const Wrapper = styled.figure`
     width: max-content;
     transition: all 0.3s ease;
   }
+
+  img {
+    display: block;
+  }
 `;
 
 const ArrowButton = styled.button`
