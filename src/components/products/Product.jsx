@@ -686,23 +686,6 @@ const SelectSize = styled.button`
   }
 `;
 
-const Amount = styled.span`
-  width: 3rem;
-  height: 3rem;
-  font-size: 1.4rem;
-  border: 1px solid ${({ theme }) => theme.cartSelected};
-  border-radius: 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  @media only screen and (max-width: 37.5em) {
-    width: 2.85rem;
-    height: 2.85rem;
-    font-size: 1.3rem;
-  }
-`;
-
 const Button = styled.button`
   display: inline-block;
   text-align: center;
