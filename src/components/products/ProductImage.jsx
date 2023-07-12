@@ -47,6 +47,12 @@ const Wrapper = styled.figure`
   flex-wrap: wrap;
   align-items: center;
   gap: 1rem;
+
+  @media only screen and (max-width: 50em) {
+    flex-wrap: nowrap;
+    width: max-content;
+    transition: all 0.3s ease;
+  }
 `;
 
 const ArrowButton = styled.button`
