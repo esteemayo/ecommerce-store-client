@@ -7,7 +7,7 @@ const ProductHead = ({ name }) => {
     <>
       <Heading>{name}</Heading>
       <PriceContainer>
-
+        <Price></Price>
       </PriceContainer>
     </>
   );
