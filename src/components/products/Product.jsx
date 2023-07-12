@@ -138,7 +138,7 @@ const Product = ({ product }) => {
         </Right>
       </ProductContainer>
       <ProductImageModal
-        product={product}
+        images={product.images}
         isOpen={isOpen}
         setIsOpen={setIsOpen}
         isMoved={isMoved}
