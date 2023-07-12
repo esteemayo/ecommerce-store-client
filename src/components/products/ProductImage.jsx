@@ -6,27 +6,29 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useCallback } from 'react';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
-const ProductImage = ({ images, slideNumber, clickLimit, imgContainer, onClick }) => {
+const ProductImage = ({ images, isMoved, slideNumber, clickLimit, imgContainer, onClick, onAction }) => {
   const handleDirection = useCallback((direction) => {
-    setIsSliderMoved(true);
+    onClick(true);
     const distance = imgContainer.current.getBoundingClientRect().x;
 
     if (direction === 'left' && slideNumber > 0) {
-      onClick(slideNumber - 1);
+      onAction(slideNumber - 1);
       imgContainer.current.style.transform = `translateX(${235 + distance}px)`;
     }
 
     if (direction === 'right' && slideNumber < 6 - clickLimit) {
-      onClick(slideNumber + 1);
+      onAction(slideNumber + 1);
       imgContainer.current.style.transform = `translateX(${-235 + distance}px)`;
     }
-  }, [clickLimit, slideNumber, imgContainer, onClick]);
+  }, [clickLimit, slideNumber, imgContainer, onClick, onAction]);
 
   return (
     <Container>
       <ArrowButton
         type='button'
         direction='left'
+        onClick={() => handleDirection('left')}
+        style={{ display: (!isMoved || slideNumber === 0) && 'none' }}
       >
         <FontAwesomeIcon icon={faArrowLeft} />
       </ArrowButton>
