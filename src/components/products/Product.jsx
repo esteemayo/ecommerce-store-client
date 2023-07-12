@@ -16,7 +16,6 @@ import Counter from '../inputs/Counter';
 import ColorSelect from '../inputs/ColorSelect';
 
 import ProductImageModal from '../modals/ProductImageModal';
-import ColorSelect from '../inputs/ColorSelect';
 
 const Product = ({ product }) => {
   const dispatch = useDispatch();
