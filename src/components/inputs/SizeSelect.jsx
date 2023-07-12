@@ -52,6 +52,8 @@ const Size = styled.button`
   text-align: center;
   font-size: 1.4rem;
   min-width: 4rem;
+  height: 3rem;
+  padding: 1.6rem 0.4rem;
 `;
 
 export default SizeSelect;
