@@ -7,7 +7,7 @@ const ProductValue = ({ items, mode }) => {
   return (
     <Container>
       <ValueAdd mode={mode}>
-        {items.map((item) => {
+        {items?.map((item) => {
           const { id, desc, img } = item;
           return (
             <>
