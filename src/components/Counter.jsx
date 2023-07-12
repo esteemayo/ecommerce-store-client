@@ -20,6 +20,8 @@ const Heading = styled.h3`
   text-transform: capitalize;
   font-weight: 400;
   font-size: 1.65rem;
+  color: ${({ theme }) => theme.text};
+  margin-bottom: 1rem;
 `;
 
 const Wrapper = styled.div`
