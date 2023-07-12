@@ -26,4 +26,8 @@ const Heading = styled.h3`
   color: ${({ theme }) => theme.text};
 `;
 
+const Wrapper = styled.div`
+  
+`;
+
 export default SizeSelect;
