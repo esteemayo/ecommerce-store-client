@@ -63,6 +63,11 @@ const Button = styled.button`
     background-color: ${({ theme }) => theme.bgAddBtnDis};
     color: #999;
   }
+
+  svg {
+    font-size: 1.6rem;
+    fill: currentColor;
+  }
 `;
 
 export default Counter;
