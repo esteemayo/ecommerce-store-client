@@ -14,7 +14,7 @@ const Counter = ({ value, modal, onClick }) => {
   return (
     <Container modal={modal}>
       <Heading modal={modal}>Quantity</Heading>
-      <Wrapper>
+      <Wrapper modal={modal}>
         <Button
           type='button'
           disabled={value <= 1}
