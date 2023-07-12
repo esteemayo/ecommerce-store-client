@@ -8,4 +8,8 @@ const ProductInfo = () => {
   );
 }
 
+const Container = styled.div`
+  
+`;
+
 export default ProductInfo;
