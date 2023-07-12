@@ -167,7 +167,13 @@ const Product = ({ product }) => {
             />
             <Hr />
             <Button type='button' onClick={handleClick}>Add to cart</Button>
-            {alert && <SuccessMessage>Item added to cart</SuccessMessage>}
+            {alert && (
+              <Alert
+                alert={alert}
+                onChange={setAlert}
+                message='Item added to cart'
+              />
+            )}
             <Hr />
             <ValueAddWrapper>
               <ValueAdd mode={darkMode}>
