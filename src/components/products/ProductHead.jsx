@@ -2,9 +2,11 @@
 
 import styled from 'styled-components';
 
-const ProductHead = () => {
+const ProductHead = ({ name }) => {
   return (
-    <>ProductHead</>
+    <>
+      <Heading>{name}</Heading>
+    </>
   );
 }
 
