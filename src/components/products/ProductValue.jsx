@@ -10,13 +10,16 @@ const ProductValue = ({ items, mode }) => {
         {items.map((item) => {
           const { id, desc, img } = item;
           return (
-            <Image
-              key={id}
-              src={img}
-              width={24}
-              height={24}
-              alt=''
-            />
+            <>
+              <Image
+                key={id}
+                src={img}
+                width={24}
+                height={24}
+                alt=''
+              />
+              <span>{desc}</span>
+            </>
           );
         })}
       </ValueAdd>
