@@ -56,6 +56,8 @@ const Wrapper = styled.figure`
 
   img {
     display: block;
+    width: 35rem;
+    height: 35rem;
   }
 `;
 
