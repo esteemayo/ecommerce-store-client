@@ -567,14 +567,6 @@ const Hr = styled.hr`
   background-color: ${({ theme }) => theme.cartModalBorder};
 `;
 
-const ProductColor = styled.h2`
-  display: inline-block;
-  text-transform: capitalize;
-  font-weight: 400;
-  font-size: 1.7rem;
-  color: ${({ theme }) => theme.text};
-`;
-
 const ColorWrapper = styled.div`
   display: flex;
   align-items: center;
