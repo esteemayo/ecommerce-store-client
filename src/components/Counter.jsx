@@ -47,7 +47,7 @@ const Heading = styled.h3`
 const Wrapper = styled.div`
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: ${({ modal }) => modal ? '1rem' : '2rem'};
 
   @media only screen and (max-width: 37.5em) {
     gap: 1.5rem;
