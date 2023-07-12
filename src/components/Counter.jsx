@@ -25,7 +25,9 @@ const Heading = styled.h3`
 `;
 
 const Wrapper = styled.div`
-
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 `;
 
 export default Counter;
