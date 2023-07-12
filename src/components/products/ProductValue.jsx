@@ -42,6 +42,14 @@ const ValueAdd = styled.div`
   align-items: center;
   gap: 0.8rem;
   color: ${({ theme }) => theme.text};
+
+  img {
+    width: 2.4rem;
+    height: auto;
+    background-color: ${({ mode }) => mode && '#1b1a1a'};
+    display: inline-block;
+    object-fit: cover;
+  }
 `;
 
 export default ProductValue;
