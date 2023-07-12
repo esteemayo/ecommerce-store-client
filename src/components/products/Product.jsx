@@ -75,17 +75,7 @@ const Product = ({ product }) => {
     <Container>
       <ProductContainer>
         <Left>
-          <ProductImage
-            images={product.images}
-            isMoved={isSliderMoved}
-            slideNumber={slideNumber}
-            clickLimit={clickLimit}
-            imgContainer={imgContainerRef}
-            onClick={setIsSliderMoved}
-            onAction={setSlideNumber}
-            onOpen={setIsOpen}
-            secondaryAction={setSlideIndex}
-          />
+          <ProductImage images={product.images} />
         </Left>
         <Right>
           <BreadCrumbs category={product.category} />
