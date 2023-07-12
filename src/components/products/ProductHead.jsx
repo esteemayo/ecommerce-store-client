@@ -2,6 +2,7 @@
 
 import styled from 'styled-components';
 import { NumericFormat } from 'react-number-format';
+import Link from 'next/link';
 
 const ProductHead = ({ name, price, discount, priceDiscount }) => {
   return (
@@ -26,6 +27,11 @@ const ProductHead = ({ name, price, discount, priceDiscount }) => {
           prefix={'$'}
         />
       </TotalPrice>
+      <Message>
+        4 interest-free payments of $49.75.
+        &nbsp;
+        <Link href='#' passHref>Learn more</Link>
+      </Message>
     </>
   );
 }
