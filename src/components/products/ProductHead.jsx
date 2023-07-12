@@ -139,7 +139,8 @@ const Rating = styled.div`
 `;
 
 const ReviewQuantity = styled.span`
-  
+  font-weight: 600;
+  font-size: 1.3rem;
 `;
 
 export default ProductHead;
