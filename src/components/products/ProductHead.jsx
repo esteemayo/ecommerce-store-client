@@ -108,7 +108,8 @@ const TotalPrice = styled.p`
 `;
 
 const Message = styled.p`
-  
+  color: ${({ theme }) => theme.text};
+  margin-top: 1rem;
 `;
 
 const Rating = styled.div`
