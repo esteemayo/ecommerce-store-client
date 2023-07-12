@@ -6,6 +6,7 @@ const Counter = () => {
   return (
     <Container>
       <Heading>Quantity</Heading>
+      <Wrapper></Wrapper>
     </Container>
   );
 }
