@@ -60,4 +60,8 @@ const Message = styled.p`
   
 `;
 
+const Rating = styled.div`
+  
+`;
+
 export default ProductHead;
