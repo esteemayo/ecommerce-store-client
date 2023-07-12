@@ -15,7 +15,8 @@ const Container = styled.div`
 `;
 
 const Heading = styled.h2`
-  
+  display: inline-block;
+  text-transform: capitalize;
 `;
 
 export default ColorSelect;
