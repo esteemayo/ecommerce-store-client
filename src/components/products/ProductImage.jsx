@@ -15,4 +15,8 @@ const Container = styled.div`
 
 `;
 
+const Wrapper = styled.figure`
+  
+`;
+
 export default ProductImage;
