@@ -1,6 +1,6 @@
 'use client';
 
-const Alert = () = {
+const Alert = () => {
   return (
     <div>Alert</div>
   );
