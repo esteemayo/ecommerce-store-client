@@ -20,7 +20,7 @@ const ColorSelect = ({
     <Container modal={modal}>
       <Heading modal={modal}>Color</Heading>
       <Wrapper modal={modal}>
-        {value.map((item, index) => {
+        {value?.map((item, index) => {
           return (
             <Color
               key={index}
