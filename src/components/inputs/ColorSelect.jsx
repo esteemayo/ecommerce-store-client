@@ -38,7 +38,7 @@ const Heading = styled.h2`
   display: inline-block;
   text-transform: capitalize;
   font-weight: 400;
-  font-size: 1.7rem;
+  font-size: ${({ modal }) => modal ? '1.5rem' : '1.7rem'};
   color: ${({ theme }) => theme.text};
 `;
 
