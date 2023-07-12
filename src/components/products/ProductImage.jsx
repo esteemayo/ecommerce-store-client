@@ -16,6 +16,12 @@ const ProductImage = () => {
         >
           <FontAwesomeIcon icon={faArrowLeft} />
         </ArrowButton>
+        <ArrowButton
+          type='button'
+          direction='right'
+        >
+          <FontAwesomeIcon icon={faArrowRight} />
+        </ArrowButton>
       </Wrapper>
     </Container>
   );
