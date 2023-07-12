@@ -102,7 +102,7 @@ const Amount = styled.span`
   justify-content: center;
 
   @media only screen and (max-width: 37.5em) {
-    width: 2.85rem;
+    width: ${({ modal }) => !modal && '2.85rem'};
     height: 2.85rem;
     font-size: 1.3rem;
   }
