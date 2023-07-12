@@ -85,6 +85,8 @@ const Amount = styled.span`
   width: 3rem;
   height: 3rem;
   font-size: 1.4rem;
+  border: 1px solid ${({ theme }) => theme.cartSelected};
+  border-radius: 1.5rem;
 `;
 
 export default Counter;
