@@ -48,6 +48,8 @@ const Button = styled.button`
   display: inline-block;
   text-align: center;
   font-size: 1.4rem;
+  min-width: 3rem;
+  height: 3rem;
 `;
 
 export default Counter;
