@@ -19,7 +19,7 @@ const Counter = ({ value, onClick }) => {
           <FontAwesomeIcon icon={faMinus} />
         </Button>
         <Amount>{value}</Amount>
-        <Button type='button'>
+        <Button type='button' onClick={handleQuantity('inc')}>
           <FontAwesomeIcon icon={faPlus} />
         </Button>
       </Wrapper>
