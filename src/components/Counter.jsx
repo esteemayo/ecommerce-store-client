@@ -15,7 +15,7 @@ const Counter = ({ value, onClick }) => {
     <Container>
       <Heading>Quantity</Heading>
       <Wrapper>
-        <Button type='button'>
+        <Button type='button' onClick={handleQuantity('dec')}>
           <FontAwesomeIcon icon={faMinus} />
         </Button>
         <Amount>{value}</Amount>
