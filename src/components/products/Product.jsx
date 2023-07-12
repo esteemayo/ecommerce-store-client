@@ -400,26 +400,6 @@ const ProductWrapper = styled.div`
   }
 `;
 
-const Message = styled.p`
-  color: ${({ theme }) => theme.text};
-  margin-top: 1rem;
-
-  a {
-    &:link,
-    &:visited {
-      text-decoration: underline;
-      text-transform: capitalize;
-      color: ${({ theme }) => theme.text};
-      outline-color: #eee;
-    }
-
-    &:hover,
-    &:active {
-      color: ${({ theme }) => theme.text};
-    }
-  }
-`;
-
 const Rating = styled.div`
   margin: 1rem 0 2rem 0;
   display: flex;
