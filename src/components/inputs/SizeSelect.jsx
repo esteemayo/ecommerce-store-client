@@ -57,6 +57,8 @@ const Size = styled.button`
   line-height: 0.2;
   background-color: ${({ bcg, theme }) => bcg ? theme.cartSelected : 'transparent'};
   color: ${({ bcg }) => bcg ? 'var(--clr-white)' : 'inherit'};
+  border: 2px solid ${({ bcg, theme }) => bcg ? theme.cartSelected : theme.sizeHover};
+  border-radius: 0.4rem;
 `;
 
 export default SizeSelect;
