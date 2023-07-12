@@ -42,21 +42,6 @@ const Product = ({ product }) => {
 
   const lastIndex = product?.images?.lastIndexOf(product?.images[product?.images.length - 1]);
 
-  const handleMove = useCallback((direction) => {
-    let newSlideIndex;
-
-    setIsMoved(true);
-    if (direction === 'left') {
-      newSlideIndex = slideIndex - 1;
-    }
-
-    if (direction === 'right') {
-      newSlideIndex = slideIndex + 1;
-    }
-
-    setSlideIndex(newSlideIndex);
-  }, [slideIndex]);
-
   const handleReset = useCallback(() => {
     setSize(null);
     setColor(null);
