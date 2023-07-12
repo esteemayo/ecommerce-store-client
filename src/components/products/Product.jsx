@@ -567,10 +567,6 @@ const Hr = styled.hr`
   background-color: ${({ theme }) => theme.cartModalBorder};
 `;
 
-const ColorContainer = styled.div`
-  margin: 2rem 0;
-`;
-
 const ProductColor = styled.h2`
   display: inline-block;
   text-transform: capitalize;
