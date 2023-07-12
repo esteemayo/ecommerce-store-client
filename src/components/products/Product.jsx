@@ -127,15 +127,6 @@ const Product = ({ product }) => {
           </ProductWrapper>
         </Right>
       </ProductContainer>
-      <ProductImageModal
-        images={product.images}
-        isOpen={isOpen}
-        setIsOpen={setIsOpen}
-        isMoved={isMoved}
-        slideIndex={slideIndex}
-        lastIndex={lastIndex}
-        handleMove={handleMove}
-      />
     </Container>
   );
 }
