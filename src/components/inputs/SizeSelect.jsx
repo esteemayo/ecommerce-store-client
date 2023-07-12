@@ -2,11 +2,20 @@
 
 import styled from 'styled-components';
 
-const SizeSelect = () => {
+const SizeSelect = ({ value }) => {
   return (
     <Container>
       <Heading>Select a size</Heading>
-      <Wrapper></Wrapper>
+      <Wrapper>
+        {value?.map((item, index) => {
+          return (
+            <Size
+              key={index}
+              type='button'
+            />
+          );
+        })}
+      </Wrapper>
     </Container>
   );
 }
