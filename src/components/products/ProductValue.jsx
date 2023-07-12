@@ -38,7 +38,9 @@ const Container = styled.div`
 `;
 
 const ValueAdd = styled.div`
-  
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
 `;
 
 export default ProductValue;
