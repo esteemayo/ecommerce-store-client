@@ -185,27 +185,12 @@ const Product = ({ product }) => {
               onAction={setColor}
               secondaryAction={setIsSelected}
             />
-            <SizeWrapper>
-              {product?.size?.length > 0 && (
-                <>
-                  <SizeHeading>Select a size</SizeHeading>
-                  <SizeContainer>
-                    {product?.size?.map((size, index) => {
-                      return (
-                        <SelectSize
-                          key={index}
-                          type='button'
-                          bcg={selectedSize === size}
-                          onClick={() => handleSize(size)}
-                        >
-                          {size}
-                        </SelectSize>
-                      );
-                    })}
-                  </SizeContainer>
-                </>
-              )}
-            </SizeWrapper>
+            <SizeSelect
+              value={product.size}
+              selected={selectedSize}
+              onAction={setSize}
+              secondaryAction={setSelectedSize}
+            />
             <Hr />
             <Counter
               value={quantity}
