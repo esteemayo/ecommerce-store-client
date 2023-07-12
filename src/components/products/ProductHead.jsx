@@ -1,8 +1,9 @@
 'use client';
 
 import styled from 'styled-components';
-import { NumericFormat } from 'react-number-format';
 import Link from 'next/link';
+import { NumericFormat } from 'react-number-format';
+import { useMemo } from 'react';
 
 import StarRating from '../StarRating';
 
