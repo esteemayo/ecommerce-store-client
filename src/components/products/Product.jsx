@@ -181,25 +181,13 @@ const Product = ({ product }) => {
               </ReviewQuantity>
             </Rating>
             <Hr />
-            <ColorContainer>
-              <ProductColor>Color</ProductColor>
-              <ColorWrapper>
-                {product?.color?.map((color, index) => {
-                  return (
-                    <Color
-                      key={index}
-                      color={color}
-                      type='button'
-                      mode={darkMode}
-                      selected={color === isSelected}
-                      onClick={() => handleColor(color)}
-                    >
-                      &nbsp;
-                    </Color>
-                  );
-                })}
-              </ColorWrapper>
-            </ColorContainer>
+            <ColorSelect
+              mode={darkMode}
+              value={color}
+              selected={isSelected}
+              onAction={setColor}
+              secondaryAction={setIsSelected}
+            />
             <SizeWrapper>
               {product?.size?.length > 0 && (
                 <>
