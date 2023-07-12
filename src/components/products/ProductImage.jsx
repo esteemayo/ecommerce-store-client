@@ -98,6 +98,10 @@ const ArrowButton = styled.button`
   -moz-box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.04);
   outline-color: #777;
   cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: ${({ direction }) => direction === 'left' && '2rem'};
+  right: ${({ direction }) => direction === 'right' && '54%'};
 `;
 
 export default ProductImage;
