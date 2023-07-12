@@ -29,6 +29,8 @@ const Container = styled.div`
       text-decoration: underline;
       text-decoration-color: ${({ theme }) => theme.colCrumbs};
       text-underline-offset: 3px;
+      text-transform: capitalize;
+      font-size: 1.6rem;
     }
   }
 `;
