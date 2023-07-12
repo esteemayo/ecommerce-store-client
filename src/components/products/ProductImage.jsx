@@ -58,6 +58,8 @@ const Wrapper = styled.figure`
     display: block;
     width: 35rem;
     height: 35rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
   }
 `;
 
