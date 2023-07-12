@@ -49,6 +49,8 @@ const Color = styled.button`
   display: block;
   width: 2.2rem;
   height: 2.2rem;
+  background-color: ${({ color, mode }) => mode && color === 'black' ? '#111' : color};
+  background-color: ${({ color, mode }) => !mode && color === 'white' && '#f9f9f9'};
 `;
 
 export default ColorSelect;
