@@ -31,6 +31,9 @@ const Container = styled.div`
       text-underline-offset: 3px;
       text-transform: capitalize;
       font-size: 1.6rem;
+      color: currentColor;
+      outline-color: #ccc;
+      line-height: 1.2;
     }
   }
 `;
