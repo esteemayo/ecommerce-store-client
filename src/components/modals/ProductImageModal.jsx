@@ -38,8 +38,8 @@ const ProductImageModal = ({
   }, [setIsOpen]);
 
   useEffect(() => {
-
-  }, [])
+    setShowModal(isOpen);
+  }, [isOpen]);
 
   return (
     <Overlay type={isOpen ? 'show' : ''}>
