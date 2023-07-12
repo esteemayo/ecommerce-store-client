@@ -56,6 +56,8 @@ const Button = styled.button`
   color: inherit;
   border: 2px solid ${({ theme }) => theme.sizeHover};
   border-radius: 0.4rem;
+  outline-color: #ccc;
+  cursor: pointer;
 `;
 
 export default Counter;
