@@ -400,17 +400,6 @@ const ProductWrapper = styled.div`
   }
 `;
 
-const Rating = styled.div`
-  margin: 1rem 0 2rem 0;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-
-  svg {
-    color: ${({ theme }) => theme.star};
-  }
-`;
-
 const ReviewQuantity = styled.span`
   font-weight: 600;
   font-size: 1.3rem;
