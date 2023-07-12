@@ -17,6 +17,7 @@ import SizeSelect from '../inputs/SizeSelect';
 import ProductHead from './ProductHead';
 import ProductInfo from './ProductInfo';
 
+import Alert from '../Alert';
 import ProductImageModal from '../modals/ProductImageModal';
 
 const Product = ({ product }) => {
