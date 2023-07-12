@@ -13,7 +13,7 @@ const Counter = ({ value, modal, onClick }) => {
 
   return (
     <Container modal={modal}>
-      <Heading>Quantity</Heading>
+      <Heading modal={modal}>Quantity</Heading>
       <Wrapper>
         <Button
           type='button'
