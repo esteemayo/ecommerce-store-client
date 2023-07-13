@@ -124,39 +124,6 @@ const ListsContainer = styled.ul`
   row-gap: 0.25rem;
 `;
 
-const ListItem = styled.li`
-  font-size: 1.4rem;
-
-  & > * {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-
-  a {
-    &:link,
-    &:visited {
-      text-decoration: none;
-      text-transform: capitalize;
-      color: inherit;
-      outline-color: #eee;
-      transition: all 0.2s ease;
-    }
-
-    &:active {
-      color: currentColor;
-    }
-
-    &:hover {
-      color: #686767;
-    }
-    
-    svg {
-      color: var(--clr-secondary-green);
-    }
-  }
-`;
-
 const SearchContainer = styled.div`
   margin-top: 5rem;
   width: 100%;
