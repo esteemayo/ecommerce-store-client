@@ -43,6 +43,12 @@ const Button = styled.button`
     padding-top: 1.6rem;
     padding-bottom: 1.6rem;
   }
+
+  @media only screen and (max-width: 18.75em) {
+    font-size: 1.6rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
 `;
 
 export default ProductButton;
