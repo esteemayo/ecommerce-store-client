@@ -137,22 +137,10 @@ const CartModal = ({ product, isModalOpen, closeModal, setIsSelectedProduct }) =
                 </>
               )}
               <Hr />
-              <AddContainer>
-                <AmountHeading>Quantity</AmountHeading>
-                <AmountContainer>
-                  <AddButton
-                    type='button'
-                    disabled={quantity <= 1}
-                    onClick={() => handleQuantity('dec')}
-                  >
-                    <FontAwesomeIcon icon={faMinus} />
-                  </AddButton>
-                  <Amount>{quantity}</Amount>
-                  <AddButton type='button' onClick={() => handleQuantity('inc')}>
-                    <FontAwesomeIcon icon={faPlus} />
-                  </AddButton>
-                </AmountContainer>
-              </AddContainer>
+              <Counter
+                value={quantity}
+                onClick={setQuantity}
+              />
               <Hr />
               <Button type='button' onClick={handleClick}>Add to cart</Button>
               {alert && (
