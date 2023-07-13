@@ -17,6 +17,12 @@ const Menutem = ({ url, icon, label }) => {
 
 const ListItem = styled.li`
   font-size: 1.4rem;
+
+  & > * {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
 `;
 
 export default Menutem;
