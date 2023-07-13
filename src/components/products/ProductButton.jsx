@@ -29,6 +29,8 @@ const Button = styled.button`
   border-radius: 0.5rem;
   outline-color: #777;
   line-height: 1.3em;
+  margin: 3rem 0;
+  cursor: pointer;
 `;
 
 export default ProductButton;
