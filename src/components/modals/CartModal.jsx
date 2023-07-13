@@ -13,6 +13,7 @@ import ColorSelect from '../inputs/ColorSelect';
 import Counter from '../inputs/Counter';
 import SizeSelect from '../inputs/SizeSelect';
 
+import Alert from '../Alert';
 import { addProduct } from '@/features/cart/cartSlice';
 
 const CartModal = ({ product, isModalOpen, closeModal, setIsSelectedProduct }) => {
