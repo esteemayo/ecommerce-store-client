@@ -25,6 +25,10 @@ const ProductImage = ({ images }) => {
     setIsOpen(true);
   }, []);
 
+  const handleClose = useCallback(() => {
+    setIsOpen(false);
+  }, []);
+
   const handleMove = useCallback((direction) => {
     let newSlideIndex;
 
@@ -90,7 +94,7 @@ const ProductImage = ({ images }) => {
       <ProductImageModal
         images={images}
         isOpen={isOpen}
-        setIsOpen={setIsOpen}
+        onClose={handleClose}
         isMoved={isMoved}
         slideIndex={slideIndex}
         lastIndex={lastIndex}
