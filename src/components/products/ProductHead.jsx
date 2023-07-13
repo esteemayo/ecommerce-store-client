@@ -62,8 +62,8 @@ const Heading = styled.h1`
   font-weight: 500;
   font-size: ${({ modal }) => modal ? '1.8rem' : '2.4rem'};
   color: ${({ theme, modal }) => modal ? theme.text : theme.textProdHeader};
-  line-height: 1.3;
-  margin-bottom: 2rem;
+  line-height: ${({ modal }) => modal ? '1' : '1.3'};
+  margin-bottom: ${({ modal }) => modal ? '1rem' : '2rem'};
 
   @media only screen and (max-width: 59.375em) {
     margin-bottom: 1.75rem;
