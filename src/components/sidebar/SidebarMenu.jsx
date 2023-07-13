@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const SidebarMenu = () => {
   return (
-    <div>SidebarMenu</div>
+    <Container>SidebarMenu</Container>
   );
 }
 
