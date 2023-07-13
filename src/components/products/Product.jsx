@@ -14,6 +14,7 @@ import SizeSelect from '../inputs/SizeSelect';
 import ProductHead from './ProductHead';
 import ProductValue from './ProductValue';
 import ProductInfo from './ProductInfo';
+import ProductButton from './ProductButton';
 import ProductImage from './ProductImage';
 
 import Alert from '../Alert';
