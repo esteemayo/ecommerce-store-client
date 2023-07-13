@@ -2,6 +2,7 @@
 
 import styled from 'styled-components';
 import Link from 'next/link';
+import SidebarMenuItem from './SidebarMenuItem';
 
 const SidebarMenu = ({ items }) => {
   return (
