@@ -368,12 +368,6 @@ const AmountHeading = styled.h3`
   margin-bottom: 0.5rem;
 `;
 
-const AmountContainer = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-`;
-
 const Button = styled.button`
   display: inline-block;
   text-align: center;
