@@ -38,6 +38,10 @@ const Button = styled.button`
     padding-bottom: ${({ small }) => !small && '1.75rem'};
   }
 
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+    font-size: ${({ small }) => small && '1.6rem'};
+  }
+
   @media only screen and (max-width: 37.5em), only screen and (hover: none) {
     font-size: ${({ small }) => !small && '1.7rem'};
     padding-top: ${({ small }) => !small && '1.6rem'};
