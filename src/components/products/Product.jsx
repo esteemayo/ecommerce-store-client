@@ -64,6 +64,7 @@ const Product = ({ product }) => {
             />
             <Hr />
             <ColorSelect
+              title='Color'
               mode={darkMode}
               value={product.color}
               selected={isSelected}
