@@ -43,7 +43,7 @@ const ListItem = styled.li`
     }
 
     svg {
-      color: var(--clr-secondary-green);
+      color: ${({ theme }) => theme.textHeader};
     }
   }
 `;
