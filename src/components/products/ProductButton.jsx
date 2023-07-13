@@ -49,6 +49,10 @@ const Button = styled.button`
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
+
+  &:hover {
+    background-position: 100%;
+  }
 `;
 
 export default ProductButton;
