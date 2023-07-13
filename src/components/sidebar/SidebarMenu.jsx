@@ -12,4 +12,8 @@ const Container = styled.div`
   
 `;
 
+const Wrapper = styled.article`
+  
+`;
+
 export default SidebarMenu;
