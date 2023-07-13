@@ -42,17 +42,21 @@ const ProductHead = ({
           prefix={'$'}
         />
       </TotalPrice>
-      <Message>
-        4 interest-free payments of $49.75.
-        &nbsp;
-        <Link href='#' passHref>Learn more</Link>
-      </Message>
-      <Rating>
-        <StarRating value={ratingsAverage} />
-        <ReviewQuantity>
-          <a href='#reviews'>{ratingsQuantity} Review</a>
-        </ReviewQuantity>
-      </Rating>
+      {!modal && (
+        <>
+          <Message>
+            4 interest-free payments of $49.75.
+            &nbsp;
+            <Link href='#' passHref>Learn more</Link>
+          </Message>
+          <Rating>
+            <StarRating value={ratingsAverage} />
+            <ReviewQuantity>
+              <a href='#reviews'>{ratingsQuantity} Review</a>
+            </ReviewQuantity>
+          </Rating>
+        </>
+      )}
     </>
   );
 }
