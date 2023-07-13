@@ -11,7 +11,8 @@ const ProductButton = ({ actionLabel, onAction }) => {
 }
 
 const Button = styled.button`
-  
+  display: inline-block;
+  text-align: center;
 `;
 
 export default ProductButton;
