@@ -12,6 +12,7 @@ import Counter from '../inputs/Counter';
 import SizeSelect from '../inputs/SizeSelect';
 
 import Alert from '../Alert';
+import ProductButton from '../products/ProductButton';
 import { addProduct } from '@/features/cart/cartSlice';
 
 const CartModal = ({ product, isModalOpen, closeModal, setIsSelectedProduct }) => {
