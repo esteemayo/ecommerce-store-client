@@ -32,6 +32,11 @@ const Button = styled.button`
   margin: 3rem 0;
   cursor: pointer;
   transition: all 0.3s;
+
+  @media only screen and (max-width: 59.375em) {
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+  }
 `;
 
 export default ProductButton;
