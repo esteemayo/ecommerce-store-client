@@ -24,7 +24,7 @@ const ProductHead = ({
     <>
       <Heading modal={modal}>{name}</Heading>
       <PriceContainer>
-        <Price>
+        <Price modal={modal}>
           <NumericFormat
             value={initialPrice}
             displayType={'text'}
