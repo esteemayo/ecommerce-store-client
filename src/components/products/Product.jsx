@@ -73,6 +73,7 @@ const Product = ({ product }) => {
             />
             <SizeSelect
               value={product.size}
+              title='Select a size'
               selected={selectedSize}
               onAction={setSize}
               secondaryAction={setSelectedSize}
