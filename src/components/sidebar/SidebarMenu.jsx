@@ -23,4 +23,8 @@ const Wrapper = styled.article`
   
 `;
 
+const Heading = styled.h4`
+  
+`;
+
 export default SidebarMenu;
