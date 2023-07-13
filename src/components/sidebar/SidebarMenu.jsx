@@ -37,7 +37,7 @@ const Container = styled.div`
 `;
 
 const Wrapper = styled.article`
-  
+  margin-bottom: 1.7rem;
 `;
 
 const Heading = styled.h4`
