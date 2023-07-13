@@ -8,4 +8,8 @@ const ProductButton = () => {
   );
 }
 
+const Button = styled.button`
+  
+`;
+
 export default ProductButton;
