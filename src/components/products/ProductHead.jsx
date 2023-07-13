@@ -10,6 +10,7 @@ import StarRating from '../StarRating';
 const ProductHead = ({
   name,
   price,
+  modal,
   discount,
   priceDiscount,
   ratingsAverage,
