@@ -355,10 +355,6 @@ const SelectSize = styled.button`
   }
 `;
 
-const AddContainer = styled.div`
-  margin: 0.5rem 0;
-`;
-
 const Button = styled.button`
   display: inline-block;
   text-align: center;
