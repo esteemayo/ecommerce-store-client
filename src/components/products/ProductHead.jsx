@@ -22,7 +22,7 @@ const ProductHead = ({
 
   return (
     <>
-      <Heading>{name}</Heading>
+      <Heading modal={modal}>{name}</Heading>
       <PriceContainer>
         <Price>
           <NumericFormat
