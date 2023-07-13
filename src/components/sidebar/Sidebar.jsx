@@ -29,30 +29,7 @@ const Sidebar = () => {
         <CloseButton type='button' onClick={() => dispatch(closeSidebar())}>
           <FontAwesomeIcon icon={faXmark} />
         </CloseButton>
-        <LinksContainer>
-          {sublinks.map((item, index) => {
-            const { page, links } = item;
-            return (
-              <LinksWrapper key={index}>
-                <Title>{page}</Title>
-                <ListsContainer>
-                  {links.map((link, index) => {
-                    const { url, icon, label } = link;
-                    return (
-                      <ListItem key={index}>
-                        <Link href={url} passHref>
-                          {icon}
-                          &nbsp;
-                          {label}
-                        </Link>
-                      </ListItem>
-                    );
-                  })}
-                </ListsContainer>
-              </LinksWrapper>
-            );
-          })}
-        </LinksContainer>
+        <SidebarMenu items={sublinks} />
         <SearchContainer>
           <Title>Search products</Title>
           <Form onSubmit={handleSearch}>
