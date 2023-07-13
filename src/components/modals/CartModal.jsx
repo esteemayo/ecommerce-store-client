@@ -374,34 +374,6 @@ const AmountContainer = styled.div`
   gap: 1rem;
 `;
 
-const AddButton = styled.button`
-  border: none;
-  display: inline-block;
-  text-align: center;
-  font-size: 1.3rem;
-  min-width: 2.5rem;
-  height: 2.5rem;
-  padding: 0 0.4rem;
-  line-height: 0.2;
-  background-color: transparent;
-  color: inherit;
-  border: 2px solid ${({ theme }) => theme.sizeHovModal};
-  border-radius: 0.4rem;
-  outline-color: #ccc;
-  cursor: pointer;
-  transition: all 0.3s ease;
-
-  &:disabled {
-    background-color: ${({ theme }) => theme.bgAddBtnDis};
-    color: #999;
-  }
-
-  svg {
-    font-size: 1.4rem;
-    fill: currentColor;
-  }
-`;
-
 const Button = styled.button`
   display: inline-block;
   text-align: center;
