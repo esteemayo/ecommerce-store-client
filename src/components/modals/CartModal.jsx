@@ -331,13 +331,6 @@ const ProductColor = styled.h2`
   color: ${({ theme }) => theme.text};
 `;
 
-const ColorWrapper = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin: 1rem 0;
-`;
-
 const SizeWrapper = styled.div`
   margin-top: 1rem;
   margin-bottom: 1rem;
