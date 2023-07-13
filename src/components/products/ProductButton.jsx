@@ -29,7 +29,7 @@ const Button = styled.button`
   border-radius: 0.5rem;
   outline-color: #777;
   line-height: ${({ small }) => small ? '1em' : '1.3em'};
-  margin: 3rem 0;
+  margin: ${({ small }) => small ? '1rem 0' : '3rem 0'};
   cursor: pointer;
   transition: all 0.3s;
 
