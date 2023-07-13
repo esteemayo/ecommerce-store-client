@@ -12,6 +12,8 @@ import SizeSelect from '../inputs/SizeSelect';
 
 import Alert from '../Alert';
 import ProductButton from '../products/ProductButton';
+
+import Alert from '../Alert';
 import { addProduct } from '@/features/cart/cartSlice';
 import ProductHead from '../products/ProductHead';
 
