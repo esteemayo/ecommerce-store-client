@@ -5,10 +5,12 @@ import styled from 'styled-components';
 const SidebarMenu = ({ data }) => {
   return (
     <Container>
-      {data.map((item) => {
-        const { id } = item;
+      {data.map((item, index) => {
+        const { page, links } = item;
         return (
-          <Wrapper key={id}></Wrapper>
+          <Wrapper key={index}>
+            <Heading>{page}</Heading>
+          </Wrapper>
         );
       })}
     </Container>
