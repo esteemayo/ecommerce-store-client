@@ -15,7 +15,13 @@ const SidebarMenu = ({ data }) => {
               {links.map((link, index) => {
                 const { url, icon, label } = link;
                 return (
-                  <ListItem key={index}></ListItem>
+                  <ListItem key={index}>
+                    <Link href={url} passHref>
+                      {icon}
+                      &nbsp;
+                      {label}
+                    </Link>
+                  </ListItem>
                 );
               })}
             </ListContainer>
