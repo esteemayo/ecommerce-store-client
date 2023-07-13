@@ -25,6 +25,8 @@ const Button = styled.button`
     #333 50%
   );
   background-size: 220%;
+  border: 1px solid var(--clr-black);
+  border-radius: 0.5rem;
 `;
 
 export default ProductButton;
