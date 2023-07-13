@@ -96,7 +96,7 @@ const Price = styled.p`
 
 const Discount = styled.p`
   font-weight: 700;
-  font-size: 1.4rem;
+  font-size: ${({ modal }) => modal ? '1.3rem' : '1.4rem'};
   padding: 0.4rem 0.6rem;
   background-color: #fa4b21;
   color: var(--clr-white);
