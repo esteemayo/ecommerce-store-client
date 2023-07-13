@@ -110,7 +110,7 @@ const Discount = styled.p`
 `;
 
 const TotalPrice = styled.p`
-  font-weight: 500;
+  font-weight: ${({ modal }) => modal ? '400' : '500'};
   font-size: 1.6rem;
   color: #fa4b21;
   line-height: 1.3;
