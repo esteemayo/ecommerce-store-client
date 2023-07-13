@@ -41,7 +41,7 @@ const Wrapper = styled.article`
 `;
 
 const Heading = styled.h4`
-  
+  display: inline-block;
 `;
 
 const ListContainer = styled.ul`
