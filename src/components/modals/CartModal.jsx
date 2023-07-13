@@ -46,11 +46,6 @@ const CartModal = ({ product, isModalOpen, closeModal, setIsSelectedProduct }) =
     setSelectedSize(size);
   }, []);
 
-  const handleQuantity = useCallback((type) => {
-    type === 'dec' && quantity > 1 && setQuantity((prev) => prev - 1);
-    type === 'inc' && setQuantity((prev) => prev + 1);
-  }, [quantity]);
-
   const handleReset = useCallback(() => {
     setSize(null);
     setColor(null);
