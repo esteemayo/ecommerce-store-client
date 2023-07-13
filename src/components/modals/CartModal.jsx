@@ -14,6 +14,7 @@ import SizeSelect from '../inputs/SizeSelect';
 import Alert from '../Alert';
 import ProductButton from '../products/ProductButton';
 import { addProduct } from '@/features/cart/cartSlice';
+import ProductHead from '../products/ProductHead';
 
 const CartModal = ({ product, isModalOpen, closeModal, setIsSelectedProduct }) => {
   const dispatch = useDispatch();
