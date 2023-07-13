@@ -10,6 +10,8 @@ import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import { sublinks } from '@/data';
 import { closeSidebar } from '@/features/submenu/submenuSlice';
 
+import SidebarMenu from './SidebarMenu';
+
 const Sidebar = () => {
   const dispatch = useDispatch();
   const { isSidebarOpen } = useSelector((state) => ({ ...state.submenu }));
