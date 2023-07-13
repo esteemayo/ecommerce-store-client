@@ -160,7 +160,14 @@ const CartModal = ({ product, isModalOpen, closeModal, setIsSelectedProduct }) =
               </AddContainer>
               <Hr />
               <Button type='button' onClick={handleClick}>Add to cart</Button>
-              {alert && <SuccessMessage>Item added to cart</SuccessMessage>}
+              {alert && (
+                <Alert
+                  alert={alert}
+                  message='Item added to cart'
+                  onChange={setAlert}
+                  center
+                />
+              )}
             </SizeWrapper>
           </ProductContainer>
         </Wrapper>
