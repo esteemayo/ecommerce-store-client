@@ -69,14 +69,6 @@ const CartModal = ({ product, isModalOpen, closeModal, setIsSelectedProduct }) =
     handleReset();
   }, [color, size, product, quantity, handleReset, dispatch]);
 
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      setAlert(false);
-    }, 3000);
-
-    return () => clearTimeout(timeout);
-  }, [alert]);
-
   return (
     <Overlay
       className='overlay'
