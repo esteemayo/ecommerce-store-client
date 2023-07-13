@@ -30,7 +30,7 @@ const Sidebar = () => {
         </CloseButton>
         <SidebarMenu items={sublinks} />
         <SearchContainer>
-          <Title>Search products</Title>
+          <Heading>Search products</Heading>
           <Form onSubmit={handleSearch}>
             <Input
               type='search'
@@ -101,7 +101,7 @@ const CloseButton = styled.button`
   }
 `;
 
-const Title = styled.h4`
+const Heading = styled.h4`
   display: inline-block;
   text-transform: capitalize;
   font-size: 1.5rem;
