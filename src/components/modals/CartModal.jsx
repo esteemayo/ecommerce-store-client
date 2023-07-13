@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import CloseIcon from '@mui/icons-material/Close';
 import Image from 'next/image';
 import { useDispatch, useSelector } from 'react-redux';
+import { useCallback, useState } from 'react';
 
 import ColorSelect from '../inputs/ColorSelect';
 import Counter from '../inputs/Counter';
