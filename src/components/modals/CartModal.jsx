@@ -119,7 +119,11 @@ const CartModal = ({ product, isModalOpen, closeModal, setIsSelectedProduct }) =
                 onClick={setQuantity}
               />
               <Hr />
-              <Button type='button' onClick={handleClick}>Add to cart</Button>
+              <ProductButton
+                small
+                actionLabel='Add to cart'
+                onAction={handleClick}
+              />
               {alert && (
                 <Alert
                   alert={alert}
