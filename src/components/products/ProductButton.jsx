@@ -34,8 +34,8 @@ const Button = styled.button`
   transition: all 0.3s;
 
   @media only screen and (max-width: 59.375em) {
-    padding-top: 1.75rem;
-    padding-bottom: 1.75rem;
+    padding-top: ${({ small }) => !small && '1.75rem'};
+    padding-bottom: ${({ small }) => !small && '1.75rem'};
   }
 
   @media only screen and (max-width: 37.5em), only screen and (hover: none) {
