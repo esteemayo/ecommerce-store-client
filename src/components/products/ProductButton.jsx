@@ -13,7 +13,7 @@ const ProductButton = ({ small, actionLabel, onAction }) => {
 const Button = styled.button`
   display: inline-block;
   text-align: center;
-  font-size: 1.8rem;
+  font-size: ${({ small }) => small ? '1.5rem' : '1.8rem'};
   width: 100%;
   padding: 2rem 1rem;
   background-color: ${({ theme }) => theme.bgProdBtn};
