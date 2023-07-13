@@ -402,17 +402,6 @@ const AddButton = styled.button`
   }
 `;
 
-const Amount = styled.span`
-  width: 2.5rem;
-  height: 2.5rem;
-  font-size: 1.3rem;
-  border: 1px solid ${({ theme }) => theme.cartSelected};
-  border-radius: 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
-
 const Button = styled.button`
   display: inline-block;
   text-align: center;
