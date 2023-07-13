@@ -6,8 +6,8 @@ import { PersistGate } from 'redux-persist/integration/react';
 import Navbar from '@/components/navbar/Navbar';
 import Submenu from '@/components/Submenu';
 import ScrollToTop from '@/components/ScrollToTop';
-import Sidebar from '@/components/sidebar/Sidebar';
 import Footer from '@/components/footer/Footer';
+import Sidebar from '@/components/sidebar/Sidebar';
 import Darkmode from '@/components/DarkMode';
 import ClientOnly from '@/components/ClientOnly';
 
