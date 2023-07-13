@@ -13,6 +13,8 @@ import ColorSelect from '../inputs/ColorSelect';
 import Counter from '../inputs/Counter';
 import SizeSelect from '../inputs/SizeSelect';
 
+import { addProduct } from '@/features/cart/cartSlice';
+
 const CartModal = ({ product, isModalOpen, closeModal, setIsSelectedProduct }) => {
   const dispatch = useDispatch();
   const { darkMode } = useSelector((state) => ({ ...state.darkMode }));
