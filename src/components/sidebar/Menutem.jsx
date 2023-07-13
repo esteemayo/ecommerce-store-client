@@ -16,7 +16,7 @@ const Menutem = ({ url, icon, label }) => {
 }
 
 const ListItem = styled.li`
-  
+  font-size: 1.4rem;
 `;
 
 export default Menutem;
