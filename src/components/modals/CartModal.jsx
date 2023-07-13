@@ -98,6 +98,7 @@ const CartModal = ({ product, isModalOpen, closeModal, setIsSelectedProduct }) =
             </SalePrice>
             <Hr />
             <ColorSelect
+              title='Color'
               mode={darkMode}
               value={product.color}
               selected={isSelected}
