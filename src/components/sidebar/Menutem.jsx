@@ -3,9 +3,15 @@
 import styled from 'styled-components';
 import Link from 'next/link';
 
-const Menutem = () => {
+const Menutem = ({ url, icon, label }) => {
   return (
-    <div>Menutem</div>
+    <ListItem>
+      <Link href={url} passHref>
+        {icon}
+        &nbsp;
+        {label}
+      </Link>
+    </ListItem>
   );
 }
 
