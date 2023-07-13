@@ -9,4 +9,8 @@ const Menutem = () => {
   );
 }
 
+const ListItem = styled.li`
+  
+`;
+
 export default Menutem;
