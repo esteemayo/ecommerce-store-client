@@ -288,36 +288,4 @@ const SizeWrapper = styled.div`
   margin-bottom: 1rem;
 `;
 
-const Button = styled.button`
-  display: inline-block;
-  text-align: center;
-  font-size: 1.5rem;
-  width: 100%;
-  padding: 1.3rem 1rem;
-  background-color: var(--clr-black);
-  color: var(--clr-white);
-  background-image: linear-gradient(
-    120deg,
-    transparent 0%,
-    transparent 50%,
-    #333 50%
-  );
-  background-size: 220%;
-  border: 1px solid var(--clr-black);
-  border-radius: 0.5rem;
-  outline-color: #777;
-  line-height: 1em;
-  margin: 1rem 0;
-  cursor: pointer;
-  transition: all 0.3s;
-
-  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
-    font-size: 1.6rem;
-  }
-
-  &:hover {
-    background-position: 100%;
-  }
-`;
-
 export default CartModal;
