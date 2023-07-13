@@ -247,17 +247,6 @@ const ProductPrice = styled.p`
   color: ${({ theme }) => theme.text};
 `;
 
-const PriceDiscount = styled.p`
-  font-weight: 500;
-  font-size: 1.3rem;
-  padding: 0.4rem 0.6rem;
-  background-color: #fa4b21;
-  color: var(--clr-white);
-  border-radius: 10rem;
-  line-height: 1;
-  letter-spacing: 0.02em;
-`;
-
 const Hr = styled.hr`
   width: 100%;
   height: 1px;
