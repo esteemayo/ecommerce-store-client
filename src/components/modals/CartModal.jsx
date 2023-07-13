@@ -110,13 +110,13 @@ const CartModal = ({ product, isModalOpen, closeModal, setIsSelectedProduct }) =
               modal
             />
             <SizeWrapper>
-            <SizeSelect
-              value={product.size}
-              selected={selectedSize}
-              onAction={setSize}
-              secondaryAction={setSelectedSize}
-              modal
-            />
+              <SizeSelect
+                value={product.size}
+                selected={selectedSize}
+                onAction={setSize}
+                secondaryAction={setSelectedSize}
+                modal
+              />
               <Hr />
               <Counter
                 value={quantity}
@@ -312,28 +312,6 @@ const SizeContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 0.5rem;
-`;
-
-const SelectSize = styled.button`
-  display: inline-block;
-  text-align: center;
-  font-size: 1.3rem;
-  min-width: 3rem;
-  height: 2rem;
-  padding: 1.3rem 0.4rem;
-  line-height: 0.1;
-  background-color: ${({ bcg, theme }) => bcg ? theme.cartSelected : 'transparent'};
-  color: ${({ bcg }) => bcg ? 'var(--clr-white)' : 'inherit'};
-  border: 2px solid ${({ bcg, theme }) => bcg ? theme.cartSelected : theme.sizeHovModal};
-  border-radius: 0.4rem;
-  outline-color: #ccc;
-  margin-bottom: 0.8rem;
-  cursor: ${({ bcg }) => bcg ? 'default' : 'pointer'};
-  transition: all 0.1s ease-in-out;
-
-  &:hover {
-    background-color: ${({ bcg, theme }) => bcg ? theme.cartSelected : theme.sizeHovModal};
-  }
 `;
 
 const Button = styled.button`
