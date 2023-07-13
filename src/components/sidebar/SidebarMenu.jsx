@@ -72,6 +72,10 @@ const ListItem = styled.li`
       color: inherit;
       outline-color: #eee;
     }
+
+    &:active {
+      color: currentColor;
+    }
   }
 `;
 
