@@ -2,9 +2,16 @@
 
 import styled from 'styled-components';
 
-const SidebarMenu = () => {
+const SidebarMenu = ({ data }) => {
   return (
-    <Container>SidebarMenu</Container>
+    <Container>
+      {data.map((item) => {
+        const { id } = item;
+        return (
+          <Wrapper key={id}></Wrapper>
+        );
+      })}
+    </Container>
   );
 }
 
