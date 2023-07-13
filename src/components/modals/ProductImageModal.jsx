@@ -10,7 +10,6 @@ import { useCallback, useEffect, useState } from 'react';
 const ProductImageModal = ({
   images,
   isOpen,
-  setIsOpen,
   isMoved,
   slideIndex,
   lastIndex,
