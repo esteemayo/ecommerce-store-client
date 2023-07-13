@@ -10,12 +10,11 @@ import ColorSelect from '../inputs/ColorSelect';
 import Counter from '../inputs/Counter';
 import SizeSelect from '../inputs/SizeSelect';
 
-import Alert from '../Alert';
+import ProductHead from '../products/ProductHead';
 import ProductButton from '../products/ProductButton';
 
 import Alert from '../Alert';
 import { addProduct } from '@/features/cart/cartSlice';
-import ProductHead from '../products/ProductHead';
 
 const CartModal = ({ product, isModalOpen, closeModal, setIsSelectedProduct }) => {
   const dispatch = useDispatch();
