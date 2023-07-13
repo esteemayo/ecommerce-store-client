@@ -8,6 +8,7 @@ import { addProduct } from '@/features/cart/cartSlice';
 import BreadCrumbs from '@/app/products/[id]/BreadCrumbs';
 
 import ColorSelect from '../inputs/ColorSelect';
+import Counter from '../inputs/Counter';
 import SizeSelect from '../inputs/SizeSelect';
 
 import ProductHead from './ProductHead';
