@@ -102,12 +102,12 @@ const CartModal = ({ product, isModalOpen, closeModal, setIsSelectedProduct }) =
             </SalePrice>
             <Hr />
             <ColorSelect
-              modal
               mode={darkMode}
               value={product.color}
               selected={isSelected}
               onAction={setColor}
               secondaryAction={setIsSelected}
+              modal
             />
             <SizeWrapper>
               {product?.size?.length > 0 && (
