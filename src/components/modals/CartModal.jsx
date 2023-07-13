@@ -5,7 +5,6 @@ import CloseIcon from '@mui/icons-material/Close';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useCallback, useState } from 'react';
-import { faMinus, faPlus } from '@fortawesome/free-solid-svg-icons';
 import { NumericFormat } from 'react-number-format';
 import { useDispatch, useSelector } from 'react-redux';
 
