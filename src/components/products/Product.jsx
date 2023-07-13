@@ -96,10 +96,7 @@ const Product = ({ product }) => {
             <Hr />
             <ProductValue items={productValue} mode={darkMode} />
             <Hr />
-            <ProductInfo
-              title='Overview'
-              content={product.desc}
-            />
+            <ProductInfo title='Overview' content={product.desc} />
           </ProductWrapper>
         </Right>
       </ProductContainer>
