@@ -15,6 +15,7 @@ const Button = styled.button`
   text-align: center;
   font-size: 1.8rem;
   width: 100%;
+  padding: 2rem 1rem;
 `;
 
 export default ProductButton;
