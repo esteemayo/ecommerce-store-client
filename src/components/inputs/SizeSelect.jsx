@@ -5,6 +5,7 @@ import { useCallback } from 'react';
 
 const SizeSelect = ({
   value,
+  title,
   modal,
   selected,
   onAction,
@@ -17,7 +18,7 @@ const SizeSelect = ({
 
   return (
     <Container modal={modal}>
-      <Heading modal={modal}>Select a size</Heading>
+      <Heading modal={modal}>{title}</Heading>
       <Wrapper modal={modal}>
         {value?.map((item, index) => {
           return (
