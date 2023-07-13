@@ -3,7 +3,6 @@
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useCallback, useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 
 import { sublinks } from '@/data';
