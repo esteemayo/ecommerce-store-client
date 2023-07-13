@@ -82,7 +82,10 @@ const Product = ({ product }) => {
               onClick={setQuantity}
             />
             <Hr />
-            <Button type='button' onClick={handleClick}>Add to cart</Button>
+            <ProductButton
+              actionLabel='Add to cart'
+              onAction={handleClick}
+            />
             {alert && (
               <Alert
                 alert={alert}
