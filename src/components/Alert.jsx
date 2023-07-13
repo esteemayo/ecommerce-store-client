@@ -3,7 +3,7 @@
 import styled from 'styled-components';
 import { useEffect } from 'react';
 
-const Alert = ({ alert, message, onChange }) => {
+const Alert = ({ alert, center, message, onChange }) => {
   useEffect(() => {
     const timeout = setTimeout(() => {
       onChange(false);
@@ -12,14 +12,18 @@ const Alert = ({ alert, message, onChange }) => {
     return () => clearTimeout(timeout);
   }, [alert, onChange]);
 
-  return <Message>{message}</Message>;
+  return (
+    <Message center={center}>
+      {message}
+    </Message>
+  );
 }
 
 const Message = styled.span`
   display: block;
   font-size: 1.4rem;
   color: #409384;
-  text-align: left;
+  text-align: ${({ center }) => center ? 'center' : 'left'};
 `;
 
 export default Alert;
