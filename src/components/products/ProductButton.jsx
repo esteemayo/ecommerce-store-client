@@ -2,7 +2,7 @@
 
 import styled from 'styled-components';
 
-const ProductButton = ({ actionLabel, onAction }) => {
+const ProductButton = ({ small, actionLabel, onAction }) => {
   return (
     <Button type='button' onClick={onAction}>
       {actionLabel}
