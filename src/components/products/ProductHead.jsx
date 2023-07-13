@@ -90,7 +90,7 @@ const Price = styled.p`
   color: ${({ theme }) => theme.text};
 
   @media only screen and (max-width: 18.75em) {
-    font-size: 1.5rem;
+    font-size: ${({ modal }) => !modal && '1.5rem'};
   }
 `;
 
