@@ -10,6 +10,7 @@ const SidebarMenu = ({ data }) => {
         return (
           <Wrapper key={index}>
             <Heading>{page}</Heading>
+            <ListContainer></ListContainer>
           </Wrapper>
         );
       })}
