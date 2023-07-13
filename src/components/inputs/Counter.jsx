@@ -5,7 +5,7 @@ import { faMinus, faPlus } from '@fortawesome/free-solid-svg-icons';
 import { useCallback } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const Counter = ({ value, modal, onClick }) => {
+const Counter = ({ value, title, modal, onClick }) => {
   const handleQuantity = useCallback((type) => {
     type === 'dec' && value > 1 && onClick(value - 1);
     type === 'inc' && onClick(value + 1);
@@ -13,7 +13,7 @@ const Counter = ({ value, modal, onClick }) => {
 
   return (
     <Container modal={modal}>
-      <Heading modal={modal}>Quantity</Heading>
+      <Heading modal={modal}>{title}</Heading>
       <Wrapper modal={modal}>
         <Button
           type='button'
