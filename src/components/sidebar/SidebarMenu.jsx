@@ -6,7 +6,7 @@ import Link from 'next/link';
 const SidebarMenu = ({ items }) => {
   return (
     <Container>
-      {data.map((item, index) => {
+      {items.map((item, index) => {
         const { page, links } = item;
         return (
           <Wrapper key={index}>
