@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { useCallback } from 'react';
 
 const ColorSelect = ({
+  title,
   mode,
   value,
   modal,
@@ -18,7 +19,7 @@ const ColorSelect = ({
 
   return (
     <Container modal={modal}>
-      <Heading modal={modal}>Color</Heading>
+      <Heading modal={modal}>{title}</Heading>
       <Wrapper modal={modal}>
         {value?.map((item, index) => {
           return (
