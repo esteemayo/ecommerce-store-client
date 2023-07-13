@@ -7,7 +7,6 @@ import { useCallback, useState } from 'react';
 import { addProduct } from '@/features/cart/cartSlice';
 import BreadCrumbs from '@/app/products/[id]/BreadCrumbs';
 
-import Counter from '../inputs/Counter';
 import ColorSelect from '../inputs/ColorSelect';
 import SizeSelect from '../inputs/SizeSelect';
 
