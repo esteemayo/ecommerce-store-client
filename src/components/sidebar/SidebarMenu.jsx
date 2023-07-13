@@ -3,7 +3,7 @@
 import styled from 'styled-components';
 import Link from 'next/link';
 
-const SidebarMenu = ({ data }) => {
+const SidebarMenu = ({ items }) => {
   return (
     <Container>
       {data.map((item, index) => {
