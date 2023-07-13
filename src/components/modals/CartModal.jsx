@@ -116,6 +116,7 @@ const CartModal = ({ product, isModalOpen, closeModal, setIsSelectedProduct }) =
               />
               <Hr />
               <Counter
+                title='Quantity'
                 value={quantity}
                 onClick={setQuantity}
               />
