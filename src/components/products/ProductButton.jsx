@@ -31,6 +31,7 @@ const Button = styled.button`
   line-height: 1.3em;
   margin: 3rem 0;
   cursor: pointer;
+  transition: all 0.3s;
 `;
 
 export default ProductButton;
