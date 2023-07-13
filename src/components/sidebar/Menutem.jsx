@@ -23,6 +23,14 @@ const ListItem = styled.li`
     align-items: center;
     gap: 0.5rem;
   }
+
+  a {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      text-transform: capitalize;
+    }
+  }
 `;
 
 export default Menutem;
