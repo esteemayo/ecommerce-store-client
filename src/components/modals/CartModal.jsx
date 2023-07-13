@@ -338,19 +338,6 @@ const ColorWrapper = styled.div`
   margin: 1rem 0;
 `;
 
-const Color = styled.button`
-  border: none;
-  display: block;
-  width: 2.2rem;
-  height: 2.2rem;
-  background-color: ${({ color }) => color};
-  background-color: ${({ color, mode }) => !mode && color === 'white' && '#f9f9f9'};
-  border-radius: 50%;
-  outline: 1px solid ${({ theme, selected }) => selected ? theme.cartSelected : 'transparent'};
-  outline-offset: 2px;
-  cursor: ${({ selected }) => selected ? 'default' : 'pointer'};
-`;
-
 const SizeWrapper = styled.div`
   margin-top: 1rem;
   margin-bottom: 1rem;
