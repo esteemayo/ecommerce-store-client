@@ -105,7 +105,7 @@ const Discount = styled.p`
   letter-spacing: 0.02em;
 
   @media only screen and (max-width: 18.75em) {
-    font-size: 1.37rem;
+    font-size: ${({ modal }) => !modal && '1.37rem'};
   }
 `;
 
