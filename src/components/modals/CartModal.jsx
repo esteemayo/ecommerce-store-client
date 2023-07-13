@@ -231,9 +231,4 @@ const Hr = styled.hr`
   background-color: ${({ theme }) => theme.cartModalBorder};
 `;
 
-const SizeWrapper = styled.div`
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-`;
-
 export default CartModal;
