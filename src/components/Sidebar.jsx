@@ -77,7 +77,7 @@ const Container = styled.aside`
   background-color: rgba(0, 0, 0, 0.5);
   visibility: ${({ type }) => type === 'show' ? 'visible' : 'hidden'};
   transform: scale(${({ type }) => type === 'show' ? 1 : 0});
-  z-index: ${({ type }) => type === 'show' ? 2 : -1};
+  z-index: ${({ type }) => type === 'show' ? 2000 : -1};
   transition: all 0.3s linear;
 
   display: flex;
