@@ -34,7 +34,7 @@ const ProductHead = ({
         </Price>
         <Discount modal={modal}>-{priceDiscount}%</Discount>
       </PriceContainer>
-      <TotalPrice>
+      <TotalPrice modal={modal}>
         <NumericFormat
           value={price}
           displayType={'text'}
