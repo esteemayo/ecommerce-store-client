@@ -94,13 +94,15 @@ const CartModal = ({ product, isModalOpen, closeModal, setIsSelectedProduct }) =
               secondaryAction={setIsSelected}
               modal
             />
-            <SizeSelect
-              value={product?.size}
-              selected={selectedSize}
-              onAction={setSize}
-              secondaryAction={setSelectedSize}
-              modal
-            />
+            {product?.size && (
+              <SizeSelect
+                value={product?.size}
+                selected={selectedSize}
+                onAction={setSize}
+                secondaryAction={setSelectedSize}
+                modal
+              />
+            )}
             <Hr />
             <Counter
               title='Quantity'
