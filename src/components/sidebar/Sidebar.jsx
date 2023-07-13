@@ -105,10 +105,6 @@ const LinksContainer = styled.div`
   margin-top: 3rem;
 `;
 
-const LinksWrapper = styled.article`
-  margin-bottom: 1.7rem;
-`;
-
 const SearchContainer = styled.div`
   margin-top: 5rem;
   width: 100%;
