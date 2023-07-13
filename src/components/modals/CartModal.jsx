@@ -226,15 +226,6 @@ const ProductContainer = styled.div`
   margin-top: 0.5rem;
 `;
 
-const ProductName = styled.h1`
-  display: inline-block;
-  font-weight: 500;
-  font-size: 1.8rem;
-  color: ${({ theme }) => theme.text};
-  line-height: 1;
-  margin-bottom: 1rem;
-`;
-
 const Hr = styled.hr`
   width: 100%;
   height: 1px;
