@@ -241,12 +241,6 @@ const PriceContainer = styled.div`
   gap: 0.5rem;
 `;
 
-const ProductPrice = styled.p`
-  text-decoration: line-through;
-  font-size: 1.5rem;
-  color: ${({ theme }) => theme.text};
-`;
-
 const Hr = styled.hr`
   width: 100%;
   height: 1px;
