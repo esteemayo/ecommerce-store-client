@@ -29,6 +29,8 @@ const ListItem = styled.li`
     &:visited {
       text-decoration: none;
       text-transform: capitalize;
+      color: inherit;
+      outline-color: #eee;
     }
   }
 `;
