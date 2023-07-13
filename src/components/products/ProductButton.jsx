@@ -4,7 +4,11 @@ import styled from 'styled-components';
 
 const ProductButton = ({ small, actionLabel, onAction }) => {
   return (
-    <Button type='button' small={small} onClick={onAction}>
+    <Button
+      type='button'
+      small={small}
+      onClick={onAction}
+    >
       {actionLabel}
     </Button>
   );
