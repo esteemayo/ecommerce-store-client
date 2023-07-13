@@ -359,15 +359,6 @@ const AddContainer = styled.div`
   margin: 0.5rem 0;
 `;
 
-const AmountHeading = styled.h3`
-  display: inline-block;
-  text-transform: capitalize;
-  font-weight: 400;
-  font-size: 1.5rem;
-  color: ${({ theme }) => theme.text};
-  margin-bottom: 0.5rem;
-`;
-
 const Button = styled.button`
   display: inline-block;
   text-align: center;
