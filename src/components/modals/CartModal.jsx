@@ -77,26 +77,13 @@ const CartModal = ({ product, isModalOpen, closeModal, setIsSelectedProduct }) =
             />
           </ImageContainer>
           <ProductContainer>
-            <ProductName>{product?.name}</ProductName>
-            <PriceContainer>
-              <ProductPrice>
-                <NumericFormat
-                  value={product?.price + product?.discount}
-                  displayType={'text'}
-                  thousandSeparator={true}
-                  prefix={'$'}
-                />
-              </ProductPrice>
-              <PriceDiscount>-{product?.priceDiscount}%</PriceDiscount>
-            </PriceContainer>
-            <SalePrice>
-              <NumericFormat
-                value={product?.price}
-                displayType={'text'}
-                thousandSeparator={true}
-                prefix={'$'}
-              />
-            </SalePrice>
+            <ProductHead
+              name={product.name}
+              price={product.price}
+              discount={product.discount}
+              priceDiscount={product.priceDiscount}
+              modal
+            />
             <Hr />
             <ColorSelect
               title='Color'
