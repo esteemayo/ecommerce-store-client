@@ -15,7 +15,7 @@ const Button = styled.button`
   text-align: center;
   font-size: ${({ small }) => small ? '1.5rem' : '1.8rem'};
   width: 100%;
-  padding: 2rem 1rem;
+  padding:  ${({ small }) => small ? '1.3rem 1rem' : '2rem 1rem'};
   background-color: ${({ theme }) => theme.bgProdBtn};
   color: var(--clr-white);
   background-image: linear-gradient(
