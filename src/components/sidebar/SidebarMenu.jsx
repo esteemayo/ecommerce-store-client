@@ -8,4 +8,8 @@ const SidebarMenu = () => {
   );
 }
 
+const Container = styled.div`
+  
+`;
+
 export default SidebarMenu;
