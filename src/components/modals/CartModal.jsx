@@ -287,14 +287,6 @@ const ColorContainer = styled.div`
   margin: 0.5rem 0;
 `;
 
-const ProductColor = styled.h2`
-  display: inline-block;
-  text-transform: capitalize;
-  font-weight: 400;
-  font-size: 1.5rem;
-  color: ${({ theme }) => theme.text};
-`;
-
 const SizeWrapper = styled.div`
   margin-top: 1rem;
   margin-bottom: 1rem;
