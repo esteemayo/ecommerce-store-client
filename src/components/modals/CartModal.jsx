@@ -307,13 +307,6 @@ const SizeHeading = styled.h3`
   color: ${({ theme }) => theme.text};
 `;
 
-const SizeContainer = styled.div`
-  margin-top: 0.5rem;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-`;
-
 const Button = styled.button`
   display: inline-block;
   text-align: center;
