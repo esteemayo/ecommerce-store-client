@@ -2,9 +2,11 @@
 
 import styled from 'styled-components';
 
-const ProductButton = () => {
+const ProductButton = ({ actionLabel, onAction }) => {
   return (
-    <div>ProductButton</div>
+    <Button type='button' onClick={onAction}>
+      {actionLabel}
+    </Button>
   );
 }
 
