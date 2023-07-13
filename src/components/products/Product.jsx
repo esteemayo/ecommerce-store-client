@@ -80,6 +80,7 @@ const Product = ({ product }) => {
             />
             <Hr />
             <Counter
+              title='Quantity'
               value={quantity}
               onClick={setQuantity}
             />
