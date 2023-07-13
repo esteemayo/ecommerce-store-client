@@ -12,6 +12,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { addProduct } from '@/features/cart/cartSlice';
 
 import ColorSelect from '../inputs/ColorSelect';
+import Counter from '../inputs/Counter';
 import SizeSelect from '../inputs/SizeSelect';
 
 const CartModal = ({ product, isModalOpen, closeModal, setIsSelectedProduct }) => {
