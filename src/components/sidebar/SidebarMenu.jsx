@@ -33,7 +33,7 @@ const SidebarMenu = ({ data }) => {
 }
 
 const Container = styled.div`
-  
+  margin-top: 3rem;
 `;
 
 const Wrapper = styled.article`
