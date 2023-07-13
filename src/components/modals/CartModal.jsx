@@ -3,7 +3,6 @@
 import styled from 'styled-components';
 import CloseIcon from '@mui/icons-material/Close';
 import Image from 'next/image';
-import { NumericFormat } from 'react-number-format';
 import { useCallback, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
