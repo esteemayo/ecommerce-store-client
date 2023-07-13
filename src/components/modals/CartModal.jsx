@@ -88,7 +88,7 @@ const CartModal = ({ product, isModalOpen, closeModal, setIsSelectedProduct }) =
             <ColorSelect
               title='Color'
               mode={darkMode}
-              value={product.color}
+              value={product?.color}
               selected={isSelected}
               onAction={setColor}
               secondaryAction={setIsSelected}
@@ -96,7 +96,7 @@ const CartModal = ({ product, isModalOpen, closeModal, setIsSelectedProduct }) =
             />
             <SizeWrapper>
               <SizeSelect
-                value={product.size}
+                value={product?.size}
                 selected={selectedSize}
                 onAction={setSize}
                 secondaryAction={setSelectedSize}
