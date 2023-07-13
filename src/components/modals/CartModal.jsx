@@ -283,10 +283,6 @@ const Hr = styled.hr`
   background-color: ${({ theme }) => theme.cartModalBorder};
 `;
 
-const ColorContainer = styled.div`
-  margin: 0.5rem 0;
-`;
-
 const SizeWrapper = styled.div`
   margin-top: 1rem;
   margin-bottom: 1rem;
