@@ -94,35 +94,33 @@ const CartModal = ({ product, isModalOpen, closeModal, setIsSelectedProduct }) =
               secondaryAction={setIsSelected}
               modal
             />
-            <SizeWrapper>
-              <SizeSelect
-                value={product?.size}
-                selected={selectedSize}
-                onAction={setSize}
-                secondaryAction={setSelectedSize}
-                modal
+            <SizeSelect
+              value={product?.size}
+              selected={selectedSize}
+              onAction={setSize}
+              secondaryAction={setSelectedSize}
+              modal
+            />
+            <Hr />
+            <Counter
+              title='Quantity'
+              value={quantity}
+              onClick={setQuantity}
+            />
+            <Hr />
+            <ProductButton
+              small
+              actionLabel='Add to cart'
+              onAction={handleClick}
+            />
+            {alert && (
+              <Alert
+                alert={alert}
+                message='Item added to cart'
+                onChange={setAlert}
+                center
               />
-              <Hr />
-              <Counter
-                title='Quantity'
-                value={quantity}
-                onClick={setQuantity}
-              />
-              <Hr />
-              <ProductButton
-                small
-                actionLabel='Add to cart'
-                onAction={handleClick}
-              />
-              {alert && (
-                <Alert
-                  alert={alert}
-                  message='Item added to cart'
-                  onChange={setAlert}
-                  center
-                />
-              )}
-            </SizeWrapper>
+            )}
           </ProductContainer>
         </Wrapper>
       </Container>
