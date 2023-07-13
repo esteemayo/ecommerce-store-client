@@ -78,10 +78,10 @@ const CartModal = ({ product, isModalOpen, closeModal, setIsSelectedProduct }) =
           </ImageContainer>
           <ProductContainer>
             <ProductHead
-              name={product.name}
-              price={product.price}
-              discount={product.discount}
-              priceDiscount={product.priceDiscount}
+              name={product?.name}
+              price={product?.price}
+              discount={product?.discount}
+              priceDiscount={product?.priceDiscount}
               modal
             />
             <Hr />
