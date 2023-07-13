@@ -110,25 +110,13 @@ const CartModal = ({ product, isModalOpen, closeModal, setIsSelectedProduct }) =
               modal
             />
             <SizeWrapper>
-              {product?.size?.length > 0 && (
-                <>
-                  <SizeHeading>Select a size</SizeHeading>
-                  <SizeContainer>
-                    {product?.size?.map((size, index) => {
-                      return (
-                        <SelectSize
-                          key={index}
-                          type='button'
-                          bcg={selectedSize === size}
-                          onClick={() => handleSize(size)}
-                        >
-                          {size}
-                        </SelectSize>
-                      );
-                    })}
-                  </SizeContainer>
-                </>
-              )}
+            <SizeSelect
+              value={product.size}
+              selected={selectedSize}
+              onAction={setSize}
+              secondaryAction={setSelectedSize}
+              modal
+            />
               <Hr />
               <Counter
                 value={quantity}
