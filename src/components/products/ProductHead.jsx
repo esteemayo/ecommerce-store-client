@@ -114,6 +114,7 @@ const TotalPrice = styled.p`
   font-size: ${({ modal }) => modal ? '1.5rem' : '1.6rem'};
   color: #fa4b21;
   line-height: 1.3;
+  margin-bottom: ${({ modal }) => modal && '1rem'};
 
   @media only screen and (max-width: 18.75em) {
     font-size: 1.5rem;
