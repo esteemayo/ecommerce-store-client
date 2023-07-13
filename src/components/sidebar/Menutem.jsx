@@ -31,6 +31,7 @@ const ListItem = styled.li`
       text-transform: capitalize;
       color: inherit;
       outline-color: #eee;
+      transition: all 0.2s ease;
     }
 
     &:active {
