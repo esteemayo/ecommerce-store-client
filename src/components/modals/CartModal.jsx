@@ -235,12 +235,6 @@ const ProductName = styled.h1`
   margin-bottom: 1rem;
 `;
 
-const PriceContainer = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-`;
-
 const Hr = styled.hr`
   width: 100%;
   height: 1px;
