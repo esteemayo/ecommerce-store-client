@@ -120,25 +120,14 @@ const CartModal = ({ product, isModalOpen, closeModal, setIsSelectedProduct }) =
               />
             </SalePrice>
             <Hr />
-            <ColorContainer>
-              <ProductColor>Color</ProductColor>
-              <ColorWrapper>
-                {product?.color?.map((color, index) => {
-                  return (
-                    <Color
-                      key={index}
-                      color={color}
-                      type='button'
-                      mode={darkMode}
-                      selected={color === isSelected}
-                      onClick={() => handleColor(color)}
-                    >
-                      &nbsp;
-                    </Color>
-                  );
-                })}
-              </ColorWrapper>
-            </ColorContainer>
+            <ColorSelect
+              modal
+              mode={darkMode}
+              value={product.color}
+              selected={isSelected}
+              onAction={setColor}
+              secondaryAction={setIsSelected}
+            />
             <SizeWrapper>
               {product?.size?.length > 0 && (
                 <>
