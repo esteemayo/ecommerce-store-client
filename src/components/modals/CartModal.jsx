@@ -11,6 +11,8 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import { addProduct } from '@/features/cart/cartSlice';
 
+import ColorSelect from '../inputs/ColorSelect';
+
 const CartModal = ({ product, isModalOpen, closeModal, setIsSelectedProduct }) => {
   const dispatch = useDispatch();
   const { darkMode } = useSelector((state) => ({ ...state.darkMode }));
