@@ -109,14 +109,6 @@ const LinksWrapper = styled.article`
   margin-bottom: 1.7rem;
 `;
 
-const Title = styled.h4`
-  display: inline-block;
-  text-transform: capitalize;
-  font-size: 1.5rem;
-  letter-spacing: 1px;
-  margin-bottom: 1rem;
-`;
-
 const SearchContainer = styled.div`
   margin-top: 5rem;
   width: 100%;
