@@ -100,7 +100,6 @@ const Product = ({ product }) => {
               title='Overview'
               content={product.desc}
             />
-            {/* <Hr /> */}
           </ProductWrapper>
         </Right>
       </ProductContainer>
