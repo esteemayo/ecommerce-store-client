@@ -21,6 +21,10 @@ const ListItem = styled.li`
       font-weight: 500;
       color: currentColor;
     }
+
+    &:active {
+      color: currentColor;
+    }
   }
 `;
 
