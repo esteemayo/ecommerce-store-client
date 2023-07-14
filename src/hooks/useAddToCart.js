@@ -13,6 +13,14 @@ const useAddToCart = () => {
   const [selectedSize, setSelectedSize] = useState(null);
   const [alert, setAlert] = useState(false);
 
+  const handleReset = useCallback(() => {
+    setSize(null);
+    setColor(null);
+    setQuantity(1);
+    setIsSelected(null);
+    setSelectedSize(null);
+  }, []);
+
   return (
     <div>useAddToCart</div>
   );
