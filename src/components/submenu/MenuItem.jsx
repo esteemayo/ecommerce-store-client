@@ -2,6 +2,7 @@
 
 import styled from 'styled-components';
 import Link from 'next/link';
+import PropTypes from 'prop-types';
 
 const MenuItem = ({ url, icon, label }) => {
   return (
