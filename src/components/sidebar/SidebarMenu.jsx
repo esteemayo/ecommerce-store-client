@@ -1,7 +1,6 @@
 'use client';
 
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
 
 import Heading from './Heading';
 import SidebarMenuItem from './SidebarMenuItem';
