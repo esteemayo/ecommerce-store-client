@@ -131,7 +131,9 @@ const Price = styled.span`
 `;
 
 const ColorContainer = styled.div`
-  
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 `;
 
 export default CartInfo;
