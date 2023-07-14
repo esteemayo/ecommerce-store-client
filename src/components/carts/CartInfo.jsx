@@ -29,6 +29,8 @@ const Container = styled.div`
 const ImageContainer = styled.div`
   width: 12rem;
   height: 12rem;
+  background-color: #ede9e6;
+  border-radius: 3px;
 `;
 
 export default CartInfo;
