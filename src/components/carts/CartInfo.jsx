@@ -66,4 +66,8 @@ const CartDetails = styled.div`
   width: 30rem;
 `;
 
+const Title = styled.h2`
+  
+`;
+
 export default CartInfo;
