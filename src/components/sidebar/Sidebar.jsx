@@ -31,7 +31,7 @@ const Sidebar = () => {
         </CloseButton>
         <SidebarMenu items={sublinks} />
         <SearchContainer>
-          <Heading>Search products</Heading>
+          <Heading title='Search products' />
           <Form onSubmit={handleSearch}>
             <Input
               type='search'
