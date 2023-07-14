@@ -7,7 +7,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const CartCounter = () => {
   return (
     <Container>
-      <Wrapper></Wrapper>
+      <Wrapper>
+        <Button type='button'>
+          <FontAwesomeIcon icon={faPlus} />
+        </Button>
+      </Wrapper>
     </Container>
   );
 }
