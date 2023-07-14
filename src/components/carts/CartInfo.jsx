@@ -110,7 +110,7 @@ const Label = styled.p`
 `;
 
 const Price = styled.span`
-  
+  display: block;
 `;
 
 export default CartInfo;
