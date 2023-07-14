@@ -17,4 +17,8 @@ const Container = styled.div`
   gap: 1rem;
 `;
 
+const ImageContainer = styled.div`
+  
+`;
+
 export default CartInfo;
