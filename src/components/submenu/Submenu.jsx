@@ -85,15 +85,6 @@ const Container = styled.aside`
   }
 `;
 
-const Title = styled.h4`
-  display: inline-block;
-  text-transform: capitalize;
-  font-weight: 600;
-  font-size: 1.6rem;
-  color: ${({ theme }) => theme.text};
-  margin-bottom: 1.5rem;
-`;
-
 const ListContainer = styled.ul`
   list-style: none;
   padding: 2rem 0;
