@@ -1,7 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 
 import useAddToCart from '@/hooks/useAddToCart';
 import BreadCrumbs from '@/app/products/[id]/BreadCrumbs';
