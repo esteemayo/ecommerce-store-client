@@ -53,4 +53,10 @@ const ListItem = styled.li`
   }
 `;
 
+MenuItem.propTypes = {
+  url: PropTypes.string.isRequired,
+  icon: PropTypes.object.isRequired,
+  label: PropTypes.string.isRequired,
+};
+
 export default MenuItem;
