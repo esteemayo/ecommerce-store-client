@@ -4,7 +4,14 @@ import styled from 'styled-components';
 import Image from 'next/image';
 import { NumericFormat } from 'react-number-format';
 
-const CartInfo = ({ color, name, images, price, size, onAction }) => {
+const CartInfo = ({
+  color,
+  name,
+  images,
+  price,
+  size,
+  onAction,
+}) => {
   return (
     <Container>
       <ImageContainer>
