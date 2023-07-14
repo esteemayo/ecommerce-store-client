@@ -179,7 +179,8 @@ const SizeContainer = styled.div`
 `;
 
 const Size = styled.span`
-  
+  display: block;
+  font-size: 1.5rem;
 `;
 
 export default CartInfo;
