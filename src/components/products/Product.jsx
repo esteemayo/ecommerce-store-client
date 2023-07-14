@@ -2,7 +2,6 @@
 
 import styled from 'styled-components';
 import { useDispatch, useSelector } from 'react-redux';
-import { useCallback, useState } from 'react';
 
 import useAddToCart from '@/hooks/useAddToCart';
 import BreadCrumbs from '@/app/products/[id]/BreadCrumbs';
