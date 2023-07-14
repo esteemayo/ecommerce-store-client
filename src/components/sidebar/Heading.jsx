@@ -7,10 +7,6 @@ const Heading = ({ title }) => {
   return <Header>{title}</Header>;
 }
 
-Heading.propTypes = {
-  title: PropTypes.string.isRequired,
-};
-
 const Header = styled.h4`
   display: inline-block;
   text-transform: capitalize;
@@ -19,5 +15,9 @@ const Header = styled.h4`
   letter-spacing: 1px;
   margin-bottom: 1rem;
 `;
+
+Heading.propTypes = {
+  title: PropTypes.string.isRequired,
+};
 
 export default Heading;
