@@ -34,4 +34,8 @@ const Wrapper = styled.div`
   }
 `;
 
+const Button = styled.button`
+  
+`;
+
 export default CartCounter;
