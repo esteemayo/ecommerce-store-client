@@ -42,8 +42,8 @@ const CartItem = ({
         />
         <CartCounter
           value={quantity}
-          onIncrement={() => handleToggle('inc')}
-          onDecrement={() => handleToggle('dec')}
+          onIncrement={handleToggle}
+          onDecrement={handleToggle}
         />
       </Wrapper>
     </Container>
