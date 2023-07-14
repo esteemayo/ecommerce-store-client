@@ -137,16 +137,6 @@ const PriceContainer = styled.div`
   gap: 0.5rem;
 `;
 
-const Price = styled.span`
-  display: block;
-  font-size: 1.5rem;
-  color: ${({ theme }) => theme.textCartItem};
-
-  @media only screen and (max-width: 43.75em) {
-    font-size: 1.45rem;
-  }
-`;
-
 const Right = styled.div`
   flex: 1;
   display: flex;
