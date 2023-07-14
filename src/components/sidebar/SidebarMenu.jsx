@@ -31,14 +31,6 @@ const Wrapper = styled.article`
   margin-bottom: 1.7rem;
 `;
 
-const Heading = styled.h4`
-  display: inline-block;
-  text-transform: capitalize;
-  font-size: 1.5rem;
-  letter-spacing: 1px;
-  margin-bottom: 1rem;
-`;
-
 const ListContainer = styled.ul`
   list-style: none;
   display: grid;
