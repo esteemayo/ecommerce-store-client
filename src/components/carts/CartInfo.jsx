@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Image from 'next/image';
 import { NumericFormat } from 'react-number-format';
 
-const CartInfo = ({ images }) => {
+const CartInfo = ({ name, images }) => {
   return (
     <Container>
       <ImageContainer>
@@ -15,7 +15,9 @@ const CartInfo = ({ images }) => {
           alt=''
         />
       </ImageContainer>
-      <CartDetails></CartDetails>
+      <CartDetails>
+        <Title>{name}</Title>
+      </CartDetails>
     </Container>
   );
 }
