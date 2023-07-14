@@ -34,7 +34,7 @@ const Product = ({ product }) => {
     setSelectedSize,
     setIsSelected,
     setColor,
-  } = useAddToCart({ product });
+  } = useAddToCart(product);
 
   return (
     <Container>
