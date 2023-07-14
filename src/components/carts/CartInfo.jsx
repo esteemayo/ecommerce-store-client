@@ -209,6 +209,7 @@ const RemoveButton = styled.button`
   outline-color: #eee;
   outline-offset: 3px;
   margin-top: 1rem;
+  cursor: pointer;
 `;
 
 export default CartInfo;
