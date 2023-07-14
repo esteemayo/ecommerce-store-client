@@ -38,7 +38,7 @@ const Submenu = () => {
 
   return (
     <Container type={isSubmenuOpen ? 'show' : ''} ref={containerRef}>
-      <Title>{page}</Title>
+      <Heading title={page} />
       <ListContainer columns={columns}>
         {links.map((link, index) => {
           const { url, icon, label } = link;
