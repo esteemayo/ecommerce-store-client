@@ -96,4 +96,8 @@ const PriceContainer = styled.div`
   gap: 0.5rem;
 `;
 
+const Price = styled.span`
+  
+`;
+
 export default CartInfo;
