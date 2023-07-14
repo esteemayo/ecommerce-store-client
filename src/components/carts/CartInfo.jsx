@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Image from 'next/image';
 import { NumericFormat } from 'react-number-format';
 
-const CartInfo = ({ color, name, images, price, size }) => {
+const CartInfo = ({ color, name, images, price, size, onAction }) => {
   return (
     <Container>
       <ImageContainer>
@@ -38,7 +38,9 @@ const CartInfo = ({ color, name, images, price, size }) => {
             <Size>{size}</Size>
           </SizeContainer>
         )}
-        <RemoveButton type='button'>Remove</RemoveButton>
+        <RemoveButton type='button' onClick={onAction}>
+          Remove
+        </RemoveButton>
       </CartDetails>
     </Container>
   );
