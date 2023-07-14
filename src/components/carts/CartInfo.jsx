@@ -31,6 +31,11 @@ const ImageContainer = styled.div`
   height: 12rem;
   background-color: #ede9e6;
   border-radius: 3px;
+
+  img {
+    width: 12rem;
+    height: 12rem;
+  }
 `;
 
 export default CartInfo;
