@@ -6,7 +6,9 @@ import { NumericFormat } from 'react-number-format';
 
 const CartInfo = () => {
   return (
-    <Container>CartInfo</Container>
+    <Container>
+      <ImageContainer></ImageContainer>
+    </Container>
   );
 }
 
