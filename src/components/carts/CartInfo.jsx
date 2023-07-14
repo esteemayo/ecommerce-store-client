@@ -138,7 +138,9 @@ const ColorContainer = styled.div`
 `;
 
 const Color = styled.span`
-  
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 `;
 
 export default CartInfo;
