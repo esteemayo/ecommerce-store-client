@@ -21,38 +21,14 @@ const CartItem = ({ id, name, size, color, images, price, quantity }) => {
   return (
     <Container>
       <Wrapper>
-        <Left>
-          <ImageContainer>
-            <Image src={images[0]} width={120} height={120} alt='' />
-          </ImageContainer>
-          <ProductDetails>
-            <ProductName>{name}</ProductName>
-            <PriceContainer>
-              <Title>Price:</Title>
-              <Price>
-                <NumericFormat
-                  value={price}
-                  displayType={'text'}
-                  thousandSeparator={true}
-                  prefix={'$'}
-                />
-              </Price>
-            </PriceContainer>
-            <ColorContainer>
-              <Title>Color:</Title>
-              <ProductColor color={color}>{color}</ProductColor>
-            </ColorContainer>
-            {size && (
-              <SizeContainer>
-                <Title>Size:</Title>
-                <ProductSize>{size}</ProductSize>
-              </SizeContainer>
-            )}
-            <RemoveButton type='button' onClick={() => dispatch(remove(id))}>
-              Remove
-            </RemoveButton>
-          </ProductDetails>
-        </Left>
+        <CartInfo
+          color={color}
+          name={name}
+          images={images}
+          price={price}
+          size={size}
+          onAction={() => dispatch(remove(id))}
+        />
         <Right>
           <QuantityContainer>
             <AddQuantity type='button' onClick={() => handleToggle('inc')}>
