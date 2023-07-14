@@ -11,6 +11,8 @@ const Header = styled.h4`
   text-transform: capitalize;
   font-weight: 600;
   font-size: 1.6rem;
+  color: ${({ theme }) => theme.text};
+  margin-bottom: 1.5rem;
 `;
 
 export default Heading;
