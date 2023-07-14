@@ -17,6 +17,7 @@ const SidebarMenuItem = ({ url, icon, label }) => {
 
 const ListItem = styled.li`
   font-size: 1.4rem;
+  color: ${({ theme }) => theme.text};
 
   & > * {
     display: flex;
