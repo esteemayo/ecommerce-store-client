@@ -175,4 +175,8 @@ const SizeContainer = styled.div`
   
 `;
 
+const Size = styled.span`
+  
+`;
+
 export default CartInfo;
