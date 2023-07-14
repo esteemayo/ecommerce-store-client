@@ -27,7 +27,8 @@ const Container = styled.div`
 `;
 
 const ImageContainer = styled.div`
-  
+  width: 12rem;
+  height: 12rem;
 `;
 
 export default CartInfo;
