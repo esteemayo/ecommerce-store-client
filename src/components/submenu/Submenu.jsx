@@ -42,16 +42,7 @@ const Submenu = () => {
       <Heading title={page} />
       <ListContainer columns={columns}>
         {links.map((link, index) => {
-          const { url, icon, label } = link;
-          return (
-            <ListItem key={index}>
-              <Link href={url} passHref>
-                {icon}
-                &nbsp;
-                {label}
-              </Link>
-            </ListItem>
-          );
+          return <MenuItem key={index} {...link} />;
         })}
       </ListContainer>
     </Container>
