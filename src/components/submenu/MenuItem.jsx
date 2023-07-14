@@ -9,7 +9,8 @@ const MenuItem = () => {
 }
 
 const ListItem = styled.li`
-  
+  font-size: 1.5rem;
+  text-transform: capitalize;
 `;
 
 export default MenuItem;
