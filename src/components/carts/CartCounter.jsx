@@ -8,4 +8,8 @@ const CartCounter = () => {
   );
 }
 
+const Container = styled.div`
+
+`;
+
 export default CartCounter;
