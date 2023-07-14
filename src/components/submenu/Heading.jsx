@@ -16,4 +16,8 @@ const Header = styled.h4`
   margin-bottom: 1.5rem;
 `;
 
+Heading.propTypes = {
+  title: PropTypes.string.isRequired,
+};
+
 export default Heading;
