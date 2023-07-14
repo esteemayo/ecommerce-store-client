@@ -70,6 +70,8 @@ const Button = styled.button`
 
 const Amount = styled.span`
   display: inline-block;
+  font-size: 600;
+  font-size: 2rem;
 `;
 
 export default CartCounter;
