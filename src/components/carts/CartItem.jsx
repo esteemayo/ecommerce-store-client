@@ -80,30 +80,4 @@ const QuantityContainer = styled.div`
   }
 `;
 
-const AddQuantity = styled.button`
-  border: none;
-  display: inline-block;
-  width: 2.5rem;
-  height: 2.5rem;
-  font-weight: lighter;
-  font-size: 1.4rem;
-  background-color: transparent;
-  color: #c3c3c4;
-  border: 1px solid #eee;
-  border-radius: 50%;
-  outline-color: #ddd;
-  cursor: pointer;
-
-  @media only screen and (max-width: 43.75em) {
-    width: 2.45rem;
-    height: 2.45rem;
-    font-size: 1.3rem;
-  }
-
-  svg {
-    font-size: inherit;
-    fill: currentColor;
-  }
-`;
-
 export default CartItem;
