@@ -47,6 +47,8 @@ const Button = styled.button`
   display: inline-block;
   width: 2.5rem;
   height: 2.5rem;
+  font-weight: lighter;
+  font-size: 1.4rem;
 `;
 
 const Amount = styled.span`
