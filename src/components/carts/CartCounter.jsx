@@ -55,6 +55,12 @@ const Button = styled.button`
   border-radius: 50%;
   outline-color: #ddd;
   cursor: pointer;
+
+  @media only screen and (max-width: 43.75em) {
+    width: 2.45rem;
+    height: 2.45rem;
+    font-size: 1.3rem;
+  }
 `;
 
 const Amount = styled.span`
