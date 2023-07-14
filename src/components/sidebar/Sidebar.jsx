@@ -9,6 +9,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { sublinks } from '@/data';
 import { closeSidebar } from '@/features/submenu/submenuSlice';
 
+import Heading from './Heading';
 import SidebarMenu from './SidebarMenu';
 
 const Sidebar = () => {
