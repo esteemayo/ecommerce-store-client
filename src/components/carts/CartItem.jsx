@@ -28,17 +28,11 @@ const CartItem = ({ id, name, size, color, images, price, quantity }) => {
           size={size}
           onAction={() => dispatch(remove(id))}
         />
-        <Right>
-          <QuantityContainer>
-            <AddQuantity type='button' onClick={() => handleToggle('inc')}>
-              <FontAwesomeIcon icon={faPlus} />
-            </AddQuantity>
-            <Quantity>{quantity}</Quantity>
-            <MinusQuantity type='button' onClick={() => handleToggle('dec')}>
-              <FontAwesomeIcon icon={faMinus} />
-            </MinusQuantity>
-          </QuantityContainer>
-        </Right>
+        <CartCounter
+          value={quantity}
+          onIncrement={() => handleToggle('inc')}
+          onDecrement={() => handleToggle('dec')}
+        />
       </Wrapper>
     </Container>
   );
