@@ -8,4 +8,8 @@ const CartInfo = () => {
   );
 }
 
+const Container = styled.div`
+  
+`;
+
 export default CartInfo;
