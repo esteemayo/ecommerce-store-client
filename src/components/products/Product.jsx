@@ -22,8 +22,19 @@ import { productValue } from '@/data';
 const Product = ({ product }) => {
   const { darkMode } = useSelector((state) => ({ ...state.darkMode }));
 
-  const { alert, setAlert, handleClick, selectedSize, isSelected, quantity, setQuantity,
-    setSize, setSelectedSize, setIsSelected, setColor } = useAddToCart({ product });
+  const { 
+    alert,
+    setAlert,
+    handleClick,
+    selectedSize,
+    isSelected,
+    quantity,
+    setQuantity,
+    setSize,
+    setSelectedSize,
+    setIsSelected,
+    setColor,
+  } = useAddToCart({ product });
 
   return (
     <Container>
