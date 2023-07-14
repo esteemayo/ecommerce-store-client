@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Image from 'next/image';
 import { NumericFormat } from 'react-number-format';
 
-const CartInfo = ({ color, name, images, price }) => {
+const CartInfo = ({ color, name, images, price, size }) => {
   return (
     <Container>
       <ImageContainer>
@@ -32,6 +32,11 @@ const CartInfo = ({ color, name, images, price }) => {
           <Label>Color:</Label>
           <Color color={color}>{color}</Color>
         </ColorContainer>
+        {size && (
+          <SizeContainer>
+            <Label>Size:</Label>
+          </SizeContainer>
+        )}
       </CartDetails>
     </Container>
   );
