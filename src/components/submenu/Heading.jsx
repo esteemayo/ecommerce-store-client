@@ -7,7 +7,8 @@ const Heading = ({ title }) => {
 }
 
 const Header = styled.h4`
-  
+  display: inline-block;
+  text-transform: capitalize;
 `;
 
 export default Heading;
