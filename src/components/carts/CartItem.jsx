@@ -2,8 +2,8 @@
 
 import styled from 'styled-components';
 import { faMinus, faPlus } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useCallback } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useDispatch } from 'react-redux';
 
 import CartInfo from './CartInfo';
