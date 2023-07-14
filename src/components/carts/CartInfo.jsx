@@ -28,6 +28,9 @@ const CartInfo = ({ name, images, price }) => {
             />
           </Price>
         </PriceContainer>
+        <ColorContainer>
+          <Label>Color:</Label>
+        </ColorContainer>
       </CartDetails>
     </Container>
   );
