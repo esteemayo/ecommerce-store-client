@@ -3,9 +3,7 @@
 import styled from 'styled-components';
 
 const Heading = ({ title }) => {
-  return (
-    <div>Heading</div>
-  );
+  return <Header>{title}</Header>;
 }
 
 const Header = styled.h4`
