@@ -20,6 +20,7 @@ const ListItem = styled.li`
       text-decoration: none;
       font-weight: 500;
       color: currentColor;
+      transition: all 0.2s ease;
     }
 
     &:active {
