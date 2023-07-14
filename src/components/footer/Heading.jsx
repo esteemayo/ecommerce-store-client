@@ -1,6 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 const Heading = ({ title, small }) => {
   return <Header small={small}>{title}</Header>;
