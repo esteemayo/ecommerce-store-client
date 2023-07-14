@@ -54,6 +54,7 @@ const Button = styled.button`
   border: 1px solid #eee;
   border-radius: 50%;
   outline-color: #ddd;
+  cursor: pointer;
 `;
 
 const Amount = styled.span`
