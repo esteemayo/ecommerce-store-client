@@ -22,7 +22,7 @@ import { productValue } from '@/data';
 const Product = ({ product }) => {
   const { darkMode } = useSelector((state) => ({ ...state.darkMode }));
 
-  const { 
+  const {
     alert,
     setAlert,
     handleClick,
