@@ -91,7 +91,9 @@ const Title = styled.h2`
 `;
 
 const PriceContainer = styled.div`
-  
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 `;
 
 export default CartInfo;
