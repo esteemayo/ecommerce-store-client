@@ -110,27 +110,6 @@ const ProductDetails = styled.div`
   width: 30rem;
 `;
 
-const ProductName = styled.h2`
-  display: block;
-  font-weight: 500;
-  font-size: 2rem;
-  color: ${({ theme }) => theme.text};
-  margin-bottom: 0.5rem;
-
-  @media only screen and (max-width: 43.75em) {
-    font-size: 1.8rem;
-  }
-
-  @media only screen and (max-width: 31.25em) {
-    word-wrap: break-word;
-    word-break: break-all;
-  }
-
-  @media only screen and (max-width: 18.75em) {
-    font-size: 1.6rem;
-  }
-`;
-
 const Right = styled.div`
   flex: 1;
   display: flex;
