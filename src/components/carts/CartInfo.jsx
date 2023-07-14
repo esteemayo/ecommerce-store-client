@@ -89,4 +89,8 @@ const Title = styled.h2`
   }
 `;
 
+const PriceContainer = styled.div`
+  
+`;
+
 export default CartInfo;
