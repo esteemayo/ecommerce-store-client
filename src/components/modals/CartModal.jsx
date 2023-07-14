@@ -15,7 +15,6 @@ import ProductButton from '../products/ProductButton';
 
 import Alert from '../Alert';
 import useAddToCart from '@/hooks/useAddToCart';
-import { addProduct } from '@/features/cart/cartSlice';
 
 const CartModal = ({ product, isModalOpen, closeModal, setIsSelectedProduct }) => {
   const { darkMode } = useSelector((state) => ({ ...state.darkMode }));
