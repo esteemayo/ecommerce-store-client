@@ -61,6 +61,11 @@ const Button = styled.button`
     height: 2.45rem;
     font-size: 1.3rem;
   }
+
+  svg {
+    font-size: inherit;
+    fill: currentColor;
+  }
 `;
 
 const Amount = styled.span`
