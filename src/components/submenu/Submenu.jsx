@@ -6,6 +6,7 @@ import { useEffect, useState, useRef } from 'react';
 import { useSelector } from 'react-redux';
 
 import Heading from './Heading';
+import MenuItem from './MenuItem';
 
 const Submenu = () => {
   const { isSubmenuOpen, location, page: { page, links } } = useSelector(
