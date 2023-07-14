@@ -111,6 +111,8 @@ const Label = styled.p`
 
 const Price = styled.span`
   display: block;
+  font-size: 1.5rem;
+  color: ${({ theme }) => theme.textCartItem};
 `;
 
 export default CartInfo;
