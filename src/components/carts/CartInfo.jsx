@@ -199,7 +199,8 @@ const Size = styled.span`
 `;
 
 const RemoveButton = styled.button`
-  
+  display: inline-block;
+  border: none;
 `;
 
 export default CartInfo;
