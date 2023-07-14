@@ -208,6 +208,7 @@ const RemoveButton = styled.button`
   color: ${({ theme }) => theme.textRemoveCart};
   outline-color: #eee;
   outline-offset: 3px;
+  margin-top: 1rem;
 `;
 
 export default CartInfo;
