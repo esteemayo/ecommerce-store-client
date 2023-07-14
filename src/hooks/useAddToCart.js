@@ -5,7 +5,7 @@ import { useCallback, useState } from 'react';
 
 import { addProduct } from '@/features/cart/cartSlice';
 
-const useAddToCart = ({ product }) => {
+const useAddToCart = (product) => {
   const dispatch = useDispatch();
 
   const [color, setColor] = useState(null);
