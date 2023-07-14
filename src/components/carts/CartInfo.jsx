@@ -141,6 +141,7 @@ const Color = styled.span`
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  text-transform: capitalize;
 `;
 
 export default CartInfo;
