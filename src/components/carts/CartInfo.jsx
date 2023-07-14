@@ -166,4 +166,8 @@ const Color = styled.span`
   }
 `;
 
+const SizeContainer = styled.div`
+  
+`;
+
 export default CartInfo;
