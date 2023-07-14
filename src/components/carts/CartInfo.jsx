@@ -103,6 +103,10 @@ const Label = styled.p`
   font-weight: 500;
   font-size: 1.6rem;
   color: ${({ theme }) => theme.text};
+
+  @media only screen and (max-width: 43.75em) {
+    font-size: 1.5rem;
+  }
 `;
 
 const Price = styled.span`
