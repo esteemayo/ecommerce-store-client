@@ -69,7 +69,7 @@ const Button = styled.button`
 `;
 
 const Amount = styled.span`
-  
+  display: inline-block;
 `;
 
 export default CartCounter;
