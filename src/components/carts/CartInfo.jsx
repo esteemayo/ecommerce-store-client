@@ -17,6 +17,7 @@ const CartInfo = ({ name, images }) => {
       </ImageContainer>
       <CartDetails>
         <Title>{name}</Title>
+        <PriceContainer></PriceContainer>
       </CartDetails>
     </Container>
   );
