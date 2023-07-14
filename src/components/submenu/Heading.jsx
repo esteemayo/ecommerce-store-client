@@ -2,7 +2,7 @@
 
 import styled from 'styled-components';
 
-const Heading = () => {
+const Heading = ({ title }) => {
   return (
     <div>Heading</div>
   );
