@@ -188,4 +188,8 @@ const Size = styled.span`
   }
 `;
 
+const RemoveButton = styled.button`
+  
+`;
+
 export default CartInfo;
