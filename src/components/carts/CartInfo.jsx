@@ -96,6 +96,10 @@ const PriceContainer = styled.div`
   gap: 0.5rem;
 `;
 
+const Label = styled.p`
+  
+`;
+
 const Price = styled.span`
   
 `;
