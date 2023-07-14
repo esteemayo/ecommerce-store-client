@@ -127,4 +127,8 @@ const Price = styled.span`
   }
 `;
 
+const ColorContainer = styled.div`
+  
+`;
+
 export default CartInfo;
