@@ -20,6 +20,10 @@ const CartItem = ({
 }) => {
   const dispatch = useDispatch();
 
+  const handleRemove = useCallback((id) => {
+    dispatch(remove(id))
+  }, [dispatch]);
+
   const handleToggle = useCallback((type) => {
     dispatch(toggleQuantity({ type, id }));
   }, [id, dispatch]);
