@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
 
 import Navbar from '@/components/navbar/Navbar';
-import Submenu from '@/components/Submenu';
+import Submenu from '@/components/submenu/Submenu';
 import ScrollToTop from '@/components/ScrollToTop';
 import Footer from '@/components/footer/Footer';
 import Sidebar from '@/components/sidebar/Sidebar';
