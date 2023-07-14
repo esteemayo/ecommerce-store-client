@@ -204,6 +204,8 @@ const RemoveButton = styled.button`
   text-transform: capitalize;
   font-weight: 500;
   font-size: 1.5rem;
+  background-color: transparent;
+  color: ${({ theme }) => theme.textRemoveCart};
 `;
 
 export default CartInfo;
