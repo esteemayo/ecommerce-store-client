@@ -13,6 +13,15 @@ const ListItem = styled.li`
   text-transform: capitalize;
   color: ${({ theme }) => theme.text};
   margin-bottom: 1rem;
+
+  a {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      font-weight: 500;
+      color: currentColor;
+    }
+  }
 `;
 
 export default MenuItem;
