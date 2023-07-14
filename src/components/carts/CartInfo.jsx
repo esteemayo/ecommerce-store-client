@@ -32,6 +32,11 @@ const ImageContainer = styled.div`
   background-color: #ede9e6;
   border-radius: 3px;
 
+  @media only screen and (max-width: 25em) {
+    width: 10rem;
+    height: 10rem;
+  }
+
   img {
     width: 12rem;
     height: 12rem;
