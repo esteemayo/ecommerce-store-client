@@ -32,7 +32,7 @@ const CartModal = ({ product, isModalOpen, closeModal, setIsSelectedProduct }) =
     setIsSelected,
     setColor,
     handleReset,
-  } = useAddToCart({ product });
+  } = useAddToCart(product);
 
   const closeModalHandler = useCallback((e) => {
     e.stopPropagation();
