@@ -124,7 +124,7 @@ const Input = styled.input`
   border-top-left-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
   outline-color: #eee;
-  caret-color: var(--caret-light);
+  caret-color: ${({ theme }) => theme.inputCaret};
 
   @media only screen and (max-width: 25rem) {
     width: 65%;
