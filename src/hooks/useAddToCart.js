@@ -41,6 +41,7 @@ const useAddToCart = ({ product }) => {
     setSelectedSize,
     setIsSelected,
     setColor,
+    handleReset,
   };
 }
 

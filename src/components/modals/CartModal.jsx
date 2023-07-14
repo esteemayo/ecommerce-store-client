@@ -21,12 +21,20 @@ const CartModal = ({ product, isModalOpen, closeModal, setIsSelectedProduct }) =
   const dispatch = useDispatch();
   const { darkMode } = useSelector((state) => ({ ...state.darkMode }));
 
-  const [size, setSize] = useState(null);
-  const [alert, setAlert] = useState(false);
-  const [color, setColor] = useState(null);
-  const [isSelected, setIsSelected] = useState(null);
-  const [quantity, setQuantity] = useState(1);
-  const [selectedSize, setSelectedSize] = useState(null);
+  const {
+    alert,
+    setAlert,
+    handleClick,
+    selectedSize,
+    isSelected,
+    quantity,
+    setQuantity,
+    setSize,
+    setSelectedSize,
+    setIsSelected,
+    setColor,
+    handleReset,
+  } = useAddToCart({ product });
 
   const closeModalHandler = useCallback((e) => {
     e.stopPropagation();
@@ -41,20 +49,6 @@ const CartModal = ({ product, isModalOpen, closeModal, setIsSelectedProduct }) =
     setIsSelectedProduct(null);
     handleReset();
   }, [closeModal, setIsSelectedProduct, handleReset]);
-
-  const handleReset = useCallback(() => {
-    setSize(null);
-    setColor(null);
-    setQuantity(1);
-    setIsSelected(null);
-    setSelectedSize(null);
-  }, []);
-
-  const handleClick = useCallback(() => {
-    dispatch(addProduct({ ...product, size, color, quantity }));
-    setAlert(true);
-    handleReset();
-  }, [color, size, product, quantity, handleReset, dispatch]);
 
   return (
     <Overlay
