@@ -11,6 +11,9 @@ const CartCounter = () => {
         <Button type='button'>
           <FontAwesomeIcon icon={faPlus} />
         </Button>
+        <Button type='button'>
+          <FontAwesomeIcon icon={faMinus} />
+        </Button>
       </Wrapper>
     </Container>
   );
