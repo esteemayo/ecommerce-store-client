@@ -12,6 +12,8 @@ const Header = styled.h4`
   display: inline-block;
   text-transform: capitalize;
   font-size: 1.5rem;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
 `;
 
 export default Heading;
