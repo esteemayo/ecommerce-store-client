@@ -94,7 +94,7 @@ const CloseButton = styled.button`
   font-size: 3rem;
   padding: 0 1rem;
   background-color: transparent;
-  color: hsl(210, 22%, 49%);
+  color: ${({ theme }) => theme.textHeader};
   cursor: pointer;
 
   svg {
