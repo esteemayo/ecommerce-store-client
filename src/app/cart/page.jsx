@@ -58,8 +58,8 @@ const Cart = () => {
           </CartItemsContainer>
           <CartTotal
             isOpen={isOpen}
-            setIsOpen={setIsOpen}
-            setIsCash={setIsCash}
+            onAction={setIsOpen}
+            secondaryAction={setIsCash}
           />
         </Wrapper>
       </CartContainer>

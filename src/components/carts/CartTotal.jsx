@@ -5,20 +5,20 @@ import { NumericFormat } from 'react-number-format';
 import { useCallback } from 'react';
 import { useSelector } from 'react-redux';
 
-const CartTotal = ({ isOpen, setIsOpen, setIsCash }) => {
+const CartTotal = ({ isOpen, onAction, secondaryAction }) => {
   const { tax, total, subtotal } = useSelector((state) => ({ ...state.cart }));
 
   const handleClose = useCallback((e) => {
     e.stopPropagation();
 
     if (!e.target.classList.contains('btn-pay')) {
-      setIsOpen(false);
+      onAction(false);
     }
 
     if (e.target.classList.contains('btn-check')) {
-      setIsOpen(true);
+      onAction(true);
     }
-  }, [setIsOpen]);
+  }, [onAction]);
 
   return (
     <Container onClick={handleClose}>
@@ -65,7 +65,7 @@ const CartTotal = ({ isOpen, setIsOpen, setIsCash }) => {
         <ButtonContainer>
           {isOpen ? (
             <ButtonWrapper>
-              <Button type='button' className='btn-pay' onClick={() => setIsCash(true)}>
+              <Button type='button' className='btn-pay' onClick={() => secondaryAction(true)}>
                 Pay on Delivery
               </Button>
               <Button type='button' className='btn-pay'>Checkout Now</Button>
@@ -75,7 +75,7 @@ const CartTotal = ({ isOpen, setIsOpen, setIsCash }) => {
               type='button'
               className='btn-check'
               btnType='check'
-              onClick={() => setIsOpen(true)}
+              onClick={() => onAction(true)}
             >
               Checkout
             </Button>
