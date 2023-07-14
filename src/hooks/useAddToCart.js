@@ -1,7 +1,7 @@
 'use client';
 
 import { useDispatch } from 'react-redux';
-import { useCallback } from 'react';
+import { useCallback, useState } from 'react';
 
 const useAddToCart = () => {
   return (
