@@ -209,24 +209,6 @@ const ProductSize = styled.span`
   }
 `;
 
-const RemoveButton = styled.button`
-  display: inline-block;
-  border: none;
-  text-transform: capitalize;
-  font-weight: 500;
-  font-size: 1.5rem;
-  background-color: transparent;
-  color: ${({ theme }) => theme.textRemoveCart};
-  outline-color: #eee;
-  outline-offset: 3px;
-  margin-top: 1rem;
-  cursor: pointer;
-
-  @media only screen and (max-width: 43.75em) {
-    font-size: 1.45rem;
-  }
-`;
-
 const Right = styled.div`
   flex: 1;
   display: flex;
