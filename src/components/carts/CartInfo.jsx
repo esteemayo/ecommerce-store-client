@@ -63,7 +63,7 @@ const ImageContainer = styled.div`
 `;
 
 const CartDetails = styled.div`
-  
+  width: 30rem;
 `;
 
 export default CartInfo;
