@@ -147,12 +147,6 @@ const Price = styled.span`
   }
 `;
 
-const ColorContainer = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-`;
-
 const Right = styled.div`
   flex: 1;
   display: flex;
