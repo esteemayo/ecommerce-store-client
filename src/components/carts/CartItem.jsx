@@ -32,12 +32,13 @@ const CartItem = ({
     <Container>
       <Wrapper>
         <CartInfo
+          id={id}
           color={color}
           name={name}
           images={images}
           price={price}
           size={size}
-          onAction={() => dispatch(remove(id))}
+          onAction={handleRemove}
         />
         <CartCounter
           value={quantity}
