@@ -72,6 +72,7 @@ const Amount = styled.span`
   display: inline-block;
   font-size: 600;
   font-size: 2rem;
+  color: ${({ theme }) => theme.text};
 `;
 
 export default CartCounter;
