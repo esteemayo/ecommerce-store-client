@@ -7,6 +7,10 @@ const Heading = ({ title }) => {
   return <Header>{title}</Header>;
 }
 
+Heading.propTypes = {
+  title: PropTypes.string.isRequired,
+};
+
 const Header = styled.h4`
   display: inline-block;
   text-transform: capitalize;
