@@ -154,6 +154,8 @@ const Color = styled.span`
     display: block;
     width: 1.5rem;
     height: 1.5rem;
+    background-color: ${({ color }) => color};
+    background-color: ${({ color }) => color === 'white' && '#f9f9f9'};
   }
 `;
 
