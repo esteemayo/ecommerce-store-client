@@ -9,7 +9,15 @@ import CartCounter from './CartCounter';
 
 import { remove, toggleQuantity } from '@/features/cart/cartSlice';
 
-const CartItem = ({ id, name, size, color, images, price, quantity }) => {
+const CartItem = ({
+  id,
+  name,
+  size,
+  color,
+  images,
+  price,
+  quantity
+}) => {
   const dispatch = useDispatch();
 
   const handleToggle = useCallback((type) => {
