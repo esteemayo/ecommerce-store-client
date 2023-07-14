@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useCallback } from 'react';
 import { useDispatch } from 'react-redux';
 
+import CartInfo from './CartInfo';
 import { remove, toggleQuantity } from '@/features/cart/cartSlice';
 
 const CartItem = ({ id, name, size, color, images, price, quantity }) => {
