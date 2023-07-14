@@ -106,10 +106,6 @@ const ImageContainer = styled.div`
   }
 `;
 
-const ProductDetails = styled.div`
-  width: 30rem;
-`;
-
 const Right = styled.div`
   flex: 1;
   display: flex;
