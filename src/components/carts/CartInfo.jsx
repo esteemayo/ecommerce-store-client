@@ -83,6 +83,10 @@ const Title = styled.h2`
     word-wrap: break-word;
     word-break: break-all;
   }
+
+  @media only screen and (max-width: 18.75em) {
+    font-size: 1.6rem;
+  }
 `;
 
 export default CartInfo;
