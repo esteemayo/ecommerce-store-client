@@ -70,6 +70,8 @@ const CartDetails = styled.div`
 
 const Title = styled.h2`
   display: block;
+  font-weight: 500;
+  font-size: 2rem;
 `;
 
 export default CartInfo;
