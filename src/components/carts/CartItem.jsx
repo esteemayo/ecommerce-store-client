@@ -164,35 +164,6 @@ const Title = styled.p`
   }
 `;
 
-const ProductColor = styled.span`
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  text-transform: capitalize;
-  font-size: 1.5rem;
-  color: ${({ theme }) => theme.textCartItem};
-
-  @media only screen and (max-width: 43.75em) {
-    font-size: 1.45rem;
-  }
-
-  &::before {
-    content: '';
-    display: block;
-    width: 1.5rem;
-    height: 1.5rem;
-    background-color: ${({ color }) => color};
-    background-color: ${({ color }) => color === 'white' && '#f9f9f9'};
-    border: 1px solid ${({ color }) => color};
-    border-radius: 50%;
-
-    @media only screen and (max-width: 43.75em) {
-      width: 1.4rem;
-      height: 1.4rem;
-    }
-  }
-`;
-
 const Right = styled.div`
   flex: 1;
   display: flex;
