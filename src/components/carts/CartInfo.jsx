@@ -202,6 +202,8 @@ const RemoveButton = styled.button`
   display: inline-block;
   border: none;
   text-transform: capitalize;
+  font-weight: 500;
+  font-size: 1.5rem;
 `;
 
 export default CartInfo;
