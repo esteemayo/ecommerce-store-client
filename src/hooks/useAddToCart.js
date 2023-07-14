@@ -29,9 +29,19 @@ const useAddToCart = ({ product }) => {
     handleReset();
   }, [color, product, quantity, size, handleReset, dispatch]);
 
-  return (
-    <div>useAddToCart</div>
-  );
+  return {
+    alert,
+    setAlert,
+    handleClick,
+    selectedSize,
+    isSelected,
+    quantity,
+    setQuantity,
+    setSize,
+    setSelectedSize,
+    setIsSelected,
+    setColor,
+  };
 }
 
 export default useAddToCart;
