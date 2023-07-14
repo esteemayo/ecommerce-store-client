@@ -38,6 +38,7 @@ const CartInfo = ({ color, name, images, price, size }) => {
             <Size>{size}</Size>
           </SizeContainer>
         )}
+        <RemoveButton type='button'>Remove</RemoveButton>
       </CartDetails>
     </Container>
   );
