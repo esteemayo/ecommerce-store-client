@@ -3,7 +3,9 @@
 import { useDispatch } from 'react-redux';
 import { useCallback, useState } from 'react';
 
-const useAddToCart = () => {
+import { addProduct } from '@/features/cart/cartSlice';
+
+const useAddToCart = ({ product }) => {
   const dispatch = useDispatch();
 
   const [color, setColor] = useState(null);
@@ -20,6 +22,12 @@ const useAddToCart = () => {
     setIsSelected(null);
     setSelectedSize(null);
   }, []);
+
+  const handleClick = useCallback(() => {
+    dispatch(addProduct({ ...product, size, color, quantity }));
+    setAlert(true);
+    handleReset();
+  }, [color, product, quantity, size, handleReset, dispatch]);
 
   return (
     <div>useAddToCart</div>
