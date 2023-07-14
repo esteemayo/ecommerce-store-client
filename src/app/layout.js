@@ -5,10 +5,10 @@ import { PersistGate } from 'redux-persist/integration/react';
 
 import Navbar from '@/components/navbar/Navbar';
 import Submenu from '@/components/submenu/Submenu';
-import ScrollToTop from '@/components/ScrollToTop';
 import Footer from '@/components/footer/Footer';
-import Sidebar from '@/components/sidebar/Sidebar';
+import ScrollToTop from '@/components/ScrollToTop';
 import Darkmode from '@/components/DarkMode';
+import Sidebar from '@/components/sidebar/Sidebar';
 import ClientOnly from '@/components/ClientOnly';
 
 import ToastProvider from '@/providers/ToastProvider';
