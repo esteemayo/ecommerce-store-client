@@ -26,6 +26,10 @@ const Wrapper = styled.div`
   align-items: center;
   justify-content: flex-start;
   gap: 1rem;
+
+  @media only screen and (max-width: 31.25em) {
+    flex-direction: row;
+  }
 `;
 
 export default CartCounter;
