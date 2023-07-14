@@ -15,6 +15,7 @@ const CartInfo = ({ images }) => {
           alt=''
         />
       </ImageContainer>
+      <CartDetails></CartDetails>
     </Container>
   );
 }
