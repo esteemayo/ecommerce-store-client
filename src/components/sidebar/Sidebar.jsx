@@ -72,7 +72,7 @@ const Wrapper = styled.div`
   height: 97vh;
   max-width: 62rem;
   padding: 4rem 2rem;
-  background-color: var(--clr-white);
+  background-color: ${({ theme }) => theme.bg};
   border-radius: 0.5rem;
   box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.2);
   position: relative;
