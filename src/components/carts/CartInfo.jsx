@@ -61,4 +61,8 @@ const ImageContainer = styled.div`
   }
 `;
 
+const CartDetails = styled.div`
+  
+`;
+
 export default CartInfo;
