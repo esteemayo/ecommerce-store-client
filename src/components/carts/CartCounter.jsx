@@ -8,11 +8,11 @@ const CartCounter = ({ value, onIncrement, onDecrement }) => {
   return (
     <Container>
       <Wrapper>
-        <Button type='button' onClick={onIncrement}>
+        <Button type='button' onClick={() => onIncrement('inc')}>
           <FontAwesomeIcon icon={faPlus} />
         </Button>
         <Amount>{value}</Amount>
-        <Button type='button' onClick={onDecrement}>
+        <Button type='button' onClick={() => onDecrement('dec')}>
           <FontAwesomeIcon icon={faMinus} />
         </Button>
       </Wrapper>
