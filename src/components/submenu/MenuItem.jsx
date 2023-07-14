@@ -35,6 +35,13 @@ const ListItem = styled.li`
       color: ${({ theme }) => theme.textHeader};
     }
   }
+
+  & > * {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    outline-color: #f5f5f5;
+  }
 `;
 
 export default MenuItem;
