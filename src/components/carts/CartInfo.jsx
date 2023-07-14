@@ -9,7 +9,7 @@ const CartInfo = () => {
 }
 
 const Container = styled.div`
-  
+  flex: 3;
 `;
 
 export default CartInfo;
