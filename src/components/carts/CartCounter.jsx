@@ -45,6 +45,8 @@ const Wrapper = styled.div`
 const Button = styled.button`
   border: none;
   display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
 `;
 
 const Amount = styled.span`
