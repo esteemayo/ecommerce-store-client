@@ -51,6 +51,8 @@ const Button = styled.button`
   font-size: 1.4rem;
   background-color: transparent;
   color: #c3c3c4;
+  border: 1px solid #eee;
+  border-radius: 50%;
 `;
 
 const Amount = styled.span`
