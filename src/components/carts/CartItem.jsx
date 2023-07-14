@@ -64,13 +64,6 @@ const Wrapper = styled.div`
   }
 `;
 
-const Left = styled.div`
-  flex: 3;
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
-`;
-
 const Right = styled.div`
   flex: 1;
   display: flex;
