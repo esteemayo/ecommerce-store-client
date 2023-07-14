@@ -35,6 +35,7 @@ const CartInfo = ({ color, name, images, price, size }) => {
         {size && (
           <SizeContainer>
             <Label>Size:</Label>
+            <Size>{size}</Size>
           </SizeContainer>
         )}
       </CartDetails>
