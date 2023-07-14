@@ -4,13 +4,14 @@ import styled from 'styled-components';
 import { faMinus, faPlus } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const CartCounter = () => {
+const CartCounter = ({ quantity }) => {
   return (
     <Container>
       <Wrapper>
         <Button type='button'>
           <FontAwesomeIcon icon={faPlus} />
         </Button>
+        <Amount>{quantity}</Amount>
         <Button type='button'>
           <FontAwesomeIcon icon={faMinus} />
         </Button>
