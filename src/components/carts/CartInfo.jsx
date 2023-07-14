@@ -48,6 +48,11 @@ const ImageContainer = styled.div`
     display: block;
     object-fit: cover;
     border-radius: 3px;
+
+    @media only screen and (max-width: 25em) {
+      width: 10rem;
+      height: 10rem;
+    }
   }
 `;
 
