@@ -142,6 +142,8 @@ const Color = styled.span`
   align-items: center;
   gap: 0.5rem;
   text-transform: capitalize;
+  font-size: 1.5rem;
+  color: ${({ theme }) => theme.textCartItem};
 `;
 
 export default CartInfo;
