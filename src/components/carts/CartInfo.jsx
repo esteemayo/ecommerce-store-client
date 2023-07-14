@@ -210,6 +210,10 @@ const RemoveButton = styled.button`
   outline-offset: 3px;
   margin-top: 1rem;
   cursor: pointer;
+
+  @media only screen and (max-width: 43.75em) {
+    font-size: 1.45rem;
+  }
 `;
 
 export default CartInfo;
