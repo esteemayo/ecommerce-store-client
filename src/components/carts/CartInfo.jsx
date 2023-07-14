@@ -99,7 +99,7 @@ const PriceContainer = styled.div`
 `;
 
 const Label = styled.p`
-  
+  text-transform: capitalize;
 `;
 
 const Price = styled.span`
