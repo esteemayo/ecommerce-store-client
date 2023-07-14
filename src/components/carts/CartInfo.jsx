@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Image from 'next/image';
 import { NumericFormat } from 'react-number-format';
 
-const CartInfo = ({ name, images }) => {
+const CartInfo = ({ name, images, price }) => {
   return (
     <Container>
       <ImageContainer>
@@ -19,6 +19,14 @@ const CartInfo = ({ name, images }) => {
         <Title>{name}</Title>
         <PriceContainer>
           <Label>Price:</Label>
+          <Price>
+            <NumericFormat
+              value={price}
+              displayType={'text'}
+              thousandSeparator={true}
+              prefix={'$'}
+            />
+          </Price>
         </PriceContainer>
       </CartDetails>
     </Container>
