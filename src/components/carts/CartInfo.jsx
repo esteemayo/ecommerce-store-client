@@ -69,7 +69,7 @@ const CartDetails = styled.div`
 `;
 
 const Title = styled.h2`
-  
+  display: block;
 `;
 
 export default CartInfo;
