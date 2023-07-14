@@ -156,6 +156,8 @@ const Color = styled.span`
     height: 1.5rem;
     background-color: ${({ color }) => color};
     background-color: ${({ color }) => color === 'white' && '#f9f9f9'};
+    border: 1px solid ${({ color }) => color};
+    border-radius: 50%;
   }
 `;
 
