@@ -29,6 +29,11 @@ const ListItem = styled.li`
     &:hover {
       color: #686767;
     }
+
+    svg {
+      font-size: 2rem;
+      color: ${({ theme }) => theme.textHeader};
+    }
   }
 `;
 
