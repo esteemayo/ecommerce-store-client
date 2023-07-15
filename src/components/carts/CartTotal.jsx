@@ -21,7 +21,7 @@ const CartTotal = ({ isOpen, onAction, secondaryAction }) => {
     }
   }, [onAction]);
 
-  useEffect(()=>{
+  useEffect(() => {
     setShowModal(isOpen);
   }, [isOpen]);
 
@@ -68,7 +68,7 @@ const CartTotal = ({ isOpen, onAction, secondaryAction }) => {
           </TotalWrapper>
         </TotalContainer>
         <ButtonContainer>
-          {isOpen ? (
+          {showModal ? (
             <ButtonWrapper>
               <Button type='button' className='btn-pay' onClick={() => secondaryAction(true)}>
                 Pay on Delivery
