@@ -81,7 +81,7 @@ const CartTotal = ({ isOpen, onOpen, onAction, onClose, secondaryAction }) => {
               type='button'
               className='btn-check'
               btnType='check'
-              onClick={() => onAction(true)}
+              onClick={onOpen}
             >
               Checkout
             </Button>
