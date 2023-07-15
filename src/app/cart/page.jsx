@@ -58,25 +58,28 @@ const Cart = () => {
         </Link>
       </HeadingWrapper>
     );
+  } else {
+    bodyContent = (
+      <Wrapper>
+        <CartHeader />
+        <CartItemsContainer>
+          {cart.map((cart) => {
+            return <CartItem key={cart.id} {...cart} />;
+          })}
+        </CartItemsContainer>
+        <CartTotal
+          isOpen={isOpen}
+          onOpen={handleOpen}
+          onClose={handleClose}
+          onAction={openPaymentModal}
+        />
+      </Wrapper>
+    );
   }
 
   return (
     <Container onMouseOver={() => dispatch(closeSubmenu())}>
       <CartContainer>
-        <Wrapper>
-          <CartHeader />
-          <CartItemsContainer>
-            {cart.map((cart) => {
-              return <CartItem key={cart.id} {...cart} />;
-            })}
-          </CartItemsContainer>
-          <CartTotal
-            isOpen={isOpen}
-            onOpen={handleOpen}
-            onClose={handleClose}
-            onAction={openPaymentModal}
-          />
-        </Wrapper>
       </CartContainer>
       <PaymentModal
         isOpen={isCash}
