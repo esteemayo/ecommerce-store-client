@@ -41,24 +41,22 @@ const Cart = () => {
     dispatch(calcTotals());
   }, [cart, dispatch]);
 
+  let bodyContent;
+
   if (cart.length < 1) {
     return (
-      <Container onMouseOver={() => dispatch(closeSubmenu())}>
-        <CartContainer>
-          <HeadingWrapper>
-            {/* <Heading>Your cart is currently empty!</Heading> */}
-            <Image
-              src='/img/empty-cart.png'
-              width={400}
-              height={400}
-              alt=''
-            />
-            <Link href='/products' passHref>
-              <Button type='button'>Back to shopping</Button>
-            </Link>
-          </HeadingWrapper>
-        </CartContainer>
-      </Container>
+      <HeadingWrapper>
+        {/* <Heading>Your cart is currently empty!</Heading> */}
+        <Image
+          src='/img/empty-cart.png'
+          width={400}
+          height={400}
+          alt=''
+        />
+        <Link href='/products' passHref>
+          <Button type='button'>Back to shopping</Button>
+        </Link>
+      </HeadingWrapper>
     );
   }
 
