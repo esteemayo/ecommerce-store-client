@@ -21,6 +21,10 @@ const CartTotal = ({ isOpen, onAction, secondaryAction }) => {
     }
   }, [onAction]);
 
+  useEffect(()=>{
+    setShowModal(isOpen);
+  }, [isOpen]);
+
   return (
     <Container onClick={handleClose}>
       <Wrapper>
