@@ -16,6 +16,7 @@ const PaymentModal = ({ isOpen, closeModal, onClose }) => {
 
   const [errors, setErrors] = useState({});
   const [inputs, setInputs] = useState(initialState);
+  const [showModal, setShowModal] = useState(isOpen);
 
   const { name, address } = inputs;
 
