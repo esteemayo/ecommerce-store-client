@@ -18,9 +18,9 @@ const CartTotal = ({ isOpen, onOpen, onAction, onClose, secondaryAction }) => {
     }
 
     if (e.target.classList.contains('btn-check')) {
-      onAction(true);
+      onOpen();
     }
-  }, [onAction, onClose]);
+  }, [onOpen, onClose]);
 
   useEffect(() => {
     setShow(isOpen);
