@@ -33,6 +33,10 @@ const Cart = () => {
     setIsCash(true);
   }, []);
 
+  const closePaymentModal = useCallback(() => {
+    setIsCash(true);
+  }, []);
+
   useEffect(() => {
     dispatch(calcTotals());
   }, [cart, dispatch]);
