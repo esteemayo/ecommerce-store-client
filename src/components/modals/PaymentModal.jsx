@@ -11,7 +11,7 @@ const initialState = {
   address: '',
 };
 
-const PaymentModal = ({ openModal, closeModal, setIsOpen }) => {
+const PaymentModal = ({ isOpen, closeModal, setIsOpen }) => {
   const { total } = useSelector((state) => ({ ...state.cart }));
 
   const [errors, setErrors] = useState({});
@@ -71,7 +71,7 @@ const PaymentModal = ({ openModal, closeModal, setIsOpen }) => {
   return (
     <Overlay
       className='overlay'
-      type={openModal ? 'show' : ''}
+      type={isOpen ? 'show' : ''}
       onClick={handleClick}
     >
       <Container>
