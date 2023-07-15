@@ -37,6 +37,10 @@ const ReviewModal = ({ isOpen, setIsModalOpen }) => {
     handleClear();
   }, [rating, review, terms, handleClear]);
 
+  useEffect(() => {
+    setShowModal(isOpen);
+  }, [isOpen]);
+
   return (
     <Overlay
       className='overlay'
