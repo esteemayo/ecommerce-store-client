@@ -11,7 +11,7 @@ const initialState = {
   address: '',
 };
 
-const PaymentModal = ({ isOpen, closeModal, setIsOpen }) => {
+const PaymentModal = ({ isOpen, closeModal, onClose }) => {
   const { total } = useSelector((state) => ({ ...state.cart }));
 
   const [errors, setErrors] = useState({});
@@ -26,10 +26,10 @@ const PaymentModal = ({ isOpen, closeModal, setIsOpen }) => {
 
   const handleClose = useCallback(() => {
     closeModal();
-    setIsOpen(false);
+    onClose();
     errors && setErrors({});
     handleClear();
-  }, [errors, closeModal, setIsOpen, handleClear]);
+  }, [errors, closeModal, onClose, handleClear]);
 
   const handleClick = useCallback((e) => {
     e.stopPropagation();
