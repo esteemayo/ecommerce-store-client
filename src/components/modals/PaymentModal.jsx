@@ -26,6 +26,7 @@ const PaymentModal = ({ isOpen, closeModal, onClose }) => {
   }, []);
 
   const handleClose = useCallback(() => {
+    setShowModal(false);
     closeModal();
     onClose();
     errors && setErrors({});
