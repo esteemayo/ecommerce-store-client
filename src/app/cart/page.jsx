@@ -21,6 +21,10 @@ const Cart = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isCash, setIsCash] = useState(false);
 
+  const handleOpen = useCallback(() => {
+    setIsOpen(true);
+  }, []);
+
   useEffect(() => {
     dispatch(calcTotals());
   }, [cart, dispatch]);
