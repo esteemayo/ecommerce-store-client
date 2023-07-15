@@ -14,13 +14,13 @@ const CartTotal = ({ isOpen, onAction, onClose, secondaryAction }) => {
 
     if (!e.target.classList.contains('btn-pay')) {
       setShow(false);
-      onAction(false);
+      onClose();
     }
 
     if (e.target.classList.contains('btn-check')) {
       onAction(true);
     }
-  }, [onAction]);
+  }, [onAction, onClose]);
 
   useEffect(() => {
     setShow(isOpen);
