@@ -7,7 +7,7 @@ import { useSelector } from 'react-redux';
 
 const CartTotal = ({ isOpen, onAction, secondaryAction }) => {
   const { tax, total, subtotal } = useSelector((state) => ({ ...state.cart }));
-  const [showModal, setShowModal] = useState(isOpen);
+  const [show, setShow] = useState(isOpen);
 
   const handleClose = useCallback((e) => {
     e.stopPropagation();
@@ -22,7 +22,7 @@ const CartTotal = ({ isOpen, onAction, secondaryAction }) => {
   }, [onAction]);
 
   useEffect(() => {
-    setShowModal(isOpen);
+    setShow(isOpen);
   }, [isOpen]);
 
   return (
@@ -68,7 +68,7 @@ const CartTotal = ({ isOpen, onAction, secondaryAction }) => {
           </TotalWrapper>
         </TotalContainer>
         <ButtonContainer>
-          {showModal ? (
+          {show ? (
             <ButtonWrapper>
               <Button type='button' className='btn-pay' onClick={() => secondaryAction(true)}>
                 Pay on Delivery
