@@ -44,7 +44,7 @@ const Cart = () => {
   let bodyContent;
 
   if (cart.length < 1) {
-    return (
+    bodyContent = (
       <HeadingWrapper>
         {/* <Heading>Your cart is currently empty!</Heading> */}
         <Image
