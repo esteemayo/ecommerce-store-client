@@ -2,7 +2,7 @@
 
 import styled from 'styled-components';
 import { NumericFormat } from 'react-number-format';
-import { useCallback, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import CloseIcon from '@mui/icons-material/Close';
 import { useSelector } from 'react-redux';
 
