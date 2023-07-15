@@ -67,7 +67,6 @@ const Cart = () => {
           <CartTotal
             isOpen={isOpen}
             onOpen={handleOpen}
-            onAction={setIsOpen}
             onClose={handleClose}
             secondaryAction={setIsCash}
           />
