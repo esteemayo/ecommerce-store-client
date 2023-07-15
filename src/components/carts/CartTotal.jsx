@@ -3,7 +3,6 @@
 import styled from 'styled-components';
 import { NumericFormat } from 'react-number-format';
 import { useCallback, useEffect, useState } from 'react';
-import { useSelector } from 'react-redux';
 
 const CartTotal = ({ isOpen, onOpen, onAction, onClose, secondaryAction }) => {
   const { tax, total, subtotal } = useSelector((state) => ({ ...state.cart }));
