@@ -120,7 +120,7 @@ const Reviews = () => {
         </ReviewsWrapper>
       </Wrapper>
       <ReviewModal
-        isModalOpen={isModalOpen}
+        isOpen={isModalOpen}
         setIsModalOpen={setIsModalOpen}
       />
     </Container>
