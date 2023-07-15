@@ -25,6 +25,10 @@ const Cart = () => {
     setIsOpen(true);
   }, []);
 
+  const handleClose = useCallback(() => {
+    setIsOpen(false);
+  }, []);
+
   useEffect(() => {
     dispatch(calcTotals());
   }, [cart, dispatch]);
