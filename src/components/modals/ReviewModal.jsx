@@ -39,7 +39,7 @@ const ReviewModal = ({ isOpen, setIsModalOpen }) => {
   return (
     <Overlay
       className='overlay'
-      type={isModalOpen ? 'show' : ''}
+      type={isOpen ? 'show' : ''}
       onClick={handleCloseModal}
     >
       <Container>
