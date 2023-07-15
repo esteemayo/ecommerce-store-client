@@ -11,6 +11,7 @@ const ReviewModal = ({ isOpen, setIsModalOpen }) => {
   const [rating, setRating] = useState(null);
   const [review, setReview] = useState('');
   const [terms, setTerms] = useState(false);
+  const [showModal, setShowModal] = useState(isOpen);
 
   const handleCloseModal = useCallback((e) => {
     e.stopPropagation();
