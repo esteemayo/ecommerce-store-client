@@ -13,6 +13,7 @@ const CartTotal = ({ isOpen, onAction, secondaryAction }) => {
     e.stopPropagation();
 
     if (!e.target.classList.contains('btn-pay')) {
+      setShow(false);
       onAction(false);
     }
 
