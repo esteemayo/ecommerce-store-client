@@ -238,7 +238,7 @@ const TotalReviews = styled.span`
   }
 `;
 
-const Rewiews = styled.div`
+const ReviewsContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
