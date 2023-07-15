@@ -5,7 +5,7 @@ import { NumericFormat } from 'react-number-format';
 import { useCallback, useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 
-const CartTotal = ({ isOpen, onAction, onClose, secondaryAction }) => {
+const CartTotal = ({ isOpen, onOpen, onAction, onClose, secondaryAction }) => {
   const { tax, total, subtotal } = useSelector((state) => ({ ...state.cart }));
   const [show, setShow] = useState(isOpen);
 
