@@ -80,6 +80,7 @@ const Cart = () => {
   return (
     <Container onMouseOver={() => dispatch(closeSubmenu())}>
       <CartContainer>
+        {bodyContent}
       </CartContainer>
       <PaymentModal
         isOpen={isCash}
