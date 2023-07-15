@@ -71,7 +71,7 @@ const CartTotal = ({ isOpen, onOpen, onClose, secondaryAction }) => {
         <ButtonContainer>
           {show ? (
             <ButtonWrapper>
-              <Button type='button' className='btn-pay' onClick={() => secondaryAction(true)}>
+              <Button type='button' className='btn-pay' onClick={onAction}>
                 Pay on Delivery
               </Button>
               <Button type='button' className='btn-pay'>Checkout Now</Button>
