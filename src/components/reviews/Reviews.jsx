@@ -67,7 +67,7 @@ const Reviews = () => {
             <StarRating value={0} />
             <TotalReviews>{reviews.length} reviews</TotalReviews>
           </Ratings>
-          <Rewiews>
+          <ReviewsContainer>
             {reviews.length > 0 && (
               <ReviewButtonWrapper>
                 <ReviewButton
@@ -96,7 +96,7 @@ const Reviews = () => {
                 <ListCategory onClick={() => setSort('lowest')}>Lowest rating</ListCategory>
               </FilterList>
             </FilterWrapper>
-          </Rewiews>
+          </ReviewsContainer>
         </ReviewContainer>
         <ReviewsWrapper>
           {reviews.length > 0 ? (
