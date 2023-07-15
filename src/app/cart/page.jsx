@@ -29,6 +29,10 @@ const Cart = () => {
     setIsOpen(false);
   }, []);
 
+  const openPaymentModal = useCallback(() => {
+    setIsCash(true);
+  }, []);
+
   useEffect(() => {
     dispatch(calcTotals());
   }, [cart, dispatch]);
