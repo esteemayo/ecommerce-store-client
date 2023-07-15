@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Rating from '@mui/material/Rating';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
-import { useCallback, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 
 const ReviewModal = ({ isOpen, setIsModalOpen }) => {
   const [rating, setRating] = useState(null);
