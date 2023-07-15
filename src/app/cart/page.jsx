@@ -34,7 +34,7 @@ const Cart = () => {
   }, []);
 
   const closePaymentModal = useCallback(() => {
-    setIsCash(true);
+    setIsCash(false);
   }, []);
 
   useEffect(() => {
