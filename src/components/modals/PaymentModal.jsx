@@ -69,6 +69,10 @@ const PaymentModal = ({ isOpen, closeModal, onClose }) => {
     handleClear();
   }, [total, inputs, handleClear, validateForm]);
 
+  useEffect(() => {
+    setShowModal(isOpen);
+  }, [isOpen]);
+
   return (
     <Overlay
       className='overlay'
