@@ -5,11 +5,11 @@ import { useCallback, useEffect, useMemo, useState } from 'react';
 
 import ReviewCard from './ReviewCard';
 import EmptyReview from './EmptyReview';
+import ReviewHead from './ReviewHead';
 
 import ReviewModal from '../modals/ReviewModal';
 
 import { reviewItems } from '@/data';
-import ReviewHead from './ReviewHead';
 
 const Reviews = () => {
   const [sort, setSort] = useState(null);
