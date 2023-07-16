@@ -33,7 +33,7 @@ const Reviews = () => {
 
   const handleCloseFilter = useCallback(() => {
     const reviewsEl = document.querySelector('.reviews');
-    const filterEl = document.querySelector('.filter-wrapper');
+    const filterEl = document.querySelector('.filter-container');
 
     reviewsEl.addEventListener('click', () => setIsFilterOpen(false));
     filterEl.addEventListener('click', () => setIsFilterOpen(true));
