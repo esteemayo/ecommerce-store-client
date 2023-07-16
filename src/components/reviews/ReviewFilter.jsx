@@ -9,7 +9,7 @@ const ReviewFilter = ({ sort, value, isOpen, onClick, onSort }) => {
     <Container className='filter-container'>
       <Wrapper
         sort={sort}
-        className='filter-container'
+        className='filter-wrapper'
         onClick={onClick}
       >
         <Filter>Sort:</Filter>
