@@ -1,6 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 import StarRating from '../StarRating';
 import ReviewButton from './ReviewButton';
