@@ -5,7 +5,9 @@ import styled from 'styled-components';
 const ReviewFilter = () => {
   return (
     <Container>
-      <Wrapper className='filter-container'></Wrapper>
+      <Wrapper className='filter-container'>
+        <Filter>Sort:</Filter>
+      </Wrapper>
     </Container>
   );
 }
