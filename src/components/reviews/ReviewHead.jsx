@@ -48,4 +48,8 @@ const TotalReviews = styled.span`
   
 `;
 
+const Wrapper = styled.div`
+  
+`;
+
 export default ReviewHead;
