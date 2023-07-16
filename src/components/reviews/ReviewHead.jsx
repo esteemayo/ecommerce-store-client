@@ -93,7 +93,7 @@ const TotalRatings = styled.span`
 `;
 
 const TotalReviews = styled.span`
-  
+  display: inline-block;
 `;
 
 const Wrapper = styled.div`
