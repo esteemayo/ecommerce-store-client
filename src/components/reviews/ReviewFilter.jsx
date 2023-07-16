@@ -89,6 +89,7 @@ const FilterListContainer = styled.ul`
   list-style: none;
   width: 20rem;
   padding: 0.4rem;
+  text-align: left;
 `;
 
 const FilterList = styled.li`
