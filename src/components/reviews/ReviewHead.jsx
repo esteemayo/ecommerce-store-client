@@ -2,10 +2,14 @@
 
 import styled from 'styled-components';
 
-const ReviewHead = () => {
+const ReviewHead = ({ reviews }) => {
   return (
     <Container>
-      <Ratings></Ratings>
+      <Ratings>
+        <TotalRatings>
+          {reviews.length === 0 ? 0 : reviews.length.toFixed(1)}
+        </TotalRatings>
+      </Ratings>
     </Container>
   );
 }
