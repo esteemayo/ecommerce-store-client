@@ -118,7 +118,7 @@ const Reviews = () => {
               <Message>Currently, there are no reviews for this product.</Message>
               <ReviewButton
                 actionLabel='Leave a review'
-                onAction={() => setIsModalOpen(true)}
+                onAction={handleOpenModal}
               />
             </EmptyReview>
           )}
