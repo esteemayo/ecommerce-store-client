@@ -8,4 +8,8 @@ const ReviewButton = () => {
   );
 }
 
+const Button = styled.button`
+  
+`;
+
 export default ReviewButton;
