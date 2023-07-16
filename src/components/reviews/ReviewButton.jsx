@@ -23,6 +23,7 @@ const Button = styled.button`
   background-size: 220%;
   border-radius: 0.5rem;
   outline-color: ${({ theme }) => theme.textRevBtn};
+  cursor: pointer;
 `;
 
 export default ReviewButton;
