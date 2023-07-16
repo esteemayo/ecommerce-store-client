@@ -24,6 +24,13 @@ const ReviewHead = ({ rating, reviews, onOpen }) => {
             />
           </ReviewButtonWrapper>
         )}
+        <ReviewFilter
+          sort={sort}
+          value={getSort}
+          isOpen={isFilterOpen}
+          onClick={handleToggleFilter}
+          onSort={setSort}
+        />
       </Wrapper>
     </Container>
   );
