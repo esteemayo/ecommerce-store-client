@@ -95,6 +95,8 @@ const FilterListContainer = styled.ul`
   border-radius: 3px;
   visibility: ${({ type }) => type === 'show' ? 'visible' : 'hidden'};
   opacity: ${({ type }) => type === 'show' ? 1 : 0};
+  transform: scale(${({ type }) => type === 'show' ? 1 : 0});
+  z-index: ${({ type }) => type === 'show' ? 1000 : -1};
 `;
 
 const FilterList = styled.li`
