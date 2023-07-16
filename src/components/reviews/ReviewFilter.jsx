@@ -3,10 +3,13 @@
 import styled from 'styled-components';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
-const ReviewFilter = () => {
+const ReviewFilter = ({ sort }) => {
   return (
     <Container className='filter-wrapper'>
-      <Wrapper className='filter-container'>
+      <Wrapper
+        sort={sort}
+        className='filter-container'
+      >
         <Filter>Sort:</Filter>
         <FilterText>Select</FilterText>
         <FilterIcon>
