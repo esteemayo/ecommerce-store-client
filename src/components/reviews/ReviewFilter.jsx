@@ -107,6 +107,8 @@ const FilterList = styled.li`
   color: ${({ theme }) => theme.text};
   width: 100%;
   padding: 0.7rem 0.9rem 0.9rem 1.2rem;
+  object-fit: contain;
+  box-sizing: border-box;
 `;
 
 export default ReviewFilter;
