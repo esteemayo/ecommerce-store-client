@@ -27,6 +27,8 @@ const Container = styled.div`
 
   svg {
     font-size: 2.5rem;
+    fill: ${({ theme }) => theme.star};
+    margin-right: 0.5rem;
   }
 `;
 
