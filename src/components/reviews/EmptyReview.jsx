@@ -1,6 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
+import StarRating from '../StarRating';
 
 const EmptyReview = () => {
   return (
