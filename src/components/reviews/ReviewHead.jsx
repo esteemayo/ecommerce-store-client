@@ -8,4 +8,8 @@ const ReviewHead = () => {
   );
 }
 
+const Container = styled.div`
+  
+`;
+
 export default ReviewHead;
