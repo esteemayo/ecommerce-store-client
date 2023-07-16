@@ -33,4 +33,8 @@ const Ratings = styled.div`
   
 `;
 
+const TotalRatings = styled.span`
+  
+`;
+
 export default ReviewHead;
