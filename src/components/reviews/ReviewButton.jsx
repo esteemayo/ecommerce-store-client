@@ -24,6 +24,7 @@ const Button = styled.button`
   border-radius: 0.5rem;
   outline-color: ${({ theme }) => theme.textRevBtn};
   cursor: pointer;
+  transition: all 0.3s ease;
 
   &:hover {
     background-position: 100%;
