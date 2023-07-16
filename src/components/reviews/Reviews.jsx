@@ -115,11 +115,9 @@ const Reviews = () => {
               <StarRating value={5} />
               <Message>Currently, there are no reviews for this product.</Message>
               <ReviewButton
-                type='button'
-                onClick={() => setIsModalOpen(true)}
-              >
-                Leave a review
-              </ReviewButton>
+                actionLabel='Leave a review'
+                onAction={() => setIsModalOpen(true)}
+              />
             </EmptyReview>
           )}
         </ReviewsWrapper>
