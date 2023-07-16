@@ -56,7 +56,7 @@ const Filter = styled.span`
 `;
 
 const FilterText = styled.span`
-  
+  display: inline-block;
 `;
 
 const FilterIcon = styled.span`
