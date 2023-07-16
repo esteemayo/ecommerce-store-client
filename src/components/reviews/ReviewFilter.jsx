@@ -13,7 +13,9 @@ const ReviewFilter = () => {
           <ArrowDropDownIcon />
         </FilterIcon>
       </Wrapper>
-      <FilterListContainer></FilterListContainer>
+      <FilterListContainer>
+        <FilterList>Newest</FilterList>
+      </FilterListContainer>
     </Container>
   );
 }
