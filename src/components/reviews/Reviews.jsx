@@ -6,7 +6,6 @@ import { useCallback, useEffect, useMemo, useState } from 'react';
 
 import StarRating from '../StarRating';
 import ReviewModal from '../modals/ReviewModal';
-import ReviewCard from './ReviewCard';
 
 import { reviewItems } from '@/data';
 import ReviewButton from './ReviewButton';
