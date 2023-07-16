@@ -16,6 +16,10 @@ const Reviews = () => {
   const [reviews, setReviews] = useState(reviewItems);
   const [isFilterOpen, setIsFilterOpen] = useState(false);
 
+  const handleCloseModal = useCallback(() => {
+    setIsModalOpen(false);
+  }, []);
+
   const handleCloseFilter = useCallback(() => {
     const reviewsEl = document.querySelector('.reviews');
     const filterEl = document.querySelector('.filter-wrapper');
