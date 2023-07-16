@@ -29,6 +29,10 @@ const Container = styled.div`
     font-size: 2.5rem;
     fill: ${({ theme }) => theme.star};
     margin-right: 0.5rem;
+
+    @media only screen and (max-width: 26.875em) {
+      font-size: 2.25rem;
+    }
   }
 `;
 
