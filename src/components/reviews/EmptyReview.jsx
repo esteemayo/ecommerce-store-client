@@ -42,6 +42,10 @@ const Container = styled.div`
 
 const Message = styled.span`
   color: ${({ theme }) => theme.text};
+
+  @media only screen and (max-width: 18.75em) {
+    font-size: 1.5rem;
+  }
 `;
 
 export default EmptyReview;
