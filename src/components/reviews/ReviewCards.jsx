@@ -3,6 +3,7 @@
 import styled from 'styled-components';
 
 import ReviewCard from './ReviewCard';
+import EmptyReview from './EmptyReview';
 
 const ReviewCards = ({ reviews }) => {
   return (
