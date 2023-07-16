@@ -93,6 +93,8 @@ const FilterListContainer = styled.ul`
   background-color: ${({ theme }) => theme.bgProdCard};
   border: 1px solid ${({ theme }) => theme.filterBorder};
   border-radius: 3px;
+  visibility: ${({ type }) => type === 'show' ? 'visible' : 'hidden'};
+  opacity: ${({ type }) => type === 'show' ? 1 : 0};
 `;
 
 const FilterList = styled.li`
