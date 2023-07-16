@@ -45,6 +45,10 @@ const Filter = styled.span`
   display: inline-block;
   font-size: 1.6rem;
   margin-right: 3px;
+
+  @media only screen and (max-width: 26.875em) {
+    font-size: 1.55rem;
+  }
 `;
 
 const FilterText = styled.span`
