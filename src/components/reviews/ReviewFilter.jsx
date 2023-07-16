@@ -86,6 +86,7 @@ const FilterListContainer = styled.ul`
   position: absolute;
   right: ${({ type }) => type === 'show' ? 0 : '-30rem'};
   top: 6rem;
+  list-style: none;
 `;
 
 const FilterList = styled.li`
