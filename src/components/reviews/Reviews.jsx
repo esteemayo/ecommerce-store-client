@@ -8,8 +8,6 @@ import StarRating from '../StarRating';
 import ReviewModal from '../modals/ReviewModal';
 
 import { reviewItems } from '@/data';
-import ReviewButton from './ReviewButton';
-import EmptyReview from './EmptyReview';
 
 const Reviews = () => {
   const [sort, setSort] = useState(null);
