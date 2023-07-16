@@ -16,6 +16,7 @@ const ReviewFilter = () => {
       <FilterListContainer>
         <FilterList>Newest</FilterList>
         <FilterList>Highest rating</FilterList>
+        <FilterList>Lowest rating</FilterList>
       </FilterListContainer>
     </Container>
   );
