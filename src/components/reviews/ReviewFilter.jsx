@@ -60,6 +60,10 @@ const FilterText = styled.span`
   text-transform: capitalize;
   font-size: 1.6rem;
   cursor: pointer;
+
+  @media only screen and (max-width: 26.875em) {
+    font-size: 1.55rem;
+  }
 `;
 
 const FilterIcon = styled.span`
