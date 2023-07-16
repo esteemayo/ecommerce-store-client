@@ -83,6 +83,11 @@ const Reviews = () => {
           onSort={setSort}
           onToggle={handleToggleFilter}
         />
+        <ReviewCards
+          rating={0}
+          reviews={reviews}
+          onOpen={handleOpenModal}
+        />
         <ReviewsWrapper>
           {reviews.length > 0 ? (
             <ReviewCardContainer>
