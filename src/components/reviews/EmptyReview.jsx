@@ -24,6 +24,10 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   gap: 1.3rem;
+
+  svg {
+    font-size: 2.5rem;
+  }
 `;
 
 const Message = styled.span`
