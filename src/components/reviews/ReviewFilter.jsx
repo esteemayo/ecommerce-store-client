@@ -87,6 +87,8 @@ const FilterListContainer = styled.ul`
   right: ${({ type }) => type === 'show' ? 0 : '-30rem'};
   top: 6rem;
   list-style: none;
+  width: 20rem;
+  padding: 0.4rem;
 `;
 
 const FilterList = styled.li`
