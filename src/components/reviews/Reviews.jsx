@@ -263,20 +263,6 @@ const FilterContainer = styled.div`
   justify-content: center;
 `;
 
-const Filter = styled.span`
-  display: inline-block;
-  font-size: 1.6rem;
-  margin-right: 3px;
-
-  @media only screen and (max-width: 26.875em) {
-    font-size: 1.55rem;
-  }
-
-  @media only screen and (max-width: 18.75em) {
-    font-size: 1.35rem;
-  }
-`;
-
 const ReviewsWrapper = styled.div`
   padding: 5rem 0 0.5rem 0;
   border-top: 1px solid ${({ theme }) => theme.cartBorder};
