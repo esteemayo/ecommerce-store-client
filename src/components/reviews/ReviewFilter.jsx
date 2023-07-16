@@ -9,7 +9,9 @@ const ReviewFilter = () => {
       <Wrapper className='filter-container'>
         <Filter>Sort:</Filter>
         <FilterText>Select</FilterText>
-        <FilterIcon></FilterIcon>
+        <FilterIcon>
+          <ArrowDropDownIcon />
+        </FilterIcon>
       </Wrapper>
     </Container>
   );
