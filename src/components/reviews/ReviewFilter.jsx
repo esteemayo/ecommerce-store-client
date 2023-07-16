@@ -7,6 +7,7 @@ const ReviewFilter = () => {
     <Container>
       <Wrapper className='filter-container'>
         <Filter>Sort:</Filter>
+        <FilterText>Select</FilterText>
       </Wrapper>
     </Container>
   );
