@@ -92,24 +92,13 @@ const Reviews = () => {
                 />
               </ReviewButtonWrapper>
             )}
-            <FilterWrapper className='filter-wrapper'>
-              <FilterContainer
-                sort={sort}
-                className='filter-container'
-                onClick={() => setIsFilterOpen(!isFilterOpen)}
-              >
-                <Filter>Sort:</Filter>
-                <FilterText>{getSort ?? 'Select'}</FilterText>
-                <FilterIcon>
-                  <ArrowDropDownIcon />
-                </FilterIcon>
-              </FilterContainer>
-              <FilterList type={isFilterOpen ? 'show' : ''}>
-                <ListCategory onClick={() => setSort('newest')}>Newest</ListCategory>
-                <ListCategory onClick={() => setSort('highest')}>Highest rating</ListCategory>
-                <ListCategory onClick={() => setSort('lowest')}>Lowest rating</ListCategory>
-              </FilterList>
-            </FilterWrapper>
+            <ReviewFilter
+              sort={sort}
+              value={getSort}
+              isOpen={isFilterOpen}
+              onClick={handleToggleFilter}
+              onSort={setSort}
+            />
           </ReviewsContainer>
         </ReviewContainer>
         <ReviewsWrapper>
