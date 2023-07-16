@@ -70,6 +70,10 @@ const Ratings = styled.div`
   justify-content: center;
   gap: 2rem;
   margin-bottom: 3rem;
+
+  @media only screen and (max-width: 26.875em) {
+    margin-bottom: 2rem;
+  }
 `;
 
 const TotalRatings = styled.span`
