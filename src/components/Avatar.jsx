@@ -21,4 +21,8 @@ const Container = styled.div`
   
 `;
 
+Avatar.propTypes = {
+  src: PropTypes.string.isRequired,
+};
+
 export default Avatar;
