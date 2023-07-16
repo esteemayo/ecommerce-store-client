@@ -46,4 +46,9 @@ const Wrapper = styled.div`
   padding-top: 1rem;
 `;
 
+ReviewCards.propTypes = {
+  rating: PropTypes.number.isRequired,
+  reviews: PropTypes.array.isRequired,
+};
+
 export default ReviewCards;
