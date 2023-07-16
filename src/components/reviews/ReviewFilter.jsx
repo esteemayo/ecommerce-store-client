@@ -122,4 +122,12 @@ const FilterList = styled.li`
   }
 `;
 
+ReviewFilter.propTypes = {
+  sort: PropTypes.string.isRequired,
+  value: PropTypes.string.isRequired,
+  isOpen: PropTypes.bool.isRequired,
+  onClick: PropTypes.func.isRequired,
+  onSort: PropTypes.func.isRequired,
+};
+
 export default ReviewFilter;
