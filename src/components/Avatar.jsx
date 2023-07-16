@@ -34,6 +34,11 @@ const Container = styled.div`
       width: 3.5rem;
       height: 3.5rem;
     }
+
+    @media only screen and (max-width: 18.75em) {
+      width: 3rem;
+      height: 3rem;
+    }
   }
 `;
 
