@@ -2,9 +2,9 @@
 
 import styled from 'styled-components';
 
-const ReviewButton = () => {
+const ReviewButton = ({ actionLabel, onAction }) => {
   return (
-    <Button type='button'>ReviewButton</Button>
+    <Button type='button' onClick={onAction}>{actionLabel}</Button>
   );
 }
 
