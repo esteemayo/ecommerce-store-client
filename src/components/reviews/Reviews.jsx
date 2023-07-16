@@ -292,18 +292,6 @@ const FilterText = styled.span`
   }
 `;
 
-const FilterIcon = styled.span`
-  padding-left: 0.5rem;
-  display: flex;
-  align-items: flex-end;
-  cursor: pointer;
-
-  svg {
-    font-size: 2rem;
-    fill: ${({ theme }) => theme.star};
-  }
-`;
-
 const ReviewsWrapper = styled.div`
   padding: 5rem 0 0.5rem 0;
   border-top: 1px solid ${({ theme }) => theme.cartBorder};
