@@ -110,6 +110,10 @@ const FilterList = styled.li`
   object-fit: contain;
   box-sizing: border-box;
   cursor: pointer;
+
+  &:hover {
+    background-color: ${({ theme }) => theme.filterHov};
+  }
 `;
 
 export default ReviewFilter;
