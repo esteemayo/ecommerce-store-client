@@ -7,7 +7,7 @@ import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
 import { useCallback, useEffect, useState } from 'react';
 
-const ReviewModal = ({ isOpen, setIsModalOpen }) => {
+const ReviewModal = ({ isOpen, onClose }) => {
   const [rating, setRating] = useState(null);
   const [review, setReview] = useState('');
   const [terms, setTerms] = useState(false);
@@ -22,9 +22,9 @@ const ReviewModal = ({ isOpen, setIsModalOpen }) => {
   }, [closeModalHandler]);
 
   const closeModalHandler = useCallback(() => {
-    setIsModalOpen(false);
+    onClose();
     handleClear();
-  }, [setIsModalOpen, handleClear]);
+  }, [onClose, handleClear]);
 
   const handleClear = useCallback(() => {
     setRating(null);
