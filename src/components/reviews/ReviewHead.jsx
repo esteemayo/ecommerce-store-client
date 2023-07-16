@@ -96,6 +96,8 @@ const TotalReviews = styled.span`
   display: inline-block;
   font-weight: normal;
   font-size: 1.8rem;
+  color: ${({ theme }) => theme.text};
+  line-height: 1.8rem;
 `;
 
 const Wrapper = styled.div`
