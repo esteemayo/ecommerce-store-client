@@ -17,6 +17,10 @@ const Reviews = () => {
   const [reviews, setReviews] = useState(reviewItems);
   const [isFilterOpen, setIsFilterOpen] = useState(false);
 
+  const handleOpenModal = useCallback(() => {
+    setIsModalOpen(true);
+  }, []);
+
   const handleCloseModal = useCallback(() => {
     setIsModalOpen(false);
   }, []);
