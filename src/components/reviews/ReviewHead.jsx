@@ -13,7 +13,9 @@ const ReviewHead = ({ rating, reviews }) => {
         <StarRating value={rating} />
         <TotalReviews>{reviews.length} reviews</TotalReviews>
       </Ratings>
-      <Wrapper></Wrapper>
+      <Wrapper>
+        <ReviewButtonWrapper></ReviewButtonWrapper>
+      </Wrapper>
     </Container>
   );
 }
