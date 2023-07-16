@@ -27,6 +27,10 @@ const Reviews = () => {
     setIsModalOpen(false);
   }, []);
 
+  const handleToggleFilter = useCallback(() => {
+    setIsFilterOpen((prev) => !prev);
+  }, []);
+
   const handleCloseFilter = useCallback(() => {
     const reviewsEl = document.querySelector('.reviews');
     const filterEl = document.querySelector('.filter-wrapper');
