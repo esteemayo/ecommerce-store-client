@@ -24,6 +24,11 @@ const Container = styled.div`
     display: inline-block;
     object-fit: cover;
     border-radius: 50%;
+
+    @media only screen and (max-width: 31.25em) {
+      width: 4.5rem;
+      height: 4.5rem;
+    }
   }
 `;
 
