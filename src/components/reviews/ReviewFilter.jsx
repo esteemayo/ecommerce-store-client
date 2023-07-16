@@ -13,7 +13,7 @@ const ReviewFilter = () => {
           <ArrowDropDownIcon />
         </FilterIcon>
       </Wrapper>
-      <FilterList></FilterList>
+      <FilterListContainer></FilterListContainer>
     </Container>
   );
 }
@@ -38,7 +38,7 @@ const FilterIcon = styled.span`
   
 `;
 
-const FilterList = styled.ul`
+const FilterListContainer = styled.ul`
   
 `;
 
