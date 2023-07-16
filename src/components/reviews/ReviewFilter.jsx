@@ -33,6 +33,7 @@ const Container = styled.div`
 const Wrapper = styled.div`
   width: 13rem;
   width: ${({ sort }) => (sort === 'highest' || sort === 'lowest') && '19rem'};
+  color: ${({ theme }) => theme.text};
 `;
 
 const Filter = styled.span`
