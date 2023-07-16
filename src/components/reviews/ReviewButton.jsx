@@ -14,6 +14,13 @@ const Button = styled.button`
   padding: 1rem;
   background-color: ${({ theme }) => theme.bgRevBtn};
   color:  ${({ theme }) => theme.textRevBtn};
+  background-image: ${({ theme }) => `linear-gradient(
+    120deg,
+    transparent 0%,
+    transparent 50%,
+    ${theme.bgImgRevBtn} 50%
+  )`};
+  background-size: 220%;
 `;
 
 export default ReviewButton;
