@@ -9,6 +9,7 @@ import ReviewModal from '../modals/ReviewModal';
 import ReviewCard from './ReviewCard';
 
 import { reviewItems } from '@/data';
+import ReviewButton from './ReviewButton';
 
 const Reviews = () => {
   const [sort, setSort] = useState(null);
