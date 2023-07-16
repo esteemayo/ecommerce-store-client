@@ -76,11 +76,9 @@ const Reviews = () => {
             {reviews.length > 0 && (
               <ReviewButtonWrapper>
                 <ReviewButton
-                  type='button'
-                  onClick={() => setIsModalOpen(true)}
-                >
-                  Leave a review
-                </ReviewButton>
+                  actionLabel='Leave a review'
+                  onAction={() => setIsModalOpen(true)}
+                />
               </ReviewButtonWrapper>
             )}
             <FilterWrapper className='filter-wrapper'>
