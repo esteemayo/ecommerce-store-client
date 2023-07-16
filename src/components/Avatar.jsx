@@ -3,9 +3,16 @@
 import styled from 'styled-components';
 import Image from 'next/image';
 
-const Avatar = () => {
+const Avatar = ({ src }) => {
   return (
-    <Container>Avatar</Container>
+    <Container>
+      <Image
+        src={src}
+        width={50}
+        height={50}
+        alt=''
+      />
+    </Container>
   );
 }
 
