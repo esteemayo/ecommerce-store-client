@@ -104,6 +104,7 @@ const FilterList = styled.li`
   display: block;
   text-transform: capitalize;
   font-size: 1.3rem;
+  color: ${({ theme }) => theme.text};
 `;
 
 export default ReviewFilter;
