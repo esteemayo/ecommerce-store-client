@@ -24,6 +24,10 @@ const Button = styled.button`
   border-radius: 0.5rem;
   outline-color: ${({ theme }) => theme.textRevBtn};
   cursor: pointer;
+
+  &:hover {
+    background-position: 100%;
+  }
 `;
 
 export default ReviewButton;
