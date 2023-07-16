@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const ReviewHead = () => {
   return (
-    <div>ReviewHead</div>
+    <Container>ReviewHead</Container>
   );
 }
 
