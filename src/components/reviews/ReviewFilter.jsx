@@ -3,7 +3,7 @@
 import styled from 'styled-components';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
-const ReviewFilter = ({ sort, value, onClick }) => {
+const ReviewFilter = ({ sort, value, isOpen, onClick }) => {
   return (
     <Container className='filter-wrapper'>
       <Wrapper
@@ -17,7 +17,7 @@ const ReviewFilter = ({ sort, value, onClick }) => {
           <ArrowDropDownIcon />
         </FilterIcon>
       </Wrapper>
-      <FilterListContainer>
+      <FilterListContainer type={isOpen ? 'show' : ''}>
         <FilterList>Newest</FilterList>
         <FilterList>Highest rating</FilterList>
         <FilterList>Lowest rating</FilterList>
