@@ -1,6 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 import ReviewCard from './ReviewCard';
 import EmptyReview from './EmptyReview';
