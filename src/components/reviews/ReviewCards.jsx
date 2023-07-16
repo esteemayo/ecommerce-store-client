@@ -5,7 +5,18 @@ import styled from 'styled-components';
 import ReviewCard from './ReviewCard';
 import EmptyReview from './EmptyReview';
 
-const ReviewCards = ({ reviews }) => {
+const ReviewCards = ({ rating, reviews }) => {
+  if (reviews.length === 0) {
+    return (
+      <Container>
+        <EmptyReview
+          rating={rating}
+          onClick={handleOpenModal}
+        />
+      </Container>
+    );
+  }
+
   return (
     <Container>
       <Wrapper></Wrapper>
