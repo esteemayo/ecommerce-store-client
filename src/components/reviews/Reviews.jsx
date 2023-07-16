@@ -252,17 +252,6 @@ const FilterWrapper = styled.div`
   justify-content: center;
 `;
 
-const FilterContainer = styled.div`
-  width: 13rem;
-  width: ${({ sort }) => (sort === 'highest' || sort === 'lowest') && '19rem'};
-  color: ${({ theme }) => theme.text};
-  padding: 2rem 0;
-  padding-right: 3rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
-
 const ReviewsWrapper = styled.div`
   padding: 5rem 0 0.5rem 0;
   border-top: 1px solid ${({ theme }) => theme.cartBorder};
