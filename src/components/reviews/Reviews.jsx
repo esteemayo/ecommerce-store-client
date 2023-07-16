@@ -110,8 +110,6 @@ const Reviews = () => {
           ) : (
             <EmptyReview
               rating={5}
-              title='Currently, there are no reviews for this product.'
-              label='Leave a review'
               onClick={handleOpenModal}
             />
           )}
