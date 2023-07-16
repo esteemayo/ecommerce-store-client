@@ -172,18 +172,6 @@ const ReviewContainer = styled.div`
   }
 `;
 
-const Ratings = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-  margin-bottom: 3rem;
-
-  @media only screen and (max-width: 26.875em) {
-    margin-bottom: 2rem;
-  }
-`;
-
 const ReviewsWrapper = styled.div`
   padding: 5rem 0 0.5rem 0;
   border-top: 1px solid ${({ theme }) => theme.cartBorder};
