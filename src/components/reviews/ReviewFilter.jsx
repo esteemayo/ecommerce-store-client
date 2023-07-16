@@ -1,6 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
 const ReviewFilter = () => {
   return (
