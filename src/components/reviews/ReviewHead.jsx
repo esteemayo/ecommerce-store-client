@@ -77,7 +77,7 @@ const Ratings = styled.div`
 `;
 
 const TotalRatings = styled.span`
-  
+  display: inline-block;
 `;
 
 const TotalReviews = styled.span`
