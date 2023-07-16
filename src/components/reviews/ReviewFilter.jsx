@@ -101,7 +101,7 @@ const FilterListContainer = styled.ul`
 `;
 
 const FilterList = styled.li`
-  
+  display: block;
 `;
 
 export default ReviewFilter;
