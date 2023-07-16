@@ -33,7 +33,7 @@ const Container = styled.div`
 `;
 
 const Message = styled.span`
-  
+  color: ${({ theme }) => theme.text};
 `;
 
 export default EmptyReview;
