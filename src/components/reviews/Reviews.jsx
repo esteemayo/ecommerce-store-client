@@ -75,32 +75,16 @@ const Reviews = () => {
     <Container id='reviews' className='reviews' onClick={handleCloseFilter}>
       <Wrapper>
         <Heading>Reviews</Heading>
-        <ReviewContainer>
-          <Ratings>
-            <TotalRatings>
-              {reviews.length === 0 ? 0 : reviews.length.toFixed(1)}
-            </TotalRatings>
-            <StarRating value={0} />
-            <TotalReviews>{reviews.length} reviews</TotalReviews>
-          </Ratings>
-          <ReviewsContainer>
-            {reviews.length > 0 && (
-              <ReviewButtonWrapper>
-                <ReviewButton
-                  actionLabel='Leave a review'
-                  onAction={handleOpenModal}
-                />
-              </ReviewButtonWrapper>
-            )}
-            <ReviewFilter
-              sort={sort}
-              value={getSort}
-              isOpen={isFilterOpen}
-              onClick={handleToggleFilter}
-              onSort={setSort}
-            />
-          </ReviewsContainer>
-        </ReviewContainer>
+        <ReviewHead
+          sort={sort}
+          sortLabel={getSort}
+          rating={0}
+          reviews={reviews}
+          isOpen={isFilterOpen}
+          onOpen={handleOpenModal}
+          onSort={setSort}
+          onToggle={handleToggleFilter}
+        />
         <ReviewsWrapper>
           {reviews.length > 0 ? (
             <ReviewCardContainer>
