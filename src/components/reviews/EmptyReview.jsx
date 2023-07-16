@@ -49,6 +49,11 @@ const Message = styled.span`
   }
 `;
 
+EmptyReview.defaultProps = {
+  title: 'Currently, there are no reviews for this product.',
+  label: 'Leave a review',
+};
+
 EmptyReview.propTypes = {
   rating: PropTypes.number.isRequired,
   title: PropTypes.string.isRequired,
