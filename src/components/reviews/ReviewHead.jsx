@@ -15,7 +15,12 @@ const ReviewHead = ({ rating, reviews }) => {
         <TotalReviews>{reviews.length} reviews</TotalReviews>
       </Ratings>
       <Wrapper>
-        <ReviewButtonWrapper></ReviewButtonWrapper>
+        <ReviewButtonWrapper>
+          <ReviewButton
+            actionLabel='Leave a review'
+            onAction={handleOpenModal}
+          />
+        </ReviewButtonWrapper>
       </Wrapper>
     </Container>
   );
