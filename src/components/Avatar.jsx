@@ -18,7 +18,10 @@ const Avatar = ({ src }) => {
 }
 
 const Container = styled.div`
-  
+  img {
+    width: 5rem;
+    height: 5rem;
+  }
 `;
 
 Avatar.propTypes = {
