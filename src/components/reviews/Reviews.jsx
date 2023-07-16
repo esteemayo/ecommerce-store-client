@@ -5,7 +5,6 @@ import { useCallback, useEffect, useMemo, useState } from 'react';
 
 import ReviewCard from './ReviewCard';
 import EmptyReview from './EmptyReview';
-import ReviewFilter from './ReviewFilter';
 
 import StarRating from '../StarRating';
 import ReviewModal from '../modals/ReviewModal';
