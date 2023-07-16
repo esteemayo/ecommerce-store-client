@@ -82,6 +82,10 @@ const TotalRatings = styled.span`
   font-size: 3.2rem;
   color: ${({ theme }) => theme.text};
   line-height: 3.2rem;
+
+  @media only screen and (max-width: 26.875em) {
+    font-size: 3rem;
+  }
 `;
 
 const TotalReviews = styled.span`
