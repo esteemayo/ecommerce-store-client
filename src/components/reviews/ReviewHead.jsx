@@ -3,6 +3,7 @@
 import styled from 'styled-components';
 
 import ReviewButton from './ReviewButton';
+import StarRating from '../StarRating';
 import ReviewFilter from './ReviewFilter';
 
 const ReviewHead = ({ sort, sortLabel, rating, reviews, onOpen, onSort, onToggle }) => {
