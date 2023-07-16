@@ -84,6 +84,8 @@ const FilterIcon = styled.span`
 
 const FilterListContainer = styled.ul`
   position: absolute;
+  right: ${({ type }) => type === 'show' ? 0 : '-30rem'};
+  top: 6rem;
 `;
 
 const FilterList = styled.li`
