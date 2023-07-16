@@ -4,7 +4,6 @@ import styled from 'styled-components';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 
 import ReviewCard from './ReviewCard';
-import ReviewButton from './ReviewButton';
 import EmptyReview from './EmptyReview';
 import ReviewFilter from './ReviewFilter';
 
