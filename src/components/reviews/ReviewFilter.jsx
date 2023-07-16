@@ -24,4 +24,8 @@ const Filter = styled.span`
   
 `;
 
+const FilterText = styled.span`
+  
+`;
+
 export default ReviewFilter;
