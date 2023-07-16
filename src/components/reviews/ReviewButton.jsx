@@ -21,6 +21,8 @@ const Button = styled.button`
     ${theme.bgImgRevBtn} 50%
   )`};
   background-size: 220%;
+  border-radius: 0.5rem;
+  outline-color: ${({ theme }) => theme.textRevBtn};
 `;
 
 export default ReviewButton;
