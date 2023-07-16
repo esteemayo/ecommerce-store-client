@@ -13,6 +13,7 @@ const ReviewFilter = () => {
           <ArrowDropDownIcon />
         </FilterIcon>
       </Wrapper>
+      <FilterList></FilterList>
     </Container>
   );
 }
