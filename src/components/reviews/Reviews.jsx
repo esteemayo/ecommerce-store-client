@@ -145,14 +145,4 @@ const Heading = styled.h1`
   line-height: 3.2rem;
 `;
 
-const ReviewsWrapper = styled.div`
-  padding: 5rem 0 0.5rem 0;
-  border-top: 1px solid ${({ theme }) => theme.cartBorder};
-  position: relative;
-
-  @media only screen and (max-width: 26.875em) {
-    padding-top: 3rem;
-  }
-`;
-
 export default Reviews;
