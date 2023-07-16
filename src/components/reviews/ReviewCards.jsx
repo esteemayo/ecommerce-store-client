@@ -4,7 +4,9 @@ import styled from 'styled-components';
 
 const ReviewCards = () => {
   return (
-    <Container>ReviewCards</Container>
+    <Container>
+      <Wrapper></Wrapper>
+    </Container>
   );
 }
 
