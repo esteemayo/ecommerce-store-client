@@ -42,4 +42,9 @@ const Button = styled.button`
   }
 `;
 
+ReviewButton.propTypes = {
+  actionLabel: PropTypes.string.isRequired,
+  onAction: PropTypes.func.isRequired,
+};
+
 export default ReviewButton;
