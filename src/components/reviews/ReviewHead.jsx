@@ -29,7 +29,7 @@ const ReviewHead = ({ sort, sortLabel, rating, reviews, onOpen, onSort, onToggle
           value={sortLabel}
           isOpen={isFilterOpen}
           onClick={onToggle}
-          onSort={setSort}
+          onSort={onSort}
         />
       </Wrapper>
     </Container>
