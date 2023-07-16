@@ -277,21 +277,6 @@ const Filter = styled.span`
   }
 `;
 
-const FilterText = styled.span`
-  display: inline-block;
-  text-transform: capitalize;
-  font-size: 1.6rem;
-  cursor: pointer;
-
-  @media only screen and (max-width: 26.875em) {
-    font-size: 1.55rem;
-  }
-
-  @media only screen and (max-width: 18.75em) {
-    font-size: 1.35rem;
-  }
-`;
-
 const ReviewsWrapper = styled.div`
   padding: 5rem 0 0.5rem 0;
   border-top: 1px solid ${({ theme }) => theme.cartBorder};
