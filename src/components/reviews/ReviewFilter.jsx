@@ -18,4 +18,8 @@ const Wrapper = styled.div`
   
 `;
 
+const Filter = styled.span`
+  
+`;
+
 export default ReviewFilter;
