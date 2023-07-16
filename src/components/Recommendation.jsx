@@ -73,7 +73,7 @@ const Container = styled.section`
 `;
 
 const Heading = styled.h1`
-  display: block;
+  display: inline-block;
   text-align: left;
   font-weight: 500;
   font-size: 3.2rem;
