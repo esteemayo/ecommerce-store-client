@@ -24,6 +24,10 @@ const ReviewFilter = () => {
 
 const Container = styled.div`
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
 `;
 
 const Wrapper = styled.div`
