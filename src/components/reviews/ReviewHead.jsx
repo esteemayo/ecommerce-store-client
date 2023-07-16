@@ -12,6 +12,7 @@ const ReviewHead = ({
   sortLabel,
   rating,
   reviews,
+  isOpen,
   onOpen,
   onSort,
   onToggle,
@@ -37,7 +38,7 @@ const ReviewHead = ({
         <ReviewFilter
           sort={sort}
           value={sortLabel}
-          isOpen={isFilterOpen}
+          isOpen={isOpen}
           onClick={onToggle}
           onSort={onSort}
         />
@@ -117,5 +118,16 @@ const Wrapper = styled.div`
 `;
 
 const ReviewButtonWrapper = styled.div``;
+
+ReviewHead.propTypes = {
+  sort: PropTypes.string.isRequired,
+  sortLabel: PropTypes.string.isRequired,
+  rating: PropTypes.number.isRequired,
+  reviews: PropTypes.array.isRequired,
+  isOpen: PropTypes.bool.isRequired,
+  onOpen: PropTypes.func.isRequired,
+  onSort: PropTypes.func.isRequired,
+  onToggle: PropTypes.func.isRequired,
+};
 
 export default ReviewHead;
