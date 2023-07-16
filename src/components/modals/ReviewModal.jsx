@@ -22,6 +22,7 @@ const ReviewModal = ({ isOpen, onClose }) => {
   }, [closeModalHandler]);
 
   const closeModalHandler = useCallback(() => {
+    setShowModal(false);
     onClose();
     handleClear();
   }, [onClose, handleClear]);
