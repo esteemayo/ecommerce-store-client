@@ -5,7 +5,7 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
 const ReviewFilter = () => {
   return (
-    <Container>
+    <Container className='filter-wrapper'>
       <Wrapper className='filter-container'>
         <Filter>Sort:</Filter>
         <FilterText>Select</FilterText>
