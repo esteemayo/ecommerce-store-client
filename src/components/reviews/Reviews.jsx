@@ -81,7 +81,7 @@ const Reviews = () => {
               <ReviewButtonWrapper>
                 <ReviewButton
                   actionLabel='Leave a review'
-                  onAction={() => setIsModalOpen(true)}
+                  onAction={handleOpenModal}
                 />
               </ReviewButtonWrapper>
             )}
