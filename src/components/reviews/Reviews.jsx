@@ -322,23 +322,6 @@ const FilterList = styled.ul`
   transition: all 0.3s linear;
 `;
 
-const ListCategory = styled.li`
-  display: block;
-  text-transform: capitalize;
-  font-size: 1.3rem;
-  color: ${({ theme }) => theme.text};
-  width: 100%;
-  padding: 0.7rem 0.9rem 0.9rem 1.2rem;
-  object-fit: contain;
-  box-sizing: border-box;
-  cursor: pointer;
-  transition: all 0.3s ease;
-
-  &:hover {
-    background-color: ${({ theme }) => theme.filterHov};
-  }
-`;
-
 const ReviewsWrapper = styled.div`
   padding: 5rem 0 0.5rem 0;
   border-top: 1px solid ${({ theme }) => theme.cartBorder};
