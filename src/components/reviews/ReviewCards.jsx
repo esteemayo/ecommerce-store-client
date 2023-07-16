@@ -6,13 +6,13 @@ import PropTypes from 'prop-types';
 import ReviewCard from './ReviewCard';
 import EmptyReview from './EmptyReview';
 
-const ReviewCards = ({ rating, reviews }) => {
+const ReviewCards = ({ rating, reviews, onOpen }) => {
   if (reviews.length === 0) {
     return (
       <Container>
         <EmptyReview
           rating={rating}
-          onClick={handleOpenModal}
+          onClick={onOpen}
         />
       </Container>
     );
@@ -49,6 +49,7 @@ const Wrapper = styled.div`
 ReviewCards.propTypes = {
   rating: PropTypes.number.isRequired,
   reviews: PropTypes.array.isRequired,
+  onOpen: PropTypes.func.isRequired,
 };
 
 export default ReviewCards;
