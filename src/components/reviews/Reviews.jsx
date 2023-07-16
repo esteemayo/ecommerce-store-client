@@ -244,14 +244,6 @@ const ReviewsContainer = styled.div`
   gap: 3rem;
 `;
 
-const FilterWrapper = styled.div`
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: center;
-`;
-
 const ReviewsWrapper = styled.div`
   padding: 5rem 0 0.5rem 0;
   border-top: 1px solid ${({ theme }) => theme.cartBorder};
