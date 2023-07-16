@@ -240,6 +240,4 @@ const ReviewCardContainer = styled.div`
   padding-top: 1rem;
 `;
 
-const ReviewButtonWrapper = styled.div``;
-
 export default Reviews;
