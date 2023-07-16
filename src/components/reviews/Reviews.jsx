@@ -114,14 +114,12 @@ const Reviews = () => {
               })}
             </ReviewCardContainer>
           ) : (
-            <EmptyReview>
-              <StarRating value={5} />
-              <Message>Currently, there are no reviews for this product.</Message>
-              <ReviewButton
-                actionLabel='Leave a review'
-                onAction={handleOpenModal}
-              />
-            </EmptyReview>
+            <EmptyReview
+              rating={5}
+              title='Currently, there are no reviews for this product.'
+              label='Leave a review'
+              onClick={handleOpenModal}
+            />
           )}
         </ReviewsWrapper>
       </Wrapper>
