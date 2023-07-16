@@ -49,4 +49,11 @@ const Message = styled.span`
   }
 `;
 
+EmptyReview.propTypes = {
+  rating: PropTypes.number.isRequired,
+  title: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired,
+  onClick: PropTypes.func.isRequired,
+};
+
 export default EmptyReview;
