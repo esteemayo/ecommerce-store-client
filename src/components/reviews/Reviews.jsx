@@ -184,22 +184,6 @@ const Ratings = styled.div`
   }
 `;
 
-const TotalRatings = styled.span`
-  display: inline-block;
-  font-weight: 500;
-  font-size: 3.2rem;
-  color: ${({ theme }) => theme.text};
-  line-height: 3.2rem;
-
-  @media only screen and (max-width: 26.875em) {
-    font-size: 3rem;
-  }
-
-  @media only screen and (max-width: 18.75em) {
-    font-size: 2.8rem;
-  }
-`;
-
 const ReviewsWrapper = styled.div`
   padding: 5rem 0 0.5rem 0;
   border-top: 1px solid ${({ theme }) => theme.cartBorder};
