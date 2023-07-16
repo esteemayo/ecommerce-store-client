@@ -56,7 +56,7 @@ EmptyReview.defaultProps = {
 
 EmptyReview.propTypes = {
   rating: PropTypes.number.isRequired,
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   label: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired,
 };
