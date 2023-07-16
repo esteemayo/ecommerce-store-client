@@ -3,13 +3,14 @@
 import styled from 'styled-components';
 import StarRating from '../StarRating';
 
-const ReviewHead = ({ reviews }) => {
+const ReviewHead = ({ rating, reviews }) => {
   return (
     <Container>
       <Ratings>
         <TotalRatings>
           {reviews.length === 0 ? 0 : reviews.length.toFixed(1)}
         </TotalRatings>
+        <StarRating value={rating} />
       </Ratings>
     </Container>
   );
