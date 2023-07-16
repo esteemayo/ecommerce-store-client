@@ -22,6 +22,8 @@ const Container = styled.div`
     width: 5rem;
     height: 5rem;
     display: inline-block;
+    object-fit: cover;
+    border-radius: 50%;
   }
 `;
 
