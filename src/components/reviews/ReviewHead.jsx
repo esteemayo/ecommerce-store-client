@@ -98,6 +98,10 @@ const TotalReviews = styled.span`
   font-size: 1.8rem;
   color: ${({ theme }) => theme.text};
   line-height: 1.8rem;
+
+  @media only screen and (max-width: 26.875em) {
+    font-size: 1.6rem;
+  }
 `;
 
 const Wrapper = styled.div`
