@@ -19,7 +19,11 @@ const EmptyReview = ({ rating, title, label, onClick }) => {
 }
 
 const Container = styled.div`
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.3rem;
 `;
 
 const Message = styled.span`
