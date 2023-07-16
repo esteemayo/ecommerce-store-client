@@ -91,6 +91,8 @@ const FilterListContainer = styled.ul`
   padding: 0.4rem;
   text-align: left;
   background-color: ${({ theme }) => theme.bgProdCard};
+  border: 1px solid ${({ theme }) => theme.filterBorder};
+  border-radius: 3px;
 `;
 
 const FilterList = styled.li`
