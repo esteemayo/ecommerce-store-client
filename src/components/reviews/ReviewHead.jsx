@@ -16,6 +16,10 @@ const Container = styled.div`
   svg {
     font-size: 3rem;
     color: ${({ theme }) => theme.star};
+
+    @media only screen and (max-width: 26.875em) {
+      font-size: 2.65rem;
+    }
   }
 `;
 
