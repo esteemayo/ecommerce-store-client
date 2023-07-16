@@ -125,7 +125,7 @@ const Reviews = () => {
       </Wrapper>
       <ReviewModal
         isOpen={isModalOpen}
-        setIsModalOpen={setIsModalOpen}
+        onClose={handleCloseModal}
       />
     </Container>
   );
