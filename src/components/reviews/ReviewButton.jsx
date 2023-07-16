@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const ReviewButton = () => {
   return (
-    <div>ReviewButton</div>
+    <Button type='button'>ReviewButton</Button>
   );
 }
 
