@@ -83,7 +83,7 @@ const FilterIcon = styled.span`
 `;
 
 const FilterListContainer = styled.ul`
-  
+  position: absolute;
 `;
 
 const FilterList = styled.li`
