@@ -304,24 +304,6 @@ const FilterIcon = styled.span`
   }
 `;
 
-const FilterList = styled.ul`
-  position: absolute;
-  right: ${({ type }) => type === 'show' ? 0 : '-30rem'};
-  top: 6rem;
-  list-style: none;
-  width: 20rem;
-  padding: 0.4rem;
-  text-align: left;
-  background-color: ${({ theme }) => theme.bgProdCard};
-  border: 1px solid ${({ theme }) => theme.filterBorder};
-  border-radius: 3px;
-  visibility: ${({ type }) => type === 'show' ? 'visible' : 'hidden'};
-  opacity: ${({ type }) => type === 'show' ? 1 : 0};
-  transform: scale(${({ type }) => type === 'show' ? 1 : 0});
-  z-index: ${({ type }) => type === 'show' ? 1000 : -1};
-  transition: all 0.3s linear;
-`;
-
 const ReviewsWrapper = styled.div`
   padding: 5rem 0 0.5rem 0;
   border-top: 1px solid ${({ theme }) => theme.cartBorder};
