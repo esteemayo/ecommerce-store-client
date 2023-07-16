@@ -19,7 +19,11 @@ const ReviewCards = ({ rating, reviews }) => {
 
   return (
     <Container>
-      <Wrapper></Wrapper>
+      <Wrapper>
+        {reviews.map((item) => {
+          return <ReviewCard key={item.id} {...item} />;
+        })}
+      </Wrapper>
     </Container>
   );
 }
