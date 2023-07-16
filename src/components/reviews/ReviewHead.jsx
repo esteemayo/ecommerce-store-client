@@ -53,4 +53,6 @@ const Wrapper = styled.div`
   
 `;
 
+const ReviewButtonWrapper = styled.div``;
+
 export default ReviewHead;
