@@ -4,11 +4,11 @@ import styled from 'styled-components';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 
 import ReviewHead from './ReviewHead';
+import ReviewCards from './ReviewCards';
 
 import ReviewModal from '../modals/ReviewModal';
 
 import { reviewItems } from '@/data';
-import ReviewCards from './ReviewCards';
 
 const Reviews = () => {
   const [sort, setSort] = useState(null);
