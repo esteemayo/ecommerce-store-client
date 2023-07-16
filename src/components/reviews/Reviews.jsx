@@ -88,20 +88,6 @@ const Reviews = () => {
           reviews={reviews}
           onOpen={handleOpenModal}
         />
-        <ReviewsWrapper>
-          {reviews.length > 0 ? (
-            <ReviewCardContainer>
-              {reviews.map((item) => {
-                return <ReviewCard key={item.id} {...item} />;
-              })}
-            </ReviewCardContainer>
-          ) : (
-            <EmptyReview
-              rating={5}
-              onClick={handleOpenModal}
-            />
-          )}
-        </ReviewsWrapper>
       </Wrapper>
       <ReviewModal
         isOpen={isModalOpen}
