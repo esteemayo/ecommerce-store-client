@@ -42,7 +42,7 @@ const Wrapper = styled.div`
 `;
 
 const Filter = styled.span`
-  
+  display: inline-block;
 `;
 
 const FilterText = styled.span`
