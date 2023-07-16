@@ -90,6 +90,7 @@ const FilterListContainer = styled.ul`
   width: 20rem;
   padding: 0.4rem;
   text-align: left;
+  background-color: ${({ theme }) => theme.bgProdCard};
 `;
 
 const FilterList = styled.li`
