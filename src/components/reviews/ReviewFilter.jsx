@@ -110,6 +110,7 @@ const FilterList = styled.li`
   object-fit: contain;
   box-sizing: border-box;
   cursor: pointer;
+  transition: all 0.3s ease;
 
   &:hover {
     background-color: ${({ theme }) => theme.filterHov};
