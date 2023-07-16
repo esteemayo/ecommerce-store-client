@@ -4,7 +4,9 @@ import styled from 'styled-components';
 
 const ReviewButton = ({ actionLabel, onAction }) => {
   return (
-    <Button type='button' onClick={onAction}>{actionLabel}</Button>
+    <Button type='button' onClick={onAction}>
+      {actionLabel}
+    </Button>
   );
 }
 
