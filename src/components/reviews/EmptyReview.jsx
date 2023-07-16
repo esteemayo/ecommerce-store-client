@@ -3,10 +3,11 @@
 import styled from 'styled-components';
 import StarRating from '../StarRating';
 
-const EmptyReview = ({ rating }) => {
+const EmptyReview = ({ rating, title }) => {
   return (
     <Container>
       <StarRating value={rating} />
+      <Message>{title}</Message>
     </Container>
   );
 }
