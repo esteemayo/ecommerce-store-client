@@ -27,4 +27,8 @@ const Container = styled.div`
   }
 `;
 
+const Ratings = styled.div`
+  
+`;
+
 export default ReviewHead;
