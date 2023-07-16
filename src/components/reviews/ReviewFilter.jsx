@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 
 const ReviewFilter = ({ sort, value, isOpen, onClick, onSort }) => {
   return (
-    <Container className='filter-wrapper'>
+    <Container className='filter-container'>
       <Wrapper
         sort={sort}
         className='filter-container'
