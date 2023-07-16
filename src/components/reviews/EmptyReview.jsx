@@ -5,14 +5,14 @@ import styled from 'styled-components';
 import StarRating from '../StarRating';
 import ReviewButton from './ReviewButton';
 
-const EmptyReview = ({ rating, title }) => {
+const EmptyReview = ({ rating, title, label, onClick }) => {
   return (
     <Container>
       <StarRating value={rating} />
       <Message>{title}</Message>
       <ReviewButton
-        actionLabel='Leave a review'
-        onAction={handleOpenModal}
+        actionLabel={label}
+        onAction={onClick}
       />
     </Container>
   );
