@@ -18,7 +18,7 @@ const ReviewHead = ({ rating, reviews, onOpen }) => {
         <ReviewButtonWrapper>
           <ReviewButton
             actionLabel='Leave a review'
-            onAction={handleOpenModal}
+            onAction={onOpen}
           />
         </ReviewButtonWrapper>
       </Wrapper>
