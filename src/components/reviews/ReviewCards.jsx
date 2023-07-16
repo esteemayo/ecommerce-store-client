@@ -2,7 +2,9 @@
 
 import styled from 'styled-components';
 
-const ReviewCards = () => {
+import ReviewCard from './ReviewCard';
+
+const ReviewCards = ({ reviews }) => {
   return (
     <Container>
       <Wrapper></Wrapper>
