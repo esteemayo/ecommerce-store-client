@@ -26,7 +26,7 @@ const ReviewHead = ({ sort, sortLabel, rating, reviews, onOpen }) => {
         )}
         <ReviewFilter
           sort={sort}
-          value={getSort}
+          value={sortLabel}
           isOpen={isFilterOpen}
           onClick={handleToggleFilter}
           onSort={setSort}
