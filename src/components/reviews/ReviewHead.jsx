@@ -15,12 +15,14 @@ const ReviewHead = ({ rating, reviews, onOpen }) => {
         <TotalReviews>{reviews.length} reviews</TotalReviews>
       </Ratings>
       <Wrapper>
-        <ReviewButtonWrapper>
-          <ReviewButton
-            actionLabel='Leave a review'
-            onAction={onOpen}
-          />
-        </ReviewButtonWrapper>
+        {reviews.length > 0 && (
+          <ReviewButtonWrapper>
+            <ReviewButton
+              actionLabel='Leave a review'
+              onAction={onOpen}
+            />
+          </ReviewButtonWrapper>
+        )}
       </Wrapper>
     </Container>
   );
