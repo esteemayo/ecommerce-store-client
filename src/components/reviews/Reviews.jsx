@@ -3,7 +3,6 @@
 import styled from 'styled-components';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 
-import ReviewCard from './ReviewCard';
 import ReviewHead from './ReviewHead';
 
 import ReviewModal from '../modals/ReviewModal';
