@@ -5,7 +5,7 @@ import StarRating from '../StarRating';
 import ReviewButton from './ReviewButton';
 import ReviewFilter from './ReviewFilter';
 
-const ReviewHead = ({ sort, sortLabel, rating, reviews, onOpen, onToggle }) => {
+const ReviewHead = ({ sort, sortLabel, rating, reviews, onOpen, onSort, onToggle }) => {
   return (
     <Container>
       <Ratings>
