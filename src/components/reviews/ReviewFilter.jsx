@@ -59,6 +59,7 @@ const FilterText = styled.span`
   display: inline-block;
   text-transform: capitalize;
   font-size: 1.6rem;
+  cursor: pointer;
 `;
 
 const FilterIcon = styled.span`
