@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const Avatar = () => {
   return (
-    <div>Avatar</div>
+    <Container>Avatar</Container>
   );
 }
 
