@@ -109,6 +109,7 @@ const FilterList = styled.li`
   padding: 0.7rem 0.9rem 0.9rem 1.2rem;
   object-fit: contain;
   box-sizing: border-box;
+  cursor: pointer;
 `;
 
 export default ReviewFilter;
