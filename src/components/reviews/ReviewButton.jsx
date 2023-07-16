@@ -11,6 +11,7 @@ const ReviewButton = () => {
 const Button = styled.button`
   border: none;
   display: inline-block;
+  padding: 1rem;
 `;
 
 export default ReviewButton;
