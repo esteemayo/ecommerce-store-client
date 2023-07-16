@@ -74,6 +74,7 @@ const FilterIcon = styled.span`
   padding-left: 0.5rem;
   display: flex;
   align-items: flex-end;
+  cursor: pointer;
 `;
 
 const FilterListContainer = styled.ul`
