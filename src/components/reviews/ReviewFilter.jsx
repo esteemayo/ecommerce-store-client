@@ -36,6 +36,9 @@ const Wrapper = styled.div`
   color: ${({ theme }) => theme.text};
   padding: 2rem 0;
   padding-right: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 const Filter = styled.span`
