@@ -102,6 +102,8 @@ const FilterListContainer = styled.ul`
 
 const FilterList = styled.li`
   display: block;
+  text-transform: capitalize;
+  font-size: 1.3rem;
 `;
 
 export default ReviewFilter;
