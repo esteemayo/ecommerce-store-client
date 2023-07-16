@@ -3,7 +3,7 @@
 import styled from 'styled-components';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
-const ReviewFilter = ({ sort, value, isOpen, onClick }) => {
+const ReviewFilter = ({ sort, value, isOpen, onClick, onSort }) => {
   return (
     <Container className='filter-wrapper'>
       <Wrapper
