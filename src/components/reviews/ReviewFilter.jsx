@@ -75,6 +75,11 @@ const FilterIcon = styled.span`
   display: flex;
   align-items: flex-end;
   cursor: pointer;
+
+  svg {
+    font-size: 2rem;
+    fill: ${({ theme }) => theme.star};
+  }
 `;
 
 const FilterListContainer = styled.ul`
