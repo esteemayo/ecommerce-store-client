@@ -31,7 +31,8 @@ const Container = styled.div`
 `;
 
 const Wrapper = styled.div`
-  
+  width: 13rem;
+  width: ${({ sort }) => (sort === 'highest' || sort === 'lowest') && '19rem'};
 `;
 
 const Filter = styled.span`
