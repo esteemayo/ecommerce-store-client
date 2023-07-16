@@ -2,7 +2,6 @@
 
 import styled from 'styled-components';
 
-import StarRating from '../StarRating';
 import ReviewButton from './ReviewButton';
 import ReviewFilter from './ReviewFilter';
 
