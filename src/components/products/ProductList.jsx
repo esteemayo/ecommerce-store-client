@@ -11,6 +11,10 @@ const ProductList = ({ products }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isSelectedProduct, setIsSelectedProduct] = useState({});
 
+  const handleOpen = useCallback(() => {
+    setIsModalOpen(true);
+  }, []);
+
   if (products.length < 1) {
     return (
       <Container>
