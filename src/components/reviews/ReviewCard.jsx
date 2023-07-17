@@ -7,6 +7,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import DefaultAvatar from '../images/DefaultAvatar';
 import Avatar from '../images/Avatar';
 
+import StarRating from '../StarRating';
+
 const ReviewCard = ({ user, rating, review, createdAt }) => {
   const options = { month: 'long', day: 'numeric', year: 'numeric' };
 
