@@ -6,7 +6,7 @@ import { useCallback, useEffect, useState } from 'react';
 
 import CloseIcon from '@mui/icons-material/Close';
 
-const DeleteModal = ({ id, isOpen, onClose, onAction }) => {
+const DeleteModal = ({ actionId, isOpen, onClose, onAction }) => {
   const [showModal, setShowModal] = useState(isOpen);
 
   const closeModalHandler = useCallback((e) => {
@@ -54,7 +54,10 @@ const DeleteModal = ({ id, isOpen, onClose, onAction }) => {
             <CancelButton type='button' onClick={onClose}>
               Not now
             </CancelButton>
-            <DeleteButton type='button' onClick={() => deleteWishlistHandler(id)}>
+            <DeleteButton 
+              type='button' 
+              onClick={() => deleteWishlistHandler(actionId)}
+            >
               Remove
             </DeleteButton>
           </ButtonContainer>
