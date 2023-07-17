@@ -17,11 +17,6 @@ const WishlistCard = ({ isOpen, onOpen, selected, wishlists, onAction, onClose, 
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isSelectedId, setIsSelectedId] = useState(null);
 
-  const handleOpenModal = useCallback((id) => {
-    setIsSelectedId(id);
-    setIsModalOpen(true);
-  }, []);
-
   return (
     <Container>
       {wishlists.map((wishlist) => {
