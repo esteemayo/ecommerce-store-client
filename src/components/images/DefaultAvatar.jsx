@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const DefaultAvatar = () => {
   return (
-    <div>DefaultAvatar</div>
+    <Container>DefaultAvatar</Container>
   );
 }
 
