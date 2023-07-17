@@ -4,8 +4,8 @@ import styled from 'styled-components';
 import { faArrowUpFromBracket } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import DefaultAvatar from '../images/DefaultAvatar';
 import Avatar from '../images/Avatar';
+import DefaultAvatar from '../images/DefaultAvatar';
 
 import StarRating from '../StarRating';
 
