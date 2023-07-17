@@ -54,6 +54,7 @@ const WishLists = () => {
         <WishlistHeader />
         <WishlistCard
           isOpen={isOpen}
+          onOpen={handleOpenModal}
           selected={isSelectedId}
           wishlists={products}
           onAction={handleClick}
