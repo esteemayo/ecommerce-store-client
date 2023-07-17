@@ -22,6 +22,11 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   padding-bottom: 3rem;
+
+  img {
+    width: 50rem;
+    height: 25rem;
+  }
 `;
 
 export default EmptyProduct;
