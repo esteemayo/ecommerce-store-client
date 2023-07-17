@@ -13,6 +13,7 @@ const DeleteModal = ({ actionId, isOpen, onClose, onAction }) => {
     e.stopPropagation();
 
     if (e.target.classList.contains('overlay')) {
+      setShowModal(false);
       onClose();
     }
 
@@ -20,6 +21,7 @@ const DeleteModal = ({ actionId, isOpen, onClose, onAction }) => {
       e.preventDefault();
 
       if (e.key === 'Escape') {
+        setShowModal(false);
         onClose();
       }
     };
