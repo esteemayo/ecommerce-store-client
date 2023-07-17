@@ -3,7 +3,7 @@
 import styled from 'styled-components';
 import Image from 'next/image';
 
-const EmptyProduct = ({ src }) => {
+const EmptyProduct = ({ src, title }) => {
   return (
     <Container>
       <Image
@@ -12,6 +12,7 @@ const EmptyProduct = ({ src }) => {
         height={250}
         alt=''
       />
+      <Message>{title}</Message>
     </Container>
   );
 }
