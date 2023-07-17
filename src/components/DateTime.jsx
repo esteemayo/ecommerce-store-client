@@ -30,4 +30,10 @@ const Date = styled.time`
   }
 `;
 
+DateTime.propTypes = {
+  date: PropTypes.string.isRequired,
+  type: PropTypes.string,
+  options: PropTypes.object.isRequired,
+};
+
 export default DateTime;
