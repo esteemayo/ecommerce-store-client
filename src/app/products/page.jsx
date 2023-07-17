@@ -69,17 +69,19 @@ const Products = () => {
   // }, [products, category, color, size, price]);
 
   return (
-    <Container onMouseOver={() => dispatch(closeSubmenu())}>
-      <Wrapper>
-        <ProductFilter
-          {...values}
-          products={products}
-          handleChange={handleChange}
-        />
-        <ProductList products={sortedProducts} />
-        <Pagination />
-      </Wrapper>
-    </Container>
+    <ClientOnly>
+      <Container onMouseOver={() => dispatch(closeSubmenu())}>
+        <Wrapper>
+          <ProductFilter
+            {...values}
+            products={products}
+            handleChange={handleChange}
+          />
+          <ProductList products={sortedProducts} />
+          <Pagination />
+        </Wrapper>
+      </Container>
+    </ClientOnly>
   );
 }
 
