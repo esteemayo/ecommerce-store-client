@@ -6,6 +6,7 @@ import { useDispatch } from 'react-redux';
 
 import Product from '@/components/products/Product';
 import Recommendation from '@/components/Recommendation';
+import ClientOnly from '@/components/ClientOnly';
 import Reviews from '@/components/reviews/Reviews';
 
 import { storeProducts } from '@/data';
