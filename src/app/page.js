@@ -10,12 +10,14 @@ import ClientOnly from '@/components/ClientOnly';
 
 const Home = () => {
   return (
-    <Container>
-      <CarouselSlider />
-      <Categories />
-      <FeaturedProducts />
-      <TopReviews />
-    </Container>
+    <ClientOnly>
+      <Container>
+        <CarouselSlider />
+        <Categories />
+        <FeaturedProducts />
+        <TopReviews />
+      </Container>
+    </ClientOnly>
   );
 }
 
