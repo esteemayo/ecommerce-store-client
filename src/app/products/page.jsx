@@ -8,7 +8,6 @@ import ProductList from '@/components/products/ProductList';
 import Pagination from '@/components/Pagination';
 import ProductFilter from '@/components/products/ProductFilter';
 import ClientOnly from '@/components/ClientOnly';
-import EmptyProduct from '@/components/products/EmptyProduct';
 
 import { storeProducts } from '@/data';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
@@ -68,17 +67,6 @@ const Products = () => {
 
   //   setValues({ sortedProducts: tempProducts });
   // }, [products, category, color, size, price]);
-
-  let bodyContent;
-
-  if (products.length < 1) {
-    bodyContent = (
-      <EmptyProduct
-        src='/img/no-result.png'
-        title='No results found!'
-      />
-    );
-  }
 
   return (
     <ClientOnly>
