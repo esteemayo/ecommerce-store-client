@@ -8,7 +8,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import CloseIcon from '@mui/icons-material/Close';
 import { NumericFormat } from 'react-number-format';
 import PropTypes from 'prop-types';
-import { useCallback, useState } from 'react';
 
 import { excerpts } from '@/utils';
 import DeleteModal from '../modals/DeleteModal';
