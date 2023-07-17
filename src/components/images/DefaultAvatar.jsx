@@ -2,9 +2,9 @@
 
 import styled from 'styled-components';
 
-const DefaultAvatar = () => {
+const DefaultAvatar = ({ name }) => {
   return (
-    <Container>DefaultAvatar</Container>
+    <Container>{name.charAt(0)}</Container>
   );
 }
 
