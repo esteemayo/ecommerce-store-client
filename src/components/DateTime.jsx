@@ -10,6 +10,7 @@ const DateTime = ({ date, type, options }) => {
 
 const Date = styled.time`
   font-size: ${({ type }) => type === 'review' ? '1.4rem' : '1.5rem'};
+  color: ${({ theme, type }) => type === 'review' ? theme.textRevDate : theme.textWlHeader};
 `;
 
 export default DateTime;
