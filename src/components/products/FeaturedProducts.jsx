@@ -36,7 +36,7 @@ const FeaturedProducts = () => {
                   key={product.id}
                   product={product}
                   onOpen={handleOpen}
-                  setIsSelectedProduct={setIsSelectedProduct}
+                  onSelect={setIsSelectedProduct}
                 />
               );
             })
