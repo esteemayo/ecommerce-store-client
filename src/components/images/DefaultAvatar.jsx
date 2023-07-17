@@ -16,6 +16,8 @@ const Container = styled.div`
   width: 5rem;
   height: 5rem;
   font-size: 2.5rem;
+  background-color: #d5a66a;
+  color: ${({ theme }) => theme.textBtn};
 `;
 
 export default DefaultAvatar;
