@@ -59,29 +59,6 @@ const Container = styled.section`
   padding: 8rem 0;
 `;
 
-const ImageContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-bottom: 3rem;
-
-  img {
-    width: 50rem;
-    height: 25rem;
-    display: block;
-    object-fit: cover;
-
-    @media only screen and (max-width: 25em) {
-      width: 40rem;
-    }
-
-    @media only screen and (max-width: 18.75em) {
-      width: 34.5rem;
-    }
-  }
-`;
-
 const ProductsContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
