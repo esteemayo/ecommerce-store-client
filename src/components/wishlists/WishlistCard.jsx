@@ -300,9 +300,13 @@ const DeleteButton = styled.button`
 `;
 
 WishlistCard.propTypes = {
+  isOpen: PropTypes.bool.isRequired,
+  onOpen: PropTypes.func.isRequired,
+  selected: PropTypes.bool.isRequired,
   wishlists: PropTypes.array.isRequired,
+  onAction: PropTypes.func.isRequired,
+  onClose: PropTypes.func.isRequired,
   onDelete: PropTypes.func.isRequired,
-  onAction: PropTypes.func.isRequired
-}
+};
 
 export default WishlistCard;
