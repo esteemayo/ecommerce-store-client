@@ -73,7 +73,10 @@ const Products = () => {
 
   if (products.length < 1) {
     bodyContent = (
-      <ImageContainer></ImageContainer>
+      <EmptyProduct
+        src='/img/no-result.png'
+        title='No results found!'
+      />
     );
   }
 
