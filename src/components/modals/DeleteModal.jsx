@@ -5,30 +5,30 @@ import { useCallback } from 'react';
 
 import CloseIcon from '@mui/icons-material/Close';
 
-const DeleteModal = ({ isOpen, closeModal, onAction, wishlistId }) => {
+const DeleteModal = ({ isOpen, onClose, onAction, wishlistId }) => {
   const closeModalHandler = useCallback((e) => {
     e.stopPropagation();
 
     if (e.target.classList.contains('overlay')) {
-      closeModal(false);
+      onClose();
     }
 
     const exitModal = (e) => {
       e.preventDefault();
 
       if (e.key === 'Escape') {
-        closeModal(false);
+        onClose();
       }
     };
 
     window.addEventListener('keydown', exitModal);
     return window.removeEventListener('keydown', exitModal);
-  }, [closeModal]);
+  }, [onClose]);
 
   const deleteWishlistHandler = useCallback((wishlistId) => {
     onAction(wishlistId);
-    closeModal(false);
-  }, [onAction, closeModal]);
+    onClose();
+  }, [onAction, onClose]);
 
   return (
     <Overlay
