@@ -234,7 +234,7 @@ const Hr = styled.hr`
 `;
 
 CartModal.propTypes = {
-  product: PropTypes.object.isRequired,
+  product: PropTypes.object,
   isOpen: PropTypes.bool.isRequired,
   onClose: PropTypes.func.isRequired,
   onSelect: PropTypes.func.isRequired,
