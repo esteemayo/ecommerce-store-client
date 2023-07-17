@@ -19,6 +19,7 @@ import useAddToCart from '@/hooks/useAddToCart';
 
 const CartModal = ({ product, isOpen, onClose, onSelect }) => {
   const { darkMode } = useSelector((state) => ({ ...state.darkMode }));
+  const [showModal, setShowModal] = useState(isOpen);
 
   const {
     alert,
