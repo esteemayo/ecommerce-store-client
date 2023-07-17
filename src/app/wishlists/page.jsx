@@ -48,9 +48,9 @@ const WishLists = () => {
     bodyContent = <Text>Your wishlist is currently empty!</Text>;
   }
 
-  return (
-    <Container onMouseOver={() => dispatch(closeSubmenu())}>
-      <Wrapper>
+  if (products.length > 0) {
+    bodyContent = (
+      <>
         <WishlistHeader />
         <WishlistCard
           isOpen={isOpen}
@@ -61,6 +61,14 @@ const WishLists = () => {
           onClose={handleCloseModal}
           onDelete={handleDelete}
         />
+      </>
+    );
+  }
+
+  return (
+    <Container onMouseOver={() => dispatch(closeSubmenu())}>
+      <Wrapper>
+        {bodyContent}
       </Wrapper>
       <CartModal
         product={isSelectedProduct}
