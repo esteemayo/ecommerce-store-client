@@ -227,4 +227,11 @@ const Hr = styled.hr`
   background-color: ${({ theme }) => theme.cartModalBorder};
 `;
 
+CartModal.propTypes = {
+  product: PropTypes.object.isRequired,
+  isOpen: PropTypes.bool.isRequired,
+  onClose: PropTypes.func.isRequired,
+  onSelect: PropTypes.func.isRequired,
+};
+
 export default CartModal;
