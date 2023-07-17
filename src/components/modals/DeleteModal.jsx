@@ -7,6 +7,8 @@ import { useCallback, useState } from 'react';
 import CloseIcon from '@mui/icons-material/Close';
 
 const DeleteModal = ({ id, isOpen, onClose, onAction }) => {
+  const [showModal, setShowModal] = useState(false);
+
   const closeModalHandler = useCallback((e) => {
     e.stopPropagation();
 
