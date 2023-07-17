@@ -18,6 +18,11 @@ const WishLists = () => {
   const [products, setProducts] = useState(wishlists);
   const [isSelectedProduct, setIsSelectedProduct] = useState({});
 
+  const handleOpen = useCallback((wishlist) => {
+    setIsModalOpen(true);
+    setIsSelectedProduct(wishlist);
+  }, [setIsModalOpen, setIsSelectedProduct]);
+
   const handleDelete = useCallback((id) => {
     setProducts((prev) => prev.filter((item) => item.id !== id));
   }, []);
