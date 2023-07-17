@@ -14,8 +14,6 @@ import { excerpts } from '@/utils';
 import DeleteModal from '../modals/DeleteModal';
 
 const WishlistCard = ({ isOpen, onOpen, selected, wishlists, onAction, onClose, onDelete }) => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
   return (
     <Container>
       {wishlists.map((wishlist) => {
