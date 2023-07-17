@@ -24,14 +24,16 @@ const SingleProduct = ({ params }) => {
   }, [id]);
 
   return (
-    <Container onMouseOver={() => dispatch(closeSubmenu())}>
-      <Wrapper>
-        <Product product={product} />
-        <Line />
-        <Recommendation />
-        <Reviews />
-      </Wrapper>
-    </Container>
+    <ClientOnly>
+      <Container onMouseOver={() => dispatch(closeSubmenu())}>
+        <Wrapper>
+          <Product product={product} />
+          <Line />
+          <Recommendation />
+          <Reviews />
+        </Wrapper>
+      </Container>
+    </ClientOnly>
   );
 }
 
