@@ -67,17 +67,19 @@ const WishLists = () => {
   }
 
   return (
-    <Container onMouseOver={() => dispatch(closeSubmenu())}>
-      <Wrapper>
-        {bodyContent}
-      </Wrapper>
-      <CartModal
-        product={isSelectedProduct}
-        isOpen={isModalOpen}
-        onClose={closeModalHandler}
-        onSelect={setIsSelectedProduct}
-      />
-    </Container>
+    <ClientOnly>
+      <Container onMouseOver={() => dispatch(closeSubmenu())}>
+        <Wrapper>
+          {bodyContent}
+        </Wrapper>
+        <CartModal
+          product={isSelectedProduct}
+          isOpen={isModalOpen}
+          onClose={closeModalHandler}
+          onSelect={setIsSelectedProduct}
+        />
+      </Container>
+    </ClientOnly>
   );
 }
 
