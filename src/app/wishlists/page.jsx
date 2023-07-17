@@ -67,9 +67,9 @@ const WishLists = () => {
         />
       </Wrapper>
       <CartModal
+        product={isSelectedProduct}
         isOpen={isModalOpen}
         onClose={closeModalHandler}
-        product={isSelectedProduct}
         onSelect={setIsSelectedProduct}
       />
     </Container>
