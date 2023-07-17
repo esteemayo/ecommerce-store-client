@@ -167,4 +167,11 @@ const DeleteButton = styled.button`
   cursor: pointer;
 `;
 
+DeleteModal.propTypes = {
+  id: PropTypes.string.isRequired,
+  isOpen: PropTypes.bool.isRequired,
+  onAction: PropTypes.func.isRequired,
+  onClose: PropTypes.func.isRequired,
+}
+
 export default DeleteModal;
