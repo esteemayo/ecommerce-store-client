@@ -12,7 +12,15 @@ import PropTypes from 'prop-types';
 import { excerpts } from '@/utils';
 import DeleteModal from '../modals/DeleteModal';
 
-const WishlistCard = ({ isOpen, onOpen, selected, wishlists, onAction, onClose, onDelete }) => {
+const WishlistCard = ({
+  isOpen,
+  onOpen,
+  selected,
+  wishlists,
+  onAction,
+  onClose,
+  onDelete,
+}) => {
   return (
     <Container>
       {wishlists.map((wishlist) => {
