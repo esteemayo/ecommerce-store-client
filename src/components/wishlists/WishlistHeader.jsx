@@ -47,19 +47,6 @@ const Heading = styled.h1`
   }
 `;
 
-const DateTime = styled.time`
-  font-size: 1.5rem;
-  color: ${({ theme }) => theme.textWlHeader};
-
-  @media only screen and (max-width: 56.25em) {
-    font-size: 1.3rem;
-  }
-
-  @media only screen and (max-width: 18.75em) {
-    font-size: 1.2rem;
-  }
-`;
-
 const SendButton = styled.button`
   border: none;
   display: inline-block;
