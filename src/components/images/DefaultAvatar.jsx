@@ -13,6 +13,8 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
+  width: 5rem;
+  height: 5rem;
 `;
 
 export default DefaultAvatar;
