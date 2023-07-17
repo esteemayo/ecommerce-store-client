@@ -68,6 +68,14 @@ const Products = () => {
   //   setValues({ sortedProducts: tempProducts });
   // }, [products, category, color, size, price]);
 
+  let bodyContent;
+
+  if (products.length < 1) {
+    bodyContent = (
+      // 
+    );
+  }
+
   return (
     <ClientOnly>
       <Container onMouseOver={() => dispatch(closeSubmenu())}>
@@ -77,7 +85,7 @@ const Products = () => {
             products={products}
             handleChange={handleChange}
           />
-          <ProductList products={sortedProducts} />
+          <ProductList products={[]} />
           <Pagination />
         </Wrapper>
       </Container>
@@ -116,6 +124,10 @@ const Wrapper = styled.div`
     padding-left: 3rem;
     padding-right: 3rem;
   }
+`;
+
+const ImageContainer = styled.div`
+  
 `;
 
 export default Products;
