@@ -25,6 +25,11 @@ const WishLists = () => {
     setIsSelectedProduct(wishlist);
   }, [setIsModalOpen, setIsSelectedProduct]);
 
+  const handleOpenModal = useCallback((id) => {
+    setIsSelectedId(id);
+    setIsModalOpen(true);
+  }, []);
+
   const handleDelete = useCallback((id) => {
     setProducts((prev) => prev.filter((item) => item.id !== id));
   }, []);
