@@ -8,7 +8,6 @@ import Avatar from '../images/Avatar';
 import DefaultAvatar from '../images/DefaultAvatar';
 
 import StarRating from '../StarRating';
-import DateTime from '../DateTime';
 
 const ReviewCard = ({ user, rating, review, createdAt }) => {
   const options = { month: 'long', day: 'numeric', year: 'numeric' };
