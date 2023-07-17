@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { useCallback, useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 
+import ClientOnly from '@/components/ClientOnly';
 import ProductList from '@/components/products/ProductList';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
