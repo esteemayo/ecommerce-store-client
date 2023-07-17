@@ -18,6 +18,7 @@ const Container = styled.div`
   font-size: 2.5rem;
   background-color: #d5a66a;
   color: ${({ theme }) => theme.textBtn};
+  border-radius: 50%;
 `;
 
 export default DefaultAvatar;
