@@ -2,7 +2,7 @@
 
 import styled from 'styled-components';
 import Image from 'next/image';
-import { useState } from 'react';
+import { useCallback, useState } from 'react';
 
 import ProductCard from './ProductCard';
 import CartModal from '../modals/CartModal';
