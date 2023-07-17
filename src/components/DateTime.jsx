@@ -3,13 +3,13 @@ import PropTypes from 'prop-types';
 
 const DateTime = ({ date, type, options }) => {
   return (
-    <Date type={type} dateTime={date}>
+    <Time type={type} dateTime={date}>
       {new Date(date).toLocaleString('en-us', options)}
-    </Date>
+    </Time>
   );
 }
 
-const Date = styled.time`
+const Time = styled.time`
   font-size: ${({ type }) => type === 'review' ? '1.4rem' : '1.5rem'};
   color: ${({ theme, type }) => type === 'review' ? theme.textRevDate : theme.textWlHeader};
 
