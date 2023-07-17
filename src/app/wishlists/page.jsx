@@ -25,6 +25,10 @@ const WishLists = () => {
     setIsSelectedProduct(wishlist);
   }, [setIsModalOpen, setIsSelectedProduct]);
 
+  const closeModalHandler = useCallback(() => {
+    setIsModalOpen(false);
+  }, []);
+
   const handleOpenModal = useCallback((id) => {
     setIsSelectedId(id);
     setIsOpen(true);
