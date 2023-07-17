@@ -5,9 +5,10 @@ import Image from 'next/image';
 import { faShoppingCart, faStar } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import PropTypes from 'prop-types';
 import { NumericFormat } from 'react-number-format';
-import { faHeart } from '@fortawesome/free-regular-svg-icons';
 import { useCallback } from 'react';
+import { faHeart } from '@fortawesome/free-regular-svg-icons';
 
 import StarRating from '../StarRating';
 
