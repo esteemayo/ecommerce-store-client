@@ -39,4 +39,8 @@ const Container = styled.div`
   }
 `;
 
+DefaultAvatar.propTypes = {
+  name: PropTypes.string.isRequired,
+};
+
 export default DefaultAvatar;
