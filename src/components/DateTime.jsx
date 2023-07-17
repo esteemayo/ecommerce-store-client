@@ -6,4 +6,8 @@ const DateTime = () => {
   );
 }
 
+const Date = styled.time`
+  
+`;
+
 export default DateTime;
