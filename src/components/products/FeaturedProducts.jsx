@@ -15,6 +15,10 @@ const FeaturedProducts = () => {
   const [featuredProducts, setFeaturedProducts] = useState(storeProducts);
   const [isSelectedProduct, setIsSelectedProduct] = useState({});
 
+  const handleOpen = useCallback(() => {
+    setIsModalOpen(true);
+  }, []);
+
   const handleClose = useCallback(() => {
     setIsModalOpen(false);
   }, []);
@@ -31,7 +35,7 @@ const FeaturedProducts = () => {
                 <ProductCard
                   key={product.id}
                   product={product}
-                  openModal={setIsModalOpen}
+                  onOpen={handleOpen}
                   setIsSelectedProduct={setIsSelectedProduct}
                 />
               );
