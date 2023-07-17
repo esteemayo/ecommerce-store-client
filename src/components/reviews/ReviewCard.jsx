@@ -29,9 +29,11 @@ const ReviewCard = ({ user, rating, review, createdAt }) => {
         </ReviewContainer>
         <Review>{review}</Review>
         <DateContainer>
-          <ReviewDate dateTime={createdAt}>
-            {new Date(createdAt).toLocaleString('en-us', options)}
-          </ReviewDate>
+          <DateTime
+            date={createdAt}
+            type='review'
+            options={options}
+          />
           <ShareButton type='button'>
             <FontAwesomeIcon icon={faArrowUpFromBracket} />
             Share
