@@ -18,6 +18,10 @@ const ProductCard = ({ product, onOpen, onSelect }) => {
     onSelect(product);
   }, [product, onOpen, onSelect]);
 
+  const initialPrice = useMemo(() => {
+    return product.price + product.discount;
+  }, [product]);
+
   return (
     <Container>
       <ImageContainer>
