@@ -7,7 +7,7 @@ import { useCallback, useEffect, useState } from 'react';
 import CloseIcon from '@mui/icons-material/Close';
 
 const DeleteModal = ({ id, isOpen, onClose, onAction }) => {
-  const [showModal, setShowModal] = useState(false);
+  const [showModal, setShowModal] = useState(isOpen);
 
   const closeModalHandler = useCallback((e) => {
     e.stopPropagation();
@@ -32,6 +32,10 @@ const DeleteModal = ({ id, isOpen, onClose, onAction }) => {
     onAction(wishlistId);
     onClose();
   }, [onAction, onClose]);
+
+  useEffect(() => {
+    setShowModal(isOpen);
+  }, [isOpen]);
 
   return (
     <Overlay
