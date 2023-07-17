@@ -45,7 +45,7 @@ const WishLists = () => {
   let bodyContent;
 
   if (products.length < 1) {
-    return <Text>Your wishlist is currently empty!</Text>;
+    bodyContent = <Text>Your wishlist is currently empty!</Text>;
   }
 
   return (
