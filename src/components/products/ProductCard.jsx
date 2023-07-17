@@ -373,4 +373,10 @@ const LikeButton = styled.button`
   }
 `;
 
+ProductCard.propTypes = {
+  product: PropTypes.object.isRequired,
+  onOpen: PropTypes.func.isRequired,
+  onSelect: PropTypes.func.isRequired,
+};
+
 export default ProductCard;
