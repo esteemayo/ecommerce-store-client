@@ -39,4 +39,8 @@ const Container = styled.div`
   }
 `;
 
+const Message = styled.span`
+  
+`;
+
 export default EmptyProduct;
