@@ -9,7 +9,7 @@ const DateTime = ({ date, type, options }) => {
 }
 
 const Date = styled.time`
-  
+  font-size: ${({ type }) => type === 'review' ? '1.4rem' : '1.5rem'};
 `;
 
 export default DateTime;
