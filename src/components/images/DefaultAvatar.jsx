@@ -8,4 +8,8 @@ const DefaultAvatar = () => {
   );
 }
 
+const Container = styled.div`
+  
+`;
+
 export default DefaultAvatar;
