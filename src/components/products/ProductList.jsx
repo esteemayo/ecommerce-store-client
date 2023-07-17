@@ -15,6 +15,10 @@ const ProductList = ({ products }) => {
     setIsModalOpen(true);
   }, []);
 
+  const handleClose = useCallback(() => {
+    setIsModalOpen(false);
+  }, []);
+
   if (products.length < 1) {
     return (
       <Container>
