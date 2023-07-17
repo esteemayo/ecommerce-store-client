@@ -45,8 +45,6 @@ const WishLists = () => {
           wishlists={products}
           onAction={handleClick}
           onDelete={handleDelete}
-          openModal={setIsModalOpen}
-          setIsSelectedProduct={setIsSelectedProduct}
         />
       </Wrapper>
       <CartModal
