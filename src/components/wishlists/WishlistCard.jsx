@@ -73,8 +73,8 @@ const WishlistCard = ({ isOpen, onOpen, selected, wishlists, onAction, onClose, 
         );
       })}
       <DeleteModal
-        actionId={isSelectedId}
-        isOpen={isModalOpen}
+        actionId={selected}
+        isOpen={isOpen}
         onAction={onDelete}
         onClose={onClose}
       />
