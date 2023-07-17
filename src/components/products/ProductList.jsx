@@ -43,8 +43,8 @@ const ProductList = ({ products }) => {
             <ProductCard
               key={product.id}
               product={product}
-              openModal={setIsModalOpen}
-              setIsSelectedProduct={setIsSelectedProduct}
+              onOpen={handleOpen}
+              onSelect={setIsSelectedProduct}
             />
           );
         })}
