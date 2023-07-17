@@ -20,12 +20,7 @@ const ReviewCard = ({ user, rating, review, createdAt }) => {
             {!user.img ? (
               <DefaultAvatar name={user.name} />
             ) : (
-              <Image
-                src={user.img}
-                width={50}
-                height={50}
-                alt=''
-              />
+              <Avatar src={user.img} />
             )}
             <Name>{user.name}</Name>
           </Reviewer>
