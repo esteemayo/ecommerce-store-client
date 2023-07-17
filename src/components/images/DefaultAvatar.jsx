@@ -4,9 +4,7 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 const DefaultAvatar = ({ name }) => {
-  return (
-    <Container>{name.charAt(0)}</Container>
-  );
+  return <Container>{name.charAt(0)}</Container>;
 }
 
 const Container = styled.div`
