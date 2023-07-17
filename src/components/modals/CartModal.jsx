@@ -45,15 +45,20 @@ const CartModal = ({ product, isOpen, onClose, onSelect }) => {
   }, [handleCloseModal]);
 
   const handleCloseModal = useCallback(() => {
+    setShowModal(false);
     onClose();
     onSelect(null);
     handleReset();
   }, [onClose, onSelect, handleReset]);
 
+  useEffect(() => {
+    setShowModal(isOpen);
+  }, [isOpen]);
+
   return (
     <Overlay
       className='overlay'
-      type={isOpen ? 'show' : ''}
+      type={showModal ? 'show' : ''}
       onClick={closeModalHandler}
     >
       <Container>
