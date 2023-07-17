@@ -11,11 +11,11 @@ import { useCallback } from 'react';
 
 import StarRating from '../StarRating';
 
-const ProductCard = ({ product, onOpen, setIsSelectedProduct }) => {
+const ProductCard = ({ product, onOpen, onSelect }) => {
   const handleOpen = useCallback(() => {
     onOpen();
-    setIsSelectedProduct(product);
-  }, [product, onOpen, setIsSelectedProduct]);
+    onSelect(product);
+  }, [product, onOpen, onSelect]);
 
   return (
     <Container>
