@@ -6,6 +6,7 @@ import Categories from '@/components/categories/Categories';
 import FeaturedProducts from '@/components/products/FeaturedProducts';
 import TopReviews from '@/components/reviews/TopReviews';
 import CarouselSlider from '@/components/sliders/CarouselSlider';
+import ClientOnly from '@/components/ClientOnly';
 
 const Home = () => {
   return (
