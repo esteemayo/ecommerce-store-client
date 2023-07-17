@@ -22,10 +22,6 @@ const WishlistCard = ({ isOpen, onOpen, selected, wishlists, onAction, onClose, 
     setIsModalOpen(true);
   }, []);
 
-  const handleCloseModal = useCallback(() => {
-    setIsModalOpen(false);
-  }, []);
-
   return (
     <Container>
       {wishlists.map((wishlist) => {
