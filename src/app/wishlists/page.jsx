@@ -17,6 +17,8 @@ const WishLists = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [products, setProducts] = useState(wishlists);
   const [isSelectedProduct, setIsSelectedProduct] = useState({});
+  const [isOpen, setIsOpen] = useState(false);
+  const [isSelectedId, setIsSelectedId] = useState(null);
 
   const handleClick = useCallback((wishlist) => {
     setIsModalOpen(true);
@@ -42,6 +44,8 @@ const WishLists = () => {
       <Wrapper>
         <WishlistHeader />
         <WishlistCard
+          isOpen={isOpen}
+          selected={isSelectedId}
           wishlists={products}
           onAction={handleClick}
           onDelete={handleDelete}
