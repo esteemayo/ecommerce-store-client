@@ -78,7 +78,7 @@ const Products = () => {
             handleChange={handleChange}
           />
           <ProductList products={[]} />
-          {product.length > 0 && <Pagination />}
+          {products.length > 0 && <Pagination />}
         </Wrapper>
       </Container>
     </ClientOnly>
