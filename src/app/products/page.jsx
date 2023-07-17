@@ -130,8 +130,4 @@ const Wrapper = styled.div`
   }
 `;
 
-const ImageContainer = styled.div`
-  
-`;
-
 export default Products;
