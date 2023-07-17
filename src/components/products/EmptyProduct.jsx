@@ -1,10 +1,18 @@
 'use client';
 
 import styled from 'styled-components';
+import Image from 'next/image';
 
-const EmptyProduct = () => {
+const EmptyProduct = ({ src }) => {
   return (
-    <Container>EmptyProduct</Container>
+    <Container>
+      <Image
+        src={src}
+        width={500}
+        height={250}
+        alt=''
+      />
+    </Container>
   );
 }
 
