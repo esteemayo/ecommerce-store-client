@@ -27,7 +27,11 @@ const WishLists = () => {
 
   const handleOpenModal = useCallback((id) => {
     setIsSelectedId(id);
-    setIsModalOpen(true);
+    setIsOpen(true);
+  }, []);
+
+  const handleCloseModal = useCallback(() => {
+    setIsOpen(false);
   }, []);
 
   const handleDelete = useCallback((id) => {
