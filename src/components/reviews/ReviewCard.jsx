@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import StarRating from '../StarRating';
+import DefaultAvatar from '../images/DefaultAvatar';
 
 const ReviewCard = ({ user, rating, review, createdAt }) => {
   const options = { month: 'long', day: 'numeric', year: 'numeric' };
