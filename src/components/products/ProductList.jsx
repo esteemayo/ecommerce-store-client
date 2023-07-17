@@ -50,10 +50,10 @@ const ProductList = ({ products }) => {
         })}
       </ProductsContainer>
       <CartModal
-        isModalOpen={isModalOpen}
-        closeModal={setIsModalOpen}
         product={isSelectedProduct}
-        setIsSelectedProduct={setIsSelectedProduct}
+        isOpen={isModalOpen}
+        onClose={handleClose}
+        onSelect={setIsSelectedProduct}
       />
     </Container>
   );
