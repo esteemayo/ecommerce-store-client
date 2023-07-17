@@ -15,6 +15,7 @@ const Container = styled.div`
   text-transform: uppercase;
   width: 5rem;
   height: 5rem;
+  font-size: 2.5rem;
 `;
 
 export default DefaultAvatar;
