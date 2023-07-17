@@ -70,7 +70,7 @@ const WishLists = () => {
         isOpen={isModalOpen}
         onClose={closeModalHandler}
         product={isSelectedProduct}
-        setIsSelectedProduct={setIsSelectedProduct}
+        onSelect={setIsSelectedProduct}
       />
     </Container>
   );
