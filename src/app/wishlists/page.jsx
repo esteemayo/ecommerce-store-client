@@ -43,6 +43,7 @@ const WishLists = () => {
         <WishlistHeader />
         <WishlistCard
           wishlists={products}
+          onOpen={handleOpen}
           onDelete={handleDelete}
           openModal={setIsModalOpen}
           setIsSelectedProduct={setIsSelectedProduct}
