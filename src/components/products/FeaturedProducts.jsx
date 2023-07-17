@@ -12,7 +12,6 @@ import { storeProducts } from '@/data';
 
 const FeaturedProducts = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [isSelectedProduct, setIsSelectedProduct] = useState({});
   const [featuredProducts, setFeaturedProducts] = useState(storeProducts);
 
   const handleClose = useCallback(() => {
