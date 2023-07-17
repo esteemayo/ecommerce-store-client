@@ -12,14 +12,9 @@ import { useCallback, useState } from 'react';
 import { excerpts } from '@/utils';
 import DeleteModal from '../modals/DeleteModal';
 
-const WishlistCard = ({ wishlists, onDelete, openModal, setIsSelectedProduct }) => {
+const WishlistCard = ({ wishlists, onDelete, onAction, setIsSelectedProduct }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isSelectedId, setIsSelectedId] = useState(null);
-
-  const handleClick = useCallback((wishlist) => {
-    openModal(true);
-    setIsSelectedProduct(wishlist);
-  }, [openModal, setIsSelectedProduct]);
 
   const handleOpenModal = useCallback((id) => {
     setIsSelectedId(id);
@@ -64,7 +59,7 @@ const WishlistCard = ({ wishlists, onDelete, openModal, setIsSelectedProduct }) 
                     prefix={'$'}
                   />
                 </ProductPrice>
-                <CartButton type='button' onClick={() => handleClick(wishlist)}>
+                <CartButton type='button' onClick={() => onAction(wishlist)}>
                   <FontAwesomeIcon icon={faShoppingCart} />
                   Add to cart
                 </CartButton>
