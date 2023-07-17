@@ -17,7 +17,7 @@ import ProductButton from '../products/ProductButton';
 import Alert from '../Alert';
 import useAddToCart from '@/hooks/useAddToCart';
 
-const CartModal = ({ product, isModalOpen, closeModal, setIsSelectedProduct }) => {
+const CartModal = ({ product, isOpen, onClose, setIsSelectedProduct }) => {
   const { darkMode } = useSelector((state) => ({ ...state.darkMode }));
 
   const {
@@ -44,15 +44,15 @@ const CartModal = ({ product, isModalOpen, closeModal, setIsSelectedProduct }) =
   }, [handleCloseModal]);
 
   const handleCloseModal = useCallback(() => {
-    closeModal(false);
+    onClose();
     setIsSelectedProduct(null);
     handleReset();
-  }, [closeModal, setIsSelectedProduct, handleReset]);
+  }, [onClose, setIsSelectedProduct, handleReset]);
 
   return (
     <Overlay
       className='overlay'
-      type={isModalOpen ? 'show' : ''}
+      type={isOpen ? 'show' : ''}
       onClick={closeModalHandler}
     >
       <Container>
