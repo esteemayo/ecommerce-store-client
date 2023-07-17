@@ -1,11 +1,11 @@
 'use client';
 
 import styled from 'styled-components';
-import Image from 'next/image';
 import { useCallback, useState } from 'react';
 
 import ProductCard from './ProductCard';
 import CartModal from '../modals/CartModal';
+import EmptyProduct from './EmptyProduct';
 
 const ProductList = ({ products }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -22,15 +22,10 @@ const ProductList = ({ products }) => {
   if (products.length < 1) {
     return (
       <Container>
-        <ImageContainer>
-          <Image
-            src='/img/no-result.png'
-            width={500}
-            height={250}
-            alt=''
-          />
-          <Message>No results found!</Message>
-        </ImageContainer>
+        <EmptyProduct
+          src='/img/no-result.png'
+          title='No results found!'
+        />
       </Container>
     );
   }
