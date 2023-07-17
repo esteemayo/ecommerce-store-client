@@ -15,6 +15,10 @@ const FeaturedProducts = () => {
   const [isSelectedProduct, setIsSelectedProduct] = useState({});
   const [featuredProducts, setFeaturedProducts] = useState(storeProducts);
 
+  const handleClose = useCallback(() => {
+    setIsModalOpen(false);
+  }, []);
+
   return (
     <Container>
       <Wrapper>
