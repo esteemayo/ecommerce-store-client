@@ -17,7 +17,7 @@ const ReviewCard = ({ user, rating, review, createdAt }) => {
         <ReviewContainer>
           <Reviewer>
             {!user.img ? (
-              <Avatar>{user.name.charAt(0)}</Avatar>
+              <DefaultAvatar name={user.name} />
             ) : (
               <Image
                 src={user.img}
