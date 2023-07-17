@@ -2,7 +2,7 @@
 
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import { useCallback } from 'react';
+import { useCallback, useState } from 'react';
 
 import CloseIcon from '@mui/icons-material/Close';
 
