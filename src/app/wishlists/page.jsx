@@ -58,6 +58,7 @@ const WishLists = () => {
           selected={isSelectedId}
           wishlists={products}
           onAction={handleClick}
+          onClose={handleCloseModal}
           onDelete={handleDelete}
         />
       </Wrapper>
