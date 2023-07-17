@@ -7,6 +7,7 @@ import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import CloseIcon from '@mui/icons-material/Close';
 import { NumericFormat } from 'react-number-format';
+import PropTypes from 'prop-types';
 import { useCallback, useState } from 'react';
 
 import { excerpts } from '@/utils';
@@ -302,5 +303,11 @@ const DeleteButton = styled.button`
     fill: currentColor;
   }
 `;
+
+WishlistCard.propTypes = {
+  wishlists: PropTypes.array.isRequired,
+  onDelete: PropTypes.func.isRequired,
+  onAction: PropTypes.func.isRequired
+}
 
 export default WishlistCard;
