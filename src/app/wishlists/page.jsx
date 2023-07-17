@@ -42,14 +42,10 @@ const WishLists = () => {
     setProducts((prev) => prev.filter((item) => item.id !== id));
   }, []);
 
+  let bodyContent;
+
   if (products.length < 1) {
-    return (
-      <Container onMouseOver={() => dispatch(closeSubmenu())}>
-        <Wrapper>
-          <Text>Your wishlist is currently empty!</Text>
-        </Wrapper>
-      </Container>
-    );
+    return <Text>Your wishlist is currently empty!</Text>;
   }
 
   return (
