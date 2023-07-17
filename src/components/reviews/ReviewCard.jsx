@@ -175,19 +175,6 @@ const DateContainer = styled.div`
   justify-content: space-between;
 `;
 
-const ReviewDate = styled.time`
-  font-size: 1.4rem;
-  color: ${({ theme }) => theme.textRevDate};
-
-  @media only screen and (max-width: 26.875em) {
-    font-size: 1.35rem;
-  }
-
-  @media only screen and (max-width: 25em) {
-    font-size: 1.3rem;
-  }
-`;
-
 const ShareButton = styled.button`
   display: flex;
   align-items: center;
