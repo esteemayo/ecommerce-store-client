@@ -26,6 +26,10 @@ const WishlistCard = ({ wishlists, onDelete, openModal, setIsSelectedProduct }) 
     setIsModalOpen(true);
   }, []);
 
+  const handleCloseModal = useCallback(() => {
+    setIsModalOpen(false);
+  }, []);
+
   return (
     <Container>
       {wishlists.map((wishlist) => {
