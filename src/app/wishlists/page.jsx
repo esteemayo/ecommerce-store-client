@@ -6,6 +6,7 @@ import { useDispatch } from 'react-redux';
 
 import CartModal from '@/components/modals/CartModal';
 import WishlistHeader from '@/components/wishlists/WishlistHeader';
+import ClientOnly from '@/components/ClientOnly';
 import WishlistCard from '@/components/wishlists/WishlistCard';
 
 import { wishlists } from '@/data';
