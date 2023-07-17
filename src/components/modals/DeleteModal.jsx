@@ -41,7 +41,7 @@ const DeleteModal = ({ id, isOpen, onClose, onAction }) => {
     <Overlay
       className='overlay'
       onClick={closeModalHandler}
-      type={isOpen ? 'show' : ''}
+      type={showModal ? 'show' : ''}
     >
       <Container>
         <Wrapper>
