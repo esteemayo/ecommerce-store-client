@@ -179,7 +179,7 @@ const DeleteButton = styled.button`
 `;
 
 DeleteModal.propTypes = {
-  id: PropTypes.string.isRequired,
+  actionId: PropTypes.string.isRequired,
   isOpen: PropTypes.bool.isRequired,
   onAction: PropTypes.func.isRequired,
   onClose: PropTypes.func.isRequired,
