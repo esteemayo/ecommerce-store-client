@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 import CloseIcon from '@mui/icons-material/Close';
 import Image from 'next/image';
 import { useCallback, useEffect, useState } from 'react';
+import { useSelector } from 'react-redux';
 
 import ColorSelect from '../inputs/ColorSelect';
 import Counter from '../inputs/Counter';
