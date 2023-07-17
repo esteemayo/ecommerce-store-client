@@ -31,6 +31,11 @@ const Container = styled.div`
     height: 3.5rem;
     font-size: 1.75rem;
   }
+
+  @media only screen and (max-width: 18.75em) {
+    width: 3rem;
+    height: 3rem;
+  }
 `;
 
 export default DefaultAvatar;
