@@ -5,7 +5,7 @@ import { useCallback } from 'react';
 
 import CloseIcon from '@mui/icons-material/Close';
 
-const DeleteModal = ({ isOpen, onClose, onAction, wishlistId }) => {
+const DeleteModal = ({ id, isOpen, onClose, onAction }) => {
   const closeModalHandler = useCallback((e) => {
     e.stopPropagation();
 
@@ -45,7 +45,7 @@ const DeleteModal = ({ isOpen, onClose, onAction, wishlistId }) => {
           <WarningMessage>Are you sure you wanted to remove this item from your wishlist?</WarningMessage>
           <ButtonContainer>
             <CancelButton type='button' onClick={() => onClose()}>Not now</CancelButton>
-            <DeleteButton type='button' onClick={() => deleteWishlistHandler(wishlistId)}>Remove</DeleteButton>
+            <DeleteButton type='button' onClick={() => deleteWishlistHandler(id)}>Remove</DeleteButton>
           </ButtonContainer>
         </Wrapper>
       </Container>
