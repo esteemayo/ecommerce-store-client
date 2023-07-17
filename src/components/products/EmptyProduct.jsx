@@ -46,4 +46,9 @@ const Message = styled.span`
   color: ${({ theme }) => theme.textNotFound};
 `;
 
+EmptyProduct.propTypes = {
+  src: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+};
+
 export default EmptyProduct;
