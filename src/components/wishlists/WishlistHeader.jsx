@@ -11,9 +11,7 @@ const WishlistHeader = () => {
     <Container>
       <HeadingContainer>
         <Heading>My wishlist</Heading>
-        <DateTime dateTime={today}>
-          {today.toLocaleDateString('en-us', options)}
-        </DateTime>
+        <DateTime date={today} options={options} />
       </HeadingContainer>
       <SendButton type='button'>Send wishlist</SendButton>
     </Container>
