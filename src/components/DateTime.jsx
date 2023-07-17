@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const DateTime = ({ date, type, options }) => {
   return (
-    <Date dateTime={date}>
+    <Date type={type} dateTime={date}>
       {new Date(date).toLocaleString('en-us', options)}
     </Date>
   );
