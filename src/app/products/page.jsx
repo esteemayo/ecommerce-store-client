@@ -77,7 +77,7 @@ const Products = () => {
             products={products}
             handleChange={handleChange}
           />
-          <ProductList products={[]} />
+          <ProductList products={sortedProducts} />
           {products.length > 0 && <Pagination />}
         </Wrapper>
       </Container>
