@@ -1,7 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
-import { useState } from 'react';
+import { useCallback, useState } from 'react';
 
 import Header from '../Header';
 import ProductCard from './ProductCard';
