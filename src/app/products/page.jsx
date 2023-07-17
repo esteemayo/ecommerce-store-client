@@ -72,7 +72,7 @@ const Products = () => {
 
   if (products.length < 1) {
     bodyContent = (
-      // 
+      <ImageContainer></ImageContainer>
     );
   }
 
