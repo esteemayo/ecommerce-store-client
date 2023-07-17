@@ -19,6 +19,11 @@ const Container = styled.div`
   background-color: #d5a66a;
   color: ${({ theme }) => theme.textBtn};
   border-radius: 50%;
+
+  @media only screen and (max-width: 31.25em) {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
 `;
 
 export default DefaultAvatar;
