@@ -63,8 +63,8 @@ const WishLists = () => {
         />
       </Wrapper>
       <CartModal
-        isModalOpen={isModalOpen}
-        closeModal={setIsModalOpen}
+        isOpen={isModalOpen}
+        onClose={setIsModalOpen}
         product={isSelectedProduct}
         setIsSelectedProduct={setIsSelectedProduct}
       />
