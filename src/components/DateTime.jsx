@@ -1,8 +1,10 @@
 import styled from 'styled-components';
 
-const DateTime = () => {
+const DateTime = ({ date, options }) => {
   return (
-    <div>DateTime</div>
+    <Date dateTime={date}>
+      {new Date(date).toLocaleString('en-us', options)}
+    </Date>
   );
 }
 
