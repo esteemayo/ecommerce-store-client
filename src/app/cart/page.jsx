@@ -79,16 +79,18 @@ const Cart = () => {
   }
 
   return (
-    <Container onMouseOver={() => dispatch(closeSubmenu())}>
-      <CartContainer>
-        {bodyContent}
-      </CartContainer>
-      <PaymentModal
-        isOpen={isCash}
-        onClose={handleClose}
-        closeModal={closePaymentModal}
-      />
-    </Container>
+    <ClientOnly>
+      <Container onMouseOver={() => dispatch(closeSubmenu())}>
+        <CartContainer>
+          {bodyContent}
+        </CartContainer>
+        <PaymentModal
+          isOpen={isCash}
+          onClose={handleClose}
+          closeModal={closePaymentModal}
+        />
+      </Container>
+    </ClientOnly>
   );
 }
 
