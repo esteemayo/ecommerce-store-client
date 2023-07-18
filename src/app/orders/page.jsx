@@ -12,21 +12,32 @@ import { closeSubmenu } from '@/features/submenu/submenuSlice';
 const Orders = () => {
   const dispatch = useDispatch();
 
+  let bodyContent;
+
   if (orders.length < 1) {
-    return (
-      <Container onMouseOver={() => dispatch(closeSubmenu())}>
-        <Wrapper>
-          <ImageContainer>
-            <Image
-              src='/img/empty-list.png'
-              width={500}
-              height={500}
-              alt=''
-            />
-            <Message>No orders found</Message>
-          </ImageContainer>
-        </Wrapper>
-      </Container>
+    bodyContent = (
+      <ImageContainer>
+        <Image
+          src='/img/empty-list.png'
+          width={500}
+          height={500}
+          alt=''
+        />
+        <Message>No orders found</Message>
+      </ImageContainer>
+    );
+  }
+
+  if (orders.length > 0) {
+    bodyContent = (
+      <>
+        <Heading>Order history</Heading>
+        <OrderContainer>
+          {orders.map((order) => {
+            return <OrderCard key={order.id} {...order} />
+          })}
+        </OrderContainer>
+      </>
     );
   }
 
@@ -34,12 +45,7 @@ const Orders = () => {
     <ClientOnly>
       <Container onMouseOver={() => dispatch(closeSubmenu())}>
         <Wrapper>
-          <Heading>Order history</Heading>
-          <OrderContainer>
-            {orders.map((order) => {
-              return <OrderCard key={order.id} {...order} />
-            })}
-          </OrderContainer>
+          {bodyContent}
         </Wrapper>
       </Container>
     </ClientOnly>
