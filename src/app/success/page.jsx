@@ -14,54 +14,56 @@ const Success = () => {
   const dispatch = useDispatch();
 
   return (
-    <Container onMouseOver={() => dispatch(closeSubmenu())}>
-      <Wrapper>
-        <SuccessContainer>
-          <SuccessWrapper>
-            <SuccessInfo>
-              <SuccessAlert>Order successfully placed</SuccessAlert>
-              <Text>
-                Thank you for your order, you will receive it in {' '}
-                <Minutes>45 minutes</Minutes>
-              </Text>
-              <InfoContainer>
-                <InfoText>Here we will deliver your order.</InfoText>
-                <IconContainer>
-                  <FontAwesomeIcon icon={faLocationDot} />
-                  <Address>3711 Schultz Meadow</Address>
-                </IconContainer>
-                <IconContainer>
-                  <FontAwesomeIcon icon={faPhone} />
-                  <Phone>60640582</Phone>
-                </IconContainer>
-                <IconContainer>
-                  <FontAwesomeIcon icon={faEnvelope} />
-                  <Email>gorczany.tamara@yahoo.com</Email>
-                </IconContainer>
-              </InfoContainer>
-              <MushroomContainer>
-                <IconContainer>
-                  <FontAwesomeIcon icon={faMessage} />
-                  <MushroomText>&quot;No mushrooms, please&quot;</MushroomText>
-                </IconContainer>
-              </MushroomContainer>
-              <TotalPayment>The payment of {' '}
-                <NumericFormat
-                  value={17950}
-                  displayType={'text'}
-                  thousandSeparator={true}
-                  prefix={'$'}
-                /> {' '}
-                you&apos;ll make when the courier arrives with your order.
-              </TotalPayment>
-              <Link href='/orders' passHref>
-                <OrderButton type='button'>Order history</OrderButton>
-              </Link>
-            </SuccessInfo>
-          </SuccessWrapper>
-        </SuccessContainer>
-      </Wrapper>
-    </Container>
+    <ClientOnly>
+      <Container onMouseOver={() => dispatch(closeSubmenu())}>
+        <Wrapper>
+          <SuccessContainer>
+            <SuccessWrapper>
+              <SuccessInfo>
+                <SuccessAlert>Order successfully placed</SuccessAlert>
+                <Text>
+                  Thank you for your order, you will receive it in {' '}
+                  <Minutes>45 minutes</Minutes>
+                </Text>
+                <InfoContainer>
+                  <InfoText>Here we will deliver your order.</InfoText>
+                  <IconContainer>
+                    <FontAwesomeIcon icon={faLocationDot} />
+                    <Address>3711 Schultz Meadow</Address>
+                  </IconContainer>
+                  <IconContainer>
+                    <FontAwesomeIcon icon={faPhone} />
+                    <Phone>60640582</Phone>
+                  </IconContainer>
+                  <IconContainer>
+                    <FontAwesomeIcon icon={faEnvelope} />
+                    <Email>gorczany.tamara@yahoo.com</Email>
+                  </IconContainer>
+                </InfoContainer>
+                <MushroomContainer>
+                  <IconContainer>
+                    <FontAwesomeIcon icon={faMessage} />
+                    <MushroomText>&quot;No mushrooms, please&quot;</MushroomText>
+                  </IconContainer>
+                </MushroomContainer>
+                <TotalPayment>The payment of {' '}
+                  <NumericFormat
+                    value={17950}
+                    displayType={'text'}
+                    thousandSeparator={true}
+                    prefix={'$'}
+                  /> {' '}
+                  you&apos;ll make when the courier arrives with your order.
+                </TotalPayment>
+                <Link href='/orders' passHref>
+                  <OrderButton type='button'>Order history</OrderButton>
+                </Link>
+              </SuccessInfo>
+            </SuccessWrapper>
+          </SuccessContainer>
+        </Wrapper>
+      </Container>
+    </ClientOnly>
   );
 }
 
