@@ -44,28 +44,30 @@ const Forgot = () => {
   }, []);
 
   return (
-    <Container onMouseOver={() => dispatch(closeSubmenu())}>
-      <ForgotContainer>
-        <Wrapper>
-          <Header>Forgot password</Header>
-          <Form onSubmit={handleSubmit}>
-            <FormGroup>
-              <FormLabel htmlFor='email'>Email</FormLabel>
-              <FormInput
-                id='email'
-                type='email'
-                name='email'
-                ref={emailRef}
-                placeholder='Enter email address'
-                onChange={(e) => setEmail(e.target.value)}
-              />
-              {errors.email && <ErrorMsg>{errors.email}</ErrorMsg>}
-            </FormGroup>
-            <FormButton type='submit'>Reset password</FormButton>
-          </Form>
-        </Wrapper>
-      </ForgotContainer>
-    </Container>
+    <ClientOnly>
+      <Container onMouseOver={() => dispatch(closeSubmenu())}>
+        <ForgotContainer>
+          <Wrapper>
+            <Header>Forgot password</Header>
+            <Form onSubmit={handleSubmit}>
+              <FormGroup>
+                <FormLabel htmlFor='email'>Email</FormLabel>
+                <FormInput
+                  id='email'
+                  type='email'
+                  name='email'
+                  ref={emailRef}
+                  placeholder='Enter email address'
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+                {errors.email && <ErrorMsg>{errors.email}</ErrorMsg>}
+              </FormGroup>
+              <FormButton type='submit'>Reset password</FormButton>
+            </Form>
+          </Wrapper>
+        </ForgotContainer>
+      </Container>
+    </ClientOnly>
   );
 }
 
