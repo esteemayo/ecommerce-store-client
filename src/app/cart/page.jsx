@@ -38,10 +38,6 @@ const Cart = () => {
     setIsCash(false);
   }, []);
 
-  useEffect(() => {
-    dispatch(calcTotals());
-  }, [cart, dispatch]);
-
   let bodyContent;
 
   if (cart.length < 1) {

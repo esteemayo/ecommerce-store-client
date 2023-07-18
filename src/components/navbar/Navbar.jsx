@@ -52,10 +52,6 @@ const Navbar = () => {
     }
   }, [dispatch]);
 
-  useEffect(() => {
-    dispatch(calcTotals());
-  }, [cart, dispatch]);
-
   return (
     <Container onMouseOver={handleSubmenu}>
       <Wrapper>
