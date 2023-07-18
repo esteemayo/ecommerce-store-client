@@ -20,7 +20,7 @@ import { navLinks } from '@/data';
 const Navbar = () => {
   const user = true;
   const dispatch = useDispatch();
-  const { cart, qty } = useSelector((state) => ({ ...state.cart }));
+  const { qty } = useSelector((state) => ({ ...state.cart }));
 
   const [isHover, setIsHover] = useState(false);
 
