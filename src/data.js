@@ -100,27 +100,27 @@ export const sublinks = [
     links: [
       {
         url: '/manage',
-        icon: <FontAwesomeIcon icon={faPeopleRoof} />,
+        icon: faPeopleRoof,
         label: 'manage complexity',
       },
       {
         url: '/automation',
-        icon: <FontAwesomeIcon icon={faBolt} />,
+        icon: faBolt,
         label: 'automation',
       },
       {
         url: '/shipping',
-        icon: <FontAwesomeIcon icon={faTruckFast} />,
+        icon: faTruckFast,
         label: 'shipping',
       },
       {
         url: '/payments',
-        icon: <FontAwesomeIcon icon={faMoneyBills} />,
+        icon: faMoneyBills,
         label: 'payments',
       },
       {
         url: '/notebooks',
-        icon: <FontAwesomeIcon icon={faBook} />,
+        icon: faBook,
         label: 'notebooks',
       },
     ],
