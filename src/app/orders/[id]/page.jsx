@@ -18,83 +18,85 @@ const Order = () => {
   };
 
   return (
-    <Container onMouseOver={() => dispatch(closeSubmenu())}>
-      <OrderWrapper>
-        <Wrapper>
-          <OrderContainer>
-            <Left>
-              <Table>
-                <Thead>
-                  <Tr>
-                    <Th>Order ID</Th>
-                    <Th>Customer</Th>
-                    <Th>Address</Th>
-                    <Th>Total</Th>
-                  </Tr>
-                </Thead>
-                <Tbody>
-                  <Tr>
-                    <Td>
-                      <OrderId>63deb1d1</OrderId>
-                    </Td>
-                    <Td>
-                      <OrderName>Mary Doe</OrderName>
-                    </Td>
-                    <Td>
-                      <OrderAddress>Lagos,Nigeria</OrderAddress>
-                    </Td>
-                    <Td>
-                      <OrderTotal>
-                        <NumericFormat
-                          value={420}
-                          displayType={'text'}
-                          thousandSeparator={true}
-                          prefix={'$'}
-                        />
-                      </OrderTotal>
-                    </Td>
-                  </Tr>
-                </Tbody>
-              </Table>
-              <OrderStatus statusClass={statusClass} />
-            </Left>
-            <Right>
-              <RightWrapper>
-                <Heading>Cart total</Heading>
-                <TotalContainer>
-                  <TotalText>Subtotal:</TotalText>
-                  <NumericFormat
-                    value={99.99}
-                    displayType={'text'}
-                    thousandSeparator={true}
-                    prefix={'$'}
-                  />
-                </TotalContainer>
-                <TotalContainer>
-                  <TotalText>Discount:</TotalText>
-                  <NumericFormat
-                    value='0.00'
-                    displayType={'text'}
-                    thousandSeparator={true}
-                    prefix={'$'}
-                  />
-                </TotalContainer>
-                <TotalContainer>
-                  <TotalText>Total:</TotalText>
-                  <NumericFormat
-                    value={88.90}
-                    displayType={'text'}
-                    thousandSeparator={true}
-                    prefix={'$'}
-                  />
-                </TotalContainer>
-                <Button type='button' disabled>Paid</Button>
-              </RightWrapper>
-            </Right>
-          </OrderContainer>
-        </Wrapper>
-      </OrderWrapper>
-    </Container>
+    <ClientOnly>
+      <Container onMouseOver={() => dispatch(closeSubmenu())}>
+        <OrderWrapper>
+          <Wrapper>
+            <OrderContainer>
+              <Left>
+                <Table>
+                  <Thead>
+                    <Tr>
+                      <Th>Order ID</Th>
+                      <Th>Customer</Th>
+                      <Th>Address</Th>
+                      <Th>Total</Th>
+                    </Tr>
+                  </Thead>
+                  <Tbody>
+                    <Tr>
+                      <Td>
+                        <OrderId>63deb1d1</OrderId>
+                      </Td>
+                      <Td>
+                        <OrderName>Mary Doe</OrderName>
+                      </Td>
+                      <Td>
+                        <OrderAddress>Lagos,Nigeria</OrderAddress>
+                      </Td>
+                      <Td>
+                        <OrderTotal>
+                          <NumericFormat
+                            value={420}
+                            displayType={'text'}
+                            thousandSeparator={true}
+                            prefix={'$'}
+                          />
+                        </OrderTotal>
+                      </Td>
+                    </Tr>
+                  </Tbody>
+                </Table>
+                <OrderStatus statusClass={statusClass} />
+              </Left>
+              <Right>
+                <RightWrapper>
+                  <Heading>Cart total</Heading>
+                  <TotalContainer>
+                    <TotalText>Subtotal:</TotalText>
+                    <NumericFormat
+                      value={99.99}
+                      displayType={'text'}
+                      thousandSeparator={true}
+                      prefix={'$'}
+                    />
+                  </TotalContainer>
+                  <TotalContainer>
+                    <TotalText>Discount:</TotalText>
+                    <NumericFormat
+                      value='0.00'
+                      displayType={'text'}
+                      thousandSeparator={true}
+                      prefix={'$'}
+                    />
+                  </TotalContainer>
+                  <TotalContainer>
+                    <TotalText>Total:</TotalText>
+                    <NumericFormat
+                      value={88.90}
+                      displayType={'text'}
+                      thousandSeparator={true}
+                      prefix={'$'}
+                    />
+                  </TotalContainer>
+                  <Button type='button' disabled>Paid</Button>
+                </RightWrapper>
+              </Right>
+            </OrderContainer>
+          </Wrapper>
+        </OrderWrapper>
+      </Container>
+    </ClientOnly>
   );
 }
 
