@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { NumericFormat } from 'react-number-format';
 import { useDispatch } from 'react-redux';
 
+import ClientOnly from '@/components/ClientOnly';
 import OrderStatus from '@/components/orders/OrderStatus';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
