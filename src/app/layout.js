@@ -36,22 +36,24 @@ export default function RootLayout({ children }) {
       <body>
         <Provider store={store}>
           <PersistGate loading={null} persistor={persistor}>
-            <AppThemeProvider>
-              <div className='container'>
-                <ClientOnly>
-                  <Navbar />
-                  <ToastProvider />
-                  <Submenu />
-                  <Sidebar />
-                </ClientOnly>
-                {children}
-                <ClientOnly>
-                  <Footer />
-                  <ScrollToTop />
-                  <Darkmode />
-                </ClientOnly>
-              </div>
-            </AppThemeProvider>
+            <CartTotalProvider>
+              <AppThemeProvider>
+                <div className='container'>
+                  <ClientOnly>
+                    <Navbar />
+                    <ToastProvider />
+                    <Submenu />
+                    <Sidebar />
+                  </ClientOnly>
+                  {children}
+                  <ClientOnly>
+                    <Footer />
+                    <ScrollToTop />
+                    <Darkmode />
+                  </ClientOnly>
+                </div>
+              </AppThemeProvider>
+            </CartTotalProvider>
           </PersistGate>
         </Provider>
       </body>
