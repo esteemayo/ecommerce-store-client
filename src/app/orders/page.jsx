@@ -30,16 +30,18 @@ const Orders = () => {
   }
 
   return (
-    <Container onMouseOver={() => dispatch(closeSubmenu())}>
-      <Wrapper>
-        <Heading>Order history</Heading>
-        <OrderContainer>
-          {orders.map((order) => {
-            return <OrderCard key={order.id} {...order} />
-          })}
-        </OrderContainer>
-      </Wrapper>
-    </Container>
+    <ClientOnly>
+      <Container onMouseOver={() => dispatch(closeSubmenu())}>
+        <Wrapper>
+          <Heading>Order history</Heading>
+          <OrderContainer>
+            {orders.map((order) => {
+              return <OrderCard key={order.id} {...order} />
+            })}
+          </OrderContainer>
+        </Wrapper>
+      </Container>
+    </ClientOnly>
   );
 }
 
