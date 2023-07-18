@@ -75,22 +75,22 @@ export const sublinks = [
     links: [
       {
         url: '/sell',
-        icon: <FontAwesomeIcon icon={faShop} />,
+        icon: faShop,
         label: 'sell everywhere',
       },
       {
         url: '/online-store',
-        icon: <FontAwesomeIcon icon={faStore} />,
+        icon: faStore,
         label: 'online store',
       },
       {
         url: '/point-of-sale',
-        icon: <FontAwesomeIcon icon={faCreditCard} />,
+        icon: faCreditCard,
         label: 'point of sale',
       },
       {
         url: '/ecommerce',
-        icon: <FontAwesomeIcon icon={faDisplay} />,
+        icon: faDisplay,
         label: 'ecommerce',
       },
     ],
