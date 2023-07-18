@@ -3,8 +3,6 @@ import styled from 'styled-components';
 import Image from 'next/image';
 import { useDispatch } from 'react-redux';
 
-import { orders } from '@/data';
-import { closeSubmenu } from '@/features/submenu/submenuSlice';
 import ClientOnly from '@/components/ClientOnly';
 import OrderCard from '@/components/orders/OrderCard';
 
