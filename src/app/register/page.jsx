@@ -75,56 +75,58 @@ const Register = () => {
   }, [data, file, validateForm]);
 
   return (
-    <Container onMouseOver={() => dispatch(closeSubmenu())}>
-      <RegisterContainer>
-        <Wrapper>
-          <Header>Register your account</Header>
-          <Form onSubmit={handleSubmit}>
-            {registerInputs.map((input) => {
-              const { id, name, type, label, placeholder } = input;
-              return (
-                <FormGroup key={id}>
-                  <FormLabel htmlFor={id}>{label}</FormLabel>
-                  <FormInput
-                    id={id}
-                    type={type}
-                    name={name}
-                    placeholder={placeholder}
-                    onChange={handleChange}
-                    autoFocus={name === 'name' ? true : false}
-                  />
-                  {errors[name] && <ErrorMsg>{errors[name]}</ErrorMsg>}
-                </FormGroup>
-              );
-            })}
-            <FormGroup type='file'>
-              {perc !== null && perc < 100 ? (
-                <UploadProgress>Uploading: {perc}%</UploadProgress>
-              ) : (
-                <>
-                  <FormUpload
-                    type='file'
-                    id='file'
-                    accept='image/*'
-                    onChange={(e) => setFile(e.target.files[0])}
-                  />
-                  <FormLabel htmlFor='file' type='file'>Attach a photo</FormLabel>
-                </>
-              )}
-            </FormGroup>
-            <FormButton type='submit' disabled={perc !== null && perc < 100}>
-              Register
-            </FormButton>
-          </Form>
-        </Wrapper>
-        <LoginContainer>
-          <LoginText>
-            Already have an account? {' '}
-            <Link href='/login' passHref>Sign in</Link>
-          </LoginText>
-        </LoginContainer>
-      </RegisterContainer>
-    </Container>
+    <ClientOnly>
+      <Container onMouseOver={() => dispatch(closeSubmenu())}>
+        <RegisterContainer>
+          <Wrapper>
+            <Header>Register your account</Header>
+            <Form onSubmit={handleSubmit}>
+              {registerInputs.map((input) => {
+                const { id, name, type, label, placeholder } = input;
+                return (
+                  <FormGroup key={id}>
+                    <FormLabel htmlFor={id}>{label}</FormLabel>
+                    <FormInput
+                      id={id}
+                      type={type}
+                      name={name}
+                      placeholder={placeholder}
+                      onChange={handleChange}
+                      autoFocus={name === 'name' ? true : false}
+                    />
+                    {errors[name] && <ErrorMsg>{errors[name]}</ErrorMsg>}
+                  </FormGroup>
+                );
+              })}
+              <FormGroup type='file'>
+                {perc !== null && perc < 100 ? (
+                  <UploadProgress>Uploading: {perc}%</UploadProgress>
+                ) : (
+                  <>
+                    <FormUpload
+                      type='file'
+                      id='file'
+                      accept='image/*'
+                      onChange={(e) => setFile(e.target.files[0])}
+                    />
+                    <FormLabel htmlFor='file' type='file'>Attach a photo</FormLabel>
+                  </>
+                )}
+              </FormGroup>
+              <FormButton type='submit' disabled={perc !== null && perc < 100}>
+                Register
+              </FormButton>
+            </Form>
+          </Wrapper>
+          <LoginContainer>
+            <LoginText>
+              Already have an account? {' '}
+              <Link href='/login' passHref>Sign in</Link>
+            </LoginText>
+          </LoginContainer>
+        </RegisterContainer>
+      </Container>
+    </ClientOnly>
   );
 }
 
