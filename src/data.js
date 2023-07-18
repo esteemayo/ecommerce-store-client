@@ -130,22 +130,22 @@ export const sublinks = [
     links: [
       {
         url: '/integrate',
-        icon: <FontAwesomeIcon icon={faLaptop} />,
+        icon: faLaptop,
         label: 'integrate systems',
       },
       {
         url: '/ecommerce-automation',
-        icon: <FontAwesomeIcon icon={faStore} />,
+        icon: faStore,
         label: 'automation',
       },
       {
         url: '/headless-commerce',
-        icon: <FontAwesomeIcon icon={faCartShopping} />,
+        icon: faCartShopping,
         label: 'headless commerce',
       },
       {
         url: '/partners',
-        icon: <FontAwesomeIcon icon={faHandshake} />,
+        icon: faHandshake,
         label: 'partners',
       },
     ],
