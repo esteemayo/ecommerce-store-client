@@ -5,6 +5,7 @@ import { useDispatch } from 'react-redux';
 
 import { orders } from '@/data';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
+import ClientOnly from '@/components/ClientOnly';
 import OrderCard from '@/components/orders/OrderCard';
 
 const Orders = () => {
