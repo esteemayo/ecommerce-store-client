@@ -12,7 +12,6 @@ import PaymentModal from '@/components/modals/PaymentModal';
 import ClientOnly from '@/components/ClientOnly';
 import CartTotal from '@/components/carts/CartTotal';
 
-import { calcTotals } from '@/features/cart/cartSlice';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
 const Cart = () => {
