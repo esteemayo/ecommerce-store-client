@@ -6,8 +6,9 @@ import { useCallback, useState } from 'react';
 import { useDispatch } from 'react-redux';
 
 import ClientOnly from '@/components/ClientOnly';
-import { registerInputs } from '@/formData';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
+
+import { registerInputs } from '@/formData';
 
 const initialState = {
   name: '',
