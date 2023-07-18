@@ -155,22 +155,22 @@ export const sublinks = [
     links: [
       {
         url: '/support-center',
-        icon: <FontAwesomeIcon icon={faPhone} />,
+        icon: faPhone,
         label: 'support center',
       },
       {
         url: '/blog',
-        icon: <FontAwesomeIcon icon={faBlog} />,
+        icon: faBlog,
         label: 'blog',
       },
       {
         url: '/support-plans',
-        icon: <FontAwesomeIcon icon={faSitemap} />,
+        icon: faSitemap,
         label: 'support plans',
       },
       {
         url: '/stories',
-        icon: <FontAwesomeIcon icon={faBookOpen} />,
+        icon: faBookOpen,
         label: 'customer stories',
       },
     ],
