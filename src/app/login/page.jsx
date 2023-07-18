@@ -54,65 +54,67 @@ const Login = () => {
   }, []);
 
   return (
-    <Container onMouseOver={() => dispatch(closeSubmenu())}>
-      <LoginContainer>
-        <Wrapper>
-          <Header>Log in with</Header>
-          <GoogleContainer>
-            <GoogleButton type='button'>
-              <Image
-                src='/img/google-logo.png'
-                width={23}
-                height={23}
-                alt=''
-              />
-              Google
-            </GoogleButton>
-            <FacebookButton type='button'>
-              <FaFacebookF />
-              Facebook
-            </FacebookButton>
-          </GoogleContainer>
-          <Text>or</Text>
-          <Form onSubmit={handleSubmit}>
-            <FormGroup>
-              <FormLabel htmlFor='username'>Username</FormLabel>
-              <FormInput
-                type='text'
-                id='username'
-                name='username'
-                placeholder='Enter username'
-                ref={usernameRef}
-              />
-              {errors.username && <ErrorMsg>{errors.username}</ErrorMsg>}
-            </FormGroup>
-            <FormGroup>
-              <FormLabel htmlFor='password'>Password</FormLabel>
-              <FormInput
-                id='password'
-                name='password'
-                type='password'
-                placeholder='Enter your password'
-                ref={passwordRef}
-              />
-              {errors.password && <ErrorMsg>{errors.password}</ErrorMsg>}
-            </FormGroup>
-            <FormButton type='submit'>Log in</FormButton>
-            <ForgotPassword>
-              <Link href='/forgot' passHref>
-                Forgot your password?
-              </Link>
-            </ForgotPassword>
-          </Form>
-        </Wrapper>
-        <RegisterContainer>
-          <RegisterText>
-            Don&apos;t have an account? {' '}
-            <Link href='/register' passHref>Sign up</Link>
-          </RegisterText>
-        </RegisterContainer>
-      </LoginContainer>
-    </Container>
+    <ClientOnly>
+      <Container onMouseOver={() => dispatch(closeSubmenu())}>
+        <LoginContainer>
+          <Wrapper>
+            <Header>Log in with</Header>
+            <GoogleContainer>
+              <GoogleButton type='button'>
+                <Image
+                  src='/img/google-logo.png'
+                  width={23}
+                  height={23}
+                  alt=''
+                />
+                Google
+              </GoogleButton>
+              <FacebookButton type='button'>
+                <FaFacebookF />
+                Facebook
+              </FacebookButton>
+            </GoogleContainer>
+            <Text>or</Text>
+            <Form onSubmit={handleSubmit}>
+              <FormGroup>
+                <FormLabel htmlFor='username'>Username</FormLabel>
+                <FormInput
+                  type='text'
+                  id='username'
+                  name='username'
+                  placeholder='Enter username'
+                  ref={usernameRef}
+                />
+                {errors.username && <ErrorMsg>{errors.username}</ErrorMsg>}
+              </FormGroup>
+              <FormGroup>
+                <FormLabel htmlFor='password'>Password</FormLabel>
+                <FormInput
+                  id='password'
+                  name='password'
+                  type='password'
+                  placeholder='Enter your password'
+                  ref={passwordRef}
+                />
+                {errors.password && <ErrorMsg>{errors.password}</ErrorMsg>}
+              </FormGroup>
+              <FormButton type='submit'>Log in</FormButton>
+              <ForgotPassword>
+                <Link href='/forgot' passHref>
+                  Forgot your password?
+                </Link>
+              </ForgotPassword>
+            </Form>
+          </Wrapper>
+          <RegisterContainer>
+            <RegisterText>
+              Don&apos;t have an account? {' '}
+              <Link href='/register' passHref>Sign up</Link>
+            </RegisterText>
+          </RegisterContainer>
+        </LoginContainer>
+      </Container>
+    </ClientOnly>
   );
 }
 
