@@ -5,14 +5,18 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useCallback, useState } from 'react';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
-import { closeSubmenu, openSidebar, openSubmenu } from '@/features/submenu/submenuSlice';
-
 import Logo from './Logo';
 import DarkModeToggle from './DarkModeToggle';
 import LoginButton from './LoginButton';
 import CartQuantity from './CartQuantity';
 import MenuItem from './MenuItem';
 import ToggleButton from './ToggleButton';
+
+import {
+  closeSubmenu,
+  openSidebar,
+  openSubmenu,
+} from '@/features/submenu/submenuSlice';
 
 import { navLinks } from '@/data';
 
