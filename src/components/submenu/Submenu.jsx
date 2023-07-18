@@ -40,7 +40,7 @@ const Submenu = () => {
     <Container type={isSubmenuOpen ? 'show' : ''} ref={containerRef}>
       <Heading title={page} />
       <ListContainer columns={columns}>
-        {links.map((link, index) => {
+        {links?.map((link, index) => {
           return <MenuItem key={index} {...link} />;
         })}
       </ListContainer>
