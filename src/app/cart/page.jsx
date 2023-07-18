@@ -3,7 +3,7 @@
 import styled from 'styled-components';
 import { useDispatch, useSelector } from 'react-redux';
 import Link from 'next/link';
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useState } from 'react';
 import Image from 'next/image';
 
 import CartHeader from '@/components/carts/CartHeader';
