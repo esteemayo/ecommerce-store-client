@@ -14,7 +14,7 @@ const SidebarMenu = ({ items }) => {
           <Wrapper key={index}>
             <Heading title={page} />
             <ListContainer>
-              {links.map((link, index) => {
+              {links?.map((link, index) => {
                 return <SidebarMenuItem key={index} {...link} />;
               })}
             </ListContainer>
