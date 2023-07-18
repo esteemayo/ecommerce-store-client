@@ -5,7 +5,6 @@ import { useCallback, useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
-import { calcTotals } from '@/features/cart/cartSlice';
 import { closeSubmenu, openSidebar, openSubmenu } from '@/features/submenu/submenuSlice';
 
 import Logo from './Logo';
