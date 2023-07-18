@@ -12,6 +12,7 @@ import Sidebar from '@/components/sidebar/Sidebar';
 import ClientOnly from '@/components/ClientOnly';
 
 import ToastProvider from '@/providers/ToastProvider';
+import CartTotalProvider from '@/providers/CartTotalProvider';
 import AppThemeProvider from '@/providers/ThemeProvider';
 
 import { persistor, store } from '@/store/store';
