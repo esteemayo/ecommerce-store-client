@@ -49,7 +49,7 @@ const ProductCard = ({ product, onOpen, onSelect }) => {
           <Prices>
             <Discount>
               <NumericFormat
-                value={product.price + product.discount}
+                value={initialPrice}
                 displayType={'text'}
                 thousandSeparator={true}
                 prefix={'$'}
