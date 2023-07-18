@@ -55,17 +55,17 @@ export const sublinks = [
     links: [
       {
         url: '/featured',
-        icon: <FontAwesomeIcon icon={faLayerGroup} />,
+        icon: faLayerGroup,
         label: 'featured',
       },
       {
         url: '/clothing',
-        icon: <FontAwesomeIcon icon={faShirt} />,
+        icon: faShirt,
         label: 'clothing',
       },
       {
         url: '/accessories',
-        icon: <FontAwesomeIcon icon={faBagShopping} />,
+        icon: faBagShopping,
         label: 'accessories',
       },
     ],
