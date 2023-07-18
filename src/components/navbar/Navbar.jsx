@@ -1,8 +1,8 @@
 'use client';
 
 import styled from 'styled-components';
-import { useCallback, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { useCallback, useState } from 'react';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 import { closeSubmenu, openSidebar, openSubmenu } from '@/features/submenu/submenuSlice';
