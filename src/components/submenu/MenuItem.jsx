@@ -9,7 +9,7 @@ const MenuItem = ({ url, icon, label }) => {
   return (
     <ListItem>
       <Link href={url} passHref>
-        {icon}
+        <FontAwesomeIcon icon={icon} />
         &nbsp;
         {label}
       </Link>
