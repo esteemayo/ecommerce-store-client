@@ -8,4 +8,8 @@ const EmptyState = () => {
   );
 }
 
+const Container = styled.main`
+  
+`;
+
 export default EmptyState;
