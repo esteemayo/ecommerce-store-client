@@ -11,9 +11,13 @@ const Darkmode = () => {
   const dispatch = useDispatch();
   const { darkMode } = useSelector((state) => ({ ...state.darkMode }));
 
+  const handleClick = useCallback(() => {
+    dispatch(toggle());
+  }, [dispatch]);
+
   return (
     <Container>
-      <Wrapper onClick={() => dispatch(toggle())}>
+      <Wrapper onClick={handleClick}>
         {darkMode ? <LightModeOutlined /> : <DarkModeOutlined />}
       </Wrapper>
     </Container>
