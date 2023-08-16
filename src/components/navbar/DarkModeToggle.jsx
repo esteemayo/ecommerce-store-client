@@ -18,7 +18,7 @@ const DarkModeToggle = () => {
       <Icon>
         <LightModeOutlined />
       </Icon>
-      <Ball mode={darkMode} />
+      <Ball mode={darkMode.toString()} />
     </Container>
   );
 }
@@ -52,8 +52,8 @@ const Ball = styled.div`
   background-color: var(--clr-tertiary-green);
   border-radius: 50%;
   position: absolute;
-  left: ${({ mode }) => !mode && '2px'};
-  right: ${({ mode }) => mode && '2px'};
+  left: ${({ mode }) => mode === 'false' && '2px'};
+  right: ${({ mode }) => mode === 'true' && '2px'};
   transition: all 0.2s ease;
 
   &:hover {
