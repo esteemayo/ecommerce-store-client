@@ -4,7 +4,9 @@ import styled from 'styled-components';
 
 const EmptyState = () => {
   return (
-    <div>EmptyState</div>
+    <Container>
+      EmptyState
+    </Container>
   );
 }
 
