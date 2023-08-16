@@ -11,8 +11,12 @@ const DarkModeToggle = () => {
   const dispatch = useDispatch();
   const { darkMode } = useSelector((state) => ({ ...state.darkMode }));
 
+  const handleClick = useCallback(() => {
+    dispatch(toggle());
+  }, [dispatch]);
+
   return (
-    <Container onClick={() => dispatch(toggle())}>
+    <Container onClick={handleClick}>
       <Icon>
         <DarkModeOutlined />
       </Icon>
