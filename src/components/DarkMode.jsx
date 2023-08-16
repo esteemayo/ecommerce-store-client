@@ -2,6 +2,7 @@
 
 import styled from 'styled-components';
 import { DarkModeOutlined, LightModeOutlined } from '@mui/icons-material';
+import { useCallback } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
 import { toggle } from '@/features/darkMode/darkModeSlice';
