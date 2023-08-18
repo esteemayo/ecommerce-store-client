@@ -116,6 +116,7 @@ export const darkTheme = {
   bgSearch: '#000000',
   bgMode: '#cfd0d1',
   bgModeHov: '#b7b7b8',
+  bgModeIcon: '#cfd0d1';
 };
 
 export const lightTheme = {
@@ -236,4 +237,5 @@ export const lightTheme = {
   bgSearch: 'var(--clr-white)',
   bgMode: 'var(--clr-tertiary-green)',
   bgModeHov: 'var(--clr-primary-green)',
+  bgModeIcon: 'var(--clr-white)',
 };
