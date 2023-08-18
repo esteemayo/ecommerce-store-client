@@ -113,6 +113,7 @@ export const darkTheme = {
   spnrBorTop: '#797979',
   textSlider: '#cfd0d1',
   boxSub: '0 0.5rem 2rem rgba(197, 196, 196, 0.09)',
+  bgSearch: '#000000',
 };
 
 export const lightTheme = {
@@ -230,4 +231,5 @@ export const lightTheme = {
   spnrBorTop: '#979797',
   textSlider: 'var(--clr-white)',
   boxSub: '0 2rem 5rem rgba(0, 0, 0, 0.09)',
+  bgSearch: 'var(--clr-white)',
 };
