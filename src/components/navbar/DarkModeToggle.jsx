@@ -32,7 +32,7 @@ const Container = styled.div`
   width: 4.2rem;
   height: 2.4rem;
   padding: 2px;
-  border: 2px solid var(--clr-tertiary-green);
+  border: 2px solid ${({ theme }) => theme.bgMode};
   border-radius: 3rem;
   display: flex;
   align-items: center;
