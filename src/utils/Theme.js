@@ -115,6 +115,7 @@ export const darkTheme = {
   boxSub: '0 0.5rem 2rem rgba(197, 196, 196, 0.09)',
   bgSearch: '#000000',
   bgMode: '#cfd0d1',
+  bgModeHov: '#b7b7b8',
 };
 
 export const lightTheme = {
@@ -234,4 +235,5 @@ export const lightTheme = {
   boxSub: '0 2rem 5rem rgba(0, 0, 0, 0.09)',
   bgSearch: 'var(--clr-white)',
   bgMode: 'var(--clr-tertiary-green)',
+  bgModeHov: 'var(--clr-primary-green)',
 };
