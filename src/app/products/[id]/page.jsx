@@ -31,7 +31,7 @@ const SingleProduct = ({ params }) => {
   if (!product) {
     return (
       <ClientOnly>
-        <Container type='error' onMouseOver={() => dispatch(closeSubmenu())}>
+        <Container type='error' onMouseOver={handleCloseSubmenu}>
           <Wrapper>
             <EmptyState />
           </Wrapper>
@@ -42,7 +42,7 @@ const SingleProduct = ({ params }) => {
 
   return (
     <ClientOnly>
-      <Container onMouseOver={() => dispatch(closeSubmenu())}>
+      <Container onMouseOver={handleCloseSubmenu}>
         <Wrapper>
           <Product product={product} />
           <Line />
