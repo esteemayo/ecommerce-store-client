@@ -26,7 +26,7 @@ const Button = styled.button`
   font-size: 1.5rem;
   text-transform: capitalize;
   background-color: transparent;
-  color: var(--clr-white);
+  color: ${({ theme }) => theme.textNav};
   outline-color: var(--clr-primary-green);
   transition: all 0.3s ease;
 
