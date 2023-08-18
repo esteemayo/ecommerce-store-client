@@ -14,7 +14,7 @@ const SocialIcon = ({ data }) => {
               {icon}
             </IconWrapper>
           </Link>
-        )
+        );
       })}
     </Container>
   );
