@@ -14,7 +14,8 @@ const EmptyState = () => {
 }
 
 const Container = styled.main`
-  
+  width: 100vw;
+  height: 100vh;
 `;
 
 const Wrapper = styled.div`
