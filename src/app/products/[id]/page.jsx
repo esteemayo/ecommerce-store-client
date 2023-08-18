@@ -19,6 +19,10 @@ const SingleProduct = ({ params }) => {
 
   const [product, setProduct] = useState({});
 
+  const handleCloseSubmenu = useCallback(() => {
+    dispatch(closeSubmenu());
+  }, [dispatch]);
+
   useEffect(() => {
     const product = storeProducts.find((item) => item.id === parseInt(id));
     setProduct(product);
