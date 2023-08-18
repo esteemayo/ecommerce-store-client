@@ -80,7 +80,10 @@ const Navbar = () => {
         <ButtonContainer>
           <DarkModeToggle />
           {!user ? (
-            <LoginButton isHover={isHover} onMouse={setIsHover} />
+            <LoginButton
+              isHover={isHover}
+              onMouse={setIsHover}
+            />
           ) : (
             <CartQuantity amount={qty} />
           )}
