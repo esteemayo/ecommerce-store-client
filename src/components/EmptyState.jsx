@@ -6,7 +6,9 @@ import Image from 'next/image';
 const EmptyState = () => {
   return (
     <Container>
-      EmptyState
+      <Wrapper>
+        EmptyState
+      </Wrapper>
     </Container>
   );
 }
