@@ -26,4 +26,8 @@ const Wrapper = styled.div`
   justify-content: center;
 `;
 
+const StyledImage = styled(Image)`
+  
+`;
+
 export default EmptyState;
