@@ -8,6 +8,7 @@ import Product from '@/components/products/Product';
 import Recommendation from '@/components/Recommendation';
 import ClientOnly from '@/components/ClientOnly';
 import Reviews from '@/components/reviews/Reviews';
+import EmptyState from '@/components/EmptyState';
 
 import { storeProducts } from '@/data';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
@@ -22,6 +23,18 @@ const SingleProduct = ({ params }) => {
     const product = storeProducts.find((item) => item.id === parseInt(id));
     setProduct(product);
   }, [id]);
+
+  if (!product) {
+    return (
+      <ClientOnly>
+        <Container onMouseOver={() => dispatch(closeSubmenu())}>
+          <Wrapper>
+            <EmptyState />
+          </Wrapper>
+        </Container>
+      </ClientOnly>
+    )
+  }
 
   return (
     <ClientOnly>
