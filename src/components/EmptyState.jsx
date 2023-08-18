@@ -41,6 +41,11 @@ const StyledImage = styled(Image)`
     width: 40rem;
     height: 40rem;
   }
+
+  @media only screen and (max-width: 18.75em) {
+    width: 35rem;
+    height: 35rem;
+  }
 `;
 
 export default EmptyState;
