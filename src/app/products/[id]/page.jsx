@@ -4,11 +4,11 @@ import styled from 'styled-components';
 import { useCallback, useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
 
-import Product from '@/components/products/Product';
-import Recommendation from '@/components/Recommendation';
 import ClientOnly from '@/components/ClientOnly';
-import Reviews from '@/components/reviews/Reviews';
+import Product from '@/components/products/Product';
 import EmptyState from '@/components/EmptyState';
+import Recommendation from '@/components/Recommendation';
+import Reviews from '@/components/reviews/Reviews';
 
 import { storeProducts } from '@/data';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
