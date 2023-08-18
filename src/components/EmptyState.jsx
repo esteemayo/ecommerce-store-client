@@ -21,6 +21,10 @@ const EmptyState = () => {
 const Container = styled.main`
   width: 100vw;
   height: 100vh;
+
+  @media only screen and (max-width: 48em) {
+    height: 90vh;
+  }
 `;
 
 const Wrapper = styled.div`
