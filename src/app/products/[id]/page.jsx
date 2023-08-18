@@ -33,7 +33,7 @@ const SingleProduct = ({ params }) => {
           </Wrapper>
         </Container>
       </ClientOnly>
-    )
+    );
   }
 
   return (
