@@ -68,7 +68,7 @@ const Container = styled.aside`
     height: 0;
     border-left: 0.5rem solid transparent;
     border-right: 0.5rem solid transparent;
-    border-bottom: 0.5rem solid var(--clr-white);
+    border-bottom: 0.5rem solid ${({ theme }) => theme.bg};
     position: absolute;
     top: -0.5rem;
     left: 50%;
