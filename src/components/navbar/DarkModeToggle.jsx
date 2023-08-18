@@ -54,7 +54,7 @@ const Icon = styled.div`
 const Ball = styled.div`
   width: 1.5rem;
   height: 1.5rem;
-  background-color: var(--clr-tertiary-green);
+  background-color: ${({ theme }) => theme.bgMode};
   border-radius: 50%;
   position: absolute;
   left: ${({ mode }) => mode === 'false' && '2px'};
