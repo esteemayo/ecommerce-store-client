@@ -61,7 +61,7 @@ const Container = styled.footer`
   width: 100vw;
   padding: 8rem 0;
   background-color:  ${({ theme }) => theme.bgNav};
-  color: var(--clr-white);
+  color: ${({ theme }) => theme.textNav};
 
   @media only screen and (max-width: 64em) {
     padding: 6rem 8rem;
