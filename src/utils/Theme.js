@@ -110,6 +110,7 @@ export const darkTheme = {
   boxOrderTotal: '0 1rem 4rem rgba(145, 143, 143, 0.15)',
   spnrBorTop: '#797979',
   textSlider: '#cfd0d1',
+  boxSub: '0 0.5rem 2rem rgba(197, 196, 196, 0.09)',
 };
 
 export const lightTheme = {
@@ -224,4 +225,5 @@ export const lightTheme = {
   boxOrderTotal: '0 2rem 4rem rgba(0, 0, 0, 0.15)',
   spnrBorTop: '#979797',
   textSlider: 'var(--clr-white)',
+  boxSub: '0 2rem 5rem rgba(0, 0, 0, 0.09)',
 };
