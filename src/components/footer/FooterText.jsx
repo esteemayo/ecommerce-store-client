@@ -16,7 +16,7 @@ const Text = styled.p`
   width: 60%;
   font-size: 1.6rem;
   text-align: center;
-  color: var(--clr-white);
+  color: ${({ theme }) => theme.textNav};
   margin: 0 auto;
   line-height: 1.1;
   margin-top: 2rem;
