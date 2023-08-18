@@ -36,6 +36,11 @@ const StyledImage = styled(Image)`
   height: 50rem;
   display: block;
   object-fit: cover;
+
+  @media only screen and (max-width: 25em) {
+    width: 40rem;
+    height: 40rem;
+  }
 `;
 
 export default EmptyState;
