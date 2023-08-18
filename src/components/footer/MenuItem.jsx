@@ -52,7 +52,7 @@ const ListItem = styled.li`
     display: inline-block;
     width: 2rem;
     height: 1px;
-    background-color: var(--clr-white);
+    background-color: ${({ theme }) => theme.textNav};
 
     @media only screen and (max-width: 37.5em) {
       display: none;
