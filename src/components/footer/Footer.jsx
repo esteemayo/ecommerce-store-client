@@ -60,7 +60,7 @@ const Footer = () => {
 const Container = styled.footer`
   width: 100vw;
   padding: 8rem 0;
-  background-color: var(--clr-secondary-green);
+  background-color:  ${({ theme }) => theme.bgNav};
   color: var(--clr-white);
 
   @media only screen and (max-width: 64em) {
