@@ -7,7 +7,7 @@ const EmptyState = () => {
   return (
     <Container>
       <Wrapper>
-        <StyledImage src={'/img/404.png'} fill alt='404' />
+        <StyledImage src={'/img/not-found.png'} fill alt='404' />
       </Wrapper>
     </Container>
   );
@@ -28,7 +28,9 @@ const Wrapper = styled.div`
 `;
 
 const StyledImage = styled(Image)`
-  
+  width: 50rem;
+  display: block;
+  object-fit: cover;
 `;
 
 export default EmptyState;

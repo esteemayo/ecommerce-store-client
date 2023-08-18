@@ -27,7 +27,7 @@ const SingleProduct = ({ params }) => {
   if (!product) {
     return (
       <ClientOnly>
-        <Container onMouseOver={() => dispatch(closeSubmenu())}>
+        <Container type='error' onMouseOver={() => dispatch(closeSubmenu())}>
           <Wrapper>
             <EmptyState />
           </Wrapper>
@@ -54,11 +54,11 @@ const Container = styled.main`
   width: 100vw;
   min-height: 100vh;
   background-color: ${({ theme }) => theme.bg};
-  padding-top: 8rem;
-  padding-bottom: 4rem;
+  padding-top: ${({ type }) => type !== 'error' && '8rem'};
+  padding-bottom: ${({ type }) => type !== 'error' && '4rem'};
 
   @media only screen and (max-width: 37.5em) {
-    padding-top: 4rem;
+    padding-top: ${({ type }) => type !== 'error' && '4rem'};
   }
 `;
 
