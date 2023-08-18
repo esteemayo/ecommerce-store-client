@@ -9,8 +9,8 @@ const EmptyState = () => {
       <Wrapper>
         <StyledImage
           src={'/img/404.png'}
-          width={620}
-          height={700}
+          width={500}
+          height={500}
           alt='404'
         />
       </Wrapper>
@@ -32,7 +32,8 @@ const Wrapper = styled.div`
 `;
 
 const StyledImage = styled(Image)`
-  width: 62rem;
+  width: 50rem;
+  height: 50rem;
   display: block;
   object-fit: cover;
 `;
