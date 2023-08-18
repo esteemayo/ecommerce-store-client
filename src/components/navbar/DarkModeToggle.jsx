@@ -62,7 +62,7 @@ const Ball = styled.div`
   transition: all 0.2s ease;
 
   &:hover {
-    background-color: var(--clr-primary-green);
+    background-color: ${({ theme }) => theme.bgModeHov};
   }
 `;
 
