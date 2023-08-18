@@ -114,7 +114,7 @@ export const darkTheme = {
   textSlider: '#cfd0d1',
   boxSub: '0 0.5rem 2rem rgba(197, 196, 196, 0.09)',
   bgSearch: '#000000',
-  bgMode: '#000000',
+  bgMode: '#cfd0d1',
 };
 
 export const lightTheme = {
