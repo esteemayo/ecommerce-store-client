@@ -13,7 +13,7 @@ const Search = () => {
 const Container = styled.div`
   width: 100%;
   padding: 1rem 0;
-  background-color: var(--clr-white);
+  background-color: ${({ theme }) => theme.bgSearch};
   border-radius: 0.5rem;
   margin-bottom: 3rem;
 
