@@ -1,6 +1,7 @@
 export const darkTheme = {
   bg: '#000000',
   bgLight: '#272727',
+  bgNav: '#201f1f',
   text: '#cfd0d1',
   textSoft: '#e2e4e4',
   textHeader: '#e2e4e4',
@@ -116,6 +117,7 @@ export const darkTheme = {
 export const lightTheme = {
   bg: 'var(--clr-white)',
   bgLight: '#f4f8f7',
+  bgNav: 'var(--clr-secondary-green)',
   text: 'inherit',
   textSoft: '#888888',
   soft: '#f9f9f9',
