@@ -7,7 +7,7 @@ const EmptyState = () => {
   return (
     <Container>
       <Wrapper>
-        EmptyState
+        <StyledImage src={'/img/404.png'} fill alt='404' />
       </Wrapper>
     </Container>
   );
@@ -24,6 +24,7 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 `;
 
 const StyledImage = styled(Image)`
