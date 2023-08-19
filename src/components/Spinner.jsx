@@ -1,6 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 const Spinner = ({ size }) => {
   return <Container size={size}>&nbsp;</Container>;
