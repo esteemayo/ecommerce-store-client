@@ -32,4 +32,8 @@ Spinner.defaultProps = {
   size: 'sm',
 };
 
+Spinner.propTypes = {
+  size: PropTypes.string,
+};
+
 export default Spinner;
