@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { faMinus, faPlus } from '@fortawesome/free-solid-svg-icons';
 import { useCallback } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import PropTypes from 'prop-types';
 
 const Counter = ({ value, title, modal, onClick }) => {
   const handleQuantity = useCallback((type) => {
