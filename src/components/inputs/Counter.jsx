@@ -114,4 +114,11 @@ const Amount = styled.span`
   }
 `;
 
+Counter.propTypes = {
+  value: PropTypes.number.isRequired,
+  title: PropTypes.string.isRequired,
+  modal: PropTypes.bool.isRequired,
+  onClick: PropTypes.func.isRequired,
+};
+
 export default Counter;
