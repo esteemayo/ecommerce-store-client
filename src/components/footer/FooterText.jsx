@@ -38,4 +38,8 @@ const Text = styled.p`
 
 const Author = styled.strong``;
 
+FooterText.propTypes = {
+  value: PropTypes.number.isRequired,
+};
+
 export default FooterText;
