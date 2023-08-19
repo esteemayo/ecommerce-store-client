@@ -5,6 +5,8 @@ import Link from 'next/link';
 import { useSelector } from 'react-redux';
 
 const SocialIcon = ({ data }) => {
+  const { mode } = useSelector((state) => ({ ...state.darkMode }));
+
   return (
     <Container>
       {data.map((item) => {
