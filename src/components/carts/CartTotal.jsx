@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { NumericFormat } from 'react-number-format';
 import { useSelector } from 'react-redux';
 import { useCallback, useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
 
 const CartTotal = ({ isOpen, onOpen, onClose, onAction }) => {
   const { tax, total, subtotal } = useSelector((state) => ({ ...state.cart }));
