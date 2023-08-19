@@ -12,6 +12,6 @@ const StarRating = ({ value, ...rest }) => {
       name='read-only'
     />
   );
-};
+}
 
 export default StarRating;
