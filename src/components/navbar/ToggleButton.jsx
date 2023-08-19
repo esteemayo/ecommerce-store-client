@@ -37,4 +37,9 @@ const Button = styled.button`
   }
 `;
 
+ToggleButton.propTypes = {
+  icon: PropTypes.object.isRequired,
+  onClick: PropTypes.func.isRequired,
+};
+
 export default ToggleButton;
