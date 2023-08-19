@@ -43,7 +43,7 @@ const CartTotal = styled.span`
   height: 2rem;
   font-size: 1rem;
   background-color: ${({ theme }) => theme.bgMode};
-  color: ${({ theme }) => theme.bgModeIcon};
+  color: var(--clr-white);
   border-radius: 50%;
   display: flex;
   align-items: center;
