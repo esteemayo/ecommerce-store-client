@@ -23,7 +23,7 @@ const Container = styled.div`
     &:link,
     &:visited {
       text-decoration: none;
-      color: var(--clr-white);
+      color: ${({ theme }) => theme.bgModeIcon};
       outline-color: var(--clr-primary-green);
     }
 
