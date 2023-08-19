@@ -18,7 +18,7 @@ import Alert from '../Alert';
 import useAddToCart from '@/hooks/useAddToCart';
 
 const CartModal = ({ product, isOpen, onClose, onSelect }) => {
-  const { darkMode } = useSelector((state) => ({ ...state.darkMode }));
+  const { mode } = useSelector((state) => ({ ...state.darkMode }));
   const [showModal, setShowModal] = useState(isOpen);
 
   const {
@@ -87,7 +87,7 @@ const CartModal = ({ product, isOpen, onClose, onSelect }) => {
             <Hr />
             <ColorSelect
               title='Color'
-              mode={darkMode}
+              mode={mode}
               value={product?.color}
               selected={isSelected}
               onAction={setColor}
