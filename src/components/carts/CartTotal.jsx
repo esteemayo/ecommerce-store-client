@@ -202,4 +202,11 @@ const Button = styled.button`
   }
 `;
 
+CartTotal.propTypes = {
+  isOpen: PropTypes.bool,
+  onOpen: PropTypes.func.isRequired,
+  onClose: PropTypes.func.isRequired,
+  onAction: PropTypes.func.isRequired,
+};
+
 export default CartTotal;
