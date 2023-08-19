@@ -57,6 +57,7 @@ const IconWrapper = styled.div`
   width: 4rem;
   height: 4rem;
   background-color: #${({ color }) => color};
+  background-color: ${({ mode }) => mode && '#121212'};
   color: inherit;
   border-radius: 50%;
   cursor: pointer;
