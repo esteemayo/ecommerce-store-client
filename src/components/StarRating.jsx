@@ -1,4 +1,5 @@
 import Rating from '@mui/material/Rating';
+import PropTypes from 'prop-types';
 
 const StarRating = ({ value, ...rest }) => {
   return (
