@@ -20,7 +20,7 @@ import Alert from '../Alert';
 import { productValue } from '@/data';
 
 const Product = ({ product }) => {
-  const { darkMode } = useSelector((state) => ({ ...state.darkMode }));
+  const { mode } = useSelector((state) => ({ ...state.darkMode }));
 
   const {
     alert,
@@ -56,7 +56,7 @@ const Product = ({ product }) => {
             <Hr />
             <ColorSelect
               title='Color'
-              mode={darkMode}
+              mode={mode}
               value={product.color}
               selected={isSelected}
               onAction={setColor}
@@ -88,7 +88,7 @@ const Product = ({ product }) => {
               />
             )}
             <Hr />
-            <ProductValue items={productValue} mode={darkMode} />
+            <ProductValue items={productValue} mode={mode} />
             <Hr />
             <ProductInfo title='Overview' content={product.desc} />
           </ProductWrapper>
