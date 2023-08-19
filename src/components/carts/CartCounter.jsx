@@ -84,4 +84,10 @@ const Amount = styled.span`
   }
 `;
 
+CartCounter.propTypes = {
+  value: PropTypes.number.isRequired,
+  onIncrement: PropTypes.func.isRequired,
+  onDecrement: PropTypes.func.isRequired,
+};
+
 export default CartCounter;
