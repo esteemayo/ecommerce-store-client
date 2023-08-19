@@ -89,4 +89,14 @@ const Color = styled.button`
   }
 `;
 
+ColorSelect.propTypes = {
+  title: PropTypes.string.isRequired,
+  mode: PropTypes.bool.isRequired,
+  value: PropTypes.array.isRequired,
+  modal: PropTypes.bool.isRequired,
+  selected: PropTypes.bool.isRequired,
+  onAction: PropTypes.func.isRequired,
+  secondaryAction: PropTypes.func.isRequired,
+};
+
 export default ColorSelect;
