@@ -218,4 +218,14 @@ const RemoveButton = styled.button`
   }
 `;
 
+CartInfo.propTypes = {
+  id: PropTypes.string.isRequired,
+  color: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  images: PropTypes.array.isRequired,
+  price: PropTypes.number.isRequired,
+  size: PropTypes.any.isRequired,
+  onAction: PropTypes.func.isRequired,
+};
+
 export default CartInfo;
