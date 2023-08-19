@@ -9,7 +9,7 @@ import { toggle } from '@/features/darkMode/darkModeSlice';
 
 const Darkmode = () => {
   const dispatch = useDispatch();
-  const { darkMode } = useSelector((state) => ({ ...state.darkMode }));
+  const { mode } = useSelector((state) => ({ ...state.darkMode }));
 
   const handleClick = useCallback(() => {
     dispatch(toggle());
@@ -18,7 +18,7 @@ const Darkmode = () => {
   return (
     <Container>
       <Wrapper onClick={handleClick}>
-        {darkMode ? <LightModeOutlined /> : <DarkModeOutlined />}
+        {mode ? <LightModeOutlined /> : <DarkModeOutlined />}
       </Wrapper>
     </Container>
   );
