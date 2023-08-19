@@ -3,6 +3,7 @@
 import styled from 'styled-components';
 import Link from 'next/link';
 import { useSelector } from 'react-redux';
+import PropTypes from 'prop-types';
 
 const SocialIcon = ({ data }) => {
   const { mode } = useSelector((state) => ({ ...state.darkMode }));
