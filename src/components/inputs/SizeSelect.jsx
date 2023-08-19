@@ -95,4 +95,13 @@ const Size = styled.button`
   }
 `;
 
+SizeSelect.propTypes = {
+  value: PropTypes.array.isRequired,
+  title: PropTypes.string.isRequired,
+  modal: PropTypes.bool.isRequired,
+  selected: PropTypes.bool.isRequired,
+  onAction: PropTypes.func.isRequired,
+  secondaryAction: PropTypes.func.isRequired,
+};
+
 export default SizeSelect;
