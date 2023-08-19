@@ -5,11 +5,11 @@ import Image from 'next/image';
 import { useSelector } from 'react-redux';
 
 const OrderStatus = ({ statusClass }) => {
-  const { darkMode } = useSelector((state) => ({ ...state.darkMode }));
+  const { mode } = useSelector((state) => ({ ...state.darkMode }));
 
   return (
     <Container>
-      <StatusWrapper className={statusClass(0)} darkMode={darkMode}>
+      <StatusWrapper className={statusClass(0)} mode={mode}>
         <Image
           src='/img/paid.png'
           width={30}
@@ -25,7 +25,7 @@ const OrderStatus = ({ statusClass }) => {
           className='checkedIcon'
         />
       </StatusWrapper>
-      <StatusWrapper className={statusClass(1)} darkMode={darkMode}>
+      <StatusWrapper className={statusClass(1)} mode={mode}>
         <Image
           src='/img/bake.png'
           width={30}
@@ -41,7 +41,7 @@ const OrderStatus = ({ statusClass }) => {
           className='checkedIcon'
         />
       </StatusWrapper>
-      <StatusWrapper className={statusClass(2)} darkMode={darkMode}>
+      <StatusWrapper className={statusClass(2)} mode={mode}>
         <Image
           src='/img/bike.png'
           width={30}
@@ -57,7 +57,7 @@ const OrderStatus = ({ statusClass }) => {
           className='checkedIcon'
         />
       </StatusWrapper>
-      <StatusWrapper className={statusClass(3)} darkMode={darkMode}>
+      <StatusWrapper className={statusClass(3)} mode={mode}>
         <Image
           src='/img/delivered.png'
           width={30}
@@ -94,7 +94,7 @@ const StatusWrapper = styled.div`
     height: 3rem;
     display: block;
     object-fit: cover;
-    background-color: ${({ darkMode }) => darkMode && '#1b1a1a'};
+    background-color: ${({ mode }) => mode && '#1b1a1a'};
   }
 
   img:last-child {
