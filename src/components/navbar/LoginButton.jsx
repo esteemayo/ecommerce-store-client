@@ -65,4 +65,9 @@ const Button = styled.button`
   }
 `;
 
+LoginButton.propTypes = {
+  isHover: PropTypes.bool,
+  onMouse: PropTypes.any,
+};
+
 export default LoginButton;
