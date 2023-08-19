@@ -42,7 +42,7 @@ const CartTotal = styled.span`
   width: 2rem;
   height: 2rem;
   font-size: 1rem;
-  background-color: var(--clr-tertiary-green);
+  background-color: ${({ theme }) => theme.bgMode};
   color: var(--clr-white);
   border-radius: 50%;
   display: flex;
