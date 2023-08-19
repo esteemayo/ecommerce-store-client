@@ -55,4 +55,8 @@ const CartTotal = styled.span`
   cursor: pointer;
 `;
 
+CartQuantity.propTypes = {
+  amount: PropTypes.number.isRequired,
+};
+
 export default CartQuantity;
