@@ -17,7 +17,7 @@ const CartItem = ({
   color,
   images,
   price,
-  quantity
+  quantity,
 }) => {
   const dispatch = useDispatch();
 
@@ -71,5 +71,15 @@ const Wrapper = styled.div`
     gap: 2rem;
   }
 `;
+
+CartItem.propTypes = {
+  id: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  size: PropTypes.any.isRequired,
+  color: PropTypes.string.isRequired,
+  images: PropTypes.array.isRequired,
+  price: PropTypes.number.isRequired,
+  quantity: PropTypes.number.isRequired,
+};
 
 export default CartItem;
