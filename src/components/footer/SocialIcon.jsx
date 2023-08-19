@@ -83,4 +83,15 @@ const IconWrapper = styled.div`
   }
 `;
 
+SocialIcon.propTypes = {
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      url: PropTypes.string.isRequired,
+      icon: PropTypes.object.isRequired,
+      color: PropTypes.string.isRequired,
+    }),
+  ),
+};
+
 export default SocialIcon;
