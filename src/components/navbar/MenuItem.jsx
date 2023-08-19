@@ -36,4 +36,9 @@ const Button = styled.button`
   }
 `;
 
+MenuItem.propTypes = {
+  label: PropTypes.string.isRequired,
+  onMouse: PropTypes.any,
+};
+
 export default MenuItem;
