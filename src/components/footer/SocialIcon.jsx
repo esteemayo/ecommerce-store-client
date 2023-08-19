@@ -2,6 +2,7 @@
 
 import styled from 'styled-components';
 import Link from 'next/link';
+import { useSelector } from 'react-redux';
 
 const SocialIcon = ({ data }) => {
   return (
