@@ -2,6 +2,7 @@
 
 import styled from 'styled-components';
 import { faMinus, faPlus } from '@fortawesome/free-solid-svg-icons';
+import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const CartCounter = ({ value, onIncrement, onDecrement }) => {
