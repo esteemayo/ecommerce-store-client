@@ -3,6 +3,7 @@
 import styled from 'styled-components';
 import { useCallback } from 'react';
 import { useDispatch } from 'react-redux';
+import PropTypes from 'prop-types';
 
 import CartInfo from './CartInfo';
 import CartCounter from './CartCounter';
