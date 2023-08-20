@@ -116,4 +116,8 @@ const DeleteButton = styled.button`
   }
 `;
 
+DeleteAccount.propTypes = {
+  onCancel: PropTypes.func.isRequired,
+};
+
 export default DeleteAccount;
