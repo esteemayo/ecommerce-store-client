@@ -6,6 +6,8 @@ import CloseIcon from '@mui/icons-material/Close';
 import { useCallback, useState } from 'react';
 
 const Modal = ({ title, children, isOpen, onClose }) => {
+  const [showModal, setShowModal] = useState(isOpen);
+
   const closeModalHandler = useCallback((e) => {
     e.stopPropagation();
 
