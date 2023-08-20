@@ -32,4 +32,9 @@ const Text = styled.p`
   word-wrap: break-word;
 `;
 
+ProductInfo.propTypes = {
+  title: PropTypes.string.isRequired,
+  content: PropTypes.string.isRequired,
+};
+
 export default ProductInfo;
