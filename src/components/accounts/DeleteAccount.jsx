@@ -17,7 +17,7 @@ const DeleteAccount = ({ onCancel }) => {
         Please note, that all your data will be permanently erased.
       </WarningText>
       <ButtonContainer>
-        <CancelButton type='button' onClick={() => onCancel(false)}>
+        <CancelButton type='button' onClick={onCancel}>
           Cancel
         </CancelButton>
         <DeleteButton type='button' onClick={handleDelete}>
