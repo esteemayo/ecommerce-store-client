@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import Link from 'next/link';
 import { NumericFormat } from 'react-number-format';
+import PropTypes from 'prop-types';
 
 const OrderCard = ({ id, total, status, createdAt }) => {
   const options = { month: 'long', day: 'numeric', year: 'numeric' };
