@@ -208,4 +208,8 @@ const ErrorMsg = styled.span`
   margin-top: 1px;
 `;
 
+UpdatePassword.propTypes = {
+  onCancel: PropTypes.func.isRequired,
+};
+
 export default UpdatePassword;
