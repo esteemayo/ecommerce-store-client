@@ -177,4 +177,14 @@ const ReviewQuantity = styled.span`
   }
 `;
 
+ProductHead.propTypes = {
+  name: PropTypes.string.isRequired,
+  price: PropTypes.number.isRequired,
+  modal: PropTypes.bool,
+  discount: PropTypes.number.isRequired,
+  priceDiscount: PropTypes.number.isRequired,
+  ratingsAverage: PropTypes.number.isRequired,
+  ratingsQuantity: PropTypes.number.isRequired,
+};
+
 export default ProductHead;
