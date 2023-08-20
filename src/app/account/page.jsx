@@ -35,6 +35,10 @@ const Account = () => {
     setIsPasswordOpen(false);
   }, []);
 
+  const handleOpenEmail = useCallback(() => {
+    setIsEmailOpen(true);
+  }, []);
+
   const handleCancel = useCallback(() => {
     setIsEmailOpen(false);
   }, []);
@@ -87,7 +91,9 @@ const Account = () => {
                         placeholder='Email'
                       />
                       <ButtonContainer>
-                        <Button type='button' onClick={() => setIsEmailOpen(true)}>Change</Button>
+                        <Button type='button' onClick={handleOpenEmail}>
+                          Change
+                        </Button>
                       </ButtonContainer>
                     </InputContainer>
                     <InputContainer>
