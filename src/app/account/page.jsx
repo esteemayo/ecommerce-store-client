@@ -51,6 +51,10 @@ const Account = () => {
     setIsDeleteOpen(false);
   }, []);
 
+  const openFileHandler = useCallback(() => {
+    setIsFileUploadOpen(true);
+  }, []);
+
   return (
     <ClientOnly>
       <Container onMouseOver={() => dispatch(closeSubmenu())}>
@@ -134,7 +138,7 @@ const Account = () => {
                         <FontAwesomeIcon icon={faUser} />
                       )}
                     </AvatarContainer>
-                    <FileButton type='button' onClick={() => setIsFileUploadOpen(true)}>
+                    <FileButton type='button' onClick={openFileHandler}>
                       Upload a picture
                     </FileButton>
                   </Right>
