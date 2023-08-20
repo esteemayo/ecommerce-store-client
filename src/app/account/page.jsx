@@ -27,6 +27,10 @@ const Account = () => {
 
   const user = false;
 
+  const openHandler = useCallback(() => {
+    setIsPasswordOpen(true);
+  }, []);
+
   const closeHandler = useCallback(() => {
     setIsPasswordOpen(false);
   }, []);
@@ -95,7 +99,7 @@ const Account = () => {
                         placeholder='********'
                       />
                       <ButtonContainer>
-                        <Button type='button' onClick={() => setIsPasswordOpen(true)}>
+                        <Button type='button' onClick={openHandler}>
                           Change
                         </Button>
                       </ButtonContainer>
