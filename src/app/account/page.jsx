@@ -143,7 +143,7 @@ const Account = () => {
           onOpen={isEmailOpen}
           onClose={setIsEmailOpen}
         >
-          <UpdateData onCancel={() => setIsEmailOpen(false)} />
+          <UpdateData onCancel={handleCancel} />
         </Modal>
         <Modal onOpen={isDeleteOpen} onClose={handleClose}>
           <DeleteAccount onCancel={handleClose} />
