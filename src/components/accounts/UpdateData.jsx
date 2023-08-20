@@ -218,4 +218,8 @@ const ErrorMsg = styled.span`
   margin-top: 1px;
 `;
 
+UpdateData.propTypes = {
+  onCancel: PropTypes.func.isRequired,
+};
+
 export default UpdateData;
