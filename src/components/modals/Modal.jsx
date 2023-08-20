@@ -17,10 +17,14 @@ const Modal = ({ title, children, isOpen, onClose }) => {
     }
   }, [onClose]);
 
+  useEffect(() => {
+    setShowModal(true);
+  }, []);
+
   return (
     <Overlay
       className='overlay'
-      type={isOpen ? 'show' : ''}
+      type={showModal ? 'show' : ''}
       onClick={closeModalHandler}
     >
       <Container>
