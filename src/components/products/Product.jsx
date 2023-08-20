@@ -172,4 +172,20 @@ const Hr = styled.hr`
   background-color: ${({ theme }) => theme.cartModalBorder};
 `;
 
+Product.propTypes = {
+  product: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    color: PropTypes.string.isRequired,
+    size: PropTypes.any.isRequired,
+    price: PropTypes.number.isRequired,
+    discount: PropTypes.number.isRequired,
+    priceDiscount: PropTypes.number.isRequired,
+    ratingsAverage: PropTypes.number.isRequired,
+    ratingsQuantity: PropTypes.number.isRequired,
+    images: PropTypes.array.isRequired,
+    category: PropTypes.string.isRequired,
+    desc: PropTypes.string.isRequired,
+  }),
+};
+
 export default Product;
