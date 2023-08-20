@@ -19,6 +19,7 @@ const FileUploadModal = ({ isOpen, onClose }) => {
   }, [handleClose]);
 
   const handleClose = useCallback(() => {
+    setShowModal(false);
     onClose();
     file && setFile(null);
   }, [file, onClose]);
@@ -27,10 +28,14 @@ const FileUploadModal = ({ isOpen, onClose }) => {
     console.log(file);
   }, [file]);
 
+  useEffect(() => {
+    setShowModal(true);
+  }, []);
+
   return (
     <Overlay
       className='overlay'
-      type={isOpen ? 'show' : ''}
+      type={showModal ? 'show' : ''}
       onClick={closeModalHandler}
     >
       <Container>
