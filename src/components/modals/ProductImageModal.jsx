@@ -180,4 +180,14 @@ const ImageContainer = styled.div`
   }
 `;
 
+ProductImageModal.propTypes = {
+  images: PropTypes.array.isRequired,
+  isOpen: PropTypes.bool.isRequired,
+  isMoved: PropTypes.bool.isRequired,
+  slideIndex: PropTypes.number.isRequired,
+  lastIndex: PropTypes.number.isRequired,
+  onMove: PropTypes.func.isRequired,
+  onClose: PropTypes.func.isRequired,
+};
+
 export default ProductImageModal;
