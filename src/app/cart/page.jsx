@@ -82,7 +82,7 @@ const Cart = () => {
         <PaymentModal
           isOpen={isCash}
           onClose={handleClose}
-          closeModal={closePaymentModal}
+          onExit={closePaymentModal}
         />
       </Container>
     </ClientOnly>

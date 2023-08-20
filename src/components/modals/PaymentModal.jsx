@@ -12,7 +12,7 @@ const initialState = {
   address: '',
 };
 
-const PaymentModal = ({ isOpen, closeModal, onClose }) => {
+const PaymentModal = ({ isOpen, onClose, onExit }) => {
   const { total } = useSelector((state) => ({ ...state.cart }));
 
   const [errors, setErrors] = useState({});
@@ -28,11 +28,11 @@ const PaymentModal = ({ isOpen, closeModal, onClose }) => {
 
   const handleClose = useCallback(() => {
     setShowModal(false);
-    closeModal();
+    onExit();
     onClose();
     errors && setErrors({});
     handleClear();
-  }, [errors, closeModal, onClose, handleClear]);
+  }, [errors, onExit, onClose, handleClear]);
 
   const handleClick = useCallback((e) => {
     e.stopPropagation();
@@ -325,5 +325,11 @@ const ErrorMsg = styled.span`
   color: var(--clr-secondary-red);
   margin-top: 1px;
 `;
+
+PaymentModal.propTypes = {
+  isOpen: PropTypes.bool.isRequired,
+  onClose: PropTypes.func.isRequired,
+  onExit: PropTypes.func.isRequired,
+};
 
 export default PaymentModal;
