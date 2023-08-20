@@ -234,4 +234,15 @@ const Input = styled.input`
   }
 `;
 
+ProductFilter.propTypes = {
+  products: PropTypes.array.isRequired,
+  price: PropTypes.number.isRequired,
+  category: PropTypes.string.isRequired,
+  size: PropTypes.any.isRequired,
+  color: PropTypes.string.isRequired,
+  minPrice: PropTypes.number.isRequired,
+  maxPrice: PropTypes.number.isRequired,
+  handleChange: PropTypes.func.isRequired,
+};
+
 export default ProductFilter;
