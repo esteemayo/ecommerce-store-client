@@ -141,7 +141,7 @@ const Account = () => {
         <Modal
           title='Change your email address'
           onOpen={isEmailOpen}
-          onClose={setIsEmailOpen}
+          onClose={handleCancel}
         >
           <UpdateData onCancel={handleCancel} />
         </Modal>
