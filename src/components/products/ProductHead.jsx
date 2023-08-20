@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Link from 'next/link';
 import { NumericFormat } from 'react-number-format';
 import { useMemo } from 'react';
+import PropTypes from 'prop-types';
 
 import StarRating from '../StarRating';
 
