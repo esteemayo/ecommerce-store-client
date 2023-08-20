@@ -31,6 +31,10 @@ const Account = () => {
     setIsPasswordOpen(false);
   }, []);
 
+  const handleCancel = useCallback(() => {
+    setIsEmailOpen(false);
+  }, []);
+
   const handleClose = useCallback(() => {
     setIsDeleteOpen(false);
   }, []);
