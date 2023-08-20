@@ -27,20 +27,20 @@ const Account = () => {
 
   const user = false;
 
-  const openHandler = useCallback(() => {
-    setIsPasswordOpen(true);
-  }, []);
-
-  const closeHandler = useCallback(() => {
-    setIsPasswordOpen(false);
-  }, []);
-
   const handleOpenEmail = useCallback(() => {
     setIsEmailOpen(true);
   }, []);
 
   const handleCancel = useCallback(() => {
     setIsEmailOpen(false);
+  }, []);
+
+  const openHandler = useCallback(() => {
+    setIsPasswordOpen(true);
+  }, []);
+
+  const closeHandler = useCallback(() => {
+    setIsPasswordOpen(false);
   }, []);
 
   const handleOpen = useCallback(() => {
