@@ -5,26 +5,26 @@ import { useCallback } from 'react';
 import CloseIcon from '@mui/icons-material/Close';
 import PropTypes from 'prop-types';
 
-const Modal = ({ title, children, openModal, closeModal }) => {
+const Modal = ({ title, children, onOpen, onClose }) => {
   const closeModalHandler = useCallback((e) => {
     e.stopPropagation();
 
     if (e.target.classList.contains('overlay')) {
-      closeModal(false);
+      onClose(false);
     }
-  }, [closeModal]);
+  }, [onClose]);
 
   return (
     <Overlay
       className='overlay'
-      type={openModal ? 'show' : ''}
+      type={onOpen ? 'show' : ''}
       onClick={closeModalHandler}
     >
       <Container>
         <Wrapper>
           <ButtonContainer>
             <Heading>{title}</Heading>
-            <Button type='button' onClick={() => closeModal(false)}>
+            <Button type='button' onClick={() => onClose(false)}>
               <CloseIcon />
             </Button>
           </ButtonContainer>
