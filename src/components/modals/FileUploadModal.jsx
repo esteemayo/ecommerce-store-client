@@ -254,4 +254,9 @@ const Button = styled.button`
   }
 `;
 
+FileUploadModal.propTypes = {
+  isOpen: PropTypes.bool.isRequired,
+  onClose: PropTypes.func.isRequired,
+};
+
 export default FileUploadModal;
