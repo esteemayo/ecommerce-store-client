@@ -58,4 +58,9 @@ const ValueAdd = styled.div`
   }
 `;
 
+ProductValue.propTypes = {
+  items: PropTypes.array.isRequired,
+  mode: PropTypes.bool.isRequired,
+};
+
 export default ProductValue;
