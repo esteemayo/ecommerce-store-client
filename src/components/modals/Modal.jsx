@@ -12,7 +12,8 @@ const Modal = ({ title, children, isOpen, onClose }) => {
     e.stopPropagation();
 
     if (e.target.classList.contains('overlay')) {
-      onClose(false);
+      setShowModal(false);
+      onClose();
     }
   }, [onClose]);
 
