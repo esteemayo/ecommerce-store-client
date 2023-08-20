@@ -5,7 +5,7 @@ import { useCallback } from 'react';
 import CloseIcon from '@mui/icons-material/Close';
 import PropTypes from 'prop-types';
 
-const Modal = ({ title, children, onOpen, onClose }) => {
+const Modal = ({ title, children, isOpen, onClose }) => {
   const closeModalHandler = useCallback((e) => {
     e.stopPropagation();
 
@@ -17,7 +17,7 @@ const Modal = ({ title, children, onOpen, onClose }) => {
   return (
     <Overlay
       className='overlay'
-      type={onOpen ? 'show' : ''}
+      type={isOpen ? 'show' : ''}
       onClick={closeModalHandler}
     >
       <Container>
