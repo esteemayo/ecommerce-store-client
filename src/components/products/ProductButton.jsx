@@ -64,4 +64,10 @@ const Button = styled.button`
   }
 `;
 
+ProductButton.propTypes = {
+  small: PropTypes.bool,
+  actionLabel: PropTypes.string.isRequired,
+  onAction: PropTypes.func.isRequired,
+};
+
 export default ProductButton;
