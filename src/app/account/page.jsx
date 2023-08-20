@@ -27,6 +27,10 @@ const Account = () => {
 
   const user = false;
 
+  const handleCancel = useCallback(() => {
+    setIsDeleteOpen(false);
+  }, []);
+
   return (
     <ClientOnly>
       <Container onMouseOver={() => dispatch(closeSubmenu())}>
