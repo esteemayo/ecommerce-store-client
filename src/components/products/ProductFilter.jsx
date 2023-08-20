@@ -14,7 +14,7 @@ const ProductFilter = ({
   color,
   minPrice,
   maxPrice,
-  handleChange,
+  onChange,
 }) => {
   let colors = getUnique(products, 'color');
   colors = colors.map((color, index) => {
@@ -53,7 +53,7 @@ const ProductFilter = ({
             id='color'
             name='color'
             value={color}
-            onChange={handleChange}
+            onChange={onChange}
           >
             {colors}
           </Select>
@@ -64,7 +64,7 @@ const ProductFilter = ({
             id='category'
             name='category'
             value={category}
-            onChange={handleChange}
+            onChange={onChange}
           >
             {categories}
           </Select>
@@ -75,7 +75,7 @@ const ProductFilter = ({
             id='size'
             name='size'
             value={size}
-            onChange={handleChange}
+            onChange={onChange}
           >
             {sizes}
           </Select>
@@ -97,7 +97,7 @@ const ProductFilter = ({
             value={price}
             min={minPrice}
             max={maxPrice}
-            onChange={handleChange}
+            onChange={onChange}
           />
         </Filter>
       </FilterWrapper>
@@ -242,7 +242,7 @@ ProductFilter.propTypes = {
   color: PropTypes.string.isRequired,
   minPrice: PropTypes.number.isRequired,
   maxPrice: PropTypes.number.isRequired,
-  handleChange: PropTypes.func.isRequired,
+  onChange: PropTypes.func.isRequired,
 };
 
 export default ProductFilter;

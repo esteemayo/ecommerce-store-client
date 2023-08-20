@@ -75,7 +75,7 @@ const Products = () => {
           <ProductFilter
             {...values}
             products={products}
-            handleChange={handleChange}
+            onChange={handleChange}
           />
           <ProductList products={sortedProducts} />
           {products.length > 0 && <Pagination />}
