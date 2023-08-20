@@ -130,7 +130,7 @@ const Account = () => {
         <Modal
           title='Change your password'
           onOpen={isPasswordOpen}
-          onClose={setIsPasswordOpen}
+          onClose={closeHandler}
         >
           <UpdatePassword onCancel={closeHandler} />
         </Modal>
