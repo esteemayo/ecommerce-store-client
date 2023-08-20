@@ -148,8 +148,8 @@ const Account = () => {
           </Wrapper>
         </ContainerBox>
         <FileUploadModal
-          openModal={isFileUploadOpen}
-          closeModal={setIsFileUploadOpen}
+          isOpen={isFileUploadOpen}
+          onClose={setIsFileUploadOpen}
         />
         <Modal
           title='Change your password'
