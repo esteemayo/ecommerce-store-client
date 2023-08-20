@@ -170,4 +170,11 @@ const Button = styled.button`
   }
 `;
 
+OrderCard.propTypes = {
+  id: PropTypes.number.isRequired,
+  total: PropTypes.number.isRequired,
+  status: PropTypes.number.isRequired,
+  createdAt: PropTypes.string.isRequired,
+};
+
 export default OrderCard;
