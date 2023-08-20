@@ -323,4 +323,9 @@ const Button = styled.button`
   }
 `;
 
+ReviewModal.propTypes = {
+  isOpen: PropTypes.bool.isRequired,
+  onClose: PropTypes.func.isRequired,
+};
+
 export default ReviewModal;
