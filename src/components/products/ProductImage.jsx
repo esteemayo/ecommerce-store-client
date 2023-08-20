@@ -195,4 +195,8 @@ const ArrowButton = styled.button`
   }
 `;
 
+ProductImage.propTypes = {
+  images: PropTypes.array.isRequired,
+};
+
 export default ProductImage;
