@@ -18,8 +18,8 @@ const Modal = ({ title, children, isOpen, onClose }) => {
   }, [onClose]);
 
   useEffect(() => {
-    setShowModal(true);
-  }, []);
+    setShowModal(isOpen);
+  }, [isOpen]);
 
   return (
     <Overlay

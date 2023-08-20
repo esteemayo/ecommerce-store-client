@@ -29,8 +29,8 @@ const FileUploadModal = ({ isOpen, onClose }) => {
   }, [file]);
 
   useEffect(() => {
-    setShowModal(true);
-  }, []);
+    setShowModal(isOpen);
+  }, [isOpen]);
 
   return (
     <Overlay
