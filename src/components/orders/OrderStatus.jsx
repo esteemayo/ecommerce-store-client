@@ -113,4 +113,8 @@ const Status = styled.span`
   }
 `;
 
+OrderStatus.propTypes = {
+  statusClass: PropTypes.string.isRequired,
+};
+
 export default OrderStatus;
