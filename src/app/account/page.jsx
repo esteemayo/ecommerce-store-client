@@ -35,6 +35,10 @@ const Account = () => {
     setIsEmailOpen(false);
   }, []);
 
+  const handleOpen = useCallback(() => {
+    setIsDeleteOpen(true);
+  }, []);
+
   const handleClose = useCallback(() => {
     setIsDeleteOpen(false);
   }, []);
@@ -102,7 +106,9 @@ const Account = () => {
                         You will receive an email to confirm your decision.
                         Please note, that all your data will be permanently erased.
                       </DeleteWarning>
-                      <DeleteButton type='button' onClick={() => setIsDeleteOpen(true)}>Delete account</DeleteButton>
+                      <DeleteButton type='button' onClick={handleOpen}>
+                        Delete account
+                      </DeleteButton>
                     </DeleteContainer>
                   </Left>
                   <Right>
