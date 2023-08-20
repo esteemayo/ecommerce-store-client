@@ -24,7 +24,7 @@ const Modal = ({ title, children, onOpen, onClose }) => {
         <Wrapper>
           <ButtonContainer>
             <Heading>{title}</Heading>
-            <Button type='button' onClick={() => onClose(false)}>
+            <Button type='button' onClick={onClose}>
               <CloseIcon />
             </Button>
           </ButtonContainer>
