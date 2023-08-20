@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useCallback, useRef, useState } from 'react';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import PropTypes from 'prop-types';
 
 import ProductImageModal from '../modals/ProductImageModal';
 
