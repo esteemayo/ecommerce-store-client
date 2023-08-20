@@ -2,6 +2,7 @@
 
 import styled from 'styled-components';
 import { NumericFormat } from 'react-number-format';
+import PropTypes from 'prop-types';
 
 import { getUnique } from '@/utils';
 
