@@ -88,4 +88,8 @@ const ProductsContainer = styled.div`
   }
 `;
 
+ProductList.propTypes = {
+  products: PropTypes.array.isRequired,
+};
+
 export default ProductList;
