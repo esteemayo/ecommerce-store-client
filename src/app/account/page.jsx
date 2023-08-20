@@ -55,6 +55,10 @@ const Account = () => {
     setIsFileUploadOpen(true);
   }, []);
 
+  const closeFileHandler = useCallback(() => {
+    setIsFileUploadOpen(false);
+  }, []);
+
   return (
     <ClientOnly>
       <Container onMouseOver={() => dispatch(closeSubmenu())}>
@@ -149,7 +153,7 @@ const Account = () => {
         </ContainerBox>
         <FileUploadModal
           isOpen={isFileUploadOpen}
-          onClose={setIsFileUploadOpen}
+          onClose={closeFileHandler}
         />
         <Modal
           title='Change your password'
