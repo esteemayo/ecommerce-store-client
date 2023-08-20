@@ -18,7 +18,7 @@ const FileUploadModal = ({ isOpen, onClose }) => {
   }, [handleClose]);
 
   const handleClose = useCallback(() => {
-    onClose(false);
+    onClose();
     file && setFile(null);
   }, [file, onClose]);
 
