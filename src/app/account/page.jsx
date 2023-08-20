@@ -27,6 +27,10 @@ const Account = () => {
 
   const user = false;
 
+  const closeHandler = useCallback(() => {
+    setIsPasswordOpen(false);
+  }, []);
+
   const handleClose = useCallback(() => {
     setIsDeleteOpen(false);
   }, []);
