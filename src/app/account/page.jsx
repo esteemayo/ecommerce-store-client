@@ -125,19 +125,19 @@ const Account = () => {
         />
         <Modal
           title='Change your password'
-          openModal={isPasswordOpen}
-          closeModal={setIsPasswordOpen}
+          onOpen={isPasswordOpen}
+          onClose={setIsPasswordOpen}
         >
           <UpdatePassword onCancel={() => setIsPasswordOpen(false)} />
         </Modal>
         <Modal
           title='Change your email address'
-          openModal={isEmailOpen}
-          closeModal={setIsEmailOpen}
+          onOpen={isEmailOpen}
+          onClose={setIsEmailOpen}
         >
           <UpdateData onCancel={() => setIsEmailOpen(false)} />
         </Modal>
-        <Modal openModal={isDeleteOpen} closeModal={setIsDeleteOpen}>
+        <Modal onOpen={isDeleteOpen} onClose={setIsDeleteOpen}>
           <DeleteAccount onCancel={handleClose} />
         </Modal>
       </Container>
