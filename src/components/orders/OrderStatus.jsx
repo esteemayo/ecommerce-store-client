@@ -3,6 +3,7 @@
 import styled from 'styled-components';
 import Image from 'next/image';
 import { useSelector } from 'react-redux';
+import PropTypes from 'prop-types';
 
 const OrderStatus = ({ statusClass }) => {
   const { mode } = useSelector((state) => ({ ...state.darkMode }));
