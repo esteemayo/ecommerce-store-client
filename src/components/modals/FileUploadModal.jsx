@@ -7,6 +7,7 @@ import { useCallback, useEffect, useState } from 'react';
 
 const FileUploadModal = ({ isOpen, onClose }) => {
   const [perc, setPerc] = useState(0);
+  const [showModal, setShowModal] = useState(isOpen);
   const [file, setFile] = useState(null);
 
   const closeModalHandler = useCallback((e) => {
