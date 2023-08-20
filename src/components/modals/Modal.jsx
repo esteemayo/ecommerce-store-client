@@ -1,9 +1,9 @@
 'use client';
 
 import styled from 'styled-components';
-import { useCallback } from 'react';
-import CloseIcon from '@mui/icons-material/Close';
 import PropTypes from 'prop-types';
+import CloseIcon from '@mui/icons-material/Close';
+import { useCallback, useState } from 'react';
 
 const Modal = ({ title, children, isOpen, onClose }) => {
   const closeModalHandler = useCallback((e) => {
