@@ -27,7 +27,7 @@ const Account = () => {
 
   const user = false;
 
-  const handleCancel = useCallback(() => {
+  const handleClose = useCallback(() => {
     setIsDeleteOpen(false);
   }, []);
 
@@ -138,7 +138,7 @@ const Account = () => {
           <UpdateData onCancel={() => setIsEmailOpen(false)} />
         </Modal>
         <Modal openModal={isDeleteOpen} closeModal={setIsDeleteOpen}>
-          <DeleteAccount onCancel={setIsDeleteOpen} />
+          <DeleteAccount onCancel={handleClose} />
         </Modal>
       </Container>
     </ClientOnly>
