@@ -5,7 +5,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import PropTypes from 'prop-types';
 import { useCallback, useState } from 'react';
 
-const FileUploadModal = ({ openModal, closeModal }) => {
+const FileUploadModal = ({ isOpen, onClose }) => {
   const [perc, setPerc] = useState(0);
   const [file, setFile] = useState(null);
 
@@ -18,9 +18,9 @@ const FileUploadModal = ({ openModal, closeModal }) => {
   }, [handleClose]);
 
   const handleClose = useCallback(() => {
-    closeModal(false);
+    onClose(false);
     file && setFile(null);
-  }, [file, closeModal]);
+  }, [file, onClose]);
 
   const handleUpload = useCallback(() => {
     console.log(file);
@@ -29,7 +29,7 @@ const FileUploadModal = ({ openModal, closeModal }) => {
   return (
     <Overlay
       className='overlay'
-      type={openModal ? 'show' : ''}
+      type={isOpen ? 'show' : ''}
       onClick={closeModalHandler}
     >
       <Container>
