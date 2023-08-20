@@ -2,8 +2,8 @@
 
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
+import { useCallback, useEffect, useState } from 'react';
 import CloseIcon from '@mui/icons-material/Close';
-import { useCallback, useState } from 'react';
 
 const Modal = ({ title, children, isOpen, onClose }) => {
   const [showModal, setShowModal] = useState(isOpen);
