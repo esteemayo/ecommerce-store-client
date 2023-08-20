@@ -132,7 +132,7 @@ const Account = () => {
           onOpen={isPasswordOpen}
           onClose={setIsPasswordOpen}
         >
-          <UpdatePassword onCancel={() => setIsPasswordOpen(false)} />
+          <UpdatePassword onCancel={closeHandler} />
         </Modal>
         <Modal
           title='Change your email address'
