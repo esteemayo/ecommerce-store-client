@@ -2,6 +2,7 @@
 
 import styled from 'styled-components';
 import CloseIcon from '@mui/icons-material/Close';
+import PropTypes from 'prop-types';
 import { useCallback, useState } from 'react';
 
 const FileUploadModal = ({ openModal, closeModal }) => {
