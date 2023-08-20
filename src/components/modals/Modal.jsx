@@ -125,4 +125,11 @@ const Button = styled.button`
 
 const ModalContent = styled.div``;
 
+Modal.propTypes = {
+  title: PropTypes.string,
+  children: PropTypes.any.isRequired,
+  isOpen: PropTypes.bool.isRequired,
+  onClose: PropTypes.func.isRequired,
+};
+
 export default Modal;
