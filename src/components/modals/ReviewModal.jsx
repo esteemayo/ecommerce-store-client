@@ -2,10 +2,10 @@
 
 import styled, { css } from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import PropTypes from 'prop-types';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 
 import StarRating from '../StarRating';
 
