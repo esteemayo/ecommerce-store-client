@@ -94,7 +94,10 @@ const Product = ({ product }) => {
               mode={mode.toString()}
             />
             <Hr />
-            <ProductInfo title='Overview' content={product.desc} />
+            <ProductInfo
+              title='Overview'
+              content={product.desc}
+            />
           </ProductWrapper>
         </Right>
       </ProductContainer>
