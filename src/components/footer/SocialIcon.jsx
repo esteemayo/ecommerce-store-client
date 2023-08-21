@@ -63,6 +63,7 @@ const IconWrapper = styled.div`
   color: ${({ mode }) => mode && 'rgb(206, 206, 206)'};
   border-radius: 50%;
   cursor: pointer;
+  transition: all 0.3s ease;
 
   @media only screen and (max-width: 37.5em) {
     width: 3.5rem;
