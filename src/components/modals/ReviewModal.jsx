@@ -67,8 +67,7 @@ const ReviewModal = ({ isOpen, onClose }) => {
           </ButtonContainer>
           <Header>Overall rating</Header>
           <RatingContainer>
-            <Rating
-              size='large'
+            <StarRating
               name='size-large'
               value={rating}
               precision={0.5}
