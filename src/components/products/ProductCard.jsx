@@ -271,12 +271,12 @@ const Button = styled.button`
   text-transform: uppercase;
   background-color: ${({ theme }) => theme.bgBtn};
   color: ${({ theme }) => theme.textBtn};
-  background-image: linear-gradient(
+  background-image: ${({ theme }) => css`linear-gradient(
     120deg,
     transparent 0%,
     transparent 50%,
-    ${({ theme }) => theme.bgImgBtn} 50%
-  );
+    ${theme.bgImgBtn} 50%
+  )`};
   background-size: 220%;
   outline-color: ${({ theme }) => theme.btnOut};
   border-radius: 0.5rem;
