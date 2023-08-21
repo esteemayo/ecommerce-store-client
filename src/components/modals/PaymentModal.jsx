@@ -71,6 +71,10 @@ const PaymentModal = ({ isOpen, onClose, onExit }) => {
     handleClear();
   }, [total, inputs, handleClear, validateForm]);
 
+  const activeModal = useMemo(() => {
+    return showModal ? 'show' : '';
+  }, [showModal]);
+
   useEffect(() => {
     setShowModal(isOpen);
   }, [isOpen]);
@@ -78,7 +82,7 @@ const PaymentModal = ({ isOpen, onClose, onExit }) => {
   return (
     <Overlay
       className='overlay'
-      type={showModal ? 'show' : ''}
+      type={activeModal}
       onClick={handleClick}
     >
       <Container>
