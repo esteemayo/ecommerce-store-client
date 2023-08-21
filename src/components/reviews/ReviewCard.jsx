@@ -47,7 +47,7 @@ const ReviewCard = ({ user, rating, review, createdAt }) => {
 
 const Container = styled.article`
   width: 65rem;
-  background-color: transparent;
+  background-color: ${({ theme }) => theme.revCardBg};
   border-radius: 1rem;
   box-shadow: ${({ theme }) => theme.boxCart};
   -webkit-box-shadow: ${({ theme }) => theme.boxCart};
