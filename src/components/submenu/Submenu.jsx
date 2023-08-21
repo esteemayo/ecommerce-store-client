@@ -1,7 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useState, useMemo, useRef } from 'react';
 import { useSelector } from 'react-redux';
 
 import Heading from './Heading';
