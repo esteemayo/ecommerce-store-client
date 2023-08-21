@@ -17,4 +17,8 @@ const ClientOnly = ({ children }) => {
   return <>{children}</>;
 }
 
+ClientOnly.propTypes = {
+  children: PropTypes.array.isRequired,
+};
+
 export default ClientOnly;
