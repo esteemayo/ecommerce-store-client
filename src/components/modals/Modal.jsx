@@ -17,6 +17,10 @@ const Modal = ({ title, children, isOpen, onClose }) => {
     }
   }, [onClose]);
 
+  const activeModal = useMemo(() => {
+    return showModal ? 'show' : '';
+  }, [showModal]);
+
   useEffect(() => {
     setShowModal(isOpen);
   }, [isOpen]);
@@ -24,7 +28,7 @@ const Modal = ({ title, children, isOpen, onClose }) => {
   return (
     <Overlay
       className='overlay'
-      type={showModal ? 'show' : ''}
+      type={activeModal}
       onClick={closeModalHandler}
     >
       <Container>
