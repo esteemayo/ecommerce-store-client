@@ -49,9 +49,9 @@ const Container = styled.article`
   width: 65rem;
   background-color: ${({ theme }) => theme.revCardBg};
   border-radius: 1rem;
-  box-shadow: ${({ theme }) => theme.boxCart};
-  -webkit-box-shadow: ${({ theme }) => theme.boxCart};
-  -moz-box-shadow: ${({ theme }) => theme.boxCart};
+  box-shadow: ${({ theme }) => theme.boxRevCard};
+  -webkit-box-shadow: ${({ theme }) => theme.boxRevCard};
+  -moz-box-shadow: ${({ theme }) => theme.boxRevCard};
   margin-bottom: 2rem;
   line-height: 1.4;
 
