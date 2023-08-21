@@ -15,7 +15,7 @@ export const darkTheme = {
   textPrice: '#9a9b9c',
   bgRev: '#000000',
   bgRevs: '#272727',
-  revCardBg: '#272727',
+  revCardBg: '#121212',
   textRev: '#e2e4e4',
   textRevCount: '#d6d9db',
   textReviewer: '#cfd0d1',
