@@ -55,6 +55,10 @@ const Navbar = () => {
     }
   }, [dispatch]);
 
+  const handleOpen = useCallback(() => {
+    dispatch(openSidebar());
+  }, [dispatch]);
+
   return (
     <Container onMouseOver={handleSubmenu}>
       <Wrapper>
@@ -63,7 +67,7 @@ const Navbar = () => {
         </LogoBox>
         <ToggleButton
           icon={faBars}
-          onClick={() => dispatch(openSidebar())}
+          onClick={handleOpen}
         />
         <ListContainer>
           {navLinks.map((item) => {
