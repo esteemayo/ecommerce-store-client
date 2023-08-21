@@ -89,7 +89,10 @@ const Product = ({ product }) => {
               />
             )}
             <Hr />
-            <ProductValue items={productValue} mode={mode.toString()} />
+            <ProductValue
+              items={productValue}
+              mode={mode.toString()}
+            />
             <Hr />
             <ProductInfo title='Overview' content={product.desc} />
           </ProductWrapper>
