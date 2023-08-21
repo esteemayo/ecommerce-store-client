@@ -1,6 +1,6 @@
 'use client';
 
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import PropTypes from 'prop-types';
 
 const ReviewButton = ({ actionLabel, onAction }) => {
@@ -17,7 +17,7 @@ const Button = styled.button`
   padding: 1rem;
   background-color: ${({ theme }) => theme.bgRevBtn};
   color:  ${({ theme }) => theme.textRevBtn};
-  background-image: ${({ theme }) => `linear-gradient(
+  background-image: ${({ theme }) => css`linear-gradient(
     120deg,
     transparent 0%,
     transparent 50%,
