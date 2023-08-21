@@ -26,7 +26,11 @@ const ReviewCard = ({ user, rating, review, createdAt }) => {
             )}
             <Name>{user.name}</Name>
           </Reviewer>
-          <StarRating value={rating} />
+          <StarRating
+            readOnly
+            value={rating}
+            name='read-only'
+          />
         </ReviewContainer>
         <Review>{review}</Review>
         <DateContainer>
