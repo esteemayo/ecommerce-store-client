@@ -201,4 +201,10 @@ const Right = styled.div`
   }
 `;
 
+ReviewItem.propTypes = {
+  user: PropTypes.object.isRequired,
+  rating: PropTypes.number.isRequired,
+  review: PropTypes.string.isRequired,
+};
+
 export default ReviewItem;
