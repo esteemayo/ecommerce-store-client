@@ -206,4 +206,11 @@ const ShareButton = styled.button`
   }
 `;
 
+ReviewCard.propTypes = {
+  user: PropTypes.object.isRequired,
+  rating: PropTypes.number.isRequired,
+  review: PropTypes.string.isRequired,
+  createdAt: PropTypes.string.isRequired,
+};
+
 export default ReviewCard;
