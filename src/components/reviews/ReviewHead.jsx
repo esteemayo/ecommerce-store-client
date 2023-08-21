@@ -26,6 +26,7 @@ const ReviewHead = ({
         <StarRating
           readOnly
           value={rating}
+          name='read-only'
         />
         <TotalReviews>{reviews.length} reviews</TotalReviews>
       </Ratings>
