@@ -1,6 +1,6 @@
 'use client';
 
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import Link from 'next/link';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
