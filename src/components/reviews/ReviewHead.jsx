@@ -21,7 +21,7 @@ const ReviewHead = ({
     <Container>
       <Ratings>
         <TotalRatings>
-          {reviews.length === 0 ? 0 : reviews.length.toFixed(1)}
+          {!!reviews.length === 0 ? 0 : reviews.length.toFixed(1)}
         </TotalRatings>
         <StarRating value={rating} />
         <TotalReviews>{reviews.length} reviews</TotalReviews>
