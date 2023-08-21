@@ -118,7 +118,7 @@ export const darkTheme = {
   bgModeHov: '#b7b7b8',
   bgModeIcon: '#cfd0d1',
   bgBtn: '#201f1f',
-  bgImgBtn: '#121212',
+  bgImgBtn: '#070707',
 };
 
 export const lightTheme = {
