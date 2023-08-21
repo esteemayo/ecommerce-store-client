@@ -41,4 +41,8 @@ const ListContainer = styled.ul`
   row-gap: 0.25rem;
 `;
 
+SidebarMenu.propTypes = {
+  items: PropTypes.array.isRequired,
+};
+
 export default SidebarMenu;
