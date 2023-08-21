@@ -38,4 +38,8 @@ const Wrapper = styled.div`
   justify-content: center;
 `;
 
+Loader.propTypes = {
+  size: PropTypes.string,
+};
+
 export default Loader;
