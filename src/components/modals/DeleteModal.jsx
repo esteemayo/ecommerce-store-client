@@ -2,7 +2,7 @@
 
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 
 import CloseIcon from '@mui/icons-material/Close';
 
@@ -56,8 +56,8 @@ const DeleteModal = ({ actionId, isOpen, onClose, onAction }) => {
             <CancelButton type='button' onClick={onClose}>
               Not now
             </CancelButton>
-            <DeleteButton 
-              type='button' 
+            <DeleteButton
+              type='button'
               onClick={() => deleteWishlistHandler(actionId)}
             >
               Remove
