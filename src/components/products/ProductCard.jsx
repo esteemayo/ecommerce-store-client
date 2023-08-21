@@ -29,7 +29,7 @@ const ProductCard = ({ product, onOpen, onSelect }) => {
   return (
     <Container>
       <ImageContainer>
-        <Image
+        <StyledImage
           src={product.images[0]}
           width={300}
           height={200}
@@ -116,18 +116,18 @@ const Container = styled.article`
 
 const ImageContainer = styled.div`
   width: 100%;
+`;
 
-  img {
-    width: 100%;
-    height: 20rem;
-    display: block;
-    object-fit: cover;
-    border-top-left-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
+const StyledImage = styled(Image)`
+  width: 100%;
+  height: 20rem;
+  display: block;
+  object-fit: cover;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
 
-    @media only screen and (max-width: 37.5em) {
-      height: 17.5rem;
-    }
+  @media only screen and (max-width: 37.5em) {
+    height: 17.5rem;
   }
 `;
 
