@@ -180,17 +180,17 @@ const Hr = styled.hr`
 
 Product.propTypes = {
   product: PropTypes.shape({
-    name: PropTypes.string.isRequired,
-    color: PropTypes.string.isRequired,
-    size: PropTypes.any.isRequired,
-    price: PropTypes.number.isRequired,
-    discount: PropTypes.number.isRequired,
-    priceDiscount: PropTypes.number.isRequired,
-    ratingsAverage: PropTypes.number.isRequired,
-    ratingsQuantity: PropTypes.number.isRequired,
-    images: PropTypes.array.isRequired,
-    category: PropTypes.string.isRequired,
-    desc: PropTypes.string.isRequired,
+    name: PropTypes.string,
+    color: PropTypes.string,
+    size: PropTypes.any,
+    price: PropTypes.number,
+    discount: PropTypes.number,
+    priceDiscount: PropTypes.number,
+    ratingsAverage: PropTypes.number,
+    ratingsQuantity: PropTypes.number,
+    images: PropTypes.array,
+    category: PropTypes.string,
+    desc: PropTypes.string,
   }),
 };
 
