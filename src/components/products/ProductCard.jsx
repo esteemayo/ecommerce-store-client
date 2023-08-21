@@ -46,7 +46,9 @@ const ProductCard = ({ product, onOpen, onSelect }) => {
             value={product.ratingsAverage}
             name='read-only'
           />
-          <Reviews>(<span>6 reviews</span>)</Reviews>
+          <Reviews>
+            (<span>{product.ratingsQuantity} reviews</span>)
+          </Reviews>
         </ReviewContainer>
         <PriceContainer>
           <Prices>
