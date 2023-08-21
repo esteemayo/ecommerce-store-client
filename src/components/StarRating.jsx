@@ -5,7 +5,6 @@ const StarRating = ({ value, ...rest }) => {
   return (
     <Rating
       {...rest}
-      readOnly
       value={value}
       precision={0.5}
       size='large'
