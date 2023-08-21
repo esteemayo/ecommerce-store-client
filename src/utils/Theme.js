@@ -94,7 +94,7 @@ export const darkTheme = {
   bgRevCard: '#121212',
   starBorder: '#403e3e',
   textRevDate: '#999898',
-  bgRevBtn: '#000000',
+  bgRevBtn: '#201f1f',
   bgImgRevBtn: '#121212',
   textRevBtn: '#cfd0d1',
   textReview: '#b6b5b5',
