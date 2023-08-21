@@ -296,12 +296,14 @@ const Button = styled.button`
   font-size: 1.4rem;
   background-color: ${({ theme }) => theme.bgBtnModal};
   color: ${({ theme }) => theme.textBtn};
-  background-image: linear-gradient(
-    120deg,
-    transparent 0%,
-    transparent 50%,
-    #a9c9c1 50%
-  );
+  background-image: ${({ theme }) => css`
+    linear-gradient(
+      120deg,
+      transparent 0%,
+      transparent 50%,
+      ${theme.bgBtnModalHov} 50%
+    );
+  `};
   background-size: 220%;
   border-radius: 0.5rem;
   outline-color: #a9c9c1;
