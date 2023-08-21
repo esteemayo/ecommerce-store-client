@@ -33,7 +33,7 @@ const ReviewItem = ({ user, rating, review }) => {
           </Button>
         </Left>
         <Right>
-          <Image
+          <StyledImage
             src={user.photo}
             width={1200}
             height={1200}
@@ -198,13 +198,13 @@ const Right = styled.div`
   @media only screen and (max-width: 50em) {
     height: 40.3rem;
   }
+`;
 
-  img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-  }
+const StyledImage = styled(Image)`
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
 `;
 
 ReviewItem.propTypes = {
