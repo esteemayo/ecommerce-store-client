@@ -23,7 +23,10 @@ const ReviewHead = ({
         <TotalRatings>
           {!!reviews.length === 0 ? 0 : reviews.length.toFixed(1)}
         </TotalRatings>
-        <StarRating value={rating} />
+        <StarRating
+          readOnly
+          value={rating}
+        />
         <TotalReviews>{reviews.length} reviews</TotalReviews>
       </Ratings>
       <Wrapper>
