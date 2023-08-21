@@ -14,7 +14,7 @@ const SocialIcon = ({ data }) => {
         const { id, url, icon, color } = item;
         return (
           <Link key={id} href={url} passHref>
-            <IconWrapper mode={mode} color={color}>
+            <IconWrapper mode={mode.toString()} color={color}>
               {icon}
             </IconWrapper>
           </Link>
