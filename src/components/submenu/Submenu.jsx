@@ -15,6 +15,10 @@ const Submenu = () => {
   const containerRef = useRef();
   const [columns, setColumns] = useState('col-2');
 
+  const activeSubmenu = useMemo(() => {
+    return isSubmenuOpen ? 'show' : '';
+  }, [isSubmenuOpen]);
+
   useEffect(() => {
     setColumns('col-2');
     const submenu = containerRef.current;
@@ -37,7 +41,7 @@ const Submenu = () => {
   }, [links, location]);
 
   return (
-    <Container type={isSubmenuOpen ? 'show' : ''} ref={containerRef}>
+    <Container type={activeSubmenu} ref={containerRef}>
       <Heading title={page} />
       <ListContainer columns={columns}>
         {links?.map((link, index) => {
