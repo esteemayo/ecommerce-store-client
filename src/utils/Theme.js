@@ -121,7 +121,8 @@ export const darkTheme = {
   bgModeHov: '#b7b7b8',
   bgModeIcon: '#cfd0d1',
   bgBtn: '#201f1f',
-  bgBtnModal: '#201f1f',
+  bgBtnModal: '#403e3e',
+  bgBtnModalHov: '#4e4b4b',
   bgImgBtn: '#070707',
   btnOut: '#272727',
 };
@@ -250,6 +251,7 @@ export const lightTheme = {
   bgModeIcon: 'var(--clr-white)',
   bgBtn: 'var(--clr-primary-green)',
   bgBtnModal: 'var(--clr-tertiary-green)',
+  bgBtnModalHov: '#a9c9c1',
   bgImgBtn: 'var(--clr-tertiary-green)',
   btnOut: '#85beae',
 };
