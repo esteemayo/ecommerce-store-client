@@ -13,7 +13,11 @@ const ReviewItem = ({ user, rating, review }) => {
       <Wrapper>
         <Left>
           <RatingContainer>
-            <StarRating value={rating} />
+            <StarRating
+              readOnly
+              value={rating}
+              name='read-only'
+            />
             <ReviewCount>Based on 61 reviews</ReviewCount>
           </RatingContainer>
           <ReviewContainer>
