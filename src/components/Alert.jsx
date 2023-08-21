@@ -27,4 +27,11 @@ const Message = styled.span`
   text-align: ${({ center }) => center ? 'center' : 'left'};
 `;
 
+Alert.propTypes = {
+  alert: PropTypes.bool.isRequired,
+  center: PropTypes.bool,
+  message: PropTypes.string.isRequired,
+  onChange: PropTypes.func.isRequired,
+};
+
 export default Alert;
