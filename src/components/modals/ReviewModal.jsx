@@ -39,6 +39,10 @@ const ReviewModal = ({ isOpen, onClose }) => {
     handleClear();
   }, [rating, review, terms, handleClear]);
 
+  const activeModal = useMemo(() => {
+    return showModal ? 'show' : '';
+  }, [showModal]);
+
   useEffect(() => {
     setShowModal(isOpen);
   }, [isOpen]);
@@ -46,7 +50,7 @@ const ReviewModal = ({ isOpen, onClose }) => {
   return (
     <Overlay
       className='overlay'
-      type={showModal ? 'show' : ''}
+      type={activeModal}
       onClick={handleCloseModal}
     >
       <Container>
