@@ -73,6 +73,11 @@ const IconWrapper = styled.div`
   align-items: center;
   justify-content: center;
 
+  &:hover {
+    background-color: #${({ color, mode }) => mode && color};
+    color: ${({ mode }) => mode && 'var(--color-white)'};
+  }
+
   svg {
     font-size: 2rem;
     color: inherit;
