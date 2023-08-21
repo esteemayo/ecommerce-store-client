@@ -306,7 +306,7 @@ const Button = styled.button`
   `};
   background-size: 220%;
   border-radius: 0.5rem;
-  outline-color: #a9c9c1;
+  outline-color: ${({ theme }) => theme.bgBtnModalOut};
   margin: 3rem 0;
   cursor: pointer;
   transition: all 0.3s ease;
