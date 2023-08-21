@@ -8,7 +8,6 @@ const StarRating = ({ value, ...rest }) => {
       value={value}
       precision={0.5}
       size='large'
-      name='read-only'
     />
   );
 }
