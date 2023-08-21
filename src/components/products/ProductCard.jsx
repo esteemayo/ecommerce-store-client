@@ -38,12 +38,7 @@ const ProductCard = ({ product, onOpen, onSelect }) => {
       </ImageContainer>
       <InfoContainer>
         <ProductName>
-          <Link
-            href={url}
-            passHref
-          >
-            {product.name}
-          </Link>
+          <Link href={url} passHref>{product.name}</Link>
         </ProductName>
         <ReviewContainer>
           <StarRating value={product.ratingsAverage} />
