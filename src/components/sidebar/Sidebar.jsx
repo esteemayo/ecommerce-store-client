@@ -27,8 +27,12 @@ const Sidebar = () => {
     console.log(query);
   }, [query]);
 
+  const handleOpen = useMemo(() => {
+    return isSidebarOpen ? 'show' : '';
+  }, [isSidebarOpen]);
+
   return (
-    <Container type={isSidebarOpen ? 'show' : ''}>
+    <Container type={handleOpen}>
       <Wrapper>
         <CloseButton type='button' onClick={handleClick}>
           <FontAwesomeIcon icon={faXmark} />
