@@ -18,6 +18,10 @@ const ProductCard = ({ product, onOpen, onSelect }) => {
     onSelect(product);
   }, [product, onOpen, onSelect]);
 
+  const url = useMemo(() => {
+    return `/products/${encodeURIComponent(product.id)}`;
+  }, [product.id]);
+
   const initialPrice = useMemo(() => {
     return product.price + product.discount;
   }, [product]);
@@ -35,7 +39,7 @@ const ProductCard = ({ product, onOpen, onSelect }) => {
       <InfoContainer>
         <ProductName>
           <Link
-            href={`/products/${encodeURIComponent(product.id)}`}
+            href={url}
             passHref
           >
             {product.name}
