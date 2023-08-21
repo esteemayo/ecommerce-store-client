@@ -18,6 +18,10 @@ const Sidebar = () => {
 
   const [query, setQuery] = useState('');
 
+  const handleClick = useCallback(() => {
+    dispatch(closeSidebar());
+  }, [dispatch]);
+
   const handleSearch = useCallback((e) => {
     e.preventDefault();
     console.log(query);
@@ -26,7 +30,7 @@ const Sidebar = () => {
   return (
     <Container type={isSidebarOpen ? 'show' : ''}>
       <Wrapper>
-        <CloseButton type='button' onClick={() => dispatch(closeSidebar())}>
+        <CloseButton type='button' onClick={handleClick}>
           <FontAwesomeIcon icon={faXmark} />
         </CloseButton>
         <SidebarMenu items={sublinks} />
