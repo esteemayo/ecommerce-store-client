@@ -35,6 +35,10 @@ const DeleteModal = ({ actionId, isOpen, onClose, onAction }) => {
     onClose();
   }, [onAction, onClose]);
 
+  const activeModal = useMemo(() => {
+    return showModal ? 'show' : '';
+  }, [showModal]);
+
   useEffect(() => {
     setShowModal(isOpen);
   }, [isOpen]);
@@ -43,7 +47,7 @@ const DeleteModal = ({ actionId, isOpen, onClose, onAction }) => {
     <Overlay
       className='overlay'
       onClick={closeModalHandler}
-      type={showModal ? 'show' : ''}
+      type={activeModal}
     >
       <Container>
         <Wrapper>
