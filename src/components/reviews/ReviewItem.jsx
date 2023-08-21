@@ -72,7 +72,7 @@ const Left = styled.div`
   width: 100%;
   height: 100%;
   padding: 8rem 0 10rem 4rem;
-  background-color: ${({ theme }) => theme.bg};
+  background-color: ${({ theme }) => theme.bgRevs};
 
   @media only screen and (max-width: 64em) {
     padding-left: 3rem;
