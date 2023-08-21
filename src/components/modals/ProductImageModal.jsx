@@ -46,12 +46,16 @@ const ProductImageModal = ({
     return () => window.removeEventListener('keydown', exitModal);
   }, [onClose]);
 
+  const activeModal = useMemo(() => {
+    return showModal ? 'show' : '';
+  }, [showModal]);
+
   useEffect(() => {
     setShowModal(isOpen);
   }, [isOpen]);
 
   return (
-    <Overlay type={showModal ? 'show' : ''}>
+    <Overlay type={activeModal}>
       <CloseButton type='button' onClick={handleClose}>
         <CloseIcon />
       </CloseButton>
