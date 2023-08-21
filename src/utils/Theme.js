@@ -113,7 +113,7 @@ export const darkTheme = {
   spnrBorTop: '#797979',
   textSlider: '#cfd0d1',
   boxSub: '0 0.5rem 2rem rgba(197, 196, 196, 0.09)',
-  bgSearch: '#000000',
+  bgSearch: '#121212',
   bgMode: '#cfd0d1',
   bgModeHov: '#b7b7b8',
   bgModeIcon: '#cfd0d1',
