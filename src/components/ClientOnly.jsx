@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import PropTypes from 'prop-types';
 
 const ClientOnly = ({ children }) => {
   const [hasMounted, setHasMounted] = useState(false);
@@ -16,9 +15,5 @@ const ClientOnly = ({ children }) => {
 
   return <>{children}</>;
 }
-
-ClientOnly.propTypes = {
-  children: PropTypes.object.isRequired,
-};
 
 export default ClientOnly;
