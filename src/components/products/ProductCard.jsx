@@ -269,7 +269,7 @@ const Button = styled.button`
   padding: 1.5rem 1rem;
   font-size: 1.5rem;
   text-transform: uppercase;
-  background-color: var(--clr-primary-green);
+  background-color: ${({ theme }) => theme.bgBtn};
   color: ${({ theme }) => theme.textBtn};
   background-image: linear-gradient(
     120deg,
