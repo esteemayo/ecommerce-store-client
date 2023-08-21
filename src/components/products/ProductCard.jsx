@@ -41,7 +41,11 @@ const ProductCard = ({ product, onOpen, onSelect }) => {
           <Link href={url} passHref>{product.name}</Link>
         </ProductName>
         <ReviewContainer>
-          <StarRating value={product.ratingsAverage} />
+          <StarRating
+            readOnly
+            value={product.ratingsAverage}
+            name='read-only'
+          />
           <Reviews>(<span><span>6 reviews</span></span>)</Reviews>
         </ReviewContainer>
         <PriceContainer>
