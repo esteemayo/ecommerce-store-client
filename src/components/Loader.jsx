@@ -1,6 +1,8 @@
 'use client';
 
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
+
 import Spinner from './Spinner';
 
 const Loader = ({ size }) => {
