@@ -8,6 +8,8 @@ import Link from 'next/link';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import PropTypes from 'prop-types';
 
+import StarRating from '../StarRating';
+
 const ReviewModal = ({ isOpen, onClose }) => {
   const [rating, setRating] = useState(null);
   const [review, setReview] = useState('');
