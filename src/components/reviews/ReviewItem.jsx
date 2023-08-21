@@ -18,7 +18,9 @@ const ReviewItem = ({ user, rating, review }) => {
           </RatingContainer>
           <ReviewContainer>
             <Review>{review}</Review>
-            <Reviewer>{user.name.split(' ')[0]} {user.name.split(' ')[1].charAt(0)}.</Reviewer>
+            <Reviewer>
+              {user.name.split(' ')[0]} {user.name.split(' ').pop().charAt(0)}.
+            </Reviewer>
           </ReviewContainer>
           <Button>
             <Link href='/products' passHref>
