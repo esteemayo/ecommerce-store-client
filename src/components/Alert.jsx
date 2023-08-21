@@ -2,6 +2,7 @@
 
 import styled from 'styled-components';
 import { useEffect } from 'react';
+import PropTypes from 'prop-types';
 
 const Alert = ({ alert, center, message, onChange }) => {
   useEffect(() => {
