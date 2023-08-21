@@ -93,9 +93,9 @@ const Container = styled.article`
   width: 35rem;
   background-color: ${({ theme }) => theme.bgProdCard};
   border-radius: 0.5rem;
-  box-shadow: ${({ theme }) => theme.box};
-  -webkit-box-shadow: ${({ theme }) => theme.box};
-  -moz-box-shadow: ${({ theme }) => theme.box};
+  box-shadow: ${({ theme }) => theme.boxCard};
+  -webkit-box-shadow: ${({ theme }) => theme.boxCard};
+  -moz-box-shadow: ${({ theme }) => theme.boxCard};
 
   @media only screen and (max-width: 50em) {
     width: 33rem;
