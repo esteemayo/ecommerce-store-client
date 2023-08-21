@@ -51,6 +51,10 @@ const CartModal = ({ product, isOpen, onClose, onSelect }) => {
     handleReset();
   }, [onClose, onSelect, handleReset]);
 
+  const activeModal = useMemo(() => {
+    return showModal ? 'show' : '';
+  }, [showModal]);
+
   useEffect(() => {
     setShowModal(isOpen);
   }, [isOpen]);
@@ -58,7 +62,7 @@ const CartModal = ({ product, isOpen, onClose, onSelect }) => {
   return (
     <Overlay
       className='overlay'
-      type={showModal ? 'show' : ''}
+      type={activeModal}
       onClick={closeModalHandler}
     >
       <Container>
