@@ -45,6 +45,7 @@ export default function RootLayout({ children }) {
                     <ToastProvider />
                     <Submenu />
                     <Sidebar />
+                    <SearchModal />
                   </ClientOnly>
                   {children}
                   <ClientOnly>
