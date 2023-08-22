@@ -12,13 +12,15 @@ const Search = () => {
   return (
     <Container>
       <Form onSubmit={handleSearch}>
-        <Input
-          type='search'
-          value={searchQuery}
-          placeholder='Search products...'
-          onChange={(e) => setSearchQuery(e.target.value)}
-        />
-        <Button type='submit'>Search</Button>
+        <FormGroup>
+          <Input
+            type='search'
+            value={searchQuery}
+            placeholder='Search products...'
+            onChange={(e) => setSearchQuery(e.target.value)}
+          />
+          <Button type='submit'>Search</Button>
+        </FormGroup>
       </Form>
     </Container>
   );
