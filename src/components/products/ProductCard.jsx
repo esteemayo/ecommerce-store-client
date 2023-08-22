@@ -9,8 +9,8 @@ import PropTypes from 'prop-types';
 import { useCallback, useMemo } from 'react';
 
 import StarRating from '../StarRating';
-import WishlistButton from '../WishlistButton';
-import LikeButton from '../LikeButton';
+import WishlistButton from '../buttons/WishlistButton';
+import LikeButton from '../buttons/LikeButton';
 import FormatPrice from '../FormatPrice';
 
 const ProductCard = ({ product, onOpen, onSelect }) => {
