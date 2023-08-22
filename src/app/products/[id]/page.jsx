@@ -77,7 +77,7 @@ const SingleProduct = ({ params }) => {
           <Recommendation data={recommendations} />
           <Reviews
             reviews={reviews}
-            sortLabel={sortLabel}
+            sortLabel={getSort}
             sort={sort}
             onSort={setSort}
           />
