@@ -18,6 +18,11 @@ const Container = styled.button`
   color: ${({ theme }) => theme.bgModeIcon};
   outline-color: var(--clr-primary-green);
   cursor: pointer;
+
+  svg {
+    font-size: inherit;
+    color: currentColor;
+  }
 `;
 
 export default SearchIcon;
