@@ -52,12 +52,7 @@ const CartTotal = ({ isOpen, onOpen, onClose, onAction }) => {
           <TotalWrapper>
             <Text>Total:</Text>
             <PriceTotal>
-              <NumericFormat
-                value={total}
-                displayType={'text'}
-                thousandSeparator={true}
-                prefix={'$'}
-              />
+              <FormatPrice value={total} />
             </PriceTotal>
           </TotalWrapper>
         </TotalContainer>
