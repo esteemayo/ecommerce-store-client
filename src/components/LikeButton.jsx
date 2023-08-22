@@ -4,7 +4,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const LikeButton = () => {
   return (
-    <div>LikeButton</div>
+    <StyledButton>
+      <FontAwesomeIcon icon={faStar} />
+      Add to favorites
+    </StyledButton>
   );
 }
 
