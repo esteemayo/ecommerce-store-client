@@ -18,6 +18,8 @@ const StyledButton = styled.button`
   font-size: 1.4rem;
   background-color: transparent;
   color: #858585;
+  outline-color: #b8b6b6;
+  outline-offset: 3px;
 `;
 
 export default WishlistButton;
