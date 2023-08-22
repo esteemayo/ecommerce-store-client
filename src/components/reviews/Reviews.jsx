@@ -22,7 +22,7 @@ const Reviews = ({ reviews, sortLabel, sort, onSort }) => {
   }, []);
 
   const handleToggleFilter = useCallback(() => {
-    setIsFilterOpen((prev) => !prev);
+    setIsFilterOpen((value) => !value);
   }, []);
 
   const handleCloseFilter = useCallback(() => {
