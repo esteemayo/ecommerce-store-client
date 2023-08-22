@@ -12,7 +12,8 @@ const WishlistButton = () => {
 }
 
 const StyledButton = styled.button`
-  
+  border: none;
+  display: inline-block;
 `;
 
 export default WishlistButton;
