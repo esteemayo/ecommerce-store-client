@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import Modal from './Modal';
+import useSearchModal from '@/hooks/useSearchModal';
 
 const SearchModal = () => {
   return (
