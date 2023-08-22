@@ -21,7 +21,7 @@ const Container = styled.button`
 
   svg {
     font-size: inherit;
-    color: currentColor;
+    fill: currentColor;
   }
 `;
 
