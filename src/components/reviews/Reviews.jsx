@@ -1,19 +1,15 @@
 'use client';
 
 import styled from 'styled-components';
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useCallback, useState } from 'react';
 
 import ReviewHead from './ReviewHead';
 import ReviewCards from './ReviewCards';
 
 import ReviewModal from '../modals/ReviewModal';
 
-import { reviewItems } from '@/data';
-
-const Reviews = () => {
-  const [sort, setSort] = useState(null);
+const Reviews = ({ reviews, sortLabel, sort, onSort }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [reviews, setReviews] = useState(reviewItems);
   const [isFilterOpen, setIsFilterOpen] = useState(false);
 
   const handleOpenModal = useCallback(() => {
@@ -41,44 +37,18 @@ const Reviews = () => {
     };
   }, []);
 
-  const getSort = useMemo(() => {
-    if (sort === 'newest') return 'newest';
-    if (sort === 'highest') return 'highest rating';
-    if (sort === 'lowest') return 'lowest rating';
-  }, [sort]);
-
-  useEffect(() => {
-    if (sort === 'newest') {
-      setReviews((prev) =>
-        [...prev].sort((a, b) => a.createdAt - b.createdAt)
-      );
-    }
-
-    if (sort === 'highest') {
-      setReviews((prev) =>
-        [...prev].sort((a, b) => b.rating - a.rating)
-      );
-    }
-
-    if (sort === 'lowest') {
-      setReviews((prev) =>
-        [...prev].sort((a, b) => a.rating - b.rating)
-      );
-    }
-  }, [sort]);
-
   return (
     <Container id='reviews' className='reviews' onClick={handleCloseFilter}>
       <Wrapper>
         <Heading>Reviews</Heading>
         <ReviewHead
           sort={sort}
-          sortLabel={getSort}
+          sortLabel={sortLabel}
           rating={0}
           reviews={reviews}
           isOpen={isFilterOpen}
           onOpen={handleOpenModal}
-          onSort={setSort}
+          onSort={onSort}
           onToggle={handleToggleFilter}
         />
         <ReviewCards

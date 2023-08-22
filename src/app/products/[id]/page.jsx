@@ -1,7 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 import { useDispatch } from 'react-redux';
 
 import ClientOnly from '@/components/ClientOnly';
@@ -10,18 +10,46 @@ import EmptyState from '@/components/EmptyState';
 import Recommendation from '@/components/Recommendation';
 import Reviews from '@/components/reviews/Reviews';
 
-import { storeProducts, recommendations } from '@/data';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
+import { recommendations, reviewItems, storeProducts } from '@/data';
 
 const SingleProduct = ({ params }) => {
   const { id } = params;
   const dispatch = useDispatch();
 
   const [product, setProduct] = useState({});
+  const [reviews, setReviews] = useState(reviewItems);
+  const [sort, setSort] = useState(null);
 
   const handleCloseSubmenu = useCallback(() => {
     dispatch(closeSubmenu());
   }, [dispatch]);
+
+  const getSort = useMemo(() => {
+    if (sort === 'newest') return 'newest';
+    if (sort === 'highest') return 'highest rating';
+    if (sort === 'lowest') return 'lowest rating';
+  }, [sort]);
+
+  useEffect(() => {
+    if (sort === 'newest') {
+      setReviews((prev) =>
+        [...prev].sort((a, b) => a.createdAt - b.createdAt)
+      );
+    }
+
+    if (sort === 'highest') {
+      setReviews((prev) =>
+        [...prev].sort((a, b) => b.rating - a.rating)
+      );
+    }
+
+    if (sort === 'lowest') {
+      setReviews((prev) =>
+        [...prev].sort((a, b) => a.rating - b.rating)
+      );
+    }
+  }, [sort]);
 
   useEffect(() => {
     const product = storeProducts.find((item) => item.id === parseInt(id));
@@ -47,7 +75,12 @@ const SingleProduct = ({ params }) => {
           <Product product={product} />
           <Line />
           <Recommendation data={recommendations} />
-          <Reviews />
+          <Reviews
+            reviews={reviews}
+            sortLabel={sortLabel}
+            sort={sort}
+            onSort={setSort}
+          />
         </Wrapper>
       </Container>
     </ClientOnly>
