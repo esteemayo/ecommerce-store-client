@@ -3,7 +3,9 @@ import styled from 'styled-components';
 const Search = () => {
   return (
     <Container>
-      Search
+      <Form>
+
+      </Form>
     </Container>
   );
 }
