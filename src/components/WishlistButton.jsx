@@ -4,7 +4,10 @@ import { faHeart } from '@fortawesome/free-regular-svg-icons';
 
 const WishlistButton = () => {
   return (
-    <div>WishlistButton</div>
+    <StyledButton>
+      <FontAwesomeIcon icon={faHeart} />
+      Add to Wishlist
+    </StyledButton>
   );
 }
 
