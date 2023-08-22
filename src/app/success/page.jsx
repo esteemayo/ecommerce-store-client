@@ -2,10 +2,9 @@
 
 import styled from 'styled-components';
 import Link from 'next/link';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { NumericFormat } from 'react-number-format';
 import { faEnvelope, faLocationDot, faMessage, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { useDispatch } from 'react-redux';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import ClientOnly from '@/components/ClientOnly';
 import FormatPrice from '@/components/FormatPrice';
