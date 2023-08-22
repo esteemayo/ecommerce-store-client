@@ -5,8 +5,8 @@ import Image from 'next/image';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import CloseIcon from '@mui/icons-material/Close';
 import PropTypes from 'prop-types';
+import CloseIcon from '@mui/icons-material/Close';
 
 import FormatPrice from '../FormatPrice';
 import DeleteModal from '../modals/DeleteModal';
