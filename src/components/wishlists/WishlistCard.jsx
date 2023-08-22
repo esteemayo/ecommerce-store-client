@@ -9,8 +9,10 @@ import CloseIcon from '@mui/icons-material/Close';
 import { NumericFormat } from 'react-number-format';
 import PropTypes from 'prop-types';
 
-import { excerpts } from '@/utils';
+import FormatPrice from '../FormatPrice';
 import DeleteModal from '../modals/DeleteModal';
+
+import { excerpts } from '@/utils';
 
 const WishlistCard = ({
   isOpen,
@@ -48,12 +50,7 @@ const WishlistCard = ({
             <Right>
               <CartContainer>
                 <ProductPrice>
-                  <NumericFormat
-                    value={price}
-                    displayType={'text'}
-                    thousandSeparator={true}
-                    prefix={'$'}
-                  />
+                  <FormatPrice value={price} />
                 </ProductPrice>
                 <CartButton type='button' onClick={() => onAction(wishlist)}>
                   <FontAwesomeIcon icon={faShoppingCart} />
