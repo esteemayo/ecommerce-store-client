@@ -11,6 +11,7 @@ import { useCallback, useMemo } from 'react';
 import { faHeart } from '@fortawesome/free-regular-svg-icons';
 
 import StarRating from '../StarRating';
+import WishlistButton from '../WishlistButton';
 import LikeButton from '../LikeButton';
 
 const ProductCard = ({ product, onOpen, onSelect }) => {
@@ -78,10 +79,7 @@ const ProductCard = ({ product, onOpen, onSelect }) => {
           add to cart
         </Button>
         <FavWrapper>
-          <WishlistButton>
-            <FontAwesomeIcon icon={faHeart} />
-            Add to Wishlist
-          </WishlistButton>
+          <WishlistButton />
           <LikeButton />
         </FavWrapper>
       </InfoContainer>
@@ -319,37 +317,37 @@ const FavWrapper = styled.div`
   }
 `;
 
-const WishlistButton = styled.button`
-  border: none;
-  display: inline-block;
-  font-weight: 500;
-  font-size: 1.4rem;
-  background-color: transparent;
-  color: #858585;
-  outline-color: #b8b6b6;
-  outline-offset: 3px;
-  cursor: pointer;
+// const WishlistButton = styled.button`
+//   border: none;
+//   display: inline-block;
+//   font-weight: 500;
+//   font-size: 1.4rem;
+//   background-color: transparent;
+//   color: #858585;
+//   outline-color: #b8b6b6;
+//   outline-offset: 3px;
+//   cursor: pointer;
 
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+//   display: flex;
+//   align-items: center;
+//   gap: 0.5rem;
 
-  @media only screen and (max-width: 64em) {
-    align-items: self-end;
-  }
+//   @media only screen and (max-width: 64em) {
+//     align-items: self-end;
+//   }
 
-  @media only screen and (max-width: 35em) {
-    font-size: 1.37rem;
-  }
+//   @media only screen and (max-width: 35em) {
+//     font-size: 1.37rem;
+//   }
 
-  svg {
-    font-size: 1.7rem;
+//   svg {
+//     font-size: 1.7rem;
 
-    @media only screen and (max-width: 35em) {
-      font-size: 1.6rem;
-    }
-  }
-`;
+//     @media only screen and (max-width: 35em) {
+//       font-size: 1.6rem;
+//     }
+//   }
+// `;
 
 ProductCard.propTypes = {
   product: PropTypes.object.isRequired,
