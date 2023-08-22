@@ -12,4 +12,8 @@ const Container = styled.div`
   
 `;
 
+const Form = styled.form`
+  
+`;
+
 export default Search;
