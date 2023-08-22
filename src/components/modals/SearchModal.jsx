@@ -3,7 +3,9 @@ import Modal from './Modal';
 
 const SearchModal = () => {
   return (
-    <div>SearchModal</div>
+    <Modal>
+      SearchModal
+    </Modal>
   );
 }
 
