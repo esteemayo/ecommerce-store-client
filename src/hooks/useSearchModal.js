@@ -1,9 +1,9 @@
 import { create } from 'zustand';
 
-const useSearchModal = () => {
-  return (
-    <div>useSearchModal</div>
-  );
-}
+const useSearchModal = () => create((set) => ({
+  isOpen: false,
+  onOpen: () => set({ isOpen: true }),
+  onclose: () => set({ isOpen: false }),
+}));
 
 export default useSearchModal;
