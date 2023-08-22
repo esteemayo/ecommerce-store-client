@@ -12,6 +12,7 @@ import { useCallback, useMemo } from 'react';
 import StarRating from '../StarRating';
 import WishlistButton from '../WishlistButton';
 import LikeButton from '../LikeButton';
+import FormatPrice from '../FormatPrice';
 
 const ProductCard = ({ product, onOpen, onSelect }) => {
   const handleOpen = useCallback(() => {
@@ -54,12 +55,7 @@ const ProductCard = ({ product, onOpen, onSelect }) => {
         <PriceContainer>
           <Prices>
             <Discount>
-              <NumericFormat
-                value={initialPrice}
-                displayType={'text'}
-                thousandSeparator={true}
-                prefix={'$'}
-              />
+              <FormatPrice value={initialPrice} />
             </Discount>
             <Price>
               <NumericFormat
