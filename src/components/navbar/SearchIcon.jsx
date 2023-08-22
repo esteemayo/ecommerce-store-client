@@ -6,4 +6,8 @@ const SearchIcon = () => {
   return <FontAwesomeIcon icon={faMagnifyingGlass} />;
 }
 
+const Container = styled.div`
+  
+`;
+
 export default SearchIcon;
