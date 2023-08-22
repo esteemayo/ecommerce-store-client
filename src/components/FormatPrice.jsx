@@ -1,4 +1,5 @@
 import { NumericFormat } from 'react-number-format';
+import PropTypes from 'prop-types';
 
 const FormatPrice = ({ value }) => {
   return (
