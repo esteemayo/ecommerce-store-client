@@ -5,6 +5,8 @@ import Image from 'next/image';
 import { NumericFormat } from 'react-number-format';
 import PropTypes from 'prop-types';
 
+import FormatPrice from '../FormatPrice';
+
 const CartInfo = ({
   id,
   color,
@@ -29,12 +31,7 @@ const CartInfo = ({
         <PriceContainer>
           <Label>Price:</Label>
           <Price>
-            <NumericFormat
-              value={price}
-              displayType={'text'}
-              thousandSeparator={true}
-              prefix={'$'}
-            />
+            <FormatPrice value={price} />
           </Price>
         </PriceContainer>
         <ColorContainer>
