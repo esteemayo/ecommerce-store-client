@@ -8,4 +8,8 @@ const WishlistButton = () => {
   );
 }
 
+const StyledButton = styled.button`
+  
+`;
+
 export default WishlistButton;
