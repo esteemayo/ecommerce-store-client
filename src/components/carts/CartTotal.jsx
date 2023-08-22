@@ -6,6 +6,8 @@ import { useSelector } from 'react-redux';
 import { useCallback, useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 
+import FormatPrice from '../FormatPrice';
+
 const CartTotal = ({ isOpen, onOpen, onClose, onAction }) => {
   const { tax, total, subtotal } = useSelector((state) => ({ ...state.cart }));
   const [show, setShow] = useState(isOpen);
@@ -34,12 +36,7 @@ const CartTotal = ({ isOpen, onOpen, onClose, onAction }) => {
           <TotalWrapper>
             <Text>Subtotal:</Text>
             <PriceTotal>
-              <NumericFormat
-                value={subtotal}
-                displayType={'text'}
-                thousandSeparator={true}
-                prefix={'$'}
-              />
+              <FormatPrice value={subtotal} />
             </PriceTotal>
           </TotalWrapper>
         </TotalContainer>
