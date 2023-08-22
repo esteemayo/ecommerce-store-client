@@ -44,12 +44,7 @@ const CartTotal = ({ isOpen, onOpen, onClose, onAction }) => {
           <TotalWrapper>
             <Text>Tax:</Text>
             <PriceTotal>
-              <NumericFormat
-                value={tax}
-                displayType={'text'}
-                thousandSeparator={true}
-                prefix={'$'}
-              />
+              <FormatPrice value={tax} />
             </PriceTotal>
           </TotalWrapper>
         </TotalContainer>
