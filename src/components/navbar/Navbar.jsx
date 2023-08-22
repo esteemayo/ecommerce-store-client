@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { useDispatch, useSelector } from 'react-redux';
 import { useCallback, useState } from 'react';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { useStore } from 'zustand';
 
 import Logo from './Logo';
 import DarkModeToggle from './DarkModeToggle';
@@ -29,6 +30,7 @@ const Navbar = () => {
 
   const searchModal = useSearchModal();
   const [isHover, setIsHover] = useState(false);
+  console.log(searchModal.isOpen)
 
   const displaySubmenu = useCallback((e) => {
     e.stopPropagation();
