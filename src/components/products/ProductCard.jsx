@@ -11,6 +11,7 @@ import { useCallback, useMemo } from 'react';
 import { faHeart } from '@fortawesome/free-regular-svg-icons';
 
 import StarRating from '../StarRating';
+import LikeButton from '../LikeButton';
 
 const ProductCard = ({ product, onOpen, onSelect }) => {
   const handleOpen = useCallback(() => {
