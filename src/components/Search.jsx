@@ -4,6 +4,11 @@ import { useCallback, useState } from 'react';
 const Search = () => {
   const [searchQuery, setSearchQuery] = useState('');
 
+  const handleSearch = useCallback((e) => {
+    e.preventDefault();
+    console.log({ searchQuery });
+  }, [searchQuery]);
+
   return (
     <Container>
       <Form>
