@@ -9,7 +9,11 @@ import PropTypes from 'prop-types';
 import FormatPrice from '../FormatPrice';
 
 const OrderCard = ({ id, total, status, createdAt }) => {
-  const options = { month: 'long', day: 'numeric', year: 'numeric' };
+  const dateLabel = useMemo(() => {
+    const options = { month: 'long', day: 'numeric', year: 'numeric' };
+    const date = new Date(createdAt).toLocaleDateString('en-us', options);
+    return date;
+  }, [createdAt]);
 
   return (
     <Container status={status}>
@@ -17,9 +21,7 @@ const OrderCard = ({ id, total, status, createdAt }) => {
         <OrderDateIconContainer>
           <OrderDateWrapper>
             <OrderId>Order id: {id}</OrderId>
-            <OrderDate dateTime={createdAt}>
-              Placed on {new Date(createdAt).toLocaleDateString('en-us', options)}
-            </OrderDate>
+            <OrderDate dateTime={createdAt}>Placed on {dateLabel}</OrderDate>
           </OrderDateWrapper>
           <OrderIconWrapper>
             <MoreVertIcon />
