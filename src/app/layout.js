@@ -10,6 +10,7 @@ import ScrollToTop from '@/components/ScrollToTop';
 import Darkmode from '@/components/DarkMode';
 import Sidebar from '@/components/sidebar/Sidebar';
 import ClientOnly from '@/components/ClientOnly';
+import SearchModal from '@/components/modals/SearchModal';
 
 import ToastProvider from '@/providers/ToastProvider';
 import CartTotalProvider from '@/providers/CartTotalProvider';
