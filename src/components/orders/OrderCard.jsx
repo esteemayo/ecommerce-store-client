@@ -6,6 +6,8 @@ import Link from 'next/link';
 import { NumericFormat } from 'react-number-format';
 import PropTypes from 'prop-types';
 
+import FormatPrice from '../FormatPrice';
+
 const OrderCard = ({ id, total, status, createdAt }) => {
   const options = { month: 'long', day: 'numeric', year: 'numeric' };
 
@@ -24,12 +26,7 @@ const OrderCard = ({ id, total, status, createdAt }) => {
           </OrderIconWrapper>
         </OrderDateIconContainer>
         <OrderTotal>Total: {' '}
-          <NumericFormat
-            value={total}
-            displayType={'text'}
-            thousandSeparator={true}
-            prefix={'$'}
-          />
+          <FormatPrice value={total} />
         </OrderTotal>
         <Link href={`/orders/${encodeURIComponent(id)}`} passHref>
           <Button type='button'>
