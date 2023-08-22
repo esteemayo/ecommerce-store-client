@@ -27,6 +27,7 @@ const Navbar = () => {
   const dispatch = useDispatch();
   const { qty } = useSelector((state) => ({ ...state.cart }));
 
+  const searchModal = useSearchModal();
   const [isHover, setIsHover] = useState(false);
 
   const displaySubmenu = useCallback((e) => {
