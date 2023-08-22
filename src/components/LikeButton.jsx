@@ -8,4 +8,8 @@ const LikeButton = () => {
   );
 }
 
+const StyledButton = styled.button`
+  
+`;
+
 export default LikeButton;
