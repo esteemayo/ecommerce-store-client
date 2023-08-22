@@ -2,6 +2,7 @@
 
 import styled from 'styled-components';
 import { useCallback, useState } from 'react';
+import PropTypes from 'prop-types';
 
 import ReviewHead from './ReviewHead';
 import ReviewCards from './ReviewCards';
