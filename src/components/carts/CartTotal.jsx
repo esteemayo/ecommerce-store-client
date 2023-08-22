@@ -1,7 +1,6 @@
 'use client';
 
 import styled from 'styled-components';
-import { NumericFormat } from 'react-number-format';
 import { useSelector } from 'react-redux';
 import { useCallback, useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
