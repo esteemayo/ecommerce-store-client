@@ -2,7 +2,7 @@
 
 import styled, { css } from 'styled-components';
 import Image from 'next/image';
-import { faShoppingCart, faStar } from '@fortawesome/free-solid-svg-icons';
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import PropTypes from 'prop-types';
