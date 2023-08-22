@@ -25,6 +25,10 @@ const StyledButton = styled.button`
   align-items: center;
   gap: 0.5rem;
 
+  @media only screen and (max-width: 64em) {
+    align-items: self-end;
+  }
+
   svg {
     font-size: 1.7rem;
 
