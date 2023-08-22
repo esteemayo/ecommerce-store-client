@@ -32,6 +32,10 @@ const Form = styled.form`
   
 `;
 
+const FormGroup = styled.div`
+  
+`;
+
 const Input = styled.input`
   
 `;
