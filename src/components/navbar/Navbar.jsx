@@ -11,6 +11,7 @@ import LoginButton from './LoginButton';
 import CartQuantity from './CartQuantity';
 import MenuItem from './MenuItem';
 import ToggleButton from './ToggleButton';
+import SearchIcon from './SearchIcon';
 
 import {
   closeSubmenu,
@@ -89,7 +90,10 @@ const Navbar = () => {
               onMouse={setIsHover}
             />
           ) : (
-            <CartQuantity amount={qty} />
+            <>
+              <SearchIcon />
+              <CartQuantity amount={qty} />
+            </>
           )}
         </ButtonContainer>
       </Wrapper>
