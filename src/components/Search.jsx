@@ -2,6 +2,8 @@ import styled from 'styled-components';
 import { useCallback, useState } from 'react';
 
 const Search = () => {
+  const [searchQuery, setSearchQuery] = useState('');
+
   return (
     <Container>
       <Form>
