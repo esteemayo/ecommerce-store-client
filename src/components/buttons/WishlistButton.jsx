@@ -34,6 +34,10 @@ const StyledButton = styled.button`
     font-size: 1.37rem;
   }
 
+  &:hover {
+    opacity: 0.75;
+  }
+
   svg {
     font-size: 1.7rem;
 
