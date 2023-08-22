@@ -5,6 +5,7 @@ import { NumericFormat } from 'react-number-format';
 import PropTypes from 'prop-types';
 
 import { getUnique } from '@/utils';
+import FormatPrice from '../FormatPrice';
 
 const ProductFilter = ({
   products,
@@ -83,12 +84,7 @@ const ProductFilter = ({
         <Filter>
           <Label htmlFor='price'>
             Product price {' '}
-            <NumericFormat
-              value={price}
-              displayType={'text'}
-              thousandSeparator={true}
-              prefix={'$'}
-            />
+            <FormatPrice value={price} />
           </Label>
           <Input
             id='price'
