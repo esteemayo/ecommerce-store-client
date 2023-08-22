@@ -5,7 +5,7 @@ import useSearchModal from '@/hooks/useSearchModal';
 
 const SearchModal = () => {
   const isOpen = useSearchModal((state) => state.isOpen);
-  const onClose = useSearchModal((state) => state.isOpen);
+  const onClose = useSearchModal((state) => state.onClose);
 
   return (
     <Modal
