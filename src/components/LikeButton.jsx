@@ -20,6 +20,10 @@ const StyledButton = styled.button`
   outline-color: #b8b6b6;
   outline-offset: 3px;
   cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 `;
 
 export default LikeButton;
