@@ -5,14 +5,13 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 import FormatPrice from './FormatPrice';
-import { recommendations } from '@/data';
 
-const Recommendation = () => {
+const Recommendation = ({ data }) => {
   return (
     <Container>
       <Heading>You might also like</Heading>
       <Wrapper>
-        {recommendations.map((item) => {
+        {data.map((item) => {
           const { id, image, name, price } = item;
           return (
             <ProductWrapper key={id}>
