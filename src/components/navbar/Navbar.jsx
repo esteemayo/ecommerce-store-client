@@ -20,6 +20,7 @@ import {
 } from '@/features/submenu/submenuSlice';
 
 import { navLinks } from '@/data';
+import useSearchModal from '@/hooks/useSearchModal';
 
 const Navbar = () => {
   const user = true;
