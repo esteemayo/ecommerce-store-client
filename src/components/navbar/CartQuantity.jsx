@@ -34,7 +34,7 @@ const Container = styled.div`
 
     svg {
       font-size: 2.3rem;
-      fill: currentColor;
+      color: currentColor;
     }
   }
 `;
