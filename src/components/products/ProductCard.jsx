@@ -8,9 +8,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import PropTypes from 'prop-types';
 import { useCallback, useMemo } from 'react';
 
-import StarRating from '../StarRating';
-import WishlistButton from '../buttons/WishlistButton';
 import LikeButton from '../buttons/LikeButton';
+import WishlistButton from '../buttons/WishlistButton';
+
+import StarRating from '../StarRating';
 import FormatPrice from '../FormatPrice';
 
 const ProductCard = ({ product, onOpen, onSelect }) => {
