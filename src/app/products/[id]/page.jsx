@@ -10,7 +10,7 @@ import EmptyState from '@/components/EmptyState';
 import Recommendation from '@/components/Recommendation';
 import Reviews from '@/components/reviews/Reviews';
 
-import { storeProducts } from '@/data';
+import { storeProducts, recommendations } from '@/data';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
 const SingleProduct = ({ params }) => {
@@ -46,7 +46,7 @@ const SingleProduct = ({ params }) => {
         <Wrapper>
           <Product product={product} />
           <Line />
-          <Recommendation />
+          <Recommendation data={recommendations} />
           <Reviews />
         </Wrapper>
       </Container>
