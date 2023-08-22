@@ -156,4 +156,8 @@ const ProductPrice = styled.p`
   line-height: 1.3em;
 `;
 
+Recommendation.propTypes = {
+  data: PropTypes.array.isRequired,
+};
+
 export default Recommendation;
