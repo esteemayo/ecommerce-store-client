@@ -13,6 +13,8 @@ const SearchIcon = () => {
 const Container = styled.button`
   display: inline-block;
   border: none;
+  background-color: transparent;
+  color: ${({ theme }) => theme.bgModeIcon};
 `;
 
 export default SearchIcon;
