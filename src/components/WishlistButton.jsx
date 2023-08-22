@@ -16,6 +16,8 @@ const StyledButton = styled.button`
   display: inline-block;
   font-weight: 500;
   font-size: 1.4rem;
+  background-color: transparent;
+  color: #858585;
 `;
 
 export default WishlistButton;
