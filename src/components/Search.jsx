@@ -9,7 +9,9 @@ const Search = () => {
       <Form>
         <Input
           type='search'
+          value={searchQuery}
           placeholder='Search products...'
+          onChange={(e) => setSearchQuery(e.target.value)}
         />
       </Form>
     </Container>
