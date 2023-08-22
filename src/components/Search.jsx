@@ -11,7 +11,7 @@ const Search = () => {
 
   return (
     <Container>
-      <Form>
+      <Form onSubmit={handleSearch}>
         <Input
           type='search'
           value={searchQuery}
