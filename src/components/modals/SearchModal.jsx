@@ -7,7 +7,11 @@ const SearchModal = () => {
   const searchModal = useSearchModal();
 
   return (
-    <Modal title='Search products'>
+    <Modal
+      title='Search products'
+      isOpen={searchModal.isOpen}
+      onClose={searchModal.onClose}
+    >
       SearchModal
     </Modal>
   );
