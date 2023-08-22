@@ -11,7 +11,8 @@ const SearchIcon = () => {
 }
 
 const Container = styled.button`
-  
+  display: inline-block;
+  border: none;
 `;
 
 export default SearchIcon;
