@@ -13,6 +13,7 @@ const LikeButton = () => {
 
 const StyledButton = styled.button`
   border: none;
+  display: inline-block;
   font-weight: 500;
   font-size: 1.4rem;
   background-color: transparent;
