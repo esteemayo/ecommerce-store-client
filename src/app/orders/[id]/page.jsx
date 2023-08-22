@@ -70,12 +70,7 @@ const Order = () => {
                   </TotalContainer>
                   <TotalContainer>
                     <TotalText>Total:</TotalText>
-                    <NumericFormat
-                      value={88.90}
-                      displayType={'text'}
-                      thousandSeparator={true}
-                      prefix={'$'}
-                    />
+                    <FormatPrice value={88.90} />
                   </TotalContainer>
                   <Button type='button' disabled>Paid</Button>
                 </RightWrapper>
