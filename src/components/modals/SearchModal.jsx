@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 import Modal from './Modal';
+import Search from '../Search';
+
 import useSearchModal from '@/hooks/useSearchModal';
 
 const SearchModal = () => {
@@ -13,7 +15,7 @@ const SearchModal = () => {
       isOpen={isOpen}
       onClose={onClose}
     >
-      SearchModal
+      <Search />
     </Modal>
   );
 }
