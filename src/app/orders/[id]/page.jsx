@@ -6,6 +6,7 @@ import { useDispatch } from 'react-redux';
 
 import ClientOnly from '@/components/ClientOnly';
 import OrderStatus from '@/components/orders/OrderStatus';
+import FormatPrice from '@/components/FormatPrice';
 
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
@@ -48,12 +49,7 @@ const Order = () => {
                       </Td>
                       <Td>
                         <OrderTotal>
-                          <NumericFormat
-                            value={420}
-                            displayType={'text'}
-                            thousandSeparator={true}
-                            prefix={'$'}
-                          />
+                          <FormatPrice value={420} />
                         </OrderTotal>
                       </Td>
                     </Tr>
