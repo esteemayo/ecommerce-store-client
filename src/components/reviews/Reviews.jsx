@@ -114,4 +114,11 @@ const Heading = styled.h1`
   line-height: 3.2rem;
 `;
 
+Reviews.propTypes = {
+  reviews: PropTypes.array.isRequired,
+  sortLabel: PropTypes.string.isRequired,
+  sort: PropTypes.any.isRequired,
+  onSort: PropTypes.any.isRequired,
+};
+
 export default Reviews;
