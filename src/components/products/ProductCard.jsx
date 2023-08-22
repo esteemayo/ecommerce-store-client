@@ -58,12 +58,7 @@ const ProductCard = ({ product, onOpen, onSelect }) => {
               <FormatPrice value={initialPrice} />
             </Discount>
             <Price>
-              <NumericFormat
-                value={product.price}
-                displayType={'text'}
-                thousandSeparator={true}
-                prefix={'$'}
-              />
+              <FormatPrice value={product.price} />
             </Price>
           </Prices>
           {product.inStock && <InStock>In stock</InStock>}
