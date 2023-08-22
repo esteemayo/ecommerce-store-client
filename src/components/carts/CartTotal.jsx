@@ -1,9 +1,9 @@
 'use client';
 
 import styled from 'styled-components';
-import { useSelector } from 'react-redux';
 import { useCallback, useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
+import { useSelector } from 'react-redux';
 
 import FormatPrice from '../FormatPrice';
 
