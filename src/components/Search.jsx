@@ -4,7 +4,10 @@ const Search = () => {
   return (
     <Container>
       <Form>
-
+        <Input
+          type='search'
+          placeholder='Search products...'
+        />
       </Form>
     </Container>
   );
