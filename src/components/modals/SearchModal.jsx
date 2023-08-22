@@ -4,13 +4,14 @@ import Modal from './Modal';
 import useSearchModal from '@/hooks/useSearchModal';
 
 const SearchModal = () => {
-  const searchModal = useSearchModal();
+  const isOpen = useSearchModal((state) => state.isOpen);
+  const onClose = useSearchModal((state) => state.isOpen);
 
   return (
     <Modal
       title='Search products'
-      isOpen={searchModal.isOpen}
-      onClose={searchModal.onClose}
+      isOpen={isOpen}
+      onClose={onClose}
     >
       SearchModal
     </Modal>

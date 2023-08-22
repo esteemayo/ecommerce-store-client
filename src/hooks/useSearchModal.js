@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 
-const useSearchModal = () => create((set) => ({
+const useSearchModal = create((set) => ({
   isOpen: false,
   onOpen: () => set({ isOpen: true }),
   onclose: () => set({ isOpen: false }),
