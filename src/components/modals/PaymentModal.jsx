@@ -7,6 +7,8 @@ import { useCallback, useEffect, useMemo, useState } from 'react';
 import PropTypes from 'prop-types';
 import CloseIcon from '@mui/icons-material/Close';
 
+import FormatPrice from '../FormatPrice';
+
 const initialState = {
   name: '',
   address: '',
@@ -95,12 +97,7 @@ const PaymentModal = ({ isOpen, onClose, onExit }) => {
           <Form onSubmit={handleSubmit}>
             <Heading>
               You will pay {' '}
-              <NumericFormat
-                value={total}
-                displayType={'text'}
-                thousandSeparator={true}
-                prefix={'$'}
-              /> {' '}
+              <FormatPrice value={total} /> {' '}
               after delivery
             </Heading>
             <FormGroup>
