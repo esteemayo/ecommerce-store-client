@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { useCallback } from 'react';
+import { useCallback, useState } from 'react';
 
 const Search = () => {
   return (
