@@ -8,6 +8,8 @@ import { faEnvelope, faLocationDot, faMessage, faPhone } from '@fortawesome/free
 import { useDispatch } from 'react-redux';
 
 import ClientOnly from '@/components/ClientOnly';
+import FormatPrice from '@/components/FormatPrice';
+
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
 const Success = () => {
@@ -47,12 +49,7 @@ const Success = () => {
                   </IconContainer>
                 </MushroomContainer>
                 <TotalPayment>The payment of {' '}
-                  <NumericFormat
-                    value={17950}
-                    displayType={'text'}
-                    thousandSeparator={true}
-                    prefix={'$'}
-                  /> {' '}
+                  <FormatPrice value={17950} /> {' '}
                   you&apos;ll make when the courier arrives with your order.
                 </TotalPayment>
                 <Link href='/orders' passHref>
