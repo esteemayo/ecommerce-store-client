@@ -15,6 +15,7 @@ const Container = styled.button`
   border: none;
   background-color: transparent;
   color: ${({ theme }) => theme.bgModeIcon};
+  outline-color: var(--clr-primary-green);
 `;
 
 export default SearchIcon;
