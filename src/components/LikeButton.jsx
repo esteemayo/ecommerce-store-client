@@ -15,6 +15,8 @@ const StyledButton = styled.button`
   border: none;
   font-weight: 500;
   font-size: 1.4rem;
+  background-color: transparent;
+  color: #858585;
 `;
 
 export default LikeButton;
