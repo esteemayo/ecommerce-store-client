@@ -26,4 +26,8 @@ const Container = styled.button`
   }
 `;
 
+SearchIcon.propTypes = {
+  onOpen: PropTypes.func.isRequired,
+};
+
 export default SearchIcon;
