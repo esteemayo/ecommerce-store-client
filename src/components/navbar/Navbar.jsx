@@ -93,7 +93,11 @@ const Navbar = () => {
             />
           ) : (
             <>
-              <SearchIcon />
+              <SearchIcon
+                title='Search products'
+                isOpen={searchModal.isOpen}
+                onClose={searchModal.onClose}
+              />
               <CartQuantity amount={qty} />
             </>
           )}
