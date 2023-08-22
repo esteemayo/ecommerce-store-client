@@ -24,6 +24,10 @@ const StyledButton = styled.button`
   display: flex;
   align-items: center;
   gap: 0.5rem;
+
+  svg {
+    font-size: 1.7rem;
+  }
 `;
 
 export default LikeButton;
