@@ -7,6 +7,7 @@ import { useMemo } from 'react';
 import PropTypes from 'prop-types';
 
 import StarRating from '../StarRating';
+import FormatPrice from '../FormatPrice';
 
 const ProductHead = ({
   name,
@@ -26,12 +27,7 @@ const ProductHead = ({
       <Heading modal={modal}>{name}</Heading>
       <PriceContainer>
         <Price modal={modal}>
-          <NumericFormat
-            value={initialPrice}
-            displayType={'text'}
-            thousandSeparator={true}
-            prefix={'$'}
-          />
+          <FormatPrice value={initialPrice} />
         </Price>
         <Discount modal={modal}>-{priceDiscount}%</Discount>
       </PriceContainer>
