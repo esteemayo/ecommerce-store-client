@@ -26,7 +26,7 @@ const Navbar = () => {
   const user = true;
   const dispatch = useDispatch();
   const { qty } = useSelector((state) => ({ ...state.cart }));
-  const searchModal = useSearchModal((state) => state.isOpen);
+  const onOpen = useSearchModal((state) => state.onOpen);
 
   const [isHover, setIsHover] = useState(false);
 
@@ -93,7 +93,7 @@ const Navbar = () => {
             />
           ) : (
             <>
-              <SearchIcon onOpen={searchModal.onOpen} />
+              <SearchIcon onOpen={onOpen} />
               <CartQuantity amount={qty} />
             </>
           )}
