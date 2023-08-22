@@ -18,6 +18,7 @@ const Search = () => {
           placeholder='Search products...'
           onChange={(e) => setSearchQuery(e.target.value)}
         />
+        <Button type='submit'>Search</Button>
       </Form>
     </Container>
   );
