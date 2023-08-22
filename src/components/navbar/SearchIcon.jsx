@@ -2,9 +2,9 @@ import styled from 'styled-components';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const SearchIcon = () => {
+const SearchIcon = ({ onOpen }) => {
   return (
-    <Container>
+    <Container onClick={onOpen}>
       <FontAwesomeIcon icon={faMagnifyingGlass} />
     </Container>
   );
