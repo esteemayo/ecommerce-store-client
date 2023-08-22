@@ -6,6 +6,7 @@ import { NumericFormat } from 'react-number-format';
 import Image from 'next/image';
 
 import { recommendations } from '@/data';
+import FormatPrice from './FormatPrice';
 
 const Recommendation = () => {
   return (
@@ -26,12 +27,7 @@ const Recommendation = () => {
                 <ProductContainer>
                   <ProductTitle>{name}</ProductTitle>
                   <ProductPrice>
-                    <NumericFormat
-                      value={price.toFixed(2)}
-                      displayType={'text'}
-                      thousandSeparator={true}
-                      prefix={'$'}
-                    />
+                    <FormatPrice value={price.toFixed(2)} />
                   </ProductPrice>
                 </ProductContainer>
               </Link>
