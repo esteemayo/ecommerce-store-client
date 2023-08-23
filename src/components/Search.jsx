@@ -35,7 +35,7 @@ const Container = styled.div`
 
 const Form = styled.form`
   width: 100%;
-  border: 3px solid ${({ theme }) => theme.starBorder};
+  border: 3px solid var(--clr-secondary-green);
   border-radius: 0.3rem;
   display: flex;
   align-items: center;
@@ -51,7 +51,7 @@ const FormGroup = styled.div`
     left: 1.5rem;
     top: 50%;
     transform: translateY(-50%);
-    color: ${({ theme }) => theme.starBorder};
+    color: var(--clr-secondary-green);
   }
 `;
 
