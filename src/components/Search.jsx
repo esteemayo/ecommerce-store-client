@@ -51,7 +51,7 @@ const FormGroup = styled.div`
     left: 1.5rem;
     top: 50%;
     transform: translateY(-50%);
-    fill: ${({ theme }) => theme.starBorder};
+    color: ${({ theme }) => theme.starBorder};
   }
 `;
 
@@ -76,7 +76,7 @@ const Button = styled.button`
   border: none;
   font-weight: 500;
   font-size: 1.45rem;
-  padding: 1rem 0;
+  padding: 1.5rem 0;
   background-color: ${({ theme }) => theme.bgBtn};
   color: ${({ theme }) => theme.textBtn};
   background-image: ${({ theme }) => css`
