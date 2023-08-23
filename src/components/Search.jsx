@@ -71,6 +71,7 @@ const Button = styled.button`
   background-size: 220%;
   outline-color:  ${({ theme }) => theme.btnOut};
   cursor: pointer;
+  transition: all 0.3s;
 
   &:hover {
     background-position: 100%;
