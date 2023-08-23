@@ -46,6 +46,8 @@ const FormGroup = styled.div`
   padding: 1rem 0;
   border: 3px solid var(--clr-secondary-green);
   border-right: none;
+  border-top-left-radius: 3px;
+  border-botttom-left-radius: 3px;
 
   svg {
     position: absolute;
