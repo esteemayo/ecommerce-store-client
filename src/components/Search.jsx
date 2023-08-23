@@ -34,7 +34,8 @@ const Container = styled.div`
 `;
 
 const Form = styled.form`
-  
+  background-color: crimson;
+  width: 80%;
 `;
 
 const FormGroup = styled.div`
