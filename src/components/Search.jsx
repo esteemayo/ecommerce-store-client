@@ -74,6 +74,8 @@ const Input = styled.input`
 const Button = styled.button`
   flex: 1;
   border: none;
+  font-weight: 500;
+  font-size: 1.45rem;
   background-color: ${({ theme }) => theme.bgBtn};
   color: ${({ theme }) => theme.textBtn};
   background-image: ${({ theme }) => css`
