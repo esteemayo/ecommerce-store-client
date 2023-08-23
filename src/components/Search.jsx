@@ -36,6 +36,8 @@ const Container = styled.div`
 const Form = styled.form`
   background-color: crimson;
   width: 80%;
+  display: flex;
+  align-items: center;
 `;
 
 const FormGroup = styled.div`
