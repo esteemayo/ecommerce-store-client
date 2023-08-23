@@ -18,7 +18,7 @@ const Search = () => {
           <Input
             type='search'
             value={searchQuery}
-            placeholder='Search products...'
+            placeholder='Search for a product'
             onChange={(e) => setSearchQuery(e.target.value)}
           />
           <FontAwesomeIcon icon={faMagnifyingGlass} />
