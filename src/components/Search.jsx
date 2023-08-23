@@ -54,7 +54,7 @@ const FormGroup = styled.div`
     left: 1.5rem;
     top: 50%;
     transform: translateY(-50%);
-    color: var(--clr-primary-green);
+    color: ${({ theme }) => theme.textScroll};
     cursor: text;
   }
 `;
@@ -80,7 +80,7 @@ const Input = styled.input`
 
 const Button = styled.button`
   flex: 1;
-  border: 3px solid var(--clr-primary-green);
+  border: 3px solid ${({ theme }) => theme.textScroll};
   border-left: none;
   font-weight: 500;
   font-size: 1.45rem;
