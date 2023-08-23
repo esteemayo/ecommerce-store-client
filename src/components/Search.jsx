@@ -51,10 +51,12 @@ const FormGroup = styled.div`
 
 const Input = styled.input`
   flex: 2;
+  height: 100%;
 `;
 
 const Button = styled.button`
   flex: 1;
+  height: 100%;
 `;
 
 export default Search;
