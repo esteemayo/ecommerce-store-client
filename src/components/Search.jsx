@@ -78,7 +78,8 @@ const Input = styled.input`
 
 const Button = styled.button`
   flex: 1;
-  border: none;
+  border: 3px solid var(--clr-primary-green);
+  border-left: none;
   font-weight: 500;
   font-size: 1.45rem;
   padding: 1.75rem 0;
