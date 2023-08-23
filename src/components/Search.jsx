@@ -34,7 +34,6 @@ const Container = styled.div`
 `;
 
 const Form = styled.form`
-  flex: 2;
   background-color: crimson;
   width: 100%;
   padding: 1rem 0;
@@ -44,6 +43,8 @@ const Form = styled.form`
 `;
 
 const FormGroup = styled.div`
+  flex: 2;
+
   svg {
     position: absolute;
     left: 0;
