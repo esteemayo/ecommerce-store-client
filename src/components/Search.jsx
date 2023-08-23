@@ -89,7 +89,7 @@ const Button = styled.button`
       ${theme.bgImgBtn} 50%
     );
   `};
-  background-size: 220%;
+  background-size: 250%;
   outline-color:  ${({ theme }) => theme.btnOut};
   cursor: pointer;
   transition: all 0.3s;
