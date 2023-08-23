@@ -51,6 +51,7 @@ const FormGroup = styled.div`
     left: 1.5rem;
     top: 50%;
     transform: translateY(-50%);
+    fill: ${({ theme }) => theme.starBorder};
   }
 `;
 
