@@ -52,7 +52,7 @@ const FormGroup = styled.div`
 `;
 
 const Input = styled.input`
-  height: 100%;
+  width: 100%;
 `;
 
 const Button = styled.button`
