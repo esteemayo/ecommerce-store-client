@@ -48,7 +48,9 @@ const FormGroup = styled.div`
 
   svg {
     position: absolute;
-    left: 0;
+    left: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
   }
 `;
 
