@@ -44,9 +44,6 @@ const Form = styled.form`
 
 const FormGroup = styled.div`
   flex: 3;
-  display: inline-block;
-  border: none;
-  outline: none;
 
   svg {
     position: absolute;
@@ -55,6 +52,9 @@ const FormGroup = styled.div`
 `;
 
 const Input = styled.input`
+  display: inline-block;
+  border: none;
+  outline: none;
   width: 100%;
 `;
 
