@@ -31,14 +31,14 @@ const Search = () => {
 
 const Container = styled.div`
   padding: 3rem 0;
-  border: 3px solid ${({ theme }) => theme.starBorder};
-  border-radius: 0.3rem;
 `;
 
 const Form = styled.form`
   background-color: crimson;
   width: 100%;
   padding: 1rem 0;
+  border: 3px solid ${({ theme }) => theme.starBorder};
+  border-radius: 0.3rem;
   display: flex;
   align-items: center;
   position: relative;
