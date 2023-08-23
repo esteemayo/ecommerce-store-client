@@ -34,6 +34,7 @@ const Container = styled.div`
 `;
 
 const Form = styled.form`
+  flex: 2;
   background-color: crimson;
   width: 100%;
   padding: 1rem 0;
@@ -50,7 +51,6 @@ const FormGroup = styled.div`
 `;
 
 const Input = styled.input`
-  flex: 2;
   height: 100%;
 `;
 
