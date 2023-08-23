@@ -34,7 +34,6 @@ const Container = styled.div`
 `;
 
 const Form = styled.form`
-  background-color: crimson;
   width: 100%;
   padding: 1rem 0;
   border: 3px solid ${({ theme }) => theme.starBorder};
