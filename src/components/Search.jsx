@@ -44,17 +44,17 @@ const Form = styled.form`
 const FormGroup = styled.div`
   flex: 3;
   padding: 1rem 0;
-  border: 3px solid var(--clr-secondary-green);
+  border: 3px solid var(--clr-primary-green);
   border-right: none;
   border-top-left-radius: 3px;
-  border-botttom-left-radius: 3px;
+  border-bottom-left-radius: 3px;
 
   svg {
     position: absolute;
     left: 1.5rem;
     top: 50%;
     transform: translateY(-50%);
-    color: var(--clr-secondary-green);
+    color: var(--clr-primary-green);
   }
 `;
 
