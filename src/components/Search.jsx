@@ -39,11 +39,14 @@ const Form = styled.form`
 `;
 
 const FormGroup = styled.div`
-  
+  position: relative;
 `;
 
 const Input = styled.input`
-  
+  svg {
+    position: absolute;
+    left: 0;
+  }
 `;
 
 const Button = styled.button`
