@@ -43,7 +43,7 @@ const Form = styled.form`
 `;
 
 const FormGroup = styled.div`
-  flex: 2;
+  flex: 3;
 
   svg {
     position: absolute;
@@ -58,7 +58,6 @@ const Input = styled.input`
 const Button = styled.button`
   flex: 1;
   border: none;
-  height: 100%;
   background-color: ${({ theme }) => theme.bgBtn};
   color: ${({ theme }) => theme.textBtn};
   background-image: ${({ theme }) => css`
