@@ -61,7 +61,7 @@ const Input = styled.input`
   width: 100%;
   font-family: inherit;
   font-size: 1.5rem;
-  padding: 0 3rem;
+  padding-left: 4.25rem;
 `;
 
 const Button = styled.button`
