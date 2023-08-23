@@ -71,6 +71,10 @@ const Button = styled.button`
   background-size: 220%;
   outline-color:  ${({ theme }) => theme.btnOut};
   cursor: pointer;
+
+  &:hover {
+    background-position: 100%;
+  }
 `;
 
 export default Search;
