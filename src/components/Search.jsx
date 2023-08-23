@@ -35,7 +35,6 @@ const Container = styled.div`
 
 const Form = styled.form`
   width: 100%;
-  border: 3px solid var(--clr-secondary-green);
   border-radius: 0.3rem;
   display: flex;
   align-items: center;
@@ -45,6 +44,8 @@ const Form = styled.form`
 const FormGroup = styled.div`
   flex: 3;
   padding: 1rem 0;
+  border: 3px solid var(--clr-secondary-green);
+  border-right: none;
 
   svg {
     position: absolute;
@@ -77,7 +78,7 @@ const Button = styled.button`
   border: none;
   font-weight: 500;
   font-size: 1.45rem;
-  padding: 1.5rem 0;
+  padding: 1.7rem 0;
   background-color: ${({ theme }) => theme.bgBtn};
   color: ${({ theme }) => theme.textBtn};
   background-image: ${({ theme }) => css`
