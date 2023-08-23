@@ -82,7 +82,7 @@ const Button = styled.button`
   border-left: none;
   font-weight: 500;
   font-size: 1.45rem;
-  padding: 1.75rem 0;
+  padding: 1.49rem 0;
   background-color: ${({ theme }) => theme.bgBtn};
   color: ${({ theme }) => theme.textBtn};
   background-image: ${({ theme }) => css`
