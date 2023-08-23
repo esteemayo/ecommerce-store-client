@@ -55,6 +55,7 @@ const FormGroup = styled.div`
     top: 50%;
     transform: translateY(-50%);
     color: var(--clr-primary-green);
+    cursor: text;
   }
 `;
 
