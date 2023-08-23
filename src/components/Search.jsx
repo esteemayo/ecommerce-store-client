@@ -59,6 +59,7 @@ const Button = styled.button`
   border: none;
   height: 100%;
   background-color: ${({ theme }) => theme.bgBtn};
+  color: ${({ theme }) => theme.textBtn};
 `;
 
 export default Search;
