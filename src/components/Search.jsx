@@ -42,13 +42,15 @@ const Form = styled.form`
 
 const FormGroup = styled.div`
   position: relative;
-`;
 
-const Input = styled.input`
   svg {
     position: absolute;
     left: 0;
   }
+`;
+
+const Input = styled.input`
+  
 `;
 
 const Button = styled.button`
