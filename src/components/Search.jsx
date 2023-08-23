@@ -38,11 +38,10 @@ const Form = styled.form`
   width: 80%;
   display: flex;
   align-items: center;
+  position: relative;
 `;
 
 const FormGroup = styled.div`
-  position: relative;
-
   svg {
     position: absolute;
     left: 0;
@@ -50,7 +49,7 @@ const FormGroup = styled.div`
 `;
 
 const Input = styled.input`
-  
+
 `;
 
 const Button = styled.button`
