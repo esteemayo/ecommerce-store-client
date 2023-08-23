@@ -35,7 +35,8 @@ const Container = styled.div`
 
 const Form = styled.form`
   background-color: crimson;
-  width: 80%;
+  width: 100%;
+  padding: 1rem 0;
   display: flex;
   align-items: center;
   position: relative;
