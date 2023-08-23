@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useCallback, useState } from 'react';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
@@ -60,6 +60,15 @@ const Button = styled.button`
   height: 100%;
   background-color: ${({ theme }) => theme.bgBtn};
   color: ${({ theme }) => theme.textBtn};
+  background-image: ${({ theme }) => css`
+    linear-gradient(
+      120deg,
+      transparent 0%,
+      transparent 50%,
+      ${theme.bgImgBtn} 50%
+    );
+  `};
+  background-size: 220%;
 `;
 
 export default Search;
