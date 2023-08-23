@@ -90,6 +90,8 @@ const Button = styled.button`
     );
   `};
   background-size: 250%;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
   outline-color:  ${({ theme }) => theme.btnOut};
   cursor: pointer;
   transition: all 0.3s;
