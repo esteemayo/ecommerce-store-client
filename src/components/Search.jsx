@@ -69,6 +69,8 @@ const Button = styled.button`
     );
   `};
   background-size: 220%;
+  outline-color:  ${({ theme }) => theme.btnOut};
+  cursor: pointer;
 `;
 
 export default Search;
