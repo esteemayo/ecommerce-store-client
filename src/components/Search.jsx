@@ -68,6 +68,7 @@ const Input = styled.input`
   font-size: 1.5rem;
   padding-left: 4.25rem;
   background-color: transparent;
+  color: #999;
   caret-color: ${({ theme }) => theme.inputCaret};
 
   &::-webkit-input-placeholder {
