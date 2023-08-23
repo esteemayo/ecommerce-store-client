@@ -22,8 +22,8 @@ const Search = () => {
             onChange={(e) => setSearchQuery(e.target.value)}
           />
           <FontAwesomeIcon icon={faMagnifyingGlass} />
+          <Button type='submit'>Search</Button>
         </FormGroup>
-        <Button type='submit'>Search</Button>
       </Form>
     </Container>
   );
