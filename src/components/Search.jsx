@@ -32,6 +32,7 @@ const Search = () => {
 const Container = styled.div`
   padding: 3rem 0;
   border: 3px solid ${({ theme }) => theme.starBorder};
+  border-radius: 0.3rem;
 `;
 
 const Form = styled.form`
