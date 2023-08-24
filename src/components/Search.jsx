@@ -143,6 +143,7 @@ const History = styled.span`
 const Remove = styled.button`
   display: inline-block;
   border: none;
+  font-size: 1.75rem;
   background-color: transparent;
   color: currentColor;
   cursor: pointer;
