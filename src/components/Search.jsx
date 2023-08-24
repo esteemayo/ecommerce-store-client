@@ -50,6 +50,7 @@ const Form = styled.form`
   display: flex;
   align-items: center;
   position: relative;
+  margin-bottom: 2rem;
 `;
 
 const FormGroup = styled.div`
