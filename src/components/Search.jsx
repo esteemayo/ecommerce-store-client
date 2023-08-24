@@ -145,8 +145,9 @@ const Button = styled.button`
 const Wrapper = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 3rem;
   color: ${({ theme }) => theme.textProdCard};
+  position: relative;
 `;
 
 const Left = styled.div`
@@ -169,6 +170,9 @@ const Remove = styled.button`
   background-color: transparent;
   color: currentColor;
   cursor: pointer;
+
+  position: absolute;
+  right: 0;
 
   svg {
     font-size: inherit;
