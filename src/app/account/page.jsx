@@ -13,12 +13,14 @@ import DeleteAccount from '@/components/accounts/DeleteAccount';
 import UpdateData from '@/components/accounts/UpdateData';
 import UpdatePassword from '@/components/accounts/UpdatePassword';
 
+import usePasswordModal from '@/hooks/usePasswordModal';
+import useFileModal from '@/hooks/useFileModal';
+import useAccountModal from '@/hooks/useAccountModal';
+import useEmailModal from '@/hooks/useEmailModal';
+
 import ClientOnly from '@/components/ClientOnly';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
-import useFileModal from '@/hooks/useFileModal';
-import useEmailModal from '@/hooks/useEmailModal';
-import usePasswordModal from '@/hooks/usePasswordModal';
-import useAccountModal from '@/hooks/useAccountModal';
+
 import DeactivateAccount from './DeactivateAccount';
 
 const Account = () => {
