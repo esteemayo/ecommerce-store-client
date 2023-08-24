@@ -32,9 +32,9 @@ const Search = () => {
         <Center>
           <History>The Stanley Rain Jacket in Black</History>
         </Center>
-        <Right>
+        <Remove>
           <FontAwesomeIcon icon={faTimes} />
-        </Right>
+        </Remove>
       </Wrapper>
     </Container>
   );
@@ -140,7 +140,7 @@ const History = styled.span`
   color: currentColor;
 `;
 
-const Right = styled.div`
+const Remove = styled.button`
   svg {
     color: inherit;
   }
