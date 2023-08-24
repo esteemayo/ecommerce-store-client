@@ -232,15 +232,6 @@ const Left = styled.div`
   flex: 1.5;
 `;
 
-const Label = styled.label`
-  display: inline-block;
-  width: 10rem;
-  text-transform: capitalize;
-  font-weight: 600;
-  font-size: 1.4rem;
-  color: ${({ theme }) => theme.textLabel};
-`;
-
 const Input = styled.input`
   display: inline-block;
   font-family: inherit;
