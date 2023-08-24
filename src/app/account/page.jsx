@@ -23,6 +23,7 @@ import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
 import AccountHead from './AccountHead';
 import DeactivateAccount from './DeactivateAccount';
+import AccountUpload from './AccountUpload';
 
 const Account = () => {
   const dispatch = useDispatch();
@@ -54,21 +55,10 @@ const Account = () => {
                     <DeactivateAccount onOpen={accountModal.onOpen} />
                   </Left>
                   <Right>
-                    <AvatarContainer>
-                      {user ? (
-                        <Image
-                          src='/img/user-9.jpg'
-                          width={100}
-                          height={100}
-                          alt=''
-                        />
-                      ) : (
-                        <FontAwesomeIcon icon={faUser} />
-                      )}
-                    </AvatarContainer>
-                    <FileButton type='button' onClick={fileModal.onOpen}>
-                      Upload a picture
-                    </FileButton>
+                    <AccountUpload
+                      onOpen={fileModal.onOpen}
+                      currentUser={user}
+                    />
                   </Right>
                 </AccountInfo>
               </AccountWrapper>
