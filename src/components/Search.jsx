@@ -44,6 +44,10 @@ const Search = () => {
     setToStorage('histories', histories);
   }, [histories]);
 
+  useEffect(() => {
+    inputRef.current.focus();
+  }, []);
+
   return (
     <Container>
       <Form onSubmit={handleSubmit}>
