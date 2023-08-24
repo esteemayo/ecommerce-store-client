@@ -2,7 +2,6 @@ import styled, { css } from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useCallback, useEffect, useState } from 'react';
 import { faClock, faMagnifyingGlass, faTimes } from '@fortawesome/free-solid-svg-icons';
-import Link from 'next/link';
 
 import SearchHistory from './SearchHistory';
 import { getFromStorage, setToStorage } from '@/utils';
