@@ -67,4 +67,10 @@ const Remove = styled.button`
   }
 `;
 
+SearchHistory.propTypes = {
+  id: PropTypes.number.isRequired,
+  query: PropTypes.string.isRequired,
+  onDelete: PropTypes.func.isRequired,
+};
+
 export default SearchHistory;
