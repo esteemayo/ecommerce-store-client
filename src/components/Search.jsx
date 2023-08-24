@@ -59,7 +59,13 @@ const Search = () => {
         <Button type='submit'>Search</Button>
       </Form>
       {!!histories.length > 0 && histories.slice(0, 5).map((item) => {
-        return <SearchHistory key={item.id} {...query} />;
+        return (
+          <SearchHistory
+            {...query}
+            key={item.id}
+            onDelete={handleDelete}
+          />
+        );
       })}
     </Container>
   );
