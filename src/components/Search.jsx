@@ -3,6 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useCallback, useEffect, useState } from 'react';
 import { faClock, faMagnifyingGlass, faTimes } from '@fortawesome/free-solid-svg-icons';
 
+import { setToStorage } from '@/utils';
+
 const Search = () => {
   const [histories, setHistories] = useState([]);
   const [searchQuery, setSearchQuery] = useState('');
@@ -10,6 +12,7 @@ const Search = () => {
   const handleSearch = useCallback((e) => {
     e.preventDefault();
     console.log({ searchQuery });
+    setToStorage('histories', searchQuery);
   }, [searchQuery]);
 
   return (
