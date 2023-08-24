@@ -72,7 +72,7 @@ const Button = styled.button`
   );
   background-size: 220%;
   border-radius: 0.5rem;
-  outline-color: #85beae;
+  outline-color: ${({ theme }) => theme.btnOut};
   cursor: pointer;
   transition: all 0.3s;
 
