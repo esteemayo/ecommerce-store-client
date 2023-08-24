@@ -144,18 +144,4 @@ const Button = styled.button`
   }
 `;
 
-const Wrapper = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 3rem;
-  color: ${({ theme }) => theme.textProdCard};
-  position: relative;
-  margin-bottom: 0.5rem;
-  transition: all 0.3s ease;
-
-  &:hover {
-    opacity: 0.8;
-  }
-`;
-
 export default Search;
