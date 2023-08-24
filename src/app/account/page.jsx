@@ -19,6 +19,7 @@ import useFileModal from '@/hooks/useFileModal';
 import useEmailModal from '@/hooks/useEmailModal';
 import usePasswordModal from '@/hooks/usePasswordModal';
 import useAccountModal from '@/hooks/useAccountModal';
+import DeactivateAccount from './DeactivateAccount';
 
 const Account = () => {
   const dispatch = useDispatch();
@@ -89,16 +90,7 @@ const Account = () => {
                         </Button>
                       </ButtonContainer>
                     </InputContainer>
-                    <DeleteContainer>
-                      <DeleteHeader>Delete your account</DeleteHeader>
-                      <DeleteWarning>
-                        You will receive an email to confirm your decision.
-                        Please note, that all your data will be permanently erased.
-                      </DeleteWarning>
-                      <DeleteButton type='button' onClick={accountModal.onOpen}>
-                        Delete account
-                      </DeleteButton>
-                    </DeleteContainer>
+                    <DeactivateAccount onOpen={accountModal.onOpen} />
                   </Left>
                   <Right>
                     <AvatarContainer>
