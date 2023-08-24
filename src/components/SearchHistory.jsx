@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { faClock, faMagnifyingGlass, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { Container } from '@mui/material';
 
-const SearchHistory = () => {
+const SearchHistory = ({ id, query }) => {
   return (
     <Container key={id}>
       <IconWRapper>
