@@ -27,18 +27,9 @@ const Account = () => {
   const fileModal = useFileModal();
   const passwordModal = usePasswordModal();
 
-  const [isPasswordOpen, setIsPasswordOpen] = useState(false);
   const [isDeleteOpen, setIsDeleteOpen] = useState(false);
 
   const user = false;
-
-  const openHandler = useCallback(() => {
-    setIsPasswordOpen(true);
-  }, []);
-
-  const closeHandler = useCallback(() => {
-    setIsPasswordOpen(false);
-  }, []);
 
   const handleOpen = useCallback(() => {
     setIsDeleteOpen(true);
