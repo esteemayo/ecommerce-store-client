@@ -18,16 +18,25 @@ const Search = () => {
     setHistories((prev) => [...prev].filter((item) => item.id !== id));
   }, []);
 
-  const handleSubmit = useCallback((e) => {
-    e.preventDefault();
+  const handleSearch = useCallback(() => {
     console.log({ searchQuery });
+  }, [searchQuery]);
 
+  const handleHistory = useCallback(() => {
     const data = {
       id: new Date().getTime(),
       query: searchQuery,
-    }
+    };
+
     setHistories((prev) => [data, ...prev]);
   }, [searchQuery]);
+
+  const handleSubmit = useCallback((e) => {
+    e.preventDefault();
+    handleSearch();
+    handleHistory();
+    setSearchQuery('');
+  }, [handleSearch, handleHistory]);
 
   useEffect(() => {
     setToStorage('histories', histories);
