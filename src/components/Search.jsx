@@ -128,6 +128,7 @@ const Wrapper = styled.div`
 
 const Left = styled.div`
   svg {
+    font-size: 1.75rem;
     color: inherit;
   }
 `;
@@ -149,6 +150,7 @@ const Remove = styled.button`
   cursor: pointer;
 
   svg {
+    font-size: inherit;
     color: inherit;
   }
 `;
