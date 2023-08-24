@@ -17,9 +17,12 @@ import DeleteAccount from '@/components/accounts/DeleteAccount';
 import ClientOnly from '@/components/ClientOnly';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 import useFileModal from '@/hooks/useFileModal';
+import useEmailModal from '@/hooks/useEmailModal';
 
 const Account = () => {
   const dispatch = useDispatch();
+
+  const emailModal = useEmailModal();
   const fileModal = useFileModal();
 
   const [isEmailOpen, setIsEmailOpen] = useState(false);
@@ -92,7 +95,7 @@ const Account = () => {
                         placeholder='Email'
                       />
                       <ButtonContainer>
-                        <Button type='button' onClick={handleOpenEmail}>
+                        <Button type='button' onClick={emailModal.onOpen}>
                           Change
                         </Button>
                       </ButtonContainer>
@@ -157,10 +160,10 @@ const Account = () => {
         </Modal>
         <Modal
           title='Change your email address'
-          isOpen={isEmailOpen}
-          onClose={handleCancel}
+          isOpen={emailModal.isOpen}
+          onClose={emailModal.onClose}
         >
-          <UpdateData onCancel={handleCancel} />
+          <UpdateData onCancel={emailModal.onClose} />
         </Modal>
         <Modal isOpen={isDeleteOpen} onClose={handleClose}>
           <DeleteAccount onCancel={handleClose} />
