@@ -233,28 +233,4 @@ const Right = styled.div`
   }
 `;
 
-const AvatarContainer = styled.div`
-  width: 10rem;
-  height: 10rem;
-  background-color: #d5dae7;
-  border-radius: 3.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 1rem;
-
-  img {
-    width: 10rem;
-    height: 10rem;
-    display: block;
-    object-fit: cover;
-    border-radius: 3.5rem;
-  }
-
-  svg {
-    font-size: 5rem;
-    color: var(--clr-white);
-  }
-`;
-
 export default Account;
