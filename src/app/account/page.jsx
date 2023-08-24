@@ -354,30 +354,6 @@ const DeleteWarning = styled.p`
   }
 `;
 
-const DeleteButton = styled.button`
-  display: inline-block;
-  border: none;
-  padding: 0.5rem 2rem;
-  background-color: transparent;
-  color: var(--clr-primary-red);
-  border: 1px solid var(--clr-primary-red);
-  border-radius: 0.5rem;
-  outline-color: #e92222;
-  margin-top: 2rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-
-  @media only screen and (max-width: 43.75em) {
-    font-size: 1.5rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-
-  &:hover {
-    background-color: rgba(222, 10, 10, 0.1);
-  }
-`;
-
 const Right = styled.div`
   flex: 1;
   display: flex;
