@@ -27,6 +27,7 @@ const Search = () => {
       </Form>
       <Wrapper>
         <Left>Left</Left>
+        <Right>Right</Right>
       </Wrapper>
     </Container>
   );
