@@ -119,7 +119,9 @@ const Button = styled.button`
 `;
 
 const Wrapper = styled.div`
-  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 `;
 
 const Left = styled.div`
