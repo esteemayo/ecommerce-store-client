@@ -12,6 +12,7 @@ const getAllHistories = () => {
 };
 
 const Search = () => {
+  const inputRef = useRef();
   const [searchQuery, setSearchQuery] = useState('');
   const [histories, setHistories] = useState(getAllHistories());
 
