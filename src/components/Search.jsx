@@ -4,6 +4,7 @@ import { useCallback, useState } from 'react';
 import { faClock, faMagnifyingGlass, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 const Search = () => {
+  const [histories, setHistories] = useState([]);
   const [searchQuery, setSearchQuery] = useState('');
 
   const handleSearch = useCallback((e) => {
