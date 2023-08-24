@@ -232,18 +232,6 @@ const Left = styled.div`
   flex: 1.5;
 `;
 
-const Button = styled.button`
-  border: none;
-  display: inline-block;
-  text-transform: capitalize;
-  font-size: 1.2rem;
-  background-color: transparent;
-  color: ${({ theme }) => theme.textAccBtn};
-  outline-offset: 3px;
-  outline-color: #ccc;
-  cursor: pointer;
-`;
-
 const Right = styled.div`
   flex: 1;
   display: flex;
