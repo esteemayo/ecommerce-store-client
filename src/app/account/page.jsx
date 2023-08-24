@@ -21,8 +21,8 @@ import useEmailModal from '@/hooks/useEmailModal';
 import ClientOnly from '@/components/ClientOnly';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
-import DeactivateAccount from './DeactivateAccount';
 import AccountHead from './AccountHead';
+import DeactivateAccount from './DeactivateAccount';
 
 const Account = () => {
   const dispatch = useDispatch();
@@ -230,15 +230,6 @@ const AccountInfo = styled.div`
 
 const Left = styled.div`
   flex: 1.5;
-`;
-
-const InputContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-
-  &:not(:last-of-type) {
-    margin-bottom: 1.5rem;
-  }
 `;
 
 const Label = styled.label`
