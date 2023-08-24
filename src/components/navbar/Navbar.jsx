@@ -26,7 +26,7 @@ const Navbar = () => {
   const user = true;
   const dispatch = useDispatch();
   const { qty } = useSelector((state) => ({ ...state.cart }));
-  const onOpen = useSearchModal((state) => state.onOpen);
+  const { onOpen } = useSearchModal((state) => ({ ...state }));
 
   const [isHover, setIsHover] = useState(false);
 
