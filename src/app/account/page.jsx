@@ -22,20 +22,11 @@ const Account = () => {
   const dispatch = useDispatch();
   const fileModal = useFileModal();
 
-  const [isEmailOpen, setIsEmailOpen] = useState(false);
   const [isPasswordOpen, setIsPasswordOpen] = useState(false);
   const [isDeleteOpen, setIsDeleteOpen] = useState(false);
   const [isFileUploadOpen, setIsFileUploadOpen] = useState(false);
 
   const user = false;
-
-  const handleOpenEmail = useCallback(() => {
-    setIsEmailOpen(true);
-  }, []);
-
-  const handleCancel = useCallback(() => {
-    setIsEmailOpen(false);
-  }, []);
 
   const openHandler = useCallback(() => {
     setIsPasswordOpen(true);
@@ -166,7 +157,7 @@ const Account = () => {
         </Modal>
         <Modal
           title='Change your email address'
-          isOpen={isEmailOpen}
+          isOpen={fileModal.isOpen}
           onClose={fileModal.onClose}
         >
           <UpdateData onCancel={fileModal.onClose} />
