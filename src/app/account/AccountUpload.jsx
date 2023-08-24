@@ -62,7 +62,7 @@ const Button = styled.button`
   font-weight: 500;
   font-size: 1.4rem;
   padding: 1.2rem 3.5rem;
-  background-color: var(--clr-primary-green);
+  background-color: ${({ theme }) => theme.bgBtn};
   color: ${({ theme }) => theme.textBtn};
   background-image: ${({ theme }) => css`
     linear-gradient(
