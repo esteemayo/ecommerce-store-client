@@ -112,4 +112,8 @@ const Wrapper = styled.div`
   
 `;
 
+const Left = styled.div`
+  
+`;
+
 export default Search;
