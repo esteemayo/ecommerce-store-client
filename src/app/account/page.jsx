@@ -22,11 +22,19 @@ const Account = () => {
   const dispatch = useDispatch();
   const fileModal = useFileModal();
 
+  const [isEmailOpen, setIsEmailOpen] = useState(false);
   const [isPasswordOpen, setIsPasswordOpen] = useState(false);
   const [isDeleteOpen, setIsDeleteOpen] = useState(false);
-  const [isFileUploadOpen, setIsFileUploadOpen] = useState(false);
 
   const user = false;
+
+  const handleOpenEmail = useCallback(() => {
+    setIsEmailOpen(true);
+  }, []);
+
+  const handleCancel = useCallback(() => {
+    setIsEmailOpen(false);
+  }, []);
 
   const openHandler = useCallback(() => {
     setIsPasswordOpen(true);
@@ -42,14 +50,6 @@ const Account = () => {
 
   const handleClose = useCallback(() => {
     setIsDeleteOpen(false);
-  }, []);
-
-  const openFileHandler = useCallback(() => {
-    setIsFileUploadOpen(true);
-  }, []);
-
-  const closeFileHandler = useCallback(() => {
-    setIsFileUploadOpen(false);
   }, []);
 
   return (
@@ -92,7 +92,7 @@ const Account = () => {
                         placeholder='Email'
                       />
                       <ButtonContainer>
-                        <Button type='button' onClick={fileModal.onOpen}>
+                        <Button type='button' onClick={handleOpenEmail}>
                           Change
                         </Button>
                       </ButtonContainer>
@@ -135,7 +135,7 @@ const Account = () => {
                         <FontAwesomeIcon icon={faUser} />
                       )}
                     </AvatarContainer>
-                    <FileButton type='button' onClick={openFileHandler}>
+                    <FileButton type='button' onClick={fileModal.isOpen}>
                       Upload a picture
                     </FileButton>
                   </Right>
@@ -145,8 +145,8 @@ const Account = () => {
           </Wrapper>
         </ContainerBox>
         <FileUploadModal
-          isOpen={isFileUploadOpen}
-          onClose={closeFileHandler}
+          isOpen={fileModal.isOpen}
+          onClose={fileModal.onClose}
         />
         <Modal
           title='Change your password'
@@ -157,10 +157,10 @@ const Account = () => {
         </Modal>
         <Modal
           title='Change your email address'
-          isOpen={fileModal.isOpen}
-          onClose={fileModal.onClose}
+          isOpen={isEmailOpen}
+          onClose={handleCancel}
         >
-          <UpdateData onCancel={fileModal.onClose} />
+          <UpdateData onCancel={handleCancel} />
         </Modal>
         <Modal isOpen={isDeleteOpen} onClose={handleClose}>
           <DeleteAccount onCancel={handleClose} />
