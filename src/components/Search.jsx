@@ -134,7 +134,7 @@ const Center = styled.div`
 `;
 
 const History = styled.span`
-  
+  color: ${({ theme }) => theme.textProdCard};
 `;
 
 const Right = styled.div`
