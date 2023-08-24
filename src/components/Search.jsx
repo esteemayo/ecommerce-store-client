@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useState } from 'react';
 import { faClock, faMagnifyingGlass, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 import { setToStorage } from '@/utils';
