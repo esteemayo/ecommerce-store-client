@@ -131,6 +131,7 @@ const Button = styled.button`
   flex: 1;
   border: 3px solid ${({ theme }) => theme.textScroll};
   border-left: none;
+  outline: none;
   font-weight: 500;
   font-size: 1.45rem;
   padding: 1.49rem 0;
@@ -147,7 +148,6 @@ const Button = styled.button`
   background-size: 250%;
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
-  outline-color:  ${({ theme }) => theme.btnOut};
   cursor: pointer;
   transition: all 0.3s;
 
@@ -175,6 +175,8 @@ const Left = styled.div`
 const History = styled.div``;
 
 const StyledLink = styled(Link)`
+  display: inline-block;
+  text-decoration: none;
   color: currentColor;
 `;
 
