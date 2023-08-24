@@ -221,9 +221,6 @@ const Left = styled.div`
 
 const Right = styled.div`
   flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 
   @media only screen and (max-width: 43.75em) {
     width: 100%;
