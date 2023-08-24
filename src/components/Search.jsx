@@ -178,6 +178,11 @@ const StyledLink = styled(Link)`
   display: inline-block;
   text-decoration: none;
   color: currentColor;
+  transition: all 0.3s ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
 `;
 
 const Remove = styled.button`
