@@ -133,9 +133,7 @@ const Left = styled.div`
   }
 `;
 
-const Center = styled.div`
-  
-`;
+const Center = styled.div``;
 
 const History = styled.span`
   color: currentColor;
