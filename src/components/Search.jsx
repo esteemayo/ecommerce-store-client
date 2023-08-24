@@ -161,6 +161,7 @@ const Wrapper = styled.div`
   gap: 3rem;
   color: ${({ theme }) => theme.textProdCard};
   position: relative;
+  margin-bottom: 0.5rem;
 `;
 
 const Left = styled.div`
