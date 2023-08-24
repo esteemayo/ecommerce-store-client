@@ -186,6 +186,7 @@ const Remove = styled.button`
   font-size: 1.75rem;
   background-color: transparent;
   color: currentColor;
+  outline-offset: 2px;
   cursor: pointer;
 
   position: absolute;
