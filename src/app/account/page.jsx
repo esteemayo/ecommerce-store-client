@@ -128,7 +128,7 @@ const Account = () => {
         />
         <Modal
           title='Change your password'
-          isOpen={isPasswordOpen}
+          isOpen={passwordModal.isOpen}
           onClose={passwordModal.onClose}
         >
           <UpdatePassword onCancel={passwordModal.onClose} />
