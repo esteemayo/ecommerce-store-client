@@ -57,7 +57,7 @@ const Search = () => {
         </FormGroup>
         <Button type='submit'>Search</Button>
       </Form>
-      {!!histories.length > 0 && !!histories.length <= 5 && histories.map((item) => {
+      {!!histories.length > 0 && histories.splice(0, 5).map((item) => {
         const { id, query } = item;
         return (
           <Wrapper key={id}>
