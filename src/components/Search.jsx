@@ -107,4 +107,8 @@ const Button = styled.button`
   }
 `;
 
+const Wrapper = styled.div`
+  
+`;
+
 export default Search;
