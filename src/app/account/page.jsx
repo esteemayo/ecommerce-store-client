@@ -29,8 +29,6 @@ const Account = () => {
   const passwordModal = usePasswordModal();
   const accountModal = useAccountModal();
 
-  const [isDeleteOpen, setIsDeleteOpen] = useState(false);
-
   const user = false;
 
   return (
