@@ -18,7 +18,7 @@ const Search = () => {
     setHistories((prev) => [...prev].filter((item) => item.id !== id));
   }, []);
 
-  const handleSearch = useCallback((e) => {
+  const handleSubmit = useCallback((e) => {
     e.preventDefault();
     console.log({ searchQuery });
 
@@ -35,7 +35,7 @@ const Search = () => {
 
   return (
     <Container>
-      <Form onSubmit={handleSearch}>
+      <Form onSubmit={handleSubmit}>
         <FormGroup>
           <Input
             type='search'
