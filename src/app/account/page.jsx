@@ -343,17 +343,6 @@ const DeleteHeader = styled.h2`
   }
 `;
 
-const DeleteWarning = styled.p`
-  font-size: 1.3rem;
-  color: #999;
-  line-height: 1.2;
-  word-wrap: break-word;
-
-  @media only screen and (max-width: 43.75em) {
-    font-size: 1.5rem;
-  }
-`;
-
 const Right = styled.div`
   flex: 1;
   display: flex;
