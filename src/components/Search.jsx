@@ -165,6 +165,4 @@ const Left = styled.div`
   }
 `;
 
-const History = styled.div``;
-
 export default Search;
