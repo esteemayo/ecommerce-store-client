@@ -64,12 +64,14 @@ const Button = styled.button`
   padding: 1.2rem 3.5rem;
   background-color: var(--clr-primary-green);
   color: ${({ theme }) => theme.textBtn};
-  background-image: linear-gradient(
-    120deg,
-    transparent 0%,
-    transparent 50%,
-    var(--clr-tertiary-green) 50%
-  );
+  background-image: ${({ theme }) => css`
+    linear-gradient(
+      120deg,
+      transparent 0%,
+      transparent 50%,
+      ${theme.bgImgBtn} 50%
+    );
+  `};
   background-size: 220%;
   border-radius: 0.5rem;
   outline-color: ${({ theme }) => theme.btnOut};
