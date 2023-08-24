@@ -57,7 +57,7 @@ const Search = () => {
             <Center>
               <History>{query}</History>
             </Center>
-            <Remove>
+            <Remove onClick={() => handleDelete(id)}>
               <FontAwesomeIcon icon={faTimes} />
             </Remove>
           </Wrapper>
