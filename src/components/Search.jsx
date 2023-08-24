@@ -26,7 +26,9 @@ const Search = () => {
         <Button type='submit'>Search</Button>
       </Form>
       <Wrapper>
-        <Left>Left</Left>
+        <Left>
+          <FontAwesomeIcon icon={faClock} />
+        </Left>
         <Center>Center</Center>
         <Right>Right</Right>
       </Wrapper>
