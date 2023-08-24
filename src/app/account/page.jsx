@@ -25,19 +25,10 @@ const Account = () => {
   const emailModal = useEmailModal();
   const fileModal = useFileModal();
 
-  const [isEmailOpen, setIsEmailOpen] = useState(false);
   const [isPasswordOpen, setIsPasswordOpen] = useState(false);
   const [isDeleteOpen, setIsDeleteOpen] = useState(false);
 
   const user = false;
-
-  const handleOpenEmail = useCallback(() => {
-    setIsEmailOpen(true);
-  }, []);
-
-  const handleCancel = useCallback(() => {
-    setIsEmailOpen(false);
-  }, []);
 
   const openHandler = useCallback(() => {
     setIsPasswordOpen(true);
