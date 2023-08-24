@@ -25,6 +25,7 @@ const Search = () => {
         </FormGroup>
         <Button type='submit'>Search</Button>
       </Form>
+      <Wrapper></Wrapper>
     </Container>
   );
 }
