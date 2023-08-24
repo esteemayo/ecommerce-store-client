@@ -43,17 +43,22 @@ const Search = () => {
         </FormGroup>
         <Button type='submit'>Search</Button>
       </Form>
-      <Wrapper>
-        <Left>
-          <FontAwesomeIcon icon={faClock} />
-        </Left>
-        <Center>
-          <History>The Stanley Rain Jacket in Black</History>
-        </Center>
-        <Remove>
-          <FontAwesomeIcon icon={faTimes} />
-        </Remove>
-      </Wrapper>
+      {!!histories.length > 0 && histories.map((item) => {
+        const { id, query } = item;
+        return (
+          <Wrapper key={id}>
+            <Left>
+              <FontAwesomeIcon icon={faClock} />
+            </Left>
+            <Center>
+              <History>{query}</History>
+            </Center>
+            <Remove>
+              <FontAwesomeIcon icon={faTimes} />
+            </Remove>
+          </Wrapper>
+        );
+      })}
     </Container>
   );
 }
