@@ -158,11 +158,4 @@ const Wrapper = styled.div`
   }
 `;
 
-const Left = styled.div`
-  svg {
-    font-size: 1.75rem;
-    color: inherit;
-  }
-`;
-
 export default Search;
