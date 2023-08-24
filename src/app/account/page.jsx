@@ -18,12 +18,14 @@ import ClientOnly from '@/components/ClientOnly';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 import useFileModal from '@/hooks/useFileModal';
 import useEmailModal from '@/hooks/useEmailModal';
+import usePasswordModal from '@/hooks/usePasswordModal';
 
 const Account = () => {
   const dispatch = useDispatch();
 
   const emailModal = useEmailModal();
   const fileModal = useFileModal();
+  const passwordModal = usePasswordModal();
 
   const [isPasswordOpen, setIsPasswordOpen] = useState(false);
   const [isDeleteOpen, setIsDeleteOpen] = useState(false);
@@ -100,7 +102,7 @@ const Account = () => {
                         placeholder='********'
                       />
                       <ButtonContainer>
-                        <Button type='button' onClick={openHandler}>
+                        <Button type='button' onClick={passwordModal.onOpen}>
                           Change
                         </Button>
                       </ButtonContainer>
@@ -129,7 +131,7 @@ const Account = () => {
                         <FontAwesomeIcon icon={faUser} />
                       )}
                     </AvatarContainer>
-                    <FileButton type='button' onClick={fileModal.isOpen}>
+                    <FileButton type='button' onClick={fileModal.onOpen}>
                       Upload a picture
                     </FileButton>
                   </Right>
@@ -145,9 +147,9 @@ const Account = () => {
         <Modal
           title='Change your password'
           isOpen={isPasswordOpen}
-          onClose={closeHandler}
+          onClose={passwordModal.onClose}
         >
-          <UpdatePassword onCancel={closeHandler} />
+          <UpdatePassword onCancel={passwordModal.onClose} />
         </Modal>
         <Modal
           title='Change your email address'
