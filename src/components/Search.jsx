@@ -167,10 +167,4 @@ const Left = styled.div`
 
 const History = styled.div``;
 
-const StyledLink = styled(Link)`
-  display: inline-block;
-  text-decoration: none;
-  color: currentColor;
-`;
-
 export default Search;
