@@ -3,7 +3,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useCallback, useState } from 'react';
 import { faClock, faMagnifyingGlass, faTimes } from '@fortawesome/free-solid-svg-icons';
 
-import { setToStorage } from '@/utils';
+import { getFromStorage, setToStorage } from '@/utils';
+
+const getAllHistories = () => {
+  const histories = getFromStorage('histories')
+  return histories ?? [];
+};
 
 const Search = () => {
   const [histories, setHistories] = useState([]);
