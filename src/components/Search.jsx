@@ -141,6 +141,12 @@ const History = styled.span`
 `;
 
 const Remove = styled.button`
+  display: inline-block;
+  border: none;
+  background-color: transparent;
+  color: currentColor;
+  cursor: pointer;
+
   svg {
     color: inherit;
   }
