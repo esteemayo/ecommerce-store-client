@@ -50,6 +50,7 @@ const Search = () => {
         <FormGroup>
           <Input
             type='search'
+            ref={inputRef}
             value={searchQuery}
             placeholder='Search for a product'
             onChange={(e) => setSearchQuery(e.target.value)}
