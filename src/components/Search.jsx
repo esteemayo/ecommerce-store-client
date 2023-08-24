@@ -29,7 +29,7 @@ const Search = () => {
         <Left>
           <FontAwesomeIcon icon={faClock} />
         </Left>
-        <Center>Center</Center>
+        <Center>The Stanley Rain Jacket in Black</Center>
         <Right>
           <FontAwesomeIcon icon={faTimes} />
         </Right>
