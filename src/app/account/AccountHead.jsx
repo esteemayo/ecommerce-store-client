@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 
 const AccountHead = ({ onOpen, onAction }) => {
   return (
-    <>
-      <InputContainer>
+    <Container>
+      <Wrapper>
         <Label htmlFor='name'>Your name</Label>
         <Input
           type='text'
@@ -12,8 +12,8 @@ const AccountHead = ({ onOpen, onAction }) => {
           name='name'
           placeholder='Name'
         />
-      </InputContainer>
-      <InputContainer>
+      </Wrapper>
+      <Wrapper>
         <Label htmlFor='username'>Your username</Label>
         <Input
           type='text'
@@ -21,8 +21,8 @@ const AccountHead = ({ onOpen, onAction }) => {
           name='username'
           placeholder='Username'
         />
-      </InputContainer>
-      <InputContainer>
+      </Wrapper>
+      <Wrapper>
         <Label htmlFor='email'>Email address</Label>
         <Input
           type='email'
@@ -35,8 +35,8 @@ const AccountHead = ({ onOpen, onAction }) => {
             Change
           </Button>
         </ButtonContainer>
-      </InputContainer>
-      <InputContainer>
+      </Wrapper>
+      <Wrapper>
         <Label htmlFor='password'>Password</Label>
         <Input
           type='password'
@@ -49,12 +49,14 @@ const AccountHead = ({ onOpen, onAction }) => {
             Change
           </Button>
         </ButtonContainer>
-      </InputContainer>
-    </>
+      </Wrapper>
+    </Container>
   );
 }
 
-const InputContainer = styled.div`
+const Container = styled.div``;
+
+const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
 
