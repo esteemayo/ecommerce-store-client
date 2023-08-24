@@ -257,44 +257,4 @@ const AvatarContainer = styled.div`
   }
 `;
 
-const FileButton = styled.button`
-  display: inline-block;
-  border: none;
-  font-weight: 500;
-  font-size: 1.4rem;
-  padding: 1.2rem 3.5rem;
-  background-color: var(--clr-primary-green);
-  color: ${({ theme }) => theme.textBtn};
-  background-image: linear-gradient(
-    120deg,
-    transparent 0%,
-    transparent 50%,
-    var(--clr-tertiary-green) 50%
-  );
-  background-size: 220%;
-  border-radius: 0.5rem;
-  outline-color: #85beae;
-  cursor: pointer;
-  transition: all 0.3s;
-
-  @media only screen and (max-width: 43.75em) {
-    padding: 1.2rem 2.5rem;
-  }
-
-  @media only screen and (max-width: 31.25em) {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-
-  @media only screen and (max-width: 25em) {
-    font-size: 1.3rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-
-  &:hover {
-    background-position: 100%;
-  }
-`;
-
 export default Account;
