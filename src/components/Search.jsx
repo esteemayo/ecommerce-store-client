@@ -4,7 +4,6 @@ import { useCallback, useState } from 'react';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 
 const Search = () => {
-  const [isFocused, setIsFocused] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
 
   const handleSearch = useCallback((e) => {
