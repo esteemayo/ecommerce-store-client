@@ -232,12 +232,6 @@ const Left = styled.div`
   flex: 1.5;
 `;
 
-const ButtonContainer = styled.div`
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 0.5rem;
-`;
-
 const Button = styled.button`
   border: none;
   display: inline-block;
