@@ -232,26 +232,6 @@ const Left = styled.div`
   flex: 1.5;
 `;
 
-const Input = styled.input`
-  display: inline-block;
-  font-family: inherit;
-  font-size: 1.5rem;
-  width: 100%;
-  padding: 0.9rem 1rem;
-  background-color: transparent;
-  color: #999;
-  border: 2px solid #f3f4f6;
-  border-radius: 0.5rem;
-  outline-color: ${({ theme }) => theme.inputOut};
-  caret-color: ${({ theme }) => theme.inputCaret};
-
-  &::-webkit-input-placeholder {
-    font-weight: 300;
-    font-size: 1.5rem;
-    color: #bbb;
-  }
-`;
-
 const ButtonContainer = styled.div`
   display: flex;
   justify-content: flex-end;
