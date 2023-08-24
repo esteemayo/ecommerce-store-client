@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 import { faClock, faTimes } from '@fortawesome/free-solid-svg-icons';
 
-const SearchHistory = ({ id, query }) => {
+const SearchHistory = ({ id, query, onDelete }) => {
   return (
     <Container key={id}>
       <IconWRapper>
@@ -12,7 +12,7 @@ const SearchHistory = ({ id, query }) => {
       <History>
         <StyledLink href='#' passHref>{query}</StyledLink>
       </History>
-      <Remove onClick={() => handleDelete(id)}>
+      <Remove onClick={() => onDelete(id)}>
         <FontAwesomeIcon icon={faTimes} />
       </Remove>
     </Container>
