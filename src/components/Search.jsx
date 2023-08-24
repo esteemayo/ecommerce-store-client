@@ -11,7 +11,7 @@ const getAllHistories = () => {
 };
 
 const Search = () => {
-  const [histories, setHistories] = useState([]);
+  const [histories, setHistories] = useState(getAllHistories());
   const [searchQuery, setSearchQuery] = useState('');
 
   const handleSearch = useCallback((e) => {
