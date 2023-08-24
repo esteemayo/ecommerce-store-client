@@ -14,6 +14,10 @@ const Search = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [histories, setHistories] = useState(getAllHistories());
 
+  const handleDelete = useCallback((id) => {
+    setHistories((prev) => [...prev].filter((item) => item.id === id));
+  }, []);
+
   const handleSearch = useCallback((e) => {
     e.preventDefault();
     console.log({ searchQuery });
