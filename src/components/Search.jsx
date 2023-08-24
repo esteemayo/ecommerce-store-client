@@ -17,8 +17,17 @@ const Search = () => {
   const handleSearch = useCallback((e) => {
     e.preventDefault();
     console.log({ searchQuery });
-    setToStorage('histories', searchQuery);
+
+    const data = {
+      id: new Date().getTime(),
+      query: searchQuery,
+    }
+    setHistories((prev) => [data, ...prev]);
   }, [searchQuery]);
+
+  useEffect(() => {
+    setToStorage('histories', histories);
+  }, [histories]);
 
   return (
     <Container>
