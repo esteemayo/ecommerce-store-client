@@ -163,6 +163,11 @@ const Wrapper = styled.div`
   color: ${({ theme }) => theme.textProdCard};
   position: relative;
   margin-bottom: 0.5rem;
+  transition: all 0.3s ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
 `;
 
 const Left = styled.div`
@@ -178,11 +183,6 @@ const StyledLink = styled(Link)`
   display: inline-block;
   text-decoration: none;
   color: currentColor;
-  transition: all 0.3s ease;
-
-  &:hover {
-    opacity: 0.8;
-  }
 `;
 
 const Remove = styled.button`
