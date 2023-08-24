@@ -45,13 +45,11 @@ const Wrapper = styled.div`
 `;
 
 const StyledImage = styled(Image)`
-   img {
-    width: 10rem;
-    height: 10rem;
-    display: block;
-    object-fit: cover;
-    border-radius: 3.5rem;
-  }
+  width: 10rem;
+  height: 10rem;
+  display: block;
+  object-fit: cover;
+  border-radius: 3.5rem;
 `;
 
 const Button = styled.button`
