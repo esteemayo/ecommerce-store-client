@@ -19,6 +19,7 @@ import { closeSubmenu } from '@/features/submenu/submenuSlice';
 import useFileModal from '@/hooks/useFileModal';
 import useEmailModal from '@/hooks/useEmailModal';
 import usePasswordModal from '@/hooks/usePasswordModal';
+import useAccountModal from '@/hooks/useAccountModal';
 
 const Account = () => {
   const dispatch = useDispatch();
@@ -26,6 +27,7 @@ const Account = () => {
   const emailModal = useEmailModal();
   const fileModal = useFileModal();
   const passwordModal = usePasswordModal();
+  const accountModal = useAccountModal();
 
   const [isDeleteOpen, setIsDeleteOpen] = useState(false);
 
@@ -104,7 +106,7 @@ const Account = () => {
                         You will receive an email to confirm your decision.
                         Please note, that all your data will be permanently erased.
                       </DeleteWarning>
-                      <DeleteButton type='button' onClick={handleOpen}>
+                      <DeleteButton type='button' onClick={accountModal.onOpen}>
                         Delete account
                       </DeleteButton>
                     </DeleteContainer>
@@ -149,8 +151,11 @@ const Account = () => {
         >
           <UpdateData onCancel={emailModal.onClose} />
         </Modal>
-        <Modal isOpen={isDeleteOpen} onClose={handleClose}>
-          <DeleteAccount onCancel={handleClose} />
+        <Modal
+          isOpen={accountModal.isOpen}
+          onClose={accountModal.onClose}
+        >
+          <DeleteAccount onCancel={accountModal.onClose} />
         </Modal>
       </Container>
     </ClientOnly>
