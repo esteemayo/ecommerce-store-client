@@ -11,8 +11,8 @@ const getAllHistories = () => {
 };
 
 const Search = () => {
-  const [histories, setHistories] = useState(getAllHistories());
   const [searchQuery, setSearchQuery] = useState('');
+  const [histories, setHistories] = useState(getAllHistories());
 
   const handleSearch = useCallback((e) => {
     e.preventDefault();
