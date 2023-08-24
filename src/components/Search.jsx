@@ -4,6 +4,7 @@ import { useCallback, useEffect, useState } from 'react';
 import { faClock, faMagnifyingGlass, faTimes } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
 
+import SearchHistory from './SearchHistory';
 import { getFromStorage, setToStorage } from '@/utils';
 
 const getAllHistories = () => {
@@ -58,20 +59,7 @@ const Search = () => {
         <Button type='submit'>Search</Button>
       </Form>
       {!!histories.length > 0 && histories.slice(0, 5).map((item) => {
-        const { id, query } = item;
-        return (
-          <Wrapper key={id}>
-            <Left>
-              <FontAwesomeIcon icon={faClock} />
-            </Left>
-            <History>
-              <StyledLink href='#' passHref>{query}</StyledLink>
-            </History>
-            <Remove onClick={() => handleDelete(id)}>
-              <FontAwesomeIcon icon={faTimes} />
-            </Remove>
-          </Wrapper>
-        );
+        return <SearchHistory key={item.id} {...query} />;
       })}
     </Container>
   );
