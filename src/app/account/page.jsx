@@ -22,6 +22,7 @@ import ClientOnly from '@/components/ClientOnly';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
 import DeactivateAccount from './DeactivateAccount';
+import AccountHead from './AccountHead';
 
 const Account = () => {
   const dispatch = useDispatch();
@@ -46,52 +47,10 @@ const Account = () => {
               <AccountWrapper>
                 <AccountInfo>
                   <Left>
-                    <InputContainer>
-                      <Label htmlFor='name'>Your name</Label>
-                      <Input
-                        type='text'
-                        id='name'
-                        name='name'
-                        placeholder='Name'
-                      />
-                    </InputContainer>
-                    <InputContainer>
-                      <Label htmlFor='username'>Your username</Label>
-                      <Input
-                        type='text'
-                        id='username'
-                        name='username'
-                        placeholder='Username'
-                      />
-                    </InputContainer>
-                    <InputContainer>
-                      <Label htmlFor='email'>Email address</Label>
-                      <Input
-                        type='email'
-                        id='email'
-                        name='email'
-                        placeholder='Email'
-                      />
-                      <ButtonContainer>
-                        <Button type='button' onClick={emailModal.onOpen}>
-                          Change
-                        </Button>
-                      </ButtonContainer>
-                    </InputContainer>
-                    <InputContainer>
-                      <Label htmlFor='password'>Password</Label>
-                      <Input
-                        type='password'
-                        id='password'
-                        name='password'
-                        placeholder='********'
-                      />
-                      <ButtonContainer>
-                        <Button type='button' onClick={passwordModal.onOpen}>
-                          Change
-                        </Button>
-                      </ButtonContainer>
-                    </InputContainer>
+                    <AccountHead
+                      onOpen={emailModal.onOpen}
+                      onAction={passwordModal.onOpen}
+                    />
                     <DeactivateAccount onOpen={accountModal.onOpen} />
                   </Left>
                   <Right>
