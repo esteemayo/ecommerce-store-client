@@ -173,22 +173,4 @@ const StyledLink = styled(Link)`
   color: currentColor;
 `;
 
-const Remove = styled.button`
-  display: inline-block;
-  border: none;
-  font-size: 1.75rem;
-  background-color: transparent;
-  color: currentColor;
-  outline-offset: 2px;
-  cursor: pointer;
-
-  position: absolute;
-  right: 0;
-
-  svg {
-    font-size: inherit;
-    color: inherit;
-  }
-`;
-
 export default Search;
