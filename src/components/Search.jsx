@@ -64,9 +64,9 @@ const Search = () => {
             <Left>
               <FontAwesomeIcon icon={faClock} />
             </Left>
-            <Center>
-              <History>{query}</History>
-            </Center>
+            <History>
+              <StyledLink href='#' passHref>{query}</StyledLink>
+            </History>
             <Remove onClick={() => handleDelete(id)}>
               <FontAwesomeIcon icon={faTimes} />
             </Remove>
@@ -172,9 +172,9 @@ const Left = styled.div`
   }
 `;
 
-const Center = styled.div``;
+const History = styled.div``;
 
-const History = styled.span`
+const StyledLink = styled(Link)`
   color: currentColor;
 `;
 
