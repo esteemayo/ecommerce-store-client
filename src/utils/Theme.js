@@ -178,7 +178,7 @@ export const lightTheme = {
   textNotFound: 'inherit',
   textFormHeader: '#979797',
   inputBorder: '#dddddd',
-  textInput: '#999',
+  textInput: '#999999',
   textLabel: '#888888',
   bgInput: '#f9f9f9',
   inputOut: '#eeeeee',
