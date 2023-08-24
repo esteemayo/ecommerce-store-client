@@ -128,6 +128,10 @@ const Center = styled.div`
   
 `;
 
+const History = styled.span`
+  
+`;
+
 const Right = styled.div`
   
 `;
