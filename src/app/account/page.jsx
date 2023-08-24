@@ -33,14 +33,6 @@ const Account = () => {
 
   const user = false;
 
-  const handleOpen = useCallback(() => {
-    setIsDeleteOpen(true);
-  }, []);
-
-  const handleClose = useCallback(() => {
-    setIsDeleteOpen(false);
-  }, []);
-
   return (
     <ClientOnly>
       <Container onMouseOver={() => dispatch(closeSubmenu())}>
