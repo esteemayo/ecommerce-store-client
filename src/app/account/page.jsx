@@ -327,10 +327,6 @@ const Button = styled.button`
   cursor: pointer;
 `;
 
-const DeleteContainer = styled.div`
-  margin-top: 3rem;
-`;
-
 const Right = styled.div`
   flex: 1;
   display: flex;
