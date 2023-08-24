@@ -123,10 +123,13 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color: ${({ theme }) => theme.textProdCard};
 `;
 
 const Left = styled.div`
-  
+  svg {
+    color: inherit;
+  }
 `;
 
 const Center = styled.div`
@@ -134,11 +137,13 @@ const Center = styled.div`
 `;
 
 const History = styled.span`
-  color: ${({ theme }) => theme.textProdCard};
+  color: currentColor;
 `;
 
 const Right = styled.div`
-  
+  svg {
+    color: inherit;
+  }
 `;
 
 export default Search;
