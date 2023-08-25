@@ -1,24 +1,18 @@
 'use client';
 
 import styled from 'styled-components';
-import { useCallback, useState } from 'react';
+import { useState } from 'react';
 import PropTypes from 'prop-types';
 
 import ProductCard from './ProductCard';
 import CartModal from '../modals/CartModal';
 import EmptyProduct from './EmptyProduct';
 
+import useCartModal from '@/hooks/useCartModal';
+
 const ProductList = ({ products }) => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const { isOpen, onOpen, onClose } = useCartModal();
   const [isSelectedProduct, setIsSelectedProduct] = useState({});
-
-  const handleOpen = useCallback(() => {
-    setIsModalOpen(true);
-  }, []);
-
-  const handleClose = useCallback(() => {
-    setIsModalOpen(false);
-  }, []);
 
   if (products.length < 1) {
     return (
@@ -39,7 +33,7 @@ const ProductList = ({ products }) => {
             <ProductCard
               key={product.id}
               product={product}
-              onOpen={handleOpen}
+              onOpen={onOpen}
               onSelect={setIsSelectedProduct}
             />
           );
@@ -47,8 +41,8 @@ const ProductList = ({ products }) => {
       </ProductsContainer>
       <CartModal
         product={isSelectedProduct}
-        isOpen={isModalOpen}
-        onClose={handleClose}
+        isOpen={isOpen}
+        onClose={onClose}
         onSelect={setIsSelectedProduct}
       />
     </Container>
