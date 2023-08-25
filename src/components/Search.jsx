@@ -7,7 +7,7 @@ import SearchHistory from './SearchHistory';
 import { getFromStorage, searchKey, setToStorage } from '@/utils';
 
 const getAllHistories = () => {
-  const histories = getFromStorage(searchKey)
+  const histories = getFromStorage(searchKey);
   return histories ?? [];
 };
 
