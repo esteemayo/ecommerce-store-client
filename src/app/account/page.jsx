@@ -3,18 +3,14 @@
 import styled from 'styled-components';
 import { useDispatch } from 'react-redux';
 
-import Modal from '@/components/modals/Modal';
 import FileUploadModal from '@/components/modals/FileUploadModal';
-
-import DeleteAccount from '@/components/accounts/DeleteAccount';
+import ClientOnly from '@/components/ClientOnly';
+import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
 import usePasswordModal from '@/hooks/usePasswordModal';
 import useFileModal from '@/hooks/useFileModal';
 import useAccountModal from '@/hooks/useAccountModal';
 import useEmailModal from '@/hooks/useEmailModal';
-
-import ClientOnly from '@/components/ClientOnly';
-import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
 import AccountHead from './AccountHead';
 import DeactivateAccount from './DeactivateAccount';
@@ -64,12 +60,6 @@ const Account = () => {
           isOpen={fileModal.isOpen}
           onClose={fileModal.onClose}
         />
-        <Modal
-          isOpen={accountModal.isOpen}
-          onClose={accountModal.onClose}
-        >
-          <DeleteAccount onCancel={accountModal.onClose} />
-        </Modal>
       </Container>
     </ClientOnly>
   );
