@@ -11,6 +11,7 @@ import Darkmode from '@/components/DarkMode';
 import Sidebar from '@/components/sidebar/Sidebar';
 import ClientOnly from '@/components/ClientOnly';
 import PasswordModal from '@/components/modals/PasswordModal';
+import DataModal from '@/components/modals/DataModal';
 import SearchModal from '@/components/modals/SearchModal';
 
 import ToastProvider from '@/providers/ToastProvider';
@@ -48,6 +49,7 @@ export default function RootLayout({ children }) {
                     <Sidebar />
                     <SearchModal />
                     <PasswordModal />
+                    <DataModal />
                   </ClientOnly>
                   {children}
                   <ClientOnly>
