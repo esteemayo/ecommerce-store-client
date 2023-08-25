@@ -98,6 +98,7 @@ const Login = () => {
                   name='username'
                   placeholder='Enter username'
                   ref={usernameRef}
+                  onChange={handleChange}
                 />
                 {errors.username && <ErrorMsg>{errors.username}</ErrorMsg>}
               </FormGroup>
