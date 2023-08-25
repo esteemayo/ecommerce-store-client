@@ -115,7 +115,7 @@ const Login = () => {
                 {errors.password && <ErrorMsg>{errors.password}</ErrorMsg>}
               </FormGroup>
               <CheckBoxWrapper>
-                <FormInput
+                <CheckBox
                   type='checkbox'
                   id='rememberMe'
                   name='rememberMe'
