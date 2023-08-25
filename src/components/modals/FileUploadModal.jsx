@@ -1,11 +1,14 @@
 'use client';
 
 import styled from 'styled-components';
-import CloseIcon from '@mui/icons-material/Close';
-import PropTypes from 'prop-types';
 import { useCallback, useEffect, useMemo, useState } from 'react';
+import CloseIcon from '@mui/icons-material/Close';
 
-const FileUploadModal = ({ isOpen, onClose }) => {
+import useFileModal from '@/hooks/useFileModal';
+
+const FileUploadModal = () => {
+  const { isOpen, onClose } = useFileModal();
+
   const [perc, setPerc] = useState(0);
   const [showModal, setShowModal] = useState(isOpen);
   const [file, setFile] = useState(null);
@@ -263,10 +266,5 @@ const Button = styled.button`
     cursor: not-allowed;
   }
 `;
-
-FileUploadModal.propTypes = {
-  isOpen: PropTypes.bool.isRequired,
-  onClose: PropTypes.func.isRequired,
-};
 
 export default FileUploadModal;

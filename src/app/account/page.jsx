@@ -56,10 +56,6 @@ const Account = () => {
             </AccountContainer>
           </Wrapper>
         </ContainerBox>
-        <FileUploadModal
-          isOpen={fileModal.isOpen}
-          onClose={fileModal.onClose}
-        />
       </Container>
     </ClientOnly>
   );
