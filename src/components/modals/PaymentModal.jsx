@@ -270,7 +270,7 @@ const TextArea = styled.textarea`
   outline-color: ${({ theme }) => theme.inputOut};
   overflow: hidden;
   resize: none;
-  caret-color: var(--caret-light);
+  caret-color: ${({ theme }) => theme.inputCaret};
 
   @media only screen and (max-width: 18.75em) {
     padding-top: 1.4rem;
