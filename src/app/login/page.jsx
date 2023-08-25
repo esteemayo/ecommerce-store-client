@@ -118,6 +118,7 @@ const Login = () => {
                   type='checkbox'
                   id='rememberMe'
                   name='rememberMe'
+                  onChange={handleChange}
                 />
                 <FormLabel htmlFor='rememberMe'>Remember me</FormLabel>
               </FormGroup>
