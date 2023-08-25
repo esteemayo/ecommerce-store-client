@@ -9,19 +9,13 @@ import ProductCard from './ProductCard';
 import CartModal from '../modals/CartModal';
 
 import { storeProducts } from '@/data';
+import useCartModal from '@/hooks/useCartModal';
 
 const FeaturedProducts = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [featuredProducts, setFeaturedProducts] = useState(storeProducts);
+  const { isOpen, onOpen, onClose } = useCartModal();
+
   const [isSelectedProduct, setIsSelectedProduct] = useState({});
-
-  const handleOpen = useCallback(() => {
-    setIsModalOpen(true);
-  }, []);
-
-  const handleClose = useCallback(() => {
-    setIsModalOpen(false);
-  }, []);
+  const [featuredProducts, setFeaturedProducts] = useState(storeProducts);
 
   return (
     <Container>
@@ -35,7 +29,7 @@ const FeaturedProducts = () => {
                 <ProductCard
                   key={product.id}
                   product={product}
-                  onOpen={handleOpen}
+                  onOpen={onOpen}
                   onSelect={setIsSelectedProduct}
                 />
               );
@@ -45,8 +39,8 @@ const FeaturedProducts = () => {
       </Wrapper>
       <CartModal
         product={isSelectedProduct}
-        isOpen={isModalOpen}
-        onClose={handleClose}
+        isOpen={isOpen}
+        onClose={onClose}
         onSelect={setIsSelectedProduct}
       />
     </Container>
