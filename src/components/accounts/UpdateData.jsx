@@ -185,7 +185,7 @@ const FormButton = styled.button`
   font-size: 1.4rem;
   width: 50%;
   padding: 1rem;
-  background-color: var(--clr-primary-green);
+  background-color: ${({ theme }) => theme.bgBtn};
   color: ${({ theme }) => theme.textModalDelBtn};
   background-image: linear-gradient(
     120deg,
