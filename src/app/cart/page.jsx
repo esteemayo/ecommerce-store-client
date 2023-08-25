@@ -31,10 +31,6 @@ const Cart = () => {
     setIsOpen(false);
   }, []);
 
-  const openPaymentModal = useCallback(() => {
-    setIsCash(true);
-  }, []);
-
   let bodyContent;
 
   if (cart.length < 1) {
