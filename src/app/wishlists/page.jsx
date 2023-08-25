@@ -9,12 +9,16 @@ import WishlistHeader from '@/components/wishlists/WishlistHeader';
 import ClientOnly from '@/components/ClientOnly';
 import WishlistCard from '@/components/wishlists/WishlistCard';
 
+import useCartModal from '@/hooks/useCartModal';
+import useWishlistModal from '@/hooks/useWishlistModal';
+
 import { wishlists } from '@/data';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
-import useCartModal from '@/hooks/useCartModal';
 
 const WishLists = () => {
   const dispatch = useDispatch();
+
+  const wishlistModal = useWishlistModal();
   const { isOpen, onOpen, onClose } = useCartModal();
 
   const [products, setProducts] = useState(wishlists);
@@ -46,12 +50,12 @@ const WishLists = () => {
       <>
         <WishlistHeader />
         <WishlistCard
-          isOpen={isModalOpen}
-          onOpen={onOpen}
+          isOpen={wishlistModal.isOpen}
+          onOpen={wishlistModal.onOpen}
           selected={isSelectedId}
           wishlists={products}
           onAction={handleClick}
-          onClose={handleCloseModal}
+          onClose={wishlistModal.onClose}
           onDelete={handleDelete}
         />
       </>
