@@ -19,10 +19,6 @@ const Reviews = ({ reviews, sortLabel, sort, onSort }) => {
     setIsModalOpen(true);
   }, []);
 
-  const handleCloseModal = useCallback(() => {
-    setIsModalOpen(false);
-  }, []);
-
   const handleToggleFilter = useCallback(() => {
     setIsFilterOpen((value) => !value);
   }, []);
