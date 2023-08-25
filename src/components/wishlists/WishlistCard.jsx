@@ -230,7 +230,7 @@ const CartButton = styled.button`
   border: none;
   padding: 1rem 2rem;
   background-color: ${({ theme }) => theme.bgBtn};
-  color: {({ theme }) => theme.textBtn};
+  color: ${({ theme }) => theme.textBtn};
   background-image: linear-gradient(
     120deg,
     transparent 0%,
@@ -239,7 +239,7 @@ const CartButton = styled.button`
   );
   background-size: 220%;
   border-radius: 0.5rem;
-  outline-color: #85beae;
+  outline-color: ${({ theme }) => theme.btnOut};
   cursor: pointer;
   transition: all 0.3s ease;
 
