@@ -8,8 +8,10 @@ import ReviewHead from './ReviewHead';
 import ReviewCards from './ReviewCards';
 
 import ReviewModal from '../modals/ReviewModal';
+import useReviewModal from '@/hooks/useReviewModal';
 
 const Reviews = ({ reviews, sortLabel, sort, onSort }) => {
+  const { isOpen, onOpen, onClose } = useReviewModal();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isFilterOpen, setIsFilterOpen] = useState(false);
 
@@ -48,19 +50,19 @@ const Reviews = ({ reviews, sortLabel, sort, onSort }) => {
           rating={0}
           reviews={reviews}
           isOpen={isFilterOpen}
-          onOpen={handleOpenModal}
+          onOpen={onOpen}
           onSort={onSort}
           onToggle={handleToggleFilter}
         />
         <ReviewCards
           rating={0}
           reviews={reviews}
-          onOpen={handleOpenModal}
+          onOpen={onOpen}
         />
       </Wrapper>
       <ReviewModal
-        isOpen={isModalOpen}
-        onClose={handleCloseModal}
+        isOpen={isOpen}
+        onClose={onClose}
       />
     </Container>
   );
