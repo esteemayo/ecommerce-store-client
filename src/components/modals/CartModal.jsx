@@ -62,6 +62,7 @@ const CartModal = ({ product, isOpen, onClose, onSelect }) => {
   return (
     <Overlay
       className='overlay'
+      mode={mode.toString()}
       type={activeModal}
       onClick={closeModalHandler}
     >
@@ -138,6 +139,7 @@ const Overlay = styled.div`
   width: 100vw;
   height: 100%;
   background-color: ${({ theme }) => theme.bgOverlay};
+  backdrop-filter: ${({ mode }) => mode === 'true' && 'blur(2px)'};
   position: fixed;
   top: 0;
   left: 0;
