@@ -3,6 +3,11 @@
 import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
 
+import PasswordModal from '@/components/modals/PasswordModal';
+import DataModal from '@/components/modals/DataModal';
+import AccountModal from '@/components/modals/AccountModal';
+import SearchModal from '@/components/modals/SearchModal';
+
 import Navbar from '@/components/navbar/Navbar';
 import Submenu from '@/components/submenu/Submenu';
 import Footer from '@/components/footer/Footer';
@@ -10,9 +15,6 @@ import ScrollToTop from '@/components/ScrollToTop';
 import Darkmode from '@/components/DarkMode';
 import Sidebar from '@/components/sidebar/Sidebar';
 import ClientOnly from '@/components/ClientOnly';
-import PasswordModal from '@/components/modals/PasswordModal';
-import DataModal from '@/components/modals/DataModal';
-import SearchModal from '@/components/modals/SearchModal';
 
 import ToastProvider from '@/providers/ToastProvider';
 import CartTotalProvider from '@/providers/CartTotalProvider';
@@ -50,6 +52,7 @@ export default function RootLayout({ children }) {
                     <SearchModal />
                     <PasswordModal />
                     <DataModal />
+                    <AccountModal />
                   </ClientOnly>
                   {children}
                   <ClientOnly>
