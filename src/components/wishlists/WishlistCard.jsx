@@ -1,6 +1,6 @@
 'use client';
 
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import Image from 'next/image';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
@@ -231,12 +231,14 @@ const CartButton = styled.button`
   padding: 1rem 2rem;
   background-color: ${({ theme }) => theme.bgBtn};
   color: ${({ theme }) => theme.textBtn};
-  background-image: linear-gradient(
-    120deg,
-    transparent 0%,
-    transparent 50%,
-    var(--clr-tertiary-green) 50%
-  );
+  background-image: ${({ theme }) => css`
+    linear-gradient(
+      120deg,
+      transparent 0%,
+      transparent 50%,
+      ${theme.bgImgBtn} 50%
+    );
+  `};
   background-size: 220%;
   border-radius: 0.5rem;
   outline-color: ${({ theme }) => theme.btnOut};
