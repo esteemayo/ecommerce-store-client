@@ -27,6 +27,13 @@ const Login = () => {
   const username = usernameRef.current?.value;
   const password = passwordRef.current?.value;
 
+  const handleChange = useCallback(({ target: input }) => {
+    const name = input.name;
+    const value = input.checked ?? input.value;
+
+    setInputs((prev) => ({ ...prev, [name]: value }));
+  }, []);
+
   const validateForm = useCallback(() => {
     const tempErrors = {};
 
