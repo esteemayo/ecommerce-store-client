@@ -8,6 +8,7 @@ import { useSelector } from 'react-redux';
 import CloseIcon from '@mui/icons-material/Close';
 
 const DeleteModal = ({ actionId, isOpen, onClose, onAction }) => {
+  const { mode } = useSelector((state) => ({ ...state.darkMode }));
   const [showModal, setShowModal] = useState(isOpen);
 
   const closeModalHandler = useCallback((e) => {
