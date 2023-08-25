@@ -12,11 +12,13 @@ import PaymentModal from '@/components/modals/PaymentModal';
 import ClientOnly from '@/components/ClientOnly';
 import CartTotal from '@/components/carts/CartTotal';
 
+import usePaymentModal from '@/hooks/usePaymentModal';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
 const Cart = () => {
   const dispatch = useDispatch();
   const { cart } = useSelector((state) => ({ ...state.cart }));
+  const paymentModal = usePaymentModal();
 
   const [isOpen, setIsOpen] = useState(false);
   const [isCash, setIsCash] = useState(false);
@@ -67,7 +69,7 @@ const Cart = () => {
           isOpen={isOpen}
           onOpen={handleOpen}
           onClose={handleClose}
-          onAction={openPaymentModal}
+          onAction={paymentModal.onOpen}
         />
       </Wrapper>
     );
@@ -80,9 +82,9 @@ const Cart = () => {
           {bodyContent}
         </CartContainer>
         <PaymentModal
-          isOpen={isCash}
+          isOpen={paymentModal.isOpen}
           onClose={handleClose}
-          onExit={closePaymentModal}
+          onExit={paymentModal.onClose}
         />
       </Container>
     </ClientOnly>
