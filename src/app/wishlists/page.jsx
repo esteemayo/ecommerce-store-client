@@ -11,32 +11,24 @@ import WishlistCard from '@/components/wishlists/WishlistCard';
 
 import { wishlists } from '@/data';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
+import useCartModal from '@/hooks/useCartModal';
 
 const WishLists = () => {
   const dispatch = useDispatch();
+  const { isOpen, onOpen, onClose } = useCartModal();
 
-  const [isModalOpen, setIsModalOpen] = useState(false);
   const [products, setProducts] = useState(wishlists);
   const [isSelectedProduct, setIsSelectedProduct] = useState({});
-  const [isOpen, setIsOpen] = useState(false);
+  const [isModalOpen, setisModalOpen] = useState(false);
   const [isSelectedId, setIsSelectedId] = useState(null);
 
   const handleClick = useCallback((wishlist) => {
-    setIsModalOpen(true);
+    onOpen();
     setIsSelectedProduct(wishlist);
-  }, [setIsModalOpen, setIsSelectedProduct]);
-
-  const closeModalHandler = useCallback(() => {
-    setIsModalOpen(false);
-  }, []);
-
-  const handleOpenModal = useCallback((id) => {
-    setIsSelectedId(id);
-    setIsOpen(true);
-  }, []);
+  }, [onOpen, setIsSelectedProduct]);
 
   const handleCloseModal = useCallback(() => {
-    setIsOpen(false);
+    setisModalOpen(false);
   }, []);
 
   const handleDelete = useCallback((id) => {
@@ -54,8 +46,8 @@ const WishLists = () => {
       <>
         <WishlistHeader />
         <WishlistCard
-          isOpen={isOpen}
-          onOpen={handleOpenModal}
+          isOpen={isModalOpen}
+          onOpen={onOpen}
           selected={isSelectedId}
           wishlists={products}
           onAction={handleClick}
@@ -74,8 +66,8 @@ const WishLists = () => {
         </Wrapper>
         <CartModal
           product={isSelectedProduct}
-          isOpen={isModalOpen}
-          onClose={closeModalHandler}
+          isOpen={isOpen}
+          onClose={onClose}
           onSelect={setIsSelectedProduct}
         />
       </Container>
