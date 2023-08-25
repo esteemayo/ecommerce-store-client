@@ -41,7 +41,7 @@ const Search = () => {
   }, [handleSearch, handleHistory]);
 
   useEffect(() => {
-    setToStorage('histories', histories);
+    setToStorage(searchKey, histories);
   }, [histories]);
 
   useEffect(() => {
