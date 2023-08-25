@@ -10,6 +10,12 @@ import { useDispatch } from 'react-redux';
 import ClientOnly from '@/components/ClientOnly';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
+const initialState = {
+  username: '',
+  password: '',
+  rememberMe: false,
+};
+
 const Login = () => {
   const dispatch = useDispatch();
 
