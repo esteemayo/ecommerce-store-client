@@ -22,6 +22,7 @@ const Login = () => {
   const usernameRef = useRef();
   const passwordRef = useRef();
   const [errors, setErrors] = useState({});
+  const [inputs, setInputs] = useState(initialState);
 
   const username = usernameRef.current?.value;
   const password = passwordRef.current?.value;
