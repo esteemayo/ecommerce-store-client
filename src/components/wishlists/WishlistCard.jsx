@@ -229,7 +229,7 @@ const CartButton = styled.button`
   gap: 0.5rem;
   border: none;
   padding: 1rem 2rem;
-  background-color: #6d857f;
+  background-color: ${({ theme }) => theme.bgBtn};
   color: var(--clr-white);
   background-image: linear-gradient(
     120deg,
