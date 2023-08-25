@@ -18,8 +18,8 @@ import { closeSubmenu } from '@/features/submenu/submenuSlice';
 const WishLists = () => {
   const dispatch = useDispatch();
 
+  const cartModal = useCartModal();
   const wishlistModal = useWishlistModal();
-  const { isOpen, onOpen, onClose } = useCartModal();
 
   const [products, setProducts] = useState(wishlists);
   const [isSelectedProduct, setIsSelectedProduct] = useState({});
@@ -27,13 +27,9 @@ const WishLists = () => {
   const [isSelectedId, setIsSelectedId] = useState(null);
 
   const handleClick = useCallback((wishlist) => {
-    onOpen();
+    cartModal.onOpen;
     setIsSelectedProduct(wishlist);
-  }, [onOpen, setIsSelectedProduct]);
-
-  const handleCloseModal = useCallback(() => {
-    setisModalOpen(false);
-  }, []);
+  }, [cartModal.onOpen, setIsSelectedProduct]);
 
   const handleDelete = useCallback((id) => {
     setProducts((prev) => prev.filter((item) => item.id !== id));
@@ -70,8 +66,8 @@ const WishLists = () => {
         </Wrapper>
         <CartModal
           product={isSelectedProduct}
-          isOpen={isOpen}
-          onClose={onClose}
+          isOpen={cartModal.isOpen}
+          onClose={cartModal.onClose}
           onSelect={setIsSelectedProduct}
         />
       </Container>
