@@ -90,7 +90,7 @@ const ProductImageModal = ({
   );
 }
 
-const Overlay = styled.section`
+const Overlay = styled.aside`
   display: none;
   
   @media only screen and (min-width: 50em) {
