@@ -1,3 +1,5 @@
+export const rememberKey = 'rememberMe';
+
 export const searchKey = 'histories';
 
 export const excerpts = (str, count) => {
