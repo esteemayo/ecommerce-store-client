@@ -373,7 +373,9 @@ const FormInput = styled.input`
 `;
 
 const CheckBoxWrapper = styled.div`
-  
+  display: flex;
+  align-items: center;
+  gap: 2rem;;
 `;
 
 const FormButton = styled.button`
