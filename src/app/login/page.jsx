@@ -10,6 +10,8 @@ import { useDispatch } from 'react-redux';
 import ClientOnly from '@/components/ClientOnly';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
+import { setToStorage } from '@/utils';
+
 const initialState = {
   username: '',
   password: '',
