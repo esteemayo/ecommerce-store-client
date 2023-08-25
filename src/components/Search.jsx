@@ -4,10 +4,10 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 
 import SearchHistory from './SearchHistory';
-import { getFromStorage, setToStorage } from '@/utils';
+import { getFromStorage, searchKey, setToStorage } from '@/utils';
 
 const getAllHistories = () => {
-  const histories = getFromStorage('histories')
+  const histories = getFromStorage(searchKey)
   return histories ?? [];
 };
 
