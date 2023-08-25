@@ -24,8 +24,7 @@ const Login = () => {
   const [errors, setErrors] = useState({});
   const [inputs, setInputs] = useState(initialState);
 
-  const username = usernameRef.current?.value;
-  const password = passwordRef.current?.value;
+  const { username, password } = inputs;
 
   const handleChange = useCallback(({ target: input }) => {
     const name = input.name;
