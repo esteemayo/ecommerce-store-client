@@ -109,7 +109,7 @@ const Login = () => {
                   name='password'
                   type='password'
                   placeholder='Enter your password'
-                  ref={passwordRef}
+                  onChange={handleChange}
                 />
                 {errors.password && <ErrorMsg>{errors.password}</ErrorMsg>}
               </FormGroup>
