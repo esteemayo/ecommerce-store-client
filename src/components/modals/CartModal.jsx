@@ -67,7 +67,7 @@ const CartModal = ({ product, isOpen, onClose, onSelect }) => {
       onClick={closeModalHandler}
     >
       <Container>
-        <Wrapper>
+        <Wrapper mode={mode.toString()}>
           <ButtonContainer>
             <CloseButton type='button' onClick={handleCloseModal}>
               <CloseIcon />
@@ -161,9 +161,9 @@ const Wrapper = styled.div`
   padding: 2rem 4rem;
   background-color: ${({ theme }) => theme.bgModal};
   border-radius: 1.5rem;
-  box-shadow: 0 2rem 4rem rgba(145, 143, 143, 0.1);
-  -webkit-box-shadow: 0 2rem 4rem rgba(145, 143, 143, 0.1);
-  -moz-box-shadow: 0 2rem 4rem rgba(145, 143, 143, 0.1);
+  box-shadow: ${({ mode }) => mode === 'true' ? 'none' : '0 2rem 4rem rgba(145, 143, 143, 0.1)'};
+  -webkit-box-shadow: ${({ mode }) => mode === 'true' ? 'none' : '0 2rem 4rem rgba(145, 143, 143, 0.1)'};
+  -moz-box-shadow: ${({ mode }) => mode === 'true' ? 'none' : '0 2rem 4rem rgba(145, 143, 143, 0.1)'};
   position: relative;
 
   @media only screen and (max-width: 37.5em) {
