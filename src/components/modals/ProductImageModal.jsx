@@ -57,7 +57,7 @@ const ProductImageModal = ({
   }, [isOpen]);
 
   return (
-    <Overlay type={activeModal}>
+    <Overlay type={activeModal} mode={mode.toString()}>
       <CloseButton type='button' onClick={handleClose}>
         <CloseIcon />
       </CloseButton>
@@ -97,6 +97,7 @@ const Overlay = styled.section`
     width: 100vw;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.95);
+    backdrop-filter: ${({ mode }) => mode === 'true' && 'blur(2px)'};
     position: fixed;
     top: 0;
     left: ${({ type }) => type === 'show' ? 0 : '-100vw'};
