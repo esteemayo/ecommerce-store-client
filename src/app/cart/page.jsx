@@ -21,7 +21,6 @@ const Cart = () => {
   const paymentModal = usePaymentModal();
 
   const [isOpen, setIsOpen] = useState(false);
-  const [isCash, setIsCash] = useState(false);
 
   const handleOpen = useCallback(() => {
     setIsOpen(true);
