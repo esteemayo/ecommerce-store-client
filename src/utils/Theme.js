@@ -43,7 +43,7 @@ export const darkTheme = {
   filterOut: '#797979',
   bgPagination: '#121212',
   textPagination: '#cfd0d1',
-  boxPagination: '0 1rem 4rem rgba(99, 98, 98, 0.09)',
+  boxPagination: 'none',
   textNotFound: '#cfd0d1',
   textFormHeader: '#cfd0d1',
   inputBorder: '#797979',
