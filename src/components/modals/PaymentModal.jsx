@@ -239,7 +239,7 @@ const FormInput = styled.input`
   color: #999;
   border: 2px solid ${({ theme }) => theme.modalInputBorder};
   border-radius: 0.5rem;
-  outline-color: #eee;
+  outline-color: ${({ theme }) => theme.inputOut};
   caret-color: ${({ theme }) => theme.inputCaret};
 
   @media only screen and (max-width: 18.75em) {
