@@ -23,7 +23,6 @@ const WishLists = () => {
 
   const [products, setProducts] = useState(wishlists);
   const [isSelectedProduct, setIsSelectedProduct] = useState({});
-  const [isModalOpen, setisModalOpen] = useState(false);
   const [isSelectedId, setIsSelectedId] = useState(null);
 
   const handleClick = useCallback((wishlist) => {
