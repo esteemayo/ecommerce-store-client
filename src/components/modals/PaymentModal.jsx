@@ -318,6 +318,7 @@ const FormButton = styled.button`
   }
 
   &:disabled {
+    opacity: 0.85;
     cursor: not-allowed;
   }
 `;
