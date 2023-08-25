@@ -3,6 +3,7 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useSelector } from 'react-redux';
 
 import CloseIcon from '@mui/icons-material/Close';
 
