@@ -378,6 +378,10 @@ const CheckBoxWrapper = styled.div`
   gap: 2rem;
 `;
 
+const CheckBox = styled.input`
+
+`;
+
 const FormButton = styled.button`
   margin-top: 2rem;
   border: none;
