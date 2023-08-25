@@ -3,7 +3,6 @@
 import styled from 'styled-components';
 import { useDispatch } from 'react-redux';
 
-import FileUploadModal from '@/components/modals/FileUploadModal';
 import ClientOnly from '@/components/ClientOnly';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
