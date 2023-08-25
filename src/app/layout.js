@@ -3,11 +3,6 @@
 import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
 
-import PasswordModal from '@/components/modals/PasswordModal';
-import DataModal from '@/components/modals/DataModal';
-import AccountModal from '@/components/modals/AccountModal';
-import SearchModal from '@/components/modals/SearchModal';
-
 import Navbar from '@/components/navbar/Navbar';
 import Submenu from '@/components/submenu/Submenu';
 import Footer from '@/components/footer/Footer';
