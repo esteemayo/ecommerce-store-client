@@ -12,7 +12,6 @@ import useReviewModal from '@/hooks/useReviewModal';
 
 const Reviews = ({ reviews, sortLabel, sort, onSort }) => {
   const { isOpen, onOpen, onClose } = useReviewModal();
-  const [isModalOpen, setIsModalOpen] = useState(false);
   const [isFilterOpen, setIsFilterOpen] = useState(false);
 
   const handleToggleFilter = useCallback(() => {
