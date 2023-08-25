@@ -44,7 +44,7 @@ const Wrapper = styled.div`
 
   svg {
     font-size: 5rem;
-    color: var(--clr-white);
+    color: ${({ theme }) => theme.bgImgIcon};
   }
 `;
 
