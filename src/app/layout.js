@@ -18,6 +18,7 @@ import ClientOnly from '@/components/ClientOnly';
 
 import ToastProvider from '@/providers/ToastProvider';
 import CartTotalProvider from '@/providers/CartTotalProvider';
+import ModalProvider from '@/providers/ModalProvider';
 import AppThemeProvider from '@/providers/ThemeProvider';
 
 import { persistor, store } from '@/store/store';
@@ -49,10 +50,7 @@ export default function RootLayout({ children }) {
                     <ToastProvider />
                     <Submenu />
                     <Sidebar />
-                    <SearchModal />
-                    <PasswordModal />
-                    <DataModal />
-                    <AccountModal />
+                    <ModalProvider />
                   </ClientOnly>
                   {children}
                   <ClientOnly>
