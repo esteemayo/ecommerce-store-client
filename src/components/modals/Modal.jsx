@@ -31,6 +31,7 @@ const Modal = ({ title, children, isOpen, onClose }) => {
   return (
     <Overlay
       className='overlay'
+      mode={mode.toString()}
       type={activeModal}
       onClick={closeModalHandler}
     >
@@ -55,6 +56,7 @@ const Overlay = styled.aside`
   width: 100vw;
   height: 100%;
   background-color: ${({ theme }) => theme.bgOverlay};
+  backdrop-filter: ${({ mode }) => mode === 'true' && '0.5rem'};
   position: fixed;
   top: 0;
   right: 0;
