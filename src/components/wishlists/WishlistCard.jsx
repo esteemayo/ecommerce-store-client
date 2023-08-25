@@ -259,6 +259,10 @@ const CartButton = styled.button`
     background-position: 100%;
   }
 
+  &:disabled {
+    opacity: 0.85;
+  }
+
   svg {
     @media only screen and (max-width: 18.75em) {
       font-size: 1.3rem;
