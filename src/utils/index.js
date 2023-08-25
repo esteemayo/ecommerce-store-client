@@ -1,3 +1,5 @@
+export const userKey = 'user';
+
 export const rememberKey = 'rememberMe';
 
 export const searchKey = 'histories';
