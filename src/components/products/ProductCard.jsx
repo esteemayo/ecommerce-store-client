@@ -24,6 +24,14 @@ const ProductCard = ({ product, onOpen, onSelect }) => {
     return `/products/${encodeURIComponent(product.id)}`;
   }, [product.id]);
 
+  const reviewLabel = useMemo(() => {
+    if (product.ratingsQuantity > 1) {
+      return 'reviews';
+    }
+
+    return 'review';
+  }, [product.ratingsQuantity]);
+
   const initialPrice = useMemo(() => {
     return product.price + product.discount;
   }, [product]);
