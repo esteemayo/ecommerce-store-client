@@ -7,28 +7,25 @@ import { useCallback, useRef, useState } from 'react';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import PropTypes from 'prop-types';
 
+import useImageModal from '@/hooks/useImageModal';
 import ProductImageModal from '../modals/ProductImageModal';
 
 const ProductImage = ({ images }) => {
-  const imgContainerRef = useRef();
+  const { isOpen, onOpen, onClose } = useImageModal();
 
-  const [isMoved, setIsMoved] = useState(false);
-  const [isOpen, setIsOpen] = useState(false);
+  const imgContainerRef = useRef();
   const [slideNumber, setSlideNumber] = useState(0);
+  const [isMoved, setIsMoved] = useState(false);
+  const [isSliderMoved, setIsSliderMoved] = useState(false);
   const [slideIndex, setSlideIndex] = useState(0);
   const [clickLimit, setClickLimit] = useState(window.innerWidth / 235);
-  const [isSliderMoved, setIsSliderMoved] = useState(false);
 
   const lastIndex = images?.lastIndexOf(images[images.length - 1]);
 
   const handleOpen = useCallback((index) => {
     setSlideIndex(index);
-    setIsOpen(true);
-  }, []);
-
-  const handleClose = useCallback(() => {
-    setIsOpen(false);
-  }, []);
+    onOpen();
+  }, [onOpen]);
 
   const handleMove = useCallback((direction) => {
     let newSlideIndex;
@@ -95,7 +92,7 @@ const ProductImage = ({ images }) => {
       <ProductImageModal
         images={images}
         isOpen={isOpen}
-        onClose={handleClose}
+        onClose={onClose}
         isMoved={isMoved}
         slideIndex={slideIndex}
         lastIndex={lastIndex}
