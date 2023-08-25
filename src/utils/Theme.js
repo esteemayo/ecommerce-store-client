@@ -128,6 +128,7 @@ export const darkTheme = {
   bgImgBtn: '#070707',
   btnOut: '#272727',
   bgBtnModalOut: '#272727',
+  bgImage: '#201f1f',
 };
 
 export const lightTheme = {
@@ -260,4 +261,5 @@ export const lightTheme = {
   bgImgBtn: 'var(--clr-tertiary-green)',
   btnOut: '#85beae',
   bgBtnModalOut: '#a9c9c1',
+  bgImage: '#d5dae7',
 };
