@@ -48,6 +48,7 @@ const DeleteModal = ({ actionId, isOpen, onClose, onAction }) => {
   return (
     <Overlay
       className='overlay'
+      mode={mode.toString()}
       onClick={closeModalHandler}
       type={activeModal}
     >
@@ -79,6 +80,7 @@ const Overlay = styled.section`
   width: 100vw;
   height: 100%;
   background-color: ${({ theme }) => theme.bgOverlay};
+  backdrop-filter: ${({ mode }) => mode === 'true' && 'blur(2px)'};
   position: fixed;
   top: 0;
   left: 0;
