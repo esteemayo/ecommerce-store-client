@@ -50,7 +50,7 @@ const Login = () => {
   }, [password, username, validateForm]);
 
   useEffect(() => {
-    usernameRef.current.focus();
+    // usernameRef.current.focus();
   }, []);
 
   return (
@@ -97,6 +97,14 @@ const Login = () => {
                   ref={passwordRef}
                 />
                 {errors.password && <ErrorMsg>{errors.password}</ErrorMsg>}
+              </FormGroup>
+              <FormGroup>
+                <FormInput
+                  type='checkbox'
+                  id='rememberMe'
+                  name='rememberMe'
+                />
+                <FormLabel htmlFor='rememberMe'>Remember me</FormLabel>
               </FormGroup>
               <FormButton type='submit'>Log in</FormButton>
               <ForgotPassword>
