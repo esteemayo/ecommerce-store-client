@@ -26,9 +26,14 @@ const WishLists = () => {
   const [isSelectedId, setIsSelectedId] = useState(null);
 
   const handleClick = useCallback((wishlist) => {
-    cartModal.onOpen;
+    cartModal.onOpen();
     setIsSelectedProduct(wishlist);
-  }, [cartModal.onOpen, setIsSelectedProduct]);
+  }, [cartModal, setIsSelectedProduct]);
+
+  const handleOpenModal = useCallback((id) => {
+    setIsSelectedId(id);
+    wishlistModal.onOpen();
+  }, [wishlistModal]);
 
   const handleDelete = useCallback((id) => {
     setProducts((prev) => prev.filter((item) => item.id !== id));
@@ -46,7 +51,7 @@ const WishLists = () => {
         <WishlistHeader />
         <WishlistCard
           isOpen={wishlistModal.isOpen}
-          onOpen={wishlistModal.onOpen}
+          onOpen={handleOpenModal}
           selected={isSelectedId}
           wishlists={products}
           onAction={handleClick}
