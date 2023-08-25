@@ -29,7 +29,7 @@ const Container = styled.section`
 const Wrapper = styled.div`
   width: 100%;
   padding: 2rem 3rem;
-  background-color: ${({ theme }) => theme.bg};
+  background-color: ${({ theme }) => theme.bgPagination};
   color: inherit;
   box-shadow: ${({ theme }) => theme.boxPagination};
   -webkit-box-shadow: ${({ theme }) => theme.boxPagination};
