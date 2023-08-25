@@ -116,7 +116,7 @@ const ReviewModal = ({ isOpen, onClose }) => {
   );
 }
 
-const Overlay = styled.div`
+const Overlay = styled.aside`
   width: 100vw;
   height: 100%;
   background-color: ${({ theme }) => theme.bgOverlay};
