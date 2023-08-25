@@ -10,6 +10,7 @@ import ScrollToTop from '@/components/ScrollToTop';
 import Darkmode from '@/components/DarkMode';
 import Sidebar from '@/components/sidebar/Sidebar';
 import ClientOnly from '@/components/ClientOnly';
+import PasswordModal from '@/components/modals/PasswordModal';
 import SearchModal from '@/components/modals/SearchModal';
 
 import ToastProvider from '@/providers/ToastProvider';
@@ -46,6 +47,7 @@ export default function RootLayout({ children }) {
                     <Submenu />
                     <Sidebar />
                     <SearchModal />
+                    <PasswordModal />
                   </ClientOnly>
                   {children}
                   <ClientOnly>
