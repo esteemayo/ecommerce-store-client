@@ -36,11 +36,11 @@ const Login = () => {
   const validateForm = useCallback(() => {
     const tempErrors = {};
 
-    if (username === '') {
+    if (username.trim() === '') {
       tempErrors.username = 'Username must not be empty';
     }
 
-    if (password === '') {
+    if (password.trim() === '') {
       tempErrors.password = 'Password must not be empty';
     } else if (password.length < 8) {
       tempErrors.password = 'Password should be at least 8 characters long';
