@@ -2,12 +2,14 @@
 
 import styled from 'styled-components';
 import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useSelector } from 'react-redux';
 import CloseIcon from '@mui/icons-material/Close';
 
 import useFileModal from '@/hooks/useFileModal';
 
 const FileUploadModal = () => {
   const { isOpen, onClose } = useFileModal();
+  const { mode } = useSelector((state) => ({ ...state.darkMode }));
 
   const [perc, setPerc] = useState(0);
   const [showModal, setShowModal] = useState(isOpen);
