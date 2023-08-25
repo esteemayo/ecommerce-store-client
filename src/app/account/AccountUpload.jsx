@@ -35,7 +35,7 @@ const Container = styled.div`
 const Wrapper = styled.div`
   width: 10rem;
   height: 10rem;
-  background-color: ${({ theme }) => theme.bgImage};
+  background-color: ${({ theme }) => theme.bgImg};
   border-radius: 3.5rem;
   display: flex;
   align-items: center;
