@@ -330,7 +330,7 @@ const Button = styled.button`
   }
 
   &:disabled {
-    opacity: 0.7;
+    opacity: 0.85;
     cursor: not-allowed;
   }
 `;
