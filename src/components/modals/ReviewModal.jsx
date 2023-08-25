@@ -88,7 +88,7 @@ const ReviewModal = ({ isOpen, onClose }) => {
             <Input
               id='terms'
               type='checkbox'
-              value={terms}
+              checked={terms}
               onChange={(e) => setTerms(e.currentTarget.checked)}
             />
             <Label htmlFor='terms'>
