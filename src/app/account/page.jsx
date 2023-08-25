@@ -6,7 +6,6 @@ import { useDispatch } from 'react-redux';
 import Modal from '@/components/modals/Modal';
 import FileUploadModal from '@/components/modals/FileUploadModal';
 
-import UpdateData from '@/components/accounts/UpdateData';
 import DeleteAccount from '@/components/accounts/DeleteAccount';
 
 import usePasswordModal from '@/hooks/usePasswordModal';
@@ -65,13 +64,6 @@ const Account = () => {
           isOpen={fileModal.isOpen}
           onClose={fileModal.onClose}
         />
-        <Modal
-          title='Change your email address'
-          isOpen={emailModal.isOpen}
-          onClose={emailModal.onClose}
-        >
-          <UpdateData onCancel={emailModal.onClose} />
-        </Modal>
         <Modal
           isOpen={accountModal.isOpen}
           onClose={accountModal.onClose}
