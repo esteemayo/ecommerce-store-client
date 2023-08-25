@@ -6,10 +6,13 @@ import Link from 'next/link';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import PropTypes from 'prop-types';
 import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useSelector } from 'react-redux';
 
 import StarRating from '../StarRating';
 
 const ReviewModal = ({ isOpen, onClose }) => {
+  const { mode } = useSelector((state) => ({ ...state.darkMode }));
+
   const [rating, setRating] = useState(null);
   const [review, setReview] = useState('');
   const [terms, setTerms] = useState(false);
