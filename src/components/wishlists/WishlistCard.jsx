@@ -230,7 +230,7 @@ const CartButton = styled.button`
   border: none;
   padding: 1rem 2rem;
   background-color: ${({ theme }) => theme.bgBtn};
-  color: var(--clr-white);
+  color: {({ theme }) => theme.textBtn};
   background-image: linear-gradient(
     120deg,
     transparent 0%,
