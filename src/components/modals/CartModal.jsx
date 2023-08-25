@@ -55,6 +55,10 @@ const CartModal = ({ product, isOpen, onClose, onSelect }) => {
     return showModal ? 'show' : '';
   }, [showModal]);
 
+  const modeValue = useMemo(() => {
+    return mode.toString();
+  }, [mode]);
+
   useEffect(() => {
     setShowModal(isOpen);
   }, [isOpen]);
@@ -62,12 +66,12 @@ const CartModal = ({ product, isOpen, onClose, onSelect }) => {
   return (
     <Overlay
       className='overlay'
-      mode={mode.toString()}
+      mode={modeValue}
       type={activeModal}
       onClick={closeModalHandler}
     >
       <Container>
-        <Wrapper mode={mode.toString()}>
+        <Wrapper mode={modeValue}>
           <ButtonContainer>
             <CloseButton type='button' onClick={handleCloseModal}>
               <CloseIcon />
