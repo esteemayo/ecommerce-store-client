@@ -42,6 +42,7 @@ const Login = () => {
 
   const validateForm = useCallback(() => {
     const tempErrors = {};
+    const { username, password } = inputs;
 
     if (username.trim() === '') {
       tempErrors.username = 'Username must not be empty';
