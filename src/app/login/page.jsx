@@ -386,6 +386,7 @@ const CheckBox = styled.input`
 `;
 
 const CheckBoxLabel = styled.label`
+  width: 10rem;
   display: inline-block;
   text-transform: capitalize;
   font-weight: 600;
