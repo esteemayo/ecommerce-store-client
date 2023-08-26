@@ -143,6 +143,7 @@ const Login = () => {
                   type='checkbox'
                   id='rememberMe'
                   name='rememberMe'
+                  checked={rememberMe}
                   onChange={handleChange}
                   className='checkbox'
                 />
