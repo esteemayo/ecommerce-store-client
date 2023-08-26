@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import { FaFacebookF } from 'react-icons/fa';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 
 import ClientOnly from '@/components/ClientOnly';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
@@ -20,6 +20,7 @@ const initialState = {
 
 const Login = () => {
   const dispatch = useDispatch();
+  const { mode } = useSelector((state) => ({ ...state.darkMode }));
 
   const usernameRef = useRef();
   const passwordRef = useRef();
