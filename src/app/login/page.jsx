@@ -378,6 +378,11 @@ const CheckBoxWrapper = styled.div`
   display: flex;
   align-items: center;
   gap: 2rem;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 `;
 
 const CheckBox = styled.input`
