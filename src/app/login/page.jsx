@@ -385,6 +385,8 @@ const CheckBox = styled.input`
 
 const CheckBoxLabel = styled.label`
   display: inline-block;
+  font-weight: 600;
+  font-size: 1.4rem;
 `;
 
 const FormButton = styled.button`
