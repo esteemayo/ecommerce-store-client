@@ -133,17 +133,17 @@ body {
   background-color: #2196f3;
 }
 
-.checkmark:after {
+.checkmark::after {
   content: '';
   position: absolute;
   display: none;
 }
 
-.checkContainer .checkbox:checked ~ .checkmark:after {
+.checkContainer .checkbox:checked ~ .checkmark::after {
   display: block;
 }
 
-.checkContainer .checkmark:after {
+.checkContainer .checkmark::after {
   left: 0.9rem;
   top: 0.5rem;
   width: 0.5rem;

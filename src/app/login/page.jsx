@@ -115,7 +115,6 @@ const Login = () => {
                 {errors.password && <ErrorMsg>{errors.password}</ErrorMsg>}
               </FormGroup>
               <CheckBoxWrapper className='checkContainer'>
-                Remember me
                 <CheckBox
                   type='checkbox'
                   id='rememberMe'
@@ -124,7 +123,7 @@ const Login = () => {
                   className='checkbox'
                 />
                 <CheckMark className='checkmark' />
-                {/* <CheckBoxLabel htmlFor='rememberMe'>Remember me</CheckBoxLabel> */}
+                <CheckBoxLabel htmlFor='rememberMe'>Remember me</CheckBoxLabel>
               </CheckBoxWrapper>
               <FormButton type='submit'>Log in</FormButton>
               <ForgotPassword>
