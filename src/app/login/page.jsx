@@ -48,7 +48,7 @@ const Login = () => {
       tempErrors.username = 'Username must not be empty';
     }
 
-    if (password.trim() === '') {
+    if (password === '') {
       tempErrors.password = 'Password must not be empty';
     } else if (password.length < 8) {
       tempErrors.password = 'Password should be at least 8 characters long';
@@ -59,7 +59,7 @@ const Login = () => {
       return true;
     }
     return false;
-  }, [password, username]);
+  }, [inputs]);
 
   const handleSubmit = useCallback((e) => {
     e.preventDefault();
