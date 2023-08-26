@@ -65,6 +65,14 @@ const Login = () => {
     console.log({ username, password });
   }, [password, username, validateForm]);
 
+  const checkmarkClasses = useMemo(() => {
+    if (mode) {
+      return `checkmark dark`;
+    }
+
+    return `checkmark light`;
+  }, [mode]);
+
   useEffect(() => {
     // usernameRef.current.focus();
   }, []);
@@ -123,7 +131,7 @@ const Login = () => {
                   onChange={handleChange}
                   className='checkbox'
                 />
-                <CheckMark className='checkmark' />
+                <CheckMark className={checkmarkClasses} />
                 <CheckBoxLabel htmlFor='rememberMe'>Remember me</CheckBoxLabel>
               </CheckBoxWrapper>
               <FormButton type='submit'>Log in</FormButton>
