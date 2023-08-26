@@ -379,14 +379,20 @@ const CheckBoxWrapper = styled.div`
   align-items: center;
   gap: 2rem;
   position: relative;
+  font-size: 2.2rem;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  cursor: pointer;
 `;
 
 const CheckBox = styled.input`
-
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  cursor: pointer;
 `;
 
 const CheckBoxLabel = styled.label`
@@ -398,7 +404,12 @@ const CheckBoxLabel = styled.label`
 `;
 
 const CheckMark = styled.span`
-
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #eee;
 `;
 
 const FormButton = styled.button`
