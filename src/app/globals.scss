@@ -98,6 +98,61 @@ body {
   display: none;
 }
 
+.checkContainer {
+  position: relative;
+  font-size: 2.2rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.checkbox {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #eee;
+}
+
+.checkContainer:hover .checkbox ~ .checkmark {
+  background-color: #ccc;
+}
+
+.checkContainer .checkbox:checked ~ .checkmark {
+  background-color: #2196f3;
+}
+
+.checkmark::after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+.checkContainer .checkbox:checked ~ .checkmark::after {
+  display: block;
+}
+
+.checkContainer .checkmark::after {
+  left: 0.9rem;
+  top: 0.5rem;
+  width: 0.5rem;
+  height: 1rem;
+  border: solid var(--clr-white);
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
 @keyframes inProgress {
   from {
     opacity: 0;

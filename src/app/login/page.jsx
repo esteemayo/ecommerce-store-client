@@ -410,6 +410,10 @@ const CheckMark = styled.span`
   width: 2.5rem;
   height: 2.5rem;
   background-color: #eee;
+
+  &:hover {
+    background-color: #ccc;
+  }
 `;
 
 const FormButton = styled.button`
