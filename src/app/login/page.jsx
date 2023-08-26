@@ -382,11 +382,7 @@ const CheckBoxWrapper = styled.div`
 `;
 
 const CheckBox = styled.input`
-  /* position: absolute;
-  width: 0;
-  height: 0;
-  opacity: 0;
-  cursor: pointer; */
+  
 `;
 
 const CheckBoxLabel = styled.label`
