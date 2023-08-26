@@ -2,7 +2,7 @@
 
 import styled, { css } from 'styled-components';
 import Link from 'next/link';
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import Image from 'next/image';
 import { FaFacebookF } from 'react-icons/fa';
 import { useDispatch, useSelector } from 'react-redux';
