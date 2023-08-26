@@ -142,7 +142,13 @@ body {
 }
 
 .checkContainer .checkbox:checked ~ .checkmark {
-  background-color: #2196f3;
+  &.dark {
+    background-color: #2196f3;
+  }
+
+  &.light {
+    background-color: var(--clr-primary-green);
+  }
 }
 
 .checkmark::after {
