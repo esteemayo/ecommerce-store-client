@@ -394,16 +394,7 @@ const CheckBoxLabel = styled.label`
 `;
 
 const CheckMark = styled.span`
-  /* position: absolute;
-  top: 0;
-  left: 0;
-  width: 2.5rem;
-  height: 2.5rem;
-  background-color: #eee; */
-
-  /* &:hover {
-    background-color: #ccc;
-  } */
+  
 `;
 
 const FormButton = styled.button`
