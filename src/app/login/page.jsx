@@ -379,6 +379,7 @@ const CheckBoxWrapper = styled.div`
   display: flex;
   align-items: center;
   gap: 2rem;
+  margin-left: 3.5rem;
 `;
 
 const CheckBox = styled.input`
