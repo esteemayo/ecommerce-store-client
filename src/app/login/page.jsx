@@ -10,7 +10,12 @@ import { useDispatch, useSelector } from 'react-redux';
 import ClientOnly from '@/components/ClientOnly';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
-import { getFromStorage, rememberKey, setToStorage, userKey } from '@/utils';
+import {
+  getFromStorage,
+  rememberKey,
+  setToStorage,
+  userKey,
+} from '@/utils';
 
 const initialState = {
   username: '',
