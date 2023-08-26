@@ -390,9 +390,7 @@ const CheckBoxWrapper = styled.div`
   gap: 2rem;
 `;
 
-const CheckBox = styled.input`
-  
-`;
+const CheckBox = styled.input``;
 
 const CheckBoxLabel = styled.label`
   width: 10rem;
