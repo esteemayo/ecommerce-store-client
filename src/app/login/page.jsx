@@ -404,9 +404,7 @@ const CheckBoxLabel = styled.label`
   margin-left: 3.5rem;
 `;
 
-const CheckMark = styled.span`
-  
-`;
+const CheckMark = styled.span``;
 
 const FormButton = styled.button`
   margin-top: 2rem;
