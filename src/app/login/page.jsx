@@ -23,7 +23,6 @@ const Login = () => {
   const { mode } = useSelector((state) => ({ ...state.darkMode }));
 
   const usernameRef = useRef();
-  const passwordRef = useRef();
   const [errors, setErrors] = useState({});
   const [inputs, setInputs] = useState(initialState);
 
