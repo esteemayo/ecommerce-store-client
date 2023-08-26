@@ -31,7 +31,7 @@ const Login = () => {
   const [errors, setErrors] = useState({});
   const [inputs, setInputs] = useState(initialState);
 
-  const { username, password } = inputs;
+  const { username, password, rememberMe } = inputs;
 
   const handleChange = useCallback(({ target: input }) => {
     let { name, type, value, checked } = input;
