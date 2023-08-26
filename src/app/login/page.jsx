@@ -391,6 +391,10 @@ const CheckBoxLabel = styled.label`
   color: ${({ theme }) => theme.textLabel};
 `;
 
+const CheckMark = styled.span`
+
+`;
+
 const FormButton = styled.button`
   margin-top: 2rem;
   border: none;
