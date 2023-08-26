@@ -384,7 +384,7 @@ const CheckBox = styled.input`
 `;
 
 const CheckBoxLabel = styled.label`
-
+  display: inline-block;
 `;
 
 const FormButton = styled.button`
