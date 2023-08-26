@@ -35,7 +35,7 @@ const Login = () => {
 
   const handleChange = useCallback(({ target: input }) => {
     let { name, type, value, checked } = input;
-    value = type === 'checked' ? checked : value;
+    value = (type === 'checked') ? checked : value;
 
     setInputs((prev) => ({ ...prev, [name]: value }));
   }, []);
