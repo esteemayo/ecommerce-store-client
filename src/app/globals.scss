@@ -121,7 +121,7 @@ body {
   left: 0;
   width: 2rem;
   height: 2rem;
-  
+
   &.dark {
     background-color: #121212;
   }
@@ -132,7 +132,13 @@ body {
 }
 
 .checkContainer:hover .checkbox ~ .checkmark {
-  background-color: #ccc;
+  &.dark {
+    background-color: #272727;
+  }
+
+  &.light {
+    background-color: #f7f7f7;
+  }
 }
 
 .checkContainer .checkbox:checked ~ .checkmark {
