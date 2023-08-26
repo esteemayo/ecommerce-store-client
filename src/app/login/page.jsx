@@ -66,7 +66,16 @@ const Login = () => {
     if (validateForm()) return;
     setErrors({});
 
-    console.log({ username, password });
+    const userData = {
+      username,
+      password,
+    };
+
+    console.log(userData);
+
+    const remember = setToStorage(rememberKey, rememberMe);
+    const key = remember ? userKey : '';
+    setToStorage(key, userData);
   }, [password, username, validateForm]);
 
   const checkmarkClasses = useMemo(() => {
