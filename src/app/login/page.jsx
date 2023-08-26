@@ -121,6 +121,7 @@ const Login = () => {
                   name='rememberMe'
                   onChange={handleChange}
                 />
+                <CheckMark />
                 <CheckBoxLabel htmlFor='rememberMe'>Remember me</CheckBoxLabel>
               </CheckBoxWrapper>
               <FormButton type='submit'>Log in</FormButton>
