@@ -379,7 +379,6 @@ const CheckBoxWrapper = styled.div`
   display: flex;
   align-items: center;
   gap: 2rem;
-  margin-left: 3.5rem;
 `;
 
 const CheckBox = styled.input`
@@ -392,6 +391,7 @@ const CheckBoxLabel = styled.label`
   font-weight: 600;
   font-size: 1.4rem;
   color: ${({ theme }) => theme.textLabel};
+  margin-left: 3.5rem;
 `;
 
 const CheckMark = styled.span`
