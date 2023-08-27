@@ -6,7 +6,7 @@ const SocialLogin = () => {
   return (
     <Container>
       <Header>Log in with</Header>
-      <GoogleContainer>
+      <Wrapper>
         <GoogleButton type='button'>
           <Image
             src='/img/google-logo.png'
@@ -20,7 +20,7 @@ const SocialLogin = () => {
           <FaFacebookF />
           Facebook
         </FacebookButton>
-      </GoogleContainer>
+      </Wrapper>
     </Container>
   );
 }
@@ -35,7 +35,7 @@ const Header = styled.h1`
   color: ${({ theme }) => theme.textFormHeader};
 `;
 
-const GoogleContainer = styled.div`
+const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: start;
