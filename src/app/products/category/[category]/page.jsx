@@ -17,8 +17,8 @@ const ProductCategory = ({ params }) => {
   const dispatch = useDispatch();
 
   const [sort, setSort] = useState('newest');
-  const [filters, setFilters] = useState({});
   const [products, setProducts] = useState(storeProducts);
+  const [filters, setFilters] = useState({});
   const [sortedProducts, setSortedProducts] = useState([]);
 
   const handleFilter = useCallback(({ target: input }) => {
