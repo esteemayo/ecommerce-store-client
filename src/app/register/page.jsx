@@ -6,6 +6,8 @@ import { useCallback, useState } from 'react';
 
 import ClientOnly from '@/components/ClientOnly';
 import AuthInfo from '@/components/AuthInfo';
+import AuthError from '@/components/AuthError';
+
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
 import { registerInputs } from '@/formData';
@@ -95,7 +97,7 @@ const Register = () => {
                       onChange={handleChange}
                       autoFocus={name === 'name' ? true : false}
                     />
-                    {errors[name] && <ErrorMsg>{errors[name]}</ErrorMsg>}
+                    {errors[name] && <AuthError message={errors[name]} />}
                   </FormGroup>
                 );
               })}
