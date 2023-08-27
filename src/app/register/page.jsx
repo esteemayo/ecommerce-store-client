@@ -331,29 +331,6 @@ const LoginContainer = styled.div`
   margin-top: 3rem;
 `;
 
-const LoginText = styled.p`
-  font-size: 1.7rem;
-  color:  ${({ theme }) => theme.textLabel};
-
-  a {
-    &:link,
-    &:visited {
-      display: inline-block;
-      text-decoration: none;
-      text-decoration-color: var(--clr-tertiary-green);
-      color: var(--clr-tertiary-green);
-      outline-color: #ddd;
-      transition: all 0.3s ease;
-    }
-
-    &:hover {
-      text-decoration: underline;
-      text-decoration-color: var(--clr-tertiary-green);
-      text-underline-offset: 0.4rem;
-    }
-  }
-`;
-
 const ErrorMsg = styled.span`
   font-size: 1.3rem;
   color: var(--clr-secondary-red);
