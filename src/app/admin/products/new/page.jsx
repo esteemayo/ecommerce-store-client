@@ -195,7 +195,7 @@ const NewProduct = () => {
                   <Option value='shirts'>Shirts</Option>
                   <Option value='snickers'>Snickers</Option>
                 </FormSelect>
-                {errors.category && <ErrorMsg>{errors.category}</ErrorMsg>}
+                {errors.category && <FormError message={errors.category} />}
               </FormGroup>
               <FormGroup>
                 <FormLabel htmlFor='tags'>Product tags</FormLabel>
