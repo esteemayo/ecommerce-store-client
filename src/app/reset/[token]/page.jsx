@@ -4,7 +4,9 @@ import styled, { css } from 'styled-components';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { useDispatch } from 'react-redux';
 
+import AuthError from '@/components/AuthError';
 import ClientOnly from '@/components/ClientOnly';
+
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
 const ResetPassword = () => {
@@ -65,7 +67,7 @@ const ResetPassword = () => {
                   placeholder='Enter your password'
                   onChange={(e) => setPassword(e.target.value)}
                 />
-                {errors.password && <ErrorMsg>{errors.password}</ErrorMsg>}
+                {errors.password && <AuthError message={errors.password} />}
               </FormGroup>
               <FormGroup>
                 <FormLabel htmlFor='confirmPassword'>Confirm password</FormLabel>
@@ -76,7 +78,7 @@ const ResetPassword = () => {
                   placeholder='Confirm your password'
                   onChange={(e) => setConfirmPassword(e.target.value)}
                 />
-                {errors.confirmPassword && <ErrorMsg>{errors.confirmPassword}</ErrorMsg>}
+                {errors.confirmPassword && <AuthError message={errors.confirmPassword} />}
               </FormGroup>
               <FormButton type='submit'>Reset password</FormButton>
             </Form>
