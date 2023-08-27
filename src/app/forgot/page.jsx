@@ -42,7 +42,7 @@ const Forgot = () => {
   }, [email, validateForm]);
 
   useEffect(() => {
-    emailRef.current.focus();
+    emailRef.current?.focus();
   }, []);
 
   return (
