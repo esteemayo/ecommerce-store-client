@@ -76,7 +76,7 @@ const Login = () => {
   }, [mode]);
 
   useEffect(() => {
-    // usernameRef.current.focus();
+    usernameRef.current?.focus();
   }, []);
 
   useEffect(() => {
