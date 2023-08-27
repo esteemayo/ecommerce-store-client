@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { useDispatch } from 'react-redux';
 
 import ClientOnly from '@/components/ClientOnly';
-import OrderCard from '@/components/orders/OrderCard';
+import OrderCard from '@/components/images/orders/OrderCard';
 
 import { orders } from '@/data';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
