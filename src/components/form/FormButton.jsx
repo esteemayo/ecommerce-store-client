@@ -47,4 +47,8 @@ const Button = styled.button`
   }
 `;
 
+FormButton.propTypes = {
+  label: PropTypes.string.isRequired,
+};
+
 export default FormButton;
