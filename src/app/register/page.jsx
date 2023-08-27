@@ -1,8 +1,8 @@
 'use client';
 
 import styled, { css } from 'styled-components';
-import { useCallback, useState } from 'react';
 import { useDispatch } from 'react-redux';
+import { useCallback, useState } from 'react';
 
 import ClientOnly from '@/components/ClientOnly';
 import AuthInfo from '@/components/AuthInfo';
