@@ -87,7 +87,16 @@ const NewProduct = () => {
     setErrors({});
 
     console.log({ ...data, files, color, size, tags });
-  }, [color, data, files, size, tags, validateForm]);
+  },
+    [
+      color,
+      data,
+      files,
+      size,
+      tags,
+      validateForm,
+    ]
+  );
 
   useEffect(() => {
     nameRef.current.focus();
