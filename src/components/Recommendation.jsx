@@ -17,7 +17,7 @@ const Recommendation = ({ data }) => {
           return (
             <ProductWrapper key={id}>
               <Link href={`/products/${encodeURIComponent(id)}`} passHref>
-                <Image
+                <StyledImage
                   src={image}
                   width={400}
                   height={500}
@@ -96,36 +96,36 @@ const ProductWrapper = styled.div`
       outline-color: #ddd;
     }
   }
+`;
 
-  img {
-    width: 40rem;
+const StyledImage = styled(Image)`
+  width: 40rem;
+  height: 50rem;
+  display: block;
+  object-fit: cover;
+  border-radius: 0.5rem;
+
+  @media only screen and (max-width: 64em) {
+    width: 35rem;
+  }
+
+  @media only screen and (max-width: 50em) {
+    width: 60rem;
+    height: 70rem;
+  }
+
+  @media only screen and (max-width: 31.25em) {
+    width: 45rem;
     height: 50rem;
-    display: block;
-    object-fit: cover;
-    border-radius: 0.5rem;
+  }
 
-    @media only screen and (max-width: 64em) {
-      width: 35rem;
-    }
+  @media only screen and (max-width: 25em) {
+    width: 40rem;
+  }
 
-    @media only screen and (max-width: 50em) {
-      width: 60rem;
-      height: 70rem;
-    }
-
-    @media only screen and (max-width: 31.25em) {
-      width: 45rem;
-      height: 50rem;
-    }
-
-    @media only screen and (max-width: 25em) {
-      width: 40rem;
-    }
-
-    @media only screen and (max-width: 18.75em) {
-      width: 30rem;
-      height: auto;
-    }
+  @media only screen and (max-width: 18.75em) {
+    width: 30rem;
+    height: auto;
   }
 `;
 
