@@ -40,4 +40,10 @@ const Text = styled.p`
   }
 `;
 
+AuthInfo.propTypes = {
+  url: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired,
+};
+
 export default AuthInfo;
