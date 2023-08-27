@@ -92,22 +92,7 @@ const Login = () => {
       <Container onMouseOver={() => dispatch(closeSubmenu())}>
         <LoginContainer>
           <Wrapper>
-            <Header>Log in with</Header>
-            <GoogleContainer>
-              <GoogleButton type='button'>
-                <Image
-                  src='/img/google-logo.png'
-                  width={23}
-                  height={23}
-                  alt=''
-                />
-                Google
-              </GoogleButton>
-              <FacebookButton type='button'>
-                <FaFacebookF />
-                Facebook
-              </FacebookButton>
-            </GoogleContainer>
+            <SocialLogin />
             <Text>or</Text>
             <Form onSubmit={handleSubmit}>
               <FormGroup>
