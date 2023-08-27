@@ -4,7 +4,9 @@ import styled, { css } from 'styled-components';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { useDispatch } from 'react-redux';
 
+import AuthError from '@/components/AuthError';
 import ClientOnly from '@/components/ClientOnly';
+
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
 const Forgot = () => {
@@ -60,7 +62,7 @@ const Forgot = () => {
                   placeholder='Enter email address'
                   onChange={(e) => setEmail(e.target.value)}
                 />
-                {errors.email && <ErrorMsg>{errors.email}</ErrorMsg>}
+                {errors.email && <AuthError message={errors.email} />}
               </FormGroup>
               <FormButton type='submit'>Reset password</FormButton>
             </Form>
