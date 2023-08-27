@@ -88,6 +88,7 @@ const Login = () => {
     const user = rememberMe ? getFromStorage(userKey) : '';
     setUsername(user.username);
     setPassword(user.password);
+    setRememberMe(rememberMe);
   }, []);
 
   return (
