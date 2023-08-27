@@ -70,7 +70,7 @@ const ProductImage = ({ images }) => {
       <Wrapper ref={imgContainerRef}>
         {images?.map((item, index) => {
           return (
-            <Image
+            <StyledImage
               key={index}
               src={item}
               width={350}
@@ -117,36 +117,36 @@ const Wrapper = styled.figure`
     width: max-content;
     transition: all 0.3s ease;
   }
+`;
 
-  img {
-    display: block;
-    width: 35rem;
-    height: 35rem;
-    object-fit: cover;
-    border-radius: 0.5rem;
-    cursor: pointer;
+const StyledImage = styled(Image)`
+  display: block;
+  width: 35rem;
+  height: 35rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  cursor: pointer;
 
-    @media only screen and (max-width: 64em) {
-      width: 30rem;
-    }
+  @media only screen and (max-width: 64em) {
+    width: 30rem;
+  }
 
-    @media only screen and (max-width: 59.375em) {
-      width: 23rem;
-      height: 30rem;
-    }
+  @media only screen and (max-width: 59.375em) {
+    width: 23rem;
+    height: 30rem;
+  }
 
-    @media only screen and (max-width: 50em) {
-      width: 225px;
-      border-radius: revert;
-    }
+  @media only screen and (max-width: 50em) {
+    width: 225px;
+    border-radius: revert;
+  }
 
-    @media only screen and (max-width: 37.5em) {
-      height: 20rem;
-    }
+  @media only screen and (max-width: 37.5em) {
+    height: 20rem;
+  }
 
-    @media only screen and (max-width: 18.75em) {
-      height: 15rem;
-    }
+  @media only screen and (max-width: 18.75em) {
+    height: 15rem;
   }
 `;
 
