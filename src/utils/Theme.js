@@ -34,7 +34,7 @@ export const darkTheme = {
   textCarouselBtn: '#d6d9db',
   bgCarActiveBtn: '#121212',
   bgActiveBtn: '#d6d9db',
-  boxCat: '2px 0.4rem 1rem 1px rgba(107, 106, 106, 0.47)',
+  boxCat: 'none',
   textCat: '#d6d9db',
   bgCatBtn: 'rgba(135, 138, 137, 0.5)',
   bgCatBtnOut: '#797979',
