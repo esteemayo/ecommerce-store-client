@@ -137,7 +137,7 @@ const Login = () => {
                   type='checkbox'
                   id='rememberMe'
                   checked={rememberMe}
-                  onChange={(e) => setRememberMe(e.target.value)}
+                  onChange={(e) => setRememberMe(e.currentTarget.value)}
                   className='checkbox'
                 />
                 <CheckMark className={checkmarkClasses} />
