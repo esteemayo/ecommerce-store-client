@@ -6,6 +6,7 @@ import { useCallback, useState } from 'react';
 import { useDispatch } from 'react-redux';
 
 import ClientOnly from '@/components/ClientOnly';
+import AuthInfo from '@/components/AuthInfo';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
 import { registerInputs } from '@/formData';
@@ -119,12 +120,11 @@ const Register = () => {
               </FormButton>
             </Form>
           </Wrapper>
-          <LoginContainer>
-            <LoginText>
-              Already have an account? {' '}
-              <Link href='/login' passHref>Sign in</Link>
-            </LoginText>
-          </LoginContainer>
+          <AuthInfo
+            url='/login'
+            text='Already have an account?'
+            label='Sign in'
+          />
         </RegisterContainer>
       </Container>
     </ClientOnly>
