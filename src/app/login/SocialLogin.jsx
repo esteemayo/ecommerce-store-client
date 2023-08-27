@@ -8,7 +8,7 @@ const SocialLogin = () => {
       <Header>Log in with</Header>
       <Wrapper>
         <GoogleButton type='button'>
-          <Image
+          <StyledImage
             src='/img/google-logo.png'
             width={23}
             height={23}
@@ -83,15 +83,19 @@ const GoogleButton = styled.button`
   }
 
   img {
-    width: 2.3rem;
-    height: 2.3rem;
-    display: block;
-    object-fit: cover;
+    
+  }
+`;
 
-    @media only screen and (max-width: 26.25em) {
-      width: 2rem;
-      height: 2rem;
-    }
+const StyledImage = styled(Image)`
+  width: 2.3rem;
+  height: 2.3rem;
+  display: block;
+  object-fit: cover;
+
+  @media only screen and (max-width: 26.25em) {
+    width: 2rem;
+    height: 2rem;
   }
 `;
 
