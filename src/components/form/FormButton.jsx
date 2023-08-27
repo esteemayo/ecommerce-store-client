@@ -6,4 +6,8 @@ const FormButton = () => {
   )
 }
 
+const Button = styled.button`
+  
+`;
+
 export default FormButton;
