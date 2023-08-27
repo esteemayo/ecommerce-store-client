@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 const EmptyProduct = ({ src, title }) => {
   return (
     <Container>
-      <Image
+      <StyledImage
         src={src}
         width={500}
         height={250}
