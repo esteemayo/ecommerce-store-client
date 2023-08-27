@@ -1,9 +1,11 @@
 import styled from 'styled-components';
 
-const FormButton = () => {
+const FormButton = ({ label }) => {
   return (
-    <div>FormButton</div>
-  )
+    <Button type='submit'>
+      {label}
+    </Button>
+  );
 }
 
 const Button = styled.button`
