@@ -65,8 +65,7 @@ const Login = () => {
     console.log({ ...userData, rememberMe });
 
     const remember = setToStorage(rememberKey, rememberMe);
-    const key = remember ? userKey : '';
-    setToStorage(key, userData);
+    setToStorage(userKey, rememberMe ? userData : '');
   }, [rememberMe, validateForm]);
 
   const checkmarkClasses = useMemo(() => {
