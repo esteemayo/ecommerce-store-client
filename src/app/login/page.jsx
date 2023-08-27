@@ -64,7 +64,7 @@ const Login = () => {
 
     console.log({ ...userData, rememberMe });
 
-    const remember = setToStorage(rememberKey, rememberMe);
+    setToStorage(rememberKey, rememberMe);
     setToStorage(userKey, rememberMe ? userData : '');
   }, [rememberMe, validateForm]);
 
