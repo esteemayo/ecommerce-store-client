@@ -5,8 +5,10 @@ import { useDispatch } from 'react-redux';
 import { useCallback, useState } from 'react';
 
 import AuthError from '@/components/form/FormError';
-import ClientOnly from '@/components/ClientOnly';
+import FormButton from '@/components/form/FormButton';
 import AuthInfo from '@/components/form/FormInfo';
+
+import ClientOnly from '@/components/ClientOnly';
 
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
@@ -116,9 +118,7 @@ const Register = () => {
                   </>
                 )}
               </FormGroup>
-              <FormButton type='submit' disabled={perc !== null && perc < 100}>
-                Register
-              </FormButton>
+              <FormButton disabled={perc !== null && perc < 100} />
             </Form>
           </Wrapper>
           <AuthInfo
@@ -290,42 +290,42 @@ const UploadProgress = styled.span`
   color: ${({ theme }) => theme.text};
 `;
 
-const FormButton = styled.button`
-  margin-top: 2rem;
-  border: none;
-  display: inline-block;
-  font-weight: 500;
-  font-size: 1.4rem;
-  width: 100%;
-  padding: 1.5rem;
-  background-color: ${({ theme }) => theme.bgBtn};
-  color: ${({ theme }) => theme.textBtn};
-  background-image: ${({ theme }) => css`
-    linear-gradient(
-      120deg,
-      transparent 0%,
-      transparent 50%,
-      ${theme.bgImgBtn} 50%
-    );
-  `};
-  background-size: 220%;
-  border-radius: 0.5rem;
-  outline-color: ${({ theme }) => theme.btnOut};
-  cursor: pointer;
-  transition: all 0.3s;
+// const FormButton = styled.button`
+//   margin-top: 2rem;
+//   border: none;
+//   display: inline-block;
+//   font-weight: 500;
+//   font-size: 1.4rem;
+//   width: 100%;
+//   padding: 1.5rem;
+//   background-color: ${({ theme }) => theme.bgBtn};
+//   color: ${({ theme }) => theme.textBtn};
+//   background-image: ${({ theme }) => css`
+//     linear-gradient(
+//       120deg,
+//       transparent 0%,
+//       transparent 50%,
+//       ${theme.bgImgBtn} 50%
+//     );
+//   `};
+//   background-size: 220%;
+//   border-radius: 0.5rem;
+//   outline-color: ${({ theme }) => theme.btnOut};
+//   cursor: pointer;
+//   transition: all 0.3s;
 
-  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
-    font-size: 1.398rem;
-  }
+//   @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+//     font-size: 1.398rem;
+//   }
 
-  &:hover {
-    background-position: 100%;
-  }
+//   &:hover {
+//     background-position: 100%;
+//   }
 
-  &:disabled {
-    opacity: 0.85;
-    cursor: not-allowed;
-  }
-`;
+//   &:disabled {
+//     opacity: 0.85;
+//     cursor: not-allowed;
+//   }
+// `;
 
 export default Register;
