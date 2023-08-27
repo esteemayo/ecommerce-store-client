@@ -5,8 +5,8 @@ import Link from 'next/link';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
-import ClientOnly from '@/components/ClientOnly';
 import AuthError from '@/components/auths/AuthError';
+import ClientOnly from '@/components/ClientOnly';
 import AuthInfo from '@/components/auths/AuthInfo';
 
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
