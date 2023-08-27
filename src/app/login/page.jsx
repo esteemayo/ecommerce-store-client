@@ -7,6 +7,8 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import ClientOnly from '@/components/ClientOnly';
 import AuthInfo from '@/components/AuthInfo';
+import AuthError from '@/components/AuthError';
+
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
 import SocialLogin from './SocialLogin';
@@ -104,7 +106,7 @@ const Login = () => {
                   onChange={(e) => setUsername(e.target.value)}
                   ref={usernameRef}
                 />
-                {errors.username && <ErrorMsg>{errors.username}</ErrorMsg>}
+                {errors.username && <AuthError message={errors.username} />}
               </FormGroup>
               <FormGroup>
                 <FormLabel htmlFor='password'>Password</FormLabel>
@@ -115,7 +117,7 @@ const Login = () => {
                   placeholder='Enter your password'
                   onChange={(e) => setPassword(e.target.value)}
                 />
-                {errors.password && <ErrorMsg>{errors.password}</ErrorMsg>}
+                {errors.password && <AuthError message={errors.password} />}
               </FormGroup>
               <CheckBoxWrapper className='checkContainer'>
                 <CheckBox
