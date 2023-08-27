@@ -327,10 +327,6 @@ const FormButton = styled.button`
   }
 `;
 
-const RegisterContainer = styled.div`
-  margin-top: 3rem;
-`;
-
 const ForgotPassword = styled.p`
   font-size: 1.65rem;
   color: ${({ theme }) => theme.textLabel};
