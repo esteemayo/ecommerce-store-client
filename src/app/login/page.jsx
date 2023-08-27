@@ -6,6 +6,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
 import ClientOnly from '@/components/ClientOnly';
+import AuthInfo from '@/components/AuthInfo';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
 import SocialLogin from './SocialLogin';
@@ -135,12 +136,11 @@ const Login = () => {
               </ForgotPassword>
             </Form>
           </Wrapper>
-          <RegisterContainer>
-            <RegisterText>
-              Don&apos;t have an account? {' '}
-              <Link href='/register' passHref>Sign up</Link>
-            </RegisterText>
-          </RegisterContainer>
+          <AuthInfo
+            url='/register'
+            text={`Don't have an account?`}
+            label='Sign up'
+          />
         </LoginContainer>
       </Container>
     </ClientOnly>
