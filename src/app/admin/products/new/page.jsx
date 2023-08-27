@@ -101,7 +101,7 @@ const NewProduct = () => {
   );
 
   useEffect(() => {
-    nameRef.current.focus();
+    nameRef.current?.focus();
   }, []);
 
   return (
