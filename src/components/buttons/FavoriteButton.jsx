@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 
-const LikeButton = () => {
+const FavoriteButton = () => {
   return (
     <StyledButton>
       <FontAwesomeIcon icon={faStar} />
@@ -48,4 +48,4 @@ const StyledButton = styled.button`
   }
 `;
 
-export default LikeButton;
+export default FavoriteButton;
