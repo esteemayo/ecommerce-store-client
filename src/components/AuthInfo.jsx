@@ -1,4 +1,4 @@
-
+import styled from 'styled-components';
 
 const AuthInfo = () => {
   return (
