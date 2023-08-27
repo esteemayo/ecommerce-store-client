@@ -327,10 +327,6 @@ const FormButton = styled.button`
   }
 `;
 
-const LoginContainer = styled.div`
-  margin-top: 3rem;
-`;
-
 const ErrorMsg = styled.span`
   font-size: 1.3rem;
   color: var(--clr-secondary-red);
