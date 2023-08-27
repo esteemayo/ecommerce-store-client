@@ -30,20 +30,12 @@ const Login = () => {
   const usernameRef = useRef();
 
   const [errors, setErrors] = useState({});
-  const [inputs, setInputs] = useState(initialState);
-
-  const { username, password, rememberMe } = inputs;
-
-  const handleChange = useCallback((e) => {
-    const { name } = e.target;
-    const value = e.target.type === 'checked' ? e.currentTarget.checked : e.target.value;
-
-    setInputs((prev) => ({ ...prev, [name]: value }));
-  }, []);
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+  const [rememberMe, setRememberMe] = useState('');
 
   const validateForm = useCallback(() => {
     const tempErrors = {};
-    const { username, password } = inputs;
 
     if (username.trim() === '') {
       tempErrors.username = 'Username must not be empty';
@@ -60,11 +52,10 @@ const Login = () => {
       return true;
     }
     return false;
-  }, [inputs]);
+  }, [username, password]);
 
   const handleSubmit = useCallback((e) => {
     e.preventDefault();
-    const { username, password, rememberMe } = inputs;
 
     if (validateForm()) return;
     setErrors({});
@@ -78,7 +69,7 @@ const Login = () => {
 
     setToStorage(rememberKey, rememberMe);
     setToStorage(userKey, rememberMe ? userData : '');
-  }, [inputs, validateForm]);
+  }, [username, password, rememberMe, validateForm]);
 
   const checkmarkClasses = useMemo(() => {
     if (mode) {
@@ -125,8 +116,8 @@ const Login = () => {
                 <FormInput
                   type='text'
                   id='username'
-                  name='username'
                   placeholder='Enter username'
+                  onChange={(e) => setUsername(e.target.value)}
                   ref={usernameRef}
                 />
                 {errors.username && <ErrorMsg>{errors.username}</ErrorMsg>}
@@ -135,10 +126,9 @@ const Login = () => {
                 <FormLabel htmlFor='password'>Password</FormLabel>
                 <FormInput
                   id='password'
-                  name='password'
                   type='password'
                   placeholder='Enter your password'
-                  onChange={handleChange}
+                  onChange={(e) => setPassword(e.target.value)}
                 />
                 {errors.password && <ErrorMsg>{errors.password}</ErrorMsg>}
               </FormGroup>
@@ -146,9 +136,8 @@ const Login = () => {
                 <CheckBox
                   type='checkbox'
                   id='rememberMe'
-                  name='rememberMe'
                   checked={rememberMe}
-                  onChange={handleChange}
+                  onChange={(e) => setRememberMe(e.target.value)}
                   className='checkbox'
                 />
                 <CheckMark className={checkmarkClasses} />
