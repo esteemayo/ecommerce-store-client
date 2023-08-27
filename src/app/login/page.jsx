@@ -83,10 +83,12 @@ const Login = () => {
     // usernameRef.current.focus();
   }, []);
 
-  // useEffect(() => {
-  //   const rememberMe = getFromStorage(rememberKey) === 'true';
-  //   rememberMe ? getFromStorage(userKey) : '';
-  // }, []);
+  useEffect(() => {
+    const rememberMe = getFromStorage(rememberKey) === 'true';
+    const user = rememberMe ? getFromStorage(userKey) : '';
+    setUsername(user.username);
+    setPassword(user.password);
+  }, []);
 
   return (
     <ClientOnly>
