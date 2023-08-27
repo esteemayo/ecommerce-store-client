@@ -3,9 +3,13 @@ import { useMemo } from 'react';
 import PropTypes from 'prop-types';
 
 const DateTime = ({ date, type, options }) => {
+  const dateLabel = useMemo(() => {
+    return new Date(date).toLocaleString('en-us', options);
+  }, [date, options]);
+
   return (
     <Time type={type} dateTime={date}>
-      {new Date(date).toLocaleString('en-us', options)}
+      {dateLabel}
     </Time>
   );
 }
