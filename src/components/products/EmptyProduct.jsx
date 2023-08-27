@@ -24,25 +24,21 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   padding-bottom: 3rem;
-
-  img {
-    width: 50rem;
-    height: 25rem;
-    display: block;
-    object-fit: cover;
-
-    @media only screen and (max-width: 25em) {
-      width: 40rem;
-    }
-
-    @media only screen and (max-width: 18.75em) {
-      width: 34.5rem;
-    }
-  }
 `;
 
 const StyledImage = styled(Image)`
-  
+  width: 50rem;
+  height: 25rem;
+  display: block;
+  object-fit: cover;
+
+  @media only screen and (max-width: 25em) {
+    width: 40rem;
+  }
+
+  @media only screen and (max-width: 18.75em) {
+    width: 34.5rem;
+  }
 `;
 
 const Message = styled.span`
