@@ -7,7 +7,7 @@ import Image from 'next/image';
 const Logo = () => {
   return (
     <Container>
-      <Link href='/' passHref>
+      <StyledLink href='/' passHref>
         <StyledImage
           src='/img/logo.png'
           width={100}
@@ -15,19 +15,16 @@ const Logo = () => {
           priority
           alt=''
         />
-      </Link>
+      </StyledLink>
     </Container>
   );
 }
 
-const Container = styled.div`
-  a {
-    &:link,
-    &:visited {
-      text-decoration: none;
-      outline-color: var(--clr-primary-green);
-    }
-  }
+const Container = styled.div``;
+
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  outline-color: var(--clr-primary-green);
 `;
 
 const StyledImage = styled(Image)`
