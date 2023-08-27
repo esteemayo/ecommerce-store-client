@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import Image from 'next/image';
+import { FaFacebookF } from 'react-icons/fa';
 
 const SocialLogin = () => {
   return (
