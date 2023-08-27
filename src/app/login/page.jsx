@@ -17,22 +17,35 @@ import {
   userKey,
 } from '@/utils';
 
+const initialState = {
+  username: '',
+  password: '',
+  rememberMe: false,
+};
+
 const Login = () => {
   const dispatch = useDispatch();
   const { mode } = useSelector((state) => ({ ...state.darkMode }));
 
   const usernameRef = useRef();
-  const passwordRef = useRef();
 
   const [errors, setErrors] = useState({});
-  const [rememberMe, setRememberMe] = useState(false)
+  const [inputs, setInputs] = useState(initialState);
+
+  const { username, password, rememberMe } = inputs;
+
+  const handleChange = useCallback((e) => {
+    const { name } = e.target;
+    const value = e.target.type === 'checked' ? e.currentTarget.checked : e.target.value;
+
+    setInputs((prev) => ({ ...prev, [name]: value }));
+  }, []);
 
   const validateForm = useCallback(() => {
     const tempErrors = {};
-    const username = usernameRef.current.value;
-    const password = passwordRef.current.value;
+    const { username, password } = inputs;
 
-    if (username === '') {
+    if (username.trim() === '') {
       tempErrors.username = 'Username must not be empty';
     }
 
@@ -51,8 +64,7 @@ const Login = () => {
 
   const handleSubmit = useCallback((e) => {
     e.preventDefault();
-    const username = usernameRef.current.value;
-    const password = passwordRef.current.value;
+    const { username, password, rememberMe } = inputs;
 
     if (validateForm()) return;
     setErrors({});
@@ -66,7 +78,7 @@ const Login = () => {
 
     setToStorage(rememberKey, rememberMe);
     setToStorage(userKey, rememberMe ? userData : '');
-  }, [rememberMe, validateForm]);
+  }, [inputs, validateForm]);
 
   const checkmarkClasses = useMemo(() => {
     if (mode) {
@@ -79,6 +91,11 @@ const Login = () => {
   useEffect(() => {
     // usernameRef.current.focus();
   }, []);
+
+  // useEffect(() => {
+  //   const rememberMe = getFromStorage(rememberKey) === 'true';
+  //   rememberMe ? getFromStorage(userKey) : '';
+  // }, []);
 
   return (
     <ClientOnly>
@@ -119,7 +136,7 @@ const Login = () => {
                   id='password'
                   type='password'
                   placeholder='Enter your password'
-                  ref={passwordRef}
+                  onChange={handleChange}
                 />
                 {errors.password && <ErrorMsg>{errors.password}</ErrorMsg>}
               </FormGroup>
@@ -129,7 +146,7 @@ const Login = () => {
                   id='rememberMe'
                   name='rememberMe'
                   checked={rememberMe}
-                  onChange={(e) => setRememberMe(e.currentTarget.checked)}
+                  onChange={handleChange}
                   className='checkbox'
                 />
                 <CheckMark className={checkmarkClasses} />
