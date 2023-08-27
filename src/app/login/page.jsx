@@ -210,14 +210,6 @@ const Wrapper = styled.div`
   }
 `;
 
-const Header = styled.h1`
-  display: block;
-  font-weight: 400;
-  font-size: 2rem;
-  text-align: center;
-  color: ${({ theme }) => theme.textFormHeader};
-`;
-
 const Text = styled.p`
   display: block;
   text-align: center;
