@@ -41,6 +41,10 @@ const Container = styled.div`
   }
 `;
 
+const StyledImage = styled(Image)`
+  
+`;
+
 const Message = styled.span`
   font-size: 2rem;
   color: ${({ theme }) => theme.textNotFound};
