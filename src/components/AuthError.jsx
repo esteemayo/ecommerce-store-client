@@ -11,4 +11,8 @@ const ErrorMessage = styled.span`
   margin-top: 1px;
 `;
 
+AuthError.propTypes = {
+  message: PropTypes.string,
+};
+
 export default AuthError;
