@@ -47,7 +47,7 @@ const Login = () => {
       return true;
     }
     return false;
-  }, [username, password]);
+  }, []);
 
   const handleSubmit = useCallback((e) => {
     e.preventDefault();
@@ -67,7 +67,7 @@ const Login = () => {
     const remember = setToStorage(rememberKey, rememberMe);
     const key = remember ? userKey : '';
     setToStorage(key, userData);
-  }, [username, password, rememberMe, validateForm]);
+  }, [rememberMe, validateForm]);
 
   const checkmarkClasses = useMemo(() => {
     if (mode) {
