@@ -6,8 +6,10 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
 import AuthError from '@/components/form/FormError';
-import ClientOnly from '@/components/ClientOnly';
 import AuthInfo from '@/components/form/FormInfo';
+import FormButton from '@/components/form/FormButton';
+
+import ClientOnly from '@/components/ClientOnly';
 
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
@@ -130,7 +132,7 @@ const Login = () => {
                 <CheckMark className={checkmarkClasses} />
                 <CheckBoxLabel htmlFor='rememberMe'>Remember me</CheckBoxLabel>
               </CheckBoxWrapper>
-              {/* <FormButton type='submit'>Log in</FormButton> */}
+              <FormButton label='Log in' />
               <ForgotPassword>
                 <Link href='/forgot' passHref>
                   Forgot your password?
