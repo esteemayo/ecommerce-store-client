@@ -60,7 +60,7 @@ const Login = () => {
       return true;
     }
     return false;
-  }, []);
+  }, [inputs]);
 
   const handleSubmit = useCallback((e) => {
     e.preventDefault();
