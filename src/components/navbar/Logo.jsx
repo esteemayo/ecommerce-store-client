@@ -8,7 +8,7 @@ const Logo = () => {
   return (
     <Container>
       <Link href='/' passHref>
-        <Image
+        <StyledImage
           src='/img/logo.png'
           width={100}
           height={50}
@@ -27,14 +27,14 @@ const Container = styled.div`
       text-decoration: none;
       outline-color: var(--clr-primary-green);
     }
-
-    img {
-      width: 10rem;
-      height: 5rem;
-      display: block;
-      object-fit: cover;
-    }
   }
+`;
+
+const StyledImage = styled(Image)`
+  width: 10rem;
+  height: 5rem;
+  display: block;
+  object-fit: cover;
 `;
 
 export default Logo;
