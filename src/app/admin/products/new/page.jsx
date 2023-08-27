@@ -206,7 +206,7 @@ const NewProduct = () => {
                   placeholder='Separate the tags with commas'
                   onChange={handleTags}
                 />
-                {errors.tags && <ErrorMsg>{errors.tags}</ErrorMsg>}
+                {errors.tags && <FormError message={errors.tags} />}
               </FormGroup>
               <FormGroup type='file'>
                 <FormUpload
