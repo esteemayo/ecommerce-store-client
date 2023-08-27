@@ -18,7 +18,7 @@ const CartInfo = ({
   return (
     <Container>
       <ImageContainer>
-        <Image
+        <StyledImage
           src={images[0]}
           width={120}
           height={120}
@@ -73,23 +73,23 @@ const ImageContainer = styled.div`
     width: 8rem;
     height: 8rem;
   }
+`;
 
-  img {
-    width: 12rem;
-    height: 12rem;
-    display: block;
-    object-fit: cover;
-    border-radius: 3px;
+const StyledImage = styled(Image)`
+  width: 12rem;
+  height: 12rem;
+  display: block;
+  object-fit: cover;
+  border-radius: 3px;
 
-    @media only screen and (max-width: 25em) {
-      width: 10rem;
-      height: 10rem;
-    }
+  @media only screen and (max-width: 25em) {
+    width: 10rem;
+    height: 10rem;
+  }
 
-    @media only screen and (max-width: 18.75em) {
-      width: 8rem;
-      height: 8rem;
-    }
+  @media only screen and (max-width: 18.75em) {
+    width: 8rem;
+    height: 8rem;
   }
 `;
 
