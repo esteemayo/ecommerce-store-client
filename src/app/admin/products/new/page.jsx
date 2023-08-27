@@ -468,10 +468,4 @@ const FormButton = styled.button`
   }
 `;
 
-const ErrorMsg = styled.span`
-  font-size: 1.3rem;
-  color: var(--clr-secondary-red);
-  margin-top: 1px;
-`;
-
 export default NewProduct;
