@@ -4,11 +4,9 @@ import styled, { css } from 'styled-components';
 import { useDispatch } from 'react-redux';
 import { useCallback, useEffect, useRef, useState } from 'react';
 
+import ClientOnly from '@/components/ClientOnly';
 import FormButton from '@/components/form/FormButton';
 import FormError from '@/components/form/FormError';
-import FormUpload from '@/components/form/FormUpload';
-
-import ClientOnly from '@/components/ClientOnly';
 
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
@@ -212,13 +210,16 @@ const NewProduct = () => {
                 />
                 {errors.tags && <FormError message={errors.tags} />}
               </FormGroup>
-              <FormUpload
-                id='file'
-                accept='image/*'
-                label='Attach images'
-                onChange={(e) => setFiles(e.target.files)}
-                multiple={true}
-              />
+              <FormGroup type='file'>
+                <FormUpload
+                  type='file'
+                  id='file'
+                  accept='image/*'
+                  onChange={(e) => setFiles(e.target.files)}
+                  multiple
+                />
+                <FormLabel htmlFor='file' type='file'>Attach images</FormLabel>
+              </FormGroup>
               <FormButton label='Create' />
             </Form>
           </FormWrapper>
@@ -393,6 +394,38 @@ const Option = styled.option`
   text-transform: capitalize;
   background-color: ${({ theme }) => theme.bgProdCard};
   color: inherit;
+`;
+
+const FormUpload = styled.input`
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+
+  &:focus + ${FormLabel} {
+    outline: 3px solid ${({ theme }) => theme.fileInput};
+    outline-offset: 3px;
+  }
+
+  & + ${FormLabel} {
+    display: inline-block;
+    color: ${({ theme }) => theme.textFile};
+    text-decoration: none;
+    padding: 3px;
+    border-bottom: 1px solid ${({ theme }) => theme.fileInput};
+    cursor: pointer;
+
+    &:hover {
+      background-color: ${({ theme }) => theme.fileInput};
+      color: ${({ theme }) => theme.textCat};
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+      -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+      -moz-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+      transform: translateY(-2px);
+    }
+  }
 `;
 
 const UploadProgress = styled.span`
