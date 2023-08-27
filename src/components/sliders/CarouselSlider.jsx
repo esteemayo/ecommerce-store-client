@@ -62,7 +62,7 @@ const CarouselSlider = () => {
           return (
             <Article key={id} type={position}>
               <ImageContainer>
-                <Image src={img} fill={true} alt='' />
+                <StyledImage src={img} fill={true} alt='' />
               </ImageContainer>
               <InfoContainer>
                 <Title>{title}</Title>
@@ -135,13 +135,16 @@ const Article = styled.article`
 `;
 
 const ImageContainer = styled.div`
-  img {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    display: block;
-    object-fit: cover;
-  }
+  width: 100%;
+  height: 100%;
+  position: relative;
+`;
+
+const StyledImage = styled(Image)`
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
 `;
 
 const InfoContainer = styled.div`
