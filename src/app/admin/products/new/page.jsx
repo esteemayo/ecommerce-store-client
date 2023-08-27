@@ -5,6 +5,8 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import { useDispatch } from 'react-redux';
 
 import ClientOnly from '@/components/ClientOnly';
+import FormError from '@/components/form/FormError';
+
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
 const initialState = {
@@ -119,7 +121,7 @@ const NewProduct = () => {
                   ref={nameRef}
                   onChange={handleChange}
                 />
-                {errors.name && <ErrorMsg>{errors.name}</ErrorMsg>}
+                {errors.name && <FormError message={errors.name} />}
               </FormGroup>
               <FormGroup>
                 <FormLabel htmlFor='desc'>Description</FormLabel>
