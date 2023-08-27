@@ -17,34 +17,22 @@ import {
   userKey,
 } from '@/utils';
 
-const initialState = {
-  username: '',
-  password: '',
-  rememberMe: false,
-};
-
 const Login = () => {
   const dispatch = useDispatch();
   const { mode } = useSelector((state) => ({ ...state.darkMode }));
 
   const usernameRef = useRef();
+  const passwordRef = useRef();
+
   const [errors, setErrors] = useState({});
-  const [inputs, setInputs] = useState(initialState);
-
-  const { username, password, rememberMe } = inputs;
-
-  const handleChange = useCallback(({ target: input }) => {
-    let { name, type, value, checked } = input;
-    value = (type === 'checked') ? checked : value;
-
-    setInputs((prev) => ({ ...prev, [name]: value }));
-  }, []);
+  const [rememberMe, setRememberMe] = useState(false)
 
   const validateForm = useCallback(() => {
     const tempErrors = {};
-    const { username, password } = inputs;
+    const username = usernameRef.current.value;
+    const password = passwordRef.current.value;
 
-    if (username.trim() === '') {
+    if (username === '') {
       tempErrors.username = 'Username must not be empty';
     }
 
@@ -59,11 +47,12 @@ const Login = () => {
       return true;
     }
     return false;
-  }, [inputs]);
+  }, [username, password]);
 
   const handleSubmit = useCallback((e) => {
     e.preventDefault();
-    const { username, password, rememberMe } = inputs;
+    const username = usernameRef.current.value;
+    const password = passwordRef.current.value;
 
     if (validateForm()) return;
     setErrors({});
@@ -73,12 +62,12 @@ const Login = () => {
       password,
     };
 
-    console.log(userData);
+    console.log({ ...userData, rememberMe });
 
     const remember = setToStorage(rememberKey, rememberMe);
     const key = remember ? userKey : '';
     setToStorage(key, userData);
-  }, [inputs, validateForm]);
+  }, [username, password, rememberMe, validateForm]);
 
   const checkmarkClasses = useMemo(() => {
     if (mode) {
@@ -120,10 +109,8 @@ const Login = () => {
                 <FormInput
                   type='text'
                   id='username'
-                  name='username'
                   placeholder='Enter username'
                   ref={usernameRef}
-                  onChange={handleChange}
                 />
                 {errors.username && <ErrorMsg>{errors.username}</ErrorMsg>}
               </FormGroup>
@@ -131,10 +118,9 @@ const Login = () => {
                 <FormLabel htmlFor='password'>Password</FormLabel>
                 <FormInput
                   id='password'
-                  name='password'
                   type='password'
                   placeholder='Enter your password'
-                  onChange={handleChange}
+                  ref={passwordRef}
                 />
                 {errors.password && <ErrorMsg>{errors.password}</ErrorMsg>}
               </FormGroup>
@@ -144,7 +130,7 @@ const Login = () => {
                   id='rememberMe'
                   name='rememberMe'
                   checked={rememberMe}
-                  onChange={handleChange}
+                  onChange={(e) => setRememberMe(e.currentTarget.checked)}
                   className='checkbox'
                 />
                 <CheckMark className={checkmarkClasses} />
