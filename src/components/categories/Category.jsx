@@ -20,7 +20,7 @@ const Category = () => {
       {images.map((item, index) => {
         return (
           <Wrapper key={index}>
-            <Image
+            <StyledImage
               src={item}
               width={1200}
               height={1200}
@@ -118,35 +118,7 @@ const Wrapper = styled.div`
   @media only screen and (max-width: 26.25em) {
     width: 100%;
   }
-  
-  img {
-    width: 100%;
-    height: 25rem;
-    display: block;
-    object-fit: cover;
-    border-radius: 3px;
 
-    @media only screen and (max-width: 37.5em) {
-      height: 20rem;
-    }
-
-    @media only screen and (max-width: 31.25em) {
-      height: 15rem;
-    }
-
-    @media only screen and (max-width: 26.25em) {
-      height: 30rem;
-    }
-
-    @media only screen and (max-width: 23.75em) {
-      height: 25rem;
-    }
-
-    @media only screen and (max-width: 18.75em) {
-      height: 18rem;
-    }
-  }
-  
   a {
     &:link,
     &:visited {
@@ -159,10 +131,38 @@ const Wrapper = styled.div`
       color: currentColor;
     }
   }
-
+  
   &:hover ${Button} {
     visibility: visible;
     opacity: 1;
+  }
+`;
+
+const StyledImage = styled(Image)`
+  width: 100%;
+  height: 25rem;
+  display: block;
+  object-fit: cover;
+  border-radius: 3px;
+
+  @media only screen and (max-width: 37.5em) {
+    height: 20rem;
+  }
+
+  @media only screen and (max-width: 31.25em) {
+    height: 15rem;
+  }
+
+  @media only screen and (max-width: 26.25em) {
+    height: 30rem;
+  }
+
+  @media only screen and (max-width: 23.75em) {
+    height: 25rem;
+  }
+
+  @media only screen and (max-width: 18.75em) {
+    height: 18rem;
   }
 `;
 
