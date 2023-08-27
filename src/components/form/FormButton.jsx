@@ -1,9 +1,9 @@
 import styled, { css } from 'styled-components';
 import PropTypes from 'prop-types';
 
-const FormButton = ({ label }) => {
+const FormButton = ({ label, ...rest }) => {
   return (
-    <Button type='submit'>
+    <Button {...rest} type='submit'>
       {label}
     </Button>
   );
