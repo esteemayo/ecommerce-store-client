@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const SocialLogin = () => {
   return (
-    <div>SocialLogin</div>
+    <Container>SocialLogin</Container>
   )
 }
 
