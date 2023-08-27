@@ -17,22 +17,16 @@ import {
   userKey,
 } from '@/utils';
 
-const initialState = {
-  username: '',
-  password: '',
-  rememberMe: false,
-};
-
 const Login = () => {
   const dispatch = useDispatch();
   const { mode } = useSelector((state) => ({ ...state.darkMode }));
 
   const usernameRef = useRef();
 
-  const [errors, setErrors] = useState({});
   const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
+  const [errors, setErrors] = useState({});
   const [rememberMe, setRememberMe] = useState(false);
+  const [password, setPassword] = useState('');
 
   const validateForm = useCallback(() => {
     const tempErrors = {};
@@ -84,8 +78,9 @@ const Login = () => {
   }, []);
 
   useEffect(() => {
-    const rememberMe = getFromStorage(rememberKey) === 'true';
-    const user = rememberMe ? getFromStorage(userKey) : '';
+    const rememberMe = getFromStorage(rememberKey);
+    const user = getFromStorage(userKey);
+
     setUsername(user.username);
     setPassword(user.password);
     setRememberMe(rememberMe);
@@ -119,6 +114,7 @@ const Login = () => {
                 <FormInput
                   type='text'
                   id='username'
+                  value={username}
                   placeholder='Enter username'
                   onChange={(e) => setUsername(e.target.value)}
                   ref={usernameRef}
@@ -130,6 +126,7 @@ const Login = () => {
                 <FormInput
                   id='password'
                   type='password'
+                  value={password}
                   placeholder='Enter your password'
                   onChange={(e) => setPassword(e.target.value)}
                 />
