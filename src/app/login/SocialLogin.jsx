@@ -25,9 +25,7 @@ const SocialLogin = () => {
   );
 }
 
-const Container = styled.div`
-  
-`;
+const Container = styled.div``;
 
 const Header = styled.h1`
   display: block;
