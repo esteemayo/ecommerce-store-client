@@ -81,10 +81,6 @@ const GoogleButton = styled.button`
   &:hover {
     opacity: 0.7;
   }
-
-  img {
-    
-  }
 `;
 
 const StyledImage = styled(Image)`
