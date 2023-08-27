@@ -4,8 +4,25 @@ import { FaFacebookF } from 'react-icons/fa';
 
 const SocialLogin = () => {
   return (
-    <Container>SocialLogin</Container>
-  )
+    <Container>
+      <Header>Log in with</Header>
+      <GoogleContainer>
+        <GoogleButton type='button'>
+          <Image
+            src='/img/google-logo.png'
+            width={23}
+            height={23}
+            alt=''
+          />
+          Google
+        </GoogleButton>
+        <FacebookButton type='button'>
+          <FaFacebookF />
+          Facebook
+        </FacebookButton>
+      </GoogleContainer>
+    </Container>
+  );
 }
 
 const Container = styled.div`
