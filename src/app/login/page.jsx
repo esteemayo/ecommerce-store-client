@@ -32,7 +32,7 @@ const Login = () => {
   const [errors, setErrors] = useState({});
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const [rememberMe, setRememberMe] = useState('');
+  const [rememberMe, setRememberMe] = useState(false);
 
   const validateForm = useCallback(() => {
     const tempErrors = {};
