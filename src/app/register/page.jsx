@@ -118,7 +118,10 @@ const Register = () => {
                   </>
                 )}
               </FormGroup>
-              <FormButton disabled={perc !== null && perc < 100} />
+              <FormButton
+                label='Register'
+                disabled={perc !== null && perc < 100}
+              />
             </Form>
           </Wrapper>
           <AuthInfo
