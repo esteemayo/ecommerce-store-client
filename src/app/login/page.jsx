@@ -6,8 +6,8 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
 import ClientOnly from '@/components/ClientOnly';
-import AuthInfo from '@/components/AuthInfo';
-import AuthError from '@/components/AuthError';
+import AuthInfo from '@/components/auths/AuthInfo';
+import AuthError from '@/components/auths/AuthError';
 
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
