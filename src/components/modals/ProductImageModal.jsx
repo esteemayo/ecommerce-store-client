@@ -71,7 +71,7 @@ const ProductImageModal = ({
         </ArrowButton>
       )}
       <ImageContainer className='imageContainer' onClick={closeModalHandler}>
-        <Image
+        <StyledImage
           src={images ? images[slideIndex] : '/img/img-1.jpg'}
           width={1200}
           height={1000}
@@ -169,21 +169,21 @@ const ImageContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+`;
 
-  img {
-    width: 50rem;
-    height: 100%;
-    display: block;
-    object-fit: cover;
+const StyledImage = styled(Image)`
+  width: 50rem;
+  height: 100%;
+  display: block;
+  object-fit: cover;
 
-    @media only screen and (max-width: 64em) {
-      height: 90%;
-    }
+  @media only screen and (max-width: 64em) {
+    height: 90%;
+  }
 
-    @media only screen and (max-width: 50em) {
-      width: 60rem;
-      height: 80rem;
-    }
+  @media only screen and (max-width: 50em) {
+    width: 60rem;
+    height: 80rem;
   }
 `;
 
