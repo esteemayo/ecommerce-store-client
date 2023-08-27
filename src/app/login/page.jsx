@@ -10,6 +10,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import ClientOnly from '@/components/ClientOnly';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
+import SocialLogin from './SocialLogin';
 import {
   getFromStorage,
   rememberKey,
