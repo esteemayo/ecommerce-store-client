@@ -61,4 +61,10 @@ const Input = styled.input`
   }
 `;
 
+FormUpload.propTypes = {
+  id: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired,
+  rest: PropTypes.any,
+};
+
 export default FormUpload;
