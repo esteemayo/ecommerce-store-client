@@ -5,7 +5,7 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import { useDispatch } from 'react-redux';
 
 import ClientOnly from '@/components/ClientOnly';
-import AuthError from '@/components/auths/AuthError';
+import AuthError from '@/components/form/FormError';
 
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 

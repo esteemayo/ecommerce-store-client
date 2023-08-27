@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-const AuthError = ({ message }) => {
+const FormError = ({ message }) => {
   return <ErrorMessage>{message}</ErrorMessage>;
 }
 
@@ -11,8 +11,8 @@ const ErrorMessage = styled.span`
   margin-top: 1px;
 `;
 
-AuthError.propTypes = {
+FormError.propTypes = {
   message: PropTypes.string,
 };
 
-export default AuthError;
+export default FormError;

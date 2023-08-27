@@ -4,9 +4,9 @@ import styled, { css } from 'styled-components';
 import { useDispatch } from 'react-redux';
 import { useCallback, useState } from 'react';
 
-import AuthError from '@/components/auths/AuthError';
+import AuthError from '@/components/form/FormError';
 import ClientOnly from '@/components/ClientOnly';
-import AuthInfo from '@/components/auths/AuthInfo';
+import AuthInfo from '@/components/form/FormInfo';
 
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 

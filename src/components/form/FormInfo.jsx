@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import Link from 'next/link';
 import PropTypes from 'prop-types';
 
-const AuthInfo = ({ url, text, label }) => {
+const FormInfo = ({ url, text, label }) => {
   return (
     <Container>
       <Text>
@@ -40,10 +40,10 @@ const Text = styled.p`
   }
 `;
 
-AuthInfo.propTypes = {
+FormInfo.propTypes = {
   url: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
 };
 
-export default AuthInfo;
+export default FormInfo;
