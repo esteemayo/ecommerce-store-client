@@ -218,23 +218,6 @@ const Header = styled.h1`
   color: ${({ theme }) => theme.textFormHeader};
 `;
 
-const GoogleContainer = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  gap: 1.5rem;
-  margin: 2rem 0;
-
-  @media only screen and (max-width: 64em) {
-    margin: 1.8rem 0;
-  }
-
-  @media only screen and (max-width: 26.25em) {
-    flex-direction: column;
-    gap: 1rem;
-  }
-`;
-
 const Text = styled.p`
   display: block;
   text-align: center;
