@@ -211,7 +211,7 @@ const NewProduct = () => {
                 {errors.tags && <FormError message={errors.tags} />}
               </FormGroup>
               <FormGroup type='file'>
-                <FormUpload
+                <input
                   type='file'
                   id='file'
                   accept='image/*'
