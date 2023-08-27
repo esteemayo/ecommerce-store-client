@@ -217,7 +217,7 @@ const NewProduct = () => {
                 accept='image/*'
                 label='Attach images'
                 onChange={(e) => setFiles(e.target.files)}
-                multiple
+                multiple={true}
               />
               <FormButton label='Create' />
             </Form>

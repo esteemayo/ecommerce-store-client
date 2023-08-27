@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-const FormUpload = ({ id, label, ...rest }) => {
+const FormUpload = ({ id, label, multiple, ...rest }) => {
   return (
     <FormGroup>
-      <Input {...rest} id={id} type='file' />
+      <Input {...rest} id={id} type='file' multiple={multiple} />
       <Label htmlFor={id}>{label}</Label>
     </FormGroup>
   );
