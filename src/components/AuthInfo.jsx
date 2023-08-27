@@ -1,22 +1,22 @@
 import styled from 'styled-components';
 import Link from 'next/link';
 
-const AuthInfo = () => {
+const AuthInfo = ({ url, text, label }) => {
   return (
-    <RegisterContainer>
-      <RegisterText>
-        Don&apos;t have an account? {' '}
-        <Link href='/register' passHref>Sign up</Link>
-      </RegisterText>
-    </RegisterContainer>
+    <Container>
+      <Text>
+        {text} {' '}
+        <Link href={url} passHref>{label}</Link>
+      </Text>
+    </Container>
   );
 }
 
-const RegisterContainer = styled.div`
+const Container = styled.div`
   margin-top: 3rem;
 `;
 
-const RegisterText = styled.p`
+const Text = styled.p`
   font-size: 1.7rem;
   color: ${({ theme }) => theme.textLabel};
 
