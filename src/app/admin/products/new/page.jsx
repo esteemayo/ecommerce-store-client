@@ -211,14 +211,14 @@ const NewProduct = () => {
                 {errors.tags && <FormError message={errors.tags} />}
               </FormGroup>
               <FormGroup type='file'>
-                <FormUpload
+                <label>Attach images</label>
+                <input
                   type='file'
                   id='file'
                   accept='image/*'
                   onChange={(e) => setFiles(e.target.files)}
                   multiple
                 />
-                <FormLabel htmlFor='file' type='file'>Attach images</FormLabel>
               </FormGroup>
               <FormButton label='Create' />
             </Form>
