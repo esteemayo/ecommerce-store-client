@@ -7,6 +7,7 @@ import { useDispatch } from 'react-redux';
 import AuthError from '@/components/form/FormError';
 import ClientOnly from '@/components/ClientOnly';
 import FormButton from '@/components/form/FormButton';
+import FormInput from '@/components/form/FormInput';
 
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
@@ -58,29 +59,23 @@ const ResetPassword = () => {
           <Wrapper>
             <Header>Reset your password</Header>
             <Form onSubmit={handleSubmit}>
-              <FormGroup>
-                <FormLabel htmlFor='password'>Password</FormLabel>
-                <FormInput
-                  id='password'
-                  type='password'
-                  name='password'
-                  ref={passwordRef}
-                  placeholder='Enter your password'
-                  onChange={(e) => setPassword(e.target.value)}
-                />
-                {errors.password && <AuthError message={errors.password} />}
-              </FormGroup>
-              <FormGroup>
-                <FormLabel htmlFor='confirmPassword'>Confirm password</FormLabel>
-                <FormInput
-                  id='confirmPassword'
-                  type='password'
-                  name='confirmPassword'
-                  placeholder='Confirm your password'
-                  onChange={(e) => setConfirmPassword(e.target.value)}
-                />
-                {errors.confirmPassword && <AuthError message={errors.confirmPassword} />}
-              </FormGroup>
+              <FormInput
+                type='password'
+                name='password'
+                label='Password'
+                placeholder='Enter your password'
+                onChange={(e) => setPassword(e.target.value)}
+                error={errors.password}
+                autoFocus
+              />
+              <FormInput
+                type='password'
+                name='confirmPassword'
+                label='Confirm password'
+                placeholder='Confirm your password'
+                onChange={(e) => setConfirmPassword(e.target.value)}
+                error={errors.confirmPassword}
+              />
               <FormButton label='Reset password' />
             </Form>
           </Wrapper>
@@ -182,29 +177,29 @@ const FormLabel = styled.label`
   color: ${({ theme }) => theme.textLabel};
 `;
 
-const FormInput = styled.input`
-  border: none;
-  display: inline-block;
-  font-family: inherit;
-  font-size: 1.5rem;
-  width: 100%;
-  padding: 1.5rem 1rem;
-  background-color: ${({ theme }) => theme.bgInput};
-  color: #999;
-  border-radius: 0.5rem;
-  outline-color: ${({ theme }) => theme.inputOut};
-  caret-color: ${({ theme }) => theme.inputCaret};
-  transition: all 0.3s ease;
+// const FormInput = styled.input`
+//   border: none;
+//   display: inline-block;
+//   font-family: inherit;
+//   font-size: 1.5rem;
+//   width: 100%;
+//   padding: 1.5rem 1rem;
+//   background-color: ${({ theme }) => theme.bgInput};
+//   color: #999;
+//   border-radius: 0.5rem;
+//   outline-color: ${({ theme }) => theme.inputOut};
+//   caret-color: ${({ theme }) => theme.inputCaret};
+//   transition: all 0.3s ease;
 
-  &:focus {
-    background-color: transparent;
-  }
+//   &:focus {
+//     background-color: transparent;
+//   }
 
-  &::-webkit-input-placeholder {
-    font-weight: 300;
-    font-size: 1.5rem;
-    color: #bbb;
-  }
-`;
+//   &::-webkit-input-placeholder {
+//     font-weight: 300;
+//     font-size: 1.5rem;
+//     color: #bbb;
+//   }
+// `;
 
 export default ResetPassword;
