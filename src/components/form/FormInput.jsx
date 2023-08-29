@@ -11,8 +11,8 @@ const FormInput = ({
   ...rest
 }) => {
   return (
-    <FormGroup key={id}>
-      <Label htmlFor={id}>{label}</Label>
+    <FormGroup>
+      <Label htmlFor={name}>{label}</Label>
       <Input
         {...rest}
         id={name}
