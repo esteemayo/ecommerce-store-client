@@ -249,45 +249,45 @@ transition: all 0.3s ease;
   font - size: 1.5rem;
   color: #bbb;
 }
-`;
+// `;
 
 const FormUpload = styled.input`
-width: 0.1px;
-height: 0.1px;
-opacity: 0;
-overflow: hidden;
-position: absolute;
-z - index: -1;
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
 
-  &: focus + ${ FormLabel } {
-  outline: 3px solid ${ ({ theme }) => theme.fileInput };
-  outline - offset: 3px;
-}
+  &:focus + ${FormLabel} {
+    outline: 3px solid ${({ theme }) => theme.fileInput};
+    outline-offset: 3px;
+  }
 
-  & + ${ FormLabel } {
-  color: ${ ({ theme }) => theme.textFile };
-  display: inline - block;
-  text - decoration: none;
-  padding: 3px;
-  border - bottom: 1px solid ${ ({ theme }) => theme.fileInput };
-  cursor: pointer;
-  transition: all 0.3s;
+  & + ${FormLabel} {
+    color: ${({ theme }) => theme.textFile};
+    display: inline - block;
+    text-decoration: none;
+    padding: 3px;
+    border-bottom: 1px solid ${({ theme }) => theme.fileInput};
+    cursor: pointer;
+    transition: all 0.3s;
 
     &:hover {
-    background - color: ${ ({ theme }) => theme.fileInput };
-    color: ${ ({ theme }) => theme.textCat };
-    box - shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
-    -webkit - box - shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
-    -moz - box - shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
-    transform: translateY(-2px);
+      background-color: ${({ theme }) => theme.fileInput};
+      color: ${({ theme }) => theme.textCat};
+      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+      -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+      -moz-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+      transform: translateY(-2px);
+    }
   }
-}
 `;
 
 const UploadProgress = styled.span`
-text - transform: capitalize;
-font - size: 1.4rem;
-color: ${ ({ theme }) => theme.text };
+  text-transform: capitalize;
+  font-size: 1.4rem;
+  color: ${({ theme }) => theme.text};
 `;
 
 export default Register;
