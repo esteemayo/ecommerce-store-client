@@ -65,4 +65,12 @@ const Input = styled.input`
   }
 `;
 
+FormInput.propTypes = {
+  name: PropTypes.string,
+  type: PropTypes.string,
+  label: PropTypes.string.isRequired,
+  error: PropTypes.object,
+  rest: PropTypes.any,
+};
+
 export default FormInput;
