@@ -172,6 +172,20 @@ body {
   transform: rotate(45deg);
 }
 
+.formLabel {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 1.6rem;
+
+  &.dark {
+    color: #cfd0d1;
+  }
+
+  &.light {
+    color: #888888;
+  }
+}
+
 @keyframes inProgress {
   from {
     opacity: 0;
