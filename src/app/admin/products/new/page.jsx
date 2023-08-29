@@ -102,6 +102,10 @@ const NewProduct = () => {
     ]
   );
 
+  const labelClasses = useMemo(() => {
+    return `formLabel ${mode ? 'dark' : 'light'}`;
+  }, [mode]);
+
   useEffect(() => {
     nameRef.current?.focus();
   }, []);
