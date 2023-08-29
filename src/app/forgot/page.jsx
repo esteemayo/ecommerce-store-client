@@ -60,7 +60,7 @@ const Forgot = () => {
                 placeholder='Enter email address'
                 onChange={(e) => setEmail(e.target.value)}
                 error={errors.email}
-                 autoFocus
+                autoFocus
               />
               <FormButton label='Reset password' />
             </Form>
