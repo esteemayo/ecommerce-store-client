@@ -5,8 +5,10 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import { useDispatch } from 'react-redux';
 
 import AuthError from '@/components/form/FormError';
-import ClientOnly from '@/components/ClientOnly';
 import FormButton from '@/components/form/FormButton';
+import FormButton from '@/components/form/FormInput';
+
+import ClientOnly from '@/components/ClientOnly';
 
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
@@ -53,18 +55,15 @@ const Forgot = () => {
           <Wrapper>
             <Header>Forgot password</Header>
             <Form onSubmit={handleSubmit}>
-              <FormGroup>
-                <FormLabel htmlFor='email'>Email</FormLabel>
-                <FormInput
-                  id='email'
-                  type='email'
-                  name='email'
-                  ref={emailRef}
-                  placeholder='Enter email address'
-                  onChange={(e) => setEmail(e.target.value)}
-                />
-                {errors.email && <AuthError message={errors.email} />}
-              </FormGroup>
+              <FormInput
+                type='email'
+                name='email'
+                label='Email'
+                placeholder='Enter email address'
+                onChange={(e) => setEmail(e.target.value)}
+                error={errors.email}
+                 autoFocus
+              />
               <FormButton label='Reset password' />
             </Form>
           </Wrapper>
@@ -166,29 +165,29 @@ const FormLabel = styled.label`
   color: ${({ theme }) => theme.textLabel};
 `;
 
-const FormInput = styled.input`
-  border: none;
-  display: inline-block;
-  font-family: inherit;
-  font-size: 1.5rem;
-  width: 100%;
-  padding: 1.5rem 1rem;
-  background-color: ${({ theme }) => theme.bgInput};
-  color: #999;
-  border-radius: 0.5rem;
-  outline-color: ${({ theme }) => theme.inputOut};
-  caret-color:${({ theme }) => theme.inputCaret};
-  transition: all 0.3s ease;
+// const FormInput = styled.input`
+//   border: none;
+//   display: inline-block;
+//   font-family: inherit;
+//   font-size: 1.5rem;
+//   width: 100%;
+//   padding: 1.5rem 1rem;
+//   background-color: ${({ theme }) => theme.bgInput};
+//   color: #999;
+//   border-radius: 0.5rem;
+//   outline-color: ${({ theme }) => theme.inputOut};
+//   caret-color:${({ theme }) => theme.inputCaret};
+//   transition: all 0.3s ease;
 
-  &:focus {
-    background-color: transparent;
-  }
+//   &:focus {
+//     background-color: transparent;
+//   }
 
-  &::-webkit-input-placeholder {
-    font-weight: 300;
-    font-size: 1.5rem;
-    color: #bbb;
-  }
-`;
+//   &::-webkit-input-placeholder {
+//     font-weight: 300;
+//     font-size: 1.5rem;
+//     color: #bbb;
+//   }
+// `;
 
 export default Forgot;
