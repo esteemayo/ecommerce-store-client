@@ -21,6 +21,7 @@ const initialState = {
 
 const NewProduct = () => {
   const dispatch = useDispatch();
+  const { mode } = useSelector((state) => ({ ...state.darkMode }));
 
   const nameRef = useRef();
   const [data, setData] = useState(initialState);
