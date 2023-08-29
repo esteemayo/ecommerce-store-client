@@ -167,13 +167,4 @@ const FormGroup = styled.div`
   }
 `;
 
-const FormLabel = styled.label`
-  display: inline-block;
-  width: 13rem;
-  text-transform: capitalize;
-  font-weight: 600;
-  font-size: 1.4rem;
-  color: ${({ theme }) => theme.textLabel};
-`;
-
 export default ResetPassword;
