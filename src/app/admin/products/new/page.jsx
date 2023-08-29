@@ -1,6 +1,6 @@
 'use client';
 
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import { useDispatch, useSelector } from 'react-redux';
 import { useCallback, useEffect, useRef, useState } from 'react';
 
