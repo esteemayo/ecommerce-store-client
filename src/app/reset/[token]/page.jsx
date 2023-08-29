@@ -13,7 +13,6 @@ import { closeSubmenu } from '@/features/submenu/submenuSlice';
 const ResetPassword = () => {
   const dispatch = useDispatch();
 
-  const passwordRef = useRef();
   const [password, setPassword] = useState('');
   const [errors, setErrors] = useState({});
   const [confirmPassword, setConfirmPassword] = useState('');
