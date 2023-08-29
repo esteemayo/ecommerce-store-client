@@ -10,7 +10,6 @@ const FormInput = ({ name, type = 'text', label, error, ...rest }) => {
         id={name}
         type={type}
         name={name}
-        autoFocus={name === 'name' ? true : false}
       />
       {error && <FormError message={error} />}
     </FormGroup>
