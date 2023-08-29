@@ -2,7 +2,7 @@
 
 import styled from 'styled-components';
 import { useDispatch, useSelector } from 'react-redux';
-import { useCallback, useMemo, useRef, useState } from 'react';
+import { useCallback, useMemo, useState } from 'react';
 
 import ClientOnly from '@/components/ClientOnly';
 import FormButton from '@/components/form/FormButton';
