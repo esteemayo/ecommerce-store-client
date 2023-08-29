@@ -47,10 +47,6 @@ const ResetPassword = () => {
     console.log({ password, confirmPassword });
   }, [confirmPassword, password, validateForm]);
 
-  useEffect(() => {
-    passwordRef.current.focus();
-  }, []);
-
   return (
     <ClientOnly>
       <Container onMouseOver={() => dispatch(closeSubmenu())}>
