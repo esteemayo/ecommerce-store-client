@@ -4,11 +4,9 @@ import styled from 'styled-components';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { useDispatch } from 'react-redux';
 
-import AuthError from '@/components/form/FormError';
-import FormInput from '@/components/form/FormInput';
 import FormButton from '@/components/form/FormButton';
-
 import ClientOnly from '@/components/ClientOnly';
+import FormInput from '@/components/form/FormInput';
 
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
