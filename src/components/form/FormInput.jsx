@@ -1,7 +1,13 @@
 import styled from 'styled-components';
 import FormError from './FormError';
 
-const FormInput = ({ name, type = 'text', label, error, ...rest }) => {
+const FormInput = ({
+  name,
+  type = 'text',
+  label,
+  error,
+  ...rest
+}) => {
   return (
     <FormGroup key={id}>
       <Label htmlFor={id}>{label}</Label>
