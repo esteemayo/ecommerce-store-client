@@ -4,9 +4,9 @@ import styled from 'styled-components';
 import { useDispatch } from 'react-redux';
 import { useCallback, useState } from 'react';
 
-import FormButton from '@/components/form/FormButton';
 import AuthInfo from '@/components/form/FormInfo';
-import FormError from '@/components/form/FormError';
+import FormButton from '@/components/form/FormButton';
+import FormInput from '@/components/form/FormInput';
 
 import ClientOnly from '@/components/ClientOnly';
 
@@ -89,18 +89,15 @@ const Register = () => {
               {registerInputs.map((input) => {
                 const { id, name, type, label, placeholder } = input;
                 return (
-                  <FormGroup key={id}>
-                    <FormLabel htmlFor={id}>{label}</FormLabel>
-                    <FormInput
-                      id={id}
-                      type={type}
-                      name={name}
-                      placeholder={placeholder}
-                      onChange={handleChange}
-                      autoFocus={name === 'name' ? true : false}
-                    />
-                    {errors[name] && <FormError message={errors[name]} />}
-                  </FormGroup>
+                  <FormInput
+                    key={id}
+                    name={name}
+                    label={label}
+                    placeholder={placeholder}
+                    onChange={handleChange}
+                    autoFocus={name === 'name' ? true : false}
+                    error={errors[name]}
+                  />
                 );
               })}
               <FormGroup type='file'>
@@ -229,68 +226,68 @@ const FormLabel = styled.label`
   color:  ${({ theme }) => theme.textLabel};
 `;
 
-const FormInput = styled.input`
-  border: none;
-  display: inline-block;
-  font-family: inherit;
-  font-size: 1.5rem;
-  width: 100%;
-  padding: 1.5rem 1rem;
-  background-color: ${({ theme }) => theme.bgInput};
-  color: #999;
-  border-radius: 0.5rem;
-  outline-color: ${({ theme }) => theme.inputOut};
-  caret-color: ${({ theme }) => theme.inputCaret};
-  transition: all 0.3s ease;
+// const FormInput = styled.input`
+border: none;
+display: inline - block;
+font - family: inherit;
+font - size: 1.5rem;
+width: 100 %;
+padding: 1.5rem 1rem;
+background - color: ${ ({ theme }) => theme.bgInput };
+color: #999;
+border - radius: 0.5rem;
+outline - color: ${ ({ theme }) => theme.inputOut };
+caret - color: ${ ({ theme }) => theme.inputCaret };
+transition: all 0.3s ease;
 
   &:focus {
-    background-color: transparent;
-  }
+  background - color: transparent;
+}
 
-  &::-webkit-input-placeholder {
-    font-weight: 300;
-    font-size: 1.5rem;
-    color: #bbb;
-  }
+  &:: -webkit - input - placeholder {
+  font - weight: 300;
+  font - size: 1.5rem;
+  color: #bbb;
+}
 `;
 
 const FormUpload = styled.input`
-  width: 0.1px;
-  height: 0.1px;
-  opacity: 0;
-  overflow: hidden;
-  position: absolute;
-  z-index: -1;
+width: 0.1px;
+height: 0.1px;
+opacity: 0;
+overflow: hidden;
+position: absolute;
+z - index: -1;
 
-  &:focus + ${FormLabel} {
-    outline: 3px solid ${({ theme }) => theme.fileInput};
-    outline-offset: 3px;
-  }
+  &: focus + ${ FormLabel } {
+  outline: 3px solid ${ ({ theme }) => theme.fileInput };
+  outline - offset: 3px;
+}
 
-  & + ${FormLabel} {
-    color: ${({ theme }) => theme.textFile};
-    display: inline-block;
-    text-decoration: none;
-    padding: 3px;
-    border-bottom: 1px solid ${({ theme }) => theme.fileInput};
-    cursor: pointer;
-    transition: all 0.3s;
+  & + ${ FormLabel } {
+  color: ${ ({ theme }) => theme.textFile };
+  display: inline - block;
+  text - decoration: none;
+  padding: 3px;
+  border - bottom: 1px solid ${ ({ theme }) => theme.fileInput };
+  cursor: pointer;
+  transition: all 0.3s;
 
     &:hover {
-      background-color: ${({ theme }) => theme.fileInput};
-      color: ${({ theme }) => theme.textCat};
-      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
-      -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
-      -moz-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
-      transform: translateY(-2px);
-    }
+    background - color: ${ ({ theme }) => theme.fileInput };
+    color: ${ ({ theme }) => theme.textCat };
+    box - shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    -webkit - box - shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    -moz - box - shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
   }
+}
 `;
 
 const UploadProgress = styled.span`
-  text-transform: capitalize;
-  font-size: 1.4rem;
-  color: ${({ theme }) => theme.text};
+text - transform: capitalize;
+font - size: 1.4rem;
+color: ${ ({ theme }) => theme.text };
 `;
 
 export default Register;
