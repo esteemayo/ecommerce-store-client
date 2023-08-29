@@ -4,9 +4,9 @@ import styled from 'styled-components';
 import { useDispatch } from 'react-redux';
 import { useCallback, useState } from 'react';
 
-import AuthError from '@/components/form/FormError';
 import FormButton from '@/components/form/FormButton';
 import AuthInfo from '@/components/form/FormInfo';
+import FormError from '@/components/form/FormError';
 
 import ClientOnly from '@/components/ClientOnly';
 
@@ -99,7 +99,7 @@ const Register = () => {
                       onChange={handleChange}
                       autoFocus={name === 'name' ? true : false}
                     />
-                    {errors[name] && <AuthError message={errors[name]} />}
+                    {errors[name] && <FormError message={errors[name]} />}
                   </FormGroup>
                 );
               })}
