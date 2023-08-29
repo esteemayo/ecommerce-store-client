@@ -42,10 +42,6 @@ const Forgot = () => {
     console.log(email);
   }, [email, validateForm]);
 
-  useEffect(() => {
-    emailRef.current?.focus();
-  }, []);
-
   return (
     <ClientOnly>
       <Container onMouseOver={() => dispatch(closeSubmenu())}>
