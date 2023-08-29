@@ -155,12 +155,4 @@ const FormGroup = styled.div`
   }
 `;
 
-const FormLabel = styled.label`
-  display: inline-block;
-  width: 4rem;
-  font-weight: 600;
-  font-size: 1.4rem;
-  color: ${({ theme }) => theme.textLabel};
-`;
-
 export default Forgot;
