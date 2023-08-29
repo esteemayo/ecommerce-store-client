@@ -48,7 +48,7 @@ const Input = styled.input`
   width: 100%;
   padding: 1.5rem 1rem;
   background-color: ${({ theme }) => theme.bgInput};
-  color: #999;
+  color: ${({ theme }) => theme.textInput};
   border-radius: 0.5rem;
   outline-color: ${({ theme }) => theme.inputOut};
   caret-color: ${({ theme }) => theme.inputCaret};
