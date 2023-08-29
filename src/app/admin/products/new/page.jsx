@@ -23,7 +23,6 @@ const NewProduct = () => {
   const dispatch = useDispatch();
   const { mode } = useSelector((state) => ({ ...state.darkMode }));
 
-  const nameRef = useRef();
   const [data, setData] = useState(initialState);
   const [size, setSize] = useState([]);
   const [files, setFiles] = useState(null);
@@ -106,10 +105,6 @@ const NewProduct = () => {
     return `formLabel ${mode ? 'dark' : 'light'}`;
   }, [mode]);
 
-  useEffect(() => {
-    nameRef.current?.focus();
-  }, []);
-
   return (
     <ClientOnly>
       <Container onMouseOver={() => dispatch(closeSubmenu())}>
@@ -124,8 +119,8 @@ const NewProduct = () => {
                   type='text'
                   name='name'
                   placeholder='Enter product name'
-                  ref={nameRef}
                   onChange={handleChange}
+                  autoFocus
                 />
                 {errors.name && <FormError message={errors.name} />}
               </FormGroup>
