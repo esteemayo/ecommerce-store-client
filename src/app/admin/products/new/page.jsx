@@ -215,7 +215,7 @@ const NewProduct = () => {
                 />
                 {errors.tags && <FormError message={errors.tags} />}
               </FormGroup>
-              <FormGroup type='file'>
+              <FormGroup>
                 <label className={labelClasses}>Attach images</label>
                 <input
                   type='file'
