@@ -46,14 +46,14 @@ export const passwordInputs = [
     placeholder: 'Type in your new password',
   },
   {
-    id: 'confirmPassword',
+    id: 'confirm-password',
     name: 'confirmPassword',
     type: 'password',
     label: 'Confirm Password',
     placeholder: 'Confirm your password',
   },
   {
-    id: 'currentPassword',
+    id: 'current-password',
     name: 'currentPassword',
     type: 'password',
     label: 'Current Password',
