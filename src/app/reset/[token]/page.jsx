@@ -19,13 +19,6 @@ const initialState = {
 const ResetPassword = () => {
   const dispatch = useDispatch();
 
-  const {
-    formData,
-    errors,
-    handleChange,
-    handleSubmit,
-  } = useForm(onSubmitHandler, initialState, validateForm);
-
   const validateForm = useCallback((data) => {
     const tempErrors = {};
 
@@ -45,6 +38,13 @@ const ResetPassword = () => {
   const onSubmitHandler = useCallback(() => {
     console.log({ ...formData });
   }, [formData]);
+
+  const {
+    formData,
+    errors,
+    handleChange,
+    handleSubmit,
+  } = useForm(onSubmitHandler, initialState, validateForm);
 
   return (
     <ClientOnly>
