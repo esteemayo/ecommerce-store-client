@@ -14,11 +14,11 @@ const useForm = (callback, initialState = {}, validate) => {
 
     if (Object.keys(validate(formData)).length > 0) {
       setErrors(validate(formData));
-      return;
+    } else {
+      callback();
+      setFormData(initialState);
     }
 
-    callback();
-    setFormData(initialState);
   }, [callback, formData, initialState, validate]);
 
   return {
