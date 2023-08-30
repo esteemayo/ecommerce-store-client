@@ -12,13 +12,13 @@ const useForm = (callback, initialState = {}, validate) => {
   const handleSubmit = useCallback((e) => {
     e.preventDefault();
 
-    if (Object.keys(validate(formData)).length > 0) {
-      setErrors(validate(formData));
+    if (Object.keys(validate(formData)).length === 0) {
+      callback();
+      setFormData(initialState);
       return;
     }
-
-    callback();
-    setFormData(initialState);
+    
+    setErrors(validate(formData));
   }, [callback, formData, initialState, validate]);
 
   return {
