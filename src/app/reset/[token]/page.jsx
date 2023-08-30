@@ -18,39 +18,46 @@ const initialState = {
 
 const ResetPassword = () => {
   const dispatch = useDispatch();
+  const {
+    formData,
+    errors,
+    handleChange,
+    handleSubmit,
+  } = useForm(onSubmitHandler, initialState, validateForm);
 
   const [password, setPassword] = useState('');
-  const [errors, setErrors] = useState({});
+  // const [errors, setErrors] = useState({});
   const [confirmPassword, setConfirmPassword] = useState('');
 
-  const validateForm = useCallback(() => {
+  const validateForm = useCallback((data) => {
     const tempErrors = {};
+    const { password, confirmPassword } = data;
 
-    if (!password) {
+    if (password === '') {
       tempErrors.password = 'Please enter your new password';
     } else if (password.length < 8) {
       tempErrors.password = 'Password should be at least 8 characters long';
-    } else if (!confirmPassword) {
+    } else if (confirmPassword === '') {
       tempErrors.confirmPassword = 'Please confirm your new password';
     } else if (password !== confirmPassword) {
       tempErrors.confirmPassword = 'Passwords do not match';
     }
 
-    if (Object.keys(tempErrors).length > 0) {
-      setErrors(tempErrors);
-      return true;
-    }
-    return false;
-  }, [confirmPassword, password]);
+    return tempErrors;
+  }, []);
 
-  const handleSubmit = useCallback((e) => {
-    e.preventDefault();
+  // const handleSubmit = useCallback((e) => {
+  //   e.preventDefault();
 
-    if (validateForm()) return;
-    setErrors({});
+  //   if (validateForm()) return;
+  //   setErrors({});
 
-    console.log({ password, confirmPassword });
-  }, [confirmPassword, password, validateForm]);
+  //   console.log({ password, confirmPassword });
+  // }, [confirmPassword, password, validateForm]);
+
+  const onSubmitHandler = useCallback(() => {
+    console.log({ ...formData });
+  }, [formData]);
 
   return (
     <ClientOnly>
@@ -64,7 +71,7 @@ const ResetPassword = () => {
                 name='password'
                 label='Password'
                 placeholder='Enter your password'
-                onChange={(e) => setPassword(e.target.value)}
+                onChange={handleChange}
                 error={errors.password}
                 autoFocus
               />
@@ -73,7 +80,7 @@ const ResetPassword = () => {
                 name='confirmPassword'
                 label='Confirm password'
                 placeholder='Confirm your password'
-                onChange={(e) => setConfirmPassword(e.target.value)}
+                onChange={handleChange}
                 error={errors.confirmPassword}
               />
               <FormButton label='Reset password' />
