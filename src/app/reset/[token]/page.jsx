@@ -25,7 +25,7 @@ const ResetPassword = () => {
     handleSubmit,
   } = useForm(onSubmitHandler, initialState, validateForm);
 
-  const validateForm = (data) => {
+  const validateForm = useCallback((data) => {
     const tempErrors = {};
     const { password, confirmPassword } = data;
 
@@ -40,7 +40,7 @@ const ResetPassword = () => {
     }
 
     return tempErrors;
-  };
+  }, []);
 
   const onSubmitHandler = useCallback(() => {
     console.log({ ...formData });
