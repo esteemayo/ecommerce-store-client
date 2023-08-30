@@ -42,15 +42,6 @@ const ResetPassword = () => {
     return tempErrors;
   }, []);
 
-  // const handleSubmit = useCallback((e) => {
-  //   e.preventDefault();
-
-  //   if (validateForm()) return;
-  //   setErrors({});
-
-  //   console.log({ password, confirmPassword });
-  // }, [confirmPassword, password, validateForm]);
-
   const onSubmitHandler = useCallback(() => {
     console.log({ ...formData });
   }, [formData]);
