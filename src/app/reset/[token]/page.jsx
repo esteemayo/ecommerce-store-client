@@ -18,6 +18,7 @@ const initialState = {
 
 const ResetPassword = () => {
   const dispatch = useDispatch();
+
   const {
     formData,
     errors,
@@ -27,15 +28,14 @@ const ResetPassword = () => {
 
   const validateForm = useCallback((data) => {
     const tempErrors = {};
-    const { password, confirmPassword } = data;
 
-    if (password === '') {
+    if (data?.password === '') {
       tempErrors.password = 'Please enter your new password';
-    } else if (password.length < 8) {
+    } else if (data?.password.length < 8) {
       tempErrors.password = 'Password should be at least 8 characters long';
-    } else if (confirmPassword === '') {
+    } else if (data?.confirmPassword === '') {
       tempErrors.confirmPassword = 'Please confirm your new password';
-    } else if (password !== confirmPassword) {
+    } else if (data?.password !== data?.confirmPassword) {
       tempErrors.confirmPassword = 'Passwords do not match';
     }
 
