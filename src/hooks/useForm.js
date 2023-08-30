@@ -9,6 +9,18 @@ const useForm = (callback, initialState = {}, validate) => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   }, []);
 
+  const handleSubmit = useCallback((e) => {
+    e.preventDefault();
+
+    if (Object.keys(validate(formData)).length > 0) {
+      setErrors(validate(formData));
+      return;
+    }
+
+    callback();
+    setFormData(initialState);
+  }, [callback, formData, initialState, validate]);
+
   return {
     // 
   };
