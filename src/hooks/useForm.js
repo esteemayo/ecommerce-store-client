@@ -22,7 +22,10 @@ const useForm = (callback, initialState = {}, validate) => {
   }, [callback, formData, initialState, validate]);
 
   return {
-    // 
+    formData,
+    errors,
+    handleChange,
+    handleSubmit,
   };
 };
 
