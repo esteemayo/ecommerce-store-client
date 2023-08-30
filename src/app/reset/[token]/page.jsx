@@ -46,6 +46,8 @@ const ResetPassword = () => {
     handleSubmit,
   } = useForm(onSubmitHandler, initialState, validateForm);
 
+  const { password, comfirmPassword } = formData;
+
   return (
     <ClientOnly>
       <Container onMouseOver={() => dispatch(closeSubmenu())}>
@@ -57,6 +59,7 @@ const ResetPassword = () => {
                 type='password'
                 name='password'
                 label='Password'
+                value={password}
                 placeholder='Enter your password'
                 onChange={handleChange}
                 error={errors.password}
@@ -66,6 +69,7 @@ const ResetPassword = () => {
                 type='password'
                 name='confirmPassword'
                 label='Confirm password'
+                value={comfirmPassword}
                 placeholder='Confirm your password'
                 onChange={handleChange}
                 error={errors.confirmPassword}
