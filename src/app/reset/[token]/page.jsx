@@ -52,7 +52,7 @@ const ResetPassword = () => {
         <ResetContainer>
           <Wrapper>
             <Header>Reset your password</Header>
-            <Form onSubmit={onSubmitHandler}>
+            <Form onSubmit={handleSubmit}>
               <FormInput
                 type='password'
                 name='password'
