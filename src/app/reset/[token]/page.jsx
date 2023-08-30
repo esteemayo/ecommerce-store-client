@@ -25,10 +25,6 @@ const ResetPassword = () => {
     handleSubmit,
   } = useForm(onSubmitHandler, initialState, validateForm);
 
-  const [password, setPassword] = useState('');
-  // const [errors, setErrors] = useState({});
-  const [confirmPassword, setConfirmPassword] = useState('');
-
   const validateForm = useCallback((data) => {
     const tempErrors = {};
     const { password, confirmPassword } = data;
