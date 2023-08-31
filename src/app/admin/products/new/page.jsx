@@ -161,16 +161,12 @@ const NewProduct = () => {
                 placeholder='Separate the color with commas'
                 onChange={handleColor}
               />
-              <FormGroup>
-                <FormLabel htmlFor='size'>Size</FormLabel>
-                <FormInput
-                  id='size'
-                  type='text'
-                  name='size'
-                  placeholder='Separate the size with commas'
-                  onChange={handleSize}
-                />
-              </FormGroup>
+              <FormInput
+                name='size'
+                label='Size'
+                placeholder='Separate the size with commas'
+                onChange={handleSize}
+              />
               <FormGroup>
                 <FormLabel htmlFor='category'>Select category</FormLabel>
                 <FormSelect id='category' name='category' onChange={handleChange}>
