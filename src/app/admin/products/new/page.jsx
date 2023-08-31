@@ -179,17 +179,13 @@ const NewProduct = () => {
                 </FormSelect>
                 {errors.category && <FormError message={errors.category} />}
               </FormGroup>
-              <FormGroup>
-                <FormLabel htmlFor='tags'>Product tags</FormLabel>
-                <FormInput
-                  id='tags'
-                  type='text'
-                  name='tags'
-                  placeholder='Separate the tags with commas'
-                  onChange={handleTags}
-                />
-                {errors.tags && <FormError message={errors.tags} />}
-              </FormGroup>
+              <FormInput
+                name='tags'
+                label='Product tags'
+                placeholder='Separate the tags with commas'
+                onChange={handleTags}
+                error={errors.tags}
+              />
               <FormGroup>
                 <label className={labelClasses}>Attach images</label>
                 <input
