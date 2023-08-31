@@ -155,16 +155,12 @@ const NewProduct = () => {
                 onChange={handleChange}
                 error={errors.numberInStock}
               />
-              <FormGroup>
-                <FormLabel htmlFor='color'>Color</FormLabel>
-                <FormInput
-                  id='color'
-                  type='text'
-                  name='color'
-                  placeholder='Separate the color with commas'
-                  onChange={handleColor}
-                />
-              </FormGroup>
+              <FormInput
+                name='color'
+                label='Color'
+                placeholder='Separate the color with commas'
+                onChange={handleColor}
+              />
               <FormGroup>
                 <FormLabel htmlFor='size'>Size</FormLabel>
                 <FormInput
