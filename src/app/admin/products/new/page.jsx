@@ -7,6 +7,7 @@ import { useCallback, useMemo, useState } from 'react';
 import ClientOnly from '@/components/ClientOnly';
 import FormButton from '@/components/form/FormButton';
 import FormError from '@/components/form/FormError';
+import FormInput from '@/components/form/FormInput';
 
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
@@ -112,18 +113,14 @@ const NewProduct = () => {
           <FormWrapper>
             <Header>Create new product</Header>
             <Form onSubmit={handleSubmit}>
-              <FormGroup>
-                <FormLabel htmlFor='name'>Product name</FormLabel>
-                <FormInput
-                  id='name'
-                  type='text'
-                  name='name'
-                  placeholder='Enter product name'
-                  onChange={handleChange}
-                  autoFocus
-                />
-                {errors.name && <FormError message={errors.name} />}
-              </FormGroup>
+              <FormInput
+                name='name'
+                label='Product name'
+                placeholder='Enter product name'
+                onChange={handleChange}
+                error={errors.name}
+                autoFocus
+              />
               <FormGroup>
                 <FormLabel htmlFor='desc'>Description</FormLabel>
                 <TextArea
@@ -320,30 +317,30 @@ const FormLabel = styled.label`
   color:  ${({ theme }) => theme.textLabel};
 `;
 
-const FormInput = styled.input`
-  border: none;
-  display: inline-block;
-  font-family: inherit;
-  font-size: 1.5rem;
-  width: 100%;
-  padding: 1.5rem 1rem;
-  background-color: ${({ theme }) => theme.bgInput};
-  color: #999;
-  border-radius: 0.5rem;
-  outline-color: ${({ theme }) => theme.inputOut};
-  caret-color: ${({ theme }) => theme.inputCaret};
-  transition: all 0.3s ease;
+// const FormInput = styled.input`
+//   border: none;
+//   display: inline-block;
+//   font-family: inherit;
+//   font-size: 1.5rem;
+//   width: 100%;
+//   padding: 1.5rem 1rem;
+//   background-color: ${({ theme }) => theme.bgInput};
+//   color: #999;
+//   border-radius: 0.5rem;
+//   outline-color: ${({ theme }) => theme.inputOut};
+//   caret-color: ${({ theme }) => theme.inputCaret};
+//   transition: all 0.3s ease;
 
-  &:focus {
-    background-color: transparent;
-  }
+//   &:focus {
+//     background-color: transparent;
+//   }
 
-  &::-webkit-input-placeholder {
-    font-weight: 300;
-    font-size: 1.5rem;
-    color: #bbb;
-  }
-`;
+//   &::-webkit-input-placeholder {
+//     font-weight: 300;
+//     font-size: 1.5rem;
+//     color: #bbb;
+//   }
+// `;
 
 const TextArea = styled.textarea`
   border: none;
