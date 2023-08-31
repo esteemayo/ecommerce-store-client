@@ -139,17 +139,14 @@ const NewProduct = () => {
                 onChange={handleChange}
                 error={errors.price}
               />
-              <FormGroup>
-                <FormLabel htmlFor='priceDiscount'>Price discount</FormLabel>
-                <FormInput
-                  id='priceDiscount'
-                  type='number'
-                  name='priceDiscount'
-                  placeholder='Enter price discount'
-                  onChange={handleChange}
-                />
-                {errors.priceDiscount && <FormError message={errors.priceDiscount} />}
-              </FormGroup>
+              <FormInput
+                type='number'
+                name='priceDiscount'
+                label='Price discount'
+                placeholder='Enter price discount'
+                onChange={handleChange}
+                error={errors.priceDiscount}
+              />
               <FormGroup>
                 <FormLabel htmlFor='numberInStock'>Number in stock</FormLabel>
                 <FormInput
