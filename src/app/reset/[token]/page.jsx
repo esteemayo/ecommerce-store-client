@@ -44,7 +44,7 @@ const ResetPassword = () => {
     errors,
     handleChange,
     handleSubmit,
-  } = useForm(onSubmitHandler, initialState, validateForm);
+  } = useForm(onSubmitHandler, { password: '', confirmPassword: '' }, validateForm);
 
   return (
     <ClientOnly>
