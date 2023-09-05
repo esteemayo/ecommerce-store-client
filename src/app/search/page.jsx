@@ -39,7 +39,7 @@ const Search = () => {
 }
 
 const Container = styled.div`
-  padding: 8rem 0;
+  padding: 10rem 0;
 `;
 
 export default Search;
