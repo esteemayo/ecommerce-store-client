@@ -30,6 +30,10 @@ const Navbar = () => {
 
   const [isHover, setIsHover] = useState(false);
 
+  const handleMouseOver = useCallback(() => {
+    setIsHover(true);
+  }, []);
+
   const displaySubmenu = useCallback((e) => {
     e.stopPropagation();
 
