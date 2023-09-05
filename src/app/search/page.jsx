@@ -2,6 +2,7 @@
 
 import styled from 'styled-components';
 import { useDispatch } from 'react-redux';
+import { useCallback } from 'react';
 
 import ClientOnly from '@/components/ClientOnly';
 import ProductList from '@/components/products/ProductList';
