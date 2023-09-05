@@ -16,7 +16,7 @@ const Container = styled.button`
   border: none;
   font-size: 2rem;
   background-color: transparent;
-  color: ${({ theme }) => theme.bgModeIcon};
+  color: ${({ theme }) => theme.bgToggleModeIcon};
   outline-color: var(--clr-primary-green);
   cursor: pointer;
 
