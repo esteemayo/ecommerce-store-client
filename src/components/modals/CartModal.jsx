@@ -36,6 +36,13 @@ const CartModal = ({ product, isOpen, onClose, onSelect }) => {
     handleReset,
   } = useAddToCart(product);
 
+  const handleCloseModal = useCallback(() => {
+    setShowModal(false);
+    onClose();
+    onSelect(null);
+    handleReset();
+  }, [onClose, onSelect, handleReset]);
+
   const closeModalHandler = useCallback((e) => {
     e.stopPropagation();
 
@@ -43,13 +50,6 @@ const CartModal = ({ product, isOpen, onClose, onSelect }) => {
       handleCloseModal();
     }
   }, [handleCloseModal]);
-
-  const handleCloseModal = useCallback(() => {
-    setShowModal(false);
-    onClose();
-    onSelect(null);
-    handleReset();
-  }, [onClose, onSelect, handleReset]);
 
   const activeModal = useMemo(() => {
     return showModal ? 'show' : '';
