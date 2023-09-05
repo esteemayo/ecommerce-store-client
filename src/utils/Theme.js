@@ -29,7 +29,7 @@ export const darkTheme = {
   textScroll: '#d6d9db',
   boxScroll: '0 0.4rem 1.2rem rgba(136, 135, 135, 0.3)',
   boxScrollHov: 'rgb(136, 135, 135, 0.25) 0 0.4rem 2rem',
-  bgCarouselBtn: '#121212',
+  bgCarouselBtn: '#3b3b3b',
   bgCarouselBtnHov: 'hsla(0, 0%, 100%, 0.4)',
   textCarouselBtn: '#d6d9db',
   bgCarActiveBtn: '#121212',
