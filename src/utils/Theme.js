@@ -22,7 +22,7 @@ export const darkTheme = {
   textReviewer: '#cfd0d1',
   textRevBtn: '#797979',
   bgRevImg: '#b8b7b7',
-  bgRevArrowBtn: '#121212',
+  bgRevArrowBtn: '#3b3b3b',
   textRevArrowBtn: '#e2e4e4',
   boxRev: '0 0.4rem 1.2rem rgba(143, 142, 142, 0.4)',
   bgScroll: '#121212',
