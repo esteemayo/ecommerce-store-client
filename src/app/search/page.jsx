@@ -6,6 +6,7 @@ import { useDispatch } from 'react-redux';
 
 import ClientOnly from '@/components/ClientOnly';
 import ProductList from '@/components/products/ProductList';
+import ProductBox from '@/components/products/ProductBox';
 
 import { storeProducts } from '@/data';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
