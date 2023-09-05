@@ -28,10 +28,6 @@ const Products = () => {
 
   const { category, size, color, price, products, sortedProducts } = values;
 
-  const handleClose = useCallback(() => {
-    dispatch(closeSubmenu());
-  }, [dispatch]);
-
   const handleChange = useCallback(({ target: input }) => {
     const { name, value } = input;
     setValues((prev) => ({ ...prev, [name]: value }));
