@@ -94,6 +94,7 @@ const Navbar = () => {
         </ListContainer>
         <ButtonContainer>
           <DarkModeToggle />
+          <SearchIcon onOpen={onOpen} />
           {!user ? (
             <LoginButton
               isHover={isHover}
@@ -102,7 +103,6 @@ const Navbar = () => {
             />
           ) : (
             <>
-              <SearchIcon onOpen={onOpen} />
               <CartQuantity amount={qty} />
             </>
           )}
