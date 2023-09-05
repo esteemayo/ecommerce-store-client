@@ -12,7 +12,6 @@ import { storeProducts } from '@/data';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
 const Search = () => {
-  const dispatch = useDispatch();
   const [products, setProducts] = useState(storeProducts);
 
   return (
