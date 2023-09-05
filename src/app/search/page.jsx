@@ -36,4 +36,8 @@ const Search = () => {
   );
 }
 
+const ErrorContainer = styled.div`
+  
+`;
+
 export default Search;
