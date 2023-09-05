@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Link from 'next/link';
 import PropTypes from 'prop-types';
 import Image from 'next/image';
+import { useMemo } from 'react';
 
 import StarRating from '../StarRating';
 
