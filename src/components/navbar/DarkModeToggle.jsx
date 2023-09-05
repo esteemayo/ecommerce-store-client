@@ -47,14 +47,14 @@ const Icon = styled.div`
 
   svg {
     font-size: 1.5rem;
-    color: ${({ theme }) => theme.bgModeIcon};
+    color: ${({ theme }) => theme.bgModeToggleIcon};
   }
 `;
 
 const Ball = styled.div`
   width: 1.5rem;
   height: 1.5rem;
-  background-color: ${({ theme }) => theme.bgMode};
+  background-color: ${({ theme }) => theme.bgToggleMode};
   border-radius: 50%;
   position: absolute;
   left: ${({ mode }) => mode === 'false' && '2px'};
@@ -62,7 +62,7 @@ const Ball = styled.div`
   transition: all 0.2s ease;
 
   &:hover {
-    background-color: ${({ theme }) => theme.bgModeHov};
+    background-color: ${({ theme }) => theme.bgToggleModeHov};
   }
 `;
 
