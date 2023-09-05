@@ -6,14 +6,14 @@ import Link from 'next/link';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import PropTypes from 'prop-types';
 
-const LoginButton = ({ isHover, onMouse }) => {
+const LoginButton = ({ isHover, onMouseOver, onMouseLeave }) => {
   return (
     <Container>
       <Link href='/login' passHref>
         <Button
           type='button'
-          onMouseOver={() => onMouse(true)}
-          onMouseLeave={() => onMouse(false)}
+          onMouseOver={onMouseOver}
+          onMouseLeave={onMouseLeave}
         >
           Sign in
           &nbsp;
