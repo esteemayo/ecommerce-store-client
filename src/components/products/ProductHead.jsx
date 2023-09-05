@@ -172,13 +172,13 @@ const ReviewQuantity = styled.span`
 `;
 
 ProductHead.propTypes = {
-  name: PropTypes.string.isRequired,
-  price: PropTypes.number.isRequired,
+  name: PropTypes.string,
+  price: PropTypes.number,
   modal: PropTypes.bool,
-  discount: PropTypes.number.isRequired,
-  priceDiscount: PropTypes.number.isRequired,
-  ratingsAverage: PropTypes.number.isRequired,
-  ratingsQuantity: PropTypes.number.isRequired,
+  discount: PropTypes.number,
+  priceDiscount: PropTypes.number,
+  ratingsAverage: PropTypes.number,
+  ratingsQuantity: PropTypes.number,
 };
 
 export default ProductHead;
