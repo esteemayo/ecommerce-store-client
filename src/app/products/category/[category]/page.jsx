@@ -73,42 +73,40 @@ const ProductCategory = ({ params }) => {
   return (
     <ClientOnly>
       <ProductBox>
-        <>
-          <FilterContainer>
-            <FilterHeading>Filter by</FilterHeading>
-            <FilterWrapper>
-              <FilterLeft>
-                <Filter>
-                  <Label htmlFor='color'>Color</Label>
-                  <Select id='color' name='color' onChange={handleFilter}>
-                    {colors}
-                  </Select>
-                </Filter>
-                <Filter>
-                  <Label htmlFor='size'>Product size</Label>
-                  <Select id='size' name='size' onChange={handleFilter}>
-                    {sizes}
-                  </Select>
-                </Filter>
-              </FilterLeft>
-              <FilterRight>
-                <Filter>
-                  <Label htmlFor='price'>Product price</Label>
-                  <Select id='price' name='price' onChange={(e) => setSort(e.target.value)}>
-                    <Option value='newest'>Newest</Option>
-                    <Option value='asc'>Price (asc)</Option>
-                    <Option value='desc'>Price (desc)</Option>
-                  </Select>
-                </Filter>
-              </FilterRight>
-            </FilterWrapper>
-          </FilterContainer>
-          {category ? (
-            <ProductList products={sortedProducts} />
-          ) : (
-            <ProductList products={products} />
-          )}
-        </>
+        <FilterContainer>
+          <FilterHeading>Filter by</FilterHeading>
+          <FilterWrapper>
+            <FilterLeft>
+              <Filter>
+                <Label htmlFor='color'>Color</Label>
+                <Select id='color' name='color' onChange={handleFilter}>
+                  {colors}
+                </Select>
+              </Filter>
+              <Filter>
+                <Label htmlFor='size'>Product size</Label>
+                <Select id='size' name='size' onChange={handleFilter}>
+                  {sizes}
+                </Select>
+              </Filter>
+            </FilterLeft>
+            <FilterRight>
+              <Filter>
+                <Label htmlFor='price'>Product price</Label>
+                <Select id='price' name='price' onChange={(e) => setSort(e.target.value)}>
+                  <Option value='newest'>Newest</Option>
+                  <Option value='asc'>Price (asc)</Option>
+                  <Option value='desc'>Price (desc)</Option>
+                </Select>
+              </Filter>
+            </FilterRight>
+          </FilterWrapper>
+        </FilterContainer>
+        {category ? (
+          <ProductList products={sortedProducts} />
+        ) : (
+          <ProductList products={products} />
+        )}
       </ProductBox>
     </ClientOnly>
   );
