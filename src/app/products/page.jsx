@@ -8,6 +8,7 @@ import ProductList from '@/components/products/ProductList';
 import Pagination from '@/components/Pagination';
 import ProductFilter from '@/components/products/ProductFilter';
 import ClientOnly from '@/components/ClientOnly';
+import ProductBox from '@/components/products/ProductBox';
 
 import { storeProducts } from '@/data';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
