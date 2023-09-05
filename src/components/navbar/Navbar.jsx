@@ -97,7 +97,8 @@ const Navbar = () => {
           {!user ? (
             <LoginButton
               isHover={isHover}
-              onMouse={setIsHover}
+              onMouseOver={handleMouseOver}
+              onMouseLeave={handleMouseLeave}
             />
           ) : (
             <>
