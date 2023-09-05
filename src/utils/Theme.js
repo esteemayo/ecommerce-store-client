@@ -131,6 +131,7 @@ export const darkTheme = {
   bgBtnModalOut: '#272727',
   bgImg: '#201f1f',
   bgImgIcon: '#cfd0d1',
+  bgSignInBtn: '#cfd0d1',
 };
 
 export const lightTheme = {
@@ -266,4 +267,5 @@ export const lightTheme = {
   bgBtnModalOut: '#a9c9c1',
   bgImg: '#d5dae7',
   bgImgIcon: 'var(--clr-white)',
+  bgSignInBtn: 'var(--clr-primary-green)',
 };
