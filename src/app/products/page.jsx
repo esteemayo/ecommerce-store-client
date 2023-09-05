@@ -14,7 +14,6 @@ import { storeProducts } from '@/data';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
 const Products = () => {
-  const dispatch = useDispatch();
   const [values, setValues] = useState({
     category: 'all',
     size: '',
