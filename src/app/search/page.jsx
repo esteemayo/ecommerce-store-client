@@ -19,7 +19,7 @@ const Search = () => {
 
   return (
     <ClientOnly>
-      <Container>
+      <Container onMouseOver={handleClose}>
         Search
       </Container>
     </ClientOnly>
