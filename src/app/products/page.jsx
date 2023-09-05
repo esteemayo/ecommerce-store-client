@@ -25,6 +25,10 @@ const Products = () => {
     sortedProducts: [],
   });
 
+  const handleClose = useCallback(() => {
+    dispatch(closeSubmenu());
+  }, [dispatch]);
+
   const handleChange = useCallback(({ target: input }) => {
     const { name, value } = input;
     setValues((prev) => ({ ...prev, [name]: value }));
@@ -70,7 +74,7 @@ const Products = () => {
 
   return (
     <ClientOnly>
-      <Container onMouseOver={() => dispatch(closeSubmenu())}>
+      <Container onMouseOver={handleClose}>
         <Wrapper>
           <ProductFilter
             {...values}
