@@ -27,9 +27,7 @@ const ReviewItem = ({ user, rating, review }) => {
           </RatingContainer>
           <ReviewContainer>
             <Review>{review}</Review>
-            <Reviewer>
-              {reviewer}
-            </Reviewer>
+            <Reviewer>{reviewer}</Reviewer>
           </ReviewContainer>
           <Button>
             <Link href='/products' passHref>
