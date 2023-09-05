@@ -102,9 +102,7 @@ const Navbar = () => {
               onMouseLeave={handleMouseLeave}
             />
           ) : (
-            <>
-              <CartQuantity amount={qty} />
-            </>
+            <CartQuantity amount={qty} />
           )}
         </ButtonContainer>
       </Wrapper>
