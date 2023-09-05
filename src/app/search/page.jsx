@@ -18,10 +18,12 @@ const Search = () => {
 
   if (products.length < 1) {
     bodyContent = (
-      <EmptyProduct
-        src='/img/no-result.png'
-        title='No results matches your search criteria'
-      />
+      <Container>
+        <EmptyProduct
+          src='/img/no-result.png'
+          title='No results matches your search criteria'
+        />
+      </Container>
     );
   } else {
     bodyContent = <ProductList products={products} />;
@@ -36,7 +38,7 @@ const Search = () => {
   );
 }
 
-const ErrorContainer = styled.div`
+const Container = styled.div`
   
 `;
 
