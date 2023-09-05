@@ -45,7 +45,7 @@ const Button = styled.button`
   background-color: ${({ theme }) => theme.bgSignInBtn};
   color: ${({ theme }) => theme.textSignInBtn};
   border-radius: 10rem;
-  outline-color: var(--clr-primary-green);
+  outline-color: ${({ theme }) => theme.bgSignInBtn};
   cursor: pointer;
   transition: all 0.2s ease;
   position: relative;
