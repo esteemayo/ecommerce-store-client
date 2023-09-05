@@ -9,7 +9,6 @@ import ProductList from '@/components/products/ProductList';
 import ProductBox from '@/components/products/ProductBox';
 
 import { storeProducts } from '@/data';
-import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
 const Search = () => {
   const [products, setProducts] = useState(storeProducts);
