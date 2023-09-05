@@ -31,4 +31,8 @@ const Container = styled.main`
   background-color: ${({ theme }) => theme.bg};
 `;
 
+const Wrapper = styled.div`
+
+`;
+
 export default Search;
