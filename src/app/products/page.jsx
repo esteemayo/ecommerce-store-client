@@ -25,6 +25,8 @@ const Products = () => {
     sortedProducts: [],
   });
 
+  const { category, size, color, price, products, sortedProducts } = values;
+
   const handleClose = useCallback(() => {
     dispatch(closeSubmenu());
   }, [dispatch]);
@@ -33,8 +35,6 @@ const Products = () => {
     const { name, value } = input;
     setValues((prev) => ({ ...prev, [name]: value }));
   }, []);
-
-  const { category, size, color, price, products, sortedProducts } = values;
 
   useEffect(() => {
     let tempProducts = [];
