@@ -133,7 +133,7 @@ export const darkTheme = {
   bgImgIcon: '#cfd0d1',
   bgSignInBtn: '#373737',
   textSignInBtn: '#cfd0d1',
-  bgSignInBtnHov: 'hsla(0, 0%, 100%, 0.15)',
+  bgSignInBtnHov: 'hsla(0, 0%, 100%, 0.2)',
 };
 
 export const lightTheme = {
