@@ -12,6 +12,7 @@ import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
 const Search = () => {
   const dispatch = useDispatch();
+  const [products, setProducts] = useState(storeProducts);
 
   const handleClose = useCallback(() => {
     dispatch(closeSubmenu());
