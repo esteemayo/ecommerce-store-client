@@ -32,7 +32,7 @@ export const darkTheme = {
   bgCarouselBtn: '#3b3b3b',
   bgCarouselBtnHov: 'hsla(0, 0%, 100%, 0.4)',
   textCarouselBtn: '#d6d9db',
-  bgCarActiveBtn: '#121212',
+  bgCarActiveBtn: '#3b3b3b',
   bgActiveBtn: '#d6d9db',
   boxCat: 'none',
   textCat: '#d6d9db',
