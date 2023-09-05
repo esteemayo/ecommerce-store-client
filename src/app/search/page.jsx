@@ -1,5 +1,6 @@
 'use client';
 
+import styled from 'styled-components';
 import { useState } from 'react';
 
 import ProductBox from '@/components/products/ProductBox';
