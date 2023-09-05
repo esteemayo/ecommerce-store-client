@@ -4,9 +4,9 @@ import styled from 'styled-components';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 
+import ProductBox from '@/components/products/ProductBox';
 import ClientOnly from '@/components/ClientOnly';
 import ProductList from '@/components/products/ProductList';
-import ProductBox from '@/components/products/ProductBox';
 
 import { storeProducts } from '@/data';
 
