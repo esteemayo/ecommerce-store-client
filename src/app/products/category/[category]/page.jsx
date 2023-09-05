@@ -2,7 +2,6 @@
 
 import styled from 'styled-components';
 import { useCallback, useEffect, useState } from 'react';
-import { useDispatch } from 'react-redux';
 
 import ProductBox from '@/components/products/ProductBox';
 import ClientOnly from '@/components/ClientOnly';
