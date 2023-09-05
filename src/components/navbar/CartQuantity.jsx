@@ -24,7 +24,7 @@ const Container = styled.div`
     &:link,
     &:visited {
       text-decoration: none;
-      color: ${({ theme }) => theme.bgModeIcon};
+      color: ${({ theme }) => theme.bgToggleModeIcon};
       outline-color: var(--clr-primary-green);
     }
 
