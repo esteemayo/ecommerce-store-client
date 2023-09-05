@@ -15,6 +15,12 @@ const FileUploadModal = () => {
   const [showModal, setShowModal] = useState(isOpen);
   const [file, setFile] = useState(null);
 
+  const handleClose = useCallback(() => {
+    setShowModal(false);
+    onClose();
+    file && setFile(null);
+  }, [file, onClose]);
+
   const closeModalHandler = useCallback((e) => {
     e.stopPropagation();
 
@@ -22,12 +28,6 @@ const FileUploadModal = () => {
       handleClose();
     }
   }, [handleClose]);
-
-  const handleClose = useCallback(() => {
-    setShowModal(false);
-    onClose();
-    file && setFile(null);
-  }, [file, onClose]);
 
   const handleUpload = useCallback(() => {
     console.log(file);
