@@ -20,6 +20,10 @@ const UpdateData = ({ onCancel }) => {
     setData((prev) => ({ ...prev, [name]: value }));
   }, []);
 
+  const handleClear = useCallback(() => {
+    setData(initialState);
+  }, []);
+
   const validateForm = useCallback(() => {
     const errors = {};
     const { email, password } = data;
@@ -50,10 +54,6 @@ const UpdateData = ({ onCancel }) => {
     console.log({ ...data });
     handleClear();
   }, [data, validateForm, handleClear]);
-
-  const handleClear = useCallback(() => {
-    setData(initialState);
-  }, []);
 
   const closeHandler = useCallback(() => {
     onCancel();
