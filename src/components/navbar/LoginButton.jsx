@@ -42,7 +42,7 @@ const Button = styled.button`
   font-weight: 600;
   font-size: 1.5rem;
   padding: 0.75rem 2rem;
-  background-color: var(--clr-primary-green);
+  background-color: ${({ theme }) => theme.bgSignInBtn};
   color: var(--clr-white);
   border-radius: 10rem;
   outline-color: var(--clr-primary-green);
