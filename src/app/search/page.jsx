@@ -41,6 +41,10 @@ const Wrapper = styled.div`
   @media only screen and (max-width: 64em) {
     max-width: 100rem;
   }
+
+  @media only screen and (max-width: 59.375em) {
+    max-width: 80rem;
+  }
 `;
 
 export default Search;
