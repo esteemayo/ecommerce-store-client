@@ -2,7 +2,6 @@
 
 import styled from 'styled-components';
 import { useCallback, useEffect, useState } from 'react';
-import { useDispatch } from 'react-redux';
 
 import ProductList from '@/components/products/ProductList';
 import Pagination from '@/components/Pagination';
