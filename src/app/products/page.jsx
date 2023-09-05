@@ -1,6 +1,5 @@
 'use client';
 
-import styled from 'styled-components';
 import { useCallback, useEffect, useState } from 'react';
 
 import ProductList from '@/components/products/ProductList';
