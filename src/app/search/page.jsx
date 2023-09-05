@@ -22,7 +22,7 @@ const Search = () => {
     <ClientOnly>
       <Container onMouseOver={handleClose}>
         <Wrapper>
-          Search
+          <ProductList products={products} />
         </Wrapper>
       </Container>
     </ClientOnly>
