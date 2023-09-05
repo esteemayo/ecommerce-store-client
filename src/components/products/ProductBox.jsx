@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
-const ProductBox = ({ children, type }) => {
+const ProductBox = ({ children }) => {
   const dispatch = useDispatch();
 
   const handleClose = useCallback(() => {
@@ -13,7 +13,7 @@ const ProductBox = ({ children, type }) => {
   }, [dispatch]);
 
   return (
-    <Container type={type} onMouseOver={handleClose}>
+    <Container onMouseOver={handleClose}>
       <Wrapper>{children}</Wrapper>
     </Container>
   );
@@ -21,7 +21,6 @@ const ProductBox = ({ children, type }) => {
 
 const Container = styled.main`
   width: 100vw;
-  padding: ${({ type }) => type && '15rem 0'};
   background-color: ${({ theme }) => theme.bg};
 `;
 
@@ -55,7 +54,6 @@ const Wrapper = styled.div`
 
 ProductBox.propTypes = {
   children: PropTypes.any.isRequired,
-  type: PropTypes.bool,
 };
 
 export default ProductBox;
