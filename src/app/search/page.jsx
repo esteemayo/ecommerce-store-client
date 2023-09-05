@@ -21,11 +21,9 @@ const Search = () => {
 
   return (
     <ClientOnly>
-      <Container onMouseOver={handleClose}>
-        <Wrapper>
-          <ProductList products={products} />
-        </Wrapper>
-      </Container>
+      <ProductBox>
+        <ProductList products={products} />
+      </ProductBox>
     </ClientOnly>
   );
 }
