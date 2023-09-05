@@ -5,9 +5,9 @@ import { useDispatch } from 'react-redux';
 
 import ClientOnly from '@/components/ClientOnly';
 import ProductList from '@/components/products/ProductList';
-import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
 import { storeProducts } from '@/data';
+import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
 const Search = () => {
   const dispatch = useDispatch();
