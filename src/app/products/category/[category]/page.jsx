@@ -7,8 +7,6 @@ import ProductBox from '@/components/products/ProductBox';
 import ClientOnly from '@/components/ClientOnly';
 import ProductList from '@/components/products/ProductList';
 
-import { closeSubmenu } from '@/features/submenu/submenuSlice';
-
 import { getUnique } from '@/utils';
 import { storeProducts } from '@/data';
 
