@@ -9,6 +9,8 @@ import { closeSubmenu } from '@/features/submenu/submenuSlice';
 import { storeProducts } from '@/data';
 
 const Search = () => {
+  const dispatch = useDispatch();
+
   return (
     <div>
       Search
