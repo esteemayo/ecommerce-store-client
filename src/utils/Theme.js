@@ -131,7 +131,7 @@ export const darkTheme = {
   bgBtnModalOut: '#272727',
   bgImg: '#201f1f',
   bgImgIcon: '#cfd0d1',
-  bgSignInBtn: '#cfd0d1',
+  bgSignInBtn: '#373737',
 };
 
 export const lightTheme = {
