@@ -9,6 +9,8 @@ import ProductCard from './ProductCard';
 import CartModal from '../modals/CartModal';
 
 import { storeProducts } from '@/data';
+import { StyledWrapper } from '../StyledWrapper';
+
 import useCartModal from '@/hooks/useCartModal';
 
 const FeaturedProducts = () => {
@@ -19,7 +21,7 @@ const FeaturedProducts = () => {
 
   return (
     <Container>
-      <Wrapper>
+      <StyledWrapper>
         <Header title='Featured products' />
         <ProductsContainer>
           {featuredProducts
@@ -36,7 +38,7 @@ const FeaturedProducts = () => {
             })
           }
         </ProductsContainer>
-      </Wrapper>
+      </StyledWrapper>
       <CartModal
         product={isSelectedProduct}
         isOpen={isOpen}
