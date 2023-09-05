@@ -11,7 +11,6 @@ import ClientOnly from '@/components/ClientOnly';
 import ProductBox from '@/components/products/ProductBox';
 
 import { storeProducts } from '@/data';
-import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
 const Products = () => {
   const [values, setValues] = useState({
