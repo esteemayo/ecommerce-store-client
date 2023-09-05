@@ -76,8 +76,8 @@ const ProductCategory = ({ params }) => {
 
   return (
     <ClientOnly>
-      <Container onMouseOver={() => dispatch(closeSubmenu())}>
-        <Wrapper>
+      <ProductBox>
+        <>
           <FilterContainer>
             <FilterHeading>Filter by</FilterHeading>
             <FilterWrapper>
@@ -112,8 +112,8 @@ const ProductCategory = ({ params }) => {
           ) : (
             <ProductList products={products} />
           )}
-        </Wrapper>
-      </Container>
+        </>
+      </ProductBox>
     </ClientOnly>
   );
 }
