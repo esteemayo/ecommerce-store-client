@@ -13,9 +13,11 @@ const Search = () => {
   const dispatch = useDispatch();
 
   return (
-    <Container>
-      Search
-    </Container>
+    <ClientOnly>
+      <Container>
+        Search
+      </Container>
+    </ClientOnly>
   );
 }
 
