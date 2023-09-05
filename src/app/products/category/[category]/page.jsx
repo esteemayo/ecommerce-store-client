@@ -15,7 +15,6 @@ import { storeProducts } from '@/data';
 
 const ProductCategory = ({ params }) => {
   const { category } = params;
-  const dispatch = useDispatch();
 
   const [sort, setSort] = useState('newest');
   const [products, setProducts] = useState(storeProducts);
