@@ -18,4 +18,8 @@ const Search = () => {
   );
 }
 
+const Container = styled.main`
+
+`;
+
 export default Search;
