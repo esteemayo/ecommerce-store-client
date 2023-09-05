@@ -12,9 +12,9 @@ const Search = () => {
   const dispatch = useDispatch();
 
   return (
-    <div>
+    <Container>
       Search
-    </div>
+    </Container>
   );
 }
 
