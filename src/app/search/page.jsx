@@ -3,11 +3,12 @@
 import { useState } from 'react';
 
 import ProductBox from '@/components/products/ProductBox';
-import ClientOnly from '@/components/ClientOnly';
+import EmptyProduct from '@/components/products/EmptyProduct';
 import ProductList from '@/components/products/ProductList';
 
+import ClientOnly from '@/components/ClientOnly';
+
 import { storeProducts } from '@/data';
-import EmptyProduct from '@/components/products/EmptyProduct';
 
 const Search = () => {
   const [products, setProducts] = useState(storeProducts);
