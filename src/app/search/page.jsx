@@ -11,7 +11,7 @@ import ClientOnly from '@/components/ClientOnly';
 import { storeProducts } from '@/data';
 
 const Search = () => {
-  const [products, setProducts] = useState(storeProducts);
+  const [products, setProducts] = useState([]);
 
   let bodyContent;
 
