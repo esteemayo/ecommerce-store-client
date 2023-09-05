@@ -1,6 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
+import { useDispatch } from 'react-redux';
 
 import ProductList from '@/components/products/ProductList';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
