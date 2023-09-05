@@ -36,6 +36,10 @@ const ProductCard = ({ product, onOpen, onSelect }) => {
     return product.price + product.discount;
   }, [product]);
 
+  const priceLabel = useMemo(() => {
+    return Math.round(product.price);
+  }, [product]);
+
   return (
     <Container>
       <ImageContainer>
@@ -66,7 +70,7 @@ const ProductCard = ({ product, onOpen, onSelect }) => {
               <FormatPrice value={initialPrice} />
             </Discount>
             <Price>
-              <FormatPrice value={product.price} />
+              <FormatPrice value={priceLabel} />
             </Price>
           </Prices>
           {product.inStock && <InStock>In stock</InStock>}
