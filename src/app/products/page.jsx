@@ -75,17 +75,15 @@ const Products = () => {
 
   return (
     <ClientOnly>
-      <Container onMouseOver={handleClose}>
-        <Wrapper>
-          <ProductFilter
-            {...values}
-            products={products}
-            onChange={handleChange}
-          />
-          <ProductList products={sortedProducts} />
-          {products.length > 0 && <Pagination />}
-        </Wrapper>
-      </Container>
+      <ProductBox>
+        <ProductFilter
+          {...values}
+          products={products}
+          onChange={handleChange}
+        />
+        <ProductList products={sortedProducts} />
+        {products.length > 0 && <Pagination />}
+      </ProductBox>
     </ClientOnly>
   );
 }
