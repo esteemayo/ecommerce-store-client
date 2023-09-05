@@ -9,6 +9,10 @@ import { useMemo } from 'react';
 import StarRating from '../StarRating';
 
 const ReviewItem = ({ user, rating, review }) => {
+  const reviewer = useMemo(() => {
+    return `${user.name.split(' ')[0]} ${user.name.split(' ').pop().charAt(0)}.`;
+  }, [user]);
+
   return (
     <Container>
       <Wrapper>
@@ -24,7 +28,7 @@ const ReviewItem = ({ user, rating, review }) => {
           <ReviewContainer>
             <Review>{review}</Review>
             <Reviewer>
-              {user.name.split(' ')[0]} {user.name.split(' ').pop().charAt(0)}.
+              {reviewer}
             </Reviewer>
           </ReviewContainer>
           <Button>
