@@ -14,9 +14,7 @@ const ProductBox = ({ children }) => {
 
   return (
     <Container onMouseOver={handleClose}>
-      <Wrapper>
-        {children}
-      </Wrapper>
+      <Wrapper>{children}</Wrapper>
     </Container>
   );
 }
