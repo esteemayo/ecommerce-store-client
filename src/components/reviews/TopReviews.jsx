@@ -9,6 +9,7 @@ import Header from '../Header';
 import ReviewItem from './ReviewItem';
 
 import { topReviews } from '@/data';
+import { StyledWrapper } from '../StyledWrapper';
 
 const TopReviews = () => {
   const reviewRef = useRef();
@@ -35,9 +36,9 @@ const TopReviews = () => {
 
   return (
     <Container>
-      <HeadingContainer>
+      <StyledWrapper>
         <Header title='You didn&apos;t hear it from us' />
-      </HeadingContainer>
+      </StyledWrapper>
       <Wrapper>
         <IconButton
           direction='left'
