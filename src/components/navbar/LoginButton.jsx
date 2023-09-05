@@ -60,7 +60,7 @@ const Button = styled.button`
   }
 
   &:hover {
-    background-color: hsla(0, 0%, 100%, 0.4);
+    background-color: ${({ theme }) => theme.bgSignInBtnHov};
     opacity: 1;
   }
 `;
