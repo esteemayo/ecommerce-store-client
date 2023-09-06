@@ -151,11 +151,6 @@ const Login = () => {
   );
 }
 
-const Container = styled.main`
-  width: 100vw;
-  background-color: ${({ theme }) => theme.bg};
-`;
-
 const Text = styled.p`
   display: block;
   text-align: center;
