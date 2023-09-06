@@ -21,14 +21,15 @@ const ResetPassword = () => {
 
   const validateForm = (data) => {
     const tempErrors = {};
+    const { password, confirmPassword } = data;
 
-    if (data?.password === '') {
+    if (password === '') {
       tempErrors.password = 'Please enter your new password';
-    } else if (data?.password.length < 8) {
+    } else if (password.length < 8) {
       tempErrors.password = 'Password should be at least 8 characters long';
-    } else if (data?.confirmPassword === '') {
+    } else if (confirmPassword === '') {
       tempErrors.confirmPassword = 'Please confirm your new password';
-    } else if (data?.password !== data?.confirmPassword) {
+    } else if (password !== confirmPassword) {
       tempErrors.confirmPassword = 'Passwords do not match';
     }
 
