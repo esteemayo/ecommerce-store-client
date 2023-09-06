@@ -17,8 +17,6 @@ const initialState = {
 };
 
 const ResetPassword = () => {
-  const dispatch = useDispatch();
-
   const validateForm = (data) => {
     const tempErrors = {};
     const { password, confirmPassword } = data;
