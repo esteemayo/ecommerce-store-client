@@ -1,7 +1,6 @@
 'use client';
 
 import styled from 'styled-components';
-import { useDispatch } from 'react-redux';
 import { useCallback, useState } from 'react';
 
 import AuthInfo from '@/components/form/FormInfo';
