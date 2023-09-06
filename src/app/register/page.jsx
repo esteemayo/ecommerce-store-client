@@ -14,6 +14,7 @@ import ClientOnly from '@/components/ClientOnly';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
 import { registerInputs } from '@/formData';
+import { StyledBox } from '@/components/form/StyledBox';
 
 const initialState = {
   name: '',
@@ -82,8 +83,8 @@ const Register = () => {
 
   return (
     <ClientOnly>
-      <>
-        <FormBox>
+      <FormBox>
+        <StyledBox>
           <Header>Register your account</Header>
           <Form onSubmit={handleSubmit}>
             {registerInputs.map((input) => {
@@ -120,13 +121,13 @@ const Register = () => {
               disabled={perc !== null && perc < 100}
             />
           </Form>
-        </FormBox>
+        </StyledBox>
         <AuthInfo
           url='/login'
           text='Already have an account?'
           label='Sign in'
         />
-      </>
+      </FormBox>
     </ClientOnly>
   );
 }
