@@ -25,8 +25,6 @@ const initialState = {
 };
 
 const Register = () => {
-  const dispatch = useDispatch();
-
   const [file, setFile] = useState(null);
   const [errors, setErrors] = useState({});
   const [perc, setPerc] = useState(null);
