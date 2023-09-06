@@ -9,7 +9,6 @@ import FormInput from '@/components/form/FormInput';
 import FormBox from '@/components/form/FormBox';
 
 import useForm from '@/hooks/useForm';
-import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
 const initialState = {
   password: '',
