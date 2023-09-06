@@ -3,8 +3,14 @@ import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { useCallback } from 'react';
 
+import { closeSubmenu } from '@/features/submenu/submenuSlice';
+
 const FormBox = ({ children }) => {
   const dispatch = useDispatch();
+
+  const handleClose = useCallback(() => {
+    dispatch(closeSubmenu());
+  }, [dispatch]);
 
   return (
     <Container>
