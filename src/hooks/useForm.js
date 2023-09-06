@@ -16,6 +16,7 @@ const useForm = (callback, initialState = {}, validate) => {
       setErrors(validate(formData));
       return;
     }
+    setErrors({});
 
     callback();
     setFormData(initialState);

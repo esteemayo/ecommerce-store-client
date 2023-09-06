@@ -36,8 +36,8 @@ const ResetPassword = () => {
   }, []);
 
   const onSubmitHandler = useCallback(() => {
-    console.log({ ...formData });
-  }, [formData]);
+    console.log({ name: '' });
+  }, []);
 
   const {
     formData,
