@@ -113,7 +113,10 @@ const NewProduct = () => {
     <ClientOnly>
       <FormBox>
         <StyledBox>
-          <Header>Create new product</Header>
+          <Heading
+            small
+            title='>Create new product'
+          />
           <Form onSubmit={handleSubmit}>
             <FormInput
               name='name'
