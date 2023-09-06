@@ -81,7 +81,10 @@ const Register = () => {
     <ClientOnly>
       <FormBox>
         <StyledBox>
-          <Header>Register your account</Header>
+          <Heading
+            small
+            title='Register your account'
+          />
           <Form onSubmit={handleSubmit}>
             {registerInputs.map((input) => {
               const { id, name, type, label, placeholder } = input;
