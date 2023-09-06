@@ -74,4 +74,8 @@ const Box = styled.div`
   }
 `;
 
+FormBox.propTypes = {
+  children: PropTypes.any.isRequired,
+};
+
 export default FormBox;
