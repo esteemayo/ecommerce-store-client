@@ -9,6 +9,7 @@ import ClientOnly from '@/components/ClientOnly';
 import FormError from '@/components/form/FormError';
 import FormBox from '@/components/form/FormBox';
 import { StyledBox } from '@/components/form/StyledBox';
+import Heading from '@/components/form/Heading';
 import FormInput from '@/components/form/FormInput';
 
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
