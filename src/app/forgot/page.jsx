@@ -48,7 +48,10 @@ const Forgot = () => {
     <ClientOnly>
       <FormBox>
         <StyledBox>
-          <Header>Forgot password</Header>
+          <Heading
+            small
+            title='Forgot password'
+          />
           <Form onSubmit={handleSubmit}>
             <FormInput
               type='email'
