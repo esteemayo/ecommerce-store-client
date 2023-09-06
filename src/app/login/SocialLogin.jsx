@@ -32,14 +32,6 @@ const SocialLogin = () => {
 
 const Container = styled.div``;
 
-const Header = styled.h1`
-  display: block;
-  font-weight: 400;
-  font-size: 2rem;
-  text-align: center;
-  color: ${({ theme }) => theme.textFormHeader};
-`;
-
 const Wrapper = styled.div`
   display: flex;
   align-items: center;
