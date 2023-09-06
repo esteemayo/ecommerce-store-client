@@ -1,14 +1,18 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-const Heading = ({ title }) => {
-  return <STyledHeading>{title}</STyledHeading>;
+const Heading = ({ type, title }) => {
+  return (
+    <StyledHeading type={type}>
+      {title}
+    </StyledHeading>
+  );
 }
 
-const STyledHeading = styled.h1`
+const StyledHeading = styled.h1`
   display: block;
-  font-weight: 500;
-  font-size: 2.5rem;
+  font-weight: ${({ type }) => type !== 'login' ? '500' : '400'};
+  font-size: ${({ type }) => type !== 'login' ? ' 2.5rem' : '2rem'};
   text-transform: capitalize;
   text-align: center;
   color: ${({ theme }) => theme.textFormHeader};
