@@ -70,11 +70,6 @@ const Forgot = () => {
   );
 }
 
-const Container = styled.main`
-  width: 100vw;
-  background-color: ${({ theme }) => theme.bg};
-`;
-
 const Form = styled.form`
   margin: 2rem 0;
 `;
