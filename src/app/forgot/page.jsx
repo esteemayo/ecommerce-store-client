@@ -4,11 +4,11 @@ import styled from 'styled-components';
 import { useCallback, useState } from 'react';
 
 import FormButton from '@/components/form/FormButton';
-import ClientOnly from '@/components/ClientOnly';
-import FormInput from '@/components/form/FormInput';
 import FormBox from '@/components/form/FormBox';
+import FormInput from '@/components/form/FormInput';
 import Heading from '@/components/form/Heading';
 
+import ClientOnly from '@/components/ClientOnly';
 import { StyledBox } from '@/components/form/StyledBox';
 
 const Forgot = () => {
