@@ -76,11 +76,6 @@ const ResetPassword = () => {
   );
 }
 
-const Container = styled.main`
-  width: 100vw;
-  background-color: ${({ theme }) => theme.bg};
-`;
-
 const Header = styled.h1`
   display: block;
   font-weight: 500;
