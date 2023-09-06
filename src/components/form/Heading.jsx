@@ -13,7 +13,7 @@ const StyledHeading = styled.h1`
   display: block;
   font-weight: ${({ type }) => type !== 'login' ? '500' : '400'};
   font-size: ${({ type }) => type !== 'login' ? ' 2.5rem' : '2rem'};
-  text-transform: capitalize;
+  text-transform: ${({ type }) => type !== 'login' && 'capitalize'};
   text-align: center;
   color: ${({ theme }) => theme.textFormHeader};
 `;
