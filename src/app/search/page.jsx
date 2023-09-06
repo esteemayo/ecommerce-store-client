@@ -9,7 +9,7 @@ import ProductList from '@/components/products/ProductList';
 import { storeProducts } from '@/data';
 
 const Search = () => {
-  const [products, setProducts] = useState([]);
+  const [products, setProducts] = useState(storeProducts);
 
   return (
     <ClientOnly>
