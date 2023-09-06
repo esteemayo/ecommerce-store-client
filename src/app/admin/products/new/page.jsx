@@ -12,8 +12,6 @@ import { StyledBox } from '@/components/form/StyledBox';
 import Heading from '@/components/form/Heading';
 import FormInput from '@/components/form/FormInput';
 
-import { closeSubmenu } from '@/features/submenu/submenuSlice';
-
 const initialState = {
   name: '',
   desc: '',
