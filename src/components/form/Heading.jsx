@@ -19,6 +19,7 @@ const StyledHeading = styled.h1`
 `;
 
 Heading.propTypes = {
+  type: PropTypes.string,
   title: PropTypes.string.isRequired,
 };
 
