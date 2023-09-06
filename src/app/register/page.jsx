@@ -6,12 +6,12 @@ import { useCallback, useState } from 'react';
 import AuthInfo from '@/components/form/FormInfo';
 import FormButton from '@/components/form/FormButton';
 import FormBox from '@/components/form/FormBox';
+import { StyledBox } from '@/components/form/StyledBox';
 import FormInput from '@/components/form/FormInput';
 
 import ClientOnly from '@/components/ClientOnly';
 
 import { registerInputs } from '@/formData';
-import { StyledBox } from '@/components/form/StyledBox';
 
 const initialState = {
   name: '',
