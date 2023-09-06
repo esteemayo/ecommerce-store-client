@@ -24,7 +24,6 @@ import {
 } from '@/utils';
 
 const Login = () => {
-  const dispatch = useDispatch();
   const { mode } = useSelector((state) => ({ ...state.darkMode }));
 
   const usernameRef = useRef();
