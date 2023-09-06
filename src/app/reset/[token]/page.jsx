@@ -6,6 +6,7 @@ import FormButton from '@/components/form/FormButton';
 import ClientOnly from '@/components/ClientOnly';
 import FormInput from '@/components/form/FormInput';
 import FormBox from '@/components/form/FormBox';
+import { StyledBox } from '@/components/form/StyledBox';
 
 import useForm from '@/hooks/useForm';
 
@@ -46,27 +47,29 @@ const ResetPassword = () => {
   return (
     <ClientOnly>
       <FormBox>
-        <Header>Reset your password</Header>
-        <Form onSubmit={handleSubmit}>
-          <FormInput
-            type='password'
-            name='password'
-            label='Password'
-            placeholder='Enter your password'
-            onChange={handleChange}
-            error={errors.password}
-            autoFocus
-          />
-          <FormInput
-            type='password'
-            name='confirmPassword'
-            label='Confirm password'
-            placeholder='Confirm your password'
-            onChange={handleChange}
-            error={errors.confirmPassword}
-          />
-          <FormButton label='Reset password' />
-        </Form>
+        <StyledBox>
+          <Header>Reset your password</Header>
+          <Form onSubmit={handleSubmit}>
+            <FormInput
+              type='password'
+              name='password'
+              label='Password'
+              placeholder='Enter your password'
+              onChange={handleChange}
+              error={errors.password}
+              autoFocus
+            />
+            <FormInput
+              type='password'
+              name='confirmPassword'
+              label='Confirm password'
+              placeholder='Confirm your password'
+              onChange={handleChange}
+              error={errors.confirmPassword}
+            />
+            <FormButton label='Reset password' />
+          </Form>
+        </StyledBox>
       </FormBox>
     </ClientOnly>
   );
