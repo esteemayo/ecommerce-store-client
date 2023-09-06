@@ -10,7 +10,10 @@ import EmptyProduct from './EmptyProduct';
 
 import useCartModal from '@/hooks/useCartModal';
 
-const ProductList = ({ products, title='No results found!' }) => {
+const ProductList = ({
+  products,
+  title = 'No results found!',
+}) => {
   const { isOpen, onOpen, onClose } = useCartModal();
   const [isSelectedProduct, setIsSelectedProduct] = useState({});
 
