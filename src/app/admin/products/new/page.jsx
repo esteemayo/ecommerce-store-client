@@ -110,99 +110,97 @@ const NewProduct = () => {
 
   return (
     <ClientOnly>
-      <Container onMouseOver={() => dispatch(closeSubmenu())}>
-        <Wrapper>
-          <FormWrapper>
-            <Header>Create new product</Header>
-            <Form onSubmit={handleSubmit}>
-              <FormInput
-                name='name'
-                label='Product name'
-                placeholder='Enter product name'
+      <FormBox>
+        <StyledBox>
+          <Header>Create new product</Header>
+          <Form onSubmit={handleSubmit}>
+            <FormInput
+              name='name'
+              label='Product name'
+              placeholder='Enter product name'
+              onChange={handleChange}
+              error={errors.name}
+              autoFocus
+            />
+            <FormGroup>
+              <FormLabel htmlFor='desc'>Description</FormLabel>
+              <TextArea
+                id='desc'
+                name='desc'
+                placeholder='Enter product description'
                 onChange={handleChange}
-                error={errors.name}
-                autoFocus
               />
-              <FormGroup>
-                <FormLabel htmlFor='desc'>Description</FormLabel>
-                <TextArea
-                  id='desc'
-                  name='desc'
-                  placeholder='Enter product description'
-                  onChange={handleChange}
-                />
-                {errors.desc && <FormError message={errors.desc} />}
-              </FormGroup>
-              <FormInput
-                type='number'
-                name='price'
-                label='Price'
-                placeholder='Enter product price'
-                onChange={handleChange}
-                error={errors.price}
+              {errors.desc && <FormError message={errors.desc} />}
+            </FormGroup>
+            <FormInput
+              type='number'
+              name='price'
+              label='Price'
+              placeholder='Enter product price'
+              onChange={handleChange}
+              error={errors.price}
+            />
+            <FormInput
+              type='number'
+              name='priceDiscount'
+              label='Price discount'
+              placeholder='Enter price discount'
+              onChange={handleChange}
+              error={errors.priceDiscount}
+            />
+            <FormInput
+              type='number'
+              name='numberInStock'
+              label='Number in stock'
+              placeholder='Enter number in stock'
+              onChange={handleChange}
+              error={errors.numberInStock}
+            />
+            <FormInput
+              name='color'
+              label='Color'
+              placeholder='Separate the color with commas'
+              onChange={handleColor}
+            />
+            <FormInput
+              name='size'
+              label='Size'
+              placeholder='Separate the size with commas'
+              onChange={handleSize}
+            />
+            <FormGroup>
+              <FormLabel htmlFor='category'>Select category</FormLabel>
+              <FormSelect id='category' name='category' onChange={handleChange}>
+                <Option value=''>Select a category</Option>
+                <Option value='jeans'>Jeans</Option>
+                <Option value='electronics'>Electronics</Option>
+                <Option value='gadgets'>Gadgets</Option>
+                <Option value='shirts'>Shirts</Option>
+                <Option value='snickers'>Snickers</Option>
+              </FormSelect>
+              {errors.category && <FormError message={errors.category} />}
+            </FormGroup>
+            <FormInput
+              name='tags'
+              label='Product tags'
+              placeholder='Separate the tags with commas'
+              onChange={handleTags}
+              error={errors.tags}
+            />
+            <FormGroup>
+              <label className={labelClasses}>Attach images</label>
+              <input
+                type='file'
+                id='file'
+                accept='image/*'
+                onChange={(e) => setFiles(e.target.files)}
+                multiple
               />
-              <FormInput
-                type='number'
-                name='priceDiscount'
-                label='Price discount'
-                placeholder='Enter price discount'
-                onChange={handleChange}
-                error={errors.priceDiscount}
-              />
-              <FormInput
-                type='number'
-                name='numberInStock'
-                label='Number in stock'
-                placeholder='Enter number in stock'
-                onChange={handleChange}
-                error={errors.numberInStock}
-              />
-              <FormInput
-                name='color'
-                label='Color'
-                placeholder='Separate the color with commas'
-                onChange={handleColor}
-              />
-              <FormInput
-                name='size'
-                label='Size'
-                placeholder='Separate the size with commas'
-                onChange={handleSize}
-              />
-              <FormGroup>
-                <FormLabel htmlFor='category'>Select category</FormLabel>
-                <FormSelect id='category' name='category' onChange={handleChange}>
-                  <Option value=''>Select a category</Option>
-                  <Option value='jeans'>Jeans</Option>
-                  <Option value='electronics'>Electronics</Option>
-                  <Option value='gadgets'>Gadgets</Option>
-                  <Option value='shirts'>Shirts</Option>
-                  <Option value='snickers'>Snickers</Option>
-                </FormSelect>
-                {errors.category && <FormError message={errors.category} />}
-              </FormGroup>
-              <FormInput
-                name='tags'
-                label='Product tags'
-                placeholder='Separate the tags with commas'
-                onChange={handleTags}
-                error={errors.tags}
-              />
-              <FormGroup>
-                <label className={labelClasses}>Attach images</label>
-                <input
-                  type='file'
-                  id='file'
-                  accept='image/*'
-                  onChange={(e) => setFiles(e.target.files)}
-                  multiple
-                />
-              </FormGroup>
-              <FormButton label='Create' />
-            </Form>
-          </FormWrapper>
-        </Wrapper>
-      </Container>
+            </FormGroup>
+            <FormButton label='Create' />
+          </Form>
+        </StyledBox>
+      </FormBox>
     </ClientOnly>
   );
 }
