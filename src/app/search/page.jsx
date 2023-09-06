@@ -21,7 +21,7 @@ const Search = () => {
       <Container>
         <EmptyProduct
           src='/img/no-result.png'
-          title='No results matches your search criteria'
+          title='No result matches your search criteria'
         />
       </Container>
     );
