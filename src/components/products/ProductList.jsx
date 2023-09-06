@@ -51,7 +51,7 @@ const ProductList = ({ products }) => {
 
 const Container = styled.section`
   width: 100%;
-  padding: 8rem 0;
+  padding: 10rem 0;
 `;
 
 const ProductsContainer = styled.div`
