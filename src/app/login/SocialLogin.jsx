@@ -8,7 +8,7 @@ const SocialLogin = () => {
   return (
     <Container>
       <Heading
-        type='login'
+        type='small'
         title='Log in with'
       />
       <Wrapper>

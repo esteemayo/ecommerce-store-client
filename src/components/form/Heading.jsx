@@ -11,9 +11,9 @@ const Heading = ({ type, title }) => {
 
 const StyledHeading = styled.h1`
   display: block;
-  font-weight: ${({ type }) => type !== 'login' ? '500' : '400'};
-  font-size: ${({ type }) => type !== 'login' ? ' 2.5rem' : '2rem'};
-  text-transform: ${({ type }) => type !== 'login' && 'capitalize'};
+  font-weight: ${({ type }) => type !== 'small' ? '500' : '400'};
+  font-size: ${({ type }) => type !== 'small' ? ' 2.5rem' : '2rem'};
+  text-transform: ${({ type }) => type !== 'small' && 'capitalize'};
   text-align: center;
   color: ${({ theme }) => theme.textFormHeader};
 `;
