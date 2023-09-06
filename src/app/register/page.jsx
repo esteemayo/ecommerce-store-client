@@ -132,11 +132,6 @@ const Register = () => {
   );
 }
 
-const Container = styled.main`
-  width: 100vw;
-  background-color: ${({ theme }) => theme.bg};
-`;
-
 const RegisterContainer = styled.div`
   width: 100%;
   max-width: 120rem;
