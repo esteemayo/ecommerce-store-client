@@ -11,8 +11,6 @@ import FormInput from '@/components/form/FormInput';
 
 import ClientOnly from '@/components/ClientOnly';
 
-import { closeSubmenu } from '@/features/submenu/submenuSlice';
-
 import { registerInputs } from '@/formData';
 import { StyledBox } from '@/components/form/StyledBox';
 
