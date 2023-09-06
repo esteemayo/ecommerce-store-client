@@ -82,53 +82,51 @@ const Register = () => {
 
   return (
     <ClientOnly>
-      <Container onMouseOver={() => dispatch(closeSubmenu())}>
-        <RegisterContainer>
-          <Wrapper>
-            <Header>Register your account</Header>
-            <Form onSubmit={handleSubmit}>
-              {registerInputs.map((input) => {
-                const { id, name, type, label, placeholder } = input;
-                return (
-                  <FormInput
-                    key={id}
-                    name={name}
-                    label={label}
-                    placeholder={placeholder}
-                    onChange={handleChange}
-                    autoFocus={name === 'name' ? true : false}
-                    error={errors[name]}
+      <>
+        <FormBox>
+          <Header>Register your account</Header>
+          <Form onSubmit={handleSubmit}>
+            {registerInputs.map((input) => {
+              const { id, name, type, label, placeholder } = input;
+              return (
+                <FormInput
+                  key={id}
+                  name={name}
+                  label={label}
+                  placeholder={placeholder}
+                  onChange={handleChange}
+                  autoFocus={name === 'name' ? true : false}
+                  error={errors[name]}
+                />
+              );
+            })}
+            <FormGroup type='file'>
+              {perc !== null && perc < 100 ? (
+                <UploadProgress>Uploading: {perc}%</UploadProgress>
+              ) : (
+                <>
+                  <FormUpload
+                    type='file'
+                    id='file'
+                    accept='image/*'
+                    onChange={(e) => setFile(e.target.files[0])}
                   />
-                );
-              })}
-              <FormGroup type='file'>
-                {perc !== null && perc < 100 ? (
-                  <UploadProgress>Uploading: {perc}%</UploadProgress>
-                ) : (
-                  <>
-                    <FormUpload
-                      type='file'
-                      id='file'
-                      accept='image/*'
-                      onChange={(e) => setFile(e.target.files[0])}
-                    />
-                    <FormLabel htmlFor='file' type='file'>Attach a photo</FormLabel>
-                  </>
-                )}
-              </FormGroup>
-              <FormButton
-                label='Register'
-                disabled={perc !== null && perc < 100}
-              />
-            </Form>
-          </Wrapper>
-          <AuthInfo
-            url='/login'
-            text='Already have an account?'
-            label='Sign in'
-          />
-        </RegisterContainer>
-      </Container>
+                  <FormLabel htmlFor='file' type='file'>Attach a photo</FormLabel>
+                </>
+              )}
+            </FormGroup>
+            <FormButton
+              label='Register'
+              disabled={perc !== null && perc < 100}
+            />
+          </Form>
+        </FormBox>
+        <AuthInfo
+          url='/login'
+          text='Already have an account?'
+          label='Sign in'
+        />
+      </>
     </ClientOnly>
   );
 }

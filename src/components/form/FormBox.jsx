@@ -5,7 +5,7 @@ import { useCallback } from 'react';
 
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
-const FormBox = ({ children }) => {
+const FormBox = ({ body, children }) => {
   const dispatch = useDispatch();
 
   const handleClose = useCallback(() => {
@@ -16,6 +16,7 @@ const FormBox = ({ children }) => {
     <Container onMouseOver={handleClose}>
       <Wrapper>
         <Box>{children}</Box>
+        {body}
       </Wrapper>
     </Container>
   );
@@ -85,6 +86,7 @@ const Box = styled.div`
 `;
 
 FormBox.propTypes = {
+  body: PropTypes.any,
   children: PropTypes.any.isRequired,
 };
 
