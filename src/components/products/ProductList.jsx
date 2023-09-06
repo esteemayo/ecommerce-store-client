@@ -10,7 +10,7 @@ import EmptyProduct from './EmptyProduct';
 
 import useCartModal from '@/hooks/useCartModal';
 
-const ProductList = ({ products }) => {
+const ProductList = ({ products, title='No results found!' }) => {
   const { isOpen, onOpen, onClose } = useCartModal();
   const [isSelectedProduct, setIsSelectedProduct] = useState({});
 
@@ -19,7 +19,7 @@ const ProductList = ({ products }) => {
       <Container>
         <EmptyProduct
           src='/img/no-result.png'
-          title='No results found!'
+          title={title}
         />
       </Container>
     );
