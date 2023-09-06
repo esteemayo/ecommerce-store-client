@@ -49,33 +49,29 @@ const ResetPassword = () => {
 
   return (
     <ClientOnly>
-      <Container onMouseOver={() => dispatch(closeSubmenu())}>
-        <ResetContainer>
-          <Wrapper>
-            <Header>Reset your password</Header>
-            <Form onSubmit={handleSubmit}>
-              <FormInput
-                type='password'
-                name='password'
-                label='Password'
-                placeholder='Enter your password'
-                onChange={handleChange}
-                error={errors.password}
-                autoFocus
-              />
-              <FormInput
-                type='password'
-                name='confirmPassword'
-                label='Confirm password'
-                placeholder='Confirm your password'
-                onChange={handleChange}
-                error={errors.confirmPassword}
-              />
-              <FormButton label='Reset password' />
-            </Form>
-          </Wrapper>
-        </ResetContainer>
-      </Container>
+      <FormBox>
+        <Header>Reset your password</Header>
+        <Form onSubmit={handleSubmit}>
+          <FormInput
+            type='password'
+            name='password'
+            label='Password'
+            placeholder='Enter your password'
+            onChange={handleChange}
+            error={errors.password}
+            autoFocus
+          />
+          <FormInput
+            type='password'
+            name='confirmPassword'
+            label='Confirm password'
+            placeholder='Confirm your password'
+            onChange={handleChange}
+            error={errors.confirmPassword}
+          />
+          <FormButton label='Reset password' />
+        </Form>
+      </FormBox>
     </ClientOnly>
   );
 }
