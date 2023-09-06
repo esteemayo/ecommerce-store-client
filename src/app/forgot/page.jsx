@@ -7,6 +7,7 @@ import { useDispatch } from 'react-redux';
 import FormButton from '@/components/form/FormButton';
 import ClientOnly from '@/components/ClientOnly';
 import FormInput from '@/components/form/FormInput';
+import FormBox from '@/components/form/FormBox';
 
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
