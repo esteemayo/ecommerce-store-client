@@ -8,6 +8,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import AuthError from '@/components/form/FormError';
 import AuthInfo from '@/components/form/FormInfo';
 import FormButton from '@/components/form/FormButton';
+import FormBox from '@/components/form/FormBox';
 
 import ClientOnly from '@/components/ClientOnly';
 
