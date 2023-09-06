@@ -1,7 +1,6 @@
 'use client';
 
 import styled from 'styled-components';
-import { useDispatch } from 'react-redux';
 
 import FormButton from '@/components/form/FormButton';
 import ClientOnly from '@/components/ClientOnly';
