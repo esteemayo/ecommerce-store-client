@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 
 const FormBox = ({ children }) => {
+  const dispatch = useDispatch();
+
   return (
     <Container>
       <Wrapper>
