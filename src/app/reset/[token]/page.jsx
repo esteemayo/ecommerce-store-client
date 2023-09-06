@@ -19,7 +19,7 @@ const initialState = {
 const ResetPassword = () => {
   const dispatch = useDispatch();
 
-  const validateForm = useCallback((data) => {
+  const validateForm = (data) => {
     const tempErrors = {};
 
     if (data?.password === '') {
@@ -33,11 +33,11 @@ const ResetPassword = () => {
     }
 
     return tempErrors;
-  }, []);
+  };
 
-  const onSubmitHandler = useCallback(() => {
-    console.log({ name: '' });
-  }, []);
+  const onSubmitHandler = () => {
+    console.log({ ...formData });
+  };
 
   const {
     formData,
