@@ -13,7 +13,7 @@ const FormBox = ({ children }) => {
   }, [dispatch]);
 
   return (
-    <Container>
+    <Container onMouseOver={handleClose}>
       <Wrapper>
         <Box>{children}</Box>
       </Wrapper>
