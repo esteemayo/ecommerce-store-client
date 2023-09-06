@@ -9,6 +9,7 @@ import AuthError from '@/components/form/FormError';
 import AuthInfo from '@/components/form/FormInfo';
 import FormButton from '@/components/form/FormButton';
 import FormBox from '@/components/form/FormBox';
+import { StyledBox } from '@/components/form/StyledBox';
 
 import ClientOnly from '@/components/ClientOnly';
 
@@ -93,61 +94,59 @@ const Login = () => {
 
   return (
     <ClientOnly>
-      <Container onMouseOver={() => dispatch(closeSubmenu())}>
-        <LoginContainer>
-          <Wrapper>
-            <SocialLogin />
-            <Text>or</Text>
-            <Form onSubmit={handleSubmit}>
-              <FormGroup>
-                <FormLabel htmlFor='username'>Username</FormLabel>
-                <FormInput
-                  type='text'
-                  id='username'
-                  value={username}
-                  placeholder='Enter username'
-                  onChange={(e) => setUsername(e.target.value)}
-                  ref={usernameRef}
-                />
-                {errors.username && <AuthError message={errors.username} />}
-              </FormGroup>
-              <FormGroup>
-                <FormLabel htmlFor='password'>Password</FormLabel>
-                <FormInput
-                  id='password'
-                  type='password'
-                  value={password}
-                  placeholder='Enter your password'
-                  onChange={(e) => setPassword(e.target.value)}
-                />
-                {errors.password && <AuthError message={errors.password} />}
-              </FormGroup>
-              <CheckBoxWrapper className='checkContainer'>
-                <CheckBox
-                  type='checkbox'
-                  id='rememberMe'
-                  checked={rememberMe}
-                  onChange={(e) => setRememberMe(e.currentTarget.checked)}
-                  className='checkbox'
-                />
-                <CheckMark className={checkmarkClasses} />
-                <CheckBoxLabel htmlFor='rememberMe'>Remember me</CheckBoxLabel>
-              </CheckBoxWrapper>
-              <FormButton label='Log in' />
-              <ForgotPassword>
-                <Link href='/forgot' passHref>
-                  Forgot your password?
-                </Link>
-              </ForgotPassword>
-            </Form>
-          </Wrapper>
-          <AuthInfo
-            url='/register'
-            text={`Don't have an account?`}
-            label='Sign up'
-          />
-        </LoginContainer>
-      </Container>
+      <FormBox>
+        <StyledBox>
+          <SocialLogin />
+          <Text>or</Text>
+          <Form onSubmit={handleSubmit}>
+            <FormGroup>
+              <FormLabel htmlFor='username'>Username</FormLabel>
+              <FormInput
+                type='text'
+                id='username'
+                value={username}
+                placeholder='Enter username'
+                onChange={(e) => setUsername(e.target.value)}
+                ref={usernameRef}
+              />
+              {errors.username && <AuthError message={errors.username} />}
+            </FormGroup>
+            <FormGroup>
+              <FormLabel htmlFor='password'>Password</FormLabel>
+              <FormInput
+                id='password'
+                type='password'
+                value={password}
+                placeholder='Enter your password'
+                onChange={(e) => setPassword(e.target.value)}
+              />
+              {errors.password && <AuthError message={errors.password} />}
+            </FormGroup>
+            <CheckBoxWrapper className='checkContainer'>
+              <CheckBox
+                type='checkbox'
+                id='rememberMe'
+                checked={rememberMe}
+                onChange={(e) => setRememberMe(e.currentTarget.checked)}
+                className='checkbox'
+              />
+              <CheckMark className={checkmarkClasses} />
+              <CheckBoxLabel htmlFor='rememberMe'>Remember me</CheckBoxLabel>
+            </CheckBoxWrapper>
+            <FormButton label='Log in' />
+            <ForgotPassword>
+              <Link href='/forgot' passHref>
+                Forgot your password?
+              </Link>
+            </ForgotPassword>
+          </Form>
+        </StyledBox>
+        <AuthInfo
+          url='/register'
+          text={`Don't have an account?`}
+          label='Sign up'
+        />
+      </FormBox>
     </ClientOnly>
   );
 }
