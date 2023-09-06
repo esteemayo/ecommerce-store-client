@@ -7,6 +7,7 @@ import ClientOnly from '@/components/ClientOnly';
 import FormInput from '@/components/form/FormInput';
 import FormBox from '@/components/form/FormBox';
 import { StyledBox } from '@/components/form/StyledBox';
+import Heading from '@/components/form/Heading';
 
 import useForm from '@/hooks/useForm';
 
@@ -48,7 +49,10 @@ const ResetPassword = () => {
     <ClientOnly>
       <FormBox>
         <StyledBox>
-          <Header>Reset your password</Header>
+          <Heading
+            type='small'
+            title='Reset your password'
+          />
           <Form onSubmit={handleSubmit}>
             <FormInput
               type='password'
