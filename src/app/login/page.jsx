@@ -13,8 +13,6 @@ import { StyledBox } from '@/components/form/StyledBox';
 
 import ClientOnly from '@/components/ClientOnly';
 
-import { closeSubmenu } from '@/features/submenu/submenuSlice';
-
 import SocialLogin from './SocialLogin';
 import {
   getFromStorage,
