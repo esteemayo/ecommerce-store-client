@@ -2,16 +2,9 @@ import styled from 'styled-components';
 import Image from 'next/image';
 import { FaFacebookF } from 'react-icons/fa';
 
-import Heading from '@/components/form/Heading';
-
 const SocialLogin = () => {
   return (
     <Container>
-      <Heading
-        small
-        type='login'
-        title='Log in with'
-      />
       <Wrapper>
         <GoogleButton type='button'>
           <StyledImage

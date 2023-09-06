@@ -10,6 +10,7 @@ import AuthInfo from '@/components/form/FormInfo';
 import FormButton from '@/components/form/FormButton';
 import FormBox from '@/components/form/FormBox';
 import { StyledBox } from '@/components/form/StyledBox';
+import Heading from '@/components/form/Heading';
 
 import ClientOnly from '@/components/ClientOnly';
 
@@ -93,6 +94,11 @@ const Login = () => {
     <ClientOnly>
       <FormBox>
         <StyledBox>
+          <Heading
+            small
+            type='login'
+            title='Log in with'
+          />
           <SocialLogin />
           <Text>or</Text>
           <Form onSubmit={handleSubmit}>
