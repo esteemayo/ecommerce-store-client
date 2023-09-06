@@ -11,7 +11,6 @@ import FormBox from '@/components/form/FormBox';
 import Heading from '@/components/form/Heading';
 
 import { StyledBox } from '@/components/form/StyledBox';
-import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
 const Forgot = () => {
   const [email, setEmail] = useState(null);
