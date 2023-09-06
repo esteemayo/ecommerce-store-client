@@ -84,6 +84,7 @@ const ProductsContainer = styled.div`
 
 ProductList.propTypes = {
   products: PropTypes.array.isRequired,
+  title: PropTypes.string,
 };
 
 export default ProductList;
