@@ -8,6 +8,7 @@ import FormButton from '@/components/form/FormButton';
 import ClientOnly from '@/components/ClientOnly';
 import FormInput from '@/components/form/FormInput';
 import FormBox from '@/components/form/FormBox';
+import Heading from '@/components/form/Heading';
 
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
