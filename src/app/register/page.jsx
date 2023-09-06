@@ -6,6 +6,7 @@ import { useCallback, useState } from 'react';
 
 import AuthInfo from '@/components/form/FormInfo';
 import FormButton from '@/components/form/FormButton';
+import FormBox from '@/components/form/FormBox';
 import FormInput from '@/components/form/FormInput';
 
 import ClientOnly from '@/components/ClientOnly';
