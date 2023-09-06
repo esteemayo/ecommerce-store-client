@@ -24,7 +24,6 @@ const initialState = {
 };
 
 const NewProduct = () => {
-  const dispatch = useDispatch();
   const { mode } = useSelector((state) => ({ ...state.darkMode }));
 
   const [data, setData] = useState(initialState);
