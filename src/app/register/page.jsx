@@ -13,6 +13,7 @@ import FormInput from '@/components/form/FormInput';
 
 import ClientOnly from '@/components/ClientOnly';
 
+import { useForm } from '@/hooks/useForm';
 import { registerInputs } from '@/formData';
 
 const initialState = {
