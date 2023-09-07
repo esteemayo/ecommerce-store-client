@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-const UploadProgress = ({ perecentage }) => {
+const UploadProgress = ({ percentage }) => {
   return (
     <Container>
-      Uploading: {perecentage}%
+      Uploading: {percentage}%
     </Container>
   );
 }
