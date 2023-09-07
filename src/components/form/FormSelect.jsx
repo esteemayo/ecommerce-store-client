@@ -28,7 +28,8 @@ const Label = styled.label`
 `;
 
 const Select = styled.select`
-  
+  border: none;
+  display: inline-block;
 `;
 
 const Option = styled.option`
