@@ -14,6 +14,7 @@ const Container = styled.span`
   text-transform: capitalize;
   font-size: 1.4rem;
   color: ${({ theme }) => theme.text};
+  margin-top: 2rem;
 `;
 
 UploadProgress.propTypes = {
