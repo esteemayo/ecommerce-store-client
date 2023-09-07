@@ -69,7 +69,7 @@ const Register = () => {
     return errors;
   }, [data]);
 
-  const handleSubmit = useCallback((e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
 
     const errors = validateForm();
@@ -77,7 +77,7 @@ const Register = () => {
     setErrors({});
 
     console.log({ ...data, email: data.email.toLowerCase(), file });
-  }, [data, file, validateForm]);
+  };
 
   return (
     <ClientOnly>
