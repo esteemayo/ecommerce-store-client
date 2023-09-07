@@ -15,4 +15,8 @@ const Container = styled.span`
   color: ${({ theme }) => theme.text};
 `;
 
+UploadProgress.propTypes = {
+  percentage: PropTypes.number,
+};
+
 export default UploadProgress;
