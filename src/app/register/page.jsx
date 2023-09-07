@@ -15,6 +15,7 @@ import ClientOnly from '@/components/ClientOnly';
 
 import { useForm } from '@/hooks/useForm';
 import { registerInputs } from '@/formData';
+import FormUpload from '@/components/form/FormUpload';
 
 const initialState = {
   name: '',
@@ -26,7 +27,7 @@ const initialState = {
 
 const Register = () => {
   const [file, setFile] = useState(null);
-  const [perc, setPerc] = useState(null);
+  const [perc, setPerc] = useState(99);
 
   const validateForm = (data) => {
     const errors = {};
@@ -98,21 +99,18 @@ const Register = () => {
                 />
               );
             })}
-            <FormGroup type='file'>
-              {perc !== null && perc < 100 ? (
-                <UploadProgress percentage={perc} />
-              ) : (
-                <>
-                  <FormUpload
-                    type='file'
-                    id='file'
-                    accept='image/*'
-                    onChange={(e) => setFile(e.target.files[0])}
-                  />
-                  <FormLabel htmlFor='file' type='file'>Attach a photo</FormLabel>
-                </>
-              )}
-            </FormGroup>
+            {perc !== null && perc < 100 ? (
+              <UploadProgress percentage={perc} />
+            ) : (
+              <>
+                <FormUpload
+                  id='file'
+                  accept='image/*'
+                  label='Attach a photo'
+                  onChange={(e) => setFile(e.target.files[0])}
+                />
+              </>
+            )}
             <FormButton
               label='Register'
               disabled={perc !== null && perc < 100}
@@ -152,37 +150,37 @@ const FormLabel = styled.label`
   color:  ${({ theme }) => theme.textLabel};
 `;
 
-const FormUpload = styled.input`
-  width: 0.1px;
-  height: 0.1px;
-  opacity: 0;
-  overflow: hidden;
-  position: absolute;
-  z-index: -1;
+// const FormUpload = styled.input`
+//   width: 0.1px;
+//   height: 0.1px;
+//   opacity: 0;
+//   overflow: hidden;
+//   position: absolute;
+//   z-index: -1;
 
-  &:focus + ${FormLabel} {
-    outline: 3px solid ${({ theme }) => theme.fileInput};
-    outline-offset: 3px;
-  }
+//   &:focus + ${FormLabel} {
+//     outline: 3px solid ${({ theme }) => theme.fileInput};
+//     outline-offset: 3px;
+//   }
 
-  & + ${FormLabel} {
-    color: ${({ theme }) => theme.textFile};
-    display: inline - block;
-    text-decoration: none;
-    padding: 3px;
-    border-bottom: 1px solid ${({ theme }) => theme.fileInput};
-    cursor: pointer;
-    transition: all 0.3s;
+//   & + ${FormLabel} {
+//     color: ${({ theme }) => theme.textFile};
+//     display: inline - block;
+//     text-decoration: none;
+//     padding: 3px;
+//     border-bottom: 1px solid ${({ theme }) => theme.fileInput};
+//     cursor: pointer;
+//     transition: all 0.3s;
 
-    &:hover {
-      background-color: ${({ theme }) => theme.fileInput};
-      color: ${({ theme }) => theme.textCat};
-      box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
-      -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
-      -moz-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
-      transform: translateY(-2px);
-    }
-  }
-`;
+//     &:hover {
+//       background-color: ${({ theme }) => theme.fileInput};
+//       color: ${({ theme }) => theme.textCat};
+//       box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+//       -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+//       -moz-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+//       transform: translateY(-2px);
+//     }
+//   }
+// `;
 
 export default Register;
