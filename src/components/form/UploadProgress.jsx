@@ -10,7 +10,7 @@ const UploadProgress = ({ perecentage }) => {
 }
 
 const Container = styled.span`
-  
+  text-transform: capitalize;
 `;
 
 export default UploadProgress;
