@@ -26,7 +26,6 @@ const initialState = {
 
 const Register = () => {
   const [file, setFile] = useState(null);
-  // const [errors, setErrors] = useState({});
   const [perc, setPerc] = useState(null);
   const [data, setData] = useState(initialState);
 
