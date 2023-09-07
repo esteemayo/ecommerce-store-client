@@ -16,4 +16,8 @@ const Label = styled.label`
   
 `;
 
+const Select = styled.select`
+  
+`;
+
 export default FormSelect;
