@@ -6,4 +6,8 @@ const UploadProgress = () => {
   );
 }
 
+const Container = styled.span`
+  
+`;
+
 export default UploadProgress;
