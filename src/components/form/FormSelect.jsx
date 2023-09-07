@@ -24,6 +24,7 @@ const Label = styled.label`
   display: inline-block;
   font-weight: 600;
   font-size: 1.4rem;
+  color:  ${({ theme }) => theme.textLabel};
 `;
 
 const Select = styled.select`
