@@ -12,7 +12,8 @@ const FormSelect = ({ defaultText }) => {
 }
 
 const FormGroup = styled.div`
-  
+  display: flex;
+  flex-direction: column;
 `;
 
 const Label = styled.label`
