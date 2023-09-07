@@ -90,6 +90,7 @@ const Register = () => {
                   name={name}
                   type={type}
                   label={label}
+                  value={formData[name]}
                   placeholder={placeholder}
                   onChange={handleChange}
                   autoFocus={name === 'name' ? true : false}
