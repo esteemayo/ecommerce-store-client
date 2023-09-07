@@ -1,12 +1,15 @@
 import styled from 'styled-components';
+import FormError from './FormError';
 
-const FormSelect = ({ defaultText }) => {
+const FormSelect = ({ name, label, error, value, defaultText, ...rest }) => {
   return (
     <FormGroup>
-      <Label></Label>
-      <Select>
+      <Label htmlFor={name}>{label}</Label>
+      <Select {...rest} id={name} name={name}>
         <Option value=''>{defaultText}</Option>
+        <Option value={value}>{value}</Option>
       </Select>
+      {error && <FormError message={error} />}
     </FormGroup>
   );
 }
