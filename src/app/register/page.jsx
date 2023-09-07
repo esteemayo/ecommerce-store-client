@@ -189,10 +189,4 @@ const FormUpload = styled.input`
   }
 `;
 
-// const UploadProgress = styled.span`
-//   text-transform: capitalize;
-//   font-size: 1.4rem;
-//   color: ${({ theme }) => theme.text};
-// `;
-
 export default Register;
