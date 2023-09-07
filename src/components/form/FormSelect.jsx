@@ -36,6 +36,9 @@ const Select = styled.select`
   padding: 1.5rem 1rem;
   background-color: ${({ theme }) => theme.bgInput};
   color: #999;
+  border-radius: 0.5rem;
+  outline-color: ${({ theme }) => theme.inputOut};
+  caret-color: ${({ theme }) => theme.inputCaret};
 `;
 
 const Option = styled.option`
