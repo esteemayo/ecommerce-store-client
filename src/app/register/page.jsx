@@ -26,7 +26,7 @@ const initialState = {
 
 const Register = () => {
   const [file, setFile] = useState(null);
-  const [errors, setErrors] = useState({});
+  // const [errors, setErrors] = useState({});
   const [perc, setPerc] = useState(null);
   const [data, setData] = useState(initialState);
 
@@ -63,6 +63,12 @@ const Register = () => {
 
     return errors;
   };
+
+  const onSubmitHandler = () => {
+    console.log({ ...formData, file });
+  };
+
+  const { formData, errors, handleChange, handleSubmit } = useForm(onSubmitHandler, initialState, validateForm);
 
   return (
     <ClientOnly>
