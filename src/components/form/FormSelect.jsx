@@ -2,7 +2,9 @@ import styled from 'styled-components';
 
 const FormSelect = () => {
   return (
-    <FormGroup>FormSelect</FormGroup>
+    <FormGroup>
+      <Label></Label>
+    </FormGroup>
   );
 }
 
