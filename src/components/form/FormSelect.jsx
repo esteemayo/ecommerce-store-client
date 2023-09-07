@@ -6,4 +6,8 @@ const FormSelect = () => {
   );
 }
 
+const FormGroup = styled.div`
+  
+`;
+
 export default FormSelect;
