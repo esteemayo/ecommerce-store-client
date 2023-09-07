@@ -58,6 +58,7 @@ const ResetPassword = () => {
               type='password'
               name='password'
               label='Password'
+              value={formData.password}
               placeholder='Enter your password'
               onChange={handleChange}
               error={errors.password}
