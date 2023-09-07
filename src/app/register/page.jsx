@@ -8,6 +8,7 @@ import FormButton from '@/components/form/FormButton';
 import FormBox from '@/components/form/FormBox';
 import { StyledBox } from '@/components/form/StyledBox';
 import Heading from '@/components/form/Heading';
+import UploadProgress from '@/components/form/UploadProgress';
 import FormInput from '@/components/form/FormInput';
 
 import ClientOnly from '@/components/ClientOnly';
