@@ -104,7 +104,7 @@ const Register = () => {
             })}
             <FormGroup type='file'>
               {perc !== null && perc < 100 ? (
-                <UploadProgress>Uploading: {perc}%</UploadProgress>
+                <UploadProgress percentage={perc} />
               ) : (
                 <>
                   <FormUpload
@@ -189,10 +189,10 @@ const FormUpload = styled.input`
   }
 `;
 
-const UploadProgress = styled.span`
-  text-transform: capitalize;
-  font-size: 1.4rem;
-  color: ${({ theme }) => theme.text};
-`;
+// const UploadProgress = styled.span`
+//   text-transform: capitalize;
+//   font-size: 1.4rem;
+//   color: ${({ theme }) => theme.text};
+// `;
 
 export default Register;
