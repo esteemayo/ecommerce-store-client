@@ -69,6 +69,7 @@ const ResetPassword = () => {
               name='confirmPassword'
               label='Confirm password'
               placeholder='Confirm your password'
+              value={formData.confirmPassword}
               onChange={handleChange}
               error={errors.confirmPassword}
             />
