@@ -68,7 +68,12 @@ const Register = () => {
     console.log({ ...formData, file });
   };
 
-  const { formData, errors, handleChange, handleSubmit } = useForm(onSubmitHandler, initialState, validateForm);
+  const {
+    formData,
+    errors,
+    handleChange,
+    handleSubmit,
+  } = useForm(onSubmitHandler, initialState, validateForm);
 
   return (
     <ClientOnly>
