@@ -4,6 +4,7 @@ const FormSelect = () => {
   return (
     <FormGroup>
       <Label></Label>
+      <Select></Select>
     </FormGroup>
   );
 }
