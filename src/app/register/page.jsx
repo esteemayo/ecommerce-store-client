@@ -1,7 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
-import { useCallback, useState } from 'react';
+import { useState } from 'react';
 
 import AuthInfo from '@/components/form/FormInfo';
 import FormButton from '@/components/form/FormButton';
