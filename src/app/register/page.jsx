@@ -10,12 +10,12 @@ import { StyledBox } from '@/components/form/StyledBox';
 import Heading from '@/components/form/Heading';
 import UploadProgress from '@/components/form/UploadProgress';
 import FormInput from '@/components/form/FormInput';
+import FormUpload from '@/components/form/FormUpload';
 
 import ClientOnly from '@/components/ClientOnly';
 
 import { useForm } from '@/hooks/useForm';
 import { registerInputs } from '@/formData';
-import FormUpload from '@/components/form/FormUpload';
 
 const initialState = {
   name: '',
