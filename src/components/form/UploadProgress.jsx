@@ -10,6 +10,7 @@ const UploadProgress = ({ percentage }) => {
 }
 
 const Container = styled.span`
+  display: inline-block;
   text-transform: capitalize;
   font-size: 1.4rem;
   color: ${({ theme }) => theme.text};
