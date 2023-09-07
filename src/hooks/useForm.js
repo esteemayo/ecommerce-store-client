@@ -27,5 +27,6 @@ export const useForm = (callback, initialState = {}, validate) => {
     errors,
     handleChange,
     handleSubmit,
+    setFormData,
   };
 };
