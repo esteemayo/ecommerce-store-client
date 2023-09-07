@@ -3,7 +3,9 @@ import PropTypes from 'prop-types';
 
 const UploadProgress = ({ perecentage }) => {
   return (
-    <Container>Uploading: {perecentage}%</Container>
+    <Container>
+      Uploading: {perecentage}%
+    </Container>
   );
 }
 
