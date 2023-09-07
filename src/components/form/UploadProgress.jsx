@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const UploadProgress = () => {
   return (
-    <div>UploadProgress</div>
+    <Container>UploadProgress</Container>
   );
 }
 
