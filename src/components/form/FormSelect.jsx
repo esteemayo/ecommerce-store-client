@@ -10,4 +10,8 @@ const FormGroup = styled.div`
   
 `;
 
+const Label = styled.label`
+  
+`;
+
 export default FormSelect;
