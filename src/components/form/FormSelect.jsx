@@ -1,10 +1,12 @@
 import styled from 'styled-components';
 
-const FormSelect = () => {
+const FormSelect = ({ defaultText }) => {
   return (
     <FormGroup>
       <Label></Label>
-      <Select></Select>
+      <Select>
+        <Option value=''>{defaultText}</Option>
+      </Select>
     </FormGroup>
   );
 }
