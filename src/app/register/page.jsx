@@ -92,6 +92,7 @@ const Register = () => {
                 <FormInput
                   key={id}
                   name={name}
+                  type={type}
                   label={label}
                   placeholder={placeholder}
                   onChange={handleChange}
