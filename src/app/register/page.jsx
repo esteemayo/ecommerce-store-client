@@ -26,8 +26,8 @@ const initialState = {
 };
 
 const Register = () => {
+  const [perc, setPerc] = useState(0);
   const [file, setFile] = useState(null);
-  const [perc, setPerc] = useState(99);
 
   const validateForm = (data) => {
     const errors = {};
@@ -99,7 +99,7 @@ const Register = () => {
                 />
               );
             })}
-            {perc !== null && perc < 100 ? (
+            {perc > 0 && perc < 100 ? (
               <UploadProgress percentage={perc} />
             ) : (
               <>
@@ -113,7 +113,7 @@ const Register = () => {
             )}
             <FormButton
               label='Register'
-              disabled={perc !== null && perc < 100}
+              disabled={perc > 0 && perc < 100}
             />
           </Form>
         </StyledBox>
