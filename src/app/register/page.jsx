@@ -69,16 +69,6 @@ const Register = () => {
     return errors;
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    const errors = validateForm();
-    if (Object.keys(errors).length > 0) return setErrors(errors);
-    setErrors({});
-
-    console.log({ ...data, email: data.email.toLowerCase(), file });
-  };
-
   return (
     <ClientOnly>
       <FormBox>
