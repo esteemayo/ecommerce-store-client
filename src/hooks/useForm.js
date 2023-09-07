@@ -1,8 +1,8 @@
 import { useCallback, useState } from 'react';
 
 export const useForm = (callback, initialState = {}, validate) => {
-  const [formData, setFormData] = useState(initialState);
   const [errors, setErrors] = useState({});
+  const [formData, setFormData] = useState(initialState);
 
   const handleChange = useCallback(({ target: input }) => {
     const { name, value } = input;
