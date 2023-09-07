@@ -27,7 +27,6 @@ const initialState = {
 const Register = () => {
   const [file, setFile] = useState(null);
   const [perc, setPerc] = useState(null);
-  const [data, setData] = useState(initialState);
 
   const validateForm = () => {
     const errors = {};
