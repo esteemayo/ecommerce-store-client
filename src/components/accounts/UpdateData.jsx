@@ -113,15 +113,6 @@ const EmailText = styled.span`
   font-weight: 600;
 `;
 
-// const FormGroup = styled.div`
-//   display: flex;
-//   flex-direction: column;
-
-//   &:not(:last-of-type) {
-//     margin-bottom: 2rem;
-//   }
-// `;
-
 const FormLabel = styled.label`
   display: inline-block;
   width: 15rem;
