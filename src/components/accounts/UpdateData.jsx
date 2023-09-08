@@ -102,12 +102,6 @@ const UpdateData = ({ onCancel }) => {
   );
 }
 
-const Text = styled.p`
-  text-align: center;
-  color: ${({ theme }) => theme.text};
-  line-height: 1;
-`;
-
 UpdateData.propTypes = {
   onCancel: PropTypes.func.isRequired,
 };
