@@ -110,14 +110,6 @@ const EmailText = styled.span`
   font-weight: 600;
 `;
 
-const FormLabel = styled.label`
-  display: inline-block;
-  width: 15rem;
-  font-weight: 600;
-  font-size: 1.4rem;
-  color: ${({ theme }) => theme.textLabel};
-`;
-
 const FormButtonContainer = styled.div`
   display: flex;
   align-items: center;
