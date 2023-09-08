@@ -5,8 +5,6 @@ import PropTypes from 'prop-types';
 import { useCallback, useState } from 'react';
 
 import Form from '../form/Form';
-import { FormGroup } from '../form/FormGroup';
-import FormError from '../form/FormError';
 
 import Input from './Input';
 import { userDataInputs } from '@/formData';
