@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
+import PropTypes, { css } from 'prop-types';
 
 const Button = ({ text }) => {
   return <StyledButton type='submit'>{text}</StyledButton>;
