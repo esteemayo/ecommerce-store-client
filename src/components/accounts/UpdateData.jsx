@@ -4,10 +4,11 @@ import styled, { css } from 'styled-components';
 import PropTypes from 'prop-types';
 import { useCallback, useState } from 'react';
 
-
-import Input from './Input';
-import Form from '../form/Form';
 import Button from './Button';
+import CancelButton from './CancelButton';
+import Input from './Input';
+
+import Form from '../form/Form';
 
 import { userDataInputs } from '@/formData';
 
@@ -89,7 +90,10 @@ const UpdateData = ({ onCancel }) => {
           );
         })}
         <FormButtonContainer>
-          <CancelButton type='button' onClick={closeHandler}>Cancel</CancelButton>
+          <CancelButton 
+            text='Cancel'
+            onClick={closeHandler}
+          />
           <Button text='Save' />
         </FormButtonContainer>
       </Form>
@@ -119,20 +123,20 @@ const FormButtonContainer = styled.div`
   gap: 2rem;
 `;
 
-const CancelButton = styled.button`
-  display: inline-block;
-  text-transform: capitalize;
-  font-weight: 500;
-  font-size: 1.4rem;
-  width: 50%;
-  padding: 1rem;
-  background-color: transparent;
-  color: ${({ theme }) => theme.textModalBtn};
-  border: 1px solid #ccc;
-  border-radius: 0.5rem;
-  outline-color: #eee;
-  cursor: pointer;
-`;
+// const CancelButton = styled.button`
+//   display: inline-block;
+//   text-transform: capitalize;
+//   font-weight: 500;
+//   font-size: 1.4rem;
+//   width: 50%;
+//   padding: 1rem;
+//   background-color: transparent;
+//   color: ${({ theme }) => theme.textModalBtn};
+//   border: 1px solid #ccc;
+//   border-radius: 0.5rem;
+//   outline-color: #eee;
+//   cursor: pointer;
+// `;
 
 UpdateData.propTypes = {
   onCancel: PropTypes.func.isRequired,
