@@ -1,8 +1,8 @@
 'use client';
 
 import styled, { css } from 'styled-components';
-import { useCallback, useState } from 'react';
 import PropTypes from 'prop-types';
+import { useCallback, useState } from 'react';
 
 import Form from '../form/Form';
 import FormError from '../form/FormError';
