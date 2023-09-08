@@ -22,19 +22,19 @@ const initialState = {
 };
 
 const UpdateData = ({ onCancel }) => {
-  const [errors, setErrors] = useState({});
-  const [data, setData] = useState(initialState);
+  // const [errors, setErrors] = useState({});
+  // const [data, setData] = useState(initialState);
 
-  const handleChange = useCallback(({ target: input }) => {
-    const { name, value } = input;
-    setData((prev) => ({ ...prev, [name]: value }));
-  }, []);
+  // const handleChange = useCallback(({ target: input }) => {
+  //   const { name, value } = input;
+  //   setData((prev) => ({ ...prev, [name]: value }));
+  // }, []);
 
   const handleClear = useCallback(() => {
     setData(initialState);
   }, []);
 
-  const validateForm = useCallback(() => {
+  const validateForm = (data) => {
     const errors = {};
     const { email, password } = data;
 
@@ -52,24 +52,13 @@ const UpdateData = ({ onCancel }) => {
     }
 
     return errors;
-  }, [data]);
+  };
 
-  const handleSubmit = useCallback((e) => {
-    e.preventDefault();
+  const onSubmitHandler = () => {
+    console.log({ ...formData });
+  }
 
-    const errors = validateForm();
-    if (Object.keys(errors).length > 0) return setErrors(errors);
-    setErrors({});
-
-    console.log({ ...data });
-    handleClear();
-  }, [data, validateForm, handleClear]);
-
-  const closeHandler = useCallback(() => {
-    onCancel();
-    handleClear();
-    errors && setErrors();
-  }, [errors, handleClear, onCancel]);
+  const { formData, errors, handleClose, handleChange, handleSubmit } = useForm(onSubmitHandler, initialState, validateForm, onCancel);
 
   return (
     <Container>
@@ -83,7 +72,7 @@ const UpdateData = ({ onCancel }) => {
               label={label}
               type={type}
               name={name}
-              value={data[name]}
+              value={formData[name]}
               placeholder={placeholder}
               onChange={handleChange}
               error={errors?.[name]}
@@ -93,7 +82,7 @@ const UpdateData = ({ onCancel }) => {
         <ButtonContainer>
           <CancelButton
             text='Cancel'
-            onClick={closeHandler}
+            onClick={handleClose}
           />
           <Button text='Save' />
         </ButtonContainer>
