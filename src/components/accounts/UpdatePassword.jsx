@@ -4,7 +4,9 @@ import styled, { css } from 'styled-components';
 import { useCallback, useState } from 'react';
 import PropTypes from 'prop-types';
 
+import Form from '../form/Form';
 import FormError from '../form/FormError';
+
 import { passwordInputs } from '@/formData';
 
 const initialState = {
@@ -99,9 +101,9 @@ const Container = styled.div`
   margin-top: 1.5rem;
 `;
 
-const Form = styled.form`
-  margin: 2rem 0;
-`;
+// const Form = styled.form`
+//   margin: 2rem 0;
+// `;
 
 const FormGroup = styled.div`
   display: flex;
