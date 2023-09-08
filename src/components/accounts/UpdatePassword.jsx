@@ -102,15 +102,6 @@ const Container = styled.div`
   margin-top: 1.5rem;
 `;
 
-// const FormGroup = styled.div`
-//   display: flex;
-//   flex-direction: column;
-
-//   &:not(:last-of-type) {
-//     margin-bottom: 2rem;
-//   }
-// `;
-
 const FormLabel = styled.label`
   display: inline-block;
   width: 15rem;
