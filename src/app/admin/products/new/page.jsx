@@ -11,11 +11,11 @@ import Heading from '@/components/form/Heading';
 import { StyledBox } from '@/components/form/StyledBox';
 import Select from '@/components/form/Select';
 import FormInput from '@/components/form/FormInput';
+import TextArea from '@/components/form/TextArea';
 
 import ClientOnly from '@/components/ClientOnly';
 
 import { selectInputs } from '@/formData';
-import TextArea from '@/components/form/TextArea';
 
 const initialState = {
   name: '',
