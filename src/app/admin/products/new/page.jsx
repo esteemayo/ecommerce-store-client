@@ -15,6 +15,7 @@ import FormInput from '@/components/form/FormInput';
 import ClientOnly from '@/components/ClientOnly';
 
 import { selectInputs } from '@/formData';
+import TextArea from '@/components/form/TextArea';
 
 const initialState = {
   name: '',
@@ -127,16 +128,13 @@ const NewProduct = () => {
               error={errors.name}
               autoFocus
             />
-            <FormGroup>
-              <FormLabel htmlFor='desc'>Description</FormLabel>
-              <TextArea
-                id='desc'
-                name='desc'
-                placeholder='Enter product description'
-                onChange={handleChange}
-              />
-              {errors.desc && <FormError message={errors.desc} />}
-            </FormGroup>
+            <TextArea
+              name='desc'
+              label='Description'
+              placeholder='Enter product description'
+              onChange={handleChange}
+              error={errors.desc}
+            />
             <FormInput
               type='number'
               name='price'
@@ -226,32 +224,32 @@ const FormLabel = styled.label`
   color:  ${({ theme }) => theme.textLabel};
 `;
 
-const TextArea = styled.textarea`
-  border: none;
-  display: inline-block;
-  font-family: inherit;
-  font-size: 1.5rem;
-  width: 100%;
-  height: 10rem;
-  padding: 1.5rem 1rem;
-  background-color: ${({ theme }) => theme.bgInput};
-  color: ${({ theme }) => theme.textInput};
-  border-radius: 0.5rem;
-  outline-color: ${({ theme }) => theme.inputOut};
-  overflow: hidden;
-  resize: none;
-  caret-color: ${({ theme }) => theme.inputCaret};
-  transition: all 0.3s ease;
+// const TextArea = styled.textarea`
+//   border: none;
+//   display: inline-block;
+//   font-family: inherit;
+//   font-size: 1.5rem;
+//   width: 100%;
+//   height: 10rem;
+//   padding: 1.5rem 1rem;
+//   background-color: ${({ theme }) => theme.bgInput};
+//   color: ${({ theme }) => theme.textInput};
+//   border-radius: 0.5rem;
+//   outline-color: ${({ theme }) => theme.inputOut};
+//   overflow: hidden;
+//   resize: none;
+//   caret-color: ${({ theme }) => theme.inputCaret};
+//   transition: all 0.3s ease;
 
-  &:focus {
-    background-color: transparent;
-  }
+//   &:focus {
+//     background-color: transparent;
+//   }
 
-  &::-webkit-input-placeholder {
-    font-weight: 300;
-    font-size: 1.5rem;
-    color: #bbb;
-  }
-`;
+//   &::-webkit-input-placeholder {
+//     font-weight: 300;
+//     font-size: 1.5rem;
+//     color: #bbb;
+//   }
+// `;
 
 export default NewProduct;
