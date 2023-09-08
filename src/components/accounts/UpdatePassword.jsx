@@ -102,10 +102,6 @@ const UpdatePassword = ({ onCancel }) => {
   );
 }
 
-// const Container = styled.div`
-//   margin-top: 1.5rem;
-// `;
-
 UpdatePassword.propTypes = {
   onCancel: PropTypes.func.isRequired,
 };
