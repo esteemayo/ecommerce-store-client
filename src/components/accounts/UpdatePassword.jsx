@@ -70,12 +70,6 @@ const UpdatePassword = ({ onCancel }) => {
   //   handleClear();
   // }, [inputs, validateForm, handleClear]);
 
-  // const cancelHandler = useCallback(() => {
-  //   onCancel();
-  //   handleClear();
-  //   errors && setErrors();
-  // }, [errors, handleClear, onCancel]);
-
   const { formData, errors, handleClose, handleChange, handleSubmit } = useForm(onSubmitHandler, initialState, validateForm, onCancel);
 
   return (
