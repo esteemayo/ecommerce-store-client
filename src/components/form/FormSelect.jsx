@@ -51,4 +51,13 @@ const Option = styled.option`
   color: inherit;
 `;
 
+FormSelect.propTypes = {
+  name: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired,
+  error: PropTypes.object,
+  value: PropTypes.string.isRequired,
+  defaultText: PropTypes.string.isRequired,
+  rest: PropTypes.any,
+};
+
 export default FormSelect;
