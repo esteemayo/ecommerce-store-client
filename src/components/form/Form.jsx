@@ -13,4 +13,9 @@ const StyledForm = styled.form`
   
 `;
 
+Form.propTypes = {
+  children: PropTypes.any.isRequired,
+  onSubmit: PropTypes.func.isRequired,
+};
+
 export default Form;
