@@ -5,8 +5,10 @@ import PropTypes from 'prop-types';
 import { useCallback, useState } from 'react';
 
 import Input from './Input';
-import Form from '../form/Form';
+import CancelButton from './CancelButton';
 import Button from './Button';
+
+import Form from '../form/Form';
 
 import { passwordInputs } from '@/formData';
 
@@ -86,9 +88,10 @@ const UpdatePassword = ({ onCancel }) => {
           );
         })}
         <FormButtonContainer>
-          <CancelButton type='button' onClick={cancelHandler}>
-            Cancel
-          </CancelButton>
+          <CancelButton
+            text='Cancel'
+            onClick={cancelHandler}
+          />
           <Button text='Save' />
         </FormButtonContainer>
       </Form>
@@ -107,20 +110,20 @@ const FormButtonContainer = styled.div`
   gap: 2rem;
 `;
 
-const CancelButton = styled.button`
-  display: inline-block;
-  text-transform: capitalize;
-  font-weight: 500;
-  font-size: 1.4rem;
-  width: 50%;
-  padding: 1rem;
-  background-color: transparent;
-  color: ${({ theme }) => theme.textModalBtn};
-  border: 1px solid #ccc;
-  border-radius: 0.5rem;
-  outline-color: #eee;
-  cursor: pointer;
-`;
+// const CancelButton = styled.button`
+//   display: inline-block;
+//   text-transform: capitalize;
+//   font-weight: 500;
+//   font-size: 1.4rem;
+//   width: 50%;
+//   padding: 1rem;
+//   background-color: transparent;
+//   color: ${({ theme }) => theme.textModalBtn};
+//   border: 1px solid #ccc;
+//   border-radius: 0.5rem;
+//   outline-color: #eee;
+//   cursor: pointer;
+// `;
 
 UpdatePassword.propTypes = {
   onCancel: PropTypes.func.isRequired,
