@@ -11,6 +11,7 @@ import FormButton from '@/components/form/FormButton';
 import FormBox from '@/components/form/FormBox';
 import { StyledBox } from '@/components/form/StyledBox';
 import Form from '@/components/form/Form';
+import { FormGroup } from '@/components/form/FormGroup';
 import Heading from '@/components/form/Heading';
 
 import ClientOnly from '@/components/ClientOnly';
@@ -162,14 +163,14 @@ const Text = styled.p`
   color: ${({ theme }) => theme.text};
 `;
 
-const FormGroup = styled.div`
-  display: flex;
-  flex-direction: column;
+// const FormGroup = styled.div`
+//   display: flex;
+//   flex-direction: column;
 
-  &:not(:last-of-type) {
-    margin-bottom: 2rem;
-  }
-`;
+//   &:not(:last-of-type) {
+//     margin-bottom: 2rem;
+//   }
+// `;
 
 const FormLabel = styled.label`
   display: inline-block;
