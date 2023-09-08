@@ -6,11 +6,10 @@ import { useSelector } from 'react-redux';
 
 import FormButton from '@/components/form/FormButton';
 import FormBox from '@/components/form/FormBox';
-import FormError from '@/components/form/FormError';
-import Heading from '@/components/form/Heading';
 import { StyledBox } from '@/components/form/StyledBox';
-import Select from '@/components/form/Select';
+import Heading from '@/components/form/Heading';
 import FormInput from '@/components/form/FormInput';
+import Select from '@/components/form/Select';
 import TextArea from '@/components/form/TextArea';
 
 import ClientOnly from '@/components/ClientOnly';
