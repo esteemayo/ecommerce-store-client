@@ -40,6 +40,9 @@ const StyledTextArea = styled.textarea`
   font-size: 1.5rem;
   width: 100%;
   height: 10rem;
+  padding: 1.5rem 1rem;
+  background-color: ${({ theme }) => theme.bgInput};
+  color: ${({ theme }) => theme.textInput};
 `;
 
 TextArea.propTypes = {
