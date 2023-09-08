@@ -216,11 +216,4 @@ const FormGroup = styled.div`
   }
 `;
 
-const FormLabel = styled.label`
-  display: inline-block;
-  font-weight: 600;
-  font-size: 1.4rem;
-  color:  ${({ theme }) => theme.textLabel};
-`;
-
 export default NewProduct;
