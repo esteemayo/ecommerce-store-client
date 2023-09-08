@@ -46,7 +46,13 @@ const UpdateData = ({ onCancel }) => {
     console.log({ ...formData });
   }
 
-  const { formData, errors, handleClose, handleChange, handleSubmit } = useForm(onSubmitHandler, initialState, validateForm, onCancel);
+  const {
+    formData,
+    errors,
+    handleClose,
+    handleChange,
+    handleSubmit,
+  } = useForm(onSubmitHandler, initialState, validateForm, onCancel);
 
   return (
     <Container>
