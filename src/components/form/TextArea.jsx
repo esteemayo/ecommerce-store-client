@@ -29,4 +29,11 @@ const StyledTextArea = styled.textarea`
   
 `;
 
+TextArea.propTypes = {
+  name: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired,
+  error: PropTypes.object,
+  rest: PropTypes.any,
+};
+
 export default TextArea;
