@@ -85,7 +85,7 @@ const UpdateData = ({ onCancel }) => {
               value={data[name]}
               placeholder={placeholder}
               onChange={handleChange}
-              error={errors[name]}
+              error={errors?.[name]}
             />
           );
         })}

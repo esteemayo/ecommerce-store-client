@@ -85,7 +85,7 @@ const UpdatePassword = ({ onCancel }) => {
               value={inputs[name]}
               placeholder={placeholder}
               onChange={handleChange}
-              error={errors[name]}
+              error={errors?.[name]}
             />
           );
         })}

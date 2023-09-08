@@ -13,7 +13,7 @@ const Input = ({ name, label, error, ...rest }) => {
         id={name}
         name={name}
       />
-      {error && error && <FormError message={error} />}
+      {error && <FormError message={error} />}
     </FormGroup>
   );
 }
