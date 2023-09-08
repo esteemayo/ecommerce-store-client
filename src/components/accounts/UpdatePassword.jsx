@@ -12,6 +12,7 @@ import { ButtonContainer } from './ButtonContainer';
 
 import Form from '../form/Form';
 
+import { useForm } from '@/hooks/useForm';
 import { passwordInputs } from '@/formData';
 
 const initialState = {
