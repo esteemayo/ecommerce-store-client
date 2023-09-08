@@ -4,10 +4,11 @@ export const useForm = (callback, initialState = {}, validate, onClose) => {
   const [errors, setErrors] = useState({});
   const [formData, setFormData] = useState(initialState);
 
-  const handleClear = useCallback(() => {
+  const handleClose = useCallback(() => {
     setFormData(initialState);
     onClose?.();
-  }, [initialState, onClose]);
+    errors && setErrors({});
+  }, [errors, initialState, onClose]);
 
   const handleChange = useCallback(({ target: input }) => {
     const { name, value } = input;
@@ -30,7 +31,7 @@ export const useForm = (callback, initialState = {}, validate, onClose) => {
   return {
     formData,
     errors,
-    handleClear,
+    handleClose,
     handleChange,
     handleSubmit,
     setFormData,
