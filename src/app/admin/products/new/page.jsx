@@ -9,9 +9,12 @@ import FormBox from '@/components/form/FormBox';
 import FormError from '@/components/form/FormError';
 import Heading from '@/components/form/Heading';
 import { StyledBox } from '@/components/form/StyledBox';
+import Select from '@/components/form/Select';
 import FormInput from '@/components/form/FormInput';
 
 import ClientOnly from '@/components/ClientOnly';
+
+import { selectInputs } from '@/formData';
 
 const initialState = {
   name: '',
@@ -170,18 +173,14 @@ const NewProduct = () => {
               placeholder='Separate the size with commas'
               onChange={handleSize}
             />
-            <FormGroup>
-              <FormLabel htmlFor='category'>Select category</FormLabel>
-              <FormSelect id='category' name='category' onChange={handleChange}>
-                <Option value=''>Select a category</Option>
-                <Option value='jeans'>Jeans</Option>
-                <Option value='electronics'>Electronics</Option>
-                <Option value='gadgets'>Gadgets</Option>
-                <Option value='shirts'>Shirts</Option>
-                <Option value='snickers'>Snickers</Option>
-              </FormSelect>
-              {errors.category && <FormError message={errors.category} />}
-            </FormGroup>
+            <Select
+              name='category'
+              label='Select category'
+              defaultText='Select a category'
+              onChange={handleChange}
+              data={selectInputs}
+              error={errors.category}
+            />
             <FormInput
               name='tags'
               label='Product tags'
