@@ -27,7 +27,7 @@ const FormGroup = styled.div`
 `;
 
 const Label = styled.label`
-  
+  display: inline-block;
 `;
 
 const StyledTextArea = styled.textarea`
