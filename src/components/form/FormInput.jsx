@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 import FormError from './FormError';
+import { FormGroup } from './FormGroup';
 
 const FormInput = ({
   name,
@@ -24,14 +25,14 @@ const FormInput = ({
   );
 }
 
-const FormGroup = styled.div`
-  display: flex;
-  flex-direction: column;
+// const FormGroup = styled.div`
+//   display: flex;
+//   flex-direction: column;
 
-  &:not(:last-of-type) {
-    margin-bottom: 2rem;
-  }
-`;
+//   &:not(:last-of-type) {
+//     margin-bottom: 2rem;
+//   }
+// `;
 
 const Label = styled.label`
   display: inline-block;
