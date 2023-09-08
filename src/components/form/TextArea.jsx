@@ -7,4 +7,8 @@ const TextArea = () => {
   );
 }
 
+const FormGroup = styled.div`
+  
+`;
+
 export default TextArea;
