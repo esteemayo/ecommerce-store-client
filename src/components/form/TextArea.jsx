@@ -28,6 +28,8 @@ const FormGroup = styled.div`
 
 const Label = styled.label`
   display: inline-block;
+  font-weight: 600;
+  font-size: 1.4rem;
 `;
 
 const StyledTextArea = styled.textarea`
