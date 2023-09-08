@@ -101,15 +101,6 @@ const Container = styled.div`
   margin-top: 1.5rem;
 `;
 
-const FormLabel = styled.label`
-  display: inline-block;
-  width: 15rem;
-  text-transform: capitalize;
-  font-weight: 600;
-  font-size: 1.4rem;
-  color: ${({ theme }) => theme.textLabel};
-`;
-
 const FormButtonContainer = styled.div`
   display: flex;
   align-items: center;
