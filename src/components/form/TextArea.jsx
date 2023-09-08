@@ -34,7 +34,8 @@ const Label = styled.label`
 `;
 
 const StyledTextArea = styled.textarea`
-  
+  border: none;
+  display: inline-block;
 `;
 
 TextArea.propTypes = {
