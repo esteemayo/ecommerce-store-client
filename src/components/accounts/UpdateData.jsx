@@ -110,10 +110,6 @@ const EmailText = styled.span`
   font-weight: 600;
 `;
 
-// const Form = styled.form`
-//   margin: 2rem 0;
-// `;
-
 const FormGroup = styled.div`
   display: flex;
   flex-direction: column;
