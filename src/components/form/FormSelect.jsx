@@ -3,7 +3,14 @@ import PropTypes from 'prop-types';
 
 import FormError from './FormError';
 
-const FormSelect = ({ name, label, error, value, defaultText, ...rest }) => {
+const FormSelect = ({
+  name,
+  label,
+  error,
+  value,
+  defaultText,
+  ...rest
+}) => {
   return (
     <FormGroup>
       <Label htmlFor={name}>{label}</Label>
