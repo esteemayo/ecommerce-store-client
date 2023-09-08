@@ -18,6 +18,7 @@ const StyledForm = styled.form`
 `;
 
 Form.propTypes = {
+  type: PropTypes.string,
   children: PropTypes.any.isRequired,
   onSubmit: PropTypes.func.isRequired,
 };
