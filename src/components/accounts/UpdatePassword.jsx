@@ -22,8 +22,6 @@ const initialState = {
 };
 
 const UpdatePassword = ({ onCancel }) => {
-  // const [errors, setErrors] = useState({});
-
   const validateForm = (data) => {
     const errors = {};
     const { password, confirmPassword, currentPassword } = data;
