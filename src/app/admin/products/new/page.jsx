@@ -268,10 +268,4 @@ const FormSelect = styled.select`
   caret-color: ${({ theme }) => theme.inputCaret};
 `;
 
-const Option = styled.option`
-  text-transform: capitalize;
-  background-color: ${({ theme }) => theme.bgProdCard};
-  color: inherit;
-`;
-
 export default NewProduct;
