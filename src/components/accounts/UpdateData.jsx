@@ -7,6 +7,8 @@ import { useCallback, useState } from 'react';
 import Button from './Button';
 import CancelButton from './CancelButton';
 import Input from './Input';
+
+import { Container } from './Container';
 import { ButtonContainer } from './ButtonContainer';
 
 import Form from '../form/Form';
@@ -102,9 +104,9 @@ const UpdateData = ({ onCancel }) => {
   );
 }
 
-const Container = styled.div`
-  margin-top: 1.5rem;
-`;
+// const Container = styled.div`
+//   margin-top: 1.5rem;
+// `;
 
 const Text = styled.p`
   text-align: center;
