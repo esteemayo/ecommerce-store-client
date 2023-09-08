@@ -128,8 +128,4 @@ const Register = () => {
   );
 }
 
-// const Form = styled.form`
-//   margin: 2rem 0;
-// `;
-
 export default Register;
