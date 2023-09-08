@@ -1,6 +1,5 @@
 'use client';
 
-import styled from 'styled-components';
 import { useCallback, useState } from 'react';
 
 import FormButton from '@/components/form/FormButton';
