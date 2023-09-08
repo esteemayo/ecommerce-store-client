@@ -45,6 +45,8 @@ const StyledTextArea = styled.textarea`
   color: ${({ theme }) => theme.textInput};
   border-radius: 0.5rem;
   outline-color: ${({ theme }) => theme.inputOut};
+  overflow: hidden;
+  resize: none;
 `;
 
 TextArea.propTypes = {
