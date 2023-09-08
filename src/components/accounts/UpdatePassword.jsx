@@ -22,21 +22,21 @@ const initialState = {
 };
 
 const UpdatePassword = ({ onCancel }) => {
-  const [errors, setErrors] = useState({});
+  // const [errors, setErrors] = useState({});
   const [inputs, setInputs] = useState(initialState);
 
-  const handleChange = useCallback(({ target: input }) => {
-    const { name, value } = input;
-    setInputs((prev) => ({ ...prev, [name]: value }));
-  }, []);
+  // const handleChange = useCallback(({ target: input }) => {
+  //   const { name, value } = input;
+  //   setInputs((prev) => ({ ...prev, [name]: value }));
+  // }, []);
 
   const handleClear = useCallback(() => {
     setInputs(initialState);
   }, []);
 
-  const validateForm = useCallback(() => {
+  const validateForm = (data) => {
     const errors = {};
-    const { password, confirmPassword, currentPassword } = inputs;
+    const { password, confirmPassword, currentPassword } = data;
 
     if (password === '') {
       errors.password = 'Please enter your new password';
@@ -53,24 +53,30 @@ const UpdatePassword = ({ onCancel }) => {
     }
 
     return errors;
-  }, [inputs]);
+  };
 
-  const handleSubmit = useCallback((e) => {
-    e.preventDefault();
+  const onSubmitHandler = () => {
+    console.log({ ...formData });
+  };
 
-    const errors = validateForm();
-    if (Object.keys(errors).length > 0) return setErrors(errors);
-    setErrors({});
+  // const handleSubmit = useCallback((e) => {
+  //   e.preventDefault();
 
-    console.log({ ...inputs });
-    handleClear();
-  }, [inputs, validateForm, handleClear]);
+  //   const errors = validateForm();
+  //   if (Object.keys(errors).length > 0) return setErrors(errors);
+  //   setErrors({});
 
-  const cancelHandler = useCallback(() => {
-    onCancel();
-    handleClear();
-    errors && setErrors();
-  }, [errors, handleClear, onCancel]);
+  //   console.log({ ...inputs });
+  //   handleClear();
+  // }, [inputs, validateForm, handleClear]);
+
+  // const cancelHandler = useCallback(() => {
+  //   onCancel();
+  //   handleClear();
+  //   errors && setErrors();
+  // }, [errors, handleClear, onCancel]);
+
+  const { formData, errors, handleClose, handleChange, handleSubmit } = useForm(onSubmitHandler, initialState, validateForm, onCancel);
 
   return (
     <Container>
@@ -93,7 +99,7 @@ const UpdatePassword = ({ onCancel }) => {
         <ButtonContainer>
           <CancelButton
             text='Cancel'
-            onClick={cancelHandler}
+            onClick={handleClose}
           />
           <Button text='Save' />
         </ButtonContainer>
