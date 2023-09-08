@@ -1,9 +1,11 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-const Form = () => {
+const Form = ({ children, onSubmit }) => {
   return (
-    <div>Form</div>
+    <StyledForm onSubmit={onSubmit}>
+      {children}
+    </StyledForm>
   );
 }
 
