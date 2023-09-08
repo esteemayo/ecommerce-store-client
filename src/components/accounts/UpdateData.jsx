@@ -30,10 +30,6 @@ const UpdateData = ({ onCancel }) => {
   //   setData((prev) => ({ ...prev, [name]: value }));
   // }, []);
 
-  const handleClear = useCallback(() => {
-    setData(initialState);
-  }, []);
-
   const validateForm = (data) => {
     const errors = {};
     const { email, password } = data;
