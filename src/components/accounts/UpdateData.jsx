@@ -5,6 +5,8 @@ import PropTypes from 'prop-types';
 import { useCallback, useState } from 'react';
 
 import Form from '../form/Form';
+import FormError from '../form/FormError';
+
 import { userDataInputs } from '@/formData';
 
 const initialState = {
@@ -82,7 +84,7 @@ const UpdateData = ({ onCancel }) => {
                 placeholder={placeholder}
                 onChange={handleChange}
               />
-              {errors && errors[name] && <ErrorMsg>{errors[name]}</ErrorMsg>}
+              {errors && errors[name] && <FormError message={errors[name]} />}
             </FormGroup>
           );
         })}
