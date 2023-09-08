@@ -7,4 +7,8 @@ const Form = () => {
   );
 }
 
+const StyledForm = styled.form`
+  
+`;
+
 export default Form;
