@@ -254,18 +254,4 @@ const TextArea = styled.textarea`
   }
 `;
 
-const FormSelect = styled.select`
-  border: none;
-  display: inline-block;
-  font-family: inherit;
-  font-size: 1.5rem;
-  width: 100%;
-  padding: 1.5rem 1rem;
-  background-color: ${({ theme }) => theme.bgInput};
-  color: #999;
-  border-radius: 0.5rem;
-  outline-color: ${({ theme }) => theme.inputOut};
-  caret-color: ${({ theme }) => theme.inputCaret};
-`;
-
 export default NewProduct;
