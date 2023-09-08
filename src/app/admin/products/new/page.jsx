@@ -12,11 +12,11 @@ import FormInput from '@/components/form/FormInput';
 import Select from '@/components/form/Select';
 import TextArea from '@/components/form/TextArea';
 import Form from '@/components/form/Form';
+import { FormGroup } from '@/components/form/FormGroup';
 
 import ClientOnly from '@/components/ClientOnly';
 
 import { selectInputs } from '@/formData';
-import { FormGroup } from '@mui/material';
 
 const initialState = {
   name: '',
