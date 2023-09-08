@@ -17,4 +17,8 @@ const Label = styled.label`
   
 `;
 
+const StyledTextArea = styled.textarea`
+  
+`;
+
 export default TextArea;
