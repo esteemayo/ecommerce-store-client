@@ -4,6 +4,7 @@ import styled, { css } from 'styled-components';
 import { useCallback, useState } from 'react';
 import PropTypes from 'prop-types';
 
+import FormError from '../form/FormError';
 import { passwordInputs } from '@/formData';
 
 const initialState = {
@@ -79,7 +80,7 @@ const UpdatePassword = ({ onCancel }) => {
                 placeholder={placeholder}
                 onChange={handleChange}
               />
-              {errors && errors[name] && <ErrorMsg>{errors[name]}</ErrorMsg>}
+              {errors && errors[name] && <FormError message={errors[name]} />}
             </FormGroup>
           );
         })}
