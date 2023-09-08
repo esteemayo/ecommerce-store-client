@@ -1,6 +1,5 @@
 'use client';
 
-import styled from 'styled-components';
 import { useState } from 'react';
 
 import AuthInfo from '@/components/form/FormInfo';
