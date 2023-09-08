@@ -116,7 +116,7 @@ const NewProduct = () => {
         <StyledBox>
           <Heading
             small
-            title='>Create new product'
+            title='Create new product'
           />
           <Form onSubmit={handleSubmit}>
             <FormInput
