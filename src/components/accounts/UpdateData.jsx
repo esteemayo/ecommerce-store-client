@@ -4,9 +4,11 @@ import styled, { css } from 'styled-components';
 import PropTypes from 'prop-types';
 import { useCallback, useState } from 'react';
 
-import Form from '../form/Form';
 
 import Input from './Input';
+import Form from '../form/Form';
+import Button from './Button';
+
 import { userDataInputs } from '@/formData';
 
 const initialState = {
@@ -88,7 +90,7 @@ const UpdateData = ({ onCancel }) => {
         })}
         <FormButtonContainer>
           <CancelButton type='button' onClick={closeHandler}>Cancel</CancelButton>
-          <FormButton type='submit'>Save</FormButton>
+          <Button text='Save' />
         </FormButtonContainer>
       </Form>
     </Container>
