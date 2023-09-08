@@ -11,6 +11,7 @@ import Heading from '@/components/form/Heading';
 import UploadProgress from '@/components/form/UploadProgress';
 import FormInput from '@/components/form/FormInput';
 import FormUpload from '@/components/form/FormUpload';
+import Form from '@/components/form/Form';
 
 import ClientOnly from '@/components/ClientOnly';
 
@@ -127,8 +128,8 @@ const Register = () => {
   );
 }
 
-const Form = styled.form`
-  margin: 2rem 0;
-`;
+// const Form = styled.form`
+//   margin: 2rem 0;
+// `;
 
 export default Register;
