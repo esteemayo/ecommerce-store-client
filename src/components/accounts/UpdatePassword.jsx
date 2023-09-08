@@ -30,10 +30,6 @@ const UpdatePassword = ({ onCancel }) => {
   //   setInputs((prev) => ({ ...prev, [name]: value }));
   // }, []);
 
-  const handleClear = useCallback(() => {
-    setInputs(initialState);
-  }, []);
-
   const validateForm = (data) => {
     const errors = {};
     const { password, confirmPassword, currentPassword } = data;
