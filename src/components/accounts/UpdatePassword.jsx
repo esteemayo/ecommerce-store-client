@@ -23,7 +23,6 @@ const initialState = {
 
 const UpdatePassword = ({ onCancel }) => {
   // const [errors, setErrors] = useState({});
-  const [inputs, setInputs] = useState(initialState);
 
   const validateForm = (data) => {
     const errors = {};
