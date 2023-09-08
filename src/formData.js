@@ -78,3 +78,31 @@ export const userDataInputs = [
     placeholder: 'Type in your current password',
   },
 ];
+
+export const selectInputs = [
+  {
+    id: 'jeans',
+    name: 'jeans',
+    label: 'Jeans',
+  },
+  {
+    id: 'electronics',
+    name: 'electronics',
+    label: 'Electronics',
+  },
+  {
+    id: 'gadgets',
+    name: 'gadgets',
+    label: 'Gadgets',
+  },
+  {
+    id: 'shirts',
+    name: 'shirts',
+    label: 'Shirts',
+  },
+  {
+    id: 'snickers',
+    name: 'snickers',
+    label: 'Snickers',
+  },
+];
