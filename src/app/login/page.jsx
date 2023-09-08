@@ -10,6 +10,7 @@ import AuthInfo from '@/components/form/FormInfo';
 import FormButton from '@/components/form/FormButton';
 import FormBox from '@/components/form/FormBox';
 import { StyledBox } from '@/components/form/StyledBox';
+import Form from '@/components/form/Form';
 import Heading from '@/components/form/Heading';
 
 import ClientOnly from '@/components/ClientOnly';
@@ -101,7 +102,7 @@ const Login = () => {
           />
           <SocialLogin />
           <Text>or</Text>
-          <Form onSubmit={handleSubmit}>
+          <Form type='login' onSubmit={handleSubmit}>
             <FormGroup>
               <FormLabel htmlFor='username'>Username</FormLabel>
               <FormInput
@@ -161,13 +162,13 @@ const Text = styled.p`
   color: ${({ theme }) => theme.text};
 `;
 
-const Form = styled.form`
-  margin: 2rem 0;
+// const Form = styled.form`
+//   margin: 2rem 0;
 
-  @media only screen and (max-width: 64em) {
-    margin: 1.8rem 0;
-  }
-`;
+//   @media only screen and (max-width: 64em) {
+//     margin: 1.8rem 0;
+//   }
+// `;
 
 const FormGroup = styled.div`
   display: flex;
