@@ -274,10 +274,4 @@ const Option = styled.option`
   color: inherit;
 `;
 
-const UploadProgress = styled.span`
-  text-transform: capitalize;
-  font-size: 1.4rem;
-  color: ${({ theme }) => theme.text};
-`;
-
 export default NewProduct;
