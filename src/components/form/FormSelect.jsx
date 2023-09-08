@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import FormError from './FormError';
 
-const FormSelect = ({
+const Select = ({
   name,
   label,
   error,
@@ -14,10 +14,10 @@ const FormSelect = ({
   return (
     <FormGroup>
       <Label htmlFor={name}>{label}</Label>
-      <Select {...rest} id={name} name={name}>
+      <StyledSelect {...rest} id={name} name={name}>
         <Option value=''>{defaultText}</Option>
         <Option value={value}>{value}</Option>
-      </Select>
+      </StyledSelect>
       {error && <FormError message={error} />}
     </FormGroup>
   );
@@ -39,7 +39,7 @@ const Label = styled.label`
   color:  ${({ theme }) => theme.textLabel};
 `;
 
-const Select = styled.select`
+const StyledSelect = styled.select`
   border: none;
   display: inline-block;
   font-family: inherit;
@@ -59,7 +59,7 @@ const Option = styled.option`
   color: inherit;
 `;
 
-FormSelect.propTypes = {
+Select.propTypes = {
   name: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
   error: PropTypes.object,
@@ -68,4 +68,4 @@ FormSelect.propTypes = {
   rest: PropTypes.any,
 };
 
-export default FormSelect;
+export default Select;
