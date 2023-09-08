@@ -1,7 +1,6 @@
 'use client';
 
 import PropTypes from 'prop-types';
-import { useCallback, useState } from 'react';
 
 import Button from './Button';
 import CancelButton from './CancelButton';
