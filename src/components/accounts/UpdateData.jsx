@@ -108,11 +108,6 @@ const Text = styled.p`
   line-height: 1;
 `;
 
-const EmailText = styled.span`
-  display: block;
-  font-weight: 600;
-`;
-
 UpdateData.propTypes = {
   onCancel: PropTypes.func.isRequired,
 };
