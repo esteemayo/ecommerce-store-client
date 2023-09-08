@@ -4,6 +4,7 @@ import styled, { css } from 'styled-components';
 import PropTypes from 'prop-types';
 import { useCallback, useState } from 'react';
 
+import Input from './Input';
 import Form from '../form/Form';
 import { FormGroup } from '../form/FormGroup';
 import FormError from '../form/FormError';
@@ -73,18 +74,16 @@ const UpdatePassword = ({ onCancel }) => {
         {passwordInputs.map((input) => {
           const { id, name, type, label, placeholder } = input;
           return (
-            <FormGroup key={id}>
-              <FormLabel htmlFor={id}>{label}</FormLabel>
-              <FormInput
-                id={id}
-                type={type}
-                name={name}
-                value={inputs[name]}
-                placeholder={placeholder}
-                onChange={handleChange}
-              />
-              {errors && errors[name] && <FormError message={errors[name]} />}
-            </FormGroup>
+            <Input
+              key={id}
+              label={label}
+              type={type}
+              name={name}
+              value={inputs[name]}
+              placeholder={placeholder}
+              onChange={handleChange}
+              error={errors[name]}
+            />
           );
         })}
         <FormButtonContainer>
