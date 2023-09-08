@@ -101,10 +101,6 @@ const Container = styled.div`
   margin-top: 1.5rem;
 `;
 
-// const Form = styled.form`
-//   margin: 2rem 0;
-// `;
-
 const FormGroup = styled.div`
   display: flex;
   flex-direction: column;
