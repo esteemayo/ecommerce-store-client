@@ -4,10 +4,10 @@ import PropTypes from 'prop-types';
 import FormError from './FormError';
 
 const Select = ({
+  data,
   name,
   label,
   error,
-  value,
   defaultText,
   ...rest
 }) => {
@@ -16,7 +16,14 @@ const Select = ({
       <Label htmlFor={name}>{label}</Label>
       <StyledSelect {...rest} id={name} name={name}>
         <Option value=''>{defaultText}</Option>
-        <Option value={value}>{value}</Option>
+        {data?.map((item) => {
+          const { id, name } = item;
+          return (
+            <Option key={id} value={name}>
+              {name}
+            </Option>
+          )
+        })}
       </StyledSelect>
       {error && <FormError message={error} />}
     </FormGroup>
@@ -60,10 +67,10 @@ const Option = styled.option`
 `;
 
 Select.propTypes = {
+  data: PropTypes.array.isRequired,
   name: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
   error: PropTypes.object,
-  value: PropTypes.string.isRequired,
   defaultText: PropTypes.string.isRequired,
   rest: PropTypes.any,
 };
