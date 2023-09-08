@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 import FormError from './FormError';
 
 const FormSelect = ({ name, label, error, value, defaultText, ...rest }) => {
