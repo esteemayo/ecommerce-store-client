@@ -7,6 +7,7 @@ import { useCallback, useState } from 'react';
 import Button from './Button';
 import CancelButton from './CancelButton';
 import Input from './Input';
+import AccountEmail from './AccountEmail';
 
 import { Container } from './Container';
 import { ButtonContainer } from './ButtonContainer';
@@ -72,10 +73,7 @@ const UpdateData = ({ onCancel }) => {
 
   return (
     <Container>
-      <Text>
-        Your current email address is {' '}
-        <EmailText>brent@email.com</EmailText>
-      </Text>
+      <AccountEmail email='brent@email.com' />
       <Form onSubmit={handleSubmit}>
         {userDataInputs.map((input) => {
           const { id, name, type, label, placeholder } = input;
@@ -93,7 +91,7 @@ const UpdateData = ({ onCancel }) => {
           );
         })}
         <ButtonContainer>
-          <CancelButton 
+          <CancelButton
             text='Cancel'
             onClick={closeHandler}
           />
