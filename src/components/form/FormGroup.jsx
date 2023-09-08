@@ -1,13 +1,10 @@
 import styled from 'styled-components';
 
-const FormGroup = () => {
-  return (
-    <div>FormGroup</div>
-  );
-}
+export const FormGroup = styled.div`
+  display: flex;
+  flex-direction: column;
 
-const Container = styled.div`
-  
+  &:not(:last-of-type) {
+    margin-bottom: 2rem;
+  }
 `;
-
-export default FormGroup;
