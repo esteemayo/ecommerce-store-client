@@ -7,6 +7,7 @@ import { useCallback, useState } from 'react';
 import Input from './Input';
 import CancelButton from './CancelButton';
 import Button from './Button';
+import ButtonContainer from './ButtonContainer';
 
 import Form from '../form/Form';
 
@@ -87,13 +88,13 @@ const UpdatePassword = ({ onCancel }) => {
             />
           );
         })}
-        <FormButtonContainer>
+        <ButtonContainer>
           <CancelButton
             text='Cancel'
             onClick={cancelHandler}
           />
           <Button text='Save' />
-        </FormButtonContainer>
+        </ButtonContainer>
       </Form>
     </Container>
   );
