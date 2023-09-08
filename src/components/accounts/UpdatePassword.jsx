@@ -89,7 +89,7 @@ const UpdatePassword = ({ onCancel }) => {
               label={label}
               type={type}
               name={name}
-              value={inputs[name]}
+              value={formData[name]}
               placeholder={placeholder}
               onChange={handleChange}
               error={errors?.[name]}
