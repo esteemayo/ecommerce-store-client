@@ -38,6 +38,8 @@ const StyledTextArea = styled.textarea`
   display: inline-block;
   font-family: inherit;
   font-size: 1.5rem;
+  width: 100%;
+  height: 10rem;
 `;
 
 TextArea.propTypes = {
