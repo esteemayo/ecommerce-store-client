@@ -1,8 +1,13 @@
 import { useCallback, useState } from 'react';
 
-export const useForm = (callback, initialState = {}, validate) => {
+export const useForm = (callback, initialState = {}, validate, onClose) => {
   const [errors, setErrors] = useState({});
   const [formData, setFormData] = useState(initialState);
+
+  const handleClear = useCallback(() => {
+    setFormData(initialState);
+    onClose?.();
+  }, [initialState, onClose]);
 
   const handleChange = useCallback(({ target: input }) => {
     const { name, value } = input;
@@ -25,6 +30,7 @@ export const useForm = (callback, initialState = {}, validate) => {
   return {
     formData,
     errors,
+    handleClear,
     handleChange,
     handleSubmit,
     setFormData,
