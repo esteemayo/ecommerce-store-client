@@ -1,8 +1,12 @@
 import styled from 'styled-components';
 import PropTypes, { css } from 'prop-types';
 
-const Button = ({ text }) => {
-  return <StyledButton type='submit'>{text}</StyledButton>;
+const Button = ({ text, disabled }) => {
+  return (
+    <StyledButton type='submit' disabled={disabled}>
+      {text}
+    </StyledButton>
+  );
 }
 
 const StyledButton = styled.button`
@@ -45,6 +49,7 @@ const StyledButton = styled.button`
 
 Button.propTypes = {
   text: PropTypes.string.isRequired,
+  disabled: PropTypes.bool,
 };
 
 export default Button;
