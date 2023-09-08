@@ -59,17 +59,6 @@ const UpdatePassword = ({ onCancel }) => {
     console.log({ ...formData });
   };
 
-  // const handleSubmit = useCallback((e) => {
-  //   e.preventDefault();
-
-  //   const errors = validateForm();
-  //   if (Object.keys(errors).length > 0) return setErrors(errors);
-  //   setErrors({});
-
-  //   console.log({ ...inputs });
-  //   handleClear();
-  // }, [inputs, validateForm, handleClear]);
-
   const { formData, errors, handleClose, handleChange, handleSubmit } = useForm(onSubmitHandler, initialState, validateForm, onCancel);
 
   return (
