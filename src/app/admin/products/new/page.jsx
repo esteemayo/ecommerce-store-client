@@ -16,6 +16,7 @@ import Form from '@/components/form/Form';
 import ClientOnly from '@/components/ClientOnly';
 
 import { selectInputs } from '@/formData';
+import { FormGroup } from '@mui/material';
 
 const initialState = {
   name: '',
@@ -204,13 +205,13 @@ const NewProduct = () => {
   );
 }
 
-const FormGroup = styled.div`
-  display: flex;
-  flex-direction: column;
+// const FormGroup = styled.div`
+//   display: flex;
+//   flex-direction: column;
 
-  &:not(:last-of-type) {
-    margin-bottom: 2rem;
-  }
-`;
+//   &:not(:last-of-type) {
+//     margin-bottom: 2rem;
+//   }
+// `;
 
 export default NewProduct;
