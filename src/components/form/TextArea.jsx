@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
+import FormError from './FormError';
+
 const TextArea = ({ name, label, error, ...rest }) => {
   return (
     <FormGroup>
@@ -10,6 +12,7 @@ const TextArea = ({ name, label, error, ...rest }) => {
         id={name}
         name={name}
       />
+      {error && <FormError message={error} />}
     </FormGroup>
   );
 }
