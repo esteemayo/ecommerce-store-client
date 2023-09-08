@@ -38,6 +38,7 @@
     "redux-persist": "^6.0.0",
     "sass": "^1.57.1",
     "styled-components": "^5.3.6",
+    "world-countries": "^4.0.0",
     "zustand": "^4.4.1"
   },
   "devDependencies": {
