@@ -6,10 +6,11 @@ import { useCallback, useState } from 'react';
 import FormButton from '@/components/form/FormButton';
 import FormBox from '@/components/form/FormBox';
 import FormInput from '@/components/form/FormInput';
+import Form from '@/components/form/Form';
+import { StyledBox } from '@/components/form/StyledBox';
 import Heading from '@/components/form/Heading';
 
 import ClientOnly from '@/components/ClientOnly';
-import { StyledBox } from '@/components/form/StyledBox';
 
 const Forgot = () => {
   const [email, setEmail] = useState(null);
@@ -66,8 +67,8 @@ const Forgot = () => {
   );
 }
 
-const Form = styled.form`
-  margin: 2rem 0;
-`;
+// const Form = styled.form`
+//   margin: 2rem 0;
+// `;
 
 export default Forgot;
