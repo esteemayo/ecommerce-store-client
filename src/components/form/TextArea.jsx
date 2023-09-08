@@ -1,9 +1,11 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-const TextArea = () => {
+const TextArea = ({ name, label }) => {
   return (
-    <FormGroup>TextArea</FormGroup>
+    <FormGroup>
+      <Label htmlFor={name}>{label}</Label>
+    </FormGroup>
   );
 }
 
