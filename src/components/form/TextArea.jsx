@@ -36,6 +36,8 @@ const Label = styled.label`
 const StyledTextArea = styled.textarea`
   border: none;
   display: inline-block;
+  font-family: inherit;
+  font-size: 1.5rem;
 `;
 
 TextArea.propTypes = {
