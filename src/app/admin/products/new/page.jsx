@@ -1,8 +1,7 @@
 'use client';
 
-import styled from 'styled-components';
-import { useCallback, useMemo, useState } from 'react';
 import { useSelector } from 'react-redux';
+import { useCallback, useMemo, useState } from 'react';
 
 import FormButton from '@/components/form/FormButton';
 import FormBox from '@/components/form/FormBox';
