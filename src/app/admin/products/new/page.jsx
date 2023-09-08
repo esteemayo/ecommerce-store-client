@@ -235,7 +235,7 @@ const TextArea = styled.textarea`
   height: 10rem;
   padding: 1.5rem 1rem;
   background-color: ${({ theme }) => theme.bgInput};
-  color: #999;
+  color: ${({ theme }) => theme.textInput};
   border-radius: 0.5rem;
   outline-color: ${({ theme }) => theme.inputOut};
   overflow: hidden;
