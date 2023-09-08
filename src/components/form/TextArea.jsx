@@ -64,7 +64,7 @@ const StyledTextArea = styled.textarea`
 TextArea.propTypes = {
   name: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
-  error: PropTypes.object,
+  error: PropTypes.string,
   rest: PropTypes.any,
 };
 
