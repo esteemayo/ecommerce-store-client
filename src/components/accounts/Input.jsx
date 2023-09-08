@@ -7,7 +7,7 @@ import { FormGroup } from '../form/FormGroup';
 const Input = ({ name, label, error, ...rest }) => {
   return (
     <FormGroup>
-      <Label htmlFor={id}>{label}</Label>
+      <Label htmlFor={name}>{label}</Label>
       <StyledInput
         {...rest}
         id={name}
