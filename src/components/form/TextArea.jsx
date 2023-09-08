@@ -47,6 +47,8 @@ const StyledTextArea = styled.textarea`
   outline-color: ${({ theme }) => theme.inputOut};
   overflow: hidden;
   resize: none;
+  caret-color: ${({ theme }) => theme.inputCaret};
+  transition: all 0.3s ease;
 `;
 
 TextArea.propTypes = {
