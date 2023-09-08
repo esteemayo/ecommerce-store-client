@@ -6,8 +6,6 @@ import { useCallback, useState } from 'react';
 
 import Input from './Input';
 import Form from '../form/Form';
-import { FormGroup } from '../form/FormGroup';
-import FormError from '../form/FormError';
 
 import { passwordInputs } from '@/formData';
 
