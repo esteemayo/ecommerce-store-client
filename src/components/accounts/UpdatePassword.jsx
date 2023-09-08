@@ -6,6 +6,7 @@ import { useCallback, useState } from 'react';
 
 import Input from './Input';
 import Form from '../form/Form';
+import Button from './Button';
 
 import { passwordInputs } from '@/formData';
 
@@ -88,7 +89,7 @@ const UpdatePassword = ({ onCancel }) => {
           <CancelButton type='button' onClick={cancelHandler}>
             Cancel
           </CancelButton>
-          <FormButton type='submit'>Save</FormButton>
+          <Button text='Save' />
         </FormButtonContainer>
       </Form>
     </Container>
