@@ -104,13 +104,6 @@ const Container = styled.div`
   margin-top: 1.5rem;
 `;
 
-const FormButtonContainer = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
-`;
-
 UpdatePassword.propTypes = {
   onCancel: PropTypes.func.isRequired,
 };
