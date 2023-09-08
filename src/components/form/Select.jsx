@@ -31,15 +31,6 @@ const Select = ({
   );
 }
 
-// const FormGroup = styled.div`
-//   display: flex;
-//   flex-direction: column;
-
-//   &:not(:last-of-type) {
-//     margin-bottom: 2rem;
-//   }
-// `;
-
 const Label = styled.label`
   display: inline-block;
   font-weight: 600;
