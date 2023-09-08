@@ -7,7 +7,9 @@ import { useCallback, useState } from 'react';
 import Input from './Input';
 import CancelButton from './CancelButton';
 import Button from './Button';
-import ButtonContainer from './ButtonContainer';
+
+import { Container } from './Container';
+import { ButtonContainer } from './ButtonContainer';
 
 import Form from '../form/Form';
 
@@ -100,9 +102,9 @@ const UpdatePassword = ({ onCancel }) => {
   );
 }
 
-const Container = styled.div`
-  margin-top: 1.5rem;
-`;
+// const Container = styled.div`
+//   margin-top: 1.5rem;
+// `;
 
 UpdatePassword.propTypes = {
   onCancel: PropTypes.func.isRequired,
