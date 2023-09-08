@@ -11,6 +11,7 @@ import Heading from '@/components/form/Heading';
 import FormInput from '@/components/form/FormInput';
 import Select from '@/components/form/Select';
 import TextArea from '@/components/form/TextArea';
+import Form from '@/components/form/Form';
 
 import ClientOnly from '@/components/ClientOnly';
 
@@ -203,9 +204,9 @@ const NewProduct = () => {
   );
 }
 
-const Form = styled.form`
-  margin: 2rem 0;
-`;
+// const Form = styled.form`
+//   margin: 2rem 0;
+// `;
 
 const FormGroup = styled.div`
   display: flex;
