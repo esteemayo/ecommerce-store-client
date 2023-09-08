@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import PropTypes, { css } from 'prop-types';
+import styled, { css } from 'styled-components';
+import PropTypes from 'prop-types';
 
 const Button = ({ text, disabled }) => {
   return (
