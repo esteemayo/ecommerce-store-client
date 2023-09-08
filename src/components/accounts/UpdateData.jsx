@@ -8,6 +8,7 @@ import Form from '../form/Form';
 import { FormGroup } from '../form/FormGroup';
 import FormError from '../form/FormError';
 
+import Input from './Input';
 import { userDataInputs } from '@/formData';
 
 const initialState = {
@@ -75,18 +76,16 @@ const UpdateData = ({ onCancel }) => {
         {userDataInputs.map((input) => {
           const { id, name, type, label, placeholder } = input;
           return (
-            <FormGroup key={id}>
-              <FormLabel htmlFor={id}>{label}</FormLabel>
-              <FormInput
-                id={id}
-                type={type}
-                name={name}
-                value={data[name]}
-                placeholder={placeholder}
-                onChange={handleChange}
-              />
-              {errors && errors[name] && <FormError message={errors[name]} />}
-            </FormGroup>
+            <Input
+              key={id}
+              label={label}
+              type={type}
+              name={name}
+              value={data[name]}
+              placeholder={placeholder}
+              onChange={handleChange}
+              error={errors[name]}
+            />
           );
         })}
         <FormButtonContainer>
