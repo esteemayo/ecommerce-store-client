@@ -1,6 +1,5 @@
 'use client';
 
-import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import { useCallback, useState } from 'react';
 
