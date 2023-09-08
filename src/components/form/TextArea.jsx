@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const TextArea = () => {
   return (
-    <div>TextArea</div>
+    <FormGroup>TextArea</FormGroup>
   );
 }
 
