@@ -104,10 +104,6 @@ const UpdateData = ({ onCancel }) => {
   );
 }
 
-// const Container = styled.div`
-//   margin-top: 1.5rem;
-// `;
-
 const Text = styled.p`
   text-align: center;
   color: ${({ theme }) => theme.text};
