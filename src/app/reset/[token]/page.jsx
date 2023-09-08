@@ -5,11 +5,13 @@ import styled from 'styled-components';
 import FormButton from '@/components/form/FormButton';
 import FormBox from '@/components/form/FormBox';
 import FormInput from '@/components/form/FormInput';
+import Form from '@/components/form/Form';
+import { StyledBox } from '@/components/form/StyledBox';
 import Heading from '@/components/form/Heading';
+
 import ClientOnly from '@/components/ClientOnly';
 
 import { useForm } from '@/hooks/useForm';
-import { StyledBox } from '@/components/form/StyledBox';
 
 const initialState = {
   password: '',
@@ -81,8 +83,8 @@ const ResetPassword = () => {
   );
 }
 
-const Form = styled.form`
-  margin: 2rem 0;
-`;
+// const Form = styled.form`
+//   margin: 2rem 0;
+// `;
 
 export default ResetPassword;
