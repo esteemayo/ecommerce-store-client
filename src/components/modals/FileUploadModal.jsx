@@ -6,6 +6,7 @@ import { useSelector } from 'react-redux';
 import CloseIcon from '@mui/icons-material/Close';
 
 import useFileModal from '@/hooks/useFileModal';
+import UploadProgress from '../form/UploadProgress';
 
 const FileUploadModal = () => {
   const { isOpen, onClose } = useFileModal();
@@ -58,7 +59,10 @@ const FileUploadModal = () => {
           <UploadContainer>
             <InputContainer>
               {perc > 0 && perc <= 100 ? (
-                <UploadProgress>Uploading: {perc}%</UploadProgress>
+                <UploadProgress
+                  type
+                  percentage={perc}
+                />
               ) : (
                 <>
                   <Input
@@ -218,11 +222,11 @@ const Input = styled.input`
   }
 `;
 
-const UploadProgress = styled.span`
-  text-transform: capitalize;
-  font-size: 1.4rem;
-  color: ${({ theme }) => theme.text};
-`;
+// const UploadProgress = styled.span`
+//   text-transform: capitalize;
+//   font-size: 1.4rem;
+//   color: ${({ theme }) => theme.text};
+// `;
 
 const ButtonContainer = styled.div`
   @media only screen and (max-width: 25em) {
