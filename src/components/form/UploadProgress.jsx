@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-const UploadProgress = ({ percentage }) => {
+const UploadProgress = ({ type, percentage }) => {
   return (
-    <Container>
+    <Container type={type}>
       Uploading: {percentage}%
     </Container>
   );
@@ -14,7 +14,7 @@ const Container = styled.span`
   text-transform: capitalize;
   font-size: 1.4rem;
   color: ${({ theme }) => theme.text};
-  margin-top: 2rem;
+  margin-top: ${({ type }) => type === 'modal' && '2rem'};
 `;
 
 UploadProgress.propTypes = {
