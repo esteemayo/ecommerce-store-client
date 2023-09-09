@@ -20,6 +20,10 @@ export const useForm = (
     setFormData((prev) => ({ ...prev, [name]: value }));
   }, []);
 
+  const handleFile = useCallback((value) => {
+    setFormData((prev) => ({ ...prev, image: value }));
+  }, []);
+
   const handleSubmit = useCallback((e) => {
     e.preventDefault();
 
