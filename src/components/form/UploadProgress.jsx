@@ -18,7 +18,8 @@ const Container = styled.span`
 `;
 
 UploadProgress.propTypes = {
-  percentage: PropTypes.number,
+  type: PropTypes.bool,
+  percentage: PropTypes.number.isRequired,
 };
 
 export default UploadProgress;
