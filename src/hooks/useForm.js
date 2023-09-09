@@ -42,6 +42,7 @@ export const useForm = (
     errors,
     handleClose,
     handleChange,
+    handleFile,
     handleSubmit,
     setFormData,
   };
