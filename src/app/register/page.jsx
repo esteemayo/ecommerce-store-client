@@ -81,6 +81,7 @@ const Register = () => {
     setErrors({});
 
     console.log({ ...data, file });
+    handleClear();
   }, [data, file, validateForm]);
 
   return (
