@@ -77,7 +77,7 @@ const Register = () => {
     setErrors({});
 
     console.log({ ...data, file });
-  }, [data, file]);
+  }, [data, file, validateForm]);
 
   return (
     <ClientOnly>
