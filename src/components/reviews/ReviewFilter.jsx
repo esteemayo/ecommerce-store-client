@@ -129,7 +129,7 @@ const FilterList = styled.li`
 `;
 
 ReviewFilter.propTypes = {
-  sort: PropTypes.string.isRequired,
+  sort: PropTypes.string,
   value: PropTypes.string.isRequired,
   isOpen: PropTypes.bool.isRequired,
   onClick: PropTypes.func.isRequired,
