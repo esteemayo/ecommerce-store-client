@@ -1,13 +1,16 @@
 import styled from 'styled-components';
 
-import { Label, StyledSelect } from '../form/Select';
 import { FormGroup } from '../form/FormGroup';
+import { Label, Option, StyledSelect } from '../form/Select';
 
 const CountrySelect = ({ name, label, error, ...rest }) => {
   return (
     <FormGroup>
       <Label htmlFor={name}>{label}</Label>
-      <StyledSelect {...rest} id={name} name={name}></StyledSelect>
+      <StyledSelect {...rest} id={name} name={name}>
+        <Option value=''>Select your country</Option>
+        <Option value=''></Option>
+      </StyledSelect>
     </FormGroup>
   );
 }
