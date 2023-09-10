@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 
 import { FormGroup } from '../form/FormGroup';
-import { Label, Option, StyledSelect } from '../form/Select';
 import FormError from '../form/FormError';
+import { Label, Option, StyledSelect } from '../form/Select';
 
 const CountrySelect = ({
   data,
