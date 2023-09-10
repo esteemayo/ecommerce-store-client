@@ -22,7 +22,7 @@ const CountrySelect = ({
             <Option key={flag} value={label}>
               {flag} {label}
             </Option>
-          )
+          );
         })}
       </StyledSelect>
       {error && <FormError message={error} />}
