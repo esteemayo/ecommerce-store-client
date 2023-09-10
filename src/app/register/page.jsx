@@ -24,6 +24,7 @@ const initialState = {
   username: '',
   password: '',
   confirmPassword: '',
+  country: '',
 };
 
 const Register = () => {
