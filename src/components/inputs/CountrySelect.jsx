@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
+import { getEmojiFlag } from 'countries-list';
 
 import { FormGroup } from '../form/FormGroup';
 import { Label, Option, StyledSelect } from '../form/Select';
