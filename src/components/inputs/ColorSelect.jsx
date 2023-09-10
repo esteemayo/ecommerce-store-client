@@ -94,7 +94,7 @@ ColorSelect.propTypes = {
   mode: PropTypes.bool.isRequired,
   value: PropTypes.array.isRequired,
   modal: PropTypes.bool,
-  selected: PropTypes.bool.isRequired,
+  selected: PropTypes.bool,
   onAction: PropTypes.func.isRequired,
   secondaryAction: PropTypes.func.isRequired,
 };
