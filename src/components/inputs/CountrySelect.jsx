@@ -15,7 +15,7 @@ const CountrySelect = ({ data, name, label, error, ...rest }) => {
           const { flag, label } = item
           return (
             <Option key={flag} value={label}>
-              {label}
+              {flag} {label}
             </Option>
           )
         })}
