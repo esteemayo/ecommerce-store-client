@@ -38,9 +38,6 @@ const Container = styled.div`
 `;
 
 const ValueAdd = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
   color: ${({ theme }) => theme.text};
 
   img {
@@ -58,7 +55,9 @@ const ValueAdd = styled.div`
 `;
 
 const ImageWrapper = styled.div`
-  
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
 `;
 
 ProductValue.propTypes = {
