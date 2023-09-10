@@ -34,7 +34,7 @@ CountrySelect.propTypes = {
   data: PropTypes.array.isRequired,
   name: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
-  error: PropTypes.object,
+  error: PropTypes.string,
   rest: PropTypes.any,
 };
 
