@@ -3,13 +3,14 @@
 import dynamic from 'next/dynamic';
 import { useCallback, useEffect, useState } from 'react';
 
-import ProductList from '@/components/products/ProductList';
 import Pagination from '@/components/Pagination';
 import ProductFilter from '@/components/products/ProductFilter';
 import ClientOnly from '@/components/ClientOnly';
 import ProductBox from '@/components/products/ProductBox';
 
 import { storeProducts } from '@/data';
+
+const ProductList = dynamic(() => import('@/components/products/ProductList'), { ssr: false });
 
 const Products = () => {
   const [values, setValues] = useState({
