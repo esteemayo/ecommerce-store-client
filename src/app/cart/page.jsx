@@ -7,14 +7,15 @@ import { useCallback, useState } from 'react';
 import Image from 'next/image';
 import dynamic from 'next/dynamic';
 
-import CartHeader from '@/components/carts/CartHeader';
-import CartItem from '@/components/carts/CartItem';
-import PaymentModal from '@/components/modals/PaymentModal';
 import ClientOnly from '@/components/ClientOnly';
-import CartTotal from '@/components/carts/CartTotal';
 
 import usePaymentModal from '@/hooks/usePaymentModal';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
+
+const CartHeader = dynamic(() => import('@/components/carts/CartHeader'), { ssr: false });
+const CartItem =  dynamic(() => import('@/components/carts/CartItem'), { ssr: false });
+const PaymentModal = dynamic(() => import('@/components/modals/PaymentModal'), { ssr: false});
+const CartTotal = dynamic(() => import('@/components/carts/CartTotal'), { ssr: false });
 
 const Cart = () => {
   const dispatch = useDispatch();
