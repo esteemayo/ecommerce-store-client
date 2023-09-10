@@ -55,7 +55,7 @@ Input.propTypes = {
   name: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
   error: PropTypes.string,
-  rest: PropTypes.any.isRequired,
+  rest: PropTypes.any,
 };
 
 export default Input;
