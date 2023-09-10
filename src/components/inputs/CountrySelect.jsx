@@ -1,8 +1,11 @@
 import styled from 'styled-components';
+import { FormGroup } from '../form/FormGroup';
 
 const CountrySelect = () => {
   return (
-    <div>CountrySelect</div>
+    <FormGroup>
+      CountrySelect
+    </FormGroup>
   );
 }
 
