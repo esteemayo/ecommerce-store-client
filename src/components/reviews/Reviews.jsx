@@ -110,7 +110,7 @@ const Heading = styled.h1`
 Reviews.propTypes = {
   reviews: PropTypes.array.isRequired,
   sortLabel: PropTypes.string.isRequired,
-  sort: PropTypes.any.isRequired,
+  sort: PropTypes.any,
   onSort: PropTypes.any.isRequired,
 };
 
