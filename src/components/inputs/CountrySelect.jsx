@@ -16,16 +16,14 @@ const CountrySelect = ({
       <Label htmlFor={name}>{label}</Label>
       <StyledSelect {...rest} id={name} name={name}>
         <Option value=''>Select your country</Option>
-        {data
-          .sort((a, b) => a.flag - b.flag)
-          .map((item) => {
-            const { flag, label } = item
-            return (
-              <Option key={flag} value={label}>
-                {flag} {label}
-              </Option>
-            )
-          })}
+        {data.map((item) => {
+          const { flag, label } = item
+          return (
+            <Option key={flag} value={label}>
+              {flag} {label}
+            </Option>
+          )
+        })}
       </StyledSelect>
       {error && <FormError message={error} />}
     </FormGroup>
