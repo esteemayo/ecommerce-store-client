@@ -38,7 +38,7 @@ export const Label = styled.label`
   color:  ${({ theme }) => theme.textLabel};
 `;
 
-const StyledSelect = styled.select`
+export const StyledSelect = styled.select`
   border: none;
   display: inline-block;
   font-family: inherit;
@@ -52,7 +52,7 @@ const StyledSelect = styled.select`
   caret-color: ${({ theme }) => theme.inputCaret};
 `;
 
-const Option = styled.option`
+export const Option = styled.option`
   text-transform: capitalize;
   background-color: ${({ theme }) => theme.bgProdCard};
   color: inherit;
