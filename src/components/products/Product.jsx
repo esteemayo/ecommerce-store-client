@@ -181,8 +181,8 @@ const Hr = styled.hr`
 Product.propTypes = {
   product: PropTypes.shape({
     name: PropTypes.string,
-    color: PropTypes.string,
-    size: PropTypes.any,
+    color: PropTypes.array,
+    size: PropTypes.array,
     price: PropTypes.number,
     discount: PropTypes.number,
     priceDiscount: PropTypes.number,
