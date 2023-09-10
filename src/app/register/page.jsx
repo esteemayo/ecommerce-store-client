@@ -123,6 +123,7 @@ const Register = () => {
               label='Country'
               data={getAll()}
               onChange={handleChange}
+              error={errors.country}
             />
             {perc > 0 && perc < 100 ? (
               <UploadProgress percentage={perc} />
