@@ -22,7 +22,7 @@ const CountrySelect = ({
           const { flag, label } = item
           return (
             <Option key={flag} value={label}>
-              {flag} {label}
+              {getEmojiFlag(flag)} {label}
             </Option>
           )
         })}
