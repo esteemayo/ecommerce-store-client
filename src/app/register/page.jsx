@@ -14,7 +14,6 @@ import Form from '@/components/form/Form';
 
 import ClientOnly from '@/components/ClientOnly';
 
-import { useForm } from '@/hooks/useForm';
 import { registerInputs } from '@/formData';
 
 const initialState = {
