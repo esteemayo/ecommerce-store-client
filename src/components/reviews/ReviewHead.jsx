@@ -125,7 +125,7 @@ const ReviewButtonWrapper = styled.div``;
 
 ReviewHead.propTypes = {
   sort: PropTypes.string.isRequired,
-  sortLabel: PropTypes.string.isRequired,
+  sortLabel: PropTypes.string,
   rating: PropTypes.number.isRequired,
   reviews: PropTypes.array.isRequired,
   isOpen: PropTypes.bool.isRequired,
