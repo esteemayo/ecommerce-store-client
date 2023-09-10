@@ -2,6 +2,7 @@
 
 import styled from 'styled-components';
 import { useCallback, useEffect, useState } from 'react';
+import dynamic from 'next/dynamic';
 
 import ProductBox from '@/components/products/ProductBox';
 import ClientOnly from '@/components/ClientOnly';
