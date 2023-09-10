@@ -26,7 +26,7 @@ const Recommendation = ({ data }) => {
                 <ProductContainer>
                   <ProductTitle>{name}</ProductTitle>
                   <ProductPrice>
-                    <FormatPrice value={price.toFixed(2)} />
+                    <FormatPrice value={parseFloat(price.toFixed(2))} />
                   </ProductPrice>
                 </ProductContainer>
               </Link>
