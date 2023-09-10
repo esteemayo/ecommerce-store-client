@@ -5,10 +5,11 @@ import { useDispatch } from 'react-redux';
 import dynamic from 'next/dynamic';
 
 import ClientOnly from '@/components/ClientOnly';
-import OrderCard from '@/components/orders/OrderCard';
 
 import { orders } from '@/data';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
+
+const OrderCard = dynamic(() => import('@/components/orders/OrderCard'), { ssr: false });
 
 const Orders = () => {
   const dispatch = useDispatch();
