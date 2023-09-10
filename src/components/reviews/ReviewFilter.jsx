@@ -130,7 +130,7 @@ const FilterList = styled.li`
 
 ReviewFilter.propTypes = {
   sort: PropTypes.string,
-  value: PropTypes.string.isRequired,
+  value: PropTypes.string,
   isOpen: PropTypes.bool.isRequired,
   onClick: PropTypes.func.isRequired,
   onSort: PropTypes.func.isRequired,
