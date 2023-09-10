@@ -1,6 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
+import dynamic from 'next/dynamic';
 import { useDispatch } from 'react-redux';
 
 import ClientOnly from '@/components/ClientOnly';
