@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import { getUnicode } from 'countries-list';
+import { getEmojiFlag } from 'countries-list';
 
 import { FormGroup } from '../form/FormGroup';
 import { Label, Option, StyledSelect } from '../form/Select';
@@ -22,7 +22,7 @@ const CountrySelect = ({
           const { flag, label } = item
           return (
             <Option key={flag} value={label}>
-              {getUnicode(flag)} {label}
+              {getEmojiFlag(flag)} {label}
             </Option>
           )
         })}
