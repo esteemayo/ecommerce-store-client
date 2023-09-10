@@ -2,6 +2,7 @@
 import styled from 'styled-components';
 import Image from 'next/image';
 import { useDispatch } from 'react-redux';
+import dynamic from 'next/dynamic';
 
 import ClientOnly from '@/components/ClientOnly';
 import OrderCard from '@/components/orders/OrderCard';
