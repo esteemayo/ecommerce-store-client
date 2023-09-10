@@ -32,4 +32,12 @@ const CountrySelect = ({
   );
 }
 
+CountrySelect.propTypes = {
+  data: PropTypes.array.isRequired,
+  name: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired,
+  error: PropTypes.object,
+  rest: PropTypes.any,
+};
+
 export default CountrySelect;
