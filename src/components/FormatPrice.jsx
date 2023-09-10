@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const FormatPrice = ({ value }) => {
   return (
     <NumericFormat
-      value={+value}
+      value={value}
       displayType={'text'}
       thousandSeparator={true}
       prefix={'$'}
