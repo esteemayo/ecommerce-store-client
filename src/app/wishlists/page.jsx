@@ -8,13 +8,14 @@ import dynamic from 'next/dynamic';
 import CartModal from '@/components/modals/CartModal';
 import WishlistHeader from '@/components/wishlists/WishlistHeader';
 import ClientOnly from '@/components/ClientOnly';
-import WishlistCard from '@/components/wishlists/WishlistCard';
 
 import useCartModal from '@/hooks/useCartModal';
 import useWishlistModal from '@/hooks/useWishlistModal';
 
 import { wishlists } from '@/data';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
+
+const WishlistCard = dynamic(() => import('@/components/wishlists/WishlistCard'), { ssr: false });
 
 const WishLists = () => {
   const dispatch = useDispatch();
