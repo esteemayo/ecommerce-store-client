@@ -29,8 +29,9 @@ const Register = () => {
   const [perc, setPerc] = useState(0);
   const [data, setData] = useState(initialState);
   const [file, setFile] = useState(null);
+  const [errors, setErrors] = useState({});
 
-  const validateForm = (data) => {
+  const validateForm = useCallback(() => {
     const errors = {};
     const { name, email, username, password, confirmPassword } = data;
 
@@ -62,18 +63,12 @@ const Register = () => {
     }
 
     return errors;
-  };
+  }, [data]);
 
-  const onSubmitHandler = () => {
-    console.log({ ...formData, file });
-  };
-
-  const {
-    formData,
-    errors,
-    handleChange,
-    handleSubmit,
-  } = useForm(onSubmitHandler, initialState, validateForm);
+  const handleSubmit = useCallback((e) => {
+    e.preventDefault();
+    console.log({ ...data, file });
+  }, [data, file]);
 
   return (
     <ClientOnly>
@@ -92,7 +87,7 @@ const Register = () => {
                   name={name}
                   type={type}
                   label={label}
-                  value={formData[name]}
+                  value={data[name]}
                   placeholder={placeholder}
                   onChange={handleChange}
                   autoFocus={name === 'name' ? true : false}
