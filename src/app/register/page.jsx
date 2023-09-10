@@ -16,6 +16,7 @@ import CountrySelect from '@/components/inputs/CountrySelect';
 import ClientOnly from '@/components/ClientOnly';
 
 import { registerInputs } from '@/formData';
+import { useCountries } from '@/hooks/useCountries';
 
 const initialState = {
   name: '',
@@ -26,6 +27,8 @@ const initialState = {
 };
 
 const Register = () => {
+  const { getAll } = useCountries();
+
   const [perc, setPerc] = useState(0);
   const [data, setData] = useState(initialState);
   const [file, setFile] = useState(null);
@@ -113,6 +116,7 @@ const Register = () => {
             <CountrySelect
               name='country'
               label='Country'
+              data={getAll()}
             />
             {perc > 0 && perc < 100 ? (
               <UploadProgress percentage={perc} />

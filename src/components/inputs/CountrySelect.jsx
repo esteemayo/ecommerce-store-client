@@ -4,7 +4,7 @@ import { FormGroup } from '../form/FormGroup';
 import { Label, Option, StyledSelect } from '../form/Select';
 import FormError from '../form/FormError';
 
-const CountrySelect = ({ name, label, error, ...rest }) => {
+const CountrySelect = ({ data, name, label, error, ...rest }) => {
   return (
     <FormGroup>
       <Label htmlFor={name}>{label}</Label>
