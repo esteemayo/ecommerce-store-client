@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import Link from 'next/link';
 import { useCallback, useState } from 'react';
 import Image from 'next/image';
+import dynamic from 'next/dynamic';
 
 import CartHeader from '@/components/carts/CartHeader';
 import CartItem from '@/components/carts/CartItem';
