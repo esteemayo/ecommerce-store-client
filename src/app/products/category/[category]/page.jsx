@@ -6,10 +6,11 @@ import dynamic from 'next/dynamic';
 
 import ProductBox from '@/components/products/ProductBox';
 import ClientOnly from '@/components/ClientOnly';
-import ProductList from '@/components/products/ProductList';
 
 import { getUnique } from '@/utils';
 import { storeProducts } from '@/data';
+
+const ProductList = dynamic(() => import('@/components/products/ProductList'), { ssr: false });
 
 const ProductCategory = ({ params }) => {
   const { category } = params;
