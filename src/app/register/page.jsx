@@ -110,7 +110,10 @@ const Register = () => {
                 />
               );
             })}
-            <CountrySelect />
+            <CountrySelect
+              name='country'
+              label='Country'
+            />
             {perc > 0 && perc < 100 ? (
               <UploadProgress percentage={perc} />
             ) : (
