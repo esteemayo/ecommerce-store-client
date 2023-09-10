@@ -3,11 +3,12 @@
 import { useState } from 'react';
 import dynamic from 'next/dynamic';
 
-import ProductBox from '@/components/products/ProductBox';
 import ClientOnly from '@/components/ClientOnly';
-import ProductList from '@/components/products/ProductList';
+import ProductBox from '@/components/products/ProductBox';
 
 import { storeProducts } from '@/data';
+
+const ProductList = dynamic(() =>  import('@/components/products/ProductList'), { ssr: false });
 
 const Search = () => {
   const [products, setProducts] = useState(storeProducts);
