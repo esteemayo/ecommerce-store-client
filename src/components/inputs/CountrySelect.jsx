@@ -1,10 +1,12 @@
 import styled from 'styled-components';
+
+import { Label } from '../form/FormInput';
 import { FormGroup } from '../form/FormGroup';
 
-const CountrySelect = () => {
+const CountrySelect = ({ name, label, error, ...rest }) => {
   return (
     <FormGroup>
-      CountrySelect
+      <Label htmlFor={name}>{label}</Label>
     </FormGroup>
   );
 }
