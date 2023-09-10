@@ -42,7 +42,14 @@ const Register = () => {
 
   const validateForm = useCallback(() => {
     const errors = {};
-    const { name, email, username, password, confirmPassword, country } = data;
+    const {
+      name,
+      email,
+      username,
+      password,
+      confirmPassword,
+      country,
+    } = data;
 
     if (name.trim() === '') {
       errors.name = 'Name must not be empty';
