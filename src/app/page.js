@@ -1,6 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
+import dynamic from 'next/dynamic';
 
 import Categories from '@/components/categories/Categories';
 import FeaturedProducts from '@/components/products/FeaturedProducts';
