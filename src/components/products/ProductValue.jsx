@@ -38,6 +38,10 @@ const Container = styled.div`
 `;
 
 const ValueAdd = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3.2rem;
   color: ${({ theme }) => theme.text};
 
   span {
