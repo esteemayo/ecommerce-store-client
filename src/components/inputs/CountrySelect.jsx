@@ -4,7 +4,13 @@ import { FormGroup } from '../form/FormGroup';
 import { Label, Option, StyledSelect } from '../form/Select';
 import FormError from '../form/FormError';
 
-const CountrySelect = ({ data, name, label, error, ...rest }) => {
+const CountrySelect = ({
+  data,
+  name,
+  label,
+  error,
+  ...rest
+}) => {
   console.log(data)
   return (
     <FormGroup>
