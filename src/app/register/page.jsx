@@ -69,6 +69,10 @@ const Register = () => {
     return errors;
   }, [data]);
 
+  const handleClear = useCallback(() => {
+    setData(initialState);
+  }, [initialState]);
+
   const handleSubmit = useCallback((e) => {
     e.preventDefault();
 
