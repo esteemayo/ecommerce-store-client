@@ -6,13 +6,14 @@ import dynamic from 'next/dynamic';
 import { useDispatch } from 'react-redux';
 
 import ClientOnly from '@/components/ClientOnly';
-import Product from '@/components/products/Product';
-import EmptyState from '@/components/EmptyState';
-import Recommendation from '@/components/Recommendation';
-import Reviews from '@/components/reviews/Reviews';
 
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 import { recommendations, reviewItems, storeProducts } from '@/data';
+
+const Product = dynamic(() => import('@/components/products/Product'), { ssr: false });
+const EmptyState = dynamic(() => import('@/components/EmptyState'), { ssr: false });
+const Recommendation = dynamic(() => import('@/components/Recommendation'), { ssr: false });
+const Reviews = dynamic(() => import('@/components/reviews/Reviews'), { ssr: false });
 
 const SingleProduct = ({ params }) => {
   const { id } = params;
