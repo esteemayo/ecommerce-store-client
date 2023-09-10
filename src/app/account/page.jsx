@@ -12,9 +12,9 @@ import useFileModal from '@/hooks/useFileModal';
 import useAccountModal from '@/hooks/useAccountModal';
 import useEmailModal from '@/hooks/useEmailModal';
 
-import AccountHead from './AccountHead';
-import DeactivateAccount from './DeactivateAccount';
-import AccountUpload from './AccountUpload';
+const AccountHead = dynamic(() => import('./AccountHead'), { ssr: false });
+const DeactivateAccount = dynamic(() => import('./DeactivateAccount'), { ssr: false });
+const AccountUpload = dynamic(() => import('./AccountUpload'), { ssr: false });
 
 const Account = () => {
   const dispatch = useDispatch();
