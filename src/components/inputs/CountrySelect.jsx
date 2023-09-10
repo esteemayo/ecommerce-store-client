@@ -12,7 +12,6 @@ const CountrySelect = ({
   error,
   ...rest
 }) => {
-  console.log(data)
   return (
     <FormGroup>
       <Label htmlFor={name}>{label}</Label>
