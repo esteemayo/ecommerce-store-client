@@ -18,13 +18,11 @@ const ReviewModal = ({ isOpen, onClose }) => {
   const [terms, setTerms] = useState(false);
   const [showModal, setShowModal] = useState(isOpen);
 
-  const handleCloseModal = useCallback((e) => {
-    e.stopPropagation();
-
-    if (e.target.classList.contains('overlay')) {
-      closeModalHandler();
-    }
-  }, [closeModalHandler]);
+  const handleClear = useCallback(() => {
+    setRating(null);
+    setReview('');
+    setTerms(false);
+  }, []);
 
   const closeModalHandler = useCallback(() => {
     setShowModal(false);
@@ -32,11 +30,13 @@ const ReviewModal = ({ isOpen, onClose }) => {
     handleClear();
   }, [onClose, handleClear]);
 
-  const handleClear = useCallback(() => {
-    setRating(null);
-    setReview('');
-    setTerms(false);
-  }, []);
+  const handleCloseModal = useCallback((e) => {
+    e.stopPropagation();
+
+    if (e.target.classList.contains('overlay')) {
+      closeModalHandler();
+    }
+  }, [closeModalHandler]);
 
   const handleClick = useCallback(() => {
     console.log({ rating, review, terms });
