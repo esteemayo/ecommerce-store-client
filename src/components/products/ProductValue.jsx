@@ -55,6 +55,7 @@ const ValueAdd = styled.div`
 `;
 
 const ImageWrapper = styled.div`
+  color: inherit;
   display: flex;
   align-items: center;
   gap: 0.8rem;
