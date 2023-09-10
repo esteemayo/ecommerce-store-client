@@ -71,7 +71,7 @@ const Register = () => {
 
   const handleClear = useCallback(() => {
     setData(initialState);
-  }, []);
+  }, [initialState]);
 
   const handleSubmit = useCallback((e) => {
     e.preventDefault();
@@ -82,7 +82,7 @@ const Register = () => {
 
     console.log({ ...data, file });
     handleClear();
-  }, [data, file, validateForm]);
+  }, [data, file, handleClear, validateForm]);
 
   return (
     <ClientOnly>
