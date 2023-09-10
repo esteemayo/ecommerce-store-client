@@ -42,7 +42,7 @@ const Register = () => {
 
   const validateForm = useCallback(() => {
     const errors = {};
-    const { name, email, username, password, confirmPassword } = data;
+    const { name, email, username, password, confirmPassword, country } = data;
 
     if (name.trim() === '') {
       errors.name = 'Name must not be empty';
@@ -69,6 +69,10 @@ const Register = () => {
       errors.confirmPassword = 'Please confirm your new password';
     } else if (password !== confirmPassword) {
       errors.confirmPassword = 'Passwords do not match';
+    }
+
+    if (country.trim() === '') {
+      errors.country = 'Country must not be empty';
     }
 
     return errors;
