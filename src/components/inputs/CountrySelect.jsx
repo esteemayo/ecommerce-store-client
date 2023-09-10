@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { Label } from '../form/FormInput';
+import { Label } from '../form/Select';
 import { FormGroup } from '../form/FormGroup';
 
 const CountrySelect = ({ name, label, error, ...rest }) => {
