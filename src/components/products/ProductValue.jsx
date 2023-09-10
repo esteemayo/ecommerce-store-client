@@ -12,7 +12,7 @@ const ProductValue = ({ items, mode }) => {
           const { id, desc, img } = item;
           return (
             <ImageWrapper key={id}>
-              <Image
+              <StyledImage
                 src={img}
                 width={24}
                 height={24}
@@ -40,14 +40,6 @@ const Container = styled.div`
 const ValueAdd = styled.div`
   color: ${({ theme }) => theme.text};
 
-  img {
-    width: 2.4rem;
-    height: auto;
-    background-color: ${({ mode }) => mode === 'true' && '#1b1a1a'};
-    display: inline-block;
-    object-fit: cover;
-  }
-
   span {
     font-size: 1.25rem;
     line-height: 1.2;
@@ -59,6 +51,14 @@ const ImageWrapper = styled.div`
   display: flex;
   align-items: center;
   gap: 0.8rem;
+`;
+
+const StyledImage = styled(Image)`
+  width: 2.4rem;
+  height: auto;
+  background-color: ${({ mode }) => mode === 'true' && '#1b1a1a'};
+  display: inline-block;
+  object-fit: cover;
 `;
 
 ProductValue.propTypes = {
