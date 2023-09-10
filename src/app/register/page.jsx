@@ -30,6 +30,11 @@ const Register = () => {
   const [file, setFile] = useState(null);
   const [errors, setErrors] = useState({});
 
+  const handleChange = useCallback(({ target: input }) => {
+    const { name, value } = input;
+    setData((prev) => ({ ...prev, [name]: value }));
+  }, []);
+
   const validateForm = useCallback(() => {
     const errors = {};
     const { name, email, username, password, confirmPassword } = data;
