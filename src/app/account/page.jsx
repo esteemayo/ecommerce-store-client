@@ -18,7 +18,6 @@ const DeactivateAccount = dynamic(() => import('./DeactivateAccount'), { ssr: fa
 const AccountUpload = dynamic(() => import('./AccountUpload'), { ssr: false });
 
 const Account = () => {
-  const dispatch = useDispatch();
   const { handleSubmenu } = useCloseSubmenu();
 
   const emailModal = useEmailModal();
