@@ -55,7 +55,7 @@ const StyledButton = styled.button`
 `;
 
 WishlistButton.propTypes = {
-  actionId: PropTypes.string.isRequired,
+  actionId: PropTypes.number.isRequired,
   product: PropTypes.object.isRequired,
 };
 
