@@ -12,10 +12,18 @@ const WishlistButton = ({ actionId, product, wished }) => {
     wished,
   });
 
+  const wishlistLabel = useMemo(() => {
+    if (wished.includes(actionId)) {
+      return 'Added to wishlists';
+    }
+
+    return 'Add to Wishlist';
+  }, [actionId, wished]);
+
   return (
     <IconButton onClick={handleToggle}>
       <WishIcon isWished={isWished} />
-      Add to Wishlist
+      {wishlistLabel}
     </IconButton>
   );
 }
