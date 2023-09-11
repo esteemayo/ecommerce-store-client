@@ -17,7 +17,7 @@ import { wishlists } from '@/data';
 const WishlistCard = dynamic(() => import('@/components/wishlists/WishlistCard'), { ssr: false });
 
 const WishLists = () => {
-  const { handleSubmenu } = useSubmenu();
+  const { closeSubmenuHandler } = useSubmenu();
 
   const cartModal = useCartModal();
   const wishlistModal = useWishlistModal();
@@ -65,7 +65,7 @@ const WishLists = () => {
 
   return (
     <ClientOnly>
-      <Container onMouseOver={handleSubmenu}>
+      <Container onMouseOver={closeSubmenuHandler}>
         <Wrapper>
           {bodyContent}
         </Wrapper>

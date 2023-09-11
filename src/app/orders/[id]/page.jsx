@@ -9,7 +9,7 @@ import FormatPrice from '@/components/FormatPrice';
 import { useSubmenu } from '@/hooks/useSubmenu';
 
 const Order = () => {
-  const { handleSubmenu } = useSubmenu();
+  const { closeSubmenuHandler } = useSubmenu();
   const status = 0;
 
   const statusClass = (index) => {
@@ -20,7 +20,7 @@ const Order = () => {
 
   return (
     <ClientOnly>
-      <Container onMouseOver={handleSubmenu}>
+      <Container onMouseOver={closeSubmenuHandler}>
         <OrderWrapper>
           <Wrapper>
             <OrderContainer>
