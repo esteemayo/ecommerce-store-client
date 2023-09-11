@@ -19,7 +19,6 @@ import { closeSubmenu } from '@/features/submenu/submenuSlice';
 const WishlistCard = dynamic(() => import('@/components/wishlists/WishlistCard'), { ssr: false });
 
 const WishLists = () => {
-  const dispatch = useDispatch();
   const { handleSubmenu } = useCloseSubmenu();
 
   const cartModal = useCartModal();
