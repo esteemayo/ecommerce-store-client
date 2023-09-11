@@ -10,12 +10,12 @@ export const useSubmenu = () => {
     dispatch(openSubmenu(submenu));
   }, [dispatch]);
 
-  const handleSubmenu = useCallback(() => {
+  const closeSubmenuHandler = useCallback(() => {
     dispatch(closeSubmenu());
   }, [dispatch]);
 
   return {
-    handleSubmenu,
+    closeSubmenuHandler,
     openSubmenuHandler,
   };
 }
