@@ -6,13 +6,16 @@ import dynamic from 'next/dynamic';
 
 import ClientOnly from '@/components/ClientOnly';
 
-import { orders } from '@/data';
+import { useCloseSubmenu } from '@/hooks/useCloseSubmenu';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
+
+import { orders } from '@/data';
 
 const OrderCard = dynamic(() => import('@/components/orders/OrderCard'), { ssr: false });
 
 const Orders = () => {
   const dispatch = useDispatch();
+  const { handleSubmenu } = useCloseSubmenu();
 
   let bodyContent;
 
@@ -45,7 +48,7 @@ const Orders = () => {
 
   return (
     <ClientOnly>
-      <Container onMouseOver={() => dispatch(closeSubmenu())}>
+      <Container onMouseOver={handleSubmenu}>
         <Wrapper>
           {bodyContent}
         </Wrapper>
