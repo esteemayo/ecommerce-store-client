@@ -3,17 +3,19 @@ import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { useCallback } from 'react';
 
+import { useCloseSubmenu } from '@/hooks/useCloseSubmenu';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
 const FormBox = ({ children }) => {
   const dispatch = useDispatch();
+  const { handleSubmenu } = useCloseSubmenu();
 
   const handleClose = useCallback(() => {
     dispatch(closeSubmenu());
   }, [dispatch]);
 
   return (
-    <Container onMouseOver={handleClose}>
+    <Container onMouseOver={handleSubmenu}>
       <Wrapper>
         {children}
       </Wrapper>
