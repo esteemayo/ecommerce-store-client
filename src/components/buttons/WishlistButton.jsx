@@ -5,6 +5,7 @@ import { faHeart } from '@fortawesome/free-regular-svg-icons';
 import { faHeart as faFillHeart } from '@fortawesome/free-solid-svg-icons';
 import PropTypes from 'prop-types';
 
+import WishIcon from '../icons/WishIcon';
 import useWishlist from '@/hooks/useWishlist';
 
 const WishlistButton = ({ actionId, product }) => {
@@ -13,7 +14,7 @@ const WishlistButton = ({ actionId, product }) => {
 
   return (
     <StyledButton onClick={handleToggle}>
-      <FontAwesomeIcon icon={faHeart} />
+      <WishIcon isWished={isWished} />
       Add to Wishlist
     </StyledButton>
   );
