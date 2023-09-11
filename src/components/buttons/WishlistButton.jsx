@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import { useSelector } from 'react-redux';
 
 import WishIcon from '../icons/WishIcon';
 import useWishlist from '@/hooks/useWishlist';
