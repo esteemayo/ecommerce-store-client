@@ -6,7 +6,9 @@ import { faHeart } from '@fortawesome/free-regular-svg-icons';
 import useWishlist from '@/hooks/useWishlist';
 
 const WishlistButton = ({ actionId, product }) => {
-  const { isWished, handleToggle } = useWishlist(actionId, product);
+  const { wishlists } = useSelector((state) => ({ ...state.cart }));
+  const { isWished, handleToggle } = useWishlist(actionId, product, wishlists);
+
   return (
     <StyledButton>
       <FontAwesomeIcon icon={faHeart} />
