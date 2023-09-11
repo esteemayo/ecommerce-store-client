@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-import { useCloseSubmenu } from '@/hooks/useCloseSubmenu';
+import { useCloseSubmenu } from '@/hooks/useSubmenu';
 
 const FormBox = ({ children }) => {
   const { handleSubmenu } = useCloseSubmenu();

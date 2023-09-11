@@ -14,7 +14,7 @@ import ToggleButton from './ToggleButton';
 import SearchIcon from './SearchIcon';
 
 import useSearchModal from '@/hooks/useSearchModal';
-import { useCloseSubmenu } from '@/hooks/useCloseSubmenu';
+import { useSubmenu } from '@/hoo@/hooks/useSubmenu';
 
 import { openSidebar, openSubmenu } from '@/features/submenu/submenuSlice';
 
@@ -26,7 +26,7 @@ const Navbar = () => {
   const { qty } = useSelector((state) => ({ ...state.cart }));
   const { onOpen } = useSearchModal((state) => ({ ...state }));
 
-  const { handleSubmenu } = useCloseSubmenu();
+  const { handleSubmenu } = useSubmenu();
 
   const [isHover, setIsHover] = useState(false);
 

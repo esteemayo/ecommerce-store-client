@@ -2,10 +2,10 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 import { StyledWrapper } from '../StyledWrapper';
-import { useCloseSubmenu } from '@/hooks/useCloseSubmenu';
+import { useSubmenu } from '@/hooks/useSubmenu';
 
 const ProductBox = ({ children }) => {
-  const { handleSubmenu } = useCloseSubmenu();
+  const { handleSubmenu } = useSubmenu();
 
   return (
     <Container onMouseOver={handleSubmenu}>

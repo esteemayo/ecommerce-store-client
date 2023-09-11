@@ -6,7 +6,7 @@ import ClientOnly from '@/components/ClientOnly';
 import OrderStatus from '@/components/images/orders/OrderStatus';
 import FormatPrice from '@/components/FormatPrice';
 
-import { useCloseSubmenu } from '@/hooks/useCloseSubmenu';
+import { useCloseSubmenu } from '@/hooks/useSubmenu';
 
 const Order = () => {
   const { handleSubmenu } = useCloseSubmenu();

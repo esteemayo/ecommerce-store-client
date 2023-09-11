@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import ClientOnly from '@/components/ClientOnly';
 import FormatPrice from '@/components/FormatPrice';
 
-import { useCloseSubmenu } from '@/hooks/useCloseSubmenu';
+import { useCloseSubmenu } from '@/hooks/useSubmenu';
 
 const Success = () => {
   const { handleSubmenu } = useCloseSubmenu();

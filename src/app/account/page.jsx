@@ -9,7 +9,7 @@ import usePasswordModal from '@/hooks/usePasswordModal';
 import useFileModal from '@/hooks/useFileModal';
 import useAccountModal from '@/hooks/useAccountModal';
 import useEmailModal from '@/hooks/useEmailModal';
-import { useCloseSubmenu } from '@/hooks/useCloseSubmenu';
+import { useCloseSubmenu } from '@/hooks/useSubmenu';
 
 const AccountHead = dynamic(() => import('./AccountHead'), { ssr: false });
 const DeactivateAccount = dynamic(() => import('./DeactivateAccount'), { ssr: false });

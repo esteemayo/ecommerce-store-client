@@ -9,7 +9,7 @@ import WishlistHeader from '@/components/wishlists/WishlistHeader';
 import ClientOnly from '@/components/ClientOnly';
 
 import useCartModal from '@/hooks/useCartModal';
-import { useCloseSubmenu } from '@/hooks/useCloseSubmenu';
+import { useCloseSubmenu } from '@/hooks/useSubmenu';
 import useWishlistModal from '@/hooks/useWishlistModal';
 
 import { wishlists } from '@/data';
