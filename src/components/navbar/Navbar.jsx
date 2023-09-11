@@ -26,7 +26,7 @@ const Navbar = () => {
   const { qty } = useSelector((state) => ({ ...state.cart }));
   const { onOpen } = useSearchModal((state) => ({ ...state }));
 
-  const { handleSubmenu, openSubmenuHandler } = useSubmenu();
+  const { closeSubmenuHandler, openSubmenuHandler } = useSubmenu();
 
   const [isHover, setIsHover] = useState(false);
 
@@ -58,13 +58,13 @@ const Navbar = () => {
     openSubmenuHandler(submenu);
   }, [openSubmenuHandler]);
 
-  const SubmenuHandler = useCallback((e) => {
+  const handleSubmenu = useCallback((e) => {
     e.stopPropagation();
 
     if (!e.target.classList.contains('link-btn')) {
-      handleSubmenu();
+      closeSubmenuHandler();
     }
-  }, [handleSubmenu]);
+  }, [closeSubmenuHandler]);
 
   const handleOpen = useCallback(() => {
     dispatch(openSidebar());

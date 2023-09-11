@@ -5,10 +5,10 @@ import { StyledWrapper } from '../StyledWrapper';
 import { useSubmenu } from '@/hooks/useSubmenu';
 
 const ProductBox = ({ children }) => {
-  const { handleSubmenu } = useSubmenu();
+  const { closeSubmenuHandler } = useSubmenu();
 
   return (
-    <Container onMouseOver={handleSubmenu}>
+    <Container onMouseOver={closeSubmenuHandler}>
       <StyledWrapper>{children}</StyledWrapper>
     </Container>
   );
