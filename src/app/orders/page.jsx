@@ -5,14 +5,14 @@ import dynamic from 'next/dynamic';
 
 import ClientOnly from '@/components/ClientOnly';
 
-import { useCloseSubmenu } from '@/hooks/useSubmenu';
+import { useSubmenu } from '@/hooks/useSubmenu';
 
 import { orders } from '@/data';
 
 const OrderCard = dynamic(() => import('@/components/orders/OrderCard'), { ssr: false });
 
 const Orders = () => {
-  const { handleSubmenu } = useCloseSubmenu();
+  const { handleSubmenu } = useSubmenu();
 
   let bodyContent;
 

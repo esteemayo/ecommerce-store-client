@@ -8,15 +8,15 @@ import ClientOnly from '@/components/ClientOnly';
 import usePasswordModal from '@/hooks/usePasswordModal';
 import useFileModal from '@/hooks/useFileModal';
 import useAccountModal from '@/hooks/useAccountModal';
+import { useSubmenu } from '@/hooks/useSubmenu';
 import useEmailModal from '@/hooks/useEmailModal';
-import { useCloseSubmenu } from '@/hooks/useSubmenu';
 
 const AccountHead = dynamic(() => import('./AccountHead'), { ssr: false });
 const DeactivateAccount = dynamic(() => import('./DeactivateAccount'), { ssr: false });
 const AccountUpload = dynamic(() => import('./AccountUpload'), { ssr: false });
 
 const Account = () => {
-  const { handleSubmenu } = useCloseSubmenu();
+  const { handleSubmenu } = useSubmenu();
   const emailModal = useEmailModal();
   const passwordModal = usePasswordModal();
   const fileModal = useFileModal();

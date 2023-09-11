@@ -10,7 +10,7 @@ import dynamic from 'next/dynamic';
 import ClientOnly from '@/components/ClientOnly';
 
 import usePaymentModal from '@/hooks/usePaymentModal';
-import { useCloseSubmenu } from '@/hooks/useSubmenu';
+import { useSubmenu } from '@/hooks/useSubmenu';
 
 const CartHeader = dynamic(() => import('@/components/carts/CartHeader'), { ssr: false });
 const CartItem = dynamic(() => import('@/components/carts/CartItem'), { ssr: false });
@@ -21,7 +21,7 @@ const Cart = () => {
   const { cart } = useSelector((state) => ({ ...state.cart }));
 
   const paymentModal = usePaymentModal();
-  const { handleSubmenu } = useCloseSubmenu();
+  const { handleSubmenu } = useSubmenu();
 
   const [isOpen, setIsOpen] = useState(false);
 
