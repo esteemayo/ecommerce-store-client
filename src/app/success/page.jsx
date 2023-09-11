@@ -10,7 +10,6 @@ import ClientOnly from '@/components/ClientOnly';
 import FormatPrice from '@/components/FormatPrice';
 
 import { useCloseSubmenu } from '@/hooks/useCloseSubmenu';
-import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
 const Success = () => {
   const { handleSubmenu } = useCloseSubmenu();
