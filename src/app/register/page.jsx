@@ -128,6 +128,7 @@ const Register = () => {
             <CountrySelect
               name='country'
               label='Country'
+              value={data.country}
               data={getAll()}
               onChange={handleChange}
               error={errors.country}
