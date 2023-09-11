@@ -1,6 +1,6 @@
-import { useCallback } from 'react';
+import { useCallback, useMemo } from 'react';
 
-export const useWishlist = () => {
+export const useWishlist = ({ product }) => {
   return (
     <div>useWishlist</div>
   );
