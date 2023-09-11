@@ -17,10 +17,9 @@ const AccountUpload = dynamic(() => import('./AccountUpload'), { ssr: false });
 
 const Account = () => {
   const { handleSubmenu } = useCloseSubmenu();
-
   const emailModal = useEmailModal();
-  const fileModal = useFileModal();
   const passwordModal = usePasswordModal();
+  const fileModal = useFileModal();
   const accountModal = useAccountModal();
 
   const user = false;
