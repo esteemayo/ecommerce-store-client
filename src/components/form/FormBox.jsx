@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-import { useCloseSubmenu } from '@/hooks/useSubmenu';
+import { useSubmenu } from '@/hooks/useSubmenu';
 
 const FormBox = ({ children }) => {
-  const { handleSubmenu } = useCloseSubmenu();
+  const { handleSubmenu } = useSubmenu();
 
   return (
     <Container onMouseOver={handleSubmenu}>
