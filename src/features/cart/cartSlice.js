@@ -42,15 +42,6 @@ export const cartSlice = createSlice({
           state.cart.findIndex((item) => item.id !== payload.id),
           1
         );
-      } else {
-        state.wishlists = state.wishlists.splice(
-          state.wishlists.findIndex((item) => item.id !== payload.id),
-          1
-        );
-        state.wished = state.wished.splice(
-          state.wished.findIndex((item) => item !== payload.id),
-          1
-        );
       }
     },
     removeWishlist: (state, { payload }) => {
