@@ -92,7 +92,7 @@ const Color = styled.button`
 ColorSelect.propTypes = {
   title: PropTypes.string.isRequired,
   mode: PropTypes.bool.isRequired,
-  value: PropTypes.array.isRequired,
+  value: PropTypes.array,
   modal: PropTypes.bool,
   selected: PropTypes.bool,
   onAction: PropTypes.func.isRequired,
