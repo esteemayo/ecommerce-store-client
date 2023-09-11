@@ -16,11 +16,7 @@ import SearchIcon from './SearchIcon';
 import useSearchModal from '@/hooks/useSearchModal';
 import { useCloseSubmenu } from '@/hooks/useCloseSubmenu';
 
-import {
-  closeSubmenu,
-  openSidebar,
-  openSubmenu,
-} from '@/features/submenu/submenuSlice';
+import { openSidebar, openSubmenu } from '@/features/submenu/submenuSlice';
 
 import { navLinks } from '@/data';
 
