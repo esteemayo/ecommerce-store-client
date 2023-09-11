@@ -59,6 +59,7 @@ const StyledButton = styled.button`
 WishlistButton.propTypes = {
   actionId: PropTypes.number.isRequired,
   product: PropTypes.object.isRequired,
+  wished: PropTypes.array.isRequired,
 };
 
 export default WishlistButton;
