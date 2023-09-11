@@ -11,6 +11,7 @@ import usePasswordModal from '@/hooks/usePasswordModal';
 import useFileModal from '@/hooks/useFileModal';
 import useAccountModal from '@/hooks/useAccountModal';
 import useEmailModal from '@/hooks/useEmailModal';
+import { useCloseSubmenu } from '@/hooks/useCloseSubmenu';
 
 const AccountHead = dynamic(() => import('./AccountHead'), { ssr: false });
 const DeactivateAccount = dynamic(() => import('./DeactivateAccount'), { ssr: false });
@@ -18,6 +19,7 @@ const AccountUpload = dynamic(() => import('./AccountUpload'), { ssr: false });
 
 const Account = () => {
   const dispatch = useDispatch();
+  const { handleSubmenu } = useCloseSubmenu();
 
   const emailModal = useEmailModal();
   const fileModal = useFileModal();
@@ -28,7 +30,7 @@ const Account = () => {
 
   return (
     <ClientOnly>
-      <Container onMouseOver={() => dispatch(closeSubmenu())}>
+      <Container onMouseOver={handleSubmenu}>
         <ContainerBox>
           <Wrapper>
             <HeadingContainer>
