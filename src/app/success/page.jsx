@@ -13,7 +13,6 @@ import { useCloseSubmenu } from '@/hooks/useCloseSubmenu';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
 const Success = () => {
-  const dispatch = useDispatch();
   const { handleSubmenu } = useCloseSubmenu();
 
   return (
