@@ -16,9 +16,21 @@ export const cartSlice = createSlice({
   reducers: {
     reset: (state) => initialState,
     addProduct: (state, { payload }) => {
-      state.qty++;
-      state.cart.push(payload);
-      state.total += payload.price * payload.quantity;
+      if (state.wishlists.includes(payload)) {
+        state.wishlists.splice(
+          state.wishlists.findIndex((item) => item._id !== payload._id),
+          1
+        );
+      } else {
+        state.qty++;
+        state.cart.push(payload);
+        state.total += payload.price * payload.quantity;
+      }
+    },
+    addWishlist: (state, { payload }) => {
+      if (!state.cart.includes(payload)) {
+        state.wishlists.push(payload);
+      }
     },
     clearCart: (state) => {
       state.cart = [];
@@ -86,6 +98,7 @@ export const cartSlice = createSlice({
 
 export const {
   addProduct,
+  addWishlist,
   calcTotals,
   clearCart,
   remove,
