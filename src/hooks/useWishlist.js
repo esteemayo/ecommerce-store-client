@@ -4,7 +4,7 @@ import { useCallback, useMemo } from 'react';
 
 import { addWishlist } from '@/features/cart/cartSlice';
 
-export const useWishlist = ({ actionId, product, wishlists }) => {
+const useWishlist = ({ actionId, product, wishlists }) => {
   const dispatch = useDispatch();
 
   const isWished = useMemo(() => {
@@ -22,3 +22,11 @@ export const useWishlist = ({ actionId, product, wishlists }) => {
     handleToggle,
   };
 }
+
+useWishlist.propTypes = {
+  actionId: PropTypes.string,
+  product: PropTypes.object,
+  wishlists: PropTypes.array,
+};
+
+export default useWishlist;
