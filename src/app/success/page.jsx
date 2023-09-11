@@ -3,7 +3,6 @@
 import styled from 'styled-components';
 import Link from 'next/link';
 import { faEnvelope, faLocationDot, faMessage, faPhone } from '@fortawesome/free-solid-svg-icons';
-import { useDispatch } from 'react-redux';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import ClientOnly from '@/components/ClientOnly';
