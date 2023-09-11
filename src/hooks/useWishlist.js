@@ -1,4 +1,5 @@
 import { useDispatch } from 'react-redux';
+import PropTypes from 'prop-types';
 import { useCallback, useMemo } from 'react';
 
 import { addWishlist } from '@/features/cart/cartSlice';
