@@ -8,7 +8,6 @@ import { closeSubmenu } from '@/features/submenu/submenuSlice';
 import { useCloseSubmenu } from '@/hooks/useCloseSubmenu';
 
 const ProductBox = ({ children }) => {
-  const dispatch = useDispatch();
   const { handleSubmenu } = useCloseSubmenu();
 
   return (
