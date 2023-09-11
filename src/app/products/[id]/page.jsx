@@ -25,10 +25,6 @@ const SingleProduct = ({ params }) => {
   const [reviews, setReviews] = useState(reviewItems);
   const [sort, setSort] = useState(null);
 
-  const handleCloseSubmenu = useCallback(() => {
-    dispatch(closeSubmenu());
-  }, [dispatch]);
-
   const getSort = useMemo(() => {
     if (sort === 'newest') return 'newest';
     if (sort === 'highest') return 'highest rating';
