@@ -1,10 +1,14 @@
 import { useCallback } from 'react';
 import { useDispatch } from 'react-redux';
 
-import { closeSubmenu } from '@/features/submenu/submenuSlice';
+import { closeSubmenu, openSubmenu } from '@/features/submenu/submenuSlice';
 
 export const useSubmenu = () => {
   const dispatch = useDispatch();
+
+  const openSubmenuHandler = useCallback(() => {
+    dispatch(openSubmenu);
+  }, [dispatch]);
 
   const handleSubmenu = useCallback(() => {
     dispatch(closeSubmenu());
@@ -12,5 +16,6 @@ export const useSubmenu = () => {
 
   return {
     handleSubmenu,
+    openSubmenuHandler,
   };
 }
