@@ -16,7 +16,7 @@ import SearchIcon from './SearchIcon';
 import { useSubmenu } from '@/hooks/useSubmenu';
 import useSearchModal from '@/hooks/useSearchModal';
 
-import { openSidebar, openSubmenu } from '@/features/submenu/submenuSlice';
+import { openSidebar } from '@/features/submenu/submenuSlice';
 
 import { navLinks } from '@/data';
 
