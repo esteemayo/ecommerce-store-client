@@ -7,7 +7,6 @@ import dynamic from 'next/dynamic';
 import ClientOnly from '@/components/ClientOnly';
 
 import { useCloseSubmenu } from '@/hooks/useCloseSubmenu';
-import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
 import { orders } from '@/data';
 
