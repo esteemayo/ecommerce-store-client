@@ -5,8 +5,7 @@ import { useSelector } from 'react-redux';
 import WishIcon from '../icons/WishIcon';
 import useWishlist from '@/hooks/useWishlist';
 
-const WishlistButton = ({ actionId, product }) => {
-  const { wishlists } = useSelector((state) => ({ ...state.cart }));
+const WishlistButton = ({ actionId, product, wishlists }) => {
   const { isWished, handleToggle } = useWishlist(actionId, product, wishlists);
 
   return (
