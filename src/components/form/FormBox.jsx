@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-import { useDispatch } from 'react-redux';
-import { useCallback } from 'react';
 
 import { useCloseSubmenu } from '@/hooks/useCloseSubmenu';
 
