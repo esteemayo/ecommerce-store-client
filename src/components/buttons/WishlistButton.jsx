@@ -4,11 +4,11 @@ import PropTypes from 'prop-types';
 import WishIcon from '../icons/WishIcon';
 import useWishlist from '@/hooks/useWishlist';
 
-const WishlistButton = ({ actionId, product, wishlists }) => {
+const WishlistButton = ({ actionId, product, wished }) => {
   const { isWished, handleToggle } = useWishlist({
     actionId,
     product,
-    wishlists,
+    wished,
   });
 
   return (
