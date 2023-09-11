@@ -1,7 +1,6 @@
 'use client';
 
 import styled from 'styled-components';
-import { useDispatch } from 'react-redux';
 
 import ClientOnly from '@/components/ClientOnly';
 import OrderStatus from '@/components/images/orders/OrderStatus';

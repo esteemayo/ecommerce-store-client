@@ -13,6 +13,9 @@ import MenuItem from './MenuItem';
 import ToggleButton from './ToggleButton';
 import SearchIcon from './SearchIcon';
 
+import useSearchModal from '@/hooks/useSearchModal';
+import { useCloseSubmenu } from '@/hooks/useCloseSubmenu';
+
 import {
   closeSubmenu,
   openSidebar,
@@ -20,13 +23,14 @@ import {
 } from '@/features/submenu/submenuSlice';
 
 import { navLinks } from '@/data';
-import useSearchModal from '@/hooks/useSearchModal';
 
 const Navbar = () => {
   const user = true;
   const dispatch = useDispatch();
   const { qty } = useSelector((state) => ({ ...state.cart }));
   const { onOpen } = useSearchModal((state) => ({ ...state }));
+
+  const { handleSubmenu } = useCloseSubmenu();
 
   const [isHover, setIsHover] = useState(false);
 
@@ -58,20 +62,20 @@ const Navbar = () => {
     dispatch(openSubmenu(submenu));
   }, [dispatch]);
 
-  const handleSubmenu = useCallback((e) => {
+  const SubmenuHandler = useCallback((e) => {
     e.stopPropagation();
 
     if (!e.target.classList.contains('link-btn')) {
-      dispatch(closeSubmenu());
+      handleSubmenu();
     }
-  }, [dispatch]);
+  }, [handleSubmenu]);
 
   const handleOpen = useCallback(() => {
     dispatch(openSidebar());
   }, [dispatch]);
 
   return (
-    <Container onMouseOver={handleSubmenu}>
+    <Container onMouseOver={SubmenuHandler}>
       <Wrapper>
         <LogoBox>
           <Logo />
