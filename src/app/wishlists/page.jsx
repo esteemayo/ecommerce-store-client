@@ -2,7 +2,6 @@
 
 import styled from 'styled-components';
 import { useCallback, useState } from 'react';
-import { useDispatch } from 'react-redux';
 import dynamic from 'next/dynamic';
 
 import CartModal from '@/components/modals/CartModal';
