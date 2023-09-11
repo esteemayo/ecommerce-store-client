@@ -5,28 +5,28 @@ const AccountHead = ({ onOpen, onAction }) => {
   return (
     <Container>
       <Wrapper>
-        <Label htmlFor='name'>Your name</Label>
+        <Label htmlFor='accName'>Your name</Label>
         <Input
           type='text'
-          id='name'
+          id='accName'
           name='name'
           placeholder='Name'
         />
       </Wrapper>
       <Wrapper>
-        <Label htmlFor='username'>Your username</Label>
+        <Label htmlFor='accUsername'>Your username</Label>
         <Input
           type='text'
-          id='username'
+          id='accUsername'
           name='username'
           placeholder='Username'
         />
       </Wrapper>
       <Wrapper>
-        <Label htmlFor='email'>Email address</Label>
+        <Label htmlFor='accEmail'>Email address</Label>
         <Input
           type='email'
-          id='email'
+          id='accEmail'
           name='email'
           placeholder='Email'
         />
@@ -37,10 +37,10 @@ const AccountHead = ({ onOpen, onAction }) => {
         </ButtonContainer>
       </Wrapper>
       <Wrapper>
-        <Label htmlFor='password'>Password</Label>
+        <Label htmlFor='accPassword'>Password</Label>
         <Input
           type='password'
-          id='password'
+          id='accassword'
           name='password'
           placeholder='********'
         />
