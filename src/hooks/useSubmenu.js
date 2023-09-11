@@ -6,8 +6,8 @@ import { closeSubmenu, openSubmenu } from '@/features/submenu/submenuSlice';
 export const useSubmenu = () => {
   const dispatch = useDispatch();
 
-  const openSubmenuHandler = useCallback(() => {
-    dispatch(openSubmenu);
+  const openSubmenuHandler = useCallback((submenu) => {
+    dispatch(openSubmenu(submenu));
   }, [dispatch]);
 
   const handleSubmenu = useCallback(() => {
