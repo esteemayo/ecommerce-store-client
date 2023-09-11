@@ -97,7 +97,7 @@ const Size = styled.button`
 
 SizeSelect.propTypes = {
   value: PropTypes.array.isRequired,
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
   modal: PropTypes.bool,
   selected: PropTypes.bool,
   onAction: PropTypes.func.isRequired,
