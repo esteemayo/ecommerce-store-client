@@ -53,6 +53,12 @@ export const cartSlice = createSlice({
         );
       }
     },
+    removeWishlist: (state, { payload }) => {
+      state.wished = state.wished.splice(
+        state.wished.findIndex((item) => item !== payload.id),
+        1
+      );
+    },
     clearCart: (state) => {
       state.cart = [];
     },
@@ -123,6 +129,7 @@ export const {
   calcTotals,
   clearCart,
   remove,
+  removeWishlist,
   reset,
   toggleQuantity,
 } = cartSlice.actions;
