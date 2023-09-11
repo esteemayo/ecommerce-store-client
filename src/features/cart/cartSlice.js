@@ -43,11 +43,11 @@ export const cartSlice = createSlice({
           1
         );
       } else {
-        state.wishlists.splice(
+        state.wishlists = state.wishlists.splice(
           state.wishlists.findIndex((item) => item.id !== payload.id),
           1
         );
-        state.wished.splice(
+        state.wished = state.wished.splice(
           state.wished.findIndex((item) => item !== payload.id),
           1
         );
