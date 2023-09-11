@@ -13,7 +13,9 @@ const useWishlist = ({ actionId, product, wished }) => {
     return !!list;
   }, [actionId, wished]);
 
-  const handleToggle = useCallback(() => {
+  const handleToggle = useCallback((e) => {
+    e.stopPropagation();
+
     if (wished.includes(actionId)) {
       dispatch(removeWishlist(actionId));
       return;
