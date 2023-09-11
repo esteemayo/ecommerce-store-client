@@ -15,7 +15,7 @@ const WishlistButton = ({ actionId, product, wished }) => {
 
   const wishlistLabel = useMemo(() => {
     if (wished.includes(actionId)) {
-      return 'Added to wishlists';
+      return 'Added to Wishlist';
     }
 
     return 'Add to Wishlist';
