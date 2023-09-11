@@ -19,10 +19,10 @@ const PaymentModal = dynamic(() => import('@/components/modals/PaymentModal'), {
 const CartTotal = dynamic(() => import('@/components/carts/CartTotal'), { ssr: false });
 
 const Cart = () => {
-  const dispatch = useDispatch();
-  const { handleSubmenu } = useCloseSubmenu();
   const { cart } = useSelector((state) => ({ ...state.cart }));
+
   const paymentModal = usePaymentModal();
+  const { handleSubmenu } = useCloseSubmenu();
 
   const [isOpen, setIsOpen] = useState(false);
 
