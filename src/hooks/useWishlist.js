@@ -5,12 +5,11 @@ import { useCallback, useMemo } from 'react';
 import { addWishlist } from '@/features/cart/cartSlice';
 
 const useWishlist = ({ actionId, product, wishlists }) => {
-  console.log(product)
   const dispatch = useDispatch();
 
   const isWished = useMemo(() => {
     const list = wishlists;
-    const wished = list?.includes(actionId)
+    const wished = list?.find((item) => item.id === actionId)
     return !!wished;
   }, [actionId, wishlists]);
 
