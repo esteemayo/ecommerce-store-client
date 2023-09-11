@@ -26,7 +26,7 @@ const Navbar = () => {
   const { qty } = useSelector((state) => ({ ...state.cart }));
   const { onOpen } = useSearchModal((state) => ({ ...state }));
 
-  const { handleSubmenu } = useSubmenu();
+  const { handleSubmenu, openSubmenuHandler } = useSubmenu();
 
   const [isHover, setIsHover] = useState(false);
 
@@ -55,8 +55,8 @@ const Navbar = () => {
       },
     };
 
-    dispatch(openSubmenu(submenu));
-  }, [dispatch]);
+    openSubmenuHandler(submenu);
+  }, [openSubmenuHandler]);
 
   const SubmenuHandler = useCallback((e) => {
     e.stopPropagation();
