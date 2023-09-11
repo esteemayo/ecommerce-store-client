@@ -14,7 +14,6 @@ import { useCloseSubmenu } from '@/hooks/useCloseSubmenu';
 import useWishlistModal from '@/hooks/useWishlistModal';
 
 import { wishlists } from '@/data';
-import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
 const WishlistCard = dynamic(() => import('@/components/wishlists/WishlistCard'), { ssr: false });
 
