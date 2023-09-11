@@ -16,6 +16,8 @@ import StarRating from '../StarRating';
 import FormatPrice from '../FormatPrice';
 
 const ProductCard = ({ product, onOpen, onSelect }) => {
+  const { wishlists } = useSelector((state) => ({ ...state.cart }));
+
   const handleOpen = useCallback(() => {
     onOpen();
     onSelect(product);
