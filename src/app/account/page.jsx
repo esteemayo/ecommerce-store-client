@@ -5,7 +5,6 @@ import dynamic from 'next/dynamic';
 import { useDispatch } from 'react-redux';
 
 import ClientOnly from '@/components/ClientOnly';
-import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
 import usePasswordModal from '@/hooks/usePasswordModal';
 import useFileModal from '@/hooks/useFileModal';
