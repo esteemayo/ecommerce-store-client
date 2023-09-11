@@ -9,14 +9,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import ClientOnly from '@/components/ClientOnly';
 import FormatPrice from '@/components/FormatPrice';
 
+import { useCloseSubmenu } from '@/hooks/useCloseSubmenu';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
 const Success = () => {
   const dispatch = useDispatch();
+  const { handleSubmenu } = useCloseSubmenu();
 
   return (
     <ClientOnly>
-      <Container onMouseOver={() => dispatch(closeSubmenu())}>
+      <Container onMouseOver={handleSubmenu}>
         <Wrapper>
           <SuccessContainer>
             <SuccessWrapper>
