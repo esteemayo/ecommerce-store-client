@@ -1,7 +1,6 @@
 import styled from 'styled-components';
-import { useCallback } from 'react';
-import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
+import { useCallback } from 'react';
 
 import { StyledWrapper } from '../StyledWrapper';
 import { useCloseSubmenu } from '@/hooks/useCloseSubmenu';
