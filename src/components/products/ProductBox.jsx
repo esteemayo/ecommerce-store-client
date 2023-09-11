@@ -5,16 +5,18 @@ import PropTypes from 'prop-types';
 
 import { StyledWrapper } from '../StyledWrapper';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
+import { useCloseSubmenu } from '@/hooks/useCloseSubmenu';
 
 const ProductBox = ({ children }) => {
   const dispatch = useDispatch();
+  const { handleSubmenu } = useCloseSubmenu();
 
   const handleClose = useCallback(() => {
     dispatch(closeSubmenu());
   }, [dispatch]);
 
   return (
-    <Container onMouseOver={handleClose}>
+    <Container onMouseOver={handleSubmenu}>
       <StyledWrapper>{children}</StyledWrapper>
     </Container>
   );
