@@ -13,8 +13,8 @@ import MenuItem from './MenuItem';
 import ToggleButton from './ToggleButton';
 import SearchIcon from './SearchIcon';
 
+import { useSubmenu } from '@/hooks/useSubmenu';
 import useSearchModal from '@/hooks/useSearchModal';
-import { useSubmenu } from '@/hoo@/hooks/useSubmenu';
 
 import { openSidebar, openSubmenu } from '@/features/submenu/submenuSlice';
 
