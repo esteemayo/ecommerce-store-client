@@ -2,7 +2,7 @@ import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
 import { useCallback, useMemo } from 'react';
 
-import { addWishlist } from '@/features/cart/cartSlice';
+import { addWishlist, removeWishlist } from '@/features/cart/cartSlice';
 
 const useWishlist = ({ actionId, product, wished }) => {
   const dispatch = useDispatch();
@@ -14,8 +14,13 @@ const useWishlist = ({ actionId, product, wished }) => {
   }, [actionId, wished]);
 
   const handleToggle = useCallback(() => {
+    if (wished.includes(actionId)) {
+      dispatch(removeWishlist(actionId));
+      return;
+    }
+
     dispatch(addWishlist({ ...product }));
-  }, [dispatch, product]);
+  }, [actionId, dispatch, product, wished]);
 
   return {
     isWished,
