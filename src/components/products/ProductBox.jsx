@@ -11,10 +11,6 @@ const ProductBox = ({ children }) => {
   const dispatch = useDispatch();
   const { handleSubmenu } = useCloseSubmenu();
 
-  const handleClose = useCallback(() => {
-    dispatch(closeSubmenu());
-  }, [dispatch]);
-
   return (
     <Container onMouseOver={handleSubmenu}>
       <StyledWrapper>{children}</StyledWrapper>
