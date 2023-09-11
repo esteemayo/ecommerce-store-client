@@ -8,6 +8,7 @@ import { useDispatch } from 'react-redux';
 import ClientOnly from '@/components/ClientOnly';
 
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
+import { useCloseSubmenu } from '@/hooks/useCloseSubmenu';
 import { recommendations, reviewItems, storeProducts } from '@/data';
 
 const Product = dynamic(() => import('@/components/products/Product'), { ssr: false });
@@ -18,6 +19,7 @@ const Reviews = dynamic(() => import('@/components/reviews/Reviews'), { ssr: fal
 const SingleProduct = ({ params }) => {
   const { id } = params;
   const dispatch = useDispatch();
+  const { handleSubmenu } = useCloseSubmenu();
 
   const [product, setProduct] = useState({});
   const [reviews, setReviews] = useState(reviewItems);
@@ -61,7 +63,7 @@ const SingleProduct = ({ params }) => {
   if (!product) {
     return (
       <ClientOnly>
-        <Container type='error' onMouseOver={handleCloseSubmenu}>
+        <Container type='error' onMouseOver={handleSubmenu}>
           <Wrapper>
             <EmptyState />
           </Wrapper>
@@ -72,7 +74,7 @@ const SingleProduct = ({ params }) => {
 
   return (
     <ClientOnly>
-      <Container onMouseOver={handleCloseSubmenu}>
+      <Container onMouseOver={handleSubmenu}>
         <Wrapper>
           <Product product={product} />
           <Line />
