@@ -11,7 +11,6 @@ import ClientOnly from '@/components/ClientOnly';
 
 import usePaymentModal from '@/hooks/usePaymentModal';
 import { useCloseSubmenu } from '@/hooks/useCloseSubmenu';
-import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
 const CartHeader = dynamic(() => import('@/components/carts/CartHeader'), { ssr: false });
 const CartItem = dynamic(() => import('@/components/carts/CartItem'), { ssr: false });
