@@ -11,7 +11,7 @@ const WishlistButton = ({ actionId, product }) => {
   const { isWished, handleToggle } = useWishlist(actionId, product, wishlists);
 
   return (
-    <StyledButton>
+    <StyledButton onClick={handleToggle}>
       <FontAwesomeIcon icon={faHeart} />
       Add to Wishlist
     </StyledButton>
