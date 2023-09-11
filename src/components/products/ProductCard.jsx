@@ -81,7 +81,10 @@ const ProductCard = ({ product, onOpen, onSelect }) => {
           add to cart
         </Button>
         <FavWrapper>
-          <WishlistButton />
+          <WishlistButton
+            actionId={product.id}
+            product={product}
+          />
           <FavoriteButton />
         </FavWrapper>
       </InfoContainer>
