@@ -55,4 +55,9 @@ const StyledButton = styled.button`
   }
 `;
 
+WishlistButton.propTypes = {
+  actionId: PropTypes.string.isRequired,
+  product: PropTypes.object.isRequired,
+};
+
 export default WishlistButton;
