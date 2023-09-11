@@ -4,14 +4,14 @@ import { useCallback, useMemo } from 'react';
 
 import { addWishlist } from '@/features/cart/cartSlice';
 
-const useWishlist = ({ actionId, product, wishlists }) => {
+const useWishlist = ({ actionId, product, wished }) => {
   const dispatch = useDispatch();
 
   const isWished = useMemo(() => {
-    const list = wishlists;
-    const wished = list?.find((item) => item.id === actionId)
-    return !!wished;
-  }, [actionId, wishlists]);
+    let list = wished;
+    list = list?.find((item) => item.id === actionId);
+    return !!list;
+  }, [actionId, wished]);
 
   const handleToggle = useCallback(() => {
     dispatch(addWishlist({ ...product }));
@@ -26,7 +26,7 @@ const useWishlist = ({ actionId, product, wishlists }) => {
 useWishlist.propTypes = {
   actionId: PropTypes.string,
   product: PropTypes.object,
-  wishlists: PropTypes.array,
+  wished: PropTypes.array,
 };
 
 export default useWishlist;
