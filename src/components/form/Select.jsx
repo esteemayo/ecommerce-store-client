@@ -62,7 +62,7 @@ Select.propTypes = {
   data: PropTypes.array.isRequired,
   name: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
-  error: PropTypes.object,
+  error: PropTypes.string,
   defaultText: PropTypes.string.isRequired,
   rest: PropTypes.any,
 };
