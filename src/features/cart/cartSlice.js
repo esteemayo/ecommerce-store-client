@@ -4,6 +4,7 @@ import { cartItems } from '@/data';
 const initialState = {
   cart: cartItems,
   wishlists: [],
+  wished: [],
   qty: 0,
   tax: 0,
   total: 0,
@@ -18,7 +19,12 @@ export const cartSlice = createSlice({
     addProduct: (state, { payload }) => {
       if (state.wishlists.includes(payload)) {
         state.wishlists.splice(
-          state.wishlists.findIndex((item) => item._id !== payload._id),
+          state.wishlists.findIndex((item) => item.id !== payload.id),
+          1
+        );
+
+        state.wished.splice(
+          state.wished.findIndex((item) => item !== payload.id),
           1
         );
       } else {
@@ -30,13 +36,15 @@ export const cartSlice = createSlice({
     addWishlist: (state, { payload }) => {
       if (!state.cart.includes(payload)) {
         state.wishlists.push(payload);
+        state.wished.push(payload.id);
+
         state.cart.splice(
-          state.cart.findIndex((item) => item._id !== payload._id),
+          state.cart.findIndex((item) => item.id !== payload.id),
           1
         );
       } else {
         state.wishlists.splice(
-          state.wishlists.findIndex((item) => item._id !== payload._id),
+          state.wishlists.findIndex((item) => item.id !== payload.id),
           1
         );
       }
