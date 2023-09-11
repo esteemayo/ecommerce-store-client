@@ -7,7 +7,6 @@ import { useDispatch } from 'react-redux';
 
 import ClientOnly from '@/components/ClientOnly';
 
-import { closeSubmenu } from '@/features/submenu/submenuSlice';
 import { useCloseSubmenu } from '@/hooks/useCloseSubmenu';
 import { recommendations, reviewItems, storeProducts } from '@/data';
 
