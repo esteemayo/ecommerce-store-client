@@ -46,7 +46,7 @@ export const cartSlice = createSlice({
     },
     removeWishlist: (state, { payload }) => {
       state.wished = state.wished.splice(
-        state.wished.findIndex((item) => item !== payload.id),
+        state.wished.findIndex((item) => item !== payload),
         1
       );
     },
