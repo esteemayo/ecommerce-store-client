@@ -3,8 +3,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useSelector } from 'react-redux';
 import { faHeart } from '@fortawesome/free-regular-svg-icons';
 import { faHeart as faFillHeart } from '@fortawesome/free-solid-svg-icons';
-import FavoriteOutlinedIcon from '@mui/icons-material/FavoriteOutlined';
-import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
 import PropTypes from 'prop-types';
 
 import useWishlist from '@/hooks/useWishlist';
