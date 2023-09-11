@@ -14,7 +14,6 @@ import { orders } from '@/data';
 const OrderCard = dynamic(() => import('@/components/orders/OrderCard'), { ssr: false });
 
 const Orders = () => {
-  const dispatch = useDispatch();
   const { handleSubmenu } = useCloseSubmenu();
 
   let bodyContent;
