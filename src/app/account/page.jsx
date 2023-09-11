@@ -16,7 +16,7 @@ const DeactivateAccount = dynamic(() => import('./DeactivateAccount'), { ssr: fa
 const AccountUpload = dynamic(() => import('./AccountUpload'), { ssr: false });
 
 const Account = () => {
-  const { handleSubmenu } = useSubmenu();
+  const { closeSubmenuHandler } = useSubmenu();
   const emailModal = useEmailModal();
   const passwordModal = usePasswordModal();
   const fileModal = useFileModal();
@@ -26,7 +26,7 @@ const Account = () => {
 
   return (
     <ClientOnly>
-      <Container onMouseOver={handleSubmenu}>
+      <Container onMouseOver={closeSubmenuHandler}>
         <ContainerBox>
           <Wrapper>
             <HeadingContainer>
