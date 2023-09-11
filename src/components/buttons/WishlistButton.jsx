@@ -6,20 +6,20 @@ import { IconButton } from './IconButton';
 
 import useWishlist from '@/hooks/useWishlist';
 
-const WishlistButton = ({ actionId, product, wished }) => {
+const WishlistButton = ({ productId, product, wished }) => {
   const { isWished, handleToggle } = useWishlist({
-    actionId,
+    productId,
     product,
     wished,
   });
 
   const wishlistLabel = useMemo(() => {
-    if (wished.includes(actionId)) {
+    if (wished.includes(productId)) {
       return 'Added to wishlists';
     }
 
     return 'Add to Wishlist';
-  }, [actionId, wished]);
+  }, [productId, wished]);
 
   return (
     <IconButton onClick={handleToggle}>
@@ -30,7 +30,7 @@ const WishlistButton = ({ actionId, product, wished }) => {
 }
 
 WishlistButton.propTypes = {
-  actionId: PropTypes.number.isRequired,
+  productId: PropTypes.number.isRequired,
   product: PropTypes.object.isRequired,
   wished: PropTypes.array.isRequired,
 };
