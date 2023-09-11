@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 import WishIcon from '../icons/WishIcon';
 import useWishlist from '@/hooks/useWishlist';
+import { IconButton } from './IconButton';
 
 const WishlistButton = ({ actionId, product, wished }) => {
   const { isWished, handleToggle } = useWishlist({
@@ -12,10 +13,10 @@ const WishlistButton = ({ actionId, product, wished }) => {
   });
 
   return (
-    <StyledButton onClick={handleToggle}>
+    <IconButton onClick={handleToggle}>
       <WishIcon isWished={isWished} />
       Add to Wishlist
-    </StyledButton>
+    </IconButton>
   );
 }
 
