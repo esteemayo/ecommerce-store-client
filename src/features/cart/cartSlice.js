@@ -47,6 +47,10 @@ export const cartSlice = createSlice({
           state.wishlists.findIndex((item) => item.id !== payload.id),
           1
         );
+        state.wished.splice(
+          state.wished.findIndex((item) => item !== payload.id),
+          1
+        );
       }
     },
     clearCart: (state) => {
