@@ -10,15 +10,17 @@ import dynamic from 'next/dynamic';
 import ClientOnly from '@/components/ClientOnly';
 
 import usePaymentModal from '@/hooks/usePaymentModal';
+import { useCloseSubmenu } from '@/hooks/useCloseSubmenu';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
 const CartHeader = dynamic(() => import('@/components/carts/CartHeader'), { ssr: false });
-const CartItem =  dynamic(() => import('@/components/carts/CartItem'), { ssr: false });
-const PaymentModal = dynamic(() => import('@/components/modals/PaymentModal'), { ssr: false});
+const CartItem = dynamic(() => import('@/components/carts/CartItem'), { ssr: false });
+const PaymentModal = dynamic(() => import('@/components/modals/PaymentModal'), { ssr: false });
 const CartTotal = dynamic(() => import('@/components/carts/CartTotal'), { ssr: false });
 
 const Cart = () => {
   const dispatch = useDispatch();
+  const { handleSubmenu } = useCloseSubmenu();
   const { cart } = useSelector((state) => ({ ...state.cart }));
   const paymentModal = usePaymentModal();
 
@@ -70,7 +72,7 @@ const Cart = () => {
 
   return (
     <ClientOnly>
-      <Container onMouseOver={() => dispatch(closeSubmenu())}>
+      <Container onMouseOver={handleSubmenu}>
         <CartContainer>
           {bodyContent}
         </CartContainer>
