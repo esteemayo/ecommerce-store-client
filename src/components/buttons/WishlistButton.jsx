@@ -2,8 +2,9 @@ import { useMemo } from 'react';
 import PropTypes from 'prop-types';
 
 import WishIcon from '../icons/WishIcon';
-import useWishlist from '@/hooks/useWishlist';
 import { IconButton } from './IconButton';
+
+import useWishlist from '@/hooks/useWishlist';
 
 const WishlistButton = ({ actionId, product, wished }) => {
   const { isWished, handleToggle } = useWishlist({

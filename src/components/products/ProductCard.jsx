@@ -17,6 +17,7 @@ import FormatPrice from '../FormatPrice';
 
 const ProductCard = ({ product, onOpen, onSelect }) => {
   const { wished } = useSelector((state) => ({ ...state.cart }));
+  console.log(wished)
 
   const handleOpen = useCallback(() => {
     onOpen();
