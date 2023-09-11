@@ -9,7 +9,7 @@ const useWishlist = ({ actionId, product, wished }) => {
 
   const isWished = useMemo(() => {
     let list = wished;
-    list = list?.find((item) => item.id === actionId);
+    list = list?.includes(actionId);
     return !!list;
   }, [actionId, wished]);
 
