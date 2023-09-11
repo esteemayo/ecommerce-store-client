@@ -30,6 +30,11 @@ export const cartSlice = createSlice({
     addWishlist: (state, { payload }) => {
       if (!state.cart.includes(payload)) {
         state.wishlists.push(payload);
+      } else {
+        state.cart.splice(
+          state.cart.findIndex((item) => item._id !== payload._id),
+          1
+        );
       }
     },
     clearCart: (state) => {
