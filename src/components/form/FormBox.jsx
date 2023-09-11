@@ -4,7 +4,6 @@ import { useDispatch } from 'react-redux';
 import { useCallback } from 'react';
 
 import { useCloseSubmenu } from '@/hooks/useCloseSubmenu';
-import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
 const FormBox = ({ children }) => {
   const { handleSubmenu } = useCloseSubmenu();
