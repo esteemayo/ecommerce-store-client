@@ -71,7 +71,7 @@ const Navbar = () => {
   }, [dispatch]);
 
   return (
-    <Container onMouseOver={SubmenuHandler}>
+    <Container onMouseOver={handleSubmenu}>
       <Wrapper>
         <LogoBox>
           <Logo />
