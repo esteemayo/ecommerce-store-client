@@ -5,7 +5,7 @@ import WishIcon from '../icons/WishIcon';
 import useWishlist from '@/hooks/useWishlist';
 
 const WishlistButton = ({ actionId, product, wishlists }) => {
-  const { isWished, handleToggle } = useWishlist(actionId, product, wishlists);
+  const { isWished, handleToggle } = useWishlist({ actionId, product, wishlists });
 
   return (
     <StyledButton onClick={handleToggle}>

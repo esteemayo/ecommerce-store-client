@@ -5,6 +5,7 @@ import { useCallback, useMemo } from 'react';
 import { addWishlist } from '@/features/cart/cartSlice';
 
 const useWishlist = ({ actionId, product, wishlists }) => {
+  console.log(product)
   const dispatch = useDispatch();
 
   const isWished = useMemo(() => {
