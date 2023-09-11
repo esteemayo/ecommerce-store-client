@@ -18,7 +18,6 @@ const Reviews = dynamic(() => import('@/components/reviews/Reviews'), { ssr: fal
 
 const SingleProduct = ({ params }) => {
   const { id } = params;
-  const dispatch = useDispatch();
   const { handleSubmenu } = useCloseSubmenu();
 
   const [product, setProduct] = useState({});
