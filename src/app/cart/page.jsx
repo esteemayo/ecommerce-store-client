@@ -21,7 +21,7 @@ const Cart = () => {
   const { cart } = useSelector((state) => ({ ...state.cart }));
 
   const paymentModal = usePaymentModal();
-  const { handleSubmenu } = useSubmenu();
+  const { closeSubmenuHandler } = useSubmenu();
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -71,7 +71,7 @@ const Cart = () => {
 
   return (
     <ClientOnly>
-      <Container onMouseOver={handleSubmenu}>
+      <Container onMouseOver={closeSubmenuHandler}>
         <CartContainer>
           {bodyContent}
         </CartContainer>
