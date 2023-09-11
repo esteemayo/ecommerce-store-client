@@ -15,7 +15,8 @@ export const useWishlist = ({ actionId, products }) => {
     dispatch(addWishlist({ ...product }));
   }, [dispatch]);
 
-  return (
-    <div>useWishlist</div>
-  );
+  return {
+    isWished,
+    handleToggle,
+  };
 }
