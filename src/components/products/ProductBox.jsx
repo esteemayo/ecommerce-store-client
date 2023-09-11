@@ -4,7 +4,6 @@ import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
 
 import { StyledWrapper } from '../StyledWrapper';
-import { closeSubmenu } from '@/features/submenu/submenuSlice';
 import { useCloseSubmenu } from '@/hooks/useCloseSubmenu';
 
 const ProductBox = ({ children }) => {
