@@ -7,9 +7,11 @@ import ClientOnly from '@/components/ClientOnly';
 import OrderStatus from '@/components/images/orders/OrderStatus';
 import FormatPrice from '@/components/FormatPrice';
 
+import { useCloseSubmenu } from '@/hooks/useCloseSubmenu';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
 const Order = () => {
+  const { handleSubmenu } = useCloseSubmenu();
   const dispatch = useDispatch();
   const status = 0;
 
@@ -21,7 +23,7 @@ const Order = () => {
 
   return (
     <ClientOnly>
-      <Container onMouseOver={() => dispatch(closeSubmenu())}>
+      <Container onMouseOver={handleSubmenu}>
         <OrderWrapper>
           <Wrapper>
             <OrderContainer>
