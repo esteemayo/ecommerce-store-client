@@ -86,7 +86,7 @@ const ProductCard = ({ product, onOpen, onSelect }) => {
         </Button>
         <FavWrapper>
           <WishlistButton
-            actionId={product.id}
+            productId={product.id}
             product={product}
             wished={wished}
           />
