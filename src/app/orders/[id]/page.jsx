@@ -6,10 +6,10 @@ import ClientOnly from '@/components/ClientOnly';
 import OrderStatus from '@/components/images/orders/OrderStatus';
 import FormatPrice from '@/components/FormatPrice';
 
-import { useCloseSubmenu } from '@/hooks/useSubmenu';
+import { useSubmenu } from '@/hooks/useSubmenu';
 
 const Order = () => {
-  const { handleSubmenu } = useCloseSubmenu();
+  const { handleSubmenu } = useSubmenu();
   const status = 0;
 
   const statusClass = (index) => {

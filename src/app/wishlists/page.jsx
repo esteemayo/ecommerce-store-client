@@ -9,15 +9,15 @@ import WishlistHeader from '@/components/wishlists/WishlistHeader';
 import ClientOnly from '@/components/ClientOnly';
 
 import useCartModal from '@/hooks/useCartModal';
-import { useCloseSubmenu } from '@/hooks/useSubmenu';
 import useWishlistModal from '@/hooks/useWishlistModal';
+import { useSubmenu } from '@/hooks/useSubmenu';
 
 import { wishlists } from '@/data';
 
 const WishlistCard = dynamic(() => import('@/components/wishlists/WishlistCard'), { ssr: false });
 
 const WishLists = () => {
-  const { handleSubmenu } = useCloseSubmenu();
+  const { handleSubmenu } = useSubmenu();
 
   const cartModal = useCartModal();
   const wishlistModal = useWishlistModal();
