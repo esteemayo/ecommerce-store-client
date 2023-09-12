@@ -5,6 +5,7 @@ import CardPrice from './CardPrice';
 import Button from './Button';
 import CardHeading from './CardHeading';
 import CardReview from './CardReview';
+import CardButtons from './CardButtons';
 
 import WishlistButton from '../buttons/WishlistButton';
 import FavoriteButton from '../buttons/FavoriteButton';
@@ -21,7 +22,7 @@ const CardInfo = ({
   return (
     <Container>
       <CardHeading
-        url={url} 
+        url={url}
         name={product.name}
       />
       <CardReview
@@ -35,14 +36,11 @@ const CardInfo = ({
         priceLabel={priceLabel}
       />
       <Button onClick={onOpen} />
-      <ButtonContainer>
-        <WishlistButton
-          product={product}
-          wished={wished}
-          actionId={product.id}
-        />
-        <FavoriteButton />
-      </ButtonContainer>
+      <CardButtons
+        product={product}
+        wished={wished}
+        productId={product.id}
+      />
     </Container>
   );
 }
