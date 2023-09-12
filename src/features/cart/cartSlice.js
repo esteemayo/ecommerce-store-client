@@ -91,10 +91,10 @@ export const cartSlice = createSlice({
         },
       );
 
-      qty = parseFloat(qty.toFixed(2));
-      tax = parseFloat(tax.toFixed(2));
       total = parseFloat(total.toFixed(2));
+      qty = parseFloat(qty.toFixed(2));
       subtotal = parseFloat(subtotal.toFixed(2));
+      tax = parseFloat(tax.toFixed(2));
 
       state.qty = qty;
       state.tax = tax;
