@@ -12,7 +12,6 @@ import { useSelector } from 'react-redux';
 import StarRating from '../StarRating';
 import CardInfo from './CardInfo';
 import CardImage from './CardImage';
-import FormatPrice from '../FormatPrice';
 
 const ProductCard = ({ product, onOpen, onSelect }) => {
   const { wished } = useSelector((state) => ({ ...state.cart }));
