@@ -24,7 +24,16 @@ const Products = () => {
     sortedProducts: [],
   });
 
-  const { category, size, color, minPrice, maxPrice, price, products, sortedProducts } = values;
+  const {
+    category,
+    size,
+    color,
+    minPrice,
+    maxPrice,
+    price,
+    products,
+    sortedProducts,
+  } = values;
 
   const handleChange = useCallback(({ target: input }) => {
     const { name, value } = input;
