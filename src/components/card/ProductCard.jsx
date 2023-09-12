@@ -86,16 +86,6 @@ const Container = styled.article`
   }
 `;
 
-const Discount = styled.span`
-  text-decoration: line-through;
-  font-size: 1.7rem;
-  color: #adacac;
-
-  @media only screen and (max-width: 35em) {
-    font-size: 1.58rem;
-  }
-`;
-
 const InStock = styled.div`
   color: #00e774;
   font-size: 1.5rem;
