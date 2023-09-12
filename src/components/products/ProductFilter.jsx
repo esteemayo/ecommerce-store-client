@@ -230,14 +230,14 @@ const Input = styled.input`
 `;
 
 ProductFilter.propTypes = {
-  products: PropTypes.array.isRequired,
-  price: PropTypes.number.isRequired,
-  category: PropTypes.string.isRequired,
-  size: PropTypes.any.isRequired,
-  color: PropTypes.string.isRequired,
-  minPrice: PropTypes.number.isRequired,
-  maxPrice: PropTypes.number.isRequired,
-  onChange: PropTypes.func.isRequired,
+  products: PropTypes.array,
+  price: PropTypes.number,
+  category: PropTypes.string,
+  size: PropTypes.any,
+  color: PropTypes.string,
+  minPrice: PropTypes.number,
+  maxPrice: PropTypes.number,
+  onChange: PropTypes.func,
 };
 
 export default ProductFilter;
