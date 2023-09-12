@@ -94,16 +94,6 @@ const ProductName = styled.h3`
   }
 `;
 
-const Reviews = styled.div`
-  span {
-    color: ${({ theme }) => theme.star};
-
-    @media only screen and (max-width: 35em) {
-      font-size: 1.4rem;
-    }
-  }
-`;
-
 const ButtonContainer = styled.div`
   padding-top: 2rem;
   display: flex;
