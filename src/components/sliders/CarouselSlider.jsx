@@ -9,7 +9,6 @@ import { useDispatch } from 'react-redux';
 import { useCallback, useEffect, useState } from 'react';
 
 import { sliderItems } from '@/data';
-import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
 const CarouselSlider = () => {
   const [slideNumber, setSlideNumber] = useState(0);
