@@ -2,10 +2,10 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 import CardPrice from './CardPrice';
-import CardButton from './CardButton';
 import CardHeading from './CardHeading';
-import CardReview from './CardReview';
+import CardButton from './CardButton';
 import CardButtons from './CardButtons';
+import CardReview from './CardReview';
 
 const CardInfo = ({
   url,
