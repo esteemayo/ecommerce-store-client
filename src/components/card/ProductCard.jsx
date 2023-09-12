@@ -119,19 +119,6 @@ const ImageContainer = styled.div`
   width: 100%;
 `;
 
-const StyledImage = styled(Image)`
-  width: 100%;
-  height: 20rem;
-  display: block;
-  object-fit: cover;
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
-
-  @media only screen and (max-width: 37.5em) {
-    height: 17.5rem;
-  }
-`;
-
 const InfoContainer = styled.div`
   padding: 2rem;
   background-color: inherit;
