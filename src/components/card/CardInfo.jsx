@@ -158,32 +158,6 @@ const Discount = styled.span`
   }
 `;
 
-const InStock = styled.div`
-  color: #00e774;
-  font-size: 1.5rem;
-  display: flex;
-  align-items: center;
-  gap: 2px;
-
-  @media only screen and (max-width: 35em) {
-    font-size: 1.43rem;
-  }
-
-  &::before {
-    content: '';
-    display: inline-block;
-    width: 1rem;
-    height: 1rem;
-    background-color: #00e774;
-    border-radius: 50%;
-
-    @media only screen and (max-width: 35em) {
-      width: 0.85rem;
-      height: 0.85rem;
-    }
-  }
-`;
-
 const ButtonContainer = styled.div`
   padding-top: 2rem;
   display: flex;
