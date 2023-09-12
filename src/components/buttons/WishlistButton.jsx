@@ -1,8 +1,8 @@
 import { useMemo } from 'react';
 import PropTypes from 'prop-types';
 
-import HeartIcon from '../icons/HeartIcon';
 import { IconButton } from './IconButton';
+import HeartIcon from '../icons/HeartIcon';
 
 import useWishlist from '@/hooks/useWishlist';
 
