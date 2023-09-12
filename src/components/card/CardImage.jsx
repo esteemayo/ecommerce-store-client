@@ -23,6 +23,8 @@ const StyledImage = styled(Image)`
   height: 20rem;
   display: block;
   object-fit: cover;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
 `;
 
 export default CardImage;
