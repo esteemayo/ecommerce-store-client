@@ -2,11 +2,11 @@ import styled from 'styled-components';
 import Image from 'next/image';
 import PropTypes from 'prop-types';
 
-const CardImage = ({ image }) => {
+const CardImage = ({ src }) => {
   return (
     <Container>
       <StyledImage
-        src={image}
+        src={src}
         width={300}
         height={200}
         alt=''
@@ -31,5 +31,9 @@ const StyledImage = styled(Image)`
     height: 17.5rem;
   }
 `;
+
+CardImage.propTypes = {
+  src: PropTypes.string,
+};
 
 export default CardImage;
