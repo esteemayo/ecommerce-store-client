@@ -19,7 +19,8 @@ const Container = styled.div`
 `;
 
 const StyledImage = styled(Image)`
-  
+  width: 100%;
+  height: 20rem;
 `;
 
 export default CardImage;
