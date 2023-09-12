@@ -8,6 +8,7 @@ import WishlistButton from '../buttons/WishlistButton';
 import FavoriteButton from '../buttons/FavoriteButton';
 
 import StarRating from '../StarRating';
+import Button from './Button';
 import FormatPrice from '../FormatPrice';
 
 const CardInfo = ({
@@ -45,11 +46,7 @@ const CardInfo = ({
         </Prices>
         {product.inStock && <InStock>In stock</InStock>}
       </PriceContainer>
-      <Button type='button' onClick={onOpen}>
-        <FontAwesomeIcon icon={faShoppingCart} />
-        &nbsp;
-        add to cart
-      </Button>
+      <Button onClick={onOpen} />
       <FavWrapper>
         <WishlistButton
           product={product}
@@ -194,50 +191,50 @@ const InStock = styled.div`
   }
 `;
 
-const Button = styled.button`
-  border: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  padding: 1.5rem 1rem;
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  background-color: ${({ theme }) => theme.bgBtn};
-  color: ${({ theme }) => theme.textBtn};
-  background-image: ${({ theme }) => css`
-    linear-gradient(
-      120deg,
-      transparent 0%,
-      transparent 50%,
-      ${theme.bgImgBtn} 50%
-    );
-  `};
-  background-size: 220%;
-  outline-color: ${({ theme }) => theme.btnOut};
-  border-radius: 0.5rem;
-  cursor: pointer;
-  transition: all 0.3s;
+// const Button = styled.button`
+//   border: none;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   width: 100%;
+//   padding: 1.5rem 1rem;
+//   font-size: 1.5rem;
+//   text-transform: uppercase;
+//   background-color: ${({ theme }) => theme.bgBtn};
+//   color: ${({ theme }) => theme.textBtn};
+//   background-image: ${({ theme }) => css`
+//     linear-gradient(
+//       120deg,
+//       transparent 0%,
+//       transparent 50%,
+//       ${theme.bgImgBtn} 50%
+//     );
+//   `};
+//   background-size: 220%;
+//   outline-color: ${({ theme }) => theme.btnOut};
+//   border-radius: 0.5rem;
+//   cursor: pointer;
+//   transition: all 0.3s;
 
-  @media only screen and (max-width: 64em) {
-    padding: 1.3rem 1rem;
-    font-size: 1.4rem;
-  }
+//   @media only screen and (max-width: 64em) {
+//     padding: 1.3rem 1rem;
+//     font-size: 1.4rem;
+//   }
 
-  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
-    font-size: 1.498rem;
-  }
+//   @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+//     font-size: 1.498rem;
+//   }
 
-  @media only screen and (max-width: 37.5em) {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    font-size: 1.4rem;
-  }
+//   @media only screen and (max-width: 37.5em) {
+//     padding-top: 1rem;
+//     padding-bottom: 1rem;
+//     font-size: 1.4rem;
+//   }
 
-  &:hover {
-    background-position: 100%;
-  }
-`;
+//   &:hover {
+//     background-position: 100%;
+//   }
+// `;
 
 const FavWrapper = styled.div`
   padding-top: 2rem;
