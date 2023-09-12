@@ -21,7 +21,10 @@ const CardInfo = ({
 }) => {
   return (
     <Container>
-      <CardHeading name={product.name} />
+      <CardHeading
+        url={url} 
+        name={product.name}
+      />
       <CardReview
         reviewLabel={reviewLabel}
         ratingsAverage={product.ratingsAverage}
