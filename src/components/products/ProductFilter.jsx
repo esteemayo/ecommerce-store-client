@@ -7,7 +7,6 @@ import { getUnique } from '@/utils';
 import FormatPrice from '../FormatPrice';
 
 const ProductFilter = ({
-  newPrice,
   products,
   price,
   category,
@@ -17,7 +16,6 @@ const ProductFilter = ({
   maxPrice,
   onChange,
 }) => {
-  console.log(typeof newPrice)
   let colors = getUnique(products, 'color');
   colors = colors.map((color, index) => {
     return (

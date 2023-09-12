@@ -76,7 +76,6 @@ const Products = () => {
     <ClientOnly>
       <ProductBox>
         <ProductFilter
-          {...values}
           products={products}
           price={parseFloat(price)}
           category={category}
