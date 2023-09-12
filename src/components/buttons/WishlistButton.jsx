@@ -1,5 +1,5 @@
+import { useMemo } from 'react';
 import PropTypes from 'prop-types';
-import { useCallback, useMemo } from 'react';
 
 import WishIcon from '../icons/WishIcon';
 import { IconButton } from './IconButton';
@@ -13,17 +13,13 @@ const WishlistButton = ({ actionId, product, wished }) => {
     wished,
   });
 
-  const changeWishlistLabel = useCallback(() => {
+  const wishlistLabel = useMemo(() => {
     if (wished.includes(actionId)) {
       return 'Added to Wishlist';
     }
 
     return 'Add to Wishlist';
   }, [actionId, wished]);
-
-  const wishlistLabel = useMemo(() => {
-    changeWishlistLabel();
-  }, [changeWishlistLabel]);
 
   return (
     <IconButton onClick={handleToggle}>
