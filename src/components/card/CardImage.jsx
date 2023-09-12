@@ -1,10 +1,15 @@
 import styled from 'styled-components';
 import Image from 'next/image';
 
-const CardImage = () => {
+const CardImage = ({ image }) => {
   return (
     <Container>
-      CardImage
+      <StyledImage
+        src={image}
+        width={300}
+        height={200}
+        alt=''
+      />
     </Container>
   );
 }
