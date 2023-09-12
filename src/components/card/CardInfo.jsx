@@ -2,12 +2,12 @@ import styled from 'styled-components';
 import Link from 'next/link';
 import PropTypes from 'prop-types';
 
-import WishlistButton from '../buttons/WishlistButton';
-import FavoriteButton from '../buttons/FavoriteButton';
-
 import CardPrice from './CardPrice';
 import Button from './Button';
 import CardReview from './CardReview';
+
+import WishlistButton from '../buttons/WishlistButton';
+import FavoriteButton from '../buttons/FavoriteButton';
 
 const CardInfo = ({
   url,
