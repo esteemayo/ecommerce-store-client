@@ -8,7 +8,14 @@ import FavoriteButton from '../buttons/FavoriteButton';
 import FormatPrice from '../FormatPrice';
 import StarRating from '../StarRating';
 
-const CardInfo = ({ product, initialPrice, priceLabel, reviewLabel, onOpen }) => {
+const CardInfo = ({
+  product,
+  initialPrice,
+  priceLabel,
+  reviewLabel,
+  wished,
+  onOpen,
+}) => {
   return (
     <Container>
       <ProductName>
