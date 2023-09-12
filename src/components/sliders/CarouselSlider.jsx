@@ -13,11 +13,11 @@ const CarouselSlider = () => {
   const [slideNumber, setSlideNumber] = useState(0);
 
   const handlePrev = useCallback(() => {
-    setSlideNumber((prev) => prev - 1);
+    setSlideNumber((value) => value - 1);
   }, []);
 
   const handleNext = useCallback(() => {
-    setSlideNumber((prev) => prev + 1);
+    setSlideNumber((value) => value + 1);
   }, []);
 
   useEffect(() => {
