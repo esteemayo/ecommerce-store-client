@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 
 import CardPrice from './CardPrice';
 import Button from './Button';
+import CardHeading from './CardHeading';
 import CardReview from './CardReview';
 
 import WishlistButton from '../buttons/WishlistButton';
@@ -20,9 +21,7 @@ const CardInfo = ({
 }) => {
   return (
     <Container>
-      <ProductName>
-        <Link href={url} passHref>{product.name}</Link>
-      </ProductName>
+      <CardHeading name={product.name} />
       <CardReview
         reviewLabel={reviewLabel}
         ratingsAverage={product.ratingsAverage}
