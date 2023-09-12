@@ -4,8 +4,8 @@ import styled from 'styled-components';
 import { useCallback, useEffect, useState } from 'react';
 import dynamic from 'next/dynamic';
 
-import ProductBox from '@/components/products/ProductBox';
 import ClientOnly from '@/components/ClientOnly';
+import ProductBox from '@/components/products/ProductBox';
 
 import { getUnique } from '@/utils';
 import { storeProducts } from '@/data';
