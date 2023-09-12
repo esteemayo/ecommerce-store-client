@@ -86,17 +86,6 @@ const Container = styled.article`
   }
 `;
 
-const Price = styled.span`
-  font-weight: 600;
-  font-size: 1.85rem;
-  color: ${({ theme }) => theme.textPrice};
-  line-height: 1;
-
-  @media only screen and (max-width: 35em) {
-    font-size: 1.7rem;
-  }
-`;
-
 const Discount = styled.span`
   text-decoration: line-through;
   font-size: 1.7rem;
