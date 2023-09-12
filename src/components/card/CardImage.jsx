@@ -3,7 +3,9 @@ import Image from 'next/image';
 
 const CardImage = () => {
   return (
-    <div>CardImage</div>
+    <Container>
+      CardImage
+    </Container>
   );
 }
 
