@@ -29,7 +29,7 @@ export const cartSlice = createSlice({
     addWishlist: (state, { payload }) => {
       const inCart = state.cart.find((item) => item.id === payload.id);
 
-      if (!inCart) {
+      if (inCart) {
         state.wishlists.push(payload);
         state.wished.push(payload.id);
 
