@@ -55,17 +55,6 @@ const Container = styled.div`
   }
 `;
 
-const ButtonContainer = styled.div`
-  padding-top: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  @media only screen and (max-width: 37.5em) {
-    padding-top: 1.7rem;
-  }
-`;
-
 CardInfo.propTypes = {
   url: PropTypes.string,
   product: PropTypes.object,
