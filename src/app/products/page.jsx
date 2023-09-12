@@ -3,10 +3,11 @@
 import dynamic from 'next/dynamic';
 import { useCallback, useEffect, useState } from 'react';
 
-import Pagination from '@/components/Pagination';
-import ProductFilter from '@/components/products/ProductFilter';
 import ClientOnly from '@/components/ClientOnly';
+import Pagination from '@/components/Pagination';
+
 import ProductBox from '@/components/products/ProductBox';
+import ProductFilter from '@/components/products/ProductFilter';
 
 import { storeProducts } from '@/data';
 
