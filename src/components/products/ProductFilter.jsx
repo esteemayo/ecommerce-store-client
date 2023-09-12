@@ -231,7 +231,7 @@ const Input = styled.input`
 
 ProductFilter.propTypes = {
   products: PropTypes.array,
-  price: PropTypes.any,
+  price: PropTypes.number,
   category: PropTypes.string,
   size: PropTypes.any,
   color: PropTypes.string,
