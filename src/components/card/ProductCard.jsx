@@ -115,10 +115,6 @@ const Container = styled.article`
   }
 `;
 
-const ImageContainer = styled.div`
-  width: 100%;
-`;
-
 const InfoContainer = styled.div`
   padding: 2rem;
   background-color: inherit;
