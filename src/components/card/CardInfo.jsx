@@ -5,7 +5,6 @@ import PropTypes from 'prop-types';
 import WishlistButton from '../buttons/WishlistButton';
 import FavoriteButton from '../buttons/FavoriteButton';
 
-import StarRating from '../StarRating';
 import CardPrice from './CardPrice';
 import Button from './Button';
 import CardReview from './CardReview';
