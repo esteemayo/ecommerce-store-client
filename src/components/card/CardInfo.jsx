@@ -7,9 +7,6 @@ import CardHeading from './CardHeading';
 import CardReview from './CardReview';
 import CardButtons from './CardButtons';
 
-import WishlistButton from '../buttons/WishlistButton';
-import FavoriteButton from '../buttons/FavoriteButton';
-
 const CardInfo = ({
   url,
   product,
