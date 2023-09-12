@@ -37,7 +37,7 @@ const Products = () => {
       tempProducts.push(item);
     });
     const maxPrice = Math.max(...tempProducts.map((item) => item.price));
-    setValues({ products: tempProducts, sortedProducts: tempProducts, price: +maxPrice, maxPrice });
+    setValues({ products: tempProducts, sortedProducts: tempProducts, price: maxPrice, maxPrice });
   }, []);
 
   // useEffect(() => {
