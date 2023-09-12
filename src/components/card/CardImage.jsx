@@ -10,7 +10,7 @@ const CardImage = () => {
 }
 
 const Container = styled.div`
-  
+  width: 100%;
 `;
 
 export default CardImage;
