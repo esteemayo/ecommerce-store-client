@@ -13,4 +13,8 @@ const Container = styled.div`
   width: 100%;
 `;
 
+const StyledImage = styled(Image)`
+  
+`;
+
 export default CardImage;
