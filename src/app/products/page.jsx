@@ -77,6 +77,7 @@ const Products = () => {
       <ProductBox>
         <ProductFilter
           {...values}
+          newPrice={price}
           products={products}
           onChange={handleChange}
         />
