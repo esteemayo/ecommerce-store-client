@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 import PropTypes from 'prop-types';
 
-import WishIcon from '../icons/WishIcon';
+import HeartIcon from '../icons/HeartIcon';
 import { IconButton } from './IconButton';
 
 import useWishlist from '@/hooks/useWishlist';
@@ -23,7 +23,7 @@ const WishlistButton = ({ actionId, product, wished }) => {
 
   return (
     <IconButton onClick={handleToggle}>
-      <WishIcon isWished={isWished} />
+      <HeartIcon isWished={isWished} />
       {wishlistLabel}
     </IconButton>
   );
