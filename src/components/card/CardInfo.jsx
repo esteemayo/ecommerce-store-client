@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 import CardPrice from './CardPrice';
-import Button from './Button';
+import CardButton from './CardButton';
 import CardHeading from './CardHeading';
 import CardReview from './CardReview';
 import CardButtons from './CardButtons';
@@ -32,7 +32,7 @@ const CardInfo = ({
         initialPrice={initialPrice}
         priceLabel={priceLabel}
       />
-      <Button onClick={onOpen} />
+      <CardButton onClick={onOpen} />
       <CardButtons
         product={product}
         wished={wished}
