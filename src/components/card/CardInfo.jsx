@@ -45,14 +45,14 @@ const CardInfo = ({
         {product.inStock && <InStock>In stock</InStock>}
       </PriceContainer>
       <Button onClick={onOpen} />
-      <FavWrapper>
+      <ButtonContainer>
         <WishlistButton
           product={product}
           wished={wished}
           actionId={product.id}
         />
         <FavoriteButton />
-      </FavWrapper>
+      </ButtonContainer>
     </Container>
   );
 }
@@ -189,7 +189,7 @@ const InStock = styled.div`
   }
 `;
 
-const FavWrapper = styled.div`
+const ButtonContainer = styled.div`
   padding-top: 2rem;
   display: flex;
   align-items: center;
