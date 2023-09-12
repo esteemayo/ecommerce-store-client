@@ -13,6 +13,7 @@ import FavoriteButton from '../buttons/FavoriteButton';
 import WishlistButton from '../buttons/WishlistButton';
 
 import StarRating from '../StarRating';
+import CardImage from './CardImage';
 import FormatPrice from '../FormatPrice';
 
 const ProductCard = ({ product, onOpen, onSelect }) => {
@@ -45,14 +46,7 @@ const ProductCard = ({ product, onOpen, onSelect }) => {
 
   return (
     <Container>
-      <ImageContainer>
-        <StyledImage
-          src={product.images[0]}
-          width={300}
-          height={200}
-          alt=''
-        />
-      </ImageContainer>
+      <CardImage src={product?.images[0]} />
       <InfoContainer>
         <ProductName>
           <Link href={url} passHref>{product.name}</Link>
