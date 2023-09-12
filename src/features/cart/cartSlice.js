@@ -27,14 +27,13 @@ export const cartSlice = createSlice({
       }
     },
     addWishlist: (state, { payload }) => {
-      if (!state.cart.includes(payload)) {
+      const inCart = state.cart.find((item) => item.id === payload.id);
+
+      if (!inCart) {
         state.wishlists.push(payload);
         state.wished.push(payload.id);
 
-        state.cart.splice(
-          state.cart.findIndex((item) => item.id !== payload.id),
-          1
-        );
+        state.cart = state.cart.filter((item) => item.id !== payload.id);
       }
     },
     removeWishlist: (state, { payload }) => {
