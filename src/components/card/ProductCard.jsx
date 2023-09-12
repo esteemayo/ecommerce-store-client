@@ -49,6 +49,7 @@ const ProductCard = ({ product, onOpen, onSelect }) => {
     <Container>
       <CardImage src={product?.images[0]} />
       <CardInfo
+        url={url}
         product={product}
         initialPrice={initialPrice}
         priceLabel={priceLabel}

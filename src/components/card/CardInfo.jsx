@@ -11,6 +11,7 @@ import StarRating from '../StarRating';
 import FormatPrice from '../FormatPrice';
 
 const CardInfo = ({
+  url,
   product,
   initialPrice,
   priceLabel,
@@ -250,6 +251,7 @@ const FavWrapper = styled.div`
 `;
 
 CardInfo.propTypes = {
+  url: PropTypes.string,
   product: PropTypes.object,
   initialPrice: PropTypes.number,
   priceLabel: PropTypes.number,
