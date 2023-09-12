@@ -86,16 +86,6 @@ const Container = styled.article`
   }
 `;
 
-const InfoContainer = styled.div`
-  padding: 2rem;
-  background-color: inherit;
-  border-radius: 0.5rem;
-
-  @media only screen and (max-width: 35em) {
-    padding: 1rem;
-  }
-`;
-
 const ProductName = styled.h3`
   text-transform: capitalize;
   font-weight: 500;
