@@ -30,7 +30,7 @@ const Container = styled.div`
 
 CardButtons.propTypes = {
   product: PropTypes.object,
-  productId: PropTypes.string,
+  productId: PropTypes.number,
   wished: PropTypes.array,
 };
 
