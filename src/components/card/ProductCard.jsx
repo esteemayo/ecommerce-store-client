@@ -86,16 +86,6 @@ const Container = styled.article`
   }
 `;
 
-const Reviews = styled.div`
-  span {
-    color: ${({ theme }) => theme.star};
-
-    @media only screen and (max-width: 35em) {
-      font-size: 1.4rem;
-    }
-  }
-`;
-
 const PriceContainer = styled.div`
   margin: 0.5rem 0 1.5rem 0;
   display: flex;
