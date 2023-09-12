@@ -86,11 +86,6 @@ const Container = styled.article`
   }
 `;
 
-const Prices = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
-
 const Price = styled.span`
   font-weight: 600;
   font-size: 1.85rem;
