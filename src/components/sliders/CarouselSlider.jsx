@@ -12,7 +12,6 @@ import { sliderItems } from '@/data';
 import { closeSubmenu } from '@/features/submenu/submenuSlice';
 
 const CarouselSlider = () => {
-  const dispatch = useDispatch();
   const [slideNumber, setSlideNumber] = useState(0);
 
   const handlePrev = useCallback(() => {
