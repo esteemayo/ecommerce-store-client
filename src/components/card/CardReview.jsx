@@ -5,20 +5,20 @@ import StarRating from '../StarRating';
 
 const CardReview = ({ reviewLabel, ratingsAverage, ratingsQuantity }) => {
   return (
-    <ReviewContainer>
+    <Container>
       <StarRating
         readOnly
         value={ratingsAverage}
         name='read-only'
       />
-      <Reviews>
+      <Wrapper>
         <Rating>({ratingsQuantity} {reviewLabel})</Rating>
-      </Reviews>
-    </ReviewContainer>
+      </Wrapper>
+    </Container>
   );
 }
 
-const ReviewContainer = styled.div`
+const Container = styled.div`
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -34,7 +34,7 @@ const ReviewContainer = styled.div`
   }
 `;
 
-const Reviews = styled.div`
+const Wrapper = styled.div`
   span {
     color: ${({ theme }) => theme.star};
 
