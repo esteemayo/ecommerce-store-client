@@ -7,4 +7,8 @@ const CardImage = () => {
   );
 }
 
+const Container = styled.div`
+  
+`;
+
 export default CardImage;
