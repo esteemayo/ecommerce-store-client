@@ -8,6 +8,7 @@ import FavoriteButton from '../buttons/FavoriteButton';
 import StarRating from '../StarRating';
 import Button from './Button';
 import FormatPrice from '../FormatPrice';
+import CardPrice from './CardPrice';
 
 const CardInfo = ({
   url,
@@ -33,17 +34,11 @@ const CardInfo = ({
           <span>({product.ratingsQuantity} {reviewLabel})</span>
         </Reviews>
       </ReviewContainer>
-      <PriceContainer>
-        <Prices>
-          <Discount>
-            <FormatPrice value={initialPrice} />
-          </Discount>
-          <Price>
-            <FormatPrice value={priceLabel} />
-          </Price>
-        </Prices>
-        {product.inStock && <InStock>In stock</InStock>}
-      </PriceContainer>
+      <CardPrice
+        inStock={product.inStock}
+        initialPrice={initialPrice}
+        priceLabel={priceLabel}
+      />
       <Button onClick={onOpen} />
       <ButtonContainer>
         <WishlistButton
