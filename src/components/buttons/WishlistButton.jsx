@@ -1,5 +1,5 @@
-import { useCallback, useMemo } from 'react';
 import PropTypes from 'prop-types';
+import { useCallback, useMemo } from 'react';
 
 import WishIcon from '../icons/WishIcon';
 import { IconButton } from './IconButton';
