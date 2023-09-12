@@ -2,14 +2,14 @@ import FavoriteOutlinedIcon from '@mui/icons-material/FavoriteOutlined';
 import PropTypes from 'prop-types';
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
 
-const WishIcon = ({ isWished }) => {
+const HeartIcon = ({ isWished }) => {
   return isWished ?
     <FavoriteOutlinedIcon /> :
     <FavoriteBorderOutlinedIcon />;
 }
 
-WishIcon.propTypes = {
+HeartIcon.propTypes = {
   isWished: PropTypes.bool,
 };
 
-export default WishIcon;
+export default HeartIcon;
