@@ -25,6 +25,10 @@ const StyledImage = styled(Image)`
   object-fit: cover;
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
+
+  @media only screen and (max-width: 37.5em) {
+    height: 17.5rem;
+  }
 `;
 
 export default CardImage;
