@@ -137,17 +137,6 @@ const Prices = styled.div`
   flex-direction: column;
 `;
 
-const Price = styled.span`
-  font-weight: 600;
-  font-size: 1.85rem;
-  color: ${({ theme }) => theme.textPrice};
-  line-height: 1;
-
-  @media only screen and (max-width: 35em) {
-    font-size: 1.7rem;
-  }
-`;
-
 const ButtonContainer = styled.div`
   padding-top: 2rem;
   display: flex;
