@@ -3,17 +3,17 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import PropTypes from 'prop-types';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
-const Button = ({ onClick }) => {
+const CardButton = ({ onClick }) => {
   return (
-    <StyledButton type='button' onClick={onClick}>
+    <Button type='button' onClick={onClick}>
       <FontAwesomeIcon icon={faShoppingCart} />
       &nbsp;
       add to cart
-    </StyledButton>
+    </Button>
   );
 }
 
-const StyledButton = styled.button`
+const Button = styled.button`
   border: none;
   display: flex;
   align-items: center;
@@ -58,8 +58,8 @@ const StyledButton = styled.button`
   }
 `;
 
-Button.propTypes = {
+CardButton.propTypes = {
   onClick: PropTypes.func.isRequired,
 };
 
-export default Button;
+export default CardButton;
