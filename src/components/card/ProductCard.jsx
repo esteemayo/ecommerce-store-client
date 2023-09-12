@@ -38,7 +38,7 @@ const ProductCard = ({ product, onOpen, onSelect }) => {
 
   return (
     <Container>
-      <CardImage src={product?.images[0]} />
+      <CardImage src={product.images?.[0]} />
       <CardInfo
         url={url}
         product={product}
