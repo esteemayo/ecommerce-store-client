@@ -132,11 +132,6 @@ const PriceContainer = styled.div`
   justify-content: space-between;
 `;
 
-const Prices = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
-
 const ButtonContainer = styled.div`
   padding-top: 2rem;
   display: flex;
