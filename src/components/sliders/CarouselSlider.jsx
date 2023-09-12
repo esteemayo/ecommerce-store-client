@@ -5,7 +5,6 @@ import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
-import { useDispatch } from 'react-redux';
 import { useCallback, useEffect, useState } from 'react';
 
 import { sliderItems } from '@/data';
