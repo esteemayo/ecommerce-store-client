@@ -1,7 +1,6 @@
 import styled, { css } from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
-import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import PropTypes from 'prop-types';
 
 import WishlistButton from '../buttons/WishlistButton';
