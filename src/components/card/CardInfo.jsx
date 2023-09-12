@@ -5,8 +5,9 @@ import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
 import WishlistButton from '../buttons/WishlistButton';
 import FavoriteButton from '../buttons/FavoriteButton';
-import FormatPrice from '../FormatPrice';
+
 import StarRating from '../StarRating';
+import FormatPrice from '../FormatPrice';
 
 const CardInfo = ({
   product,
