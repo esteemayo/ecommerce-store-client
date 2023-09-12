@@ -94,22 +94,6 @@ const ProductName = styled.h3`
   }
 `;
 
-const ReviewContainer = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 0.5rem;
-
-  svg {
-    font-size: 2.3rem;
-    fill: ${({ theme }) => theme.star};
-
-    @media only screen and (max-width: 35em) {
-      font-size: 2rem;
-    }
-  }
-`;
-
 const Reviews = styled.div`
   span {
     color: ${({ theme }) => theme.star};
