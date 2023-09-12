@@ -86,17 +86,6 @@ const Container = styled.article`
   }
 `;
 
-const FavWrapper = styled.div`
-  padding-top: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  @media only screen and (max-width: 37.5em) {
-    padding-top: 1.7rem;
-  }
-`;
-
 ProductCard.propTypes = {
   product: PropTypes.object.isRequired,
   onOpen: PropTypes.func.isRequired,
