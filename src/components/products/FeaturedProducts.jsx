@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { useState } from 'react';
 
 import Header from '../Header';
-import ProductCard from './ProductCard';
+import ProductCard from '../card/ProductCard';
 
 import CartModal from '../modals/CartModal';
 
