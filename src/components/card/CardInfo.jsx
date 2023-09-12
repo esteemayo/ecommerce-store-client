@@ -249,4 +249,13 @@ const FavWrapper = styled.div`
   }
 `;
 
+CardInfo.propTypes = {
+  product: PropTypes.object,
+  initialPrice: PropTypes.number,
+  priceLabel: PropTypes.number,
+  reviewLabel: PropTypes.string,
+  wished: PropTypes.array,
+  onOpen: PropTypes.func.isRequired,
+};
+
 export default CardInfo;
