@@ -9,7 +9,6 @@ import PropTypes from 'prop-types';
 import { useCallback, useMemo } from 'react';
 import { useSelector } from 'react-redux';
 
-import StarRating from '../StarRating';
 import CardInfo from './CardInfo';
 import CardImage from './CardImage';
 
