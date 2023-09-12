@@ -6,8 +6,9 @@ import WishlistButton from '../buttons/WishlistButton';
 import FavoriteButton from '../buttons/FavoriteButton';
 
 import StarRating from '../StarRating';
-import Button from './Button';
 import CardPrice from './CardPrice';
+import Button from './Button';
+import CardReview from './CardReview';
 
 const CardInfo = ({
   url,
@@ -23,16 +24,11 @@ const CardInfo = ({
       <ProductName>
         <Link href={url} passHref>{product.name}</Link>
       </ProductName>
-      <ReviewContainer>
-        <StarRating
-          readOnly
-          value={product.ratingsAverage}
-          name='read-only'
-        />
-        <Reviews>
-          <span>({product.ratingsQuantity} {reviewLabel})</span>
-        </Reviews>
-      </ReviewContainer>
+      <CardReview
+        reviewLabel={reviewLabel}
+        ratingsAverage={product.ratingsAverage}
+        ratingsQuantity={product.ratingsQuantity}
+      />
       <CardPrice
         inStock={product.inStock}
         initialPrice={initialPrice}
