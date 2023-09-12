@@ -13,13 +13,17 @@ const WishlistButton = ({ actionId, product, wished }) => {
     wished,
   });
 
-  const wishlistLabel = useMemo(() => {
+  const changeWishlistLabel = useCallback(() => {
     if (wished.includes(actionId)) {
       return 'Added to Wishlist';
     }
 
     return 'Add to Wishlist';
   }, [actionId, wished]);
+
+  const wishlistLabel = useMemo(() => {
+    changeWishlistLabel();
+  }, [changeWishlistLabel]);
 
   return (
     <IconButton onClick={handleToggle}>
