@@ -7,7 +7,6 @@ import FavoriteButton from '../buttons/FavoriteButton';
 
 import StarRating from '../StarRating';
 import Button from './Button';
-import FormatPrice from '../FormatPrice';
 import CardPrice from './CardPrice';
 
 const CardInfo = ({
