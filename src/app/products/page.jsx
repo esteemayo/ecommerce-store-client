@@ -24,7 +24,7 @@ const Products = () => {
     sortedProducts: [],
   });
 
-  const { category, size, color, price, products, sortedProducts } = values;
+  const { category, size, color, minPrice, maxPrice, price, products, sortedProducts } = values;
 
   const handleChange = useCallback(({ target: input }) => {
     const { name, value } = input;
@@ -77,8 +77,13 @@ const Products = () => {
       <ProductBox>
         <ProductFilter
           {...values}
-          newPrice={parseFloat(price)}
           products={products}
+          price={parseFloat(price)}
+          category={category}
+          size={size}
+          color={color}
+          minPrice={parseFloat(minPrice)}
+          maxPrice={parseFloat(maxPrice)}
           onChange={handleChange}
         />
         <ProductList products={sortedProducts} />
