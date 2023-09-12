@@ -13,7 +13,7 @@ const FormatPrice = ({ value }) => {
 }
 
 FormatPrice.propTypes = {
-  value: PropTypes.number.isRequired,
+  value: PropTypes.number,
 };
 
 export default FormatPrice;
