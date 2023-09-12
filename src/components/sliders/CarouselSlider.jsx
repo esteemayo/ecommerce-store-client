@@ -43,7 +43,7 @@ const CarouselSlider = () => {
   }, [slideNumber]);
 
   return (
-    <Container onMouseOver={() => dispatch(closeSubmenu())}>
+    <Container>
       <Wrapper>
         {sliderItems.map((item, index) => {
           const { id, img, url, desc, title } = item;
