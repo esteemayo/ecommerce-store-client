@@ -13,6 +13,7 @@ import FavoriteButton from '../buttons/FavoriteButton';
 import WishlistButton from '../buttons/WishlistButton';
 
 import StarRating from '../StarRating';
+import CardInfo from './CardInfo';
 import CardImage from './CardImage';
 import FormatPrice from '../FormatPrice';
 
@@ -47,45 +48,14 @@ const ProductCard = ({ product, onOpen, onSelect }) => {
   return (
     <Container>
       <CardImage src={product?.images[0]} />
-      <InfoContainer>
-        <ProductName>
-          <Link href={url} passHref>{product.name}</Link>
-        </ProductName>
-        <ReviewContainer>
-          <StarRating
-            readOnly
-            value={product.ratingsAverage}
-            name='read-only'
-          />
-          <Reviews>
-            <span>({product.ratingsQuantity} {reviewLabel})</span>
-          </Reviews>
-        </ReviewContainer>
-        <PriceContainer>
-          <Prices>
-            <Discount>
-              <FormatPrice value={initialPrice} />
-            </Discount>
-            <Price>
-              <FormatPrice value={priceLabel} />
-            </Price>
-          </Prices>
-          {product.inStock && <InStock>In stock</InStock>}
-        </PriceContainer>
-        <Button type='button' onClick={handleOpen}>
-          <FontAwesomeIcon icon={faShoppingCart} />
-          &nbsp;
-          add to cart
-        </Button>
-        <FavWrapper>
-          <WishlistButton
-            actionId={product.id}
-            product={product}
-            wished={wished}
-          />
-          <FavoriteButton />
-        </FavWrapper>
-      </InfoContainer>
+      <CardInfo
+        product={product}
+        initialPrice={initialPrice}
+        priceLabel={priceLabel}
+        reviewLabel={reviewLabel}
+        wished={wished}
+        onOpen={handleOpen}
+      />
     </Container>
   );
 }
