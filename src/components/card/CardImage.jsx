@@ -21,6 +21,8 @@ const Container = styled.div`
 const StyledImage = styled(Image)`
   width: 100%;
   height: 20rem;
+  display: block;
+  object-fit: cover;
 `;
 
 export default CardImage;
