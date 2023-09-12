@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import Link from 'next/link';
 import PropTypes from 'prop-types';
 
-const CardHeading = ({ name }) => {
+const CardHeading = ({ url, name }) => {
   return (
     <Heading>
       <Link href={url} passHref>{name}</Link>
@@ -48,6 +48,7 @@ const Heading = styled.h3`
 `;
 
 CardHeading.propTypes = {
+  url: PropTypes.string,
   name: PropTypes.string,
 };
 
