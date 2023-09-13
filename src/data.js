@@ -1360,3 +1360,18 @@ export const productValue = [
     img: '/img/Returns-black.svg',
   },
 ];
+
+export const priceOptions = [
+  {
+    value: 'newest',
+    text: 'Newest',
+  },
+  {
+    value: 'asc',
+    text: 'Price (asc)',
+  },
+  {
+    value: 'desc',
+    text: 'Price (desc)',
+  },
+];
