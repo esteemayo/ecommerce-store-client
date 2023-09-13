@@ -23,15 +23,6 @@ const RangeInput = ({ name, label, value, ...rest }) => {
   );
 }
 
-// const Label = styled.label`
-//   display: inline-block;
-//   text-transform: capitalize;
-//   font-size: 1.6rem;
-//   color: ${({ theme }) => theme.textFilterLabel};
-//   letter-spacing: 3px;
-//   margin-bottom: 0.5rem;
-// `;
-
 const Input = styled.input`
   display: inline-block;
   width: 20rem;
