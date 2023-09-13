@@ -9,7 +9,7 @@ import FormatPrice from '../FormatPrice';
 const RangeInput = ({ name, label, price, ...rest }) => {
   return (
     <Filter>
-      <Label htmlFor='price'>
+      <Label htmlFor={name}>
         {label} {' '}
         <FormatPrice value={price} />
       </Label>
