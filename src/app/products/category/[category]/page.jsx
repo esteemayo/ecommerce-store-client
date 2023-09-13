@@ -7,6 +7,7 @@ import dynamic from 'next/dynamic';
 import ClientOnly from '@/components/ClientOnly';
 import ProductBox from '@/components/products/ProductBox';
 import Heading from '@/components/filters/Heading';
+import Option from '@/components/filters/Option';
 import { Label } from '@/components/filters/Label';
 import { Filter } from '@/components/filters/Filter';
 
@@ -60,18 +61,20 @@ const ProductCategory = ({ params }) => {
   let colors = getUnique(products, 'color');
   colors = colors.map((color, index) => {
     return (
-      <Option key={index} value={color}>
-        {color}
-      </Option>
+      <Option
+        key={index}
+        value={color}
+      />
     );
   });
 
   let sizes = getUnique(products, 'size');
   sizes = sizes.map((size, index) => {
     return (
-      <Option key={index} value={size}>
-        {size}
-      </Option>
+      <Option
+        key={index}
+        value={size}
+      />
     );
   });
 
@@ -212,10 +215,10 @@ const Select = styled.select`
   }
 `;
 
-const Option = styled.option`
-  text-transform: capitalize;
-  background-color: ${({ theme }) => theme.bgProdCard};
-  color: inherit;
-`;
+// const Option = styled.option`
+//   text-transform: capitalize;
+//   background-color: ${({ theme }) => theme.bgProdCard};
+//   color: inherit;
+// `;
 
 export default ProductCategory;
