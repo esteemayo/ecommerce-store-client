@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-const Option = ({ value, option }) => {
+const Option = ({ value }) => {
   return (
     <StyledOption value={value}>
-      {option}
+      {value}
     </StyledOption>
   );
 }
@@ -17,7 +17,6 @@ const StyledOption = styled.option`
 
 Option.propTypes = {
   value: PropTypes.any,
-  option: PropTypes.any,
 };
 
 export default Option;
