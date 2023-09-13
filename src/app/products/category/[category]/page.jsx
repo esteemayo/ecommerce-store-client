@@ -6,6 +6,7 @@ import dynamic from 'next/dynamic';
 
 import ClientOnly from '@/components/ClientOnly';
 import ProductBox from '@/components/products/ProductBox';
+import Heading from '@/components/filters/Heading';
 
 import { getUnique } from '@/utils';
 import { storeProducts } from '@/data';
@@ -76,7 +77,7 @@ const ProductCategory = ({ params }) => {
     <ClientOnly>
       <ProductBox>
         <FilterContainer>
-          <FilterHeading>Filter by</FilterHeading>
+          <Heading title='Filter by' />
           <FilterWrapper>
             <FilterLeft>
               <Filter>
