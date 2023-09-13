@@ -9,7 +9,6 @@ import Option from '@/components/filters/Option';
 import { Filter } from '@/components/filters/Filter';
 import Select from '@/components/filters/Select';
 import SelectColor from '@/components/filters/SelectColor';
-import { Label } from '@/components/filters/Label';
 
 import ClientOnly from '@/components/ClientOnly';
 import ProductBox from '@/components/products/ProductBox';
