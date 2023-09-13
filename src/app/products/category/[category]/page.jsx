@@ -8,13 +8,14 @@ import Heading from '@/components/filters/Heading';
 import Option from '@/components/filters/Option';
 import { Filter } from '@/components/filters/Filter';
 import Select from '@/components/filters/Select';
+import SelectColor from '@/components/filters/SelectColor';
 import { Label } from '@/components/filters/Label';
 
 import ClientOnly from '@/components/ClientOnly';
 import ProductBox from '@/components/products/ProductBox';
 
 import { getUnique } from '@/utils';
-import { storeProducts } from '@/data';
+import { priceOptions, storeProducts } from '@/data';
 
 const ProductList = dynamic(() => import('@/components/products/ProductList'), { ssr: false });
 
@@ -101,14 +102,12 @@ const ProductCategory = ({ params }) => {
               />
             </FilterLeft>
             <FilterRight>
-              <Filter>
-                <Label htmlFor='price'>Product price</Label>
-                <Select id='price' name='price' onChange={(e) => setSort(e.target.value)}>
-                  <Option value='newest'>Newest</Option>
-                  <Option value='asc'>Price (asc)</Option>
-                  <Option value='desc'>Price (desc)</Option>
-                </Select>
-              </Filter>
+              <SelectColor
+                name='price'
+                label='Product price'
+                options={priceOptions}
+                onChange={(e) => setSort(e.target.value)}
+              />
             </FilterRight>
           </FilterWrapper>
         </FilterContainer>
