@@ -107,14 +107,6 @@ const Container = styled.section`
   width: 100%;
 `;
 
-const FilterHeading = styled.h1`
-  display: inline-block;
-  font-weight: 600;
-  font-size: 2.25rem;
-  color: ${({ theme }) => theme.text};
-  margin-bottom: 1rem;
-`;
-
 const FilterWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
