@@ -6,12 +6,12 @@ import { Filter } from './Filter';
 
 import FormatPrice from '../FormatPrice';
 
-const RangeInput = ({ name, label, value, ...rest }) => {
+const RangeInput = ({ name, label, price, ...rest }) => {
   return (
     <Filter>
       <Label htmlFor='price'>
         {label} {' '}
-        <FormatPrice value={value} />
+        <FormatPrice value={price} />
       </Label>
       <Input
         {...rest}
@@ -59,7 +59,7 @@ const Input = styled.input`
 RangeInput.propType = {
   name: PropType.string,
   label: PropType.string,
-  value: PropType.number,
+  price: PropType.number,
   rest: PropType.any,
 };
 
