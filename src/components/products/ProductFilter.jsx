@@ -6,6 +6,7 @@ import PropTypes from 'prop-types';
 import FormatPrice from '../FormatPrice';
 import RangeInput from '../filters/RangeInput';
 import Heading from '../filters/Heading';
+import { Filter } from '../filters/Filter';
 
 import { getUnique } from '@/utils';
 
@@ -130,11 +131,11 @@ const FilterWrapper = styled.div`
   }
 `;
 
-const Filter = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-`;
+// const Filter = styled.div`
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+// `;
 
 const Label = styled.label`
   display: inline-block;
