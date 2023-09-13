@@ -3,8 +3,10 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-import { getUnique } from '@/utils';
 import FormatPrice from '../FormatPrice';
+import Heading from '../filters/Heading';
+
+import { getUnique } from '@/utils';
 
 const ProductFilter = ({
   products,
@@ -45,7 +47,7 @@ const ProductFilter = ({
 
   return (
     <Container>
-      <FilterHeading>Filter by</FilterHeading>
+      <Heading title='Filter by' />
       <FilterWrapper>
         <Filter>
           <Label htmlFor='color'>Color</Label>
