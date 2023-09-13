@@ -7,6 +7,7 @@ import dynamic from 'next/dynamic';
 import ClientOnly from '@/components/ClientOnly';
 import ProductBox from '@/components/products/ProductBox';
 import Heading from '@/components/filters/Heading';
+import { Filter } from '@/components/filters/Filter';
 
 import { getUnique } from '@/utils';
 import { storeProducts } from '@/data';
@@ -171,11 +172,11 @@ const FilterRight = styled.div`
   }
 `;
 
-const Filter = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-`;
+// const Filter = styled.div`
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+// `;
 
 const Label = styled.label`
   display: inline-block;
