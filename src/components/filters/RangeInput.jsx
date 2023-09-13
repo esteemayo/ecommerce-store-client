@@ -1,29 +1,36 @@
 import styled from 'styled-components';
 import PropType from 'prop-types';
 
+import { Label } from './Label';
 import { Filter } from './Filter';
+
 import FormatPrice from '../FormatPrice';
 
-const RangeInput = ({ name, label, value }) => {
+const RangeInput = ({ name, label, value, ...rest }) => {
   return (
     <Filter>
       <Label htmlFor='price'>
         {label} {' '}
         <FormatPrice value={value} />
       </Label>
-      <Input id={name} name={name} type='range' />
+      <Input
+        {...rest}
+        id={name}
+        name={name}
+        type='range'
+      />
     </Filter>
   );
 }
 
-const Label = styled.label`
-  display: inline-block;
-  text-transform: capitalize;
-  font-size: 1.6rem;
-  color: ${({ theme }) => theme.textFilterLabel};
-  letter-spacing: 3px;
-  margin-bottom: 0.5rem;
-`;
+// const Label = styled.label`
+//   display: inline-block;
+//   text-transform: capitalize;
+//   font-size: 1.6rem;
+//   color: ${({ theme }) => theme.textFilterLabel};
+//   letter-spacing: 3px;
+//   margin-bottom: 0.5rem;
+// `;
 
 const Input = styled.input`
   display: inline-block;
@@ -57,5 +64,12 @@ const Input = styled.input`
     width: 31rem;
   }
 `;
+
+RangeInput.propType = {
+  name: PropType.string,
+  label: PropType.string,
+  value: PropType.number,
+  rest: PropType.any,
+};
 
 export default RangeInput;
