@@ -7,6 +7,7 @@ import dynamic from 'next/dynamic';
 import Heading from '@/components/filters/Heading';
 import Option from '@/components/filters/Option';
 import { Filter } from '@/components/filters/Filter';
+import Select from '@/components/filters/Select';
 import { Label } from '@/components/filters/Label';
 
 import ClientOnly from '@/components/ClientOnly';
@@ -86,18 +87,18 @@ const ProductCategory = ({ params }) => {
           <Heading title='Filter by' />
           <FilterWrapper>
             <FilterLeft>
-              <Filter>
-                <Label htmlFor='color'>Color</Label>
-                <Select id='color' name='color' onChange={handleFilter}>
-                  {colors}
-                </Select>
-              </Filter>
-              <Filter>
-                <Label htmlFor='size'>Product size</Label>
-                <Select id='size' name='size' onChange={handleFilter}>
-                  {sizes}
-                </Select>
-              </Filter>
+              <Select
+                name='color'
+                label='Color'
+                options={colors}
+                onChange={handleFilter}
+              />
+              <Select
+                name='size'
+                label='Product size'
+                options={sizes}
+                onChange={handleFilter}
+              />
             </FilterLeft>
             <FilterRight>
               <Filter>
@@ -177,43 +178,43 @@ const FilterRight = styled.div`
   }
 `;
 
-const Select = styled.select`
-  display: inline-block;
-  text-transform: capitalize;
-  width: 20rem;
-  padding: 3px;
-  font-family: inherit;
-  font-size: 1.4rem;
-  background-color: transparent;
-  color: ${({ theme }) => theme.textFilterSelect};
-  border: 1px solid #ddd;
-  border-radius: 3px;
-  outline-color: ${({ theme }) => theme.filterOut};
+// const Select = styled.select`
+//   display: inline-block;
+//   text-transform: capitalize;
+//   width: 20rem;
+//   padding: 3px;
+//   font-family: inherit;
+//   font-size: 1.4rem;
+//   background-color: transparent;
+//   color: ${({ theme }) => theme.textFilterSelect};
+//   border: 1px solid #ddd;
+//   border-radius: 3px;
+//   outline-color: ${({ theme }) => theme.filterOut};
 
-  @media only screen and (max-width: 37.5em) {
-    width: 60rem;
-    padding: 0.7rem;
-  }
+//   @media only screen and (max-width: 37.5em) {
+//     width: 60rem;
+//     padding: 0.7rem;
+//   }
 
-  @media only screen and (max-width: 35em) {
-    width: 54rem;
-  }
+//   @media only screen and (max-width: 35em) {
+//     width: 54rem;
+//   }
 
-  @media only screen and (max-width: 31.25em) {
-    width: 40rem;
-  }
+//   @media only screen and (max-width: 31.25em) {
+//     width: 40rem;
+//   }
 
-  @media only screen and (max-width: 25em) {
-    width: 39rem;
-  }
+//   @media only screen and (max-width: 25em) {
+//     width: 39rem;
+//   }
 
-  @media only screen and (max-width: 21.875em) {
-    width: 37rem;
-  }
+//   @media only screen and (max-width: 21.875em) {
+//     width: 37rem;
+//   }
 
-  @media only screen and (max-width: 18.75em) {
-    width: 31rem;
-  }
-`;
+//   @media only screen and (max-width: 18.75em) {
+//     width: 31rem;
+//   }
+// `;
 
 export default ProductCategory;
