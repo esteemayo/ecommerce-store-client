@@ -53,39 +53,30 @@ const ProductFilter = ({
     <Container>
       <Heading title='Filter by' />
       <FilterWrapper>
-        <Filter>
-          <Label htmlFor='color'>Color</Label>
-          <Select
-            id='color'
-            name='color'
-            value={color}
-            onChange={onChange}
-          >
-            {colors}
-          </Select>
-        </Filter>
-        <Filter>
-          <Label htmlFor='category'>Category</Label>
-          <Select
-            id='category'
-            name='category'
-            value={category}
-            onChange={onChange}
-          >
-            {categories}
-          </Select>
-        </Filter>
-        <Filter>
-          <Label htmlFor='size'>Product size</Label>
-          <Select
-            id='size'
-            name='size'
-            value={size}
-            onChange={onChange}
-          >
-            {sizes}
-          </Select>
-        </Filter>
+        <Select
+          name='color'
+          label='Color'
+          type='product'
+          value={color}
+          options={colors}
+          onChange={onChange}
+        />
+        <Select
+          name='category'
+          label='Category'
+          type='product'
+          value={category}
+          options={categories}
+          onChange={onChange}
+        />
+        <Select
+          name='size'
+          label='Product size'
+          type='product'
+          value={size}
+          options={sizes}
+          onChange={onChange}
+        />
         <RangeInput
           name='price'
           label='Product price'
