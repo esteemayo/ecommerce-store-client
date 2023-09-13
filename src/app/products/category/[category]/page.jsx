@@ -6,9 +6,8 @@ import dynamic from 'next/dynamic';
 
 import Heading from '@/components/filters/Heading';
 import Option from '@/components/filters/Option';
-import { Filter } from '@/components/filters/Filter';
-import Select from '@/components/filters/Select';
 import SelectColor from '@/components/filters/SelectColor';
+import Select from '@/components/filters/Select';
 
 import ClientOnly from '@/components/ClientOnly';
 import ProductBox from '@/components/products/ProductBox';
