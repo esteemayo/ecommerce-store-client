@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 import Heading from '../filters/Heading';
+import Option from '../filters/Option';
 import RangeInput from '../filters/RangeInput';
 import Select from '../filters/Select';
 
@@ -22,18 +23,20 @@ const ProductFilter = ({
   let colors = getUnique(products, 'color');
   colors = colors.map((color, index) => {
     return (
-      <Option key={index} value={color}>
-        {color}
-      </Option>
+      <Option
+        key={index}
+        value={color}
+      />
     );
   });
 
   let categories = ['all', ...getUnique(products, 'category')];
   categories = categories.map((category, index) => {
     return (
-      <Option key={index} value={category}>
-        {category}
-      </Option>
+      <Option
+        key={index}
+        value={category}
+      />
     );
   });
 
@@ -121,11 +124,11 @@ const FilterWrapper = styled.div`
   }
 `;
 
-const Option = styled.option`
-  text-transform: capitalize;
-  background-color: ${({ theme }) => theme.bgProdCard};
-  color: inherit;
-`;
+// const Option = styled.option`
+//   text-transform: capitalize;
+//   background-color: ${({ theme }) => theme.bgProdCard};
+//   color: inherit;
+// `;
 
 ProductFilter.propTypes = {
   products: PropTypes.array,
