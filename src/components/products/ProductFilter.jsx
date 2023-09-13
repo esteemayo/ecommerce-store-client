@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 import FormatPrice from '../FormatPrice';
+import RangeInput from '../filters/RangeInput';
 import Heading from '../filters/Heading';
 
 import { getUnique } from '@/utils';
@@ -82,21 +83,15 @@ const ProductFilter = ({
             {sizes}
           </Select>
         </Filter>
-        <Filter>
-          <Label htmlFor='price'>
-            Product price {' '}
-            <FormatPrice value={price} />
-          </Label>
-          <Input
-            id='price'
-            name='price'
-            type='range'
-            value={price}
-            min={minPrice}
-            max={maxPrice}
-            onChange={onChange}
-          />
-        </Filter>
+        <RangeInput
+          name='price'
+          label='Product price'
+          price={price}
+          value={price}
+          min={minPrice}
+          max={maxPrice}
+          onChange={onChange}
+        />
       </FilterWrapper>
     </Container>
   );
