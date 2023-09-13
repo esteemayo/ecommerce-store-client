@@ -3,8 +3,10 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-import RangeInput from '../filters/RangeInput';
 import Heading from '../filters/Heading';
+import RangeInput from '../filters/RangeInput';
+
+import { Label } from '../filters/Label';
 import { Filter } from '../filters/Filter';
 
 import { getUnique } from '@/utils';
@@ -130,14 +132,14 @@ const FilterWrapper = styled.div`
   }
 `;
 
-const Label = styled.label`
-  display: inline-block;
-  text-transform: capitalize;
-  font-size: 1.6rem;
-  color: ${({ theme }) => theme.textFilterLabel};
-  letter-spacing: 3px;
-  margin-bottom: 0.5rem;
-`;
+// const Label = styled.label`
+//   display: inline-block;
+//   text-transform: capitalize;
+//   font-size: 1.6rem;
+//   color: ${({ theme }) => theme.textFilterLabel};
+//   letter-spacing: 3px;
+//   margin-bottom: 0.5rem;
+// `;
 
 const Select = styled.select`
   display: inline-block;
