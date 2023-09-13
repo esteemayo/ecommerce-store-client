@@ -3,13 +3,14 @@ import PropTypes from 'prop-types';
 
 import { Label } from './Label';
 import Option from './Option';
+import { StyledSelect } from './StyledSelect';
 import { Filter } from './Filter';
 
 const SelectColor = ({ name, label, options, ...rest }) => {
   return (
     <Filter>
       <Label htmlFor={name}>{label}</Label>
-      <Select {...rest} id={name} name={name} >
+      <StyledSelect {...rest} id={name} name={name} >
         {options.map((item) => {
           const { value, text } = item;
           return (
@@ -18,7 +19,7 @@ const SelectColor = ({ name, label, options, ...rest }) => {
             </Option>
           );
         })}
-      </Select>
+      </StyledSelect>
     </Filter>
   );
 }
