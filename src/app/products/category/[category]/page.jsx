@@ -7,6 +7,7 @@ import dynamic from 'next/dynamic';
 import ClientOnly from '@/components/ClientOnly';
 import ProductBox from '@/components/products/ProductBox';
 import Heading from '@/components/filters/Heading';
+import { Label } from '@/components/filters/Label';
 import { Filter } from '@/components/filters/Filter';
 
 import { getUnique } from '@/utils';
@@ -172,14 +173,14 @@ const FilterRight = styled.div`
   }
 `;
 
-const Label = styled.label`
-  display: inline-block;
-  text-transform: capitalize;
-  font-size: 1.6rem;
-  color:  ${({ theme }) => theme.textFilterLabel};
-  letter-spacing: 3px;
-  margin-bottom: 0.5rem;
-`;
+// const Label = styled.label`
+//   display: inline-block;
+//   text-transform: capitalize;
+//   font-size: 1.6rem;
+//   color:  ${({ theme }) => theme.textFilterLabel};
+//   letter-spacing: 3px;
+//   margin-bottom: 0.5rem;
+// `;
 
 const Select = styled.select`
   display: inline-block;
