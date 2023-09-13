@@ -124,12 +124,6 @@ const FilterWrapper = styled.div`
   }
 `;
 
-// const Option = styled.option`
-//   text-transform: capitalize;
-//   background-color: ${({ theme }) => theme.bgProdCard};
-//   color: inherit;
-// `;
-
 ProductFilter.propTypes = {
   products: PropTypes.array,
   price: PropTypes.number,
