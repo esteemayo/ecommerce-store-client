@@ -3,7 +3,6 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-import FormatPrice from '../FormatPrice';
 import RangeInput from '../filters/RangeInput';
 import Heading from '../filters/Heading';
 import { Filter } from '../filters/Filter';
