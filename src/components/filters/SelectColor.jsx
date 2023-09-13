@@ -9,7 +9,7 @@ const SelectColor = ({ name, label, options, ...rest }) => {
   return (
     <Filter>
       <Label htmlFor={name}>{label}</Label>
-      <StyledSelect {...rest} id={name} name={name} >
+      <StyledSelect {...rest} id={name} name={name}>
         {options.map((item) => {
           const { value, text } = item;
           return (
