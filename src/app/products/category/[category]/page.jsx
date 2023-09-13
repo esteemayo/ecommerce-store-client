@@ -4,12 +4,13 @@ import styled from 'styled-components';
 import { useCallback, useEffect, useState } from 'react';
 import dynamic from 'next/dynamic';
 
-import ClientOnly from '@/components/ClientOnly';
-import ProductBox from '@/components/products/ProductBox';
 import Heading from '@/components/filters/Heading';
 import Option from '@/components/filters/Option';
-import { Label } from '@/components/filters/Label';
 import { Filter } from '@/components/filters/Filter';
+import { Label } from '@/components/filters/Label';
+
+import ClientOnly from '@/components/ClientOnly';
+import ProductBox from '@/components/products/ProductBox';
 
 import { getUnique } from '@/utils';
 import { storeProducts } from '@/data';
