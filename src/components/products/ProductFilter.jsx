@@ -5,9 +5,6 @@ import PropTypes from 'prop-types';
 
 import Heading from '../filters/Heading';
 import RangeInput from '../filters/RangeInput';
-
-import { Label } from '../filters/Label';
-import { Filter } from '../filters/Filter';
 import Select from '../filters/Select';
 
 import { getUnique } from '@/utils';
