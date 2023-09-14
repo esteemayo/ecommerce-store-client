@@ -5,9 +5,9 @@ const Overlay = ({ type, mode, children, onClick }) => {
   return (
     <StyledOverlay
       type={type}
+      className='overlay'
       mode={mode}
       onClick={onClick}
-      className='overlay'
     >
       <Container>{children}</Container>
     </StyledOverlay>
