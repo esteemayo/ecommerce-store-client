@@ -15,6 +15,7 @@ import ProductHead from '../products/ProductHead';
 import ProductButton from '../products/ProductButton';
 
 import Alert from '../Alert';
+import Overlay from './Overlay';
 import useAddToCart from '@/hooks/useAddToCart';
 
 const CartModal = ({ product, isOpen, onClose, onSelect }) => {
@@ -65,93 +66,90 @@ const CartModal = ({ product, isOpen, onClose, onSelect }) => {
 
   return (
     <Overlay
-      className='overlay'
       mode={modeValue}
       type={activeModal}
       onClick={closeModalHandler}
     >
-      <Container>
-        <Wrapper mode={modeValue}>
-          <ButtonContainer>
-            <CloseButton type='button' onClick={handleCloseModal}>
-              <CloseIcon />
-            </CloseButton>
-          </ButtonContainer>
-          <ImageContainer>
-            <Image
-              src={product?.images ? product?.images[0] : '/img/img-1.jpg'}
-              width={320}
-              height={200}
-              alt=''
-            />
-          </ImageContainer>
-          <ProductContainer>
-            <ProductHead
-              name={product?.name}
-              price={product?.price}
-              discount={product?.discount}
-              priceDiscount={product?.priceDiscount}
+      <Wrapper mode={modeValue}>
+        <ButtonContainer>
+          <CloseButton type='button' onClick={handleCloseModal}>
+            <CloseIcon />
+          </CloseButton>
+        </ButtonContainer>
+        <ImageContainer>
+          <Image
+            src={product?.images ? product?.images[0] : '/img/img-1.jpg'}
+            width={320}
+            height={200}
+            alt=''
+          />
+        </ImageContainer>
+        <ProductContainer>
+          <ProductHead
+            name={product?.name}
+            price={product?.price}
+            discount={product?.discount}
+            priceDiscount={product?.priceDiscount}
+            modal
+          />
+          <Hr />
+          <ColorSelect
+            title='Color'
+            mode={mode}
+            value={product?.color}
+            selected={isSelected}
+            onAction={setColor}
+            secondaryAction={setIsSelected}
+            modal
+          />
+          {product?.size && (
+            <SizeSelect
+              value={product?.size}
+              selected={selectedSize}
+              onAction={setSize}
+              secondaryAction={setSelectedSize}
               modal
             />
-            <Hr />
-            <ColorSelect
-              title='Color'
-              mode={mode}
-              value={product?.color}
-              selected={isSelected}
-              onAction={setColor}
-              secondaryAction={setIsSelected}
-              modal
+          )}
+          <Hr />
+          <Counter
+            title='Quantity'
+            value={quantity}
+            onClick={setQuantity}
+          />
+          <Hr />
+          <ProductButton
+            small
+            actionLabel='Add to cart'
+            onAction={handleClick}
+          />
+          {alert && (
+            <Alert
+              alert={alert}
+              message='Item added to cart'
+              onChange={setAlert}
+              center
             />
-            {product?.size && (
-              <SizeSelect
-                value={product?.size}
-                selected={selectedSize}
-                onAction={setSize}
-                secondaryAction={setSelectedSize}
-                modal
-              />
-            )}
-            <Hr />
-            <Counter
-              title='Quantity'
-              value={quantity}
-              onClick={setQuantity}
-            />
-            <Hr />
-            <ProductButton
-              small
-              actionLabel='Add to cart'
-              onAction={handleClick}
-            />
-            {alert && (
-              <Alert
-                alert={alert}
-                message='Item added to cart'
-                onChange={setAlert}
-                center
-              />
-            )}
-          </ProductContainer>
-        </Wrapper>
-      </Container>
+          )}
+        </ProductContainer>
+      </Wrapper>
     </Overlay>
   );
 }
 
-const Overlay = styled.div`
-  width: 100vw;
-  height: 100%;
-  background-color: ${({ theme }) => theme.bgOverlay};
-  backdrop-filter: ${({ mode }) => mode === 'true' && 'blur(2px)'};
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: ${({ type }) => type === 'show' ? 'block' : 'none'};
-  visibility: ${({ type }) => type === 'show' ? 'visible' : 'hidden'};
-  opacity: ${({ type }) => type === 'show' ? 1 : 0};
-  z-index: ${({ type }) => type === 'show' ? 4000 : -1};
-`;
+// const Overlay = styled.div`
+//   width: 100vw;
+//   height: 100%;
+//   background-color: ${({ theme }) => theme.bgOverlay};
+//   backdrop-filter: ${({ mode }) => mode === 'true' && 'blur(2px)'};
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   display: ${({ type }) => type === 'show' ? 'block' : 'none'};
+//   visibility: ${({ type }) => type === 'show' ? 'visible' : 'hidden'};
+//   opacity: ${({ type }) => type === 'show' ? 1 : 0};
+//   z-index: ${({ type }) => type === 'show' ? 4000 : -1};
+// `;
 
 const Container = styled.div`
   position: absolute;
