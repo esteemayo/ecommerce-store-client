@@ -24,12 +24,12 @@ const TopReviews = () => {
     const distance = reviewRef.current.getBoundingClientRect().x - 50;
 
     if (direction === 'left') {
-      setCurrentSlide(currentSlide - 1);
+      setCurrentSlide((value) => value - 1);
       reviewRef.current.style.transform = `translateX(${730 + distance}px)`;
     }
 
     if (direction === 'right' && currentSlide < 8 - clickLimit) {
-      setCurrentSlide(currentSlide + 1);
+      setCurrentSlide((value) => value + 1);
       reviewRef.current.style.transform = `translateX(${-730 + distance}px)`;
     }
   }, [clickLimit, currentSlide]);
