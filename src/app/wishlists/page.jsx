@@ -13,8 +13,6 @@ import useCartModal from '@/hooks/useCartModal';
 import useWishlistModal from '@/hooks/useWishlistModal';
 import { useSubmenu } from '@/hooks/useSubmenu';
 
-import { wishlists } from '@/data';
-
 const WishlistCard = dynamic(() => import('@/components/wishlists/WishlistCard'), { ssr: false });
 
 const WishLists = () => {
