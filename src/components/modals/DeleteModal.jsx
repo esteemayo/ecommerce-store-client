@@ -88,7 +88,6 @@ const Overlay = styled.section`
   visibility: ${({ type }) => type === 'show' ? 'visible' : 'hidden'};
   opacity: ${({ type }) => type === 'show' ? 1 : 0};
   z-index: ${({ type }) => type === 'show' ? 4000 : -1};
-  transition: all 0.3s linear;
 `;
 
 const Container = styled.div`
