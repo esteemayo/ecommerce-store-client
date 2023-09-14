@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Overlay = ({ type, mode, children, onClick }) => {
   return (
-    <StyledOverlay>
+    <StyledOverlay type={type} mode={mode} onClick={onClick}>
       <Container>{children}</Container>
     </StyledOverlay>
   );
