@@ -40,9 +40,8 @@ const WishLists = () => {
   }, [wishlistModal]);
 
   const handleDelete = useCallback((id) => {
-    dispatch(removeWishlist(id));
     setProducts((prev) => prev.filter((item) => item.id !== id));
-  }, [dispatch]);
+  }, []);
 
   let bodyContent;
 
