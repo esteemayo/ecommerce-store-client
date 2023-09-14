@@ -34,4 +34,11 @@ const Container = styled.div`
   transform: translate(-50%, -50%);
 `;
 
+Overlay.propTypes = {
+  type: PropTypes.string,
+  mode: PropTypes.bool,
+  children: PropTypes.any.isRequired,
+  onClick: PropTypes.func.isRequired,
+};
+
 export default Overlay;
