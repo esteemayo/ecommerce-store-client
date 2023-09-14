@@ -37,7 +37,7 @@ const Container = styled.div`
 
 Overlay.propTypes = {
   type: PropTypes.string,
-  mode: PropTypes.bool,
+  mode: PropTypes.string,
   children: PropTypes.any.isRequired,
   onClick: PropTypes.func.isRequired,
 };
