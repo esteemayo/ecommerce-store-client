@@ -78,6 +78,10 @@ const PaymentModal = ({ isOpen, onClose, onExit }) => {
     return showModal ? 'show' : '';
   }, [showModal]);
 
+  const modeValue = useMemo(() => {
+    return mode.toString();
+  }, [mode]);
+
   useEffect(() => {
     setShowModal(isOpen);
   }, [isOpen]);
@@ -85,7 +89,7 @@ const PaymentModal = ({ isOpen, onClose, onExit }) => {
   return (
     <Overlay
       type={activeModal}
-      mode={mode}
+      mode={modeValue}
       onClick={handleClick}
     >
       <Wrapper>
