@@ -127,7 +127,7 @@ const PaymentModal = ({ isOpen, onClose, onExit }) => {
               placeholder='Enter your address'
               onChange={handleChange}
             />
-            {errors.address && <ErrorMsg>{errors.address}</ErrorMsg>}
+            {errors.address && <FormError message={errors.address} />}
           </FormGroup>
           <FormButton type='submit'>Order</FormButton>
         </Form>
