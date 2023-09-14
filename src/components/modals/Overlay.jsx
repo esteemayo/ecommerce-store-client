@@ -22,4 +22,11 @@ const StyledOverlay = styled.div`
   z-index: ${({ type }) => type === 'show' ? 4000 : -1};
 `;
 
+const Container = styled.div`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+`;
+
 export default Overlay;
