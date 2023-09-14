@@ -85,7 +85,7 @@ const ProductCategory = ({ params }) => {
         <Container>
           <Heading title='Filter by' />
           <Wrapper>
-            <FilterLeft>
+            <Left>
               <Select
                 name='color'
                 label='Color'
@@ -98,7 +98,7 @@ const ProductCategory = ({ params }) => {
                 options={sizes}
                 onChange={handleFilter}
               />
-            </FilterLeft>
+            </Left>
             <FilterRight>
               <SelectColor
                 name='price'
@@ -134,7 +134,7 @@ const Wrapper = styled.div`
   }
 `;
 
-const FilterLeft = styled.div`
+const Left = styled.div`
   flex: 1;
   display: flex;
   flex-wrap: wrap;
