@@ -8,6 +8,7 @@ import PropTypes from 'prop-types';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { useSelector } from 'react-redux';
 
+import Overlay from './Overlay';
 import StarRating from '../StarRating';
 
 const ReviewModal = ({ isOpen, onClose }) => {
