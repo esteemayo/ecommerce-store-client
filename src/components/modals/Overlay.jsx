@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const Overlay = ({ type, mode, children, onClick }) => {
   return (
     <StyledOverlay>
-      {children}
+      <Container>{children}</Container>
     </StyledOverlay>
   );
 }
