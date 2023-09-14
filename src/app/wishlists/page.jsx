@@ -18,8 +18,8 @@ const WishlistCard = dynamic(() => import('@/components/wishlists/WishlistCard')
 const WishLists = () => {
   const { wishlists } = useSelector((state) => ({ ...state.cart }));
 
-  const cartModal = useCartModal();
   const { closeSubmenuHandler } = useSubmenu();
+  const cartModal = useCartModal();
   const wishlistModal = useWishlistModal();
 
   const [products, setProducts] = useState(wishlists);
