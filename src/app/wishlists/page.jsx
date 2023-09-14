@@ -16,6 +16,7 @@ import { useSubmenu } from '@/hooks/useSubmenu';
 const WishlistCard = dynamic(() => import('@/components/wishlists/WishlistCard'), { ssr: false });
 
 const WishLists = () => {
+  const dispatch = useDispatch();
   const { wishlists } = useSelector((state) => ({ ...state.cart }));
 
   const { closeSubmenuHandler } = useSubmenu();
