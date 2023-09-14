@@ -134,8 +134,7 @@ const ImageContainer = styled.div`
     width: 6.5rem;
     height: 6.5rem;
   }
-
-  `;
+`;
 
 const StyledImage = styled(Image)`
   img {
