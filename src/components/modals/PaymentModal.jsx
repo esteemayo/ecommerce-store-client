@@ -6,6 +6,7 @@ import { useCallback, useEffect, useMemo, useState } from 'react';
 import PropTypes from 'prop-types';
 import CloseIcon from '@mui/icons-material/Close';
 
+import Overlay from './Overlay';
 import FormatPrice from '../FormatPrice';
 
 const initialState = {
@@ -82,68 +83,65 @@ const PaymentModal = ({ isOpen, onClose, onExit }) => {
 
   return (
     <Overlay
-      className='overlay'
       type={activeModal}
       onClick={handleClick}
     >
-      <Container>
-        <Wrapper>
-          <CloseButtonContainer>
-            <CloseButton type='button' onClick={handleClose}>
-              <CloseIcon />
-            </CloseButton>
-          </CloseButtonContainer>
-          <Form onSubmit={handleSubmit}>
-            <Heading>
-              You will pay {' '}
-              <FormatPrice value={total} /> {' '}
-              after delivery
-            </Heading>
-            <FormGroup>
-              <FormLabel htmlFor='name'>Name</FormLabel>
-              <FormInput
-                id='name'
-                name='name'
-                type='text'
-                value={name}
-                placeholder='Enter your name'
-                onChange={handleChange}
-                autoFocus
-              />
-              {errors.name && <ErrorMsg>{errors.name}</ErrorMsg>}
-            </FormGroup>
-            <FormGroup>
-              <FormLabel htmlFor='address'>Address</FormLabel>
-              <TextArea
-                id='address'
-                name='address'
-                value={address}
-                placeholder='Enter your address'
-                onChange={handleChange}
-              />
-              {errors.address && <ErrorMsg>{errors.address}</ErrorMsg>}
-            </FormGroup>
-            <FormButton type='submit'>Order</FormButton>
-          </Form>
-        </Wrapper>
-      </Container>
+      <Wrapper>
+        <CloseButtonContainer>
+          <CloseButton type='button' onClick={handleClose}>
+            <CloseIcon />
+          </CloseButton>
+        </CloseButtonContainer>
+        <Form onSubmit={handleSubmit}>
+          <Heading>
+            You will pay {' '}
+            <FormatPrice value={total} /> {' '}
+            after delivery
+          </Heading>
+          <FormGroup>
+            <FormLabel htmlFor='name'>Name</FormLabel>
+            <FormInput
+              id='name'
+              name='name'
+              type='text'
+              value={name}
+              placeholder='Enter your name'
+              onChange={handleChange}
+              autoFocus
+            />
+            {errors.name && <ErrorMsg>{errors.name}</ErrorMsg>}
+          </FormGroup>
+          <FormGroup>
+            <FormLabel htmlFor='address'>Address</FormLabel>
+            <TextArea
+              id='address'
+              name='address'
+              value={address}
+              placeholder='Enter your address'
+              onChange={handleChange}
+            />
+            {errors.address && <ErrorMsg>{errors.address}</ErrorMsg>}
+          </FormGroup>
+          <FormButton type='submit'>Order</FormButton>
+        </Form>
+      </Wrapper>
     </Overlay>
   );
 }
 
-const Overlay = styled.aside`
-  width: 100vw;
-  height: 100%;
-  background-color: ${({ theme }) => theme.bgOverlay};
-  backdrop-filter: ${({ mode }) => mode === 'true' && 'blur(2px)'};
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: ${({ type }) => type === 'show' ? 'block' : 'none'};
-  visibility: ${({ type }) => type === 'show' ? 'visible' : 'hidden'};
-  opacity: ${({ type }) => type === 'show' ? 1 : 0};
-  z-index: ${({ type }) => type === 'show' ? 4000 : -1};
-`;
+// const Overlay = styled.aside`
+//   width: 100vw;
+//   height: 100%;
+//   background-color: ${({ theme }) => theme.bgOverlay};
+//   backdrop-filter: ${({ mode }) => mode === 'true' && 'blur(2px)'};
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   display: ${({ type }) => type === 'show' ? 'block' : 'none'};
+//   visibility: ${({ type }) => type === 'show' ? 'visible' : 'hidden'};
+//   opacity: ${({ type }) => type === 'show' ? 1 : 0};
+//   z-index: ${({ type }) => type === 'show' ? 4000 : -1};
+// `;
 
 const Container = styled.div`
   position: absolute;
