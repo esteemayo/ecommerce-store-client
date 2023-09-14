@@ -48,10 +48,9 @@ const DeleteModal = ({ actionId, isOpen, onClose, onAction }) => {
 
   return (
     <Overlay
-      className='overlay'
       mode={mode.toString()}
-      onClick={closeModalHandler}
       type={activeModal}
+      onClick={closeModalHandler}
     >
       <Wrapper>
         <CloseButton type='button' onClick={onClose}>
