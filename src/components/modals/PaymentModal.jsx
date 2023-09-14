@@ -1,10 +1,10 @@
 'use client';
 
 import styled from 'styled-components';
-import { useSelector } from 'react-redux';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import PropTypes from 'prop-types';
 import CloseIcon from '@mui/icons-material/Close';
+import { useSelector } from 'react-redux';
 
 import Overlay from './Overlay';
 import FormatPrice from '../FormatPrice';
