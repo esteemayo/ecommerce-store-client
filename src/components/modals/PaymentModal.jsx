@@ -141,7 +141,7 @@ const Overlay = styled.aside`
   display: ${({ type }) => type === 'show' ? 'block' : 'none'};
   visibility: ${({ type }) => type === 'show' ? 'visible' : 'hidden'};
   opacity: ${({ type }) => type === 'show' ? 1 : 0};
-  z-index: 4000;
+  z-index: ${({ type }) => type === 'show' ? 4000 : -1};
 `;
 
 const Container = styled.div`
