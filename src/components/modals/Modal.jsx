@@ -36,19 +36,17 @@ const Modal = ({ title, children, isOpen, onClose }) => {
       type={activeModal}
       onClick={closeModalHandler}
     >
-      <Container>
-        <Wrapper>
-          <ButtonContainer>
-            <Heading>{title}</Heading>
-            <Button type='button' onClick={onClose}>
-              <CloseIcon />
-            </Button>
-          </ButtonContainer>
-          <ModalContent>
-            {children}
-          </ModalContent>
-        </Wrapper>
-      </Container>
+      <Wrapper>
+        <ButtonContainer>
+          <Heading>{title}</Heading>
+          <Button type='button' onClick={onClose}>
+            <CloseIcon />
+          </Button>
+        </ButtonContainer>
+        <ModalContent>
+          {children}
+        </ModalContent>
+      </Wrapper>
     </Overlay>
   );
 }
