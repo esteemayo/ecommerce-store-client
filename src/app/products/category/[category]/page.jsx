@@ -99,14 +99,14 @@ const ProductCategory = ({ params }) => {
                 onChange={handleFilter}
               />
             </Left>
-            <FilterRight>
+            <Right>
               <SelectColor
                 name='price'
                 label='Product price'
                 options={priceOptions}
                 onChange={(e) => setSort(e.target.value)}
               />
-            </FilterRight>
+            </Right>
           </Wrapper>
         </Container>
         {category ? (
@@ -164,7 +164,7 @@ const Left = styled.div`
   }
 `;
 
-const FilterRight = styled.div`
+const Right = styled.div`
   flex: 1;
   display: flex;
   flex-wrap: wrap;
