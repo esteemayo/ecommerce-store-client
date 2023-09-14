@@ -52,7 +52,7 @@ const ProductFilter = ({
   return (
     <Container>
       <Heading title='Filter by' />
-      <FilterWrapper>
+      <Wrapper>
         <Select
           name='color'
           label='Color'
@@ -86,7 +86,7 @@ const ProductFilter = ({
           max={maxPrice}
           onChange={onChange}
         />
-      </FilterWrapper>
+      </Wrapper>
     </Container>
   );
 }
@@ -96,7 +96,7 @@ const Container = styled.section`
   width: 100%;
 `;
 
-const FilterWrapper = styled.div`
+const Wrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
