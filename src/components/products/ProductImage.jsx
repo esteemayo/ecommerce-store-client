@@ -52,7 +52,7 @@ const ProductImage = ({ images }) => {
     }
 
     if (direction === 'right' && slideNumber < 6 - clickLimit) {
-      setSlideNumber((prev) => prev + 1);
+      setSlideNumber((value) => value + 1);
       imgContainerRef.current.style.transform = `translateX(${-235 + distance}px)`;
     }
   }, [clickLimit, slideNumber]);
