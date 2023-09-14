@@ -148,6 +148,10 @@ const ImageContainer = styled.div`
   }
 `;
 
+const StyledImage = styled(Image)`
+  
+`;
+
 const OverviewContainer = styled.div``;
 
 const ProductName = styled.h2`
