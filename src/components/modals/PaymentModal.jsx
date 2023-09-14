@@ -139,6 +139,8 @@ const Overlay = styled.aside`
   top: 0;
   left: 0;
   display: ${({ type }) => type === 'show' ? 'block' : 'none'};
+  visibility: ${({ type }) => type === 'show' ? 'visible' : 'hidden'};
+  opacity: ${({ type }) => type === 'show' ? 1 : 0};
   z-index: 4000;
 `;
 
