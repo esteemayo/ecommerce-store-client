@@ -79,7 +79,7 @@ const CartModal = ({ product, isOpen, onClose, onSelect }) => {
         </ButtonContainer>
         <ImageContainer>
           <StyledImage
-            src={product?.images ? product?.images[0] : '/img/img-1.jpg'}
+            src={product?.images?.[0] ?? '/img/img-1.jpg'}
             width={320}
             height={200}
             alt=''
