@@ -3,6 +3,7 @@
 import styled from 'styled-components';
 import { useCallback, useState } from 'react';
 import dynamic from 'next/dynamic';
+import { useSelector } from 'react-redux';
 
 import CartModal from '@/components/modals/CartModal';
 import WishlistHeader from '@/components/wishlists/WishlistHeader';
