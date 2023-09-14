@@ -84,7 +84,7 @@ const ProductCategory = ({ params }) => {
       <ProductBox>
         <Container>
           <Heading title='Filter by' />
-          <FilterWrapper>
+          <Wrapper>
             <FilterLeft>
               <Select
                 name='color'
@@ -107,7 +107,7 @@ const ProductCategory = ({ params }) => {
                 onChange={(e) => setSort(e.target.value)}
               />
             </FilterRight>
-          </FilterWrapper>
+          </Wrapper>
         </Container>
         {category ? (
           <ProductList products={sortedProducts} />
@@ -124,7 +124,7 @@ const Container = styled.section`
   width: 100%;
 `;
 
-const FilterWrapper = styled.div`
+const Wrapper = styled.div`
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
