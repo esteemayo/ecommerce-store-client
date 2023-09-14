@@ -42,14 +42,18 @@ const DeleteModal = ({ actionId, isOpen, onClose, onAction }) => {
     return showModal ? 'show' : '';
   }, [showModal]);
 
+  const modeValue = useMemo(() => {
+    return mode.toString();
+  }, [mode]);
+
   useEffect(() => {
     setShowModal(isOpen);
   }, [isOpen]);
 
   return (
     <Overlay
-      mode={mode.toString()}
       type={activeModal}
+      mode={modeValue}
       onClick={closeModalHandler}
     >
       <Wrapper>
