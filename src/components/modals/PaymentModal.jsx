@@ -135,6 +135,7 @@ const Overlay = styled.aside`
   width: 100vw;
   height: 100%;
   background-color: ${({ theme }) => theme.bgOverlay};
+  backdrop-filter: ${({ mode }) => mode === 'true' && 'blur(2px)'};
   position: fixed;
   top: 0;
   left: 0;
