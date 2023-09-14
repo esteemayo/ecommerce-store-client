@@ -54,85 +54,82 @@ const ReviewModal = ({ isOpen, onClose }) => {
 
   return (
     <Overlay
-      className='overlay'
       mode={mode.toString()}
       type={activeModal}
       onClick={handleCloseModal}
     >
-      <Container>
-        <Wrapper>
-          <ButtonContainer>
-            <CloseButton
-              type='button'
-              onClick={closeModalHandler}
-            >
-              <FontAwesomeIcon icon={faXmark} />
-            </CloseButton>
-          </ButtonContainer>
-          <Header>Overall rating</Header>
-          <RatingContainer>
-            <StarRating
-              name='size-large'
-              value={rating}
-              precision={0.5}
-              onChange={(e, newValue) => {
-                setRating(newValue);
-              }}
-            />
-            <Text>Click to rate</Text>
-          </RatingContainer>
-          <Label htmlFor='review'>Product review</Label>
-          <TextArea
-            id='review'
-            name='review'
-            value={review}
-            onChange={(e) => setReview(e.target.value)}
-            placeholder='Example: Since i bought this a month ago, it has been used a lot. What i like best/what is worst about this product is ...'
-          ></TextArea>
-          <Agreement>
-            <Input
-              id='terms'
-              type='checkbox'
-              checked={terms}
-              onChange={(e) => setTerms(e.currentTarget.checked)}
-            />
-            <Label htmlFor='terms'>
-              I accept the <Link href='#' passHref>terms and conditions</Link>
-            </Label>
-          </Agreement>
-          <Information>
-            You will be able to receive emails in connection with this review (eg if others comment on your review).
-            All emails contain the option to unsubscribe. We can use the text and star rating
-            from your review in other marketting.
-          </Information>
-          <Button
+      <Wrapper>
+        <ButtonContainer>
+          <CloseButton
             type='button'
-            onClick={handleClick}
+            onClick={closeModalHandler}
           >
-            Submit product review
-          </Button>
-        </Wrapper>
-      </Container>
+            <FontAwesomeIcon icon={faXmark} />
+          </CloseButton>
+        </ButtonContainer>
+        <Header>Overall rating</Header>
+        <RatingContainer>
+          <StarRating
+            name='size-large'
+            value={rating}
+            precision={0.5}
+            onChange={(e, newValue) => {
+              setRating(newValue);
+            }}
+          />
+          <Text>Click to rate</Text>
+        </RatingContainer>
+        <Label htmlFor='review'>Product review</Label>
+        <TextArea
+          id='review'
+          name='review'
+          value={review}
+          onChange={(e) => setReview(e.target.value)}
+          placeholder='Example: Since i bought this a month ago, it has been used a lot. What i like best/what is worst about this product is ...'
+        ></TextArea>
+        <Agreement>
+          <Input
+            id='terms'
+            type='checkbox'
+            checked={terms}
+            onChange={(e) => setTerms(e.currentTarget.checked)}
+          />
+          <Label htmlFor='terms'>
+            I accept the <Link href='#' passHref>terms and conditions</Link>
+          </Label>
+        </Agreement>
+        <Information>
+          You will be able to receive emails in connection with this review (eg if others comment on your review).
+          All emails contain the option to unsubscribe. We can use the text and star rating
+          from your review in other marketting.
+        </Information>
+        <Button
+          type='button'
+          onClick={handleClick}
+        >
+          Submit product review
+        </Button>
+      </Wrapper>
     </Overlay>
   );
 }
 
-const Overlay = styled.aside`
-  width: 100vw;
-  height: 100%;
-  background-color: ${({ theme }) => theme.bgOverlay};
-  backdrop-filter: ${({ mode }) => mode === 'true' && 'blur(2px)'};
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  display: ${({ type }) => type === 'show' ? 'block' : 'none'};
-  visibility: ${({ type }) => type === 'show' ? 'visible' : 'hidden'};
-  opacity: ${({ type }) => type === 'show' ? 1 : 0};
-  z-index: ${({ type }) => type === 'show' ? 4000 : -1};
-`;
+// const Overlay = styled.aside`
+//   width: 100vw;
+//   height: 100%;
+//   background-color: ${({ theme }) => theme.bgOverlay};
+//   backdrop-filter: ${({ mode }) => mode === 'true' && 'blur(2px)'};
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   display: ${({ type }) => type === 'show' ? 'block' : 'none'};
+//   visibility: ${({ type }) => type === 'show' ? 'visible' : 'hidden'};
+//   opacity: ${({ type }) => type === 'show' ? 1 : 0};
+//   z-index: ${({ type }) => type === 'show' ? 4000 : -1};
+// `;
 
 const Container = styled.div`
   position: absolute;
