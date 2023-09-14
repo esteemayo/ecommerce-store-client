@@ -10,6 +10,7 @@ import Overlay from './Overlay';
 import FormatPrice from '../FormatPrice';
 
 import FormError from '../form/FormError';
+import Form from '../form/Form';
 import { FormGroup } from '../form/FormGroup';
 
 const initialState = {
@@ -195,9 +196,9 @@ const Heading = styled.h1`
   }
 `;
 
-const Form = styled.form`
-  margin: 2rem 0;
-`;
+// const Form = styled.form`
+//   margin: 2rem 0;
+// `;
 
 const FormLabel = styled.label`
   display: inline-block;
