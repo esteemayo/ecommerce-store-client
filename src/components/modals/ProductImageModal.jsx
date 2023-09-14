@@ -61,7 +61,7 @@ const ProductImageModal = ({
   }, [isOpen]);
 
   return (
-    <Overlay type={activeModal} mode={mode.toString()}>
+    <Overlay type={activeModal} mode={modeValue}>
       <CloseButton type='button' onClick={handleClose}>
         <CloseIcon />
       </CloseButton>
