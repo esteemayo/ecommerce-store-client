@@ -6,8 +6,9 @@ import { useCallback, useEffect, useMemo, useState } from 'react';
 import PropTypes from 'prop-types';
 import CloseIcon from '@mui/icons-material/Close';
 
-import Overlay from './Overlay';
 import FormatPrice from '../FormatPrice';
+import Overlay from './Overlay';
+import FormError from '../form/FormError';
 
 const initialState = {
   name: '',
@@ -115,7 +116,7 @@ const PaymentModal = ({ isOpen, onClose, onExit }) => {
               onChange={handleChange}
               autoFocus
             />
-            {errors.name && <ErrorMsg>{errors.name}</ErrorMsg>}
+            {errors.name && <FormError message={errors.name} />}
           </FormGroup>
           <FormGroup>
             <FormLabel htmlFor='address'>Address</FormLabel>
