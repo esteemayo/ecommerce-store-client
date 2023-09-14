@@ -6,6 +6,7 @@ import { useCallback, useEffect, useMemo, useState } from 'react';
 import { useSelector } from 'react-redux';
 
 import CloseIcon from '@mui/icons-material/Close';
+import Overlay from './Overlay';
 
 const DeleteModal = ({ actionId, isOpen, onClose, onAction }) => {
   const { mode } = useSelector((state) => ({ ...state.darkMode }));
@@ -52,43 +53,41 @@ const DeleteModal = ({ actionId, isOpen, onClose, onAction }) => {
       onClick={closeModalHandler}
       type={activeModal}
     >
-      <Container>
-        <Wrapper>
-          <CloseButton type='button' onClick={onClose}>
-            <CloseIcon />
-          </CloseButton>
-          <Heading>Remove a wishlist?</Heading>
-          <WarningMessage>Are you sure you wanted to remove this item from your wishlist?</WarningMessage>
-          <ButtonContainer>
-            <CancelButton type='button' onClick={onClose}>
-              Not now
-            </CancelButton>
-            <DeleteButton
-              type='button'
-              onClick={() => deleteWishlistHandler(actionId)}
-            >
-              Remove
-            </DeleteButton>
-          </ButtonContainer>
-        </Wrapper>
-      </Container>
+      <Wrapper>
+        <CloseButton type='button' onClick={onClose}>
+          <CloseIcon />
+        </CloseButton>
+        <Heading>Remove a wishlist?</Heading>
+        <WarningMessage>Are you sure you wanted to remove this item from your wishlist?</WarningMessage>
+        <ButtonContainer>
+          <CancelButton type='button' onClick={onClose}>
+            Not now
+          </CancelButton>
+          <DeleteButton
+            type='button'
+            onClick={() => deleteWishlistHandler(actionId)}
+          >
+            Remove
+          </DeleteButton>
+        </ButtonContainer>
+      </Wrapper>
     </Overlay>
   );
 }
 
-const Overlay = styled.section`
-  width: 100vw;
-  height: 100%;
-  background-color: ${({ theme }) => theme.bgOverlay};
-  backdrop-filter: ${({ mode }) => mode === 'true' && 'blur(2px)'};
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: ${({ type }) => type === 'show' ? 'block' : 'none'};
-  visibility: ${({ type }) => type === 'show' ? 'visible' : 'hidden'};
-  opacity: ${({ type }) => type === 'show' ? 1 : 0};
-  z-index: ${({ type }) => type === 'show' ? 4000 : -1};
-`;
+// const Overlay = styled.section`
+//   width: 100vw;
+//   height: 100%;
+//   background-color: ${({ theme }) => theme.bgOverlay};
+//   backdrop-filter: ${({ mode }) => mode === 'true' && 'blur(2px)'};
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   display: ${({ type }) => type === 'show' ? 'block' : 'none'};
+//   visibility: ${({ type }) => type === 'show' ? 'visible' : 'hidden'};
+//   opacity: ${({ type }) => type === 'show' ? 1 : 0};
+//   z-index: ${({ type }) => type === 'show' ? 4000 : -1};
+// `;
 
 const Container = styled.div`
   position: absolute;
