@@ -135,6 +135,9 @@ const ImageContainer = styled.div`
     height: 6.5rem;
   }
 
+  `;
+
+const StyledImage = styled(Image)`
   img {
     display: block;
     width: 8rem;
@@ -146,10 +149,6 @@ const ImageContainer = styled.div`
       height: 6.5rem;
     }
   }
-`;
-
-const StyledImage = styled(Image)`
-  
 `;
 
 const OverviewContainer = styled.div``;
