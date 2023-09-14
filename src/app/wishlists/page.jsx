@@ -6,8 +6,8 @@ import dynamic from 'next/dynamic';
 import { useSelector } from 'react-redux';
 
 import CartModal from '@/components/modals/CartModal';
-import WishlistHeader from '@/components/wishlists/WishlistHeader';
 import ClientOnly from '@/components/ClientOnly';
+import WishlistHeader from '@/components/wishlists/WishlistHeader';
 
 import useCartModal from '@/hooks/useCartModal';
 import useWishlistModal from '@/hooks/useWishlistModal';
