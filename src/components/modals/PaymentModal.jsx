@@ -16,6 +16,7 @@ const initialState = {
 
 const PaymentModal = ({ isOpen, onClose, onExit }) => {
   const { total } = useSelector((state) => ({ ...state.cart }));
+  const { mode } = useSelector((state) => ({ ...state.darkMode }));
 
   const [errors, setErrors] = useState({});
   const [inputs, setInputs] = useState(initialState);
@@ -84,6 +85,7 @@ const PaymentModal = ({ isOpen, onClose, onExit }) => {
   return (
     <Overlay
       type={activeModal}
+      mode={mode}
       onClick={handleClick}
     >
       <Wrapper>
