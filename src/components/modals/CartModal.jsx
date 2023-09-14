@@ -16,6 +16,7 @@ import ProductButton from '../products/ProductButton';
 
 import Alert from '../Alert';
 import Overlay from './Overlay';
+
 import useAddToCart from '@/hooks/useAddToCart';
 
 const CartModal = ({ product, isOpen, onClose, onSelect }) => {
