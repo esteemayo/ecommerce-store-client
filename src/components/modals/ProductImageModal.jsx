@@ -52,6 +52,10 @@ const ProductImageModal = ({
     return showModal ? 'show' : '';
   }, [showModal]);
 
+  const modeValue = useMemo(() => {
+    return mode.toString();
+  }, [mode]);
+
   useEffect(() => {
     setShowModal(isOpen);
   }, [isOpen]);
