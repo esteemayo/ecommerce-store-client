@@ -213,7 +213,7 @@ const FormInput = styled.input`
   width: 100%;
   padding: 1.5rem 1rem;
   background-color: transparent;
-  color: #999;
+  color: ${({ theme }) => theme.textInput};
   border: 2px solid ${({ theme }) => theme.modalInputBorder};
   border-radius: 0.5rem;
   outline-color: ${({ theme }) => theme.inputOut};
