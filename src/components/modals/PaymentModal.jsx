@@ -129,13 +129,6 @@ const PaymentModal = ({ isOpen, onClose, onExit }) => {
   );
 }
 
-const Container = styled.div`
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-`;
-
 const Wrapper = styled.div`
   width: 40rem;
   padding: 2rem 4rem;
