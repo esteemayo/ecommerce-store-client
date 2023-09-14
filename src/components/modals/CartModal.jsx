@@ -78,7 +78,7 @@ const CartModal = ({ product, isOpen, onClose, onSelect }) => {
           </CloseButton>
         </ButtonContainer>
         <ImageContainer>
-          <Image
+          <StyledImage
             src={product?.images ? product?.images[0] : '/img/img-1.jpg'}
             width={320}
             height={200}
@@ -200,14 +200,14 @@ const ImageContainer = styled.div`
   @media only screen and (max-width: 25em) {
     display: none;
   }
+`;
 
-  img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-    border-radius: 0.5rem;
-  }
+const StyledImage = styled(Image)`
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 0.5rem;
 `;
 
 const ProductContainer = styled.div`
