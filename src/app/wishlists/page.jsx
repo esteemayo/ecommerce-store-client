@@ -13,6 +13,8 @@ import useCartModal from '@/hooks/useCartModal';
 import useWishlistModal from '@/hooks/useWishlistModal';
 import { useSubmenu } from '@/hooks/useSubmenu';
 
+import { removeWishlist } from '@/features/cart/cartSlice';
+
 const WishlistCard = dynamic(() => import('@/components/wishlists/WishlistCard'), { ssr: false });
 
 const WishLists = () => {
@@ -38,8 +40,9 @@ const WishLists = () => {
   }, [wishlistModal]);
 
   const handleDelete = useCallback((id) => {
+    dispatch(removeWishlist(id));
     setProducts((prev) => prev.filter((item) => item.id !== id));
-  }, []);
+  }, [dispatch]);
 
   let bodyContent;
 
