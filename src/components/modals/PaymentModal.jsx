@@ -6,9 +6,11 @@ import { useCallback, useEffect, useMemo, useState } from 'react';
 import PropTypes from 'prop-types';
 import CloseIcon from '@mui/icons-material/Close';
 
-import FormatPrice from '../FormatPrice';
 import Overlay from './Overlay';
+import FormatPrice from '../FormatPrice';
+
 import FormError from '../form/FormError';
+import { FormGroup } from '../form/FormGroup';
 
 const initialState = {
   name: '',
@@ -197,14 +199,14 @@ const Form = styled.form`
   margin: 2rem 0;
 `;
 
-const FormGroup = styled.div`
-  display: flex;
-  flex-direction: column;
+// const FormGroup = styled.div`
+//   display: flex;
+//   flex-direction: column;
 
-  &:not(:last-of-type) {
-    margin-bottom: 2rem;
-  }
-`;
+//   &:not(:last-of-type) {
+//     margin-bottom: 2rem;
+//   }
+// `;
 
 const FormLabel = styled.label`
   display: inline-block;
