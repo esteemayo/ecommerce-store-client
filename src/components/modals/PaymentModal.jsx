@@ -196,10 +196,6 @@ const Heading = styled.h1`
   }
 `;
 
-// const Form = styled.form`
-//   margin: 2rem 0;
-// `;
-
 const FormLabel = styled.label`
   display: inline-block;
   width: 5rem;
