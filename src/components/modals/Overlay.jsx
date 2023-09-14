@@ -7,6 +7,7 @@ const Overlay = ({ type, mode, children, onClick }) => {
       type={type}
       mode={mode}
       onClick={onClick}
+      className='overlay'
     >
       <Container>{children}</Container>
     </StyledOverlay>
