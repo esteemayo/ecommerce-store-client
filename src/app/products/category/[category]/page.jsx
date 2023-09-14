@@ -82,7 +82,7 @@ const ProductCategory = ({ params }) => {
   return (
     <ClientOnly>
       <ProductBox>
-        <FilterContainer>
+        <Container>
           <Heading title='Filter by' />
           <FilterWrapper>
             <FilterLeft>
@@ -108,7 +108,7 @@ const ProductCategory = ({ params }) => {
               />
             </FilterRight>
           </FilterWrapper>
-        </FilterContainer>
+        </Container>
         {category ? (
           <ProductList products={sortedProducts} />
         ) : (
@@ -119,7 +119,7 @@ const ProductCategory = ({ params }) => {
   );
 }
 
-const FilterContainer = styled.section`
+const Container = styled.section`
   padding: 7rem 0;
   width: 100%;
 `;
