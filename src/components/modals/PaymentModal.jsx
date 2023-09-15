@@ -29,10 +29,9 @@ const PaymentModal = ({ isOpen, onClose, onExit }) => {
 
   const closeHandler = useCallback(() => {
     setShowModal(false);
-    onExit();
     onClose();
     handleClose();
-  }, [onExit, onClose, handleClose]);
+  }, [onClose, handleClose]);
 
   const handleClick = useCallback((e) => {
     e.stopPropagation();
