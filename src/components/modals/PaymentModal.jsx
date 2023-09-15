@@ -25,16 +25,16 @@ const PaymentModal = ({ isOpen, onClose, onExit }) => {
   const { total } = useSelector((state) => ({ ...state.cart }));
   const { mode } = useSelector((state) => ({ ...state.darkMode }));
 
-  const [errors, setErrors] = useState({});
+  // const [errors, setErrors] = useState({});
   const [inputs, setInputs] = useState(initialState);
   const [showModal, setShowModal] = useState(isOpen);
 
   const { name, address } = inputs;
 
-  const handleChange = useCallback(({ target: input }) => {
-    const { name, value } = input;
-    setInputs((prev) => ({ ...prev, [name]: value }));
-  }, []);
+  // const handleChange = useCallback(({ target: input }) => {
+  //   const { name, value } = input;
+  //   setInputs((prev) => ({ ...prev, [name]: value }));
+  // }, []);
 
   const handleClear = useCallback(() => {
     setInputs(initialState);
@@ -44,9 +44,9 @@ const PaymentModal = ({ isOpen, onClose, onExit }) => {
     setShowModal(false);
     onExit();
     onClose();
-    errors && setErrors({});
+    // errors && setErrors({});
     handleClear();
-  }, [errors, onExit, onClose, handleClear]);
+  }, [onExit, onClose, handleClear]);
 
   const handleClick = useCallback((e) => {
     e.stopPropagation();
@@ -56,8 +56,9 @@ const PaymentModal = ({ isOpen, onClose, onExit }) => {
     }
   }, [handleClose]);
 
-  const validateForm = useCallback(() => {
+  const validateForm = (data) => {
     const errors = {};
+    const { name, address } = data;
 
     if (name.trim() === '') {
       errors.name = 'Please enter your name';
@@ -68,18 +69,13 @@ const PaymentModal = ({ isOpen, onClose, onExit }) => {
     }
 
     return errors;
-  }, [address, name]);
+  };
 
-  const handleSubmit = useCallback((e) => {
-    e.preventDefault();
+  const onSubmitHandler = () => {
+    console.log({ ...formData });
+  };
 
-    const errors = validateForm();
-    if (Object.keys(errors).length > 0) return setErrors(errors);
-    setErrors({});
-
-    console.log({ ...inputs, total });
-    handleClear();
-  }, [total, inputs, handleClear, validateForm]);
+  const { formData, errors, handleChange, handleSubmit } = useForm(onSubmitHandler, initialState, validateForm, onExit);
 
   const activeModal = useMemo(() => {
     return showModal ? 'show' : '';
