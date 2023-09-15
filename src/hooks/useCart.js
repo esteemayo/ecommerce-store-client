@@ -25,6 +25,7 @@ export const useCart = (product) => {
 
   const handleClick = useCallback(() => {
     dispatch(addProduct({ ...product, size, color, quantity }));
+    dispatch(removeWishlist(product.id));
     setAlert(true);
     handleReset();
   }, [color, product, quantity, size, handleReset, dispatch]);
