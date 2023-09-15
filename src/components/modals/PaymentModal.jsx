@@ -28,10 +28,6 @@ const PaymentModal = ({ isOpen, onClose, onExit }) => {
   const [inputs, setInputs] = useState(initialState);
   const [showModal, setShowModal] = useState(isOpen);
 
-  const handleClear = useCallback(() => {
-    setInputs(initialState);
-  }, []);
-
   const handleClose = useCallback(() => {
     setShowModal(false);
     onExit();
