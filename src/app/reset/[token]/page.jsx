@@ -39,8 +39,8 @@ const ResetPassword = () => {
   };
 
   const {
-    formData,
     errors,
+    formData,
     handleChange,
     handleSubmit,
   } = useForm(onSubmitHandler, initialState, validateForm);
