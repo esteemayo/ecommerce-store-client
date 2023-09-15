@@ -43,7 +43,7 @@ const PaymentModal = ({ isOpen, onClose, onExit }) => {
 
   const validateForm = (data) => {
     const errors = {};
-    const { name, address } = data;
+    const { address, name } = data;
 
     if (name.trim() === '') {
       errors.name = 'Please enter your name';
