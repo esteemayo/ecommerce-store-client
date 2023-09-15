@@ -3,7 +3,7 @@
 import { useDispatch } from 'react-redux';
 import { useCallback, useState } from 'react';
 
-import { addProduct } from '@/features/cart/cartSlice';
+import { addProduct, removeWishlist } from '@/features/cart/cartSlice';
 
 export const useCart = (product) => {
   const dispatch = useDispatch();
