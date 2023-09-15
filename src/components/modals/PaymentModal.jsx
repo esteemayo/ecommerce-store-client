@@ -27,19 +27,19 @@ const PaymentModal = ({ isOpen, onClose, onExit }) => {
 
   const [showModal, setShowModal] = useState(isOpen);
 
-  const closeHandler = useCallback(() => {
+  const closeHandler = () => {
     setShowModal(false);
     onClose();
     handleClose();
-  }, [onClose, handleClose]);
+  };
 
-  const handleClick = useCallback((e) => {
+  const handleClick = (e) => {
     e.stopPropagation();
 
     if (e.target.classList.contains('overlay')) {
       closeHandler();
     }
-  }, [closeHandler]);
+  };
 
   const validateForm = (data) => {
     const errors = {};
