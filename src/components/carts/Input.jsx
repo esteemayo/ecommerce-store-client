@@ -19,7 +19,8 @@ const Input = ({ name, label, type = 'text', error, ...rest }) => {
 }
 
 const Label = styled.label`
-  
+  display: inline-block;
+  width: 5rem;
 `;
 
 const StyledInput = styled.input`
