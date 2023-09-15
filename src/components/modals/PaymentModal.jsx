@@ -29,8 +29,6 @@ const PaymentModal = ({ isOpen, onClose, onExit }) => {
   const [inputs, setInputs] = useState(initialState);
   const [showModal, setShowModal] = useState(isOpen);
 
-  const { name, address } = inputs;
-
   const handleClear = useCallback(() => {
     setInputs(initialState);
   }, []);
