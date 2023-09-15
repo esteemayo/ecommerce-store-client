@@ -46,8 +46,8 @@ const UpdateData = ({ onCancel }) => {
   }
 
   const {
-    formData,
     errors,
+    formData,
     handleClose,
     handleChange,
     handleSubmit,
