@@ -1,7 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import PropTypes from 'prop-types';
 import CloseIcon from '@mui/icons-material/Close';
 import { useSelector } from 'react-redux';
