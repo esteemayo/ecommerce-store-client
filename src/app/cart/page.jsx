@@ -9,8 +9,8 @@ import dynamic from 'next/dynamic';
 
 import ClientOnly from '@/components/ClientOnly';
 
-import usePaymentModal from '@/hooks/usePaymentModal';
 import { useSubmenu } from '@/hooks/useSubmenu';
+import usePaymentModal from '@/hooks/usePaymentModal';
 
 const CartHeader = dynamic(() => import('@/components/carts/CartHeader'), { ssr: false });
 const CartItem = dynamic(() => import('@/components/carts/CartItem'), { ssr: false });
