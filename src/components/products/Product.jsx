@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { useSelector } from 'react-redux';
 import PropTypes from 'prop-types';
 
-import useAddToCart from '@/hooks/useAddToCart';
+import useCart from '@/hooks/useCart';
 import BreadCrumbs from '@/app/products/[id]/BreadCrumbs';
 
 import ColorSelect from '../inputs/ColorSelect';
@@ -35,7 +35,7 @@ const Product = ({ product }) => {
     setSelectedSize,
     setIsSelected,
     setColor,
-  } = useAddToCart(product);
+  } = useCart(product);
 
   return (
     <Container>
