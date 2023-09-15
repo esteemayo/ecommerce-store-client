@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { FormGroup } from '../form/FormGroup';
+import FormError from '../form/FormError';
 
 const Input = ({ name, label, type = 'text', error, ...rest }) => {
   return (
@@ -11,6 +12,7 @@ const Input = ({ name, label, type = 'text', error, ...rest }) => {
         name={name}
         type={type}
       />
+      {error && <FormError message={error} />}
     </FormGroup>
   );
 }
