@@ -25,15 +25,14 @@ const PaymentModal = ({ isOpen, onClose, onExit }) => {
   const { total } = useSelector((state) => ({ ...state.cart }));
   const { mode } = useSelector((state) => ({ ...state.darkMode }));
 
-  const [inputs, setInputs] = useState(initialState);
   const [showModal, setShowModal] = useState(isOpen);
 
-  const handleClose = useCallback(() => {
+  const closeHandler = useCallback(() => {
     setShowModal(false);
     onExit();
     onClose();
-    handleClear();
-  }, [onExit, onClose, handleClear]);
+    handleClose();
+  }, [onExit, onClose, handleClose]);
 
   const handleClick = useCallback((e) => {
     e.stopPropagation();
@@ -62,7 +61,7 @@ const PaymentModal = ({ isOpen, onClose, onExit }) => {
     console.log({ ...formData });
   };
 
-  const { formData, errors, handleChange, handleSubmit } = useForm(onSubmitHandler, initialState, validateForm, onExit);
+  const { formData, errors, handleChange, handleClose, handleSubmit } = useForm(onSubmitHandler, initialState, validateForm, onExit);
 
   const activeModal = useMemo(() => {
     return showModal ? 'show' : '';
@@ -84,7 +83,7 @@ const PaymentModal = ({ isOpen, onClose, onExit }) => {
     >
       <Wrapper>
         <CloseButtonContainer>
-          <CloseButton type='button' onClick={handleClose}>
+          <CloseButton type='button' onClick={closeHandler}>
             <CloseIcon />
           </CloseButton>
         </CloseButtonContainer>
