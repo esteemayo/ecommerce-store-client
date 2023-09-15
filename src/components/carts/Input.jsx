@@ -22,6 +22,8 @@ const Label = styled.label`
   display: inline-block;
   width: 5rem;
   text-transform: capitalize;
+  font-weight: 600;
+  font-size: 1.4rem;
 `;
 
 const StyledInput = styled.input`
