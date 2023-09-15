@@ -29,6 +29,8 @@ const Label = styled.label`
 
 const StyledInput = styled.input`
   display: inline-block;
+  font-family: inherit;
+  font-size: 1.5rem;
 `;
 
 export default Input;
