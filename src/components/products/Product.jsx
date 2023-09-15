@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { useSelector } from 'react-redux';
 import PropTypes from 'prop-types';
 
-import useCart from '@/hooks/useCart';
+import { useCart } from '@/hooks/useCart';
 import BreadCrumbs from '@/app/products/[id]/BreadCrumbs';
 
 import ColorSelect from '../inputs/ColorSelect';
