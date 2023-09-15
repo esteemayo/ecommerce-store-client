@@ -34,8 +34,8 @@ export const useForm = (
   }, [callback, formData, initialState, validate]);
 
   return {
-    formData,
     errors,
+    formData,
     handleClose,
     handleChange,
     handleSubmit,
