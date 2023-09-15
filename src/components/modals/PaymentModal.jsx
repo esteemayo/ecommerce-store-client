@@ -68,8 +68,6 @@ const PaymentModal = ({ isOpen, onClose, onExit }) => {
     return errors;
   }, [address, name]);
 
-
-
   const handleSubmit = useCallback((e) => {
     e.preventDefault();
 
