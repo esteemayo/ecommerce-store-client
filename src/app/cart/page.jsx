@@ -38,7 +38,7 @@ const Cart = () => {
   if (cart.length < 1) {
     bodyContent = (
       <HeadingWrapper>
-        <Image
+        <StyledImage
           src='/img/empty-cart.png'
           width={400}
           height={400}
@@ -140,18 +140,6 @@ const HeadingWrapper = styled.div`
     min-height: 50vh;
   }
 
-  img {
-    width: 40rem;
-    height: 40rem;
-    display: block;
-    object-fit: cover;
-
-    @media only screen and (max-width: 56.25em) {
-      width: 33rem;
-      height: 33rem;
-    }
-  }
-
   a {
     &:link,
     &:visited {
@@ -163,6 +151,20 @@ const HeadingWrapper = styled.div`
 
     &:active {
       color: currentColor;
+    }
+  }
+`;
+
+const StyledImage = styled(Image)`
+  img {
+    width: 40rem;
+    height: 40rem;
+    display: block;
+    object-fit: cover;
+
+    @media only screen and (max-width: 56.25em) {
+      width: 33rem;
+      height: 33rem;
     }
   }
 `;
