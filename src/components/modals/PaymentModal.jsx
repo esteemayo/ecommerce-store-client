@@ -37,9 +37,9 @@ const PaymentModal = ({ isOpen, onClose, onExit }) => {
     e.stopPropagation();
 
     if (e.target.classList.contains('overlay')) {
-      handleClose();
+      closeHandler();
     }
-  }, [handleClose]);
+  }, [closeHandler]);
 
   const validateForm = (data) => {
     const errors = {};
