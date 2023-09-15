@@ -38,7 +38,6 @@ const Cart = () => {
   if (cart.length < 1) {
     bodyContent = (
       <HeadingWrapper>
-        {/* <Heading>Your cart is currently empty!</Heading> */}
         <Image
           src='/img/empty-cart.png'
           width={400}
