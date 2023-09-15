@@ -168,13 +168,6 @@ const HeadingWrapper = styled.div`
   }
 `;
 
-const Heading = styled.h1`
-  font-weight: 300;
-  font-size: 3.2rem;
-  text-align: center;
-  color: ${({ theme }) => theme.textCartHeader};
-`;
-
 const Button = styled.button`
   display: inline-block;
   font-weight: 400;
