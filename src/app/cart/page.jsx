@@ -37,7 +37,7 @@ const Cart = () => {
 
   if (cart.length < 1) {
     bodyContent = (
-      <HeadingWrapper>
+      <EmptyWrapper>
         <StyledImage
           src='/img/empty-cart.png'
           width={400}
@@ -47,7 +47,7 @@ const Cart = () => {
         <Link href='/products' passHref>
           <Button type='button'>Back to shopping</Button>
         </Link>
-      </HeadingWrapper>
+      </EmptyWrapper>
     );
   } else {
     bodyContent = (
@@ -129,7 +129,7 @@ const CartContainer = styled.div`
   }
 `;
 
-const HeadingWrapper = styled.div`
+const EmptyWrapper = styled.div`
   width: 100%;
   min-height: 70vh;
   display: flex;
