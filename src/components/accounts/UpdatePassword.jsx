@@ -47,8 +47,8 @@ const UpdatePassword = ({ onCancel }) => {
   };
 
   const {
-    formData,
     errors,
+    formData,
     handleClose,
     handleChange,
     handleSubmit,
