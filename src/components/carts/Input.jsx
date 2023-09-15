@@ -21,6 +21,7 @@ const Input = ({ name, label, type = 'text', error, ...rest }) => {
 const Label = styled.label`
   display: inline-block;
   width: 5rem;
+  text-transform: capitalize;
 `;
 
 const StyledInput = styled.input`
