@@ -61,8 +61,8 @@ const PaymentModal = ({ isOpen, onClose, onExit }) => {
   };
 
   const {
-    formData,
     errors,
+    formData,
     handleChange,
     handleClose,
     handleSubmit,
