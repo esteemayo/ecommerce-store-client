@@ -31,11 +31,6 @@ const PaymentModal = ({ isOpen, onClose, onExit }) => {
 
   const { name, address } = inputs;
 
-  // const handleChange = useCallback(({ target: input }) => {
-  //   const { name, value } = input;
-  //   setInputs((prev) => ({ ...prev, [name]: value }));
-  // }, []);
-
   const handleClear = useCallback(() => {
     setInputs(initialState);
   }, []);
