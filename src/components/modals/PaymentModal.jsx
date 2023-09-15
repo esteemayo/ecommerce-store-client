@@ -25,7 +25,6 @@ const PaymentModal = ({ isOpen, onClose, onExit }) => {
   const { total } = useSelector((state) => ({ ...state.cart }));
   const { mode } = useSelector((state) => ({ ...state.darkMode }));
 
-  // const [errors, setErrors] = useState({});
   const [inputs, setInputs] = useState(initialState);
   const [showModal, setShowModal] = useState(isOpen);
 
