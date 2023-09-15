@@ -7,6 +7,10 @@ const Input = () => {
   );
 }
 
+const Label = styled.label`
+  
+`;
+
 const StyledInput = styled.input`
   
 `;
