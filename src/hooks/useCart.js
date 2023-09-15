@@ -5,7 +5,7 @@ import { useCallback, useState } from 'react';
 
 import { addProduct } from '@/features/cart/cartSlice';
 
-const useCart = (product) => {
+export const useCart = (product) => {
   const dispatch = useDispatch();
 
   const [color, setColor] = useState(null);
@@ -44,5 +44,3 @@ const useCart = (product) => {
     handleReset,
   };
 }
-
-export default useCart;
