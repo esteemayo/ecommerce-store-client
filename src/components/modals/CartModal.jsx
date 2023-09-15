@@ -17,7 +17,7 @@ import ProductButton from '../products/ProductButton';
 import Alert from '../Alert';
 import Overlay from './Overlay';
 
-import useAddToCart from '@/hooks/useAddToCart';
+import useCart from '@/hooks/useCart';
 
 const CartModal = ({ product, isOpen, onClose, onSelect }) => {
   const { mode } = useSelector((state) => ({ ...state.darkMode }));
@@ -36,7 +36,7 @@ const CartModal = ({ product, isOpen, onClose, onSelect }) => {
     setIsSelected,
     setColor,
     handleReset,
-  } = useAddToCart(product);
+  } = useCart(product);
 
   const handleCloseModal = useCallback(() => {
     setShowModal(false);
