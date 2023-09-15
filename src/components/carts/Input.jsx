@@ -3,7 +3,7 @@ import { FormGroup } from '../form/FormGroup';
 
 const Input = () => {
   return (
-    <div>Input</div>
+    <FormGroup></FormGroup>
   );
 }
 
