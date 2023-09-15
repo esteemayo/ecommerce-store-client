@@ -28,7 +28,7 @@ const Label = styled.label`
 `;
 
 const StyledInput = styled.input`
-  
+  display: inline-block;
 `;
 
 export default Input;
