@@ -104,7 +104,7 @@ const PaymentModal = ({ isOpen, onClose, onExit }) => {
               id='name'
               name='name'
               type='text'
-              value={name}
+              value={formData.name}
               placeholder='Enter your name'
               onChange={handleChange}
               autoFocus
