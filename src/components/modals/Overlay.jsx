@@ -18,7 +18,7 @@ const StyledOverlay = styled.div`
   width: 100vw;
   height: 100%;
   background-color: ${({ theme }) => theme.bgOverlay};
-  backdrop-filter: ${({ mode }) => mode === 'true' && 'blur(2px)'};
+  backdrop-filter: ${({ mode }) => mode === 'true' ? 'blur(2px)': undefined};
   position: fixed;
   top: 0;
   left: 0;
