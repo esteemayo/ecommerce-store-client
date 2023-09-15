@@ -60,7 +60,13 @@ const PaymentModal = ({ isOpen, onClose, onExit }) => {
     console.log({ ...formData });
   };
 
-  const { formData, errors, handleChange, handleClose, handleSubmit } = useForm(onSubmitHandler, initialState, validateForm, onExit);
+  const {
+    formData,
+    errors,
+    handleChange,
+    handleClose,
+    handleSubmit,
+  } = useForm(onSubmitHandler, initialState, validateForm, onExit);
 
   const activeModal = useMemo(() => {
     return showModal ? 'show' : '';
