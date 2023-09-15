@@ -1,9 +1,11 @@
 import styled from 'styled-components';
 import { FormGroup } from '../form/FormGroup';
 
-const Input = () => {
+const Input = ({ name, label, error, ...rest }) => {
   return (
-    <FormGroup></FormGroup>
+    <FormGroup>
+      <Label htmlFor={name}>{label}</Label>
+    </FormGroup>
   );
 }
 
