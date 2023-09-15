@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-import { FormGroup } from '../form/FormGroup';
 import FormError from '../form/FormError';
+import { FormGroup } from '../form/FormGroup';
 
 const Input = ({ name, label, type = 'text', error, ...rest }) => {
   return (
