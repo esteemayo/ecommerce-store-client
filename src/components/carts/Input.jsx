@@ -39,6 +39,12 @@ const StyledInput = styled.input`
   border-radius: 0.5rem;
   outline-color: ${({ theme }) => theme.inputOut};
   caret-color: ${({ theme }) => theme.inputCaret};
+
+  &::placeholder {
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: #bbb;
+  }
 `;
 
 export default Input;
