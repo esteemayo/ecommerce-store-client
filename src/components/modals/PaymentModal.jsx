@@ -44,7 +44,6 @@ const PaymentModal = ({ isOpen, onClose, onExit }) => {
     setShowModal(false);
     onExit();
     onClose();
-    // errors && setErrors({});
     handleClear();
   }, [onExit, onClose, handleClear]);
 
