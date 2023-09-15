@@ -17,7 +17,7 @@ import ProductButton from '../products/ProductButton';
 import Alert from '../Alert';
 import Overlay from './Overlay';
 
-import useCart from '@/hooks/useCart';
+import { useCart } from '@/hooks/useCart';
 
 const CartModal = ({ product, isOpen, onClose, onSelect }) => {
   const { mode } = useSelector((state) => ({ ...state.darkMode }));
