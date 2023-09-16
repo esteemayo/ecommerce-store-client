@@ -15,6 +15,7 @@ export const useSidebar = () => {
   }, [dispatch]);
 
   return {
-    openSidebarHandler
+    openSidebarHandler,
+    closeSidebarHandler,
   };
 }
