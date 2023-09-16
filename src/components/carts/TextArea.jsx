@@ -1,8 +1,9 @@
 import styled from 'styled-components';
+import { FormGroup } from '../form/FormGroup';
 
 const TextArea = () => {
   return (
-    <div>TextArea</div>
+    <FormGroup>TextArea</FormGroup>
   );
 }
 
