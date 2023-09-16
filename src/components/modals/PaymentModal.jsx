@@ -99,19 +99,15 @@ const PaymentModal = ({ isOpen, onClose, onExit }) => {
             <FormatPrice value={total} /> {' '}
             after delivery
           </Heading>
-          <FormGroup>
-            <FormLabel htmlFor='name'>Name</FormLabel>
-            <FormInput
-              id='name'
-              name='name'
-              type='text'
-              value={formData.name}
-              placeholder='Enter your name'
-              onChange={handleChange}
-              autoFocus
-            />
-            {errors.name && <FormError message={errors.name} />}
-          </FormGroup>
+          <Input
+            name='name'
+            label='Name'
+            value={formData.name}
+            placeholder='Enter your name'
+            onChange={handleChange}
+            autoFocus
+            error={errors.name}
+          />
           <FormGroup>
             <FormLabel htmlFor='address'>Address</FormLabel>
             <TextArea
