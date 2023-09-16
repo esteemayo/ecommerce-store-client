@@ -1,7 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import Link from 'next/link';
 import { useCallback, useState } from 'react';
 import Image from 'next/image';
@@ -13,11 +13,14 @@ import CartHeader from '@/components/carts/CartHeader';
 import { useSubmenu } from '@/hooks/useSubmenu';
 import usePaymentModal from '@/hooks/usePaymentModal';
 
+import { remove, toggleQuantity } from '@/features/cart/cartSlice';
+
 const CartItem = dynamic(() => import('@/components/carts/CartItem'), { ssr: false });
 const PaymentModal = dynamic(() => import('@/components/modals/PaymentModal'), { ssr: false });
 const CartTotal = dynamic(() => import('@/components/carts/CartTotal'), { ssr: false });
 
 const Cart = () => {
+  const dispatch = useDispatch();
   const { cart } = useSelector((state) => ({ ...state.cart }));
 
   const paymentModal = usePaymentModal();
