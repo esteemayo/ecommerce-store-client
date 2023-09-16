@@ -27,6 +27,7 @@ const Navbar = () => {
   const { qty } = useSelector((state) => ({ ...state.cart }));
   const { onOpen } = useSearchModal((state) => ({ ...state }));
 
+  const { openSidebarHandler } = useSidebar();
   const { closeSubmenuHandler, openSubmenuHandler } = useSubmenu();
 
   const [isHover, setIsHover] = useState(false);
