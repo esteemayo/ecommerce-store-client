@@ -1,9 +1,9 @@
 'use client';
 
 import styled from 'styled-components';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 import { faEnvelope, faLocationDot, faMessage, faPhone } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import ClientOnly from '@/components/ClientOnly';
 import FormatPrice from '@/components/FormatPrice';
