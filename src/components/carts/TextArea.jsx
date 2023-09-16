@@ -34,6 +34,8 @@ const StyledTextArea = styled.textarea`
   border-radius: 0.5rem;
   outline-color: ${({ theme }) => theme.inputOut};
   overflow: hidden;
+  resize: none;
+  caret-color: ${({ theme }) => theme.inputCaret};
 `;
 
 export default TextArea;
