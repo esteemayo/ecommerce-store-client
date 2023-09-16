@@ -105,8 +105,8 @@ const PaymentModal = ({ isOpen, onClose, onExit }) => {
             value={formData.name}
             placeholder='Enter your name'
             onChange={handleChange}
-            autoFocus
             error={errors.name}
+            autoFocus
           />
           <TextArea
             name='address'
