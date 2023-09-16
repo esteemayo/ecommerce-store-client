@@ -63,7 +63,7 @@ Input.propTypes = {
   name: PropTypes.string,
   label: PropTypes.string,
   type: PropTypes.string,
-  error: PropTypes.object,
+  error: PropTypes.string,
   rest: PropTypes.any,
 };
 
