@@ -14,7 +14,6 @@ import Heading from './Heading';
 import SidebarMenu from './SidebarMenu';
 
 const Sidebar = () => {
-  const dispatch = useDispatch();
   const { isSidebarOpen } = useSelector((state) => ({ ...state.submenu }));
   const { closeSidebarHandler } = useSidebar();
 
