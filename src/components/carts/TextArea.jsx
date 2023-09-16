@@ -20,7 +20,8 @@ const TextArea = ({ name, label, error, ...rest }) => {
 }
 
 const StyledTextArea = styled.textarea`
-  
+  border: none;
+  display: inline-block;
 `;
 
 export default TextArea;
