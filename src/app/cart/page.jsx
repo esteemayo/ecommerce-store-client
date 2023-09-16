@@ -156,16 +156,14 @@ const EmptyWrapper = styled.div`
 `;
 
 const StyledImage = styled(Image)`
-  img {
-    width: 40rem;
-    height: 40rem;
-    display: block;
-    object-fit: cover;
+  width: 40rem;
+  height: 40rem;
+  display: block;
+  object-fit: cover;
 
-    @media only screen and (max-width: 56.25em) {
-      width: 33rem;
-      height: 33rem;
-    }
+  @media only screen and (max-width: 56.25em) {
+    width: 33rem;
+    height: 33rem;
   }
 `;
 
