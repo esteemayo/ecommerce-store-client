@@ -9,7 +9,6 @@ import { useSelector } from 'react-redux';
 import Overlay from './Overlay';
 import FormatPrice from '../FormatPrice';
 
-import FormError from '../form/FormError';
 import Form from '../form/Form';
 import Input from '../carts/Input';
 import TextArea from '../carts/TextArea';
