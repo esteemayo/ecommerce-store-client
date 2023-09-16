@@ -27,6 +27,7 @@ const StyledTextArea = styled.textarea`
   font-family: inherit;
   font-weight: lighter;
   font-size: 1.5rem;
+  padding: 1.5rem 1rem;
 `;
 
 export default TextArea;
