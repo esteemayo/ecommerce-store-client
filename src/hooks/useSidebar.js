@@ -10,6 +10,10 @@ export const useSidebar = () => {
     dispatch(openSidebar());
   }, [dispatch]);
 
+  const closeSidebarHandler = useCallback(() => {
+    dispatch(closeSidebar());
+  }, [dispatch]);
+
   return {
     openSidebarHandler
   };
