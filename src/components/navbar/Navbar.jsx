@@ -5,6 +5,10 @@ import { useCallback, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
+import { useSubmenu } from '@/hooks/useSubmenu';
+import useSearchModal from '@/hooks/useSearchModal';
+import { useSidebar } from '@/hooks/useSidebar';
+
 import Logo from './Logo';
 import DarkModeToggle from './DarkModeToggle';
 import LoginButton from './LoginButton';
@@ -12,10 +16,6 @@ import CartQuantity from './CartQuantity';
 import MenuItem from './MenuItem';
 import ToggleButton from './ToggleButton';
 import SearchIcon from './SearchIcon';
-
-import { useSubmenu } from '@/hooks/useSubmenu';
-import useSearchModal from '@/hooks/useSearchModal';
-import { useSidebar } from '@/hooks/useSidebar';
 
 import { navLinks } from '@/data';
 
