@@ -1,8 +1,8 @@
 'use client';
 
 import styled from 'styled-components';
-import { useSelector } from 'react-redux';
 import { useCallback, useState } from 'react';
+import { useSelector } from 'react-redux';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 import Logo from './Logo';
