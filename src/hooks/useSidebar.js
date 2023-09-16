@@ -10,7 +10,7 @@ export const useSidebar = () => {
     dispatch(openSidebar());
   }, [dispatch]);
 
-  return (
-    <div>useSidebar</div>
-  );
+  return {
+    openSidebarHandler
+  };
 }
