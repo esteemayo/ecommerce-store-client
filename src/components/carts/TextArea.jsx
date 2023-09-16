@@ -32,6 +32,8 @@ const StyledTextArea = styled.textarea`
   color: ${({ theme }) => theme.textInput};
   border: 2px solid ${({ theme }) => theme.modalInputBorder};
   border-radius: 0.5rem;
+  outline-color: ${({ theme }) => theme.inputOut};
+  overflow: hidden;
 `;
 
 export default TextArea;
