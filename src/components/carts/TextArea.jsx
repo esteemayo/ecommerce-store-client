@@ -6,4 +6,8 @@ const TextArea = () => {
   );
 }
 
+const StyledTextArea = styled.textarea`
+  
+`;
+
 export default TextArea;
