@@ -53,4 +53,12 @@ const StyledInput = styled.input`
   }
 `;
 
+Input.propTypes = {
+  name: PropTypes.string,
+  label: PropTypes.string,
+  type: PropTypes.string,
+  error: PropTypes.object,
+  rest: PropTypes.any,
+};
+
 export default Input;
