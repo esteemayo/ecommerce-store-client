@@ -1,9 +1,12 @@
 import styled from 'styled-components';
 import { FormGroup } from '../form/FormGroup';
+import { Label } from './Input';
 
-const TextArea = () => {
+const TextArea = ({ name, label, error, ...rest }) => {
   return (
-    <FormGroup>TextArea</FormGroup>
+    <FormGroup>
+      <Label htmlFor={name}>{label}</Label>
+    </FormGroup>
   );
 }
 
