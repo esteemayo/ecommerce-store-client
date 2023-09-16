@@ -80,7 +80,7 @@ const Navbar = () => {
         </LogoBox>
         <ToggleButton
           icon={faBars}
-          onClick={handleOpen}
+          onClick={openSidebarHandler}
         />
         <ListContainer>
           {navLinks.map((item) => {
