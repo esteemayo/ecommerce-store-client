@@ -50,4 +50,11 @@ const StyledTextArea = styled.textarea`
   }
 `;
 
+TextArea.propTypes = {
+  name: PropTypes.string,
+  label: PropTypes.string,
+  error: PropTypes.string,
+  rest: PropTypes.any,
+};
+
 export default TextArea;
