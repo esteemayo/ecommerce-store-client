@@ -36,6 +36,11 @@ const StyledTextArea = styled.textarea`
   overflow: hidden;
   resize: none;
   caret-color: ${({ theme }) => theme.inputCaret};
+
+  &::placeholder {
+    font-weight: 300;
+    font-size: 1.5rem;
+  }
 `;
 
 export default TextArea;
