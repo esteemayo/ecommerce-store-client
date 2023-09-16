@@ -20,10 +20,6 @@ const Sidebar = () => {
 
   const [query, setQuery] = useState('');
 
-  const handleClick = useCallback(() => {
-    dispatch(closeSidebar());
-  }, [dispatch]);
-
   const handleSearch = useCallback((e) => {
     e.preventDefault();
     console.log(query);
