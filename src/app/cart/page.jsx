@@ -8,11 +8,11 @@ import Image from 'next/image';
 import dynamic from 'next/dynamic';
 
 import ClientOnly from '@/components/ClientOnly';
+import CartHeader from '@/components/carts/CartHeader';
 
 import { useSubmenu } from '@/hooks/useSubmenu';
 import usePaymentModal from '@/hooks/usePaymentModal';
 
-const CartHeader = dynamic(() => import('@/components/carts/CartHeader'), { ssr: false });
 const CartItem = dynamic(() => import('@/components/carts/CartItem'), { ssr: false });
 const PaymentModal = dynamic(() => import('@/components/modals/PaymentModal'), { ssr: false });
 const CartTotal = dynamic(() => import('@/components/carts/CartTotal'), { ssr: false });
