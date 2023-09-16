@@ -1,7 +1,9 @@
 import styled from 'styled-components';
-import { FormGroup } from '../form/FormGroup';
-import { Label } from './Input';
+
 import FormError from '../form/FormError';
+import { FormGroup } from '../form/FormGroup';
+
+import { Label } from './Input';
 
 const TextArea = ({ name, label, error, ...rest }) => {
   return (
