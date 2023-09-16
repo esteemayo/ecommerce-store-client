@@ -192,31 +192,6 @@ const FormLabel = styled.label`
   color: ${({ theme }) => theme.textLabel};
 `;
 
-const FormInput = styled.input`
-  display: inline-block;
-  font-family: inherit;
-  font-size: 1.5rem;
-  width: 100%;
-  padding: 1.5rem 1rem;
-  background-color: transparent;
-  color: ${({ theme }) => theme.textInput};
-  border: 2px solid ${({ theme }) => theme.modalInputBorder};
-  border-radius: 0.5rem;
-  outline-color: ${({ theme }) => theme.inputOut};
-  caret-color: ${({ theme }) => theme.inputCaret};
-
-  @media only screen and (max-width: 18.75em) {
-    padding-top: 1.4rem;
-    padding-bottom: 1.4rem;
-  }
-
-  &::placeholder {
-    font-weight: 300;
-    font-size: 1.5rem;
-    color: #bbb;
-  }
-`;
-
 const TextArea = styled.textarea`
   border: none;
   display: inline-block;
