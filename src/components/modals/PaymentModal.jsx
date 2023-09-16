@@ -13,6 +13,7 @@ import FormError from '../form/FormError';
 import Form from '../form/Form';
 import { FormGroup } from '../form/FormGroup';
 import Input from '../carts/Input';
+import TextArea from '../carts/TextArea';
 import FormButton from '../form/FormButton';
 
 import { useForm } from '@/hooks/useForm';
