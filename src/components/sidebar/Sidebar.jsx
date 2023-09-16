@@ -13,8 +13,8 @@ import Heading from './Heading';
 import SidebarMenu from './SidebarMenu';
 
 const Sidebar = () => {
-  const { isSidebarOpen } = useSelector((state) => ({ ...state.submenu }));
   const { closeSidebarHandler } = useSidebar();
+  const { isSidebarOpen } = useSelector((state) => ({ ...state.submenu }));
 
   const [query, setQuery] = useState('');
 
