@@ -6,8 +6,9 @@ import { useCallback, useState, useMemo } from 'react';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { sublinks } from '@/data';
 import { closeSidebar } from '@/features/submenu/submenuSlice';
+import { sublinks } from '@/data';
+import { useSidebar } from '@/hooks/useSidebar';
 
 import Heading from './Heading';
 import SidebarMenu from './SidebarMenu';
@@ -15,6 +16,7 @@ import SidebarMenu from './SidebarMenu';
 const Sidebar = () => {
   const dispatch = useDispatch();
   const { isSidebarOpen } = useSelector((state) => ({ ...state.submenu }));
+  const { closeSidebarHandler } = useSidebar();
 
   const [query, setQuery] = useState('');
 
@@ -34,7 +36,7 @@ const Sidebar = () => {
   return (
     <Container type={activeSidebar}>
       <Wrapper>
-        <CloseButton type='button' onClick={handleClick}>
+        <CloseButton type='button' onClick={closeSidebarHandler}>
           <FontAwesomeIcon icon={faXmark} />
         </CloseButton>
         <SidebarMenu items={sublinks} />
