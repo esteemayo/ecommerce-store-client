@@ -28,6 +28,8 @@ const StyledTextArea = styled.textarea`
   font-weight: lighter;
   font-size: 1.5rem;
   padding: 1.5rem 1rem;
+  background-color: transparent;
+  color: ${({ theme }) => theme.textInput};
 `;
 
 export default TextArea;
