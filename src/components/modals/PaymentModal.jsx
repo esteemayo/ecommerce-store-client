@@ -181,15 +181,6 @@ const Heading = styled.h1`
   }
 `;
 
-const FormLabel = styled.label`
-  display: inline-block;
-  width: 5rem;
-  text-transform: capitalize;
-  font-weight: 600;
-  font-size: 1.4rem;
-  color: ${({ theme }) => theme.textLabel};
-`;
-
 PaymentModal.propTypes = {
   isOpen: PropTypes.bool.isRequired,
   onClose: PropTypes.func.isRequired,
