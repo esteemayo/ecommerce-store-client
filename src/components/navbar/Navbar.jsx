@@ -23,7 +23,6 @@ import { navLinks } from '@/data';
 
 const Navbar = () => {
   const user = true;
-  const dispatch = useDispatch();
   const { qty } = useSelector((state) => ({ ...state.cart }));
   const { onOpen } = useSearchModal((state) => ({ ...state }));
 
