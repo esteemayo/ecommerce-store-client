@@ -6,7 +6,6 @@ import { useCallback, useState, useMemo } from 'react';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { closeSidebar } from '@/features/submenu/submenuSlice';
 import { sublinks } from '@/data';
 import { useSidebar } from '@/hooks/useSidebar';
 
