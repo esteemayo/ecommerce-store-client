@@ -22,6 +22,8 @@ const TextArea = ({ name, label, error, ...rest }) => {
 const StyledTextArea = styled.textarea`
   border: none;
   display: inline-block;
+  width: 100%;
+  height: 10rem;
 `;
 
 export default TextArea;
