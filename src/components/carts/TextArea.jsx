@@ -6,6 +6,11 @@ const TextArea = ({ name, label, error, ...rest }) => {
   return (
     <FormGroup>
       <Label htmlFor={name}>{label}</Label>
+      <StyledTextArea
+        {...rest}
+        id={name}
+        name={name}
+      />
     </FormGroup>
   );
 }
