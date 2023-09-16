@@ -4,7 +4,13 @@ import PropTypes from 'prop-types';
 import FormError from '../form/FormError';
 import { FormGroup } from '../form/FormGroup';
 
-const Input = ({ name, label, type = 'text', error, ...rest }) => {
+const Input = ({
+  name,
+  label,
+  type = 'text',
+  error,
+  ...rest
+}) => {
   return (
     <FormGroup>
       <Label htmlFor={name}>{label}</Label>
