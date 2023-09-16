@@ -25,7 +25,7 @@ const Input = ({
   );
 }
 
-const Label = styled.label`
+export const Label = styled.label`
   display: inline-block;
   width: 5rem;
   text-transform: capitalize;
