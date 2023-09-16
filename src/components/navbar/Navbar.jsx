@@ -68,10 +68,6 @@ const Navbar = () => {
     }
   }, [closeSubmenuHandler]);
 
-  const handleOpen = useCallback(() => {
-    dispatch(openSidebar());
-  }, [dispatch]);
-
   return (
     <Container onMouseOver={handleSubmenu}>
       <Wrapper>
