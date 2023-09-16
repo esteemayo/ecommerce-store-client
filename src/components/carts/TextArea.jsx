@@ -30,6 +30,8 @@ const StyledTextArea = styled.textarea`
   padding: 1.5rem 1rem;
   background-color: transparent;
   color: ${({ theme }) => theme.textInput};
+  border: 2px solid ${({ theme }) => theme.modalInputBorder};
+  border-radius: 0.5rem;
 `;
 
 export default TextArea;
