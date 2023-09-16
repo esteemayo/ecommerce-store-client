@@ -109,17 +109,14 @@ const PaymentModal = ({ isOpen, onClose, onExit }) => {
             autoFocus
             error={errors.name}
           />
-          <FormGroup>
-            <FormLabel htmlFor='address'>Address</FormLabel>
-            <TextArea
-              id='address'
-              name='address'
-              value={formData.address}
-              placeholder='Enter your address'
-              onChange={handleChange}
-            />
-            {errors.address && <FormError message={errors.address} />}
-          </FormGroup>
+          <TextArea
+            name='address'
+            label='Address'
+            value={formData.address}
+            placeholder='Enter your address'
+            onChange={handleChange}
+            error={errors.address}
+          />
           <FormButton label='Order' />
         </Form>
       </Wrapper>
@@ -193,35 +190,35 @@ const FormLabel = styled.label`
   color: ${({ theme }) => theme.textLabel};
 `;
 
-const TextArea = styled.textarea`
-  border: none;
-  display: inline-block;
-  width: 100%;
-  height: 10rem;
-  font-family: inherit;
-  font-weight: lighter;
-  font-size: 1.5rem;
-  padding: 1.5rem 1rem;
-  background-color: transparent;
-  color: ${({ theme }) => theme.textInput};
-  border: 2px solid ${({ theme }) => theme.modalInputBorder};
-  border-radius: 0.5rem;
-  outline-color: ${({ theme }) => theme.inputOut};
-  overflow: hidden;
-  resize: none;
-  caret-color: ${({ theme }) => theme.inputCaret};
+// const TextArea = styled.textarea`
+//   border: none;
+//   display: inline-block;
+//   width: 100%;
+//   height: 10rem;
+//   font-family: inherit;
+//   font-weight: lighter;
+//   font-size: 1.5rem;
+//   padding: 1.5rem 1rem;
+//   background-color: transparent;
+//   color: ${({ theme }) => theme.textInput};
+//   border: 2px solid ${({ theme }) => theme.modalInputBorder};
+//   border-radius: 0.5rem;
+//   outline-color: ${({ theme }) => theme.inputOut};
+//   overflow: hidden;
+//   resize: none;
+//   caret-color: ${({ theme }) => theme.inputCaret};
 
-  @media only screen and (max-width: 18.75em) {
-    padding-top: 1.4rem;
-    padding-bottom: 1.4rem;
-  }
+//   @media only screen and (max-width: 18.75em) {
+//     padding-top: 1.4rem;
+//     padding-bottom: 1.4rem;
+//   }
 
-  &::placeholder {
-    font-weight: 300;
-    font-size: 1.5rem;
-    color: #bbb;
-  }
-`;
+//   &::placeholder {
+//     font-weight: 300;
+//     font-size: 1.5rem;
+//     color: #bbb;
+//   }
+// `;
 
 PaymentModal.propTypes = {
   isOpen: PropTypes.bool.isRequired,
