@@ -4,13 +4,13 @@ import PropTypes from 'prop-types';
 import FormError from '../form/FormError';
 import { FormGroup } from '../form/FormGroup';
 
-const Input = ({ name, label, error, ...rest }) => {
+const Input = ({ id, name, label, error, ...rest }) => {
   return (
     <FormGroup>
-      <Label htmlFor={name}>{label}</Label>
+      <Label htmlFor={id}>{label}</Label>
       <StyledInput
         {...rest}
-        id={name}
+        id={id}
         name={name}
       />
       {error && <FormError message={error} />}
@@ -52,6 +52,7 @@ const StyledInput = styled.input`
 `;
 
 Input.propTypes = {
+  id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
   error: PropTypes.string,
