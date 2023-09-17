@@ -33,21 +33,19 @@ const Sidebar = () => {
         <CloseButton type='button' onClick={closeSidebarHandler}>
           <FontAwesomeIcon icon={faXmark} />
         </CloseButton>
-        <MenuContainer>
-          <SidebarMenu items={sublinks} />
-          <SearchContainer>
-            <Heading title='Search products' />
-            <Form onSubmit={handleSearch}>
-              <Input
-                type='search'
-                value={query}
-                placeholder='Search store...'
-                onChange={(e) => setQuery(e.target.value)}
-              />
-              <Button type='submit'>Search</Button>
-            </Form>
-          </SearchContainer>
-        </MenuContainer>
+        <SidebarMenu items={sublinks} />
+        <SearchContainer>
+          <Heading title='Search products' />
+          <Form onSubmit={handleSearch}>
+            <Input
+              type='search'
+              value={query}
+              placeholder='Search store...'
+              onChange={(e) => setQuery(e.target.value)}
+            />
+            <Button type='submit'>Search</Button>
+          </Form>
+        </SearchContainer>
       </Wrapper>
     </Container>
   );
@@ -72,10 +70,6 @@ const Container = styled.aside`
 `;
 
 const Wrapper = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
   width: 90vw;
   height: 97vh;
   max-width: 62rem;
@@ -107,10 +101,6 @@ const CloseButton = styled.button`
   svg {
     color: currentColor;
   }
-`;
-
-const MenuContainer = styled.div`
-  
 `;
 
 const SearchContainer = styled.div`
