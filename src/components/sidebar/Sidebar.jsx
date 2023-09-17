@@ -15,9 +15,9 @@ import SidebarMenu from './SidebarMenu';
 import { sublinks } from '@/data';
 
 const Sidebar = () => {
-  const { searchQuery, handleChange, handleSearch } = useSearch();
-  const { closeSidebarHandler } = useSidebar();
   const { isSidebarOpen } = useSelector((state) => ({ ...state.submenu }));
+  const { closeSidebarHandler } = useSidebar();
+  const { searchQuery, handleChange, handleSearch } = useSearch();
 
   const activeSidebar = useMemo(() => {
     return isSidebarOpen ? 'show' : '';
