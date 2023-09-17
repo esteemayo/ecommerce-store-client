@@ -25,7 +25,7 @@ const ListItem = styled.li`
   font-size: 1.4rem;
   color: ${({ theme }) => theme.text};
 
-  @media only screen and (max-width: 17.5em) {
+  @media only screen and (max-width: 18.75em) {
     font-size: 1.3rem;
   }
 
