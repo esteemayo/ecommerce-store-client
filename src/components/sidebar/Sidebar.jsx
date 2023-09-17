@@ -11,17 +11,19 @@ import { useSidebar } from '@/hooks/useSidebar';
 
 import Heading from './Heading';
 import SidebarMenu from './SidebarMenu';
+import { useSearch } from '@/hooks/useSearch';
 
 const Sidebar = () => {
+  const { query, setQuery, handleSearch } = useSearch();
   const { closeSidebarHandler } = useSidebar();
   const { isSidebarOpen } = useSelector((state) => ({ ...state.submenu }));
 
-  const [query, setQuery] = useState('');
+  // const [query, setQuery] = useState('');
 
-  const handleSearch = useCallback((e) => {
-    e.preventDefault();
-    console.log(query);
-  }, [query]);
+  // const handleSearch = useCallback((e) => {
+  //   e.preventDefault();
+  //   console.log(query);
+  // }, [query]);
 
   const activeSidebar = useMemo(() => {
     return isSidebarOpen ? 'show' : '';
