@@ -11,8 +11,8 @@ const SidebarMenuItem = ({ url, icon, label }) => {
   const { closeSidebarHandler } = useSidebar();
 
   return (
-    <ListItem onClick={closeSidebarHandler}>
-      <Link href={url} passHref>
+    <ListItem>
+      <Link href={url} passHref onClick={closeSidebarHandler}>
         <FontAwesomeIcon icon={icon} />
         &nbsp;
         {label}
