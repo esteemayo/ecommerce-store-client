@@ -168,7 +168,7 @@ export const sublinks = [
         label: 'support plans',
       },
       {
-        url: '/stories',
+        url: '#',
         icon: faBookOpen,
         label: 'customer stories',
       },
