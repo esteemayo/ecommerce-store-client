@@ -24,10 +24,6 @@ const Search = () => {
     setHistories((prev) => [...prev].filter((item) => item.id !== id));
   }, []);
 
-  // const handleSearch = useCallback(() => {
-  //   console.log({ searchQuery });
-  // }, [searchQuery]);
-
   const handleHistory = useCallback(() => {
     const data = {
       id: new Date().getTime(),
