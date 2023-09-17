@@ -1,11 +1,19 @@
 'use client';
 
 import styled from 'styled-components';
+import { useSearch } from '@/hooks/useSearch';
 
 const Search = () => {
+  const { query, setQuery, handleSearch } = useSearch();
+
   return (
     <Container>
-      <Input type='search' placeholder='Search store...' />
+      <Input
+        type='search'
+        value={query}
+        placeholder='Search store...'
+        onChange={(e) => setQuery(e.target.value)}
+      />
     </Container>
   );
 }
