@@ -163,7 +163,7 @@ export const sublinks = [
         label: 'blog',
       },
       {
-        url: '/support-plans',
+        url: '#',
         icon: faSitemap,
         label: 'support plans',
       },
