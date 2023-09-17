@@ -17,7 +17,6 @@ const Search = () => {
   const { searchQuery, handleChange, handleSearch } = useSearch();
 
   const inputRef = useRef();
-  // const [searchQuery, setSearchQuery] = useState('');
   const [histories, setHistories] = useState(getAllHistories());
 
   const handleDelete = useCallback((id) => {
