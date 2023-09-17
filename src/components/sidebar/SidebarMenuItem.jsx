@@ -5,6 +5,8 @@ import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import PropTypes from 'prop-types';
 
+import { useSidebar } from '@/hooks/useSidebar';
+
 const SidebarMenuItem = ({ url, icon, label }) => {
   return (
     <ListItem>
