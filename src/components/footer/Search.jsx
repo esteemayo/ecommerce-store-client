@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { useSearch } from '@/hooks/useSearch';
 
 const Search = () => {
-  const { searchQuery, setSearchQuery, handleSearch } = useSearch();
+  const { searchQuery, handleChange, handleSearch } = useSearch();
 
   return (
     <Container>
@@ -13,7 +13,7 @@ const Search = () => {
           type='search'
           value={searchQuery}
           placeholder='Search store...'
-          onChange={(e) => setSearchQuery(e.target.value)}
+          onChange={handleChange}
         />
       </Form>
     </Container>
