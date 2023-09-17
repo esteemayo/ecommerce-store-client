@@ -8,16 +8,10 @@ import { getFromStorage, searchKey, setToStorage } from '@/utils';
 
 import SearchHistory from './SearchHistory';
 
-const getAllHistories = () => {
-  const histories = getFromStorage(searchKey);
-  return histories ?? [];
-};
-
 const Search = () => {
-  const { searchQuery, handleChange, handleDelete, handleSearch } = useSearch();
+  const { histories, searchQuery, handleChange, handleDelete, handleSearch } = useSearch();
 
   const inputRef = useRef();
-  const [histories, setHistories] = useState(getAllHistories());
 
   useEffect(() => {
     inputRef.current.focus();

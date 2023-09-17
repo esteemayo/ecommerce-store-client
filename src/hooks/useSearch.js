@@ -39,6 +39,7 @@ export const useSearch = () => {
   }, [histories]);
 
   return {
+    histories,
     searchQuery,
     handleChange,
     handleDelete,
