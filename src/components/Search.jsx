@@ -4,7 +4,6 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 
 import { useSearch } from '@/hooks/useSearch';
-import { getFromStorage, searchKey, setToStorage } from '@/utils';
 
 import SearchHistory from './SearchHistory';
 
