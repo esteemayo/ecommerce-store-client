@@ -62,6 +62,7 @@ const UpdateData = ({ onCancel }) => {
           return (
             <Input
               key={id}
+              id={id}
               label={label}
               type={type}
               name={name}
