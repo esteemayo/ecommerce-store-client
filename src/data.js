@@ -78,7 +78,7 @@ export const sublinks = [
         label: 'sell everywhere',
       },
       {
-        url: '/online-store',
+        url: '#',
         icon: faStore,
         label: 'online store',
       },
