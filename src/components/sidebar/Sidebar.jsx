@@ -123,7 +123,7 @@ const Input = styled.input`
   width: 75%;
   padding: 1rem;
   background-color: transparent;
-  color: #999;
+  color: ${({ theme }) => theme.textInput};
   border: 2px solid #eef2ff;
   border-top-left-radius: 0.5rem;
   border-bottom-left-radius: 0.5rem;
