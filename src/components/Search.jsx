@@ -32,8 +32,7 @@ const Search = () => {
     setHistories((prev) => [data, ...prev]);
   }, [searchQuery]);
 
-  const handleSubmit = useCallback((e) => {
-    e.preventDefault();
+  const handleSubmit = useCallback(() => {
     handleSearch();
     handleHistory();
   }, [handleSearch, handleHistory]);
