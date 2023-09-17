@@ -143,7 +143,7 @@ export const sublinks = [
         label: 'headless commerce',
       },
       {
-        url: '/partners',
+        url: '#',
         icon: faHandshake,
         label: 'partners',
       },
