@@ -15,7 +15,13 @@ export const cartSlice = createSlice({
   name: 'cart',
   initialState,
   reducers: {
-    reset: (state) => initialState,
+    reset: (state) => {
+      state.cart = [];
+      state.qty = 0;
+      state.tax = 0;
+      state.total = 0;
+      state.subtotal = 0;
+    },
     addProduct: (state, { payload }) => {
       if (state.wished.includes(payload.id)) {
         state.wishlists = state.wishlists.filter((item) => item.id !== payload.id);
