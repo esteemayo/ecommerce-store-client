@@ -47,7 +47,7 @@ const Input = styled.input`
   width: 100%;
   padding: 0 1rem;
   background-color: transparent;
-  color: #999;
+  color: ${({ theme }) => theme.textInput};
   caret-color: var(--caret-light);
 
   &::placeholder {
