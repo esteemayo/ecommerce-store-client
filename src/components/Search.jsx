@@ -14,14 +14,10 @@ const getAllHistories = () => {
 };
 
 const Search = () => {
-  const { searchQuery, handleChange, handleSearch } = useSearch();
+  const { searchQuery, handleChange, handleDelete, handleSearch } = useSearch();
 
   const inputRef = useRef();
   const [histories, setHistories] = useState(getAllHistories());
-
-  const handleDelete = useCallback((id) => {
-    setHistories((prev) => [...prev].filter((item) => item.id !== id));
-  }, []);
 
   // const handleSubmit = useCallback(() => {
   //   handleSearch();
@@ -38,7 +34,7 @@ const Search = () => {
 
   return (
     <Container>
-      <Form onSubmit={handleSubmit}>
+      <Form onSubmit={handleSearch}>
         <FormGroup>
           <Input
             type='search'
