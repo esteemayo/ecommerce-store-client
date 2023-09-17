@@ -8,12 +8,14 @@ const Search = () => {
 
   return (
     <Container>
-      <Input
-        type='search'
-        value={query}
-        placeholder='Search store...'
-        onChange={(e) => setQuery(e.target.value)}
-      />
+      <Form onSubmit={handleSearch}>
+        <Input
+          type='search'
+          value={query}
+          placeholder='Search store...'
+          onChange={(e) => setQuery(e.target.value)}
+        />
+      </Form>
     </Container>
   );
 }
@@ -33,6 +35,8 @@ const Container = styled.div`
     display: none;
   }
 `;
+
+const Form = styled.form``;
 
 const Input = styled.input`
   display: inline-block;
