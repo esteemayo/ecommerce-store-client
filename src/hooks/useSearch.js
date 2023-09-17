@@ -1,4 +1,4 @@
-import { useCallback, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { getFromStorage, searchKey, setToStorage } from '@/utils';
 
 const getAllHistories = () => {
