@@ -53,7 +53,7 @@ export const sublinks = [
     page: 'products',
     links: [
       {
-        url: '/featured',
+        url: '#',
         icon: faLayerGroup,
         label: 'featured',
       },
