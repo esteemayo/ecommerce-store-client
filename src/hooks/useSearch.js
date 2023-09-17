@@ -8,7 +8,9 @@ export const useSearch = () => {
     console.log(query);
   }, [query]);
 
-  return (
-    <div>useSearch</div>
-  )
+  return {
+    query,
+    setQuery,
+    handleSearch,
+  };
 }
