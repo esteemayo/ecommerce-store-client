@@ -36,7 +36,6 @@ const Search = () => {
     e.preventDefault();
     handleSearch();
     handleHistory();
-    setSearchQuery('');
   }, [handleSearch, handleHistory]);
 
   useEffect(() => {
