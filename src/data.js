@@ -108,7 +108,7 @@ export const sublinks = [
         label: 'automation',
       },
       {
-        url: '/shipping',
+        url: '#',
         icon: faTruckFast,
         label: 'shipping',
       },
