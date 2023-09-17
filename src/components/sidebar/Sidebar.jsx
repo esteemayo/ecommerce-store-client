@@ -18,13 +18,6 @@ const Sidebar = () => {
   const { closeSidebarHandler } = useSidebar();
   const { isSidebarOpen } = useSelector((state) => ({ ...state.submenu }));
 
-  // const [query, setQuery] = useState('');
-
-  // const handleSearch = useCallback((e) => {
-  //   e.preventDefault();
-  //   console.log(query);
-  // }, [query]);
-
   const activeSidebar = useMemo(() => {
     return isSidebarOpen ? 'show' : '';
   }, [isSidebarOpen]);
