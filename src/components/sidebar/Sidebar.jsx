@@ -75,6 +75,7 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
   width: 90vw;
   height: 97vh;
   max-width: 62rem;
