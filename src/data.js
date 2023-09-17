@@ -83,7 +83,7 @@ export const sublinks = [
         label: 'online store',
       },
       {
-        url: '/point-of-sale',
+        url: '#',
         icon: faCreditCard,
         label: 'point of sale',
       },
