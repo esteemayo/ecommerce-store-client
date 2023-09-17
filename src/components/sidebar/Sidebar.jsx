@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useSelector } from 'react-redux';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
-import { useCallback, useState, useMemo } from 'react';
+import { useMemo } from 'react';
 
 import { sublinks } from '@/data';
 import { useSidebar } from '@/hooks/useSidebar';
