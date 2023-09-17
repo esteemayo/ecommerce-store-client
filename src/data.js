@@ -58,7 +58,7 @@ export const sublinks = [
         label: 'featured',
       },
       {
-        url: '/clothing',
+        url: '#',
         icon: faShirt,
         label: 'clothing',
       },
