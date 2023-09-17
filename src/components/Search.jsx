@@ -19,11 +19,6 @@ const Search = () => {
   const inputRef = useRef();
   const [histories, setHistories] = useState(getAllHistories());
 
-  // const handleSubmit = useCallback(() => {
-  //   handleSearch();
-  //   handleHistory();
-  // }, [handleSearch, handleHistory]);
-
   useEffect(() => {
     inputRef.current.focus();
   }, []);
