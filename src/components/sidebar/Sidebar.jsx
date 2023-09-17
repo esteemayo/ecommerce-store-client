@@ -33,19 +33,21 @@ const Sidebar = () => {
         <CloseButton type='button' onClick={closeSidebarHandler}>
           <FontAwesomeIcon icon={faXmark} />
         </CloseButton>
-        <SidebarMenu items={sublinks} />
-        <SearchContainer>
-          <Heading title='Search products' />
-          <Form onSubmit={handleSearch}>
-            <Input
-              type='search'
-              value={query}
-              placeholder='Search store...'
-              onChange={(e) => setQuery(e.target.value)}
-            />
-            <Button type='submit'>Search</Button>
-          </Form>
-        </SearchContainer>
+        <MenuContainer>
+          <SidebarMenu items={sublinks} />
+          <SearchContainer>
+            <Heading title='Search products' />
+            <Form onSubmit={handleSearch}>
+              <Input
+                type='search'
+                value={query}
+                placeholder='Search store...'
+                onChange={(e) => setQuery(e.target.value)}
+              />
+              <Button type='submit'>Search</Button>
+            </Form>
+          </SearchContainer>
+        </MenuContainer>
       </Wrapper>
     </Container>
   );
