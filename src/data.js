@@ -138,7 +138,7 @@ export const sublinks = [
         label: 'automation',
       },
       {
-        url: '/headless-commerce',
+        url: '#',
         icon: faCartShopping,
         label: 'headless commerce',
       },
