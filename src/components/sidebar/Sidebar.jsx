@@ -64,10 +64,6 @@ const Container = styled.aside`
   z-index: ${({ type }) => type === 'show' ? 2000 : -1};
   transition: all 0.3s linear;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
   @media only screen and (min-width: 50em) {
     display: none;
   }
