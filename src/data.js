@@ -88,7 +88,7 @@ export const sublinks = [
         label: 'point of sale',
       },
       {
-        url: '/ecommerce',
+        url: '#',
         icon: faDisplay,
         label: 'ecommerce',
       },
