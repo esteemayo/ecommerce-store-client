@@ -58,6 +58,7 @@ const Container = styled.aside`
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+  display: ${({ type }) => type === 'show' ? 'block' : 'none'};
   visibility: ${({ type }) => type === 'show' ? 'visible' : 'hidden'};
   transform: scale(${({ type }) => type === 'show' ? 1 : 0});
   z-index: ${({ type }) => type === 'show' ? 2000 : -1};
