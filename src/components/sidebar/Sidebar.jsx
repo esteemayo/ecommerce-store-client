@@ -15,7 +15,7 @@ import SidebarMenu from './SidebarMenu';
 import { sublinks } from '@/data';
 
 const Sidebar = () => {
-  const { query, setQuery, handleSearch } = useSearch();
+  const { searchQuery, setSearchQuery, handleSearch } = useSearch();
   const { closeSidebarHandler } = useSidebar();
   const { isSidebarOpen } = useSelector((state) => ({ ...state.submenu }));
 
@@ -35,9 +35,9 @@ const Sidebar = () => {
           <Form onSubmit={handleSearch}>
             <Input
               type='search'
-              value={query}
+              value={searchQuery}
               placeholder='Search store...'
-              onChange={(e) => setQuery(e.target.value)}
+              onChange={(e) => setSearchQuery(e.target.value)}
             />
             <Button type='submit'>Search</Button>
           </Form>

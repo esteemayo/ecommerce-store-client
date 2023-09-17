@@ -4,16 +4,16 @@ import styled from 'styled-components';
 import { useSearch } from '@/hooks/useSearch';
 
 const Search = () => {
-  const { query, setQuery, handleSearch } = useSearch();
+  const { searchQuery, setSearchQuery, handleSearch } = useSearch();
 
   return (
     <Container>
       <Form onSubmit={handleSearch}>
         <Input
           type='search'
-          value={query}
+          value={searchQuery}
           placeholder='Search store...'
-          onChange={(e) => setQuery(e.target.value)}
+          onChange={(e) => setSearchQuery(e.target.value)}
         />
       </Form>
     </Container>

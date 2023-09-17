@@ -1,16 +1,16 @@
 import { useCallback, useState } from 'react';
 
 export const useSearch = () => {
-  const [query, setQuery] = useState('');
+  const [searchQuery, setSearchQuery] = useState('');
 
   const handleSearch = useCallback((e) => {
     e.preventDefault();
-    console.log(query);
-  }, [query]);
+    console.log(searchQuery);
+  }, [searchQuery]);
 
   return {
-    query,
-    setQuery,
+    searchQuery,
+    setSearchQuery,
     handleSearch,
   };
 }
