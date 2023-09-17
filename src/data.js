@@ -63,7 +63,7 @@ export const sublinks = [
         label: 'clothing',
       },
       {
-        url: '/accessories',
+        url: '#',
         icon: faBagShopping,
         label: 'accessories',
       },
