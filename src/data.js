@@ -103,7 +103,7 @@ export const sublinks = [
         label: 'manage complexity',
       },
       {
-        url: '/automation',
+        url: '#',
         icon: faBolt,
         label: 'automation',
       },
