@@ -73,7 +73,7 @@ export const sublinks = [
     page: 'sells',
     links: [
       {
-        url: '/sell',
+        url: '#',
         icon: faShop,
         label: 'sell everywhere',
       },
