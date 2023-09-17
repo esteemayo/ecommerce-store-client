@@ -60,9 +60,7 @@ const Container = styled.aside`
   background-color: rgba(0, 0, 0, 0.5);
   display: ${({ type }) => type === 'show' ? 'block' : 'none'};
   visibility: ${({ type }) => type === 'show' ? 'visible' : 'hidden'};
-  transform: scale(${({ type }) => type === 'show' ? 1 : 0});
   z-index: ${({ type }) => type === 'show' ? 2000 : -1};
-  transition: all 0.3s linear;
 
   @media only screen and (min-width: 50em) {
     display: none;
