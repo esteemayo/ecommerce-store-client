@@ -158,7 +158,7 @@ export const sublinks = [
         label: 'support center',
       },
       {
-        url: '/blog',
+        url: '#',
         icon: faBlog,
         label: 'blog',
       },
