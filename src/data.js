@@ -153,7 +153,7 @@ export const sublinks = [
     page: 'resources',
     links: [
       {
-        url: '/support-center',
+        url: '#',
         icon: faPhone,
         label: 'support center',
       },
