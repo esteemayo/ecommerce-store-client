@@ -6,12 +6,13 @@ import { useSelector } from 'react-redux';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import { useMemo } from 'react';
 
-import { sublinks } from '@/data';
+import { useSearch } from '@/hooks/useSearch';
 import { useSidebar } from '@/hooks/useSidebar';
 
 import Heading from './Heading';
 import SidebarMenu from './SidebarMenu';
-import { useSearch } from '@/hooks/useSearch';
+
+import { sublinks } from '@/data';
 
 const Sidebar = () => {
   const { query, setQuery, handleSearch } = useSearch();
