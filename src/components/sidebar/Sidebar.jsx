@@ -70,8 +70,8 @@ const Container = styled.aside`
 `;
 
 const Wrapper = styled.div`
-  width: 90vw;
-  height: 97vh;
+  width: 100vw;
+  height: 100%;
   max-width: 62rem;
   padding: 4rem 2rem;
   background-color: ${({ theme }) => theme.bg};
