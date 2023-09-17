@@ -103,6 +103,10 @@ const CloseButton = styled.button`
   }
 `;
 
+const MenuContainer = styled.div`
+  
+`;
+
 const SearchContainer = styled.div`
   margin-top: 5rem;
   width: 100%;
