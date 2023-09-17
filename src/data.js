@@ -133,7 +133,7 @@ export const sublinks = [
         label: 'integrate systems',
       },
       {
-        url: '/ecommerce-automation',
+        url: '#',
         icon: faStore,
         label: 'automation',
       },
