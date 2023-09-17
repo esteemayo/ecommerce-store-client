@@ -147,7 +147,7 @@ const Button = styled.button`
   color: ${({ theme }) => theme.textBtn};
   border-top-right-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
-  outline-color: #85beae;
+  outline-color: ${({ theme }) => theme.btnOut};
   cursor: pointer;
 
   @media only screen and (max-width: 18.75rem) {
