@@ -113,7 +113,7 @@ export const sublinks = [
         label: 'shipping',
       },
       {
-        url: '/payments',
+        url: '#',
         icon: faMoneyBills,
         label: 'payments',
       },
