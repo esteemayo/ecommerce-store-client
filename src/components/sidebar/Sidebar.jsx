@@ -144,7 +144,7 @@ const Button = styled.button`
   font-size: 1.45rem;
   padding: 1.4rem 2.5rem;
   background-color: ${({ theme }) => theme.bgBtn};
-  color: var(--clr-white);
+  color: ${({ theme }) => theme.textBtn};
   border-top-right-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
   outline-color: #85beae;
