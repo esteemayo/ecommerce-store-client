@@ -3,8 +3,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 
-import SearchHistory from './SearchHistory';
+import { useSearch } from '@/hooks/useSearch';
 import { getFromStorage, searchKey, setToStorage } from '@/utils';
+
+import SearchHistory from './SearchHistory';
 
 const getAllHistories = () => {
   const histories = getFromStorage(searchKey);
@@ -12,17 +14,19 @@ const getAllHistories = () => {
 };
 
 const Search = () => {
+  const { searchQuery, handleChange, handleSearch } = useSearch();
+
   const inputRef = useRef();
-  const [searchQuery, setSearchQuery] = useState('');
+  // const [searchQuery, setSearchQuery] = useState('');
   const [histories, setHistories] = useState(getAllHistories());
 
   const handleDelete = useCallback((id) => {
     setHistories((prev) => [...prev].filter((item) => item.id !== id));
   }, []);
 
-  const handleSearch = useCallback(() => {
-    console.log({ searchQuery });
-  }, [searchQuery]);
+  // const handleSearch = useCallback(() => {
+  //   console.log({ searchQuery });
+  // }, [searchQuery]);
 
   const handleHistory = useCallback(() => {
     const data = {
@@ -57,7 +61,7 @@ const Search = () => {
             ref={inputRef}
             value={searchQuery}
             placeholder='Search store...'
-            onChange={(e) => setSearchQuery(e.target.value)}
+            onChange={handleChange}
           />
           <FontAwesomeIcon icon={faMagnifyingGlass} />
         </FormGroup>
