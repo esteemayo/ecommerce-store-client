@@ -8,7 +8,13 @@ import { useSearch } from '@/hooks/useSearch';
 
 const Search = () => {
   const inputRef = useRef();
-  const { histories, searchQuery, handleChange, handleDelete, handleSearch } = useSearch();
+  const {
+    histories,
+    searchQuery,
+    handleChange,
+    handleDelete,
+    handleSearch,
+  } = useSearch();
 
   useEffect(() => {
     inputRef.current.focus();
