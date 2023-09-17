@@ -118,7 +118,7 @@ export const sublinks = [
         label: 'payments',
       },
       {
-        url: '/notebooks',
+        url: '#',
         icon: faBook,
         label: 'notebooks',
       },
