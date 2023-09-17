@@ -1,4 +1,4 @@
-import React from 'react'
+import { useCallback } from 'react';
 
 export const useSearch = () => {
   return (
