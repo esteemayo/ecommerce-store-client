@@ -25,10 +25,6 @@ const Search = () => {
   // }, [handleSearch, handleHistory]);
 
   useEffect(() => {
-    setToStorage(searchKey, histories);
-  }, [histories]);
-
-  useEffect(() => {
     inputRef.current.focus();
   }, []);
 
