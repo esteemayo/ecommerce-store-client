@@ -98,7 +98,7 @@ export const sublinks = [
     page: 'manage',
     links: [
       {
-        url: '/manage',
+        url: '#',
         icon: faPeopleRoof,
         label: 'manage complexity',
       },
