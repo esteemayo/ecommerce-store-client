@@ -16,6 +16,7 @@ const CheckBox = ({ name, label, ...rest }) => {
   return (
     <Container className='checkContainer'>
       <StyledCheckBox
+        {...rest}
         type='checkbox'
         id={name}
         name={name}
