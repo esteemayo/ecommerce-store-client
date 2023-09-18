@@ -66,14 +66,6 @@ const Login = () => {
     handleSubmit,
   } = useForm(onSubmitHandler, initialState, validateForm);
 
-  const checkmarkClasses = useMemo(() => {
-    if (mode) {
-      return `checkmark dark`;
-    }
-
-    return `checkmark light`;
-  }, [mode]);
-
   useEffect(() => {
     const rememberMe = getFromStorage(rememberKey);
     const user = getFromStorage(userKey);
