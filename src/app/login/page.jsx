@@ -24,6 +24,7 @@ import {
   setToStorage,
   userKey,
 } from '@/utils';
+import Forgot from './Forgot';
 
 const initialState = {
   username: '',
@@ -117,11 +118,10 @@ const Login = () => {
               onChange={(e) => setRememberMe(e.currentTarget.checked)}
             />
             <FormButton label='Log in' />
-            <ForgotPassword>
-              <Link href='/forgot' passHref>
-                Forgot your password?
-              </Link>
-            </ForgotPassword>
+            <Forgot
+              url='/forgo'
+              label='Forgot your password?'
+            />
           </Form>
         </StyledBox>
         <AuthInfo
