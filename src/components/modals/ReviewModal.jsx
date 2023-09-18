@@ -48,14 +48,18 @@ const ReviewModal = ({ isOpen, onClose }) => {
     return showModal ? 'show' : '';
   }, [showModal]);
 
+  const modeValue = useMemo(() => {
+    return mode.toString();
+  }, [mode]);
+
   useEffect(() => {
     setShowModal(isOpen);
   }, [isOpen]);
 
   return (
     <Overlay
-      mode={mode.toString()}
       type={activeModal}
+      mode={modeValue}
       onClick={handleCloseModal}
     >
       <Wrapper>
