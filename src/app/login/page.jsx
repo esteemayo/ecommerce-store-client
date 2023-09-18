@@ -80,10 +80,6 @@ const Login = () => {
   }, [mode]);
 
   useEffect(() => {
-    usernameRef.current?.focus();
-  }, []);
-
-  useEffect(() => {
     const rememberMe = getFromStorage(rememberKey);
     const user = getFromStorage(userKey);
 
