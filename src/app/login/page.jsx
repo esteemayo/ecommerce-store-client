@@ -1,7 +1,6 @@
 'use client';
 
 import styled from 'styled-components';
-import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 
@@ -17,14 +16,15 @@ import CheckBox from '@/components/form/CheckBox';
 import { useForm } from '@/hooks/useForm';
 import ClientOnly from '@/components/ClientOnly';
 
+import Forgot from './Forgot';
 import SocialLogin from './SocialLogin';
+
 import {
   getFromStorage,
   rememberKey,
   setToStorage,
   userKey,
 } from '@/utils';
-import Forgot from './Forgot';
 
 const initialState = {
   username: '',
