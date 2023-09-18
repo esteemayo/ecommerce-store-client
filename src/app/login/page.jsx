@@ -85,7 +85,7 @@ const Login = () => {
 
     setFormData(userData);
     setRememberMe(rememberMe);
-  }, []);
+  }, [setFormData]);
 
   return (
     <ClientOnly>
