@@ -112,7 +112,6 @@ const Login = () => {
                 value={username}
                 placeholder='Enter username'
                 onChange={(e) => setUsername(e.target.value)}
-                ref={usernameRef}
               />
               {errors.username && <AuthError message={errors.username} />}
             </FormGroup>
