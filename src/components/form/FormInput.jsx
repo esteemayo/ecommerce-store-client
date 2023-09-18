@@ -27,6 +27,8 @@ const FormInput = ({
 
 const Label = styled.label`
   display: inline-block;
+  width: ${({ login }) => login && '7rem'};
+  text-transform: ${({ login }) => login && 'capitalize'};
   font-weight: 600;
   font-size: 1.4rem;
   color:  ${({ theme }) => theme.textLabel};
