@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 const Search = ({ query, onChange, onSubmit }) => {
   return (
@@ -67,5 +68,11 @@ const Button = styled.button`
     padding-bottom: 1.1rem;
   }
 `;
+
+Search.propTypes = {
+  query: PropTypes.string,
+  onChange: PropTypes.func.isRequired,
+  onSubmit: PropTypes.func.isRequired,
+};
 
 export default Search;
