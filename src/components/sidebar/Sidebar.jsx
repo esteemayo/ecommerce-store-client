@@ -134,23 +134,4 @@ const Input = styled.input`
   }
 `;
 
-const Button = styled.button`
-  display: inline-block;
-  border: none;
-  font-weight: 500;
-  font-size: 1.45rem;
-  padding: 1.4rem 2.5rem;
-  background-color: ${({ theme }) => theme.bgBtn};
-  color: ${({ theme }) => theme.textBtn};
-  border-top-right-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
-  outline-color: ${({ theme }) => theme.btnOut};
-  cursor: pointer;
-
-  @media only screen and (max-width: 18.75rem) {
-    padding-top: 1.1rem;
-    padding-bottom: 1.1rem;
-  }
-`;
-
 export default Sidebar;
