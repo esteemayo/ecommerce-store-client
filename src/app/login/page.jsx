@@ -2,7 +2,6 @@
 
 import styled from 'styled-components';
 import { useEffect, useState } from 'react';
-import { useSelector } from 'react-redux';
 
 import AuthInfo from '@/components/form/FormInfo';
 import FormButton from '@/components/form/FormButton';
