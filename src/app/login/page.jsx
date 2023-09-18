@@ -11,7 +11,6 @@ import FormButton from '@/components/form/FormButton';
 import FormBox from '@/components/form/FormBox';
 import { StyledBox } from '@/components/form/StyledBox';
 import Form from '@/components/form/Form';
-import { FormGroup } from '@/components/form/FormGroup';
 import Heading from '@/components/form/Heading';
 
 import { useForm } from '@/hooks/useForm';
