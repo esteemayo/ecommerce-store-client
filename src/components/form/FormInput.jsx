@@ -9,11 +9,12 @@ const FormInput = ({
   type = 'text',
   label,
   error,
+  login,
   ...rest
 }) => {
   return (
     <FormGroup>
-      <Label htmlFor={name}>{label}</Label>
+      <Label htmlFor={name} login={login}>{label}</Label>
       <Input
         {...rest}
         id={name}
@@ -64,6 +65,7 @@ FormInput.propTypes = {
   type: PropTypes.string,
   label: PropTypes.string.isRequired,
   error: PropTypes.string,
+  login: PropTypes.bool,
   rest: PropTypes.any,
 };
 
