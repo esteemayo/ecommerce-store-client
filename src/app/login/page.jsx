@@ -9,8 +9,10 @@ import AuthInfo from '@/components/form/FormInfo';
 import FormButton from '@/components/form/FormButton';
 import FormBox from '@/components/form/FormBox';
 import { StyledBox } from '@/components/form/StyledBox';
-import Form from '@/components/form/Form';
 import Heading from '@/components/form/Heading';
+import FormInput from '@/components/form/FormInput';
+import Form from '@/components/form/Form';
+import CheckBox from '@/components/form/CheckBox';
 
 import { useForm } from '@/hooks/useForm';
 import ClientOnly from '@/components/ClientOnly';
@@ -22,8 +24,6 @@ import {
   setToStorage,
   userKey,
 } from '@/utils';
-import FormInput from '@/components/form/FormInput';
-import CheckBox from '@/components/form/CheckBox';
 
 const initialState = {
   username: '',

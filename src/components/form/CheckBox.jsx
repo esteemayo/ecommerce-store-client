@@ -18,9 +18,9 @@ const CheckBox = ({ name, label, ...rest }) => {
     <Container className='checkContainer'>
       <StyledCheckBox
         {...rest}
-        type='checkbox'
         id={name}
         name={name}
+        type='checkbox'
         className='checkbox'
       />
       <CheckMark className={checkmarkClasses} />
