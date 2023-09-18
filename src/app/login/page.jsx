@@ -2,7 +2,7 @@
 
 import styled from 'styled-components';
 import Link from 'next/link';
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 import { useSelector } from 'react-redux';
 
 import AuthError from '@/components/form/FormError';
