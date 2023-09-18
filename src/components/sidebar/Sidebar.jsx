@@ -27,9 +27,9 @@ const Sidebar = () => {
   return (
     <Container type={activeSidebar}>
       <Wrapper>
-        <CloseButton type='button' onClick={closeSidebarHandler}>
+        <Button type='button' onClick={closeSidebarHandler}>
           <FontAwesomeIcon icon={faXmark} />
-        </CloseButton>
+        </Button>
         <SidebarMenu items={sublinks} />
         <SearchContainer>
           <Heading title='Search products' />
@@ -76,7 +76,7 @@ const Wrapper = styled.div`
   }
 `;
 
-const CloseButton = styled.button`
+const Button = styled.button`
   position: absolute;
   top: 1rem;
   right: 1rem;
