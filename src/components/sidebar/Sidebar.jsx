@@ -13,6 +13,7 @@ import Heading from './Heading';
 import SidebarMenu from './SidebarMenu';
 
 import { sublinks } from '@/data';
+import Search from './Search';
 
 const Sidebar = () => {
   const { isSidebarOpen } = useSelector((state) => ({ ...state.submenu }));
@@ -32,15 +33,11 @@ const Sidebar = () => {
         <SidebarMenu items={sublinks} />
         <SearchContainer>
           <Heading title='Search products' />
-          <Form onSubmit={handleSearch}>
-            <Input
-              type='search'
-              value={searchQuery}
-              placeholder='Search store...'
-              onChange={handleChange}
-            />
-            <Button type='submit'>Search</Button>
-          </Form>
+          <Search
+            query={searchQuery}
+            onChange={handleChange}
+            onSubmit={handleSearch}
+          />
         </SearchContainer>
       </Wrapper>
     </Container>
