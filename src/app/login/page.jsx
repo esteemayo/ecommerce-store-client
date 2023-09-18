@@ -32,9 +32,6 @@ const initialState = {
 
 const Login = () => {
   const { mode } = useSelector((state) => ({ ...state.darkMode }));
-
-  const [username, setUsername] = useState('');
-  // const [errors, setErrors] = useState({});
   const [rememberMe, setRememberMe] = useState(false);
   const [password, setPassword] = useState('');
 
