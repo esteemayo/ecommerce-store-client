@@ -22,7 +22,6 @@ const Search = () => {
         <FormGroup>
           <Input
             type='search'
-            ref={inputRef}
             value={searchQuery}
             placeholder='Search store...'
             onChange={handleChange}
