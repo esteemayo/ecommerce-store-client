@@ -33,10 +33,10 @@ const initialState = {
 const Login = () => {
   const { mode } = useSelector((state) => ({ ...state.darkMode }));
   const [rememberMe, setRememberMe] = useState(false);
-  const [password, setPassword] = useState('');
 
-  const validateForm = () => {
+  const validateForm = (data) => {
     const tempErrors = {};
+    const { password, username } = data;
 
     if (username.trim() === '') {
       tempErrors.username = 'Username must not be empty';
