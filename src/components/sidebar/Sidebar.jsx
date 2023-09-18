@@ -11,9 +11,9 @@ import { useSidebar } from '@/hooks/useSidebar';
 
 import Heading from './Heading';
 import SidebarMenu from './SidebarMenu';
+import Search from './Search';
 
 import { sublinks } from '@/data';
-import Search from './Search';
 
 const Sidebar = () => {
   const { isSidebarOpen } = useSelector((state) => ({ ...state.submenu }));
