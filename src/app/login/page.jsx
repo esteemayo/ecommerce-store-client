@@ -79,8 +79,8 @@ const Login = () => {
     const user = getFromStorage(userKey);
 
     const userData = {
-      username: user.username,
-      password: user.password,
+      username: user?.username,
+      password: user?.password,
     };
 
     setFormData(userData);
