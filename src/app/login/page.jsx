@@ -23,6 +23,7 @@ import {
   userKey,
 } from '@/utils';
 import FormInput from '@/components/form/FormInput';
+import CheckBox from '@/components/form/CheckBox';
 
 const initialState = {
   username: '',
@@ -117,17 +118,12 @@ const Login = () => {
               error={errors.password}
               login
             />
-            <CheckBoxWrapper className='checkContainer'>
-              <CheckBox
-                type='checkbox'
-                id='rememberMe'
-                checked={rememberMe}
-                onChange={(e) => setRememberMe(e.currentTarget.checked)}
-                className='checkbox'
-              />
-              <CheckMark className={checkmarkClasses} />
-              <CheckBoxLabel htmlFor='rememberMe'>Remember me</CheckBoxLabel>
-            </CheckBoxWrapper>
+            <CheckBox
+              name='rememberMe'
+              label='Remember me'
+              checked={rememberMe}
+              onChange={(e) => setRememberMe(e.currentTarget.checked)}
+            />
             <FormButton label='Log in' />
             <ForgotPassword>
               <Link href='/forgot' passHref>
@@ -160,7 +156,7 @@ const CheckBoxWrapper = styled.div`
   gap: 2rem;
 `;
 
-const CheckBox = styled.input``;
+// const CheckBox = styled.input``;
 
 const CheckBoxLabel = styled.label`
   width: 10rem;
