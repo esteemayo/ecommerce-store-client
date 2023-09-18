@@ -7,7 +7,6 @@ import SearchHistory from './SearchHistory';
 import { useSearch } from '@/hooks/useSearch';
 
 const Search = () => {
-  const inputRef = useRef();
   const {
     histories,
     searchQuery,
