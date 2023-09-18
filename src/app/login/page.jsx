@@ -104,6 +104,7 @@ const Login = () => {
               <FormInput
                 type='text'
                 id='username'
+                name='username'
                 value={formData.username}
                 placeholder='Enter username'
                 onChange={handleChange}
@@ -114,6 +115,7 @@ const Login = () => {
               <FormLabel htmlFor='password'>Password</FormLabel>
               <FormInput
                 id='password'
+                name='password'
                 type='password'
                 value={formData.password}
                 placeholder='Enter your password'
