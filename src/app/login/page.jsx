@@ -155,15 +155,6 @@ const Text = styled.p`
   color: ${({ theme }) => theme.text};
 `;
 
-const FormLabel = styled.label`
-  display: inline-block;
-  width: 7rem;
-  text-transform: capitalize;
-  font-weight: 600;
-  font-size: 1.4rem;
-  color: ${({ theme }) => theme.textLabel};
-`;
-
 const CheckBoxWrapper = styled.div`
   width: 100%;
   display: flex;
