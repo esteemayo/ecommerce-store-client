@@ -5,7 +5,6 @@ import Link from 'next/link';
 import { useEffect, useMemo, useState } from 'react';
 import { useSelector } from 'react-redux';
 
-import AuthError from '@/components/form/FormError';
 import AuthInfo from '@/components/form/FormInfo';
 import FormButton from '@/components/form/FormButton';
 import FormBox from '@/components/form/FormBox';
