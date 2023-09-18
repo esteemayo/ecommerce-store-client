@@ -149,13 +149,6 @@ const Text = styled.p`
   color: ${({ theme }) => theme.text};
 `;
 
-const CheckBoxWrapper = styled.div`
-  width: 100%;
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-`;
-
 const ForgotPassword = styled.p`
   font-size: 1.65rem;
   color: ${({ theme }) => theme.textLabel};
