@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { useMemo } from 'react';
 import { useSelector } from 'react-redux';
+import PropTypes from 'prop-types';
 
 const CheckBox = ({ name, label, ...rest }) => {
   const { mode } = useSelector((state) => ({ ...state.darkMode }));
@@ -48,5 +49,11 @@ const Label = styled.label`
 `;
 
 const CheckMark = styled.span``;
+
+CheckBox.propTypes = {
+  name: PropTypes.string,
+  label: PropTypes.string,
+  rest: PropTypes.any,
+};
 
 export default CheckBox;
