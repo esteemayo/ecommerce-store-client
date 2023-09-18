@@ -156,16 +156,6 @@ const CheckBoxWrapper = styled.div`
   gap: 2rem;
 `;
 
-const CheckBoxLabel = styled.label`
-  width: 10rem;
-  display: inline-block;
-  text-transform: capitalize;
-  font-weight: 600;
-  font-size: 1.4rem;
-  color: ${({ theme }) => theme.textLabel};
-  margin-left: 3.5rem;
-`;
-
 const ForgotPassword = styled.p`
   font-size: 1.65rem;
   color: ${({ theme }) => theme.textLabel};
