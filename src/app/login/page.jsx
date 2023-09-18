@@ -166,8 +166,6 @@ const CheckBoxLabel = styled.label`
   margin-left: 3.5rem;
 `;
 
-const CheckMark = styled.span``;
-
 const ForgotPassword = styled.p`
   font-size: 1.65rem;
   color: ${({ theme }) => theme.textLabel};
