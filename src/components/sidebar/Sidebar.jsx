@@ -104,34 +104,4 @@ const Form = styled.form`
   align-items: center;
 `;
 
-const Input = styled.input`
-  display: inline-block;
-  font-family: inherit;
-  font-size: 1.5rem;
-  width: 75%;
-  padding: 1rem;
-  background-color: transparent;
-  color: ${({ theme }) => theme.textInput};
-  border: 2px solid #eef2ff;
-  border-top-left-radius: 0.5rem;
-  border-bottom-left-radius: 0.5rem;
-  outline-color: #eee;
-  caret-color: ${({ theme }) => theme.inputCaret};
-
-  @media only screen and (max-width: 25rem) {
-    width: 65%;
-  }
-
-  @media only screen and (max-width: 18.75rem) {
-    padding-top: 0.7rem;
-    padding-bottom: 0.7rem;
-  }
-
-  &::-webkit-input-placeholder {
-    font-weight: 300;
-    font-size: 1.5rem;
-    color: #bbb;
-  }
-`;
-
 export default Sidebar;
