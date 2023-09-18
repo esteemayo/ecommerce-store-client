@@ -32,7 +32,6 @@ const initialState = {
 };
 
 const Login = () => {
-  const { mode } = useSelector((state) => ({ ...state.darkMode }));
   const [rememberMe, setRememberMe] = useState(false);
 
   const validateForm = (data) => {
