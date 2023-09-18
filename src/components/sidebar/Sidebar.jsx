@@ -99,9 +99,4 @@ const SearchContainer = styled.div`
   width: 100%;
 `;
 
-const Form = styled.form`
-  display: flex;
-  align-items: center;
-`;
-
 export default Sidebar;
