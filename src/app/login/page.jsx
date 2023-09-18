@@ -27,8 +27,6 @@ import {
 const Login = () => {
   const { mode } = useSelector((state) => ({ ...state.darkMode }));
 
-  const usernameRef = useRef();
-
   const [username, setUsername] = useState('');
   const [errors, setErrors] = useState({});
   const [rememberMe, setRememberMe] = useState(false);
