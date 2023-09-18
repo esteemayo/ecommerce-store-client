@@ -16,10 +16,6 @@ const Search = () => {
     handleSearch,
   } = useSearch();
 
-  useEffect(() => {
-    inputRef.current.focus();
-  }, []);
-
   return (
     <Container>
       <Form onSubmit={handleSearch}>
