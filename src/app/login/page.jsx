@@ -38,7 +38,7 @@ const Login = () => {
   const [rememberMe, setRememberMe] = useState(false);
   const [password, setPassword] = useState('');
 
-  const validateForm = useCallback(() => {
+  const validateForm = () => {
     const tempErrors = {};
 
     if (username.trim() === '') {
@@ -51,12 +51,8 @@ const Login = () => {
       tempErrors.password = 'Password should be at least 8 characters long';
     }
 
-    if (Object.keys(tempErrors).length > 0) {
-      setErrors(tempErrors);
-      return true;
-    }
-    return false;
-  }, [username, password]);
+    return tempErrors;
+  };
 
   const onSubmitHandler = () => {
     console.log({ ...formData, rememberMe });
