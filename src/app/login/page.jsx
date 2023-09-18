@@ -58,7 +58,7 @@ const Login = () => {
     setToStorage(userKey, rememberMe ? formData : '');
   };
 
-  const { formData, errors, handleChange, handleSubmit } = useForm(onSubmitHandler, initialState, validateForm);
+  const { formData, errors, setFormData, handleChange, handleSubmit } = useForm(onSubmitHandler, initialState, validateForm);
 
   const checkmarkClasses = useMemo(() => {
     if (mode) {
@@ -72,8 +72,12 @@ const Login = () => {
     const rememberMe = getFromStorage(rememberKey);
     const user = getFromStorage(userKey);
 
-    setUsername(user.username);
-    setPassword(user.password);
+    const userData = {
+      username: user.username,
+      password: user.password,
+    };
+
+    setFormData(userData);
     setRememberMe(rememberMe);
   }, []);
 
