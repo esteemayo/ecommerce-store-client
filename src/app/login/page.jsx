@@ -14,6 +14,7 @@ import Form from '@/components/form/Form';
 import { FormGroup } from '@/components/form/FormGroup';
 import Heading from '@/components/form/Heading';
 
+import { useForm } from '@/hooks/useForm';
 import ClientOnly from '@/components/ClientOnly';
 
 import SocialLogin from './SocialLogin';
@@ -24,11 +25,16 @@ import {
   userKey,
 } from '@/utils';
 
+const initialState = {
+  username: '',
+  password: '',
+};
+
 const Login = () => {
   const { mode } = useSelector((state) => ({ ...state.darkMode }));
 
   const [username, setUsername] = useState('');
-  const [errors, setErrors] = useState({});
+  // const [errors, setErrors] = useState({});
   const [rememberMe, setRememberMe] = useState(false);
   const [password, setPassword] = useState('');
 
@@ -52,22 +58,14 @@ const Login = () => {
     return false;
   }, [username, password]);
 
-  const handleSubmit = useCallback((e) => {
-    e.preventDefault();
-
-    if (validateForm()) return;
-    setErrors({});
-
-    const userData = {
-      username,
-      password,
-    };
-
-    console.log({ ...userData, rememberMe });
+  const onSubmitHandler = () => {
+    console.log({ ...formData, rememberMe });
 
     setToStorage(rememberKey, rememberMe);
-    setToStorage(userKey, rememberMe ? userData : '');
-  }, [username, password, rememberMe, validateForm]);
+    setToStorage(userKey, rememberMe ? formData : '');
+  };
+
+  const { formData, errors, handleChange, handleSubmit } = useForm(onSubmitHandler, initialState, validateForm);
 
   const checkmarkClasses = useMemo(() => {
     if (mode) {
@@ -103,9 +101,9 @@ const Login = () => {
               <FormInput
                 type='text'
                 id='username'
-                value={username}
+                value={formData.username}
                 placeholder='Enter username'
-                onChange={(e) => setUsername(e.target.value)}
+                onChange={handleChange}
               />
               {errors.username && <AuthError message={errors.username} />}
             </FormGroup>
@@ -114,9 +112,9 @@ const Login = () => {
               <FormInput
                 id='password'
                 type='password'
-                value={password}
+                value={formData.password}
                 placeholder='Enter your password'
-                onChange={(e) => setPassword(e.target.value)}
+                onChange={handleChange}
               />
               {errors.password && <AuthError message={errors.password} />}
             </FormGroup>
