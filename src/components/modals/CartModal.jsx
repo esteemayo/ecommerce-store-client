@@ -14,7 +14,7 @@ import ProductHead from '../products/ProductHead';
 import ProductButton from '../products/ProductButton';
 
 import Alert from '../Alert';
-import Overlay from './Overlay';
+// import Overlay from './Overlay';
 
 import { useCart } from '@/hooks/useCart';
 import { useDarkMode } from '@/hooks/useDarkMode';
@@ -40,9 +40,12 @@ const CartModal = ({ product, isOpen, onClose, onSelect }) => {
 
   const handleCloseModal = useCallback(() => {
     setShowModal(false);
-    onClose();
     onSelect(null);
     handleReset();
+
+    setTimeout(() => {
+      onClose();
+    }, 300);
   }, [onClose, onSelect, handleReset]);
 
   const closeModalHandler = useCallback((e) => {
@@ -57,6 +60,10 @@ const CartModal = ({ product, isOpen, onClose, onSelect }) => {
     return showModal ? 'show' : '';
   }, [showModal]);
 
+  const active = useMemo(() => {
+    return showModal?.toString();
+  }, [showModal]);
+
   const modeValue = useMemo(() => {
     return mode.toString();
   }, [mode]);
@@ -65,80 +72,106 @@ const CartModal = ({ product, isOpen, onClose, onSelect }) => {
     setShowModal(isOpen);
   }, [isOpen]);
 
+  if (!isOpen) {
+    return null;
+  }
+
   return (
     <Overlay
       mode={modeValue}
-      type={activeModal}
       onClick={closeModalHandler}
+      className='overlay'
     >
-      <Wrapper mode={modeValue}>
-        <ButtonContainer>
-          <CloseButton type='button' onClick={handleCloseModal}>
-            <CloseIcon />
-          </CloseButton>
-        </ButtonContainer>
-        <ImageContainer>
-          <StyledImage
-            src={product?.images?.[0] ?? '/img/img-1.jpg'}
-            width={320}
-            height={200}
-            alt=''
-          />
-        </ImageContainer>
-        <ProductContainer>
-          <ProductHead
-            name={product?.name}
-            price={product?.price}
-            discount={product?.discount}
-            priceDiscount={product?.priceDiscount}
-            modal
-          />
-          <Hr />
-          <ColorSelect
-            title='Color'
-            mode={mode}
-            value={product?.color}
-            selected={isSelected}
-            onAction={setColor}
-            secondaryAction={setIsSelected}
-            modal
-          />
-          {product?.size && (
-            <SizeSelect
-              value={product?.size}
-              selected={selectedSize}
-              onAction={setSize}
-              secondaryAction={setSelectedSize}
+      <Wrapper active={active}>
+        <Box mode={modeValue}>
+          <ButtonContainer>
+            <CloseButton type='button' onClick={handleCloseModal}>
+              <CloseIcon />
+            </CloseButton>
+          </ButtonContainer>
+          <ImageContainer>
+            <StyledImage
+              src={product?.images?.[0] ?? '/img/img-1.jpg'}
+              width={320}
+              height={200}
+              alt=''
+            />
+          </ImageContainer>
+          <ProductContainer>
+            <ProductHead
+              name={product?.name}
+              price={product?.price}
+              discount={product?.discount}
+              priceDiscount={product?.priceDiscount}
               modal
             />
-          )}
-          <Hr />
-          <Counter
-            title='Quantity'
-            value={quantity}
-            onClick={setQuantity}
-          />
-          <Hr />
-          <ProductButton
-            small
-            actionLabel='Add to cart'
-            onAction={handleClick}
-          />
-          {alert && (
-            <Alert
-              alert={alert}
-              message='Item added to cart'
-              onChange={setAlert}
-              center
+            <Hr />
+            <ColorSelect
+              title='Color'
+              mode={mode}
+              value={product?.color}
+              selected={isSelected}
+              onAction={setColor}
+              secondaryAction={setIsSelected}
+              modal
             />
-          )}
-        </ProductContainer>
+            {product?.size && (
+              <SizeSelect
+                value={product?.size}
+                selected={selectedSize}
+                onAction={setSize}
+                secondaryAction={setSelectedSize}
+                modal
+              />
+            )}
+            <Hr />
+            <Counter
+              title='Quantity'
+              value={quantity}
+              onClick={setQuantity}
+            />
+            <Hr />
+            <ProductButton
+              small
+              actionLabel='Add to cart'
+              onAction={handleClick}
+            />
+            {alert && (
+              <Alert
+                alert={alert}
+                message='Item added to cart'
+                onChange={setAlert}
+                center
+              />
+            )}
+          </ProductContainer>
+        </Box>
       </Wrapper>
     </Overlay>
   );
 }
 
+const Overlay = styled.aside`
+  width: 100vw;
+  height: 100%;
+  background-color: ${({ theme }) => theme.bgOverlay};
+  backdrop-filter: ${({ mode }) => (mode === 'true' ? 'blur(2px)' : undefined)};
+  position: fixed;
+  top: 0;
+  left: 0;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
 const Wrapper = styled.div`
+  transform: translateY(${({ active }) => (active === 'true' ? 0 : '100%')});
+  opacity: ${({ active }) => (active === 'true' ? 1 : 0)};
+  transition: all 300ms;
+`;
+
+const Box = styled.div`
   width: 40rem;
   padding: 2rem 4rem;
   background-color: ${({ theme }) => theme.bgModal};
