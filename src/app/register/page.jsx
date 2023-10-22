@@ -15,7 +15,7 @@ import CountrySelect from '@/components/inputs/CountrySelect';
 
 import ClientOnly from '@/components/ClientOnly';
 
-import { registerInputs } from '@/formData';
+import { registerInputs } from '@/data/formData';
 import { useCountries } from '@/hooks/useCountries';
 
 const initialState = {

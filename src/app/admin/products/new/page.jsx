@@ -15,7 +15,7 @@ import { FormGroup } from '@/components/form/FormGroup';
 
 import ClientOnly from '@/components/ClientOnly';
 
-import { selectInputs } from '@/formData';
+import { selectInputs } from '@/data/formData';
 
 const initialState = {
   name: '',
