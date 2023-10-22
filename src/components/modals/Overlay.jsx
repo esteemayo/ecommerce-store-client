@@ -14,7 +14,7 @@ const Overlay = ({ type, mode, children, onClick }) => {
   );
 }
 
-const StyledOverlay = styled.div`
+const StyledOverlay = styled.aside`
   width: 100vw;
   height: 100%;
   background-color: ${({ theme }) => theme.bgOverlay};
