@@ -12,7 +12,7 @@ import { orders } from '@/data';
 const OrderCard = dynamic(() => import('@/components/orders/OrderCard'), { ssr: false });
 
 const Orders = () => {
-  const { closeSubmenuHandler } = useSubmenu();
+  const closeSubmenu = useSubmenu((state) => state.closeSubmenu);
 
   let bodyContent;
 
@@ -45,7 +45,7 @@ const Orders = () => {
 
   return (
     <ClientOnly>
-      <Container onMouseOver={closeSubmenuHandler}>
+      <Container onMouseOver={closeSubmenu}>
         <Wrapper>
           {bodyContent}
         </Wrapper>
