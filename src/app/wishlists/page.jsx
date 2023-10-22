@@ -21,7 +21,7 @@ const WishLists = () => {
   const dispatch = useDispatch();
   const { wishlists } = useSelector((state) => ({ ...state.cart }));
 
-  const { closeSubmenuHandler } = useSubmenu();
+  const closeSubmenu = useSubmenu((state) => state.closeSubmenu);
   const cartModal = useCartModal();
   const wishlistModal = useWishlistModal();
 
@@ -69,7 +69,7 @@ const WishLists = () => {
 
   return (
     <ClientOnly>
-      <Container onMouseOver={closeSubmenuHandler}>
+      <Container onMouseOver={closeSubmenu}>
         <Wrapper>
           {bodyContent}
         </Wrapper>

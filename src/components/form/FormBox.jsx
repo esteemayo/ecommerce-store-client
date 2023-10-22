@@ -4,10 +4,10 @@ import PropTypes from 'prop-types';
 import { useSubmenu } from '@/hooks/useSubmenu';
 
 const FormBox = ({ children }) => {
-  const { closeSubmenuHandler } = useSubmenu();
+  const closeSubmenu = useSubmenu((state) => state.closeSubmenu);
 
   return (
-    <Container onMouseOver={closeSubmenuHandler}>
+    <Container onMouseOver={closeSubmenu}>
       <Wrapper>
         {children}
       </Wrapper>
