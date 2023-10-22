@@ -10,14 +10,7 @@ import Heading from './Heading';
 import FooterLink from './FooterLink';
 import Search from './Search';
 
-import {
-  customerLinks,
-  discoverLinks,
-  footerLinks,
-  footerMenus,
-  social,
-  storeLinks,
-} from '@/data';
+import { footerLinks, footerMenus, social } from '@/data';
 
 const Footer = () => {
   const year = useMemo(() => {
