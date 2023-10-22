@@ -8,11 +8,11 @@ import PropTypes from 'prop-types';
 import { useSidebar } from '@/hooks/useSidebar';
 
 const SidebarMenuItem = ({ url, icon, label }) => {
-  const { closeSidebarHandler } = useSidebar();
+  const onClose = useSidebar((state) => state.onClose);
 
   return (
     <ListItem>
-      <Link href={url} passHref onClick={closeSidebarHandler}>
+      <Link href={url} passHref onClick={onClose}>
         <FontAwesomeIcon icon={icon} />
         &nbsp;
         {label}
