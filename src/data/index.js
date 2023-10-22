@@ -514,7 +514,7 @@ export const social = [
   },
 ];
 
-export const footerLinkss = [
+export const footerLinks = [
   {
     id: 1,
     url: '#',
