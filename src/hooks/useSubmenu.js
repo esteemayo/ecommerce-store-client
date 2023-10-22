@@ -1,21 +1,26 @@
-import { useCallback } from 'react';
-import { useDispatch } from 'react-redux';
+import { create } from 'zustand';
+import { devtools } from 'zustand/middleware';
 
-import { closeSubmenu, openSubmenu } from '@/features/submenu/submenuSlice';
+import { sublinks } from '@/data';
 
-export const useSubmenu = () => {
-  const dispatch = useDispatch();
-
-  const openSubmenuHandler = useCallback((submenu) => {
-    dispatch(openSubmenu(submenu));
-  }, [dispatch]);
-
-  const closeSubmenuHandler = useCallback(() => {
-    dispatch(closeSubmenu());
-  }, [dispatch]);
-
-  return {
-    closeSubmenuHandler,
-    openSubmenuHandler,
-  };
-}
+export const useSubmenu = create(
+  devtools((set) => ({
+    isOpen: false,
+    location: {},
+    page: {
+      page: '',
+      links: [],
+    },
+    openSubmenu: (payload) =>
+      set(
+        () => ({
+          page: sublinks.find((link) => link.page === payload.page),
+          location: payload.coordinates,
+          isOpen: true,
+        }),
+        false,
+        'openSubmenu'
+      ),
+    closeSubmenu: () => set(() => ({ isOpen: false }), false, 'closeSubmenu'),
+  }))
+);

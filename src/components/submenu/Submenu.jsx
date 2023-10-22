@@ -2,22 +2,23 @@
 
 import styled from 'styled-components';
 import { useEffect, useState, useMemo, useRef } from 'react';
-import { useSelector } from 'react-redux';
 
 import Heading from './Heading';
 import MenuItem from './MenuItem';
 
+import { useSubmenu } from '@/hooks/useSubmenu';
+
 const Submenu = () => {
-  const { isSubmenuOpen, location, page: { page, links } } = useSelector(
-    (state) => ({ ...state.submenu })
-  );
+  const location = useSubmenu((state) => state.location);
+  const isOpen = useSubmenu((state) => state.isOpen);
+  const { page, links } = useSubmenu((state) => state.page);
 
   const containerRef = useRef();
   const [columns, setColumns] = useState('col-2');
 
   const activeSubmenu = useMemo(() => {
-    return isSubmenuOpen ? 'show' : '';
-  }, [isSubmenuOpen]);
+    return isOpen ? 'show' : '';
+  }, [isOpen]);
 
   useEffect(() => {
     setColumns('col-2');

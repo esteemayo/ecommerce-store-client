@@ -25,7 +25,8 @@ const Navbar = () => {
   const { onOpen } = useSearchModal((state) => ({ ...state }));
 
   const { openSidebarHandler } = useSidebar();
-  const { closeSubmenuHandler, openSubmenuHandler } = useSubmenu();
+  const openSubmenu = useSubmenu((state) => state.openSubmenu);
+  const closeSubmenu = useSubmenu((state) => state.closeSubmenu);
 
   const [isHover, setIsHover] = useState(false);
 
@@ -54,16 +55,16 @@ const Navbar = () => {
       },
     };
 
-    openSubmenuHandler(submenu);
-  }, [openSubmenuHandler]);
+    openSubmenu(submenu);
+  }, [openSubmenu]);
 
   const handleSubmenu = useCallback((e) => {
     e.stopPropagation();
 
     if (!e.target.classList.contains('link-btn')) {
-      closeSubmenuHandler();
+      closeSubmenu();
     }
-  }, [closeSubmenuHandler]);
+  }, [closeSubmenu]);
 
   return (
     <Container onMouseOver={handleSubmenu}>
