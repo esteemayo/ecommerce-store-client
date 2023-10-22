@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import { calcTotals } from '@/features/cart/cartSlice';
 
-const CartTotalProvider = ({ children }) => {
+const CartProvider = ({ children }) => {
   const dispatch = useDispatch();
   const { cart } = useSelector((state) => ({ ...state.cart }));
 
@@ -16,4 +16,4 @@ const CartTotalProvider = ({ children }) => {
   return <>{children}</>;
 }
 
-export default CartTotalProvider;
+export default CartProvider;

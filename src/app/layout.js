@@ -12,9 +12,9 @@ import Sidebar from '@/components/sidebar/Sidebar';
 import ClientOnly from '@/components/ClientOnly';
 
 import ToastProvider from '@/providers/ToastProvider';
-import CartTotalProvider from '@/providers/CartTotalProvider';
-import ModalProvider from '@/providers/ModalProvider';
+import CartProvider from '@/providers/CartProvider';
 import AppThemeProvider from '@/providers/ThemeProvider';
+import ModalProvider from '@/providers/ModalProvider';
 
 import { persistor, store } from '@/store/store';
 
@@ -37,7 +37,7 @@ export default function RootLayout({ children }) {
       <body>
         <Provider store={store}>
           <PersistGate loading={null} persistor={persistor}>
-            <CartTotalProvider>
+            <CartProvider>
               <AppThemeProvider>
                 <div className='container'>
                   <ClientOnly>
@@ -55,7 +55,7 @@ export default function RootLayout({ children }) {
                   </ClientOnly>
                 </div>
               </AppThemeProvider>
-            </CartTotalProvider>
+            </CartProvider>
           </PersistGate>
         </Provider>
       </body>
