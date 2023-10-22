@@ -13,11 +13,11 @@ const FeaturedProducts = dynamic(() => import('@/components/products/FeaturedPro
 const TopReviews = dynamic(() => import('@/components/reviews/TopReviews'), { ssr: false });
 
 const Home = () => {
-  const { closeSubmenuHandler } = useSubmenu();
+  const closeSubmenu = useSubmenu((state) => state.closeSubmenu);
 
   return (
     <ClientOnly>
-      <Container onMouseOver={closeSubmenuHandler}>
+      <Container onMouseOver={closeSubmenu}>
         <CarouselSlider />
         <Categories />
         <FeaturedProducts />
