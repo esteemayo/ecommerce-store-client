@@ -16,7 +16,7 @@ const Reviews = dynamic(() => import('@/components/reviews/Reviews'), { ssr: fal
 
 const SingleProduct = ({ params }) => {
   const { id } = params;
-  const { closeSubmenuHandler } = useSubmenu();
+  const closeSubmenu = useSubmenu((state) => state.closeSubmenu);
 
   const [product, setProduct] = useState({});
   const [reviews, setReviews] = useState(reviewItems);
@@ -56,7 +56,7 @@ const SingleProduct = ({ params }) => {
   if (!product) {
     return (
       <ClientOnly>
-        <Container type='error' onMouseOver={closeSubmenuHandler}>
+        <Container type='error' onMouseOver={closeSubmenu}>
           <Wrapper>
             <EmptyState />
           </Wrapper>
@@ -67,7 +67,7 @@ const SingleProduct = ({ params }) => {
 
   return (
     <ClientOnly>
-      <Container onMouseOver={closeSubmenuHandler}>
+      <Container onMouseOver={closeSubmenu}>
         <Wrapper>
           <Product product={product} />
           <Line />
