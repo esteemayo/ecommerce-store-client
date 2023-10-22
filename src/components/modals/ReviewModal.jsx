@@ -134,6 +134,7 @@ const Overlay = styled.aside`
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 4000;
   
   display: flex;
   align-items: center;
