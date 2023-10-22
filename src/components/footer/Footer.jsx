@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { useMemo } from 'react';
 
 import FooterText from './FooterText';
-import MenuItem from './MenuItem';
+import MenuItems from './MenuItems';
 import SocialIcon from './SocialIcon';
 import Heading from './Heading';
 import FooterLink from './FooterLink';
@@ -22,17 +22,7 @@ const Footer = () => {
     <Container>
       <Wrapper>
         <FooterLeft>
-          <LinkContainer>
-            {footerMenus.map((item) => {
-              const { links, title } = item;
-              return (
-                <MenuContainer key={title}>
-                  <Heading title={title} />
-                  <MenuItem data={links} />
-                </MenuContainer>
-              );
-            })}
-          </LinkContainer>
+          <MenuItems data={footerMenus} />
         </FooterLeft>
         <FooterRight>
           <FooterContainer>
