@@ -11,11 +11,11 @@ import FormatPrice from '@/components/FormatPrice';
 import { useSubmenu } from '@/hooks/useSubmenu';
 
 const Success = () => {
-  const { closeSubmenuHandler } = useSubmenu();
+  const closeSubmenu = useSubmenu((state) => state.closeSubmenu);
 
   return (
     <ClientOnly>
-      <Container onMouseOver={closeSubmenuHandler}>
+      <Container onMouseOver={closeSubmenu}>
         <Wrapper>
           <SuccessContainer>
             <SuccessWrapper>
