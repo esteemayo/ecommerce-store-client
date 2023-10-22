@@ -2,7 +2,6 @@
 
 import styled from 'styled-components';
 import { DarkModeOutlined, LightModeOutlined } from '@mui/icons-material';
-import { useDispatch } from 'react-redux';
 
 import { useDarkMode } from '@/hooks/useDarkMode';
 
