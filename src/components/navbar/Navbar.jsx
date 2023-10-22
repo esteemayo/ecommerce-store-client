@@ -22,10 +22,10 @@ import { navLinks } from '@/data';
 const Navbar = () => {
   const user = true;
   const { qty } = useSelector((state) => ({ ...state.cart }));
-  const { onOpen } = useSearchModal((state) => ({ ...state }));
+  const searchModal = useSearchModal();
 
-  const { openSidebarHandler } = useSidebar();
   const openSubmenu = useSubmenu((state) => state.openSubmenu);
+  const onOpen = useSidebar((state) => state.onOpen);
   const closeSubmenu = useSubmenu((state) => state.closeSubmenu);
 
   const [isHover, setIsHover] = useState(false);
@@ -74,7 +74,7 @@ const Navbar = () => {
         </LogoBox>
         <ToggleButton
           icon={faBars}
-          onClick={openSidebarHandler}
+          onClick={onOpen}
         />
         <ListContainer>
           {navLinks.map((item) => {
@@ -90,7 +90,7 @@ const Navbar = () => {
         </ListContainer>
         <ButtonContainer>
           <DarkModeToggle />
-          <SearchIcon onOpen={onOpen} />
+          <SearchIcon onOpen={searchModal.onOpen} />
           {!user ? (
             <LoginButton
               isHover={isHover}

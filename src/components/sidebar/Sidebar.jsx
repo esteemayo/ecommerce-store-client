@@ -2,9 +2,8 @@
 
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useSelector } from 'react-redux';
-import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import { useMemo } from 'react';
+import { faXmark } from '@fortawesome/free-solid-svg-icons';
 
 import { useSearch } from '@/hooks/useSearch';
 import { useSidebar } from '@/hooks/useSidebar';
@@ -16,18 +15,19 @@ import Search from './Search';
 import { sublinks } from '@/data';
 
 const Sidebar = () => {
-  const { isSidebarOpen } = useSelector((state) => ({ ...state.submenu }));
-  const { closeSidebarHandler } = useSidebar();
+  const isOpen  = useSidebar((state) => state.isOpen);
+  const onClose = useSidebar((state) => state.onClose);
+
   const { searchQuery, handleChange, handleSearch } = useSearch();
 
   const activeSidebar = useMemo(() => {
-    return isSidebarOpen ? 'show' : '';
-  }, [isSidebarOpen]);
+    return isOpen ? 'show' : '';
+  }, [isOpen]);
 
   return (
     <Container type={activeSidebar}>
       <Wrapper>
-        <Button type='button' onClick={closeSidebarHandler}>
+        <Button type='button' onClick={onClose}>
           <FontAwesomeIcon icon={faXmark} />
         </Button>
         <SidebarMenu items={sublinks} />

@@ -1,21 +1,10 @@
-import { useCallback } from 'react';
-import { useDispatch } from 'react-redux';
+import { create } from 'zustand';
+import { devtools } from 'zustand/middleware';
 
-import {closeSidebar,  openSidebar } from '@/features/submenu/submenuSlice';
-
-export const useSidebar = () => {
-  const dispatch = useDispatch();
-
-  const openSidebarHandler = useCallback(() => {
-    dispatch(openSidebar());
-  }, [dispatch]);
-
-  const closeSidebarHandler = useCallback(() => {
-    dispatch(closeSidebar());
-  }, [dispatch]);
-
-  return {
-    openSidebarHandler,
-    closeSidebarHandler,
-  };
-}
+export const useSidebar = create(
+  devtools((set) => ({
+    isOpen: false,
+    onOpen: () => set(() => ({ isOpen: true }), false, 'openSidebar'),
+    onClose: () => set(() => ({ isOpen: false }), false, 'closeSidebar'),
+  }))
+);
