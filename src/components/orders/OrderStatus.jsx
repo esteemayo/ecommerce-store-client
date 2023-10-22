@@ -2,11 +2,12 @@
 
 import styled from 'styled-components';
 import Image from 'next/image';
-import { useSelector } from 'react-redux';
 import PropTypes from 'prop-types';
 
+import { useDarkMode } from '@/hooks/useDarkMode';
+
 const OrderStatus = ({ statusClass }) => {
-  const { mode } = useSelector((state) => ({ ...state.darkMode }));
+  const mode = useDarkMode((state) => state.mode);
 
   return (
     <Container>

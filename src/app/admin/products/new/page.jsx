@@ -1,6 +1,5 @@
 'use client';
 
-import { useSelector } from 'react-redux';
 import { useCallback, useMemo, useState } from 'react';
 
 import FormButton from '@/components/form/FormButton';
@@ -16,6 +15,7 @@ import { FormGroup } from '@/components/form/FormGroup';
 import ClientOnly from '@/components/ClientOnly';
 
 import { selectInputs } from '@/data/formData';
+import { useDarkMode } from '@/hooks/useDarkMode';
 
 const initialState = {
   name: '',
@@ -27,7 +27,7 @@ const initialState = {
 };
 
 const NewProduct = () => {
-  const { mode } = useSelector((state) => ({ ...state.darkMode }));
+  const mode = useDarkMode((state) => state.mode);
 
   const [data, setData] = useState(initialState);
   const [size, setSize] = useState([]);

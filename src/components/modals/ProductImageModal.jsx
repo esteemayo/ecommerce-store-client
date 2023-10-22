@@ -7,7 +7,8 @@ import CloseIcon from '@mui/icons-material/Close';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import PropTypes from 'prop-types';
 import { useCallback, useEffect, useMemo, useState } from 'react';
-import { useSelector } from 'react-redux';
+
+import { useDarkMode } from '@/hooks/useDarkMode';
 
 const ProductImageModal = ({
   images,
@@ -18,7 +19,7 @@ const ProductImageModal = ({
   onMove,
   onClose,
 }) => {
-  const { mode } = useSelector((state) => ({ ...state.darkMode }));
+  const mode = useDarkMode((state) => state.mode);
   const [showModal, setShowModal] = useState(isOpen);
 
   const handleClose = useCallback(() => {

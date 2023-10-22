@@ -1,7 +1,6 @@
 'use client';
 
 import styled from 'styled-components';
-import { useSelector } from 'react-redux';
 import PropTypes from 'prop-types';
 
 import { useCart } from '@/hooks/useCart';
@@ -20,8 +19,10 @@ import ProductImage from './ProductImage';
 import Alert from '../Alert';
 import { productValue } from '@/data';
 
+import { useDarkMode } from '@/hooks/useDarkMode';
+
 const Product = ({ product }) => {
-  const { mode } = useSelector((state) => ({ ...state.darkMode }));
+  const mode = useDarkMode((state) => state.mode);
 
   const {
     alert,

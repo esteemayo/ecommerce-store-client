@@ -16,6 +16,7 @@ import Form from '../form/Form';
 import FormButton from '../form/FormButton';
 
 import { useForm } from '@/hooks/useForm';
+import { useDarkMode } from '@/hooks/useDarkMode';
 
 const initialState = {
   name: '',
@@ -23,8 +24,8 @@ const initialState = {
 };
 
 const PaymentModal = ({ isOpen, onClose, onExit }) => {
+  const mode = useDarkMode((state) => state.mode);
   const { total } = useSelector((state) => ({ ...state.cart }));
-  const { mode } = useSelector((state) => ({ ...state.darkMode }));
 
   const [showModal, setShowModal] = useState(isOpen);
 

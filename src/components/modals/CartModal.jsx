@@ -5,7 +5,6 @@ import PropTypes from 'prop-types';
 import CloseIcon from '@mui/icons-material/Close';
 import Image from 'next/image';
 import { useCallback, useEffect, useMemo, useState } from 'react';
-import { useSelector } from 'react-redux';
 
 import ColorSelect from '../inputs/ColorSelect';
 import Counter from '../inputs/Counter';
@@ -18,9 +17,10 @@ import Alert from '../Alert';
 import Overlay from './Overlay';
 
 import { useCart } from '@/hooks/useCart';
+import { useDarkMode } from '@/hooks/useDarkMode';
 
 const CartModal = ({ product, isOpen, onClose, onSelect }) => {
-  const { mode } = useSelector((state) => ({ ...state.darkMode }));
+  const mode = useDarkMode((state) => state.mode);
   const [showModal, setShowModal] = useState(isOpen);
 
   const {

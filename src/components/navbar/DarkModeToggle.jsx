@@ -2,21 +2,16 @@
 
 import styled from 'styled-components';
 import { DarkModeOutlined, LightModeOutlined } from '@mui/icons-material';
-import { useCallback } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 
-import { toggle } from '@/features/darkMode/darkModeSlice';
+import { useDarkMode } from '@/hooks/useDarkMode';
 
 const DarkModeToggle = () => {
-  const dispatch = useDispatch();
-  const { mode } = useSelector((state) => ({ ...state.darkMode }));
-
-  const handleClick = useCallback(() => {
-    dispatch(toggle());
-  }, [dispatch]);
+  const mode = useDarkMode((state) => state.mode);
+  const toggle = useDarkMode((state) => state.toggle);
 
   return (
-    <Container onClick={handleClick}>
+    <Container onClick={toggle}>
       <Icon>
         <DarkModeOutlined />
       </Icon>

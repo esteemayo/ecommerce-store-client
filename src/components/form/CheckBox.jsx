@@ -3,8 +3,11 @@ import { useMemo } from 'react';
 import { useSelector } from 'react-redux';
 import PropTypes from 'prop-types';
 
+import { useDarkMode } from '@/hooks/useDarkMode';
+
 const CheckBox = ({ name, label, ...rest }) => {
-  const { mode } = useSelector((state) => ({ ...state.darkMode }));
+  const mode = useDarkMode((state) => state.mode);
+  // const { mode } = useSelector((state) => ({ ...state.darkMode }));
 
   const checkmarkClasses = useMemo(() => {
     if (mode) {
