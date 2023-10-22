@@ -7,9 +7,7 @@ import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import PropTypes from 'prop-types';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 
-import Overlay from './Overlay';
 import StarRating from '../StarRating';
-
 import { useDarkMode } from '@/hooks/useDarkMode';
 
 const ReviewModal = ({ isOpen, onClose }) => {
@@ -28,8 +26,11 @@ const ReviewModal = ({ isOpen, onClose }) => {
 
   const closeModalHandler = useCallback(() => {
     setShowModal(false);
-    onClose();
     handleClear();
+
+    setTimeout(() => {
+      onClose();
+    }, 300);
   }, [onClose, handleClear]);
 
   const handleCloseModal = useCallback((e) => {
@@ -46,7 +47,7 @@ const ReviewModal = ({ isOpen, onClose }) => {
   }, [rating, review, terms, handleClear]);
 
   const activeModal = useMemo(() => {
-    return showModal ? 'show' : '';
+    return showModal?.toString();
   }, [showModal]);
 
   const modeValue = useMemo(() => {
@@ -57,69 +58,95 @@ const ReviewModal = ({ isOpen, onClose }) => {
     setShowModal(isOpen);
   }, [isOpen]);
 
+  if (!isOpen) {
+    return null;
+  }
+
   return (
     <Overlay
-      type={activeModal}
       mode={modeValue}
       onClick={handleCloseModal}
+      className='overlay'
     >
-      <Wrapper>
-        <ButtonContainer>
-          <CloseButton
+      <Wrapper active={activeModal}>
+        <Box>
+          <ButtonContainer>
+            <CloseButton
+              type='button'
+              onClick={closeModalHandler}
+            >
+              <FontAwesomeIcon icon={faXmark} />
+            </CloseButton>
+          </ButtonContainer>
+          <Header>Overall rating</Header>
+          <RatingContainer>
+            <StarRating
+              name='size-large'
+              value={rating}
+              precision={0.5}
+              onChange={(e, newValue) => {
+                setRating(newValue);
+              }}
+            />
+            <Text>Click to rate</Text>
+          </RatingContainer>
+          <Label htmlFor='review'>Product review</Label>
+          <TextArea
+            id='review'
+            name='review'
+            value={review}
+            onChange={(e) => setReview(e.target.value)}
+            placeholder='Example: Since i bought this a month ago, it has been used a lot. What i like best/what is worst about this product is ...'
+          />
+          <Agreement>
+            <Input
+              id='terms'
+              type='checkbox'
+              checked={terms}
+              onChange={(e) => setTerms(e.currentTarget.checked)}
+            />
+            <Label htmlFor='terms'>
+              I accept the <Link href='#' passHref>terms and conditions</Link>
+            </Label>
+          </Agreement>
+          <Information>
+            You will be able to receive emails in connection with this review (eg if others comment on your review).
+            All emails contain the option to unsubscribe. We can use the text and star rating
+            from your review in other marketting.
+          </Information>
+          <Button
             type='button'
-            onClick={closeModalHandler}
+            onClick={handleClick}
           >
-            <FontAwesomeIcon icon={faXmark} />
-          </CloseButton>
-        </ButtonContainer>
-        <Header>Overall rating</Header>
-        <RatingContainer>
-          <StarRating
-            name='size-large'
-            value={rating}
-            precision={0.5}
-            onChange={(e, newValue) => {
-              setRating(newValue);
-            }}
-          />
-          <Text>Click to rate</Text>
-        </RatingContainer>
-        <Label htmlFor='review'>Product review</Label>
-        <TextArea
-          id='review'
-          name='review'
-          value={review}
-          onChange={(e) => setReview(e.target.value)}
-          placeholder='Example: Since i bought this a month ago, it has been used a lot. What i like best/what is worst about this product is ...'
-        />
-        <Agreement>
-          <Input
-            id='terms'
-            type='checkbox'
-            checked={terms}
-            onChange={(e) => setTerms(e.currentTarget.checked)}
-          />
-          <Label htmlFor='terms'>
-            I accept the <Link href='#' passHref>terms and conditions</Link>
-          </Label>
-        </Agreement>
-        <Information>
-          You will be able to receive emails in connection with this review (eg if others comment on your review).
-          All emails contain the option to unsubscribe. We can use the text and star rating
-          from your review in other marketting.
-        </Information>
-        <Button
-          type='button'
-          onClick={handleClick}
-        >
-          Submit product review
-        </Button>
+            Submit product review
+          </Button>
+        </Box>
       </Wrapper>
     </Overlay>
   );
 }
 
+const Overlay = styled.aside`
+  width: 100vw;
+  height: 100%;
+  background-color: ${({ theme }) => theme.bgOverlay};
+  backdrop-filter: ${({ mode }) => (mode === 'true' ? 'blur(2px)' : undefined)};
+  position: fixed;
+  top: 0;
+  left: 0;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
 const Wrapper = styled.div`
+  transform: translateY(${({ active }) => (active === 'true' ? 0 : '100%')});
+  opacity: ${({ active }) => (active === 'true' ? 1 : 0)};
+  transition: all 300ms;
+`;
+
+const Box = styled.div`
   width: 40rem;
   padding: 2rem 4rem;
   background-color: ${({ theme }) => theme.bgModal};
