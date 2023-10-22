@@ -14,6 +14,7 @@ import {
   customerLinks,
   discoverLinks,
   footerLinks,
+  footerMenus,
   social,
   storeLinks,
 } from '@/data';
@@ -29,18 +30,15 @@ const Footer = () => {
       <Wrapper>
         <FooterLeft>
           <LinkContainer>
-            <Left>
-              <Heading title='About the store' />
-              <MenuItem data={storeLinks} />
-            </Left>
-            <Center>
-              <Heading title='Discover' />
-              <MenuItem data={discoverLinks} />
-            </Center>
-            <Right>
-              <Heading title='Customer care' />
-              <MenuItem data={customerLinks} />
-            </Right>
+            {footerMenus.map((item) => {
+              const { links, title } = item;
+              return (
+                <MenuContainer key={title}>
+                  <Heading title={title} />
+                  <MenuItem data={links} />
+                </MenuContainer>
+              );
+            })}
           </LinkContainer>
         </FooterLeft>
         <FooterRight>
@@ -118,11 +116,7 @@ const LinkContainer = styled.div`
   }
 `;
 
-const Left = styled.div``;
-
-const Center = styled.div``;
-
-const Right = styled.div``;
+const MenuContainer = styled.div``;
 
 const FooterRight = styled.div`
   flex: 1;
