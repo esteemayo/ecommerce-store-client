@@ -18,7 +18,7 @@ import ProductButton from './ProductButton';
 import ProductImage from './ProductImage';
 
 import Alert from '../Alert';
-import { productValue } from '@/data/data';
+import { productValue } from '@/data';
 
 const Product = ({ product }) => {
   const { mode } = useSelector((state) => ({ ...state.darkMode }));

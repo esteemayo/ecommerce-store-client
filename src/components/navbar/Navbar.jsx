@@ -17,7 +17,7 @@ import MenuItem from './MenuItem';
 import ToggleButton from './ToggleButton';
 import SearchIcon from './SearchIcon';
 
-import { navLinks } from '@/data/data';
+import { navLinks } from '@/data';
 
 const Navbar = () => {
   const user = true;

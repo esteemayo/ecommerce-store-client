@@ -8,7 +8,7 @@ import ProductCard from '../card/ProductCard';
 
 import CartModal from '../modals/CartModal';
 
-import { storeProducts } from '@/data/data';
+import { storeProducts } from '@/data';
 import { StyledWrapper } from '../StyledWrapper';
 
 import useCartModal from '@/hooks/useCartModal';

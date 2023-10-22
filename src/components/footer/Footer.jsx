@@ -16,7 +16,7 @@ import {
   footerLinks,
   social,
   storeLinks,
-} from '@/data/data';
+} from '@/data';
 
 const Footer = () => {
   const year = useMemo(() => {

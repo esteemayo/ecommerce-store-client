@@ -7,7 +7,7 @@ import dynamic from 'next/dynamic';
 import ClientOnly from '@/components/ClientOnly';
 
 import { useSubmenu } from '@/hooks/useSubmenu';
-import { recommendations, reviewItems, storeProducts } from '@/data/data';
+import { recommendations, reviewItems, storeProducts } from '@/data';
 
 const Product = dynamic(() => import('@/components/products/Product'), { ssr: false });
 const EmptyState = dynamic(() => import('@/components/EmptyState'), { ssr: false });

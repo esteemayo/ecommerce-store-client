@@ -9,7 +9,7 @@ import Pagination from '@/components/Pagination';
 import ProductBox from '@/components/products/ProductBox';
 import ProductFilter from '@/components/products/ProductFilter';
 
-import { storeProducts } from '@/data/data';
+import { storeProducts } from '@/data';
 
 const ProductList = dynamic(() => import('@/components/products/ProductList'), { ssr: false });
 

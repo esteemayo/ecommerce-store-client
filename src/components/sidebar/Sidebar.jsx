@@ -13,7 +13,7 @@ import Heading from './Heading';
 import SidebarMenu from './SidebarMenu';
 import Search from './Search';
 
-import { sublinks } from '@/data/data';
+import { sublinks } from '@/data';
 
 const Sidebar = () => {
   const { isSidebarOpen } = useSelector((state) => ({ ...state.submenu }));

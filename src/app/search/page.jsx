@@ -6,7 +6,7 @@ import dynamic from 'next/dynamic';
 import ClientOnly from '@/components/ClientOnly';
 import ProductBox from '@/components/products/ProductBox';
 
-import { storeProducts } from '@/data/data';
+import { storeProducts } from '@/data';
 
 const ProductList = dynamic(() => import('@/components/products/ProductList'), { ssr: false });
 
