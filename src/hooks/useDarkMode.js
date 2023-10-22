@@ -6,4 +6,4 @@ const store = (set) => ({
   toggle: () => set((state) => ({ mode: !state.mode }), false, 'toggleMode'),
 });
 
-export const useDarkMode = create(persist(devtools(store), 'darkMode'));
+export const useDarkMode = create(persist(devtools(store), { name: 'darkMode' }));
