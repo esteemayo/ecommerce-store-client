@@ -86,21 +86,6 @@ const FooterLeft = styled.div`
   }
 `;
 
-const LinkContainer = styled.div`
-  display: flex;
-  align-items: start;
-  justify-content: space-between;
-
-  @media only screen and (max-width: 37.5em) {
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 3rem;
-  }
-`;
-
-const MenuContainer = styled.div``;
-
 const FooterRight = styled.div`
   flex: 1;
   width: 100%;
