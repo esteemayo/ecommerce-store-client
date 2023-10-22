@@ -13,11 +13,10 @@ import SizeSelect from '../inputs/SizeSelect';
 import ProductHead from '../products/ProductHead';
 import ProductButton from '../products/ProductButton';
 
-import Alert from '../Alert';
-// import Overlay from './Overlay';
-
 import { useCart } from '@/hooks/useCart';
 import { useDarkMode } from '@/hooks/useDarkMode';
+
+import Alert from '../Alert';
 
 const CartModal = ({ product, isOpen, onClose, onSelect }) => {
   const mode = useDarkMode((state) => state.mode);
@@ -57,10 +56,6 @@ const CartModal = ({ product, isOpen, onClose, onSelect }) => {
   }, [handleCloseModal]);
 
   const activeModal = useMemo(() => {
-    return showModal ? 'show' : '';
-  }, [showModal]);
-
-  const active = useMemo(() => {
     return showModal?.toString();
   }, [showModal]);
 
@@ -82,7 +77,7 @@ const CartModal = ({ product, isOpen, onClose, onSelect }) => {
       onClick={closeModalHandler}
       className='overlay'
     >
-      <Wrapper active={active}>
+      <Wrapper active={activeModal}>
         <Box mode={modeValue}>
           <ButtonContainer>
             <CloseButton type='button' onClick={handleCloseModal}>
