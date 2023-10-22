@@ -7,7 +7,7 @@ import ClientOnly from '@/components/ClientOnly';
 
 import { useSubmenu } from '@/hooks/useSubmenu';
 
-import { orders } from '@/data';
+import { orders } from '@/data/data';
 
 const OrderCard = dynamic(() => import('@/components/orders/OrderCard'), { ssr: false });
 

@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Header from '../Header';
 import ReviewItem from './ReviewItem';
 
-import { topReviews } from '@/data';
+import { topReviews } from '@/data/data';
 import { StyledWrapper } from '../StyledWrapper';
 
 const TopReviews = () => {

@@ -7,7 +7,7 @@ import Link from 'next/link';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { useCallback, useEffect, useState } from 'react';
 
-import { sliderItems } from '@/data';
+import { sliderItems } from '@/data/data';
 
 const CarouselSlider = () => {
   const [slideNumber, setSlideNumber] = useState(0);

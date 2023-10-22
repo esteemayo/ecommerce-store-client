@@ -13,7 +13,7 @@ import ClientOnly from '@/components/ClientOnly';
 import ProductBox from '@/components/products/ProductBox';
 
 import { getUnique } from '@/utils';
-import { priceOptions, storeProducts } from '@/data';
+import { priceOptions, storeProducts } from '@/data/data';
 
 const ProductList = dynamic(() => import('@/components/products/ProductList'), { ssr: false });
 
