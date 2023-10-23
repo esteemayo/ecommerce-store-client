@@ -5,7 +5,7 @@ import Link from 'next/link';
 import PropTypes from 'prop-types';
 import Image from 'next/image';
 
-import FormatPrice from './FormatPrice';
+import { formatCurrency } from '@/utils/formatCurrency';
 
 const Recommendation = ({ data }) => {
   return (
@@ -26,7 +26,7 @@ const Recommendation = ({ data }) => {
                 <ProductContainer>
                   <ProductTitle>{name}</ProductTitle>
                   <ProductPrice>
-                    <FormatPrice value={parseFloat(price.toFixed(2))} />
+                    {formatCurrency(parseFloat(price.toFixed(2)))}
                   </ProductPrice>
                 </ProductContainer>
               </Link>
