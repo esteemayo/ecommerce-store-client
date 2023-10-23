@@ -1,18 +1,14 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-import FormatPrice from '../FormatPrice';
+import { formatCurrency } from '@/utils/formatCurrency';
 
 const CardPrice = ({ inStock, initialPrice, priceLabel }) => {
   return (
     <Container>
       <Wrapper>
-        <Discount>
-          <FormatPrice value={initialPrice} />
-        </Discount>
-        <Price>
-          <FormatPrice value={priceLabel} />
-        </Price>
+        <Discount>{formatCurrency(initialPrice)}</Discount>
+        <Price>{formatCurrency(priceLabel)}</Price>
       </Wrapper>
       {inStock && <InStock>In stock</InStock>}
     </Container>
