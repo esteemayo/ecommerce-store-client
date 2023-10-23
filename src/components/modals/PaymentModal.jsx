@@ -6,9 +6,6 @@ import PropTypes from 'prop-types';
 import CloseIcon from '@mui/icons-material/Close';
 import { useSelector } from 'react-redux';
 
-import Overlay from './Overlay';
-import FormatPrice from '../FormatPrice';
-
 import Input from '../carts/Input';
 import TextArea from '../carts/TextArea';
 
@@ -17,6 +14,9 @@ import FormButton from '../form/FormButton';
 
 import { useForm } from '@/hooks/useForm';
 import { useDarkMode } from '@/hooks/useDarkMode';
+
+import Overlay from './Overlay';
+import { formatCurrency } from '@/utils/formatCurrency';
 
 const initialState = {
   name: '',
@@ -62,13 +62,12 @@ const PaymentModal = ({ isOpen, onClose, onExit }) => {
     console.log({ ...formData });
   };
 
-  const {
-    errors,
-    formData,
-    handleChange,
-    handleClose,
-    handleSubmit,
-  } = useForm(onSubmitHandler, initialState, validateForm, onExit);
+  const { errors, formData, handleChange, handleClose, handleSubmit } = useForm(
+    onSubmitHandler,
+    initialState,
+    validateForm,
+    onExit
+  );
 
   const activeModal = useMemo(() => {
     return showModal ? 'show' : '';
@@ -83,11 +82,7 @@ const PaymentModal = ({ isOpen, onClose, onExit }) => {
   }, [isOpen]);
 
   return (
-    <Overlay
-      type={activeModal}
-      mode={modeValue}
-      onClick={handleClick}
-    >
+    <Overlay type={activeModal} mode={modeValue} onClick={handleClick}>
       <Wrapper>
         <CloseButtonContainer>
           <CloseButton type='button' onClick={closeHandler}>
@@ -95,11 +90,7 @@ const PaymentModal = ({ isOpen, onClose, onExit }) => {
           </CloseButton>
         </CloseButtonContainer>
         <Form onSubmit={handleSubmit}>
-          <Heading>
-            You will pay {' '}
-            <FormatPrice value={total} /> {' '}
-            after delivery
-          </Heading>
+          <Heading>You will pay {formatCurrency(total)} after delivery</Heading>
           <Input
             name='name'
             label='Name'
@@ -122,7 +113,7 @@ const PaymentModal = ({ isOpen, onClose, onExit }) => {
       </Wrapper>
     </Overlay>
   );
-}
+};
 
 const Wrapper = styled.div`
   width: 40rem;
