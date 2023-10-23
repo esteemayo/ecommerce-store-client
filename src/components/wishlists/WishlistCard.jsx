@@ -8,10 +8,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import PropTypes from 'prop-types';
 import CloseIcon from '@mui/icons-material/Close';
 
-import FormatPrice from '../FormatPrice';
-import DeleteModal from '../modals/DeleteModal';
-
 import { excerpts } from '@/utils';
+import { formatCurrency } from '@/utils/formatCurrency';
+
+import DeleteModal from '../modals/DeleteModal';
 
 const WishlistCard = ({
   isOpen,
@@ -48,9 +48,7 @@ const WishlistCard = ({
             </Left>
             <Right>
               <CartContainer>
-                <ProductPrice>
-                  <FormatPrice value={price} />
-                </ProductPrice>
+                <ProductPrice>{formatCurrency(price)}</ProductPrice>
                 <CartButton type='button' onClick={() => onAction(wishlist)}>
                   <FontAwesomeIcon icon={faShoppingCart} />
                   Add to cart
@@ -71,7 +69,7 @@ const WishlistCard = ({
       />
     </Container>
   );
-}
+};
 
 const Container = styled.article`
   padding: 1rem 2.5rem;
