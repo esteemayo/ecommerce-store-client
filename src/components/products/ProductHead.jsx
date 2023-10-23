@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import { useMemo } from 'react';
 
 import StarRating from '../StarRating';
-import FormatPrice from '../FormatPrice';
+import { formatCurrency } from '@/utils/formatCurrency';
 
 const ProductHead = ({
   name,
@@ -25,27 +25,20 @@ const ProductHead = ({
     <>
       <Heading modal={modal}>{name}</Heading>
       <PriceContainer>
-        <Price modal={modal}>
-          <FormatPrice value={initialPrice} />
-        </Price>
+        <Price modal={modal}>{formatCurrency(initialPrice)}</Price>
         <Discount modal={modal}>-{priceDiscount}%</Discount>
       </PriceContainer>
-      <TotalPrice modal={modal}>
-        <FormatPrice value={price} />
-      </TotalPrice>
+      <TotalPrice modal={modal}>{formatCurrency(price)}</TotalPrice>
       {!modal && (
         <>
           <Message>
-            4 interest-free payments of $49.75.
-            &nbsp;
-            <Link href='#' passHref>Learn more</Link>
+            4 interest-free payments of $49.75. &nbsp;
+            <Link href='#' passHref>
+              Learn more
+            </Link>
           </Message>
           <Rating>
-            <StarRating
-              readOnly
-              value={ratingsAverage}
-              name='read-only'
-            />
+            <StarRating readOnly value={ratingsAverage} name='read-only' />
             <ReviewQuantity>
               <a href='#reviews'>{ratingsQuantity} Review</a>
             </ReviewQuantity>
@@ -54,15 +47,15 @@ const ProductHead = ({
       )}
     </>
   );
-}
+};
 
 const Heading = styled.h1`
   display: inline-block;
   font-weight: 500;
-  font-size: ${({ modal }) => modal ? '1.8rem' : '2.4rem'};
-  color: ${({ theme, modal }) => modal ? theme.text : theme.textProdHeader};
-  line-height: ${({ modal }) => modal ? '1' : '1.3'};
-  margin-bottom: ${({ modal }) => modal ? '1rem' : '2rem'};
+  font-size: ${({ modal }) => (modal ? '1.8rem' : '2.4rem')};
+  color: ${({ theme, modal }) => (modal ? theme.text : theme.textProdHeader)};
+  line-height: ${({ modal }) => (modal ? '1' : '1.3')};
+  margin-bottom: ${({ modal }) => (modal ? '1rem' : '2rem')};
 
   @media only screen and (max-width: 59.375em) {
     margin-bottom: ${({ modal }) => !modal && '1.75rem'};
@@ -85,7 +78,7 @@ const PriceContainer = styled.div`
 
 const Price = styled.p`
   text-decoration: line-through;
-  font-size: ${({ modal }) => modal ? '1.5rem' : '1.6rem'};
+  font-size: ${({ modal }) => (modal ? '1.5rem' : '1.6rem')};
   color: ${({ theme }) => theme.text};
 
   @media only screen and (max-width: 18.75em) {
@@ -94,8 +87,8 @@ const Price = styled.p`
 `;
 
 const Discount = styled.p`
-  font-weight: ${({ modal }) => modal ? '500' : '700'};
-  font-size: ${({ modal }) => modal ? '1.3rem' : '1.4rem'};
+  font-weight: ${({ modal }) => (modal ? '500' : '700')};
+  font-size: ${({ modal }) => (modal ? '1.3rem' : '1.4rem')};
   padding: 0.4rem 0.6rem;
   background-color: #fa4b21;
   color: var(--clr-white);
@@ -109,8 +102,8 @@ const Discount = styled.p`
 `;
 
 const TotalPrice = styled.p`
-  font-weight: ${({ modal }) => modal ? '400' : '500'};
-  font-size: ${({ modal }) => modal ? '1.5rem' : '1.6rem'};
+  font-weight: ${({ modal }) => (modal ? '400' : '500')};
+  font-size: ${({ modal }) => (modal ? '1.5rem' : '1.6rem')};
   color: #fa4b21;
   line-height: 1.3;
   margin-bottom: ${({ modal }) => modal && '1rem'};
