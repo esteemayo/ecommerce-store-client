@@ -58,15 +58,15 @@ const Order = () => {
                   <Heading>Cart total</Heading>
                   <TotalContainer>
                     <TotalText>Subtotal:</TotalText>
-                    {formatCurrency(99.99)}
+                    <Price>{formatCurrency(99.99)}</Price>
                   </TotalContainer>
                   <TotalContainer>
                     <TotalText>Discount:</TotalText>
-                    {formatCurrency(0.00)}
+                    <Price>{formatCurrency(0.00)}</Price>
                   </TotalContainer>
                   <TotalContainer>
                     <TotalText>Total:</TotalText>
-                    {formatCurrency(88.90)}
+                    <Price>{formatCurrency(88.90)}</Price>
                   </TotalContainer>
                   <Button type='button' disabled>Paid</Button>
                 </RightWrapper>
@@ -254,6 +254,8 @@ const TotalText = styled.b`
     letter-spacing: 3px;
   }
 `;
+
+const Price = styled.span``;
 
 const Button = styled.button`
   display: inline-block;
