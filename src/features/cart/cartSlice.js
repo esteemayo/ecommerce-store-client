@@ -24,7 +24,9 @@ export const cartSlice = createSlice({
     },
     addProduct: (state, { payload }) => {
       if (state.wished.includes(payload.id)) {
-        state.wishlists = state.wishlists.filter((item) => item.id !== payload.id);
+        state.wishlists = state.wishlists.filter(
+          (item) => item.id !== payload.id
+        );
         state.wished = state.wished.filter((item) => item !== payload.id);
       } else {
         state.qty++;
@@ -53,48 +55,45 @@ export const cartSlice = createSlice({
       state.cart = state.cart.filter((cartItem) => cartItem.id !== payload);
     },
     toggleQuantity: (state, { payload }) => {
-      state.cart = state.cart.map((cartItem) => {
-        if (cartItem.id === payload.id) {
-          if (payload.type === 'inc') {
-            return {
-              ...cartItem,
-              quantity: cartItem.quantity + 1,
-            };
-          }
+      state.cart = state.cart
+        .map((cartItem) => {
+          if (cartItem.id === payload.id) {
+            if (payload.type === 'inc') {
+              return {
+                ...cartItem,
+                quantity: cartItem.quantity + 1,
+              };
+            }
 
-          if (payload.type === 'dec') {
-            return {
-              ...cartItem,
-              quantity: cartItem.quantity - 1,
-            };
+            if (payload.type === 'dec') {
+              return {
+                ...cartItem,
+                quantity: cartItem.quantity - 1,
+              };
+            }
           }
-        }
-        return cartItem;
-      })
+          return cartItem;
+        })
         .filter((cartItem) => cartItem.quantity !== 0);
     },
     calcTotals: (state) => {
-      let {
-        total,
-        qty,
-        subtotal,
-        tax,
-      } = state.cart.reduce((cartTotal, cartItem) => {
-        const { price, quantity } = cartItem;
-        const itemTotal = price * quantity;
+      let { total, qty, subtotal, tax } = state.cart.reduce(
+        (cartTotal, cartItem) => {
+          const { price, quantity } = cartItem;
+          const itemTotal = price * quantity;
 
-        cartTotal.subtotal += itemTotal;
-        cartTotal.qty += quantity;
-        cartTotal.tax = cartTotal.subtotal * 0.07;
-        cartTotal.total = cartTotal.subtotal + cartTotal.tax;
-        return cartTotal;
-      },
+          cartTotal.subtotal += itemTotal;
+          cartTotal.qty += quantity;
+          cartTotal.tax = cartTotal.subtotal * 0.07;
+          cartTotal.total = cartTotal.subtotal + cartTotal.tax;
+          return cartTotal;
+        },
         {
           total: 0,
           qty: 0,
           subtotal: 0,
           tax: 0,
-        },
+        }
       );
 
       total = parseFloat(total.toFixed(2));
