@@ -4,14 +4,14 @@ import PropType from 'prop-types';
 import { Label } from './Label';
 import { Filter } from './Filter';
 
-import FormatPrice from '../FormatPrice';
+import { formatCurrency } from '@/utils/formatCurrency';
 
 const RangeInput = ({ name, label, price, ...rest }) => {
   return (
     <Filter>
       <Label htmlFor={name}>
         {label} {' '}
-        <FormatPrice value={price} />
+        {formatCurrency(price)}
       </Label>
       <Input
         {...rest}
