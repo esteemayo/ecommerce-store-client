@@ -5,10 +5,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 import { faEnvelope, faLocationDot, faMessage, faPhone } from '@fortawesome/free-solid-svg-icons';
 
-import ClientOnly from '@/components/ClientOnly';
-import FormatPrice from '@/components/FormatPrice';
-
 import { useSubmenu } from '@/hooks/useSubmenu';
+import { formatCurrency } from '@/utils/formatCurrency';
+
+import ClientOnly from '@/components/ClientOnly';
 
 const Success = () => {
   const closeSubmenu = useSubmenu((state) => state.closeSubmenu);
@@ -47,7 +47,7 @@ const Success = () => {
                   </IconContainer>
                 </MushroomContainer>
                 <TotalPayment>The payment of {' '}
-                  <FormatPrice value={17950} /> {' '}
+                  <Price>{formatCurrency(17959)}</Price> {' '}
                   you&apos;ll make when the courier arrives with your order.
                 </TotalPayment>
                 <Link href='/orders' passHref>
@@ -296,6 +296,8 @@ const TotalPayment = styled.p`
     font-size: 1.4rem;
   }
 `;
+
+const Price = styled.span``;
 
 const OrderButton = styled.button`
   display: inline-block;
