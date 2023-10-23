@@ -11,18 +11,21 @@ const CartTotal = ({ isOpen, onOpen, onClose, onAction }) => {
   const { tax, total, subtotal } = useSelector((state) => ({ ...state.cart }));
   const [show, setShow] = useState(isOpen);
 
-  const handleClose = useCallback((e) => {
-    e.stopPropagation();
+  const handleClose = useCallback(
+    (e) => {
+      e.stopPropagation();
 
-    if (!e.target.classList.contains('btn-pay')) {
-      setShow(false);
-      onClose();
-    }
+      if (!e.target.classList.contains('btn-pay')) {
+        setShow(false);
+        onClose();
+      }
 
-    if (e.target.classList.contains('btn-check')) {
-      onOpen();
-    }
-  }, [onOpen, onClose]);
+      if (e.target.classList.contains('btn-check')) {
+        onOpen();
+      }
+    },
+    [onOpen, onClose]
+  );
 
   useEffect(() => {
     setShow(isOpen);
@@ -55,7 +58,9 @@ const CartTotal = ({ isOpen, onOpen, onClose, onAction }) => {
               <Button type='button' className='btn-pay' onClick={onAction}>
                 Pay on Delivery
               </Button>
-              <Button type='button' className='btn-pay'>Checkout Now</Button>
+              <Button type='button' className='btn-pay'>
+                Checkout Now
+              </Button>
             </ButtonWrapper>
           ) : (
             <Button
@@ -71,7 +76,7 @@ const CartTotal = ({ isOpen, onOpen, onClose, onAction }) => {
       </Wrapper>
     </Container>
   );
-}
+};
 
 const Container = styled.div`
   padding: 2rem 5rem;
@@ -147,7 +152,8 @@ const Button = styled.button`
   display: inline-block;
   font-size: 1.5rem;
   width: 100%;
-  padding: ${({ btnType }) => btnType === 'check' ? '1rem 3rem' : '1rem 0.5rem'};
+  padding: ${({ btnType }) =>
+    btnType === 'check' ? '1rem 3rem' : '1rem 0.5rem'};
   background-color: ${({ theme }) => theme.bgCartBtn};
   color: ${({ theme }) => theme.textBtn};
   background-image: linear-gradient(
@@ -173,9 +179,10 @@ const Button = styled.button`
     font-size: 1.47rem;
     padding: ${({ btnType }) => btnType === 'check' && '1rem 2.7rem'};
   }
-  
+
   @media only screen and (max-width: 18.75em) {
-    padding: ${({ btnType }) => btnType === 'check' ? '0.7rem 2rem' : '0.7rem 0.5rem'};
+    padding: ${({ btnType }) =>
+      btnType === 'check' ? '0.7rem 2rem' : '0.7rem 0.5rem'};
   }
 
   &:hover {
