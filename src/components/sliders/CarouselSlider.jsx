@@ -4,7 +4,10 @@ import styled from 'styled-components';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
-import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import {
+  faChevronLeft,
+  faChevronRight,
+} from '@fortawesome/free-solid-svg-icons';
 import { useCallback, useEffect, useState } from 'react';
 
 import { sliderItems } from '@/data';
@@ -50,7 +53,8 @@ const CarouselSlider = () => {
             position = 'activeSlide';
           }
 
-          if (index === slideNumber - 1 ||
+          if (
+            index === slideNumber - 1 ||
             (slideNumber === 0 && index === sliderItems.length - 1)
           ) {
             position = 'lastSlide';
@@ -71,18 +75,10 @@ const CarouselSlider = () => {
             </Article>
           );
         })}
-        <ArrowButton
-          type='button'
-          direction='left'
-          onClick={handlePrev}
-        >
+        <ArrowButton type='button' direction='left' onClick={handlePrev}>
           <FontAwesomeIcon icon={faChevronLeft} />
         </ArrowButton>
-        <ArrowButton
-          type='button'
-          direction='right'
-          onClick={handleNext}
-        >
+        <ArrowButton type='button' direction='right' onClick={handleNext}>
           <FontAwesomeIcon icon={faChevronRight} />
         </ArrowButton>
         <ActiveSlideContainer>
@@ -100,12 +96,12 @@ const CarouselSlider = () => {
       </Wrapper>
     </Container>
   );
-}
+};
 
 const Container = styled.section`
   width: 100vw;
   height: 40vw;
-  background-color: #f9f9f9;
+  background-color: #f1ede7;
 `;
 
 const Wrapper = styled.div`
@@ -122,7 +118,7 @@ const Article = styled.article`
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: ${({ type }) => type === 'activeSlide' ? 1 : 0};
+  opacity: ${({ type }) => (type === 'activeSlide' ? 1 : 0)};
   transform: translateX(${({ type }) => type === 'activeSlide' && 0});
   transform: translateX(${({ type }) => type === 'lastSlide' && '-100%'});
   transform: translateX(${({ type }) => type === 'nextSlide' && '100%'});
@@ -178,7 +174,7 @@ const InfoContainer = styled.div`
       color: inherit;
       outline: none;
     }
-    
+
     &:active,
     &:hover {
       color: currentColor;
@@ -321,7 +317,7 @@ const ArrowButton = styled.button`
   -moz-box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.04);
   cursor: pointer;
   transition: all 0.5s ease;
-  
+
   @media only screen and (max-width: 64em) {
     left: ${({ direction }) => direction === 'left' && '2.15rem'};
   }
@@ -356,7 +352,7 @@ const ActiveSlideContainer = styled.div`
   position: absolute;
   top: 90%;
   left: 50%;
-  transform: translate(-90%,-50%);
+  transform: translate(-90%, -50%);
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -368,16 +364,17 @@ const ActiveSlideContainer = styled.div`
 
 const ActiveSlideButton = styled.button`
   border: none;
-  width: ${({ active }) => active ? '1.5rem' : '1rem'};
-  height: ${({ active }) => active ? '1.5rem' : '1rem'};
-  background-color: ${({ active, theme }) => active ? theme.bgActiveBtn : theme.bgCarActiveBtn};
+  width: ${({ active }) => (active ? '1.5rem' : '1rem')};
+  height: ${({ active }) => (active ? '1.5rem' : '1rem')};
+  background-color: ${({ active, theme }) =>
+    active ? theme.bgActiveBtn : theme.bgCarActiveBtn};
   border-radius: 50%;
   outline-color: #f5f5f5;
   cursor: pointer;
-  
+
   @media only screen and (max-width: 25em) {
-    width: ${({ active }) => active ? '1.3rem' : '0.8rem'};
-    height: ${({ active }) => active ? '1.3rem' : '0.8rem'};
+    width: ${({ active }) => (active ? '1.3rem' : '0.8rem')};
+    height: ${({ active }) => (active ? '1.3rem' : '0.8rem')};
   }
 `;
 
