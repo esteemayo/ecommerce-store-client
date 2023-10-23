@@ -134,6 +134,7 @@ const Text = styled.h3`
 const PriceTotal = styled.span`
   font-weight: 600;
   font-size: 1.7rem;
+  font-variant: tabular-nums;
   color: ${({ theme }) => theme.text};
 
   @media only screen and (max-width: 43.75em) {
