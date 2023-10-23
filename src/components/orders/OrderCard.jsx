@@ -6,7 +6,7 @@ import MoreVertIcon from '@mui/icons-material/MoreVert';
 import Link from 'next/link';
 import PropTypes from 'prop-types';
 
-import FormatPrice from '../FormatPrice';
+import { formatCurrency } from '@/utils/formatCurrency';
 
 const OrderCard = ({ id, total, status, createdAt }) => {
   const dateLabel = useMemo(() => {
@@ -27,18 +27,14 @@ const OrderCard = ({ id, total, status, createdAt }) => {
             <MoreVertIcon />
           </OrderIconWrapper>
         </OrderDateIconContainer>
-        <OrderTotal>Total: {' '}
-          <FormatPrice value={total} />
-        </OrderTotal>
+        <OrderTotal>Total: {formatCurrency(total)}</OrderTotal>
         <Link href={`/orders/${encodeURIComponent(id)}`} passHref>
-          <Button type='button'>
-            Order details
-          </Button>
+          <Button type='button'>Order details</Button>
         </Link>
       </Order>
     </Container>
   );
-}
+};
 
 const Container = styled.article`
   width: 30%;
@@ -48,7 +44,7 @@ const Container = styled.article`
   -moz-box-shadow: 2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.47);
 
   @media only screen and (max-width: 43.75em) {
-    width: 45%; 
+    width: 45%;
   }
 
   @media only screen and (max-width: 37.5em) {
@@ -61,9 +57,11 @@ const Container = styled.article`
     width: 95%;
     height: 2px;
     margin: 0 auto;
-    background-color: ${({ status }) => status === 0 && 'var(--clr-primary-red)'};
+    background-color: ${({ status }) =>
+      status === 0 && 'var(--clr-primary-red)'};
     background-color: ${({ status }) => status === 1 && '#ffb900'};
-    background-color: ${({ status }) => status === 2 && 'var(--clr-secondary-green)'};
+    background-color: ${({ status }) =>
+      status === 2 && 'var(--clr-secondary-green)'};
     border-radius: 1rem;
   }
 `;
