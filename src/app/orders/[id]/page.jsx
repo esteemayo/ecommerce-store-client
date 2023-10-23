@@ -4,9 +4,9 @@ import styled from 'styled-components';
 
 import ClientOnly from '@/components/ClientOnly';
 import OrderStatus from '@/components/images/orders/OrderStatus';
-import FormatPrice from '@/components/FormatPrice';
 
 import { useSubmenu } from '@/hooks/useSubmenu';
+import { formatCurrency } from '@/utils/formatCurrency';
 
 const Order = () => {
   const closeSubmenu = useSubmenu((state) => state.closeSubmenu);
@@ -46,9 +46,7 @@ const Order = () => {
                         <OrderAddress>Lagos,Nigeria</OrderAddress>
                       </Td>
                       <Td>
-                        <OrderTotal>
-                          <FormatPrice value={420} />
-                        </OrderTotal>
+                        <OrderTotal>{formatCurrency(420)}</OrderTotal>
                       </Td>
                     </Tr>
                   </Tbody>
@@ -60,15 +58,15 @@ const Order = () => {
                   <Heading>Cart total</Heading>
                   <TotalContainer>
                     <TotalText>Subtotal:</TotalText>
-                    <FormatPrice value={99.99} />
+                    {formatCurrency(99.99)}
                   </TotalContainer>
                   <TotalContainer>
                     <TotalText>Discount:</TotalText>
-                    <FormatPrice value={0.00} />
+                    {formatCurrency(0.00)}
                   </TotalContainer>
                   <TotalContainer>
                     <TotalText>Total:</TotalText>
-                    <FormatPrice value={88.90} />
+                    {formatCurrency(88.90)}
                   </TotalContainer>
                   <Button type='button' disabled>Paid</Button>
                 </RightWrapper>
