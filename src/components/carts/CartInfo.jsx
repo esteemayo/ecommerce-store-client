@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Image from 'next/image';
 import PropTypes from 'prop-types';
 
-import FormatPrice from '../FormatPrice';
+import { formatCurrency } from '@/utils/formatCurrency';
 
 const CartInfo = ({
   id,
@@ -29,9 +29,7 @@ const CartInfo = ({
         <Title>{name}</Title>
         <PriceContainer>
           <Label>Price:</Label>
-          <Price>
-            <FormatPrice value={price} />
-          </Price>
+          <Price>{formatCurrency(price)}</Price>
         </PriceContainer>
         <ColorContainer>
           <Label>Color:</Label>
