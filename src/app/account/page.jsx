@@ -3,8 +3,6 @@
 import styled from 'styled-components';
 import dynamic from 'next/dynamic';
 
-import ClientOnly from '@/components/ClientOnly';
-
 import usePasswordModal from '@/hooks/usePasswordModal';
 import useFileModal from '@/hooks/useFileModal';
 import useAccountModal from '@/hooks/useAccountModal';
@@ -12,7 +10,9 @@ import { useSubmenu } from '@/hooks/useSubmenu';
 import useEmailModal from '@/hooks/useEmailModal';
 
 const AccountHead = dynamic(() => import('./AccountHead'), { ssr: false });
-const DeactivateAccount = dynamic(() => import('./DeactivateAccount'), { ssr: false });
+const DeactivateAccount = dynamic(() => import('./DeactivateAccount'), {
+  ssr: false,
+});
 const AccountUpload = dynamic(() => import('./AccountUpload'), { ssr: false });
 
 const Account = () => {
@@ -25,39 +25,34 @@ const Account = () => {
   const user = false;
 
   return (
-    <ClientOnly>
-      <Container onMouseOver={closeSubmenu}>
-        <ContainerBox>
-          <Wrapper>
-            <HeadingContainer>
-              <Heading>Account settings</Heading>
-              <HeadingText>Edit your name, avatar etc.</HeadingText>
-            </HeadingContainer>
-            <AccountContainer>
-              <AccountWrapper>
-                <AccountInfo>
-                  <Left>
-                    <AccountHead
-                      onOpen={emailModal.onOpen}
-                      onAction={passwordModal.onOpen}
-                    />
-                    <DeactivateAccount onOpen={accountModal.onOpen} />
-                  </Left>
-                  <Right>
-                    <AccountUpload
-                      onOpen={fileModal.onOpen}
-                      currentUser={user}
-                    />
-                  </Right>
-                </AccountInfo>
-              </AccountWrapper>
-            </AccountContainer>
-          </Wrapper>
-        </ContainerBox>
-      </Container>
-    </ClientOnly>
+    <Container onMouseOver={closeSubmenu}>
+      <ContainerBox>
+        <Wrapper>
+          <HeadingContainer>
+            <Heading>Account settings</Heading>
+            <HeadingText>Edit your name, avatar etc.</HeadingText>
+          </HeadingContainer>
+          <AccountContainer>
+            <AccountWrapper>
+              <AccountInfo>
+                <Left>
+                  <AccountHead
+                    onOpen={emailModal.onOpen}
+                    onAction={passwordModal.onOpen}
+                  />
+                  <DeactivateAccount onOpen={accountModal.onOpen} />
+                </Left>
+                <Right>
+                  <AccountUpload onOpen={fileModal.onOpen} currentUser={user} />
+                </Right>
+              </AccountInfo>
+            </AccountWrapper>
+          </AccountContainer>
+        </Wrapper>
+      </ContainerBox>
+    </Container>
   );
-}
+};
 
 const Container = styled.main`
   width: 100vw;
