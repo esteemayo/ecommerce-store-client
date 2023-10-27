@@ -7,8 +7,6 @@ import Form from '@/components/form/Form';
 import { StyledBox } from '@/components/form/StyledBox';
 import Heading from '@/components/form/Heading';
 
-import ClientOnly from '@/components/ClientOnly';
-
 import { useForm } from '@/hooks/useForm';
 
 const initialState = {
@@ -38,47 +36,41 @@ const ResetPassword = () => {
     console.log({ ...formData });
   };
 
-  const {
-    errors,
-    formData,
-    handleChange,
-    handleSubmit,
-  } = useForm(onSubmitHandler, initialState, validateForm);
+  const { errors, formData, handleChange, handleSubmit } = useForm(
+    onSubmitHandler,
+    initialState,
+    validateForm
+  );
 
   return (
-    <ClientOnly>
-      <FormBox>
-        <StyledBox>
-          <Heading
-            small
-            title='Reset your password'
+    <FormBox>
+      <StyledBox>
+        <Heading small title='Reset your password' />
+        <Form onSubmit={handleSubmit}>
+          <FormInput
+            type='password'
+            name='password'
+            label='Password'
+            value={formData.password}
+            placeholder='Enter your password'
+            onChange={handleChange}
+            error={errors.password}
+            autoFocus
           />
-          <Form onSubmit={handleSubmit}>
-            <FormInput
-              type='password'
-              name='password'
-              label='Password'
-              value={formData.password}
-              placeholder='Enter your password'
-              onChange={handleChange}
-              error={errors.password}
-              autoFocus
-            />
-            <FormInput
-              type='password'
-              name='confirmPassword'
-              label='Confirm password'
-              placeholder='Confirm your password'
-              value={formData.confirmPassword}
-              onChange={handleChange}
-              error={errors.confirmPassword}
-            />
-            <FormButton label='Reset password' />
-          </Form>
-        </StyledBox>
-      </FormBox>
-    </ClientOnly>
+          <FormInput
+            type='password'
+            name='confirmPassword'
+            label='Confirm password'
+            placeholder='Confirm your password'
+            value={formData.confirmPassword}
+            onChange={handleChange}
+            error={errors.confirmPassword}
+          />
+          <FormButton label='Reset password' />
+        </Form>
+      </StyledBox>
+    </FormBox>
   );
-}
+};
 
 export default ResetPassword;
