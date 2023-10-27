@@ -12,18 +12,12 @@ import FormInput from '@/components/form/FormInput';
 import Form from '@/components/form/Form';
 import CheckBox from '@/components/form/CheckBox';
 
-import { useForm } from '@/hooks/useForm';
-import ClientOnly from '@/components/ClientOnly';
-
 import Forgot from './Forgot';
 import SocialLogin from './SocialLogin';
 
-import {
-  getFromStorage,
-  rememberKey,
-  setToStorage,
-  userKey,
-} from '@/utils';
+import { useForm } from '@/hooks/useForm';
+
+import { getFromStorage, rememberKey, setToStorage, userKey } from '@/utils';
 
 const initialState = {
   username: '',
@@ -57,13 +51,11 @@ const Login = () => {
     setToStorage(userKey, rememberMe ? formData : '');
   };
 
-  const {
-    errors,
-    formData,
-    setFormData,
-    handleChange,
-    handleSubmit,
-  } = useForm(onSubmitHandler, initialState, validateForm);
+  const { errors, formData, setFormData, handleChange, handleSubmit } = useForm(
+    onSubmitHandler,
+    initialState,
+    validateForm
+  );
 
   useEffect(() => {
     const rememberMe = getFromStorage(rememberKey);
@@ -79,58 +71,49 @@ const Login = () => {
   }, [setFormData]);
 
   return (
-    <ClientOnly>
-      <FormBox>
-        <StyledBox>
-          <Heading
-            small
-            type='login'
-            title='Log in with'
+    <FormBox>
+      <StyledBox>
+        <Heading small type='login' title='Log in with' />
+        <SocialLogin />
+        <Text>or</Text>
+        <Form type='login' onSubmit={handleSubmit}>
+          <FormInput
+            name='username'
+            label='Username'
+            value={formData.username}
+            placeholder='Enter username'
+            onChange={handleChange}
+            error={errors.username}
+            login
           />
-          <SocialLogin />
-          <Text>or</Text>
-          <Form type='login' onSubmit={handleSubmit}>
-            <FormInput
-              name='username'
-              label='Username'
-              value={formData.username}
-              placeholder='Enter username'
-              onChange={handleChange}
-              error={errors.username}
-              login
-            />
-            <FormInput
-              name='password'
-              type='password'
-              label='Password'
-              value={formData.password}
-              placeholder='Enter your password'
-              onChange={handleChange}
-              error={errors.password}
-              login
-            />
-            <CheckBox
-              name='rememberMe'
-              label='Remember me'
-              checked={rememberMe}
-              onChange={(e) => setRememberMe(e.currentTarget.checked)}
-            />
-            <FormButton label='Log in' />
-            <Forgot
-              url='/forgo'
-              label='Forgot your password?'
-            />
-          </Form>
-        </StyledBox>
-        <AuthInfo
-          url='/register'
-          text={`Don't have an account?`}
-          label='Sign up'
-        />
-      </FormBox>
-    </ClientOnly>
+          <FormInput
+            name='password'
+            type='password'
+            label='Password'
+            value={formData.password}
+            placeholder='Enter your password'
+            onChange={handleChange}
+            error={errors.password}
+            login
+          />
+          <CheckBox
+            name='rememberMe'
+            label='Remember me'
+            checked={rememberMe}
+            onChange={(e) => setRememberMe(e.currentTarget.checked)}
+          />
+          <FormButton label='Log in' />
+          <Forgot url='/forgo' label='Forgot your password?' />
+        </Form>
+      </StyledBox>
+      <AuthInfo
+        url='/register'
+        text={`Don't have an account?`}
+        label='Sign up'
+      />
+    </FormBox>
   );
-}
+};
 
 const Text = styled.p`
   display: block;
