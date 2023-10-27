@@ -19,9 +19,7 @@ const Layout = ({ children }) => {
         <Submenu />
         <Sidebar />
         <ModalProvider />
-      </ClientOnly>
-      {children}
-      <ClientOnly>
+        {children}
         <Footer />
         <ScrollToTop />
         <Darkmode />
