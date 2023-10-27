@@ -9,13 +9,14 @@ import Option from '@/components/filters/Option';
 import SelectColor from '@/components/filters/SelectColor';
 import Select from '@/components/filters/Select';
 
-import ClientOnly from '@/components/ClientOnly';
 import ProductBox from '@/components/products/ProductBox';
 
 import { getUnique } from '@/utils';
 import { priceOptions, storeProducts } from '@/data';
 
-const ProductList = dynamic(() => import('@/components/products/ProductList'), { ssr: false });
+const ProductList = dynamic(() => import('@/components/products/ProductList'), {
+  ssr: false,
+});
 
 const ProductCategory = ({ params }) => {
   const { category } = params;
@@ -31,12 +32,14 @@ const ProductCategory = ({ params }) => {
   }, []);
 
   useEffect(() => {
-    category && setSortedProducts(
-      products.filter((item) =>
-        Object.entries(filters).every(([key, value]) =>
-          item[key].includes(value)
-        ))
-    );
+    category &&
+      setSortedProducts(
+        products.filter((item) =>
+          Object.entries(filters).every(([key, value]) =>
+            item[key].includes(value)
+          )
+        )
+      );
   }, [category, filters, products]);
 
   useEffect(() => {
@@ -47,77 +50,61 @@ const ProductCategory = ({ params }) => {
     }
 
     if (sort === 'asc') {
-      setSortedProducts((prev) =>
-        [...prev].sort((a, b) => a.price - b.price)
-      );
+      setSortedProducts((prev) => [...prev].sort((a, b) => a.price - b.price));
     }
 
     if (sort === 'desc') {
-      setSortedProducts((prev) =>
-        [...prev].sort((a, b) => b.price - a.price)
-      );
+      setSortedProducts((prev) => [...prev].sort((a, b) => b.price - a.price));
     }
   }, [sort]);
 
   let colors = getUnique(products, 'color');
   colors = colors.map((color, index) => {
-    return (
-      <Option
-        key={index}
-        value={color}
-      />
-    );
+    return <Option key={index} value={color} />;
   });
 
   let sizes = getUnique(products, 'size');
   sizes = sizes.map((size, index) => {
-    return (
-      <Option
-        key={index}
-        value={size}
-      />
-    );
+    return <Option key={index} value={size} />;
   });
 
   return (
-    <ClientOnly>
-      <ProductBox>
-        <Container>
-          <Heading title='Filter by' />
-          <Wrapper>
-            <Left>
-              <Select
-                name='color'
-                label='Color'
-                options={colors}
-                onChange={handleFilter}
-              />
-              <Select
-                name='size'
-                label='Product size'
-                options={sizes}
-                onChange={handleFilter}
-              />
-            </Left>
-            <Right>
-              <SelectColor
-                name='price'
-                label='Product price'
-                options={priceOptions}
-                onChange={(e) => setSort(e.target.value)}
-              />
-            </Right>
-          </Wrapper>
-        </Container>
-        {category ? (
-          <ProductList products={sortedProducts} />
-        ) : (
-          <ProductList products={products} />
-        )}
-      </ProductBox>
-    </ClientOnly>
+    <ProductBox>
+      <Container>
+        <Heading title='Filter by' />
+        <Wrapper>
+          <Left>
+            <Select
+              name='color'
+              label='Color'
+              options={colors}
+              onChange={handleFilter}
+            />
+            <Select
+              name='size'
+              label='Product size'
+              options={sizes}
+              onChange={handleFilter}
+            />
+          </Left>
+          <Right>
+            <SelectColor
+              name='price'
+              label='Product price'
+              options={priceOptions}
+              onChange={(e) => setSort(e.target.value)}
+            />
+          </Right>
+        </Wrapper>
+      </Container>
+      {category ? (
+        <ProductList products={sortedProducts} />
+      ) : (
+        <ProductList products={products} />
+      )}
+    </ProductBox>
   );
-}
+};
 
 const Container = styled.section`
   padding: 7rem 0;
