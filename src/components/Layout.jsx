@@ -7,11 +7,10 @@ import Submenu from './submenu/Submenu';
 import Footer from './footer/Footer';
 import Sidebar from './sidebar/Sidebar';
 
-
 import ToastProvider from '@/providers/ToastProvider';
 import ModalProvider from '@/providers/ModalProvider';
 
-const Layout = () => {
+const Layout = ({ children }) => {
   return (
     <div className='container'>
       <ClientOnly>
