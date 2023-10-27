@@ -6,7 +6,6 @@ import dynamic from 'next/dynamic';
 import { useDispatch, useSelector } from 'react-redux';
 
 import CartModal from '@/components/modals/CartModal';
-import ClientOnly from '@/components/ClientOnly';
 import WishlistHeader from '@/components/wishlists/WishlistHeader';
 
 import useCartModal from '@/hooks/useCartModal';
@@ -15,7 +14,10 @@ import { useSubmenu } from '@/hooks/useSubmenu';
 
 import { removeWishlist } from '@/features/cart/cartSlice';
 
-const WishlistCard = dynamic(() => import('@/components/wishlists/WishlistCard'), { ssr: false });
+const WishlistCard = dynamic(
+  () => import('@/components/wishlists/WishlistCard'),
+  { ssr: false }
+);
 
 const WishLists = () => {
   const dispatch = useDispatch();
@@ -29,20 +31,29 @@ const WishLists = () => {
   const [isSelectedProduct, setIsSelectedProduct] = useState({});
   const [isSelectedId, setIsSelectedId] = useState(null);
 
-  const handleClick = useCallback((wishlist) => {
-    cartModal.onOpen();
-    setIsSelectedProduct(wishlist);
-  }, [cartModal, setIsSelectedProduct]);
+  const handleClick = useCallback(
+    (wishlist) => {
+      cartModal.onOpen();
+      setIsSelectedProduct(wishlist);
+    },
+    [cartModal, setIsSelectedProduct]
+  );
 
-  const handleOpenModal = useCallback((id) => {
-    setIsSelectedId(id);
-    wishlistModal.onOpen();
-  }, [wishlistModal]);
+  const handleOpenModal = useCallback(
+    (id) => {
+      setIsSelectedId(id);
+      wishlistModal.onOpen();
+    },
+    [wishlistModal]
+  );
 
-  const handleDelete = useCallback((id) => {
-    dispatch(removeWishlist(id));
-    setProducts((prev) => prev.filter((item) => item.id !== id));
-  }, [dispatch]);
+  const handleDelete = useCallback(
+    (id) => {
+      dispatch(removeWishlist(id));
+      setProducts((prev) => prev.filter((item) => item.id !== id));
+    },
+    [dispatch]
+  );
 
   let bodyContent;
 
@@ -68,21 +79,17 @@ const WishLists = () => {
   }
 
   return (
-    <ClientOnly>
-      <Container onMouseOver={closeSubmenu}>
-        <Wrapper>
-          {bodyContent}
-        </Wrapper>
-        <CartModal
-          product={isSelectedProduct}
-          isOpen={cartModal.isOpen}
-          onClose={cartModal.onClose}
-          onSelect={setIsSelectedProduct}
-        />
-      </Container>
-    </ClientOnly>
+    <Container onMouseOver={closeSubmenu}>
+      <Wrapper>{bodyContent}</Wrapper>
+      <CartModal
+        product={isSelectedProduct}
+        isOpen={cartModal.isOpen}
+        onClose={cartModal.onClose}
+        onSelect={setIsSelectedProduct}
+      />
+    </Container>
   );
-}
+};
 
 const Container = styled.main`
   width: 100vw;
