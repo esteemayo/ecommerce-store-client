@@ -13,8 +13,6 @@ import FormUpload from '@/components/form/FormUpload';
 import Form from '@/components/form/Form';
 import CountrySelect from '@/components/inputs/CountrySelect';
 
-import ClientOnly from '@/components/ClientOnly';
-
 import { registerInputs } from '@/data/formData';
 import { useCountries } from '@/hooks/useCountries';
 
@@ -42,14 +40,7 @@ const Register = () => {
 
   const validateForm = useCallback(() => {
     const errors = {};
-    const {
-      name,
-      email,
-      username,
-      password,
-      confirmPassword,
-      country,
-    } = data;
+    const { name, email, username, password, confirmPassword, country } = data;
 
     if (name.trim() === '') {
       errors.name = 'Name must not be empty';
@@ -58,7 +49,8 @@ const Register = () => {
     if (email.trim() === '') {
       errors.email = 'Email must not be empty';
     } else {
-      const regEx = /^([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)*[a-zA-Z]{2,9})$/;
+      const regEx =
+        /^([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)*[a-zA-Z]{2,9})$/;
       if (!email.match(regEx)) {
         errors.email = 'Email must be a valid email address';
       }
@@ -89,76 +81,67 @@ const Register = () => {
     setData(initialState);
   }, []);
 
-  const handleSubmit = useCallback((e) => {
-    e.preventDefault();
+  const handleSubmit = useCallback(
+    (e) => {
+      e.preventDefault();
 
-    const errors = validateForm();
-    if (Object.keys(errors).length > 0) return setErrors(errors);
-    setErrors({});
+      const errors = validateForm();
+      if (Object.keys(errors).length > 0) return setErrors(errors);
+      setErrors({});
 
-    console.log({ ...data, file });
-    handleClear();
-  }, [data, file, handleClear, validateForm]);
+      console.log({ ...data, file });
+      handleClear();
+    },
+    [data, file, handleClear, validateForm]
+  );
 
   return (
-    <ClientOnly>
-      <FormBox>
-        <StyledBox>
-          <Heading
-            small
-            title='Register your account'
+    <FormBox>
+      <StyledBox>
+        <Heading small title='Register your account' />
+        <Form onSubmit={handleSubmit}>
+          {registerInputs.map((input) => {
+            const { id, name, type, label, placeholder } = input;
+            return (
+              <FormInput
+                key={id}
+                name={name}
+                type={type}
+                label={label}
+                value={data[name]}
+                placeholder={placeholder}
+                onChange={handleChange}
+                autoFocus={name === 'name' ? true : false}
+                error={errors[name]}
+              />
+            );
+          })}
+          <CountrySelect
+            name='country'
+            label='Country'
+            value={data.country}
+            data={getAll()}
+            onChange={handleChange}
+            error={errors.country}
           />
-          <Form onSubmit={handleSubmit}>
-            {registerInputs.map((input) => {
-              const { id, name, type, label, placeholder } = input;
-              return (
-                <FormInput
-                  key={id}
-                  name={name}
-                  type={type}
-                  label={label}
-                  value={data[name]}
-                  placeholder={placeholder}
-                  onChange={handleChange}
-                  autoFocus={name === 'name' ? true : false}
-                  error={errors[name]}
-                />
-              );
-            })}
-            <CountrySelect
-              name='country'
-              label='Country'
-              value={data.country}
-              data={getAll()}
-              onChange={handleChange}
-              error={errors.country}
-            />
-            {perc > 0 && perc < 100 ? (
-              <UploadProgress percentage={perc} />
-            ) : (
-              <>
-                <FormUpload
-                  id='file'
-                  accept='image/*'
-                  label='Attach a photo'
-                  onChange={(e) => setFile(e.target.files[0])}
-                />
-              </>
-            )}
-            <FormButton
-              label='Register'
-              disabled={perc > 0 && perc < 100}
-            />
-          </Form>
-        </StyledBox>
-        <AuthInfo
-          url='/login'
-          text='Already have an account?'
-          label='Sign in'
-        />
-      </FormBox>
-    </ClientOnly>
+          {perc > 0 && perc < 100 ? (
+            <UploadProgress percentage={perc} />
+          ) : (
+            <>
+              <FormUpload
+                id='file'
+                accept='image/*'
+                label='Attach a photo'
+                onChange={(e) => setFile(e.target.files[0])}
+              />
+            </>
+          )}
+          <FormButton label='Register' disabled={perc > 0 && perc < 100} />
+        </Form>
+      </StyledBox>
+      <AuthInfo url='/login' text='Already have an account?' label='Sign in' />
+    </FormBox>
   );
-}
+};
 
 export default Register;
