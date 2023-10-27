@@ -1,12 +1,15 @@
 import ClientOnly from './ClientOnly';
-import Navbar from './navbar/Navbar';
-import ToastProvider from '@/providers/ToastProvider';
-import Submenu from './submenu/Submenu';
-import Sidebar from './sidebar/Sidebar';
-import ModalProvider from '@/providers/ModalProvider';
-import Footer from './footer/Footer';
-import ScrollToTop from './ScrollToTop';
 import Darkmode from './DarkMode';
+import ScrollToTop from './ScrollToTop';
+
+import Navbar from './navbar/Navbar';
+import Submenu from './submenu/Submenu';
+import Footer from './footer/Footer';
+import Sidebar from './sidebar/Sidebar';
+
+
+import ToastProvider from '@/providers/ToastProvider';
+import ModalProvider from '@/providers/ModalProvider';
 
 const Layout = () => {
   return (
