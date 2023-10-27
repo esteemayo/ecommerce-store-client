@@ -1,12 +1,12 @@
 'use client';
 
-import { useDispatch } from 'react-redux';
 import { useCallback, useState } from 'react';
 
-import { addProduct, removeWishlist } from '@/features/cart/cartSlice';
+import { useCartStore } from './useCartStore';
 
 export const useCart = (product) => {
-  const dispatch = useDispatch();
+  const { addProduct } = useCartStore((state) => state.addProduct);
+  const { removeWishlist } = useCartStore((state) => state.removeWishlist);
 
   const [color, setColor] = useState(null);
   const [size, setSize] = useState(null);
@@ -24,11 +24,11 @@ export const useCart = (product) => {
   }, []);
 
   const handleClick = useCallback(() => {
-    dispatch(addProduct({ ...product, size, color, quantity }));
-    dispatch(removeWishlist(product.id));
+    addProduct({ ...product, size, color, quantity });
+    removeWishlist(product.id);
     setAlert(true);
     handleReset();
-  }, [color, product, quantity, size, handleReset, dispatch]);
+  }, [color, product, quantity, size, handleReset]);
 
   return {
     alert,
@@ -44,4 +44,4 @@ export const useCart = (product) => {
     setColor,
     handleReset,
   };
-}
+};
