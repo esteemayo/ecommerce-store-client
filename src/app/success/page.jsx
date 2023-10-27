@@ -3,64 +3,65 @@
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
-import { faEnvelope, faLocationDot, faMessage, faPhone } from '@fortawesome/free-solid-svg-icons';
+import {
+  faEnvelope,
+  faLocationDot,
+  faMessage,
+  faPhone,
+} from '@fortawesome/free-solid-svg-icons';
 
 import { useSubmenu } from '@/hooks/useSubmenu';
 import { formatCurrency } from '@/utils/formatCurrency';
-
-import ClientOnly from '@/components/ClientOnly';
 
 const Success = () => {
   const closeSubmenu = useSubmenu((state) => state.closeSubmenu);
 
   return (
-    <ClientOnly>
-      <Container onMouseOver={closeSubmenu}>
-        <Wrapper>
-          <SuccessContainer>
-            <SuccessWrapper>
-              <SuccessInfo>
-                <SuccessAlert>Order successfully placed</SuccessAlert>
-                <Text>
-                  Thank you for your order, you will receive it in {' '}
-                  <Minutes>45 minutes</Minutes>
-                </Text>
-                <InfoContainer>
-                  <InfoText>Here we will deliver your order.</InfoText>
-                  <IconContainer>
-                    <FontAwesomeIcon icon={faLocationDot} />
-                    <Address>3711 Schultz Meadow</Address>
-                  </IconContainer>
-                  <IconContainer>
-                    <FontAwesomeIcon icon={faPhone} />
-                    <Phone>60640582</Phone>
-                  </IconContainer>
-                  <IconContainer>
-                    <FontAwesomeIcon icon={faEnvelope} />
-                    <Email>gorczany.tamara@yahoo.com</Email>
-                  </IconContainer>
-                </InfoContainer>
-                <MushroomContainer>
-                  <IconContainer>
-                    <FontAwesomeIcon icon={faMessage} />
-                    <MushroomText>&quot;No mushrooms, please&quot;</MushroomText>
-                  </IconContainer>
-                </MushroomContainer>
-                <TotalPayment>The payment of {' '}
-                  <Price>{formatCurrency(17959)}</Price> {' '}
-                  you&apos;ll make when the courier arrives with your order.
-                </TotalPayment>
-                <Link href='/orders' passHref>
-                  <OrderButton type='button'>Order history</OrderButton>
-                </Link>
-              </SuccessInfo>
-            </SuccessWrapper>
-          </SuccessContainer>
-        </Wrapper>
-      </Container>
-    </ClientOnly>
+    <Container onMouseOver={closeSubmenu}>
+      <Wrapper>
+        <SuccessContainer>
+          <SuccessWrapper>
+            <SuccessInfo>
+              <SuccessAlert>Order successfully placed</SuccessAlert>
+              <Text>
+                Thank you for your order, you will receive it in{' '}
+                <Minutes>45 minutes</Minutes>
+              </Text>
+              <InfoContainer>
+                <InfoText>Here we will deliver your order.</InfoText>
+                <IconContainer>
+                  <FontAwesomeIcon icon={faLocationDot} />
+                  <Address>3711 Schultz Meadow</Address>
+                </IconContainer>
+                <IconContainer>
+                  <FontAwesomeIcon icon={faPhone} />
+                  <Phone>60640582</Phone>
+                </IconContainer>
+                <IconContainer>
+                  <FontAwesomeIcon icon={faEnvelope} />
+                  <Email>gorczany.tamara@yahoo.com</Email>
+                </IconContainer>
+              </InfoContainer>
+              <MushroomContainer>
+                <IconContainer>
+                  <FontAwesomeIcon icon={faMessage} />
+                  <MushroomText>&quot;No mushrooms, please&quot;</MushroomText>
+                </IconContainer>
+              </MushroomContainer>
+              <TotalPayment>
+                The payment of <Price>{formatCurrency(17959)}</Price>{' '}
+                you&apos;ll make when the courier arrives with your order.
+              </TotalPayment>
+              <Link href='/orders' passHref>
+                <OrderButton type='button'>Order history</OrderButton>
+              </Link>
+            </SuccessInfo>
+          </SuccessWrapper>
+        </SuccessContainer>
+      </Wrapper>
+    </Container>
   );
-}
+};
 
 const Container = styled.main`
   width: 100vw;
@@ -183,7 +184,7 @@ const SuccessAlert = styled.p`
 const Text = styled.p`
   display: inline-block;
   font-size: 1.5rem;
-  color:  ${({ theme }) => theme.text};
+  color: ${({ theme }) => theme.text};
   margin-bottom: 2rem;
 
   @media only screen and (max-width: 43.75em) {
@@ -206,7 +207,7 @@ const Minutes = styled.span`
 const InfoContainer = styled.div`
   padding: 2.7rem 2.3rem;
   background-color: ${({ theme }) => theme.bgInfo};
-  color:  ${({ theme }) => theme.text};
+  color: ${({ theme }) => theme.text};
   border-radius: 0.5rem;
 
   @media only screen and (max-width: 43.75em) {
@@ -264,7 +265,7 @@ const MushroomContainer = styled.div`
   margin-top: 1rem;
   padding: 1rem 2.3rem;
   background-color: ${({ theme }) => theme.bgInfo};
-  color:  ${({ theme }) => theme.text};
+  color: ${({ theme }) => theme.text};
   border-radius: 0.5rem;
 
   @media only screen and (max-width: 43.75em) {
@@ -284,7 +285,7 @@ const TotalPayment = styled.p`
   display: inline-block;
   width: 90%;
   font-size: 1.5rem;
-  color:  ${({ theme }) => theme.text};
+  color: ${({ theme }) => theme.text};
   line-height: 1.3;
   margin-top: 3rem;
 
