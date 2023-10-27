@@ -3,18 +3,9 @@
 import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
 
-import Navbar from '@/components/navbar/Navbar';
-import Submenu from '@/components/submenu/Submenu';
-import Footer from '@/components/footer/Footer';
-import ScrollToTop from '@/components/ScrollToTop';
-import Darkmode from '@/components/DarkMode';
-import Sidebar from '@/components/sidebar/Sidebar';
-import ClientOnly from '@/components/ClientOnly';
-
-import ToastProvider from '@/providers/ToastProvider';
 import CartProvider from '@/providers/CartProvider';
+import Layout from '@/components/Layout';
 import AppThemeProvider from '@/providers/ThemeProvider';
-import ModalProvider from '@/providers/ModalProvider';
 
 import { persistor, store } from '@/store/store';
 
@@ -39,21 +30,7 @@ export default function RootLayout({ children }) {
           <PersistGate loading={null} persistor={persistor}>
             <CartProvider>
               <AppThemeProvider>
-                <div className='container'>
-                  <ClientOnly>
-                    <Navbar />
-                    <ToastProvider />
-                    <Submenu />
-                    <Sidebar />
-                    <ModalProvider />
-                  </ClientOnly>
-                  {children}
-                  <ClientOnly>
-                    <Footer />
-                    <ScrollToTop />
-                    <Darkmode />
-                  </ClientOnly>
-                </div>
+                <Layout />
               </AppThemeProvider>
             </CartProvider>
           </PersistGate>
