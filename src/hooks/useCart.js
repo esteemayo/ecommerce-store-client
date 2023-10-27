@@ -5,8 +5,8 @@ import { useCallback, useState } from 'react';
 import { useCartStore } from './useCartStore';
 
 export const useCart = (product) => {
-  const { addProduct } = useCartStore((state) => state.addProduct);
-  const { removeWishlist } = useCartStore((state) => state.removeWishlist);
+  const addProduct = useCartStore((state) => state.addProduct);
+  const removeWishlist = useCartStore((state) => state.removeWishlist);
 
   const [color, setColor] = useState(null);
   const [size, setSize] = useState(null);
