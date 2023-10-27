@@ -4,15 +4,21 @@ import styled from 'styled-components';
 import { useEffect, useMemo, useState } from 'react';
 import dynamic from 'next/dynamic';
 
-import ClientOnly from '@/components/ClientOnly';
-
 import { useSubmenu } from '@/hooks/useSubmenu';
 import { recommendations, reviewItems, storeProducts } from '@/data';
 
-const Product = dynamic(() => import('@/components/products/Product'), { ssr: false });
-const EmptyState = dynamic(() => import('@/components/EmptyState'), { ssr: false });
-const Recommendation = dynamic(() => import('@/components/Recommendation'), { ssr: false });
-const Reviews = dynamic(() => import('@/components/reviews/Reviews'), { ssr: false });
+const Product = dynamic(() => import('@/components/products/Product'), {
+  ssr: false,
+});
+const EmptyState = dynamic(() => import('@/components/EmptyState'), {
+  ssr: false,
+});
+const Recommendation = dynamic(() => import('@/components/Recommendation'), {
+  ssr: false,
+});
+const Reviews = dynamic(() => import('@/components/reviews/Reviews'), {
+  ssr: false,
+});
 
 const SingleProduct = ({ params }) => {
   const { id } = params;
@@ -30,21 +36,15 @@ const SingleProduct = ({ params }) => {
 
   useEffect(() => {
     if (sort === 'newest') {
-      setReviews((prev) =>
-        [...prev].sort((a, b) => a.createdAt - b.createdAt)
-      );
+      setReviews((prev) => [...prev].sort((a, b) => a.createdAt - b.createdAt));
     }
 
     if (sort === 'highest') {
-      setReviews((prev) =>
-        [...prev].sort((a, b) => b.rating - a.rating)
-      );
+      setReviews((prev) => [...prev].sort((a, b) => b.rating - a.rating));
     }
 
     if (sort === 'lowest') {
-      setReviews((prev) =>
-        [...prev].sort((a, b) => a.rating - b.rating)
-      );
+      setReviews((prev) => [...prev].sort((a, b) => a.rating - b.rating));
     }
   }, [sort]);
 
@@ -55,34 +55,30 @@ const SingleProduct = ({ params }) => {
 
   if (!product) {
     return (
-      <ClientOnly>
-        <Container type='error' onMouseOver={closeSubmenu}>
-          <Wrapper>
-            <EmptyState />
-          </Wrapper>
-        </Container>
-      </ClientOnly>
+      <Container type='error' onMouseOver={closeSubmenu}>
+        <Wrapper>
+          <EmptyState />
+        </Wrapper>
+      </Container>
     );
   }
 
   return (
-    <ClientOnly>
-      <Container onMouseOver={closeSubmenu}>
-        <Wrapper>
-          <Product product={product} />
-          <Line />
-          <Recommendation data={recommendations} />
-          <Reviews
-            reviews={reviews}
-            sortLabel={getSort}
-            sort={sort}
-            onSort={setSort}
-          />
-        </Wrapper>
-      </Container>
-    </ClientOnly>
+    <Container onMouseOver={closeSubmenu}>
+      <Wrapper>
+        <Product product={product} />
+        <Line />
+        <Recommendation data={recommendations} />
+        <Reviews
+          reviews={reviews}
+          sortLabel={getSort}
+          sort={sort}
+          onSort={setSort}
+        />
+      </Wrapper>
+    </Container>
   );
-}
+};
 
 const Container = styled.main`
   width: 100vw;
