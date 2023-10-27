@@ -12,8 +12,6 @@ import TextArea from '@/components/form/TextArea';
 import Form from '@/components/form/Form';
 import { FormGroup } from '@/components/form/FormGroup';
 
-import ClientOnly from '@/components/ClientOnly';
-
 import { selectInputs } from '@/data/formData';
 import { useDarkMode } from '@/hooks/useDarkMode';
 
@@ -88,23 +86,17 @@ const NewProduct = () => {
     return errors;
   }, [data, tags]);
 
-  const handleSubmit = useCallback((e) => {
-    e.preventDefault();
+  const handleSubmit = useCallback(
+    (e) => {
+      e.preventDefault();
 
-    const errors = validateForm();
-    if (Object.keys(errors).length > 0) return setErrors(errors);
-    setErrors({});
+      const errors = validateForm();
+      if (Object.keys(errors).length > 0) return setErrors(errors);
+      setErrors({});
 
-    console.log({ ...data, files, color, size, tags });
-  },
-    [
-      color,
-      data,
-      files,
-      size,
-      tags,
-      validateForm,
-    ]
+      console.log({ ...data, files, color, size, tags });
+    },
+    [color, data, files, size, tags, validateForm]
   );
 
   const labelClasses = useMemo(() => {
@@ -112,96 +104,91 @@ const NewProduct = () => {
   }, [mode]);
 
   return (
-    <ClientOnly>
-      <FormBox>
-        <StyledBox>
-          <Heading
-            small
-            title='Create new product'
+    <FormBox>
+      <StyledBox>
+        <Heading small title='Create new product' />
+        <Form onSubmit={handleSubmit}>
+          <FormInput
+            name='name'
+            label='Product name'
+            placeholder='Enter product name'
+            onChange={handleChange}
+            error={errors.name}
+            autoFocus
           />
-          <Form onSubmit={handleSubmit}>
-            <FormInput
-              name='name'
-              label='Product name'
-              placeholder='Enter product name'
-              onChange={handleChange}
-              error={errors.name}
-              autoFocus
+          <TextArea
+            name='desc'
+            label='Description'
+            placeholder='Enter product description'
+            onChange={handleChange}
+            error={errors.desc}
+          />
+          <FormInput
+            type='number'
+            name='price'
+            label='Price'
+            placeholder='Enter product price'
+            onChange={handleChange}
+            error={errors.price}
+          />
+          <FormInput
+            type='number'
+            name='priceDiscount'
+            label='Price discount'
+            placeholder='Enter price discount'
+            onChange={handleChange}
+            error={errors.priceDiscount}
+          />
+          <FormInput
+            type='number'
+            name='numberInStock'
+            label='Number in stock'
+            placeholder='Enter number in stock'
+            onChange={handleChange}
+            error={errors.numberInStock}
+          />
+          <FormInput
+            name='color'
+            label='Color'
+            placeholder='Separate the color with commas'
+            onChange={handleColor}
+          />
+          <FormInput
+            name='size'
+            label='Size'
+            placeholder='Separate the size with commas'
+            onChange={handleSize}
+          />
+          <Select
+            name='category'
+            label='Select category'
+            defaultText='Select a category'
+            onChange={handleChange}
+            data={selectInputs}
+            error={errors.category}
+          />
+          <FormInput
+            name='tags'
+            label='Product tags'
+            placeholder='Separate the tags with commas'
+            onChange={handleTags}
+            error={errors.tags}
+          />
+          <FormGroup>
+            <label className={labelClasses}>Attach images</label>
+            <input
+              type='file'
+              id='file'
+              accept='image/*'
+              onChange={(e) => setFiles(e.target.files)}
+              multiple
             />
-            <TextArea
-              name='desc'
-              label='Description'
-              placeholder='Enter product description'
-              onChange={handleChange}
-              error={errors.desc}
-            />
-            <FormInput
-              type='number'
-              name='price'
-              label='Price'
-              placeholder='Enter product price'
-              onChange={handleChange}
-              error={errors.price}
-            />
-            <FormInput
-              type='number'
-              name='priceDiscount'
-              label='Price discount'
-              placeholder='Enter price discount'
-              onChange={handleChange}
-              error={errors.priceDiscount}
-            />
-            <FormInput
-              type='number'
-              name='numberInStock'
-              label='Number in stock'
-              placeholder='Enter number in stock'
-              onChange={handleChange}
-              error={errors.numberInStock}
-            />
-            <FormInput
-              name='color'
-              label='Color'
-              placeholder='Separate the color with commas'
-              onChange={handleColor}
-            />
-            <FormInput
-              name='size'
-              label='Size'
-              placeholder='Separate the size with commas'
-              onChange={handleSize}
-            />
-            <Select
-              name='category'
-              label='Select category'
-              defaultText='Select a category'
-              onChange={handleChange}
-              data={selectInputs}
-              error={errors.category}
-            />
-            <FormInput
-              name='tags'
-              label='Product tags'
-              placeholder='Separate the tags with commas'
-              onChange={handleTags}
-              error={errors.tags}
-            />
-            <FormGroup>
-              <label className={labelClasses}>Attach images</label>
-              <input
-                type='file'
-                id='file'
-                accept='image/*'
-                onChange={(e) => setFiles(e.target.files)}
-                multiple
-              />
-            </FormGroup>
-            <FormButton label='Create' />
-          </Form>
-        </StyledBox>
-      </FormBox>
-    </ClientOnly>
+          </FormGroup>
+          <FormButton label='Create' />
+        </Form>
+      </StyledBox>
+    </FormBox>
   );
-}
+};
 
 export default NewProduct;
