@@ -1,17 +1,16 @@
 'use client';
 
 import { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
 
-import { calcTotals } from '@/features/cart/cartSlice';
+import { useCartStore } from '@/hooks/useCartStore';
 
 const CartProvider = ({ children }) => {
-  const dispatch = useDispatch();
-  const { cart } = useSelector((state) => ({ ...state.cart }));
+  const cart = useCartStore((state) => state.cart);
+  const calcTotals = useCartStore((state) => state.calcTotals);
 
   useEffect(() => {
-    dispatch(calcTotals());
-  }, [cart, dispatch]);
+    calcTotals();
+  }, [cart]);
 
   return <>{children}</>;
 }

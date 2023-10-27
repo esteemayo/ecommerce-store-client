@@ -1,9 +1,8 @@
 'use client';
 
 import styled from 'styled-components';
-import { useCallback, useState } from 'react';
-import { useSelector } from 'react-redux';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { useCallback, useState } from 'react';
 
 import { useSubmenu } from '@/hooks/useSubmenu';
 import useSearchModal from '@/hooks/useSearchModal';
@@ -18,17 +17,19 @@ import ToggleButton from './ToggleButton';
 import SearchIcon from './SearchIcon';
 
 import { navLinks } from '@/data';
+import { useCartStore } from '@/hooks/useCartStore';
 
 const Navbar = () => {
-  const user = true;
-  // const { qty } = useSelector((state) => ({ ...state.cart }));
   const searchModal = useSearchModal();
+  const qty = useCartStore((state) => state.qty);
 
   const openSubmenu = useSubmenu((state) => state.openSubmenu);
   const onOpen = useSidebar((state) => state.onOpen);
   const closeSubmenu = useSubmenu((state) => state.closeSubmenu);
 
   const [isHover, setIsHover] = useState(false);
+
+  const user = true;
 
   const handleMouseOver = useCallback(() => {
     setIsHover(true);
