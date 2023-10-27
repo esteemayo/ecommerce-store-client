@@ -3,13 +3,13 @@ import styled from 'styled-components';
 import Image from 'next/image';
 import dynamic from 'next/dynamic';
 
-import ClientOnly from '@/components/ClientOnly';
-
 import { useSubmenu } from '@/hooks/useSubmenu';
 
 import { orders } from '@/data';
 
-const OrderCard = dynamic(() => import('@/components/orders/OrderCard'), { ssr: false });
+const OrderCard = dynamic(() => import('@/components/orders/OrderCard'), {
+  ssr: false,
+});
 
 const Orders = () => {
   const closeSubmenu = useSubmenu((state) => state.closeSubmenu);
@@ -19,12 +19,7 @@ const Orders = () => {
   if (orders.length < 1) {
     bodyContent = (
       <ImageContainer>
-        <Image
-          src='/img/empty-list.png'
-          width={500}
-          height={500}
-          alt=''
-        />
+        <Image src='/img/empty-list.png' width={500} height={500} alt='' />
         <Message>No orders found</Message>
       </ImageContainer>
     );
@@ -36,7 +31,7 @@ const Orders = () => {
         <Heading>Order history</Heading>
         <OrderContainer>
           {orders.map((order) => {
-            return <OrderCard key={order.id} {...order} />
+            return <OrderCard key={order.id} {...order} />;
           })}
         </OrderContainer>
       </>
@@ -44,15 +39,11 @@ const Orders = () => {
   }
 
   return (
-    <ClientOnly>
-      <Container onMouseOver={closeSubmenu}>
-        <Wrapper>
-          {bodyContent}
-        </Wrapper>
-      </Container>
-    </ClientOnly>
+    <Container onMouseOver={closeSubmenu}>
+      <Wrapper>{bodyContent}</Wrapper>
+    </Container>
   );
-}
+};
 
 const Container = styled.main`
   width: 100vw;
