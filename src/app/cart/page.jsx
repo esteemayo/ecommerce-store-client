@@ -1,16 +1,16 @@
 'use client';
 
 import styled from 'styled-components';
-import { useSelector } from 'react-redux';
 import Link from 'next/link';
 import { useCallback, useState } from 'react';
 import Image from 'next/image';
 import dynamic from 'next/dynamic';
 
-import CartHeader from '@/components/carts/CartHeader';
-
 import { useSubmenu } from '@/hooks/useSubmenu';
 import usePaymentModal from '@/hooks/usePaymentModal';
+import { useCartStore } from '@/hooks/useCartStore';
+
+import CartHeader from '@/components/carts/CartHeader';
 
 const CartItem = dynamic(() => import('@/components/carts/CartItem'), {
   ssr: false,
@@ -23,7 +23,7 @@ const CartTotal = dynamic(() => import('@/components/carts/CartTotal'), {
 });
 
 const Cart = () => {
-  const { cart } = useSelector((state) => ({ ...state.cart }));
+  const cart = useCartStore((state) => state.cart);
 
   const paymentModal = usePaymentModal();
   const closeSubmenu = useSubmenu((state) => state.closeSubmenu);
