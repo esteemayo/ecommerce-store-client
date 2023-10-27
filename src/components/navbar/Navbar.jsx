@@ -21,7 +21,7 @@ import { navLinks } from '@/data';
 
 const Navbar = () => {
   const user = true;
-  const { qty } = useSelector((state) => ({ ...state.cart }));
+  // const { qty } = useSelector((state) => ({ ...state.cart }));
   const searchModal = useSearchModal();
 
   const openSubmenu = useSubmenu((state) => state.openSubmenu);
@@ -38,33 +38,39 @@ const Navbar = () => {
     setIsHover(false);
   }, []);
 
-  const displaySubmenu = useCallback((e) => {
-    e.stopPropagation();
+  const displaySubmenu = useCallback(
+    (e) => {
+      e.stopPropagation();
 
-    const page = e.target.textContent;
-    const tempBtn = e.target.getBoundingClientRect();
+      const page = e.target.textContent;
+      const tempBtn = e.target.getBoundingClientRect();
 
-    const center = (tempBtn.left + tempBtn.right) / 2;
-    const bottom = tempBtn.bottom;
+      const center = (tempBtn.left + tempBtn.right) / 2;
+      const bottom = tempBtn.bottom;
 
-    const submenu = {
-      page,
-      coordinates: {
-        center,
-        bottom,
-      },
-    };
+      const submenu = {
+        page,
+        coordinates: {
+          center,
+          bottom,
+        },
+      };
 
-    openSubmenu(submenu);
-  }, [openSubmenu]);
+      openSubmenu(submenu);
+    },
+    [openSubmenu]
+  );
 
-  const handleSubmenu = useCallback((e) => {
-    e.stopPropagation();
+  const handleSubmenu = useCallback(
+    (e) => {
+      e.stopPropagation();
 
-    if (!e.target.classList.contains('link-btn')) {
-      closeSubmenu();
-    }
-  }, [closeSubmenu]);
+      if (!e.target.classList.contains('link-btn')) {
+        closeSubmenu();
+      }
+    },
+    [closeSubmenu]
+  );
 
   return (
     <Container onMouseOver={handleSubmenu}>
@@ -72,20 +78,11 @@ const Navbar = () => {
         <LogoBox>
           <Logo />
         </LogoBox>
-        <ToggleButton
-          icon={faBars}
-          onClick={onOpen}
-        />
+        <ToggleButton icon={faBars} onClick={onOpen} />
         <ListContainer>
           {navLinks.map((item) => {
             const { id, text } = item;
-            return (
-              <MenuItem
-                key={id}
-                label={text}
-                onMouse={displaySubmenu}
-              />
-            );
+            return <MenuItem key={id} label={text} onMouse={displaySubmenu} />;
           })}
         </ListContainer>
         <ButtonContainer>
@@ -104,7 +101,7 @@ const Navbar = () => {
       </Wrapper>
     </Container>
   );
-}
+};
 
 const Container = styled.nav`
   width: 100vw;
@@ -146,7 +143,7 @@ const LogoBox = styled.div`
 const ListContainer = styled.ul`
   display: none;
 
-  @media only screen and (min-width:50em){
+  @media only screen and (min-width: 50em) {
     list-style: none;
     display: flex;
     align-items: center;
@@ -157,7 +154,7 @@ const ListContainer = styled.ul`
 const ButtonContainer = styled.div`
   display: none;
 
-  @media only screen and (min-width: 50em){
+  @media only screen and (min-width: 50em) {
     display: flex;
     align-items: center;
     gap: 3rem;
