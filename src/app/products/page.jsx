@@ -3,15 +3,15 @@
 import dynamic from 'next/dynamic';
 import { useCallback, useEffect, useState } from 'react';
 
-import ClientOnly from '@/components/ClientOnly';
-import Pagination from '@/components/Pagination';
-
 import ProductBox from '@/components/products/ProductBox';
+import Pagination from '@/components/Pagination';
 import ProductFilter from '@/components/products/ProductFilter';
 
 import { storeProducts } from '@/data';
 
-const ProductList = dynamic(() => import('@/components/products/ProductList'), { ssr: false });
+const ProductList = dynamic(() => import('@/components/products/ProductList'), {
+  ssr: false,
+});
 
 const Products = () => {
   const [values, setValues] = useState({
@@ -83,23 +83,21 @@ const Products = () => {
   // }, [products, category, color, size, price]);
 
   return (
-    <ClientOnly>
-      <ProductBox>
-        <ProductFilter
-          products={products}
-          price={parseFloat(price)}
-          category={category}
-          size={size}
-          color={color}
-          minPrice={parseFloat(minPrice)}
-          maxPrice={parseFloat(maxPrice)}
-          onChange={handleChange}
-        />
-        <ProductList products={sortedProducts} />
-        {products.length > 0 && <Pagination />}
-      </ProductBox>
-    </ClientOnly>
+    <ProductBox>
+      <ProductFilter
+        products={products}
+        price={parseFloat(price)}
+        category={category}
+        size={size}
+        color={color}
+        minPrice={parseFloat(minPrice)}
+        maxPrice={parseFloat(maxPrice)}
+        onChange={handleChange}
+      />
+      <ProductList products={sortedProducts} />
+      {products.length > 0 && <Pagination />}
+    </ProductBox>
   );
-}
+};
 
 export default Products;
