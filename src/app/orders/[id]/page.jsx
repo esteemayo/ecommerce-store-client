@@ -2,7 +2,6 @@
 
 import styled from 'styled-components';
 
-import ClientOnly from '@/components/ClientOnly';
 import OrderStatus from '@/components/images/orders/OrderStatus';
 
 import { useSubmenu } from '@/hooks/useSubmenu';
@@ -19,65 +18,65 @@ const Order = () => {
   };
 
   return (
-    <ClientOnly>
-      <Container onMouseOver={closeSubmenu}>
-        <OrderWrapper>
-          <Wrapper>
-            <OrderContainer>
-              <Left>
-                <Table>
-                  <Thead>
-                    <Tr>
-                      <Th>Order ID</Th>
-                      <Th>Customer</Th>
-                      <Th>Address</Th>
-                      <Th>Total</Th>
-                    </Tr>
-                  </Thead>
-                  <Tbody>
-                    <Tr>
-                      <Td>
-                        <OrderId>63deb1d1</OrderId>
-                      </Td>
-                      <Td>
-                        <OrderName>Mary Doe</OrderName>
-                      </Td>
-                      <Td>
-                        <OrderAddress>Lagos,Nigeria</OrderAddress>
-                      </Td>
-                      <Td>
-                        <OrderTotal>{formatCurrency(420)}</OrderTotal>
-                      </Td>
-                    </Tr>
-                  </Tbody>
-                </Table>
-                <OrderStatus statusClass={statusClass} />
-              </Left>
-              <Right>
-                <RightWrapper>
-                  <Heading>Cart total</Heading>
-                  <TotalContainer>
-                    <TotalText>Subtotal:</TotalText>
-                    <Price>{formatCurrency(99.99)}</Price>
-                  </TotalContainer>
-                  <TotalContainer>
-                    <TotalText>Discount:</TotalText>
-                    <Price>{formatCurrency(0.00)}</Price>
-                  </TotalContainer>
-                  <TotalContainer>
-                    <TotalText>Total:</TotalText>
-                    <Price>{formatCurrency(88.90)}</Price>
-                  </TotalContainer>
-                  <Button type='button' disabled>Paid</Button>
-                </RightWrapper>
-              </Right>
-            </OrderContainer>
-          </Wrapper>
-        </OrderWrapper>
-      </Container>
-    </ClientOnly>
+    <Container onMouseOver={closeSubmenu}>
+      <OrderWrapper>
+        <Wrapper>
+          <OrderContainer>
+            <Left>
+              <Table>
+                <Thead>
+                  <Tr>
+                    <Th>Order ID</Th>
+                    <Th>Customer</Th>
+                    <Th>Address</Th>
+                    <Th>Total</Th>
+                  </Tr>
+                </Thead>
+                <Tbody>
+                  <Tr>
+                    <Td>
+                      <OrderId>63deb1d1</OrderId>
+                    </Td>
+                    <Td>
+                      <OrderName>Mary Doe</OrderName>
+                    </Td>
+                    <Td>
+                      <OrderAddress>Lagos,Nigeria</OrderAddress>
+                    </Td>
+                    <Td>
+                      <OrderTotal>{formatCurrency(420)}</OrderTotal>
+                    </Td>
+                  </Tr>
+                </Tbody>
+              </Table>
+              <OrderStatus statusClass={statusClass} />
+            </Left>
+            <Right>
+              <RightWrapper>
+                <Heading>Cart total</Heading>
+                <TotalContainer>
+                  <TotalText>Subtotal:</TotalText>
+                  <Price>{formatCurrency(99.99)}</Price>
+                </TotalContainer>
+                <TotalContainer>
+                  <TotalText>Discount:</TotalText>
+                  <Price>{formatCurrency(0.0)}</Price>
+                </TotalContainer>
+                <TotalContainer>
+                  <TotalText>Total:</TotalText>
+                  <Price>{formatCurrency(88.9)}</Price>
+                </TotalContainer>
+                <Button type='button' disabled>
+                  Paid
+                </Button>
+              </RightWrapper>
+            </Right>
+          </OrderContainer>
+        </Wrapper>
+      </OrderWrapper>
+    </Container>
   );
-}
+};
 
 const Container = styled.main`
   width: 100vw;
