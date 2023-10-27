@@ -25,6 +25,7 @@ const CarouselSlider = () => {
 
   useEffect(() => {
     const lastIndex = sliderItems.length - 1;
+
     if (slideNumber < 0) {
       setSlideNumber(lastIndex);
     }
