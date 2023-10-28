@@ -1,15 +1,21 @@
 'use client';
 
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
+import { FC } from 'react';
 
-const Heading = ({ title, small }) => {
-  return <Header small={small}>{title}</Header>;
+import { FooterHeadingProps } from '@/types';
+
+interface IHeader {
+  small?: string;
 }
 
-const Header = styled.h4`
-  font-weight: ${({ small }) => small ? '300' : '500'};
-  font-size: ${({ small }) => small ? '1.4rem' : '2rem'};
+const Heading: FC<FooterHeadingProps> = ({ title, small }) => {
+  return <Header small={small}>{title}</Header>;
+};
+
+const Header = styled.h4<IHeader>`
+  font-weight: ${({ small }) => (small ? '300' : '500')};
+  font-size: ${({ small }) => (small ? '1.4rem' : '2rem')};
   line-height: ${({ small }) => !small && '1em'};
   margin-bottom: ${({ small }) => !small && '2rem'};
 
@@ -20,10 +26,5 @@ const Header = styled.h4`
     margin-bottom: ${({ small }) => !small && '1.5rem'};
   }
 `;
-
-Heading.propTypes = {
-  title: PropTypes.string.isRequired,
-  small: PropTypes.bool,
-};
 
 export default Heading;

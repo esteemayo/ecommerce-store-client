@@ -345,6 +345,11 @@ export interface ReviewItemProps {
   };
 }
 
+export interface FooterHeadingProps {
+  title: string;
+  small?: string;
+}
+
 export interface FooterLinkProps {
   data: FooterLink;
 }
