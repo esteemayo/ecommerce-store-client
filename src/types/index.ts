@@ -345,6 +345,10 @@ export interface ReviewItemProps {
   };
 }
 
+export interface FooterLinkProps {
+  data: FooterLink;
+}
+
 export interface FooterTextProps {
   value: number;
 }

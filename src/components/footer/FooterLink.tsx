@@ -1,10 +1,12 @@
 'use client';
 
 import styled from 'styled-components';
+import { FC } from 'react';
 import Link from 'next/link';
-import PropTypes from 'prop-types';
 
-const FooterLink = ({ data }) => {
+import { FooterLinkProps } from '@/types';
+
+const FooterLink: FC<FooterLinkProps> = ({ data }) => {
   return (
     <LinkContainer>
       {data.map((item) => {
@@ -19,7 +21,7 @@ const FooterLink = ({ data }) => {
       })}
     </LinkContainer>
   );
-}
+};
 
 const LinkContainer = styled.ul`
   list-style: none;
@@ -66,15 +68,5 @@ const LinkItem = styled.li`
     }
   }
 `;
-
-FooterLink.propTypes = {
-  data: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.number.isRequired,
-      url: PropTypes.string.isRequired,
-      text: PropTypes.string.isRequired,
-    }),
-  ),
-};
 
 export default FooterLink;
