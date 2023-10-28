@@ -349,6 +349,10 @@ export interface FooterMenuItemsProps {
   data: FooterMenu;
 }
 
+export interface FooterMenuItemProps {
+  data: FooterLink;
+}
+
 export interface FooterHeadingProps {
   title: string;
   small?: boolean;

@@ -1,23 +1,27 @@
 'use client';
 
 import styled from 'styled-components';
+import { FC } from 'react';
 import Link from 'next/link';
-import PropTypes from 'prop-types';
 
-const MenuItem = ({ data }) => {
+import { FooterMenuItemProps } from '@/types';
+
+const MenuItem: FC<FooterMenuItemProps> = ({ data }) => {
   return (
     <ListContainer>
       {data.map((link) => {
         const { id, url, text } = link;
         return (
           <ListItem key={id}>
-            <Link href={url} passHref>{text}</Link>
+            <Link href={url} passHref>
+              {text}
+            </Link>
           </ListItem>
-        )
+        );
       })}
     </ListContainer>
   );
-}
+};
 
 const ListContainer = styled.ul`
   list-style: none;
@@ -83,15 +87,5 @@ const ListItem = styled.li`
     }
   }
 `;
-
-MenuItem.propTypes = {
-  data: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.number.isRequired,
-      url: PropTypes.string.isRequired,
-      text: PropTypes.string.isRequired,
-    }),
-  ),
-};
 
 export default MenuItem;
