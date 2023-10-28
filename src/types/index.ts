@@ -34,5 +34,5 @@ export interface CartStore {
   clearCart(): void;
   remove(id: number): void;
   toggleQuantity(value: any): void;
-  calcTotal(): void;
+  calcTotals(): void;
 }

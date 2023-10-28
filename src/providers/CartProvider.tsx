@@ -13,6 +13,6 @@ const CartProvider = ({ children }) => {
   }, [cart, calcTotals]);
 
   return <>{children}</>;
-}
+};
 
 export default CartProvider;
