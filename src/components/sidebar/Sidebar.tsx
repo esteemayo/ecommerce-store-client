@@ -15,7 +15,7 @@ import Search from './Search';
 import { sublinks } from '@/data';
 
 const Sidebar = () => {
-  const isOpen  = useSidebar((state) => state.isOpen);
+  const isOpen = useSidebar((state) => state.isOpen);
   const onClose = useSidebar((state) => state.onClose);
 
   const { searchQuery, handleChange, handleSearch } = useSearch();
@@ -42,7 +42,7 @@ const Sidebar = () => {
       </Wrapper>
     </Container>
   );
-}
+};
 
 const Container = styled.aside`
   position: fixed;
@@ -51,9 +51,9 @@ const Container = styled.aside`
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  display: ${({ type }) => type === 'show' ? 'block' : 'none'};
-  visibility: ${({ type }) => type === 'show' ? 'visible' : 'hidden'};
-  z-index: ${({ type }) => type === 'show' ? 2000 : -1};
+  display: ${({ type }) => (type === 'show' ? 'block' : 'none')};
+  visibility: ${({ type }) => (type === 'show' ? 'visible' : 'hidden')};
+  z-index: ${({ type }) => (type === 'show' ? 2000 : -1)};
 
   @media only screen and (min-width: 50em) {
     display: none;
