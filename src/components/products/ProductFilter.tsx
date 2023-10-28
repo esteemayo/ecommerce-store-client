@@ -1,7 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
+import { FC } from 'react';
 
 import Heading from '../filters/Heading';
 import Option from '../filters/Option';
@@ -9,8 +9,9 @@ import RangeInput from '../filters/RangeInput';
 import Select from '../filters/Select';
 
 import { getUnique } from '@/utils';
+import { ProductFilterProps } from '@/types';
 
-const ProductFilter = ({
+const ProductFilter: FC<ProductFilterProps> = ({
   products,
   price,
   category,
@@ -22,22 +23,12 @@ const ProductFilter = ({
 }) => {
   let colors = getUnique(products, 'color');
   colors = colors.map((color, index) => {
-    return (
-      <Option
-        key={index}
-        value={color}
-      />
-    );
+    return <Option key={index} value={color} />;
   });
 
   let categories = ['all', ...getUnique(products, 'category')];
   categories = categories.map((category, index) => {
-    return (
-      <Option
-        key={index}
-        value={category}
-      />
-    );
+    return <Option key={index} value={category} />;
   });
 
   let sizes = getUnique(products, 'size');
@@ -89,7 +80,7 @@ const ProductFilter = ({
       </Wrapper>
     </Container>
   );
-}
+};
 
 const Container = styled.section`
   padding: 7rem 0;
@@ -123,16 +114,5 @@ const Wrapper = styled.div`
     gap: 1rem;
   }
 `;
-
-ProductFilter.propTypes = {
-  products: PropTypes.array,
-  price: PropTypes.number,
-  category: PropTypes.string,
-  size: PropTypes.any,
-  color: PropTypes.string,
-  minPrice: PropTypes.number,
-  maxPrice: PropTypes.number,
-  onChange: PropTypes.func,
-};
 
 export default ProductFilter;

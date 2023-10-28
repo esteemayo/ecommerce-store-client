@@ -1,13 +1,14 @@
 'use client';
 
 import dynamic from 'next/dynamic';
-import { useCallback, useEffect, useState } from 'react';
+import { ChangeEventHandler, useCallback, useEffect, useState } from 'react';
 
 import ProductBox from '@/components/products/ProductBox';
 import Pagination from '@/components/Pagination';
 import ProductFilter from '@/components/products/ProductFilter';
 
 import { storeProducts } from '@/data';
+import { StoreProduct } from '@/types';
 
 const ProductList = dynamic(() => import('@/components/products/ProductList'), {
   ssr: false,
@@ -36,13 +37,14 @@ const Products = () => {
     sortedProducts,
   } = values;
 
-  const handleChange = useCallback(({ target: input }) => {
-    const { name, value } = input;
-    setValues((prev) => ({ ...prev, [name]: value }));
-  }, []);
+  const handleChange: ChangeEventHandler<HTMLInputElement | HTMLSelectElement> =
+    useCallback(({ target: input }) => {
+      const { name, value } = input;
+      setValues((prev) => ({ ...prev, [name]: value }));
+    }, []);
 
   useEffect(() => {
-    let tempProducts = [];
+    let tempProducts: StoreProduct = [];
     storeProducts.map((item) => {
       tempProducts.push(item);
     });
@@ -86,12 +88,12 @@ const Products = () => {
     <ProductBox>
       <ProductFilter
         products={products}
-        price={parseFloat(price)}
+        price={price}
         category={category}
         size={size}
         color={color}
-        minPrice={parseFloat(minPrice)}
-        maxPrice={parseFloat(maxPrice)}
+        minPrice={minPrice}
+        maxPrice={maxPrice}
         onChange={handleChange}
       />
       <ProductList products={sortedProducts} />

@@ -560,3 +560,14 @@ export interface PaymentModalProps {
   onClose(): void;
   onExit(): void;
 }
+
+export interface ProductFilterProps {
+  products: StoreProduct;
+  price: number;
+  category: string;
+  size: string;
+  color: string;
+  minPrice: number;
+  maxPrice: number;
+  onChange(e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>): void;
+}
