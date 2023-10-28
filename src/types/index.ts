@@ -1,5 +1,6 @@
 import { IconDefinition } from '@fortawesome/free-solid-svg-icons';
 import { ReactNode } from 'react';
+import { IconType } from 'react-icons/lib';
 
 export interface LayoutProps {
   children: ReactNode;
@@ -71,6 +72,13 @@ type LinkFooter = {
 export type FooterMenu = {
   title: string;
   links: LinkFooter[];
+}[];
+
+export type Social = {
+  id: number;
+  url: string;
+  icon: IconType;
+  color: string;
 }[];
 
 export interface SubmenuStore {
