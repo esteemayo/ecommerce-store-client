@@ -1,12 +1,14 @@
 'use client';
 
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
+import { FC } from 'react';
 
 import Heading from './Heading';
 import MenuItem from './MenuItem';
 
-const MenuItems = ({ data }) => {
+import { FooterMenuItemsProps } from '@/types';
+
+const MenuItems: FC<FooterMenuItemsProps> = ({ data }) => {
   return (
     <Container>
       {data.map((item) => {
@@ -20,7 +22,7 @@ const MenuItems = ({ data }) => {
       })}
     </Container>
   );
-}
+};
 
 const Container = styled.div`
   display: flex;
@@ -36,9 +38,5 @@ const Container = styled.div`
 `;
 
 const Wrapper = styled.div``;
-
-MenuItems.propTypes = {
-  data: PropTypes.array.isRequired,
-};
 
 export default MenuItems;

@@ -345,6 +345,10 @@ export interface ReviewItemProps {
   };
 }
 
+export interface FooterMenuItemsProps {
+  data: FooterMenu;
+}
+
 export interface FooterHeadingProps {
   title: string;
   small?: boolean;
