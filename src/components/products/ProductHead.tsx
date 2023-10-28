@@ -2,13 +2,18 @@
 
 import styled from 'styled-components';
 import Link from 'next/link';
-import PropTypes from 'prop-types';
-import { useMemo } from 'react';
+import { FC, useMemo } from 'react';
 
-import StarRating from '../StarRating';
+import { ProductHeadProps } from '@/types';
 import { formatCurrency } from '@/utils/formatCurrency';
 
-const ProductHead = ({
+import StarRating from '../StarRating';
+
+interface IProps {
+  modal?: boolean;
+}
+
+const ProductHead: FC<ProductHeadProps> = ({
   name,
   price,
   modal,
@@ -49,7 +54,7 @@ const ProductHead = ({
   );
 };
 
-const Heading = styled.h1`
+const Heading = styled.h1<IProps>`
   display: inline-block;
   font-weight: 500;
   font-size: ${({ modal }) => (modal ? '1.8rem' : '2.4rem')};
@@ -76,7 +81,7 @@ const PriceContainer = styled.div`
   gap: 0.5rem;
 `;
 
-const Price = styled.p`
+const Price = styled.p<IProps>`
   text-decoration: line-through;
   font-size: ${({ modal }) => (modal ? '1.5rem' : '1.6rem')};
   color: ${({ theme }) => theme.text};
@@ -86,7 +91,7 @@ const Price = styled.p`
   }
 `;
 
-const Discount = styled.p`
+const Discount = styled.p<IProps>`
   font-weight: ${({ modal }) => (modal ? '500' : '700')};
   font-size: ${({ modal }) => (modal ? '1.3rem' : '1.4rem')};
   padding: 0.4rem 0.6rem;
@@ -101,7 +106,7 @@ const Discount = styled.p`
   }
 `;
 
-const TotalPrice = styled.p`
+const TotalPrice = styled.p<IProps>`
   font-weight: ${({ modal }) => (modal ? '400' : '500')};
   font-size: ${({ modal }) => (modal ? '1.5rem' : '1.6rem')};
   color: #fa4b21;
@@ -163,15 +168,5 @@ const ReviewQuantity = styled.span`
     }
   }
 `;
-
-ProductHead.propTypes = {
-  name: PropTypes.string,
-  price: PropTypes.number,
-  modal: PropTypes.bool,
-  discount: PropTypes.number,
-  priceDiscount: PropTypes.number,
-  ratingsAverage: PropTypes.number,
-  ratingsQuantity: PropTypes.number,
-};
 
 export default ProductHead;

@@ -410,3 +410,13 @@ export interface ProductImageModalProps {
 export interface BreadCrumbsProps {
   category: string;
 }
+
+export interface ProductHeadProps {
+  name: string;
+  price: number;
+  modal?: boolean;
+  discount: number;
+  priceDiscount: number;
+  ratingsAverage: number;
+  ratingsQuantity: number;
+}
