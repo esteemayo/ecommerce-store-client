@@ -119,6 +119,18 @@ export type TopReview = {
   };
 }[];
 
+export type ReviewItem = {
+  id: number;
+  user: {
+    name: string;
+    img?: string;
+  };
+  rating: number;
+  review: string;
+  createdAt: string;
+  updatedAt: string;
+}[];
+
 export interface SubmenuStore {
   isOpen: boolean;
   location: {

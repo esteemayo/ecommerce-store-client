@@ -30,6 +30,7 @@ import {
   FooterLink,
   FooterMenu,
   NavLink,
+  ReviewItem,
   SliderItem,
   Social,
   StoreProduct,
@@ -857,7 +858,7 @@ export const topReviews: TopReview = [
   },
 ];
 
-export const reviewItems = [
+export const reviewItems: ReviewItem = [
   {
     id: 1,
     user: {
