@@ -1,7 +1,9 @@
 import { create } from 'zustand';
 import { devtools } from 'zustand/middleware';
 
-export const useSidebar = create(
+import { SidebarStore } from '@/types';
+
+export const useSidebar = create<SidebarStore>()(
   devtools((set) => ({
     isOpen: false,
     onOpen: () => set(() => ({ isOpen: true }), false, 'openSidebar'),

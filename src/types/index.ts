@@ -62,3 +62,9 @@ export interface SubmenuStore {
   openSubmenu(value: any): void;
   closeSubmenu(): void;
 }
+
+export interface SidebarStore {
+  isOpen: boolean;
+  onOpen(): void;
+  onClose(): void;
+}
