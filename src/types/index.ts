@@ -8,6 +8,17 @@ export interface ClientOnlyProps {
   children: ReactNode;
 }
 
+export type CartItem = {
+  id: number;
+  name: string;
+  images: string[];
+  color: string;
+  size: string;
+  price: number;
+  inCart: boolean;
+  quantity: number;
+};
+
 export interface CartStore {
   cart: [];
   wishlist: [];

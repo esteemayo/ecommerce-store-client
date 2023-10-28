@@ -24,6 +24,7 @@ import {
   faStore,
   faTruckFast,
 } from '@fortawesome/free-solid-svg-icons';
+import { CartItem } from '@/types';
 
 export const navLinks = [
   {
@@ -952,7 +953,7 @@ export const wishlists = [
   },
 ];
 
-export const cartItems = [
+export const cartItems: CartItem = [
   {
     id: 1,
     name: 'Short blouse with embroideries',
