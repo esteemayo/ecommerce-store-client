@@ -126,3 +126,9 @@ export interface WishlistModalStore {
   onOpen(): void;
   onClose(): void;
 }
+
+export interface WishlistProps {
+  actionId: number;
+  product: any;
+  wished: CartItem;
+}
