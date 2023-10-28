@@ -7,6 +7,7 @@ import { useCallback, useState } from 'react';
 import { useSubmenu } from '@/hooks/useSubmenu';
 import useSearchModal from '@/hooks/useSearchModal';
 import { useSidebar } from '@/hooks/useSidebar';
+import { useCartStore } from '@/hooks/useCartStore';
 
 import Logo from './Logo';
 import DarkModeToggle from './DarkModeToggle';
@@ -17,7 +18,6 @@ import ToggleButton from './ToggleButton';
 import SearchIcon from './SearchIcon';
 
 import { navLinks } from '@/data';
-import { useCartStore } from '@/hooks/useCartStore';
 
 const Navbar = () => {
   const searchModal = useSearchModal();
@@ -43,8 +43,10 @@ const Navbar = () => {
     (e: React.MouseEvent<HTMLButtonElement>) => {
       e.stopPropagation();
 
-      const page = e.target.textContent;
-      const tempBtn = e.target.getBoundingClientRect();
+      const target = e.target as Element;
+
+      const page = target.textContent;
+      const tempBtn = target.getBoundingClientRect();
 
       const center = (tempBtn.left + tempBtn.right) / 2;
       const bottom = tempBtn.bottom;
@@ -66,7 +68,9 @@ const Navbar = () => {
     (e: React.MouseEvent<HTMLButtonElement>) => {
       e.stopPropagation();
 
-      if (!e.target.classList.contains('link-btn')) {
+      const target = e.target as Element;
+
+      if (!target.classList.contains('link-btn')) {
         closeSubmenu();
       }
     },
