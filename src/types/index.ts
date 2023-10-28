@@ -474,6 +474,13 @@ export interface RecommendationProps {
   data: Recommendation;
 }
 
+export interface RecommendationItemProps {
+  id: number;
+  name: string;
+  price: number;
+  image: string;
+}
+
 export interface ReviewsProps {
   reviews: ReviewItem;
   sortLabel: 'newest' | 'highest rating' | 'lowest rating';
