@@ -1,7 +1,9 @@
 import { create } from 'zustand';
 import { devtools } from 'zustand/middleware';
 
-const useWishlistModal = create(
+import { WishlistModalStore } from '@/types';
+
+const useWishlistModal = create<WishlistModalStore>()(
   devtools((set) => ({
     isOpen: false,
     onOpen: () => set(() => ({ isOpen: true }), false, 'openWishlistModal'),

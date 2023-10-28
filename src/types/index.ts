@@ -120,3 +120,9 @@ export interface ReviewModalStore {
   onOpen(): void;
   onClose(): void;
 }
+
+export interface WishlistModalStore {
+  isOpen: boolean;
+  onOpen(): void;
+  onClose(): void;
+}
