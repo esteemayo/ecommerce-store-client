@@ -1,7 +1,9 @@
 import { create } from 'zustand';
 import { devtools } from 'zustand/middleware';
 
-const useEmailModal = create(
+import { EmailModalStore } from '@/types';
+
+const useEmailModal = create<EmailModalStore>()(
   devtools((set) => ({
     isOpen: false,
     onOpen: () => set(() => ({ isOpen: true }), false, 'openEmailModal'),

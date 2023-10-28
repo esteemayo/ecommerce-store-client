@@ -84,3 +84,9 @@ export interface DarkModeStore {
   mode: boolean;
   toggle(): void;
 }
+
+export interface EmailModalStore {
+  isOpen: boolean;
+  onOpen(): void;
+  onClose(): void;
+}
