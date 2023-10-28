@@ -2,7 +2,7 @@
 
 import styled from 'styled-components';
 import { faArrowUpFromBracket } from '@fortawesome/free-solid-svg-icons';
-import PropTypes from 'prop-types';
+import { FC } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import Avatar from '../images/Avatar';
@@ -11,7 +11,14 @@ import DefaultAvatar from '../images/DefaultAvatar';
 import DateTime from '../DateTime';
 import StarRating from '../StarRating';
 
-const ReviewCard = ({ user, rating, review, createdAt }) => {
+import { ReviewCardProps } from '@/types';
+
+const ReviewCard: FC<ReviewCardProps> = ({
+  user,
+  rating,
+  review,
+  createdAt,
+}) => {
   const options = { month: 'long', day: 'numeric', year: 'numeric' };
 
   return (
@@ -26,19 +33,11 @@ const ReviewCard = ({ user, rating, review, createdAt }) => {
             )}
             <Name>{user.name}</Name>
           </Reviewer>
-          <StarRating
-            readOnly
-            value={rating}
-            name='read-only'
-          />
+          <StarRating readOnly value={rating} name='read-only' />
         </ReviewContainer>
         <Review>{review}</Review>
         <DateContainer>
-          <DateTime
-            date={createdAt}
-            type='review'
-            options={options}
-          />
+          <DateTime date={createdAt} type='review' options={options} />
           <ShareButton type='button'>
             <FontAwesomeIcon icon={faArrowUpFromBracket} />
             Share
@@ -47,7 +46,7 @@ const ReviewCard = ({ user, rating, review, createdAt }) => {
       </Wrapper>
     </Container>
   );
-}
+};
 
 const Container = styled.article`
   width: 65rem;
@@ -209,12 +208,5 @@ const ShareButton = styled.button`
     color: currentColor;
   }
 `;
-
-ReviewCard.propTypes = {
-  user: PropTypes.object.isRequired,
-  rating: PropTypes.number.isRequired,
-  review: PropTypes.string.isRequired,
-  createdAt: PropTypes.string.isRequired,
-};
 
 export default ReviewCard;

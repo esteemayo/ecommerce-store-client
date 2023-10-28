@@ -504,3 +504,15 @@ export interface ReviewCardsProps {
   reviews: ReviewItem;
   onOpen(): void;
 }
+
+export interface ReviewCardProps {
+  id: number;
+  user: {
+    name: string;
+    img?: string;
+  };
+  rating: number;
+  review: string;
+  createdAt: string;
+  updatedAt: string;
+}
