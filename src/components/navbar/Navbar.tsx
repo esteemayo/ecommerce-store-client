@@ -63,7 +63,7 @@ const Navbar = () => {
   );
 
   const handleSubmenu = useCallback(
-    (e) => {
+    (e: React.MouseEvent<HTMLButtonElement>) => {
       e.stopPropagation();
 
       if (!e.target.classList.contains('link-btn')) {

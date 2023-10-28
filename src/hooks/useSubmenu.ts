@@ -2,8 +2,9 @@ import { create } from 'zustand';
 import { devtools } from 'zustand/middleware';
 
 import { sublinks } from '@/data';
+import { SubmenuStore } from '@/types';
 
-export const useSubmenu = create(
+export const useSubmenu = create<SubmenuStore>()(
   devtools((set) => ({
     isOpen: false,
     location: {},

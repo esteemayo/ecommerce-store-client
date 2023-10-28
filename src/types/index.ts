@@ -1,3 +1,4 @@
+import { IconDefinition } from '@fortawesome/free-solid-svg-icons';
 import { ReactNode } from 'react';
 
 export interface LayoutProps {
@@ -35,4 +36,29 @@ export interface CartStore {
   remove(id: number): void;
   toggleQuantity(value: any): void;
   calcTotals(): void;
+}
+
+type Link = {
+  url?: string;
+  icon?: IconDefinition;
+  label?: string;
+}[];
+
+export type Sublink = {
+  page: string;
+  links: Link;
+}[];
+
+export interface SubmenuStore {
+  isOpen: boolean;
+  location: {
+    center?: number;
+    bottom?: number;
+  };
+  page: {
+    page: string;
+    links: Link;
+  };
+  openSubmenu(value: any): void;
+  closeSubmenu(): void;
 }
