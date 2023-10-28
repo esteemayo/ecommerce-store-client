@@ -36,6 +36,7 @@ import {
   StoreProduct,
   Sublink,
   TopReview,
+  WishlistItem,
 } from '@/types';
 
 export const navLinks: NavLink = [
@@ -884,7 +885,7 @@ export const reviewItems: ReviewItem = [
   },
 ];
 
-export const wishlists = [
+export const wishlists: WishlistItem = [
   {
     id: 11,
     name: 'Native wears',
