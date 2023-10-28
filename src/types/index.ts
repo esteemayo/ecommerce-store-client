@@ -420,3 +420,13 @@ export interface ProductHeadProps {
   ratingsAverage: number;
   ratingsQuantity: number;
 }
+
+export interface ColorSelectProps {
+  title: string;
+  mode?: boolean;
+  value: string[];
+  modal?: boolean;
+  selected?: string | null;
+  onAction(value: string): void;
+  secondaryAction(selected: boolean): void;
+}
