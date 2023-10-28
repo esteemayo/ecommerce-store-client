@@ -459,3 +459,8 @@ export interface AlertProps {
   message: string;
   onChange(alert: boolean): void;
 }
+
+export interface ProductValueProps {
+  items: ProductValue;
+  mode: string;
+}

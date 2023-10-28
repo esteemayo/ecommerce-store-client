@@ -1,13 +1,19 @@
 'use client';
 
 import styled from 'styled-components';
+import { FC } from 'react';
 import Image from 'next/image';
-import PropTypes from 'prop-types';
 
-const ProductValue = ({ items, mode }) => {
+import { ProductValueProps } from '@/types';
+
+interface IMode {
+  mode: string;
+}
+
+const ProductValue: FC<ProductValueProps> = ({ items, mode }) => {
   return (
     <Container>
-      <ValueAdd mode={mode}>
+      <ValueAdd>
         {items?.map((item) => {
           const { id, desc, img } = item;
           return (
@@ -17,6 +23,7 @@ const ProductValue = ({ items, mode }) => {
                 width={24}
                 height={24}
                 alt=''
+                mode={mode}
               />
               <span>{desc}</span>
             </ImageWrapper>
@@ -25,7 +32,7 @@ const ProductValue = ({ items, mode }) => {
       </ValueAdd>
     </Container>
   );
-}
+};
 
 const Container = styled.div`
   width: 100%;
@@ -53,17 +60,12 @@ const ImageWrapper = styled.div`
   gap: 0.8rem;
 `;
 
-const StyledImage = styled(Image)`
+const StyledImage = styled(Image)<IMode>`
   width: 2.4rem;
   height: auto;
   background-color: ${({ mode }) => mode === 'true' && '#1b1a1a'};
   display: inline-block;
   object-fit: cover;
 `;
-
-ProductValue.propTypes = {
-  items: PropTypes.array.isRequired,
-  mode: PropTypes.string.isRequired,
-};
 
 export default ProductValue;
