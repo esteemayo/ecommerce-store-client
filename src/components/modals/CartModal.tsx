@@ -1,10 +1,9 @@
 'use client';
 
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
 import CloseIcon from '@mui/icons-material/Close';
 import Image from 'next/image';
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { FC, useCallback, useEffect, useMemo, useState } from 'react';
 
 import ColorSelect from '../inputs/ColorSelect';
 import Counter from '../inputs/Counter';
@@ -17,8 +16,14 @@ import { useCart } from '@/hooks/useCart';
 import { useDarkMode } from '@/hooks/useDarkMode';
 
 import Alert from '../Alert';
+import { CartModalProps } from '@/types';
 
-const CartModal = ({ product, isOpen, onClose, onSelect }) => {
+const CartModal: FC<CartModalProps> = ({
+  product,
+  isOpen,
+  onClose,
+  onSelect,
+}) => {
   const mode = useDarkMode((state) => state.mode);
   const [showModal, setShowModal] = useState(isOpen);
 
@@ -47,13 +52,18 @@ const CartModal = ({ product, isOpen, onClose, onSelect }) => {
     }, 300);
   }, [onClose, onSelect, handleReset]);
 
-  const closeModalHandler = useCallback((e) => {
-    e.stopPropagation();
+  const closeModalHandler = useCallback(
+    (e: React.MouseEvent<HTMLButtonElement>) => {
+      e.stopPropagation();
 
-    if (e.target.classList.contains('overlay')) {
-      handleCloseModal();
-    }
-  }, [handleCloseModal]);
+      const target = e.target as Element;
+
+      if (target.classList.contains('overlay')) {
+        handleCloseModal();
+      }
+    },
+    [handleCloseModal]
+  );
 
   const activeModal = useMemo(() => {
     return showModal?.toString();
@@ -72,11 +82,7 @@ const CartModal = ({ product, isOpen, onClose, onSelect }) => {
   }
 
   return (
-    <Overlay
-      mode={modeValue}
-      onClick={closeModalHandler}
-      className='overlay'
-    >
+    <Overlay mode={modeValue} onClick={closeModalHandler} className='overlay'>
       <Wrapper active={activeModal}>
         <Box mode={modeValue}>
           <ButtonContainer>
@@ -112,7 +118,7 @@ const CartModal = ({ product, isOpen, onClose, onSelect }) => {
             />
             {product?.size && (
               <SizeSelect
-                value={product?.size}
+                value={product.size}
                 selected={selectedSize}
                 onAction={setSize}
                 secondaryAction={setSelectedSize}
@@ -120,11 +126,7 @@ const CartModal = ({ product, isOpen, onClose, onSelect }) => {
               />
             )}
             <Hr />
-            <Counter
-              title='Quantity'
-              value={quantity}
-              onClick={setQuantity}
-            />
+            <Counter title='Quantity' value={quantity} onClick={setQuantity} />
             <Hr />
             <ProductButton
               small
@@ -144,7 +146,7 @@ const CartModal = ({ product, isOpen, onClose, onSelect }) => {
       </Wrapper>
     </Overlay>
   );
-}
+};
 
 const Overlay = styled.aside`
   width: 100vw;
@@ -155,7 +157,7 @@ const Overlay = styled.aside`
   top: 0;
   left: 0;
   z-index: 4000;
-  
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -172,9 +174,12 @@ const Box = styled.div`
   padding: 2rem 4rem;
   background-color: ${({ theme }) => theme.bgModal};
   border-radius: 1.5rem;
-  box-shadow: ${({ mode }) => mode === 'true' ? 'none' : '0 2rem 4rem rgba(145, 143, 143, 0.1)'};
-  -webkit-box-shadow: ${({ mode }) => mode === 'true' ? 'none' : '0 2rem 4rem rgba(145, 143, 143, 0.1)'};
-  -moz-box-shadow: ${({ mode }) => mode === 'true' ? 'none' : '0 2rem 4rem rgba(145, 143, 143, 0.1)'};
+  box-shadow: ${({ mode }) =>
+    mode === 'true' ? 'none' : '0 2rem 4rem rgba(145, 143, 143, 0.1)'};
+  -webkit-box-shadow: ${({ mode }) =>
+    mode === 'true' ? 'none' : '0 2rem 4rem rgba(145, 143, 143, 0.1)'};
+  -moz-box-shadow: ${({ mode }) =>
+    mode === 'true' ? 'none' : '0 2rem 4rem rgba(145, 143, 143, 0.1)'};
   position: relative;
 
   @media only screen and (max-width: 37.5em) {
@@ -249,12 +254,5 @@ const Hr = styled.hr`
   border: none;
   background-color: ${({ theme }) => theme.cartModalBorder};
 `;
-
-CartModal.propTypes = {
-  product: PropTypes.object,
-  isOpen: PropTypes.bool.isRequired,
-  onClose: PropTypes.func.isRequired,
-  onSelect: PropTypes.func.isRequired,
-};
 
 export default CartModal;

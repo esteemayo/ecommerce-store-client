@@ -306,15 +306,29 @@ export interface HeaderProps {
 
 type Product = {
   id: number;
-  images: string[];
+  name: string;
+  desc: string;
   price: number;
+  priceDiscount: number;
+  numberInStock: number;
+  inStock: boolean;
+  images: string[];
+  featured: boolean;
+  color: string[];
+  size: string[];
+  category: string;
   discount: number;
-  ratingsQuantity: number;
-  ratingsAverage: number;
 };
 
 export interface ProductCardProps {
   product: Product;
   onOpen(): void;
+  onSelect(value: any): void;
+}
+
+export interface CartModalProps {
+  product: Product;
+  isOpen: boolean;
+  onClose(): void;
   onSelect(value: any): void;
 }
