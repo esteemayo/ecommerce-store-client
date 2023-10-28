@@ -1,7 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import Header from '../Header';
 import ProductCard from '../card/ProductCard';
@@ -9,9 +9,10 @@ import ProductCard from '../card/ProductCard';
 import CartModal from '../modals/CartModal';
 
 import { storeProducts } from '@/data';
-import { StyledWrapper } from '../StyledWrapper';
-
 import { useCartModal } from '@/hooks/useCartModal';
+import { StoreProduct } from '@/types';
+
+import { StyledWrapper } from '../StyledWrapper';
 
 const FeaturedProducts = () => {
   const isOpen = useCartModal((state) => state.isOpen);
@@ -19,7 +20,11 @@ const FeaturedProducts = () => {
   const onOpen = useCartModal((state) => state.onOpen);
 
   const [isSelectedProduct, setIsSelectedProduct] = useState({});
-  const [featuredProducts, setFeaturedProducts] = useState(storeProducts);
+  const [featuredProducts, setFeaturedProducts] = useState<StoreProduct>([]);
+
+  useEffect(() => {
+    setFeaturedProducts(storeProducts);
+  }, []);
 
   return (
     <Container>
