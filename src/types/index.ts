@@ -13,11 +13,11 @@ export type CartItem = {
   name: string;
   images: string[];
   color: string;
-  size: string;
+  size: string | number;
   price: number;
   inCart: boolean;
   quantity: number;
-};
+}[];
 
 export interface CartStore {
   cart: [];
