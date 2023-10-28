@@ -31,6 +31,7 @@ import {
   FooterMenu,
   NavLink,
   OrderItem,
+  Recommendation,
   ReviewItem,
   SliderItem,
   Social,
@@ -1158,7 +1159,7 @@ export const orders: OrderItem = [
   },
 ];
 
-export const recommendations = [
+export const recommendations: Recommendation = [
   {
     id: 1,
     image: '/img/user-9.jpg',

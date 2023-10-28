@@ -163,6 +163,13 @@ export type OrderItem = {
   updatedAt: string;
 }[];
 
+export type Recommendation = {
+  id: number;
+  image: string;
+  name: string;
+  price: number;
+}[];
+
 export interface SubmenuStore {
   isOpen: boolean;
   location: {
