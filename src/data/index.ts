@@ -27,6 +27,7 @@ import {
 
 import {
   CartItem,
+  FooterLink,
   FooterMenu,
   NavLink,
   SliderItem,
@@ -394,7 +395,7 @@ export const social: Social = [
   },
 ];
 
-export const footerLinks = [
+export const footerLinks: FooterLink = [
   {
     id: 1,
     url: '#',

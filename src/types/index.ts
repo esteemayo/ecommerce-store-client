@@ -81,6 +81,12 @@ export type Social = {
   color: string;
 }[];
 
+export type FooterLink = {
+  id: number;
+  url: string;
+  text: string;
+}[];
+
 export interface SubmenuStore {
   isOpen: boolean;
   location: {
