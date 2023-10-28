@@ -327,11 +327,20 @@ type CartModalValues = {
   priceDiscount?: number;
   color?: string[];
   size?: string[];
-}
+};
 
 export interface CartModalProps {
   product: CartModalValues;
   isOpen: boolean;
   onClose(): void;
   onSelect(value: any): void;
+}
+
+export interface ReviewItemProps {
+  rating: number;
+  review: string;
+  user: {
+    name: string;
+    photo: string;
+  };
 }

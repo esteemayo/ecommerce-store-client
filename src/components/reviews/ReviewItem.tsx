@@ -2,13 +2,13 @@
 
 import styled from 'styled-components';
 import Link from 'next/link';
-import PropTypes from 'prop-types';
+import { FC, useMemo } from 'react';
 import Image from 'next/image';
-import { useMemo } from 'react';
 
 import StarRating from '../StarRating';
+import { ReviewItemProps } from '@/types';
 
-const ReviewItem = ({ user, rating, review }) => {
+const ReviewItem: FC<ReviewItemProps> = ({ user, rating, review }) => {
   const reviewer = useMemo(() => {
     return `
       ${user.name.split(' ')[0]} 
@@ -21,11 +21,7 @@ const ReviewItem = ({ user, rating, review }) => {
       <Wrapper>
         <Left>
           <RatingContainer>
-            <StarRating
-              readOnly
-              value={rating}
-              name='read-only'
-            />
+            <StarRating readOnly value={rating} name='read-only' />
             <ReviewCount>Based on 61 reviews</ReviewCount>
           </RatingContainer>
           <ReviewContainer>
@@ -39,17 +35,12 @@ const ReviewItem = ({ user, rating, review }) => {
           </Button>
         </Left>
         <Right>
-          <StyledImage
-            src={user.photo}
-            width={1200}
-            height={1200}
-            alt=''
-          />
+          <StyledImage src={user.photo} width={1200} height={1200} alt='' />
         </Right>
       </Wrapper>
     </Container>
   );
-}
+};
 
 const Container = styled.article`
   background-color: ${({ theme }) => theme.bgRev};
@@ -103,7 +94,7 @@ const RatingContainer = styled.div`
 
   svg {
     font-size: 2rem;
-    color:  ${({ theme }) => theme.star};
+    color: ${({ theme }) => theme.star};
     margin-right: 0.5rem;
 
     @media only screen and (max-width: 18.75em) {
@@ -212,11 +203,5 @@ const StyledImage = styled(Image)`
   display: block;
   object-fit: cover;
 `;
-
-ReviewItem.propTypes = {
-  user: PropTypes.object.isRequired,
-  rating: PropTypes.number.isRequired,
-  review: PropTypes.string.isRequired,
-};
 
 export default ReviewItem;
