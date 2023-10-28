@@ -151,6 +151,18 @@ export type WishlistItem = {
   slug: string;
 }[];
 
+export type OrderItem = {
+  id: number;
+  customer: string;
+  address: string;
+  total: number;
+  status: number;
+  paymentMethod: number;
+  user: string;
+  createdAt: string;
+  updatedAt: string;
+}[];
+
 export interface SubmenuStore {
   isOpen: boolean;
   location: {

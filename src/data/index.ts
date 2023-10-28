@@ -30,6 +30,7 @@ import {
   FooterLink,
   FooterMenu,
   NavLink,
+  OrderItem,
   ReviewItem,
   SliderItem,
   Social,
@@ -1088,7 +1089,7 @@ export const cartItems: CartItem = [
   },
 ];
 
-export const orders = [
+export const orders: OrderItem = [
   {
     id: 1,
     customer: 'Mary Doe',
