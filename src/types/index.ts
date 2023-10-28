@@ -114,3 +114,9 @@ export interface ImageModalStore {
   onOpen(): void;
   onClose(): void;
 }
+
+export interface ReviewModalStore {
+  isOpen: boolean;
+  onOpen(): void;
+  onClose(): void;
+}
