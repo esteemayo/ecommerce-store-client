@@ -428,5 +428,5 @@ export interface ColorSelectProps {
   modal?: boolean;
   selected?: string | null;
   onAction(value: string): void;
-  secondaryAction(selected: boolean): void;
+  secondaryAction(selected: string): void;
 }

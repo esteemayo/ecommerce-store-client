@@ -21,7 +21,7 @@ const ColorSelect: FC<ColorSelectProps> = ({
   secondaryAction,
 }) => {
   const handleSelect = useCallback(
-    (color) => {
+    (color: string) => {
       onAction(color);
       secondaryAction(color);
     },
@@ -40,7 +40,7 @@ const ColorSelect: FC<ColorSelectProps> = ({
               color={item}
               mode={mode}
               selected={item === selected}
-              onClick={() => handleSelect(item)}
+              onClick={() => handleSelect(item as string)}
               modal={modal}
             />
           );
