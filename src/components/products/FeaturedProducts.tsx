@@ -14,7 +14,9 @@ import { StyledWrapper } from '../StyledWrapper';
 import useCartModal from '@/hooks/useCartModal';
 
 const FeaturedProducts = () => {
-  const { isOpen, onOpen, onClose } = useCartModal();
+  const isOpen = useCartModal((state) => state.isOpen);
+  const onClose = useCartModal((state) => state.onClose);
+  const onOpen = useCartModal((state) => state.onOpen);
 
   const [isSelectedProduct, setIsSelectedProduct] = useState({});
   const [featuredProducts, setFeaturedProducts] = useState(storeProducts);
@@ -35,8 +37,7 @@ const FeaturedProducts = () => {
                   onSelect={setIsSelectedProduct}
                 />
               );
-            })
-          }
+            })}
         </ProductsContainer>
       </StyledWrapper>
       <CartModal
@@ -47,7 +48,7 @@ const FeaturedProducts = () => {
       />
     </Container>
   );
-}
+};
 
 const Container = styled.section`
   width: 100vw;
