@@ -264,6 +264,12 @@ export interface AccountModalStore {
   onClose(): void;
 }
 
+export interface CartModalStore {
+  isOpen: boolean;
+  onOpen(): void;
+  onClose(): void;
+}
+
 export interface WishlistProps {
   actionId: number;
   product: any;
