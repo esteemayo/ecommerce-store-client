@@ -436,6 +436,13 @@ export interface SizeSelectProps {
   title: string;
   modal?: boolean;
   selected?: string | null;
-  onAction(value: string): void;
-  secondaryAction(selected: string): void;
+  onAction(value: string | number): void;
+  secondaryAction(selected: string | number): void;
+}
+
+export interface CounterProps {
+  value: number;
+  title: string;
+  modal?: boolean;
+  onClick(value: number): void;
 }
