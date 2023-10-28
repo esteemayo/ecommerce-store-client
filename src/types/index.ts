@@ -62,6 +62,17 @@ export type SliderItem = {
   desc: string;
 }[];
 
+type LinkFooter = {
+  id: number;
+  url: string;
+  text: string;
+};
+
+export type FooterMenu = {
+  title: string;
+  links: LinkFooter[];
+}[];
+
 export interface SubmenuStore {
   isOpen: boolean;
   location: {

@@ -25,7 +25,7 @@ import {
   faTruckFast,
 } from '@fortawesome/free-solid-svg-icons';
 
-import { CartItem, NavLink, SliderItem, Sublink } from '@/types';
+import { CartItem, FooterMenu, NavLink, SliderItem, Sublink } from '@/types';
 
 export const navLinks: NavLink = [
   {
@@ -216,7 +216,7 @@ export const sliderItems: SliderItem = [
   },
 ];
 
-export const footerMenus = [
+export const footerMenus: FooterMenu = [
   {
     title: 'About the store',
     links: [
