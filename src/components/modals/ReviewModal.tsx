@@ -3,7 +3,7 @@
 import styled, { css } from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
-import { FC, useCallback, useEffect, useMemo, useState } from 'react';
+import React, { FC, useCallback, useEffect, useMemo, useState } from 'react';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 
 import { ReviewModalProps } from '@/types';
@@ -43,10 +43,12 @@ const ReviewModal: FC<ReviewModalProps> = ({ isOpen, onClose }) => {
   }, [onClose, handleClear]);
 
   const handleCloseModal = useCallback(
-    (e) => {
+    (e: React.MouseEvent<HTMLButtonElement>) => {
       e.stopPropagation();
 
-      if (e.target.classList.contains('overlay')) {
+      const target = e.target as Element;
+
+      if (target.classList.contains('overlay')) {
         closeModalHandler();
       }
     },
