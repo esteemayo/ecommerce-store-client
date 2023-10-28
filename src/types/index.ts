@@ -369,3 +369,26 @@ export interface FooterLinkProps {
 export interface FooterTextProps {
   value: number;
 }
+
+type ProductValues = {
+  id: number;
+  name: string;
+  desc: string;
+  price: number;
+  priceDiscount: number;
+  numberInStock: number;
+  inStock: boolean;
+  images: string[];
+  featured: boolean;
+  color: string[];
+  size: string[];
+  category: string;
+  tags: string[];
+  ratingsQuantity: number;
+  ratingsAverage: number;
+  discount: number;
+};
+
+export interface ProductProps {
+  product: ProductValues | object;
+}

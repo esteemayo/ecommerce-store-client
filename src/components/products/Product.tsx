@@ -1,6 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
+import { FC } from 'react';
 import PropTypes from 'prop-types';
 
 import { useCart } from '@/hooks/useCart';
@@ -16,12 +17,13 @@ import ProductInfo from './ProductInfo';
 import ProductButton from './ProductButton';
 import ProductImage from './ProductImage';
 
-import Alert from '../Alert';
 import { productValue } from '@/data';
+import { ProductProps } from '@/types';
 
+import Alert from '../Alert';
 import { useDarkMode } from '@/hooks/useDarkMode';
 
-const Product = ({ product }) => {
+const Product: FC<ProductProps> = ({ product }) => {
   const mode = useDarkMode((state) => state.mode);
 
   const {
@@ -72,16 +74,9 @@ const Product = ({ product }) => {
               secondaryAction={setSelectedSize}
             />
             <Hr />
-            <Counter
-              title='Quantity'
-              value={quantity}
-              onClick={setQuantity}
-            />
+            <Counter title='Quantity' value={quantity} onClick={setQuantity} />
             <Hr />
-            <ProductButton
-              actionLabel='Add to cart'
-              onAction={handleClick}
-            />
+            <ProductButton actionLabel='Add to cart' onAction={handleClick} />
             {alert && (
               <Alert
                 alert={alert}
@@ -90,21 +85,15 @@ const Product = ({ product }) => {
               />
             )}
             <Hr />
-            <ProductValue
-              items={productValue}
-              mode={mode.toString()}
-            />
+            <ProductValue items={productValue} mode={mode.toString()} />
             <Hr />
-            <ProductInfo
-              title='Overview'
-              content={product.desc}
-            />
+            <ProductInfo title='Overview' content={product.desc} />
           </ProductWrapper>
         </Right>
       </ProductContainer>
     </Container>
   );
-}
+};
 
 const Container = styled.div`
   width: 100%;
@@ -178,21 +167,5 @@ const Hr = styled.hr`
   border: none;
   background-color: ${({ theme }) => theme.cartModalBorder};
 `;
-
-Product.propTypes = {
-  product: PropTypes.shape({
-    name: PropTypes.string,
-    color: PropTypes.array,
-    size: PropTypes.array,
-    price: PropTypes.number,
-    discount: PropTypes.number,
-    priceDiscount: PropTypes.number,
-    ratingsAverage: PropTypes.number,
-    ratingsQuantity: PropTypes.number,
-    images: PropTypes.array,
-    category: PropTypes.string,
-    desc: PropTypes.string,
-  }),
-};
 
 export default Product;

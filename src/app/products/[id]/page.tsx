@@ -6,7 +6,7 @@ import dynamic from 'next/dynamic';
 
 import { useSubmenu } from '@/hooks/useSubmenu';
 import { recommendations, reviewItems, storeProducts } from '@/data';
-import { ReviewItem } from '@/types';
+import { ProductProps, ReviewItem } from '@/types';
 
 const Product = dynamic(() => import('@/components/products/Product'), {
   ssr: false,
@@ -29,9 +29,9 @@ const SingleProduct = ({ params }) => {
   const { id } = params;
   const closeSubmenu = useSubmenu((state) => state.closeSubmenu);
 
-  const [product, setProduct] = useState({});
-  const [reviews, setReviews] = useState<ReviewItem>([]);
+  const [product, setProduct] = useState<ProductProps | object>({});
   const [sort, setSort] = useState(null);
+  const [reviews, setReviews] = useState<ReviewItem>([]);
 
   const getSort = useMemo(() => {
     if (sort === 'newest') return 'newest';
