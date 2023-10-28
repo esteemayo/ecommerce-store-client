@@ -1,16 +1,18 @@
 'use client';
 
 import styled from 'styled-components';
+import { FC } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import PropTypes from 'prop-types';
 
-const ToggleButton = ({ icon: Icon, onClick }) => {
+import { ToggleButtonProps } from '@/types';
+
+const ToggleButton: FC<ToggleButtonProps> = ({ icon: Icon, onClick }) => {
   return (
     <Button type='button' onClick={onClick}>
       <FontAwesomeIcon icon={Icon} />
     </Button>
   );
-}
+};
 
 const Button = styled.button`
   display: inline-block;
@@ -32,14 +34,9 @@ const Button = styled.button`
     fill: inherit;
   }
 
-  @media only screen and (min-width:50em){
+  @media only screen and (min-width: 50em) {
     display: none;
   }
 `;
-
-ToggleButton.propTypes = {
-  icon: PropTypes.object.isRequired,
-  onClick: PropTypes.func.isRequired,
-};
 
 export default ToggleButton;

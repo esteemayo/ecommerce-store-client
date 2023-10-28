@@ -288,3 +288,8 @@ export interface CartQuantityProps {
 export interface SearchIconProps {
   onOpen(): void;
 }
+
+export interface ToggleButtonProps {
+  icon: IconDefinition;
+  onClick(): void;
+}
