@@ -108,3 +108,9 @@ export interface PaymentModalStore {
   onOpen(): void;
   onClose(): void;
 }
+
+export interface ImageModalStore {
+  isOpen: boolean;
+  onOpen(): void;
+  onClose(): void;
+}

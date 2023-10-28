@@ -1,7 +1,9 @@
 import { create } from 'zustand';
 import { devtools } from 'zustand/middleware';
 
-const useImageModal = create(
+import { ImageModalStore } from '@/types';
+
+const useImageModal = create<ImageModalStore>()(
   devtools((set) => ({
     isOpen: false,
     onOpen: () => set(() => ({ isOpen: true }), false, 'openImageModal'),
