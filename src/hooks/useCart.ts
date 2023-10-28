@@ -28,7 +28,7 @@ export const useCart = (product) => {
     removeWishlist(product.id);
     setAlert(true);
     handleReset();
-  }, [color, product, quantity, size, handleReset]);
+  }, [addProduct, color, product, removeWishlist, quantity, size, handleReset]);
 
   return {
     alert,
