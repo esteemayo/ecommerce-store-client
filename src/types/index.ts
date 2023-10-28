@@ -487,3 +487,14 @@ export interface ReviewsProps {
   sort: string | null;
   onSort(sort: string | null): void;
 }
+
+export interface ReviewHeadProps {
+  sort: string | null;
+  sortLabel: string;
+  rating: number;
+  reviews: ReviewItem;
+  isOpen: boolean;
+  onOpen(): void;
+  onSort(sort: string | null): void;
+  onToggle(): void;
+}

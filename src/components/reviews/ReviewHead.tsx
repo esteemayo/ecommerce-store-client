@@ -1,13 +1,15 @@
 'use client';
 
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
+import { FC } from 'react';
 
 import ReviewButton from './ReviewButton';
 import StarRating from '../StarRating';
 import ReviewFilter from './ReviewFilter';
 
-const ReviewHead = ({
+import { ReviewHeadProps } from '@/types';
+
+const ReviewHead: FC<ReviewHeadProps> = ({
   sort,
   sortLabel,
   rating,
@@ -21,22 +23,15 @@ const ReviewHead = ({
     <Container>
       <Ratings>
         <TotalRatings>
-          {!!reviews.length === 0 ? 0 : reviews.length.toFixed(1)}
+          {reviews.length === 0 ? 0 : reviews.length.toFixed(1)}
         </TotalRatings>
-        <StarRating
-          readOnly
-          value={rating}
-          name='read-only'
-        />
+        <StarRating readOnly value={rating} name='read-only' />
         <TotalReviews>{reviews.length} reviews</TotalReviews>
       </Ratings>
       <Wrapper>
         {reviews.length > 0 && (
           <ReviewButtonWrapper>
-            <ReviewButton
-              actionLabel='Leave a review'
-              onAction={onOpen}
-            />
+            <ReviewButton actionLabel='Leave a review' onAction={onOpen} />
           </ReviewButtonWrapper>
         )}
         <ReviewFilter
@@ -49,7 +44,7 @@ const ReviewHead = ({
       </Wrapper>
     </Container>
   );
-}
+};
 
 const Container = styled.div`
   padding: 3rem 0 0.5rem 0;
@@ -122,16 +117,5 @@ const Wrapper = styled.div`
 `;
 
 const ReviewButtonWrapper = styled.div``;
-
-ReviewHead.propTypes = {
-  sort: PropTypes.string.isRequired,
-  sortLabel: PropTypes.string,
-  rating: PropTypes.number.isRequired,
-  reviews: PropTypes.array.isRequired,
-  isOpen: PropTypes.bool.isRequired,
-  onOpen: PropTypes.func.isRequired,
-  onSort: PropTypes.func.isRequired,
-  onToggle: PropTypes.func.isRequired,
-};
 
 export default ReviewHead;
