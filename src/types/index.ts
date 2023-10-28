@@ -390,5 +390,9 @@ type ProductValues = {
 };
 
 export interface ProductProps {
-  product: ProductValues | object;
+  product: ProductValues;
+}
+
+export interface ProductImageProps {
+  images: string[];
 }

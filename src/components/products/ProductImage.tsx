@@ -3,14 +3,18 @@
 import styled from 'styled-components';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useCallback, useRef, useState } from 'react';
+import { FC, useCallback, useRef, useState } from 'react';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import PropTypes from 'prop-types';
 
 import useImageModal from '@/hooks/useImageModal';
 import ProductImageModal from '../modals/ProductImageModal';
+import { ProductImageProps } from '@/types';
 
-const ProductImage = ({ images }) => {
+interface IBtn {
+  direction: string;
+}
+
+const ProductImage: FC<ProductImageProps> = ({ images }) => {
   const { isOpen, onOpen, onClose } = useImageModal();
 
   const imgContainerRef = useRef();
@@ -22,40 +26,53 @@ const ProductImage = ({ images }) => {
 
   const lastIndex = images?.lastIndexOf(images[images.length - 1]);
 
-  const handleOpen = useCallback((index) => {
-    setSlideIndex(index);
-    onOpen();
-  }, [onOpen]);
+  const handleOpen = useCallback(
+    (index: number) => {
+      setSlideIndex(index);
+      onOpen();
+    },
+    [onOpen]
+  );
 
-  const handleMove = useCallback((direction) => {
-    let newSlideIndex;
+  const handleMove = useCallback(
+    (direction: string) => {
+      let newSlideIndex: number;
 
-    setIsMoved(true);
-    if (direction === 'left') {
-      newSlideIndex = slideIndex - 1;
-    }
+      setIsMoved(true);
+      if (direction === 'left') {
+        newSlideIndex = slideIndex - 1;
+      }
 
-    if (direction === 'right') {
-      newSlideIndex = slideIndex + 1;
-    }
+      if (direction === 'right') {
+        newSlideIndex = slideIndex + 1;
+      }
 
-    setSlideIndex(newSlideIndex);
-  }, [slideIndex]);
+      setSlideIndex(newSlideIndex);
+    },
+    [slideIndex]
+  );
 
-  const handleDirection = useCallback((direction) => {
-    setIsSliderMoved(true);
-    const distance = imgContainerRef.current.getBoundingClientRect().x;
+  const handleDirection = useCallback(
+    (direction: string) => {
+      setIsSliderMoved(true);
+      const distance = imgContainerRef.current.getBoundingClientRect().x;
 
-    if (direction === 'left' && slideNumber > 0) {
-      setSlideNumber((value) => value - 1);
-      imgContainerRef.current.style.transform = `translateX(${235 + distance}px)`;
-    }
+      if (direction === 'left' && slideNumber > 0) {
+        setSlideNumber((value) => value - 1);
+        imgContainerRef.current.style.transform = `translateX(${
+          235 + distance
+        }px)`;
+      }
 
-    if (direction === 'right' && slideNumber < 6 - clickLimit) {
-      setSlideNumber((value) => value + 1);
-      imgContainerRef.current.style.transform = `translateX(${-235 + distance}px)`;
-    }
-  }, [clickLimit, slideNumber]);
+      if (direction === 'right' && slideNumber < 6 - clickLimit) {
+        setSlideNumber((value) => value + 1);
+        imgContainerRef.current.style.transform = `translateX(${
+          -235 + distance
+        }px)`;
+      }
+    },
+    [clickLimit, slideNumber]
+  );
 
   return (
     <Container>
@@ -100,7 +117,7 @@ const ProductImage = ({ images }) => {
       />
     </Container>
   );
-}
+};
 
 const Container = styled.div`
   position: relative;
@@ -150,7 +167,7 @@ const StyledImage = styled(Image)`
   }
 `;
 
-const ArrowButton = styled.button`
+const ArrowButton = styled.button<IBtn>`
   border: none;
   width: 4rem;
   height: 4rem;
@@ -191,9 +208,5 @@ const ArrowButton = styled.button`
     right: ${({ direction }) => direction === 'right' && '83%'};
   }
 `;
-
-ProductImage.propTypes = {
-  images: PropTypes.array.isRequired,
-};
 
 export default ProductImage;
