@@ -1,11 +1,13 @@
 'use client';
 
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
+import { FC } from 'react';
 
-const Header = ({ title }) => {
+import { HeaderProps } from '@/types';
+
+const Header: FC<HeaderProps> = ({ title }) => {
   return <Heading>{title}</Heading>;
-}
+};
 
 const Heading = styled.h1`
   font-family: inherit;
@@ -29,9 +31,5 @@ const Heading = styled.h1`
     border-radius: 3px;
   }
 `;
-
-Header.propTypes = {
-  title: PropTypes.string.isRequired,
-};
 
 export default Header;

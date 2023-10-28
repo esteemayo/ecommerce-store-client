@@ -293,3 +293,7 @@ export interface ToggleButtonProps {
   icon: IconDefinition;
   onClick(): void;
 }
+
+export interface HeaderProps {
+  title: string;
+}
