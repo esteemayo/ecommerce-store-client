@@ -452,3 +452,10 @@ export interface ProductButtonProps {
   actionLabel: string;
   onAction(): void;
 }
+
+export interface AlertProps {
+  alert: boolean;
+  center?: boolean;
+  message: string;
+  onChange(alert: boolean): void;
+}

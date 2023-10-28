@@ -1,10 +1,15 @@
 'use client';
 
 import styled from 'styled-components';
-import { useEffect } from 'react';
-import PropTypes from 'prop-types';
+import { FC, useEffect } from 'react';
 
-const Alert = ({ alert, center, message, onChange }) => {
+import { AlertProps } from '@/types';
+
+interface IMessage {
+  center?: boolean;
+}
+
+const Alert: FC<AlertProps> = ({ alert, center, message, onChange }) => {
   useEffect(() => {
     const timeout = setTimeout(() => {
       onChange(false);
@@ -13,25 +18,14 @@ const Alert = ({ alert, center, message, onChange }) => {
     return () => clearTimeout(timeout);
   }, [alert, onChange]);
 
-  return (
-    <Message center={center}>
-      {message}
-    </Message>
-  );
-}
+  return <Message center={center}>{message}</Message>;
+};
 
-const Message = styled.span`
+const Message = styled.span<IMessage>`
   display: block;
   font-size: 1.4rem;
   color: #409384;
-  text-align: ${({ center }) => center ? 'center' : 'left'};
+  text-align: ${({ center }) => (center ? 'center' : 'left')};
 `;
-
-Alert.propTypes = {
-  alert: PropTypes.bool.isRequired,
-  center: PropTypes.bool,
-  message: PropTypes.string.isRequired,
-  onChange: PropTypes.func.isRequired,
-};
 
 export default Alert;
