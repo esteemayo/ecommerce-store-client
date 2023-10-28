@@ -8,7 +8,7 @@ import ProductCard from '../card/ProductCard';
 import CartModal from '../modals/CartModal';
 import EmptyProduct from './EmptyProduct';
 
-import useCartModal from '@/hooks/useCartModal';
+import { useCartModal } from '@/hooks/useCartModal';
 
 const ProductList = ({
   products,

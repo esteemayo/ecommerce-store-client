@@ -1,15 +1,16 @@
 'use client';
 
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
-import { useCallback, useMemo } from 'react';
-import { useSelector } from 'react-redux';
+import { FC, useCallback, useMemo } from 'react';
 
 import CardInfo from './CardInfo';
 import CardImage from './CardImage';
 
-const ProductCard = ({ product, onOpen, onSelect }) => {
-  const { wished } = useSelector((state) => ({ ...state.cart }));
+import { ProductCardProps } from '@/types';
+import { useCartStore } from '@/hooks/useCartStore';
+
+const ProductCard: FC<ProductCardProps> = ({ product, onOpen, onSelect }) => {
+  const wished = useCartStore((state) => state.wished);
 
   const handleOpen = useCallback(() => {
     onOpen();
@@ -50,7 +51,7 @@ const ProductCard = ({ product, onOpen, onSelect }) => {
       />
     </Container>
   );
-}
+};
 
 const Container = styled.article`
   width: 35rem;
@@ -76,11 +77,5 @@ const Container = styled.article`
     width: 40rem;
   }
 `;
-
-ProductCard.propTypes = {
-  product: PropTypes.object.isRequired,
-  onOpen: PropTypes.func.isRequired,
-  onSelect: PropTypes.func.isRequired,
-};
 
 export default ProductCard;

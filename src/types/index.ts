@@ -303,3 +303,18 @@ export interface ToggleButtonProps {
 export interface HeaderProps {
   title: string;
 }
+
+type Product = {
+  id: number;
+  images: string[];
+  price: number;
+  discount: number;
+  ratingsQuantity: number;
+  ratingsAverage: number;
+};
+
+export interface ProductCardProps {
+  product: Product;
+  onOpen(): void;
+  onSelect(value: any): void;
+}
