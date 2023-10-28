@@ -20,6 +20,10 @@ const Reviews = dynamic(() => import('@/components/reviews/Reviews'), {
   ssr: false,
 });
 
+interface IContainer {
+  type?: string;
+}
+
 const SingleProduct = ({ params }) => {
   const { id } = params;
   const closeSubmenu = useSubmenu((state) => state.closeSubmenu);
@@ -80,7 +84,7 @@ const SingleProduct = ({ params }) => {
   );
 };
 
-const Container = styled.main`
+const Container = styled.main<IContainer>`
   width: 100vw;
   min-height: 100vh;
   background-color: ${({ theme }) => theme.bg};
