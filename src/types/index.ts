@@ -531,3 +531,13 @@ export interface CartItemProps {
   price: number;
   quantity: number;
 }
+
+export interface CartInfoProps {
+  id: number;
+  color: string;
+  name: string;
+  images: string[];
+  price: number;
+  size: string | number;
+  onAction(id: number): void;
+}

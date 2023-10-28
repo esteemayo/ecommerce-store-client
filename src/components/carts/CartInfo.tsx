@@ -1,12 +1,13 @@
 'use client';
 
 import styled from 'styled-components';
+import { FC } from 'react';
 import Image from 'next/image';
-import PropTypes from 'prop-types';
 
+import { CartInfoProps } from '@/types';
 import { formatCurrency } from '@/utils/formatCurrency';
 
-const CartInfo = ({
+const CartInfo: FC<CartInfoProps> = ({
   id,
   color,
   name,
@@ -18,12 +19,7 @@ const CartInfo = ({
   return (
     <Container>
       <ImageContainer>
-        <StyledImage
-          src={images[0]}
-          width={120}
-          height={120}
-          alt=''
-        />
+        <StyledImage src={images[0]} width={120} height={120} alt='' />
       </ImageContainer>
       <CartDetails>
         <Title>{name}</Title>
@@ -47,7 +43,7 @@ const CartInfo = ({
       </CartDetails>
     </Container>
   );
-}
+};
 
 const Container = styled.div`
   flex: 3;
@@ -211,15 +207,5 @@ const RemoveButton = styled.button`
     font-size: 1.45rem;
   }
 `;
-
-CartInfo.propTypes = {
-  id: PropTypes.string.isRequired,
-  color: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  images: PropTypes.array.isRequired,
-  price: PropTypes.number.isRequired,
-  size: PropTypes.any.isRequired,
-  onAction: PropTypes.func.isRequired,
-};
 
 export default CartInfo;
