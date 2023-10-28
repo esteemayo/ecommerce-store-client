@@ -406,3 +406,7 @@ export interface ProductImageModalProps {
   onMove(direction: string): void;
   onClose(): void;
 }
+
+export interface BreadCrumbsProps {
+  category: string;
+}

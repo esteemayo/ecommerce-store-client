@@ -1,18 +1,27 @@
 'use client';
 
 import styled from 'styled-components';
+import { FC } from 'react';
 import Link from 'next/link';
 
-const BreadCrumbs = ({ category }) => {
+import { BreadCrumbsProps } from '@/types';
+
+const BreadCrumbs: FC<BreadCrumbsProps> = ({ category }) => {
   return (
     <Container>
-      <Link href='/' passHref>Home</Link> / {' '}
-      <Link href={`/products/category/${encodeURIComponent(category)}`} passHref>
+      <Link href='/' passHref>
+        Home
+      </Link>{' '}
+      /{' '}
+      <Link
+        href={`/products/category/${encodeURIComponent(category)}`}
+        passHref
+      >
         {category}
       </Link>
     </Container>
   );
-}
+};
 
 const Container = styled.div`
   display: flex;
