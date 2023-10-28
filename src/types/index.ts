@@ -1,13 +1,12 @@
-import { IconDefinition } from '@fortawesome/free-solid-svg-icons';
-import { ReactNode } from 'react';
 import { IconType } from 'react-icons/lib';
+import { IconDefinition } from '@fortawesome/free-solid-svg-icons';
 
 export interface LayoutProps {
-  children: ReactNode;
+  children: React.ReactNode;
 }
 
 export interface ClientOnlyProps {
-  children: ReactNode;
+  children: React.ReactNode;
 }
 
 export type CartItem = {
@@ -273,5 +272,5 @@ export interface WishlistProps {
 
 export interface MenuItemProps {
   label: string;
-  onMouse(): void;
+  onMouse(e: React.MouseEvent<HTMLButtonElement>): void;
 }
