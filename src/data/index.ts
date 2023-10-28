@@ -34,6 +34,7 @@ import {
   Social,
   StoreProduct,
   Sublink,
+  TopReview,
 } from '@/types';
 
 export const navLinks: NavLink = [
@@ -414,7 +415,7 @@ export const footerLinks: FooterLink = [
   },
 ];
 
-export const storeProducts:StoreProduct = [
+export const storeProducts: StoreProduct = [
   {
     id: 1,
     name: 'The Stanley Rain Jacket in Black',
@@ -753,7 +754,7 @@ export const storeProducts:StoreProduct = [
   },
 ];
 
-export const topReviews = [
+export const topReviews: TopReview = [
   {
     id: 1,
     rating: 5,

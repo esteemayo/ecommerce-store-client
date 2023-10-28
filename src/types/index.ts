@@ -109,6 +109,16 @@ export type StoreProduct = {
   discount: number;
 }[];
 
+export type TopReview = {
+  id: number;
+  rating: number;
+  review: string;
+  user: {
+    name: string;
+    photo: string;
+  };
+}[];
+
 export interface SubmenuStore {
   isOpen: boolean;
   location: {
