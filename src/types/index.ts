@@ -541,3 +541,22 @@ export interface CartInfoProps {
   size: string | number;
   onAction(id: number): void;
 }
+
+export interface CartCounterProps {
+  value: number;
+  onIncrement(type: string): void;
+  onDecrement(type: string): void;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

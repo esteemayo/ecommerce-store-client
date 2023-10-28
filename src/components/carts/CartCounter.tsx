@@ -2,10 +2,16 @@
 
 import styled from 'styled-components';
 import { faMinus, faPlus } from '@fortawesome/free-solid-svg-icons';
-import PropTypes from 'prop-types';
+import { FC } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const CartCounter = ({ value, onIncrement, onDecrement }) => {
+import { CartCounterProps } from '@/types';
+
+const CartCounter: FC<CartCounterProps> = ({
+  value,
+  onIncrement,
+  onDecrement,
+}) => {
   return (
     <Container>
       <Wrapper>
@@ -19,7 +25,7 @@ const CartCounter = ({ value, onIncrement, onDecrement }) => {
       </Wrapper>
     </Container>
   );
-}
+};
 
 const Container = styled.div`
   flex: 1;
@@ -83,11 +89,5 @@ const Amount = styled.span`
     font-size: 1.5rem;
   }
 `;
-
-CartCounter.propTypes = {
-  value: PropTypes.number.isRequired,
-  onIncrement: PropTypes.func.isRequired,
-  onDecrement: PropTypes.func.isRequired,
-};
 
 export default CartCounter;
