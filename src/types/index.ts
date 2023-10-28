@@ -473,3 +473,10 @@ export interface ProductInfoProps {
 export interface RecommendationProps {
   data: Recommendation;
 }
+
+export interface ReviewsProps {
+  reviews: ReviewItem;
+  sortLabel: 'newest' | 'highest rating' | 'lowest rating';
+  sort: string | null;
+  onSort(sort: string | null): void;
+}

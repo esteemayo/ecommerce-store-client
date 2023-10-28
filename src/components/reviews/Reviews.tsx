@@ -1,16 +1,17 @@
 'use client';
 
 import styled from 'styled-components';
-import { useCallback, useState } from 'react';
-import PropTypes from 'prop-types';
+import { FC, useCallback, useState } from 'react';
 
 import ReviewHead from './ReviewHead';
 import ReviewCards from './ReviewCards';
 
-import ReviewModal from '../modals/ReviewModal';
+import { ReviewsProps } from '@/types';
 import useReviewModal from '@/hooks/useReviewModal';
 
-const Reviews = ({ reviews, sortLabel, sort, onSort }) => {
+import ReviewModal from '../modals/ReviewModal';
+
+const Reviews: FC<ReviewsProps> = ({ reviews, sortLabel, sort, onSort }) => {
   const { isOpen, onOpen, onClose } = useReviewModal();
   const [isFilterOpen, setIsFilterOpen] = useState(false);
 
@@ -45,19 +46,12 @@ const Reviews = ({ reviews, sortLabel, sort, onSort }) => {
           onSort={onSort}
           onToggle={handleToggleFilter}
         />
-        <ReviewCards
-          rating={0}
-          reviews={reviews}
-          onOpen={onOpen}
-        />
+        <ReviewCards rating={0} reviews={reviews} onOpen={onOpen} />
       </Wrapper>
-      <ReviewModal
-        isOpen={isOpen}
-        onClose={onClose}
-      />
+      <ReviewModal isOpen={isOpen} onClose={onClose} />
     </Container>
   );
-}
+};
 
 const Container = styled.section`
   width: 100vw;
@@ -106,12 +100,5 @@ const Heading = styled.h1`
   color: ${({ theme }) => theme.textProdHeader};
   line-height: 3.2rem;
 `;
-
-Reviews.propTypes = {
-  reviews: PropTypes.array.isRequired,
-  sortLabel: PropTypes.string.isRequired,
-  sort: PropTypes.any,
-  onSort: PropTypes.any.isRequired,
-};
 
 export default Reviews;
