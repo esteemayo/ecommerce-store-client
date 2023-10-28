@@ -5,12 +5,21 @@ import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import CloseIcon from '@mui/icons-material/Close';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import PropTypes from 'prop-types';
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { FC, useCallback, useEffect, useMemo, useState } from 'react';
 
+import { ProductImageModalProps } from '@/types';
 import { useDarkMode } from '@/hooks/useDarkMode';
 
-const ProductImageModal = ({
+interface IOverlay {
+  type: string;
+  mode: string;
+}
+
+interface IBtn {
+  direction: string;
+}
+
+const ProductImageModal: FC<ProductImageModalProps> = ({
   images,
   isOpen,
   isMoved,
@@ -30,24 +39,29 @@ const ProductImageModal = ({
     }, 300);
   }, [onClose]);
 
-  const closeModalHandler = useCallback((e) => {
-    e.stopPropagation();
+  const closeModalHandler = useCallback(
+    (e: React.MouseEvent<HTMLButtonElement>) => {
+      e.stopPropagation();
 
-    if (e.target.classList.contains('imageContainer')) {
-      onClose();
-    }
+      const target = e.target as Element;
 
-    const exitModal = (e) => {
-      e.preventDefault();
-
-      if (e.key === 'Escape') {
+      if (target.classList.contains('imageContainer')) {
         onClose();
       }
-    };
 
-    window.addEventListener('keydown', exitModal);
-    return () => window.removeEventListener('keydown', exitModal);
-  }, [onClose]);
+      const exitModal = (e) => {
+        e.preventDefault();
+
+        if (e.key === 'Escape') {
+          onClose();
+        }
+      };
+
+      window.addEventListener('keydown', exitModal);
+      return () => window.removeEventListener('keydown', exitModal);
+    },
+    [onClose]
+  );
 
   const activeModal = useMemo(() => {
     return showModal ? 'show' : '';
@@ -93,11 +107,11 @@ const ProductImageModal = ({
       </ArrowButton>
     </Overlay>
   );
-}
+};
 
-const Overlay = styled.aside`
+const Overlay = styled.aside<IOverlay>`
   display: none;
-  
+
   @media only screen and (min-width: 50em) {
     width: 100vw;
     height: 100%;
@@ -105,14 +119,14 @@ const Overlay = styled.aside`
     backdrop-filter: ${({ mode }) => mode === 'true' && 'blur(2px)'};
     position: fixed;
     top: 0;
-    left: ${({ type }) => type === 'show' ? 0 : '-100vw'};
+    left: ${({ type }) => (type === 'show' ? 0 : '-100vw')};
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    visibility: ${({ type }) => type === 'show' ? 'visible' : 'hidden'};
-    opacity: ${({ type }) => type === 'show' ? 1 : 0};
-    transform: scale(${({ type }) => type === 'show' ? 1 : 0});
-    z-index: ${({ type }) => type === 'show' ? 4000 : -1};
+    visibility: ${({ type }) => (type === 'show' ? 'visible' : 'hidden')};
+    opacity: ${({ type }) => (type === 'show' ? 1 : 0)};
+    transform: scale(${({ type }) => (type === 'show' ? 1 : 0)});
+    z-index: ${({ type }) => (type === 'show' ? 4000 : -1)};
     transition: all 0.3s linear;
   }
 `;
@@ -137,7 +151,7 @@ const CloseButton = styled.button`
   }
 `;
 
-const ArrowButton = styled.button`
+const ArrowButton = styled.button<IBtn>`
   border: none;
   display: inline-block;
   width: 4rem;
@@ -153,7 +167,7 @@ const ArrowButton = styled.button`
   transform: translateY(-50%);
   cursor: pointer;
   transition: all 0.3s ease;
- 
+
   @media only screen and (max-width: 50em) {
     width: 6.5rem;
     height: 6.5rem;
@@ -191,15 +205,5 @@ const StyledImage = styled(Image)`
     height: 80rem;
   }
 `;
-
-ProductImageModal.propTypes = {
-  images: PropTypes.array.isRequired,
-  isOpen: PropTypes.bool.isRequired,
-  isMoved: PropTypes.bool.isRequired,
-  slideIndex: PropTypes.number.isRequired,
-  lastIndex: PropTypes.number.isRequired,
-  onMove: PropTypes.func.isRequired,
-  onClose: PropTypes.func.isRequired,
-};
 
 export default ProductImageModal;

@@ -396,3 +396,13 @@ export interface ProductProps {
 export interface ProductImageProps {
   images: string[];
 }
+
+export interface ProductImageModalProps {
+  images: ProductImageProps;
+  isOpen: boolean;
+  isMoved: boolean;
+  slideIndex: number;
+  lastIndex: number;
+  onMove(direction: string): void;
+  onClose(): void;
+}
