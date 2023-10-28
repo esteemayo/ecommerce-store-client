@@ -1,13 +1,12 @@
 'use client';
 
 import styled from 'styled-components';
-import { useDispatch, useSelector } from 'react-redux';
 
-import { clearCart } from '@/features/cart/cartSlice';
+import { useCartStore } from '@/hooks/useCartStore';
 
 const CartHeader = () => {
-  const dispatch = useDispatch();
-  const { qty } = useSelector((state) => ({ ...state.cart }));
+  const qty = useCartStore((state) => state.qty);
+  const clearCart = useCartStore((state) => state.clearCart);
 
   return (
     <Container>
@@ -15,12 +14,12 @@ const CartHeader = () => {
         <HeadingMain>My cart</HeadingMain>
         <HeadingSub>{qty}</HeadingSub>
       </Heading>
-      <ClearButton type='button' onClick={() => dispatch(clearCart())}>
+      <ClearButton type='button' onClick={clearCart}>
         Clear cart
       </ClearButton>
     </Container>
   );
-}
+};
 
 const Container = styled.div`
   display: flex;
