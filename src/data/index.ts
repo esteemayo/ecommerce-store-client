@@ -25,7 +25,7 @@ import {
   faTruckFast,
 } from '@fortawesome/free-solid-svg-icons';
 
-import { CartItem, NavLink, Sublink } from '@/types';
+import { CartItem, NavLink, SliderItem, Sublink } from '@/types';
 
 export const navLinks: NavLink = [
   {
@@ -178,7 +178,7 @@ export const sublinks: Sublink = [
   },
 ];
 
-export const sliderItems = [
+export const sliderItems: SliderItem = [
   {
     id: 1,
     url: '/products',

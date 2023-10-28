@@ -54,6 +54,14 @@ export type Sublink = {
   links: Link;
 }[];
 
+export type SliderItem = {
+  id: number;
+  url: string;
+  img: string;
+  title: string;
+  desc: string;
+}[];
+
 export interface SubmenuStore {
   isOpen: boolean;
   location: {
