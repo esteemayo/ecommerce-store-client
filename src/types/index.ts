@@ -398,7 +398,7 @@ export interface ProductImageProps {
 }
 
 export interface ProductImageModalProps {
-  images: ProductImageProps;
+  images: string[];
   isOpen: boolean;
   isMoved: boolean;
   slideIndex: number;
