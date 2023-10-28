@@ -1,16 +1,18 @@
 'use client';
 
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
+import { FC } from 'react';
 
-const ProductInfo = ({ title, content }) => {
+import { ProductInfoProps } from '@/types';
+
+const ProductInfo: FC<ProductInfoProps> = ({ title, content }) => {
   return (
     <Container>
       <Heading>{title}</Heading>
       <Text>{content}</Text>
     </Container>
   );
-}
+};
 
 const Container = styled.div`
   margin: 3rem 0;
@@ -31,10 +33,5 @@ const Text = styled.p`
   line-height: 1.3;
   word-wrap: break-word;
 `;
-
-ProductInfo.propTypes = {
-  title: PropTypes.string.isRequired,
-  content: PropTypes.string.isRequired,
-};
 
 export default ProductInfo;

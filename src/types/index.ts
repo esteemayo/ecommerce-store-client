@@ -464,3 +464,8 @@ export interface ProductValueProps {
   items: ProductValue;
   mode: string;
 }
+
+export interface ProductInfoProps {
+  title: string;
+  content: string;
+}
