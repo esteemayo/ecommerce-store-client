@@ -1,19 +1,18 @@
 'use client';
 
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
+import { FC } from 'react';
 
 import ReviewCard from './ReviewCard';
 import EmptyReview from './EmptyReview';
 
-const ReviewCards = ({ rating, reviews, onOpen }) => {
+import { ReviewCardsProps } from '@/types';
+
+const ReviewCards: FC<ReviewCardsProps> = ({ rating, reviews, onOpen }) => {
   if (reviews.length === 0) {
     return (
       <Container>
-        <EmptyReview
-          rating={rating}
-          onClick={onOpen}
-        />
+        <EmptyReview rating={rating} onClick={onOpen} />
       </Container>
     );
   }
@@ -27,7 +26,7 @@ const ReviewCards = ({ rating, reviews, onOpen }) => {
       </Wrapper>
     </Container>
   );
-}
+};
 
 const Container = styled.div`
   padding: 5rem 0 0.5rem 0;
@@ -45,11 +44,5 @@ const Wrapper = styled.div`
   align-items: center;
   padding-top: 1rem;
 `;
-
-ReviewCards.propTypes = {
-  rating: PropTypes.number.isRequired,
-  reviews: PropTypes.array.isRequired,
-  onOpen: PropTypes.func.isRequired,
-};
 
 export default ReviewCards;

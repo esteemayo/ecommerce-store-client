@@ -498,3 +498,9 @@ export interface ReviewHeadProps {
   onSort(sort: string | null): void;
   onToggle(): void;
 }
+
+export interface ReviewCardsProps {
+  rating: number;
+  reviews: ReviewItem;
+  onOpen(): void;
+}
