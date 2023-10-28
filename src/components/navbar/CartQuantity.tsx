@@ -4,9 +4,11 @@ import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 import { faBagShopping } from '@fortawesome/free-solid-svg-icons';
-import PropTypes from 'prop-types';
+import { FC } from 'react';
 
-const CartQuantity = ({ amount }) => {
+import { CartQuantityProps } from '@/types';
+
+const CartQuantity: FC<CartQuantityProps> = ({ amount }) => {
   return (
     <Container>
       <Link href='/cart' passHref>
@@ -15,7 +17,7 @@ const CartQuantity = ({ amount }) => {
       </Link>
     </Container>
   );
-}
+};
 
 const Container = styled.div`
   position: relative;
@@ -54,9 +56,5 @@ const CartTotal = styled.span`
   right: -1rem;
   cursor: pointer;
 `;
-
-CartQuantity.propTypes = {
-  amount: PropTypes.number.isRequired,
-};
 
 export default CartQuantity;

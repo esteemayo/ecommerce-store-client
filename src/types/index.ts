@@ -280,3 +280,7 @@ export interface LoginButtonProps {
   onMouseOver(): void;
   onMouseLeave(): void;
 }
+
+export interface CartQuantityProps {
+  amount: number;
+}
