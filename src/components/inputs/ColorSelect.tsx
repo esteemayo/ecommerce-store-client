@@ -2,6 +2,7 @@
 
 import styled from 'styled-components';
 import { FC, useCallback } from 'react';
+
 import { ColorSelectProps } from '@/types';
 
 interface IProps {
