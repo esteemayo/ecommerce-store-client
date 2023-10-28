@@ -548,15 +548,9 @@ export interface CartCounterProps {
   onDecrement(type: string): void;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
+export interface CartTotalProps {
+  isOpen: boolean;
+  onOpen(): void;
+  onClose(): void;
+  onAction(): void;
+}

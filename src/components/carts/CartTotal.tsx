@@ -1,26 +1,40 @@
 'use client';
 
 import styled from 'styled-components';
-import { useCallback, useEffect, useState } from 'react';
-import PropTypes from 'prop-types';
-import { useSelector } from 'react-redux';
+import { FC, useCallback, useEffect, useState } from 'react';
 
+import { CartTotalProps } from '@/types';
 import { formatCurrency } from '@/utils/formatCurrency';
+import { useCartStore } from '@/hooks/useCartStore';
 
-const CartTotal = ({ isOpen, onOpen, onClose, onAction }) => {
-  const { tax, total, subtotal } = useSelector((state) => ({ ...state.cart }));
+interface IBtn {
+  btnType?: string;
+}
+
+const CartTotal: FC<CartTotalProps> = ({
+  isOpen,
+  onOpen,
+  onClose,
+  onAction,
+}) => {
+  const tax = useCartStore((state) => state.tax);
+  const subtotal = useCartStore((state) => state.subtotal);
+  const total = useCartStore((state) => state.total);
+
   const [show, setShow] = useState(isOpen);
 
   const handleClose = useCallback(
-    (e) => {
+    (e: React.MouseEvent<HTMLDivElement>) => {
       e.stopPropagation();
 
-      if (!e.target.classList.contains('btn-pay')) {
+      const target = e.target as Element;
+
+      if (!target.classList.contains('btn-pay')) {
         setShow(false);
         onClose();
       }
 
-      if (e.target.classList.contains('btn-check')) {
+      if (target.classList.contains('btn-check')) {
         onOpen();
       }
     },
@@ -147,7 +161,7 @@ const ButtonContainer = styled.div`
 
 const ButtonWrapper = styled.div``;
 
-const Button = styled.button`
+const Button = styled.button<IBtn>`
   border: none;
   display: inline-block;
   font-size: 1.5rem;
@@ -189,12 +203,5 @@ const Button = styled.button`
     background-position: 100%;
   }
 `;
-
-CartTotal.propTypes = {
-  isOpen: PropTypes.bool,
-  onOpen: PropTypes.func.isRequired,
-  onClose: PropTypes.func.isRequired,
-  onAction: PropTypes.func.isRequired,
-};
 
 export default CartTotal;
