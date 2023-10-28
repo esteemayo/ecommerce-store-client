@@ -516,3 +516,8 @@ export interface ReviewCardProps {
   createdAt: string;
   updatedAt: string;
 }
+
+export interface ReviewModalProps {
+  isOpen: boolean;
+  onClose(): void;
+}

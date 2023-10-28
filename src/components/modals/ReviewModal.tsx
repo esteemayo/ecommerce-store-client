@@ -3,14 +3,23 @@
 import styled, { css } from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
+import { FC, useCallback, useEffect, useMemo, useState } from 'react';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
-import PropTypes from 'prop-types';
-import { useCallback, useEffect, useMemo, useState } from 'react';
 
-import StarRating from '../StarRating';
+import { ReviewModalProps } from '@/types';
 import { useDarkMode } from '@/hooks/useDarkMode';
 
-const ReviewModal = ({ isOpen, onClose }) => {
+import StarRating from '../StarRating';
+
+interface IOverlay {
+  mode: string;
+}
+
+interface IWrapper {
+  active: string;
+}
+
+const ReviewModal: FC<ReviewModalProps> = ({ isOpen, onClose }) => {
   const mode = useDarkMode((state) => state.mode);
 
   const [rating, setRating] = useState(null);
@@ -33,13 +42,16 @@ const ReviewModal = ({ isOpen, onClose }) => {
     }, 300);
   }, [onClose, handleClear]);
 
-  const handleCloseModal = useCallback((e) => {
-    e.stopPropagation();
+  const handleCloseModal = useCallback(
+    (e) => {
+      e.stopPropagation();
 
-    if (e.target.classList.contains('overlay')) {
-      closeModalHandler();
-    }
-  }, [closeModalHandler]);
+      if (e.target.classList.contains('overlay')) {
+        closeModalHandler();
+      }
+    },
+    [closeModalHandler]
+  );
 
   const handleClick = useCallback(() => {
     console.log({ rating, review, terms });
@@ -63,18 +75,11 @@ const ReviewModal = ({ isOpen, onClose }) => {
   }
 
   return (
-    <Overlay
-      mode={modeValue}
-      onClick={handleCloseModal}
-      className='overlay'
-    >
+    <Overlay mode={modeValue} onClick={handleCloseModal} className='overlay'>
       <Wrapper active={activeModal}>
         <Box>
           <ButtonContainer>
-            <CloseButton
-              type='button'
-              onClick={closeModalHandler}
-            >
+            <CloseButton type='button' onClick={closeModalHandler}>
               <FontAwesomeIcon icon={faXmark} />
             </CloseButton>
           </ButtonContainer>
@@ -106,27 +111,28 @@ const ReviewModal = ({ isOpen, onClose }) => {
               onChange={(e) => setTerms(e.currentTarget.checked)}
             />
             <Label htmlFor='terms'>
-              I accept the <Link href='#' passHref>terms and conditions</Link>
+              I accept the{' '}
+              <Link href='#' passHref>
+                terms and conditions
+              </Link>
             </Label>
           </Agreement>
           <Information>
-            You will be able to receive emails in connection with this review (eg if others comment on your review).
-            All emails contain the option to unsubscribe. We can use the text and star rating
-            from your review in other marketting.
+            You will be able to receive emails in connection with this review
+            (eg if others comment on your review). All emails contain the option
+            to unsubscribe. We can use the text and star rating from your review
+            in other marketting.
           </Information>
-          <Button
-            type='button'
-            onClick={handleClick}
-          >
+          <Button type='button' onClick={handleClick}>
             Submit product review
           </Button>
         </Box>
       </Wrapper>
     </Overlay>
   );
-}
+};
 
-const Overlay = styled.aside`
+const Overlay = styled.aside<IOverlay>`
   width: 100vw;
   height: 100%;
   background-color: ${({ theme }) => theme.bgOverlay};
@@ -135,13 +141,13 @@ const Overlay = styled.aside`
   top: 0;
   left: 0;
   z-index: 4000;
-  
+
   display: flex;
   align-items: center;
   justify-content: center;
 `;
 
-const Wrapper = styled.div`
+const Wrapper = styled.div<IWrapper>`
   transform: translateY(${({ active }) => (active === 'true' ? 0 : '100%')});
   opacity: ${({ active }) => (active === 'true' ? 1 : 0)};
   transition: all 300ms;
@@ -341,10 +347,5 @@ const Button = styled.button`
     cursor: not-allowed;
   }
 `;
-
-ReviewModal.propTypes = {
-  isOpen: PropTypes.bool.isRequired,
-  onClose: PropTypes.func.isRequired,
-};
 
 export default ReviewModal;
