@@ -347,7 +347,7 @@ export interface ReviewItemProps {
 
 export interface FooterHeadingProps {
   title: string;
-  small?: string;
+  small?: boolean;
 }
 
 export interface FooterLinkProps {

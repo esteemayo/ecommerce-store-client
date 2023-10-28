@@ -6,7 +6,7 @@ import { FC } from 'react';
 import { FooterHeadingProps } from '@/types';
 
 interface IHeader {
-  small?: string;
+  small?: boolean;
 }
 
 const Heading: FC<FooterHeadingProps> = ({ title, small }) => {
