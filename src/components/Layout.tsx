@@ -1,3 +1,5 @@
+import { FC } from 'react';
+
 import ClientOnly from './ClientOnly';
 import Darkmode from './DarkMode';
 import ScrollToTop from './ScrollToTop';
@@ -10,7 +12,9 @@ import Sidebar from './sidebar/Sidebar';
 import ToastProvider from '@/providers/ToastProvider';
 import ModalProvider from '@/providers/ModalProvider';
 
-const Layout = ({ children }) => {
+import { LayoutProps } from '@/types';
+
+const Layout: FC<LayoutProps> = ({ children }) => {
   return (
     <div className='container'>
       <ClientOnly>
