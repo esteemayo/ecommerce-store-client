@@ -446,3 +446,9 @@ export interface CounterProps {
   modal?: boolean;
   onClick(value: number): void;
 }
+
+export interface ProductButtonProps {
+  small?: boolean;
+  actionLabel: string;
+  onAction(): void;
+}

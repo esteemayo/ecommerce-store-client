@@ -1,27 +1,34 @@
 'use client';
 
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
+import { FC } from 'react';
 
-const ProductButton = ({ small, actionLabel, onAction }) => {
+import { ProductButtonProps } from '@/types';
+
+interface IBtn {
+  small?: boolean;
+}
+
+const ProductButton: FC<ProductButtonProps> = ({
+  small,
+  actionLabel,
+  onAction,
+}) => {
   return (
-    <Button
-      type='button'
-      small={small}
-      onClick={onAction}
-    >
+    <Button type='button' small={small} onClick={onAction}>
       {actionLabel}
     </Button>
   );
-}
+};
 
-const Button = styled.button`
+const Button = styled.button<IBtn>`
   display: inline-block;
   text-align: center;
-  font-size: ${({ small }) => small ? '1.5rem' : '1.8rem'};
+  font-size: ${({ small }) => (small ? '1.5rem' : '1.8rem')};
   width: 100%;
-  padding:  ${({ small }) => small ? '1.3rem 1rem' : '2rem 1rem'};
-  background-color: ${({ theme, small }) => small ? 'var(--clr-black)' : theme.bgProdBtn};
+  padding: ${({ small }) => (small ? '1.3rem 1rem' : '2rem 1rem')};
+  background-color: ${({ theme, small }) =>
+    small ? 'var(--clr-black)' : theme.bgProdBtn};
   color: var(--clr-white);
   background-image: linear-gradient(
     120deg,
@@ -33,8 +40,8 @@ const Button = styled.button`
   border: 1px solid var(--clr-black);
   border-radius: 0.5rem;
   outline-color: #777;
-  line-height: ${({ small }) => small ? '1em' : '1.3em'};
-  margin: ${({ small }) => small ? '1rem 0' : '3rem 0'};
+  line-height: ${({ small }) => (small ? '1em' : '1.3em')};
+  margin: ${({ small }) => (small ? '1rem 0' : '3rem 0')};
   cursor: pointer;
   transition: all 0.3s;
 
@@ -63,11 +70,5 @@ const Button = styled.button`
     background-position: 100%;
   }
 `;
-
-ProductButton.propTypes = {
-  small: PropTypes.bool,
-  actionLabel: PropTypes.string.isRequired,
-  onAction: PropTypes.func.isRequired,
-};
 
 export default ProductButton;
