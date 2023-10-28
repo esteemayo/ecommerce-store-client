@@ -1,7 +1,9 @@
 import { create } from 'zustand';
 import { devtools } from 'zustand/middleware';
 
-const useFileModal = create(
+import { FileModalStore } from '@/types';
+
+const useFileModal = create<FileModalStore>()(
   devtools((set) => ({
     isOpen: false,
     onOpen: () => set(() => ({ isOpen: true }), false, 'openFileModal'),

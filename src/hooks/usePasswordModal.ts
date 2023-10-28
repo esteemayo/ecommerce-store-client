@@ -1,7 +1,9 @@
 import { create } from 'zustand';
 import { devtools } from 'zustand/middleware';
 
-const usePasswordModal = create(
+import { PasswordModalStore } from '@/types';
+
+const usePasswordModal = create<PasswordModalStore>()(
   devtools((set) => ({
     isOpen: false,
     onOpen: () => set(() => ({ isOpen: true }), false, 'openPasswordModal'),

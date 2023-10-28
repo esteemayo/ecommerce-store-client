@@ -90,3 +90,15 @@ export interface EmailModalStore {
   onOpen(): void;
   onClose(): void;
 }
+
+export interface FileModalStore {
+  isOpen: boolean;
+  onOpen(): void;
+  onClose(): void;
+}
+
+export interface PasswordModalStore {
+  isOpen: boolean;
+  onOpen(): void;
+  onClose(): void;
+}
