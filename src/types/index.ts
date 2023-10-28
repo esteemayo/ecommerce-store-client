@@ -176,6 +176,11 @@ export type ProductValue = {
   img: string;
 }[];
 
+export type PriceOption = {
+  value: string;
+  text: string;
+}[];
+
 export interface SubmenuStore {
   isOpen: boolean;
   location: {

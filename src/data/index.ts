@@ -31,6 +31,7 @@ import {
   FooterMenu,
   NavLink,
   OrderItem,
+  PriceOption,
   ProductValue,
   Recommendation,
   ReviewItem,
@@ -1194,7 +1195,7 @@ export const productValue: ProductValue = [
   },
 ];
 
-export const priceOptions = [
+export const priceOptions: PriceOption = [
   {
     value: 'newest',
     text: 'Newest',
