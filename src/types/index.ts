@@ -170,6 +170,12 @@ export type Recommendation = {
   price: number;
 }[];
 
+export type ProductValue = {
+  id: number;
+  desc: string;
+  img: string;
+}[];
+
 export interface SubmenuStore {
   isOpen: boolean;
   location: {

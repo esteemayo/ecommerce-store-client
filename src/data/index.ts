@@ -31,6 +31,7 @@ import {
   FooterMenu,
   NavLink,
   OrderItem,
+  ProductValue,
   Recommendation,
   ReviewItem,
   SliderItem,
@@ -1180,7 +1181,7 @@ export const recommendations: Recommendation = [
   },
 ];
 
-export const productValue = [
+export const productValue: ProductValue = [
   {
     id: 1,
     desc: 'Free Shipping over $50',
