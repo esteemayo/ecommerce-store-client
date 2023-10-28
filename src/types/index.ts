@@ -521,3 +521,13 @@ export interface ReviewModalProps {
   isOpen: boolean;
   onClose(): void;
 }
+
+export interface CartItemProps {
+  id: number;
+  name: string;
+  size: string | number;
+  color: string;
+  images: string[];
+  price: number;
+  quantity: number;
+}

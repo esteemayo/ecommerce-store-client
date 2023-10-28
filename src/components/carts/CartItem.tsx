@@ -1,16 +1,15 @@
 'use client';
 
 import styled from 'styled-components';
-import { useCallback } from 'react';
-import { useDispatch } from 'react-redux';
-import PropTypes from 'prop-types';
+import { FC, useCallback } from 'react';
 
 import CartInfo from './CartInfo';
 import CartCounter from './CartCounter';
 
-import { remove, toggleQuantity } from '@/features/cart/cartSlice';
+import { CartItemProps } from '@/types';
+import { useCartStore } from '@/hooks/useCartStore';
 
-const CartItem = ({
+const CartItem: FC<CartItemProps> = ({
   id,
   name,
   size,
@@ -19,15 +18,22 @@ const CartItem = ({
   price,
   quantity,
 }) => {
-  const dispatch = useDispatch();
+  const remove = useCartStore((state) => state.remove);
+  const toggleQuantity = useCartStore((state) => state.toggleQuantity);
 
-  const handleRemove = useCallback((id) => {
-    dispatch(remove(id))
-  }, [dispatch]);
+  const handleRemove = useCallback(
+    (id: number) => {
+      remove(id);
+    },
+    [remove]
+  );
 
-  const handleToggle = useCallback((type) => {
-    dispatch(toggleQuantity({ type, id }));
-  }, [id, dispatch]);
+  const handleToggle = useCallback(
+    (type: string) => {
+      toggleQuantity({ type, id });
+    },
+    [id, toggleQuantity]
+  );
 
   return (
     <Container>
@@ -49,11 +55,11 @@ const CartItem = ({
       </Wrapper>
     </Container>
   );
-}
+};
 
 const Container = styled.article`
   line-height: 1.12;
-  
+
   &:not(:last-of-type) {
     border-bottom: 1px solid ${({ theme }) => theme.cartBorder};
     margin-bottom: 1.25rem;
@@ -71,15 +77,5 @@ const Wrapper = styled.div`
     gap: 2rem;
   }
 `;
-
-CartItem.propTypes = {
-  id: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  size: PropTypes.any.isRequired,
-  color: PropTypes.string.isRequired,
-  images: PropTypes.array.isRequired,
-  price: PropTypes.number.isRequired,
-  quantity: PropTypes.number.isRequired,
-};
 
 export default CartItem;
