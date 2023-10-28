@@ -4,9 +4,15 @@ import styled from 'styled-components';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import Link from 'next/link';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import PropTypes from 'prop-types';
+import { FC } from 'react';
 
-const LoginButton = ({ isHover, onMouseOver, onMouseLeave }) => {
+import { LoginButtonProps } from '@/types';
+
+const LoginButton: FC<LoginButtonProps> = ({
+  isHover,
+  onMouseOver,
+  onMouseLeave,
+}) => {
   return (
     <Container>
       <Link href='/login' passHref>
@@ -15,14 +21,13 @@ const LoginButton = ({ isHover, onMouseOver, onMouseLeave }) => {
           onMouseOver={onMouseOver}
           onMouseLeave={onMouseLeave}
         >
-          Sign in
-          &nbsp;
+          Sign in &nbsp;
           {isHover ? <ArrowForwardIcon /> : <ArrowForwardIosIcon />}
         </Button>
       </Link>
     </Container>
   );
-}
+};
 
 const Container = styled.div`
   a {
@@ -64,11 +69,5 @@ const Button = styled.button`
     opacity: 1;
   }
 `;
-
-LoginButton.propTypes = {
-  isHover: PropTypes.bool.isRequired,
-  onMouseOver: PropTypes.func.isRequired,
-  onMouseLeave: PropTypes.func.isRequired,
-};
 
 export default LoginButton;

@@ -274,3 +274,9 @@ export interface MenuItemProps {
   label: string;
   onMouse(e: React.MouseEvent<HTMLButtonElement>): void;
 }
+
+export interface LoginButtonProps {
+  isHover: boolean;
+  onMouseOver(): void;
+  onMouseLeave(): void;
+}
