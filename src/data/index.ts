@@ -24,9 +24,10 @@ import {
   faStore,
   faTruckFast,
 } from '@fortawesome/free-solid-svg-icons';
-import { CartItem, Sublink } from '@/types';
 
-export const navLinks = [
+import { CartItem, NavLink, Sublink } from '@/types';
+
+export const navLinks: NavLink = [
   {
     id: 1,
     text: 'products',

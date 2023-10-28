@@ -38,6 +38,11 @@ export interface CartStore {
   calcTotals(): void;
 }
 
+export type NavLink = {
+  id: number;
+  text: string;
+}[];
+
 type Link = {
   url?: string;
   icon?: IconDefinition;
