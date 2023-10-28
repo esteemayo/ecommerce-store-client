@@ -1,15 +1,17 @@
 import styled from 'styled-components';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
-import PropTypes from 'prop-types';
+import { FC } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const SearchIcon = ({ onOpen }) => {
+import { SearchIconProps } from '@/types';
+
+const SearchIcon: FC<SearchIconProps> = ({ onOpen }) => {
   return (
     <Container onClick={onOpen}>
       <FontAwesomeIcon icon={faMagnifyingGlass} />
     </Container>
   );
-}
+};
 
 const Container = styled.button`
   display: inline-block;
@@ -25,9 +27,5 @@ const Container = styled.button`
     color: currentColor;
   }
 `;
-
-SearchIcon.propTypes = {
-  onOpen: PropTypes.func.isRequired,
-};
 
 export default SearchIcon;

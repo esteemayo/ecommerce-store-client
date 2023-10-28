@@ -284,3 +284,7 @@ export interface LoginButtonProps {
 export interface CartQuantityProps {
   amount: number;
 }
+
+export interface SearchIconProps {
+  onOpen(): void;
+}
