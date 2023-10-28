@@ -1,16 +1,16 @@
 'use client';
 
 import styled from 'styled-components';
-import { useState } from 'react';
-import PropTypes from 'prop-types';
+import { FC, useState } from 'react';
 
 import ProductCard from '../card/ProductCard';
 import CartModal from '../modals/CartModal';
 import EmptyProduct from './EmptyProduct';
 
+import { ProductListProps } from '@/types';
 import { useCartModal } from '@/hooks/useCartModal';
 
-const ProductList = ({
+const ProductList: FC<ProductListProps> = ({
   products,
   title = 'No results found!',
 }) => {
@@ -20,10 +20,7 @@ const ProductList = ({
   if (products.length < 1) {
     return (
       <Container>
-        <EmptyProduct
-          src='/img/no-result.png'
-          title={title}
-        />
+        <EmptyProduct src='/img/no-result.png' title={title} />
       </Container>
     );
   }
@@ -50,7 +47,7 @@ const ProductList = ({
       />
     </Container>
   );
-}
+};
 
 const Container = styled.section`
   width: 100%;
@@ -84,10 +81,5 @@ const ProductsContainer = styled.div`
     gap: 1rem;
   }
 `;
-
-ProductList.propTypes = {
-  products: PropTypes.array.isRequired,
-  title: PropTypes.string,
-};
 
 export default ProductList;

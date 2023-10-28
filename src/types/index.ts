@@ -565,9 +565,14 @@ export interface ProductFilterProps {
   products: StoreProduct;
   price: number;
   category: string;
-  size: string;
+  size: string | number;
   color: string;
   minPrice: number;
   maxPrice: number;
   onChange(e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>): void;
+}
+
+export interface ProductListProps {
+  products: StoreProduct;
+  title?: string;
 }
