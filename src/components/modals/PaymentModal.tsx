@@ -1,10 +1,8 @@
 'use client';
 
 import styled from 'styled-components';
-import { useEffect, useMemo, useState } from 'react';
-import PropTypes from 'prop-types';
+import { FC, useEffect, useMemo, useState } from 'react';
 import CloseIcon from '@mui/icons-material/Close';
-import { useSelector } from 'react-redux';
 
 import Input from '../carts/Input';
 import TextArea from '../carts/TextArea';
@@ -15,17 +13,20 @@ import FormButton from '../form/FormButton';
 import { useForm } from '@/hooks/useForm';
 import { useDarkMode } from '@/hooks/useDarkMode';
 
-import Overlay from './Overlay';
+import { PaymentModalProps } from '@/types';
 import { formatCurrency } from '@/utils/formatCurrency';
+
+import Overlay from './Overlay';
+import { useCartStore } from '@/hooks/useCartStore';
 
 const initialState = {
   name: '',
   address: '',
 };
 
-const PaymentModal = ({ isOpen, onClose, onExit }) => {
+const PaymentModal: FC<PaymentModalProps> = ({ isOpen, onClose, onExit }) => {
   const mode = useDarkMode((state) => state.mode);
-  const { total } = useSelector((state) => ({ ...state.cart }));
+  const total = useCartStore((state) => state.total);
 
   const [showModal, setShowModal] = useState(isOpen);
 
@@ -35,10 +36,12 @@ const PaymentModal = ({ isOpen, onClose, onExit }) => {
     handleClose();
   };
 
-  const handleClick = (e) => {
+  const handleClick = (e: React.MouseEvent<HTMLDivElement>) => {
     e.stopPropagation();
 
-    if (e.target.classList.contains('overlay')) {
+    const target = e.target;
+
+    if (target.classList.contains('overlay')) {
       closeHandler();
     }
   };
@@ -171,11 +174,5 @@ const Heading = styled.h1`
     font-size: 1.87rem;
   }
 `;
-
-PaymentModal.propTypes = {
-  isOpen: PropTypes.bool.isRequired,
-  onClose: PropTypes.func.isRequired,
-  onExit: PropTypes.func.isRequired,
-};
 
 export default PaymentModal;

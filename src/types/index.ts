@@ -554,3 +554,9 @@ export interface CartTotalProps {
   onClose(): void;
   onAction(): void;
 }
+
+export interface PaymentModalProps {
+  isOpen: boolean;
+  onClose(): void;
+  onExit(): void;
+}
