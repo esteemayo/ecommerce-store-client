@@ -430,3 +430,12 @@ export interface ColorSelectProps {
   onAction(value: string): void;
   secondaryAction(selected: string): void;
 }
+
+export interface SizeSelectProps {
+  value: (string | number)[];
+  title: string;
+  modal?: boolean;
+  selected?: string | null;
+  onAction(value: string): void;
+  secondaryAction(selected: string): void;
+}

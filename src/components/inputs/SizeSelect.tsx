@@ -1,15 +1,16 @@
 'use client';
 
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
-import { useCallback } from 'react';
+import { FC, useCallback } from 'react';
+
+import { SizeSelectProps } from '@/types';
 
 interface IProps {
   modal?: boolean;
   bcg?: boolean;
 }
 
-const SizeSelect = ({
+const SizeSelect: FC<SizeSelectProps> = ({
   value,
   title,
   modal,
@@ -18,7 +19,7 @@ const SizeSelect = ({
   secondaryAction,
 }) => {
   const handleSelect = useCallback(
-    (size) => {
+    (size: string | number) => {
       onAction(size);
       secondaryAction(size);
     },
@@ -35,7 +36,7 @@ const SizeSelect = ({
               key={index}
               type='button'
               bcg={selected === item}
-              onClick={() => handleSelect(item)}
+              onClick={() => handleSelect(item as string | number)}
               modal={modal}
             >
               {item}
@@ -105,14 +106,5 @@ const Size = styled.button<IProps>`
       bcg ? theme.cartSelected : theme.sizeHover};
   }
 `;
-
-SizeSelect.propTypes = {
-  value: PropTypes.array.isRequired,
-  title: PropTypes.string,
-  modal: PropTypes.bool,
-  selected: PropTypes.bool,
-  onAction: PropTypes.func.isRequired,
-  secondaryAction: PropTypes.func.isRequired,
-};
 
 export default SizeSelect;
