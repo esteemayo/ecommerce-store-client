@@ -32,6 +32,7 @@ import {
   NavLink,
   SliderItem,
   Social,
+  StoreProduct,
   Sublink,
 } from '@/types';
 
@@ -413,7 +414,7 @@ export const footerLinks: FooterLink = [
   },
 ];
 
-export const storeProducts = [
+export const storeProducts:StoreProduct = [
   {
     id: 1,
     name: 'The Stanley Rain Jacket in Black',

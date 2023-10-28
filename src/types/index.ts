@@ -87,6 +87,28 @@ export type FooterLink = {
   text: string;
 }[];
 
+export type StoreProduct = {
+  id: number;
+  name: string;
+  desc: string;
+  price: number;
+  priceDiscount: number;
+  numberInStock: number;
+  inStock: boolean;
+  images: string[];
+  featured: boolean;
+  color: string[];
+  size: string[];
+  category: string;
+  tags: string[];
+  ratingsQuantity: number;
+  ratingsAverage: number;
+  createdAt: string;
+  updatedAt: string;
+  slug: string;
+  discount: number;
+}[];
+
 export interface SubmenuStore {
   isOpen: boolean;
   location: {
