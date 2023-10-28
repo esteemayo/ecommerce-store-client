@@ -79,3 +79,8 @@ export interface CountryValues {
   flag: string;
   label: string;
 }
+
+export interface DarkModeStore {
+  mode: boolean;
+  toggle(): void;
+}
