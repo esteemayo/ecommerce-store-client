@@ -11,6 +11,10 @@ import ReviewItem from './ReviewItem';
 import { topReviews } from '@/data';
 import { StyledWrapper } from '../StyledWrapper';
 
+interface IBtn {
+  direction: string;
+}
+
 const TopReviews = () => {
   const reviewRef = useRef();
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -19,25 +23,28 @@ const TopReviews = () => {
 
   const lastIndex = topReviews.lastIndexOf(topReviews.slice(-1)[0]);
 
-  const handleClick = useCallback((direction) => {
-    setIsMoved(true);
-    const distance = reviewRef.current.getBoundingClientRect().x - 50;
+  const handleClick = useCallback(
+    (direction: string) => {
+      setIsMoved(true);
+      const distance = reviewRef.current.getBoundingClientRect().x - 50;
 
-    if (direction === 'left') {
-      setCurrentSlide((value) => value - 1);
-      reviewRef.current.style.transform = `translateX(${730 + distance}px)`;
-    }
+      if (direction === 'left') {
+        setCurrentSlide((value) => value - 1);
+        reviewRef.current.style.transform = `translateX(${730 + distance}px)`;
+      }
 
-    if (direction === 'right' && currentSlide < 8 - clickLimit) {
-      setCurrentSlide((value) => value + 1);
-      reviewRef.current.style.transform = `translateX(${-730 + distance}px)`;
-    }
-  }, [clickLimit, currentSlide]);
+      if (direction === 'right' && currentSlide < 8 - clickLimit) {
+        setCurrentSlide((value) => value + 1);
+        reviewRef.current.style.transform = `translateX(${-730 + distance}px)`;
+      }
+    },
+    [clickLimit, currentSlide]
+  );
 
   return (
     <Container>
       <StyledWrapper>
-        <Header title='You didn&apos;t hear it from us' />
+        <Header title="You didn't hear it from us" />
       </StyledWrapper>
       <Wrapper>
         <IconButton
@@ -62,7 +69,7 @@ const TopReviews = () => {
       </Wrapper>
     </Container>
   );
-}
+};
 
 const Container = styled.section`
   width: 100vw;
@@ -79,7 +86,7 @@ const Wrapper = styled.div`
   position: relative;
 `;
 
-const IconButton = styled.button`
+const IconButton = styled.button<IBtn>`
   border: none;
   width: 4rem;
   height: 4rem;
