@@ -2,27 +2,23 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 import FormError from './FormError';
-import { FormGroup } from '../form/FormGroup';
+import { FormGroup } from './FormGroup';
 
 const TextArea = ({ name, label, error, ...rest }) => {
   return (
     <FormGroup>
       <Label htmlFor={name}>{label}</Label>
-      <StyledTextArea
-        {...rest}
-        id={name}
-        name={name}
-      />
+      <StyledTextArea {...rest} id={name} name={name} />
       {error && <FormError message={error} />}
     </FormGroup>
   );
-}
+};
 
 const Label = styled.label`
   display: inline-block;
   font-weight: 600;
   font-size: 1.4rem;
-  color:  ${({ theme }) => theme.textLabel};
+  color: ${({ theme }) => theme.textLabel};
 `;
 
 const StyledTextArea = styled.textarea`

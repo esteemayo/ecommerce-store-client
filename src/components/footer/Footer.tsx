@@ -10,7 +10,7 @@ import Heading from './Heading';
 import FooterLink from './FooterLink';
 import Search from './Search';
 
-import { footerLinks, footerMenus, social } from '@/data';
+import { footerLinks, footerMenus } from '@/data';
 
 const Footer = () => {
   const year = useMemo(() => {
@@ -28,7 +28,7 @@ const Footer = () => {
           <FooterContainer>
             <Search />
             <Heading title='Follow us' small />
-            <SocialIcon data={social} />
+            {/* <SocialIcon data={social} /> */}
           </FooterContainer>
         </FooterRight>
       </Wrapper>
@@ -36,12 +36,12 @@ const Footer = () => {
       <FooterText value={year} />
     </Container>
   );
-}
+};
 
 const Container = styled.footer`
   width: 100vw;
   padding: 8rem 0;
-  background-color:  ${({ theme }) => theme.bgNav};
+  background-color: ${({ theme }) => theme.bgNav};
   color: ${({ theme }) => theme.textNav};
 
   @media only screen and (max-width: 64em) {
@@ -73,8 +73,8 @@ const Wrapper = styled.div`
   gap: 5rem;
 
   @media only screen and (max-width: 64em) {
-   flex-direction: column;
-   align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 `;
 

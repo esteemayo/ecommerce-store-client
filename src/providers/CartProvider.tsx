@@ -10,7 +10,7 @@ const CartProvider = ({ children }) => {
 
   useEffect(() => {
     calcTotals();
-  }, [cart]);
+  }, [cart, calcTotals]);
 
   return <>{children}</>;
 }
