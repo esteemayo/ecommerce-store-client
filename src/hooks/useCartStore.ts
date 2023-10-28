@@ -3,8 +3,9 @@ import { devtools, persist } from 'zustand/middleware';
 import { produce } from 'immer';
 
 import { cartItems } from '@/data';
+import { CartStore } from '@/types';
 
-export const useCartStore = create(
+export const useCartStore = create<CartStore>()(
   persist(
     devtools((set) => ({
       cart: cartItems,

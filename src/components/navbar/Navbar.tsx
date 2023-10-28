@@ -40,7 +40,7 @@ const Navbar = () => {
   }, []);
 
   const displaySubmenu = useCallback(
-    (e) => {
+    (e: React.MouseEvent<HTMLButtonElement>) => {
       e.stopPropagation();
 
       const page = e.target.textContent;
