@@ -8,9 +8,9 @@ import { useDispatch, useSelector } from 'react-redux';
 import CartModal from '@/components/modals/CartModal';
 import WishlistHeader from '@/components/wishlists/WishlistHeader';
 
-import useCartModal from '@/hooks/useCartModal';
-import useWishlistModal from '@/hooks/useWishlistModal';
+import { useCartModal } from '@/hooks/useCartModal';
 import { useSubmenu } from '@/hooks/useSubmenu';
+import useWishlistModal from '@/hooks/useWishlistModal';
 
 import { removeWishlist } from '@/features/cart/cartSlice';
 

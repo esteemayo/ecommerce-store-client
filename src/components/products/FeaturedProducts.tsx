@@ -11,7 +11,7 @@ import CartModal from '../modals/CartModal';
 import { storeProducts } from '@/data';
 import { StyledWrapper } from '../StyledWrapper';
 
-import useCartModal from '@/hooks/useCartModal';
+import { useCartModal } from '@/hooks/useCartModal';
 
 const FeaturedProducts = () => {
   const isOpen = useCartModal((state) => state.isOpen);
