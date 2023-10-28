@@ -68,3 +68,9 @@ export interface SidebarStore {
   onOpen(): void;
   onClose(): void;
 }
+
+export interface SearchModalStore {
+  isOpen: boolean;
+  onOpen(): void;
+  onClose(): void;
+}

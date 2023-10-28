@@ -1,7 +1,9 @@
 import { create } from 'zustand';
 import { devtools } from 'zustand/middleware';
 
-const useSearchModal = create(
+import { SearchModalStore } from '@/types';
+
+const useSearchModal = create<SearchModalStore>()(
   devtools((set) => ({
     isOpen: false,
     onOpen: () => set(() => ({ isOpen: true }), false, 'openSearchModal'),
