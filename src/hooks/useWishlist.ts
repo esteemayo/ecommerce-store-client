@@ -1,11 +1,10 @@
-import { useDispatch } from 'react-redux';
-import PropTypes from 'prop-types';
 import { useCallback, useMemo } from 'react';
 
-import { addWishlist, removeWishlist } from '@/features/cart/cartSlice';
+import { useCartStore } from './useCartStore';
 
 const useWishlist = ({ actionId, product, wished }) => {
-  const dispatch = useDispatch();
+  const addWishlist = useCartStore((state) => state.addWishlist);
+  const removeWishlist = useCartStore((state) => state.removeWishlist);
 
   const isWished = useMemo(() => {
     let list = wished;
@@ -13,27 +12,24 @@ const useWishlist = ({ actionId, product, wished }) => {
     return !!list;
   }, [actionId, wished]);
 
-  const handleToggle = useCallback((e) => {
-    e.stopPropagation();
+  const handleToggle = useCallback(
+    (e: React.MouseEvent<HTMLButtonElement>) => {
+      e.stopPropagation();
 
-    if (wished.includes(actionId)) {
-      dispatch(removeWishlist(actionId));
-      return;
-    }
+      if (wished.includes(actionId)) {
+        removeWishlist(actionId);
+        return;
+      }
 
-    dispatch(addWishlist({ ...product }));
-  }, [actionId, dispatch, product, wished]);
+      addWishlist({ ...product });
+    },
+    [actionId, addWishlist, product, removeWishlist, wished]
+  );
 
   return {
     isWished,
     handleToggle,
   };
-}
-
-useWishlist.propTypes = {
-  actionId: PropTypes.string,
-  product: PropTypes.object,
-  wished: PropTypes.array,
 };
 
 export default useWishlist;
