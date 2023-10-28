@@ -127,6 +127,12 @@ export interface WishlistModalStore {
   onClose(): void;
 }
 
+export interface AccountModalStore {
+  isOpen: boolean;
+  onOpen(): void;
+  onClose(): void;
+}
+
 export interface WishlistProps {
   actionId: number;
   product: any;
