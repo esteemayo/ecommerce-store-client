@@ -358,6 +358,10 @@ export interface FooterHeadingProps {
   small?: boolean;
 }
 
+export interface SocialIconProps {
+  data: Social;
+}
+
 export interface FooterLinkProps {
   data: FooterLink;
 }

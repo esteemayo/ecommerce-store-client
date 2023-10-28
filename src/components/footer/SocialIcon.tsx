@@ -1,29 +1,35 @@
 'use client';
 
 import styled from 'styled-components';
+import { FC } from 'react';
 import Link from 'next/link';
-import PropTypes from 'prop-types';
 
+import { SocialIconProps } from '@/types';
 import { useDarkMode } from '@/hooks/useDarkMode';
 
-const SocialIcon = ({ data }) => {
+interface IMode {
+  mode: string;
+  color: string;
+}
+
+const SocialIcon: FC<SocialIconProps> = ({ data }) => {
   const mode = useDarkMode((state) => state.mode);
 
   return (
     <Container>
       {data.map((item) => {
-        const { id, url, icon, color } = item;
+        const { id, url, icon: Icon, color } = item;
         return (
           <Link key={id} href={url} passHref>
             <IconWrapper mode={mode.toString()} color={color}>
-              {icon}
+              <Icon />
             </IconWrapper>
           </Link>
         );
       })}
     </Container>
   );
-}
+};
 
 const Container = styled.div`
   display: flex;
@@ -55,11 +61,11 @@ const Container = styled.div`
   }
 `;
 
-const IconWrapper = styled.div`
+const IconWrapper = styled.div<IMode>`
   width: 4rem;
   height: 4rem;
-  background-color: #${({ color, mode }) => mode === 'true' ? '121212' : color};
-  color: ${({ mode }) => mode === 'true' ? '#cfd0d1' : 'inherit'};
+  background-color: #${({ color, mode }) => (mode === 'true' ? '121212' : color)};
+  color: ${({ mode }) => (mode === 'true' ? '#cfd0d1' : 'inherit')};
   border-radius: 50%;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -87,16 +93,5 @@ const IconWrapper = styled.div`
     }
   }
 `;
-
-SocialIcon.propTypes = {
-  data: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.number.isRequired,
-      url: PropTypes.string.isRequired,
-      icon: PropTypes.object.isRequired,
-      color: PropTypes.string.isRequired,
-    }),
-  ),
-};
 
 export default SocialIcon;

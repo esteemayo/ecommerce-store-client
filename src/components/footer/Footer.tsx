@@ -10,7 +10,7 @@ import Heading from './Heading';
 import FooterLink from './FooterLink';
 import Search from './Search';
 
-import { footerLinks, footerMenus } from '@/data';
+import { footerLinks, footerMenus, social } from '@/data';
 
 const Footer = () => {
   const year = useMemo(() => {
@@ -28,7 +28,7 @@ const Footer = () => {
           <FooterContainer>
             <Search />
             <Heading title='Follow us' small />
-            {/* <SocialIcon data={social} /> */}
+            <SocialIcon data={social} />
           </FooterContainer>
         </FooterRight>
       </Wrapper>
