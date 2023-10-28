@@ -74,3 +74,8 @@ export interface SearchModalStore {
   onOpen(): void;
   onClose(): void;
 }
+
+export interface CountryValues {
+  flag: string;
+  label: string;
+}
