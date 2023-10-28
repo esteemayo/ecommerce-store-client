@@ -469,3 +469,7 @@ export interface ProductInfoProps {
   title: string;
   content: string;
 }
+
+export interface RecommendationProps {
+  data: Recommendation;
+}

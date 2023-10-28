@@ -2,12 +2,13 @@
 
 import styled from 'styled-components';
 import Link from 'next/link';
-import PropTypes from 'prop-types';
+import { FC } from 'react';
 import Image from 'next/image';
 
+import { RecommendationProps } from '@/types';
 import { formatCurrency } from '@/utils/formatCurrency';
 
-const Recommendation = ({ data }) => {
+const Recommendation: FC<RecommendationProps> = ({ data }) => {
   return (
     <Container>
       <Heading>You might also like</Heading>
@@ -17,12 +18,7 @@ const Recommendation = ({ data }) => {
           return (
             <ProductWrapper key={id}>
               <Link href={`/products/${encodeURIComponent(id)}`} passHref>
-                <StyledImage
-                  src={image}
-                  width={400}
-                  height={500}
-                  alt=''
-                />
+                <StyledImage src={image} width={400} height={500} alt='' />
                 <ProductContainer>
                   <ProductTitle>{name}</ProductTitle>
                   <ProductPrice>
@@ -36,7 +32,7 @@ const Recommendation = ({ data }) => {
       </Wrapper>
     </Container>
   );
-}
+};
 
 const Container = styled.section`
   width: 100vw;
@@ -155,9 +151,5 @@ const ProductPrice = styled.p`
   color: ${({ theme }) => theme.text};
   line-height: 1.3em;
 `;
-
-Recommendation.propTypes = {
-  data: PropTypes.array.isRequired,
-};
 
 export default Recommendation;
