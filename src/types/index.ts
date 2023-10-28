@@ -270,3 +270,8 @@ export interface WishlistProps {
   product: any;
   wished: CartItem;
 }
+
+export interface MenuItemProps {
+  label: string;
+  onMouse(): void;
+}

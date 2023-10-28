@@ -1,9 +1,11 @@
 'use client';
 
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
+import { FC } from 'react';
 
-const MenuItem = ({ label, onMouse }) => {
+import { MenuItemProps } from '@/types';
+
+const MenuItem: FC<MenuItemProps> = ({ label, onMouse }) => {
   return (
     <ListItem>
       <Button
@@ -35,10 +37,5 @@ const Button = styled.button`
     opacity: 0.5;
   }
 `;
-
-MenuItem.propTypes = {
-  label: PropTypes.string.isRequired,
-  onMouse: PropTypes.any,
-};
 
 export default MenuItem;
