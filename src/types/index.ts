@@ -102,3 +102,9 @@ export interface PasswordModalStore {
   onOpen(): void;
   onClose(): void;
 }
+
+export interface PaymentModalStore {
+  isOpen: boolean;
+  onOpen(): void;
+  onClose(): void;
+}
