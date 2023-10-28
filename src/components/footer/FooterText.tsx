@@ -1,17 +1,19 @@
 'use client';
 
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
+import { FC } from 'react';
 
-const FooterText = ({ value }) => {
+import { FooterTextProps } from '@/types';
+
+const FooterText: FC<FooterTextProps> = ({ value }) => {
   return (
     <Text>
-      &copy; {value} by <Author>Emmanuel Adebayo&trade;</Author>. All rights reserved.
-      We are a young company always looking for new and creative ideas to help you
-      with our products in your everyday work.
+      &copy; {value} by <Author>Emmanuel Adebayo&trade;</Author>. All rights
+      reserved. We are a young company always looking for new and creative ideas
+      to help you with our products in your everyday work.
     </Text>
   );
-}
+};
 
 const Text = styled.p`
   width: 60%;
@@ -37,9 +39,5 @@ const Text = styled.p`
 `;
 
 const Author = styled.strong``;
-
-FooterText.propTypes = {
-  value: PropTypes.number.isRequired,
-};
 
 export default FooterText;

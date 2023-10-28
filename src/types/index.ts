@@ -344,3 +344,7 @@ export interface ReviewItemProps {
     photo: string;
   };
 }
+
+export interface FooterTextProps {
+  value: number;
+}
