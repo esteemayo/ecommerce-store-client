@@ -306,18 +306,11 @@ export interface HeaderProps {
 
 type Product = {
   id: number;
-  name: string;
-  desc: string;
-  price: number;
-  priceDiscount: number;
-  numberInStock: number;
-  inStock: boolean;
   images: string[];
-  featured: boolean;
-  color: string[];
-  size: string[];
-  category: string;
+  price: number;
   discount: number;
+  ratingsQuantity: number;
+  ratingsAverage: number;
 };
 
 export interface ProductCardProps {
@@ -326,8 +319,18 @@ export interface ProductCardProps {
   onSelect(value: any): void;
 }
 
+type CartModalValues = {
+  name?: string;
+  images?: string[];
+  price?: number;
+  discount?: number;
+  priceDiscount?: number;
+  color?: string[];
+  size?: string[];
+}
+
 export interface CartModalProps {
-  product: Product;
+  product: CartModalValues;
   isOpen: boolean;
   onClose(): void;
   onSelect(value: any): void;
