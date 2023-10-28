@@ -1,22 +1,19 @@
 'use client';
 
 import styled from 'styled-components';
+import { FC } from 'react';
 import Image from 'next/image';
-import PropTypes from 'prop-types';
 
-const EmptyProduct = ({ src, title }) => {
+import { EmptyProductProps } from '@/types';
+
+const EmptyProduct: FC<EmptyProductProps> = ({ src, title }) => {
   return (
     <Container>
-      <StyledImage
-        src={src}
-        width={500}
-        height={250}
-        alt=''
-      />
+      <StyledImage src={src} width={500} height={250} alt='' />
       <Message>{title}</Message>
     </Container>
   );
-}
+};
 
 const Container = styled.div`
   display: flex;
@@ -45,10 +42,5 @@ const Message = styled.span`
   font-size: 2rem;
   color: ${({ theme }) => theme.textNotFound};
 `;
-
-EmptyProduct.propTypes = {
-  src: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-};
 
 export default EmptyProduct;

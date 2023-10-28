@@ -576,3 +576,8 @@ export interface ProductListProps {
   products: StoreProduct;
   title?: string;
 }
+
+export interface EmptyProductProps {
+  src: string;
+  title: string;
+}
