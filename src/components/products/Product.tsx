@@ -2,7 +2,6 @@
 
 import styled from 'styled-components';
 import { FC } from 'react';
-import PropTypes from 'prop-types';
 
 import { useCart } from '@/hooks/useCart';
 import BreadCrumbs from '@/app/products/[id]/BreadCrumbs';
