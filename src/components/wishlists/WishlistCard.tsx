@@ -5,15 +5,16 @@ import Image from 'next/image';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import PropTypes from 'prop-types';
+import { FC } from 'react';
 import CloseIcon from '@mui/icons-material/Close';
 
 import { excerpts } from '@/utils';
 import { formatCurrency } from '@/utils/formatCurrency';
+import { WishlistCardProps } from '@/types';
 
 import DeleteModal from '../modals/DeleteModal';
 
-const WishlistCard = ({
+const WishlistCard: FC<WishlistCardProps> = ({
   isOpen,
   onOpen,
   selected,
@@ -300,15 +301,5 @@ const DeleteButton = styled.button`
     fill: currentColor;
   }
 `;
-
-WishlistCard.propTypes = {
-  isOpen: PropTypes.bool,
-  onOpen: PropTypes.func,
-  selected: PropTypes.bool,
-  wishlists: PropTypes.array,
-  onAction: PropTypes.func,
-  onClose: PropTypes.func,
-  onDelete: PropTypes.func,
-};
 
 export default WishlistCard;

@@ -1,6 +1,6 @@
 import { IconType } from 'react-icons/lib';
 import { IconDefinition } from '@fortawesome/free-solid-svg-icons';
-import { HTMLAttributes } from 'react';
+import { HTMLAttributes, SetStateAction } from 'react';
 
 export interface LayoutProps {
   children: React.ReactNode;
@@ -623,4 +623,14 @@ export interface DateTimeProps {
   date: Date;
   type?: string;
   options: DateOptions;
+}
+
+export interface WishlistCardProps {
+  isOpen: boolean;
+  onOpen(id: number): void;
+  selected: any;
+  wishlists: WishlistItem[];
+  onAction(wishlist: SetStateAction<{}>): void;
+  onClose(): void;
+  onDelete(id: number): void;
 }
