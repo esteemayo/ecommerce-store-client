@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback, useMemo, useState } from 'react';
+import { ChangeEvent, useCallback, useMemo, useState } from 'react';
 
 import FormButton from '@/components/form/FormButton';
 import FormBox from '@/components/form/FormBox';
@@ -14,6 +14,16 @@ import { FormGroup } from '@/components/form/FormGroup';
 
 import { selectInputs } from '@/data/formData';
 import { useDarkMode } from '@/hooks/useDarkMode';
+
+interface IErrors {
+  name?: string;
+  desc?: string;
+  price?: string;
+  priceDiscount?: string;
+  numberInStock?: string;
+  category?: string;
+  tags?: string;
+}
 
 const initialState = {
   name: '',
@@ -31,7 +41,7 @@ const NewProduct = () => {
   const [size, setSize] = useState([]);
   const [files, setFiles] = useState(null);
   const [tags, setTags] = useState([]);
-  const [errors, setErrors] = useState({});
+  const [errors, setErrors] = useState<IErrors>({});
   const [color, setColor] = useState([]);
 
   const handleChange = useCallback(({ target: input }) => {
@@ -39,20 +49,20 @@ const NewProduct = () => {
     setData((prev) => ({ ...prev, [name]: value }));
   }, []);
 
-  const handleColor = useCallback((e) => {
+  const handleColor = useCallback((e: ChangeEvent<HTMLInputElement>) => {
     setColor(e.target.value.split(','));
   }, []);
 
-  const handleSize = useCallback((e) => {
+  const handleSize = useCallback((e: ChangeEvent<HTMLInputElement>) => {
     setSize(e.target.value.split(','));
   }, []);
 
-  const handleTags = useCallback((e) => {
+  const handleTags = useCallback((e: ChangeEvent<HTMLInputElement>) => {
     setTags(e.target.value.split(','));
   }, []);
 
   const validateForm = useCallback(() => {
-    const errors = {};
+    const errors: IErrors = {};
     const { name, desc, price, priceDiscount, numberInStock, category } = data;
 
     if (name.trim() === '') {
@@ -87,7 +97,7 @@ const NewProduct = () => {
   }, [data, tags]);
 
   const handleSubmit = useCallback(
-    (e) => {
+    (e: React.FormEvent<HTMLFormElement>) => {
       e.preventDefault();
 
       const errors = validateForm();
@@ -103,6 +113,8 @@ const NewProduct = () => {
     return `formLabel ${mode ? 'dark' : 'light'}`;
   }, [mode]);
 
+  const { name, desc, category, price, numberInStock, priceDiscount } = data;
+
   return (
     <FormBox>
       <StyledBox>
@@ -111,6 +123,7 @@ const NewProduct = () => {
           <FormInput
             name='name'
             label='Product name'
+            value={name}
             placeholder='Enter product name'
             onChange={handleChange}
             error={errors.name}
@@ -119,6 +132,7 @@ const NewProduct = () => {
           <TextArea
             name='desc'
             label='Description'
+            value={desc}
             placeholder='Enter product description'
             onChange={handleChange}
             error={errors.desc}
@@ -127,6 +141,7 @@ const NewProduct = () => {
             type='number'
             name='price'
             label='Price'
+            value={price}
             placeholder='Enter product price'
             onChange={handleChange}
             error={errors.price}
@@ -135,6 +150,7 @@ const NewProduct = () => {
             type='number'
             name='priceDiscount'
             label='Price discount'
+            value={priceDiscount}
             placeholder='Enter price discount'
             onChange={handleChange}
             error={errors.priceDiscount}
@@ -143,6 +159,7 @@ const NewProduct = () => {
             type='number'
             name='numberInStock'
             label='Number in stock'
+            value={numberInStock}
             placeholder='Enter number in stock'
             onChange={handleChange}
             error={errors.numberInStock}
@@ -150,18 +167,21 @@ const NewProduct = () => {
           <FormInput
             name='color'
             label='Color'
+            value={color}
             placeholder='Separate the color with commas'
             onChange={handleColor}
           />
           <FormInput
             name='size'
             label='Size'
+            value={size}
             placeholder='Separate the size with commas'
             onChange={handleSize}
           />
           <Select
             name='category'
             label='Select category'
+            value={category}
             defaultText='Select a category'
             onChange={handleChange}
             data={selectInputs}
@@ -170,6 +190,7 @@ const NewProduct = () => {
           <FormInput
             name='tags'
             label='Product tags'
+            value={tags}
             placeholder='Separate the tags with commas'
             onChange={handleTags}
             error={errors.tags}

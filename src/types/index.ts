@@ -669,14 +669,15 @@ export interface FormInputProps extends HTMLAttributes<HTMLInputElement> {
   name: string;
   type?: string;
   label: string;
-  value: string;
-  error: string;
+  value: string | any;
+  error?: string;
   login?: boolean;
 }
 
 export interface TextAreaProps extends HTMLAttributes<HTMLTextAreaElement> {
   name: string;
   label: string;
+  value: string | any;
   error: string;
 }
 
@@ -684,6 +685,7 @@ export interface SelectProps extends HTMLAttributes<HTMLSelectElement> {
   data: SelectInput;
   name: string;
   label: string;
+  value: any;
   error: string;
   defaultText: string;
 }
