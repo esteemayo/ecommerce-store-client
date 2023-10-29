@@ -7,6 +7,7 @@ import { DateOptions } from '@/types';
 
 const WishlistHeader = () => {
   const today = new Date();
+
   const options: DateOptions = {
     day: 'numeric',
     month: 'long',
