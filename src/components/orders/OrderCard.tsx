@@ -4,7 +4,6 @@ import styled from 'styled-components';
 import { FC, useMemo } from 'react';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import Link from 'next/link';
-import PropTypes from 'prop-types';
 
 import { OrderCardProps } from '@/types';
 import { formatCurrency } from '@/utils/formatCurrency';
@@ -171,12 +170,5 @@ const Button = styled.button`
     padding: 1rem 2.5rem;
   }
 `;
-
-OrderCard.propTypes = {
-  id: PropTypes.number.isRequired,
-  total: PropTypes.number.isRequired,
-  status: PropTypes.number.isRequired,
-  createdAt: PropTypes.string.isRequired,
-};
 
 export default OrderCard;
