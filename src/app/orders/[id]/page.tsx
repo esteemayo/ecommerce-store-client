@@ -2,7 +2,7 @@
 
 import styled from 'styled-components';
 
-import OrderStatus from '@/components/images/orders/OrderStatus';
+import OrderStatus from '@/components/orders/OrderStatus';
 
 import { useSubmenu } from '@/hooks/useSubmenu';
 import { formatCurrency } from '@/utils/formatCurrency';

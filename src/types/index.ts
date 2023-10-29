@@ -601,3 +601,10 @@ export interface SelectPriceProps extends HTMLAttributes<HTMLSelectElement> {
   label: string;
   options: PriceOption;
 }
+
+export interface OrderCardProps {
+  id: number;
+  total: number;
+  status: number;
+  createdAt: string;
+}

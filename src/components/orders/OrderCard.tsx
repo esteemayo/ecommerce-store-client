@@ -1,14 +1,19 @@
 'use client';
 
 import styled from 'styled-components';
-import { useMemo } from 'react';
+import { FC, useMemo } from 'react';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import Link from 'next/link';
 import PropTypes from 'prop-types';
 
+import { OrderCardProps } from '@/types';
 import { formatCurrency } from '@/utils/formatCurrency';
 
-const OrderCard = ({ id, total, status, createdAt }) => {
+interface IContainer {
+  status: number;
+}
+
+const OrderCard: FC<OrderCardProps> = ({ id, total, status, createdAt }) => {
   const dateLabel = useMemo(() => {
     const options = { month: 'long', day: 'numeric', year: 'numeric' };
     const date = new Date(createdAt).toLocaleDateString('en-us', options);
@@ -36,7 +41,7 @@ const OrderCard = ({ id, total, status, createdAt }) => {
   );
 };
 
-const Container = styled.article`
+const Container = styled.article<IContainer>`
   width: 30%;
   border-radius: 1rem;
   box-shadow: 2px 0.4rem 1rem 1px rgba(201, 201, 201, 0.47);
