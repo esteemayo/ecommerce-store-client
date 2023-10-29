@@ -19,7 +19,7 @@ const Orders = () => {
   if (orders.length < 1) {
     bodyContent = (
       <ImageContainer>
-        <Image src='/img/empty-list.png' width={500} height={500} alt='' />
+        <StyledImage src='/img/empty-list.png' width={500} height={500} alt='' />
         <Message>No orders found</Message>
       </ImageContainer>
     );
@@ -93,13 +93,13 @@ const ImageContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+`;
 
-  img {
-    width: 30rem;
-    height: 30rem;
-    display: block;
-    object-fit: cover;
-  }
+const StyledImage = styled(Image)`
+  width: 30rem;
+  height: 30rem;
+  display: block;
+  object-fit: cover;
 `;
 
 const Message = styled.span`
