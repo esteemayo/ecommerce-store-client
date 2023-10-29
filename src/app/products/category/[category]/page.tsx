@@ -6,7 +6,7 @@ import dynamic from 'next/dynamic';
 
 import Heading from '@/components/filters/Heading';
 import Option from '@/components/filters/Option';
-import SelectColor from '@/components/filters/SelectColor';
+import SelectPrice from '@/components/filters/SelectPrice';
 import Select from '@/components/filters/Select';
 
 import ProductBox from '@/components/products/ProductBox';
@@ -91,11 +91,11 @@ const ProductCategory = ({ params }) => {
             />
           </Left>
           <Right>
-            <SelectColor
+            <SelectPrice
               name='price'
               label='Product price'
               options={priceOptions}
-              onChange={(e) => setSort(e.target.value)}
+              onChange={(e: ChangeEvent<HTMLSelectElement>) => setSort(e.target.value)}
             />
           </Right>
         </Wrapper>
