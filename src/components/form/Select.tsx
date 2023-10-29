@@ -4,7 +4,7 @@ import { FC } from 'react';
 import FormError from './FormError';
 import { FormGroup } from './FormGroup';
 
-import { SelectProps } from '@/data';
+import { SelectProps } from '@/types';
 
 const Select: FC<SelectProps> = ({
   data,
@@ -25,19 +25,19 @@ const Select: FC<SelectProps> = ({
             <Option key={id} value={name}>
               {name}
             </Option>
-          )
+          );
         })}
       </StyledSelect>
       {error && <FormError message={error} />}
     </FormGroup>
   );
-}
+};
 
 export const Label = styled.label`
   display: inline-block;
   font-weight: 600;
   font-size: 1.4rem;
-  color:  ${({ theme }) => theme.textLabel};
+  color: ${({ theme }) => theme.textLabel};
 `;
 
 export const StyledSelect = styled.select`

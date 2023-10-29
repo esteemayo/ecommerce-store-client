@@ -680,7 +680,8 @@ export interface TextAreaProps extends HTMLAttributes<HTMLTextAreaElement> {
   error: string;
 }
 
-export interface SelectProps extends HTMLAttributes<HTMLTextAreaElement> {
+export interface SelectProps extends HTMLAttributes<HTMLSelectElement> {
+  data: SelectInput;
   name: string;
   label: string;
   error: string;
