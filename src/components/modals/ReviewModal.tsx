@@ -3,7 +3,14 @@
 import styled, { css } from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
-import React, { FC, useCallback, useEffect, useMemo, useState } from 'react';
+import React, {
+  ChangeEvent,
+  FC,
+  useCallback,
+  useEffect,
+  useMemo,
+  useState,
+} from 'react';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 
 import { ReviewModalProps } from '@/types';
@@ -102,7 +109,9 @@ const ReviewModal: FC<ReviewModalProps> = ({ isOpen, onClose }) => {
             id='review'
             name='review'
             value={review}
-            onChange={(e) => setReview(e.target.value)}
+            onChange={(e: ChangeEvent<HTMLTextAreaElement>) =>
+              setReview(e.target.value)
+            }
             placeholder='Example: Since i bought this a month ago, it has been used a lot. What i like best/what is worst about this product is ...'
           />
           <Agreement>
