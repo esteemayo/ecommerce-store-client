@@ -1,4 +1,4 @@
-import { PasswordInput, RegisterInput, UserDataInput } from '@/types';
+import { PasswordInput, RegisterInput, SelectInput, UserDataInput } from '@/types';
 
 export const registerInputs: RegisterInput = [
   {
@@ -79,7 +79,7 @@ export const userDataInputs: UserDataInput = [
   },
 ];
 
-export const selectInputs = [
+export const selectInputs: SelectInput = [
   {
     id: 'jeans',
     name: 'jeans',

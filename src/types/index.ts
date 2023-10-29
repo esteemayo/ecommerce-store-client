@@ -205,6 +205,12 @@ export type UserDataInput = {
   placeholder: string;
 }[];
 
+export type SelectInput = {
+  id: string;
+  name: string;
+  label: string;
+}[];
+
 export interface SubmenuStore {
   isOpen: boolean;
   location: {
