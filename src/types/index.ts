@@ -634,3 +634,11 @@ export interface WishlistCardProps {
   onClose(): void;
   onDelete(id: number): void;
 }
+
+export interface FormInputProps extends HTMLAttributes<HTMLInputElement> {
+  name: string;
+  type?: string;
+  label: string;
+  error: string;
+  login?: boolean;
+}

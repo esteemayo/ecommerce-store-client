@@ -1,10 +1,16 @@
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
+import { FC } from 'react';
 
 import FormError from './FormError';
 import { FormGroup } from './FormGroup';
 
-const FormInput = ({
+import { FormInputProps } from '@/types';
+
+interface ILabel {
+  login?: boolean;
+}
+
+const FormInput: FC<FormInputProps> = ({
   name,
   type = 'text',
   label,
@@ -14,25 +20,22 @@ const FormInput = ({
 }) => {
   return (
     <FormGroup>
-      <Label htmlFor={name} login={login}>{label}</Label>
-      <Input
-        {...rest}
-        id={name}
-        type={type}
-        name={name}
-      />
+      <Label htmlFor={name} login={login}>
+        {label}
+      </Label>
+      <Input {...rest} id={name} type={type} name={name} />
       {error && <FormError message={error} />}
     </FormGroup>
   );
-}
+};
 
-const Label = styled.label`
+const Label = styled.label<ILabel>`
   display: inline-block;
   width: ${({ login }) => login && '7rem'};
   text-transform: ${({ login }) => login && 'capitalize'};
   font-weight: 600;
   font-size: 1.4rem;
-  color:  ${({ theme }) => theme.textLabel};
+  color: ${({ theme }) => theme.textLabel};
 `;
 
 const Input = styled.input`
@@ -59,14 +62,5 @@ const Input = styled.input`
     color: #bbb;
   }
 `;
-
-FormInput.propTypes = {
-  name: PropTypes.string,
-  type: PropTypes.string,
-  label: PropTypes.string.isRequired,
-  error: PropTypes.string,
-  login: PropTypes.bool,
-  rest: PropTypes.any,
-};
 
 export default FormInput;
