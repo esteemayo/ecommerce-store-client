@@ -1,11 +1,17 @@
 'use client';
 
 import styled from 'styled-components';
+
 import DateTime from '../DateTime';
+import { DateOptions } from '@/types';
 
 const WishlistHeader = () => {
   const today = new Date();
-  const options = { day: 'numeric', month: 'long', year: 'numeric' };
+  const options: DateOptions = {
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+  };
 
   return (
     <Container>
@@ -16,7 +22,7 @@ const WishlistHeader = () => {
       <SendButton type='button'>Send wishlist</SendButton>
     </Container>
   );
-}
+};
 
 const Container = styled.section`
   display: flex;
