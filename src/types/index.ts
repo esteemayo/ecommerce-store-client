@@ -197,6 +197,14 @@ export type PasswordInput = {
   placeholder: string;
 }[];
 
+export type UserDataInput = {
+  id: string;
+  name: string;
+  type: string;
+  label: string;
+  placeholder: string;
+}[];
+
 export interface SubmenuStore {
   isOpen: boolean;
   location: {

@@ -1,4 +1,4 @@
-import { PasswordInput, RegisterInput } from '@/types';
+import { PasswordInput, RegisterInput, UserDataInput } from '@/types';
 
 export const registerInputs: RegisterInput = [
   {
@@ -62,7 +62,7 @@ export const passwordInputs: PasswordInput = [
   },
 ];
 
-export const userDataInputs = [
+export const userDataInputs: UserDataInput = [
   {
     id: 'newEmail',
     name: 'email',
