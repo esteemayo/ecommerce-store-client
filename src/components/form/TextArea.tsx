@@ -1,10 +1,12 @@
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
+import { FC } from 'react';
 
 import FormError from './FormError';
 import { FormGroup } from './FormGroup';
 
-const TextArea = ({ name, label, error, ...rest }) => {
+import { TextAreaProps } from '@/types';
+
+const TextArea: FC<TextAreaProps> = ({ name, label, error, ...rest }) => {
   return (
     <FormGroup>
       <Label htmlFor={name}>{label}</Label>
@@ -48,12 +50,5 @@ const StyledTextArea = styled.textarea`
     color: #bbb;
   }
 `;
-
-TextArea.propTypes = {
-  name: PropTypes.string.isRequired,
-  label: PropTypes.string.isRequired,
-  error: PropTypes.string,
-  rest: PropTypes.any,
-};
 
 export default TextArea;

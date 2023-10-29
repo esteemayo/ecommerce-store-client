@@ -643,3 +643,9 @@ export interface FormInputProps extends HTMLAttributes<HTMLInputElement> {
   error: string;
   login?: boolean;
 }
+
+export interface TextAreaProps extends HTMLAttributes<HTMLTextAreaElement> {
+  name: string;
+  label: string;
+  error: string;
+}
