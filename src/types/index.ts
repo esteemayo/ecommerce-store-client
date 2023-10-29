@@ -700,3 +700,9 @@ export interface UploadProgressProps {
   type?: boolean;
   percentage: number;
 }
+
+export interface FormInfoProps {
+  url: string;
+  text: string;
+  label: string;
+}

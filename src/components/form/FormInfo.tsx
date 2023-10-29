@@ -1,8 +1,10 @@
 import styled from 'styled-components';
+import { FC } from 'react';
 import Link from 'next/link';
-import PropTypes from 'prop-types';
 
-const FormInfo = ({ url, text, label }) => {
+import { FormInfoProps } from '@/types';
+
+const FormInfo: FC<FormInfoProps> = ({ url, text, label }) => {
   return (
     <Container>
       <Text>
@@ -39,11 +41,5 @@ const Text = styled.p`
     }
   }
 `;
-
-FormInfo.propTypes = {
-  url: PropTypes.string.isRequired,
-  text: PropTypes.string.isRequired,
-  label: PropTypes.string.isRequired,
-};
 
 export default FormInfo;
