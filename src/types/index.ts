@@ -695,3 +695,8 @@ export interface FormHeadingProps {
   type?: string;
   title: string;
 }
+
+export interface UploadProgressProps {
+  type?: boolean;
+  percentage: number;
+}
