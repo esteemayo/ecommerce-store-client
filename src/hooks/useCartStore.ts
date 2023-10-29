@@ -32,9 +32,11 @@ export const useCartStore = create<CartStore>()(
           produce((state) => {
             if (state.wished.includes(payload.id)) {
               state.wishlists = state.wishlists.filter(
-                (item) => item.id !== payload.id
+                (item: { id: number }) => item.id !== payload.id
               );
-              state.wished = state.wished.filter((item) => item !== payload.id);
+              state.wished = state.wished.filter(
+                (item: number) => item !== payload.id
+              );
             } else {
               state.qty++;
               state.cart.push(payload);
@@ -47,13 +49,17 @@ export const useCartStore = create<CartStore>()(
       addWishlist: (payload) =>
         set(
           produce((state) => {
-            const inCart = state.cart.find((item) => item.id === payload.id);
+            const inCart = state.cart.find(
+              (item: { id: number }) => item.id === payload.id
+            );
 
             state.wishlists.push(payload);
             state.wished.push(payload.id);
 
             if (inCart) {
-              state.cart = state.cart.filter((item) => item.id !== payload.id);
+              state.cart = state.cart.filter(
+                (item: { id: number }) => item.id !== payload.id
+              );
             }
           }),
           false,
@@ -63,9 +69,11 @@ export const useCartStore = create<CartStore>()(
         set(
           produce((state) => {
             state.wishlists = state.wishlists.filter(
-              (item) => item.id !== payload
+              (item: { id: number }) => item.id !== payload
             );
-            state.wished = state.wished.filter((item) => item !== payload);
+            state.wished = state.wished.filter(
+              (item: number) => item !== payload
+            );
           }),
           false,
           'removeWishlist'
@@ -82,7 +90,7 @@ export const useCartStore = create<CartStore>()(
         set(
           produce((state) => {
             state.cart = state.cart.filter(
-              (cartItem) => cartItem.id !== payload
+              (cartItem: { id: number }) => cartItem.id !== payload
             );
           }),
           false,
@@ -92,7 +100,7 @@ export const useCartStore = create<CartStore>()(
         set(
           produce((state) => {
             state.cart = state.cart
-              .map((cartItem) => {
+              .map((cartItem: { id: number; quantity: number }) => {
                 if (cartItem.id === payload.id) {
                   if (payload.type === 'inc') {
                     return {
@@ -110,7 +118,9 @@ export const useCartStore = create<CartStore>()(
                 }
                 return cartItem;
               })
-              .filter((cartItem) => cartItem.quantity !== 0);
+              .filter(
+                (cartItem: { quantity: number }) => cartItem.quantity !== 0
+              );
           }),
           false,
           'toggleQuantity'
@@ -119,7 +129,15 @@ export const useCartStore = create<CartStore>()(
         set(
           produce((state) => {
             let { total, qty, subtotal, tax } = state.cart.reduce(
-              (cartTotal, cartItem) => {
+              (
+                cartTotal: {
+                  subtotal: number;
+                  qty: number;
+                  tax: number;
+                  total: number;
+                },
+                cartItem: { price: number; quantity: number }
+              ) => {
                 const { price, quantity } = cartItem;
                 const itemTotal = price * quantity;
 
