@@ -11,7 +11,7 @@ const Order = () => {
   const closeSubmenu = useSubmenu((state) => state.closeSubmenu);
   const status = 0;
 
-  const statusClass = (index) => {
+  const statusClass = (index: number) => {
     if (index - status < 1) return 'done';
     if (index - status === 1) return 'inProgress';
     if (index - status > 1) return 'undone';
