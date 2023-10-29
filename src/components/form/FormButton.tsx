@@ -1,13 +1,15 @@
 import styled, { css } from 'styled-components';
-import PropTypes from 'prop-types';
+import { FC } from 'react';
 
-const FormButton = ({ label, ...rest }) => {
+import { FormButtonProps } from '@/types';
+
+const FormButton: FC<FormButtonProps> = ({ label, ...rest }) => {
   return (
     <Button {...rest} type='submit'>
       {label}
     </Button>
   );
-}
+};
 
 const Button = styled.button`
   margin-top: 2rem;
@@ -29,7 +31,7 @@ const Button = styled.button`
   `};
   background-size: 220%;
   border-radius: 0.5rem;
-  outline-color:  ${({ theme }) => theme.btnOut};
+  outline-color: ${({ theme }) => theme.btnOut};
   cursor: pointer;
   transition: all 0.3s;
 
@@ -46,9 +48,5 @@ const Button = styled.button`
     cursor: not-allowed;
   }
 `;
-
-FormButton.propTypes = {
-  label: PropTypes.string.isRequired,
-};
 
 export default FormButton;

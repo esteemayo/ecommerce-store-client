@@ -1,6 +1,6 @@
 import { IconType } from 'react-icons/lib';
 import { IconDefinition } from '@fortawesome/free-solid-svg-icons';
-import { HTMLAttributes, SetStateAction } from 'react';
+import { HTMLAttributes, HtmlHTMLAttributes, SetStateAction } from 'react';
 
 export interface LayoutProps {
   children: React.ReactNode;
@@ -688,6 +688,10 @@ export interface SelectProps extends HTMLAttributes<HTMLSelectElement> {
   value: any;
   error: string;
   defaultText: string;
+}
+
+export interface FormButtonProps extends HtmlHTMLAttributes<HTMLButtonElement> {
+  label: string;
 }
 
 export interface FormHeadingProps {
