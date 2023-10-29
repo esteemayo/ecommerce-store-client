@@ -181,6 +181,14 @@ export type PriceOption = {
   text: string;
 }[];
 
+export type RegisterInput = {
+  id: string;
+  name: string;
+  type: string;
+  label: string;
+  placeholder: string;
+}[];
+
 export interface SubmenuStore {
   isOpen: boolean;
   location: {
@@ -648,4 +656,11 @@ export interface TextAreaProps extends HTMLAttributes<HTMLTextAreaElement> {
   name: string;
   label: string;
   error: string;
+}
+
+export interface SelectProps extends HTMLAttributes<HTMLTextAreaElement> {
+  name: string;
+  label: string;
+  error: string;
+  defaultText: string;
 }

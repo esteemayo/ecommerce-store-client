@@ -1,10 +1,12 @@
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
+import { FC } from 'react';
 
 import FormError from './FormError';
 import { FormGroup } from './FormGroup';
 
-const Select = ({
+import { SelectProps } from '@/data';
+
+const Select: FC<SelectProps> = ({
   data,
   name,
   label,
@@ -57,14 +59,5 @@ export const Option = styled.option`
   background-color: ${({ theme }) => theme.bgProdCard};
   color: inherit;
 `;
-
-Select.propTypes = {
-  data: PropTypes.array.isRequired,
-  name: PropTypes.string.isRequired,
-  label: PropTypes.string.isRequired,
-  error: PropTypes.string,
-  defaultText: PropTypes.string.isRequired,
-  rest: PropTypes.any,
-};
 
 export default Select;

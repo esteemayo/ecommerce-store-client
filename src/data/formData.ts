@@ -1,4 +1,6 @@
-export const registerInputs = [
+import { RegisterInput } from '@/types';
+
+export const registerInputs: RegisterInput = [
   {
     id: 'name',
     name: 'name',
@@ -36,7 +38,6 @@ export const registerInputs = [
   },
 ];
 
-
 export const passwordInputs = [
   {
     id: 'password1',
@@ -60,7 +61,6 @@ export const passwordInputs = [
     placeholder: 'Type in your current password',
   },
 ];
-
 
 export const userDataInputs = [
   {
