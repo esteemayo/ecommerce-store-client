@@ -9,12 +9,16 @@ import Form from '@/components/form/Form';
 import { StyledBox } from '@/components/form/StyledBox';
 import Heading from '@/components/form/Heading';
 
+interface IErrors {
+  email?: string;
+}
+
 const Forgot = () => {
   const [email, setEmail] = useState(null);
-  const [errors, setErrors] = useState({});
+  const [errors, setErrors] = useState<IErrors>({});
 
   const validateForm = useCallback(() => {
-    const errors = {};
+    const errors: IErrors = {};
 
     if (!email) {
       errors.email = 'Please enter your email address';
@@ -52,7 +56,9 @@ const Forgot = () => {
             name='email'
             label='Email'
             placeholder='Enter email address'
-            onChange={(e) => setEmail(e.target.value)}
+            onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+              setEmail(e.target.value)
+            }
             error={errors.email}
             autoFocus
           />
