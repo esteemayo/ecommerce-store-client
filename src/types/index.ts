@@ -612,3 +612,15 @@ export interface OrderCardProps {
 export interface OrderStatusProps {
   statusClass(index: number): string;
 }
+
+export type DateOptions = {
+  day: 'numeric';
+  month: 'long';
+  year: 'numeric';
+};
+
+export interface DateTimeProps {
+  date: Date;
+  type?: string;
+  options: DateOptions;
+}

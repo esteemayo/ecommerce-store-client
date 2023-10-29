@@ -1,18 +1,19 @@
 import styled from 'styled-components';
-import { useMemo } from 'react';
-import PropTypes from 'prop-types';
+import { FC, useMemo } from 'react';
+
+import { DateTimeProps } from '@/types';
 
 interface ITime {
   type?: string;
 }
 
-const DateTime = ({ date, type, options }) => {
+const DateTime: FC<DateTimeProps> = ({ date, type, options }) => {
   const dateLabel = useMemo(() => {
     return new Date(date).toLocaleString('en-us', options);
   }, [date, options]);
 
   return (
-    <Time type={type} dateTime={date}>
+    <Time type={type} dateTime={date.toDateString()}>
       {dateLabel}
     </Time>
   );
@@ -39,11 +40,5 @@ const Time = styled.time<ITime>`
     font-size: ${({ type }) => type !== 'review' && '1.2rem'};
   }
 `;
-
-DateTime.propTypes = {
-  date: PropTypes.string.isRequired,
-  type: PropTypes.string,
-  options: PropTypes.object.isRequired,
-};
 
 export default DateTime;
