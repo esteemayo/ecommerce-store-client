@@ -690,14 +690,19 @@ export interface SelectProps extends HTMLAttributes<HTMLSelectElement> {
   defaultText: string;
 }
 
+export interface CheckBoxProps extends HTMLAttributes<HTMLInputElement> {
+  name: string;
+  label: string;
+}
+
 export interface FormButtonProps extends HtmlHTMLAttributes<HTMLButtonElement> {
   label: string;
 }
 
 export interface FormProps {
-  type?: string
-  children: React.ReactNode
-  onSubmit: React.FormEventHandler<HTMLFormElement>
+  type?: string;
+  children: React.ReactNode;
+  onSubmit: React.FormEventHandler<HTMLFormElement>;
 }
 
 export interface FormHeadingProps {

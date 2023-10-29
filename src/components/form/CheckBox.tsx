@@ -1,13 +1,11 @@
 import styled from 'styled-components';
-import { useMemo } from 'react';
-import { useSelector } from 'react-redux';
-import PropTypes from 'prop-types';
+import { FC, useMemo } from 'react';
 
+import { CheckBoxProps } from '@/types';
 import { useDarkMode } from '@/hooks/useDarkMode';
 
-const CheckBox = ({ name, label, ...rest }) => {
+const CheckBox: FC<CheckBoxProps> = ({ name, label, ...rest }) => {
   const mode = useDarkMode((state) => state.mode);
-  // const { mode } = useSelector((state) => ({ ...state.darkMode }));
 
   const checkmarkClasses = useMemo(() => {
     if (mode) {
@@ -19,18 +17,12 @@ const CheckBox = ({ name, label, ...rest }) => {
 
   return (
     <Container className='checkContainer'>
-      <StyledCheckBox
-        {...rest}
-        id={name}
-        name={name}
-        type='checkbox'
-        className='checkbox'
-      />
+      <StyledCheckBox {...rest} id={name} name={name} className='checkbox' />
       <CheckMark className={checkmarkClasses} />
       <Label htmlFor={name}>{label}</Label>
     </Container>
   );
-}
+};
 
 const Container = styled.div`
   width: 100%;
@@ -39,7 +31,7 @@ const Container = styled.div`
   gap: 2rem;
 `;
 
-const StyledCheckBox = styled.input``;
+const StyledCheckBox = styled.input.attrs({ type: 'checkbox' })``;
 
 const Label = styled.label`
   width: 10rem;
@@ -52,11 +44,5 @@ const Label = styled.label`
 `;
 
 const CheckMark = styled.span``;
-
-CheckBox.propTypes = {
-  name: PropTypes.string,
-  label: PropTypes.string,
-  rest: PropTypes.any,
-};
 
 export default CheckBox;
