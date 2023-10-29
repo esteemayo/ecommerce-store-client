@@ -706,3 +706,7 @@ export interface FormInfoProps {
   text: string;
   label: string;
 }
+
+export interface FormErrorProps {
+  message?: string;
+}
