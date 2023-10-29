@@ -42,11 +42,13 @@ const Register = () => {
   const [file, setFile] = useState(null);
   const [errors, setErrors] = useState<IErrors>({});
 
-  const handleChange: ChangeEventHandler<HTMLInputElement | HTMLSelectElement> =
-    useCallback(({ target: input }) => {
+  const handleChange: ChangeEventHandler<HTMLInputElement> = useCallback(
+    ({ target: input }) => {
       const { name, value } = input;
       setData((prev) => ({ ...prev, [name]: value }));
-    }, []);
+    },
+    []
+  );
 
   const validateForm = useCallback(() => {
     const errors: IErrors = {};
