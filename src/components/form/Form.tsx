@@ -1,26 +1,26 @@
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
+import { FC } from 'react';
 
-const Form = ({ type, children, onSubmit }) => {
+import { FormProps } from '@/types';
+
+interface IForm {
+  type?: string;
+}
+
+const Form: FC<FormProps> = ({ type, children, onSubmit }) => {
   return (
     <StyledForm type={type} onSubmit={onSubmit}>
       {children}
     </StyledForm>
   );
-}
+};
 
-const StyledForm = styled.form`
+const StyledForm = styled.form<IForm>`
   margin: 2rem 0;
 
   @media only screen and (max-width: 64em) {
     margin: ${({ type }) => type === 'login' && '1.8rem 0'};
   }
 `;
-
-Form.propTypes = {
-  type: PropTypes.string,
-  children: PropTypes.any.isRequired,
-  onSubmit: PropTypes.func.isRequired,
-};
 
 export default Form;
