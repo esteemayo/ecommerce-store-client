@@ -1,23 +1,23 @@
 'use client';
 
 import styled from 'styled-components';
+import { FC } from 'react';
 import Image from 'next/image';
-import PropTypes from 'prop-types';
 
+import { OrderStatusProps } from '@/types';
 import { useDarkMode } from '@/hooks/useDarkMode';
 
-const OrderStatus = ({ statusClass }) => {
+interface IMode {
+  mode: boolean;
+}
+
+const OrderStatus: FC<OrderStatusProps> = ({ statusClass }) => {
   const mode = useDarkMode((state) => state.mode);
 
   return (
     <Container>
       <StatusWrapper className={statusClass(0)} mode={mode}>
-        <Image
-          src='/img/paid.png'
-          width={30}
-          height={30}
-          alt=''
-        />
+        <Image src='/img/paid.png' width={30} height={30} alt='' />
         <Status>Payment</Status>
         <Image
           src='/img/checked.png'
@@ -28,12 +28,7 @@ const OrderStatus = ({ statusClass }) => {
         />
       </StatusWrapper>
       <StatusWrapper className={statusClass(1)} mode={mode}>
-        <Image
-          src='/img/bake.png'
-          width={30}
-          height={30}
-          alt=''
-        />
+        <Image src='/img/bake.png' width={30} height={30} alt='' />
         <Status>Preparing</Status>
         <Image
           src='/img/checked.png'
@@ -44,12 +39,7 @@ const OrderStatus = ({ statusClass }) => {
         />
       </StatusWrapper>
       <StatusWrapper className={statusClass(2)} mode={mode}>
-        <Image
-          src='/img/bike.png'
-          width={30}
-          height={30}
-          alt=''
-        />
+        <Image src='/img/bike.png' width={30} height={30} alt='' />
         <Status>On the way</Status>
         <Image
           src='/img/checked.png'
@@ -60,12 +50,7 @@ const OrderStatus = ({ statusClass }) => {
         />
       </StatusWrapper>
       <StatusWrapper className={statusClass(3)} mode={mode}>
-        <Image
-          src='/img/delivered.png'
-          width={30}
-          height={30}
-          alt=''
-        />
+        <Image src='/img/delivered.png' width={30} height={30} alt='' />
         <Status>Delivered</Status>
         <Image
           src='/img/checked.png'
@@ -77,7 +62,7 @@ const OrderStatus = ({ statusClass }) => {
       </StatusWrapper>
     </Container>
   );
-}
+};
 
 const Container = styled.section`
   width: 80%;
@@ -90,7 +75,7 @@ const Container = styled.section`
   }
 `;
 
-const StatusWrapper = styled.div`
+const StatusWrapper = styled.div<IMode>`
   img:first-child {
     width: 3rem;
     height: 3rem;
@@ -113,9 +98,5 @@ const Status = styled.span`
     font-size: 1.5rem;
   }
 `;
-
-OrderStatus.propTypes = {
-  statusClass: PropTypes.string.isRequired,
-};
 
 export default OrderStatus;

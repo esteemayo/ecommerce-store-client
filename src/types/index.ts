@@ -608,3 +608,7 @@ export interface OrderCardProps {
   status: number;
   createdAt: string;
 }
+
+export interface OrderStatusProps {
+  statusClass(index: number): string;
+}
