@@ -11,7 +11,7 @@ import DefaultAvatar from '../images/DefaultAvatar';
 import DateTime from '../DateTime';
 import StarRating from '../StarRating';
 
-import { ReviewCardProps } from '@/types';
+import { DateOptions, ReviewCardProps } from '@/types';
 
 const ReviewCard: FC<ReviewCardProps> = ({
   user,
@@ -19,7 +19,11 @@ const ReviewCard: FC<ReviewCardProps> = ({
   review,
   createdAt,
 }) => {
-  const options = { month: 'long', day: 'numeric', year: 'numeric' };
+  const options: DateOptions = {
+    month: 'long',
+    day: 'numeric',
+    year: 'numeric',
+  };
 
   return (
     <Container>
@@ -37,7 +41,11 @@ const ReviewCard: FC<ReviewCardProps> = ({
         </ReviewContainer>
         <Review>{review}</Review>
         <DateContainer>
-          <DateTime date={createdAt} type='review' options={options} />
+          <DateTime
+            date={new Date(createdAt)}
+            type='review'
+            options={options}
+          />
           <ShareButton type='button'>
             <FontAwesomeIcon icon={faArrowUpFromBracket} />
             Share
