@@ -694,6 +694,12 @@ export interface FormButtonProps extends HtmlHTMLAttributes<HTMLButtonElement> {
   label: string;
 }
 
+export interface FormProps {
+  type?: string
+  children: React.ReactNode
+  onSubmit: React.FormEventHandler<HTMLFormElement>
+}
+
 export interface FormHeadingProps {
   small: boolean;
   type?: string;
