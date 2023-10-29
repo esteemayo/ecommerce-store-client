@@ -23,7 +23,7 @@ export type CartItem = {
 
 export interface CartStore {
   cart: [];
-  wishlist: [];
+  wishlists: [];
   wished: [];
   qty: number;
   tax: number;

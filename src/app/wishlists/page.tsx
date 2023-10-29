@@ -1,9 +1,8 @@
 'use client';
 
 import styled from 'styled-components';
-import { useCallback, useState } from 'react';
+import { SetStateAction, useCallback, useState } from 'react';
 import dynamic from 'next/dynamic';
-import { useDispatch, useSelector } from 'react-redux';
 
 import CartModal from '@/components/modals/CartModal';
 import WishlistHeader from '@/components/wishlists/WishlistHeader';
@@ -12,7 +11,8 @@ import { useCartModal } from '@/hooks/useCartModal';
 import { useSubmenu } from '@/hooks/useSubmenu';
 import useWishlistModal from '@/hooks/useWishlistModal';
 
-import { removeWishlist } from '@/features/cart/cartSlice';
+import { WishlistItem } from '@/types';
+import { useCartStore } from '@/hooks/useCartStore';
 
 const WishlistCard = dynamic(
   () => import('@/components/wishlists/WishlistCard'),
@@ -20,19 +20,18 @@ const WishlistCard = dynamic(
 );
 
 const WishLists = () => {
-  const dispatch = useDispatch();
-  const { wishlists } = useSelector((state) => ({ ...state.cart }));
-
-  const closeSubmenu = useSubmenu((state) => state.closeSubmenu);
   const cartModal = useCartModal();
+  const wishlists = useCartStore((state) => state.wishlists);
   const wishlistModal = useWishlistModal();
+  const removeWishlist = useCartStore((state) => state.removeWishlist);
+  const closeSubmenu = useSubmenu((state) => state.closeSubmenu);
 
-  const [products, setProducts] = useState(wishlists);
-  const [isSelectedProduct, setIsSelectedProduct] = useState({});
+  const [products, setProducts] = useState<WishlistItem>(wishlists);
   const [isSelectedId, setIsSelectedId] = useState(null);
+  const [isSelectedProduct, setIsSelectedProduct] = useState({});
 
   const handleClick = useCallback(
-    (wishlist) => {
+    (wishlist: SetStateAction<{}>) => {
       cartModal.onOpen();
       setIsSelectedProduct(wishlist);
     },
@@ -40,7 +39,7 @@ const WishLists = () => {
   );
 
   const handleOpenModal = useCallback(
-    (id) => {
+    (id: number) => {
       setIsSelectedId(id);
       wishlistModal.onOpen();
     },
@@ -48,14 +47,14 @@ const WishLists = () => {
   );
 
   const handleDelete = useCallback(
-    (id) => {
-      dispatch(removeWishlist(id));
+    (id: number) => {
+      removeWishlist(id);
       setProducts((prev) => prev.filter((item) => item.id !== id));
     },
-    [dispatch]
+    [removeWishlist]
   );
 
-  let bodyContent;
+  let bodyContent: JSX.Element;
 
   if (products.length < 1) {
     bodyContent = <Text>Your wishlist is currently empty!</Text>;
