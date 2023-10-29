@@ -189,6 +189,14 @@ export type RegisterInput = {
   placeholder: string;
 }[];
 
+export type PasswordInput = {
+  id: string;
+  name: string;
+  type: string;
+  label: string;
+  placeholder: string;
+}[];
+
 export interface SubmenuStore {
   isOpen: boolean;
   location: {

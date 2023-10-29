@@ -1,4 +1,4 @@
-import { RegisterInput } from '@/types';
+import { PasswordInput, RegisterInput } from '@/types';
 
 export const registerInputs: RegisterInput = [
   {
@@ -38,7 +38,7 @@ export const registerInputs: RegisterInput = [
   },
 ];
 
-export const passwordInputs = [
+export const passwordInputs: PasswordInput = [
   {
     id: 'password1',
     name: 'password',
