@@ -1,6 +1,6 @@
 'use client';
 
-import { useCallback, useState } from 'react';
+import { ChangeEventHandler, useCallback, useState } from 'react';
 
 import AuthInfo from '@/components/form/FormInfo';
 import FormButton from '@/components/form/FormButton';
@@ -15,6 +15,15 @@ import CountrySelect from '@/components/inputs/CountrySelect';
 
 import { registerInputs } from '@/data/formData';
 import { useCountries } from '@/hooks/useCountries';
+
+interface IErrors {
+  name?: string;
+  email?: string;
+  username?: string;
+  password?: string;
+  confirmPassword?: string;
+  country?: string;
+}
 
 const initialState = {
   name: '',
@@ -31,15 +40,16 @@ const Register = () => {
   const [perc, setPerc] = useState(0);
   const [data, setData] = useState(initialState);
   const [file, setFile] = useState(null);
-  const [errors, setErrors] = useState({});
+  const [errors, setErrors] = useState<IErrors>({});
 
-  const handleChange = useCallback(({ target: input }) => {
-    const { name, value } = input;
-    setData((prev) => ({ ...prev, [name]: value }));
-  }, []);
+  const handleChange: ChangeEventHandler<HTMLInputElement | HTMLSelectElement> =
+    useCallback(({ target: input }) => {
+      const { name, value } = input;
+      setData((prev) => ({ ...prev, [name]: value }));
+    }, []);
 
   const validateForm = useCallback(() => {
-    const errors = {};
+    const errors: IErrors = {};
     const { name, email, username, password, confirmPassword, country } = data;
 
     if (name.trim() === '') {
@@ -82,7 +92,7 @@ const Register = () => {
   }, []);
 
   const handleSubmit = useCallback(
-    (e) => {
+    (e: React.FormEvent<HTMLFormElement>) => {
       e.preventDefault();
 
       const errors = validateForm();
@@ -132,7 +142,9 @@ const Register = () => {
                 id='file'
                 accept='image/*'
                 label='Attach a photo'
-                onChange={(e) => setFile(e.target.files[0])}
+                onChange={(e: { target: { files: any[] } }) =>
+                  setFile(e.target.files[0])
+                }
               />
             </>
           )}

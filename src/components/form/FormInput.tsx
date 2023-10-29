@@ -14,6 +14,7 @@ const FormInput: FC<FormInputProps> = ({
   name,
   type = 'text',
   label,
+  value,
   error,
   login,
   ...rest
@@ -23,7 +24,7 @@ const FormInput: FC<FormInputProps> = ({
       <Label htmlFor={name} login={login}>
         {label}
       </Label>
-      <Input {...rest} id={name} type={type} name={name} />
+      <Input {...rest} id={name} type={type} name={name} value={value} />
       {error && <FormError message={error} />}
     </FormGroup>
   );
