@@ -34,7 +34,7 @@ const Forgot = () => {
   }, [email]);
 
   const handleSubmit = useCallback(
-    (e) => {
+    (e: React.FormEvent<HTMLFormElement>) => {
       e.preventDefault();
 
       const errors = validateForm();
