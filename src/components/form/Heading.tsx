@@ -1,12 +1,14 @@
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
+import { FC } from 'react';
+
+import { FormHeadingProps } from '@/types';
 
 interface IProps {
   small: boolean;
   type?: string;
 }
 
-const Heading = ({ small, type, title }) => {
+const Heading: FC<FormHeadingProps> = ({ small, type, title }) => {
   return (
     <StyledHeading small={small} type={type}>
       {title}
@@ -22,11 +24,5 @@ const StyledHeading = styled.h1<IProps>`
   text-align: center;
   color: ${({ theme }) => theme.textFormHeader};
 `;
-
-Heading.propTypes = {
-  small: PropTypes.bool,
-  type: PropTypes.string,
-  title: PropTypes.string.isRequired,
-};
 
 export default Heading;

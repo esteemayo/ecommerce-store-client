@@ -689,3 +689,9 @@ export interface SelectProps extends HTMLAttributes<HTMLSelectElement> {
   error: string;
   defaultText: string;
 }
+
+export interface FormHeadingProps {
+  small: boolean;
+  type?: string;
+  title: string;
+}
