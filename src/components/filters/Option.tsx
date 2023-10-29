@@ -1,22 +1,16 @@
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
+import { FC } from 'react';
 
-const Option = ({ value }) => {
-  return (
-    <StyledOption value={value}>
-      {value}
-    </StyledOption>
-  );
-}
+import { OptionProps } from '@/types';
+
+const Option: FC<OptionProps> = ({ value }) => {
+  return <StyledOption value={value}>{value}</StyledOption>;
+};
 
 const StyledOption = styled.option`
   text-transform: capitalize;
   background-color: ${({ theme }) => theme.bgProdCard};
   color: inherit;
 `;
-
-Option.propTypes = {
-  value: PropTypes.any,
-};
 
 export default Option;

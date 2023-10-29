@@ -33,11 +33,7 @@ const ProductFilter: FC<ProductFilterProps> = ({
 
   let sizes = getUnique(products, 'size');
   sizes = sizes.map((size, index) => {
-    return (
-      <Option key={index} value={size}>
-        {size}
-      </Option>
-    );
+    return <Option key={index} value={size} />;
   });
 
   return (
@@ -47,7 +43,7 @@ const ProductFilter: FC<ProductFilterProps> = ({
         <Select
           name='color'
           label='Color'
-          type='product'
+          page='product'
           value={color}
           options={colors}
           onChange={onChange}
@@ -55,7 +51,7 @@ const ProductFilter: FC<ProductFilterProps> = ({
         <Select
           name='category'
           label='Category'
-          type='product'
+          page='product'
           value={category}
           options={categories}
           onChange={onChange}
@@ -63,7 +59,7 @@ const ProductFilter: FC<ProductFilterProps> = ({
         <Select
           name='size'
           label='Product size'
-          type='product'
+          page='product'
           value={size}
           options={sizes}
           onChange={onChange}

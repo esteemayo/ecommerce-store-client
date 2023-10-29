@@ -1,5 +1,6 @@
 import { IconType } from 'react-icons/lib';
 import { IconDefinition } from '@fortawesome/free-solid-svg-icons';
+import { HTMLAttributes } from 'react';
 
 export interface LayoutProps {
   children: React.ReactNode;
@@ -580,4 +581,17 @@ export interface ProductListProps {
 export interface EmptyProductProps {
   src: string;
   title: string;
+}
+
+export interface FilterSelect
+  extends HTMLAttributes<HTMLSelectElement | HTMLInputElement> {
+  name: string;
+  value?: any;
+  page?: string;
+  label: string;
+  options: any[];
+}
+
+export interface OptionProps {
+  value: any;
 }

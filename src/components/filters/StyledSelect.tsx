@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 
-export const StyledSelect = styled.select`
+interface ISelect {
+  page?: string;
+}
+
+export const StyledSelect = styled.select<ISelect>`
   display: inline-block;
   text-transform: capitalize;
   width: 20rem;
@@ -14,12 +18,12 @@ export const StyledSelect = styled.select`
   outline-color: ${({ theme }) => theme.filterOut};
 
   @media only screen and (max-width: 37.5em) {
-    width: ${({ type }) => type === 'product' ? '26rem' : '60rem'};
-    padding: ${({ type }) => type !== 'product' && '0.7rem'};
+    width: ${({ page }) => (page === 'product' ? '26rem' : '60rem')};
+    padding: ${({ page }) => page !== 'product' && '0.7rem'};
   }
 
   @media only screen and (max-width: 35em) {
-    width: ${({ type }) => type !== 'product' && '54rem'};
+    width: ${({ page }) => page !== 'product' && '54rem'};
   }
 
   @media only screen and (max-width: 31.25em) {
