@@ -1,9 +1,11 @@
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
+import { FC } from 'react';
 
-const Heading = ({ title }) => {
+import { FilterHeading } from '@/types';
+
+const Heading: FC<FilterHeading> = ({ title }) => {
   return <StyledHeading>{title}</StyledHeading>;
-}
+};
 
 const StyledHeading = styled.h1`
   display: inline-block;
@@ -12,9 +14,5 @@ const StyledHeading = styled.h1`
   color: ${({ theme }) => theme.text};
   margin-bottom: 1rem;
 `;
-
-Heading.propTypes = {
-  title: PropTypes.string.isRequired,
-};
 
 export default Heading;
