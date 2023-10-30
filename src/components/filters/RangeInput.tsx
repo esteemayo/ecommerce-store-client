@@ -4,8 +4,8 @@ import { FC } from 'react';
 import { Label } from './Label';
 import { Filter } from './Filter';
 
-import { formatCurrency } from '@/utils/formatCurrency';
 import { RangeInputProps } from '@/types';
+import { formatCurrency } from '@/utils/formatCurrency';
 
 const RangeInput: FC<RangeInputProps> = ({ name, label, price, ...rest }) => {
   return (
