@@ -1,22 +1,20 @@
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
+import { FC } from 'react';
 
 import FormError from '../form/FormError';
 import { FormGroup } from '../form/FormGroup';
 
-const Input = ({ id, name, label, error, ...rest }) => {
+import { AccountInput } from '@/types';
+
+const Input: FC<AccountInput> = ({ id, name, label, error, ...rest }) => {
   return (
     <FormGroup>
       <Label htmlFor={id}>{label}</Label>
-      <StyledInput
-        {...rest}
-        id={id}
-        name={name}
-      />
+      <StyledInput {...rest} id={id} name={name} />
       {error && <FormError message={error} />}
     </FormGroup>
   );
-}
+};
 
 const Label = styled.label`
   display: inline-block;
@@ -50,13 +48,5 @@ const StyledInput = styled.input`
     color: #bbb;
   }
 `;
-
-Input.propTypes = {
-  id: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  label: PropTypes.string.isRequired,
-  error: PropTypes.string,
-  rest: PropTypes.any,
-};
 
 export default Input;

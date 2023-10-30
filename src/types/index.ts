@@ -737,3 +737,10 @@ export interface CartInput extends HTMLAttributes<HTMLInputElement> {
   type?: string;
   error?: string;
 }
+
+export interface AccountInput extends HTMLAttributes<HTMLInputElement> {
+  id: string;
+  name: string;
+  label: string;
+  error?: string;
+}
