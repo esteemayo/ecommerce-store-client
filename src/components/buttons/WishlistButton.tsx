@@ -1,12 +1,16 @@
-import { useMemo } from 'react';
-import PropTypes from 'prop-types';
+import { FC, useMemo } from 'react';
 
 import { IconButton } from './IconButton';
 import HeartIcon from '../icons/HeartIcon';
 
 import useWishlist from '@/hooks/useWishlist';
+import { WishlistButtonProps } from '@/types';
 
-const WishlistButton = ({ actionId, product, wished }) => {
+const WishlistButton: FC<WishlistButtonProps> = ({
+  actionId,
+  product,
+  wished,
+}) => {
   const { isWished, handleToggle } = useWishlist({
     actionId,
     product,
@@ -14,7 +18,7 @@ const WishlistButton = ({ actionId, product, wished }) => {
   });
 
   const wishlistLabel = useMemo(() => {
-    if (wished.includes(actionId)) {
+    if (wished.includes(actionId as never)) {
       return 'Added to Wishlist';
     }
 
@@ -27,12 +31,6 @@ const WishlistButton = ({ actionId, product, wished }) => {
       {wishlistLabel}
     </IconButton>
   );
-}
-
-WishlistButton.propTypes = {
-  actionId: PropTypes.number.isRequired,
-  product: PropTypes.object.isRequired,
-  wished: PropTypes.array.isRequired,
 };
 
 export default WishlistButton;

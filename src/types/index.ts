@@ -398,6 +398,12 @@ export interface CardButtonsProps {
   wished: [];
 }
 
+export interface WishlistButtonProps {
+  actionId: number;
+  product: CardProduct;
+  wished: [];
+}
+
 type CartModalValues = {
   name?: string;
   images?: string[];

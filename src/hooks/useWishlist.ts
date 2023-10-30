@@ -3,7 +3,7 @@ import { FC, useCallback, useMemo } from 'react';
 
 import { useCartStore } from './useCartStore';
 
-const useWishlist: FC<WishlistProps> = ({ actionId, product, wished }) => {
+const useWishlist = ({ actionId, product, wished }) => {
   const addWishlist = useCartStore((state) => state.addWishlist);
   const removeWishlist = useCartStore((state) => state.removeWishlist);
 
