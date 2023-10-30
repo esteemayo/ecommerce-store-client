@@ -237,9 +237,16 @@ export interface SearchModalStore {
   onClose(): void;
 }
 
-export interface CountryValues {
+export type CountryValues = {
   flag: string;
   label: string;
+}[];
+
+export interface CountrySelectProps extends HTMLAttributes<HTMLSelectElement> {
+  data: CountryValues;
+  name: string;
+  label: string;
+  error?: string;
 }
 
 export interface DarkModeStore {
