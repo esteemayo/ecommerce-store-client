@@ -789,3 +789,7 @@ export interface ModalProps {
 export interface UpdateDataProps {
   onCancel(): void;
 }
+
+export interface UpdatePasswordProps {
+  onCancel(): void;
+}

@@ -1,6 +1,6 @@
 'use client';
 
-import PropTypes from 'prop-types';
+import { FC } from 'react';
 
 import Input from './Input';
 import CancelButton from './CancelButton';
@@ -9,10 +9,23 @@ import Button from './Button';
 import { Container } from './Container';
 import { ButtonContainer } from './ButtonContainer';
 
-import Form from '../form/Form';
-
 import { useForm } from '@/hooks/useForm';
 import { passwordInputs } from '@/data/formData';
+import { UpdatePasswordProps } from '@/types';
+
+import Form from '../form/Form';
+
+interface FormData {
+  password: string;
+  confirmPassword: string;
+  currentPassword: string;
+}
+
+interface IErrors {
+  password?: string;
+  confirmPassword?: string;
+  currentPassword?: string;
+}
 
 const initialState = {
   password: '',
@@ -20,9 +33,9 @@ const initialState = {
   currentPassword: '',
 };
 
-const UpdatePassword = ({ onCancel }) => {
-  const validateForm = (data) => {
-    const errors = {};
+const UpdatePassword: FC<UpdatePasswordProps> = ({ onCancel }) => {
+  const validateForm = (data: FormData) => {
+    const errors: IErrors = {};
     const { password, confirmPassword, currentPassword } = data;
 
     if (password === '') {
@@ -46,13 +59,12 @@ const UpdatePassword = ({ onCancel }) => {
     console.log({ ...formData });
   };
 
-  const {
-    errors,
-    formData,
-    handleClose,
-    handleChange,
-    handleSubmit,
-  } = useForm(onSubmitHandler, initialState, validateForm, onCancel);
+  const { errors, formData, handleClose, handleChange, handleSubmit } = useForm(
+    onSubmitHandler,
+    initialState,
+    validateForm,
+    onCancel
+  );
 
   return (
     <Container>
@@ -74,19 +86,12 @@ const UpdatePassword = ({ onCancel }) => {
           );
         })}
         <ButtonContainer>
-          <CancelButton
-            text='Cancel'
-            onClick={handleClose}
-          />
+          <CancelButton text='Cancel' onClick={handleClose} />
           <Button text='Save' />
         </ButtonContainer>
       </Form>
     </Container>
   );
-}
-
-UpdatePassword.propTypes = {
-  onCancel: PropTypes.func.isRequired,
 };
 
 export default UpdatePassword;
