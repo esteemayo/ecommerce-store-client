@@ -1,13 +1,15 @@
 import styled, { css } from 'styled-components';
-import PropTypes from 'prop-types';
+import { FC } from 'react';
 
-const Button = ({ text, disabled }) => {
+import { AccountButtonProps } from '@/types';
+
+const Button: FC<AccountButtonProps> = ({ text, disabled }) => {
   return (
     <StyledButton type='submit' disabled={disabled}>
       {text}
     </StyledButton>
   );
-}
+};
 
 const StyledButton = styled.button`
   display: inline-block;
@@ -46,10 +48,5 @@ const StyledButton = styled.button`
     cursor: not-allowed;
   }
 `;
-
-Button.propTypes = {
-  text: PropTypes.string.isRequired,
-  disabled: PropTypes.bool,
-};
 
 export default Button;

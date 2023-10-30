@@ -748,3 +748,8 @@ export interface AccountInputProps extends HTMLAttributes<HTMLInputElement> {
 export interface AccountEmailProps {
   email: string;
 }
+
+export interface AccountButtonProps extends HTMLAttributes<HTMLButtonElement> {
+  text: string;
+  disabled?: boolean;
+}
