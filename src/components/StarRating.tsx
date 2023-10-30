@@ -1,20 +1,14 @@
+import { FC } from 'react';
 import Rating from '@mui/material/Rating';
-import PropTypes from 'prop-types';
 
-const StarRating = ({ value, ...rest }) => {
-  return (
-    <Rating
-      {...rest}
-      value={value}
-      precision={0.5}
-      size='large'
-    />
-  );
+interface StarRatingProps {
+  value: number;
+  name: string;
+  readOnly?: boolean;
 }
 
-StarRating.propTypes = {
-  value: PropTypes.number,
-  rest: PropTypes.any,
+const StarRating: FC<StarRatingProps> = ({ value, ...rest }) => {
+  return <Rating {...rest} value={value} precision={0.5} size='large' />;
 };
 
 export default StarRating;
