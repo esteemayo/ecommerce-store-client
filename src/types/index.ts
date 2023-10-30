@@ -743,6 +743,10 @@ export interface AccountHeadProps {
   onAction(): void;
 }
 
+export interface DeactivateAccountProps {
+  onOpen(): void;
+}
+
 export interface AccountInputProps extends HTMLAttributes<HTMLInputElement> {
   id: string;
   name: string;

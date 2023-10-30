@@ -1,20 +1,22 @@
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
+import { FC } from 'react';
 
-const DeactivateAccount = ({ onOpen }) => {
+import { DeactivateAccountProps } from '@/types';
+
+const DeactivateAccount: FC<DeactivateAccountProps> = ({ onOpen }) => {
   return (
     <Container>
       <Header>Delete your account</Header>
       <Warning>
-        You will receive an email to confirm your decision.
-        Please note, that all your data will be permanently erased.
+        You will receive an email to confirm your decision. Please note, that
+        all your data will be permanently erased.
       </Warning>
       <Button type='button' onClick={onOpen}>
         Delete account
       </Button>
     </Container>
   );
-}
+};
 
 const Container = styled.div`
   margin-top: 3rem;
@@ -66,9 +68,5 @@ const Button = styled.button`
     background-color: rgba(222, 10, 10, 0.1);
   }
 `;
-
-DeactivateAccount.propTypes = {
-  onOpen: PropTypes.func.isRequired,
-};
 
 export default DeactivateAccount;
