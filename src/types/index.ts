@@ -877,3 +877,10 @@ export interface UpdateDataProps {
 export interface UpdatePasswordProps {
   onCancel(): void;
 }
+
+export interface OverlayProps {
+  type: string;
+  mode: string;
+  children: React.ReactNode;
+  onClick(e: React.MouseEvent<HTMLDivElement>): void;
+}

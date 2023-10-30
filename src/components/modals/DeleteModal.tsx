@@ -4,9 +4,10 @@ import styled from 'styled-components';
 import { FC, useCallback, useEffect, useMemo, useState } from 'react';
 import CloseIcon from '@mui/icons-material/Close';
 
-import Overlay from './Overlay';
-import { useDarkMode } from '@/hooks/useDarkMode';
 import { DeleteModalProps } from '@/types';
+import { useDarkMode } from '@/hooks/useDarkMode';
+
+import Overlay from './Overlay';
 
 const DeleteModal: FC<DeleteModalProps> = ({
   actionId,
