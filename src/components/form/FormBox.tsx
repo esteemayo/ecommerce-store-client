@@ -1,19 +1,18 @@
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
+import { FC } from 'react';
 
+import { FormBoxProps } from '@/types';
 import { useSubmenu } from '@/hooks/useSubmenu';
 
-const FormBox = ({ children }) => {
+const FormBox: FC<FormBoxProps> = ({ children }) => {
   const closeSubmenu = useSubmenu((state) => state.closeSubmenu);
 
   return (
     <Container onMouseOver={closeSubmenu}>
-      <Wrapper>
-        {children}
-      </Wrapper>
+      <Wrapper>{children}</Wrapper>
     </Container>
   );
-}
+};
 
 const Container = styled.main`
   width: 100vw;
@@ -58,9 +57,5 @@ const Wrapper = styled.div`
     padding-right: 2rem;
   }
 `;
-
-FormBox.propTypes = {
-  children: PropTypes.any.isRequired,
-};
 
 export default FormBox;

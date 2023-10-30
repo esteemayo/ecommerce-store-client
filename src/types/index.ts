@@ -785,6 +785,10 @@ export interface UploadProgressProps {
   percentage: number;
 }
 
+export interface FormBoxProps {
+  children: React.ReactNode;
+}
+
 export interface FormInfoProps {
   url: string;
   text: string;
