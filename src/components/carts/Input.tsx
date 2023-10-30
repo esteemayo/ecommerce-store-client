@@ -1,10 +1,11 @@
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
+import { FC } from 'react';
 
 import FormError from '../form/FormError';
 import { FormGroup } from '../form/FormGroup';
+import { CartInput } from '@/types';
 
-const Input = ({
+const Input: FC<CartInput> = ({
   name,
   label,
   type = 'text',
@@ -14,16 +15,11 @@ const Input = ({
   return (
     <FormGroup>
       <Label htmlFor={name}>{label}</Label>
-      <StyledInput
-        {...rest}
-        id={name}
-        name={name}
-        type={type}
-      />
+      <StyledInput {...rest} id={name} name={name} type={type} />
       {error && <FormError message={error} />}
     </FormGroup>
   );
-}
+};
 
 export const Label = styled.label`
   display: inline-block;
@@ -58,13 +54,5 @@ const StyledInput = styled.input`
     color: #bbb;
   }
 `;
-
-Input.propTypes = {
-  name: PropTypes.string,
-  label: PropTypes.string,
-  type: PropTypes.string,
-  error: PropTypes.string,
-  rest: PropTypes.any,
-};
 
 export default Input;

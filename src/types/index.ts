@@ -730,3 +730,10 @@ export interface FormInfoProps {
 export interface FormErrorProps {
   message?: string;
 }
+
+export interface CartInput extends HTMLAttributes<HTMLInputElement> {
+  name: string;
+  label: string;
+  type?: string;
+  error?: string;
+}
