@@ -1,21 +1,20 @@
 'use client';
 
 import styled from 'styled-components';
+import { FC } from 'react';
 import Image from 'next/image';
-import PropTypes from 'prop-types';
 
-const Avatar = ({ src }) => {
+interface AvatarProps {
+  src: string;
+}
+
+const Avatar: FC<AvatarProps> = ({ src }) => {
   return (
     <Container>
-      <Image
-        src={src}
-        width={50}
-        height={50}
-        alt=''
-      />
+      <Image src={src} width={50} height={50} alt='' />
     </Container>
   );
-}
+};
 
 const Container = styled.div`
   img {
@@ -41,9 +40,5 @@ const Container = styled.div`
     }
   }
 `;
-
-Avatar.propTypes = {
-  src: PropTypes.string.isRequired,
-};
 
 export default Avatar;
