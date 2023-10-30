@@ -40,7 +40,7 @@ const ProductImageModal: FC<ProductImageModalProps> = ({
   }, [onClose]);
 
   const closeModalHandler = useCallback(
-    (e: React.MouseEvent<HTMLButtonElement>) => {
+    (e: React.MouseEvent<HTMLDivElement>) => {
       e.stopPropagation();
 
       const target = e.target as Element;
