@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
+import { FC } from 'react';
 
 import CardPrice from './CardPrice';
 import CardHeading from './CardHeading';
@@ -7,7 +7,9 @@ import CardButton from './CardButton';
 import CardButtons from './CardButtons';
 import CardReview from './CardReview';
 
-const CardInfo = ({
+import { CardInfoProps } from '@/types';
+
+const CardInfo: FC<CardInfoProps> = ({
   url,
   product,
   initialPrice,
@@ -18,10 +20,7 @@ const CardInfo = ({
 }) => {
   return (
     <Container>
-      <CardHeading
-        url={url}
-        name={product.name}
-      />
+      <CardHeading url={url} name={product.name} />
       <CardReview
         reviewLabel={reviewLabel}
         ratingsAverage={product.ratingsAverage}
@@ -33,14 +32,10 @@ const CardInfo = ({
         priceLabel={priceLabel}
       />
       <CardButton onClick={onOpen} />
-      <CardButtons
-        product={product}
-        wished={wished}
-        productId={product.id}
-      />
+      <CardButtons product={product} wished={wished} productId={product.id} />
     </Container>
   );
-}
+};
 
 const Container = styled.div`
   padding: 2rem;
@@ -51,15 +46,5 @@ const Container = styled.div`
     padding: 1rem;
   }
 `;
-
-CardInfo.propTypes = {
-  url: PropTypes.string,
-  product: PropTypes.object,
-  initialPrice: PropTypes.number,
-  priceLabel: PropTypes.number,
-  reviewLabel: PropTypes.string,
-  wished: PropTypes.array,
-  onOpen: PropTypes.func.isRequired,
-};
 
 export default CardInfo;

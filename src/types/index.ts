@@ -350,6 +350,27 @@ export interface ProductCardProps {
   onSelect(value: any): void;
 }
 
+interface CardProduct {
+  id: number;
+  name: string;
+  images: string[];
+  price: number;
+  discount: number;
+  ratingsQuantity: number;
+  ratingsAverage: number;
+  inStock: boolean;
+}
+
+export interface CardInfoProps {
+  url: string;
+  product: CardProduct;
+  initialPrice: number;
+  priceLabel: number;
+  reviewLabel: string;
+  wished: [];
+  onOpen(): void;
+}
+
 type CartModalValues = {
   name?: string;
   images?: string[];
