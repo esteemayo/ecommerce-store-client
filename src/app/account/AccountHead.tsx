@@ -1,17 +1,14 @@
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
+import { FC } from 'react';
 
-const AccountHead = ({ onOpen, onAction }) => {
+import { AccountHeadProps } from '@/types';
+
+const AccountHead: FC<AccountHeadProps> = ({ onOpen, onAction }) => {
   return (
     <Container>
       <Wrapper>
         <Label htmlFor='accName'>Your name</Label>
-        <Input
-          type='text'
-          id='accName'
-          name='name'
-          placeholder='Name'
-        />
+        <Input type='text' id='accName' name='name' placeholder='Name' />
       </Wrapper>
       <Wrapper>
         <Label htmlFor='accUsername'>Your username</Label>
@@ -24,12 +21,7 @@ const AccountHead = ({ onOpen, onAction }) => {
       </Wrapper>
       <Wrapper>
         <Label htmlFor='accEmail'>Email address</Label>
-        <Input
-          type='email'
-          id='accEmail'
-          name='email'
-          placeholder='Email'
-        />
+        <Input type='email' id='accEmail' name='email' placeholder='Email' />
         <ButtonContainer>
           <Button type='button' onClick={onOpen}>
             Change
@@ -52,7 +44,7 @@ const AccountHead = ({ onOpen, onAction }) => {
       </Wrapper>
     </Container>
   );
-}
+};
 
 const Container = styled.div``;
 
@@ -111,10 +103,5 @@ const Button = styled.button`
   outline-color: #ccc;
   cursor: pointer;
 `;
-
-AccountHead.propTypes = {
-  onOpen: PropTypes.func.isRequired,
-  onAction: PropTypes.func.isRequired,
-};
 
 export default AccountHead;

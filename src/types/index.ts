@@ -738,6 +738,11 @@ export interface CartInputProps extends HTMLAttributes<HTMLInputElement> {
   error?: string;
 }
 
+export interface AccountHeadProps {
+  onOpen(): void;
+  onAction(): void;
+}
+
 export interface AccountInputProps extends HTMLAttributes<HTMLInputElement> {
   id: string;
   name: string;
