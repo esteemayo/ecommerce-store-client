@@ -758,3 +758,7 @@ export interface CancelButtonProps extends HTMLAttributes<HTMLButtonElement> {
   text: string;
   onClick(): void;
 }
+
+export interface DeleteAccountProps {
+  onCancel(): void;
+}

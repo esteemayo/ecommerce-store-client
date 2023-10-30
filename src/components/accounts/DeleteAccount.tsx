@@ -1,10 +1,11 @@
 'use client';
 
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
-import { useCallback } from 'react';
+import { FC, useCallback } from 'react';
 
-const DeleteAccount = ({ onCancel }) => {
+import { DeleteAccountProps } from '@/types';
+
+const DeleteAccount: FC<DeleteAccountProps> = ({ onCancel }) => {
   const handleDelete = useCallback(() => {
     console.log('user deleted!');
   }, []);
@@ -13,8 +14,8 @@ const DeleteAccount = ({ onCancel }) => {
     <Container>
       <Heading>You are about to delete your account</Heading>
       <WarningText>
-        You will receive an email to confirm your decision.
-        Please note, that all your data will be permanently erased.
+        You will receive an email to confirm your decision. Please note, that
+        all your data will be permanently erased.
       </WarningText>
       <ButtonContainer>
         <CancelButton type='button' onClick={onCancel}>
@@ -26,7 +27,7 @@ const DeleteAccount = ({ onCancel }) => {
       </ButtonContainer>
     </Container>
   );
-}
+};
 
 const Container = styled.div`
   padding: 2rem 0;
@@ -71,7 +72,7 @@ const CancelButton = styled.button`
   border-radius: 0.5rem;
   outline-color: #eee;
   cursor: pointer;
-  
+
   @media only screen and (max-width: 18.75em) {
     font-size: 1.3rem;
     padding-left: 0.5rem;
@@ -115,9 +116,5 @@ const DeleteButton = styled.button`
     background-position: 100%;
   }
 `;
-
-DeleteAccount.propTypes = {
-  onCancel: PropTypes.func.isRequired,
-};
 
 export default DeleteAccount;
