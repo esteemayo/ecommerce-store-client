@@ -12,31 +12,39 @@ const DeleteModal = ({ actionId, isOpen, onClose, onAction }) => {
   const mode = useDarkMode((state) => state.mode);
   const [showModal, setShowModal] = useState(isOpen);
 
-  const closeModalHandler = useCallback((e) => {
-    e.stopPropagation();
+  const closeModalHandler = useCallback(
+    (e: React.MouseEvent<HTMLDivElement>) => {
+      e.stopPropagation();
 
-    if (e.target.classList.contains('overlay')) {
-      setShowModal(false);
-      onClose();
-    }
+      const target = e.target as Element;
 
-    const exitModal = (e) => {
-      e.preventDefault();
-
-      if (e.key === 'Escape') {
+      if (target.classList.contains('overlay')) {
         setShowModal(false);
         onClose();
       }
-    };
 
-    window.addEventListener('keydown', exitModal);
-    return window.removeEventListener('keydown', exitModal);
-  }, [onClose]);
+      const exitModal = (e: { preventDefault: () => void; key: string }) => {
+        e.preventDefault();
 
-  const deleteWishlistHandler = useCallback((wishlistId) => {
-    onAction(wishlistId);
-    onClose();
-  }, [onAction, onClose]);
+        if (e.key === 'Escape') {
+          setShowModal(false);
+          onClose();
+        }
+      };
+
+      window.addEventListener('keydown', exitModal);
+      return window.removeEventListener('keydown', exitModal);
+    },
+    [onClose]
+  );
+
+  const deleteWishlistHandler = useCallback(
+    (wishlistId) => {
+      onAction(wishlistId);
+      onClose();
+    },
+    [onAction, onClose]
+  );
 
   const activeModal = useMemo(() => {
     return showModal ? 'show' : '';
@@ -51,17 +59,15 @@ const DeleteModal = ({ actionId, isOpen, onClose, onAction }) => {
   }, [isOpen]);
 
   return (
-    <Overlay
-      type={activeModal}
-      mode={modeValue}
-      onClick={closeModalHandler}
-    >
+    <Overlay type={activeModal} mode={modeValue} onClick={closeModalHandler}>
       <Wrapper>
         <CloseButton type='button' onClick={onClose}>
           <CloseIcon />
         </CloseButton>
         <Heading>Remove a wishlist?</Heading>
-        <WarningMessage>Are you sure you wanted to remove this item from your wishlist?</WarningMessage>
+        <WarningMessage>
+          Are you sure you wanted to remove this item from your wishlist?
+        </WarningMessage>
         <ButtonContainer>
           <CancelButton type='button' onClick={onClose}>
             Not now
@@ -76,7 +82,7 @@ const DeleteModal = ({ actionId, isOpen, onClose, onAction }) => {
       </Wrapper>
     </Overlay>
   );
-}
+};
 
 const Wrapper = styled.div`
   width: 35rem;
@@ -105,7 +111,7 @@ const CloseButton = styled.button`
   height: 3rem;
   background-color: transparent;
   color: #a2a8b0;
-  border: 1px solid #f2f9fB;
+  border: 1px solid #f2f9fb;
   border-radius: 50%;
   outline-color: #f1e4f4;
   cursor: pointer;
