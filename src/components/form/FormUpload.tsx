@@ -1,14 +1,16 @@
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
+import { FC } from 'react';
 
-const FormUpload = ({ id, label, ...rest }) => {
+import { FormUploadProps } from '@/types';
+
+const FormUpload: FC<FormUploadProps> = ({ id, label, ...rest }) => {
   return (
     <FormGroup>
-      <Input {...rest} id={id} type='file' />
+      <Input {...rest} id={id} />
       <Label htmlFor={id}>{label}</Label>
     </FormGroup>
   );
-}
+};
 
 const FormGroup = styled.div`
   display: flex;
@@ -25,10 +27,12 @@ const Label = styled.label`
   display: inline-block;
   font-weight: 600;
   font-size: 1.6rem;
-  color:  ${({ theme }) => theme.textLabel};
+  color: ${({ theme }) => theme.textLabel};
 `;
 
-const Input = styled.input`
+const Input = styled.input.attrs({
+  type: 'file',
+})`
   width: 0.1px;
   height: 0.1px;
   opacity: 0;
@@ -60,11 +64,5 @@ const Input = styled.input`
     }
   }
 `;
-
-FormUpload.propTypes = {
-  id: PropTypes.string.isRequired,
-  label: PropTypes.string.isRequired,
-  rest: PropTypes.any,
-};
 
 export default FormUpload;
