@@ -97,8 +97,7 @@ const ReviewModal: FC<ReviewModalProps> = ({ isOpen, onClose }) => {
             <StarRating
               name='size-large'
               value={rating}
-              precision={0.5}
-              onChange={(e, newValue) => {
+              onChange={(e: ChangeEvent<HTMLInputElement>, newValue: number) => {
                 setRating(newValue);
               }}
             />
@@ -119,7 +118,9 @@ const ReviewModal: FC<ReviewModalProps> = ({ isOpen, onClose }) => {
               id='terms'
               type='checkbox'
               checked={terms}
-              onChange={(e) => setTerms(e.currentTarget.checked)}
+              onChange={(e: ChangeEvent<HTMLInputElement>) =>
+                setTerms(e.currentTarget.checked)
+              }
             />
             <Label htmlFor='terms'>
               I accept the{' '}
