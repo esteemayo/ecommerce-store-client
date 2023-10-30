@@ -1,11 +1,15 @@
 'use client';
 
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
+import { FC } from 'react';
 
-const DefaultAvatar = ({ name }) => {
-  return <Container>{name.charAt(0)}</Container>;
+interface DefaultAvatarProps {
+  name: string;
 }
+
+const DefaultAvatar: FC<DefaultAvatarProps> = ({ name }) => {
+  return <Container>{name.charAt(0)}</Container>;
+};
 
 const Container = styled.div`
   display: flex;
@@ -36,9 +40,5 @@ const Container = styled.div`
     height: 3rem;
   }
 `;
-
-DefaultAvatar.propTypes = {
-  name: PropTypes.string.isRequired,
-};
 
 export default DefaultAvatar;
