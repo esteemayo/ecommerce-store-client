@@ -382,6 +382,12 @@ export interface CardReviewProps {
   ratingsQuantity: number;
 }
 
+export interface CardPriceProps {
+  inStock: boolean;
+  initialPrice: number;
+  priceLabel: number;
+}
+
 type CartModalValues = {
   name?: string;
   images?: string[];

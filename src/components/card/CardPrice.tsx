@@ -1,9 +1,14 @@
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
+import { FC } from 'react';
 
+import { CardPriceProps } from '@/types';
 import { formatCurrency } from '@/utils/formatCurrency';
 
-const CardPrice = ({ inStock, initialPrice, priceLabel }) => {
+const CardPrice: FC<CardPriceProps> = ({
+  inStock,
+  initialPrice,
+  priceLabel,
+}) => {
   return (
     <Container>
       <Wrapper>
@@ -13,7 +18,7 @@ const CardPrice = ({ inStock, initialPrice, priceLabel }) => {
       {inStock && <InStock>In stock</InStock>}
     </Container>
   );
-}
+};
 
 const Container = styled.div`
   margin: 0.5rem 0 1.5rem 0;
@@ -73,11 +78,5 @@ const InStock = styled.div`
     }
   }
 `;
-
-CardPrice.propTypes = {
-  inStock: PropTypes.bool,
-  initialPrice: PropTypes.number,
-  priceLabel: PropTypes.number,
-};
 
 export default CardPrice;
