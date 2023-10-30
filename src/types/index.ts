@@ -376,6 +376,12 @@ export interface CardHeadingProps {
   name: string;
 }
 
+export interface CardReviewProps {
+  reviewLabel: string;
+  ratingsAverage: number;
+  ratingsQuantity: number;
+}
+
 type CartModalValues = {
   name?: string;
   images?: string[];

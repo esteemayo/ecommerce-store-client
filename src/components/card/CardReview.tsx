@@ -1,22 +1,25 @@
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
+import { FC } from 'react';
 
 import StarRating from '../StarRating';
+import { CardReviewProps } from '@/types';
 
-const CardReview = ({ reviewLabel, ratingsAverage, ratingsQuantity }) => {
+const CardReview: FC<CardReviewProps> = ({
+  reviewLabel,
+  ratingsAverage,
+  ratingsQuantity,
+}) => {
   return (
     <Container>
-      <StarRating
-        readOnly
-        value={ratingsAverage}
-        name='read-only'
-      />
+      <StarRating readOnly value={ratingsAverage} name='read-only' />
       <Wrapper>
-        <Rating>({ratingsQuantity} {reviewLabel})</Rating>
+        <Rating>
+          ({ratingsQuantity} {reviewLabel})
+        </Rating>
       </Wrapper>
     </Container>
   );
-}
+};
 
 const Container = styled.div`
   display: flex;
@@ -45,11 +48,5 @@ const Wrapper = styled.div`
 `;
 
 const Rating = styled.span``;
-
-CardReview.propTypes = {
-  reviewLabel: PropTypes.string,
-  ratingsAverage: PropTypes.number,
-  ratingsQuantity: PropTypes.number,
-};
 
 export default CardReview;
