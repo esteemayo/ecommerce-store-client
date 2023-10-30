@@ -525,7 +525,7 @@ export interface ColorSelectProps {
 
 export interface SizeSelectProps {
   value: (string | number)[];
-  title: string;
+  title?: string;
   modal?: boolean;
   selected?: string | null;
   onAction(value: string | number): void;

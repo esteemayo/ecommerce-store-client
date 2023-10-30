@@ -18,6 +18,14 @@ import { useDarkMode } from '@/hooks/useDarkMode';
 import Alert from '../Alert';
 import { CartModalProps } from '@/types';
 
+interface IMode {
+  mode: string;
+}
+
+interface IWrapper {
+  active: string;
+}
+
 const CartModal: FC<CartModalProps> = ({
   product,
   isOpen,
@@ -148,7 +156,7 @@ const CartModal: FC<CartModalProps> = ({
   );
 };
 
-const Overlay = styled.aside`
+const Overlay = styled.aside<IMode>`
   width: 100vw;
   height: 100%;
   background-color: ${({ theme }) => theme.bgOverlay};
@@ -163,13 +171,13 @@ const Overlay = styled.aside`
   justify-content: center;
 `;
 
-const Wrapper = styled.div`
+const Wrapper = styled.div<IWrapper>`
   transform: translateY(${({ active }) => (active === 'true' ? 0 : '100%')});
   opacity: ${({ active }) => (active === 'true' ? 1 : 0)};
   transition: all 300ms;
 `;
 
-const Box = styled.div`
+const Box = styled.div<IMode>`
   width: 40rem;
   padding: 2rem 4rem;
   background-color: ${({ theme }) => theme.bgModal};
