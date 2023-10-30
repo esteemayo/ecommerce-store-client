@@ -769,10 +769,12 @@ export interface CheckBoxProps extends HTMLAttributes<HTMLInputElement> {
 export interface FormUploadProps extends HTMLAttributes<HTMLInputElement> {
   id: string;
   label: string;
+  accept: string;
 }
 
 export interface FormButtonProps extends HtmlHTMLAttributes<HTMLButtonElement> {
   label: string;
+  disabled?: boolean;
 }
 
 export interface FormProps {

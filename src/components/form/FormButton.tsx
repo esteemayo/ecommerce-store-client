@@ -3,9 +3,9 @@ import { FC } from 'react';
 
 import { FormButtonProps } from '@/types';
 
-const FormButton: FC<FormButtonProps> = ({ label, ...rest }) => {
+const FormButton: FC<FormButtonProps> = ({ label, disabled, ...rest }) => {
   return (
-    <Button {...rest} type='submit'>
+    <Button {...rest} disabled={disabled} type='submit'>
       {label}
     </Button>
   );
