@@ -2,19 +2,16 @@ import styled, { css } from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from 'next/image';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
-import PropTypes from 'prop-types';
+import { FC } from 'react';
 
-const AccountUpload = ({ onOpen, currentUser }) => {
+import { AccountUploadProps } from '@/types';
+
+const AccountUpload: FC<AccountUploadProps> = ({ onOpen, currentUser }) => {
   return (
     <Container>
       <Wrapper>
         {!!currentUser ? (
-          <StyledImage
-            src='/img/user-9.jpg'
-            width={100}
-            height={100}
-            alt=''
-          />
+          <StyledImage src='/img/user-9.jpg' width={100} height={100} alt='' />
         ) : (
           <FontAwesomeIcon icon={faUser} />
         )}
@@ -24,7 +21,7 @@ const AccountUpload = ({ onOpen, currentUser }) => {
       </Button>
     </Container>
   );
-}
+};
 
 const Container = styled.div`
   display: flex;
@@ -101,10 +98,5 @@ const Button = styled.button`
     opacity: 0.7;
   }
 `;
-
-AccountUpload.propTypes = {
-  onOpen: PropTypes.func.isRequired,
-  currentUser: PropTypes.bool.isRequired,
-};
 
 export default AccountUpload;

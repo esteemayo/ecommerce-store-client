@@ -747,6 +747,11 @@ export interface DeactivateAccountProps {
   onOpen(): void;
 }
 
+export interface AccountUploadProps {
+  onOpen(): void;
+  currentUser: boolean;
+}
+
 export interface AccountInputProps extends HTMLAttributes<HTMLInputElement> {
   id: string;
   name: string;
