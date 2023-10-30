@@ -3,9 +3,9 @@ import Rating from '@mui/material/Rating';
 
 interface StarRatingProps {
   value: number;
-  name: string;
+  name?: string;
   readOnly?: boolean;
-  onChange(e: React.ChangeEvent<HTMLInputElement>, newValue: number): void;
+  onChange?(e: React.ChangeEvent<HTMLInputElement>, newValue: number): void;
 }
 
 const StarRating: FC<StarRatingProps> = ({ value, onChange, ...rest }) => {

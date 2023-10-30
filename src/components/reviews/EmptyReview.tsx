@@ -1,23 +1,27 @@
 'use client';
 
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
+import { FC } from 'react';
 
 import StarRating from '../StarRating';
 import ReviewButton from './ReviewButton';
 
-const EmptyReview = ({ rating, title, label, onClick }) => {
+import { EmptyReviewProps } from '@/types';
+
+const EmptyReview: FC<EmptyReviewProps> = ({
+  rating,
+  title = 'Currently, there are no reviews for this product.',
+  label = 'Leave a review',
+  onClick,
+}) => {
   return (
     <Container>
       <StarRating value={rating} />
       <Message>{title}</Message>
-      <ReviewButton
-        actionLabel={label}
-        onAction={onClick}
-      />
+      <ReviewButton actionLabel={label} onAction={onClick} />
     </Container>
   );
-}
+};
 
 const Container = styled.div`
   display: flex;
@@ -48,17 +52,5 @@ const Message = styled.span`
     font-size: 1.5rem;
   }
 `;
-
-EmptyReview.defaultProps = {
-  title: 'Currently, there are no reviews for this product.',
-  label: 'Leave a review',
-};
-
-EmptyReview.propTypes = {
-  rating: PropTypes.number.isRequired,
-  title: PropTypes.string,
-  label: PropTypes.string,
-  onClick: PropTypes.func.isRequired,
-};
 
 export default EmptyReview;

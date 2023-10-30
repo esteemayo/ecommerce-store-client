@@ -618,6 +618,13 @@ export interface ReviewModalProps {
   onClose(): void;
 }
 
+export interface EmptyReviewProps {
+  rating: number;
+  title?: string;
+  label?: string;
+  onClick(): void;
+}
+
 export interface DeleteModalProps {
   actionId: number;
   isOpen: boolean;
