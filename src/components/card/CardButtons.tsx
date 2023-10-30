@@ -1,21 +1,19 @@
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
+import { FC } from 'react';
 
 import FavoriteButton from '../buttons/FavoriteButton';
 import WishlistButton from '../buttons/WishlistButton';
 
-const CardButtons = ({ product, productId, wished }) => {
+import { CardButtonsProps } from '@/types';
+
+const CardButtons: FC<CardButtonsProps> = ({ product, productId, wished }) => {
   return (
     <Container>
-      <WishlistButton
-        product={product}
-        wished={wished}
-        actionId={productId}
-      />
+      <WishlistButton product={product} wished={wished} actionId={productId} />
       <FavoriteButton />
     </Container>
   );
-}
+};
 
 const Container = styled.div`
   padding-top: 2rem;
@@ -27,11 +25,5 @@ const Container = styled.div`
     padding-top: 1.7rem;
   }
 `;
-
-CardButtons.propTypes = {
-  product: PropTypes.object,
-  productId: PropTypes.number,
-  wished: PropTypes.array,
-};
 
 export default CardButtons;

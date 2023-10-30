@@ -392,6 +392,12 @@ export interface CardButtonProps {
   onClick(): void;
 }
 
+export interface CardButtonsProps {
+  product: CardProduct;
+  productId: number;
+  wished: [];
+}
+
 type CartModalValues = {
   name?: string;
   images?: string[];
