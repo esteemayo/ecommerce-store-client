@@ -1,14 +1,18 @@
 import styled from 'styled-components';
 import Link from 'next/link';
-import PropTypes from 'prop-types';
+import { FC } from 'react';
 
-const CardHeading = ({ url, name }) => {
+import { CardHeadingProps } from '@/types';
+
+const CardHeading: FC<CardHeadingProps> = ({ url, name }) => {
   return (
     <Heading>
-      <Link href={url} passHref>{name}</Link>
+      <Link href={url} passHref>
+        {name}
+      </Link>
     </Heading>
   );
-}
+};
 
 const Heading = styled.h3`
   text-transform: capitalize;
@@ -46,10 +50,5 @@ const Heading = styled.h3`
     }
   }
 `;
-
-CardHeading.propTypes = {
-  url: PropTypes.string,
-  name: PropTypes.string,
-};
 
 export default CardHeading;

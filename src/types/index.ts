@@ -371,6 +371,11 @@ export interface CardInfoProps {
   onOpen(): void;
 }
 
+export interface CardHeadingProps {
+  url: string;
+  name: string;
+}
+
 type CartModalValues = {
   name?: string;
   images?: string[];
