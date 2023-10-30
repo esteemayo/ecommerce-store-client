@@ -1,15 +1,13 @@
 import FavoriteOutlinedIcon from '@mui/icons-material/FavoriteOutlined';
-import PropTypes from 'prop-types';
+import { FC } from 'react';
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
 
-const HeartIcon = ({ isWished }) => {
-  return isWished ?
-    <FavoriteOutlinedIcon /> :
-    <FavoriteBorderOutlinedIcon />;
+interface HeartIconProps {
+  isWished: boolean;
 }
 
-HeartIcon.propTypes = {
-  isWished: PropTypes.bool,
+const HeartIcon: FC<HeartIconProps> = ({ isWished }) => {
+  return isWished ? <FavoriteOutlinedIcon /> : <FavoriteBorderOutlinedIcon />;
 };
 
 export default HeartIcon;
