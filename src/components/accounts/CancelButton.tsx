@@ -1,13 +1,15 @@
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
+import { FC } from 'react';
 
-const CancelButton = ({ text, onClick }) => {
+import { CancelButtonProps } from '@/types';
+
+const CancelButton: FC<CancelButtonProps> = ({ text, onClick }) => {
   return (
     <Button type='button' onClick={onClick}>
       {text}
     </Button>
   );
-}
+};
 
 const Button = styled.button`
   display: inline-block;
@@ -23,10 +25,5 @@ const Button = styled.button`
   outline-color: #eee;
   cursor: pointer;
 `;
-
-CancelButton.propTypes = {
-  text: PropTypes.string.isRequired,
-  onClick: PropTypes.func.isRequired,
-};
 
 export default CancelButton;
