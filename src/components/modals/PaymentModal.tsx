@@ -19,6 +19,16 @@ import { formatCurrency } from '@/utils/formatCurrency';
 import Overlay from './Overlay';
 import { useCartStore } from '@/hooks/useCartStore';
 
+interface FormData {
+  name: string;
+  address: string;
+}
+
+interface IErrors {
+  name?: string;
+  address?: string;
+}
+
 const initialState = {
   name: '',
   address: '',
@@ -39,15 +49,15 @@ const PaymentModal: FC<PaymentModalProps> = ({ isOpen, onClose, onExit }) => {
   const handleClick = (e: React.MouseEvent<HTMLDivElement>) => {
     e.stopPropagation();
 
-    const target = e.target;
+    const target = e.target as Element;
 
     if (target.classList.contains('overlay')) {
       closeHandler();
     }
   };
 
-  const validateForm = (data) => {
-    const errors = {};
+  const validateForm = (data: FormData) => {
+    const errors: IErrors = {};
     const { address, name } = data;
 
     if (name.trim() === '') {
