@@ -49,7 +49,7 @@ const ProductImageModal: FC<ProductImageModalProps> = ({
         onClose();
       }
 
-      const exitModal = (e) => {
+      const exitModal = (e: { preventDefault: () => void; key: string }) => {
         e.preventDefault();
 
         if (e.key === 'Escape') {
