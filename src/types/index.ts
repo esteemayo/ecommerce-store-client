@@ -614,6 +614,13 @@ export interface ReviewModalProps {
   onClose(): void;
 }
 
+export interface DeleteModalProps {
+  actionId: number;
+  isOpen: boolean;
+  onClose(): void;
+  onAction(id: number): void;
+}
+
 export interface CartItemProps {
   id: number;
   name: string;

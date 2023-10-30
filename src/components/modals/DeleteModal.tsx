@@ -1,14 +1,19 @@
 'use client';
 
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { FC, useCallback, useEffect, useMemo, useState } from 'react';
 import CloseIcon from '@mui/icons-material/Close';
 
 import Overlay from './Overlay';
 import { useDarkMode } from '@/hooks/useDarkMode';
+import { DeleteModalProps } from '@/types';
 
-const DeleteModal = ({ actionId, isOpen, onClose, onAction }) => {
+const DeleteModal: FC<DeleteModalProps> = ({
+  actionId,
+  isOpen,
+  onClose,
+  onAction,
+}) => {
   const mode = useDarkMode((state) => state.mode);
   const [showModal, setShowModal] = useState(isOpen);
 
@@ -39,7 +44,7 @@ const DeleteModal = ({ actionId, isOpen, onClose, onAction }) => {
   );
 
   const deleteWishlistHandler = useCallback(
-    (wishlistId) => {
+    (wishlistId: number) => {
       onAction(wishlistId);
       onClose();
     },
@@ -171,12 +176,5 @@ const DeleteButton = styled.button`
   outline-color: #b10101;
   cursor: pointer;
 `;
-
-DeleteModal.propTypes = {
-  actionId: PropTypes.string,
-  isOpen: PropTypes.bool,
-  onAction: PropTypes.func,
-  onClose: PropTypes.func,
-};
 
 export default DeleteModal;
