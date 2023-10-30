@@ -9,6 +9,11 @@ import { useDarkMode } from '@/hooks/useDarkMode';
 
 import UploadProgress from '../form/UploadProgress';
 
+interface IOverlay {
+  mode: string;
+  type: string;
+}
+
 const FileUploadModal = () => {
   const { isOpen, onClose } = useFileModal();
   const mode = useDarkMode((state) => state.mode);
@@ -23,13 +28,18 @@ const FileUploadModal = () => {
     file && setFile(null);
   }, [file, onClose]);
 
-  const closeModalHandler = useCallback((e) => {
-    e.stopPropagation();
+  const closeModalHandler = useCallback(
+    (e: React.MouseEvent<HTMLDivElement>) => {
+      e.stopPropagation();
 
-    if (e.target.classList.contains('overlay')) {
-      handleClose();
-    }
-  }, [handleClose]);
+      const target = e.target as Element;
+
+      if (target.classList.contains('overlay')) {
+        handleClose();
+      }
+    },
+    [handleClose]
+  );
 
   const handleUpload = useCallback(() => {
     console.log(file);
@@ -60,10 +70,7 @@ const FileUploadModal = () => {
           <UploadContainer>
             <InputContainer>
               {perc > 0 && perc <= 100 ? (
-                <UploadProgress
-                  type
-                  percentage={perc}
-                />
+                <UploadProgress type percentage={perc} />
               ) : (
                 <>
                   <Input
@@ -88,11 +95,11 @@ const FileUploadModal = () => {
           </UploadContainer>
         </Wrapper>
       </Container>
-    </Overlay >
+    </Overlay>
   );
-}
+};
 
-const Overlay = styled.aside`
+const Overlay = styled.aside<IOverlay>`
   width: 100vw;
   height: 100%;
   background-color: ${({ theme }) => theme.bgOverlay};
@@ -100,10 +107,10 @@ const Overlay = styled.aside`
   position: fixed;
   top: 0;
   right: 0;
-  display: ${({ type }) => type === 'show' ? 'block' : 'none'};
-  visibility: ${({ type }) => type === 'show' ? 'visible' : 'hidden'};
-  opacity: ${({ type }) => type === 'show' ? 1 : 0};
-  z-index: ${({ type }) => type === 'show' ? 4000 : -1};
+  display: ${({ type }) => (type === 'show' ? 'block' : 'none')};
+  visibility: ${({ type }) => (type === 'show' ? 'visible' : 'hidden')};
+  opacity: ${({ type }) => (type === 'show' ? 1 : 0)};
+  z-index: ${({ type }) => (type === 'show' ? 4000 : -1)};
 `;
 
 const Container = styled.div`
