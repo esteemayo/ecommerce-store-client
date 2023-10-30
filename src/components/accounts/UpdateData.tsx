@@ -1,6 +1,6 @@
 'use client';
 
-import PropTypes from 'prop-types';
+import { FC } from 'react';
 
 import Button from './Button';
 import CancelButton from './CancelButton';
@@ -10,25 +10,37 @@ import AccountEmail from './AccountEmail';
 import { Container } from './Container';
 import { ButtonContainer } from './ButtonContainer';
 
-import Form from '../form/Form';
-
 import { useForm } from '@/hooks/useForm';
 import { userDataInputs } from '@/data/formData';
+import { UpdateDataProps } from '@/types';
 
-const initialState = {
+import Form from '../form/Form';
+
+interface FormData {
+  email: string;
+  password: string;
+}
+
+interface IErrors {
+  email?: string;
+  password?: string;
+}
+
+const initialState: FormData = {
   email: '',
   password: '',
 };
 
-const UpdateData = ({ onCancel }) => {
-  const validateForm = (data) => {
-    const errors = {};
+const UpdateData: FC<UpdateDataProps> = ({ onCancel }) => {
+  const validateForm = (data: FormData) => {
+    const errors: IErrors = {};
     const { email, password } = data;
 
     if (email.trim() === '') {
       errors.email = 'Please enter your new email address';
     } else {
-      const regEx = /^([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)*[a-zA-Z]{2,9})$/;
+      const regEx =
+        /^([0-9a-zA-Z]([-.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)*[a-zA-Z]{2,9})$/;
       if (!email.match(regEx)) {
         errors.email = 'Email must be a valid email address';
       }
@@ -43,15 +55,14 @@ const UpdateData = ({ onCancel }) => {
 
   const onSubmitHandler = () => {
     console.log({ ...formData });
-  }
+  };
 
-  const {
-    errors,
-    formData,
-    handleClose,
-    handleChange,
-    handleSubmit,
-  } = useForm(onSubmitHandler, initialState, validateForm, onCancel);
+  const { errors, formData, handleClose, handleChange, handleSubmit } = useForm(
+    onSubmitHandler,
+    initialState,
+    validateForm,
+    onCancel
+  );
 
   return (
     <Container>
@@ -74,19 +85,12 @@ const UpdateData = ({ onCancel }) => {
           );
         })}
         <ButtonContainer>
-          <CancelButton
-            text='Cancel'
-            onClick={handleClose}
-          />
+          <CancelButton text='Cancel' onClick={handleClose} />
           <Button text='Save' />
         </ButtonContainer>
       </Form>
     </Container>
   );
-}
-
-UpdateData.propTypes = {
-  onCancel: PropTypes.func.isRequired,
 };
 
 export default UpdateData;

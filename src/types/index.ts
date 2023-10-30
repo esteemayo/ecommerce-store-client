@@ -755,7 +755,9 @@ export interface AccountUploadProps {
 export interface AccountInputProps extends HTMLAttributes<HTMLInputElement> {
   id: string;
   name: string;
+  type: string;
   label: string;
+  value: string;
   error?: string;
 }
 
@@ -774,5 +776,9 @@ export interface CancelButtonProps extends HTMLAttributes<HTMLButtonElement> {
 }
 
 export interface DeleteAccountProps {
+  onCancel(): void;
+}
+
+export interface UpdateDataProps {
   onCancel(): void;
 }
