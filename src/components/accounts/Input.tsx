@@ -4,9 +4,9 @@ import { FC } from 'react';
 import FormError from '../form/FormError';
 import { FormGroup } from '../form/FormGroup';
 
-import { AccountInput } from '@/types';
+import { AccountInputProps } from '@/types';
 
-const Input: FC<AccountInput> = ({ id, name, label, error, ...rest }) => {
+const Input: FC<AccountInputProps> = ({ id, name, label, error, ...rest }) => {
   return (
     <FormGroup>
       <Label htmlFor={id}>{label}</Label>

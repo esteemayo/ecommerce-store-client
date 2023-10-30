@@ -731,16 +731,20 @@ export interface FormErrorProps {
   message?: string;
 }
 
-export interface CartInput extends HTMLAttributes<HTMLInputElement> {
+export interface CartInputProps extends HTMLAttributes<HTMLInputElement> {
   name: string;
   label: string;
   type?: string;
   error?: string;
 }
 
-export interface AccountInput extends HTMLAttributes<HTMLInputElement> {
+export interface AccountInputProps extends HTMLAttributes<HTMLInputElement> {
   id: string;
   name: string;
   label: string;
   error?: string;
+}
+
+export interface AccountEmailProps {
+  email: string;
 }

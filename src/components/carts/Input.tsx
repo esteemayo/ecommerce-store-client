@@ -3,9 +3,10 @@ import { FC } from 'react';
 
 import FormError from '../form/FormError';
 import { FormGroup } from '../form/FormGroup';
-import { CartInput } from '@/types';
 
-const Input: FC<CartInput> = ({
+import { CartInputProps } from '@/types';
+
+const Input: FC<CartInputProps> = ({
   name,
   label,
   type = 'text',

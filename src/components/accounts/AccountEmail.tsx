@@ -1,14 +1,15 @@
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
+import { FC } from 'react';
 
-const AccountEmail = ({ email }) => {
+import { AccountEmailProps } from '@/types';
+
+const AccountEmail: FC<AccountEmailProps> = ({ email }) => {
   return (
     <Container>
-      Your current email address is {' '}
-      <EmailAddress>{email}</EmailAddress>
+      Your current email address is <EmailAddress>{email}</EmailAddress>
     </Container>
   );
-}
+};
 
 const Container = styled.p`
   text-align: center;
@@ -20,9 +21,5 @@ const EmailAddress = styled.span`
   display: block;
   font-weight: 600;
 `;
-
-AccountEmail.propTypes = {
-  email: PropTypes.string.isRequired,
-};
 
 export default AccountEmail;
