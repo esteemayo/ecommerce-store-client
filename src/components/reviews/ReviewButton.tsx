@@ -1,22 +1,24 @@
 'use client';
 
 import styled, { css } from 'styled-components';
-import PropTypes from 'prop-types';
+import { FC } from 'react';
 
-const ReviewButton = ({ actionLabel, onAction }) => {
+import { ReviewButtonProps } from '@/types';
+
+const ReviewButton: FC<ReviewButtonProps> = ({ actionLabel, onAction }) => {
   return (
     <Button type='button' onClick={onAction}>
       {actionLabel}
     </Button>
   );
-}
+};
 
 const Button = styled.button`
   border: none;
   display: inline-block;
   padding: 1rem;
   background-color: ${({ theme }) => theme.bgRevBtn};
-  color:  ${({ theme }) => theme.textRevBtn};
+  color: ${({ theme }) => theme.textRevBtn};
   background-image: ${({ theme }) => css`
     linear-gradient(
       120deg,
@@ -43,10 +45,5 @@ const Button = styled.button`
     background-position: 100%;
   }
 `;
-
-ReviewButton.propTypes = {
-  actionLabel: PropTypes.string.isRequired,
-  onAction: PropTypes.func.isRequired,
-};
 
 export default ReviewButton;
