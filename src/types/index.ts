@@ -388,6 +388,10 @@ export interface CardPriceProps {
   priceLabel: number;
 }
 
+export interface CardButtonProps {
+  onClick(): void;
+}
+
 type CartModalValues = {
   name?: string;
   images?: string[];

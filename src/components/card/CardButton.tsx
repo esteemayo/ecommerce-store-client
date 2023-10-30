@@ -1,17 +1,18 @@
 import styled, { css } from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import PropTypes from 'prop-types';
+import { FC } from 'react';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
-const CardButton = ({ onClick }) => {
+import { CardButtonProps } from '@/types';
+
+const CardButton: FC<CardButtonProps> = ({ onClick }) => {
   return (
     <Button type='button' onClick={onClick}>
       <FontAwesomeIcon icon={faShoppingCart} />
-      &nbsp;
-      add to cart
+      &nbsp; add to cart
     </Button>
   );
-}
+};
 
 const Button = styled.button`
   border: none;
@@ -57,9 +58,5 @@ const Button = styled.button`
     background-position: 100%;
   }
 `;
-
-CardButton.propTypes = {
-  onClick: PropTypes.func.isRequired,
-};
 
 export default CardButton;
