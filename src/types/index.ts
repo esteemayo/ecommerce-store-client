@@ -779,6 +779,13 @@ export interface DeleteAccountProps {
   onCancel(): void;
 }
 
+export interface ModalProps {
+  title: string;
+  children: React.ReactNode;
+  isOpen: boolean;
+  onClose(): void;
+}
+
 export interface UpdateDataProps {
   onCancel(): void;
 }

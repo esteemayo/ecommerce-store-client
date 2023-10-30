@@ -1,26 +1,32 @@
 'use client';
 
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { FC, useCallback, useEffect, useMemo, useState } from 'react';
 import CloseIcon from '@mui/icons-material/Close';
 
-import Overlay from './Overlay';
+import { ModalProps } from '@/types';
 import { useDarkMode } from '@/hooks/useDarkMode';
 
-const Modal = ({ title, children, isOpen, onClose }) => {
+import Overlay from './Overlay';
+
+const Modal: FC<ModalProps> = ({ title, children, isOpen, onClose }) => {
   const mode = useDarkMode((state) => state.mode);
 
   const [showModal, setShowModal] = useState(isOpen);
 
-  const closeModalHandler = useCallback((e) => {
-    e.stopPropagation();
+  const closeModalHandler = useCallback(
+    (e: React.MouseEvent<HTMLDivElement>) => {
+      e.stopPropagation();
 
-    if (e.target.classList.contains('overlay')) {
-      setShowModal(false);
-      onClose();
-    }
-  }, [onClose]);
+      const target = e.target as Element;
+
+      if (target.classList.contains('overlay')) {
+        setShowModal(false);
+        onClose();
+      }
+    },
+    [onClose]
+  );
 
   const activeModal = useMemo(() => {
     return showModal ? 'show' : '';
@@ -43,13 +49,11 @@ const Modal = ({ title, children, isOpen, onClose }) => {
             <CloseIcon />
           </Button>
         </ButtonContainer>
-        <ModalContent>
-          {children}
-        </ModalContent>
+        <ModalContent>{children}</ModalContent>
       </Wrapper>
     </Overlay>
   );
-}
+};
 
 const Wrapper = styled.div`
   width: 40rem;
@@ -62,7 +66,7 @@ const Wrapper = styled.div`
     padding-left: 2rem;
     padding-right: 2rem;
   }
-  
+
   @media only screen and (max-width: 18.75em) {
     width: 33rem;
     padding-left: 1.2rem;
@@ -118,12 +122,5 @@ const Button = styled.button`
 `;
 
 const ModalContent = styled.div``;
-
-Modal.propTypes = {
-  title: PropTypes.string,
-  children: PropTypes.any.isRequired,
-  isOpen: PropTypes.bool.isRequired,
-  onClose: PropTypes.func.isRequired,
-};
 
 export default Modal;
