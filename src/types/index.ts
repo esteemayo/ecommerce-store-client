@@ -539,6 +539,10 @@ export interface CounterProps {
   onClick(value: number): void;
 }
 
+export interface ProductBox {
+  children: React.ReactNode;
+}
+
 export interface ProductButtonProps {
   small?: boolean;
   actionLabel: string;
