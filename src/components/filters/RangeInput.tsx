@@ -1,29 +1,26 @@
 import styled from 'styled-components';
-import PropType from 'prop-types';
+import { FC } from 'react';
 
 import { Label } from './Label';
 import { Filter } from './Filter';
 
 import { formatCurrency } from '@/utils/formatCurrency';
+import { RangeInputProps } from '@/types';
 
-const RangeInput = ({ name, label, price, ...rest }) => {
+const RangeInput: FC<RangeInputProps> = ({ name, label, price, ...rest }) => {
   return (
     <Filter>
       <Label htmlFor={name}>
-        {label} {' '}
-        {formatCurrency(price)}
+        {label} {formatCurrency(price)}
       </Label>
-      <Input
-        {...rest}
-        id={name}
-        name={name}
-        type='range'
-      />
+      <Input {...rest} id={name} name={name} />
     </Filter>
   );
-}
+};
 
-const Input = styled.input`
+const Input = styled.input.attrs({
+  type: 'range',
+})`
   display: inline-block;
   width: 20rem;
   padding: 3px;
@@ -55,12 +52,5 @@ const Input = styled.input`
     width: 31rem;
   }
 `;
-
-RangeInput.propType = {
-  name: PropType.string,
-  label: PropType.string,
-  price: PropType.number,
-  rest: PropType.any,
-};
 
 export default RangeInput;

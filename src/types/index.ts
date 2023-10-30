@@ -690,6 +690,12 @@ export interface SelectPriceProps extends HTMLAttributes<HTMLSelectElement> {
   options: PriceOption;
 }
 
+export interface RangeInputProps extends HTMLAttributes<HTMLInputElement> {
+  name: string;
+  label: string;
+  price: number;
+}
+
 export interface OrderCardProps {
   id: number;
   total: number;
