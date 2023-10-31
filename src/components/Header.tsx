@@ -3,7 +3,9 @@
 import styled from 'styled-components';
 import { FC } from 'react';
 
-import { HeaderProps } from '@/types';
+interface HeaderProps {
+  title: string;
+}
 
 const Header: FC<HeaderProps> = ({ title }) => {
   return <Heading>{title}</Heading>;

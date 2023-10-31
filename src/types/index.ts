@@ -348,10 +348,6 @@ export interface ToggleButtonProps {
   onClick(): void;
 }
 
-export interface HeaderProps {
-  title: string;
-}
-
 export interface SidebarMenuProps {
   items: Sublink;
 }
