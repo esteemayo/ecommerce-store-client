@@ -141,7 +141,7 @@ const StyledImage = styled(Image)`
   width: 35rem;
   height: 35rem;
   object-fit: cover;
-  border-radius: 0.5rem;
+  border-radius: 2px;
   cursor: pointer;
 
   @media only screen and (max-width: 64em) {
