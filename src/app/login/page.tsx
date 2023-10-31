@@ -29,7 +29,7 @@ interface IErrors {
   password?: string;
 }
 
-const initialState = {
+const initialState:FormData = {
   username: '',
   password: '',
 };
