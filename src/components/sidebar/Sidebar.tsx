@@ -14,6 +14,10 @@ import Search from './Search';
 
 import { sublinks } from '@/data';
 
+interface IContainer {
+  type: string;
+}
+
 const Sidebar = () => {
   const isOpen = useSidebar((state) => state.isOpen);
   const onClose = useSidebar((state) => state.onClose);
@@ -44,7 +48,7 @@ const Sidebar = () => {
   );
 };
 
-const Container = styled.aside`
+const Container = styled.aside<IContainer>`
   position: fixed;
   top: 0;
   left: 0;
