@@ -1,11 +1,12 @@
 'use client';
 
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
+import { FC } from 'react';
 
 import Spinner from './Spinner';
+import { LoaderProps } from '@/types';
 
-const Loader = ({ size }) => {
+const Loader: FC<LoaderProps> = ({ size }) => {
   return (
     <Container>
       <Wrapper>
@@ -13,7 +14,7 @@ const Loader = ({ size }) => {
       </Wrapper>
     </Container>
   );
-}
+};
 
 const Container = styled.div`
   width: 100vw;
@@ -37,9 +38,5 @@ const Wrapper = styled.div`
   align-items: center;
   justify-content: center;
 `;
-
-Loader.propTypes = {
-  size: PropTypes.string,
-};
 
 export default Loader;

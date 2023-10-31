@@ -946,3 +946,7 @@ export interface FormatPriceProps {
 export interface SpinnerProps {
   size?: string;
 }
+
+export interface LoaderProps {
+  size?: string;
+}
