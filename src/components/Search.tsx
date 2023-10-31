@@ -6,13 +6,8 @@ import SearchHistory from './SearchHistory';
 import { useSearch } from '@/hooks/useSearch';
 
 const Search = () => {
-  const {
-    histories,
-    searchQuery,
-    handleChange,
-    handleDelete,
-    handleSearch,
-  } = useSearch();
+  const { histories, searchQuery, handleChange, handleDelete, handleSearch } =
+    useSearch();
 
   return (
     <Container>
@@ -28,18 +23,15 @@ const Search = () => {
         </FormGroup>
         <Button type='submit'>Search</Button>
       </Form>
-      {!!histories.length > 0 && histories.slice(0, 5).map((item) => {
-        return (
-          <SearchHistory
-            {...item}
-            key={item.id}
-            onDelete={handleDelete}
-          />
-        );
-      })}
+      {histories.length > 0 &&
+        histories.slice(0, 5).map((item) => {
+          return (
+            <SearchHistory {...item} key={item.id} onDelete={handleDelete} />
+          );
+        })}
     </Container>
   );
-}
+};
 
 const Container = styled.div`
   padding: 3rem 0;
