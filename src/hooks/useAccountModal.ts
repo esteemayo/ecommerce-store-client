@@ -2,7 +2,11 @@ import { create } from 'zustand';
 import { devtools } from 'zustand/middleware';
 import { produce } from 'immer';
 
-import { AccountModalStore } from '@/types';
+interface AccountModalStore {
+  isOpen: boolean;
+  onOpen(): void;
+  onClose(): void;
+}
 
 const useAccountModal = create<AccountModalStore>()(
   devtools((set) => ({
