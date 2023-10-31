@@ -239,12 +239,6 @@ export interface SidebarStore {
   onClose(): void;
 }
 
-export interface SearchModalStore {
-  isOpen: boolean;
-  onOpen(): void;
-  onClose(): void;
-}
-
 export type CountryValues = {
   flag: string;
   label: string;
