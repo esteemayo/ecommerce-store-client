@@ -264,12 +264,6 @@ export interface DarkModeStore {
   toggle(): void;
 }
 
-export interface EmailModalStore {
-  isOpen: boolean;
-  onOpen(): void;
-  onClose(): void;
-}
-
 export interface WishlistProps {
   actionId: number;
   product: any;

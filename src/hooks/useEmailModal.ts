@@ -2,7 +2,11 @@ import { create } from 'zustand';
 import { devtools } from 'zustand/middleware';
 import { produce } from 'immer';
 
-import { EmailModalStore } from '@/types';
+interface EmailModalStore {
+  isOpen: boolean;
+  onOpen(): void;
+  onClose(): void;
+}
 
 const useEmailModal = create<EmailModalStore>()(
   devtools((set) => ({
