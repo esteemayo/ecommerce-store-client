@@ -861,11 +861,6 @@ export interface FormHeadingProps {
   title: string;
 }
 
-export interface UploadProgressProps {
-  type?: boolean;
-  percentage: number;
-}
-
 export interface FormBoxProps {
   children: React.ReactNode;
 }
