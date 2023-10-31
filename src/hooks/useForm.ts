@@ -18,7 +18,7 @@ export const useForm = (
   const handleChange: ChangeEventHandler<HTMLInputElement> = useCallback(
     ({ target: input }) => {
       const { name, value } = input;
-      setFormData((prev) => ({ ...prev, [name]: value }));
+      setFormData((prev: any) => ({ ...prev, [name]: value }));
     },
     []
   );
