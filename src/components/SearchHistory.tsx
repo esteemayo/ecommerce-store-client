@@ -2,23 +2,27 @@ import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 import { faClock, faTimes } from '@fortawesome/free-solid-svg-icons';
-import PropTypes from 'prop-types';
+import { FC } from 'react';
 
-const SearchHistory = ({ id, query, onDelete }) => {
+import { SearchHistoryProps } from '@/types';
+
+const SearchHistory: FC<SearchHistoryProps> = ({ id, query, onDelete }) => {
   return (
     <Container key={id}>
       <IconWRapper>
         <FontAwesomeIcon icon={faClock} />
       </IconWRapper>
       <History>
-        <StyledLink href='#' passHref>{query}</StyledLink>
+        <StyledLink href='#' passHref>
+          {query}
+        </StyledLink>
       </History>
       <Remove onClick={() => onDelete(id)}>
         <FontAwesomeIcon icon={faTimes} />
       </Remove>
     </Container>
   );
-}
+};
 
 const Container = styled.article`
   display: flex;
@@ -66,11 +70,5 @@ const Remove = styled.button`
     color: inherit;
   }
 `;
-
-SearchHistory.propTypes = {
-  id: PropTypes.number.isRequired,
-  query: PropTypes.string.isRequired,
-  onDelete: PropTypes.func.isRequired,
-};
 
 export default SearchHistory;

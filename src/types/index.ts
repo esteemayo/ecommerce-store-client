@@ -950,3 +950,9 @@ export interface SpinnerProps {
 export interface LoaderProps {
   size?: string;
 }
+
+export interface SearchHistoryProps {
+  id: number;
+  query: string;
+  onDelete(id: number): void;
+}

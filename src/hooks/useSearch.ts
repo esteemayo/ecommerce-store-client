@@ -1,5 +1,10 @@
-import { useCallback, useEffect, useState } from 'react';
+import { ChangeEvent, useCallback, useEffect, useState } from 'react';
 import { getFromStorage, searchKey, setToStorage } from '@/utils';
+
+interface IHistories {
+  id: number;
+  query: string;
+}
 
 const getAllHistories = () => {
   const histories = getFromStorage(searchKey);
@@ -8,18 +13,18 @@ const getAllHistories = () => {
 
 export const useSearch = () => {
   const [searchQuery, setSearchQuery] = useState('');
-  const [histories, setHistories] = useState(getAllHistories());
+  const [histories, setHistories] = useState<IHistories[]>(getAllHistories());
 
-  const handleChange = useCallback((e) => {
+  const handleChange = useCallback((e: ChangeEvent<HTMLInputElement>) => {
     setSearchQuery(e.target.value);
   }, []);
 
-  const handleDelete = useCallback((id) => {
+  const handleDelete = useCallback((id: number) => {
     setHistories((prev) => [...prev].filter((item) => item.id !== id));
   }, []);
 
   const handleHistory = useCallback(() => {
-    const data = {
+    const data: IHistories = {
       id: new Date().getTime(),
       query: searchQuery,
     };
@@ -27,12 +32,15 @@ export const useSearch = () => {
     setHistories((prev) => [data, ...prev]);
   }, [searchQuery]);
 
-  const handleSearch = useCallback((e) => {
-    e.preventDefault();
+  const handleSearch = useCallback(
+    (e) => {
+      e.preventDefault();
 
-    handleHistory();
-    console.log(searchQuery);
-  }, [handleHistory, searchQuery]);
+      handleHistory();
+      console.log(searchQuery);
+    },
+    [handleHistory, searchQuery]
+  );
 
   useEffect(() => {
     setToStorage(searchKey, histories);
@@ -45,4 +53,4 @@ export const useSearch = () => {
     handleDelete,
     handleSearch,
   };
-}
+};
