@@ -3,11 +3,15 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-const Spinner = ({ size }) => {
-  return <Container size={size}>&nbsp;</Container>;
+interface IContainer {
+  size?: string;
 }
 
-const Container = styled.div`
+const Spinner = ({ size }) => {
+  return <Container size={size}>&nbsp;</Container>;
+};
+
+const Container = styled.div<IContainer>`
   width: ${({ size }) => size === 'xs' && '1.5rem'};
   width: ${({ size }) => size === 'sm' && '2rem'};
   width: ${({ size }) => size === 'md' && '5rem'};
