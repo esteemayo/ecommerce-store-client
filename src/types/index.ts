@@ -817,6 +817,7 @@ export interface TextAreaProps extends HTMLAttributes<HTMLTextAreaElement> {
   label: string;
   value: string | any;
   error: string;
+  onChange(e: any): void;
 }
 
 export interface SelectProps extends HTMLAttributes<HTMLSelectElement> {
