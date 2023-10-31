@@ -1,12 +1,18 @@
 import styled from 'styled-components';
-import { FC } from 'react';
+import { FC, HTMLAttributes } from 'react';
 
 import FormError from '../form/FormError';
 import { FormGroup } from '../form/FormGroup';
 
-import { CartInputProps } from '@/types';
+interface InputProps extends HTMLAttributes<HTMLInputElement> {
+  name: string;
+  label: string;
+  value: string;
+  type?: string;
+  error?: string;
+}
 
-const Input: FC<CartInputProps> = ({
+const Input: FC<InputProps> = ({
   name,
   label,
   type = 'text',
