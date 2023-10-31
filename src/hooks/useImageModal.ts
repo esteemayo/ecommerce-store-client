@@ -2,7 +2,11 @@ import { create } from 'zustand';
 import { devtools } from 'zustand/middleware';
 import { produce } from 'immer';
 
-import { ImageModalStore } from '@/types';
+interface ImageModalStore {
+  isOpen: boolean;
+  onOpen(): void;
+  onClose(): void;
+}
 
 const useImageModal = create<ImageModalStore>()(
   devtools((set) => ({

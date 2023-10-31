@@ -282,12 +282,6 @@ export interface PasswordModalStore {
   onClose(): void;
 }
 
-export interface ImageModalStore {
-  isOpen: boolean;
-  onOpen(): void;
-  onClose(): void;
-}
-
 export interface AccountModalStore {
   isOpen: boolean;
   onOpen(): void;
