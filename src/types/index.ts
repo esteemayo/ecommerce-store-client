@@ -938,3 +938,7 @@ export interface OverlayProps {
   children: React.ReactNode;
   onClick(e: React.MouseEvent<HTMLDivElement>): void;
 }
+
+export interface FormatPriceProps {
+  value: number;
+}

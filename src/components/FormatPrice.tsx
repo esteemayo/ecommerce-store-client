@@ -1,7 +1,9 @@
 import { NumericFormat } from 'react-number-format';
-import PropTypes from 'prop-types';
+import { FC } from 'react';
 
-const FormatPrice = ({ value }) => {
+import { FormatPriceProps } from '@/types';
+
+const FormatPrice: FC<FormatPriceProps> = ({ value }) => {
   return (
     <NumericFormat
       value={value}
@@ -10,10 +12,6 @@ const FormatPrice = ({ value }) => {
       prefix={'$'}
     />
   );
-}
-
-FormatPrice.propTypes = {
-  value: PropTypes.number,
 };
 
 export default FormatPrice;
