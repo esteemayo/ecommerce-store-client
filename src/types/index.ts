@@ -342,6 +342,10 @@ export interface HeaderProps {
   title: string;
 }
 
+export interface SidebarMenuProps {
+  items: Sublink;
+}
+
 export interface SidebarHeadingProps {
   title: string;
 }

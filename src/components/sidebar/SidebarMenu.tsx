@@ -1,12 +1,14 @@
 'use client';
 
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
+import { FC } from 'react';
 
 import Heading from './Heading';
 import SidebarMenuItem from './SidebarMenuItem';
 
-const SidebarMenu = ({ items }) => {
+import { SidebarMenuProps } from '@/types';
+
+const SidebarMenu: FC<SidebarMenuProps> = ({ items }) => {
   return (
     <Container>
       {items.map((item, index) => {
@@ -24,7 +26,7 @@ const SidebarMenu = ({ items }) => {
       })}
     </Container>
   );
-}
+};
 
 const Container = styled.div`
   margin-top: 3rem;
@@ -40,9 +42,5 @@ const ListContainer = styled.ul`
   grid-template-columns: 1fr 1fr;
   row-gap: 0.25rem;
 `;
-
-SidebarMenu.propTypes = {
-  items: PropTypes.array.isRequired,
-};
 
 export default SidebarMenu;
