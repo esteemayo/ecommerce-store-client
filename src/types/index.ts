@@ -870,7 +870,7 @@ export interface FormBoxProps {
   children: React.ReactNode;
 }
 
-export interface FormInfoProps {
+export interface AuthInfoProps {
   url: string;
   text: string;
   label: string;
