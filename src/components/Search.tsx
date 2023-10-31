@@ -26,7 +26,7 @@ const Search = () => {
       {histories.length > 0 &&
         histories.slice(0, 5).map((item) => {
           return (
-            <SearchHistory {...item} key={item.id} onDelete={handleDelete} />
+            <SearchHistory key={item.id} {...item} onDelete={handleDelete} />
           );
         })}
     </Container>
