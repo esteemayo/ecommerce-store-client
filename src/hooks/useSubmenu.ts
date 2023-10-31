@@ -1,5 +1,6 @@
 import { create } from 'zustand';
 import { devtools } from 'zustand/middleware';
+import { produce } from 'immer';
 
 import { sublinks } from '@/data';
 import { SubmenuStore } from '@/types';
@@ -14,14 +15,21 @@ export const useSubmenu = create<SubmenuStore>()(
     },
     openSubmenu: (payload) =>
       set(
-        () => ({
-          page: sublinks.find((link) => link.page === payload.page),
-          location: payload.coordinates,
-          isOpen: true,
+        produce((state) => {
+          state.page = sublinks.find((link) => link.page === payload.page);
+          state.location = payload.coordinates;
+          state.isOpen = true;
         }),
         false,
         'openSubmenu'
       ),
-    closeSubmenu: () => set(() => ({ isOpen: false }), false, 'closeSubmenu'),
+    closeSubmenu: () =>
+      set(
+        produce((state) => {
+          state.isOpen = false;
+        }),
+        false,
+        'closeSubmenu'
+      ),
   }))
 );
