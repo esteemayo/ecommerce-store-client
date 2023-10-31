@@ -55,20 +55,18 @@ const ProductImage: FC<ProductImageProps> = ({ images }) => {
   const handleDirection = useCallback(
     (direction: string) => {
       setIsSliderMoved(true);
-      const distance = imgContainerRef.current.getBoundingClientRect().x;
+
+      const container: any = imgContainerRef.current;
+      const distance = container.getBoundingClientRect().x;
 
       if (direction === 'left' && slideNumber > 0) {
         setSlideNumber((value) => value - 1);
-        imgContainerRef.current.style.transform = `translateX(${
-          235 + distance
-        }px)`;
+        container.style.transform = `translateX(${235 + distance}px)`;
       }
 
       if (direction === 'right' && slideNumber < 6 - clickLimit) {
         setSlideNumber((value) => value + 1);
-        imgContainerRef.current.style.transform = `translateX(${
-          -235 + distance
-        }px)`;
+        container.style.transform = `translateX(${-235 + distance}px)`;
       }
     },
     [clickLimit, slideNumber]
