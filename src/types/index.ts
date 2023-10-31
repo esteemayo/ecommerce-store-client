@@ -259,11 +259,6 @@ export interface CountrySelectProps {
   onChange(e: React.ChangeEvent<HTMLInputElement>): void;
 }
 
-export interface DarkModeStore {
-  mode: boolean;
-  toggle(): void;
-}
-
 export interface WishlistProps {
   actionId: number;
   product: any;

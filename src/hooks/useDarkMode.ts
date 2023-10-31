@@ -2,7 +2,10 @@ import { create } from 'zustand';
 import { devtools, persist } from 'zustand/middleware';
 import { produce } from 'immer';
 
-import { DarkModeStore } from '@/types';
+interface DarkModeStore {
+  mode: boolean;
+  toggle(): void;
+}
 
 export const useDarkMode = create<DarkModeStore>()(
   persist(
