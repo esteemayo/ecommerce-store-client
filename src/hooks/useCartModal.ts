@@ -2,7 +2,11 @@ import { create } from 'zustand';
 import { devtools } from 'zustand/middleware';
 import { produce } from 'immer';
 
-import { CartModalStore } from '@/types';
+interface CartModalStore {
+  isOpen: boolean;
+  onOpen(): void;
+  onClose(): void;
+}
 
 export const useCartModal = create<CartModalStore>()(
   devtools((set) => ({
