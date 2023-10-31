@@ -2,7 +2,11 @@ import styled from 'styled-components';
 import { FC } from 'react';
 import Link from 'next/link';
 
-import { AuthInfoProps } from '@/types';
+interface AuthInfoProps {
+  url: string;
+  text: string;
+  label: string;
+}
 
 const FormInfo: FC<AuthInfoProps> = ({ url, text, label }) => {
   return (

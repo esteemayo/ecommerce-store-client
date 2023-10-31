@@ -865,12 +865,6 @@ export interface FormBoxProps {
   children: React.ReactNode;
 }
 
-export interface AuthInfoProps {
-  url: string;
-  text: string;
-  label: string;
-}
-
 export interface FormErrorProps {
   message?: string;
 }
