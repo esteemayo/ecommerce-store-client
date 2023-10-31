@@ -2,7 +2,11 @@ import { create } from 'zustand';
 import { devtools } from 'zustand/middleware';
 import { produce } from 'immer';
 
-import { FileModalStore } from '@/types';
+interface FileModalStore {
+  isOpen: boolean;
+  onOpen(): void;
+  onClose(): void;
+}
 
 const useFileModal = create<FileModalStore>()(
   devtools((set) => ({
