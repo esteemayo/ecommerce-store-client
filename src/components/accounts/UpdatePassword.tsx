@@ -27,7 +27,7 @@ interface IErrors {
   currentPassword?: string;
 }
 
-const initialState = {
+const initialState: FormData = {
   password: '',
   confirmPassword: '',
   currentPassword: '',
