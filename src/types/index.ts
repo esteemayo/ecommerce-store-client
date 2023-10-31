@@ -833,6 +833,7 @@ export interface SelectProps extends HTMLAttributes<HTMLSelectElement> {
 export interface CheckBoxProps extends HTMLAttributes<HTMLInputElement> {
   name: string;
   label: string;
+  checked: boolean;
 }
 
 export interface FormUploadProps extends HTMLAttributes<HTMLInputElement> {
