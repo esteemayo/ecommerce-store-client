@@ -250,11 +250,13 @@ export type CountryValues = {
   label: string;
 }[];
 
-export interface CountrySelectProps extends HTMLAttributes<HTMLSelectElement> {
+export interface CountrySelectProps {
   data: CountryValues;
   name: string;
   label: string;
+  value: string;
   error?: string;
+  onChange(e: React.ChangeEvent<HTMLInputElement>): void;
 }
 
 export interface DarkModeStore {
