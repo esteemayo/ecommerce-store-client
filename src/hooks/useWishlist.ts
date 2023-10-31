@@ -1,6 +1,6 @@
-import { WishlistProps } from '@/types';
 import { FC, useCallback, useMemo } from 'react';
 
+import { WishlistProps } from '@/types';
 import { useCartStore } from './useCartStore';
 
 const useWishlist = ({ actionId, product, wished }) => {
