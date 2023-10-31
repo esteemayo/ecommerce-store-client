@@ -2,7 +2,11 @@ import { create } from 'zustand';
 import { devtools } from 'zustand/middleware';
 import { produce } from 'immer';
 
-import { SearchModalStore } from '@/types';
+interface SearchModalStore {
+  isOpen: boolean;
+  onOpen(): void;
+  onClose(): void;
+}
 
 const useSearchModal = create<SearchModalStore>()(
   devtools((set) => ({
