@@ -2,18 +2,20 @@ import styled from 'styled-components';
 import { FC } from 'react';
 import Link from 'next/link';
 
-import { FormInfoProps } from '@/types';
+import { AuthInfoProps } from '@/types';
 
-const FormInfo: FC<FormInfoProps> = ({ url, text, label }) => {
+const FormInfo: FC<AuthInfoProps> = ({ url, text, label }) => {
   return (
     <Container>
       <Text>
-        {text} {' '}
-        <Link href={url} passHref>{label}</Link>
+        {text}{' '}
+        <Link href={url} passHref>
+          {label}
+        </Link>
       </Text>
     </Container>
   );
-}
+};
 
 const Container = styled.div`
   margin-top: 3rem;
