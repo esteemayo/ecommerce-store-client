@@ -1,13 +1,28 @@
 import { create } from 'zustand';
 import { devtools } from 'zustand/middleware';
+import { produce } from 'immer';
 
 import { PaymentModalStore } from '@/types';
 
 const usePaymentModal = create<PaymentModalStore>()(
   devtools((set) => ({
     isOpen: false,
-    onOpen: () => set(() => ({ isOpen: true }), false, 'openPaymentModal'),
-    onClose: () => set(() => ({ isOpen: false }), false, 'closePaymentModal'),
+    onOpen: () =>
+      set(
+        produce((state) => {
+          state.isOpen = true;
+        }),
+        false,
+        'openPaymentModal'
+      ),
+    onClose: () =>
+      set(
+        produce((state) => {
+          state.isOpen = false;
+        }),
+        false,
+        'closePaymentModal'
+      ),
   }))
 );
 
