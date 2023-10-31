@@ -1,14 +1,21 @@
 import styled from 'styled-components';
+import { FC } from 'react';
 import Link from 'next/link';
-import PropTypes from 'prop-types';
 
-const Forgot = ({ url, label }) => {
+interface ForgotProps {
+  url: string;
+  label: string;
+}
+
+const Forgot: FC<ForgotProps> = ({ url, label }) => {
   return (
     <Container>
-      <Link href={url} passHref>{label}</Link>
+      <Link href={url} passHref>
+        {label}
+      </Link>
     </Container>
   );
-}
+};
 
 const Container = styled.p`
   font-size: 1.65rem;
@@ -32,10 +39,5 @@ const Container = styled.p`
     }
   }
 `;
-
-Forgot.propTypes = {
-  url: PropTypes.string,
-  label: PropTypes.string,
-};
 
 export default Forgot;
