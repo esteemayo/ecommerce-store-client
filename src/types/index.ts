@@ -233,12 +233,6 @@ export interface SubmenuStore {
   closeSubmenu(): void;
 }
 
-export interface SidebarStore {
-  isOpen: boolean;
-  onOpen(): void;
-  onClose(): void;
-}
-
 export type CountryValues = {
   flag: string;
   label: string;

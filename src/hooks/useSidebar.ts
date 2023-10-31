@@ -2,7 +2,11 @@ import { create } from 'zustand';
 import { devtools } from 'zustand/middleware';
 import { produce } from 'immer';
 
-import { SidebarStore } from '@/types';
+interface SidebarStore {
+  isOpen: boolean;
+  onOpen(): void;
+  onClose(): void;
+}
 
 export const useSidebar = create<SidebarStore>()(
   devtools((set) => ({
