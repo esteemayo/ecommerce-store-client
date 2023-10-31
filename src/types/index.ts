@@ -630,6 +630,14 @@ export interface ReviewButtonProps {
   onAction(): void;
 }
 
+export interface ReviewFilterProps {
+  sort: string;
+  value: string;
+  isOpen: boolean;
+  onClick(): void;
+  onSort(sort: string | null): void;
+}
+
 export interface DeleteModalProps {
   actionId: number;
   isOpen: boolean;

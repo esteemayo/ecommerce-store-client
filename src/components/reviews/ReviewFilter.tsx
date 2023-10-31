@@ -2,9 +2,19 @@
 
 import styled from 'styled-components';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
-import PropTypes from 'prop-types';
+import { FC } from 'react';
 
-const ReviewFilter = ({
+import { ReviewFilterProps } from '@/types';
+
+interface IWrapper {
+  sort: string;
+}
+
+interface IList {
+  type: string;
+}
+
+const ReviewFilter: FC<ReviewFilterProps> = ({
   sort,
   value,
   isOpen,
@@ -13,11 +23,7 @@ const ReviewFilter = ({
 }) => {
   return (
     <Container className='filter-container'>
-      <Wrapper
-        sort={sort}
-        className='filter-wrapper'
-        onClick={onClick}
-      >
+      <Wrapper sort={sort} className='filter-wrapper' onClick={onClick}>
         <Filter>Sort:</Filter>
         <FilterText>{value ?? 'Select'}</FilterText>
         <FilterIcon>
@@ -26,12 +32,14 @@ const ReviewFilter = ({
       </Wrapper>
       <FilterListContainer type={isOpen ? 'show' : ''}>
         <FilterList onClick={() => onSort('newest')}>Newest</FilterList>
-        <FilterList onClick={() => onSort('highest')}>Highest rating</FilterList>
+        <FilterList onClick={() => onSort('highest')}>
+          Highest rating
+        </FilterList>
         <FilterList onClick={() => onSort('lowest')}>Lowest rating</FilterList>
       </FilterListContainer>
     </Container>
   );
-}
+};
 
 const Container = styled.div`
   position: relative;
@@ -41,7 +49,7 @@ const Container = styled.div`
   justify-content: center;
 `;
 
-const Wrapper = styled.div`
+const Wrapper = styled.div<IWrapper>`
   width: 13rem;
   width: ${({ sort }) => (sort === 'highest' || sort === 'lowest') && '20rem'};
   color: ${({ theme }) => theme.text};
@@ -93,9 +101,9 @@ const FilterIcon = styled.span`
   }
 `;
 
-const FilterListContainer = styled.ul`
+const FilterListContainer = styled.ul<IList>`
   position: absolute;
-  right: ${({ type }) => type === 'show' ? 0 : '-30rem'};
+  right: ${({ type }) => (type === 'show' ? 0 : '-30rem')};
   top: 6rem;
   list-style: none;
   width: 20rem;
@@ -104,10 +112,10 @@ const FilterListContainer = styled.ul`
   background-color: ${({ theme }) => theme.bgProdCard};
   border: 1px solid ${({ theme }) => theme.filterBorder};
   border-radius: 3px;
-  visibility: ${({ type }) => type === 'show' ? 'visible' : 'hidden'};
-  opacity: ${({ type }) => type === 'show' ? 1 : 0};
-  transform: scale(${({ type }) => type === 'show' ? 1 : 0});
-  z-index: ${({ type }) => type === 'show' ? 1000 : -1};
+  visibility: ${({ type }) => (type === 'show' ? 'visible' : 'hidden')};
+  opacity: ${({ type }) => (type === 'show' ? 1 : 0)};
+  transform: scale(${({ type }) => (type === 'show' ? 1 : 0)});
+  z-index: ${({ type }) => (type === 'show' ? 1000 : -1)};
   transition: all 0.3s linear;
 `;
 
@@ -127,13 +135,5 @@ const FilterList = styled.li`
     background-color: ${({ theme }) => theme.filterHov};
   }
 `;
-
-ReviewFilter.propTypes = {
-  sort: PropTypes.string,
-  value: PropTypes.string,
-  isOpen: PropTypes.bool.isRequired,
-  onClick: PropTypes.func.isRequired,
-  onSort: PropTypes.func.isRequired,
-};
 
 export default ReviewFilter;
