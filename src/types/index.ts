@@ -276,12 +276,6 @@ export interface FileModalStore {
   onClose(): void;
 }
 
-export interface PasswordModalStore {
-  isOpen: boolean;
-  onOpen(): void;
-  onClose(): void;
-}
-
 export interface AccountModalStore {
   isOpen: boolean;
   onOpen(): void;

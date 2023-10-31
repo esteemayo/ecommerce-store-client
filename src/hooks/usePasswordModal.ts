@@ -2,7 +2,11 @@ import { create } from 'zustand';
 import { devtools } from 'zustand/middleware';
 import { produce } from 'immer';
 
-import { PasswordModalStore } from '@/types';
+interface PasswordModalStore {
+  isOpen: boolean;
+  onOpen(): void;
+  onClose(): void;
+}
 
 const usePasswordModal = create<PasswordModalStore>()(
   devtools((set) => ({
