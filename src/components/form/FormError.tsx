@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 import { FC } from 'react';
 
-import { FormErrorProps } from '@/types';
+interface FormErrorProps {
+  message?: string;
+}
 
 const FormError: FC<FormErrorProps> = ({ message }) => {
   return <ErrorMessage>{message}</ErrorMessage>;

@@ -865,10 +865,6 @@ export interface FormBoxProps {
   children: React.ReactNode;
 }
 
-export interface FormErrorProps {
-  message?: string;
-}
-
 export interface CartInputProps extends HTMLAttributes<HTMLInputElement> {
   name: string;
   label: string;
