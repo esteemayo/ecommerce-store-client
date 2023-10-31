@@ -29,7 +29,7 @@ interface IErrors {
   address?: string;
 }
 
-const initialState = {
+const initialState:FormData = {
   name: '',
   address: '',
 };
