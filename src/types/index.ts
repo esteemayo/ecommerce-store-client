@@ -346,6 +346,12 @@ export interface SidebarHeadingProps {
   title: string;
 }
 
+export interface SidebarSearch {
+  query: string;
+  onChange(e: React.ChangeEvent<HTMLInputElement>): void;
+  onSubmit(e: React.FormEvent<HTMLFormElement>): void;
+}
+
 type Product = {
   id: number;
   images: string[];

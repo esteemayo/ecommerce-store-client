@@ -1,7 +1,9 @@
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
+import { FC } from 'react';
 
-const Search = ({ query, onChange, onSubmit }) => {
+import { SidebarSearch } from '@/types';
+
+const Search: FC<SidebarSearch> = ({ query, onChange, onSubmit }) => {
   return (
     <Form onSubmit={onSubmit}>
       <Input
@@ -13,7 +15,7 @@ const Search = ({ query, onChange, onSubmit }) => {
       <Button type='submit'>Search</Button>
     </Form>
   );
-}
+};
 
 const Form = styled.form`
   display: flex;
@@ -68,11 +70,5 @@ const Button = styled.button`
     padding-bottom: 1.1rem;
   }
 `;
-
-Search.propTypes = {
-  query: PropTypes.string,
-  onChange: PropTypes.func.isRequired,
-  onSubmit: PropTypes.func.isRequired,
-};
 
 export default Search;
