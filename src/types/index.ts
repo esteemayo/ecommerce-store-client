@@ -14,6 +14,10 @@ export interface CartProviderProps {
   children: React.ReactNode;
 }
 
+export interface AppThemeProviderProps {
+  children: React.ReactNode;
+}
+
 export type CartItem = {
   id: number;
   name: string;

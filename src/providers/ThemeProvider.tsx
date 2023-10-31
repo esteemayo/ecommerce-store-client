@@ -1,10 +1,11 @@
 import { ThemeProvider } from 'styled-components';
-import { useSelector } from 'react-redux';
+import { FC } from 'react';
 
 import { useDarkMode } from '@/hooks/useDarkMode';
+import { AppThemeProviderProps } from '@/types';
 import { darkTheme, lightTheme } from '@/utils/Theme';
 
-const AppThemeProvider = ({ children }) => {
+const AppThemeProvider: FC<AppThemeProviderProps> = ({ children }) => {
   const mode = useDarkMode((state) => state.mode);
 
   return (
