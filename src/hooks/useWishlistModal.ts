@@ -2,7 +2,11 @@ import { create } from 'zustand';
 import { devtools } from 'zustand/middleware';
 import { produce } from 'immer';
 
-import { WishlistModalStore } from '@/types';
+interface WishlistModalStore {
+  isOpen: boolean;
+  onOpen(): void;
+  onClose(): void;
+}
 
 const useWishlistModal = create<WishlistModalStore>()(
   devtools((set) => ({
