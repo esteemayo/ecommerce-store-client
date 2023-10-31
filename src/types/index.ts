@@ -288,18 +288,6 @@ export interface ImageModalStore {
   onClose(): void;
 }
 
-export interface ReviewModalStore {
-  isOpen: boolean;
-  onOpen(): void;
-  onClose(): void;
-}
-
-export interface WishlistModalStore {
-  isOpen: boolean;
-  onOpen(): void;
-  onClose(): void;
-}
-
 export interface AccountModalStore {
   isOpen: boolean;
   onOpen(): void;
