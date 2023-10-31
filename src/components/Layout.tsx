@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import { Nunito } from '@next/font/google';
 
 import ClientOnly from './ClientOnly';
 import Darkmode from './DarkMode';
@@ -14,9 +15,14 @@ import ModalProvider from '@/providers/ModalProvider';
 
 import { LayoutProps } from '@/types';
 
+const nunito = Nunito({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700'],
+});
+
 const Layout: FC<LayoutProps> = ({ children }) => {
   return (
-    <div className='container'>
+    <div className={`${nunito.className} container`}>
       <ClientOnly>
         <Navbar />
         <ToastProvider />
