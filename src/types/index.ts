@@ -362,6 +362,10 @@ export interface SidebarSearch {
   onSubmit(e: React.FormEvent<HTMLFormElement>): void;
 }
 
+export interface SubmenuHeadingProps {
+  title: string;
+}
+
 type Product = {
   id: number;
   images: string[];

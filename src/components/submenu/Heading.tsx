@@ -1,11 +1,13 @@
 'use client';
 
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
+import { FC } from 'react';
 
-const Heading = ({ title }) => {
+import { SubmenuHeadingProps } from '@/types';
+
+const Heading: FC<SubmenuHeadingProps> = ({ title }) => {
   return <Header>{title}</Header>;
-}
+};
 
 const Header = styled.h4`
   display: inline-block;
@@ -15,9 +17,5 @@ const Header = styled.h4`
   color: ${({ theme }) => theme.text};
   margin-bottom: 1.5rem;
 `;
-
-Heading.propTypes = {
-  title: PropTypes.string.isRequired,
-};
 
 export default Heading;
