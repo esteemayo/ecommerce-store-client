@@ -33,7 +33,7 @@ export const useSearch = () => {
   }, [searchQuery]);
 
   const handleSearch = useCallback(
-    (e) => {
+    (e: React.FormEvent<HTMLFormElement>) => {
       e.preventDefault();
 
       handleHistory();
