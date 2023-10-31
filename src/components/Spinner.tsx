@@ -1,13 +1,15 @@
 'use client';
 
 import styled from 'styled-components';
-import PropTypes from 'prop-types';
+import { FC } from 'react';
+
+import { SpinnerProps } from '@/types';
 
 interface IContainer {
   size?: string;
 }
 
-const Spinner = ({ size }) => {
+const Spinner: FC<SpinnerProps> = ({ size = 'sm' }) => {
   return <Container size={size}>&nbsp;</Container>;
 };
 
@@ -31,13 +33,5 @@ const Container = styled.div<IContainer>`
     }
   }
 `;
-
-Spinner.defaultProps = {
-  size: 'sm',
-};
-
-Spinner.propTypes = {
-  size: PropTypes.string,
-};
 
 export default Spinner;

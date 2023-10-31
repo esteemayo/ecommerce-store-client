@@ -942,3 +942,7 @@ export interface OverlayProps {
 export interface FormatPriceProps {
   value: number;
 }
+
+export interface SpinnerProps {
+  size?: string;
+}
