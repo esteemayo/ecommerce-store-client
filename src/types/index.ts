@@ -342,6 +342,10 @@ export interface HeaderProps {
   title: string;
 }
 
+export interface SidebarHeadingProps {
+  title: string;
+}
+
 type Product = {
   id: number;
   images: string[];
