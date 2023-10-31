@@ -3,9 +3,11 @@
 import styled from 'styled-components';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import PropTypes from 'prop-types';
+import { FC } from 'react';
 
-const MenuItem = ({ url, icon, label }) => {
+import { SubmenuMenuItemProps } from '@/types';
+
+const MenuItem: FC<SubmenuMenuItemProps> = ({ url, icon, label }) => {
   return (
     <ListItem>
       <Link href={url} passHref>
@@ -15,7 +17,7 @@ const MenuItem = ({ url, icon, label }) => {
       </Link>
     </ListItem>
   );
-}
+};
 
 const ListItem = styled.li`
   font-size: 1.5rem;
@@ -53,11 +55,5 @@ const ListItem = styled.li`
     outline-color: #f5f5f5;
   }
 `;
-
-MenuItem.propTypes = {
-  url: PropTypes.string.isRequired,
-  icon: PropTypes.object.isRequired,
-  label: PropTypes.string.isRequired,
-};
 
 export default MenuItem;

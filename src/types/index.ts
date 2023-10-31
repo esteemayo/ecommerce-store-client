@@ -366,6 +366,12 @@ export interface SubmenuHeadingProps {
   title: string;
 }
 
+export interface SubmenuMenuItemProps {
+  url: string;
+  icon: IconDefinition;
+  label: string;
+}
+
 type Product = {
   id: number;
   images: string[];
