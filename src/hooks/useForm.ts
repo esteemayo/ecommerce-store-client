@@ -15,12 +15,13 @@ export const useForm = (
     errors && setErrors({});
   }, [errors, initialState, onClose]);
 
-  const handleChange: ChangeEventHandler<
-    HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
-  > = useCallback(({ target: input }) => {
-    const { name, value } = input;
-    setFormData((prev) => ({ ...prev, [name]: value }));
-  }, []);
+  const handleChange: ChangeEventHandler<HTMLInputElement> = useCallback(
+    ({ target: input }) => {
+      const { name, value } = input;
+      setFormData((prev) => ({ ...prev, [name]: value }));
+    },
+    []
+  );
 
   const handleSubmit = useCallback(
     (e: React.FormEvent<HTMLFormElement>) => {
