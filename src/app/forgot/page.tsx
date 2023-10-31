@@ -55,6 +55,7 @@ const Forgot = () => {
             type='email'
             name='email'
             label='Email'
+            value={email}
             placeholder='Enter email address'
             onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
               setEmail(e.target.value)
