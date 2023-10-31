@@ -1,7 +1,10 @@
 import styled from 'styled-components';
 import { FC } from 'react';
 
-import { UploadProgressProps } from '@/types';
+interface UploadProgressProps {
+  type?: boolean;
+  percentage: number;
+}
 
 interface ISpan {
   type?: boolean;
