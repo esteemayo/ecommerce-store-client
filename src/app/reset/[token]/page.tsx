@@ -9,18 +9,23 @@ import Heading from '@/components/form/Heading';
 
 import { useForm } from '@/hooks/useForm';
 
+interface FormData {
+  password: string;
+  confirmPassword: string;
+}
+
 interface IErrors {
   password?: string;
   confirmPassword?: string;
 }
 
-const initialState = {
+const initialState: FormData = {
   password: '',
   confirmPassword: '',
 };
 
 const ResetPassword = () => {
-  const validateForm = (data) => {
+  const validateForm = (data: FormData) => {
     const tempErrors: IErrors = {};
     const { password, confirmPassword } = data;
 
