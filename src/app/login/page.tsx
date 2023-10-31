@@ -19,6 +19,16 @@ import { useForm } from '@/hooks/useForm';
 
 import { getFromStorage, rememberKey, setToStorage, userKey } from '@/utils';
 
+interface FormData {
+  username: string;
+  password: string;
+}
+
+interface IErrors {
+  username?: string;
+  password?: string;
+}
+
 const initialState = {
   username: '',
   password: '',
@@ -27,8 +37,8 @@ const initialState = {
 const Login = () => {
   const [rememberMe, setRememberMe] = useState(false);
 
-  const validateForm = (data) => {
-    const tempErrors = {};
+  const validateForm = (data: FormData) => {
+    const tempErrors: IErrors = {};
     const { password, username } = data;
 
     if (username.trim() === '') {
