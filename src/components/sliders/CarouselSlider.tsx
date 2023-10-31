@@ -12,6 +12,18 @@ import { useCallback, useEffect, useState } from 'react';
 
 import { sliderItems } from '@/data';
 
+interface IType {
+  type: string;
+}
+
+interface IDirection {
+  direction: string;
+}
+
+interface IActive {
+  active: boolean;
+}
+
 const CarouselSlider = () => {
   const [slideNumber, setSlideNumber] = useState(0);
 
@@ -113,7 +125,7 @@ const Wrapper = styled.div`
   overflow: hidden;
 `;
 
-const Article = styled.article`
+const Article = styled.article<IType>`
   position: absolute;
   top: 0;
   left: 0;
@@ -299,7 +311,7 @@ const Button = styled.button`
   }
 `;
 
-const ArrowButton = styled.button`
+const ArrowButton = styled.button<IDirection>`
   position: absolute;
   top: 50%;
   left: ${({ direction }) => direction === 'left' && '1rem'};
@@ -363,7 +375,7 @@ const ActiveSlideContainer = styled.div`
   }
 `;
 
-const ActiveSlideButton = styled.button`
+const ActiveSlideButton = styled.button<IActive>`
   border: none;
   width: ${({ active }) => (active ? '1.5rem' : '1rem')};
   height: ${({ active }) => (active ? '1.5rem' : '1rem')};
