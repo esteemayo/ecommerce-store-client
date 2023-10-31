@@ -2,7 +2,11 @@ import { create } from 'zustand';
 import { devtools } from 'zustand/middleware';
 import { produce } from 'immer';
 
-import { PaymentModalStore } from '@/types';
+interface PaymentModalStore {
+  isOpen: boolean;
+  onOpen(): void;
+  onClose(): void;
+}
 
 const usePaymentModal = create<PaymentModalStore>()(
   devtools((set) => ({
