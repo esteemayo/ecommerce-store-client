@@ -8,6 +8,14 @@ import MenuItem from './MenuItem';
 
 import { useSubmenu } from '@/hooks/useSubmenu';
 
+interface IContainer {
+  type: string;
+}
+
+interface IColumn {
+  columns: string;
+}
+
 const Submenu = () => {
   const location = useSubmenu((state) => state.location);
   const isOpen = useSubmenu((state) => state.isOpen);
@@ -22,7 +30,7 @@ const Submenu = () => {
 
   useEffect(() => {
     setColumns('col-2');
-    const submenu = containerRef.current;
+    const submenu: any = containerRef.current;
     const { center, bottom } = location;
 
     submenu.style.left = `${center}px`;
@@ -51,9 +59,9 @@ const Submenu = () => {
       </ListContainer>
     </Container>
   );
-}
+};
 
-const Container = styled.aside`
+const Container = styled.aside<IContainer>`
   padding: 2rem;
   background-color: ${({ theme }) => theme.bgRevs};
   border-radius: 1rem;
@@ -61,7 +69,7 @@ const Container = styled.aside`
   left: 50%;
   top: 5rem;
   transform: translateX(-50%);
-  display: ${({ type }) => type === 'show' ? 'block' : 'none'};
+  display: ${({ type }) => (type === 'show' ? 'block' : 'none')};
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   box-shadow: ${({ theme }) => theme.boxSub};
   z-index: 3000;
@@ -81,7 +89,7 @@ const Container = styled.aside`
   }
 `;
 
-const ListContainer = styled.ul`
+const ListContainer = styled.ul<IColumn>`
   list-style: none;
   padding: 2rem 0;
   display: flex;
