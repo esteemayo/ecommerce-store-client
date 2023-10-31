@@ -3,11 +3,12 @@
 import styled from 'styled-components';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import PropTypes from 'prop-types';
+import { FC } from 'react';
 
+import { SidebarMenuItemProps } from '@/types';
 import { useSidebar } from '@/hooks/useSidebar';
 
-const SidebarMenuItem = ({ url, icon, label }) => {
+const SidebarMenuItem: FC<SidebarMenuItemProps> = ({ url, icon, label }) => {
   const onClose = useSidebar((state) => state.onClose);
 
   return (
@@ -19,7 +20,7 @@ const SidebarMenuItem = ({ url, icon, label }) => {
       </Link>
     </ListItem>
   );
-}
+};
 
 const ListItem = styled.li`
   font-size: 1.4rem;
@@ -58,11 +59,5 @@ const ListItem = styled.li`
     }
   }
 `;
-
-SidebarMenuItem.propTypes = {
-  url: PropTypes.string.isRequired,
-  icon: PropTypes.object.isRequired,
-  label: PropTypes.string.isRequired,
-};
 
 export default SidebarMenuItem;

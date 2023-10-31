@@ -45,9 +45,9 @@ export type NavLink = {
 }[];
 
 type Link = {
-  url?: string;
-  icon?: IconDefinition;
-  label?: string;
+  url: string;
+  icon: IconDefinition;
+  label: string;
 }[];
 
 export type Sublink = {
@@ -344,6 +344,12 @@ export interface HeaderProps {
 
 export interface SidebarMenuProps {
   items: Sublink;
+}
+
+export interface SidebarMenuItemProps {
+  url: string;
+  icon: IconDefinition;
+  label: string;
 }
 
 export interface SidebarHeadingProps {
