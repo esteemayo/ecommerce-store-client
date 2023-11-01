@@ -15,8 +15,10 @@ import ProductButton from '../products/ProductButton';
 import { useCart } from '@/hooks/useCart';
 import { useDarkMode } from '@/hooks/useDarkMode';
 
-import Alert from '../Alert';
 import { CartModalProps } from '@/types';
+import { useCartStore } from '@/hooks/useCartStore';
+
+import Alert from '../Alert';
 
 interface IMode {
   mode: string;
@@ -33,6 +35,8 @@ const CartModal: FC<CartModalProps> = ({
   onSelect,
 }) => {
   const mode = useDarkMode((state) => state.mode);
+  const cart = useCartStore((state) => state.cart);
+
   const [showModal, setShowModal] = useState(isOpen);
 
   const {
@@ -80,6 +84,11 @@ const CartModal: FC<CartModalProps> = ({
   const modeValue = useMemo(() => {
     return mode.toString();
   }, [mode]);
+
+  const inCart = useMemo(() => {
+    const inCart = cart.find((item) => item.id === product?.id);
+    return !!inCart;
+  }, [cart, product]);
 
   useEffect(() => {
     setShowModal(isOpen);
@@ -139,6 +148,7 @@ const CartModal: FC<CartModalProps> = ({
             <ProductButton
               small
               actionLabel='Add to cart'
+              inCart={inCart}
               onAction={handleClick}
             />
             {alert && (
