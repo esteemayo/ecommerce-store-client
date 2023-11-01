@@ -2,13 +2,12 @@ import { create } from 'zustand';
 import { devtools, persist } from 'zustand/middleware';
 import { produce } from 'immer';
 
-import { cartItems } from '@/data';
 import { CartStore } from '@/types';
 
 export const useCartStore = create<CartStore>()(
   persist(
     devtools((set) => ({
-      cart: cartItems,
+      cart: [],
       wishlists: [],
       wished: [],
       qty: 0,
