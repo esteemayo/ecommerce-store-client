@@ -71,6 +71,14 @@ export type SliderItem = {
   desc: string;
 }[];
 
+export interface SliderItemProps {
+  url: string;
+  img: string;
+  desc: string;
+  title: string;
+  position: string;
+}
+
 type LinkFooter = {
   id: number;
   url: string;
