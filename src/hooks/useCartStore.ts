@@ -104,7 +104,10 @@ export const useCartStore = create<CartStore>()(
                   if (payload.type === 'inc') {
                     return {
                       ...cartItem,
-                      quantity: cartItem.quantity + 1,
+                      quantity:
+                        cartItem.quantity < 10
+                          ? cartItem.quantity + 1
+                          : cartItem.quantity,
                     };
                   }
 
