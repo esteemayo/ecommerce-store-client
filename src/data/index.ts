@@ -373,31 +373,31 @@ export const footerMenus: FooterMenu = [
 export const social: Social = [
   {
     id: 1,
-    url: '#',
+    url: '/',
     icon: FaFacebookF,
     color: '3b5999',
   },
   {
     id: 2,
-    url: '#',
+    url: '/',
     icon: TwitterIcon,
     color: '55acee',
   },
   {
     id: 3,
-    url: '#',
+    url: '/',
     icon: InstagramIcon,
     color: 'e4405f',
   },
   {
     id: 4,
-    url: '#',
+    url: '/',
     icon: LinkedInIcon,
     color: '0a66c2',
   },
   {
     id: 5,
-    url: '#',
+    url: '/',
     icon: PinterestIcon,
     color: 'e60023',
   },
