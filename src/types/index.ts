@@ -339,6 +339,7 @@ export interface CardInfoProps {
   initialPrice: number;
   priceLabel: number;
   reviewLabel: string;
+  inCart: boolean;
   wished: [];
   onOpen(): void;
 }
@@ -361,6 +362,7 @@ export interface CardPriceProps {
 }
 
 export interface CardButtonProps {
+  inCart: boolean;
   onClick(): void;
 }
 
