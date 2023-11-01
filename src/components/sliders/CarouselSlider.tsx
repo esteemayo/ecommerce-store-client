@@ -67,7 +67,14 @@ const CarouselSlider = () => {
             position = 'lastSlide';
           }
 
-          return <SliderItem key={item.id} position={position} {...item} />;
+          return (
+            <SliderItem
+              {...item}
+              key={item.id}
+              index={index}
+              position={position}
+            />
+          );
         })}
         <ArrowButton type='button' direction='left' onClick={handlePrev}>
           <FontAwesomeIcon icon={faChevronLeft} />
