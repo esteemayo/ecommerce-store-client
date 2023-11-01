@@ -69,6 +69,12 @@ const Button = styled.button`
     font-size: 1.3rem;
   }
 
+  &:disabled {
+    background-color: ${({ theme }) => theme.bgAddBtnDis};
+    color: #999;
+    cursor: default;
+  }
+
   svg {
     font-size: inherit;
     fill: currentColor;
