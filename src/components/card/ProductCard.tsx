@@ -10,6 +10,7 @@ import { ProductCardProps } from '@/types';
 import { useCartStore } from '@/hooks/useCartStore';
 
 const ProductCard: FC<ProductCardProps> = ({ product, onOpen, onSelect }) => {
+  const cart = useCartStore((state) => state.cart);
   const wished = useCartStore((state) => state.wished);
 
   const handleOpen = useCallback(() => {
@@ -37,6 +38,11 @@ const ProductCard: FC<ProductCardProps> = ({ product, onOpen, onSelect }) => {
     return Math.round(product.price);
   }, [product]);
 
+  const inCart = useMemo(() => {
+    const inCart = cart.find((item) => item.id === product.id);
+    return !!inCart;
+  }, [cart, product]);
+
   return (
     <Container>
       <CardImage src={product.images?.[0]} />
@@ -46,6 +52,7 @@ const ProductCard: FC<ProductCardProps> = ({ product, onOpen, onSelect }) => {
         initialPrice={initialPrice}
         priceLabel={priceLabel}
         reviewLabel={reviewLabel}
+        inCart={inCart}
         wished={wished}
         onOpen={handleOpen}
       />

@@ -15,6 +15,7 @@ const CardInfo: FC<CardInfoProps> = ({
   initialPrice,
   priceLabel,
   reviewLabel,
+  inCart,
   wished,
   onOpen,
 }) => {
@@ -31,7 +32,7 @@ const CardInfo: FC<CardInfoProps> = ({
         initialPrice={initialPrice}
         priceLabel={priceLabel}
       />
-      <CardButton onClick={onOpen} />
+      <CardButton inCart={inCart} onClick={onOpen} />
       <CardButtons product={product} wished={wished} productId={product.id} />
     </Container>
   );
