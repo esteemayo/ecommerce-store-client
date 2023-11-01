@@ -130,13 +130,6 @@ const ImageContainer = styled.div`
   position: relative;
 `;
 
-const StyledImage = styled(Image)`
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
-`;
-
 const ArrowButton = styled.button<IDirection>`
   position: absolute;
   top: 50%;
