@@ -38,7 +38,7 @@ const Cart = () => {
     setIsOpen(false);
   }, []);
 
-  let bodyContent;
+  let bodyContent: JSX.Element;
 
   if (cart.length < 1) {
     bodyContent = (
