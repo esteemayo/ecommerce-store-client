@@ -6,9 +6,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { FC, useCallback, useRef, useState } from 'react';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
-import useImageModal from '@/hooks/useImageModal';
-import ProductImageModal from '../modals/ProductImageModal';
 import { ProductImageProps } from '@/types';
+import useImageModal from '@/hooks/useImageModal';
+
+import ProductImageModal from '../modals/ProductImageModal';
 
 interface IBtn {
   direction: string;
