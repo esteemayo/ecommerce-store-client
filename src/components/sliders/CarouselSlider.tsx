@@ -12,10 +12,6 @@ import { useCallback, useEffect, useState } from 'react';
 import { sliderItems } from '@/data';
 import SliderItem from './SliderItem';
 
-interface IType {
-  type: string;
-}
-
 interface IDirection {
   direction: string;
 }
