@@ -66,6 +66,10 @@ const Button = styled.button`
     opacity: 0.75;
     cursor: default;
   }
+
+  &:disabled:hover {
+    background-position: 0%;
+  }
 `;
 
 export default CardButton;
