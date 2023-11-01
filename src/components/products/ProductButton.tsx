@@ -75,6 +75,10 @@ const Button = styled.button<IBtn>`
     opacity: 0.75;
     cursor: default;
   }
+
+  &:disabled::hover {
+    background-position: 0%;
+  }
 `;
 
 export default ProductButton;
