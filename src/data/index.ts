@@ -71,17 +71,17 @@ export const sublinks: Sublink = [
     page: 'products',
     links: [
       {
-        url: '#',
+        url: '/',
         icon: faLayerGroup,
         label: 'featured',
       },
       {
-        url: '#',
+        url: '/',
         icon: faShirt,
         label: 'clothing',
       },
       {
-        url: '#',
+        url: '/',
         icon: faBagShopping,
         label: 'accessories',
       },
@@ -91,22 +91,22 @@ export const sublinks: Sublink = [
     page: 'sells',
     links: [
       {
-        url: '#',
+        url: '/',
         icon: faShop,
         label: 'sell everywhere',
       },
       {
-        url: '#',
+        url: '/',
         icon: faStore,
         label: 'online store',
       },
       {
-        url: '#',
+        url: '/',
         icon: faCreditCard,
         label: 'point of sale',
       },
       {
-        url: '#',
+        url: '/',
         icon: faDisplay,
         label: 'ecommerce',
       },
@@ -116,27 +116,27 @@ export const sublinks: Sublink = [
     page: 'manage',
     links: [
       {
-        url: '#',
+        url: '/',
         icon: faPeopleRoof,
         label: 'manage complexity',
       },
       {
-        url: '#',
+        url: '/',
         icon: faBolt,
         label: 'automation',
       },
       {
-        url: '#',
+        url: '/',
         icon: faTruckFast,
         label: 'shipping',
       },
       {
-        url: '#',
+        url: '/',
         icon: faMoneyBills,
         label: 'payments',
       },
       {
-        url: '#',
+        url: '/',
         icon: faBook,
         label: 'notebooks',
       },
@@ -146,22 +146,22 @@ export const sublinks: Sublink = [
     page: 'integrate',
     links: [
       {
-        url: '#',
+        url: '/',
         icon: faLaptop,
         label: 'integrate systems',
       },
       {
-        url: '#',
+        url: '/',
         icon: faStore,
         label: 'automation',
       },
       {
-        url: '#',
+        url: '/',
         icon: faCartShopping,
         label: 'headless commerce',
       },
       {
-        url: '#',
+        url: '/',
         icon: faHandshake,
         label: 'partners',
       },
@@ -171,22 +171,22 @@ export const sublinks: Sublink = [
     page: 'resources',
     links: [
       {
-        url: '#',
+        url: '/',
         icon: faPhone,
         label: 'support center',
       },
       {
-        url: '#',
+        url: '/',
         icon: faBlog,
         label: 'blog',
       },
       {
-        url: '#',
+        url: '/',
         icon: faSitemap,
         label: 'support plans',
       },
       {
-        url: '#',
+        url: '/',
         icon: faBookOpen,
         label: 'customer stories',
       },
@@ -243,37 +243,37 @@ export const footerMenus: FooterMenu = [
       },
       {
         id: 2,
-        url: '#',
+        url: '/',
         text: 'About us',
       },
       {
         id: 3,
-        url: '#',
+        url: '/',
         text: 'Become a customer',
       },
       {
         id: 4,
-        url: '#',
+        url: '/',
         text: 'Return policy',
       },
       {
         id: 5,
-        url: '#',
+        url: '/',
         text: 'Contact us',
       },
       {
         id: 6,
-        url: '#',
+        url: '/',
         text: 'Status',
       },
       {
         id: 7,
-        url: '#',
+        url: '/',
         text: 'Pricing',
       },
       {
         id: 8,
-        url: '#',
+        url: '/',
         text: 'Partners and factories',
       },
     ],
@@ -283,42 +283,42 @@ export const footerMenus: FooterMenu = [
     links: [
       {
         id: 1,
-        url: '#',
+        url: '/',
         text: 'Developer API',
       },
       {
         id: 2,
-        url: '#',
+        url: '/',
         text: 'Tools',
       },
       {
         id: 3,
-        url: '#',
+        url: '/',
         text: 'Blog',
       },
       {
         id: 4,
-        url: '#',
+        url: '/',
         text: 'Gift cards',
       },
       {
         id: 5,
-        url: '#',
+        url: '/',
         text: 'Rewards',
       },
       {
         id: 6,
-        url: '#',
+        url: '/',
         text: 'Affiliate',
       },
       {
         id: 7,
-        url: '#',
+        url: '/',
         text: 'Work with us',
       },
       {
         id: 8,
-        url: '#',
+        url: '/',
         text: 'Our Stores',
       },
     ],
@@ -328,42 +328,42 @@ export const footerMenus: FooterMenu = [
     links: [
       {
         id: 1,
-        url: '#',
+        url: '/',
         text: 'Shipping Information',
       },
       {
         id: 2,
-        url: '#',
+        url: '/',
         text: 'Returns & Exchange',
       },
       {
         id: 3,
-        url: '#',
+        url: '/',
         text: 'Coupon codes',
       },
       {
         id: 4,
-        url: '#',
+        url: '/',
         text: 'F.A.Q.',
       },
       {
         id: 5,
-        url: '#',
+        url: '/',
         text: 'Terms & condition',
       },
       {
         id: 6,
-        url: '#',
+        url: '/',
         text: 'Refund Policy',
       },
       {
         id: 7,
-        url: '#',
+        url: '/',
         text: 'Privacy Policy',
       },
       {
         id: 8,
-        url: '#',
+        url: '/',
         text: 'Accessibility statement',
       },
     ],
@@ -406,17 +406,17 @@ export const social: Social = [
 export const footerLinks: FooterLink = [
   {
     id: 1,
-    url: '#',
+    url: '/',
     text: 'Terms of purchase',
   },
   {
     id: 2,
-    url: '#',
+    url: '/',
     text: 'Security and privacy',
   },
   {
     id: 3,
-    url: '#',
+    url: '/',
     text: 'Newsletter',
   },
 ];
@@ -425,7 +425,7 @@ export const storeProducts: StoreProduct = [
   {
     id: 1,
     name: 'The Stanley Rain Jacket in Black',
-    desc: 'Let the rain fall, you\'ve come prepared. Introducing The Stanley, our newest Smart Layer rain jacket. Made with recycled polyester, it features a regular fit and a waist length. This coat has a 10k/10k water resistant and breathability rating, protecting you from heavy rainfalls while keeping your body temperature on point. It achieves this rating because of its 2-layer fabric with different capabilities Better yet, this coat has an extra layer of protection made with a PFC-free C0 (carbon-free) DWR (Durable Water Repellent) with an 80/10 rating that ensures efficiency even after multiple washes. 2-way mechanical stretch fabric. Hand pockets with recycled zip closure. Recycled zip closure at the centre front. Adjustable cord locks at the hood and hem for the perfect fit. 2-tone drawcord. Inside chest pocket. Inside mesh storage pocket. Inside pocket is made with shell fabric. Flag label at side seam. Small logo branding at the chest. Machine washable. Compatible with all Smart Layer base jackets.',
+    desc: "Let the rain fall, you've come prepared. Introducing The Stanley, our newest Smart Layer rain jacket. Made with recycled polyester, it features a regular fit and a waist length. This coat has a 10k/10k water resistant and breathability rating, protecting you from heavy rainfalls while keeping your body temperature on point. It achieves this rating because of its 2-layer fabric with different capabilities Better yet, this coat has an extra layer of protection made with a PFC-free C0 (carbon-free) DWR (Durable Water Repellent) with an 80/10 rating that ensures efficiency even after multiple washes. 2-way mechanical stretch fabric. Hand pockets with recycled zip closure. Recycled zip closure at the centre front. Adjustable cord locks at the hood and hem for the perfect fit. 2-tone drawcord. Inside chest pocket. Inside mesh storage pocket. Inside pocket is made with shell fabric. Flag label at side seam. Small logo branding at the chest. Machine washable. Compatible with all Smart Layer base jackets.",
     price: 234,
     priceDiscount: 22,
     numberInStock: 1200,
@@ -453,7 +453,7 @@ export const storeProducts: StoreProduct = [
   {
     id: 2,
     name: 'Sweat Shirt',
-    desc: 'Let the rain fall, you\'ve come prepared. Introducing The Stanley, our newest Smart Layer rain jacket. Made with recycled polyester, it features a regular fit and a waist length. This coat has a 10k/10k water resistant and breathability rating, protecting you from heavy rainfalls while keeping your body temperature on point. It achieves this rating because of its 2-layer fabric with different capabilities Better yet, this coat has an extra layer of protection made with a PFC-free C0 (carbon-free) DWR (Durable Water Repellent) with an 80/10 rating that ensures efficiency even after multiple washes. 2-way mechanical stretch fabric. Hand pockets with recycled zip closure. Recycled zip closure at the centre front. Adjustable cord locks at the hood and hem for the perfect fit. 2-tone drawcord. Inside chest pocket. Inside mesh storage pocket. Inside pocket is made with shell fabric. Flag label at side seam. Small logo branding at the chest. Machine washable. Compatible with all Smart Layer base jackets.',
+    desc: "Let the rain fall, you've come prepared. Introducing The Stanley, our newest Smart Layer rain jacket. Made with recycled polyester, it features a regular fit and a waist length. This coat has a 10k/10k water resistant and breathability rating, protecting you from heavy rainfalls while keeping your body temperature on point. It achieves this rating because of its 2-layer fabric with different capabilities Better yet, this coat has an extra layer of protection made with a PFC-free C0 (carbon-free) DWR (Durable Water Repellent) with an 80/10 rating that ensures efficiency even after multiple washes. 2-way mechanical stretch fabric. Hand pockets with recycled zip closure. Recycled zip closure at the centre front. Adjustable cord locks at the hood and hem for the perfect fit. 2-tone drawcord. Inside chest pocket. Inside mesh storage pocket. Inside pocket is made with shell fabric. Flag label at side seam. Small logo branding at the chest. Machine washable. Compatible with all Smart Layer base jackets.",
     price: 220.5,
     priceDiscount: 10,
     numberInStock: 1000,
@@ -481,7 +481,7 @@ export const storeProducts: StoreProduct = [
   {
     id: 3,
     name: 'iPhone 14',
-    desc: 'Let the rain fall, you\'ve come prepared. Introducing The Stanley, our newest Smart Layer rain jacket. Made with recycled polyester, it features a regular fit and a waist length. This coat has a 10k/10k water resistant and breathability rating, protecting you from heavy rainfalls while keeping your body temperature on point. It achieves this rating because of its 2-layer fabric with different capabilities Better yet, this coat has an extra layer of protection made with a PFC-free C0 (carbon-free) DWR (Durable Water Repellent) with an 80/10 rating that ensures efficiency even after multiple washes. 2-way mechanical stretch fabric. Hand pockets with recycled zip closure. Recycled zip closure at the centre front. Adjustable cord locks at the hood and hem for the perfect fit. 2-tone drawcord. Inside chest pocket. Inside mesh storage pocket. Inside pocket is made with shell fabric. Flag label at side seam. Small logo branding at the chest. Machine washable. Compatible with all Smart Layer base jackets.',
+    desc: "Let the rain fall, you've come prepared. Introducing The Stanley, our newest Smart Layer rain jacket. Made with recycled polyester, it features a regular fit and a waist length. This coat has a 10k/10k water resistant and breathability rating, protecting you from heavy rainfalls while keeping your body temperature on point. It achieves this rating because of its 2-layer fabric with different capabilities Better yet, this coat has an extra layer of protection made with a PFC-free C0 (carbon-free) DWR (Durable Water Repellent) with an 80/10 rating that ensures efficiency even after multiple washes. 2-way mechanical stretch fabric. Hand pockets with recycled zip closure. Recycled zip closure at the centre front. Adjustable cord locks at the hood and hem for the perfect fit. 2-tone drawcord. Inside chest pocket. Inside mesh storage pocket. Inside pocket is made with shell fabric. Flag label at side seam. Small logo branding at the chest. Machine washable. Compatible with all Smart Layer base jackets.",
     price: 665,
     priceDiscount: 5,
     numberInStock: 1000,
@@ -509,7 +509,7 @@ export const storeProducts: StoreProduct = [
   {
     id: 4,
     name: 'Samsumg Galaxy Note 5',
-    desc: 'Let the rain fall, you\'ve come prepared. Introducing The Stanley, our newest Smart Layer rain jacket. Made with recycled polyester, it features a regular fit and a waist length. This coat has a 10k/10k water resistant and breathability rating, protecting you from heavy rainfalls while keeping your body temperature on point. It achieves this rating because of its 2-layer fabric with different capabilities Better yet, this coat has an extra layer of protection made with a PFC-free C0 (carbon-free) DWR (Durable Water Repellent) with an 80/10 rating that ensures efficiency even after multiple washes. 2-way mechanical stretch fabric. Hand pockets with recycled zip closure. Recycled zip closure at the centre front. Adjustable cord locks at the hood and hem for the perfect fit. 2-tone drawcord. Inside chest pocket. Inside mesh storage pocket. Inside pocket is made with shell fabric. Flag label at side seam. Small logo branding at the chest. Machine washable. Compatible with all Smart Layer base jackets.',
+    desc: "Let the rain fall, you've come prepared. Introducing The Stanley, our newest Smart Layer rain jacket. Made with recycled polyester, it features a regular fit and a waist length. This coat has a 10k/10k water resistant and breathability rating, protecting you from heavy rainfalls while keeping your body temperature on point. It achieves this rating because of its 2-layer fabric with different capabilities Better yet, this coat has an extra layer of protection made with a PFC-free C0 (carbon-free) DWR (Durable Water Repellent) with an 80/10 rating that ensures efficiency even after multiple washes. 2-way mechanical stretch fabric. Hand pockets with recycled zip closure. Recycled zip closure at the centre front. Adjustable cord locks at the hood and hem for the perfect fit. 2-tone drawcord. Inside chest pocket. Inside mesh storage pocket. Inside pocket is made with shell fabric. Flag label at side seam. Small logo branding at the chest. Machine washable. Compatible with all Smart Layer base jackets.",
     price: 279,
     priceDiscount: 7,
     numberInStock: 500,
@@ -537,7 +537,7 @@ export const storeProducts: StoreProduct = [
   {
     id: 5,
     name: 'Dennim Jean',
-    desc: 'Let the rain fall, you\'ve come prepared. Introducing The Stanley, our newest Smart Layer rain jacket. Made with recycled polyester, it features a regular fit and a waist length. This coat has a 10k/10k water resistant and breathability rating, protecting you from heavy rainfalls while keeping your body temperature on point. It achieves this rating because of its 2-layer fabric with different capabilities Better yet, this coat has an extra layer of protection made with a PFC-free C0 (carbon-free) DWR (Durable Water Repellent) with an 80/10 rating that ensures efficiency even after multiple washes. 2-way mechanical stretch fabric. Hand pockets with recycled zip closure. Recycled zip closure at the centre front. Adjustable cord locks at the hood and hem for the perfect fit. 2-tone drawcord. Inside chest pocket. Inside mesh storage pocket. Inside pocket is made with shell fabric. Flag label at side seam. Small logo branding at the chest. Machine washable. Compatible with all Smart Layer base jackets.',
+    desc: "Let the rain fall, you've come prepared. Introducing The Stanley, our newest Smart Layer rain jacket. Made with recycled polyester, it features a regular fit and a waist length. This coat has a 10k/10k water resistant and breathability rating, protecting you from heavy rainfalls while keeping your body temperature on point. It achieves this rating because of its 2-layer fabric with different capabilities Better yet, this coat has an extra layer of protection made with a PFC-free C0 (carbon-free) DWR (Durable Water Repellent) with an 80/10 rating that ensures efficiency even after multiple washes. 2-way mechanical stretch fabric. Hand pockets with recycled zip closure. Recycled zip closure at the centre front. Adjustable cord locks at the hood and hem for the perfect fit. 2-tone drawcord. Inside chest pocket. Inside mesh storage pocket. Inside pocket is made with shell fabric. Flag label at side seam. Small logo branding at the chest. Machine washable. Compatible with all Smart Layer base jackets.",
     price: 170,
     priceDiscount: 15,
     numberInStock: 500,
@@ -565,7 +565,7 @@ export const storeProducts: StoreProduct = [
   {
     id: 6,
     name: 'Agbada',
-    desc: 'Let the rain fall, you\'ve come prepared. Introducing The Stanley, our newest Smart Layer rain jacket. Made with recycled polyester, it features a regular fit and a waist length. This coat has a 10k/10k water resistant and breathability rating, protecting you from heavy rainfalls while keeping your body temperature on point. It achieves this rating because of its 2-layer fabric with different capabilities Better yet, this coat has an extra layer of protection made with a PFC-free C0 (carbon-free) DWR (Durable Water Repellent) with an 80/10 rating that ensures efficiency even after multiple washes. 2-way mechanical stretch fabric. Hand pockets with recycled zip closure. Recycled zip closure at the centre front. Adjustable cord locks at the hood and hem for the perfect fit. 2-tone drawcord. Inside chest pocket. Inside mesh storage pocket. Inside pocket is made with shell fabric. Flag label at side seam. Small logo branding at the chest. Machine washable. Compatible with all Smart Layer base jackets.',
+    desc: "Let the rain fall, you've come prepared. Introducing The Stanley, our newest Smart Layer rain jacket. Made with recycled polyester, it features a regular fit and a waist length. This coat has a 10k/10k water resistant and breathability rating, protecting you from heavy rainfalls while keeping your body temperature on point. It achieves this rating because of its 2-layer fabric with different capabilities Better yet, this coat has an extra layer of protection made with a PFC-free C0 (carbon-free) DWR (Durable Water Repellent) with an 80/10 rating that ensures efficiency even after multiple washes. 2-way mechanical stretch fabric. Hand pockets with recycled zip closure. Recycled zip closure at the centre front. Adjustable cord locks at the hood and hem for the perfect fit. 2-tone drawcord. Inside chest pocket. Inside mesh storage pocket. Inside pocket is made with shell fabric. Flag label at side seam. Small logo branding at the chest. Machine washable. Compatible with all Smart Layer base jackets.",
     price: 96,
     priceDiscount: 20,
     numberInStock: 25,
@@ -593,7 +593,7 @@ export const storeProducts: StoreProduct = [
   {
     id: 7,
     name: 'Adiddas Thick T-Shirt',
-    desc: 'Let the rain fall, you\'ve come prepared. Introducing The Stanley, our newest Smart Layer rain jacket. Made with recycled polyester, it features a regular fit and a waist length. This coat has a 10k/10k water resistant and breathability rating, protecting you from heavy rainfalls while keeping your body temperature on point. It achieves this rating because of its 2-layer fabric with different capabilities Better yet, this coat has an extra layer of protection made with a PFC-free C0 (carbon-free) DWR (Durable Water Repellent) with an 80/10 rating that ensures efficiency even after multiple washes. 2-way mechanical stretch fabric. Hand pockets with recycled zip closure. Recycled zip closure at the centre front. Adjustable cord locks at the hood and hem for the perfect fit. 2-tone drawcord. Inside chest pocket. Inside mesh storage pocket. Inside pocket is made with shell fabric. Flag label at side seam. Small logo branding at the chest. Machine washable. Compatible with all Smart Layer base jackets.',
+    desc: "Let the rain fall, you've come prepared. Introducing The Stanley, our newest Smart Layer rain jacket. Made with recycled polyester, it features a regular fit and a waist length. This coat has a 10k/10k water resistant and breathability rating, protecting you from heavy rainfalls while keeping your body temperature on point. It achieves this rating because of its 2-layer fabric with different capabilities Better yet, this coat has an extra layer of protection made with a PFC-free C0 (carbon-free) DWR (Durable Water Repellent) with an 80/10 rating that ensures efficiency even after multiple washes. 2-way mechanical stretch fabric. Hand pockets with recycled zip closure. Recycled zip closure at the centre front. Adjustable cord locks at the hood and hem for the perfect fit. 2-tone drawcord. Inside chest pocket. Inside mesh storage pocket. Inside pocket is made with shell fabric. Flag label at side seam. Small logo branding at the chest. Machine washable. Compatible with all Smart Layer base jackets.",
     price: 110.4,
     priceDiscount: 8,
     numberInStock: 70,
@@ -621,7 +621,7 @@ export const storeProducts: StoreProduct = [
   {
     id: 8,
     name: 'iPhone 13',
-    desc: 'Let the rain fall, you\'ve come prepared. Introducing The Stanley, our newest Smart Layer rain jacket. Made with recycled polyester, it features a regular fit and a waist length. This coat has a 10k/10k water resistant and breathability rating, protecting you from heavy rainfalls while keeping your body temperature on point. It achieves this rating because of its 2-layer fabric with different capabilities Better yet, this coat has an extra layer of protection made with a PFC-free C0 (carbon-free) DWR (Durable Water Repellent) with an 80/10 rating that ensures efficiency even after multiple washes. 2-way mechanical stretch fabric. Hand pockets with recycled zip closure. Recycled zip closure at the centre front. Adjustable cord locks at the hood and hem for the perfect fit. 2-tone drawcord. Inside chest pocket. Inside mesh storage pocket. Inside pocket is made with shell fabric. Flag label at side seam. Small logo branding at the chest. Machine washable. Compatible with all Smart Layer base jackets.',
+    desc: "Let the rain fall, you've come prepared. Introducing The Stanley, our newest Smart Layer rain jacket. Made with recycled polyester, it features a regular fit and a waist length. This coat has a 10k/10k water resistant and breathability rating, protecting you from heavy rainfalls while keeping your body temperature on point. It achieves this rating because of its 2-layer fabric with different capabilities Better yet, this coat has an extra layer of protection made with a PFC-free C0 (carbon-free) DWR (Durable Water Repellent) with an 80/10 rating that ensures efficiency even after multiple washes. 2-way mechanical stretch fabric. Hand pockets with recycled zip closure. Recycled zip closure at the centre front. Adjustable cord locks at the hood and hem for the perfect fit. 2-tone drawcord. Inside chest pocket. Inside mesh storage pocket. Inside pocket is made with shell fabric. Flag label at side seam. Small logo branding at the chest. Machine washable. Compatible with all Smart Layer base jackets.",
     price: 712.5,
     priceDiscount: 5,
     numberInStock: 1500,
@@ -649,7 +649,7 @@ export const storeProducts: StoreProduct = [
   {
     id: 9,
     name: 'Samsumg Galaxy 13',
-    desc: 'Let the rain fall, you\'ve come prepared. Introducing The Stanley, our newest Smart Layer rain jacket. Made with recycled polyester, it features a regular fit and a waist length. This coat has a 10k/10k water resistant and breathability rating, protecting you from heavy rainfalls while keeping your body temperature on point. It achieves this rating because of its 2-layer fabric with different capabilities Better yet, this coat has an extra layer of protection made with a PFC-free C0 (carbon-free) DWR (Durable Water Repellent) with an 80/10 rating that ensures efficiency even after multiple washes. 2-way mechanical stretch fabric. Hand pockets with recycled zip closure. Recycled zip closure at the centre front. Adjustable cord locks at the hood and hem for the perfect fit. 2-tone drawcord. Inside chest pocket. Inside mesh storage pocket. Inside pocket is made with shell fabric. Flag label at side seam. Small logo branding at the chest. Machine washable. Compatible with all Smart Layer base jackets.',
+    desc: "Let the rain fall, you've come prepared. Introducing The Stanley, our newest Smart Layer rain jacket. Made with recycled polyester, it features a regular fit and a waist length. This coat has a 10k/10k water resistant and breathability rating, protecting you from heavy rainfalls while keeping your body temperature on point. It achieves this rating because of its 2-layer fabric with different capabilities Better yet, this coat has an extra layer of protection made with a PFC-free C0 (carbon-free) DWR (Durable Water Repellent) with an 80/10 rating that ensures efficiency even after multiple washes. 2-way mechanical stretch fabric. Hand pockets with recycled zip closure. Recycled zip closure at the centre front. Adjustable cord locks at the hood and hem for the perfect fit. 2-tone drawcord. Inside chest pocket. Inside mesh storage pocket. Inside pocket is made with shell fabric. Flag label at side seam. Small logo branding at the chest. Machine washable. Compatible with all Smart Layer base jackets.",
     price: 240,
     priceDiscount: 20,
     numberInStock: 500,
@@ -677,7 +677,7 @@ export const storeProducts: StoreProduct = [
   {
     id: 10,
     name: 'Dennim Rain Jacket',
-    desc: 'Let the rain fall, you\'ve come prepared. Introducing The Stanley, our newest Smart Layer rain jacket. Made with recycled polyester, it features a regular fit and a waist length. This coat has a 10k/10k water resistant and breathability rating, protecting you from heavy rainfalls while keeping your body temperature on point. It achieves this rating because of its 2-layer fabric with different capabilities Better yet, this coat has an extra layer of protection made with a PFC-free C0 (carbon-free) DWR (Durable Water Repellent) with an 80/10 rating that ensures efficiency even after multiple washes. 2-way mechanical stretch fabric. Hand pockets with recycled zip closure. Recycled zip closure at the centre front. Adjustable cord locks at the hood and hem for the perfect fit. 2-tone drawcord. Inside chest pocket. Inside mesh storage pocket. Inside pocket is made with shell fabric. Flag label at side seam. Small logo branding at the chest. Machine washable. Compatible with all Smart Layer base jackets.',
+    desc: "Let the rain fall, you've come prepared. Introducing The Stanley, our newest Smart Layer rain jacket. Made with recycled polyester, it features a regular fit and a waist length. This coat has a 10k/10k water resistant and breathability rating, protecting you from heavy rainfalls while keeping your body temperature on point. It achieves this rating because of its 2-layer fabric with different capabilities Better yet, this coat has an extra layer of protection made with a PFC-free C0 (carbon-free) DWR (Durable Water Repellent) with an 80/10 rating that ensures efficiency even after multiple washes. 2-way mechanical stretch fabric. Hand pockets with recycled zip closure. Recycled zip closure at the centre front. Adjustable cord locks at the hood and hem for the perfect fit. 2-tone drawcord. Inside chest pocket. Inside mesh storage pocket. Inside pocket is made with shell fabric. Flag label at side seam. Small logo branding at the chest. Machine washable. Compatible with all Smart Layer base jackets.",
     price: 150,
     priceDiscount: 25,
     numberInStock: 500,
@@ -705,7 +705,7 @@ export const storeProducts: StoreProduct = [
   {
     id: 11,
     name: 'Native wears',
-    desc: 'Let the rain fall, you\'ve come prepared. Introducing The Stanley, our newest Smart Layer rain jacket. Made with recycled polyester, it features a regular fit and a waist length. This coat has a 10k/10k water resistant and breathability rating, protecting you from heavy rainfalls while keeping your body temperature on point. It achieves this rating because of its 2-layer fabric with different capabilities Better yet, this coat has an extra layer of protection made with a PFC-free C0 (carbon-free) DWR (Durable Water Repellent) with an 80/10 rating that ensures efficiency even after multiple washes. 2-way mechanical stretch fabric. Hand pockets with recycled zip closure. Recycled zip closure at the centre front. Adjustable cord locks at the hood and hem for the perfect fit. 2-tone drawcord. Inside chest pocket. Inside mesh storage pocket. Inside pocket is made with shell fabric. Flag label at side seam. Small logo branding at the chest. Machine washable. Compatible with all Smart Layer base jackets.',
+    desc: "Let the rain fall, you've come prepared. Introducing The Stanley, our newest Smart Layer rain jacket. Made with recycled polyester, it features a regular fit and a waist length. This coat has a 10k/10k water resistant and breathability rating, protecting you from heavy rainfalls while keeping your body temperature on point. It achieves this rating because of its 2-layer fabric with different capabilities Better yet, this coat has an extra layer of protection made with a PFC-free C0 (carbon-free) DWR (Durable Water Repellent) with an 80/10 rating that ensures efficiency even after multiple washes. 2-way mechanical stretch fabric. Hand pockets with recycled zip closure. Recycled zip closure at the centre front. Adjustable cord locks at the hood and hem for the perfect fit. 2-tone drawcord. Inside chest pocket. Inside mesh storage pocket. Inside pocket is made with shell fabric. Flag label at side seam. Small logo branding at the chest. Machine washable. Compatible with all Smart Layer base jackets.",
     price: 115.2,
     priceDiscount: 4,
     numberInStock: 25,
@@ -733,7 +733,7 @@ export const storeProducts: StoreProduct = [
   {
     id: 12,
     name: 'Nike T-shirt',
-    desc: 'Let the rain fall, you\'ve come prepared. Introducing The Stanley, our newest Smart Layer rain jacket. Made with recycled polyester, it features a regular fit and a waist length. This coat has a 10k/10k water resistant and breathability rating, protecting you from heavy rainfalls while keeping your body temperature on point. It achieves this rating because of its 2-layer fabric with different capabilities Better yet, this coat has an extra layer of protection made with a PFC-free C0 (carbon-free) DWR (Durable Water Repellent) with an 80/10 rating that ensures efficiency even after multiple washes. 2-way mechanical stretch fabric. Hand pockets with recycled zip closure. Recycled zip closure at the centre front. Adjustable cord locks at the hood and hem for the perfect fit. 2-tone drawcord. Inside chest pocket. Inside mesh storage pocket. Inside pocket is made with shell fabric. Flag label at side seam. Small logo branding at the chest. Machine washable. Compatible with all Smart Layer base jackets.',
+    desc: "Let the rain fall, you've come prepared. Introducing The Stanley, our newest Smart Layer rain jacket. Made with recycled polyester, it features a regular fit and a waist length. This coat has a 10k/10k water resistant and breathability rating, protecting you from heavy rainfalls while keeping your body temperature on point. It achieves this rating because of its 2-layer fabric with different capabilities Better yet, this coat has an extra layer of protection made with a PFC-free C0 (carbon-free) DWR (Durable Water Repellent) with an 80/10 rating that ensures efficiency even after multiple washes. 2-way mechanical stretch fabric. Hand pockets with recycled zip closure. Recycled zip closure at the centre front. Adjustable cord locks at the hood and hem for the perfect fit. 2-tone drawcord. Inside chest pocket. Inside mesh storage pocket. Inside pocket is made with shell fabric. Flag label at side seam. Small logo branding at the chest. Machine washable. Compatible with all Smart Layer base jackets.",
     price: 93,
     priceDiscount: 7,
     numberInStock: 50,
@@ -893,7 +893,7 @@ export const wishlists: WishlistItem = [
   {
     id: 11,
     name: 'Native wears',
-    desc: "Let the rain fall, you\'ve come prepared. Introducing The Stanley, our newest Smart Layer rain jacket. Made with recycled polyester, it features a regular fit and a waist length. This coat has a 10k/10k water resistant and breathability rating, protecting you from heavy rainfalls while keeping your body temperature on point. It achieves this rating because of its 2-layer fabric with different capabilities Better yet, this coat has an extra layer of protection made with a PFC-free C0 (carbon-free) DWR (Durable Water Repellent) with an 80/10 rating that ensures efficiency even after multiple washes. 2-way mechanical stretch fabric. Hand pockets with recycled zip closure. Recycled zip closure at the centre front. Adjustable cord locks at the hood and hem for the perfect fit. 2-tone drawcord. Inside chest pocket. Inside mesh storage pocket. Inside pocket is made with shell fabric. Flag label at side seam. Small logo branding at the chest. Machine washable. Compatible with all Smart Layer base jackets.",
+    desc: "Let the rain fall, you've come prepared. Introducing The Stanley, our newest Smart Layer rain jacket. Made with recycled polyester, it features a regular fit and a waist length. This coat has a 10k/10k water resistant and breathability rating, protecting you from heavy rainfalls while keeping your body temperature on point. It achieves this rating because of its 2-layer fabric with different capabilities Better yet, this coat has an extra layer of protection made with a PFC-free C0 (carbon-free) DWR (Durable Water Repellent) with an 80/10 rating that ensures efficiency even after multiple washes. 2-way mechanical stretch fabric. Hand pockets with recycled zip closure. Recycled zip closure at the centre front. Adjustable cord locks at the hood and hem for the perfect fit. 2-tone drawcord. Inside chest pocket. Inside mesh storage pocket. Inside pocket is made with shell fabric. Flag label at side seam. Small logo branding at the chest. Machine washable. Compatible with all Smart Layer base jackets.",
     price: 120,
     numberInStock: 25,
     inStock: true,
@@ -919,7 +919,7 @@ export const wishlists: WishlistItem = [
   {
     id: 9,
     name: 'Samsumg Galaxy 13',
-    desc: "Let the rain fall, you\'ve come prepared. Introducing The Stanley, our newest Smart Layer rain jacket. Made with recycled polyester, it features a regular fit and a waist length. This coat has a 10k/10k water resistant and breathability rating, protecting you from heavy rainfalls while keeping your body temperature on point. It achieves this rating because of its 2-layer fabric with different capabilities Better yet, this coat has an extra layer of protection made with a PFC-free C0 (carbon-free) DWR (Durable Water Repellent) with an 80/10 rating that ensures efficiency even after multiple washes. 2-way mechanical stretch fabric. Hand pockets with recycled zip closure. Recycled zip closure at the centre front. Adjustable cord locks at the hood and hem for the perfect fit. 2-tone drawcord. Inside chest pocket. Inside mesh storage pocket. Inside pocket is made with shell fabric. Flag label at side seam. Small logo branding at the chest. Machine washable. Compatible with all Smart Layer base jackets.",
+    desc: "Let the rain fall, you've come prepared. Introducing The Stanley, our newest Smart Layer rain jacket. Made with recycled polyester, it features a regular fit and a waist length. This coat has a 10k/10k water resistant and breathability rating, protecting you from heavy rainfalls while keeping your body temperature on point. It achieves this rating because of its 2-layer fabric with different capabilities Better yet, this coat has an extra layer of protection made with a PFC-free C0 (carbon-free) DWR (Durable Water Repellent) with an 80/10 rating that ensures efficiency even after multiple washes. 2-way mechanical stretch fabric. Hand pockets with recycled zip closure. Recycled zip closure at the centre front. Adjustable cord locks at the hood and hem for the perfect fit. 2-tone drawcord. Inside chest pocket. Inside mesh storage pocket. Inside pocket is made with shell fabric. Flag label at side seam. Small logo branding at the chest. Machine washable. Compatible with all Smart Layer base jackets.",
     price: 300,
     numberInStock: 500,
     inStock: true,
@@ -945,7 +945,7 @@ export const wishlists: WishlistItem = [
   {
     id: 1,
     name: 'The Stanley Rain Jacket in Black',
-    desc: "Let the rain fall, you\'ve come prepared. Introducing The Stanley, our newest Smart Layer rain jacket. Made with recycled polyester, it features a regular fit and a waist length. This coat has a 10k/10k water resistant and breathability rating, protecting you from heavy rainfalls while keeping your body temperature on point. It achieves this rating because of its 2-layer fabric with different capabilities Better yet, this coat has an extra layer of protection made with a PFC-free C0 (carbon-free) DWR (Durable Water Repellent) with an 80/10 rating that ensures efficiency even after multiple washes. 2-way mechanical stretch fabric. Hand pockets with recycled zip closure. Recycled zip closure at the centre front. Adjustable cord locks at the hood and hem for the perfect fit. 2-tone drawcord. Inside chest pocket. Inside mesh storage pocket. Inside pocket is made with shell fabric. Flag label at side seam. Small logo branding at the chest. Machine washable. Compatible with all Smart Layer base jackets.",
+    desc: "Let the rain fall, you've come prepared. Introducing The Stanley, our newest Smart Layer rain jacket. Made with recycled polyester, it features a regular fit and a waist length. This coat has a 10k/10k water resistant and breathability rating, protecting you from heavy rainfalls while keeping your body temperature on point. It achieves this rating because of its 2-layer fabric with different capabilities Better yet, this coat has an extra layer of protection made with a PFC-free C0 (carbon-free) DWR (Durable Water Repellent) with an 80/10 rating that ensures efficiency even after multiple washes. 2-way mechanical stretch fabric. Hand pockets with recycled zip closure. Recycled zip closure at the centre front. Adjustable cord locks at the hood and hem for the perfect fit. 2-tone drawcord. Inside chest pocket. Inside mesh storage pocket. Inside pocket is made with shell fabric. Flag label at side seam. Small logo branding at the chest. Machine washable. Compatible with all Smart Layer base jackets.",
     price: 300,
     numberInStock: 1200,
     inStock: true,
