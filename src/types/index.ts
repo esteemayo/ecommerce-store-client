@@ -376,7 +376,8 @@ export interface WishlistButtonProps {
   wished: [];
 }
 
-type CartModalValues = {
+export type CartModalValues = {
+  id?: number;
   name?: string;
   images?: string[];
   price?: number;

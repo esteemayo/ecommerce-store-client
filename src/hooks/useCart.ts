@@ -2,9 +2,10 @@
 
 import { useCallback, useState } from 'react';
 
+import { CartModalValues } from '@/types';
 import { useCartStore } from './useCartStore';
 
-export const useCart = (product) => {
+export const useCart = (product: CartModalValues) => {
   const addProduct = useCartStore((state) => state.addProduct);
   const removeWishlist = useCartStore((state) => state.removeWishlist);
 
