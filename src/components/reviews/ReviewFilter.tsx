@@ -62,7 +62,7 @@ const Wrapper = styled.div<IWrapper>`
 
 const Filter = styled.span`
   display: inline-block;
-  font-size: 1.6rem;
+  font-size: 1.45rem;
   margin-right: 3px;
 
   @media only screen and (max-width: 26.875em) {
@@ -70,14 +70,14 @@ const Filter = styled.span`
   }
 
   @media only screen and (max-width: 18.75em) {
-    font-size: 1.35rem;
+    font-size: 1.4rem;
   }
 `;
 
 const FilterText = styled.span`
   display: inline-block;
   text-transform: capitalize;
-  font-size: 1.6rem;
+  font-size: 1.45rem;
   cursor: pointer;
 
   @media only screen and (max-width: 26.875em) {
