@@ -111,19 +111,6 @@ const Wrapper = styled.div`
   overflow: hidden;
 `;
 
-const Article = styled.article<IType>`
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: ${({ type }) => (type === 'activeSlide' ? 1 : 0)};
-  transform: translateX(${({ type }) => type === 'activeSlide' && 0});
-  transform: translateX(${({ type }) => type === 'lastSlide' && '-100%'});
-  transform: translateX(${({ type }) => type === 'nextSlide' && '100%'});
-  transition: all 0.3s linear;
-`;
-
 const ArrowButton = styled.button<IDirection>`
   position: absolute;
   top: 50%;
