@@ -14,12 +14,13 @@ const SliderItem: FC<SliderItemProps> = ({
   img,
   desc,
   title,
+  index,
   position,
 }) => {
   return (
     <Article type={position}>
       <Container>
-        <StyledImage src={img} fill priority alt='' />
+        <StyledImage src={img} fill priority alt={`Slide ${index}`} />
       </Container>
       <Wrapper>
         <Title>{title}</Title>
