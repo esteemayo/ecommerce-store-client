@@ -181,50 +181,6 @@ const InfoContainer = styled.div`
   }
 `;
 
-const Button = styled.button`
-  display: inline-block;
-  padding: 1rem;
-  font-size: 1.8rem;
-  text-transform: uppercase;
-  background-color: transparent;
-  color: inherit;
-  border: 3px solid ${({ theme }) => theme.textSlider};
-  border-radius: 3px;
-  outline-color: #ccc;
-  cursor: pointer;
-
-  @media only screen and (max-width: 64em) {
-    font-size: 1.65rem;
-  }
-
-  @media only screen and (max-width: 50em) {
-    font-size: 1.57rem;
-    border-width: 2px;
-  }
-
-  @media only screen and (max-width: 37.5em) {
-    padding: 0.7rem;
-    font-size: 1.5rem;
-  }
-
-  @media only screen and (max-width: 31.25em) {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    font-size: 1.4rem;
-    border-width: 1px;
-  }
-
-  @media only screen and (max-width: 25em) {
-    font-size: 1.37rem;
-  }
-
-  @media only screen and (max-width: 18.75em) {
-    padding-top: 3px;
-    padding-bottom: 3px;
-    font-size: 1.2rem;
-  }
-`;
-
 const ArrowButton = styled.button<IDirection>`
   position: absolute;
   top: 50%;
