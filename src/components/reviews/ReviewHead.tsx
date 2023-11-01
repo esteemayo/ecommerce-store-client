@@ -114,6 +114,12 @@ const Wrapper = styled.div`
   align-items: center;
   justify-content: flex-end;
   gap: 3rem;
+
+  @media only screen and (max-width: 20.75em) {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0;
+  }
 `;
 
 const ReviewButtonWrapper = styled.div``;
