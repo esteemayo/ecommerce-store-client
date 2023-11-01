@@ -137,50 +137,6 @@ const StyledImage = styled(Image)`
   object-fit: cover;
 `;
 
-const InfoContainer = styled.div`
-  padding: 5rem;
-  padding-right: 0;
-  text-transform: uppercase;
-  color: ${({ theme }) => theme.textSlider};
-  position: absolute;
-  top: 15%;
-  right: 3rem;
-
-  @media only screen and (max-width: 64em) {
-    padding: 3rem;
-    padding-right: 0;
-  }
-
-  @media only screen and (max-width: 50em) {
-    width: 100%;
-    padding: 0;
-    line-height: 1.3;
-    top: 50%;
-    left: 75%;
-    right: 0;
-    transform: translate(-50%, -50%);
-  }
-
-  @media only screen and (max-width: 37.5em) {
-    top: 40%;
-    left: 67%;
-  }
-
-  a {
-    &:link,
-    &:visited {
-      text-decoration: none;
-      color: inherit;
-      outline: none;
-    }
-
-    &:active,
-    &:hover {
-      color: currentColor;
-    }
-  }
-`;
-
 const ArrowButton = styled.button<IDirection>`
   position: absolute;
   top: 50%;
