@@ -70,6 +70,11 @@ const Button = styled.button<IBtn>`
   &:hover {
     background-position: 100%;
   }
+
+  &:disabled {
+    opacity: 0.75;
+    cursor: default;
+  }
 `;
 
 export default ProductButton;
