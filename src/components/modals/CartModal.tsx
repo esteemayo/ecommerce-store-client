@@ -90,6 +90,10 @@ const CartModal: FC<CartModalProps> = ({
     return !!inCart;
   }, [cart, product]);
 
+  const actionLabel = useMemo(() => {
+    return `${inCart ? 'Added' : 'Add'} to cart`;
+  }, [inCart]);
+
   useEffect(() => {
     setShowModal(isOpen);
   }, [isOpen]);
@@ -147,7 +151,7 @@ const CartModal: FC<CartModalProps> = ({
             <Hr />
             <ProductButton
               small
-              actionLabel='Add to cart'
+              actionLabel={actionLabel}
               inCart={inCart}
               onAction={handleClick}
             />
