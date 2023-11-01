@@ -95,6 +95,7 @@ const Button = styled.button<IProps>`
   &:disabled {
     background-color: ${({ theme }) => theme.bgAddBtnDis};
     color: #999;
+    cursor: default;
   }
 
   svg {
