@@ -20,6 +20,7 @@ import SearchIcon from './SearchIcon';
 import { navLinks } from '@/data';
 
 const Navbar = () => {
+  const cart = useCartStore((state) => state.cart);
   const searchModal = useSearchModal();
   const qty = useCartStore((state) => state.qty);
 
@@ -93,15 +94,14 @@ const Navbar = () => {
         <ButtonContainer>
           <DarkModeToggle />
           <SearchIcon onOpen={searchModal.onOpen} />
-          {!user ? (
+          {!user && (
             <LoginButton
               isHover={isHover}
               onMouseOver={handleMouseOver}
               onMouseLeave={handleMouseLeave}
             />
-          ) : (
-            <CartQuantity amount={qty} />
           )}
+          {user && cart.length > 0 && <CartQuantity amount={qty} />}
         </ButtonContainer>
       </Wrapper>
     </Container>
