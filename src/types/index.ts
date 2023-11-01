@@ -452,6 +452,7 @@ type ProductValues = {
 export interface ProductProps {
   product: ProductValues;
   inCart: boolean;
+  actionLabel: string;
 }
 
 export interface ProductImageProps {
