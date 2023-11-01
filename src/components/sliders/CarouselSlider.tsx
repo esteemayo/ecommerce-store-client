@@ -181,48 +181,6 @@ const InfoContainer = styled.div`
   }
 `;
 
-const Description = styled.p`
-  width: 60%;
-  margin: 3rem 0;
-  font-weight: 500;
-  font-size: 2rem;
-  color: inherit;
-  letter-spacing: 3px;
-
-  @media only screen and (max-width: 64em) {
-    font-size: 1.7rem;
-    letter-spacing: 0.5rem;
-    margin: 2rem 0;
-  }
-
-  @media only screen and (max-width: 50em) {
-    width: 65% !important;
-    font-size: 1.6rem;
-    margin: 1.5rem 0;
-  }
-
-  @media only screen and (max-width: 37.5em) {
-    margin: 1rem 0;
-    letter-spacing: 2px;
-  }
-
-  @media only screen and (max-width: 31.25em) {
-    font-size: 1.45rem;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-  }
-
-  @media only screen and (max-width: 25em) {
-    font-size: 1.4rem;
-    letter-spacing: 0;
-  }
-
-  @media only screen and (max-width: 18.75em) {
-    width: 68% !important;
-    font-size: 1.3rem;
-  }
-`;
-
 const Button = styled.button`
   display: inline-block;
   padding: 1rem;
