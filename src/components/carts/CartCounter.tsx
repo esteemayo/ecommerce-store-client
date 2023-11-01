@@ -15,7 +15,11 @@ const CartCounter: FC<CartCounterProps> = ({
   return (
     <Container>
       <Wrapper>
-        <Button type='button' onClick={() => onIncrement('inc')}>
+        <Button
+          type='button'
+          disabled={value >= 10}
+          onClick={() => onIncrement('inc')}
+        >
           <FontAwesomeIcon icon={faPlus} />
         </Button>
         <Amount>{value}</Amount>
