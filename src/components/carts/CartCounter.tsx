@@ -74,7 +74,7 @@ const Button = styled.button`
   }
 
   &:disabled {
-    background-color: ${({ theme }) => theme.bgAddBtnDis};
+    background-color: ${({ theme }) => theme.bgCartQty};
     color: #999;
     cursor: default;
   }
