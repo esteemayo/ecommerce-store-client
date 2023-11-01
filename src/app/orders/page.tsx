@@ -14,7 +14,7 @@ const OrderCard = dynamic(() => import('@/components/orders/OrderCard'), {
 const Orders = () => {
   const closeSubmenu = useSubmenu((state) => state.closeSubmenu);
 
-  let bodyContent;
+  let bodyContent: JSX.Element;
 
   if (orders.length < 1) {
     bodyContent = (
