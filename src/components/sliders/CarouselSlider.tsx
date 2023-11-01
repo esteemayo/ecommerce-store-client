@@ -124,12 +124,6 @@ const Article = styled.article<IType>`
   transition: all 0.3s linear;
 `;
 
-const ImageContainer = styled.div`
-  width: 100%;
-  height: 100%;
-  position: relative;
-`;
-
 const ArrowButton = styled.button<IDirection>`
   position: absolute;
   top: 50%;
