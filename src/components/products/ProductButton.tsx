@@ -76,7 +76,7 @@ const Button = styled.button<IBtn>`
     cursor: default;
   }
 
-  &:disabled::hover {
+  &:disabled:hover {
     background-position: 0%;
   }
 `;
