@@ -3,7 +3,6 @@
 import styled from 'styled-components';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Link from 'next/link';
 import {
   faChevronLeft,
   faChevronRight,
@@ -179,36 +178,6 @@ const InfoContainer = styled.div`
     &:hover {
       color: currentColor;
     }
-  }
-`;
-
-const Title = styled.h1`
-  font-size: 5rem;
-  color: inherit;
-
-  @media only screen and (max-width: 64em) {
-    font-size: 4.7rem;
-  }
-
-  @media only screen and (max-width: 50em) {
-    font-size: 4.5rem;
-  }
-
-  @media only screen and (max-width: 37.5em) {
-    font-size: 3rem;
-    letter-spacing: 2px;
-  }
-
-  @media only screen and (max-width: 31.25em) {
-    font-size: 2.7rem;
-  }
-
-  @media only screen and (max-width: 25em) {
-    font-size: 2.3rem;
-  }
-
-  @media only screen and (max-width: 18.75em) {
-    font-size: 1.65rem;
   }
 `;
 
