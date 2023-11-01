@@ -36,6 +36,7 @@ const Counter: FC<CounterProps> = ({ value, title, modal, onClick }) => {
         <Button
           type='button'
           modal={modal}
+          disabled={value >= 10}
           onClick={() => handleQuantity('inc')}
         >
           <FontAwesomeIcon icon={faPlus} />
