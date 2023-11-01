@@ -58,6 +58,12 @@ const Wrapper = styled.div<IWrapper>`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media only screen and (max-width: 20.75em) {
+    width: 100%;
+    padding-right: 0;
+    justify-content: flex-end;
+  }
 `;
 
 const Filter = styled.span`
