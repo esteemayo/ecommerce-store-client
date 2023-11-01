@@ -194,7 +194,7 @@ const StyledImage = styled(Image)`
   width: 50rem;
   height: 100%;
   display: block;
-  object-fit: cover;
+  object-fit: contain;
 
   @media only screen and (max-width: 64em) {
     height: 90%;
