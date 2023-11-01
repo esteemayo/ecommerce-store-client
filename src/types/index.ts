@@ -72,7 +72,6 @@ export type SliderItem = {
 }[];
 
 export interface SliderItemProps {
-  id: number;
   url: string;
   img: string;
   desc: string;
