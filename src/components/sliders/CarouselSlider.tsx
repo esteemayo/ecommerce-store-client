@@ -11,6 +11,7 @@ import {
 import { useCallback, useEffect, useState } from 'react';
 
 import { sliderItems } from '@/data';
+import SliderItem from './SliderItem';
 
 interface IType {
   type: string;
@@ -59,7 +60,6 @@ const CarouselSlider = () => {
     <Container>
       <Wrapper>
         {sliderItems.map((item, index) => {
-          const { id, img, url, desc, title } = item;
           let position = 'nextSlide';
 
           if (index === slideNumber) {
@@ -73,20 +73,7 @@ const CarouselSlider = () => {
             position = 'lastSlide';
           }
 
-          return (
-            <Article key={id} type={position}>
-              <ImageContainer>
-                <StyledImage src={img} fill priority alt='' />
-              </ImageContainer>
-              <InfoContainer>
-                <Title>{title}</Title>
-                <Description>{desc}</Description>
-                <Link href={url} passHref>
-                  <Button type='button'>Shop now</Button>
-                </Link>
-              </InfoContainer>
-            </Article>
-          );
+          return <SliderItem key={item.id} position={position} {...item} />;
         })}
         <ArrowButton type='button' direction='left' onClick={handlePrev}>
           <FontAwesomeIcon icon={faChevronLeft} />
