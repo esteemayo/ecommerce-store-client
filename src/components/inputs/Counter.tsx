@@ -15,7 +15,7 @@ const Counter: FC<CounterProps> = ({ value, title, modal, onClick }) => {
   const handleQuantity = useCallback(
     (type: string) => {
       type === 'dec' && value > 1 && onClick(value - 1);
-      type === 'inc' && onClick(value + 1);
+      type === 'inc' && value < 10 ? onClick(value + 1) : value;
     },
     [value, onClick]
   );
