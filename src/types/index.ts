@@ -30,7 +30,7 @@ export type CartItem = {
 }[];
 
 export interface CartStore {
-  cart: [];
+  cart: any[];
   wishlists: [];
   wished: [];
   qty: number;
