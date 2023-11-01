@@ -76,6 +76,7 @@ export interface SliderItemProps {
   img: string;
   desc: string;
   title: string;
+  index: number;
   position: string;
 }
 
