@@ -22,7 +22,7 @@ import { ProductProps } from '@/types';
 import Alert from '../Alert';
 import { useDarkMode } from '@/hooks/useDarkMode';
 
-const Product: FC<ProductProps> = ({ product }) => {
+const Product: FC<ProductProps> = ({ product, inCart, actionLabel }) => {
   const mode = useDarkMode((state) => state.mode);
 
   const {
@@ -75,7 +75,11 @@ const Product: FC<ProductProps> = ({ product }) => {
             <Hr />
             <Counter title='Quantity' value={quantity} onClick={setQuantity} />
             <Hr />
-            <ProductButton actionLabel='Add to cart' onAction={handleClick} />
+            <ProductButton
+              actionLabel={actionLabel}
+              inCart={inCart}
+              onAction={handleClick}
+            />
             {alert && (
               <Alert
                 alert={alert}

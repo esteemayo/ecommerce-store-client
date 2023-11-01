@@ -12,10 +12,11 @@ interface IBtn {
 const ProductButton: FC<ProductButtonProps> = ({
   small,
   actionLabel,
+  inCart,
   onAction,
 }) => {
   return (
-    <Button type='button' small={small} onClick={onAction}>
+    <Button type='button' small={small} disabled={inCart} onClick={onAction}>
       {actionLabel}
     </Button>
   );

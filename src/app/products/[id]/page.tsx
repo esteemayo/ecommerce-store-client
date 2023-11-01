@@ -5,8 +5,10 @@ import { useEffect, useMemo, useState } from 'react';
 import dynamic from 'next/dynamic';
 
 import { useSubmenu } from '@/hooks/useSubmenu';
-import { recommendations, reviewItems, storeProducts } from '@/data';
+import { useCartStore } from '@/hooks/useCartStore';
+
 import { ProductProps, ReviewItem } from '@/types';
+import { recommendations, reviewItems, storeProducts } from '@/data';
 
 const Product = dynamic(() => import('@/components/products/Product'), {
   ssr: false,
@@ -27,11 +29,22 @@ interface IContainer {
 
 const SingleProduct = ({ params }) => {
   const { id } = params;
+
+  const cart = useCartStore((state) => state.cart);
   const closeSubmenu = useSubmenu((state) => state.closeSubmenu);
 
   const [product, setProduct] = useState<ProductProps | object>({});
   const [sort, setSort] = useState(null);
   const [reviews, setReviews] = useState<ReviewItem>([]);
+
+  const inCart = useMemo(() => {
+    const inCart = cart.find((item) => item.id === id);
+    return !!inCart;
+  }, [cart, id]);
+
+  const actionLabel = useMemo(() => {
+    return `${inCart ? 'Added' : 'Add'} to cart`;
+  }, [inCart]);
 
   const getSort = useMemo(() => {
     if (sort === 'newest') return 'newest';
@@ -75,7 +88,7 @@ const SingleProduct = ({ params }) => {
   return (
     <Container onMouseOver={closeSubmenu}>
       <Wrapper>
-        <Product product={product} />
+        <Product product={product} inCart={inCart} actionLabel={actionLabel} />
         <Line />
         <Recommendation data={recommendations} />
         <Reviews
