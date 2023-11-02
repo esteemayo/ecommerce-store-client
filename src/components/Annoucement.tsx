@@ -16,7 +16,7 @@ const Annoucement = () => {
 
 const Container = styled.section`
   width: 100vw;
-  padding: 2rem;
+  padding: 1rem 6rem;
 `;
 
 const Wrapper = styled.div`
