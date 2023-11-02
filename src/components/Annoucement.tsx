@@ -1,17 +1,18 @@
 'use client';
 
 import styled from 'styled-components';
+import Marquee from 'react-fast-marquee';
 
 const Annoucement = () => {
   return (
     <Container>
       <Wrapper>
-        <Text>
-          Free delivery for all orders over $100. Order your goods now!
-        </Text>
-        <Text>
-          Super Deal! Free Shipping on Orders Over $100.
-        </Text>
+        <Marquee speed={100} gradient>
+          <Text>
+            Free delivery for all orders over $100. Order your goods now!
+          </Text>
+          <Text>Super Deal! Free Shipping on Orders Over $100.</Text>
+        </Marquee>
       </Wrapper>
     </Container>
   );
