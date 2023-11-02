@@ -9,6 +9,9 @@ const Annoucement = () => {
         <Text>
           Free delivery for all orders over $100. Order your goods now!
         </Text>
+        <Text>
+          Super Deal! Free Shipping on Orders Over $100.
+        </Text>
       </Wrapper>
     </Container>
   );
