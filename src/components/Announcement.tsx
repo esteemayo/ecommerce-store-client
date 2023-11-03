@@ -26,6 +26,7 @@ const Announcement = () => {
 const Container = styled.section`
   width: 100vw;
   padding: 1rem 6rem;
+  background-color: ${({ theme }) => theme.bg};
 `;
 
 const Wrapper = styled.div`
