@@ -1,11 +1,10 @@
 'use client';
 
-import { FC, useEffect } from 'react';
+import { useEffect } from 'react';
 
-import { CartProviderProps } from '@/types';
 import { useCartStore } from '@/hooks/useCartStore';
 
-const CartProvider: FC<CartProviderProps> = ({ children }) => {
+const CartProvider = ({ children }: { children: React.ReactNode }) => {
   const cart = useCartStore((state) => state.cart);
   const calcTotals = useCartStore((state) => state.calcTotals);
 
