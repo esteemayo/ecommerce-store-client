@@ -1,4 +1,4 @@
-import { ChangeEventHandler, useCallback, useState } from 'react';
+import { useCallback, useState } from 'react';
 
 export const useForm = (
   callback: () => void,
@@ -15,7 +15,7 @@ export const useForm = (
     errors && setErrors({});
   }, [errors, initialState, onClose]);
 
-  const handleChange: ChangeEventHandler<HTMLInputElement> = useCallback(
+  const handleChange: React.ChangeEventHandler<HTMLInputElement> = useCallback(
     ({ target: input }) => {
       const { name, value } = input;
       setFormData((prev: any) => ({ ...prev, [name]: value }));
