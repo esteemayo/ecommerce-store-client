@@ -44,7 +44,7 @@ import {
   WishlistItem,
 } from '@/types';
 
-export const annoucements: Announcements = [
+export const announcements: Announcements = [
   {
     id: 1,
     title: 'Free delivery for all orders over $100. Order your goods now!',
