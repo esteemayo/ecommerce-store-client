@@ -212,16 +212,6 @@ const CartContainer = styled.div`
   }
 `;
 
-const ProductPrice = styled.span`
-  font-weight: 400;
-  font-size: 2.23rem;
-  color: ${({ theme }) => theme.textProdCard};
-
-  @media only screen and (max-width: 18.75em) {
-    font-size: 2rem;
-  }
-`;
-
 const DeleteButton = styled.button`
   position: absolute;
   top: 0.5rem;
