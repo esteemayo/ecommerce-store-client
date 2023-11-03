@@ -710,10 +710,6 @@ export interface OrderCardProps {
   createdAt: string;
 }
 
-export interface OrderStatusProps {
-  statusClass(index: number): string;
-}
-
 export type DateOptions = {
   day: 'numeric';
   month: 'long';
