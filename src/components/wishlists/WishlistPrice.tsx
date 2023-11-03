@@ -2,7 +2,7 @@
 
 import styled, { css } from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { FC, useMemo } from 'react';
+import { FC, useCallback, useMemo } from 'react';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
 import { WislistPriceProps } from '@/types';
@@ -13,8 +13,17 @@ const WishlistPrice: FC<WislistPriceProps> = ({
   price,
   wishlist,
   onAction,
+  onDelete,
 }) => {
   const cart = useCartStore((state) => state.cart);
+
+  const handleClick = useCallback(
+    (wishlist) => {
+      onAction(wishlist);
+      onDelete(wishlist.id);
+    },
+    [onAction, onDelete]
+  );
 
   const inCart = useMemo(() => {
     const cartItem = cart.find((item) => item.id === wishlist.id);
@@ -31,7 +40,7 @@ const WishlistPrice: FC<WislistPriceProps> = ({
       <Button
         type='button'
         disabled={inCart}
-        onClick={() => onAction(wishlist)}
+        onClick={() => handleClick(wishlist)}
       >
         <FontAwesomeIcon icon={faShoppingCart} />
         {btnLabel}

@@ -64,6 +64,7 @@ const WishlistCard: FC<WishlistCardProps> = ({
                 price={price}
                 wishlist={wishlist}
                 onAction={onAction}
+                onDelete={onDelete}
               />
             </Right>
             <DeleteButton type='button' onClick={() => onOpen(id)}>
