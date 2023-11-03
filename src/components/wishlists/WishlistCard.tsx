@@ -5,14 +5,17 @@ import Image from 'next/image';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { FC } from 'react';
+import { FC, useCallback, useMemo } from 'react';
 import CloseIcon from '@mui/icons-material/Close';
+
+import WishlistPrice from './WishlistPrice';
+import DeleteModal from '../modals/DeleteModal';
 
 import { excerpts } from '@/utils';
 import { formatCurrency } from '@/utils/formatCurrency';
-import { WishlistCardProps } from '@/types';
 
-import DeleteModal from '../modals/DeleteModal';
+import { WishlistCardProps } from '@/types';
+import { useCartStore } from '@/hooks/useCartStore';
 
 const WishlistCard: FC<WishlistCardProps> = ({
   isOpen,
@@ -23,6 +26,15 @@ const WishlistCard: FC<WishlistCardProps> = ({
   onClose,
   onDelete,
 }) => {
+  const cart = useCartStore((state) => state.cart);
+
+  const inCart = useCallback(
+    (id: number) => {
+      return !!cart.find((item) => item.id === id);
+    },
+    [cart]
+  );
+
   return (
     <Container>
       {wishlists.map((wishlist) => {
@@ -48,13 +60,11 @@ const WishlistCard: FC<WishlistCardProps> = ({
               </OverviewContainer>
             </Left>
             <Right>
-              <CartContainer>
-                <ProductPrice>{formatCurrency(price)}</ProductPrice>
-                <CartButton type='button' onClick={() => onAction(wishlist)}>
-                  <FontAwesomeIcon icon={faShoppingCart} />
-                  Add to cart
-                </CartButton>
-              </CartContainer>
+              <WishlistPrice
+                price={price}
+                wishlist={wishlist}
+                onAction={onAction}
+              />
             </Right>
             <DeleteButton type='button' onClick={() => onOpen(id)}>
               <CloseIcon />
