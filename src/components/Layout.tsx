@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { Nunito } from '@next/font/google';
 
-import Annoucement from './Annoucement';
+import Announcement from './Announcement';
 import ClientOnly from './ClientOnly';
 import ScrollToTop from './ScrollToTop';
 import Darkmode from './DarkMode';
@@ -25,7 +25,7 @@ const Layout: FC<LayoutProps> = ({ children }) => {
   return (
     <div className={`${nunito.className} container`}>
       <ClientOnly>
-        <Annoucement />
+        <Announcement />
         <Navbar />
         <ToastProvider />
         <Submenu />

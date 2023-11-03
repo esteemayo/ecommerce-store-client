@@ -3,7 +3,7 @@
 import styled from 'styled-components';
 import Marquee from 'react-fast-marquee';
 
-const Annoucement = () => {
+const Announcement = () => {
   return (
     <Container>
       <Marquee speed={100} gradient>
@@ -41,4 +41,4 @@ const Text = styled.p`
   color: inherit;
 `;
 
-export default Annoucement;
+export default Announcement;
