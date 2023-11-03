@@ -4,7 +4,10 @@ import Image from 'next/image';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
 import { FC } from 'react';
 
-import { AccountUploadProps } from '@/types';
+interface AccountUploadProps {
+  onOpen(): void;
+  currentUser: boolean;
+}
 
 const AccountUpload: FC<AccountUploadProps> = ({ onOpen, currentUser }) => {
   return (
