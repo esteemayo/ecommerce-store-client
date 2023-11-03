@@ -199,19 +199,6 @@ const Right = styled.div`
   }
 `;
 
-const CartContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: center;
-
-  @media only screen and (max-width: 37.5em) {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-`;
-
 const DeleteButton = styled.button`
   position: absolute;
   top: 0.5rem;
