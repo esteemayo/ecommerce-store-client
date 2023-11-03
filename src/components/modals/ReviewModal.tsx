@@ -97,7 +97,10 @@ const ReviewModal: FC<ReviewModalProps> = ({ isOpen, onClose }) => {
             <StarRating
               name='size-large'
               value={rating}
-              onChange={(e: ChangeEvent<HTMLInputElement>, newValue: number) => {
+              onChange={(
+                e: ChangeEvent<HTMLInputElement>,
+                newValue: number
+              ) => {
                 setRating(newValue);
               }}
             />
