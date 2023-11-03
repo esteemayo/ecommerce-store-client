@@ -862,10 +862,6 @@ export interface FormatPriceProps {
   value: number;
 }
 
-export interface LoaderProps {
-  size?: string;
-}
-
 export interface SearchHistoryProps {
   id: number;
   query: string;
