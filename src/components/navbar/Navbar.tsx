@@ -4,11 +4,6 @@ import styled from 'styled-components';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { useCallback, useState } from 'react';
 
-import { useSubmenu } from '@/hooks/useSubmenu';
-import useSearchModal from '@/hooks/useSearchModal';
-import { useSidebar } from '@/hooks/useSidebar';
-import { useCartStore } from '@/hooks/useCartStore';
-
 import Logo from './Logo';
 import DarkModeToggle from './DarkModeToggle';
 import LoginButton from './LoginButton';
@@ -16,6 +11,11 @@ import CartQuantity from './CartQuantity';
 import MenuItem from './MenuItem';
 import ToggleButton from './ToggleButton';
 import SearchIcon from './SearchIcon';
+
+import { useSubmenu } from '@/hooks/useSubmenu';
+import useSearchModal from '@/hooks/useSearchModal';
+import { useSidebar } from '@/hooks/useSidebar';
+import { useCartStore } from '@/hooks/useCartStore';
 
 import { navLinks } from '@/data';
 
