@@ -11,9 +11,12 @@ import { ButtonContainer } from './ButtonContainer';
 
 import { useForm } from '@/hooks/useForm';
 import { passwordInputs } from '@/data/formData';
-import { UpdatePasswordProps } from '@/types';
 
 import Form from '../form/Form';
+
+interface UpdatePasswordProps {
+  onCancel(): void;
+}
 
 interface FormData {
   password: string;
