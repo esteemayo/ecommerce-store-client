@@ -42,7 +42,7 @@ const Modal: FC<ModalProps> = ({ title, children, isOpen, onClose }) => {
       type={activeModal}
       onClick={closeModalHandler}
     >
-      <Wrapper>
+      <Box>
         <ButtonContainer>
           <Heading>{title}</Heading>
           <Button type='button' onClick={onClose}>
@@ -50,12 +50,12 @@ const Modal: FC<ModalProps> = ({ title, children, isOpen, onClose }) => {
           </Button>
         </ButtonContainer>
         <ModalContent>{children}</ModalContent>
-      </Wrapper>
+      </Box>
     </Overlay>
   );
 };
 
-const Wrapper = styled.div`
+const Box = styled.div`
   width: 40rem;
   padding: 2rem 4rem;
   background-color: ${({ theme }) => theme.bgModal};
