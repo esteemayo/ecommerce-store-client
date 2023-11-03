@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { Nunito } from '@next/font/google';
+// import { Nunito } from '@next/font/google';
 
 import Announcement from './Announcement';
 import ClientOnly from './ClientOnly';
