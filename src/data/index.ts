@@ -43,6 +43,25 @@ import {
   WishlistItem,
 } from '@/types';
 
+export const annoucements = [
+  {
+    id: 1,
+    title: 'Free delivery for all orders over $100. Order your goods now!',
+  },
+  {
+    id: 2,
+    title: 'Super Deal! Free Shipping on Orders Over $100.',
+  },
+  {
+    id: 3,
+    title: 'Spend $110 or more for free US shipping',
+  },
+  {
+    id: 4,
+    title: '365days risk-free guarantee. Shop Now!',
+  },
+]
+
 export const navLinks: NavLink = [
   {
     id: 1,
