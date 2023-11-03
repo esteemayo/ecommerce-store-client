@@ -11,7 +11,7 @@ import { useCartModal } from '@/hooks/useCartModal';
 import { useSubmenu } from '@/hooks/useSubmenu';
 import useWishlistModal from '@/hooks/useWishlistModal';
 
-import { WishlistItem } from '@/types';
+import { WishlistItems } from '@/types';
 import { useCartStore } from '@/hooks/useCartStore';
 
 const WishlistCard = dynamic(
@@ -26,7 +26,7 @@ const WishLists = () => {
   const removeWishlist = useCartStore((state) => state.removeWishlist);
   const closeSubmenu = useSubmenu((state) => state.closeSubmenu);
 
-  const [products, setProducts] = useState<WishlistItem>(wishlists);
+  const [products, setProducts] = useState<WishlistItems>(wishlists);
   const [isSelectedId, setIsSelectedId] = useState(null);
   const [isSelectedProduct, setIsSelectedProduct] = useState({});
 
