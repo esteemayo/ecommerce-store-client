@@ -4,8 +4,11 @@ import styled from 'styled-components';
 import { FC } from 'react';
 import Image from 'next/image';
 
-import { OrderStatusProps } from '@/types';
 import { useDarkMode } from '@/hooks/useDarkMode';
+
+interface OrderStatusProps {
+  statusClass(index: number): string;
+}
 
 interface IMode {
   mode: boolean;
