@@ -41,7 +41,7 @@ import {
   StoreProduct,
   Sublink,
   TopReview,
-  WishlistItem,
+  WishlistItems,
 } from '@/types';
 
 export const announcements: Announcements = [
@@ -55,7 +55,8 @@ export const announcements: Announcements = [
   },
   {
     id: 3,
-    title: 'Spend $110 or more for free US shipping. 365days risk-free guarantee. Shop Now!',
+    title:
+      'Spend $110 or more for free US shipping. 365days risk-free guarantee. Shop Now!',
   },
 ];
 
@@ -905,7 +906,7 @@ export const reviewItems: ReviewItem = [
   },
 ];
 
-export const wishlists: WishlistItem = [
+export const wishlists: WishlistItems = [
   {
     id: 11,
     name: 'Native wears',
