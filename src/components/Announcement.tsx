@@ -33,7 +33,7 @@ const Announcement = () => {
 
 const Container = styled.section`
   width: 100vw;
-  padding: 1rem 6rem;
+  padding: 1rem 3rem;
   background-color: ${({ theme }) => theme.bg};
   color: ${({ theme }) => theme.textHeader};
 `;
