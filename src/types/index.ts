@@ -2,10 +2,6 @@ import { IconType } from 'react-icons/lib';
 import { IconDefinition } from '@fortawesome/free-solid-svg-icons';
 import { HTMLAttributes, HtmlHTMLAttributes, SetStateAction } from 'react';
 
-export interface AppThemeProviderProps {
-  children: React.ReactNode;
-}
-
 export type Announcements = {
   id: number;
   title: string;
