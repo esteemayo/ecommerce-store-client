@@ -862,10 +862,6 @@ export interface FormatPriceProps {
   value: number;
 }
 
-export interface SpinnerProps {
-  size?: string;
-}
-
 export interface LoaderProps {
   size?: string;
 }
