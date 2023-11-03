@@ -2,10 +2,6 @@ import { IconType } from 'react-icons/lib';
 import { IconDefinition } from '@fortawesome/free-solid-svg-icons';
 import { HTMLAttributes, HtmlHTMLAttributes, SetStateAction } from 'react';
 
-export interface LayoutProps {
-  children: React.ReactNode;
-}
-
 export interface ClientOnlyProps {
   children: React.ReactNode;
 }
