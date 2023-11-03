@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 import { FC } from 'react';
 
-import { AccountEmailProps } from '@/types';
+interface AccountEmailProps {
+  email: string;
+}
 
 const AccountEmail: FC<AccountEmailProps> = ({ email }) => {
   return (
