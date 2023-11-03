@@ -111,6 +111,7 @@ const Navbar = () => {
 const Container = styled.nav`
   width: 100vw;
   height: 5rem;
+  padding: 3.5rem;
   background-color: ${({ theme }) => theme.bgNav};
   color: var(--clr-white);
   display: flex;
