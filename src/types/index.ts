@@ -732,6 +732,12 @@ export interface WishlistCardProps {
   onDelete(id: number): void;
 }
 
+export interface WislistPriceProps {
+  price: number;
+  wishlist: any;
+  onAction(wishlist: SetStateAction<{}>): void;
+}
+
 export interface FormInputProps extends HTMLAttributes<HTMLInputElement> {
   name: string;
   type?: string;
