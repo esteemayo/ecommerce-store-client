@@ -687,10 +687,6 @@ export interface FilterSelect
   options: any[];
 }
 
-export interface OptionProps {
-  value: any;
-}
-
 export interface SelectPriceProps extends HTMLAttributes<HTMLSelectElement> {
   name: string;
   label: string;

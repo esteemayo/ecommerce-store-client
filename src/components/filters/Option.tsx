@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 import { FC } from 'react';
 
-import { OptionProps } from '@/types';
+interface OptionProps {
+  value?: string | number | readonly string[];
+}
 
 const Option: FC<OptionProps> = ({ value }) => {
   return <StyledOption value={value}>{value}</StyledOption>;
