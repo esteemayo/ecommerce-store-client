@@ -23,10 +23,7 @@ const Rotate = keyframes`
 
 const Container = styled.div<IContainer>`
   width: ${({ size }) => setWidth(size)};
-  height: ${({ size }) => size === 'xs' && '1.5rem'};
-  height: ${({ size }) => size === 'sm' && '2rem'};
-  height: ${({ size }) => size === 'md' && '5rem'};
-  height: ${({ size }) => size === 'lg' && '10rem'};
+  height: ${({ size }) => setHeight(size)};
   border: 3px solid #f5f5f5;
   border-top-color: ${({ theme }) => theme.spnrBorTop};
   border-radius: 50%;
@@ -34,6 +31,13 @@ const Container = styled.div<IContainer>`
 `;
 
 const setWidth = (size: string) => {
+  if (size === 'xs') return '1.5rem';
+  if (size === 'sm') return '2rem';
+  if (size === 'md') return '5rem';
+  if (size === 'lg') return '10rem';
+};
+
+const setHeight = (size: string) => {
   if (size === 'xs') return '1.5rem';
   if (size === 'sm') return '2rem';
   if (size === 'md') return '5rem';
