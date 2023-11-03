@@ -22,7 +22,7 @@ const WishlistPrice: FC<WislistPriceProps> = ({
   }, [cart, wishlist.id]);
 
   const btnLabel = useMemo(() => {
-    return `${inCart ? 'Added' : 'Add'} to cart`;
+    return `${inCart ? 'Added' : 'Add to cart'}`;
   }, [inCart]);
 
   return (
