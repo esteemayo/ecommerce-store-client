@@ -86,8 +86,8 @@ const CartModal: FC<CartModalProps> = ({
   }, [mode]);
 
   const inCart = useMemo(() => {
-    const inCart = cart.find((item) => item.id === product?.id);
-    return !!inCart;
+    const cartItem = cart.find((item) => item.id === product?.id);
+    return !!cartItem;
   }, [cart, product]);
 
   const actionLabel = useMemo(() => {
