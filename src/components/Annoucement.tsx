@@ -6,14 +6,14 @@ import Marquee from 'react-fast-marquee';
 const Annoucement = () => {
   return (
     <Container>
-      <Wrapper>
-        <Marquee speed={100} gradient>
+      <Marquee speed={100} gradient>
+        <Wrapper>
           <Text>
             Free delivery for all orders over $100. Order your goods now!
           </Text>
           <Text>Super Deal! Free Shipping on Orders Over $100.</Text>
-        </Marquee>
-      </Wrapper>
+        </Wrapper>
+      </Marquee>
     </Container>
   );
 };
