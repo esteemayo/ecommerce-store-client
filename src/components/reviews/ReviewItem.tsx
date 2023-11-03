@@ -28,11 +28,9 @@ const ReviewItem: FC<ReviewItemProps> = ({ user, rating, review }) => {
             <Review>{review}</Review>
             <Reviewer>{reviewer}</Reviewer>
           </ReviewContainer>
-          <Button>
-            <Link href='/products' passHref>
-              Shop now
-            </Link>
-          </Button>
+          <StyledLink href='/products' passHref>
+            <Button>Shop now</Button>
+          </StyledLink>
         </Left>
         <Right>
           <StyledImage src={user.photo} width={1200} height={1200} alt='' />
@@ -133,6 +131,17 @@ const Reviewer = styled.span`
   font-weight: 300;
   font-weight: 1.6rem;
   color: ${({ theme }) => theme.textReviewer};
+`;
+
+const StyledLink = styled(Link)`
+  width: 9rem;
+  text-decoration: none;
+  color: inherit;
+  outline-color: #ccc;
+
+  &:active {
+    color: currentColor;
+  }
 `;
 
 const Button = styled.button`
