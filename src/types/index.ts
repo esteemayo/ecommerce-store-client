@@ -858,10 +858,6 @@ export interface OverlayProps {
   onClick(e: React.MouseEvent<HTMLDivElement>): void;
 }
 
-export interface FormatPriceProps {
-  value: number;
-}
-
 export interface SearchHistoryProps {
   id: number;
   query: string;
