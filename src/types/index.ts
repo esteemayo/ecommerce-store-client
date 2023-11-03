@@ -818,10 +818,6 @@ export interface AccountInputProps extends HTMLAttributes<HTMLInputElement> {
   error?: string;
 }
 
-export interface AccountEmailProps {
-  email: string;
-}
-
 export interface AccountButtonProps extends HTMLAttributes<HTMLButtonElement> {
   text: string;
   disabled?: boolean;
