@@ -66,7 +66,7 @@ const Navbar = () => {
   );
 
   const handleSubmenu = useCallback(
-    (e: React.MouseEvent<HTMLButtonElement>) => {
+    (e: React.MouseEvent<HTMLElement>) => {
       e.stopPropagation();
 
       const target = e.target as Element;
