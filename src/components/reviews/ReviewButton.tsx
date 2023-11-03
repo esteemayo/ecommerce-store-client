@@ -3,7 +3,10 @@
 import styled, { css } from 'styled-components';
 import { FC } from 'react';
 
-import { ReviewButtonProps } from '@/types';
+interface ReviewButtonProps {
+  actionLabel: string;
+  onAction(): void;
+}
 
 const ReviewButton: FC<ReviewButtonProps> = ({ actionLabel, onAction }) => {
   return (

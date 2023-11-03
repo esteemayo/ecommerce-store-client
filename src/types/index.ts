@@ -596,11 +596,6 @@ export interface EmptyReviewProps {
   onClick(): void;
 }
 
-export interface ReviewButtonProps {
-  actionLabel: string;
-  onAction(): void;
-}
-
 export interface ReviewFilterProps {
   sort: string;
   value: string;
