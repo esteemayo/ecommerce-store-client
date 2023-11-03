@@ -222,53 +222,6 @@ const ProductPrice = styled.span`
   }
 `;
 
-const CartButton = styled.button`
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  border: none;
-  padding: 1rem 2rem;
-  background-color: ${({ theme }) => theme.bgBtn};
-  color: ${({ theme }) => theme.textBtn};
-  background-image: ${({ theme }) => css`
-    linear-gradient(
-      120deg,
-      transparent 0%,
-      transparent 50%,
-      ${theme.bgImgBtn} 50%
-    );
-  `};
-  background-size: 220%;
-  border-radius: 0.5rem;
-  outline-color: ${({ theme }) => theme.btnOut};
-  cursor: pointer;
-  transition: all 0.3s ease;
-
-  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
-    font-size: 1.47rem;
-    padding: 1rem 1.5rem;
-  }
-
-  @media only screen and (max-width: 18.75em) {
-    font-size: 1.4rem;
-    padding: 0.8rem 1rem;
-  }
-
-  &:hover {
-    background-position: 100%;
-  }
-
-  &:disabled {
-    opacity: 0.85;
-  }
-
-  svg {
-    @media only screen and (max-width: 18.75em) {
-      font-size: 1.3rem;
-    }
-  }
-`;
-
 const DeleteButton = styled.button`
   position: absolute;
   top: 0.5rem;
