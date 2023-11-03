@@ -12,6 +12,8 @@ const Annoucement = () => {
             Free delivery for all orders over $100. Order your goods now!
           </Text>
           <Text>Super Deal! Free Shipping on Orders Over $100.</Text>
+          <Text>Spend $110 or more for free US shipping</Text>
+          <Text>365 days risk-free guarantee. Shop Now!</Text>
         </Wrapper>
       </Marquee>
     </Container>
