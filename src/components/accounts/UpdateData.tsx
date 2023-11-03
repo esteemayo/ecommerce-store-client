@@ -12,9 +12,12 @@ import { ButtonContainer } from './ButtonContainer';
 
 import { useForm } from '@/hooks/useForm';
 import { userDataInputs } from '@/data/formData';
-import { UpdateDataProps } from '@/types';
 
 import Form from '../form/Form';
+
+interface UpdateDataProps {
+  onCancel(): void;
+}
 
 interface FormData {
   email: string;
