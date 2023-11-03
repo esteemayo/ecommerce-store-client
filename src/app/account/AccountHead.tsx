@@ -1,7 +1,10 @@
 import styled from 'styled-components';
 import { FC } from 'react';
 
-import { AccountHeadProps } from '@/types';
+interface AccountHeadProps {
+  onOpen(): void;
+  onAction(): void;
+}
 
 const AccountHead: FC<AccountHeadProps> = ({ onOpen, onAction }) => {
   return (

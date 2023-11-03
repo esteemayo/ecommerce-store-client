@@ -795,11 +795,6 @@ export interface FormHeadingProps {
   title: string;
 }
 
-export interface AccountHeadProps {
-  onOpen(): void;
-  onAction(): void;
-}
-
 export interface AccountUploadProps {
   onOpen(): void;
   currentUser: boolean;
