@@ -791,10 +791,6 @@ export interface FormHeadingProps {
   title: string;
 }
 
-export interface FormBoxProps {
-  children: React.ReactNode;
-}
-
 export interface AccountHeadProps {
   onOpen(): void;
   onAction(): void;
