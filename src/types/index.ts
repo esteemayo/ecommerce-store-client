@@ -800,10 +800,6 @@ export interface AccountHeadProps {
   onAction(): void;
 }
 
-export interface DeactivateAccountProps {
-  onOpen(): void;
-}
-
 export interface AccountUploadProps {
   onOpen(): void;
   currentUser: boolean;

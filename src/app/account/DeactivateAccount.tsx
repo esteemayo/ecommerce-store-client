@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 import { FC } from 'react';
 
-import { DeactivateAccountProps } from '@/types';
+interface DeactivateAccountProps {
+  onOpen(): void;
+}
 
 const DeactivateAccount: FC<DeactivateAccountProps> = ({ onOpen }) => {
   return (
