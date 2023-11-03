@@ -3,7 +3,9 @@
 import styled from 'styled-components';
 import { FC, useCallback } from 'react';
 
-import { DeleteAccountProps } from '@/types';
+interface DeleteAccountProps {
+  onCancel(): void;
+}
 
 const DeleteAccount: FC<DeleteAccountProps> = ({ onCancel }) => {
   const handleDelete = useCallback(() => {
