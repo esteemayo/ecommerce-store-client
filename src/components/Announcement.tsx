@@ -4,10 +4,13 @@ import styled from 'styled-components';
 import Marquee from 'react-fast-marquee';
 
 import { announcements } from '@/data';
+import { useSubmenu } from '@/hooks/useSubmenu';
 
 const Announcement = () => {
+  const closeSubmenu = useSubmenu((state) => state.closeSubmenu);
+
   return (
-    <Container>
+    <Container onMouseOver={closeSubmenu}>
       <Marquee speed={100} gradient>
         <Wrapper>
           {announcements.map((item) => {
