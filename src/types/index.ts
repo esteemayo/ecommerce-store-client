@@ -696,7 +696,11 @@ export interface SelectPriceProps extends HTMLAttributes<HTMLSelectElement> {
 export interface RangeInputProps extends HTMLAttributes<HTMLInputElement> {
   name: string;
   label: string;
+  value: string | number | readonly string[];
+  min?: string | number;
+  max?: string | number;
   price: number;
+  onChange(e: React.ChangeEvent<HTMLInputElement>): void;
 }
 
 export interface OrderCardProps {
