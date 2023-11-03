@@ -4,7 +4,7 @@ export const useForm = (
   callback: () => void,
   initialState = {},
   validate: any,
-  onClose?: any
+  onClose?: () => void
 ) => {
   const [errors, setErrors] = useState<any>({});
   const [formData, setFormData] = useState<any>(initialState);
