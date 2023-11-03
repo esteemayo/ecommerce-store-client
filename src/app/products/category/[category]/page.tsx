@@ -95,7 +95,9 @@ const ProductCategory = ({ params }) => {
               name='price'
               label='Product price'
               options={priceOptions}
-              onChange={(e: ChangeEvent<HTMLSelectElement>) => setSort(e.target.value)}
+              onChange={(e: ChangeEvent<HTMLSelectElement>) =>
+                setSort(e.target.value)
+              }
             />
           </Right>
         </Wrapper>
