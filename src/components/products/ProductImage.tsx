@@ -18,7 +18,7 @@ interface IBtn {
 const ProductImage: FC<ProductImageProps> = ({ images }) => {
   const { isOpen, onOpen, onClose } = useImageModal();
 
-  const imgContainerRef = useRef();
+  const imgContainerRef = useRef<HTMLElement>();
   const [slideNumber, setSlideNumber] = useState(0);
   const [isMoved, setIsMoved] = useState(false);
   const [isSliderMoved, setIsSliderMoved] = useState(false);
@@ -57,7 +57,7 @@ const ProductImage: FC<ProductImageProps> = ({ images }) => {
     (direction: string) => {
       setIsSliderMoved(true);
 
-      const container: any = imgContainerRef.current;
+      const container = imgContainerRef.current;
       const distance = container.getBoundingClientRect().x;
 
       if (direction === 'left' && slideNumber > 0) {
