@@ -655,10 +655,6 @@ export interface PaymentModalProps {
   onExit(): void;
 }
 
-export interface FilterHeading {
-  title: string;
-}
-
 export interface ProductFilterProps {
   products: StoreProduct;
   price: number;

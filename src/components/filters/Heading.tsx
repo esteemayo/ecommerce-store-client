@@ -1,9 +1,11 @@
 import styled from 'styled-components';
 import { FC } from 'react';
 
-import { FilterHeading } from '@/types';
+interface HeadingProps {
+  title: string;
+}
 
-const Heading: FC<FilterHeading> = ({ title }) => {
+const Heading: FC<HeadingProps> = ({ title }) => {
   return <StyledHeading>{title}</StyledHeading>;
 };
 
