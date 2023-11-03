@@ -155,7 +155,9 @@ export type WishlistItem = {
   createdAt: string;
   updatedAt: string;
   slug: string;
-}[];
+};
+
+export type WishlistItems = WishlistItem[];
 
 export type OrderItem = {
   id: number;
@@ -726,7 +728,7 @@ export interface WishlistCardProps {
   isOpen: boolean;
   onOpen(id: number): void;
   selected: any;
-  wishlists: WishlistItem;
+  wishlists: WishlistItem[];
   onAction(wishlist: SetStateAction<{}>): void;
   onClose(): void;
   onDelete(id: number): void;
@@ -734,7 +736,7 @@ export interface WishlistCardProps {
 
 export interface WislistPriceProps {
   price: number;
-  wishlist: any;
+  wishlist: WishlistItem;
   onAction(wishlist: SetStateAction<{}>): void;
   onDelete(id: number): void;
 }
