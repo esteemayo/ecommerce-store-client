@@ -1,7 +1,7 @@
 import { ChangeEventHandler, useCallback, useState } from 'react';
 
 export const useForm = (
-  callback: any,
+  callback: () => void,
   initialState = {},
   validate: any,
   onClose?: any
