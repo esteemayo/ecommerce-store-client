@@ -3,7 +3,9 @@
 import styled from 'styled-components';
 import { FC } from 'react';
 
-import { SpinnerProps } from '@/types';
+interface SpinnerProps {
+  size?: string;
+}
 
 interface IContainer {
   size?: string;
