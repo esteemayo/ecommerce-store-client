@@ -1,10 +1,8 @@
 'use client';
 
-import { FC, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
-import { ClientOnlyProps } from '@/types';
-
-const ClientOnly: FC<ClientOnlyProps> = ({ children }) => {
+const ClientOnly = ({ children }: { children: React.ReactNode }) => {
   const [hasMounted, setHasMounted] = useState(false);
 
   useEffect(() => {
@@ -16,6 +14,6 @@ const ClientOnly: FC<ClientOnlyProps> = ({ children }) => {
   }
 
   return <>{children}</>;
-}
+};
 
 export default ClientOnly;
