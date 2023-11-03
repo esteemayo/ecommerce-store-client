@@ -54,9 +54,9 @@ const WishlistCard: FC<WishlistCardProps> = ({
                 onDelete={onDelete}
               />
             </Right>
-            <DeleteButton type='button' onClick={() => onOpen(id)}>
+            <Button type='button' onClick={() => onOpen(id)}>
               <CloseIcon />
-            </DeleteButton>
+            </Button>
           </Wrapper>
         );
       })}
@@ -199,7 +199,7 @@ const Right = styled.div`
   }
 `;
 
-const DeleteButton = styled.button`
+const Button = styled.button`
   position: absolute;
   top: 0.5rem;
   right: 3rem;
