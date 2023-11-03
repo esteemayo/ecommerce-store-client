@@ -175,20 +175,6 @@ const Button = styled.button`
     height: 1px;
     background-color: ${({ theme }) => theme.star};
   }
-
-  a {
-    &:link,
-    &:visited {
-      width: 9rem;
-      text-decoration: none;
-      color: inherit;
-      outline-color: #ccc;
-    }
-
-    &:active {
-      color: currentColor;
-    }
-  }
 `;
 
 const Right = styled.div`
