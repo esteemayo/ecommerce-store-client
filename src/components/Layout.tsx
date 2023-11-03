@@ -16,10 +16,10 @@ import ModalProvider from '@/providers/ModalProvider';
 
 import { LayoutProps } from '@/types';
 
-const nunito = Nunito({
-  subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700'],
-});
+// const nunito = Nunito({
+//   subsets: ['latin'],
+//   weight: ['300', '400', '500', '600', '700'],
+// });
 
 const Layout: FC<LayoutProps> = ({ children }) => {
   return (
