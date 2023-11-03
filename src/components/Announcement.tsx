@@ -1,17 +1,25 @@
 'use client';
 
 import styled from 'styled-components';
+import { useMemo } from 'react';
 import Marquee from 'react-fast-marquee';
 
-import { announcements } from '@/data';
 import { useSubmenu } from '@/hooks/useSubmenu';
+import { useDarkMode } from '@/hooks/useDarkMode';
+
+import { announcements } from '@/data';
 
 const Announcement = () => {
+  const mode = useDarkMode((state) => state.mode);
   const closeSubmenu = useSubmenu((state) => state.closeSubmenu);
+
+  const gradient = useMemo(() => {
+    return mode ? false : true;
+  }, [mode]);
 
   return (
     <Container onMouseOver={closeSubmenu}>
-      <Marquee speed={100} gradient>
+      <Marquee speed={100} gradient={gradient}>
         <Wrapper>
           {announcements.map((item) => {
             const { id, title } = item;
