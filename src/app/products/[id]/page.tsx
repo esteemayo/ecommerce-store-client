@@ -38,8 +38,8 @@ const SingleProduct = ({ params }) => {
   const [reviews, setReviews] = useState<ReviewItem>([]);
 
   const inCart = useMemo(() => {
-    const inCart = cart.find((item) => item.id === parseInt(id));
-    return !!inCart;
+    const cartItem = cart.find((item) => item.id === parseInt(id));
+    return !!cartItem;
   }, [cart, id]);
 
   const actionLabel = useMemo(() => {
