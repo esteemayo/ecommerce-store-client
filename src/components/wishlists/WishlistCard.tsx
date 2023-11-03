@@ -10,7 +10,6 @@ import WishlistPrice from './WishlistPrice';
 import DeleteModal from '../modals/DeleteModal';
 
 import { excerpts } from '@/utils';
-
 import { WishlistCardProps } from '@/types';
 
 const WishlistCard: FC<WishlistCardProps> = ({
