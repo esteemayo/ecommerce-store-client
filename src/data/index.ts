@@ -55,11 +55,7 @@ export const announcements: Announcements = [
   },
   {
     id: 3,
-    title: 'Spend $110 or more for free US shipping',
-  },
-  {
-    id: 4,
-    title: '365days risk-free guarantee. Shop Now!',
+    title: 'Spend $110 or more for free US shipping. 365days risk-free guarantee. Shop Now!',
   },
 ];
 
