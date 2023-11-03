@@ -23,7 +23,7 @@ const nunito = Nunito({
 
 const Layout: FC<LayoutProps> = ({ children }) => {
   return (
-    <div className={`${nunito.className} container`}>
+    <div className={` container`}>
       <ClientOnly>
         <Announcement />
         <Navbar />
