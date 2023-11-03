@@ -10,10 +10,6 @@ export interface ClientOnlyProps {
   children: React.ReactNode;
 }
 
-export interface CartProviderProps {
-  children: React.ReactNode;
-}
-
 export interface AppThemeProviderProps {
   children: React.ReactNode;
 }
