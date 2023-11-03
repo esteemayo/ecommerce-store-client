@@ -832,10 +832,6 @@ export interface CancelButtonProps extends HTMLAttributes<HTMLButtonElement> {
   onClick(): void;
 }
 
-export interface DeleteAccountProps {
-  onCancel(): void;
-}
-
 export interface ModalProps {
   title?: string;
   children: React.ReactNode;
