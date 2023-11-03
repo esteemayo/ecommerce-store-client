@@ -1,10 +1,8 @@
 import styled from 'styled-components';
-import { FC } from 'react';
 
-import { FormBoxProps } from '@/types';
 import { useSubmenu } from '@/hooks/useSubmenu';
 
-const FormBox: FC<FormBoxProps> = ({ children }) => {
+const FormBox = ({ children }: { children: React.ReactNode }) => {
   const closeSubmenu = useSubmenu((state) => state.closeSubmenu);
 
   return (
