@@ -1,4 +1,3 @@
-import { FC } from 'react';
 // import { Nunito } from '@next/font/google';
 
 import Announcement from './Announcement';
@@ -14,14 +13,12 @@ import Sidebar from './sidebar/Sidebar';
 import ToastProvider from '@/providers/ToastProvider';
 import ModalProvider from '@/providers/ModalProvider';
 
-import { LayoutProps } from '@/types';
-
 // const nunito = Nunito({
 //   subsets: ['latin'],
 //   weight: ['300', '400', '500', '600', '700'],
 // });
 
-const Layout: FC<LayoutProps> = ({ children }) => {
+const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className={` container`}>
       <ClientOnly>
