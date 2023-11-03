@@ -1,7 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
-import { SetStateAction, useCallback, useState } from 'react';
+import { SetStateAction, useCallback, useEffect, useState } from 'react';
 import dynamic from 'next/dynamic';
 
 import CartModal from '@/components/modals/CartModal';
@@ -26,7 +26,7 @@ const WishLists = () => {
   const removeWishlist = useCartStore((state) => state.removeWishlist);
   const closeSubmenu = useSubmenu((state) => state.closeSubmenu);
 
-  const [products, setProducts] = useState<WishlistItems>(wishlists);
+  const [products, setProducts] = useState<WishlistItems>([]);
   const [isSelectedId, setIsSelectedId] = useState(null);
   const [isSelectedProduct, setIsSelectedProduct] = useState({});
 
@@ -53,6 +53,10 @@ const WishLists = () => {
     },
     [removeWishlist]
   );
+
+  useEffect(() => {
+    setProducts(wishlists);
+  }, [wishlists]);
 
   let bodyContent: JSX.Element;
 
