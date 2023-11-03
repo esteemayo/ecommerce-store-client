@@ -112,6 +112,10 @@ const Button = styled.button`
     opacity: 0.85;
   }
 
+  &:disabled:hover {
+    background-position: 0%;
+  }
+
   svg {
     @media only screen and (max-width: 18.75em) {
       font-size: 1.3rem;
