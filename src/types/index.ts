@@ -843,10 +843,6 @@ export interface ModalProps {
   onClose(): void;
 }
 
-export interface UpdatePasswordProps {
-  onCancel(): void;
-}
-
 export interface OverlayProps {
   type: string;
   mode: string;
