@@ -1,11 +1,9 @@
 import { ThemeProvider } from 'styled-components';
-import { FC } from 'react';
 
 import { useDarkMode } from '@/hooks/useDarkMode';
-import { AppThemeProviderProps } from '@/types';
 import { darkTheme, lightTheme } from '@/utils/Theme';
 
-const AppThemeProvider: FC<AppThemeProviderProps> = ({ children }) => {
+const AppThemeProvider = ({ children }: { children: React.ReactNode }) => {
   const mode = useDarkMode((state) => state.mode);
 
   return (
@@ -13,6 +11,6 @@ const AppThemeProvider: FC<AppThemeProviderProps> = ({ children }) => {
       {children}
     </ThemeProvider>
   );
-}
+};
 
 export default AppThemeProvider;
