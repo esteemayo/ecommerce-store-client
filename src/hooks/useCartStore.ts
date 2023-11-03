@@ -36,6 +36,10 @@ export const useCartStore = create<CartStore>()(
               state.wished = state.wished.filter(
                 (item: number) => item !== payload.id
               );
+
+              state.qty++;
+              state.cart.push(payload);
+              state.total += payload.price * payload.quantity;
             } else {
               state.qty++;
               state.cart.push(payload);
