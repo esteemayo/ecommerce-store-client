@@ -39,8 +39,8 @@ const ProductCard: FC<ProductCardProps> = ({ product, onOpen, onSelect }) => {
   }, [product]);
 
   const inCart = useMemo(() => {
-    const inCart = cart.find((item) => item.id === product.id);
-    return !!inCart;
+    const cartItem = cart.find((item) => item.id === product.id);
+    return !!cartItem;
   }, [cart, product]);
 
   return (
