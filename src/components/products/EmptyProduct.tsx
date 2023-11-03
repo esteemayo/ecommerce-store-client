@@ -4,7 +4,10 @@ import styled from 'styled-components';
 import { FC } from 'react';
 import Image from 'next/image';
 
-import { EmptyProductProps } from '@/types';
+interface EmptyProductProps {
+  src: string;
+  title: string;
+}
 
 const EmptyProduct: FC<EmptyProductProps> = ({ src, title }) => {
   return (

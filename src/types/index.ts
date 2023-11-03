@@ -675,11 +675,6 @@ export interface ProductListProps {
   title?: string;
 }
 
-export interface EmptyProductProps {
-  src: string;
-  title: string;
-}
-
 export interface FilterSelect
   extends HTMLAttributes<HTMLSelectElement | HTMLInputElement> {
   name: string;
