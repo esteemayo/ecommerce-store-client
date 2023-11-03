@@ -1,6 +1,6 @@
 'use client';
 
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { FC } from 'react';
 
 interface SpinnerProps {
@@ -15,6 +15,12 @@ const Spinner: FC<SpinnerProps> = ({ size = 'sm' }) => {
   return <Container size={size}>&nbsp;</Container>;
 };
 
+const Rotate = keyframes`
+  to {
+    transform: rotate(360deg);
+  }
+`;
+
 const Container = styled.div<IContainer>`
   width: ${({ size }) => size === 'xs' && '1.5rem'};
   width: ${({ size }) => size === 'sm' && '2rem'};
@@ -27,13 +33,7 @@ const Container = styled.div<IContainer>`
   border: 3px solid #f5f5f5;
   border-top-color: ${({ theme }) => theme.spnrBorTop};
   border-radius: 50%;
-  animation: rotate 0.6s linear infinite;
-
-  @keyframes rotate {
-    to {
-      transform: rotate(360deg);
-    }
-  }
+  animation: ${Rotate} 0.6s linear infinite;
 `;
 
 export default Spinner;
