@@ -843,10 +843,6 @@ export interface ModalProps {
   onClose(): void;
 }
 
-export interface UpdateDataProps {
-  onCancel(): void;
-}
-
 export interface UpdatePasswordProps {
   onCancel(): void;
 }
