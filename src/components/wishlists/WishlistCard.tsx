@@ -1,6 +1,6 @@
 'use client';
 
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import { FC } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
