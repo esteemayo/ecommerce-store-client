@@ -29,7 +29,7 @@ interface IErrors {
   password?: string;
 }
 
-const initialState:FormData = {
+const initialState: FormData = {
   username: '',
   password: '',
 };
@@ -110,7 +110,9 @@ const Login = () => {
             name='rememberMe'
             label='Remember me'
             checked={rememberMe}
-            onChange={(e) => setRememberMe(e.currentTarget.checked)}
+            onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+              setRememberMe(e.currentTarget.checked)
+            }
           />
           <FormButton label='Log in' />
           <Forgot url='/forgo' label='Forgot your password?' />
