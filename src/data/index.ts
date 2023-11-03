@@ -26,6 +26,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 
 import {
+  Announcements,
   CartItem,
   FooterLink,
   FooterMenu,
@@ -43,7 +44,7 @@ import {
   WishlistItem,
 } from '@/types';
 
-export const annoucements = [
+export const annoucements: Announcements = [
   {
     id: 1,
     title: 'Free delivery for all orders over $100. Order your goods now!',
@@ -60,7 +61,7 @@ export const annoucements = [
     id: 4,
     title: '365days risk-free guarantee. Shop Now!',
   },
-]
+];
 
 export const navLinks: NavLink = [
   {

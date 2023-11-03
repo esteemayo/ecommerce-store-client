@@ -18,6 +18,11 @@ export interface AppThemeProviderProps {
   children: React.ReactNode;
 }
 
+export type Announcements = {
+  id: number;
+  title: string;
+}[];
+
 export type CartItem = {
   id: number;
   name: string;
