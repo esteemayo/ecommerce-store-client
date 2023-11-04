@@ -17,6 +17,7 @@ import { ReviewModalProps } from '@/types';
 import { useDarkMode } from '@/hooks/useDarkMode';
 
 import StarRating from '../StarRating';
+import CreateReview from '../reviews/CreateReview';
 
 interface IOverlay {
   mode: string;
@@ -113,46 +114,7 @@ const ReviewModal: FC<ReviewModalProps> = ({ isOpen, onClose }) => {
               <FontAwesomeIcon icon={faXmark} />
             </CloseButton>
           </ButtonContainer>
-          <Header>Overall rating</Header>
-          <RatingContainer>
-            <StarRating
-              name='size-large'
-              value={rating}
-              onChange={handleChangeRating}
-            />
-            <Text>Click to rate</Text>
-          </RatingContainer>
-          <Label htmlFor='review'>Product review</Label>
-          <TextArea
-            id='review'
-            name='review'
-            value={review}
-            onChange={handleChangeReview}
-            placeholder='Example: Since i bought this a month ago, it has been used a lot. What i like best/what is worst about this product is ...'
-          />
-          <Agreement>
-            <Input
-              id='terms'
-              type='checkbox'
-              checked={terms}
-              onChange={handleChangeTerms}
-            />
-            <Label htmlFor='terms'>
-              I accept the{' '}
-              <Link href='#' passHref>
-                terms and conditions
-              </Link>
-            </Label>
-          </Agreement>
-          <Information>
-            You will be able to receive emails in connection with this review
-            (eg if others comment on your review). All emails contain the option
-            to unsubscribe. We can use the text and star rating from your review
-            in other marketting.
-          </Information>
-          <Button type='button' onClick={handleClick}>
-            Submit product review
-          </Button>
+          <CreateReview />
         </Box>
       </Wrapper>
     </Overlay>
