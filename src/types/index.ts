@@ -750,7 +750,7 @@ export interface WishlistCardProps {
 
 export interface WislistPriceProps {
   price: number;
-  wishlist: WishlistItem;
+  wishlist: WishlistValues;
   onAction(wishlist: SetStateAction<{}>): void;
 }
 
