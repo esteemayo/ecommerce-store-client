@@ -131,6 +131,7 @@ const Agreement = styled.div`
 
 const StyledLink = styled(Link)`
   color: ${({ theme }) => theme.text};
+  outline-color: ${({ theme }) => theme.revOut};
   transition: all 0.3s ease;
 
   &:hover {
