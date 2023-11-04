@@ -1,16 +1,8 @@
 'use client';
 
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Link from 'next/link';
-import React, {
-  ChangeEvent,
-  FC,
-  useCallback,
-  useEffect,
-  useMemo,
-  useState,
-} from 'react';
+import { FC, useCallback, useEffect, useMemo, useState } from 'react';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 
 import { ReviewModalProps } from '@/types';
@@ -43,7 +35,7 @@ const ReviewModal: FC<ReviewModalProps> = ({ isOpen, onClose }) => {
   );
 
   const handleChangeReview = useCallback(
-    (e: ChangeEvent<HTMLTextAreaElement>) => {
+    (e: React.ChangeEvent<HTMLTextAreaElement>) => {
       setReview(e.target.value);
     },
     []
@@ -84,6 +76,16 @@ const ReviewModal: FC<ReviewModalProps> = ({ isOpen, onClose }) => {
     [closeModalHandler]
   );
 
+  const handleSubmit = useCallback(
+    (e: React.FormEvent<HTMLFormElement>) => {
+      e.preventDefault();
+
+      console.log({ rating, review, terms });
+      handleClear();
+    },
+    [rating, review, terms, handleClear]
+  );
+
   const activeModal = useMemo(() => {
     return showModal?.toString();
   }, [showModal]);
@@ -109,7 +111,15 @@ const ReviewModal: FC<ReviewModalProps> = ({ isOpen, onClose }) => {
               <FontAwesomeIcon icon={faXmark} />
             </CloseButton>
           </ButtonContainer>
-          <CreateReview />
+          <CreateReview
+            rating={rating}
+            review={review}
+            terms={terms}
+            onChangeRating={handleChangeRating}
+            onChangeReview={handleChangeReview}
+            onChangeTerms={handleChangeTerms}
+            onSubmit={handleSubmit}
+          />
         </Box>
       </Wrapper>
     </Overlay>
