@@ -34,6 +34,10 @@ const ReviewModal: FC<ReviewModalProps> = ({ isOpen, onClose }) => {
   const [terms, setTerms] = useState(false);
   const [showModal, setShowModal] = useState(isOpen);
 
+  const handleTerms = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
+    setTerms(e.target.value);
+  }, []);
+
   const handleClear = useCallback(() => {
     setRating(null);
     setReview('');
@@ -121,9 +125,7 @@ const ReviewModal: FC<ReviewModalProps> = ({ isOpen, onClose }) => {
               id='terms'
               type='checkbox'
               checked={terms}
-              onChange={(e: ChangeEvent<HTMLInputElement>) =>
-                setTerms(e.currentTarget.checked)
-              }
+              onChange={handleTerms}
             />
             <Label htmlFor='terms'>
               I accept the{' '}
