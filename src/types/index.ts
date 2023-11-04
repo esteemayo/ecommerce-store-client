@@ -41,9 +41,31 @@ type CartValues = {
   updatedAt: string;
 };
 
+type WishlistValues = {
+  id: number;
+  category: string;
+  color: string;
+  desc: string;
+  discount: number;
+  featured: boolean;
+  images: string[];
+  inStock: boolean;
+  name: string;
+  numberInStock: number;
+  price: number;
+  priceDiscount: number;
+  ratingsAverage: number;
+  ratingsQuantity: number;
+  size: number | string;
+  slug: string;
+  tags: string[];
+  createdAt: string;
+  updatedAt: string;
+};
+
 export interface CartStore {
   cart: CartValues[];
-  wishlists: [];
+  wishlists: WishlistValues[];
   wished: number[];
   qty: number;
   tax: number;
