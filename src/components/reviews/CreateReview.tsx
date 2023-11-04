@@ -1,62 +1,31 @@
 'use client';
 
 import styled, { css } from 'styled-components';
+import { FC } from 'react';
 import Link from 'next/link';
-import { useCallback, useState } from 'react';
 
 import Form from '../form/Form';
 import StarRating from '../StarRating';
 
-const CreateReview = () => {
-  const [rating, setRating] = useState(null);
-  const [review, setReview] = useState('');
-  const [terms, setTerms] = useState(false);
+import { CreateReviewProps } from '@/types';
 
-  const handleChangeRating = useCallback(
-    (e: React.ChangeEvent<HTMLInputElement>, newValue: number) => {
-      setRating(newValue);
-    },
-    []
-  );
-
-  const handleChangeReview = useCallback(
-    (e: React.ChangeEvent<HTMLTextAreaElement>) => {
-      setReview(e.target.value);
-    },
-    []
-  );
-
-  const handleChangeTerms = useCallback(
-    (e: React.ChangeEvent<HTMLInputElement>) => {
-      setTerms(e.currentTarget.checked);
-    },
-    []
-  );
-
-  const handleClear = useCallback(() => {
-    setRating(null);
-    setReview('');
-    setTerms(false);
-  }, []);
-
-  const handleSubmit = useCallback(
-    (e: React.FormEvent<HTMLFormElement>) => {
-      e.preventDefault();
-
-      console.log({ rating, review, terms });
-      handleClear();
-    },
-    [rating, review, terms, handleClear]
-  );
-
+const CreateReview: FC<CreateReviewProps> = ({
+  rating,
+  review,
+  terms,
+  onChangeRating,
+  onChangeReview,
+  onChangeTerms,
+  onSubmit,
+}) => {
   return (
-    <Form onSubmit={handleSubmit}>
+    <Form onSubmit={onSubmit}>
       <Header>Overall rating</Header>
       <RatingContainer>
         <StarRating
           name='size-large'
           value={rating}
-          onChange={handleChangeRating}
+          onChange={onChangeRating}
         />
         <Text>Click to rate</Text>
       </RatingContainer>
@@ -65,7 +34,7 @@ const CreateReview = () => {
         id='review'
         name='review'
         value={review}
-        onChange={handleChangeReview}
+        onChange={onChangeReview}
         placeholder='Example: Since i bought this a month ago, it has been used a lot. What i like best/what is worst about this product is ...'
       />
       <Agreement>
@@ -73,7 +42,7 @@ const CreateReview = () => {
           id='terms'
           type='checkbox'
           checked={terms}
-          onChange={handleChangeTerms}
+          onChange={onChangeTerms}
         />
         <Label htmlFor='terms'>
           I accept the{' '}
