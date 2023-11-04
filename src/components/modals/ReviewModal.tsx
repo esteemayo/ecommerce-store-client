@@ -235,22 +235,4 @@ const Text = styled.span`
   margin-bottom: 1.5rem;
 `;
 
-const Label = styled.label`
-  font-weight: 600;
-  font-size: 1.3rem;
-  color: ${({ theme }) => theme.text};
-
-  a {
-    &:link,
-    &:visited {
-      color: ${({ theme }) => theme.text};
-      transition: all 0.3s ease;
-    }
-
-    &:hover {
-      letter-spacing: 0.1px;
-    }
-  }
-`;
-
 export default ReviewModal;
