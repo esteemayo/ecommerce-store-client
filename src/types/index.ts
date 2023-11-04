@@ -356,17 +356,6 @@ export interface SubmenuMenuItemProps {
   label: string;
 }
 
-type Product = {
-  id: number;
-  name: string;
-  images: string[];
-  price: number;
-  discount: number;
-  ratingsQuantity: number;
-  ratingsAverage: number;
-  inStock: boolean;
-};
-
 export interface ProductCardProps {
   product: CardProduct;
   onOpen(): void;
