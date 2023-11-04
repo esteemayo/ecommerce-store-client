@@ -587,6 +587,7 @@ export interface ReviewCardProps {
 export interface ReviewModalProps {
   isOpen: boolean;
   onClose(): void;
+  children: React.ReactNode;
 }
 
 export interface EmptyReviewProps {
