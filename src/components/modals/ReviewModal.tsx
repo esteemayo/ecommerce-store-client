@@ -208,24 +208,4 @@ const Header = styled.h1`
   color: ${({ theme }) => theme.text};
 `;
 
-const RatingContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  width: 10rem;
-  margin-top: 1rem;
-
-  svg {
-    font-size: 3.5rem;
-    fill: ${({ theme }) => theme.star};
-    border: 2px solid ${({ theme }) => theme.starBorder};
-    border-radius: 0.5rem;
-    margin-right: 0.5rem;
-
-    @media only screen and (max-width: 18.75em) {
-      font-size: 3rem;
-    }
-  }
-`;
-
 export default ReviewModal;
