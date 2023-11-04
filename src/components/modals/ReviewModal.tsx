@@ -34,6 +34,13 @@ const ReviewModal: FC<ReviewModalProps> = ({ isOpen, onClose }) => {
   const [terms, setTerms] = useState(false);
   const [showModal, setShowModal] = useState(isOpen);
 
+  const handleChangeRating = useCallback(
+    (e: React.ChangeEvent<HTMLInputElement>, newValue: number) => {
+      setRating(newValue);
+    },
+    []
+  );
+
   const handleChangeReview = useCallback(
     (e: ChangeEvent<HTMLTextAreaElement>) => {
       setReview(e.target.value);
@@ -111,12 +118,7 @@ const ReviewModal: FC<ReviewModalProps> = ({ isOpen, onClose }) => {
             <StarRating
               name='size-large'
               value={rating}
-              onChange={(
-                e: ChangeEvent<HTMLInputElement>,
-                newValue: number
-              ) => {
-                setRating(newValue);
-              }}
+              onChange={handleChangeRating}
             />
             <Text>Click to rate</Text>
           </RatingContainer>
