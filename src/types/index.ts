@@ -495,7 +495,7 @@ type ProductValues = {
 };
 
 export interface ProductProps {
-  product: ProductValues;
+  product: CartValues;
   inCart: boolean;
   actionLabel: string;
 }
