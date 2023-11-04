@@ -38,9 +38,9 @@ const ProductHead: FC<ProductHeadProps> = ({
         <>
           <Message>
             4 interest-free payments of $49.75. &nbsp;
-            <Link href='#' passHref>
+            <StyledLink href='#' passHref>
               Learn more
-            </Link>
+            </StyledLink>
           </Message>
           <Rating>
             <StarRating readOnly value={ratingsAverage} name='read-only' />
@@ -121,20 +121,17 @@ const TotalPrice = styled.p<IProps>`
 const Message = styled.p`
   color: ${({ theme }) => theme.text};
   margin-top: 1rem;
+`;
 
-  a {
-    &:link,
-    &:visited {
-      text-decoration: underline;
-      text-transform: capitalize;
-      color: ${({ theme }) => theme.text};
-      outline-color: #eee;
-    }
+const StyledLink = styled(Link)`
+  text-decoration: underline;
+  text-transform: capitalize;
+  color: ${({ theme }) => theme.text};
+  outline-color: #eee;
 
-    &:hover,
-    &:active {
-      color: ${({ theme }) => theme.text};
-    }
+  &:hover,
+  &:active {
+    color: ${({ theme }) => theme.text};
   }
 `;
 
