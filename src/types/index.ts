@@ -589,7 +589,7 @@ export interface ReviewModalProps {
   onClose(): void;
 }
 
-export interface CreateReviewProps {
+export interface ReviewFormProps {
   rating: number;
   review: string;
   terms: boolean;

@@ -7,9 +7,9 @@ import Link from 'next/link';
 import Form from '../form/Form';
 import StarRating from '../StarRating';
 
-import { CreateReviewProps } from '@/types';
+import { ReviewFormProps } from '@/types';
 
-const CreateReview: FC<CreateReviewProps> = ({
+const ReviewForm: FC<ReviewFormProps> = ({
   rating,
   review,
   terms,
@@ -194,4 +194,4 @@ const Button = styled.button`
   }
 `;
 
-export default CreateReview;
+export default ReviewForm;

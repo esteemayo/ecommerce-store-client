@@ -8,7 +8,7 @@ import { FC, useCallback, useEffect, useMemo, useState } from 'react';
 import { ReviewModalProps } from '@/types';
 import { useDarkMode } from '@/hooks/useDarkMode';
 
-import CreateReview from '../reviews/CreateReview';
+import ReviewForm from '../reviews/ReviewForm';
 
 interface IOverlay {
   mode: string;
@@ -110,7 +110,7 @@ const ReviewModal: FC<ReviewModalProps> = ({ isOpen, onClose }) => {
               <FontAwesomeIcon icon={faXmark} />
             </CloseButton>
           </ButtonContainer>
-          <CreateReview
+          <ReviewForm
             rating={rating}
             review={review}
             terms={terms}
