@@ -34,9 +34,19 @@ const ReviewModal: FC<ReviewModalProps> = ({ isOpen, onClose }) => {
   const [terms, setTerms] = useState(false);
   const [showModal, setShowModal] = useState(isOpen);
 
-  const handleTerms = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
-    setTerms(e.currentTarget.checked);
-  }, []);
+  const handleChangeReview = useCallback(
+    (e: ChangeEvent<HTMLTextAreaElement>) => {
+      setReview(e.target.value);
+    },
+    []
+  );
+
+  const handleChangeTerms = useCallback(
+    (e: React.ChangeEvent<HTMLInputElement>) => {
+      setTerms(e.currentTarget.checked);
+    },
+    []
+  );
 
   const handleClear = useCallback(() => {
     setRating(null);
@@ -115,9 +125,7 @@ const ReviewModal: FC<ReviewModalProps> = ({ isOpen, onClose }) => {
             id='review'
             name='review'
             value={review}
-            onChange={(e: ChangeEvent<HTMLTextAreaElement>) =>
-              setReview(e.target.value)
-            }
+            onChange={handleChangeReview}
             placeholder='Example: Since i bought this a month ago, it has been used a lot. What i like best/what is worst about this product is ...'
           />
           <Agreement>
@@ -125,7 +133,7 @@ const ReviewModal: FC<ReviewModalProps> = ({ isOpen, onClose }) => {
               id='terms'
               type='checkbox'
               checked={terms}
-              onChange={handleTerms}
+              onChange={handleChangeTerms}
             />
             <Label htmlFor='terms'>
               I accept the{' '}
