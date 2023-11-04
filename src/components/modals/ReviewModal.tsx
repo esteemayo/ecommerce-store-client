@@ -84,11 +84,6 @@ const ReviewModal: FC<ReviewModalProps> = ({ isOpen, onClose }) => {
     [closeModalHandler]
   );
 
-  const handleClick = useCallback(() => {
-    console.log({ rating, review, terms });
-    handleClear();
-  }, [rating, review, terms, handleClear]);
-
   const activeModal = useMemo(() => {
     return showModal?.toString();
   }, [showModal]);
