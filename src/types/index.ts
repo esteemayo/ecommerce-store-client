@@ -72,12 +72,12 @@ export interface CartStore {
   total: number;
   subtotal: number;
   reset(): void;
-  addProduct(value: CartValues): void;
-  addWishlist(value: WishlistValues): void;
+  addProduct(payload: CartValues): void;
+  addWishlist(payload: WishlistValues): void;
   removeWishlist(id: number): void;
   clearCart(): void;
   remove(id: number): void;
-  toggleQuantity(value: { type: string; id: number }): void;
+  toggleQuantity(payload: { type: string; id: number }): void;
   calcTotals(): void;
 }
 
