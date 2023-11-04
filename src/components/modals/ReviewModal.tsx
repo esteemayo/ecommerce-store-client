@@ -294,47 +294,4 @@ const Information = styled.p`
   line-height: 1.2;
 `;
 
-const Button = styled.button`
-  border: none;
-  text-align: center;
-  width: 100%;
-  padding: 1.5rem 1rem;
-  font-weight: 500;
-  font-size: 1.4rem;
-  background-color: ${({ theme }) => theme.bgBtnModal};
-  color: ${({ theme }) => theme.textBtn};
-  background-image: ${({ theme }) => css`
-    linear-gradient(
-      120deg,
-      transparent 0%,
-      transparent 50%,
-      ${theme.bgBtnModalHov} 50%
-    );
-  `};
-  background-size: 220%;
-  border-radius: 0.5rem;
-  outline-color: ${({ theme }) => theme.bgBtnModalOut};
-  margin: 3rem 0;
-  cursor: pointer;
-  transition: all 0.3s ease;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-
-  @media only screen and (max-width: 25em), only screen and (hover: none) {
-    font-size: 1.38rem;
-  }
-
-  &:hover {
-    background-position: 100%;
-  }
-
-  &:disabled {
-    opacity: 0.85;
-    cursor: not-allowed;
-  }
-`;
-
 export default ReviewModal;
