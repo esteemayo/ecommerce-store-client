@@ -14,7 +14,7 @@ const WishlistButton: FC<WishlistButtonProps> = ({
   const { isWished, handleToggle } = useWishlist(actionId, product, wished);
 
   const wishlistLabel = useMemo(() => {
-    if (wished.includes(actionId as never)) {
+    if (wished.includes(actionId)) {
       return 'Added to Wishlist';
     }
 
