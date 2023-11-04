@@ -39,7 +39,7 @@ type CartValues = {
   tags: string[];
   createdAt: string;
   updatedAt: string;
-};
+}[];
 
 type WishlistValues = {
   id: number;
@@ -61,11 +61,11 @@ type WishlistValues = {
   tags: string[];
   createdAt: string;
   updatedAt: string;
-};
+}[];
 
 export interface CartStore {
-  cart: CartValues[];
-  wishlists: WishlistValues[];
+  cart: CartValues;
+  wishlists: WishlistValues;
   wished: number[];
   qty: number;
   tax: number;
