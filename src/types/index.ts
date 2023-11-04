@@ -39,7 +39,7 @@ type CartValues = {
   tags: string[];
   createdAt: string;
   updatedAt: string;
-}[];
+};
 
 type WishlistValues = {
   id: number;
@@ -61,23 +61,23 @@ type WishlistValues = {
   tags: string[];
   createdAt: string;
   updatedAt: string;
-}[];
+};
 
 export interface CartStore {
-  cart: CartValues;
-  wishlists: WishlistValues;
+  cart: CartValues[];
+  wishlists: WishlistValues[];
   wished: number[];
   qty: number;
   tax: number;
   total: number;
   subtotal: number;
   reset(): void;
-  addProduct(value: any): void;
-  addWishlist(value: any): void;
+  addProduct(value: CartValues): void;
+  addWishlist(value: WishlistValues): void;
   removeWishlist(id: number): void;
   clearCart(): void;
   remove(id: number): void;
-  toggleQuantity(value: any): void;
+  toggleQuantity(value: { type: string; id: number }): void;
   calcTotals(): void;
 }
 
