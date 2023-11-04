@@ -253,27 +253,4 @@ const Label = styled.label`
   }
 `;
 
-const TextArea = styled.textarea`
-  display: inline-block;
-  width: 100%;
-  height: 10rem;
-  font-family: inherit;
-  font-weight: lighter;
-  font-size: 1.5rem;
-  padding: 1rem;
-  background-color: transparent;
-  color: ${({ theme }) => theme.textReview};
-  border: 2px solid ${({ theme }) => theme.starBorder};
-  border-radius: 0.5rem;
-  outline-color: ${({ theme }) => theme.revOut};
-  overflow: hidden;
-  resize: none;
-  caret-color: ${({ theme }) => theme.inputCaret};
-
-  &::placeholder {
-    font-size: 1.3rem;
-    color: #bbb;
-  }
-`;
-
 export default ReviewModal;
