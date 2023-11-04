@@ -20,7 +20,7 @@ const RecommendationItem: FC<RecommendationItemProps> = ({
         <StyledImage src={image} width={400} height={500} alt='' />
         <Wrapper>
           <Title>{name}</Title>
-          <Price>{formatCurrency(parseFloat(price.toFixed(2)))}</Price>
+          <Price>{formatCurrency(price)}</Price>
         </Wrapper>
       </Link>
     </Container>
