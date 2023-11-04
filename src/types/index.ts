@@ -31,7 +31,7 @@ export type CartValues = {
   numberInStock: number;
   price: number;
   priceDiscount: number;
-  quantity: number;
+  quantity?: number;
   ratingsAverage: number;
   ratingsQuantity: number;
   size: number | string;
@@ -424,7 +424,7 @@ export interface WishlistButtonProps {
 }
 
 export interface CartModalProps {
-  product: CartValues;
+  product: CartValues | WishlistValues;
   isOpen: boolean;
   onClose(): void;
   onSelect(value: any): void;
