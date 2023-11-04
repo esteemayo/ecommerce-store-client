@@ -296,12 +296,12 @@ export interface CountrySelectProps {
   onChange(e: React.ChangeEvent<HTMLInputElement>): void;
 }
 
-export interface WishlistProps {
+export type WishlistProps = {
   (actionId: number, product: WishlistValues, wished: number[]): {
     isWished: boolean;
     handleToggle: (e: React.MouseEvent<HTMLButtonElement>) => void;
   };
-}
+};
 
 export interface MenuItemProps {
   label: string;
