@@ -63,6 +63,10 @@ export type WishlistValues = {
   updatedAt: string;
 };
 
+export type WishedValue = {
+  id: number;
+};
+
 export interface CartStore {
   cart: CartValues[];
   wishlists: WishlistValues[];
@@ -294,8 +298,8 @@ export interface CountrySelectProps {
 
 export interface WishlistProps {
   actionId: number;
-  product: any;
-  wished: CartItem;
+  product: WishlistValues;
+  wished: number[];
 }
 
 export interface MenuItemProps {
@@ -354,21 +358,6 @@ export interface SubmenuMenuItemProps {
 
 type Product = {
   id: number;
-  images: string[];
-  price: number;
-  discount: number;
-  ratingsQuantity: number;
-  ratingsAverage: number;
-};
-
-export interface ProductCardProps {
-  product: Product;
-  onOpen(): void;
-  onSelect(value: any): void;
-}
-
-interface CardProduct {
-  id: number;
   name: string;
   images: string[];
   price: number;
@@ -376,6 +365,34 @@ interface CardProduct {
   ratingsQuantity: number;
   ratingsAverage: number;
   inStock: boolean;
+};
+
+export interface ProductCardProps {
+  product: CardProduct;
+  onOpen(): void;
+  onSelect(value: any): void;
+}
+
+interface CardProduct {
+  id: number;
+  name: string;
+  desc: string;
+  price: number;
+  priceDiscount: number;
+  numberInStock: number;
+  inStock: boolean;
+  images: string[];
+  featured: boolean;
+  color: string[];
+  size: string[];
+  category: string;
+  tags: string[];
+  ratingsQuantity: number;
+  ratingsAverage: number;
+  createdAt: string;
+  updatedAt: string;
+  slug: string;
+  discount: number;
 }
 
 export interface CardInfoProps {
@@ -385,7 +402,7 @@ export interface CardInfoProps {
   priceLabel: number;
   reviewLabel: string;
   inCart: boolean;
-  wished: [];
+  wished: number[];
   onOpen(): void;
 }
 
@@ -414,13 +431,13 @@ export interface CardButtonProps {
 export interface CardButtonsProps {
   product: CardProduct;
   productId: number;
-  wished: [];
+  wished: number[];
 }
 
 export interface WishlistButtonProps {
   actionId: number;
-  product: CardProduct;
-  wished: [];
+  product: WishlistValues;
+  wished: number[];
 }
 
 export interface CartModalProps {
