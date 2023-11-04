@@ -41,7 +41,7 @@ export type CartValues = {
   updatedAt: string;
 };
 
-type WishlistValues = {
+export type WishlistValues = {
   id: number;
   category: string;
   color: string;
