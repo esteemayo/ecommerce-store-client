@@ -143,7 +143,9 @@ const StyledLink = styled(Link)`
   }
 `;
 
-const Input = styled.input``;
+const Input = styled.input`
+  outline-color: ${({ theme }) => theme.revOut};
+`;
 
 const Information = styled.p`
   font-size: 1.3rem;
