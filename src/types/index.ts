@@ -435,7 +435,7 @@ export type CartModalValues = {
 };
 
 export interface CartModalProps {
-  product: CartModalValues;
+  product: CartValues;
   isOpen: boolean;
   onClose(): void;
   onSelect(value: any): void;
@@ -531,7 +531,7 @@ export interface ProductHeadProps {
 export interface ColorSelectProps {
   title: string;
   mode?: boolean;
-  value: string[];
+  value: string | string[];
   modal?: boolean;
   selected?: string | null;
   onAction(value: string): void;
@@ -539,7 +539,7 @@ export interface ColorSelectProps {
 }
 
 export interface SizeSelectProps {
-  value: (string | number)[];
+  value: number | string | (string | number)[];
   title?: string;
   modal?: boolean;
   selected?: string | null;
