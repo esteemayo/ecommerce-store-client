@@ -18,10 +18,33 @@ export type CartItem = {
   quantity: number;
 }[];
 
+type CartValues = {
+  id: number;
+  category: string;
+  color: string;
+  desc: string;
+  discount: number;
+  featured: boolean;
+  images: string[];
+  inStock: boolean;
+  name: string;
+  numberInStock: number;
+  price: number;
+  priceDiscount: number;
+  quantity: number;
+  ratingsAverage: number;
+  ratingsQuantity: number;
+  size: number | string;
+  slug: string;
+  tags: string[];
+  createdAt: string;
+  updatedAt: string;
+};
+
 export interface CartStore {
-  cart: any[];
+  cart: CartValues[];
   wishlists: [];
-  wished: [];
+  wished: number[];
   qty: number;
   tax: number;
   total: number;
