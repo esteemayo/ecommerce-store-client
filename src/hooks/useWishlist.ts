@@ -1,15 +1,14 @@
-import { FC, useCallback, useMemo } from 'react';
+import { useCallback, useMemo } from 'react';
 
-import { WishlistProps } from '@/types';
+import { WishlistValues } from '@/types';
 import { useCartStore } from './useCartStore';
 
-const useWishlist = ({ actionId, product, wished }) => {
+const useWishlist = ( actionId: number, product: WishlistValues, wished: number[] ) => {
   const addWishlist = useCartStore((state) => state.addWishlist);
   const removeWishlist = useCartStore((state) => state.removeWishlist);
 
   const isWished = useMemo(() => {
-    let list = wished;
-    list = list?.includes(actionId);
+    const list = wished?.includes(actionId);
     return !!list;
   }, [actionId, wished]);
 
