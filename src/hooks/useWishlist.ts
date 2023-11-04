@@ -1,7 +1,7 @@
 import { useCallback, useMemo } from 'react';
 
-import { WishlistProps, WishlistValues } from '@/types';
 import { useCartStore } from './useCartStore';
+import { WishlistProps, WishlistValues } from '@/types';
 
 const useWishlist: WishlistProps = (
   actionId: number,
