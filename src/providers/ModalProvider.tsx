@@ -14,6 +14,6 @@ const ModalProvider = () => {
       <FileUploadModal />
     </>
   );
-}
+};
 
 export default ModalProvider;
