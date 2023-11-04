@@ -276,22 +276,4 @@ const TextArea = styled.textarea`
   }
 `;
 
-const Agreement = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  gap: 0.5rem;
-  color: ${({ theme }) => theme.text};
-  margin: 2rem 0;
-`;
-
-const Input = styled.input``;
-
-const Information = styled.p`
-  font-size: 1.3rem;
-  color: ${({ theme }) => theme.text};
-  letter-spacing: 0.2px;
-  line-height: 1.2;
-`;
-
 export default ReviewModal;
