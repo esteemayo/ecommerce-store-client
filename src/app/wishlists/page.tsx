@@ -28,7 +28,8 @@ const WishLists = () => {
 
   const [products, setProducts] = useState<WishlistValues[]>([]);
   const [isSelectedId, setIsSelectedId] = useState(null);
-  const [isSelectedProduct, setIsSelectedProduct] = useState({});
+  const [isSelectedProduct, setIsSelectedProduct] =
+    useState<WishlistValues>(null);
 
   const handleClick = useCallback(
     (wishlist: WishlistValues) => {
