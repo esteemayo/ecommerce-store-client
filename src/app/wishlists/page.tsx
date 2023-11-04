@@ -1,7 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
-import { SetStateAction, useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import dynamic from 'next/dynamic';
 
 import CartModal from '@/components/modals/CartModal';
@@ -11,7 +11,7 @@ import { useCartModal } from '@/hooks/useCartModal';
 import { useSubmenu } from '@/hooks/useSubmenu';
 import useWishlistModal from '@/hooks/useWishlistModal';
 
-import { WishlistItems } from '@/types';
+import { WishlistValues } from '@/types';
 import { useCartStore } from '@/hooks/useCartStore';
 
 const WishlistCard = dynamic(
@@ -26,12 +26,12 @@ const WishLists = () => {
   const removeWishlist = useCartStore((state) => state.removeWishlist);
   const closeSubmenu = useSubmenu((state) => state.closeSubmenu);
 
-  const [products, setProducts] = useState<WishlistItems>([]);
+  const [products, setProducts] = useState<WishlistValues[]>([]);
   const [isSelectedId, setIsSelectedId] = useState(null);
   const [isSelectedProduct, setIsSelectedProduct] = useState({});
 
   const handleClick = useCallback(
-    (wishlist: SetStateAction<{}>) => {
+    (wishlist: WishlistValues) => {
       cartModal.onOpen();
       setIsSelectedProduct(wishlist);
     },
