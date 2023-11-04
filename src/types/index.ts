@@ -589,6 +589,19 @@ export interface ReviewModalProps {
   onClose(): void;
 }
 
+export interface CreateReviewProps {
+  rating: number;
+  review: string;
+  terms: boolean;
+  onChangeRating(
+    e: React.ChangeEvent<HTMLInputElement>,
+    newValue: number
+  ): void;
+  onChangeReview(e: React.ChangeEvent<HTMLTextAreaElement>): void;
+  onChangeTerms(e: React.ChangeEvent<HTMLInputElement>): void;
+  onSubmit(e: React.FormEvent<HTMLFormElement>): void;
+}
+
 export interface EmptyReviewProps {
   rating: number;
   title?: string;
