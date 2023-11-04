@@ -18,7 +18,7 @@ export type CartItem = {
   quantity: number;
 }[];
 
-type CartValues = {
+export type CartValues = {
   id: number;
   category: string;
   color: string;
