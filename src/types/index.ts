@@ -742,8 +742,8 @@ export interface WishlistCardProps {
   isOpen: boolean;
   onOpen(id: number): void;
   selected: any;
-  wishlists: WishlistItem[];
-  onAction(wishlist: SetStateAction<{}>): void;
+  wishlists: WishlistValues[];
+  onAction(wishlist: WishlistValues): void;
   onClose(): void;
   onDelete(id: number): void;
 }
