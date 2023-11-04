@@ -92,6 +92,7 @@ const Text = styled.span`
 `;
 
 const Label = styled.label`
+  display: inline-block;
   font-weight: 600;
   font-size: 1.3rem;
   color: ${({ theme }) => theme.text};
