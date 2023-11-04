@@ -38,12 +38,7 @@ const CreateReview: FC<CreateReviewProps> = ({
         placeholder='Example: Since i bought this a month ago, it has been used a lot. What i like best/what is worst about this product is ...'
       />
       <Agreement>
-        <Input
-          id='terms'
-          type='checkbox'
-          checked={terms}
-          onChange={onChangeTerms}
-        />
+        <Input id='terms' checked={terms} onChange={onChangeTerms} />
         <Label htmlFor='terms'>
           I accept the{' '}
           <StyledLink href='#' passHref>
@@ -143,7 +138,9 @@ const StyledLink = styled(Link)`
   }
 `;
 
-const Input = styled.input`
+const Input = styled.input.attrs({
+  type: 'checkbox',
+})`
   outline-color: ${({ theme }) => theme.revOut};
 `;
 
