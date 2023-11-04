@@ -35,7 +35,7 @@ const ReviewModal: FC<ReviewModalProps> = ({ isOpen, onClose }) => {
   const [showModal, setShowModal] = useState(isOpen);
 
   const handleTerms = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
-    setTerms(e.target.value);
+    setTerms(e.currentTarget.checked);
   }, []);
 
   const handleClear = useCallback(() => {
