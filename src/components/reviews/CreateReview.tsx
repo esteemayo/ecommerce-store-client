@@ -46,9 +46,9 @@ const CreateReview: FC<CreateReviewProps> = ({
         />
         <Label htmlFor='terms'>
           I accept the{' '}
-          <Link href='#' passHref>
+          <StyledLink href='#' passHref>
             terms and conditions
-          </Link>
+          </StyledLink>
         </Label>
       </Agreement>
       <Information>
@@ -100,18 +100,6 @@ const Label = styled.label`
   font-weight: 600;
   font-size: 1.3rem;
   color: ${({ theme }) => theme.text};
-
-  a {
-    &:link,
-    &:visited {
-      color: ${({ theme }) => theme.text};
-      transition: all 0.3s ease;
-    }
-
-    &:hover {
-      letter-spacing: 0.1px;
-    }
-  }
 `;
 
 const TextArea = styled.textarea`
@@ -144,6 +132,15 @@ const Agreement = styled.div`
   gap: 0.5rem;
   color: ${({ theme }) => theme.text};
   margin: 2rem 0;
+`;
+
+const StyledLink = styled(Link)`
+  color: ${({ theme }) => theme.text};
+  transition: all 0.3s ease;
+
+  &:hover {
+    letter-spacing: 0.1px;
+  }
 `;
 
 const Input = styled.input``;
