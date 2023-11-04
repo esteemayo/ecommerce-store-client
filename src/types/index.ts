@@ -297,9 +297,10 @@ export interface CountrySelectProps {
 }
 
 export interface WishlistProps {
-  actionId: number;
-  product: WishlistValues;
-  wished: number[];
+  (actionId: number, product: WishlistValues, wished: number[]): {
+    isWished: boolean;
+    handleToggle: (e: React.MouseEvent<HTMLButtonElement>) => void;
+  };
 }
 
 export interface MenuItemProps {
