@@ -41,7 +41,7 @@ const ReviewForm: FC<ReviewFormProps> = ({
         <Input id='terms' checked={terms} onChange={onChangeTerms} />
         <Label htmlFor='terms'>
           I accept the{' '}
-          <StyledLink href='#reviews' passHref>
+          <StyledLink href='#' passHref>
             terms and conditions
           </StyledLink>
         </Label>
