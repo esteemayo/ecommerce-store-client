@@ -7,7 +7,7 @@ import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
 import { formatCurrency } from '@/utils/formatCurrency';
 import { useCartStore } from '@/hooks/useCartStore';
-import { WishlistItem, WislistPriceProps } from '@/types';
+import { WishlistValues, WislistPriceProps } from '@/types';
 
 const WishlistPrice: FC<WislistPriceProps> = ({
   price,
@@ -17,7 +17,7 @@ const WishlistPrice: FC<WislistPriceProps> = ({
   const cart = useCartStore((state) => state.cart);
 
   const handleClick = useCallback(
-    (wishlist: WishlistItem) => {
+    (wishlist: WishlistValues) => {
       onAction(wishlist);
     },
     [onAction]
