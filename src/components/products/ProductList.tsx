@@ -7,15 +7,16 @@ import ProductCard from '../card/ProductCard';
 import CartModal from '../modals/CartModal';
 import EmptyProduct from './EmptyProduct';
 
-import { ProductListProps } from '@/types';
 import { useCartModal } from '@/hooks/useCartModal';
+import { ProductListProps, WishlistValues } from '@/types';
 
 const ProductList: FC<ProductListProps> = ({
   products,
   title = 'No results found!',
 }) => {
   const { isOpen, onOpen, onClose } = useCartModal();
-  const [isSelectedProduct, setIsSelectedProduct] = useState({});
+  const [isSelectedProduct, setIsSelectedProduct] =
+    useState<WishlistValues>(null);
 
   if (products.length < 1) {
     return (
