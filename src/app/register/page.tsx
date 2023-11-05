@@ -1,6 +1,6 @@
 'use client';
 
-import { ChangeEvent, ChangeEventHandler, useCallback, useState } from 'react';
+import { useCallback, useState } from 'react';
 
 import AuthInfo from '@/components/form/FormInfo';
 import FormButton from '@/components/form/FormButton';
@@ -42,8 +42,8 @@ const Register = () => {
   const [file, setFile] = useState(null);
   const [errors, setErrors] = useState<IErrors>({});
 
-  const handleChange: ChangeEventHandler<HTMLInputElement> = useCallback(
-    ({ target: input }) => {
+  const handleChange = useCallback(
+    ({ target: input }: React.ChangeEvent<HTMLInputElement>) => {
       const { name, value } = input;
       setData((prev) => ({ ...prev, [name]: value }));
     },
@@ -144,7 +144,7 @@ const Register = () => {
                 id='file'
                 accept='image/*'
                 label='Attach a photo'
-                onChange={(e: ChangeEvent<HTMLInputElement>) =>
+                onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
                   setFile(e.target.files[0])
                 }
               />
