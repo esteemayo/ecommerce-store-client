@@ -360,7 +360,7 @@ export interface SubmenuMenuItemProps {
 export interface ProductCardProps {
   product: CardProduct;
   onOpen(): void;
-  onSelect(value: any): void;
+  onSelect(value: WishlistValues): void;
 }
 
 interface CardProduct {
@@ -434,7 +434,7 @@ export interface CartModalProps {
   product: CartValues | WishlistValues;
   isOpen: boolean;
   onClose(): void;
-  onSelect(value: any): void;
+  onSelect(value: WishlistValues): void;
 }
 
 export interface ReviewItemProps {
