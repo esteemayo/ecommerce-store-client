@@ -765,7 +765,7 @@ export interface FormInputProps extends HTMLAttributes<HTMLInputElement> {
   name: string;
   type?: string;
   label: string;
-  value: string | any;
+  value: string | number | readonly string[];
   error?: string;
   login?: boolean;
 }
