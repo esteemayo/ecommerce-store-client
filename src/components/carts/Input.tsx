@@ -7,7 +7,7 @@ import { FormGroup } from '../form/FormGroup';
 interface InputProps extends HTMLAttributes<HTMLInputElement> {
   name: string;
   label: string;
-  value: string;
+  value: string | number | readonly string[];
   type?: string;
   error?: string;
 }
