@@ -1,5 +1,5 @@
-import { IconType } from 'react-icons/lib';
 import { IconDefinition } from '@fortawesome/free-solid-svg-icons';
+import { IconType } from 'react-icons/lib';
 import { HTMLAttributes, HtmlHTMLAttributes, SetStateAction } from 'react';
 
 export type Announcements = {
