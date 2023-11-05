@@ -3,11 +3,11 @@
 import styled from 'styled-components';
 import { FC } from 'react';
 
-interface SidebarHeadingProps {
+interface HeadingProps {
   title: string;
 }
 
-const Heading: FC<SidebarHeadingProps> = ({ title }) => {
+const Heading: FC<HeadingProps> = ({ title }) => {
   return <Header>{title}</Header>;
 };
 
