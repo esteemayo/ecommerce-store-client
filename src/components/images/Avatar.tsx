@@ -1,14 +1,13 @@
 'use client';
 
 import styled from 'styled-components';
-import { FC } from 'react';
 import Image from 'next/image';
 
 interface AvatarProps {
   src: string;
 }
 
-const Avatar: FC<AvatarProps> = ({ src }) => {
+const Avatar = ({ src }: AvatarProps) => {
   return (
     <Container>
       <Image src={src} width={50} height={50} alt='' />
