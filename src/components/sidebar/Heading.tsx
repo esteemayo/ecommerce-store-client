@@ -3,7 +3,9 @@
 import styled from 'styled-components';
 import { FC } from 'react';
 
-import { SidebarHeadingProps } from '@/types';
+interface SidebarHeadingProps {
+  title: string;
+}
 
 const Heading: FC<SidebarHeadingProps> = ({ title }) => {
   return <Header>{title}</Header>;

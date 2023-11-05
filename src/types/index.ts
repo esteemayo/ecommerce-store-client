@@ -337,10 +337,6 @@ export interface SidebarMenuItemProps {
   label: string;
 }
 
-export interface SidebarHeadingProps {
-  title: string;
-}
-
 export interface SidebarSearch {
   query: string;
   onChange(e: React.ChangeEvent<HTMLInputElement>): void;
