@@ -712,6 +712,7 @@ export interface FilterSelect
 
 export interface SelectPriceProps extends HTMLAttributes<HTMLSelectElement> {
   name: string;
+  value: string | number | readonly string[];
   label: string;
   options: PriceOption;
 }
