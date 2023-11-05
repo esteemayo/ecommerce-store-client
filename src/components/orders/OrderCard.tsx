@@ -5,7 +5,7 @@ import { FC, useMemo } from 'react';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import Link from 'next/link';
 
-import { OrderCardProps } from '@/types';
+import { DateOptions, OrderCardProps } from '@/types';
 import { formatCurrency } from '@/utils/formatCurrency';
 
 interface IContainer {
@@ -14,7 +14,12 @@ interface IContainer {
 
 const OrderCard: FC<OrderCardProps> = ({ id, total, status, createdAt }) => {
   const dateLabel = useMemo(() => {
-    const options = { month: 'long', day: 'numeric', year: 'numeric' };
+    const options: DateOptions = {
+      month: 'long',
+      day: 'numeric',
+      year: 'numeric',
+    };
+
     const date = new Date(createdAt).toLocaleDateString('en-us', options);
     return date;
   }, [createdAt]);
