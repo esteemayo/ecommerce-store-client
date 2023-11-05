@@ -1,13 +1,12 @@
 'use client';
 
 import styled from 'styled-components';
-import { FC } from 'react';
 
 interface DefaultAvatarProps {
   name: string;
 }
 
-const DefaultAvatar: FC<DefaultAvatarProps> = ({ name }) => {
+const DefaultAvatar = ({ name }: DefaultAvatarProps) => {
   return <Container>{name.charAt(0)}</Container>;
 };
 
