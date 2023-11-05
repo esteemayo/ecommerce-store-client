@@ -287,12 +287,13 @@ export type CountryValues = {
   label: string;
 }[];
 
-export interface CountrySelectProps extends HTMLAttributes<HTMLSelectElement> {
+export interface CountrySelectProps {
   data: CountryValues;
   name: string;
   label: string;
   value: string | number | readonly string[];
   error: string;
+  onChange(e: any): void;
 }
 
 export type WishlistProps = {
