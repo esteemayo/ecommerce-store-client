@@ -343,10 +343,6 @@ export interface SidebarSearch {
   onSubmit(e: React.FormEvent<HTMLFormElement>): void;
 }
 
-export interface SubmenuHeadingProps {
-  title: string;
-}
-
 export interface SubmenuMenuItemProps {
   url: string;
   icon: IconDefinition;
