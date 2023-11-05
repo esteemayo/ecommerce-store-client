@@ -782,7 +782,7 @@ export interface SelectProps extends HTMLAttributes<HTMLSelectElement> {
   data: SelectInput;
   name: string;
   label: string;
-  value: any;
+  value: string | number | readonly string[];
   error: string;
   defaultText: string;
 }
