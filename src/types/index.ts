@@ -773,7 +773,7 @@ export interface FormInputProps extends HTMLAttributes<HTMLInputElement> {
 export interface TextAreaProps extends HTMLAttributes<HTMLTextAreaElement> {
   name: string;
   label: string;
-  value: string | any;
+  value: string | number | readonly string[];
   error: string;
   onChange(e: any): void;
 }
