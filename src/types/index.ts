@@ -483,10 +483,6 @@ export interface ProductImageModalProps {
   onClose(): void;
 }
 
-export interface BreadCrumbsProps {
-  category: string;
-}
-
 export interface ProductHeadProps {
   name: string;
   price: number;

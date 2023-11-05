@@ -1,12 +1,13 @@
 'use client';
 
 import styled from 'styled-components';
-import { FC } from 'react';
 import Link from 'next/link';
 
-import { BreadCrumbsProps } from '@/types';
+interface BreadCrumbsProps {
+  category: string;
+}
 
-const BreadCrumbs: FC<BreadCrumbsProps> = ({ category }) => {
+const BreadCrumbs = ({ category }: BreadCrumbsProps) => {
   return (
     <Container>
       <Link href='/' passHref>
