@@ -1,6 +1,6 @@
 'use client';
 
-import { ChangeEvent, useCallback, useMemo, useState } from 'react';
+import { useCallback, useMemo, useState } from 'react';
 
 import FormButton from '@/components/form/FormButton';
 import FormBox from '@/components/form/FormBox';
@@ -49,15 +49,15 @@ const NewProduct = () => {
     setData((prev) => ({ ...prev, [name]: value }));
   }, []);
 
-  const handleColor = useCallback((e: ChangeEvent<HTMLInputElement>) => {
+  const handleColor = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
     setColor(e.target.value.split(','));
   }, []);
 
-  const handleSize = useCallback((e: ChangeEvent<HTMLInputElement>) => {
+  const handleSize = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
     setSize(e.target.value.split(','));
   }, []);
 
-  const handleTags = useCallback((e: ChangeEvent<HTMLInputElement>) => {
+  const handleTags = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
     setTags(e.target.value.split(','));
   }, []);
 
