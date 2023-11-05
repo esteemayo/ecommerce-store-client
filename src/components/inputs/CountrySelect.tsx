@@ -10,13 +10,14 @@ const CountrySelect: FC<CountrySelectProps> = ({
   data,
   name,
   label,
+  onChange,
   error,
   ...rest
 }) => {
   return (
     <FormGroup>
       <Label htmlFor={name}>{label}</Label>
-      <StyledSelect {...rest} id={name} name={name}>
+      <StyledSelect {...rest} id={name} name={name} onChange={onChange}>
         <Option value=''>Select your country</Option>
         {data.map((item) => {
           const { flag, label } = item;
