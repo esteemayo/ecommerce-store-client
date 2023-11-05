@@ -821,7 +821,7 @@ export interface AccountInputProps extends HTMLAttributes<HTMLInputElement> {
   name: string;
   type: string;
   label: string;
-  value: string;
+  value: string | number | readonly string[];
   error?: string;
 }
 
