@@ -21,7 +21,7 @@ export type CartItem = {
 export type CartValues = {
   id: number;
   category: string;
-  color: string;
+  color: string | string[];
   desc: string;
   discount: number;
   featured: boolean;
@@ -34,7 +34,7 @@ export type CartValues = {
   quantity?: number;
   ratingsAverage: number;
   ratingsQuantity: number;
-  size: number | string;
+  size: number | string | (number | string)[];
   slug: string;
   tags: string[];
   createdAt: string;
@@ -44,7 +44,7 @@ export type CartValues = {
 export type WishlistValues = {
   id: number;
   category: string;
-  color: string[];
+  color: string | string[];
   desc: string;
   discount: number;
   featured: boolean;
