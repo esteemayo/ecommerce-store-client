@@ -704,7 +704,7 @@ export interface ProductListProps {
 export interface FilterSelect
   extends HTMLAttributes<HTMLSelectElement | HTMLInputElement> {
   name: string;
-  value?: any;
+  value?: string | number | readonly string[];
   page?: string;
   label: string;
   options: any[];
