@@ -3,9 +3,11 @@
 import styled from 'styled-components';
 import { FC } from 'react';
 
-import { SubmenuHeadingProps } from '@/types';
+interface HeadingProps {
+  title: string;
+}
 
-const Heading: FC<SubmenuHeadingProps> = ({ title }) => {
+const Heading: FC<HeadingProps> = ({ title }) => {
   return <Header>{title}</Header>;
 };
 
