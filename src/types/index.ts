@@ -21,7 +21,7 @@ export type CartItem = {
 export type CartValues = {
   id: number;
   category: string;
-  color: string | string[];
+  color: string[];
   desc: string;
   discount: number;
   featured: boolean;
@@ -34,7 +34,7 @@ export type CartValues = {
   quantity?: number;
   ratingsAverage: number;
   ratingsQuantity: number;
-  size: number | string | (number | string)[];
+  size: (string | number)[];
   slug: string;
   tags: string[];
   createdAt: string;
@@ -44,7 +44,7 @@ export type CartValues = {
 export type WishlistValues = {
   id: number;
   category: string;
-  color: string | string[];
+  color: string[];
   desc: string;
   discount: number;
   featured: boolean;
@@ -56,7 +56,7 @@ export type WishlistValues = {
   priceDiscount: number;
   ratingsAverage: number;
   ratingsQuantity: number;
-  size: number | string | (number | string)[];
+  size: (string | number)[];
   slug: string;
   tags: string[];
   createdAt: string;
@@ -287,13 +287,12 @@ export type CountryValues = {
   label: string;
 }[];
 
-export interface CountrySelectProps {
+export interface CountrySelectProps extends HTMLAttributes<HTMLSelectElement> {
   data: CountryValues;
   name: string;
   label: string;
-  value: string;
-  error?: string;
-  onChange(e: React.ChangeEvent<HTMLInputElement>): void;
+  value: string | number | readonly string[];
+  error: string;
 }
 
 export type WishlistProps = {
@@ -508,7 +507,7 @@ export interface ProductHeadProps {
 export interface ColorSelectProps {
   title: string;
   mode?: boolean;
-  value: string | string[];
+  value: string[];
   modal?: boolean;
   selected?: string | null;
   onAction(value: string): void;
@@ -516,7 +515,7 @@ export interface ColorSelectProps {
 }
 
 export interface SizeSelectProps {
-  value: number | string | (string | number)[];
+  value: (string | number)[];
   title?: string;
   modal?: boolean;
   selected?: string | null;
