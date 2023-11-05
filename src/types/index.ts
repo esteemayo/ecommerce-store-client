@@ -776,7 +776,7 @@ export interface TextAreaProps extends HTMLAttributes<HTMLTextAreaElement> {
   label: string;
   value: string | number | readonly string[];
   error: string;
-  onChange(e: React.ChangeEvent<HTMLTextAreaElement>): void;
+  onChange(e: React.ChangeEvent<HTMLTextAreaElement> | any): void;
 }
 
 export interface SelectProps extends HTMLAttributes<HTMLSelectElement> {

@@ -5,6 +5,10 @@ import { DarkModeOutlined, LightModeOutlined } from '@mui/icons-material';
 
 import { useDarkMode } from '@/hooks/useDarkMode';
 
+interface IMode {
+  mode: string;
+}
+
 const DarkModeToggle = () => {
   const mode = useDarkMode((state) => state.mode);
   const toggle = useDarkMode((state) => state.toggle);
@@ -20,7 +24,7 @@ const DarkModeToggle = () => {
       <Ball mode={mode.toString()} />
     </Container>
   );
-}
+};
 
 const Container = styled.div`
   width: 4.2rem;
@@ -45,7 +49,7 @@ const Icon = styled.div`
   }
 `;
 
-const Ball = styled.div`
+const Ball = styled.div<IMode>`
   width: 1.5rem;
   height: 1.5rem;
   background-color: ${({ theme }) => theme.bgToggleMode};
