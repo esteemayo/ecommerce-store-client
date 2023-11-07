@@ -1,7 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
-import { FC, useState } from 'react';
+import { useState } from 'react';
 
 import ProductCard from '../card/ProductCard';
 import CartModal from '../modals/CartModal';
@@ -10,10 +10,10 @@ import EmptyProduct from './EmptyProduct';
 import { useCartModal } from '@/hooks/useCartModal';
 import { ProductListProps, WishlistValues } from '@/types';
 
-const ProductList: FC<ProductListProps> = ({
+const ProductList = ({
   products,
   title = 'No results found!',
-}) => {
+}: ProductListProps) => {
   const { isOpen, onOpen, onClose } = useCartModal();
   const [isSelectedProduct, setIsSelectedProduct] =
     useState<WishlistValues>(null);
