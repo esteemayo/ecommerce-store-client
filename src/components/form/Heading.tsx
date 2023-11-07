@@ -1,5 +1,6 @@
+'use client';
+
 import styled from 'styled-components';
-import { FC } from 'react';
 
 import { FormHeadingProps } from '@/types';
 
@@ -8,7 +9,7 @@ interface IProps {
   type?: string;
 }
 
-const Heading: FC<FormHeadingProps> = ({ small, type, title }) => {
+const Heading = ({ small, type, title }: FormHeadingProps) => {
   return (
     <StyledHeading small={small} type={type}>
       {title}
