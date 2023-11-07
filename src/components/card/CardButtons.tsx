@@ -1,12 +1,11 @@
 import styled from 'styled-components';
-import { FC } from 'react';
 
 import FavoriteButton from '../buttons/FavoriteButton';
 import WishlistButton from '../buttons/WishlistButton';
 
 import { CardButtonsProps } from '@/types';
 
-const CardButtons: FC<CardButtonsProps> = ({ product, productId, wished }) => {
+const CardButtons = ({ product, productId, wished }: CardButtonsProps) => {
   return (
     <Container>
       <WishlistButton product={product} wished={wished} actionId={productId} />
