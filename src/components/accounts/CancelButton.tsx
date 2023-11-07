@@ -1,9 +1,8 @@
 import styled from 'styled-components';
-import { FC } from 'react';
 
 import { CancelButtonProps } from '@/types';
 
-const CancelButton: FC<CancelButtonProps> = ({ text, onClick }) => {
+const CancelButton = ({ text, onClick }: CancelButtonProps) => {
   return (
     <Button type='button' onClick={onClick}>
       {text}
