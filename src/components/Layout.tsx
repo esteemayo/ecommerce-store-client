@@ -1,4 +1,4 @@
-// import { Nunito } from '@next/font/google';
+import { Nunito } from '@next/font/google';
 
 import Announcement from './Announcement';
 import ClientOnly from './ClientOnly';
@@ -13,10 +13,10 @@ import Sidebar from './sidebar/Sidebar';
 import ToastProvider from '@/providers/ToastProvider';
 import ModalProvider from '@/providers/ModalProvider';
 
-// const nunito = Nunito({
-//   subsets: ['latin'],
-//   weight: ['300', '400', '500', '600', '700'],
-// });
+const nunito = Nunito({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700'],
+});
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
