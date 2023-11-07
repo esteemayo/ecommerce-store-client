@@ -4,15 +4,14 @@ import styled from 'styled-components';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import Link from 'next/link';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import { FC } from 'react';
 
 import { LoginButtonProps } from '@/types';
 
-const LoginButton: FC<LoginButtonProps> = ({
+const LoginButton = ({
   isHover,
   onMouseOver,
   onMouseLeave,
-}) => {
+}: LoginButtonProps) => {
   return (
     <Container>
       <Link href='/login' passHref>
