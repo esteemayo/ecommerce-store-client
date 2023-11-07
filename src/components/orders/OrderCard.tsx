@@ -1,7 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
-import { FC, useMemo } from 'react';
+import { useMemo } from 'react';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import Link from 'next/link';
 
@@ -12,7 +12,7 @@ interface IContainer {
   status: number;
 }
 
-const OrderCard: FC<OrderCardProps> = ({ id, total, status, createdAt }) => {
+const OrderCard = ({ id, total, status, createdAt }: OrderCardProps) => {
   const dateLabel = useMemo(() => {
     const options: DateOptions = {
       month: 'long',
