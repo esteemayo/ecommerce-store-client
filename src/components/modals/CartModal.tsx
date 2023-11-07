@@ -3,7 +3,7 @@
 import styled from 'styled-components';
 import CloseIcon from '@mui/icons-material/Close';
 import Image from 'next/image';
-import { FC, useCallback, useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 
 import ColorSelect from '../inputs/ColorSelect';
 import Counter from '../inputs/Counter';
@@ -28,12 +28,7 @@ interface IWrapper {
   active: string;
 }
 
-const CartModal: FC<CartModalProps> = ({
-  product,
-  isOpen,
-  onClose,
-  onSelect,
-}) => {
+const CartModal = ({ product, isOpen, onClose, onSelect }: CartModalProps) => {
   const mode = useDarkMode((state) => state.mode);
   const cart = useCartStore((state) => state.cart);
 
