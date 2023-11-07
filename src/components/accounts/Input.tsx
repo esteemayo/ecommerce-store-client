@@ -1,12 +1,11 @@
 import styled from 'styled-components';
-import { FC } from 'react';
 
 import FormError from '../form/FormError';
 import { FormGroup } from '../form/FormGroup';
 
 import { AccountInputProps } from '@/types';
 
-const Input: FC<AccountInputProps> = ({ id, name, label, error, ...rest }) => {
+const Input = ({ id, name, label, error, ...rest }: AccountInputProps) => {
   return (
     <FormGroup>
       <Label htmlFor={id}>{label}</Label>
