@@ -1,11 +1,10 @@
 import styled from 'styled-components';
-import { FC } from 'react';
 
 interface HeadingProps {
   title: string;
 }
 
-const Heading: FC<HeadingProps> = ({ title }) => {
+const Heading = ({ title }: HeadingProps) => {
   return <StyledHeading>{title}</StyledHeading>;
 };
 
