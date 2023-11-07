@@ -1,7 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
-import { FC, useCallback } from 'react';
+import { useCallback } from 'react';
 
 import CartInfo from './CartInfo';
 import CartCounter from './CartCounter';
@@ -9,7 +9,7 @@ import CartCounter from './CartCounter';
 import { CartItemProps } from '@/types';
 import { useCartStore } from '@/hooks/useCartStore';
 
-const CartItem: FC<CartItemProps> = ({
+const CartItem = ({
   id,
   name,
   size,
@@ -17,7 +17,7 @@ const CartItem: FC<CartItemProps> = ({
   images,
   price,
   quantity,
-}) => {
+}: CartItemProps) => {
   const remove = useCartStore((state) => state.remove);
   const toggleQuantity = useCartStore((state) => state.toggleQuantity);
 
