@@ -1,7 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
-import { FC, useCallback } from 'react';
+import { useCallback } from 'react';
 
 import { SizeSelectProps } from '@/types';
 
@@ -10,14 +10,14 @@ interface IProps {
   bcg?: boolean;
 }
 
-const SizeSelect: FC<SizeSelectProps> = ({
+const SizeSelect = ({
   value,
   title,
   modal,
   selected,
   onAction,
   secondaryAction,
-}) => {
+}: SizeSelectProps) => {
   const handleSelect = useCallback(
     (size: string | number) => {
       onAction(size);
