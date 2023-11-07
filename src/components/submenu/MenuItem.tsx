@@ -3,11 +3,10 @@
 import styled from 'styled-components';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { FC } from 'react';
 
 import { SubmenuMenuItemProps } from '@/types';
 
-const MenuItem: FC<SubmenuMenuItemProps> = ({ url, icon, label }) => {
+const MenuItem = ({ url, icon, label }: SubmenuMenuItemProps) => {
   return (
     <ListItem>
       <Link href={url} passHref>
