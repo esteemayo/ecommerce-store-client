@@ -1,6 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
+
 import { useSearch } from '@/hooks/useSearch';
 
 const Search = () => {
@@ -18,7 +19,7 @@ const Search = () => {
       </Form>
     </Container>
   );
-}
+};
 
 const Container = styled.div`
   width: 100%;
