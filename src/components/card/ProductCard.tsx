@@ -1,7 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
-import { FC, useCallback, useMemo } from 'react';
+import { useCallback, useMemo } from 'react';
 
 import CardInfo from './CardInfo';
 import CardImage from './CardImage';
@@ -9,7 +9,7 @@ import CardImage from './CardImage';
 import { ProductCardProps } from '@/types';
 import { useCartStore } from '@/hooks/useCartStore';
 
-const ProductCard: FC<ProductCardProps> = ({ product, onOpen, onSelect }) => {
+const ProductCard = ({ product, onOpen, onSelect }: ProductCardProps) => {
   const cart = useCartStore((state) => state.cart);
   const wished = useCartStore((state) => state.wished);
 
