@@ -6,11 +6,7 @@ import HeartIcon from '../icons/HeartIcon';
 import useWishlist from '@/hooks/useWishlist';
 import { WishlistButtonProps } from '@/types';
 
-const WishlistButton = ({
-  actionId,
-  product,
-  wished,
-}: WishlistButtonProps) => {
+const WishlistButton = ({ actionId, product, wished }: WishlistButtonProps) => {
   const { isWished, handleToggle } = useWishlist(actionId, product, wished);
 
   const wishlistLabel = useMemo(() => {
