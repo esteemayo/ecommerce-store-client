@@ -1,7 +1,6 @@
 'use client';
 
 import styled, { css } from 'styled-components';
-import { FC } from 'react';
 import Link from 'next/link';
 
 import Form from '../form/Form';
@@ -9,7 +8,7 @@ import StarRating from '../StarRating';
 
 import { ReviewFormProps } from '@/types';
 
-const ReviewForm: FC<ReviewFormProps> = ({
+const ReviewForm = ({
   rating,
   review,
   terms,
@@ -17,7 +16,7 @@ const ReviewForm: FC<ReviewFormProps> = ({
   onChangeReview,
   onChangeTerms,
   onSubmit,
-}) => {
+}: ReviewFormProps) => {
   return (
     <Form onSubmit={onSubmit}>
       <Header>Overall rating</Header>
