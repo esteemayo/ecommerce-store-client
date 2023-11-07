@@ -1,19 +1,18 @@
 import styled from 'styled-components';
-import { FC } from 'react';
 
 import FormError from './FormError';
 import { FormGroup } from './FormGroup';
 
 import { SelectProps } from '@/types';
 
-const Select: FC<SelectProps> = ({
+const Select = ({
   data,
   name,
   label,
   error,
   defaultText,
   ...rest
-}) => {
+}: SelectProps) => {
   return (
     <FormGroup>
       <Label htmlFor={name}>{label}</Label>
