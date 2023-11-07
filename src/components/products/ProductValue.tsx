@@ -1,7 +1,6 @@
 'use client';
 
 import styled from 'styled-components';
-import { FC } from 'react';
 import Image from 'next/image';
 
 import { ProductValueProps } from '@/types';
@@ -10,7 +9,7 @@ interface IMode {
   mode: string;
 }
 
-const ProductValue: FC<ProductValueProps> = ({ items, mode }) => {
+const ProductValue = ({ items, mode }: ProductValueProps) => {
   return (
     <Container>
       <ValueAdd>
