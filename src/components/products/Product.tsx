@@ -1,7 +1,6 @@
 'use client';
 
 import styled from 'styled-components';
-import { FC } from 'react';
 
 import { useCart } from '@/hooks/useCart';
 import BreadCrumbs from '@/app/products/[id]/BreadCrumbs';
@@ -22,7 +21,7 @@ import { ProductProps } from '@/types';
 import Alert from '../Alert';
 import { useDarkMode } from '@/hooks/useDarkMode';
 
-const Product: FC<ProductProps> = ({ product, inCart, actionLabel }) => {
+const Product = ({ product, inCart, actionLabel }: ProductProps) => {
   const mode = useDarkMode((state) => state.mode);
 
   const {
