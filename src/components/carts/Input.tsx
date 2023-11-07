@@ -1,10 +1,9 @@
 import styled from 'styled-components';
-import { FC, HTMLAttributes } from 'react';
 
 import FormError from '../form/FormError';
 import { FormGroup } from '../form/FormGroup';
 
-interface InputProps extends HTMLAttributes<HTMLInputElement> {
+interface InputProps extends React.HTMLAttributes<HTMLInputElement> {
   name: string;
   label: string;
   value: string | number | readonly string[];
@@ -12,13 +11,7 @@ interface InputProps extends HTMLAttributes<HTMLInputElement> {
   error?: string;
 }
 
-const Input: FC<InputProps> = ({
-  name,
-  label,
-  type = 'text',
-  error,
-  ...rest
-}) => {
+const Input = ({ name, label, type = 'text', error, ...rest }: InputProps) => {
   return (
     <FormGroup>
       <Label htmlFor={name}>{label}</Label>
