@@ -1,7 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
-import { FC, useCallback, useState } from 'react';
+import { useCallback, useState } from 'react';
 
 import ReviewHead from './ReviewHead';
 import ReviewCards from './ReviewCards';
@@ -11,7 +11,7 @@ import useReviewModal from '@/hooks/useReviewModal';
 
 import ReviewModal from '../modals/ReviewModal';
 
-const Reviews: FC<ReviewsProps> = ({ reviews, sortLabel, sort, onSort }) => {
+const Reviews = ({ reviews, sortLabel, sort, onSort }: ReviewsProps) => {
   const { isOpen, onOpen, onClose } = useReviewModal();
   const [isFilterOpen, setIsFilterOpen] = useState(false);
 
