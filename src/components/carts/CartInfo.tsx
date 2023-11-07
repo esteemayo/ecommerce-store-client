@@ -1,13 +1,12 @@
 'use client';
 
 import styled from 'styled-components';
-import { FC } from 'react';
 import Image from 'next/image';
 
 import { CartInfoProps } from '@/types';
 import { formatCurrency } from '@/utils/formatCurrency';
 
-const CartInfo: FC<CartInfoProps> = ({
+const CartInfo = ({
   id,
   color,
   name,
@@ -15,7 +14,7 @@ const CartInfo: FC<CartInfoProps> = ({
   price,
   size,
   onAction,
-}) => {
+}: CartInfoProps) => {
   return (
     <Container>
       <ImageContainer>
