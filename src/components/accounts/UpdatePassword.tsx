@@ -1,7 +1,5 @@
 'use client';
 
-import { FC } from 'react';
-
 import Input from './Input';
 import CancelButton from './CancelButton';
 import Button from './Button';
@@ -36,7 +34,7 @@ const initialState: FormData = {
   currentPassword: '',
 };
 
-const UpdatePassword: FC<UpdatePasswordProps> = ({ onCancel }) => {
+const UpdatePassword = ({ onCancel }: UpdatePasswordProps) => {
   const validateForm = (data: FormData) => {
     const errors: IErrors = {};
     const { password, confirmPassword, currentPassword } = data;
