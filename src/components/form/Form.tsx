@@ -1,5 +1,6 @@
+'use client';
+
 import styled from 'styled-components';
-import { FC } from 'react';
 
 import { FormProps } from '@/types';
 
@@ -7,7 +8,7 @@ interface IForm {
   type?: string;
 }
 
-const Form: FC<FormProps> = ({ type, children, onSubmit }) => {
+const Form = ({ type, children, onSubmit }: FormProps) => {
   return (
     <StyledForm type={type} onSubmit={onSubmit}>
       {children}
