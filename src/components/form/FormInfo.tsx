@@ -1,5 +1,6 @@
+'use client';
+
 import styled from 'styled-components';
-import { FC } from 'react';
 import Link from 'next/link';
 
 interface AuthInfoProps {
@@ -8,7 +9,7 @@ interface AuthInfoProps {
   label: string;
 }
 
-const FormInfo: FC<AuthInfoProps> = ({ url, text, label }) => {
+const FormInfo = ({ url, text, label }: AuthInfoProps) => {
   return (
     <Container>
       <Text>
