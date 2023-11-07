@@ -1,12 +1,13 @@
+'use client';
+
 import styled from 'styled-components';
-import { FC } from 'react';
 
 import FormError from './FormError';
 import { FormGroup } from './FormGroup';
 
 import { TextAreaProps } from '@/types';
 
-const TextArea: FC<TextAreaProps> = ({ name, label, error, ...rest }) => {
+const TextArea = ({ name, label, error, ...rest }: TextAreaProps) => {
   return (
     <FormGroup>
       <Label htmlFor={name}>{label}</Label>
