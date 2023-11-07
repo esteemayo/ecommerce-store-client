@@ -1,5 +1,6 @@
+'use client';
+
 import styled from 'styled-components';
-import { FC } from 'react';
 
 import FormError from './FormError';
 import { FormGroup } from './FormGroup';
@@ -10,7 +11,7 @@ interface ILabel {
   login?: boolean;
 }
 
-const FormInput: FC<FormInputProps> = ({
+const FormInput = ({
   name,
   type = 'text',
   label,
@@ -18,7 +19,7 @@ const FormInput: FC<FormInputProps> = ({
   error,
   login,
   ...rest
-}) => {
+}: FormInputProps) => {
   return (
     <FormGroup>
       <Label htmlFor={name} login={login}>
