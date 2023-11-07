@@ -1,7 +1,6 @@
 'use client';
 
 import styled from 'styled-components';
-import { FC } from 'react';
 import Image from 'next/image';
 
 import { useDarkMode } from '@/hooks/useDarkMode';
@@ -14,7 +13,7 @@ interface IMode {
   mode: boolean;
 }
 
-const OrderStatus: FC<OrderStatusProps> = ({ statusClass }) => {
+const OrderStatus = ({ statusClass }: OrderStatusProps) => {
   const mode = useDarkMode((state) => state.mode);
 
   return (
