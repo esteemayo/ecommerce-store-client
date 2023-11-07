@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import CloseIcon from '@mui/icons-material/Close';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import { FC, useCallback, useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 
 import { ProductImageModalProps } from '@/types';
 import { useDarkMode } from '@/hooks/useDarkMode';
@@ -19,7 +19,7 @@ interface IBtn {
   direction: string;
 }
 
-const ProductImageModal: FC<ProductImageModalProps> = ({
+const ProductImageModal = ({
   images,
   isOpen,
   isMoved,
@@ -27,7 +27,7 @@ const ProductImageModal: FC<ProductImageModalProps> = ({
   lastIndex,
   onMove,
   onClose,
-}) => {
+}: ProductImageModalProps) => {
   const mode = useDarkMode((state) => state.mode);
   const [showModal, setShowModal] = useState(isOpen);
 
