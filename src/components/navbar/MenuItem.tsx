@@ -1,18 +1,13 @@
 'use client';
 
 import styled from 'styled-components';
-import { FC } from 'react';
 
 import { MenuItemProps } from '@/types';
 
-const MenuItem: FC<MenuItemProps> = ({ label, onMouse }) => {
+const MenuItem = ({ label, onMouse }: MenuItemProps) => {
   return (
     <ListItem>
-      <Button
-        type='button'
-        className='link-btn'
-        onMouseOver={onMouse}
-      >
+      <Button type='button' className='link-btn' onMouseOver={onMouse}>
         {label}
       </Button>
     </ListItem>
