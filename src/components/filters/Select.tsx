@@ -1,19 +1,17 @@
-import { FC } from 'react';
-
 import { Label } from './Label';
 import { StyledSelect } from './StyledSelect';
 import { Filter } from './Filter';
 
 import { FilterSelect } from '@/types';
 
-const Select: FC<FilterSelect> = ({
+const Select = ({
   name,
   page,
   value,
   label,
   options,
   ...rest
-}) => {
+}: FilterSelect) => {
   return (
     <Filter>
       <Label htmlFor={name}>{label}</Label>
