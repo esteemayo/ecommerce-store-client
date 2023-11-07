@@ -1,11 +1,10 @@
 import styled from 'styled-components';
-import { FC } from 'react';
 
 interface AccountEmailProps {
   email: string;
 }
 
-const AccountEmail: FC<AccountEmailProps> = ({ email }) => {
+const AccountEmail = ({ email }: AccountEmailProps) => {
   return (
     <Container>
       Your current email address is <EmailAddress>{email}</EmailAddress>
