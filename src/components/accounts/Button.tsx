@@ -1,9 +1,8 @@
 import styled, { css } from 'styled-components';
-import { FC } from 'react';
 
 import { AccountButtonProps } from '@/types';
 
-const Button: FC<AccountButtonProps> = ({ text, disabled }) => {
+const Button = ({ text, disabled }: AccountButtonProps) => {
   return (
     <StyledButton type='submit' disabled={disabled}>
       {text}
