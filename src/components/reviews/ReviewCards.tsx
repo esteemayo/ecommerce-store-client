@@ -1,14 +1,13 @@
 'use client';
 
 import styled from 'styled-components';
-import { FC } from 'react';
 
 import ReviewCard from './ReviewCard';
 import EmptyReview from './EmptyReview';
 
 import { ReviewCardsProps } from '@/types';
 
-const ReviewCards: FC<ReviewCardsProps> = ({ rating, reviews, onOpen }) => {
+const ReviewCards = ({ rating, reviews, onOpen }: ReviewCardsProps) => {
   if (reviews.length === 0) {
     return (
       <Container>
