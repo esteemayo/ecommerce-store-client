@@ -1,7 +1,6 @@
 'use client';
 
 import styled from 'styled-components';
-import { FC } from 'react';
 
 import Heading from '../filters/Heading';
 import Option from '../filters/Option';
@@ -11,7 +10,7 @@ import Select from '../filters/Select';
 import { getUnique } from '@/utils';
 import { ProductFilterProps } from '@/types';
 
-const ProductFilter: FC<ProductFilterProps> = ({
+const ProductFilter = ({
   products,
   price,
   category,
@@ -20,7 +19,7 @@ const ProductFilter: FC<ProductFilterProps> = ({
   minPrice,
   maxPrice,
   onChange,
-}) => {
+}: ProductFilterProps) => {
   let colors = getUnique(products, 'color');
   colors = colors.map((color, index) => {
     return <Option key={index} value={color} />;
