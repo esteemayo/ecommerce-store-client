@@ -3,19 +3,21 @@
 import styled from 'styled-components';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { FC, useCallback, useRef, useState } from 'react';
+import { useCallback, useRef, useState } from 'react';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
-import { ProductImageProps } from '@/types';
 import useImageModal from '@/hooks/useImageModal';
-
 import ProductImageModal from '../modals/ProductImageModal';
+
+interface ProductImageProps {
+  images: string[];
+}
 
 interface IBtn {
   direction: string;
 }
 
-const ProductImage: FC<ProductImageProps> = ({ images }) => {
+const ProductImage = ({ images }: ProductImageProps) => {
   const { isOpen, onOpen, onClose } = useImageModal();
 
   const imgContainerRef = useRef<HTMLElement>();
