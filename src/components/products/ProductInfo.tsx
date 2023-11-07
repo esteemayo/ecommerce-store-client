@@ -1,11 +1,10 @@
 'use client';
 
 import styled from 'styled-components';
-import { FC } from 'react';
 
 import { ProductInfoProps } from '@/types';
 
-const ProductInfo: FC<ProductInfoProps> = ({ title, content }) => {
+const ProductInfo = ({ title, content }: ProductInfoProps) => {
   return (
     <Container>
       <Heading>{title}</Heading>
