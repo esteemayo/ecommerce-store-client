@@ -1,7 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
-import { FC, useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import CloseIcon from '@mui/icons-material/Close';
 
 import Input from '../carts/Input';
@@ -29,12 +29,12 @@ interface IErrors {
   address?: string;
 }
 
-const initialState:FormData = {
+const initialState: FormData = {
   name: '',
   address: '',
 };
 
-const PaymentModal: FC<PaymentModalProps> = ({ isOpen, onClose, onExit }) => {
+const PaymentModal = ({ isOpen, onClose, onExit }: PaymentModalProps) => {
   const mode = useDarkMode((state) => state.mode);
   const total = useCartStore((state) => state.total);
 
