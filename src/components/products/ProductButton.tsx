@@ -1,7 +1,6 @@
 'use client';
 
 import styled from 'styled-components';
-import { FC } from 'react';
 
 import { ProductButtonProps } from '@/types';
 
@@ -9,12 +8,12 @@ interface IBtn {
   small?: boolean;
 }
 
-const ProductButton: FC<ProductButtonProps> = ({
+const ProductButton = ({
   small,
   actionLabel,
   inCart,
   onAction,
-}) => {
+}: ProductButtonProps) => {
   return (
     <Button type='button' small={small} disabled={inCart} onClick={onAction}>
       {actionLabel}
