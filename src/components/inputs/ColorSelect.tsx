@@ -1,7 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
-import { FC, useCallback } from 'react';
+import { useCallback } from 'react';
 
 import { ColorSelectProps } from '@/types';
 
@@ -11,7 +11,7 @@ interface IProps {
   selected?: boolean;
 }
 
-const ColorSelect: FC<ColorSelectProps> = ({
+const ColorSelect = ({
   title,
   mode,
   value,
@@ -19,7 +19,7 @@ const ColorSelect: FC<ColorSelectProps> = ({
   selected,
   onAction,
   secondaryAction,
-}) => {
+}: ColorSelectProps) => {
   const handleSelect = useCallback(
     (color: string) => {
       onAction(color);
