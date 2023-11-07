@@ -1,12 +1,11 @@
 'use client';
 
 import styled from 'styled-components';
-import { FC } from 'react';
 import Link from 'next/link';
 
 import { FooterLinkProps } from '@/types';
 
-const FooterLink: FC<FooterLinkProps> = ({ data }) => {
+const FooterLink = ({ data }: FooterLinkProps) => {
   return (
     <LinkContainer>
       {data.map((item) => {
