@@ -1,10 +1,9 @@
 import styled from 'styled-components';
 import Link from 'next/link';
-import { FC } from 'react';
 
 import { CardHeadingProps } from '@/types';
 
-const CardHeading: FC<CardHeadingProps> = ({ url, name }) => {
+const CardHeading = ({ url, name }: CardHeadingProps) => {
   return (
     <Heading>
       <Link href={url} passHref>
