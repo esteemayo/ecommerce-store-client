@@ -1,11 +1,12 @@
+'use client';
+
 import styled from 'styled-components';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
-import { FC } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { SearchIconProps } from '@/types';
 
-const SearchIcon: FC<SearchIconProps> = ({ onOpen }) => {
+const SearchIcon = ({ onOpen }: SearchIconProps) => {
   return (
     <Container onClick={onOpen}>
       <FontAwesomeIcon icon={faMagnifyingGlass} />
