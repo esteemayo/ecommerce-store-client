@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { FC } from 'react';
 
 import { Label } from './Label';
 import { Filter } from './Filter';
@@ -7,7 +6,7 @@ import { Filter } from './Filter';
 import { RangeInputProps } from '@/types';
 import { formatCurrency } from '@/utils/formatCurrency';
 
-const RangeInput: FC<RangeInputProps> = ({ name, label, price, ...rest }) => {
+const RangeInput = ({ name, label, price, ...rest }: RangeInputProps) => {
   return (
     <Filter>
       <Label htmlFor={name}>
