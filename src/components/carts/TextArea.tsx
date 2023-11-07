@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { FC } from 'react';
 
 import FormError from '../form/FormError';
 import { FormGroup } from '../form/FormGroup';
@@ -7,7 +6,7 @@ import { FormGroup } from '../form/FormGroup';
 import { Label } from './Input';
 import { TextAreaProps } from '@/types';
 
-const TextArea: FC<TextAreaProps> = ({ name, label, error, ...rest }) => {
+const TextArea = ({ name, label, error, ...rest }: TextAreaProps) => {
   return (
     <FormGroup>
       <Label htmlFor={name}>{label}</Label>
