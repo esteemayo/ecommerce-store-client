@@ -1,7 +1,6 @@
 'use client';
 
 import styled from 'styled-components';
-import { FC } from 'react';
 
 import ReviewButton from './ReviewButton';
 import StarRating from '../StarRating';
@@ -9,7 +8,7 @@ import ReviewFilter from './ReviewFilter';
 
 import { ReviewHeadProps } from '@/types';
 
-const ReviewHead: FC<ReviewHeadProps> = ({
+const ReviewHead = ({
   sort,
   sortLabel,
   rating,
@@ -18,7 +17,7 @@ const ReviewHead: FC<ReviewHeadProps> = ({
   onOpen,
   onSort,
   onToggle,
-}) => {
+}: ReviewHeadProps) => {
   return (
     <Container>
       <Ratings>
