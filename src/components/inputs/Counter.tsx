@@ -2,7 +2,7 @@
 
 import styled from 'styled-components';
 import { faMinus, faPlus } from '@fortawesome/free-solid-svg-icons';
-import { FC, useCallback } from 'react';
+import { useCallback } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { CounterProps } from '@/types';
@@ -11,7 +11,7 @@ interface IProps {
   modal?: boolean;
 }
 
-const Counter: FC<CounterProps> = ({ value, title, modal, onClick }) => {
+const Counter = ({ value, title, modal, onClick }: CounterProps) => {
   const handleQuantity = useCallback(
     (type: string) => {
       type === 'dec' && value > 1 && onClick(value - 1);
