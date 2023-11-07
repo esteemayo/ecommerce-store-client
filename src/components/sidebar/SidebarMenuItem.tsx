@@ -12,11 +12,11 @@ const SidebarMenuItem = ({ url, icon, label }: SidebarMenuItemProps) => {
 
   return (
     <ListItem>
-      <Link href={url} passHref onClick={onClose}>
+      <StyledLink href={url} passHref onClick={onClose}>
         <FontAwesomeIcon icon={icon} />
         &nbsp;
         {label}
-      </Link>
+      </StyledLink>
     </ListItem>
   );
 };
@@ -34,28 +34,25 @@ const ListItem = styled.li`
     align-items: center;
     gap: 0.5rem;
   }
+`;
 
-  a {
-    &:link,
-    &:visited {
-      text-decoration: none;
-      text-transform: capitalize;
-      color: inherit;
-      outline-color: #eee;
-      transition: all 0.2s ease;
-    }
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  text-transform: capitalize;
+  color: inherit;
+  outline-color: #eee;
+  transition: all 0.2s ease;
 
-    &:active {
-      color: currentColor;
-    }
+  &:active {
+    color: currentColor;
+  }
 
-    &:hover {
-      color: #686767;
-    }
+  &:hover {
+    color: #686767;
+  }
 
-    svg {
-      color: ${({ theme }) => theme.textHeader};
-    }
+  svg {
+    color: ${({ theme }) => theme.textHeader};
   }
 `;
 
