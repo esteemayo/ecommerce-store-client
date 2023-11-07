@@ -1,11 +1,11 @@
 import styled, { css } from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { FC, useMemo } from 'react';
+import { useMemo } from 'react';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
 import { CardButtonProps } from '@/types';
 
-const CardButton: FC<CardButtonProps> = ({ inCart, onClick }) => {
+const CardButton = ({ inCart, onClick }: CardButtonProps) => {
   const btnLabel = useMemo(() => {
     return `${inCart ? 'added' : 'add'} to cart`;
   }, [inCart]);
