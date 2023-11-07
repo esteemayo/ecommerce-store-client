@@ -1,9 +1,10 @@
+'use client';
+
 import styled, { css } from 'styled-components';
-import { FC } from 'react';
 
 import { FormButtonProps } from '@/types';
 
-const FormButton: FC<FormButtonProps> = ({ label, disabled, ...rest }) => {
+const FormButton = ({ label, disabled, ...rest }: FormButtonProps) => {
   return (
     <Button {...rest} disabled={disabled} type='submit'>
       {label}
