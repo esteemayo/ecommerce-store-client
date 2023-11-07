@@ -1,5 +1,6 @@
+'use client';
+
 import styled from 'styled-components';
-import { FC } from 'react';
 
 import { OverlayProps } from '@/types';
 
@@ -8,7 +9,7 @@ interface IProps {
   mode: string;
 }
 
-const Overlay: FC<OverlayProps> = ({ type, mode, children, onClick }) => {
+const Overlay = ({ type, mode, children, onClick }: OverlayProps) => {
   return (
     <StyledOverlay
       type={type}
