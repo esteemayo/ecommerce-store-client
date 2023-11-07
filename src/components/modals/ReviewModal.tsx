@@ -3,7 +3,7 @@
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
-import { FC, useCallback, useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 
 import { ReviewModalProps } from '@/types';
 import { useDarkMode } from '@/hooks/useDarkMode';
@@ -18,7 +18,7 @@ interface IWrapper {
   active: string;
 }
 
-const ReviewModal: FC<ReviewModalProps> = ({ isOpen, onClose }) => {
+const ReviewModal = ({ isOpen, onClose }: ReviewModalProps) => {
   const mode = useDarkMode((state) => state.mode);
 
   const [rating, setRating] = useState(null);
