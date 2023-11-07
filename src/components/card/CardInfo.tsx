@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { FC } from 'react';
 
 import CardPrice from './CardPrice';
 import CardHeading from './CardHeading';
@@ -9,7 +8,7 @@ import CardReview from './CardReview';
 
 import { CardInfoProps } from '@/types';
 
-const CardInfo: FC<CardInfoProps> = ({
+const CardInfo = ({
   url,
   product,
   initialPrice,
@@ -18,7 +17,7 @@ const CardInfo: FC<CardInfoProps> = ({
   inCart,
   wished,
   onOpen,
-}) => {
+}: CardInfoProps) => {
   return (
     <Container>
       <CardHeading url={url} name={product.name} />
