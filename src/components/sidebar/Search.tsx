@@ -1,9 +1,10 @@
+'use client';
+
 import styled from 'styled-components';
-import { FC } from 'react';
 
 import { SidebarSearch } from '@/types';
 
-const Search: FC<SidebarSearch> = ({ query, onChange, onSubmit }) => {
+const Search = ({ query, onChange, onSubmit }: SidebarSearch) => {
   return (
     <Form onSubmit={onSubmit}>
       <Input
