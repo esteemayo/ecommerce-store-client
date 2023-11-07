@@ -1,14 +1,13 @@
 'use client';
 
 import styled from 'styled-components';
-import { FC } from 'react';
 
 import Heading from './Heading';
 import SidebarMenuItem from './SidebarMenuItem';
 
 import { SidebarMenuProps } from '@/types';
 
-const SidebarMenu: FC<SidebarMenuProps> = ({ items }) => {
+const SidebarMenu = ({ items }: SidebarMenuProps) => {
   return (
     <Container>
       {items.map((item, index) => {
