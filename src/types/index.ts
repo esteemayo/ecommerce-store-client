@@ -459,10 +459,6 @@ export interface FooterLinkProps {
   data: FooterLink;
 }
 
-export interface FooterTextProps {
-  value: number;
-}
-
 export interface ProductProps {
   product: CartValues;
   inCart: boolean;

@@ -1,11 +1,12 @@
 'use client';
 
 import styled from 'styled-components';
-import { FC } from 'react';
 
-import { FooterTextProps } from '@/types';
+interface FooterTextProps {
+  value: number;
+}
 
-const FooterText: FC<FooterTextProps> = ({ value }) => {
+const FooterText = ({ value }: FooterTextProps) => {
   return (
     <Text>
       &copy; {value} by <Author>Emmanuel Adebayo&trade;</Author>. All rights
