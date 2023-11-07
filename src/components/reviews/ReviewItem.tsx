@@ -2,13 +2,13 @@
 
 import styled from 'styled-components';
 import Link from 'next/link';
-import { FC, useMemo } from 'react';
+import { useMemo } from 'react';
 import Image from 'next/image';
 
 import StarRating from '../StarRating';
 import { ReviewItemProps } from '@/types';
 
-const ReviewItem: FC<ReviewItemProps> = ({ user, rating, review }) => {
+const ReviewItem = ({ user, rating, review }: ReviewItemProps) => {
   const reviewer = useMemo(() => {
     return `
       ${user.name.split(' ')[0]} 
