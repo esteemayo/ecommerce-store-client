@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { FC } from 'react';
 
 import { Label } from './Label';
 import { StyledSelect } from './StyledSelect';
@@ -7,12 +6,7 @@ import { Filter } from './Filter';
 
 import { SelectPriceProps } from '@/types';
 
-const SelectPrice: FC<SelectPriceProps> = ({
-  name,
-  label,
-  options,
-  ...rest
-}) => {
+const SelectPrice = ({ name, label, options, ...rest }: SelectPriceProps) => {
   return (
     <Filter>
       <Label htmlFor={name}>{label}</Label>
