@@ -1,4 +1,4 @@
-import { FC } from 'react';
+'use client';
 
 import { FormGroup } from '../form/FormGroup';
 import FormError from '../form/FormError';
@@ -6,14 +6,14 @@ import { Label, Option, StyledSelect } from '../form/Select';
 
 import { CountrySelectProps } from '@/types';
 
-const CountrySelect: FC<CountrySelectProps> = ({
+const CountrySelect = ({
   data,
   name,
   label,
   onChange,
   error,
   ...rest
-}) => {
+}: CountrySelectProps) => {
   return (
     <FormGroup>
       <Label htmlFor={name}>{label}</Label>
