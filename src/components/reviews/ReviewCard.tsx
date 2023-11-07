@@ -2,7 +2,6 @@
 
 import styled from 'styled-components';
 import { faArrowUpFromBracket } from '@fortawesome/free-solid-svg-icons';
-import { FC } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import Avatar from '../images/Avatar';
@@ -13,12 +12,7 @@ import StarRating from '../StarRating';
 
 import { DateOptions, ReviewCardProps } from '@/types';
 
-const ReviewCard: FC<ReviewCardProps> = ({
-  user,
-  rating,
-  review,
-  createdAt,
-}) => {
+const ReviewCard = ({ user, rating, review, createdAt }: ReviewCardProps) => {
   const options: DateOptions = {
     month: 'long',
     day: 'numeric',
