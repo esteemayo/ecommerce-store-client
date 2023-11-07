@@ -1,14 +1,13 @@
 'use client';
 
 import styled, { css } from 'styled-components';
-import { FC } from 'react';
 
 interface ReviewButtonProps {
   actionLabel: string;
   onAction(): void;
 }
 
-const ReviewButton: FC<ReviewButtonProps> = ({ actionLabel, onAction }) => {
+const ReviewButton = ({ actionLabel, onAction }: ReviewButtonProps) => {
   return (
     <Button type='button' onClick={onAction}>
       {actionLabel}
