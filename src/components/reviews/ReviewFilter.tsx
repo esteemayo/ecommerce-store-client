@@ -2,7 +2,6 @@
 
 import styled from 'styled-components';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
-import { FC } from 'react';
 
 import { ReviewFilterProps } from '@/types';
 
@@ -14,13 +13,13 @@ interface IList {
   type: string;
 }
 
-const ReviewFilter: FC<ReviewFilterProps> = ({
+const ReviewFilter = ({
   sort,
   value,
   isOpen,
   onClick,
   onSort,
-}) => {
+}: ReviewFilterProps) => {
   return (
     <Container className='filter-container'>
       <Wrapper sort={sort} className='filter-wrapper' onClick={onClick}>
