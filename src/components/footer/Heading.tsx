@@ -1,7 +1,6 @@
 'use client';
 
 import styled from 'styled-components';
-import { FC } from 'react';
 
 import { FooterHeadingProps } from '@/types';
 
@@ -9,7 +8,7 @@ interface IHeader {
   small?: boolean;
 }
 
-const Heading: FC<FooterHeadingProps> = ({ title, small }) => {
+const Heading = ({ title, small }: FooterHeadingProps) => {
   return <Header small={small}>{title}</Header>;
 };
 
