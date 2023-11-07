@@ -1,9 +1,10 @@
+'use client';
+
 import styled from 'styled-components';
-import { FC } from 'react';
 
 import { FormUploadProps } from '@/types';
 
-const FormUpload: FC<FormUploadProps> = ({ id, label, ...rest }) => {
+const FormUpload = ({ id, label, ...rest }: FormUploadProps) => {
   return (
     <FormGroup>
       <Input {...rest} id={id} />
