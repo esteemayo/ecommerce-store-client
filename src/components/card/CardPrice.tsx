@@ -1,14 +1,9 @@
 import styled from 'styled-components';
-import { FC } from 'react';
 
 import { CardPriceProps } from '@/types';
 import { formatCurrency } from '@/utils/formatCurrency';
 
-const CardPrice: FC<CardPriceProps> = ({
-  inStock,
-  initialPrice,
-  priceLabel,
-}) => {
+const CardPrice = ({ inStock, initialPrice, priceLabel }: CardPriceProps) => {
   return (
     <Container>
       <Wrapper>
