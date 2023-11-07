@@ -1,13 +1,13 @@
 'use client';
 
 import styled from 'styled-components';
-import { FC, useCallback } from 'react';
+import { useCallback } from 'react';
 
 interface DeleteAccountProps {
   onCancel(): void;
 }
 
-const DeleteAccount: FC<DeleteAccountProps> = ({ onCancel }) => {
+const DeleteAccount = ({ onCancel }: DeleteAccountProps) => {
   const handleDelete = useCallback(() => {
     console.log('user deleted!');
   }, []);
