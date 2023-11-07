@@ -1,14 +1,13 @@
 import styled from 'styled-components';
-import { FC } from 'react';
 
 import StarRating from '../StarRating';
 import { CardReviewProps } from '@/types';
 
-const CardReview: FC<CardReviewProps> = ({
+const CardReview = ({
   reviewLabel,
   ratingsAverage,
   ratingsQuantity,
-}) => {
+}: CardReviewProps) => {
   return (
     <Container>
       <StarRating readOnly value={ratingsAverage} name='read-only' />
