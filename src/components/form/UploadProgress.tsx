@@ -1,5 +1,6 @@
+'use client';
+
 import styled from 'styled-components';
-import { FC } from 'react';
 
 interface UploadProgressProps {
   type?: boolean;
@@ -10,7 +11,7 @@ interface ISpan {
   type?: boolean;
 }
 
-const UploadProgress: FC<UploadProgressProps> = ({ type, percentage }) => {
+const UploadProgress = ({ type, percentage }: UploadProgressProps) => {
   return <Container type={type}>Uploading: {percentage}%</Container>;
 };
 
