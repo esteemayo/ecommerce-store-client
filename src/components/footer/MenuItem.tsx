@@ -1,12 +1,11 @@
 'use client';
 
 import styled from 'styled-components';
-import { FC } from 'react';
 import Link from 'next/link';
 
 import { FooterMenuItemProps } from '@/types';
 
-const MenuItem: FC<FooterMenuItemProps> = ({ data }) => {
+const MenuItem = ({ data }: FooterMenuItemProps) => {
   return (
     <ListContainer>
       {data.map((link) => {
