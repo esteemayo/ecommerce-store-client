@@ -2,7 +2,7 @@
 
 import styled from 'styled-components';
 import Link from 'next/link';
-import { FC, useMemo } from 'react';
+import { useMemo } from 'react';
 
 import { ProductHeadProps } from '@/types';
 import { formatCurrency } from '@/utils/formatCurrency';
@@ -13,7 +13,7 @@ interface IProps {
   modal?: boolean;
 }
 
-const ProductHead: FC<ProductHeadProps> = ({
+const ProductHead = ({
   name,
   price,
   modal,
@@ -21,7 +21,7 @@ const ProductHead: FC<ProductHeadProps> = ({
   priceDiscount,
   ratingsAverage,
   ratingsQuantity,
-}) => {
+}: ProductHeadProps) => {
   const initialPrice = useMemo(() => {
     return price + discount;
   }, [discount, price]);
