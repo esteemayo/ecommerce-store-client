@@ -3,12 +3,11 @@
 import styled from 'styled-components';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { FC } from 'react';
 
 import { SidebarMenuItemProps } from '@/types';
 import { useSidebar } from '@/hooks/useSidebar';
 
-const SidebarMenuItem: FC<SidebarMenuItemProps> = ({ url, icon, label }) => {
+const SidebarMenuItem = ({ url, icon, label }: SidebarMenuItemProps) => {
   const onClose = useSidebar((state) => state.onClose);
 
   return (
