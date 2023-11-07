@@ -20,7 +20,7 @@ const nunito = Nunito({
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className={` container`}>
+    <div className={`${nunito.className} container`}>
       <ClientOnly>
         <Announcement />
         <Navbar />
