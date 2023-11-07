@@ -1,11 +1,12 @@
+'use client';
+
 import styled from 'styled-components';
-import { FC } from 'react';
 
 interface FormErrorProps {
   message?: string;
 }
 
-const FormError: FC<FormErrorProps> = ({ message }) => {
+const FormError = ({ message }: FormErrorProps) => {
   return <ErrorMessage>{message}</ErrorMessage>;
 };
 
