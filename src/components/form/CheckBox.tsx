@@ -1,10 +1,10 @@
 import styled from 'styled-components';
-import { FC, useMemo } from 'react';
+import { useMemo } from 'react';
 
 import { CheckBoxProps } from '@/types';
 import { useDarkMode } from '@/hooks/useDarkMode';
 
-const CheckBox: FC<CheckBoxProps> = ({ name, label, ...rest }) => {
+const CheckBox = ({ name, label, ...rest }: CheckBoxProps) => {
   const mode = useDarkMode((state) => state.mode);
 
   const checkmarkClasses = useMemo(() => {
