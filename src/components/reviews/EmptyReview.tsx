@@ -1,19 +1,18 @@
 'use client';
 
 import styled from 'styled-components';
-import { FC } from 'react';
 
 import StarRating from '../StarRating';
 import ReviewButton from './ReviewButton';
 
 import { EmptyReviewProps } from '@/types';
 
-const EmptyReview: FC<EmptyReviewProps> = ({
+const EmptyReview = ({
   rating,
   title = 'Currently, there are no reviews for this product.',
   label = 'Leave a review',
   onClick,
-}) => {
+}: EmptyReviewProps) => {
   return (
     <Container>
       <StarRating value={rating} />
