@@ -1,4 +1,4 @@
-import { FC, useMemo } from 'react';
+import { useMemo } from 'react';
 
 import { IconButton } from './IconButton';
 import HeartIcon from '../icons/HeartIcon';
@@ -6,11 +6,11 @@ import HeartIcon from '../icons/HeartIcon';
 import useWishlist from '@/hooks/useWishlist';
 import { WishlistButtonProps } from '@/types';
 
-const WishlistButton: FC<WishlistButtonProps> = ({
+const WishlistButton = ({
   actionId,
   product,
   wished,
-}) => {
+}: WishlistButtonProps) => {
   const { isWished, handleToggle } = useWishlist(actionId, product, wished);
 
   const wishlistLabel = useMemo(() => {
