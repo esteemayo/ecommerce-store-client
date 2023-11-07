@@ -1,7 +1,8 @@
+'use client';
+
 import styled from 'styled-components';
-import { FC } from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
+import Image from 'next/image';
 
 import { SliderItemProps } from '@/types';
 
@@ -9,14 +10,14 @@ interface IType {
   type: string;
 }
 
-const SliderItem: FC<SliderItemProps> = ({
+const SliderItem = ({
   url,
   img,
   desc,
   title,
   index,
   position,
-}) => {
+}: SliderItemProps) => {
   return (
     <Article type={position}>
       <Container>
