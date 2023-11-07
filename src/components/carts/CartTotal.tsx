@@ -1,7 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
-import { FC, useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 
 import { CartTotalProps } from '@/types';
 import { formatCurrency } from '@/utils/formatCurrency';
@@ -11,12 +11,7 @@ interface IBtn {
   btnType?: string;
 }
 
-const CartTotal: FC<CartTotalProps> = ({
-  isOpen,
-  onOpen,
-  onClose,
-  onAction,
-}) => {
+const CartTotal = ({ isOpen, onOpen, onClose, onAction }: CartTotalProps) => {
   const tax = useCartStore((state) => state.tax);
   const subtotal = useCartStore((state) => state.subtotal);
   const total = useCartStore((state) => state.total);
