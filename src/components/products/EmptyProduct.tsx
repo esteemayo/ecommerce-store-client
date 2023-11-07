@@ -1,7 +1,6 @@
 'use client';
 
 import styled from 'styled-components';
-import { FC } from 'react';
 import Image from 'next/image';
 
 interface EmptyProductProps {
@@ -9,7 +8,7 @@ interface EmptyProductProps {
   title: string;
 }
 
-const EmptyProduct: FC<EmptyProductProps> = ({ src, title }) => {
+const EmptyProduct = ({ src, title }: EmptyProductProps) => {
   return (
     <Container>
       <StyledImage src={src} width={500} height={250} alt='' />
