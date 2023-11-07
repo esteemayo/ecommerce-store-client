@@ -1,7 +1,6 @@
 'use client';
 
 import styled from 'styled-components';
-import { FC } from 'react';
 import Link from 'next/link';
 
 import { SocialIconProps } from '@/types';
@@ -12,7 +11,7 @@ interface IMode {
   color: string;
 }
 
-const SocialIcon: FC<SocialIconProps> = ({ data }) => {
+const SocialIcon = ({ data }: SocialIconProps) => {
   const mode = useDarkMode((state) => state.mode);
 
   return (
