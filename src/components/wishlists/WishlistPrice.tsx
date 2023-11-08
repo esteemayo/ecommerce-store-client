@@ -2,18 +2,14 @@
 
 import styled, { css } from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { FC, useCallback, useMemo } from 'react';
+import { useCallback, useMemo } from 'react';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
 import { formatCurrency } from '@/utils/formatCurrency';
 import { useCartStore } from '@/hooks/useCartStore';
 import { WishlistValues, WislistPriceProps } from '@/types';
 
-const WishlistPrice: FC<WislistPriceProps> = ({
-  price,
-  wishlist,
-  onAction,
-}) => {
+const WishlistPrice = ({ price, wishlist, onAction }: WislistPriceProps) => {
   const cart = useCartStore((state) => state.cart);
 
   const handleClick = useCallback(
