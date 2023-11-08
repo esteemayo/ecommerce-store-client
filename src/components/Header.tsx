@@ -1,13 +1,12 @@
 'use client';
 
 import styled from 'styled-components';
-import { FC } from 'react';
 
 interface HeaderProps {
   title: string;
 }
 
-const Header: FC<HeaderProps> = ({ title }) => {
+const Header = ({ title }: HeaderProps) => {
   return <Heading>{title}</Heading>;
 };
 
