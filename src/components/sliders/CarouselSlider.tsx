@@ -158,18 +158,4 @@ const ArrowButton = styled.button<IDirection>`
   }
 `;
 
-const ActiveSlideContainer = styled.div`
-  position: absolute;
-  top: 90%;
-  left: 50%;
-  transform: translate(-90%, -50%);
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-
-  @media only screen and (max-width: 37.5em) {
-    top: 80%;
-  }
-`;
-
 export default CarouselSlider;
