@@ -8,8 +8,9 @@ import {
   faChevronRight,
 } from '@fortawesome/free-solid-svg-icons';
 
-import SliderItem from './SliderItem';
 import ActiveButton from './ActiveButton';
+import SliderItem from './SliderItem';
+import SliderButton from './SliderButton';
 
 import { sliderItems } from '@/data';
 
@@ -74,12 +75,16 @@ const CarouselSlider = () => {
             />
           );
         })}
-        <ArrowButton type='button' direction='left' onClick={handlePrev}>
-          <FontAwesomeIcon icon={faChevronLeft} />
-        </ArrowButton>
-        <ArrowButton type='button' direction='right' onClick={handleNext}>
-          <FontAwesomeIcon icon={faChevronRight} />
-        </ArrowButton>
+        <SliderButton
+          icon={faChevronLeft}
+          direction='left'
+          onClick={handlePrev}
+        />
+        <SliderButton
+          icon={faChevronRight}
+          direction='right'
+          onClick={handleNext}
+        />
         <ActiveButton
           items={sliderItems}
           slideNumber={slideNumber}
