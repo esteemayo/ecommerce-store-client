@@ -1,7 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
-import { FC, useEffect } from 'react';
+import { useEffect } from 'react';
 
 import { AlertProps } from '@/types';
 
@@ -9,7 +9,7 @@ interface IMessage {
   center?: boolean;
 }
 
-const Alert: FC<AlertProps> = ({ alert, center, message, onChange }) => {
+const Alert = ({ alert, center, message, onChange }: AlertProps) => {
   useEffect(() => {
     const timeout = setTimeout(() => {
       onChange(false);
