@@ -3,7 +3,7 @@ import { devtools } from 'zustand/middleware';
 import { produce } from 'immer';
 
 import { sublinks } from '@/data';
-import { SubmenuStore } from '@/types';
+import { OpenSubmenu, SubmenuStore } from '@/types';
 
 export const useSubmenu = create<SubmenuStore>()(
   devtools((set) => ({
@@ -15,7 +15,7 @@ export const useSubmenu = create<SubmenuStore>()(
     },
     openSubmenu: (payload) =>
       set(
-        produce((state) => {
+        produce((state: OpenSubmenu) => {
           state.page = sublinks.find((link) => link.page === payload.page);
           state.location = payload.coordinates;
           state.isOpen = true;
@@ -25,7 +25,7 @@ export const useSubmenu = create<SubmenuStore>()(
       ),
     closeSubmenu: () =>
       set(
-        produce((state) => {
+        produce((state: { isOpen: boolean }) => {
           state.isOpen = false;
         }),
         false,

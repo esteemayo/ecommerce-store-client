@@ -276,6 +276,18 @@ export type Submenu = {
   };
 };
 
+export type OpenSubmenu = {
+  isOpen: boolean;
+  location: {
+    center?: number;
+    bottom?: number;
+  };
+  page: {
+    page: string;
+    links: Link;
+  };
+};
+
 export interface SubmenuStore {
   isOpen: boolean;
   location: {
