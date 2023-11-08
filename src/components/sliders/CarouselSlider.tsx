@@ -13,10 +13,6 @@ import SliderButton from './SliderButton';
 
 import { sliderItems } from '@/data';
 
-interface IDirection {
-  direction: string;
-}
-
 const CarouselSlider = () => {
   const [slideNumber, setSlideNumber] = useState(0);
 
