@@ -1,11 +1,10 @@
 import { NumericFormat } from 'react-number-format';
-import { FC } from 'react';
 
 interface FormatPriceProps {
   value: number;
 }
 
-const FormatPrice: FC<FormatPriceProps> = ({ value }) => {
+const FormatPrice = ({ value }: FormatPriceProps) => {
   return (
     <NumericFormat
       value={value}
