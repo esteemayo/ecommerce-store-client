@@ -1,4 +1,7 @@
-import { ChangeEvent, useCallback, useEffect, useState } from 'react';
+'use client';
+
+import { useCallback, useEffect, useState } from 'react';
+
 import { getFromStorage, searchKey, setToStorage } from '@/utils';
 
 interface IHistories {
@@ -15,7 +18,7 @@ export const useSearch = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [histories, setHistories] = useState<IHistories[]>(getAllHistories());
 
-  const handleChange = useCallback((e: ChangeEvent<HTMLInputElement>) => {
+  const handleChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
     setSearchQuery(e.target.value);
   }, []);
 
