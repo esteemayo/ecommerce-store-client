@@ -525,7 +525,7 @@ export const storeProducts: StoreProduct = [
   },
   {
     id: 4,
-    name: 'Samsumg Galaxy Note 5',
+    name: 'Samsung Galaxy Note 5',
     desc: "Let the rain fall, you've come prepared. Introducing The Stanley, our newest Smart Layer rain jacket. Made with recycled polyester, it features a regular fit and a waist length. This coat has a 10k/10k water resistant and breathability rating, protecting you from heavy rainfalls while keeping your body temperature on point. It achieves this rating because of its 2-layer fabric with different capabilities Better yet, this coat has an extra layer of protection made with a PFC-free C0 (carbon-free) DWR (Durable Water Repellent) with an 80/10 rating that ensures efficiency even after multiple washes. 2-way mechanical stretch fabric. Hand pockets with recycled zip closure. Recycled zip closure at the centre front. Adjustable cord locks at the hood and hem for the perfect fit. 2-tone drawcord. Inside chest pocket. Inside mesh storage pocket. Inside pocket is made with shell fabric. Flag label at side seam. Small logo branding at the chest. Machine washable. Compatible with all Smart Layer base jackets.",
     price: 279,
     priceDiscount: 7,
@@ -548,7 +548,7 @@ export const storeProducts: StoreProduct = [
     ratingsAverage: 4.95,
     createdAt: '2023-02-02T16:48:57.511Z',
     updatedAt: '2023-02-02T16:48:57.511Z',
-    slug: 'samsumg-galaxy-note-5',
+    slug: 'samsung-galaxy-note-5',
     discount: 21,
   },
   {
@@ -665,7 +665,7 @@ export const storeProducts: StoreProduct = [
   },
   {
     id: 9,
-    name: 'Samsumg Galaxy 13',
+    name: 'Samsung Galaxy 13',
     desc: "Let the rain fall, you've come prepared. Introducing The Stanley, our newest Smart Layer rain jacket. Made with recycled polyester, it features a regular fit and a waist length. This coat has a 10k/10k water resistant and breathability rating, protecting you from heavy rainfalls while keeping your body temperature on point. It achieves this rating because of its 2-layer fabric with different capabilities Better yet, this coat has an extra layer of protection made with a PFC-free C0 (carbon-free) DWR (Durable Water Repellent) with an 80/10 rating that ensures efficiency even after multiple washes. 2-way mechanical stretch fabric. Hand pockets with recycled zip closure. Recycled zip closure at the centre front. Adjustable cord locks at the hood and hem for the perfect fit. 2-tone drawcord. Inside chest pocket. Inside mesh storage pocket. Inside pocket is made with shell fabric. Flag label at side seam. Small logo branding at the chest. Machine washable. Compatible with all Smart Layer base jackets.",
     price: 240,
     priceDiscount: 20,
@@ -688,7 +688,7 @@ export const storeProducts: StoreProduct = [
     ratingsAverage: 4.95,
     createdAt: '2023-02-02T16:48:57.511Z',
     updatedAt: '2023-02-02T16:48:57.511Z',
-    slug: 'samsumg-galaxy-13',
+    slug: 'samsung-galaxy-13',
     discount: 60,
   },
   {
@@ -935,7 +935,7 @@ export const wishlists: WishlistItems = [
   },
   {
     id: 9,
-    name: 'Samsumg Galaxy 13',
+    name: 'Samsung Galaxy 13',
     desc: "Let the rain fall, you've come prepared. Introducing The Stanley, our newest Smart Layer rain jacket. Made with recycled polyester, it features a regular fit and a waist length. This coat has a 10k/10k water resistant and breathability rating, protecting you from heavy rainfalls while keeping your body temperature on point. It achieves this rating because of its 2-layer fabric with different capabilities Better yet, this coat has an extra layer of protection made with a PFC-free C0 (carbon-free) DWR (Durable Water Repellent) with an 80/10 rating that ensures efficiency even after multiple washes. 2-way mechanical stretch fabric. Hand pockets with recycled zip closure. Recycled zip closure at the centre front. Adjustable cord locks at the hood and hem for the perfect fit. 2-tone drawcord. Inside chest pocket. Inside mesh storage pocket. Inside pocket is made with shell fabric. Flag label at side seam. Small logo branding at the chest. Machine washable. Compatible with all Smart Layer base jackets.",
     price: 300,
     numberInStock: 500,
@@ -957,7 +957,7 @@ export const wishlists: WishlistItems = [
     ratingsAverage: 4.95,
     createdAt: '2023-02-02T16:48:57.511Z',
     updatedAt: '2023-02-02T16:48:57.511Z',
-    slug: 'samsumg-galaxy-13',
+    slug: 'samsung-galaxy-13',
   },
   {
     id: 1,
