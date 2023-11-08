@@ -1,12 +1,11 @@
 import styled from 'styled-components';
-import { FC } from 'react';
 
 interface AccountHeadProps {
   onOpen(): void;
   onAction(): void;
 }
 
-const AccountHead: FC<AccountHeadProps> = ({ onOpen, onAction }) => {
+const AccountHead = ({ onOpen, onAction }: AccountHeadProps) => {
   return (
     <Container>
       <Wrapper>
