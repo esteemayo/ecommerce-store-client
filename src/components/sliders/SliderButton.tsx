@@ -3,11 +3,13 @@
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+import { SliderButtonProps } from '@/types';
+
 interface IBtn {
   direction: string;
 }
 
-const SliderButton = ({ icon, direction, onClick }) => {
+const SliderButton = ({ icon, direction, onClick }: SliderButtonProps) => {
   return (
     <Button type='button' direction={direction} onClick={onClick}>
       <FontAwesomeIcon icon={icon} />
