@@ -1,15 +1,16 @@
+'use client';
+
 import styled, { css } from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Image from 'next/image';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
-import { FC } from 'react';
 
 interface AccountUploadProps {
   onOpen(): void;
   currentUser: boolean;
 }
 
-const AccountUpload: FC<AccountUploadProps> = ({ onOpen, currentUser }) => {
+const AccountUpload = ({ onOpen, currentUser }: AccountUploadProps) => {
   return (
     <Container>
       <Wrapper>

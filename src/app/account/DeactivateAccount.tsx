@@ -1,11 +1,12 @@
+'use client';
+
 import styled from 'styled-components';
-import { FC } from 'react';
 
 interface DeactivateAccountProps {
   onOpen(): void;
 }
 
-const DeactivateAccount: FC<DeactivateAccountProps> = ({ onOpen }) => {
+const DeactivateAccount = ({ onOpen }: DeactivateAccountProps) => {
   return (
     <Container>
       <Header>Delete your account</Header>
