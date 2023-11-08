@@ -118,6 +118,12 @@ export interface SliderItemProps {
   position: string;
 }
 
+export type ActiveButtonProps = {
+  items: SliderItem;
+  slideNumber: number;
+  setSlideNumber(value: number): void;
+};
+
 type LinkFooter = {
   id: number;
   url: string;
