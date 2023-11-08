@@ -172,20 +172,4 @@ const ActiveSlideContainer = styled.div`
   }
 `;
 
-const ActiveSlideButton = styled.button<IActive>`
-  border: none;
-  width: ${({ active }) => (active ? '1.5rem' : '1rem')};
-  height: ${({ active }) => (active ? '1.5rem' : '1rem')};
-  background-color: ${({ active, theme }) =>
-    active ? theme.bgActiveBtn : theme.bgCarActiveBtn};
-  border-radius: 50%;
-  outline-color: #f5f5f5;
-  cursor: pointer;
-
-  @media only screen and (max-width: 25em) {
-    width: ${({ active }) => (active ? '1.3rem' : '0.8rem')};
-    height: ${({ active }) => (active ? '1.3rem' : '0.8rem')};
-  }
-`;
-
 export default CarouselSlider;
