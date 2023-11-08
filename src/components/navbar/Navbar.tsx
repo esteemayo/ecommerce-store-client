@@ -18,6 +18,7 @@ import { useSidebar } from '@/hooks/useSidebar';
 import { useCartStore } from '@/hooks/useCartStore';
 
 import { navLinks } from '@/data';
+import { Submenu } from '@/types';
 
 const Navbar = () => {
   const cart = useCartStore((state) => state.cart);
@@ -52,7 +53,7 @@ const Navbar = () => {
       const center = (tempBtn.left + tempBtn.right) / 2;
       const bottom = tempBtn.bottom;
 
-      const submenu = {
+      const submenu: Submenu = {
         page,
         coordinates: {
           center,

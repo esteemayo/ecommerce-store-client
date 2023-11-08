@@ -268,6 +268,14 @@ export type SelectInput = {
   label: string;
 }[];
 
+export type Submenu = {
+  page: string;
+  coordinates: {
+    center: number;
+    bottom: number;
+  };
+};
+
 export interface SubmenuStore {
   isOpen: boolean;
   location: {
@@ -278,7 +286,7 @@ export interface SubmenuStore {
     page: string;
     links: Link;
   };
-  openSubmenu(value: any): void;
+  openSubmenu(value: Submenu): void;
   closeSubmenu(): void;
 }
 
