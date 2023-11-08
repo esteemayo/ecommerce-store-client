@@ -1,10 +1,9 @@
 'use client';
 
 import styled from 'styled-components';
-import { FC } from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
 import CloseIcon from '@mui/icons-material/Close';
+import Image from 'next/image';
 
 import WishlistPrice from './WishlistPrice';
 import DeleteModal from '../modals/DeleteModal';
@@ -12,7 +11,7 @@ import DeleteModal from '../modals/DeleteModal';
 import { excerpts } from '@/utils';
 import { WishlistCardProps } from '@/types';
 
-const WishlistCard: FC<WishlistCardProps> = ({
+const WishlistCard = ({
   isOpen,
   onOpen,
   selected,
@@ -20,7 +19,7 @@ const WishlistCard: FC<WishlistCardProps> = ({
   onAction,
   onClose,
   onDelete,
-}) => {
+}: WishlistCardProps) => {
   return (
     <Container>
       {wishlists.map((wishlist) => {
