@@ -1,12 +1,11 @@
 'use client';
 
 import styled from 'styled-components';
-import { FC } from 'react';
 
 import { RecommendationProps } from '@/types';
 import RecommendationItem from './RecommendationItem';
 
-const Recommendation: FC<RecommendationProps> = ({ data }) => {
+const Recommendation = ({ data }: RecommendationProps) => {
   return (
     <Container>
       <Heading>You might also like</Heading>
