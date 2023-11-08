@@ -124,6 +124,12 @@ export type ActiveButtonProps = {
   setSlideNumber(value: number): void;
 };
 
+export type SliderButtonProps = {
+  icon: IconDefinition;
+  direction: string;
+  onClick(): void;
+};
+
 type LinkFooter = {
   id: number;
   url: string;
