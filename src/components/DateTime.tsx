@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { FC, useMemo } from 'react';
+import { useMemo } from 'react';
 
 import { DateTimeProps } from '@/types';
 
@@ -7,7 +7,7 @@ interface ITime {
   type?: string;
 }
 
-const DateTime: FC<DateTimeProps> = ({ date, type, options }) => {
+const DateTime = ({ date, type, options }: DateTimeProps) => {
   const dateLabel = useMemo(() => {
     return new Date(date).toLocaleString('en-us', options);
   }, [date, options]);
