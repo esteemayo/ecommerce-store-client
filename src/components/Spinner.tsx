@@ -1,7 +1,6 @@
 'use client';
 
 import styled, { keyframes } from 'styled-components';
-import { FC } from 'react';
 
 interface SpinnerProps {
   size?: string;
@@ -11,7 +10,7 @@ interface IContainer {
   size?: string;
 }
 
-const Spinner: FC<SpinnerProps> = ({ size = 'sm' }) => {
+const Spinner = ({ size = 'sm' }: SpinnerProps) => {
   return <Container size={size}>&nbsp;</Container>;
 };
 
