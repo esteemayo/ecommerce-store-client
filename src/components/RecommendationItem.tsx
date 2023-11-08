@@ -1,23 +1,22 @@
 'use client';
 
 import styled from 'styled-components';
-import { FC } from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
+import Image from 'next/image';
 
 import { RecommendationItemProps } from '@/types';
 import { formatCurrency } from '@/utils/formatCurrency';
 
-const RecommendationItem: FC<RecommendationItemProps> = ({
+const RecommendationItem = ({
   id,
   name,
   price,
   image,
-}) => {
+}: RecommendationItemProps) => {
   return (
     <Container>
       <Link href={`/products/${encodeURIComponent(id)}`} passHref>
-        <StyledImage src={image} width={400} height={500} alt='' />
+        <StyledImage src={image} width={400} height={500} alt={name} />
         <Wrapper>
           <Title>{name}</Title>
           <Price>{formatCurrency(price)}</Price>
