@@ -1,7 +1,6 @@
 'use client';
 
 import styled from 'styled-components';
-import { FC } from 'react';
 
 import Spinner from './Spinner';
 
@@ -9,7 +8,7 @@ interface LoaderProps {
   size?: string;
 }
 
-const Loader: FC<LoaderProps> = ({ size }) => {
+const Loader = ({ size }: LoaderProps) => {
   return (
     <Container>
       <Wrapper>
