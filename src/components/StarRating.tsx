@@ -1,4 +1,3 @@
-import { FC } from 'react';
 import Rating from '@mui/material/Rating';
 
 interface StarRatingProps {
@@ -8,7 +7,7 @@ interface StarRatingProps {
   onChange?(e: React.ChangeEvent<HTMLInputElement>, newValue: number): void;
 }
 
-const StarRating: FC<StarRatingProps> = ({ value, onChange, ...rest }) => {
+const StarRating = ({ value, onChange, ...rest }: StarRatingProps) => {
   return (
     <Rating
       {...rest}
