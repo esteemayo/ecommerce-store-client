@@ -2,11 +2,10 @@ import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 import { faClock, faTimes } from '@fortawesome/free-solid-svg-icons';
-import { FC } from 'react';
 
 import { SearchHistoryProps } from '@/types';
 
-const SearchHistory: FC<SearchHistoryProps> = ({ id, query, onDelete }) => {
+const SearchHistory = ({ id, query, onDelete }: SearchHistoryProps) => {
   return (
     <Container key={id}>
       <IconWRapper>
