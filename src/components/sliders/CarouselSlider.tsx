@@ -17,10 +17,6 @@ interface IDirection {
   direction: string;
 }
 
-interface IActive {
-  active: boolean;
-}
-
 const CarouselSlider = () => {
   const [slideNumber, setSlideNumber] = useState(0);
 
