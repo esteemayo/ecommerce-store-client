@@ -110,11 +110,6 @@ export const sublinks: Sublink = [
     page: 'sells',
     links: [
       {
-        url: '/orders',
-        icon: faCartPlus,
-        label: 'orders',
-      },
-      {
         url: '/',
         icon: faShop,
         label: 'sell everywhere',
@@ -133,6 +128,11 @@ export const sublinks: Sublink = [
         url: '/',
         icon: faDisplay,
         label: 'ecommerce',
+      },
+      {
+        url: '/orders',
+        icon: faCartPlus,
+        label: 'orders',
       },
       {
         url: '/wishlists',
