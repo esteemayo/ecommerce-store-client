@@ -10,6 +10,7 @@ import {
   faBook,
   faBookOpen,
   faCartShopping,
+  faCartPlus,
   faCreditCard,
   faDisplay,
   faHandshake,
@@ -107,6 +108,11 @@ export const sublinks: Sublink = [
   {
     page: 'sells',
     links: [
+      {
+        url: '/orders',
+        icon: faCartPlus,
+        label: 'orders',
+      },
       {
         url: '/',
         icon: faShop,
