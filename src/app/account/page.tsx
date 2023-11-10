@@ -84,27 +84,4 @@ const Wrapper = styled.div`
   margin: 0 auto;
 `;
 
-const AccountContainer = styled.div`
-  padding: 3rem 5rem;
-  box-shadow: ${({ theme }) => theme.boxCart};
-  -webkit-box-shadow: ${({ theme }) => theme.boxCart};
-  -moz-box-shadow: ${({ theme }) => theme.boxCart};
-  border-radius: 1rem;
-
-  @media only screen and (max-width: 43.75em) {
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
-
-  @media only screen and (max-width: 25em) {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-
-  @media only screen and (max-width: 17.5em) {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-`;
-
 export default Account;
