@@ -132,26 +132,4 @@ const AccountWrapper = styled.div`
   }
 `;
 
-// const AccountInfo = styled.div`
-//   display: flex;
-//   align-items: flex-start;
-//   gap: 5rem;
-
-//   @media only screen and (max-width: 43.75em) {
-//     flex-direction: column-reverse;
-//   }
-// `;
-
-// const Left = styled.div`
-//   flex: 1.5;
-// `;
-
-// const Right = styled.div`
-//   flex: 1;
-
-//   @media only screen and (max-width: 43.75em) {
-//     width: 100%;
-//   }
-// `;
-
 export default Account;
