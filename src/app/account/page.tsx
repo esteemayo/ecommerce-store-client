@@ -9,6 +9,8 @@ import useAccountModal from '@/hooks/useAccountModal';
 import { useSubmenu } from '@/hooks/useSubmenu';
 import useEmailModal from '@/hooks/useEmailModal';
 
+import Heading from './Heading';
+
 const AccountHead = dynamic(() => import('./AccountHead'), { ssr: false });
 const DeactivateAccount = dynamic(() => import('./DeactivateAccount'), {
   ssr: false,
@@ -28,10 +30,7 @@ const Account = () => {
     <Container onMouseOver={closeSubmenu}>
       <ContainerBox>
         <Wrapper>
-          <HeadingContainer>
-            <Heading>Account settings</Heading>
-            <HeadingText>Edit your name, avatar etc.</HeadingText>
-          </HeadingContainer>
+          <Heading />
           <AccountContainer>
             <AccountWrapper>
               <AccountInfo>
@@ -104,20 +103,20 @@ const HeadingContainer = styled.div`
   margin-bottom: 1.2rem;
 `;
 
-const Heading = styled.h1`
-  display: inline-block;
-  text-transform: capitalize;
-  font-weight: 600;
-  font-size: 2.3rem;
-  color: ${({ theme }) => theme.text};
-  line-height: 1.2;
-  letter-spacing: 0.5px;
+// const Heading = styled.h1`
+//   display: inline-block;
+//   text-transform: capitalize;
+//   font-weight: 600;
+//   font-size: 2.3rem;
+//   color: ${({ theme }) => theme.text};
+//   line-height: 1.2;
+//   letter-spacing: 0.5px;
 
-  @media only screen and (max-width: 25em) {
-    font-size: 2rem;
-    letter-spacing: 1px;
-  }
-`;
+//   @media only screen and (max-width: 25em) {
+//     font-size: 2rem;
+//     letter-spacing: 1px;
+//   }
+// `;
 
 const HeadingText = styled.p`
   font-size: 1.35rem;
