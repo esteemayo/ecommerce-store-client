@@ -25,17 +25,13 @@ const Account = () => {
       <ContainerBox>
         <Wrapper>
           <Heading />
-          <AccountContainer>
-            <AccountWrapper>
-              <AccountInfo
-                user={user}
-                accountModal={accountModal}
-                emailModal={emailModal}
-                fileModal={fileModal}
-                passwordModal={passwordModal}
-              />
-            </AccountWrapper>
-          </AccountContainer>
+          <AccountInfo
+            user={user}
+            accountModal={accountModal}
+            emailModal={emailModal}
+            fileModal={fileModal}
+            passwordModal={passwordModal}
+          />
         </Wrapper>
       </ContainerBox>
     </Container>
