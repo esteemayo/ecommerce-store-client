@@ -103,21 +103,6 @@ const HeadingContainer = styled.div`
   margin-bottom: 1.2rem;
 `;
 
-// const Heading = styled.h1`
-//   display: inline-block;
-//   text-transform: capitalize;
-//   font-weight: 600;
-//   font-size: 2.3rem;
-//   color: ${({ theme }) => theme.text};
-//   line-height: 1.2;
-//   letter-spacing: 0.5px;
-
-//   @media only screen and (max-width: 25em) {
-//     font-size: 2rem;
-//     letter-spacing: 1px;
-//   }
-// `;
-
 const HeadingText = styled.p`
   font-size: 1.35rem;
   color: ${({ theme }) => theme.textWlHeader};
