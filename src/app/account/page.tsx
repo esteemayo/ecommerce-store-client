@@ -99,10 +99,6 @@ const Wrapper = styled.div`
   margin: 0 auto;
 `;
 
-const HeadingContainer = styled.div`
-  margin-bottom: 1.2rem;
-`;
-
 const AccountContainer = styled.div`
   padding: 3rem 5rem;
   box-shadow: ${({ theme }) => theme.boxCart};
