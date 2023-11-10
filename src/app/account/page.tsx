@@ -103,18 +103,6 @@ const HeadingContainer = styled.div`
   margin-bottom: 1.2rem;
 `;
 
-const HeadingText = styled.p`
-  font-size: 1.35rem;
-  color: ${({ theme }) => theme.textWlHeader};
-  line-height: 1.3;
-  letter-spacing: 0.3px;
-
-  @media only screen and (max-width: 25em) {
-    font-size: 1.25rem;
-    letter-spacing: 0.5px;
-  }
-`;
-
 const AccountContainer = styled.div`
   padding: 3rem 5rem;
   box-shadow: ${({ theme }) => theme.boxCart};
