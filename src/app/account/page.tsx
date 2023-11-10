@@ -12,12 +12,6 @@ import useEmailModal from '@/hooks/useEmailModal';
 import Heading from './Heading';
 import AccountInfo from './AccountInfo';
 
-const AccountHead = dynamic(() => import('./AccountHead'), { ssr: false });
-const DeactivateAccount = dynamic(() => import('./DeactivateAccount'), {
-  ssr: false,
-});
-const AccountUpload = dynamic(() => import('./AccountUpload'), { ssr: false });
-
 const Account = () => {
   const closeSubmenu = useSubmenu((state) => state.closeSubmenu);
   const emailModal = useEmailModal();
