@@ -825,6 +825,22 @@ export interface FormHeadingProps {
   title: string;
 }
 
+export interface AccountInfoProps {
+  user: boolean;
+  accountModal: {
+    onOpen(): void;
+  };
+  emailModal: {
+    onOpen(): void;
+  };
+  fileModal: {
+    onOpen(): void;
+  };
+  passwordModal: {
+    onOpen(): void;
+  };
+}
+
 export interface AccountInputProps extends HTMLAttributes<HTMLInputElement> {
   id: string;
   name: string;
