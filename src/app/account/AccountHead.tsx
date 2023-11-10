@@ -1,6 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
+import { useRef } from 'react';
 
 interface AccountHeadProps {
   onOpen(): void;
@@ -8,11 +9,19 @@ interface AccountHeadProps {
 }
 
 const AccountHead = ({ onOpen, onAction }: AccountHeadProps) => {
+  const inputRef = useRef<HTMLInputElement>();
+
   return (
     <Container>
       <Wrapper>
         <Label htmlFor='accName'>Your name</Label>
-        <Input type='text' id='accName' name='name' placeholder='Name' />
+        <Input
+          type='text'
+          id='accName'
+          name='name'
+          placeholder='Name'
+          ref={inputRef}
+        />
       </Wrapper>
       <Wrapper>
         <Label htmlFor='accUsername'>Your username</Label>
