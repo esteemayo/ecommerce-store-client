@@ -1,7 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
-import { useRef } from 'react';
+import { useEffect, useRef } from 'react';
 
 interface AccountHeadProps {
   onOpen(): void;
@@ -10,6 +10,10 @@ interface AccountHeadProps {
 
 const AccountHead = ({ onOpen, onAction }: AccountHeadProps) => {
   const inputRef = useRef<HTMLInputElement>();
+
+  useEffect(() => {
+    inputRef.current.focus();
+  }, []);
 
   return (
     <Container>
