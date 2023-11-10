@@ -1,7 +1,6 @@
 'use client';
 
 import styled from 'styled-components';
-import dynamic from 'next/dynamic';
 
 import usePasswordModal from '@/hooks/usePasswordModal';
 import useFileModal from '@/hooks/useFileModal';
