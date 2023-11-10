@@ -22,7 +22,7 @@ const Account = () => {
 
   return (
     <Container onMouseOver={closeSubmenu}>
-      <ContainerBox>
+      <Box>
         <Wrapper>
           <Heading />
           <AccountInfo
@@ -33,7 +33,7 @@ const Account = () => {
             passwordModal={passwordModal}
           />
         </Wrapper>
-      </ContainerBox>
+      </Box>
     </Container>
   );
 };
@@ -43,7 +43,7 @@ const Container = styled.main`
   background-color: ${({ theme }) => theme.bg};
 `;
 
-const ContainerBox = styled.div`
+const Box = styled.div`
   width: 100%;
   max-width: 120rem;
   margin: 0 auto;
