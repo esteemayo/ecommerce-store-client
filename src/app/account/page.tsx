@@ -10,6 +10,7 @@ import { useSubmenu } from '@/hooks/useSubmenu';
 import useEmailModal from '@/hooks/useEmailModal';
 
 import Heading from './Heading';
+import AccountInfo from './AccountInfo';
 
 const AccountHead = dynamic(() => import('./AccountHead'), { ssr: false });
 const DeactivateAccount = dynamic(() => import('./DeactivateAccount'), {
@@ -33,18 +34,13 @@ const Account = () => {
           <Heading />
           <AccountContainer>
             <AccountWrapper>
-              <AccountInfo>
-                <Left>
-                  <AccountHead
-                    onOpen={emailModal.onOpen}
-                    onAction={passwordModal.onOpen}
-                  />
-                  <DeactivateAccount onOpen={accountModal.onOpen} />
-                </Left>
-                <Right>
-                  <AccountUpload onOpen={fileModal.onOpen} currentUser={user} />
-                </Right>
-              </AccountInfo>
+              <AccountInfo
+                user={user}
+                accountModal={accountModal}
+                emailModal={emailModal}
+                fileModal={fileModal}
+                passwordModal={passwordModal}
+              />
             </AccountWrapper>
           </AccountContainer>
         </Wrapper>
@@ -136,26 +132,26 @@ const AccountWrapper = styled.div`
   }
 `;
 
-const AccountInfo = styled.div`
-  display: flex;
-  align-items: flex-start;
-  gap: 5rem;
+// const AccountInfo = styled.div`
+//   display: flex;
+//   align-items: flex-start;
+//   gap: 5rem;
 
-  @media only screen and (max-width: 43.75em) {
-    flex-direction: column-reverse;
-  }
-`;
+//   @media only screen and (max-width: 43.75em) {
+//     flex-direction: column-reverse;
+//   }
+// `;
 
-const Left = styled.div`
-  flex: 1.5;
-`;
+// const Left = styled.div`
+//   flex: 1.5;
+// `;
 
-const Right = styled.div`
-  flex: 1;
+// const Right = styled.div`
+//   flex: 1;
 
-  @media only screen and (max-width: 43.75em) {
-    width: 100%;
-  }
-`;
+//   @media only screen and (max-width: 43.75em) {
+//     width: 100%;
+//   }
+// `;
 
 export default Account;
