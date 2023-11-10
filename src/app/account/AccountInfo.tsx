@@ -6,13 +6,15 @@ import AccountUpload from './AccountUpload';
 import AccountHead from './AccountHead';
 import DeactivateAccount from './DeactivateAccount';
 
+import { AccountInfoProps } from '@/types';
+
 const AccountInfo = ({
   user,
   accountModal,
   emailModal,
   fileModal,
   passwordModal,
-}) => {
+}: AccountInfoProps) => {
   return (
     <Container>
       <Left>
