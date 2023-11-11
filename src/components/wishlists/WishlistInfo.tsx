@@ -89,7 +89,7 @@ const ProductName = styled.h2`
   line-height: 1;
 
   @media only screen and (max-width: 18.75em) {
-    font-size: 1.6rem;
+    font-size: var(--default-font-size);
   }
 `;
 
@@ -108,7 +108,7 @@ const StyledLink = styled(Link)`
 `;
 
 const Description = styled.p`
-  font-size: 1.6rem;
+  font-size: var(--default-font-size);
   color: ${({ theme }) => theme.textWlCard};
   line-height: 1.2;
   word-wrap: break-word;
