@@ -67,7 +67,7 @@ html {
 
 body {
   // font-family: 'Mooli', sans-serif;
-  font-size: 1.6rem;
+  font-size: var(--default-font-size);
   color: #777;
   line-height: 1.6;
   overflow-x: hidden;
