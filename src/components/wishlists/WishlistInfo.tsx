@@ -35,7 +35,25 @@ const WishlistInfo = ({
   );
 };
 
-const Container = styled.div``;
+const Container = styled.div`
+  flex: 4;
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+
+  @media only screen and (max-width: 64em) {
+    flex: 3;
+  }
+
+  @media only screen and (max-width: 37.5em) {
+    flex: 1.5;
+  }
+
+  @media only screen and (max-width: 18.75em) {
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+`;
 
 const ImageContainer = styled.div`
   width: 8rem;
