@@ -778,6 +778,11 @@ export interface WislistPriceProps {
   onAction(wishlist: SetStateAction<{}>): void;
 }
 
+export interface CloseButtonProps {
+  id: number;
+  onOpen(id: number): void;
+}
+
 export interface FormInputProps extends HTMLAttributes<HTMLInputElement> {
   name: string;
   type?: string;
