@@ -764,6 +764,14 @@ export interface WishlistCardProps {
   onDelete(id: number): void;
 }
 
+export interface WishlistInfoProps {
+  id: number;
+  desc: string;
+  name: string;
+  images: string;
+  excerpts(str: string, count: number): string;
+}
+
 export interface WislistPriceProps {
   price: number;
   wishlist: WishlistValues;
