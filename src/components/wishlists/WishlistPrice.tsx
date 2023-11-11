@@ -1,6 +1,6 @@
 'use client';
 
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useCallback, useMemo } from 'react';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
@@ -8,6 +8,8 @@ import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import { formatCurrency } from '@/utils/formatCurrency';
 import { useCartStore } from '@/hooks/useCartStore';
 import { WishlistValues, WislistPriceProps } from '@/types';
+
+import { CommonButton } from '../buttons/CommonButton';
 
 const WishlistPrice = ({ price, wishlist, onAction }: WislistPriceProps) => {
   const cart = useCartStore((state) => state.cart);
@@ -81,27 +83,12 @@ const Price = styled.span`
   }
 `;
 
-const Button = styled.button`
+const Button = styled(CommonButton)`
   display: flex;
   align-items: center;
   gap: 0.5rem;
   border: none;
   padding: 1rem 1.5rem;
-  background-color: ${({ theme }) => theme.bgBtn};
-  color: ${({ theme }) => theme.textBtn};
-  background-image: ${({ theme }) => css`
-    linear-gradient(
-      120deg,
-      transparent 0%,
-      transparent 50%,
-      ${theme.bgImgBtn} 50%
-    );
-  `};
-  background-size: 220%;
-  border-radius: 0.5rem;
-  outline-color: ${({ theme }) => theme.btnOut};
-  cursor: pointer;
-  transition: all 0.3s ease;
 
   @media only screen and (max-width: 56.25em), only screen and (hover: none) {
     font-size: 1.47rem;
@@ -110,10 +97,6 @@ const Button = styled.button`
   @media only screen and (max-width: 18.75em) {
     font-size: 1.4rem;
     padding: 0.8rem 1rem;
-  }
-
-  &:hover {
-    background-position: 100%;
   }
 
   &:disabled {
