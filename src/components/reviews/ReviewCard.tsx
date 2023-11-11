@@ -146,7 +146,7 @@ const Name = styled.h3`
   }
 
   @media only screen and (max-width: 25em) {
-    font-size: 1.6rem;
+    font-size: var(--default-font-size);
   }
 
   @media only screen and (max-width: 18.75em) {
@@ -162,7 +162,7 @@ const Review = styled.p`
   word-wrap: break-word;
 
   @media only screen and (max-width: 31.25em) {
-    font-size: 1.6rem;
+    font-size: var(--default-font-size);
   }
 
   @media only screen and (max-width: 25em) {
