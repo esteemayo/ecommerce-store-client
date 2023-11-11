@@ -72,7 +72,7 @@ const WishLists = () => {
   if (products.length > 0) {
     bodyContent = (
       <>
-        <WishlistHeader />
+        <WishlistHeader wishlistLabel={wishlistLabel} />
         <WishlistCard
           isOpen={wishlistModal.isOpen}
           onOpen={handleOpenModal}

@@ -5,7 +5,11 @@ import styled from 'styled-components';
 import DateTime from '../DateTime';
 import { DateOptions } from '@/types';
 
-const WishlistHeader = () => {
+interface WishlistHeaderProps {
+  wishlistLabel: 'wishlists' | 'wishlist';
+}
+
+const WishlistHeader = ({ wishlistLabel }: WishlistHeaderProps) => {
   const today = new Date();
 
   const options: DateOptions = {
@@ -17,7 +21,7 @@ const WishlistHeader = () => {
   return (
     <Container>
       <HeadingContainer>
-        <Heading>My wishlist</Heading>
+        <Heading>My {wishlistLabel}</Heading>
         <DateTime date={today} options={options} />
       </HeadingContainer>
       <Button type='button'>Send wishlist</Button>
