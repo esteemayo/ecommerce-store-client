@@ -180,7 +180,7 @@ body {
 .formLabel {
   display: inline-block;
   font-weight: 600;
-  font-size: 1.6rem;
+  font-size: var(--default-font-size);
 
   &.dark {
     color: #cfd0d1;
