@@ -45,7 +45,7 @@ const Heading = styled.h1`
   color: ${({ theme }) => theme.text};
 
   @media only screen and (max-width: 56.25em) {
-    font-size: 1.6rem;
+    font-size: var(--default-font-size);
   }
 
   @media only screen and (max-width: 18.75em) {
