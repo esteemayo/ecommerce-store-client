@@ -78,7 +78,7 @@ const Wrapper = styled.div`
 const Title = styled.p`
   display: block;
   width: 100%;
-  font-size: 1.6rem;
+  font-size: var(--default-font-size);
   color: ${({ theme }) => theme.text};
   line-height: 1.8rem;
   margin: 1rem 0;
