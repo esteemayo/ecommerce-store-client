@@ -71,7 +71,7 @@ const Button = styled.button`
   align-items: center;
   gap: 0.5rem;
   border: none;
-  padding: 1rem 2rem;
+  padding: 1rem 1.5rem;
   background-color: ${({ theme }) => theme.bgBtn};
   color: ${({ theme }) => theme.textBtn};
   background-image: ${({ theme }) => css`
@@ -90,7 +90,6 @@ const Button = styled.button`
 
   @media only screen and (max-width: 56.25em), only screen and (hover: none) {
     font-size: 1.47rem;
-    padding: 1rem 1.5rem;
   }
 
   @media only screen and (max-width: 18.75em) {
