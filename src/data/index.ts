@@ -161,6 +161,11 @@ export const sublinks: Sublink = [
         label: 'shipping',
       },
       {
+        url: '/account',
+        icon: faCogs,
+        label: 'account settings',
+      },
+      {
         url: '/',
         icon: faMoneyBills,
         label: 'payments',
@@ -169,11 +174,6 @@ export const sublinks: Sublink = [
         url: '/',
         icon: faBook,
         label: 'notebooks',
-      },
-      {
-        url: '/account',
-        icon: faCogs,
-        label: 'account settings',
       },
     ],
   },
