@@ -142,7 +142,7 @@ const Heading = styled.h1`
 `;
 
 const WarningMessage = styled.p`
-  font-size: 1.6rem;
+  font-size: var(--default-font-size);
   color: ${({ theme }) => theme.textModal};
   line-height: 1.2;
 `;
