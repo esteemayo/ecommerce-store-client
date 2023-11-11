@@ -103,7 +103,7 @@ const Left = styled.div`
   flex: 4;
   display: flex;
   align-items: center;
-  gap: 3rem;
+  gap: 2.5rem;
 
   @media only screen and (max-width: 64em) {
     flex: 3;
