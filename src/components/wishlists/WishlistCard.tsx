@@ -5,11 +5,13 @@ import Link from 'next/link';
 import CloseIcon from '@mui/icons-material/Close';
 import Image from 'next/image';
 
+import WishlistInfo from './WishlistInfo';
 import WishlistPrice from './WishlistPrice';
-import DeleteModal from '../modals/DeleteModal';
 
 import { excerpts } from '@/utils';
 import { WishlistCardProps } from '@/types';
+
+import DeleteModal from '../modals/DeleteModal';
 
 const WishlistCard = ({
   isOpen,
@@ -27,22 +29,13 @@ const WishlistCard = ({
         return (
           <Wrapper key={id}>
             <Left>
-              <ImageContainer>
-                <StyledImage
-                  src={images?.[0] ?? '/img/img-1.jpg'}
-                  width={80}
-                  height={80}
-                  alt=''
-                />
-              </ImageContainer>
-              <OverviewContainer>
-                <ProductName>
-                  <Link href={`/products/${encodeURIComponent(id)}`} passHref>
-                    {name}
-                  </Link>
-                </ProductName>
-                <Description>{excerpts(desc, 120)}</Description>
-              </OverviewContainer>
+              <WishlistInfo
+                id={id}
+                desc={desc}
+                name={name}
+                image={images?.[0]}
+                excerpts={excerpts}
+              />
             </Left>
             <Right>
               <WishlistPrice
