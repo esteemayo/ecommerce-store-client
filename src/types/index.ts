@@ -760,6 +760,7 @@ export interface WishlistCardProps {
   onOpen(id: number): void;
   selected: number | null;
   wishlists: WishlistValues[];
+  wishlistLabel: 'wishlists' | 'wishlist';
   onAction(wishlist: WishlistValues): void;
   onClose(): void;
   onDelete(id: number): void;
