@@ -4,12 +4,20 @@ import styled from 'styled-components';
 import Link from 'next/link';
 import Image from 'next/image';
 
-const WishlistInfo = ({ id, desc, name, images, excerpts }) => {
+import { WishlistInfoProps } from '@/types';
+
+const WishlistInfo = ({
+  id,
+  desc,
+  name,
+  image,
+  excerpts,
+}: WishlistInfoProps) => {
   return (
     <Container>
       <ImageContainer>
         <StyledImage
-          src={images?.[0] ?? '/img/img-1.jpg'}
+          src={image ?? '/img/img-1.jpg'}
           width={80}
           height={80}
           alt=''
