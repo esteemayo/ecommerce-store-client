@@ -189,7 +189,7 @@ const InputContainer = styled.div`
 const Label = styled.label`
   display: inline-block;
   font-weight: 600;
-  font-size: 1.6rem;
+  font-size: var(--default-font-size);
   color: #888;
 `;
 
