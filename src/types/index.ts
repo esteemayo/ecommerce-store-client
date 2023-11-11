@@ -768,7 +768,7 @@ export interface WishlistInfoProps {
   id: number;
   desc: string;
   name: string;
-  images: string;
+  image: string;
   excerpts(str: string, count: number): string;
 }
 
