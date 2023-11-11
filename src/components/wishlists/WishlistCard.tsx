@@ -33,13 +33,11 @@ const WishlistCard = ({
               image={images?.[0]}
               excerpts={excerpts}
             />
-            <Right>
-              <WishlistPrice
-                price={price}
-                wishlist={wishlist}
-                onAction={onAction}
-              />
-            </Right>
+            <WishlistPrice
+              price={price}
+              wishlist={wishlist}
+              onAction={onAction}
+            />
             <Button type='button' onClick={() => onOpen(id)}>
               <CloseIcon />
             </Button>
@@ -85,15 +83,6 @@ const Wrapper = styled.div`
   @media only screen and (max-width: 18.75em) {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-  }
-`;
-
-const Right = styled.div`
-  flex: 1;
-
-  @media only screen and (max-width: 37.5em) {
-    width: 100%;
-    margin-top: 1rem;
   }
 `;
 

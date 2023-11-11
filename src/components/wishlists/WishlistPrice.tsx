@@ -30,20 +30,31 @@ const WishlistPrice = ({ price, wishlist, onAction }: WislistPriceProps) => {
 
   return (
     <Container>
-      <Price>{formatCurrency(price)}</Price>
-      <Button
-        type='button'
-        disabled={inCart}
-        onClick={() => handleClick(wishlist)}
-      >
-        <FontAwesomeIcon icon={faShoppingCart} />
-        {btnLabel}
-      </Button>
+      <Wrapper>
+        <Price>{formatCurrency(price)}</Price>
+        <Button
+          type='button'
+          disabled={inCart}
+          onClick={() => handleClick(wishlist)}
+        >
+          <FontAwesomeIcon icon={faShoppingCart} />
+          {btnLabel}
+        </Button>
+      </Wrapper>
     </Container>
   );
 };
 
 const Container = styled.div`
+  flex: 1;
+
+  @media only screen and (max-width: 37.5em) {
+    width: 100%;
+    margin-top: 1rem;
+  }
+`;
+
+const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-end;
