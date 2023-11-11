@@ -2,6 +2,7 @@
 
 import styled from 'styled-components';
 import Link from 'next/link';
+import { useMemo } from 'react';
 import Image from 'next/image';
 
 import { WishlistInfoProps } from '@/types';
@@ -13,6 +14,10 @@ const WishlistInfo = ({
   image,
   excerpts,
 }: WishlistInfoProps) => {
+  const url = useMemo(() => {
+    return `/products/${encodeURIComponent(id)}`;
+  }, [id]);
+
   return (
     <Container>
       <ImageContainer>
@@ -25,7 +30,7 @@ const WishlistInfo = ({
       </ImageContainer>
       <Overview>
         <ProductName>
-          <StyledLink href={`/products/${encodeURIComponent(id)}`} passHref>
+          <StyledLink href={url} passHref>
             {name}
           </StyledLink>
         </ProductName>
