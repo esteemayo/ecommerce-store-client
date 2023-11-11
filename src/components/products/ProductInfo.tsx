@@ -27,7 +27,7 @@ const Heading = styled.h4`
 
 const Text = styled.p`
   text-align: justify;
-  font-size: 1.6rem;
+  font-size: var(--default-font-size);
   color: ${({ theme }) => theme.text};
   line-height: 1.3;
   word-wrap: break-word;
