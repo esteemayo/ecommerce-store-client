@@ -18,7 +18,7 @@ const FooterText = ({ value }: FooterTextProps) => {
 
 const Text = styled.p`
   width: 60%;
-  font-size: 1.6rem;
+  font-size: var(--default-font-size);
   text-align: center;
   color: ${({ theme }) => theme.textNav};
   margin: 0 auto;
