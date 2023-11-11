@@ -167,7 +167,7 @@ const Th = styled.th`
   color: ${({ theme }) => theme.text};
 
   @media only screen and (max-width: 64em) {
-    font-size: 1.6rem;
+    font-size: var(--default-font-size);
   }
 `;
 
