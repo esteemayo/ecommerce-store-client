@@ -23,14 +23,14 @@ const WishlistInfo = ({
           alt=''
         />
       </ImageContainer>
-      <OverviewContainer>
+      <Overview>
         <ProductName>
           <StyledLink href={`/products/${encodeURIComponent(id)}`} passHref>
             {name}
           </StyledLink>
         </ProductName>
         <Description>{excerpts(desc, 120)}</Description>
-      </OverviewContainer>
+      </Overview>
     </Container>
   );
 };
@@ -60,7 +60,7 @@ const StyledImage = styled(Image)`
   }
 `;
 
-const OverviewContainer = styled.div``;
+const Overview = styled.div``;
 
 const ProductName = styled.h2`
   display: inline-block;
