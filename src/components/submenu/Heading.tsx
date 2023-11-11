@@ -14,7 +14,7 @@ const Header = styled.h4`
   display: inline-block;
   text-transform: capitalize;
   font-weight: 600;
-  font-size: 1.6rem;
+  font-size: var(--default-font-size);
   color: ${({ theme }) => theme.text};
   margin-bottom: 1.5rem;
 `;
