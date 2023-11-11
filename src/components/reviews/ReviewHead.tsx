@@ -100,7 +100,7 @@ const TotalReviews = styled.span`
   line-height: 1.8rem;
 
   @media only screen and (max-width: 26.875em) {
-    font-size: 1.6rem;
+    font-size: var(--default-font-size);
   }
 
   @media only screen and (max-width: 18.75em) {
