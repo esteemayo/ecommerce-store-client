@@ -28,15 +28,13 @@ const WishlistCard = ({
         const { id, name, desc, images, price } = wishlist;
         return (
           <Wrapper key={id}>
-            <Left>
-              <WishlistInfo
-                id={id}
-                desc={desc}
-                name={name}
-                image={images?.[0]}
-                excerpts={excerpts}
-              />
-            </Left>
+            <WishlistInfo
+              id={id}
+              desc={desc}
+              name={name}
+              image={images?.[0]}
+              excerpts={excerpts}
+            />
             <Right>
               <WishlistPrice
                 price={price}
