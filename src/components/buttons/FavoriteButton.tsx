@@ -1,4 +1,4 @@
-import { faStar } from '@fortawesome/free-solid-svg-icons';
+import { faStar, faStarHalfAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { IconButton } from './IconButton';
@@ -6,10 +6,10 @@ import { IconButton } from './IconButton';
 const FavoriteButton = () => {
   return (
     <IconButton>
-      <FontAwesomeIcon icon={faStar} />
+      <FontAwesomeIcon icon={faStarHalfAlt} />
       Add to favorites
     </IconButton>
   );
-}
+};
 
 export default FavoriteButton;
