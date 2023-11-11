@@ -64,6 +64,10 @@ const DeleteModal = ({
     setShowModal(isOpen);
   }, [isOpen]);
 
+  if (!isOpen) {
+    return null;
+  }
+
   return (
     <Overlay type={activeModal} mode={modeValue} onClick={closeModalHandler}>
       <Wrapper>
