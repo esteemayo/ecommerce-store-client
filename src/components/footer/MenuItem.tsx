@@ -77,7 +77,7 @@ const ListItem = styled.li`
       outline-color: var(--clr-primary-green);
 
       @media only screen and (max-width: 37.5rem) {
-        font-size: 1.6rem;
+        font-size: var(--default-font-size);
       }
     }
 
