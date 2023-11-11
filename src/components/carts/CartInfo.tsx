@@ -107,7 +107,7 @@ const Title = styled.h2`
   }
 
   @media only screen and (max-width: 18.75em) {
-    font-size: 1.6rem;
+    font-size: var(--default-font-size);
   }
 `;
 
@@ -120,7 +120,7 @@ const PriceContainer = styled.div`
 const Label = styled.p`
   text-transform: capitalize;
   font-weight: 500;
-  font-size: 1.6rem;
+  font-size: var(--default-font-size);
   color: ${({ theme }) => theme.text};
 
   @media only screen and (max-width: 43.75em) {
