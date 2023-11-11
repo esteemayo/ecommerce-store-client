@@ -1,9 +1,10 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useMemo } from 'react';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 
 import { CardButtonProps } from '@/types';
+import { CommonButton } from '../buttons/CommonButton';
 
 const CardButton = ({ inCart, onClick }: CardButtonProps) => {
   const btnLabel = useMemo(() => {
@@ -18,7 +19,7 @@ const CardButton = ({ inCart, onClick }: CardButtonProps) => {
   );
 };
 
-const Button = styled.button`
+const Button = styled(CommonButton)`
   border: none;
   display: flex;
   align-items: center;
@@ -27,21 +28,6 @@ const Button = styled.button`
   padding: 1.5rem 1rem;
   font-size: 1.5rem;
   text-transform: uppercase;
-  background-color: ${({ theme }) => theme.bgBtn};
-  color: ${({ theme }) => theme.textBtn};
-  background-image: ${({ theme }) => css`
-    linear-gradient(
-      120deg,
-      transparent 0%,
-      transparent 50%,
-      ${theme.bgImgBtn} 50%
-    );
-  `};
-  background-size: 220%;
-  outline-color: ${({ theme }) => theme.btnOut};
-  border-radius: 0.5rem;
-  cursor: pointer;
-  transition: all 0.3s;
 
   @media only screen and (max-width: 64em) {
     padding: 1.3rem 1rem;
@@ -56,10 +42,6 @@ const Button = styled.button`
     padding-top: 1rem;
     padding-bottom: 1rem;
     font-size: 1.4rem;
-  }
-
-  &:hover {
-    background-position: 100%;
   }
 
   &:disabled {
