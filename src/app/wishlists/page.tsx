@@ -1,7 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 import dynamic from 'next/dynamic';
 
 import CartModal from '@/components/modals/CartModal';
@@ -55,6 +55,10 @@ const WishLists = () => {
     [removeWishlist]
   );
 
+  const wishlistLabel = useMemo(() => {
+    return wishlists.length > 1 ? 'wishlists' : 'wishlist';
+  }, [wishlists]);
+
   useEffect(() => {
     setProducts(wishlists);
   }, [wishlists]);
@@ -74,6 +78,7 @@ const WishLists = () => {
           onOpen={handleOpenModal}
           selected={isSelectedId}
           wishlists={products}
+          wishlistLabel={wishlistLabel}
           onAction={handleClick}
           onClose={wishlistModal.onClose}
           onDelete={handleDelete}

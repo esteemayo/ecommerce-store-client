@@ -17,6 +17,7 @@ interface IWrapper {
 
 const DeleteModal = ({
   actionId,
+  wishlistLabel,
   isOpen,
   onClose,
   onAction,
@@ -86,7 +87,7 @@ const DeleteModal = ({
           </CloseButton>
           <Heading>Remove a wishlist?</Heading>
           <WarningMessage>
-            Are you sure you wanted to remove this item from your wishlist?
+            Are you sure you wanted to remove this item from your {wishlistLabel}?
           </WarningMessage>
           <ButtonContainer>
             <CancelButton type='button' onClick={onClose}>
