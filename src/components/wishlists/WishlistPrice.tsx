@@ -19,6 +19,10 @@ const WishlistPrice = ({ price, wishlist, onAction }: WislistPriceProps) => {
     [onAction]
   );
 
+  const priceLabel = useMemo(() => {
+    return Math.round(price);
+  }, [price]);
+
   const inCart = useMemo(() => {
     const cartItem = cart.find((item) => item.id === wishlist.id);
     return !!cartItem;
@@ -31,7 +35,7 @@ const WishlistPrice = ({ price, wishlist, onAction }: WislistPriceProps) => {
   return (
     <Container>
       <Wrapper>
-        <Price>{formatCurrency(price)}</Price>
+        <Price>{formatCurrency(priceLabel)}</Price>
         <Button
           type='button'
           disabled={inCart}
