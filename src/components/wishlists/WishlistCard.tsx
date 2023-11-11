@@ -133,38 +133,6 @@ const StyledImage = styled(Image)`
   }
 `;
 
-const OverviewContainer = styled.div``;
-
-const ProductName = styled.h2`
-  display: inline-block;
-  font-weight: 500;
-  font-size: 2rem;
-  color: ${({ theme }) => theme.textWlCardName};
-  margin-bottom: 0.5rem;
-  line-height: 1;
-
-  @media only screen and (max-width: 18.75em) {
-    font-size: 1.6rem;
-  }
-
-  a {
-    &:link,
-    &:visited {
-      text-decoration: none;
-      color: currentColor;
-      transition: all 0.3s ease;
-      outline-color: #f1e4f4;
-    }
-
-    &:hover {
-      text-decoration: underline;
-      text-decoration-color: ${({ theme }) => theme.textWlCardName};
-      text-underline-offset: 4px;
-      color: currentColor;
-    }
-  }
-`;
-
 const Right = styled.div`
   flex: 1;
 
