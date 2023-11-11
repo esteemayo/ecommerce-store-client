@@ -7,7 +7,13 @@ import CloseIcon from '@mui/icons-material/Close';
 import { DeleteModalProps } from '@/types';
 import { useDarkMode } from '@/hooks/useDarkMode';
 
-import Overlay from './Overlay';
+interface IMode {
+  mode: string;
+}
+
+interface IWrapper {
+  active: string;
+}
 
 const DeleteModal = ({
   actionId,
@@ -26,7 +32,10 @@ const DeleteModal = ({
 
       if (target.classList.contains('overlay')) {
         setShowModal(false);
-        onClose();
+
+        setTimeout(() => {
+          onClose();
+        }, 300);
       }
 
       const exitModal = (e: { preventDefault: () => void; key: string }) => {
@@ -53,7 +62,7 @@ const DeleteModal = ({
   );
 
   const activeModal = useMemo(() => {
-    return showModal ? 'show' : '';
+    return showModal?.toString();
   }, [showModal]);
 
   const modeValue = useMemo(() => {
@@ -69,39 +78,65 @@ const DeleteModal = ({
   }
 
   return (
-    <Overlay type={activeModal} mode={modeValue} onClick={closeModalHandler}>
-      <Wrapper>
-        <CloseButton type='button' onClick={onClose}>
-          <CloseIcon />
-        </CloseButton>
-        <Heading>Remove a wishlist?</Heading>
-        <WarningMessage>
-          Are you sure you wanted to remove this item from your wishlist?
-        </WarningMessage>
-        <ButtonContainer>
-          <CancelButton type='button' onClick={onClose}>
-            Not now
-          </CancelButton>
-          <DeleteButton
-            type='button'
-            onClick={() => deleteWishlistHandler(actionId)}
-          >
-            Remove
-          </DeleteButton>
-        </ButtonContainer>
+    <Overlay mode={modeValue} onClick={closeModalHandler} className='overlay'>
+      <Wrapper active={activeModal}>
+        <Box mode={modeValue}>
+          <CloseButton type='button' onClick={onClose}>
+            <CloseIcon />
+          </CloseButton>
+          <Heading>Remove a wishlist?</Heading>
+          <WarningMessage>
+            Are you sure you wanted to remove this item from your wishlist?
+          </WarningMessage>
+          <ButtonContainer>
+            <CancelButton type='button' onClick={onClose}>
+              Not now
+            </CancelButton>
+            <DeleteButton
+              type='button'
+              onClick={() => deleteWishlistHandler(actionId)}
+            >
+              Remove
+            </DeleteButton>
+          </ButtonContainer>
+        </Box>
       </Wrapper>
     </Overlay>
   );
 };
 
-const Wrapper = styled.div`
+const Overlay = styled.aside<IMode>`
+  width: 100vw;
+  height: 100%;
+  background-color: ${({ theme }) => theme.bgOverlay};
+  backdrop-filter: ${({ mode }) => (mode === 'true' ? 'blur(2px)' : undefined)};
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 4000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+const Wrapper = styled.div<IWrapper>`
+  transform: translateY(${({ active }) => (active === 'true' ? 0 : '100%')});
+  opacity: ${({ active }) => (active === 'true' ? 1 : 0)};
+  transition: all 300ms;
+`;
+
+const Box = styled.div<IMode>`
   width: 35rem;
   padding: 5rem;
   background-color: ${({ theme }) => theme.bgModal};
   border-radius: 1rem;
-  box-shadow: 0 2rem 4rem rgba(145, 143, 143, 0.1);
-  -webkit-box-shadow: 0 2rem 4rem rgba(145, 143, 143, 0.1);
-  -moz-box-shadow: 0 2rem 4rem rgba(145, 143, 143, 0.1);
+  box-shadow: ${({ mode }) =>
+    mode === 'true' ? 'none' : '0 2rem 4rem rgba(145, 143, 143, 0.1)'};
+  -webkit-box-shadow: ${({ mode }) =>
+    mode === 'true' ? 'none' : '0 2rem 4rem rgba(145, 143, 143, 0.1)'};
+  -moz-box-shadow: ${({ mode }) =>
+    mode === 'true' ? 'none' : '0 2rem 4rem rgba(145, 143, 143, 0.1)'};
   position: relative;
 
   @media only screen and (max-width: 18.75em) {
