@@ -1,9 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
-import Link from 'next/link';
 import CloseIcon from '@mui/icons-material/Close';
-import Image from 'next/image';
 
 import WishlistInfo from './WishlistInfo';
 import WishlistPrice from './WishlistPrice';
