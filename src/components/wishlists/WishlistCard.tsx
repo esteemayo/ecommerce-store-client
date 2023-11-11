@@ -1,7 +1,6 @@
 'use client';
 
 import styled from 'styled-components';
-import CloseIcon from '@mui/icons-material/Close';
 
 import WishlistInfo from './WishlistInfo';
 import CloseButton from './CloseButton';
