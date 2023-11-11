@@ -32,7 +32,7 @@ export const IconButton = styled.button`
     font-size: 1.7rem;
 
     @media only screen and (max-width: 35em) {
-      font-size: 1.6rem;
+      font-size: var(--default-font-size);
     }
   }
 `;
