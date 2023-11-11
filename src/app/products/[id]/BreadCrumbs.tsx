@@ -39,7 +39,7 @@ const StyledLink = styled(Link)`
   text-decoration-color: ${({ theme }) => theme.colCrumbs};
   text-underline-offset: 3px;
   text-transform: capitalize;
-  font-size: 1.6rem;
+  font-size: var(--default-font-size);
   color: currentColor;
   outline-color: #ccc;
   line-height: 1.2;
