@@ -3,7 +3,9 @@
 import styled from 'styled-components';
 import CloseIcon from '@mui/icons-material/Close';
 
-const CloseButton = ({ id, onOpen }) => {
+import { CloseButtonProps } from '@/types';
+
+const CloseButton = ({ id, onOpen }: CloseButtonProps) => {
   return (
     <Button type='button' onClick={() => onOpen(id)}>
       <CloseIcon />
