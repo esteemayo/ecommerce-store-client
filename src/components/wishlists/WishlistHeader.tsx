@@ -20,7 +20,7 @@ const WishlistHeader = () => {
         <Heading>My wishlist</Heading>
         <DateTime date={today} options={options} />
       </HeadingContainer>
-      <SendButton type='button'>Send wishlist</SendButton>
+      <Button type='button'>Send wishlist</Button>
     </Container>
   );
 };
@@ -53,7 +53,7 @@ const Heading = styled.h1`
   }
 `;
 
-const SendButton = styled.button`
+const Button = styled.button`
   border: none;
   display: inline-block;
   text-transform: capitalize;
