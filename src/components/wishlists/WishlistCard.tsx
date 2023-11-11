@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import CloseIcon from '@mui/icons-material/Close';
 
 import WishlistInfo from './WishlistInfo';
+import CloseButton from './CloseButton';
 import WishlistPrice from './WishlistPrice';
 
 import { excerpts } from '@/utils';
@@ -38,9 +39,7 @@ const WishlistCard = ({
               wishlist={wishlist}
               onAction={onAction}
             />
-            <Button type='button' onClick={() => onOpen(id)}>
-              <CloseIcon />
-            </Button>
+            <CloseButton id={id} onOpen={onOpen} />
           </Wrapper>
         );
       })}
