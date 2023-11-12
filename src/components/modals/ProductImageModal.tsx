@@ -49,21 +49,21 @@ const ProductImageModal = ({
       const target = e.target as Element;
 
       if (target.classList.contains('imageContainer')) {
-        onClose();
+        handleClose();
       }
 
       const exitModal = (e: { preventDefault: () => void; key: string }) => {
         e.preventDefault();
 
         if (e.key === 'Escape') {
-          onClose();
+          handleClose();
         }
       };
 
       window.addEventListener('keydown', exitModal);
       return () => window.removeEventListener('keydown', exitModal);
     },
-    [onClose]
+    [handleClose]
   );
 
   const activeModal = useMemo(() => {
