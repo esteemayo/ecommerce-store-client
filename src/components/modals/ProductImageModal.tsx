@@ -87,7 +87,7 @@ const ProductImageModal = ({
       <CloseButton type='button' onClick={handleClose}>
         <CloseIcon />
       </CloseButton>
-      {isMoved && slideIndex > 0 && (
+      {((isMoved && slideIndex > 0) || slideIndex !== 0) && (
         <ArrowButton
           type='button'
           direction='left'
