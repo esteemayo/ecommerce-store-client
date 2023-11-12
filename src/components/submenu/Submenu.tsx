@@ -100,9 +100,7 @@ const ListContainer = styled.ul<IColumn>`
   grid-template-columns: ${({ columns }) =>
     columns === 'col-4' && 'repeat(4, max-content)'};
   gap: 0.25rem 2rem;
-  width: ${({ columns }) => columns === 'col-2' && '20rem'};
-  width: ${({ columns }) => columns === 'col-3' && '40rem'};
-  width: ${({ columns }) => columns === 'col-4' && '55rem'};
+  width: max-content;
 `;
 
 export default Submenu;
