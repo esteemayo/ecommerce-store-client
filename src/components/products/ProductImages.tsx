@@ -9,7 +9,7 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import useImageModal from '@/hooks/useImageModal';
 import ProductImageModal from '../modals/ProductImageModal';
 
-interface ProductImageProps {
+interface ProductImagesProps {
   images: string[];
 }
 
@@ -17,7 +17,7 @@ interface IBtn {
   direction: string;
 }
 
-const ProductImage = ({ images }: ProductImageProps) => {
+const ProductImages = ({ images }: ProductImagesProps) => {
   const { isOpen, onOpen, onClose } = useImageModal();
 
   const imgContainerRef = useRef<HTMLElement>();
@@ -220,4 +220,4 @@ const ArrowButton = styled.button<IBtn>`
   }
 `;
 
-export default ProductImage;
+export default ProductImages;

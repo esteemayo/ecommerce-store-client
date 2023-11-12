@@ -13,7 +13,7 @@ import ProductHead from './ProductHead';
 import ProductValue from './ProductValue';
 import ProductInfo from './ProductInfo';
 import ProductButton from './ProductButton';
-import ProductImage from './ProductImage';
+import ProductImages from './ProductImages';
 
 import { productValue } from '@/data';
 import { ProductProps } from '@/types';
@@ -42,7 +42,7 @@ const Product = ({ product, inCart, actionLabel }: ProductProps) => {
     <Container>
       <ProductContainer>
         <Left>
-          <ProductImage images={product.images} />
+          <ProductImages images={product.images} />
         </Left>
         <Right>
           <BreadCrumbs category={product.category} />
