@@ -129,6 +129,7 @@ const Overlay = styled.aside<IOverlay>`
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 4000;
 
     display: flex;
     align-items: flex-start;
