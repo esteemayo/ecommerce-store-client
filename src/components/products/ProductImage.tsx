@@ -166,6 +166,7 @@ const StyledImage = styled(Image)`
   @media only screen and (max-width: 50em) {
     width: 225px;
     border-radius: revert;
+    cursor: default;
   }
 
   @media only screen and (max-width: 37.5em) {
