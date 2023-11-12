@@ -125,7 +125,8 @@ const Overlay = styled.aside<IOverlay>`
     width: 100vw;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.95);
-    backdrop-filter: ${({ mode }) => mode === 'true' && 'blur(2px)'};
+    backdrop-filter: ${({ mode }) =>
+      mode === 'true' ? 'blur(2px)' : undefined};
     position: fixed;
     top: 0;
     left: 0;
