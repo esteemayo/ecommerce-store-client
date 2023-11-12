@@ -11,8 +11,11 @@ import { ProductImageModalProps } from '@/types';
 import { useDarkMode } from '@/hooks/useDarkMode';
 
 interface IOverlay {
-  type: string;
   mode: string;
+}
+
+interface IWrapper {
+  active: string;
 }
 
 interface IBtn {
@@ -64,7 +67,7 @@ const ProductImageModal = ({
   );
 
   const activeModal = useMemo(() => {
-    return showModal ? 'show' : '';
+    return showModal?.toString();
   }, [showModal]);
 
   const modeValue = useMemo(() => {
@@ -80,35 +83,37 @@ const ProductImageModal = ({
   }
 
   return (
-    <Overlay type={activeModal} mode={modeValue}>
-      <CloseButton type='button' onClick={handleClose}>
-        <CloseIcon />
-      </CloseButton>
-      {isMoved && slideIndex > 0 && (
+    <Overlay mode={modeValue}>
+      <Wrapper active={activeModal}>
+        <CloseButton type='button' onClick={handleClose}>
+          <CloseIcon />
+        </CloseButton>
+        {isMoved && slideIndex > 0 && (
+          <ArrowButton
+            type='button'
+            direction='left'
+            onClick={() => onMove('left')}
+          >
+            <FontAwesomeIcon icon={faArrowLeft} />
+          </ArrowButton>
+        )}
+        <ImageContainer className='imageContainer' onClick={closeModalHandler}>
+          <StyledImage
+            src={images?.[slideIndex] ?? '/img/img-1.jpg'}
+            width={1200}
+            height={1000}
+            alt=''
+          />
+        </ImageContainer>
         <ArrowButton
           type='button'
-          direction='left'
-          onClick={() => onMove('left')}
+          direction='right'
+          onClick={() => onMove('right')}
+          style={{ display: slideIndex === lastIndex && 'none' }}
         >
-          <FontAwesomeIcon icon={faArrowLeft} />
+          <FontAwesomeIcon icon={faArrowRight} />
         </ArrowButton>
-      )}
-      <ImageContainer className='imageContainer' onClick={closeModalHandler}>
-        <StyledImage
-          src={images?.[slideIndex] ?? '/img/img-1.jpg'}
-          width={1200}
-          height={1000}
-          alt=''
-        />
-      </ImageContainer>
-      <ArrowButton
-        type='button'
-        direction='right'
-        onClick={() => onMove('right')}
-        style={{ display: slideIndex === lastIndex && 'none' }}
-      >
-        <FontAwesomeIcon icon={faArrowRight} />
-      </ArrowButton>
+      </Wrapper>
     </Overlay>
   );
 };
@@ -123,12 +128,18 @@ const Overlay = styled.aside<IOverlay>`
     backdrop-filter: ${({ mode }) => mode === 'true' && 'blur(2px)'};
     position: fixed;
     top: 0;
-    left: ${({ type }) => (type === 'show' ? 0 : '-100vw')};
+    left: 0;
 
     display: flex;
     align-items: flex-start;
     justify-content: center;
   }
+`;
+
+const Wrapper = styled.div<IWrapper>`
+  transform: translateY(${({ active }) => (active === 'true' ? 0 : '100%')});
+  opacity: ${({ active }) => (active === 'true' ? 1 : 0)};
+  transition: all 300ms;
 `;
 
 const CloseButton = styled.button`
