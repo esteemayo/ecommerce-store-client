@@ -75,6 +75,10 @@ const ProductImageModal = ({
     setShowModal(isOpen);
   }, [isOpen]);
 
+  if (!isOpen) {
+    return null;
+  }
+
   return (
     <Overlay type={activeModal} mode={modeValue}>
       <CloseButton type='button' onClick={handleClose}>
