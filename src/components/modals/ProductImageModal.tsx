@@ -84,19 +84,19 @@ const ProductImageModal = ({
 
   return (
     <Overlay mode={modeValue}>
+      <CloseButton type='button' onClick={handleClose}>
+        <CloseIcon />
+      </CloseButton>
+      {isMoved && slideIndex > 0 && (
+        <ArrowButton
+          type='button'
+          direction='left'
+          onClick={() => onMove('left')}
+        >
+          <FontAwesomeIcon icon={faArrowLeft} />
+        </ArrowButton>
+      )}
       <Wrapper active={activeModal}>
-        <CloseButton type='button' onClick={handleClose}>
-          <CloseIcon />
-        </CloseButton>
-        {isMoved && slideIndex > 0 && (
-          <ArrowButton
-            type='button'
-            direction='left'
-            onClick={() => onMove('left')}
-          >
-            <FontAwesomeIcon icon={faArrowLeft} />
-          </ArrowButton>
-        )}
         <ImageContainer className='imageContainer' onClick={closeModalHandler}>
           <StyledImage
             src={images?.[slideIndex] ?? '/img/img-1.jpg'}
@@ -105,15 +105,15 @@ const ProductImageModal = ({
             alt=''
           />
         </ImageContainer>
-        <ArrowButton
-          type='button'
-          direction='right'
-          onClick={() => onMove('right')}
-          style={{ display: slideIndex === lastIndex && 'none' }}
-        >
-          <FontAwesomeIcon icon={faArrowRight} />
-        </ArrowButton>
       </Wrapper>
+      <ArrowButton
+        type='button'
+        direction='right'
+        onClick={() => onMove('right')}
+        style={{ display: slideIndex === lastIndex && 'none' }}
+      >
+        <FontAwesomeIcon icon={faArrowRight} />
+      </ArrowButton>
     </Overlay>
   );
 };
@@ -140,7 +140,6 @@ const Overlay = styled.aside<IOverlay>`
 const Wrapper = styled.div<IWrapper>`
   width: 100%;
   height: 100%;
-  position: relative;
   transform: translateY(${({ active }) => (active === 'true' ? 0 : '100%')});
   opacity: ${({ active }) => (active === 'true' ? 1 : 0)};
   transition: all 300ms;
