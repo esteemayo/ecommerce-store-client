@@ -3,7 +3,7 @@
 import styled from 'styled-components';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useCallback, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 import useImageModal from '@/hooks/useImageModal';
@@ -74,6 +74,15 @@ const ProductImage = ({ images }: ProductImageProps) => {
     },
     [clickLimit, slideNumber]
   );
+
+  const handleResize = useCallback(() => {
+    setClickLimit(window.innerWidth / 235);
+  }, []);
+
+  useEffect(() => {
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, [handleResize]);
 
   return (
     <Container>
