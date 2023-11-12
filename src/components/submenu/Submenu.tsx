@@ -93,14 +93,15 @@ const ListContainer = styled.ul<IColumn>`
   list-style: none;
   padding: 2rem 0;
   display: grid;
-  grid-template-columns: ${({ columns }) =>
-    columns === 'col-2' && 'repeat(2, max-content)'};
-  grid-template-columns: ${({ columns }) =>
-    columns === 'col-3' && 'repeat(3, max-content)'};
-  grid-template-columns: ${({ columns }) =>
-    columns === 'col-4' && 'repeat(4, max-content)'};
+  grid-template-columns: ${({ columns }) => setTemplateColumns(columns)};
   gap: 0.25rem 2rem;
   width: max-content;
 `;
+
+const setTemplateColumns = (columns: string) => {
+  if (columns === 'col-2') return 'repeat(2, max-content)';
+  if (columns === 'col-3') return 'repeat(3, max-content)';
+  if (columns === 'col-4') return 'repeat(4, max-content)';
+};
 
 export default Submenu;
