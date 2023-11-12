@@ -14,7 +14,7 @@ interface IOverlay {
   mode: string;
 }
 
-interface IWrapper {
+interface IActive {
   active: string;
 }
 
@@ -137,7 +137,7 @@ const Overlay = styled.aside<IOverlay>`
   }
 `;
 
-const Wrapper = styled.div<IWrapper>`
+const Wrapper = styled.div<IActive>`
   width: 100%;
   height: 100%;
   transform: translateY(${({ active }) => (active === 'true' ? 0 : '100%')});
