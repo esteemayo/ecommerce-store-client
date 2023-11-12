@@ -42,7 +42,7 @@ const StyledImage = styled(Image)`
   height: 50rem;
   display: block;
   object-fit: cover;
-  border-radius: 0.5rem;
+  border-radius: 2px;
 
   @media only screen and (max-width: 64em) {
     width: 35rem;
