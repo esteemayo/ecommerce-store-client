@@ -2,6 +2,7 @@
 
 import styled from 'styled-components';
 import Link from 'next/link';
+import { useMemo } from 'react';
 import Image from 'next/image';
 
 import { RecommendationItemProps } from '@/types';
@@ -13,9 +14,13 @@ const RecommendationItem = ({
   price,
   image,
 }: RecommendationItemProps) => {
+  const url = useMemo(() => {
+    return `/products/${encodeURIComponent(id)}`;
+  }, [id]);
+
   return (
     <Container>
-      <Link href={`/products/${encodeURIComponent(id)}`} passHref>
+      <Link href={url} passHref>
         <StyledImage src={image} width={400} height={500} alt={name} />
         <Wrapper>
           <Title>{name}</Title>
