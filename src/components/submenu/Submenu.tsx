@@ -92,9 +92,6 @@ const Container = styled.aside<IContainer>`
 const ListContainer = styled.ul<IColumn>`
   list-style: none;
   padding: 2rem 0;
-  /* display: flex;
-  flex-wrap: wrap;
-  align-items: center; */
   display: grid;
   grid-template-columns: ${({ columns }) =>
     columns === 'col-2' && 'repeat(2, max-content)'};
