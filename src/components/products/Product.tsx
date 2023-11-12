@@ -10,10 +10,10 @@ import Counter from '../inputs/Counter';
 import SizeSelect from '../inputs/SizeSelect';
 
 import ProductHead from './ProductHead';
-import ProductValue from './ProductValue';
-import ProductInfo from './ProductInfo';
 import ProductButton from './ProductButton';
+import ProductInfo from './ProductInfo';
 import ProductImages from './ProductImages';
+import ProductValue from './ProductValue';
 
 import { productValue } from '@/data';
 import { ProductProps } from '@/types';
