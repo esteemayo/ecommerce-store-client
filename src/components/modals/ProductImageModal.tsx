@@ -124,14 +124,10 @@ const Overlay = styled.aside<IOverlay>`
     position: fixed;
     top: 0;
     left: ${({ type }) => (type === 'show' ? 0 : '-100vw')};
+
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    visibility: ${({ type }) => (type === 'show' ? 'visible' : 'hidden')};
-    opacity: ${({ type }) => (type === 'show' ? 1 : 0)};
-    transform: scale(${({ type }) => (type === 'show' ? 1 : 0)});
-    z-index: ${({ type }) => (type === 'show' ? 4000 : -1)};
-    transition: all 0.3s linear;
   }
 `;
 
