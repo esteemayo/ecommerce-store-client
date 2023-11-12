@@ -138,6 +138,9 @@ const Overlay = styled.aside<IOverlay>`
 `;
 
 const Wrapper = styled.div<IWrapper>`
+  width: 100%;
+  height: 100%;
+  position: relative;
   transform: translateY(${({ active }) => (active === 'true' ? 0 : '100%')});
   opacity: ${({ active }) => (active === 'true' ? 1 : 0)};
   transition: all 300ms;
