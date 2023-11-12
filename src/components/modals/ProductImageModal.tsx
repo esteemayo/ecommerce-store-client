@@ -137,13 +137,6 @@ const Overlay = styled.aside<IOverlay>`
   }
 `;
 
-const Wrapper = styled.div<IActive>`
-  height: 100%;
-  transform: translateY(${({ active }) => (active === 'true' ? 0 : '100%')});
-  opacity: ${({ active }) => (active === 'true' ? 1 : 0)};
-  transition: all 300ms;
-`;
-
 const CloseButton = styled.button`
   border: none;
   display: inline-block;
@@ -193,6 +186,13 @@ const ArrowButton = styled.button<IBtn>`
   svg {
     fill: var(--clr-white);
   }
+`;
+
+const Wrapper = styled.div<IActive>`
+  height: 100%;
+  transform: translateY(${({ active }) => (active === 'true' ? 0 : '100%')});
+  opacity: ${({ active }) => (active === 'true' ? 1 : 0)};
+  transition: all 300ms;
 `;
 
 const ImageContainer = styled.div`
