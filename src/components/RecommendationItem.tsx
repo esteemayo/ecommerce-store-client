@@ -20,7 +20,7 @@ const RecommendationItem = ({
 
   return (
     <Container>
-      <StyledLink href={url} passHref>
+      <StyledLink href={url}>
         <StyledImage src={image} width={400} height={500} alt={name} />
         <Wrapper>
           <Title>{name}</Title>
