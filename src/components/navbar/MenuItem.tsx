@@ -29,7 +29,7 @@ const Button = styled.button`
   transition: all 0.3s ease;
 
   &:hover {
-    opacity: 0.5;
+    opacity: 0.75;
   }
 `;
 
