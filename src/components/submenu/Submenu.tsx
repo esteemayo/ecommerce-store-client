@@ -93,12 +93,12 @@ const ListContainer = styled.ul<IColumn>`
   list-style: none;
   padding: 2rem 0;
   display: grid;
-  grid-template-columns: ${({ columns }) => setTemplateColumns(columns)};
+  grid-template-columns: ${({ columns }) => setGridColumns(columns)};
   gap: 0.25rem 2rem;
   width: max-content;
 `;
 
-const setTemplateColumns = (columns: string) => {
+const setGridColumns = (columns: string) => {
   if (columns === 'col-2') return 'repeat(2, max-content)';
   if (columns === 'col-3') return 'repeat(3, max-content)';
   if (columns === 'col-4') return 'repeat(4, max-content)';
