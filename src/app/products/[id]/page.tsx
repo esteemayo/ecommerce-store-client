@@ -54,6 +54,7 @@ const SingleProduct = ({ params }) => {
 
   useEffect(() => {
     if (sort === 'newest') {
+      // @ts-ignore
       setReviews((prev) => [...prev].sort((a, b) => a.createdAt - b.createdAt));
     }
 
