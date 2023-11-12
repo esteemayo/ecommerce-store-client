@@ -1,10 +1,10 @@
 'use client';
 
 import styled from 'styled-components';
-import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useCallback, useEffect, useRef, useState } from 'react';
+import Image from 'next/image';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { useCallback, useEffect, useRef, useState } from 'react';
 
 import useImageModal from '@/hooks/useImageModal';
 import ProductImageModal from '../modals/ProductImageModal';
