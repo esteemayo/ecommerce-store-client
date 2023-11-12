@@ -92,9 +92,16 @@ const Container = styled.aside<IContainer>`
 const ListContainer = styled.ul<IColumn>`
   list-style: none;
   padding: 2rem 0;
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: center; */
+  display: grid;
+  grid-template-columns: ${({ columns }) =>
+    columns === 'col-2' && 'repeat(2, max-content)'};
+  grid-template-columns: ${({ columns }) =>
+    columns === 'col-3' && 'repeat(3, max-content)'};
+  grid-template-columns: ${({ columns }) =>
+    columns === 'col-4' && 'repeat(4, max-content)'};
   gap: 0.25rem 2rem;
   width: ${({ columns }) => columns === 'col-2' && '20rem'};
   width: ${({ columns }) => columns === 'col-3' && '40rem'};
