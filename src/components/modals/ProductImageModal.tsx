@@ -146,6 +146,7 @@ const CloseButton = styled.button`
   color: var(--clr-white);
   outline-color: #777;
   cursor: pointer;
+  z-index: 5000;
 
   position: absolute;
   top: 3rem;
@@ -172,6 +173,7 @@ const ArrowButton = styled.button<IBtn>`
   right: ${({ direction }) => direction === 'right' && '2.5rem'};
   transform: translateY(-50%);
   cursor: pointer;
+  z-index: 5000;
   transition: all 0.3s ease;
 
   @media only screen and (max-width: 50em) {
