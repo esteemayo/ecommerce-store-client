@@ -43,7 +43,7 @@ const StyledLink = styled(Link)`
   }
 
   &:hover {
-    color: #686767;
+    color: #9f9797;
   }
 
   svg {
