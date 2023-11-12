@@ -100,8 +100,8 @@ const ProductImageModal = ({
         <ImageContainer className='imageContainer' onClick={closeModalHandler}>
           <StyledImage
             src={images?.[slideIndex] ?? '/img/img-1.jpg'}
-            width={1200}
-            height={1000}
+            width={500}
+            height={700}
             alt=''
           />
         </ImageContainer>
