@@ -7,7 +7,7 @@ import dynamic from 'next/dynamic';
 import { useSubmenu } from '@/hooks/useSubmenu';
 import { useCartStore } from '@/hooks/useCartStore';
 
-import { ProductProps, ReviewItem } from '@/types';
+import { CartValues, ReviewItem } from '@/types';
 import { recommendations, reviewItems, storeProducts } from '@/data';
 
 const Product = dynamic(() => import('@/components/products/Product'), {
@@ -33,7 +33,7 @@ const SingleProduct = ({ params }) => {
   const cart = useCartStore((state) => state.cart);
   const closeSubmenu = useSubmenu((state) => state.closeSubmenu);
 
-  const [product, setProduct] = useState<ProductProps | object>({});
+  const [product, setProduct] = useState<CartValues>(null);
   const [sort, setSort] = useState(null);
   const [reviews, setReviews] = useState<ReviewItem>([]);
 
