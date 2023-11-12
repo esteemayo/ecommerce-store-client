@@ -20,26 +20,23 @@ const RecommendationItem = ({
 
   return (
     <Container>
-      <Link href={url} passHref>
+      <StyledLink href={url} passHref>
         <StyledImage src={image} width={400} height={500} alt={name} />
         <Wrapper>
           <Title>{name}</Title>
           <Price>{formatCurrency(price)}</Price>
         </Wrapper>
-      </Link>
+      </StyledLink>
     </Container>
   );
 };
 
-const Container = styled.article`
-  a {
-    &:link,
-    &:visited {
-      text-decoration: none;
-      color: inherit;
-      outline-color: #ddd;
-    }
-  }
+const Container = styled.article``;
+
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: inherit;
+  outline-color: #ddd;
 `;
 
 const StyledImage = styled(Image)`
