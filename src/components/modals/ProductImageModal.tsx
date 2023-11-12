@@ -138,7 +138,6 @@ const Overlay = styled.aside<IOverlay>`
 `;
 
 const Wrapper = styled.div<IActive>`
-  width: 100%;
   height: 100%;
   transform: translateY(${({ active }) => (active === 'true' ? 0 : '100%')});
   opacity: ${({ active }) => (active === 'true' ? 1 : 0)};
