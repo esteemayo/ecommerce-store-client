@@ -26,16 +26,18 @@ const TopReviews = () => {
   const handleClick = useCallback(
     (direction: string) => {
       setIsMoved(true);
-      const distance = reviewRef.current.getBoundingClientRect().x - 50;
+
+      const container = reviewRef.current;
+      const distance = container.getBoundingClientRect().x - 50;
 
       if (direction === 'left') {
         setCurrentSlide((value) => value - 1);
-        reviewRef.current.style.transform = `translateX(${730 + distance}px)`;
+        container.style.transform = `translateX(${730 + distance}px)`;
       }
 
       if (direction === 'right' && currentSlide < 8 - clickLimit) {
         setCurrentSlide((value) => value + 1);
-        reviewRef.current.style.transform = `translateX(${-730 + distance}px)`;
+        container.style.transform = `translateX(${-730 + distance}px)`;
       }
     },
     [clickLimit, currentSlide]
