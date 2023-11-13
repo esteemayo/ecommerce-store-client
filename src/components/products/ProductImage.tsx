@@ -3,7 +3,9 @@
 import styled from 'styled-components';
 import Image from 'next/image';
 
-const ProductImage = (image, index, onOpen) => {
+import { ProductImageProps } from '@/types';
+
+const ProductImage = ({ image, index, onOpen }: ProductImageProps) => {
   return (
     <StyledImage
       src={image}
