@@ -19,18 +19,26 @@ const Reviews = ({ reviews, sortLabel, sort, onSort }: ReviewsProps) => {
     setIsFilterOpen((value) => !value);
   }, []);
 
+  const handleOpen = useCallback(() => {
+    setIsFilterOpen(true);
+  }, []);
+
+  const handleClose = useCallback(() => {
+    setIsFilterOpen(false);
+  }, []);
+
   const handleCloseFilter = useCallback(() => {
     const reviewsEl = document.querySelector('.reviews');
     const filterEl = document.querySelector('.filter-container');
 
-    reviewsEl.addEventListener('click', () => setIsFilterOpen(false));
-    filterEl.addEventListener('click', () => setIsFilterOpen(true));
+    reviewsEl.addEventListener('click', handleClose);
+    filterEl.addEventListener('click', handleOpen);
 
     return () => {
-      reviewsEl.removeEventListener('click', () => setIsFilterOpen(false));
-      filterEl.removeEventListener('click', () => setIsFilterOpen(true));
+      reviewsEl.removeEventListener('click', handleClose);
+      filterEl.removeEventListener('click', handleOpen);
     };
-  }, []);
+  }, [handleClose, handleOpen]);
 
   return (
     <Container id='reviews' className='reviews' onClick={handleCloseFilter}>
