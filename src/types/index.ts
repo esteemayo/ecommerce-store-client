@@ -497,6 +497,12 @@ export interface ProductProps {
   actionLabel: string;
 }
 
+export interface ProductImageProps {
+  image: string;
+  index: number;
+  onOpen(index: number): void;
+}
+
 export interface ProductImageModalProps {
   images: string[];
   isOpen: boolean;
