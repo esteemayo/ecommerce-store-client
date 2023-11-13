@@ -1,8 +1,6 @@
 'use client';
 
 import styled from 'styled-components';
-import { faArrowUpFromBracket } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import Avatar from '../images/Avatar';
 import DefaultAvatar from '../images/DefaultAvatar';
