@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Avatar from '../images/Avatar';
 import DefaultAvatar from '../images/DefaultAvatar';
 
+import ShareButton from './ShareButton';
 import DateTime from '../DateTime';
 import StarRating from '../StarRating';
 
@@ -40,10 +41,7 @@ const ReviewCard = ({ user, rating, review, createdAt }: ReviewCardProps) => {
             type='review'
             options={options}
           />
-          <ShareButton type='button'>
-            <FontAwesomeIcon icon={faArrowUpFromBracket} />
-            Share
-          </ShareButton>
+          <ShareButton />
         </DateContainer>
       </Wrapper>
     </Container>
@@ -181,34 +179,34 @@ const DateContainer = styled.div`
   justify-content: space-between;
 `;
 
-const ShareButton = styled.button`
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  width: 8rem;
-  padding: 0.7rem 1rem;
-  font-size: 1.4rem;
-  background-color: transparent;
-  color: ${({ theme }) => theme.textRevDate};
-  border: 1px solid ${({ theme }) => theme.textRevDate};
-  border-radius: 0.5rem;
-  outline-color: #ccc;
-  cursor: pointer;
+// const ShareButton = styled.button`
+//   display: flex;
+//   align-items: center;
+//   gap: 0.5rem;
+//   width: 8rem;
+//   padding: 0.7rem 1rem;
+//   font-size: 1.4rem;
+//   background-color: transparent;
+//   color: ${({ theme }) => theme.textRevDate};
+//   border: 1px solid ${({ theme }) => theme.textRevDate};
+//   border-radius: 0.5rem;
+//   outline-color: #ccc;
+//   cursor: pointer;
 
-  @media only screen and (max-width: 26.875em) {
-    font-size: 1.35rem;
-  }
+//   @media only screen and (max-width: 26.875em) {
+//     font-size: 1.35rem;
+//   }
 
-  @media only screen and (max-width: 25em) {
-    gap: 1rem;
-    font-size: 1.3rem;
-    padding: 0.5rem 0.8rem;
-  }
+//   @media only screen and (max-width: 25em) {
+//     gap: 1rem;
+//     font-size: 1.3rem;
+//     padding: 0.5rem 0.8rem;
+//   }
 
-  svg {
-    font-size: inherit;
-    color: currentColor;
-  }
-`;
+//   svg {
+//     font-size: inherit;
+//     color: currentColor;
+//   }
+// `;
 
 export default ReviewCard;
