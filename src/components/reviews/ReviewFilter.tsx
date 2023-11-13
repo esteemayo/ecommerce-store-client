@@ -49,8 +49,7 @@ const Container = styled.div`
 `;
 
 const Wrapper = styled.div<IWrapper>`
-  width: 13rem;
-  width: ${({ sort }) => (sort === 'highest' || sort === 'lowest') && '20rem'};
+  width: ${({ sort }) => setWidth(sort)};
   color: ${({ theme }) => theme.text};
   padding: 2rem 0;
   padding-right: 3rem;
@@ -140,5 +139,10 @@ const FilterList = styled.li`
     background-color: ${({ theme }) => theme.filterHov};
   }
 `;
+
+const setWidth = (sort: string) => {
+  if (sort === 'highest' || sort === 'lowest') return '20rem';
+  return '13rem';
+};
 
 export default ReviewFilter;
