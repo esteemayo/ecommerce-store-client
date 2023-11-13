@@ -2,7 +2,7 @@
 
 import styled from 'styled-components';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import { useCallback, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import Header from '../Header';
@@ -40,6 +40,15 @@ const TopReviews = () => {
     },
     [clickLimit, currentSlide]
   );
+
+  const handleResize = useCallback(() => {
+    setClickLimit(window.innerWidth / 730);
+  }, []);
+
+  useEffect(() => {
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, [handleResize]);
 
   return (
     <Container>
