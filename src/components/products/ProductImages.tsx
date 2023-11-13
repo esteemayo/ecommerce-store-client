@@ -6,8 +6,10 @@ import Image from 'next/image';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { useCallback, useEffect, useRef, useState } from 'react';
 
-import useImageModal from '@/hooks/useImageModal';
+import ProductImage from './ProductImage';
 import ProductImageModal from '../modals/ProductImageModal';
+
+import useImageModal from '@/hooks/useImageModal';
 
 interface ProductImagesProps {
   images: string[];
@@ -97,13 +99,11 @@ const ProductImages = ({ images }: ProductImagesProps) => {
       <Wrapper ref={imgContainerRef}>
         {images?.map((item, index) => {
           return (
-            <StyledImage
+            <ProductImage
               key={index}
-              src={item}
-              width={350}
-              height={350}
-              alt=''
-              onClick={() => handleOpen(index)}
+              image={item}
+              index={index}
+              onOpen={handleOpen}
             />
           );
         })}
