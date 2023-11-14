@@ -91,39 +91,6 @@ const StyledLink = styled(Link)`
   }
 `;
 
-const Button = styled.button`
-  border: none;
-  display: inline-block;
-  text-align: left;
-  font-weight: 600;
-  font-size: 1.8rem;
-  width: 9rem;
-  background-color: transparent;
-  color: ${({ theme }) => theme.textRevBtn};
-  outline-color: #ccc;
-  cursor: pointer;
-  transition: all 0.3s ease;
-
-  display: flex;
-  flex-direction: column;
-
-  @media only screen and (max-width: 18.75em) {
-    font-size: 1.7rem;
-  }
-
-  &:hover {
-    opacity: 0.7;
-  }
-
-  &::after {
-    content: '';
-    display: inline-block;
-    width: 8.5rem;
-    height: 1px;
-    background-color: ${({ theme }) => theme.star};
-  }
-`;
-
 const Right = styled.div`
   flex: 1;
   width: 100%;
