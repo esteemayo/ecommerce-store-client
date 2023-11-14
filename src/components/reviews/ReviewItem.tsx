@@ -82,23 +82,6 @@ const Left = styled.div`
   }
 `;
 
-const RatingContainer = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-
-  svg {
-    font-size: 2rem;
-    color: ${({ theme }) => theme.star};
-    margin-right: 0.5rem;
-
-    @media only screen and (max-width: 18.75em) {
-      font-size: 1.87rem;
-      margin-right: 3px;
-    }
-  }
-`;
-
 const ReviewContainer = styled.div`
   display: flex;
   flex-direction: column;
