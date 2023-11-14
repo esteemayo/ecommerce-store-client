@@ -198,6 +198,12 @@ export type ReviewItem = {
   updatedAt: string;
 }[];
 
+export interface ReviewContentProps {
+  rating: number;
+  review: string;
+  reviewer: string;
+}
+
 export interface ReviewInfoProps {
   review: string;
   reviewer: string;
