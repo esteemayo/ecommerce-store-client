@@ -99,12 +99,6 @@ const RatingContainer = styled.div`
   }
 `;
 
-const ReviewCount = styled.span`
-  font-size: 1.2rem;
-  color: ${({ theme }) => theme.textRevCount};
-  letter-spacing: 0.5px;
-`;
-
 const ReviewContainer = styled.div`
   display: flex;
   flex-direction: column;
