@@ -6,6 +6,8 @@ import { useMemo } from 'react';
 import Image from 'next/image';
 
 import RatingInfo from './RatingInfo';
+import ReviewInfo from './ReviewInfo';
+
 import { ReviewItemProps } from '@/types';
 
 const ReviewItem = ({ user, rating, review }: ReviewItemProps) => {
@@ -21,10 +23,7 @@ const ReviewItem = ({ user, rating, review }: ReviewItemProps) => {
       <Wrapper>
         <Left>
           <RatingInfo rating={rating} />
-          <ReviewContainer>
-            <Review>{review}</Review>
-            <Reviewer>{reviewer}</Reviewer>
-          </ReviewContainer>
+          <ReviewInfo review={review} reviewer={reviewer} />
           <StyledLink href='/products' passHref>
             <Button>Shop now</Button>
           </StyledLink>
