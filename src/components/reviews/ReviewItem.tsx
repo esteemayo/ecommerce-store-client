@@ -6,6 +6,7 @@ import { useMemo } from 'react';
 import Image from 'next/image';
 
 import StarRating from '../StarRating';
+import RatingInfo from './RatingInfo';
 import { ReviewItemProps } from '@/types';
 
 const ReviewItem = ({ user, rating, review }: ReviewItemProps) => {
@@ -20,10 +21,7 @@ const ReviewItem = ({ user, rating, review }: ReviewItemProps) => {
     <Container>
       <Wrapper>
         <Left>
-          <RatingContainer>
-            <StarRating readOnly value={rating} name='read-only' />
-            <ReviewCount>Based on 61 reviews</ReviewCount>
-          </RatingContainer>
+          <RatingInfo rating={rating} />
           <ReviewContainer>
             <Review>{review}</Review>
             <Reviewer>{reviewer}</Reviewer>
