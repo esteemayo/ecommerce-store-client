@@ -9,6 +9,7 @@ import ReviewInfo from './ReviewInfo';
 import ReviewLink from './ReviewLink';
 
 import { ReviewItemProps } from '@/types';
+import ReviewContent from './ReviewContent';
 
 const ReviewItem = ({ user, rating, review }: ReviewItemProps) => {
   const reviewer = useMemo(() => {
@@ -21,11 +22,7 @@ const ReviewItem = ({ user, rating, review }: ReviewItemProps) => {
   return (
     <Container>
       <Wrapper>
-        <Left>
-          <RatingInfo rating={rating} />
-          <ReviewInfo review={review} reviewer={reviewer} />
-          <ReviewLink />
-        </Left>
+        <ReviewContent rating={rating} review={review} reviewer={reviewer} />
         <Right>
           <StyledImage src={user.photo} width={1200} height={1200} alt='' />
         </Right>
