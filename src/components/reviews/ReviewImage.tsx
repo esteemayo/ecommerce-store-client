@@ -3,7 +3,11 @@
 import styled from 'styled-components';
 import Image from 'next/image';
 
-const ReviewImage = ({ photo }) => {
+interface ReviewImageProps {
+  photo: string;
+}
+
+const ReviewImage = ({ photo }: ReviewImageProps) => {
   return (
     <Container>
       <StyledImage src={photo} width={1200} height={1200} alt='' />
