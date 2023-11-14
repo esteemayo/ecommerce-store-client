@@ -80,17 +80,6 @@ const Left = styled.div`
   }
 `;
 
-const StyledLink = styled(Link)`
-  width: 9rem;
-  text-decoration: none;
-  color: inherit;
-  outline-color: #ccc;
-
-  &:active {
-    color: currentColor;
-  }
-`;
-
 const Right = styled.div`
   flex: 1;
   width: 100%;
