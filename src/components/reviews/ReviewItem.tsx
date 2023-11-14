@@ -1,7 +1,6 @@
 'use client';
 
 import styled from 'styled-components';
-import Image from 'next/image';
 import { useMemo } from 'react';
 
 import { ReviewItemProps } from '@/types';
