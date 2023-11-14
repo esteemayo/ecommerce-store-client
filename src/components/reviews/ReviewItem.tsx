@@ -81,12 +81,6 @@ const Left = styled.div`
   }
 `;
 
-const ReviewContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-`;
-
 const StyledLink = styled(Link)`
   width: 9rem;
   text-decoration: none;
