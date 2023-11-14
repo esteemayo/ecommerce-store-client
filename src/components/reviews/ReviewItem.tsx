@@ -180,7 +180,7 @@ const Button = styled.button`
 const Right = styled.div`
   flex: 1;
   width: 100%;
-  height: 49.8rem;
+  height: 100%;
   background-color: ${({ theme }) => theme.bgRevImg};
 
   @media only screen and (max-width: 62.5em) {
