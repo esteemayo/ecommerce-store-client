@@ -1,9 +1,8 @@
 'use client';
 
 import styled from 'styled-components';
-import Link from 'next/link';
-import { useMemo } from 'react';
 import Image from 'next/image';
+import { useMemo } from 'react';
 
 import RatingInfo from './RatingInfo';
 import ReviewBottom from './ReviewBottom';
