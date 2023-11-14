@@ -6,7 +6,9 @@ import RatingInfo from './RatingInfo';
 import ReviewInfo from './ReviewInfo';
 import ReviewLink from './ReviewLink';
 
-const ReviewContent = ({ rating, review, reviewer }) => {
+import { ReviewContentProps } from '@/types';
+
+const ReviewContent = ({ rating, review, reviewer }: ReviewContentProps) => {
   return (
     <Container>
       <RatingInfo rating={rating} />
