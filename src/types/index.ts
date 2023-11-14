@@ -198,6 +198,11 @@ export type ReviewItem = {
   updatedAt: string;
 }[];
 
+export interface ReviewInfoProps {
+  review: string;
+  reviewer: string;
+}
+
 export type WishlistItem = {
   id: number;
   name: string;
