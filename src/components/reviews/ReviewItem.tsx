@@ -4,10 +4,6 @@ import styled from 'styled-components';
 import Image from 'next/image';
 import { useMemo } from 'react';
 
-import RatingInfo from './RatingInfo';
-import ReviewInfo from './ReviewInfo';
-import ReviewLink from './ReviewLink';
-
 import { ReviewItemProps } from '@/types';
 import ReviewContent from './ReviewContent';
 
