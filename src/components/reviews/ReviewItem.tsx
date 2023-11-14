@@ -99,13 +99,6 @@ const Review = styled.p`
   }
 `;
 
-const Reviewer = styled.span`
-  display: inline-block;
-  font-weight: 300;
-  font-weight: 1.6rem;
-  color: ${({ theme }) => theme.textReviewer};
-`;
-
 const StyledLink = styled(Link)`
   width: 9rem;
   text-decoration: none;
