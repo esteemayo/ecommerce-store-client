@@ -5,8 +5,8 @@ import Image from 'next/image';
 import { useMemo } from 'react';
 
 import RatingInfo from './RatingInfo';
-import ReviewBottom from './ReviewBottom';
 import ReviewInfo from './ReviewInfo';
+import ReviewLink from './ReviewLink';
 
 import { ReviewItemProps } from '@/types';
 
@@ -24,7 +24,7 @@ const ReviewItem = ({ user, rating, review }: ReviewItemProps) => {
         <Left>
           <RatingInfo rating={rating} />
           <ReviewInfo review={review} reviewer={reviewer} />
-          <ReviewBottom />
+          <ReviewLink />
         </Left>
         <Right>
           <StyledImage src={user.photo} width={1200} height={1200} alt='' />
