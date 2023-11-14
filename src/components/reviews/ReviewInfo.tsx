@@ -2,7 +2,9 @@
 
 import styled from 'styled-components';
 
-const ReviewInfo = ({ review, reviewer }) => {
+import { ReviewInfoProps } from '@/types';
+
+const ReviewInfo = ({ review, reviewer }: ReviewInfoProps) => {
   return (
     <Container>
       <Review>{review}</Review>
