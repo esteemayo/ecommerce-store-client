@@ -5,7 +5,6 @@ import Link from 'next/link';
 import { useMemo } from 'react';
 import Image from 'next/image';
 
-import StarRating from '../StarRating';
 import RatingInfo from './RatingInfo';
 import { ReviewItemProps } from '@/types';
 
