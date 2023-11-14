@@ -87,18 +87,6 @@ const ReviewContainer = styled.div`
   gap: 1rem;
 `;
 
-const Review = styled.p`
-  width: 70%;
-  font-weight: 600;
-  font-size: 1.8rem;
-  color: ${({ theme }) => theme.textRev};
-
-  @media only screen and (max-width: 18.75em) {
-    width: 60%;
-    font-size: 1.65rem;
-  }
-`;
-
 const StyledLink = styled(Link)`
   width: 9rem;
   text-decoration: none;
