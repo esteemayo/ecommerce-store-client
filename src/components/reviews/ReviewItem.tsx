@@ -10,9 +10,11 @@ import { ReviewItemProps } from '@/types';
 
 const ReviewItem = ({ user, rating, review }: ReviewItemProps) => {
   const reviewer = useMemo(() => {
+    const name = user.name.split(' ');
+
     return `
-      ${user.name.split(' ').shift()} 
-      ${user.name.split(' ').pop().charAt(0)}.
+      ${name.shift()} 
+      ${name.pop().charAt(0)}.
     `;
   }, [user]);
 
