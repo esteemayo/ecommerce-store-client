@@ -1,9 +1,9 @@
 'use client';
 
 import styled from 'styled-components';
-import Image from 'next/image';
 
 import { ProductValueProps } from '@/types';
+import { CommonImage } from '../CommonImage';
 
 interface IMode {
   mode: string;
@@ -59,12 +59,11 @@ const ImageWrapper = styled.div`
   gap: 0.8rem;
 `;
 
-const StyledImage = styled(Image)<IMode>`
+const StyledImage = styled(CommonImage)<IMode>`
   width: 2.4rem;
   height: auto;
   background-color: ${({ mode }) => mode === 'true' && '#1b1a1a'};
   display: inline-block;
-  object-fit: cover;
 `;
 
 export default ProductValue;
