@@ -173,7 +173,7 @@ const RemoveButton = styled.button`
   border: none;
   text-transform: capitalize;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.45rem;
   background-color: transparent;
   color: ${({ theme }) => theme.textRemoveCart};
   outline-color: #eee;
