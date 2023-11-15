@@ -2,9 +2,9 @@
 
 import styled from 'styled-components';
 import Link from 'next/link';
-import Image from 'next/image';
 
 import { SliderItemProps } from '@/types';
+import { CommonImage } from '../CommonImage';
 
 interface IType {
   type: string;
@@ -53,11 +53,9 @@ const Container = styled.div`
   position: relative;
 `;
 
-const StyledImage = styled(Image)`
+const StyledImage = styled(CommonImage)`
   width: 100%;
   height: 100%;
-  display: block;
-  object-fit: cover;
 `;
 
 const Wrapper = styled.div`
