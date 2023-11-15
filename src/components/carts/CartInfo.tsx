@@ -140,8 +140,7 @@ const Color = styled.span`
     display: block;
     width: 1.5rem;
     height: 1.5rem;
-    background-color: ${({ color }) => color};
-    background-color: ${({ color }) => color === 'white' && '#f9f9f9'};
+    background-color: ${({ color }) => setBackground(color)};
     border: 1px solid ${({ color }) => color};
     border-radius: 50%;
 
@@ -181,5 +180,10 @@ const RemoveButton = styled.button`
   margin-top: 1rem;
   cursor: pointer;
 `;
+
+const setBackground = (color: string) => {
+  if (color === 'white') return '#f9f9f9';
+  return color;
+};
 
 export default CartInfo;
