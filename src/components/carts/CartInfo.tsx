@@ -53,8 +53,8 @@ const Container = styled.div`
 `;
 
 const ImageContainer = styled.div`
-  width: 12rem;
-  height: 12rem;
+  width: 8rem;
+  height: 8rem;
   background-color: #ede9e6;
   border-radius: 3px;
 
@@ -70,8 +70,8 @@ const ImageContainer = styled.div`
 `;
 
 const StyledImage = styled(CommonImage)`
-  width: 12rem;
-  height: 12rem;
+  width: 100%;
+  height: 100%;
   border-radius: 3px;
 
   @media only screen and (max-width: 25em) {
