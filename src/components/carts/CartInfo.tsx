@@ -73,16 +73,6 @@ const StyledImage = styled(CommonImage)`
   width: 100%;
   height: 100%;
   border-radius: 3px;
-
-  @media only screen and (max-width: 25em) {
-    width: 10rem;
-    height: 10rem;
-  }
-
-  @media only screen and (max-width: 18.75em) {
-    width: 8rem;
-    height: 8rem;
-  }
 `;
 
 const CartDetails = styled.div`
