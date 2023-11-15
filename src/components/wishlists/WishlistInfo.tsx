@@ -3,9 +3,9 @@
 import styled from 'styled-components';
 import Link from 'next/link';
 import { useMemo } from 'react';
-import Image from 'next/image';
 
 import { WishlistInfoProps } from '@/types';
+import { CommonImage } from '../CommonImage';
 
 const WishlistInfo = ({
   id,
@@ -71,11 +71,9 @@ const ImageContainer = styled.div`
   }
 `;
 
-const StyledImage = styled(Image)`
-  display: block;
+const StyledImage = styled(CommonImage)`
   width: 8rem;
   height: 8rem;
-  object-fit: cover;
 
   @media only screen and (max-width: 18.75em) {
     width: 6.5rem;
