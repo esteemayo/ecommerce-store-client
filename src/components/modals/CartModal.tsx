@@ -1,9 +1,8 @@
 'use client';
 
 import styled from 'styled-components';
-import CloseIcon from '@mui/icons-material/Close';
-import Image from 'next/image';
 import { useCallback, useEffect, useMemo, useState } from 'react';
+import CloseIcon from '@mui/icons-material/Close';
 
 import ColorSelect from '../inputs/ColorSelect';
 import Counter from '../inputs/Counter';
@@ -19,6 +18,7 @@ import { CartModalProps } from '@/types';
 import { useCartStore } from '@/hooks/useCartStore';
 
 import Alert from '../Alert';
+import { CommonImage } from '../CommonImage';
 
 interface IMode {
   mode: string;
@@ -253,11 +253,9 @@ const ImageContainer = styled.div`
   }
 `;
 
-const StyledImage = styled(Image)`
+const StyledImage = styled(CommonImage)`
   width: 100%;
   height: 100%;
-  display: block;
-  object-fit: cover;
   border-radius: 0.5rem;
 `;
 
