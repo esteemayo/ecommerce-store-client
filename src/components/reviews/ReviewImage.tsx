@@ -1,7 +1,8 @@
 'use client';
 
 import styled from 'styled-components';
-import Image from 'next/image';
+
+import { CommonImage } from '../CommonImage';
 
 interface ReviewImageProps {
   photo: string;
@@ -30,11 +31,9 @@ const Container = styled.div`
   }
 `;
 
-const StyledImage = styled(Image)`
+const StyledImage = styled(CommonImage)`
   width: 100%;
   height: 100%;
-  display: block;
-  object-fit: cover;
 `;
 
 export default ReviewImage;
