@@ -1,7 +1,6 @@
 'use client';
 
 import styled from 'styled-components';
-import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import CloseIcon from '@mui/icons-material/Close';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
@@ -9,6 +8,8 @@ import { useCallback, useEffect, useMemo, useState } from 'react';
 
 import { ProductImageModalProps } from '@/types';
 import { useDarkMode } from '@/hooks/useDarkMode';
+
+import { CommonImage } from '../CommonImage';
 
 interface IOverlay {
   mode: string;
@@ -207,10 +208,9 @@ const ImageContainer = styled.div`
   justify-content: center;
 `;
 
-const StyledImage = styled(Image)`
+const StyledImage = styled(CommonImage)`
   width: 50rem;
   height: 100%;
-  display: block;
   object-fit: contain;
 
   @media only screen and (max-width: 64em) {
