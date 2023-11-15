@@ -3,7 +3,6 @@
 import styled from 'styled-components';
 import Link from 'next/link';
 import { useCallback, useState } from 'react';
-import Image from 'next/image';
 import dynamic from 'next/dynamic';
 
 import { useSubmenu } from '@/hooks/useSubmenu';
@@ -11,6 +10,7 @@ import usePaymentModal from '@/hooks/usePaymentModal';
 import { useCartStore } from '@/hooks/useCartStore';
 
 import CartHeader from '@/components/carts/CartHeader';
+import { CommonImage } from '@/components/CommonImage';
 
 const CartItem = dynamic(() => import('@/components/carts/CartItem'), {
   ssr: false,
@@ -156,11 +156,9 @@ const EmptyWrapper = styled.div`
   }
 `;
 
-const StyledImage = styled(Image)`
+const StyledImage = styled(CommonImage)`
   width: 40rem;
   height: 40rem;
-  display: block;
-  object-fit: cover;
 
   @media only screen and (max-width: 56.25em) {
     width: 33rem;
