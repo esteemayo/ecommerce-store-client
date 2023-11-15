@@ -1,10 +1,11 @@
 'use client';
 
 import styled from 'styled-components';
-import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+
+import { CommonImage } from '../CommonImage';
 
 const Category = () => {
   const images = [
@@ -20,20 +21,14 @@ const Category = () => {
       {images.map((item, index) => {
         return (
           <Wrapper key={index}>
-            <StyledImage
-              src={item}
-              width={1200}
-              height={1200}
-              alt=''
-            />
+            <StyledImage src={item} width={1200} height={1200} alt='' />
             <HeadingWrapper>
               <MainHeading>Jeans</MainHeading>
               <SubHeading>100</SubHeading>
             </HeadingWrapper>
             <Link href={`/products/category/jeans`} passHref>
               <Button>
-                Shop now
-                &nbsp;
+                Shop now &nbsp;
                 <FontAwesomeIcon icon={faArrowRight} />
               </Button>
             </Link>
@@ -42,7 +37,7 @@ const Category = () => {
       })}
     </Container>
   );
-}
+};
 
 const Container = styled.article`
   width: 100%;
@@ -131,18 +126,16 @@ const Wrapper = styled.div`
       color: currentColor;
     }
   }
-  
+
   &:hover ${Button} {
     visibility: visible;
     opacity: 1;
   }
 `;
 
-const StyledImage = styled(Image)`
+const StyledImage = styled(CommonImage)`
   width: 100%;
   height: 25rem;
-  display: block;
-  object-fit: cover;
   border-radius: 3px;
 
   @media only screen and (max-width: 37.5em) {
