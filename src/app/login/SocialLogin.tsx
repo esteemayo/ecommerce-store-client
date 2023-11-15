@@ -2,6 +2,8 @@ import styled from 'styled-components';
 import Image from 'next/image';
 import { FaFacebookF } from 'react-icons/fa';
 
+import { CommonImage } from '@/components/CommonImage';
+
 const SocialLogin = () => {
   return (
     <Container>
@@ -70,11 +72,9 @@ const GoogleButton = styled.button`
   }
 `;
 
-const StyledImage = styled(Image)`
+const StyledImage = styled(CommonImage)`
   width: 2.3rem;
   height: 2.3rem;
-  display: block;
-  object-fit: cover;
 
   @media only screen and (max-width: 26.25em) {
     width: 2rem;
