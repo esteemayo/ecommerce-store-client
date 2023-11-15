@@ -1,11 +1,10 @@
 'use client';
 import styled from 'styled-components';
-import Image from 'next/image';
 import dynamic from 'next/dynamic';
 
 import { useSubmenu } from '@/hooks/useSubmenu';
-
 import { orders } from '@/data';
+import { CommonImage } from '@/components/CommonImage';
 
 const OrderCard = dynamic(() => import('@/components/orders/OrderCard'), {
   ssr: false,
@@ -19,7 +18,12 @@ const Orders = () => {
   if (orders.length < 1) {
     bodyContent = (
       <ImageContainer>
-        <StyledImage src='/img/empty-list.png' width={500} height={500} alt='' />
+        <StyledImage
+          src='/img/empty-list.png'
+          width={500}
+          height={500}
+          alt=''
+        />
         <Message>No orders found</Message>
       </ImageContainer>
     );
@@ -95,11 +99,9 @@ const ImageContainer = styled.div`
   justify-content: center;
 `;
 
-const StyledImage = styled(Image)`
+const StyledImage = styled(CommonImage)`
   width: 30rem;
   height: 30rem;
-  display: block;
-  object-fit: cover;
 `;
 
 const Message = styled.span`
