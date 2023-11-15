@@ -2,8 +2,9 @@
 
 import styled, { css } from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Image from 'next/image';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
+
+import { CommonImage } from '@/components/CommonImage';
 
 interface AccountUploadProps {
   onOpen(): void;
@@ -49,11 +50,9 @@ const Wrapper = styled.div`
   }
 `;
 
-const StyledImage = styled(Image)`
+const StyledImage = styled(CommonImage)`
   width: 10rem;
   height: 10rem;
-  display: block;
-  object-fit: cover;
   border-radius: 3.5rem;
 `;
 
