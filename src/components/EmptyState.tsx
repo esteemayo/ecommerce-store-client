@@ -1,22 +1,18 @@
 'use client';
 
 import styled from 'styled-components';
-import Image from 'next/image';
+
+import { CommonImage } from './CommonImage';
 
 const EmptyState = () => {
   return (
     <Container>
       <Wrapper>
-        <StyledImage
-          src={'/img/404.png'}
-          width={500}
-          height={500}
-          alt='404'
-        />
+        <StyledImage src={'/img/404.png'} width={500} height={500} alt='404' />
       </Wrapper>
     </Container>
   );
-}
+};
 
 const Container = styled.main`
   width: 100vw;
@@ -35,11 +31,9 @@ const Wrapper = styled.div`
   justify-content: center;
 `;
 
-const StyledImage = styled(Image)`
+const StyledImage = styled(CommonImage)`
   width: 50rem;
   height: 50rem;
-  display: block;
-  object-fit: cover;
 
   @media only screen and (max-width: 25em) {
     width: 40rem;
