@@ -2,7 +2,8 @@
 
 import styled from 'styled-components';
 import Link from 'next/link';
-import Image from 'next/image';
+
+import { CommonImage } from '../CommonImage';
 
 const Logo = () => {
   return (
@@ -18,7 +19,7 @@ const Logo = () => {
       </StyledLink>
     </Container>
   );
-}
+};
 
 const Container = styled.div``;
 
@@ -27,11 +28,9 @@ const StyledLink = styled(Link)`
   outline-color: var(--clr-primary-green);
 `;
 
-const StyledImage = styled(Image)`
+const StyledImage = styled(CommonImage)`
   width: 10rem;
   height: 5rem;
-  display: block;
-  object-fit: cover;
 `;
 
 export default Logo;
