@@ -3,10 +3,11 @@
 import styled from 'styled-components';
 import Link from 'next/link';
 import { useMemo } from 'react';
-import Image from 'next/image';
 
 import { RecommendationItemProps } from '@/types';
 import { formatCurrency } from '@/utils/formatCurrency';
+
+import { CommonImage } from './CommonImage';
 
 const RecommendationItem = ({
   id,
@@ -39,11 +40,9 @@ const StyledLink = styled(Link)`
   outline-color: #ddd;
 `;
 
-const StyledImage = styled(Image)`
+const StyledImage = styled(CommonImage)`
   width: 40rem;
   height: 50rem;
-  display: block;
-  object-fit: cover;
   border-radius: 2px;
 
   @media only screen and (max-width: 64em) {
