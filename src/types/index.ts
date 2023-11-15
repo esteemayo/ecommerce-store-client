@@ -21,7 +21,7 @@ export type CartItem = {
 export type CartValues = {
   id: number;
   category: string;
-  color: string[];
+  color: string;
   desc: string;
   discount: number;
   featured: boolean;
@@ -31,10 +31,10 @@ export type CartValues = {
   numberInStock: number;
   price: number;
   priceDiscount: number;
-  quantity?: number;
+  quantity: number;
   ratingsAverage: number;
   ratingsQuantity: number;
-  size: (string | number)[];
+  size: string | number;
   slug: string;
   tags: string[];
   createdAt: string;
@@ -675,8 +675,8 @@ export interface DeleteModalProps {
 export interface CartItemProps {
   id: number;
   name: string;
-  size: string | number;
-  color: string;
+  size?: string | number;
+  color?: string;
   images: string[];
   price: number;
   quantity: number;
