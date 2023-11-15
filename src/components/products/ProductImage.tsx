@@ -1,9 +1,9 @@
 'use client';
 
 import styled from 'styled-components';
-import Image from 'next/image';
 
 import { ProductImageProps } from '@/types';
+import { CommonImage } from '../CommonImage';
 
 const ProductImage = ({ image, index, onOpen }: ProductImageProps) => {
   return (
@@ -17,11 +17,9 @@ const ProductImage = ({ image, index, onOpen }: ProductImageProps) => {
   );
 };
 
-const StyledImage = styled(Image)`
-  display: block;
+const StyledImage = styled(CommonImage)`
   width: 35rem;
   height: 35rem;
-  object-fit: cover;
   border-radius: 2px;
   cursor: pointer;
 
