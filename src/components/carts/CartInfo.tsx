@@ -1,10 +1,11 @@
 'use client';
 
 import styled from 'styled-components';
-import Image from 'next/image';
 
 import { CartInfoProps } from '@/types';
 import { formatCurrency } from '@/utils/formatCurrency';
+
+import { CommonImage } from '../CommonImage';
 
 const CartInfo = ({
   id,
@@ -68,11 +69,9 @@ const ImageContainer = styled.div`
   }
 `;
 
-const StyledImage = styled(Image)`
+const StyledImage = styled(CommonImage)`
   width: 12rem;
   height: 12rem;
-  display: block;
-  object-fit: cover;
   border-radius: 3px;
 
   @media only screen and (max-width: 25em) {
