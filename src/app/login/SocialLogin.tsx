@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import Image from 'next/image';
 import { FaFacebookF } from 'react-icons/fa';
 
 import { CommonImage } from '@/components/CommonImage';
@@ -8,12 +7,7 @@ const SocialLogin = () => {
   return (
     <Container>
       <GoogleButton type='button'>
-        <StyledImage
-          src='/img/google-logo.png'
-          width={23}
-          height={23}
-          alt=''
-        />
+        <StyledImage src='/img/google-logo.png' width={23} height={23} alt='' />
         Google
       </GoogleButton>
       <FacebookButton type='button'>
@@ -22,7 +16,7 @@ const SocialLogin = () => {
       </FacebookButton>
     </Container>
   );
-}
+};
 
 const Container = styled.div`
   display: flex;
