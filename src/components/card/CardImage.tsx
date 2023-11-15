@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import Image from 'next/image';
+
+import { CommonImage } from '../CommonImage';
 
 interface CardImageProps {
   src: string;
@@ -17,11 +18,9 @@ const Container = styled.div`
   width: 100%;
 `;
 
-const StyledImage = styled(Image)`
+const StyledImage = styled(CommonImage)`
   width: 100%;
   height: 20rem;
-  display: block;
-  object-fit: cover;
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
 
