@@ -1,7 +1,8 @@
 'use client';
 
 import styled from 'styled-components';
-import Image from 'next/image';
+
+import { CommonImage } from '../CommonImage';
 
 interface EmptyProductProps {
   src: string;
@@ -25,11 +26,9 @@ const Container = styled.div`
   padding-bottom: 3rem;
 `;
 
-const StyledImage = styled(Image)`
+const StyledImage = styled(CommonImage)`
   width: 50rem;
   height: 25rem;
-  display: block;
-  object-fit: cover;
 
   @media only screen and (max-width: 25em) {
     width: 40rem;
