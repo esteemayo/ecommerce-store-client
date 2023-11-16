@@ -686,7 +686,7 @@ export interface CartInfoProps {
   id: number;
   color: string;
   name: string;
-  images: string[];
+  images: string;
   price: number;
   size: string | number;
   onAction(id: number): void;
