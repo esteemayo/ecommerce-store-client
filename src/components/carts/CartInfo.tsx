@@ -19,7 +19,7 @@ const CartInfo = ({
   return (
     <Container>
       <ImageContainer>
-        <StyledImage src={images[0]} width={120} height={120} alt='' />
+        <StyledImage src={images} width={120} height={120} alt='' />
       </ImageContainer>
       <CartDetails>
         <Title>{name}</Title>
