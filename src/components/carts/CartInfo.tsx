@@ -49,7 +49,7 @@ const Container = styled.div`
   flex: 3;
   display: flex;
   align-items: flex-start;
-  gap: 1rem;
+  gap: 2rem;
 `;
 
 const ImageContainer = styled.div`
