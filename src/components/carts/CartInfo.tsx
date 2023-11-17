@@ -62,7 +62,7 @@ const ImageContainer = styled.div`
 const StyledImage = styled(CommonImage)`
   width: 100%;
   height: 100%;
-  border-radius: 3px;
+  border-radius: 2px;
 `;
 
 const CartDetails = styled.div`
