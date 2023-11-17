@@ -88,6 +88,7 @@ const CartTotal = ({ isOpen, onOpen, onClose, onAction }: CartTotalProps) => {
 };
 
 const Container = styled.div`
+  height: 23rem;
   padding: 2rem 5rem;
   border-top: 1px solid ${({ theme }) => theme.cartBorder};
   line-height: 1.2;
