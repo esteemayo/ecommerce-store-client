@@ -110,7 +110,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 `;
 
 const TotalContainer = styled.div`
