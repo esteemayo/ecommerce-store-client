@@ -734,6 +734,18 @@ export interface PaymentModalProps {
   onExit(): void;
 }
 
+export interface OrderDetailsProps {
+  name: string;
+  address: string;
+  total: number;
+  errors: {
+    name?: string;
+    address?: string;
+  };
+  onChange: React.ChangeEventHandler<HTMLInputElement>;
+  onSubmit(e: React.FormEvent<HTMLFormElement>): void;
+}
+
 export interface ProductFilterProps {
   products: StoreProduct;
   price: number;
