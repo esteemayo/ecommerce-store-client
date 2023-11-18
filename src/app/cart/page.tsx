@@ -9,9 +9,8 @@ import { useSubmenu } from '@/hooks/useSubmenu';
 import usePaymentModal from '@/hooks/usePaymentModal';
 import { useCartStore } from '@/hooks/useCartStore';
 
-import CartHeader from '@/components/carts/CartHeader';
-import { CommonImage } from '@/components/CommonImage';
 import EmptyCart from '@/components/carts/EmptyCart';
+import CartHeader from '@/components/carts/CartHeader';
 
 const CartItem = dynamic(() => import('@/components/carts/CartItem'), {
   ssr: false,
