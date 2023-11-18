@@ -152,20 +152,6 @@ const StyledImage = styled(CommonImage)`
   }
 `;
 
-const Button = styled.button`
-  display: inline-block;
-  font-weight: 400;
-  font-size: 1.5rem;
-  padding: 1rem 0.5rem;
-  background-color: transparent;
-  color: ${({ theme }) => theme.textEmptyCartBtn};
-  border: 2px solid ${({ theme }) => theme.textEmptyCartBtn};
-  border-radius: 0.5rem;
-  outline-color: #85beae;
-  margin-top: 2rem;
-  cursor: pointer;
-`;
-
 const Wrapper = styled.div`
   width: 100%;
   max-width: 80rem;
