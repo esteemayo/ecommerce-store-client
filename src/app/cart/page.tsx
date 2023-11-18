@@ -11,6 +11,7 @@ import { useCartStore } from '@/hooks/useCartStore';
 
 import CartHeader from '@/components/carts/CartHeader';
 import { CommonImage } from '@/components/CommonImage';
+import EmptyCart from '@/components/carts/EmptyCart';
 
 const CartItem = dynamic(() => import('@/components/carts/CartItem'), {
   ssr: false,
@@ -41,19 +42,7 @@ const Cart = () => {
   let bodyContent: JSX.Element;
 
   if (cart.length < 1) {
-    bodyContent = (
-      <EmptyWrapper>
-        <StyledImage
-          src='/img/empty-cart.png'
-          width={400}
-          height={400}
-          alt=''
-        />
-        <StyledLink href='/products'>
-          <Button type='button'>Back to shopping</Button>
-        </StyledLink>
-      </EmptyWrapper>
-    );
+    bodyContent = <EmptyCart />;
   } else {
     bodyContent = (
       <Wrapper>
