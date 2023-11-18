@@ -140,7 +140,7 @@ const Wrapper = styled.div`
 const StyledImage = styled(CommonImage)`
   width: 100%;
   height: 25rem;
-  border-radius: 3px;
+  border-radius: 2px;
 
   @media only screen and (max-width: 37.5em) {
     height: 20rem;
