@@ -14,7 +14,6 @@ import { useForm } from '@/hooks/useForm';
 import { useDarkMode } from '@/hooks/useDarkMode';
 
 import { PaymentModalProps } from '@/types';
-import { formatCurrency } from '@/utils/formatCurrency';
 
 import Overlay from './Overlay';
 import { useCartStore } from '@/hooks/useCartStore';
