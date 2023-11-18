@@ -161,16 +161,4 @@ const CloseButton = styled.button`
   }
 `;
 
-const Heading = styled.h1`
-  display: inline-block;
-  font-weight: 500;
-  font-size: 2rem;
-  color: ${({ theme }) => theme.text};
-  margin-bottom: 1rem;
-
-  @media only screen and (max-width: 25em) {
-    font-size: 1.87rem;
-  }
-`;
-
 export default PaymentModal;
