@@ -1,7 +1,6 @@
 'use client';
 
 import styled from 'styled-components';
-import Link from 'next/link';
 import { useCallback, useState } from 'react';
 import dynamic from 'next/dynamic';
 
