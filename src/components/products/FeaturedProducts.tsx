@@ -5,15 +5,13 @@ import { useEffect, useState } from 'react';
 
 import Header from '../Header';
 import ProductCard from '../card/ProductCard';
-
 import CartModal from '../modals/CartModal';
 
-import { storeProducts } from '@/data';
 import { StoreProduct, WishlistValues } from '@/types';
+import { useCartModal } from '@/hooks/useCartModal';
+import { getFeaturedProducts } from '@/services/productService';
 
 import { StyledWrapper } from '../StyledWrapper';
-import { useCartModal } from '@/hooks/useCartModal';
-import axios from 'axios';
 
 const FeaturedProducts = () => {
   const isOpen = useCartModal((state) => state.isOpen);
@@ -27,9 +25,8 @@ const FeaturedProducts = () => {
   useEffect(() => {
     (async () => {
       try {
-        const { data } = await axios.get(
-          'http://localhost:2020/api/v1/products?featured=true'
-        );
+        const { data } = await getFeaturedProducts();
+        console.log(data.products);
         setFeaturedProducts(data.products);
       } catch (err) {
         console.log(err);

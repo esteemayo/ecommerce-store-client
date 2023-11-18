@@ -15,15 +15,15 @@ const API = axios.create({
   },
 });
 
-API.interceptors.request.use(
-  (req) => {
-    req.headers.common['Authorization'] = `Bearer `;
-    return req;
-  },
-  (error) => {
-    return Promise.reject(error);
-  }
-);
+// API.interceptors.request.use(
+//   (req) => {
+//     req.headers.common['Authorization'] = `Bearer `;
+//     return req;
+//   },
+//   (error) => {
+//     return Promise.reject(error);
+//   }
+// );
 
 API.interceptors.response.use(null, (error) => {
   const expectedError =
