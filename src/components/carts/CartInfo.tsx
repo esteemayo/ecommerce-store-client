@@ -7,6 +7,10 @@ import { formatCurrency } from '@/utils/formatCurrency';
 
 import { CommonImage } from '../CommonImage';
 
+interface IColor {
+  color: string | (string & string[]);
+}
+
 const CartInfo = ({
   id,
   color,
@@ -123,7 +127,7 @@ const ColorContainer = styled.div`
   gap: 0.5rem;
 `;
 
-const Color = styled.span`
+const Color = styled.span<IColor>`
   display: flex;
   align-items: center;
   gap: 0.5rem;
