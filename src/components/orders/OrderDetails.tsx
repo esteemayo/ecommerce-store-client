@@ -8,9 +8,17 @@ import FormButton from '../form/FormButton';
 import Input from '../carts/Input';
 import TextArea from '../carts/TextArea';
 
+import { OrderDetailsProps } from '@/types';
 import { formatCurrency } from '@/utils/formatCurrency';
 
-const OrderDetails = ({ name, address, total, errors, onChange, onSubmit }) => {
+const OrderDetails = ({
+  name,
+  address,
+  total,
+  errors,
+  onChange,
+  onSubmit,
+}: OrderDetailsProps) => {
   return (
     <Form onSubmit={onSubmit}>
       <Heading>You will pay {formatCurrency(total)} after delivery</Heading>
