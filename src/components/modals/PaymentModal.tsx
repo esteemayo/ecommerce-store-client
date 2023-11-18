@@ -8,10 +8,10 @@ import { useCartStore } from '@/hooks/useCartStore';
 import { useForm } from '@/hooks/useForm';
 import { useDarkMode } from '@/hooks/useDarkMode';
 
-import { PaymentModalProps } from '@/types';
-
 import Overlay from './Overlay';
 import OrderDetails from '../orders/OrderDetails';
+
+import { PaymentModalProps } from '@/types';
 
 interface FormData {
   name: string;
