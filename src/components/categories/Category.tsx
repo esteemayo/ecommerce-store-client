@@ -4,10 +4,14 @@ import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { useEffect, useState } from 'react';
 
 import { CommonImage } from '../CommonImage';
+import { getCategoryCount } from '@/services/productService';
 
 const Category = () => {
+  const [data, setData] = useState([]);
+
   const images = [
     '/img/category-1.jpg',
     '/img/category-2.jpg',
@@ -16,25 +20,38 @@ const Category = () => {
     '/img/category-5.jpg',
   ];
 
+  useEffect(() => {
+    (async () => {
+      try {
+        const { data } = await getCategoryCount();
+        setData(data);
+        console.log(data);
+      } catch (err) {
+        console.log(err);
+      }
+    })();
+  }, []);
+
   return (
     <Container>
-      {images.map((item, index) => {
-        return (
-          <Wrapper key={index}>
-            <StyledImage src={item} width={1200} height={1200} alt='' />
-            <HeadingWrapper>
-              <MainHeading>Jeans</MainHeading>
-              <SubHeading>100</SubHeading>
-            </HeadingWrapper>
-            <Link href={`/products/category/jeans`} passHref>
-              <Button>
-                Shop now &nbsp;
-                <FontAwesomeIcon icon={faArrowRight} />
-              </Button>
-            </Link>
-          </Wrapper>
-        );
-      })}
+      {data &&
+        images.map((item, index) => {
+          return (
+            <Wrapper key={index}>
+              <StyledImage src={item} width={1200} height={1200} alt='' />
+              <HeadingWrapper>
+                <MainHeading>{data[index]?.category}</MainHeading>
+                <SubHeading>{data[index]?.count}</SubHeading>
+              </HeadingWrapper>
+              <Link href={`/products/category/${data[index]?.category}`}>
+                <Button>
+                  Shop now &nbsp;
+                  <FontAwesomeIcon icon={faArrowRight} />
+                </Button>
+              </Link>
+            </Wrapper>
+          );
+        })}
     </Container>
   );
 };
