@@ -131,17 +131,6 @@ const EmptyWrapper = styled.div`
   }
 `;
 
-const StyledLink = styled(Link)`
-  text-decoration: none;
-  font-size: inherit;
-  color: currentColor;
-  outline: none;
-
-  &:active {
-    color: currentColor;
-  }
-`;
-
 const Wrapper = styled.div`
   width: 100%;
   max-width: 80rem;
