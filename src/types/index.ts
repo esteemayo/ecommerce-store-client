@@ -840,7 +840,7 @@ export interface FormUploadProps extends HTMLAttributes<HTMLInputElement> {
   accept: string;
 }
 
-export interface FormButtonProps extends HtmlHTMLAttributes<HTMLButtonElement> {
+export interface FormButtonProps extends HTMLAttributes<HTMLButtonElement> {
   label: string;
   disabled?: boolean;
 }
