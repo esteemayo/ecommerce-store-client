@@ -142,16 +142,6 @@ const StyledLink = styled(Link)`
   }
 `;
 
-const StyledImage = styled(CommonImage)`
-  width: 40rem;
-  height: 40rem;
-
-  @media only screen and (max-width: 56.25em) {
-    width: 33rem;
-    height: 33rem;
-  }
-`;
-
 const Wrapper = styled.div`
   width: 100%;
   max-width: 80rem;
