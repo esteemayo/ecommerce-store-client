@@ -18,6 +18,7 @@ import { formatCurrency } from '@/utils/formatCurrency';
 
 import Overlay from './Overlay';
 import { useCartStore } from '@/hooks/useCartStore';
+import OrderDetails from '../orders/OrderDetails';
 
 interface FormData {
   name: string;
@@ -102,27 +103,14 @@ const PaymentModal = ({ isOpen, onClose, onExit }: PaymentModalProps) => {
             <CloseIcon />
           </CloseButton>
         </CloseButtonContainer>
-        <Form onSubmit={handleSubmit}>
-          <Heading>You will pay {formatCurrency(total)} after delivery</Heading>
-          <Input
-            name='name'
-            label='Name'
-            value={formData.name}
-            placeholder='Enter your name'
-            onChange={handleChange}
-            error={errors.name}
-            autoFocus
-          />
-          <TextArea
-            name='address'
-            label='Address'
-            value={formData.address}
-            placeholder='Enter your address'
-            onChange={handleChange}
-            error={errors.address}
-          />
-          <FormButton label='Order' />
-        </Form>
+        <OrderDetails
+          name={formData.name}
+          address={formData.address}
+          total={total}
+          errors={errors}
+          onChange={handleChange}
+          onSubmit={handleSubmit}
+        />
       </Wrapper>
     </Overlay>
   );
