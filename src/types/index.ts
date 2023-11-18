@@ -18,10 +18,10 @@ export type CartItem = {
   quantity: number;
 }[];
 
-export type CartValues = {
+export type ProductValues = {
   id: number;
   category: string;
-  color: string;
+  color: string | string[];
   desc: string;
   discount: number;
   featured: boolean;
@@ -34,7 +34,30 @@ export type CartValues = {
   quantity: number;
   ratingsAverage: number;
   ratingsQuantity: number;
-  size: string | number;
+  size: string | number | (string | number)[];
+  slug: string;
+  tags: string[];
+  createdAt: string;
+  updatedAt: string;
+};
+
+export type CartValues = {
+  id: number;
+  category: string;
+  color: string | string[];
+  desc: string;
+  discount: number;
+  featured: boolean;
+  images: string[];
+  inStock: boolean;
+  name: string;
+  numberInStock: number;
+  price: number;
+  priceDiscount: number;
+  quantity: number;
+  ratingsAverage: number;
+  ratingsQuantity: number;
+  size: string | number | (string | number)[];
   slug: string;
   tags: string[];
   createdAt: string;
@@ -466,7 +489,7 @@ export interface WishlistButtonProps {
 }
 
 export interface CartModalProps {
-  product: CartValues | WishlistValues;
+  product: CartValues | ProductValues;
   isOpen: boolean;
   onClose(): void;
   onSelect(value: WishlistValues): void;
@@ -537,7 +560,7 @@ export interface ProductHeadProps {
 export interface ColorSelectProps {
   title: string;
   mode?: boolean;
-  value: string[];
+  value: string | string[];
   modal?: boolean;
   selected?: string | null;
   onAction(value: string): void;
@@ -545,7 +568,7 @@ export interface ColorSelectProps {
 }
 
 export interface SizeSelectProps {
-  value: (string | number)[];
+  value: string | number | (string | number)[];
   title?: string;
   modal?: boolean;
   selected?: string | null;
@@ -675,8 +698,8 @@ export interface DeleteModalProps {
 export interface CartItemProps {
   id: number;
   name: string;
-  size?: string | number;
-  color?: string;
+  size?: string | number | (string | number)[];
+  color?: string | string[];
   images: string[];
   price: number;
   quantity: number;
@@ -684,11 +707,11 @@ export interface CartItemProps {
 
 export interface CartInfoProps {
   id: number;
-  color: string;
+  color: string | string[];
   name: string;
   image: string;
   price: number;
-  size: string | number;
+  size: string | number | (string | number)[];
   onAction(id: number): void;
 }
 
