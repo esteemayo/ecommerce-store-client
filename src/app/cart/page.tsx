@@ -119,18 +119,6 @@ const CartContainer = styled.div`
   }
 `;
 
-const EmptyWrapper = styled.div`
-  width: 100%;
-  min-height: 70vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  @media only screen and (max-width: 56.25em) {
-    min-height: 50vh;
-  }
-`;
-
 const Wrapper = styled.div`
   width: 100%;
   max-width: 80rem;
