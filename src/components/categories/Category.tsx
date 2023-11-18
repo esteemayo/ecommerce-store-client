@@ -38,7 +38,7 @@ const Category = () => {
         images.map((item, index) => {
           return (
             <Wrapper key={index}>
-              <StyledImage src={item} width={1200} height={1200} alt='' />
+              <StyledImage src={item} width={225} height={250} alt='' />
               <HeadingWrapper>
                 <MainHeading>{data[index]?.category}</MainHeading>
                 <SubHeading>{data[index]?.count}</SubHeading>
