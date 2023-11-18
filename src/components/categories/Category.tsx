@@ -43,12 +43,12 @@ const Category = () => {
                 <MainHeading>{data[index]?.category}</MainHeading>
                 <SubHeading>{data[index]?.count}</SubHeading>
               </HeadingWrapper>
-              <Link href={`/products/category/${data[index]?.category}`}>
+              <StyledLink href={`/products/category/${data[index]?.category}`}>
                 <Button>
                   Shop now &nbsp;
                   <FontAwesomeIcon icon={faArrowRight} />
                 </Button>
-              </Link>
+              </StyledLink>
             </Wrapper>
           );
         })}
@@ -131,19 +131,6 @@ const Wrapper = styled.div`
     width: 100%;
   }
 
-  a {
-    &:link,
-    &:visited {
-      text-decoration: none;
-      color: inherit;
-      outline-color: var(--clr-tertiary-green);
-    }
-
-    &:active {
-      color: currentColor;
-    }
-  }
-
   &:hover ${Button} {
     visibility: visible;
     opacity: 1;
@@ -197,6 +184,16 @@ const HeadingWrapper = styled.div`
   @media only screen and (max-width: 26.25em) {
     top: 70%;
     right: 7rem;
+  }
+`;
+
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: inherit;
+  outline-color: var(--clr-tertiary-green);
+
+  &:active {
+    color: currentColor;
   }
 `;
 
