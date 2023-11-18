@@ -49,9 +49,9 @@ const Cart = () => {
           height={400}
           alt=''
         />
-        <Link href='/products' passHref>
+        <StyledLink href='/products'>
           <Button type='button'>Back to shopping</Button>
-        </Link>
+        </StyledLink>
       </EmptyWrapper>
     );
   } else {
@@ -140,19 +140,16 @@ const EmptyWrapper = styled.div`
   @media only screen and (max-width: 56.25em) {
     min-height: 50vh;
   }
+`;
 
-  a {
-    &:link,
-    &:visited {
-      text-decoration: none;
-      font-size: inherit;
-      color: currentColor;
-      outline: none;
-    }
+const StyledLink = styled(Link)`
+  text-decoration: none;
+  font-size: inherit;
+  color: currentColor;
+  outline: none;
 
-    &:active {
-      color: currentColor;
-    }
+  &:active {
+    color: currentColor;
   }
 `;
 
