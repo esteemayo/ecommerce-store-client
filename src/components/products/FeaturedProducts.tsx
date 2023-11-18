@@ -13,6 +13,7 @@ import { StoreProduct, WishlistValues } from '@/types';
 
 import { StyledWrapper } from '../StyledWrapper';
 import { useCartModal } from '@/hooks/useCartModal';
+import axios from 'axios';
 
 const FeaturedProducts = () => {
   const isOpen = useCartModal((state) => state.isOpen);
@@ -24,7 +25,16 @@ const FeaturedProducts = () => {
   const [featuredProducts, setFeaturedProducts] = useState<StoreProduct>([]);
 
   useEffect(() => {
-    setFeaturedProducts(storeProducts);
+    (async () => {
+      try {
+        const { data } = await axios.get(
+          'http://localhost:2020/api/v1/products?featured=true'
+        );
+        setFeaturedProducts(data.products);
+      } catch (err) {
+        console.log(err);
+      }
+    })();
   }, []);
 
   return (
@@ -32,18 +42,16 @@ const FeaturedProducts = () => {
       <StyledWrapper>
         <Header title='Featured products' />
         <ProductsContainer>
-          {featuredProducts
-            .filter((product) => product.featured === true)
-            .map((product) => {
-              return (
-                <ProductCard
-                  key={product.id}
-                  product={product}
-                  onOpen={onOpen}
-                  onSelect={setIsSelectedProduct}
-                />
-              );
-            })}
+          {featuredProducts.map((product) => {
+            return (
+              <ProductCard
+                key={product.id}
+                product={product}
+                onOpen={onOpen}
+                onSelect={setIsSelectedProduct}
+              />
+            );
+          })}
         </ProductsContainer>
       </StyledWrapper>
       <CartModal
