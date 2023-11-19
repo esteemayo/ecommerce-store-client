@@ -9,12 +9,21 @@ import ProductFilter from '@/components/products/ProductFilter';
 
 import { storeProducts } from '@/data';
 import { StoreProduct } from '@/types';
+import { getProducts } from '../../services/productService';
 
 const ProductList = dynamic(() => import('@/components/products/ProductList'), {
   ssr: false,
 });
 
 const Products = () => {
+  const [category, setCategory] = useState('all');
+  const [size, setSize] = useState('');
+  const [color, setColor] = useState('');
+  const [minPrice, setMinPrice] = useState(0);
+  const [maxPrice, setMaxPrice] = useState(0);
+  const [price, setPrice] = useState(0);
+  const [products, setProducts] = useState([]);
+  const [sortedProducts, setSortedProducts] = useState([]);
   const [values, setValues] = useState({
     category: 'all',
     size: '',
@@ -26,16 +35,16 @@ const Products = () => {
     sortedProducts: [],
   });
 
-  const {
-    category,
-    size,
-    color,
-    minPrice,
-    maxPrice,
-    price,
-    products,
-    sortedProducts,
-  } = values;
+  // const {
+  //   category,
+  //   size,
+  //   color,
+  //   minPrice,
+  //   maxPrice,
+  //   price,
+  //   products,
+  //   sortedProducts,
+  // } = values;
 
   const handleChange: ChangeEventHandler<HTMLInputElement | HTMLSelectElement> =
     useCallback(({ target: input }) => {
@@ -44,45 +53,48 @@ const Products = () => {
     }, []);
 
   useEffect(() => {
-    let tempProducts: StoreProduct = [];
-    storeProducts.map((item) => {
-      tempProducts.push(item);
-    });
-    const maxPrice = Math.max(...tempProducts.map((item) => item.price));
-    setValues({
-      products: tempProducts,
-      sortedProducts: tempProducts,
-      price: maxPrice,
-      maxPrice,
-    });
+    (async () => {
+      try {
+        const { data } = await getProducts();
+        console.log(data);
+        const maxPrice = Math.max(...data.products.map((item) => item.price));
+
+        setProducts(data.products);
+        setSortedProducts(data.products);
+        setMaxPrice(maxPrice);
+        setPrice(maxPrice);
+      } catch (err) {
+        console.log(err);
+      }
+    })();
   }, []);
 
-  // useEffect(() => {
-  //   let tempProducts = [...products];
-  //   if (category !== 'all') {
-  //     tempProducts = tempProducts.filter((item) => item.category === category);
-  //   }
+  useEffect(() => {
+    let tempProducts = [...products];
+    if (category !== 'all') {
+      tempProducts = tempProducts.filter((item) => item.category === category);
+    }
 
-  //   if (color) {
-  //     tempProducts = tempProducts.filter((item) =>
-  //       Object.entries(color).every(([key, value]) => {
-  //         item[key].includes(value)
-  //       })
-  //     );
-  //   }
+    if (color) {
+      tempProducts = tempProducts.filter((item) =>
+        Object.entries(color).every(([key, value]) => {
+          item[key].includes(value);
+        })
+      );
+    }
 
-  //   if (size) {
-  //     tempProducts = tempProducts.filter((item) =>
-  //       Object.entries(size).every(([key, value]) => {
-  //         item[key].includes(value)
-  //       })
-  //     );
-  //   }
+    if (size) {
+      tempProducts = tempProducts.filter((item) =>
+        Object.entries(size).every(([key, value]) => {
+          item[key].includes(value);
+        })
+      );
+    }
 
-  //   tempProducts = tempProducts.filter((item) => item.price <= price);
+    tempProducts = tempProducts.filter((item) => item.price <= price);
 
-  //   setValues({ sortedProducts: tempProducts });
-  // }, [products, category, color, size, price]);
+    setSortedProducts(tempProducts);
+  }, [category, color, price, products, size]);
 
   return (
     <ProductBox>
