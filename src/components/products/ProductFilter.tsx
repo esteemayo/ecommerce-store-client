@@ -19,6 +19,11 @@ const ProductFilter = ({
   minPrice,
   maxPrice,
   onChange,
+  setCategory,
+  setSize,
+  setColor,
+  setMinPrice,
+  setMaxPrice,
 }: ProductFilterProps) => {
   let colors = getUnique(products, 'color');
   colors = colors.map((color, index) => {
