@@ -18,7 +18,6 @@ const ProductFilter = ({
   color,
   minPrice,
   maxPrice,
-  onChange,
   setCategory,
   setSize,
   setColor,
