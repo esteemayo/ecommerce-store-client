@@ -107,6 +107,11 @@ const Products = () => {
         minPrice={minPrice}
         maxPrice={maxPrice}
         onChange={handleChange}
+        setCategory={setCategory}
+        setSize={setSize}
+        setColor={setColor}
+        setMinPrice={setMinPrice}
+        setMaxPrice={setMaxPrice}
       />
       <ProductList products={sortedProducts} />
       {products.length > 0 && <Pagination />}
