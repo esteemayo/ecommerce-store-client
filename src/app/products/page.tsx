@@ -17,8 +17,8 @@ const ProductList = dynamic(() => import('@/components/products/ProductList'), {
 
 const Products = () => {
   const [category, setCategory] = useState('all');
-  const [size, setSize] = useState('');
-  const [color, setColor] = useState('');
+  const [size, setSize] = useState('all');
+  const [color, setColor] = useState('all');
   const [minPrice, setMinPrice] = useState(0);
   const [maxPrice, setMaxPrice] = useState(0);
   const [price, setPrice] = useState(0);
@@ -64,11 +64,11 @@ const Products = () => {
       tempProducts = tempProducts.filter((item) => item.category === category);
     }
 
-    if (color) {
+    if (color !== 'all') {
       tempProducts = tempProducts.filter((item) => item.color.includes(color));
     }
 
-    if (size) {
+    if (size !== 'all') {
       tempProducts = tempProducts.filter((item) => item.size.includes(size));
     }
 
