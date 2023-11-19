@@ -22,8 +22,7 @@ const ProductFilter = ({
   setCategory,
   setSize,
   setColor,
-  setMinPrice,
-  setMaxPrice,
+  setPrice,
 }: ProductFilterProps) => {
   let colors = getUnique(products, 'color');
   colors = colors.map((color, index) => {
@@ -50,7 +49,7 @@ const ProductFilter = ({
           page='product'
           value={color}
           options={colors}
-          onChange={onChange}
+          onChange={(e) => setColor(e.target.value)}
         />
         <Select
           name='category'
@@ -58,7 +57,7 @@ const ProductFilter = ({
           page='product'
           value={category}
           options={categories}
-          onChange={onChange}
+          onChange={(e) => setCategory(e.target.value)}
         />
         <Select
           name='size'
@@ -66,7 +65,7 @@ const ProductFilter = ({
           page='product'
           value={size}
           options={sizes}
-          onChange={onChange}
+          onChange={(e) => setSize(e.target.value)}
         />
         <RangeInput
           name='price'
@@ -75,7 +74,7 @@ const ProductFilter = ({
           value={price}
           min={minPrice}
           max={maxPrice}
-          onChange={onChange}
+          onChange={(e) => setPrice(e.target.value)}
         />
       </Wrapper>
     </Container>
