@@ -48,7 +48,9 @@ const ProductFilter = ({
           page='product'
           value={color}
           options={colors}
-          onChange={(e) => setColor(e.target.value)}
+          onChange={(e: React.ChangeEvent<HTMLSelectElement>) =>
+            setColor(e.target.value)
+          }
         />
         <Select
           name='category'
@@ -56,7 +58,9 @@ const ProductFilter = ({
           page='product'
           value={category}
           options={categories}
-          onChange={(e) => setCategory(e.target.value)}
+          onChange={(e: React.ChangeEvent<HTMLSelectElement>) =>
+            setCategory(e.target.value)
+          }
         />
         <Select
           name='size'
@@ -64,7 +68,9 @@ const ProductFilter = ({
           page='product'
           value={size}
           options={sizes}
-          onChange={(e) => setSize(e.target.value)}
+          onChange={(e: React.ChangeEvent<HTMLSelectElement>) =>
+            setSize(e.target.value)
+          }
         />
         <RangeInput
           name='price'
@@ -73,7 +79,9 @@ const ProductFilter = ({
           value={price}
           min={minPrice}
           max={maxPrice}
-          onChange={(e) => setPrice(e.target.value)}
+          onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+            setPrice(+e.target.value)
+          }
         />
       </Wrapper>
     </Container>
