@@ -34,7 +34,7 @@ export type ProductValues = {
   quantity: number;
   ratingsAverage: number;
   ratingsQuantity: number;
-  size: string | number | (string | number)[];
+  size: string | string[];
   slug: string;
   tags: string[];
   createdAt: string;
@@ -57,7 +57,7 @@ export type CartValues = {
   quantity: number;
   ratingsAverage: number;
   ratingsQuantity: number;
-  size: string | number | (string | number)[];
+  size: string | string[];
   slug: string;
   tags: string[];
   createdAt: string;
@@ -79,7 +79,7 @@ export type WishlistValues = {
   priceDiscount: number;
   ratingsAverage: number;
   ratingsQuantity: number;
-  size: (string | number)[];
+  size: string[];
   slug: string;
   tags: string[];
   createdAt: string;
@@ -711,7 +711,7 @@ export interface CartInfoProps {
   name: string;
   image: string;
   price: number;
-  size: string | number | (string | number)[];
+  size: string | string[];
   onAction(id: number): void;
 }
 
