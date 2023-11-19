@@ -87,7 +87,6 @@ const Products = () => {
         color={color}
         minPrice={minPrice}
         maxPrice={maxPrice}
-        onChange={handleChange}
         setCategory={setCategory}
         setSize={setSize}
         setColor={setColor}
