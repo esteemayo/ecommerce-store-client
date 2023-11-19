@@ -1,7 +1,7 @@
 'use client';
 
 import dynamic from 'next/dynamic';
-import { ChangeEventHandler, useCallback, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import ProductBox from '@/components/products/ProductBox';
 import Pagination from '@/components/Pagination';
