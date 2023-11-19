@@ -35,12 +35,6 @@ const Products = () => {
     sortedProducts: [],
   });
 
-  const handleChange: ChangeEventHandler<HTMLInputElement | HTMLSelectElement> =
-    useCallback(({ target: input }) => {
-      const { name, value } = input;
-      setValues((prev) => ({ ...prev, [name]: value }));
-    }, []);
-
   useEffect(() => {
     (async () => {
       try {
