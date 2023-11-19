@@ -747,7 +747,7 @@ export interface OrderDetailsProps {
 }
 
 export interface ProductFilterProps {
-  products: StoreProduct;
+  products: ProductValues[];
   price: number;
   category: string;
   size: string;

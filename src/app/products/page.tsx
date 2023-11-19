@@ -8,7 +8,7 @@ import Pagination from '@/components/Pagination';
 import ProductFilter from '@/components/products/ProductFilter';
 
 import { storeProducts } from '@/data';
-import { StoreProduct } from '@/types';
+import { ProductValues, StoreProduct } from '@/types';
 import { getProducts } from '../../services/productService';
 
 const ProductList = dynamic(() => import('@/components/products/ProductList'), {
@@ -22,8 +22,8 @@ const Products = () => {
   const [minPrice, setMinPrice] = useState(0);
   const [maxPrice, setMaxPrice] = useState(0);
   const [price, setPrice] = useState(0);
-  const [products, setProducts] = useState([]);
-  const [sortedProducts, setSortedProducts] = useState([]);
+  const [products, setProducts] = useState<ProductValues[]>([]);
+  const [sortedProducts, setSortedProducts] = useState<ProductValues[]>([]);
 
   useEffect(() => {
     (async () => {
