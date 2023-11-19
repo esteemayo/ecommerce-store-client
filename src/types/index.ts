@@ -568,7 +568,7 @@ export interface ColorSelectProps {
 }
 
 export interface SizeSelectProps {
-  value: string | number | (string | number)[];
+  value: string | string[];
   title?: string;
   modal?: boolean;
   selected?: string | null;
@@ -698,7 +698,7 @@ export interface DeleteModalProps {
 export interface CartItemProps {
   id: number;
   name: string;
-  size?: string | number | (string | number)[];
+  size?: string | string[];
   color?: string | string[];
   images: string[];
   price: number;
@@ -750,7 +750,7 @@ export interface ProductFilterProps {
   products: StoreProduct;
   price: number;
   category: string;
-  size: string | number;
+  size: string;
   color: string;
   minPrice: number;
   maxPrice: number;
