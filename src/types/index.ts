@@ -755,6 +755,10 @@ export interface ProductFilterProps {
   minPrice: number;
   maxPrice: number;
   onChange(e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>): void;
+  setCategory(category: string): void;
+  setSize(size: string): void;
+  setColor(color: string): void;
+  setPrice(price: number): void;
 }
 
 export interface ProductListProps {
