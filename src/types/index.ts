@@ -761,7 +761,7 @@ export interface ProductFilterProps {
 }
 
 export interface ProductListProps {
-  products: StoreProduct;
+  products: ProductValues[];
   title?: string;
 }
 
