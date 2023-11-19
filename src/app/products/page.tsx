@@ -24,16 +24,6 @@ const Products = () => {
   const [price, setPrice] = useState(0);
   const [products, setProducts] = useState([]);
   const [sortedProducts, setSortedProducts] = useState([]);
-  const [values, setValues] = useState({
-    category: 'all',
-    size: '',
-    color: '',
-    minPrice: 0,
-    maxPrice: 0,
-    price: 0,
-    products: [],
-    sortedProducts: [],
-  });
 
   useEffect(() => {
     (async () => {
