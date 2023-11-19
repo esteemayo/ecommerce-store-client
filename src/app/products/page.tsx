@@ -65,19 +65,11 @@ const Products = () => {
     }
 
     if (color) {
-      tempProducts = tempProducts.filter((item) =>
-        Object.entries(color).every(([key, value]) => {
-          item[key].includes(value);
-        })
-      );
+      tempProducts = tempProducts.filter((item) => item.color.includes(color));
     }
 
     if (size) {
-      tempProducts = tempProducts.filter((item) =>
-        Object.entries(size).every(([key, value]) => {
-          item[key].includes(value);
-        })
-      );
+      tempProducts = tempProducts.filter((item) => item.size.includes(size));
     }
 
     tempProducts = tempProducts.filter((item) => item.price <= price);
