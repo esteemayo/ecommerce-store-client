@@ -8,7 +8,7 @@ import Pagination from '@/components/Pagination';
 import ProductFilter from '@/components/products/ProductFilter';
 
 import { ProductValues } from '@/types';
-import { getProducts } from '../../services/productService';
+import { getProducts } from '@/services/productService';
 
 const ProductList = dynamic(() => import('@/components/products/ProductList'), {
   ssr: false,
