@@ -29,7 +29,9 @@ const Products = () => {
       try {
         const { data } = await getProducts();
         console.log(data);
-        const maxPrice = Math.max(...data.products.map((item) => item.price));
+        const maxPrice = Math.max(
+          ...data.products.map((item: ProductValues) => item.price)
+        );
 
         setProducts(data.products);
         setSortedProducts(data.products);
