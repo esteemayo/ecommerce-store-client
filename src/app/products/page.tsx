@@ -43,6 +43,7 @@ const Products = () => {
 
   useEffect(() => {
     let tempProducts = [...products];
+
     if (category !== 'all') {
       tempProducts = tempProducts.filter((item) => item.category === category);
     }
