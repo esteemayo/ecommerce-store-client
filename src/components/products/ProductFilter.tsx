@@ -24,7 +24,7 @@ const ProductFilter = ({
   setColor,
   setPrice,
 }: ProductFilterProps) => {
-  let colors = getUnique(products, 'color');
+  let colors = ['all', ...getUnique(products, 'color')];
   colors = colors.map((color, index) => {
     return <Option key={index} value={color} />;
   });
@@ -34,7 +34,7 @@ const ProductFilter = ({
     return <Option key={index} value={category} />;
   });
 
-  let sizes = getUnique(products, 'size');
+  let sizes = ['all', ...getUnique(products, 'size')];
   sizes = sizes.map((size, index) => {
     return <Option key={index} value={size} />;
   });
