@@ -8,12 +8,12 @@ import Heading from '@/components/filters/Heading';
 import Option from '@/components/filters/Option';
 import SelectPrice from '@/components/filters/SelectPrice';
 import Select from '@/components/filters/Select';
-
 import ProductBox from '@/components/products/ProductBox';
 
+import { priceOptions } from '@/data';
 import { getUnique } from '@/utils';
 import { ProductValues } from '@/types';
-import { priceOptions } from '@/data';
+
 import { getProductCategory } from '@/services/productService';
 
 const ProductList = dynamic(() => import('@/components/products/ProductList'), {
