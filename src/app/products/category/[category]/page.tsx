@@ -1,7 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
-import {  useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import dynamic from 'next/dynamic';
 
 import Heading from '@/components/filters/Heading';
@@ -12,7 +12,9 @@ import Select from '@/components/filters/Select';
 import ProductBox from '@/components/products/ProductBox';
 
 import { getUnique } from '@/utils';
-import { priceOptions, storeProducts } from '@/data';
+import { ProductValues } from '@/types';
+import { priceOptions } from '@/data';
+import { getProductCategory } from '@/services/productService';
 
 const ProductList = dynamic(() => import('@/components/products/ProductList'), {
   ssr: false,
@@ -22,17 +24,31 @@ const ProductCategory = ({ params }) => {
   const { category } = params;
 
   const [sort, setSort] = useState('newest');
-  const [products, setProducts] = useState(storeProducts);
+  const [products, setProducts] = useState<ProductValues[]>([]);
   const [filters, setFilters] = useState({});
-  const [sortedProducts, setSortedProducts] = useState([]);
+  const [sortedProducts, setSortedProducts] = useState<ProductValues[]>([]);
 
   const handleFilter = useCallback(
-    ({ target: input }: React.ChangeEvent<HTMLSelectElement | HTMLInputElement>) => {
+    ({
+      target: input,
+    }: React.ChangeEvent<HTMLSelectElement | HTMLInputElement>) => {
       const { name, value } = input;
       setFilters((prev) => ({ ...prev, [name]: value }));
     },
     []
   );
+
+  useEffect(() => {
+    (async () => {
+      try {
+        const { data } = await getProductCategory(category);
+        console.log(data);
+        setProducts(data.products);
+      } catch (err) {
+        console.log(err);
+      }
+    })();
+  }, [category]);
 
   useEffect(() => {
     category &&
@@ -48,6 +64,7 @@ const ProductCategory = ({ params }) => {
   useEffect(() => {
     if (sort === 'newest') {
       setSortedProducts((prev) =>
+        // @ts-ignore
         [...prev].sort((a, b) => a.createdAt - b.createdAt)
       );
     }
@@ -94,8 +111,9 @@ const ProductCategory = ({ params }) => {
             <SelectPrice
               name='price'
               label='Product price'
+              value={sort}
               options={priceOptions}
-              onChange={(e: ChangeEvent<HTMLSelectElement>) =>
+              onChange={(e: React.ChangeEvent<HTMLSelectElement>) =>
                 setSort(e.target.value)
               }
             />
