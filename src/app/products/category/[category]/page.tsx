@@ -1,7 +1,7 @@
 'use client';
 
 import styled from 'styled-components';
-import { ChangeEvent, useCallback, useEffect, useState } from 'react';
+import {  useCallback, useEffect, useState } from 'react';
 import dynamic from 'next/dynamic';
 
 import Heading from '@/components/filters/Heading';
@@ -27,7 +27,7 @@ const ProductCategory = ({ params }) => {
   const [sortedProducts, setSortedProducts] = useState([]);
 
   const handleFilter = useCallback(
-    ({ target: input }: ChangeEvent<HTMLSelectElement | HTMLInputElement>) => {
+    ({ target: input }: React.ChangeEvent<HTMLSelectElement | HTMLInputElement>) => {
       const { name, value } = input;
       setFilters((prev) => ({ ...prev, [name]: value }));
     },
