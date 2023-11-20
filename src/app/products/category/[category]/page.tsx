@@ -42,7 +42,6 @@ const ProductCategory = ({ params }) => {
     (async () => {
       try {
         const { data } = await getProductCategory(category);
-        console.log(data);
         setProducts(data.products);
       } catch (err) {
         console.log(err);
