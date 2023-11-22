@@ -103,6 +103,7 @@ const SingleProduct = ({ params }) => {
         <Recommendation data={recommendations} />
         <Reviews
           reviews={reviews}
+          rating={product.ratingAverage}
           sortLabel={getSort}
           sort={sort}
           onSort={setSort}
