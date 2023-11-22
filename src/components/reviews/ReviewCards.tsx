@@ -19,7 +19,7 @@ const ReviewCards = ({ rating, reviews, onOpen }: ReviewCardsProps) => {
   return (
     <Container>
       <Wrapper>
-        {reviews.map((item) => {
+        {reviews.slice(0, 3).map((item) => {
           return <ReviewCard key={item.id} {...item} />;
         })}
       </Wrapper>
