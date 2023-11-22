@@ -267,9 +267,9 @@ export type OrderItem = {
 }[];
 
 export type Recommendation = {
-  id: number;
-  image: string[];
+  id: string;
   name: string;
+  image: string[];
   price: number;
 }[];
 
@@ -612,10 +612,10 @@ export interface RecommendationProps {
 }
 
 export interface RecommendationItemProps {
-  id: number;
+  id: string;
   name: string;
   price: number;
-  image: string;
+  image: string[];
 }
 
 export interface ReviewsProps {
