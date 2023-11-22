@@ -23,10 +23,10 @@ const ReviewCard = ({ user, rating, review, createdAt }: ReviewCardProps) => {
       <Wrapper>
         <ReviewContainer>
           <Reviewer>
-            {!user.img ? (
+            {!user.image ? (
               <DefaultAvatar name={user.name} />
             ) : (
-              <Avatar src={user.img} />
+              <Avatar src={user.image} />
             )}
             <Name>{user.name}</Name>
           </Reviewer>

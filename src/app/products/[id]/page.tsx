@@ -82,8 +82,8 @@ const SingleProduct = ({ params }) => {
   }, [productId]);
 
   useEffect(() => {
-    setReviews(product.reviews);
-  }, [product.reviews]);
+    setReviews(product?.reviews);
+  }, [product]);
 
   if (!product) {
     return (
