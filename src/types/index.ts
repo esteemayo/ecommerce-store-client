@@ -609,6 +609,7 @@ export interface ProductInfoProps {
 
 export interface RecommendationProps {
   data: Recommendation;
+  productId: string;
 }
 
 export interface RecommendationItemProps {
