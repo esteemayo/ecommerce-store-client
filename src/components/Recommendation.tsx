@@ -11,8 +11,8 @@ const Recommendation = ({ data, productId }: RecommendationProps) => {
       <Heading>You might also like</Heading>
       <Wrapper>
         {data
-          .slice(0, 3)
           .filter((item) => item.id !== productId)
+          .slice(0, 3)
           .map((item) => {
             return <RecommendationItem key={item.id} {...item} />;
           })}
