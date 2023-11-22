@@ -2,21 +2,21 @@
 
 import styled from 'styled-components';
 import Link from 'next/link';
+import { useMemo } from 'react';
 
 interface BreadCrumbsProps {
   category: string;
 }
 
 const BreadCrumbs = ({ category }: BreadCrumbsProps) => {
+  const url = useMemo(() => {
+    return `/products/category/${encodeURIComponent(category)}`;
+  }, [category]);
+
   return (
     <Container>
-      <StyledLink href='/'>
-        Home
-      </StyledLink>{' '}
-      /{' '}
-      <StyledLink href={`/products/category/${encodeURIComponent(category)}`}>
-        {category}
-      </StyledLink>
+      <StyledLink href='/'>Home</StyledLink> /{' '}
+      <StyledLink href={url}>{category}</StyledLink>
     </Container>
   );
 };
