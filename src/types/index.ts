@@ -268,7 +268,7 @@ export type OrderItem = {
 
 export type Recommendation = {
   id: number;
-  image: string;
+  image: string[];
   name: string;
   price: number;
 }[];
