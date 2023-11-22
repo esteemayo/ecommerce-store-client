@@ -210,10 +210,10 @@ export type TopReview = {
 }[];
 
 export type ReviewItem = {
-  id: number;
+  id: string;
   user: {
     name: string;
-    img?: string;
+    image?: string;
   };
   rating: number;
   review: string;
@@ -643,10 +643,10 @@ export interface ReviewCardsProps {
 }
 
 export interface ReviewCardProps {
-  id: number;
+  id: string;
   user: {
     name: string;
-    img?: string;
+    image?: string;
   };
   rating: number;
   review: string;
