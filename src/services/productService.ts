@@ -2,6 +2,8 @@ import http from './httpService';
 
 const apiEndpoint = '/products';
 
+const productUrl = (productId: string) => `${apiEndpoint}/${productId}`;
+
 export const getProducts = () => http.get(apiEndpoint);
 
 export const getCategoryCount = () =>
@@ -12,3 +14,6 @@ export const getFeaturedProducts = () =>
 
 export const getProductCategory = (category: string) =>
   http.get(`${apiEndpoint}?category=${category}`);
+
+export const getProduct = (productId: string) =>
+  http.get(productUrl(productId));
