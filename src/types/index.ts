@@ -269,8 +269,8 @@ export type OrderItem = {
 export type Recommendation = {
   id: string;
   name: string;
-  image: string[];
   price: number;
+  images: string[];
 }[];
 
 export type ProductValue = {
@@ -615,7 +615,7 @@ export interface RecommendationItemProps {
   id: string;
   name: string;
   price: number;
-  image: string[];
+  images: string[];
 }
 
 export interface ReviewsProps {
