@@ -7,8 +7,7 @@ import dynamic from 'next/dynamic';
 import { useSubmenu } from '@/hooks/useSubmenu';
 import { useCartStore } from '@/hooks/useCartStore';
 
-import { ProductValues, ReviewItem } from '@/types';
-import { recommendations, reviewItems } from '@/data';
+import { recommendations } from '@/data';
 import { getProduct } from '@/services/productService';
 
 const Product = dynamic(() => import('@/components/products/Product'), {
