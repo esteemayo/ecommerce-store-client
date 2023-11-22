@@ -7,8 +7,9 @@ import dynamic from 'next/dynamic';
 import { useSubmenu } from '@/hooks/useSubmenu';
 import { useCartStore } from '@/hooks/useCartStore';
 
-import { CartValues, ReviewItem } from '@/types';
-import { recommendations, reviewItems, storeProducts } from '@/data';
+import { ProductValues, ReviewItem } from '@/types';
+import { recommendations, reviewItems } from '@/data';
+import { getProduct } from '@/services/productService';
 
 const Product = dynamic(() => import('@/components/products/Product'), {
   ssr: false,
@@ -33,7 +34,7 @@ const SingleProduct = ({ params }) => {
   const cart = useCartStore((state) => state.cart);
   const closeSubmenu = useSubmenu((state) => state.closeSubmenu);
 
-  const [product, setProduct] = useState<CartValues>(null);
+  const [product, setProduct] = useState<ProductValues>(null);
   const [sort, setSort] = useState(null);
   const [reviews, setReviews] = useState<ReviewItem>([]);
 
@@ -68,8 +69,14 @@ const SingleProduct = ({ params }) => {
   }, [sort]);
 
   useEffect(() => {
-    const product = storeProducts.find((item) => item.id === parseInt(id));
-    setProduct(product);
+    (async () => {
+      try {
+        const { data } = await getProduct(id);
+        setProduct(data);
+      } catch (err) {
+        console.log(err);
+      }
+    })();
   }, [id]);
 
   useEffect(() => {
