@@ -19,7 +19,7 @@ export type CartItem = {
 }[];
 
 export type ProductValues = {
-  id: number;
+  id: string;
   category: string;
   color: string | string[];
   desc: string;
