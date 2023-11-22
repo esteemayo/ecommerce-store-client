@@ -8,7 +8,6 @@ import EmptyReview from './EmptyReview';
 import { ReviewCardsProps } from '@/types';
 
 const ReviewCards = ({ rating, reviews, onOpen }: ReviewCardsProps) => {
-  console.log(reviews);
   if (reviews.length === 0) {
     return (
       <Container>

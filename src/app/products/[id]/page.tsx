@@ -73,7 +73,6 @@ const SingleProduct = ({ params }) => {
     (async () => {
       try {
         const { data } = await getProduct(productId);
-        console.log(data);
         setProduct(data);
       } catch (err) {
         console.log(err);
