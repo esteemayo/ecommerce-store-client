@@ -5,14 +5,17 @@ import styled from 'styled-components';
 import { RecommendationProps } from '@/types';
 import RecommendationItem from './RecommendationItem';
 
-const Recommendation = ({ data }: RecommendationProps) => {
+const Recommendation = ({ data, productId }: RecommendationProps) => {
   return (
     <Container>
       <Heading>You might also like</Heading>
       <Wrapper>
-        {data.map((item) => {
-          return <RecommendationItem key={item.id} {...item} />;
-        })}
+        {data
+          .slice(0, 3)
+          .filter((item) => item.id !== productId)
+          .map((item) => {
+            return <RecommendationItem key={item.id} {...item} />;
+          })}
       </Wrapper>
     </Container>
   );
