@@ -620,6 +620,7 @@ export interface RecommendationItemProps {
 
 export interface ReviewsProps {
   reviews: ReviewItem;
+  rating: number;
   sortLabel: 'newest' | 'highest rating' | 'lowest rating';
   sort: string | null;
   onSort(sort: string | null): void;
