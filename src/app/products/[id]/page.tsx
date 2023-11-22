@@ -110,7 +110,7 @@ const SingleProduct = ({ params }) => {
       <Wrapper>
         <Product product={product} inCart={inCart} actionLabel={actionLabel} />
         <Line />
-        <Recommendation data={recommendations} />
+        <Recommendation data={recommendations} productId={productId} />
         <Reviews
           reviews={reviews}
           rating={product.ratingAverage}
