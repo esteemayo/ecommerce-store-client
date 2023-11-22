@@ -8,7 +8,7 @@ export type Announcements = {
 }[];
 
 export type CartItem = {
-  id: number;
+  id: string;
   name: string;
   images: string[];
   color: string;
