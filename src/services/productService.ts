@@ -17,3 +17,6 @@ export const getProductCategory = (category: string) =>
 
 export const getProduct = (productId: string) =>
   http.get(productUrl(productId));
+
+export const getProductByTags = (tags: string[]) =>
+  http.get(`${apiEndpoint}/tags?tags=${tags}`);
