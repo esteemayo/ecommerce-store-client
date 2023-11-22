@@ -65,7 +65,7 @@ export type CartValues = {
 };
 
 export type WishlistValues = {
-  id: number;
+  id: string;
   category: string;
   color: string[];
   desc: string;
