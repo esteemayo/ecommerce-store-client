@@ -30,6 +30,7 @@ interface IContainer {
 
 const SingleProduct = ({ params }) => {
   const { id } = params;
+  const productId = id as string;
 
   const cart = useCartStore((state) => state.cart);
   const closeSubmenu = useSubmenu((state) => state.closeSubmenu);
@@ -39,9 +40,9 @@ const SingleProduct = ({ params }) => {
   const [reviews, setReviews] = useState<ReviewItem>([]);
 
   const inCart = useMemo(() => {
-    const cartItem = cart.find((item) => item.id === parseInt(id));
+    const cartItem = cart.find((item) => item.id === productId);
     return !!cartItem;
-  }, [cart, id]);
+  }, [cart, productId]);
 
   const actionLabel = useMemo(() => {
     return `${inCart ? 'Added' : 'Add'} to cart`;
@@ -71,13 +72,14 @@ const SingleProduct = ({ params }) => {
   useEffect(() => {
     (async () => {
       try {
-        const { data } = await getProduct(id);
+        const { data } = await getProduct(productId);
+        console.log(data);
         setProduct(data);
       } catch (err) {
         console.log(err);
       }
     })();
-  }, [id]);
+  }, [productId]);
 
   useEffect(() => {
     setReviews(reviewItems);
