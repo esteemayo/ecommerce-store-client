@@ -42,7 +42,7 @@ export type ProductValues = {
 };
 
 export type CartValues = {
-  id: number;
+  id: string;
   category: string;
   color: string | string[];
   desc: string;
