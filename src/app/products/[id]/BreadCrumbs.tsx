@@ -10,14 +10,11 @@ interface BreadCrumbsProps {
 const BreadCrumbs = ({ category }: BreadCrumbsProps) => {
   return (
     <Container>
-      <StyledLink href='/' passHref>
+      <StyledLink href='/'>
         Home
       </StyledLink>{' '}
       /{' '}
-      <StyledLink
-        href={`/products/category/${encodeURIComponent(category)}`}
-        passHref
-      >
+      <StyledLink href={`/products/category/${encodeURIComponent(category)}`}>
         {category}
       </StyledLink>
     </Container>
