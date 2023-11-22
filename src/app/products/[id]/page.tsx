@@ -35,9 +35,9 @@ const SingleProduct = ({ params }) => {
   const cart = useCartStore((state) => state.cart);
   const closeSubmenu = useSubmenu((state) => state.closeSubmenu);
 
-  const [product, setProduct] = useState<ProductValues>(null);
+  const [product, setProduct] = useState(null);
   const [sort, setSort] = useState(null);
-  const [reviews, setReviews] = useState<ReviewItem>([]);
+  const [reviews, setReviews] = useState([]);
 
   const inCart = useMemo(() => {
     const cartItem = cart.find((item) => item.id === productId);
@@ -82,8 +82,8 @@ const SingleProduct = ({ params }) => {
   }, [productId]);
 
   useEffect(() => {
-    setReviews(reviewItems);
-  }, []);
+    setReviews(product.reviews);
+  }, [product.reviews]);
 
   if (!product) {
     return (
