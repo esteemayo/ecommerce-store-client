@@ -22,7 +22,7 @@ const CartItem = ({
   const toggleQuantity = useCartStore((state) => state.toggleQuantity);
 
   const handleRemove = useCallback(
-    (id: number) => {
+    (id: string) => {
       remove(id);
     },
     [remove]
