@@ -839,7 +839,7 @@ export interface WislistPriceProps {
 
 export interface CloseButtonProps {
   id: string;
-  onOpen(id: number): void;
+  onOpen(id: string): void;
 }
 
 export interface FormInputProps extends HTMLAttributes<HTMLInputElement> {
