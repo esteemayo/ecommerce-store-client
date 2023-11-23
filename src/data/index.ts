@@ -1198,20 +1198,20 @@ export const orders: OrderItem = [
 
 export const recommendations: Recommendation = [
   {
-    id: 1,
-    image: '/img/user-9.jpg',
+    id: '1',
+    images: ['/img/user-9.jpg'],
     name: 'The Rain Bucket Hat in Black',
     price: 39.5,
   },
   {
-    id: 2,
-    image: '/img/user-5.jpg',
+    id: '2',
+    images: ['/img/user-5.jpg'],
     name: 'The Skyline Collared Jacket in Rosin',
     price: 169,
   },
   {
-    id: 3,
-    image: '/img/user-8.jpg',
+    id: '3',
+    images: ['/img/user-8.jpg'],
     name: 'The Skyline Reversible Bomber in Black',
     price: 169,
   },
