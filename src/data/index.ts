@@ -900,10 +900,10 @@ export const topReviews: TopReview = [
 
 export const reviewItems: ReviewItem = [
   {
-    id: 1,
+    id: '1',
     user: {
       name: 'Jesse hopkins',
-      img: '/img/user-1.jpg',
+      image: '/img/user-1.jpg',
     },
     rating: 5,
     review:
@@ -912,7 +912,7 @@ export const reviewItems: ReviewItem = [
     updatedAt: '2023-02-03T01:49:14.085+00:00',
   },
   {
-    id: 2,
+    id: '2',
     user: {
       name: 'Alice banks',
     },
