@@ -53,7 +53,7 @@ export const useCartStore = create<CartStore>()(
         set(
           produce((state) => {
             const inCart = state.cart.find(
-              (item: { id: number }) => item.id === payload.id
+              (item: { id: string }) => item.id === payload.id
             );
 
             state.wishlists.push(payload);
@@ -61,7 +61,7 @@ export const useCartStore = create<CartStore>()(
 
             if (inCart) {
               state.cart = state.cart.filter(
-                (item: { id: number }) => item.id !== payload.id
+                (item: { id: string }) => item.id !== payload.id
               );
             }
           }),
