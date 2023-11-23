@@ -10,7 +10,7 @@ export const useCart = (product: CartValues) => {
   const removeWishlist = useCartStore((state) => state.removeWishlist);
 
   const [color, setColor] = useState<string | null>(null);
-  const [size, setSize] = useState<string | number | null>(null);
+  const [size, setSize] = useState<string | null>(null);
   const [isSelected, setIsSelected] = useState(null);
   const [quantity, setQuantity] = useState(1);
   const [selectedSize, setSelectedSize] = useState(null);
