@@ -820,7 +820,7 @@ export interface WishlistCardProps {
   wishlistLabel: 'wishlists' | 'wishlist';
   onAction(wishlist: WishlistValues): void;
   onClose(): void;
-  onDelete(id: number): void;
+  onDelete(id: string): void;
 }
 
 export interface WishlistInfoProps {
