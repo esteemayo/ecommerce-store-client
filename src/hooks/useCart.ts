@@ -2,7 +2,7 @@
 
 import { useCallback, useState } from 'react';
 
-import { CartValues, ProductValues } from '@/types';
+import { ProductValues } from '@/types';
 import { useCartStore } from './useCartStore';
 
 export const useCart = (product: ProductValues) => {
@@ -10,9 +10,9 @@ export const useCart = (product: ProductValues) => {
   const removeWishlist = useCartStore((state) => state.removeWishlist);
 
   const [color, setColor] = useState<string | null>(null);
+  const [quantity, setQuantity] = useState(1);
   const [size, setSize] = useState<string | null>(null);
   const [isSelected, setIsSelected] = useState(null);
-  const [quantity, setQuantity] = useState(1);
   const [selectedSize, setSelectedSize] = useState(null);
   const [alert, setAlert] = useState(false);
 
