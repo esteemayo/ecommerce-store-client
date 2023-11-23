@@ -814,7 +814,7 @@ export interface DateTimeProps {
 
 export interface WishlistCardProps {
   isOpen: boolean;
-  onOpen(id: number): void;
+  onOpen(id: string): void;
   selected: number | null;
   wishlists: WishlistValues[];
   wishlistLabel: 'wishlists' | 'wishlist';
