@@ -72,10 +72,10 @@ export const useCartStore = create<CartStore>()(
         set(
           produce((state) => {
             state.wishlists = state.wishlists.filter(
-              (item: { id: number }) => item.id !== payload
+              (item: { id: string }) => item.id !== payload
             );
             state.wished = state.wished.filter(
-              (item: number) => item !== payload
+              (item: string) => item !== payload
             );
           }),
           false,
