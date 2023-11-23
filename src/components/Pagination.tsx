@@ -2,7 +2,9 @@
 
 import styled from 'styled-components';
 
-const Pagination = () => {
+import { PaginationProps } from '@/types';
+
+const Pagination = ({ counts, page, numberOfPages }: PaginationProps) => {
   return (
     <Container>
       <Wrapper>
@@ -15,7 +17,7 @@ const Pagination = () => {
       <TotalItems>- 1477 items -</TotalItems>
     </Container>
   );
-}
+};
 
 const Container = styled.section`
   width: 100%;
