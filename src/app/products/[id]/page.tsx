@@ -83,7 +83,6 @@ const SingleProduct = ({ params }) => {
     (async () => {
       try {
         const { data } = await getProductByTags(product.tags);
-        console.log(data);
         setRecommendation(data);
       } catch (err) {
         console.log(err);
