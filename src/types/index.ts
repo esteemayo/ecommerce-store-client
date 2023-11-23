@@ -103,8 +103,8 @@ export interface CartStore {
   addWishlist(payload: WishlistValues): void;
   removeWishlist(id: string): void;
   clearCart(): void;
-  remove(id: number): void;
-  toggleQuantity(payload: { type: string; id: number }): void;
+  remove(id: string): void;
+  toggleQuantity(payload: { type: string; id: string }): void;
   calcTotals(): void;
 }
 
