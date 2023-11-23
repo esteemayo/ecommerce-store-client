@@ -48,7 +48,7 @@ const WishLists = () => {
   );
 
   const handleDelete = useCallback(
-    (id: number) => {
+    (id: string) => {
       setProducts((prev) => prev.filter((item) => item.id !== id));
       removeWishlist(id);
     },
