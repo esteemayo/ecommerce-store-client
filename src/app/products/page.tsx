@@ -14,7 +14,9 @@ const ProductList = dynamic(() => import('@/components/products/ProductList'), {
   ssr: false,
 });
 
-const Products = () => {
+const Products = ({ params }) => {
+  console.log(params);
+
   const [category, setCategory] = useState('all');
   const [size, setSize] = useState('all');
   const [color, setColor] = useState('all');
@@ -23,6 +25,10 @@ const Products = () => {
   const [price, setPrice] = useState(0);
   const [products, setProducts] = useState<ProductValues[]>([]);
   const [sortedProducts, setSortedProducts] = useState<ProductValues[]>([]);
+
+  const [counts, setCounts] = useState(null);
+  const [page, setPage] = useState(null);
+  const [numberOfPages, setNumberOfPages] = useState(null);
 
   useEffect(() => {
     (async () => {
@@ -37,6 +43,10 @@ const Products = () => {
         setSortedProducts(data.products);
         setMaxPrice(maxPrice);
         setPrice(maxPrice);
+
+        setCounts(data.counts);
+        setPage(data.page);
+        setNumberOfPages(data.numberOfPages);
       } catch (err) {
         console.log(err);
       }
@@ -79,7 +89,9 @@ const Products = () => {
         setPrice={setPrice}
       />
       <ProductList products={sortedProducts} />
-      {products.length > 0 && <Pagination />}
+      {products.length > 0 && (
+        <Pagination counts={counts} page={page} numberOfPages={numberOfPages} />
+      )}
     </ProductBox>
   );
 };
