@@ -2,10 +2,10 @@
 
 import { useCallback, useState } from 'react';
 
-import { CartValues } from '@/types';
+import { CartValues, ProductValues } from '@/types';
 import { useCartStore } from './useCartStore';
 
-export const useCart = (product: CartValues) => {
+export const useCart = (product: ProductValues) => {
   const addProduct = useCartStore((state) => state.addProduct);
   const removeWishlist = useCartStore((state) => state.removeWishlist);
 
