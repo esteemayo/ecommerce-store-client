@@ -103,7 +103,7 @@ export const useCartStore = create<CartStore>()(
         set(
           produce((state) => {
             state.cart = state.cart
-              .map((cartItem: { id: number; quantity: number }) => {
+              .map((cartItem: { id: string; quantity: number }) => {
                 if (cartItem.id === payload.id) {
                   if (payload.type === 'inc') {
                     return {
