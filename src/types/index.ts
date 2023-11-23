@@ -101,7 +101,7 @@ export interface CartStore {
   reset(): void;
   addProduct(payload: CartValues): void;
   addWishlist(payload: WishlistValues): void;
-  removeWishlist(id: number): void;
+  removeWishlist(id: string): void;
   clearCart(): void;
   remove(id: number): void;
   toggleQuantity(payload: { type: string; id: number }): void;
