@@ -15,7 +15,7 @@ const EmptyReview = ({
 }: EmptyReviewProps) => {
   return (
     <Container>
-      <StarRating value={rating} />
+      <StarRating readOnly value={rating} name='read-only' />
       <Message>{title}</Message>
       <ReviewButton actionLabel={label} onAction={onClick} />
     </Container>
