@@ -714,7 +714,7 @@ export interface CartInfoProps {
   image: string;
   price: number;
   size: string | string[];
-  onAction(id: number): void;
+  onAction(id: string): void;
 }
 
 export interface CartCounterProps {
