@@ -8,7 +8,7 @@ import { formatCurrency } from '@/utils/formatCurrency';
 import { CommonImage } from '../CommonImage';
 
 interface IColor {
-  color: string | (string & string[]);
+  color: string | string[];
 }
 
 const CartInfo = ({
