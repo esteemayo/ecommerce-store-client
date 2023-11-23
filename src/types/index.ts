@@ -708,7 +708,7 @@ export interface CartItemProps {
 }
 
 export interface CartInfoProps {
-  id: number;
+  id: string;
   color: string | string[];
   name: string;
   image: string;
