@@ -838,7 +838,7 @@ export interface WislistPriceProps {
 }
 
 export interface CloseButtonProps {
-  id: number;
+  id: string;
   onOpen(id: number): void;
 }
 
