@@ -27,7 +27,7 @@ const Products = ({ params }) => {
   const [sortedProducts, setSortedProducts] = useState<ProductValues[]>([]);
 
   const [counts, setCounts] = useState(null);
-  const [page, setPage] = useState(null);
+  const [page, setPage] = useState(1);
   const [numberOfPages, setNumberOfPages] = useState(null);
 
   useEffect(() => {
