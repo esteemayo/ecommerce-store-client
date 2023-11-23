@@ -5,16 +5,36 @@ import styled from 'styled-components';
 import { PaginationProps } from '@/types';
 
 const Pagination = ({ counts, page, numberOfPages }: PaginationProps) => {
-  return (
-    <Container>
-      <Wrapper>
+  const renderPagination = () => {
+    if (page === 1 && page === numberOfPages) return null;
+
+    if (page === 1) {
+      return (
+        <ButtonContainer>
+          <CurrentPage>9</CurrentPage>
+          <Button type='button'>Next</Button>
+        </ButtonContainer>
+      );
+    } else if (page !== numberOfPages) {
+      return (
         <ButtonContainer>
           <Button type='button'>Prev</Button>
           <CurrentPage>9</CurrentPage>
           <Button type='button'>Next</Button>
         </ButtonContainer>
-      </Wrapper>
-      <TotalItems>- 1477 items -</TotalItems>
+      );
+    } else {
+      <ButtonContainer>
+        <Button type='button'>Prev</Button>
+        <CurrentPage>9</CurrentPage>
+      </ButtonContainer>;
+    }
+  };
+
+  return (
+    <Container>
+      <Wrapper>{renderPagination()}</Wrapper>
+      <TotalItems>- {counts} items -</TotalItems>
     </Container>
   );
 };
