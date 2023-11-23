@@ -824,7 +824,7 @@ export interface WishlistCardProps {
 }
 
 export interface WishlistInfoProps {
-  id: number;
+  id: string;
   desc: string;
   name: string;
   image: string;
