@@ -99,12 +99,14 @@ const ProductCategory = ({ params }) => {
               options={colors}
               onChange={handleFilter}
             />
-            <Select
-              name='size'
-              label='Product size'
-              options={sizes}
-              onChange={handleFilter}
-            />
+            {sizez.length > 0 && (
+              <Select
+                name='size'
+                label='Product size'
+                options={sizes}
+                onChange={handleFilter}
+              />
+            )}
           </Left>
           <Right>
             <SelectPrice
