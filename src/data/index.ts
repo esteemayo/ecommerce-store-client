@@ -1007,7 +1007,7 @@ export const wishlists: WishlistItems = [
 
 export const cartItems: CartItem = [
   {
-    id: 1,
+    id: '1',
     name: 'Short blouse with embroideries',
     images: [
       '/img/img-1.jpg',
@@ -1024,7 +1024,7 @@ export const cartItems: CartItem = [
     quantity: 1,
   },
   {
-    id: 2,
+    id: '2',
     name: 'Flowing frilled shorts',
     images: [
       '/img/img-2.jpg',
@@ -1041,7 +1041,7 @@ export const cartItems: CartItem = [
     quantity: 1,
   },
   {
-    id: 3,
+    id: '3',
     name: 'Embroidered high heel sandals',
     images: [
       '/img/img-3.jpg',
@@ -1058,7 +1058,7 @@ export const cartItems: CartItem = [
     quantity: 1,
   },
   {
-    id: 4,
+    id: '4',
     name: 'Striped cotton t-shirt',
     images: [
       '/img/img-4.jpg',
@@ -1075,7 +1075,7 @@ export const cartItems: CartItem = [
     quantity: 1,
   },
   {
-    id: 5,
+    id: '5',
     name: 'Handbag',
     images: [
       '/img/img-5.jpg',
@@ -1092,7 +1092,7 @@ export const cartItems: CartItem = [
     quantity: 1,
   },
   {
-    id: 6,
+    id: '6',
     name: 'The Stanley Rain Jacket in Black',
     images: [
       '/img/img-6.jpg',
@@ -1109,7 +1109,7 @@ export const cartItems: CartItem = [
     quantity: 1,
   },
   {
-    id: 7,
+    id: '7',
     name: 'Striped cotton t-shirt',
     images: [
       '/img/img-7.jpg',
