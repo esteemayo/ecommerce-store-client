@@ -30,9 +30,7 @@ const WishlistInfo = ({
       </ImageContainer>
       <Overview>
         <ProductName>
-          <StyledLink href={url} passHref>
-            {name}
-          </StyledLink>
+          <StyledLink href={url}>{name}</StyledLink>
         </ProductName>
         <Description>{excerpts(desc, 120)}</Description>
       </Overview>
