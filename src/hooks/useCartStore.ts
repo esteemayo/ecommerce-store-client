@@ -93,7 +93,7 @@ export const useCartStore = create<CartStore>()(
         set(
           produce((state) => {
             state.cart = state.cart.filter(
-              (cartItem: { id: number }) => cartItem.id !== payload
+              (cartItem: { id: string }) => cartItem.id !== payload
             );
           }),
           false,
