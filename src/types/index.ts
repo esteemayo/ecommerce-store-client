@@ -792,6 +792,12 @@ export interface RangeInputProps extends HTMLAttributes<HTMLInputElement> {
   onChange(e: React.ChangeEvent<HTMLInputElement>): void;
 }
 
+export interface PaginationProps {
+  page: number;
+  counts: number;
+  numberOfPages: number;
+}
+
 export interface OrderCardProps {
   id: number;
   total: number;
