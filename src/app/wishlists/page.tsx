@@ -27,7 +27,7 @@ const WishLists = () => {
   const closeSubmenu = useSubmenu((state) => state.closeSubmenu);
 
   const [products, setProducts] = useState<WishlistValues[]>([]);
-  const [isSelectedId, setIsSelectedId] = useState<number | null>(null);
+  const [isSelectedId, setIsSelectedId] = useState<string | null>(null);
   const [isSelectedProduct, setIsSelectedProduct] =
     useState<WishlistValues | null>(null);
 
@@ -40,7 +40,7 @@ const WishLists = () => {
   );
 
   const handleOpenModal = useCallback(
-    (id: number) => {
+    (id: string) => {
       setIsSelectedId(id);
       wishlistModal.onOpen();
     },
