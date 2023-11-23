@@ -31,10 +31,10 @@ export const useCartStore = create<CartStore>()(
           produce((state) => {
             if (state.wished.includes(payload.id)) {
               state.wishlists = state.wishlists.filter(
-                (item: { id: number }) => item.id !== payload.id
+                (item: { id: string }) => item.id !== payload.id
               );
               state.wished = state.wished.filter(
-                (item: number) => item !== payload.id
+                (item: string) => item !== payload.id
               );
 
               state.qty++;
