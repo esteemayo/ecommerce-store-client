@@ -191,12 +191,9 @@ const Box = styled.div<IMode>`
   padding: 2rem 4rem;
   background-color: ${({ theme }) => theme.bgModal};
   border-radius: 1.5rem;
-  box-shadow: ${({ mode }) =>
-    mode === 'true' ? 'none' : '0 2rem 4rem rgba(145, 143, 143, 0.1)'};
-  -webkit-box-shadow: ${({ mode }) =>
-    mode === 'true' ? 'none' : '0 2rem 4rem rgba(145, 143, 143, 0.1)'};
-  -moz-box-shadow: ${({ mode }) =>
-    mode === 'true' ? 'none' : '0 2rem 4rem rgba(145, 143, 143, 0.1)'};
+  box-shadow: ${({ mode }) => setBoxShadow(mode)};
+  -webkit-box-shadow: ${({ mode }) => setBoxShadow(mode)};
+  -moz-box-shadow: ${({ mode }) => setBoxShadow(mode)};
   position: relative;
 
   @media only screen and (max-width: 37.5em) {
@@ -269,5 +266,9 @@ const Hr = styled.hr`
   border: none;
   background-color: ${({ theme }) => theme.cartModalBorder};
 `;
+
+const setBoxShadow = (mode: string) => {
+  return mode === 'true' ? 'none' : '0 2rem 4rem rgba(145, 143, 143, 0.1)';
+};
 
 export default CartModal;
