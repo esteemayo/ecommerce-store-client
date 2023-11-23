@@ -31,7 +31,6 @@ export type ProductValues = {
   numberInStock: number;
   price: number;
   priceDiscount: number;
-  quantity: number;
   ratingsAverage: number;
   ratingsQuantity: number;
   size: string | string[];
@@ -489,7 +488,7 @@ export interface WishlistButtonProps {
 }
 
 export interface CartModalProps {
-  product: CartValues | ProductValues;
+  product: ProductValues;
   isOpen: boolean;
   onClose(): void;
   onSelect(value: WishlistValues): void;
@@ -572,8 +571,8 @@ export interface SizeSelectProps {
   title?: string;
   modal?: boolean;
   selected?: string | null;
-  onAction(value: string | number): void;
-  secondaryAction(selected: string | number): void;
+  onAction(value: string): void;
+  secondaryAction(selected: string): void;
 }
 
 export interface CounterProps {
