@@ -34,6 +34,12 @@ const initialState: FormData = {
   currentPassword: '',
 };
 
+const initialError: IErrors = {
+  password: '',
+  confirmPassword: '',
+  currentPassword: '',
+};
+
 const UpdatePassword = ({ onCancel }: UpdatePasswordProps) => {
   const validateForm = (data: FormData) => {
     const errors: IErrors = {};
@@ -63,6 +69,7 @@ const UpdatePassword = ({ onCancel }: UpdatePasswordProps) => {
   const { errors, formData, handleClose, handleChange, handleSubmit } = useForm(
     onSubmitHandler,
     initialState,
+    initialError,
     validateForm,
     onCancel
   );
