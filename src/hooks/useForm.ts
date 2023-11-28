@@ -1,19 +1,20 @@
 import { useCallback, useState } from 'react';
 
-export const useForm = (
+export const useForm = <T extends object, U extends object>(
   callback: () => void,
-  initialState = {},
-  validate: any,
+  initialState: T,
+  initialError: U,
+  validate: (data: T) => U,
   onClose?: () => void
 ) => {
-  const [errors, setErrors] = useState<any>({});
-  const [formData, setFormData] = useState<any>(initialState);
+  const [errors, setErrors] = useState<U>(initialError);
+  const [formData, setFormData] = useState<T>(initialState);
 
   const handleClose = useCallback(() => {
     setFormData(initialState);
     onClose?.();
-    errors && setErrors({});
-  }, [errors, initialState, onClose]);
+    errors && setErrors(initialError);
+  }, [errors, initialError, initialState, onClose]);
 
   const handleChange: React.ChangeEventHandler<HTMLInputElement> = useCallback(
     ({ target: input }) => {
@@ -31,12 +32,12 @@ export const useForm = (
         setErrors(validate(formData));
         return;
       }
-      setErrors({});
+      setErrors(initialError);
 
       callback();
       setFormData(initialState);
     },
-    [callback, formData, initialState, validate]
+    [callback, formData, initialError, initialState, validate]
   );
 
   return {
