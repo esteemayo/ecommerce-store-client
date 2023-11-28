@@ -34,6 +34,11 @@ const initialState: FormData = {
   password: '',
 };
 
+const initialError: IErrors = {
+  username: '',
+  password: '',
+};
+
 const Login = () => {
   const [rememberMe, setRememberMe] = useState(false);
 
@@ -55,15 +60,16 @@ const Login = () => {
   };
 
   const onSubmitHandler = () => {
-    console.log({ ...formData, rememberMe });
+    console.log({ ...data, rememberMe });
 
     setToStorage(rememberKey, rememberMe);
-    setToStorage(userKey, rememberMe ? formData : '');
+    setToStorage(userKey, rememberMe ? data : '');
   };
 
-  const { errors, formData, setFormData, handleChange, handleSubmit } = useForm(
+  const { errors, data, setData, handleChange, handleSubmit } = useForm(
     onSubmitHandler,
     initialState,
+    initialError,
     validateForm
   );
 
@@ -76,9 +82,9 @@ const Login = () => {
       password: user?.password,
     };
 
-    setFormData(userData);
+    setData(userData);
     setRememberMe(rememberMe);
-  }, [setFormData]);
+  }, [setData]);
 
   return (
     <FormBox>
@@ -90,7 +96,7 @@ const Login = () => {
           <FormInput
             name='username'
             label='Username'
-            value={formData.username}
+            value={data.username}
             placeholder='Enter username'
             onChange={handleChange}
             error={errors.username}
@@ -100,7 +106,7 @@ const Login = () => {
             name='password'
             type='password'
             label='Password'
-            value={formData.password}
+            value={data.password}
             placeholder='Enter your password'
             onChange={handleChange}
             error={errors.password}
