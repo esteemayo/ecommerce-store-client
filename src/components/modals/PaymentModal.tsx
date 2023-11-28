@@ -28,6 +28,11 @@ const initialState: FormData = {
   address: '',
 };
 
+const initialError: IErrors = {
+  name: '',
+  address: '',
+};
+
 const PaymentModal = ({ isOpen, onClose, onExit }: PaymentModalProps) => {
   const mode = useDarkMode((state) => state.mode);
   const total = useCartStore((state) => state.total);
@@ -66,12 +71,13 @@ const PaymentModal = ({ isOpen, onClose, onExit }: PaymentModalProps) => {
   };
 
   const onSubmitHandler = () => {
-    console.log({ ...formData });
+    console.log({ ...data });
   };
 
-  const { errors, formData, handleChange, handleClose, handleSubmit } = useForm(
+  const { errors, data, handleChange, handleClose, handleSubmit } = useForm(
     onSubmitHandler,
     initialState,
+    initialError,
     validateForm,
     onExit
   );
@@ -97,8 +103,8 @@ const PaymentModal = ({ isOpen, onClose, onExit }: PaymentModalProps) => {
           </CloseButton>
         </CloseButtonContainer>
         <OrderDetails
-          name={formData.name}
-          address={formData.address}
+          name={data.name}
+          address={data.address}
           total={total}
           errors={errors}
           onChange={handleChange}
