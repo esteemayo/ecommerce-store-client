@@ -32,6 +32,11 @@ const initialState: FormData = {
   password: '',
 };
 
+const initialError: IErrors = {
+  email: '',
+  password: '',
+};
+
 const UpdateData = ({ onCancel }: UpdateDataProps) => {
   const validateForm = (data: FormData) => {
     const errors: IErrors = {};
@@ -61,6 +66,7 @@ const UpdateData = ({ onCancel }: UpdateDataProps) => {
   const { errors, formData, handleClose, handleChange, handleSubmit } = useForm(
     onSubmitHandler,
     initialState,
+    initialError,
     validateForm,
     onCancel
   );
