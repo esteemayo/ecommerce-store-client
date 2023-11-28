@@ -17,7 +17,7 @@ interface UpdateDataProps {
   onCancel(): void;
 }
 
-interface data {
+interface FormData {
   email: string;
   password: string;
 }
@@ -27,7 +27,7 @@ interface IErrors {
   password?: string;
 }
 
-const initialState: data = {
+const initialState: FormData = {
   email: '',
   password: '',
 };
@@ -38,7 +38,7 @@ const initialError: IErrors = {
 };
 
 const UpdateData = ({ onCancel }: UpdateDataProps) => {
-  const validateForm = (data: data) => {
+  const validateForm = (data: FormData) => {
     const errors: IErrors = {};
     const { email, password } = data;
 
