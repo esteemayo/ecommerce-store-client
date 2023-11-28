@@ -7,8 +7,8 @@ export const useForm = <T extends object, U extends object>(
   validate: (data: T) => U,
   onClose?: () => void
 ) => {
-  const [errors, setErrors] = useState<U>(initialError);
   const [data, setData] = useState<T>(initialState);
+  const [errors, setErrors] = useState<U>(initialError);
 
   const handleClose = useCallback(() => {
     setData(initialState);
