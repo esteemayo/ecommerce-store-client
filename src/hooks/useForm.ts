@@ -8,10 +8,10 @@ export const useForm = <T extends object, U extends object>(
   onClose?: () => void
 ) => {
   const [errors, setErrors] = useState<U>(initialError);
-  const [formData, setFormData] = useState<T>(initialState);
+  const [data, setData] = useState<T>(initialState);
 
   const handleClose = useCallback(() => {
-    setFormData(initialState);
+    setData(initialState);
     onClose?.();
     errors && setErrors(initialError);
   }, [errors, initialError, initialState, onClose]);
@@ -19,7 +19,7 @@ export const useForm = <T extends object, U extends object>(
   const handleChange: React.ChangeEventHandler<HTMLInputElement> = useCallback(
     ({ target: input }) => {
       const { name, value } = input;
-      setFormData((prev) => ({ ...prev, [name]: value }));
+      setData((prev) => ({ ...prev, [name]: value }));
     },
     []
   );
@@ -28,22 +28,22 @@ export const useForm = <T extends object, U extends object>(
     (e: React.FormEvent<HTMLFormElement>) => {
       e.preventDefault();
 
-      if (Object.keys(validate(formData)).length > 0) {
-        setErrors(validate(formData));
+      if (Object.keys(validate(data)).length > 0) {
+        setErrors(validate(data));
         return;
       }
       setErrors(initialError);
 
       callback();
-      setFormData(initialState);
+      setData(initialState);
     },
-    [callback, formData, initialError, initialState, validate]
+    [callback, data, initialError, initialState, validate]
   );
 
   return {
+    data,
     errors,
-    formData,
-    setFormData,
+    setData,
     handleClose,
     handleChange,
     handleSubmit,
