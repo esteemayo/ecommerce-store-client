@@ -24,6 +24,11 @@ const initialState: FormData = {
   confirmPassword: '',
 };
 
+const initialError: IErrors = {
+  password: '',
+  confirmPassword: '',
+};
+
 const ResetPassword = () => {
   const validateForm = (data: FormData) => {
     const tempErrors: IErrors = {};
@@ -43,12 +48,13 @@ const ResetPassword = () => {
   };
 
   const onSubmitHandler = () => {
-    console.log({ ...formData });
+    console.log({ ...data });
   };
 
-  const { errors, formData, handleChange, handleSubmit } = useForm(
+  const { errors, data, handleChange, handleSubmit } = useForm(
     onSubmitHandler,
     initialState,
+    initialError,
     validateForm
   );
 
@@ -61,7 +67,7 @@ const ResetPassword = () => {
             type='password'
             name='password'
             label='Password'
-            value={formData.password}
+            value={data.password}
             placeholder='Enter your password'
             onChange={handleChange}
             error={errors.password}
@@ -72,7 +78,7 @@ const ResetPassword = () => {
             name='confirmPassword'
             label='Confirm password'
             placeholder='Confirm your password'
-            value={formData.confirmPassword}
+            value={data.confirmPassword}
             onChange={handleChange}
             error={errors.confirmPassword}
           />
